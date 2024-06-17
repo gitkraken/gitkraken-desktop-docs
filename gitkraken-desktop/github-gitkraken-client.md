@@ -135,7 +135,9 @@ A Pull Request with Code Suggestions has the <em class='context-menu'>Code Sugge
 Clicking on one of the Code Suggestions opens the repo tab. The right panel shows a diff with the changes so you can review and two options on bottom `Apply suggestion to branch` or `Reject suggestion`.
 
 <img src='/wp-content/uploads/gkc-pr-code-suggestions-apply.gif' class='img-bordered img-responsive center'>
-#### Branch checkout, build status, and adding remote
+
+### Branch checkout, build status, and adding remote
+
 If you double-click the branch name in the bottom right of the PR view, GitKraken Desktop will automatically check out the branch and open the graph.
 
 If you click on the build status, GitKraken Desktop will take you to the build URL in your default web browser.
@@ -144,7 +146,7 @@ If you click on the build status, GitKraken Desktop will take you to the build U
 
 Additionally if you have not added the remote, GitKraken Desktop will ask if you wish to add the remote to the app (which should help you review changes locally).
 
-#### Merging within pull request view
+### Merging within pull request view
 
 GitHub users may also merge a pull request by clicking the <button class='button button--success button--ui button--nolink'>Merge pull request</button> button from within GitKraken Desktop.
 
