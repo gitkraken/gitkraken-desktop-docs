@@ -21,7 +21,7 @@ You can always reach out to us by using the [Contact support](https://help.gitkr
 - The following product plans are guaranteed support: Pro, Teams and Enterprise. Enterprise encompasses cloud, on-premise server and on-premise serverless plans. This includes any bundle products which contain GitKraken Desktop. 
 - GitKraken Desktop is available for Windows, Mac, and Linux systems, see the current supported versions on our [how to install](https://help.gitkraken.com/gitkraken-desktop/how-to-install/) page.
 - Best effort support is provided for Students and Education users, we aim to respond quickly and help as much as possible, but we do not have any guaranteed response window.
-- While we try to get to everyone who reaches out, a response is not guaranteed to all users. This includes any users who are free users and any old plans which did not include support, such as the Individual plan which is no longer offered. We encourage all users to engage in our community and utilize our free resources. [Additional Resources](https://help.gitkraken.com/gitkraken-desktop/gitkraken-client-home/#additional-resources)
+- While we try to get to everyone who reaches out, a response is not guaranteed to all users. This includes any users who are free users and any old plans which did not include support, such as the Individual plan which is no longer offered. We encourage all users to engage in our community and utilize our free resources. [Additional Resources](https://help.gitkraken.com/gitkraken-desktop/gitkraken-desktop-home/#additional-resources)
 
 ### Support Period
  

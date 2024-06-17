@@ -62,7 +62,7 @@ Depending on the integration, you may also add reviewers and multiple assignees 
 
 ### Draft Pull Requests
 
-If connected to the [GitHub Integration](/gitkraken-desktop/github-gitkraken-client/), you may create a draft pull request by checking this box when creating a pull request in GitKraken Desktop.
+If connected to the [GitHub Integration](/gitkraken-desktop/github-gitkraken-desktop/), you may create a draft pull request by checking this box when creating a pull request in GitKraken Desktop.
 
 <img src='/wp-content/uploads//draft-pr.png' srcset='/wp-content/uploads//draft-pr@2x.png' class='img-bordered img-responsive center'>
 
@@ -74,7 +74,7 @@ As the name implies, this will create a "draft" pull request in GitHub. However 
 
 GitHub.com users may utilize the pull request view for GitHub pull requests.
 
-To enable this feature, first set up the [GitHub integration](/gitkraken-desktop/github-gitkraken-client/). Then with a GitHub repo open inside of GitKraken Desktop, select a pull request in the left panel (or checkout the source branch and a PR icon with the number shows up next to the branch) to bring up the pull request view. Or from the Launchpad, click on the icon at the right side of the Pull Request.
+To enable this feature, first set up the [GitHub integration](/gitkraken-desktop/github-gitkraken-desktop/). Then with a GitHub repo open inside of GitKraken Desktop, select a pull request in the left panel (or checkout the source branch and a PR icon with the number shows up next to the branch) to bring up the pull request view. Or from the Launchpad, click on the icon at the right side of the Pull Request.
 
 Repository tab:
 <img src='/wp-content/uploads/gkc-github-pr-view.png' class='img-bordered img-responsive center'>

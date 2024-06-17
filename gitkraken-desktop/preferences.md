@@ -127,7 +127,7 @@ GitKraken Desktop uses profiles to store your app preferences, current [Tabs](/s
 GitKraken Desktop supports HTTPS and SSH authentication, and provides useful integrations with many Git hosting services. Here's how to get started.
 
 - [General SSH settings](/gitkraken-desktop/authentication/#ssh)
-- [GitHub Integration](/gitkraken-desktop/github-gitkraken-client/)
+- [GitHub Integration](/gitkraken-desktop/github-gitkraken-desktop/)
 - [GitHub Enterprise Server Integration](/gitkraken-desktop/github-enterprise/)
 - [GitLab Integration](/gitkraken-desktop/gitlab/)
 - [GitLab Self-Managed Integration](/gitkraken-desktop/gitlab-self-hosted/)

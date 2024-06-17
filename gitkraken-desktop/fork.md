@@ -7,7 +7,7 @@ taxonomy:
 
 ---
 
-If you are using the [GitHub integration](/gitkraken-desktop/github-gitkraken-client/) or the [GitHub Enterprise Server integration](/integrations/github-enterprise/), then you may fork repos right from GitKraken Desktop.
+If you are using the [GitHub integration](/gitkraken-desktop/github-gitkraken-desktop/) or the [GitHub Enterprise Server integration](/integrations/github-enterprise/), then you may fork repos right from GitKraken Desktop.
 
 ***
 ## Forking a repo

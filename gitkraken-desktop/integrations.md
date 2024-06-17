@@ -14,9 +14,9 @@ taxonomy:
 
 GitKraken Desktop allows you to connect many different services and platforms, making it easy to work with your remote repositories. 
 
-- [GitHub](/gitkraken-desktop/github-gitkraken-client/)
+- [GitHub](/gitkraken-desktop/github-gitkraken-desktop/)
 - [GitHub Enterprise Server](/gitkraken-desktop/github-enterprise/)
-- [GitLab](/gitkraken-desktop/gitlab-gitkraken-client/)
+- [GitLab](/gitkraken-desktop/gitlab-gitkraken-desktop/)
 - [GitLab Self-Managed](/gitkraken-desktop/gitlab-self-hosted/)
 - [Bitbucket](/gitkraken-desktop/bitbucket)
 - [Bitbucket Server](/gitkraken-desktop/bitbucket-server/)
