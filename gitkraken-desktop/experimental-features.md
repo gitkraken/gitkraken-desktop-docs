@@ -147,12 +147,7 @@ Cloud Patches allow the ability to engage early with your team before a pull req
 
 #### How to setup Cloud Patches
 
-To enable Cloud Patches in GitKraken Desktop, navigate to `Preferences > Experimental` and check the following options:
-
-- `Use Cloud Patches`
-- `Use Git Executable`
-
-To disable Cloud Patches per client, simply uncheck `Use Cloud Patches`.
+`Preferences > Experimental > Use Git Executable` must be checked in order to work with Cloud Patches. This is enabled by default.
 
 #### How to work with Cloud Patches
 
@@ -182,4 +177,4 @@ To delete a cloud path, right-click it and select `Delete Cloud Patch`.
 
 #### Self-Hosting Cloud Patch data
 
-If you do not want your Cloud Patch data stored on GitKraken Servers, we offer the ability for you to host Cloud Patches on your own AWS S3 storage instance. For more information on configuring this, see our documentation [here](/gk-dev/gk-dev-home/#self-hosted).
+If you do not want your Cloud Patch data stored on GitKraken Servers, we offer the ability for you to host Cloud Patches on your own AWS S3 storage instance. For more information on configuring this, see our documentation [here](/gk-dev/gk-dev-administration/#self-hosted).
