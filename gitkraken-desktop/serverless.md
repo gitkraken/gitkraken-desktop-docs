@@ -119,9 +119,9 @@ You can also place your license file into specific directory locations for GitKr
 
 - `/usr/share/gitkraken`
 
-- directory above the `exe`
+- directory above the application
 
-- directory of the `exe`
+- directory of the application
 
 - `~/.gitkraken`
 
