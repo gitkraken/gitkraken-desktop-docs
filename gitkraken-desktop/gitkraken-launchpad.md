@@ -13,6 +13,8 @@ The Launchpad displays all of your Pull Requests, Issues, and Works In Progress 
 
 The Launchpad tab can be found in the top-left corner. By default, it displays a list of your Pull Requests, WIPs and Issues for the selected Workspace directly from your Hosting Service and Issue Tracker.
 
+***
+
 #### Connect Integrations
 
 Integrate your repositories, issues, and pull requests with the Launchpad to consolidate your workflow.
@@ -38,6 +40,8 @@ Pull Requests and Issues can be pinned (and unpinned) by selecting the <i class=
 
 <img src="/wp-content/uploads/gkc-launchpad-pinsnooze-10-0-0.gif" class="img-bordered img-responsive center">
 
+***
+
 ### Personal or Team view
 
 <img src="/wp-content/uploads/gkc-launchpad-personal-team-10.0.0.png" class="img-bordered img-responsive center">
@@ -45,6 +49,8 @@ Pull Requests and Issues can be pinned (and unpinned) by selecting the <i class=
 The Launchpad can be viewed in Personal or Team mode. Personal mode displays only the items where you are involved (created by you, assigned to you or created by you), while Team mode shows all pull requests and issues for the repositories in your Workspace - giving you a high level view of your team's coding efforts. You can toggle between these views by selecting the corresponding icon in the top right corner of the Launchpad.
 
 Note that Personal mode allows to see all items where you are involved in the remote hosting service, without limiting to a selected Workspace (select None in the Workspace dropdown). But Team mode requires a Workspace to be selected.
+
+***
 
 ### Pull Requests
 
@@ -86,15 +92,30 @@ If you are working with a GitHub.com Workspace, you may select a pull request to
 You can switch the Issue Tracker provider from the Issues section. The Issue Tracker provider can be set up in the <kbd>Preferences > Integrations</kbd> tab.
 
 <img src="/wp-content/uploads/gkc-launchpad-issues-10-0-0.png" class="img-bordered img-responsive center">
+***
 
 ### WIPs
 
 The WIPs section displays all uncommitted changes for the repositories in the selected Workspace. You can quickly open the repository in a repository tab by clicking on <button class="button button--success button--ui button--nolink">View Repo</button>.
 
-### ALL
+***
+
+### All
 
 The ALL section displays all pull requests, issues, and WIPs for the repositories in the selected Workspace.
 
-### SNOOZED
+***
+
+### Snoozed
 
 The SNOOZED section displays all snoozed pull requests and issues. You can unsnooze them by clicking on the <i class="fa-solid fa-snooze"></i> icon.
+
+***
+
+### Launchpad Summary
+
+The Launchpad summary in the status bar displays your most critical pull request. To view a detailed summary of your pull requests categorized by status (e.g., ready to merge, blocked, needs review), click on the indicator in the status bar. This action will open the Launchpad tab with the relevant status group expanded, allowing you to see more details and take appropriate actions on the pull requests.
+
+The pull requests shown in the Launchpad summary are determined by the filters applied in the Launchpad tab.
+
+<img src="/wp-content/uploads/gkd-launchpad-summary.gif" class="img-bordered img-responsive center">

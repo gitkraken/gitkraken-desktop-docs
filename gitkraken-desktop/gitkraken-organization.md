@@ -40,6 +40,19 @@ Only members that have a [role](/gitkraken-desktop/gitkraken-organization/#roles
 
 You can also add licenses in bulk to your organization separately from adding users by going to the [Subscription](/gitkraken-desktop/gitkraken-subscriptions/) section in your organization.
 
+
+### Inviting Users to Your Organization
+
+As a User, you have the ability to invite other users to the organization for an Owner, Admin, or Billing Contact to approve and/or purchase a license for. 
+
+To invite a user, navigate to gitkraken.dev > Users > Invite Users. Then provide the email(s) of the desired user(s). 
+
+<img src='/wp-content/uploads/gkdev-invite-user-as-user.png' srcset='/wp-content/uploads/gkdev-invite-user-as-user@2x.png' class='img-bordered img-responsive center'>
+
+This will send an email to any Owner, Admin, or Billing Contact to review the invited user. They can select `Review` on the email or see the invitees from gitkraken.dev > Users > Review. Here, they can Approve or Deny the user. If your organization is at its user limit, you will be prompted to purchase an additional license when approving.
+
+<img src='/wp-content/uploads/gkdev-review-user-invite.png' srcset='/wp-content/uploads/gkdev-review-user-invite@2x.png' class='img-bordered img-responsive center'>
+
 ***
 
 ## Reallocate Licenses

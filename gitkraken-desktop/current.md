@@ -12,7 +12,63 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 
 <a href="https://www.gitkraken.com/download" target="_blank" class="button button--basic ">Download Current Version Now</a>
 
-Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) to see what we’re working on.
+Check out our [GitKraken Roadmap](https://www.gitkr33aken.com/git-client/roadmap) to see what we’re working on.
+
+***
+<a id="v10-1-0"></a>
+## Version 10.1.0
+
+_“It's a bird, it's a plane... it's your Launchpad summary in the status bar!”_
+
+_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-10-1-0) and see how it all works!_
+
+### Tuesday, July 9th, 2024
+
+### New ✨
+ - **Keep an eye on your most important PRs with the Launchpad summary in the status bar**
+   - The Launchpad summary indicates your most critical pull request in the status bar.
+   - Click on the indicator in the status bar to open a summary of your pull requests grouped by status, such as ready to merge, blocked, and needs your review.
+   - Clicking on a pull request status group will open the Launchpad tab with the relevant group expanded so you can see more info and take action on the pull requests.
+   - The Launchpad summary contains pull requests based on the filters set in the Launchpad tab. 
+ - **Customize your Repository Management tab**
+   - Reorder repository groups by dragging and dropping the header to create a more organized list that fits your workflow.
+   - Change the color of a group by selecting `Change color` in the three-dot menu of any repo group. Use color to categorize Workspaces or highlight your most used groups of repositories.
+   - Set a default color for Workspaces and other groups in *Preferences > UI Customization*
+ - **Commit search with multi-language support**
+   - The commit search now supports searching for UTF-8 characters
+
+### Improvements 🙌
+ - Launchpad:
+   - Added an 'Author' column for pull requests and issues
+   - Added a pull request action to checkout the branch if a local repository is found.
+   - Added a pull request action to clone the repository if it is not found locally.
+   - Added the ability to clone or locate the repository from the pull request panel.
+ - Repository Management tab:
+   - Added a new repo group to display recently opened repositories.
+   - Added a button to open a Cloud Workspace in the Launchpad tab so you can see all PRs for the repositories in that Workspace.
+   - Improved loading speeds when there are a large number of repositories.
+ - Experimental Feature - Git Executable:
+   - Added interactive rebase support
+     - Includes support for interactive rebase actions `edit commit message`, `drop commit(s)`, `move commit(s) up / down`, and `squash commits`
+   - Added create/rename branch support.
+   - Added load stashes support.
+   - Added support for the Fetch All and Pull All actions in the Repository Management tab.
+   - Added support for applying a Cloud Patch with cherry-pick.
+ - Upgraded to Electron 30.
+
+### Bug Fixes 🐛
+ - Fixed an issue where hiding and showing folders in the left panel wasn't working.
+ - Fixed an issue where Cloud Patches could not be created after resolving a merge conflict.
+ - Lowered minimum window dimensions to fix maximizing on GNOME-based desktop environments at lower resolutions.
+ - Fixed an issue where submodules were not synced when doing a fast-forward.
+ - Experimental Feature - Git Executable:
+   - Fixed an issue where branches couldn't be fast-forwarded to HEAD using the context menu when HEAD is checked out at a specific commit.
+   - Fixed an issue where authentication was not prompted once credentials expired.
+ - Fixed an issue where repositories could not be added to an Azure Workspace with manually added repositories.
+ - Removed the unused 'People' column from the WIPS-only view in Launchpad.
+ - Fixed cases when Azure DevOps issues would not load within Launchpad.
+ - Fixed <kbd>Ctrl+Tab</kbd> skipping over a tab when on the Repo Management or Launchpad tab.
+ - Fixed <kbd>Ctrl+Tab</kbd> / <kbd>Ctrl+Shift+Tab</kbd> not being able to enter an expanded Launchpad tab.
 
 ***
 

@@ -93,3 +93,13 @@ All you need to do is fill out the fields and select <button class='button butto
      <p>GitKraken Desktop also allows initializing a repository directly to a remote Git hosting provider such as GitHub and Bitbucket.</p>
  </div>
 
+***
+
+### Customize your Repository Management tab
+
+* Reorder repository groups by dragging and dropping the header to create a more organized list that fits your workflow.
+* Change the color of a group by selecting Change color in the three-dot menu of any repo group. Use color to categorize Workspaces or highlight your most used groups of repositories.
+* Set a default color for Workspaces and other groups in Preferences > UI Customization
+
+<img src='/wp-content/uploads/gkd-repo-mgm-tab-customize1.gif' class='img-bordered img-responsive center'>
+
