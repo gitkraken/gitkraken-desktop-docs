@@ -60,11 +60,11 @@ GitKraken Desktop data is stored in `/Users/{user}/.gitkraken` == `~/.gitkraken`
 
 ***
 ## Linux (.deb, .rpm, and .tar.gz files)
-* **.deb system requirements:** Ubuntu 18.04 LTS or later
-* **.rpm system requirements:** RHEL 7+, CentOS 7+, or Fedora 34+
+* **.deb system requirements:** Ubuntu 18.04+ LTS or Debian 10+
+* **.rpm system requirements:** RHEL 8+ or Fedora 39+
 
 <div class='callout callout--warning'>
-    <p>Note 📝 - GitKraken Desktop currently supports Ubuntu 18.04 LTS+, RHEL 7+, CentOS 7+, and Fedora 34+. While GitKraken Desktop may be able to be installed on other Linux distributions, we cannot guarantee that it will work as expected.</p>
+    <p>Note 📝 - GitKraken Desktop currently supports Ubuntu 18.04+ LTS, RHEL 8+, and Fedora 39+. While GitKraken Desktop may be able to be installed on other Linux distributions, we cannot guarantee that it will work as expected.</p>
 </div>
 
 <div class='embed-container embed-container--16-9'>

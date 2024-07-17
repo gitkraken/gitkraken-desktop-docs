@@ -74,7 +74,8 @@ GitKraken data is stored in `/Users/{user}/.gitkraken` == `~/.gitkraken`. No dat
 
 ### Linux (.deb and .tar.gz files)
 
-* **System requirements:** Ubuntu LTS 18.04 or later
+* **.deb system requirements:** Ubuntu 18.04+ LTS or Debian 10+
+* **.rpm system requirements:** RHEL 8+ or Fedora 39+
 
 #### .deb
 
