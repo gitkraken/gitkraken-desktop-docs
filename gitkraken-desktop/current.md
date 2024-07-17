@@ -15,6 +15,21 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 Check out our [GitKraken Roadmap](https://www.gitkr33aken.com/git-client/roadmap) to see what we’re working on.
 
 ***
+<a id="v10-1-1"></a>
+## Version 10.1.1
+
+_Read the [full release notes](https://help.gitkraken.com/gitkraken-client/current/#version-10-1-1) and see how it all works!_
+
+### Wednesday, July 17th, 2024
+
+### Improvements 🙌
+ - Updated the look & feel of the Repository Management tab.
+ - Updated the look & feel of the Launchpad summary in the status bar.
+
+### Bug Fixes 🐛
+ - Fixed a bug where cloning from the Repository Management tab could result in being unable to switch tabs (even after cloning was finished).
+
+***
 <a id="v10-1-0"></a>
 ## Version 10.1.0
 
