@@ -92,6 +92,15 @@ wget https://release.gitkraken.com/linux-standalone/gitkraken-amd64.tar.gz
 tar -xvzf gitkraken-amd64.tar.gz
 ```
 
+#### .rpm
+
+```
+wget https://release.gitkraken.com/linux-standalone/gitkraken-amd64.rpm
+sudo dnf install ./gitkraken-amd64.rpm
+```
+
+Note: for older distros that do not have `dnf`, you should use `yum` instead.
+
 #### Data Location
 
 GitKraken data is stored in `/home/{user}/.gitkraken` == `~/.gitkraken`. No data is stored outside of user's machine or remote services _(GitHub Enterprise, Bitbucket Server, etc)_.
