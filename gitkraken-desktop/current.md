@@ -12,14 +12,14 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 
 <a href="https://www.gitkraken.com/download" target="_blank" class="button button--basic ">Download Current Version Now</a>
 
+Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) to see what we’re working on.
+
 ***
 
 <a id="v10-2-0"></a>
 ## Version 10.2.0
 
 _“We kept tabs on that Cloud Patch button you all loved.”_
-
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-10-2-0) and see how it all works!_
 
 ### Thursday, August 8th, 2024
 
