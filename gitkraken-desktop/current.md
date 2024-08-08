@@ -12,9 +12,8 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 
 <a href="https://www.gitkraken.com/download" target="_blank" class="button button--basic ">Download Current Version Now</a>
 
-Check out our [GitKraken Roadmap](https://www.gitkr33aken.com/git-client/roadmap) to see what we’re working on.
-
 ***
+
 <a id="v10-2-0"></a>
 ## Version 10.2.0
 
@@ -63,10 +62,9 @@ _Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/curr
  - Fixed duplicate base branch options that showed when creating a branch in the Launchpad issue view panel.
 
 ***
+
 <a id="v10-1-1"></a>
 ## Version 10.1.1
-
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-client/current/#version-10-1-1) and see how it all works!_
 
 ### Wednesday, July 17th, 2024
 
@@ -82,8 +80,6 @@ _Read the [full release notes](https://help.gitkraken.com/gitkraken-client/curre
 ## Version 10.1.0
 
 _“It's a bird, it's a plane... it's your Launchpad summary in the status bar!”_
-
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-10-1-0) and see how it all works!_
 
 ### Tuesday, July 9th, 2024
 
