@@ -32,7 +32,7 @@ When you’re ready, type your message and hit commit to commit your changes. Yo
 
 You can commit and automatically push your changes to the remote. Stage changes and type a commit message to enable the option for commit and push.
 
-<img src='/wp-content/uploads/9-10-commit-push.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/gkd-10-2-commit-push.png' class='img-bordered img-responsive center'>
 
 The graph updates with your commit, but the undo button or this keyboard shortcut
 <kbd>&#8984;</kbd> + <kbd>Z</kbd> for Mac or <kbd>Ctrl</kbd> + <kbd>Z</kbd> for Windows/Linux can undo a commit made by mistake.
@@ -57,13 +57,13 @@ The commit panel will then show the co-author in the history for that commit:
 
 ### Bypass git hooks
 
-There may be times when you want to skip your Git hooks when making a commit. This can be done on a commit-by-commit basis by selecting the `Commit and skip hooks` option. 
+There may be times when you want to skip your Git hooks when making a commit. This can be done on a commit-by-commit basis by selecting the `Skip git hooks` option. 
 
 <div class='callout callout--warning'>
     <p>Note 📝 - Using this option will bypass all hooks that trigger with git commit action.</p>
 </div>
 
-<img src='/wp-content/uploads/bypass-git-hooks.png' class='img-responsive center img-bordered' />
+<img src='/wp-content/uploads/gkd-10-2-bypass-git-hooks.png' class='img-responsive center img-bordered' />
 
 ***
 

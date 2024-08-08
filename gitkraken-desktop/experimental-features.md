@@ -90,6 +90,9 @@ Find below a list of features using the Git binary if the Git Executable experim
 **Added in 10.0.2:**
 - Added push tag support.
 
+**Added in 10.2.0:**
+- Added git status support.
+
 ---
 
 ### AI Commit Message Generation

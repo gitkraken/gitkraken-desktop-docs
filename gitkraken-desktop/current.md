@@ -12,13 +12,59 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 
 <a href="https://www.gitkraken.com/download" target="_blank" class="button button--basic ">Download Current Version Now</a>
 
-Check out our [GitKraken Roadmap](https://www.gitkr33aken.com/git-client/roadmap) to see what we’re working on.
+***
+
+<a id="v10-2-0"></a>
+## Version 10.2.0
+
+_“We kept tabs on that Cloud Patch button you all loved.”_
+
+_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-10-2-0) and see how it all works!_
+
+### Thursday, August 8th, 2024
+
+### New ✨
+ - **New Commit Panel changes**
+   - Added a tabbed form for committing, stashing, creating Cloud Patches, and creating Code Suggestions.
+   - Use the staging area to choose which changes you want to stash. This now allows you to easily stash specific files and adds support for stashing specific hunks.
+ - **Team Launchpad is even more actionable with PR groupings by status**
+   - Visit the Launchpad tab and toggle the view from `Personal` to `Team` to see all PRs and Issues for the repositories in a Cloud Workspace.
+   - The Team Launchpad (preview) now groups pull requests by status like the Personal Launchpad.
+
+
+### Improvements 🙌
+ - Improved the flow of opening a repo from a new tab:
+   - Added a button to open the Repository Management tab.
+   - Added a button to browse and open a repository.
+ - Repository Management tab:
+   - Added an option to hide/unhide groups.
+   - Added an option to set a group's color to default color set in *Preferences > UI Customization*.
+ - Launchpad:
+   - Improved the UX of filtering.
+   - Added 'None' options for Launchpad pull request and issue filters.
+ - Experimental Feature - Git Executable:
+   - Added support for git status.
+ - Updated Electron to v31.
+ - Updated Git to 2.45.2.
+
+
+### Bug Fixes 🐛
+ - Fixed an issue where Cloud Workspace repositories were not loading after connecting the integration in the Repository Management tab.
+ - Fixed an issue where the dropdown menu would not close when clicking one of its options in the Repository Management tab.
+ - Fixed an issue where the author filter in the Commit Graph was selecting and deselecting teams/members that you had not clicked on.
+ - Fixed an issue where the open repository dialog did not remember the last opened repository and always showed the home directory.
+ - Fixed an issue where interactive rebase editor showed context menu options not matching the drop-down menu options.
+ - Fixed an issue where the Commit Graph was not sorting checked items to the top when re-opening the author filter.
+ - Fixed issues where the build status of a pull request in Launchpad would be incorrect.
+ - Fixed an issue where the Commit Graph would display an unaesthetic continuous line when the avatar image had a transparent background.
+ - It is now possible to filter by files with spaces in the right panel.
+ - Fixed issues where performing organization actions (such as inviting new members) could fail silently or show a false success message after failing.
+ - Fixed duplicate base branch options that showed when creating a branch in the Launchpad issue view panel.
 
 ***
+
 <a id="v10-1-1"></a>
 ## Version 10.1.1
-
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-client/current/#version-10-1-1) and see how it all works!_
 
 ### Wednesday, July 17th, 2024
 
@@ -34,8 +80,6 @@ _Read the [full release notes](https://help.gitkraken.com/gitkraken-client/curre
 ## Version 10.1.0
 
 _“It's a bird, it's a plane... it's your Launchpad summary in the status bar!”_
-
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-10-1-0) and see how it all works!_
 
 ### Tuesday, July 9th, 2024
 

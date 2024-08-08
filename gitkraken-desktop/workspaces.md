@@ -101,24 +101,47 @@ To do this, select your local Workspace to open it and then select `Create cloud
 
 Edit a Workspace by selecting the ellipsis <i class="fas fa-ellipsis-v"></i> icon by the Workspace name.
 
-<img src="/wp-content/uploads/gkc-10-edit-a-workspace.png" srcset="/wp-content/uploads/edit-a-workspace@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-10-2-edit-a-workspace.png" class="img-bordered img-responsive center">
 
-
-***
-
-## View Repository Details
-
-You may select the <i class="fa-solid fa-list"></i> icon to open the repository details.
-
-<img src="/wp-content/uploads/gkc-10-repos-status.png" srcset="/wp-content/uploads/repository-details@2x.png" class="img-bordered img-responsive center">
+The available options are:
 
 ***
 
-## Repository statuses
+### Hide
 
-Workspaces expose the state of all repositories so you can see the last checked-out branch, how many commits are ahead or behind the remote, and your work in progress with counts of modified added, deleted, and renamed files.
+You can hide a workspace to declutter your view, just as you can hide other groups in the Repo Management Tab (e.g., Recent Repositories or Favorites).
 
-<img src="/wp-content/uploads/gkc-10-repos-status.png" srcset="/wp-content/uploads/repos-status@2x.png" class="img-bordered img-responsive center">
+To show a hidden workspace or group, simply click the <i class="fa-solid fa-eye-slash"></i> icon to unhide.
+
+<img src="/wp-content/uploads/gkd-10-2-hide-workspaces.png" class="img-bordered img-responsive center">
+
+***
+
+### Select/Unselect
+
+You can select or unselect repositories within a workspace. This functionality allows you to perform specific actions, such as fetching, pulling, or opening repositories in VS Code, on the selected repositories only.
+
+***
+
+### Open/Clone/Locate Repositories
+
+Use this option to open, clone, or locate repositories. You can apply these actions to the selected repositories or to all repositories within the workspace.
+
+<img src="/wp-content/uploads/gkd-10-2-open-clone-locate-workspaces.png" class="img-bordered img-responsive center">
+
+***
+
+### Edit Workspace
+
+Customize your workspace by editing its name, color in the Repo Management Tab, description, and the list of members with access to the workspace. This helps you keep your workspace organized and accessible to the right team members.
+
+<img src="/wp-content/uploads/gkd-10-2-edit-workspace.png" class="img-bordered img-responsive center">
+
+***
+
+### Change Color
+
+Similar to what you can do with Edit Workspace, change the color of your Workspace (or group) by selecting `Change color` in the three-dot menu of any repo group. Use color to categorize Workspaces or highlight your most used groups of repositories.
 
 ***
 
