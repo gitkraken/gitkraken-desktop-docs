@@ -36,6 +36,12 @@ If you only need to pop your stash, then use the Pop Stash button in the upper t
 
 <a name="stashing-from-the-left-panel"></a>
 
+### Stashing from commit panel
+
+Stage your file and click on the Stash icon to enable the option.
+
+<img src='/wp-content/uploads/gkd-10-2-0-stash.gif' class='img-bordered img-responsive center'>
+
 ### Stashing from the left panel
 
 Your stashes will be available from the left panel for review. The same options to Apply, Pop, Delete, Hide, Hide all, or Show all are present too:
