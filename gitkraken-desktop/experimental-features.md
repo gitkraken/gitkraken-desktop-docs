@@ -154,9 +154,9 @@ Cloud Patches allow the ability to engage early with your team before a pull req
 
 #### How to work with Cloud Patches
 
-To create a Cloud Patch, click the share icon <i class="fa-solid fa-share"></i> in the WIP commit panel and stage the changes you want to include in the Cloud Patch. You can also create a Cloud Patch from a commit by right-clicking on a commit in the Commit Graph and selecting `Share commit as Cloud Patch`. Once created, you can select `Copy Cloud Patch link` from the toast or by right-clicking a Cloud Patch in the left panel where all your Cloud Patches will be listed.
+To create a Cloud Patch, stage the changes you want to include in the Cloud Patch and click on the Cloud Patch icon. You can also create a Cloud Patch from a commit by right-clicking on a commit in the Commit Graph and selecting `Share commit as Cloud Patch`. Once created, you can select `Copy Cloud Patch link` from the toast or by right-clicking a Cloud Patch in the left panel where all your Cloud Patches will be listed.
 
-<img src='/wp-content/uploads/gkc-create-cloud-patch.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/gkd-10-2-0-create-cloud-patch.png' class='img-bordered img-responsive center'>
 
 When creating a Cloud Patch, you have the following sharing options:
 
@@ -168,7 +168,6 @@ When creating a Cloud Patch, you have the following sharing options:
 
 Cloud Patches shared with you can be viewed in the Cloud Patches Left Panel section under `Shared with Me`.
 
-<img src='/wp-content/uploads/Cloud-Patch-Permissions.png' class='img-bordered img-responsive center'>
 
 Cloud Patch links can be shared with users to open the Cloud Patch in GitKraken Desktop or GitLens. When a Cloud Patch link is opened, the user will be prompted to open the client, clone or open the repository if not known to GitKraken Desktop, and then select the base branch to apply the patch to. From here, they can simply select `apply patch to <branch>`. 
 
