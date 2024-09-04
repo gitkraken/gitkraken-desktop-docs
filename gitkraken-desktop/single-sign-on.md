@@ -71,7 +71,7 @@ Single sign-on requires a GitKraken Teams, GitKraken Enterprise, or a 30-day mul
 - Accounts belong to the domain and organization. When SSO is enabled:
   - Users cannot create additional organizations or subscriptions.
   - Accounts cannot self-leave the organization 
-  - Users cannot change their account email.
+  - Users cannot change their account email or password.
   - Existing accounts that already have additional organizations or subscriptions will still have them.
   - Existing accounts cannot access their additional organizations or subscriptions until they can login using SSO and are a part of the organization.
 
