@@ -7,15 +7,15 @@ taxonomy:
 
 ---
 
-GitKraken offers a Single Sign On (SSO) option as an easy way to sign in to your account. This is only for use with the cloud versions of GitKraken, it is not available for the serverless options.
+Single Sign On (SSO) is an easy way to manage your users across all your services. This is only for use with the cloud versions of GitKraken, it is not available for On-Premise plans.
 
-Once your organization has set up SSO with an Identity Provider (IdP), the Owner or an Admin on your GitKraken organization can link your organization to that identity provider. Then, any users associated with your IdP can login to GitKraken apps and services. 🎉
+Once your organization has set up SSO with an Identity Provider (IdP), the Owner or an Admin on your GitKraken organization can link your organization to that identity provider. Then, any users associated with your IdP can login to GitKraken apps and services.
 
-<div class='callout callout--warning'>
-    <p><strong>Note:</strong> You must have an active GitKraken Teams or Enterprise License to enable SSO</p>
-</div>
+Note: You must have a GitKraken Teams or GitKraken Enterprise subscription to enable SSO. You also can try SSO during a 30-day multi-user trial.
 
-## What is Single Sign On (SSO)?
+***
+
+## What is Single Sign-on (SSO)?
 
 The <a href='https://en.wikipedia.org/wiki/Single_sign-on' target='_blank'>Wikipedia</a> definition of SSO:
 
@@ -49,124 +49,76 @@ Examples of  third party apps:
 * <a href='https://www.atlassian.com/software/jira' target='_blank'>Jira</a> 
 
 ***
+
 ## SSO in GitKraken
 
-GitKraken is a 3rd party application in this scenario. You (or an Owner/Admin) setup which IdP(s) you want to use and we will use them to log them in. If your organization has already set up SSO with an IdP and in GitKraken, simply [sign in](/gitkraken-desktop/single-sign-on/#logging-in-using-sso) and you are all set! 
+GitKraken is a 3rd party application in this scenario. The owner or an admin of the GitKraken organization can set up SSO with GitKraken.
 
-If you need to set up SSO for your GitKraken Organization see [Setting up SSO on a GitKraken Organization](/gitkraken-desktop/single-sign-on/#setting-up-sso-on-a-gitkraken-organization)
 ### Supported Identity Providers
 
-GitKraken may initiate an Oauth authentication flow with the following supported Identity Providers (IdPs):
-
-* <a href='https://azure.microsoft.com/' target='_blank'>Azure Active Directory</a> 
-* <a href='https://www.okta.com/' target='_blank'>Okta</a>
-* <a href='https://cloud.google.com/identity-platform' target='_blank'>Google Identity Platform (G Suite)</a>
-* <a href='https://www.pingidentity.com/' target='_blank'>Ping Identity</a>
-
-<div class='callout callout--warning'>
-    <p><strong>Note:</strong> Your IdP(s) will first need to be configured before setting up the connection in GitKraken.</p>
-</div>
-
-While we do not assist in setting up the identity provider, the [example IdP setup section](/gitkraken-desktop/single-sign-on/#example-identity-provider-idp-setup-instructions) gives step-by-step instructions for what this typically looks like.
+GitKraken uses SAML 2.0 for SSO, therefore any IdP that supports SAML 2.0 should work with GitKraken.
 
 ### License Requirements
 
-Single Sign On is available as part of the <a href='https://www.gitkraken.com/git-client/pricing' target='_blank'>teams and enterprise plans</a>. 
+Single sign-on requires a GitKraken Teams, GitKraken Enterprise, or a 30-day multi-user trial. To use multiple domains requires GitKraken Enterprise or a 30-day multi-user trial.
 
-### Setting up SSO on a GitKraken Organization
+### SSO Enforcement on GitKraken
 
-First, some quick notes:
+- GitKraken SSO is enforced at the domain level. This means every account on GitKraken that has an email for the account which matches the domain is required to login using SSO.
+  - Only users with the user or billing contact role are required to use SSO. The Owner and admins of the organization can login using any method of choice.
+- SSO is also enforced by the organization. This means that all users that match the domain must be a part of the organization to login.
+  - This also means that all members in the organization must match one of your SSO domains. Before turning on SSO, all non-matching users must be removed from the organization.
+- Accounts belong to the domain and organization. When SSO is enabled:
+  - Users cannot create additional organizations or subscriptions.
+  - Accounts cannot self-leave the organization 
+  - Users cannot change their account email.
+  - Existing accounts that already have additional organizations or subscriptions will still have them.
+  - Existing accounts cannot access their additional organizations or subscriptions until they can login using SSO and are a part of the organization.
 
-* SSO is set up at the Organization level. Each organization can have 0,1, or many identity providers connected simultaneously.
-* SSO can only be set up by the Owner or by an Admin of the organization. 
+### Just-in-time provisioning (JIT)
 
-How to set up SSO:
+You can enable JIT on gitkraken.dev/settings/sso. With JIT enabled, when a user logs in with SSO successfully and is not part of your organization, they will automatically join your organization and consume a license. You do need to have spare licenses available for this to work, if all licenses are used then the user will not join automatically even if JIT is on.
 
-1. <a href='https://app.gitkraken.com/' target='_blank'>Login</a> and navigate to the organization you want to enable SSO for.
+### SSO login experience
 
-2. On the left menu click on **SSO**.
+- To login with SSO, click “SSO” on the login page.
+- When a user that belongs to your domain logs in using anything but SSO, they will see a message explaining they need to login using SSO.
+- When a user logs in using SSO successfully but is not a part of the organization, they will receive a message telling them to contact their admin to join the GitKraken organization.
+- The owner and admins of the organization can log in using any method.
 
-<div class='callout callout--warning'>
-    <p>If you do not see the SSO option, confirm that: 1. You are logged in as the Owner or an Admin for this organization 2. Your organization has either a Teams or Enterprise subscription</p>
-</div>
+***
 
-3. Click the `Enable SSO` checkbox and you will be presented with some additional fields:
+## Setup SSO
 
-**Organization Domain Name:** The domain that is used for everyone who wants to use SSO to login. Each user must have a matching domain in their email address and each user must be defined in the IdP.
+- Login to gitkraken.dev.
+  - Login as an owner or admin.
+  - Navigate the left sidebar to [Settings], then [Single sign-on].
+- Click [Setup SSO].
+  - If you have created SSO connections before then you should see a table of connections. If you would prefer to follow along from a blank state, delete all connections in the table.
+- Fill out the form to create your first connection.
+  - Connection name: this is to name the connection that will be shown to your users throughout GitKraken.
+  - Domain: it’s best to add the domain in a basic form (e.g. gitkraken.com).
+  - Identity URL: you need to copy and paste this into your identity provider to set up the integration.
+  - Credentials: select the method of choice from Metadata URL, Metadata (raw), or Certificate. Copy it from your IdP and paste it in the textbox(es).
+  - Once it is all filled out, click [Create Connection].
+- Verify domain ownership.
+  - Copy the TXT record shown on GitKraken.
+  - Login to your DNS server.
+  - Create a new record on the DNS server by pasting the TXT record in and saving it.
+  - Return to GitKraken and click [Verify Ownership].
+  - NOTE: it can take minutes or hours for the new record to reflect, depending on your DNS server.
+- Add additional domains (optional).
+  - If you have more than one domain present for your user base on GitKraken, then add additional domains before continuing to step 6 by clicking [Add Connection] and repeating steps 3 and 4 above.
+- Enable SSO
+  - Make sure the connections in the table are all enabled (if you see [Disable] in the table, that means the connection is enabled).
+  - Turn on the [Enable SSO] switch at the top of the dashboard.
+  - (Possible) Enabling SSO requires all members of the organization to match one of your domains. You might see a pop up that shows all the users that don’t match. You can remove them all here to continue or click [Cancel] and add additional domains before continuing (see step 5).
+  - (Possible) Enabling SSO means that all users that match your SSO domains can no longer login until they join your organization. When enabling SSO a pop up may show all GitKraken accounts that belong to your domains but are not a part of the organization. Here you can choose which accounts to add to your organization. The ones you don’t add will not be able to login until you add them. If you are missing a domain, you can click [Cancel] and add additional domains before continuing (see step 5).
+  - (Optional) turn on JIT to allow additional users to join the organization when they sign in with SSO (requires spare seats).
 
-There is only one domain allowed per GitKraken organization, and it must be unique. If your domain is already in use you can <a href='https://www.gitkraken.com/git-client/contact-support' target='_blank'>contact support</a> for help.
+SSO should now be enabled and enforced across GitKraken for your domains! Be sure to test it. If you encounter issues this article doesn’t address, contact GitKraken support for more help.
 
-**JIT, Enable Just In Time Provisioning:** This allows users in this domain to login with their email and be automatically provisioned a license. In order for a user to be automatically given a license:
-
-* Just in time provisioning must be enabled (JIT option checked)☑.
-* The user email must be part of the SSO domain on the IdP.
-* There must be an available license on the GitKraken Organization.
-
-When a user logs in for the first time using SSO, and all three of the above conditions are met, they will be automatically given a GitKraken license.
-
-4. Click on <button class='button button--success button--ui button--nolink'>Save changes</button> to store the SSO configuration. Once this is completed you will see the <button class='button button--success button--ui button--nolink'>Configure SSO Connection</button> button appear.
-
-5. Click the <button class='button button--success button--ui button--nolink'>Configure SSO Connection</button> button to set up the connection between your GitKraken Organization and the Identity Provider. You will now be able to configure the connection using [Metadata](/gitkraken-desktop/single-sign-on/#add-sso-connection-using-metadata).
-
-### Add SSO Connection using Metadata
-
-Click on <button class='button button--success button--ui button--nolink'>Add Using Metadata</button> and you will see the following fields:
-
-+ **Identity Provider:** choose a [supported provider](/gitkraken-desktop/single-sign-on/#supported-identity-providers) from the drop-down.
-+ **IdP Metadata URL /IdP Metadata:** depending on the  IdP we can use one or both of these options for setting up the SSO connection. 
-+ **Don't enable this connection immediately** ✅ by default new connections are automatically enabled. This checkbox will create the connection but users will not be able to login using SSO with this IdP until it is enabled.
-
-**Example 1:** setting up Okta
-
-Okta is configured using a metadata file.
-1. Access your Okta instance.
-2. Navigate to the Application that you want to use. See our [Okta example](/gitkraken-desktop/single-sign-on/#Okta) for an example of how to make one.
-3. Click on “Sign on” and scroll down to SAML Signing Certificates:
-
-<img src="/wp-content/uploads/sso-okta-certs.png" class="img-bordered img-responsive center">
-
-4. Notice that there is just one Active. Click on Actions for the active certificate.
-
-<img src="/wp-content/uploads/sso-okta-certs-actions.png" class="img-bordered img-responsive center">
-
-5. Click on *Download certificate* and you will be prompted with an xml file.
-6. Copy this file content and paste it into the *IdP metadata* field in the SSO Create Connection form.
-7. Click on <button class='button button--success button--ui button--nolink'>Create Connection</button>. Optionally, you can check “Don’t enable this connection immediately” to not automatically enable this connection and prevent users from using it.
-
-<img src="/wp-content/uploads/sso-okta-paste-metadata.png" class="img-bordered img-responsive center">
-
-**Example 2:** setting up Azure Active Directory
-
-Azure is configured using a metadata URL.
-1. Access to your Azure account, and go to Active Directory -> *Enterprise Applications*.
-
-<img src="/wp-content/uploads/sso-azure-applications.png" class="img-bordered img-responsive center">
-
-2. Navigate to the application that you want to use. See our [Azure Active Directory example](/gitkraken-desktop/single-sign-on/#azure-active-directory) for an example of how to make one.
-3. On the left menu select *Single Sign-on*.
-4. Scroll down to the section: *SAML Signing Certificate*.
-
-<img src="/wp-content/uploads/sso-azure-saml-cert.png" class="img-bordered img-responsive center">
-
-5. Copy the *App Federation Metadata Url*.
-6. Paste this URL into the *Idp metadata URL* field in SSO Create Connection:
-
-<img src="/wp-content/uploads/sso-azure-paste-metadata-url.png" class="img-bordered img-responsive center">
-
-7. Click on <button class='button button--success button--ui button--nolink'>Create Connection</button>. Optionally, you can check “Don’t enable this connection immediately” and choose to later enable it.
-
-<div class='callout callout--none'>
-    <p><strong>Note:</strong> “Just in time provisioning” is either turned on or turned off for all connections in the Organization.</p>
-</div>
-
-## Logging in using SSO
-
-
-When logging into GitKraken Desktop, GitLens, <a href='https://account.gitkraken.com/account-info' target='_blank'>account.gitkraken.com</a> , or anywhere else to access your GitKraken account, you will see the `Sign In with SSO` option.
-
-<img src="/wp-content/uploads/sso-sign-in.png" class="img-bordered img-responsive center">
-
-After clicking **Sign in with SSO**, the SSO form will open and ask for an email address to use for SSO login. Enter your email address and GitKraken will determine which SSO option(s) are available and present them to you. Click an option and you will be sent to the IdP login page to complete the process.
+*** 
 
 ## Example Identity Provider (IdP) setup instructions
 
@@ -220,7 +172,7 @@ How to Create SAML Application in G Suite:
 
 <img src="/wp-content/uploads/sso-example-idp-10.jpg" class="img-bordered img-responsive center">
 
-Now you are all set to [setup your SSO on a GitKraken Organization](/gitkraken-desktop/single-sign-on/#setting-up-sso-on-a-gitKraken-organization)
+Now you are all set to [setup your SSO on a GitKraken Organization](/gitkraken-desktop/single-sign-on/#setting-up-sso-on-a-gitkraken-organization)
 
 ### Azure Active Directory
 
@@ -257,7 +209,7 @@ How to create SAML application in Azure Active Directory:
 
 <img src="/wp-content/uploads/sso-azure-7-1.png" class="img-bordered img-responsive center">
 
-Now you are all set to [setup your SSO on a GitKraken Organization](/gitkraken-desktop/single-sign-on/#setting-up-sso-on-a-gitKraken-organization)
+Now you are all set to [setup your SSO on a GitKraken Organization](/gitkraken-desktop/single-sign-on/#setting-up-sso-on-a-gitkraken-organization)
 ### Okta
 
 <div class='callout callout--warning'>
@@ -297,7 +249,7 @@ Step 10: Select “I am an Okta customer adding an internal app” from option m
 
 <img src="/wp-content/uploads/sso-okta-7.png" class="img-bordered img-responsive center">
 
-Now you are all set to [setup your SSO on a GitKraken Organization](/gitkraken-desktop/single-sign-on/#setting-up-sso-on-a-gitKraken-organization)
+Now you are all set to [setup your SSO on a GitKraken Organization](/gitkraken-desktop/single-sign-on/#setting-up-sso-on-a-gitkraken-organization)
 
 ### Ping Identity
 
@@ -346,7 +298,7 @@ How to Create SAML Application in Ping Identity
 <img src="/wp-content/uploads/sso-pingidentity-11.png" class="img-bordered img-responsive center">
 
 12.	Select *Manually Enter*. Type in the URL for *ACS URLs* and *Entity ID*, then click on *Save*.
-(URL: `https://api.gitkraken.com/oauth/sso/callback`))
+(URL: `https://api.gitkraken.com/oauth/sso/callback`)
 
 <img src="/wp-content/uploads/sso-pingidentity-12.png" class="img-bordered img-responsive center">
 
@@ -376,13 +328,11 @@ How to Create SAML Application in Ping Identity
 
 <img src="/wp-content/uploads/sso-pingidentity-18.png" class="img-bordered img-responsive center">
 
-19.	On app.gitkraken.com, go to your organization and click on *SSO* then click on *Enable SSO*. Type in your domain in *Organization Domain Name* with *.com* . Then click on *Configure SSO Connection*.
+19.	Log into https://staging.gitkraken.dev/settings/sso and select "Setup SSO". Type in your Connection name and Domain. 
 
-<img src="/wp-content/uploads/sso-pingidentity-19.png" class="img-bordered img-responsive center">
+20.	Then use the *IDP Metadata URL* and *Metadata* from step 18 for *Metadata URL* and *Metadata*. Click on *Create Connection*
 
-20.	Click on *Add Using Metadata* and type in a *Connection name* and from the *Identity Provider* select *Ping Identity*. Then use the *IDP Metadata URL* and *Metadata* from step 18 for *IdP Metadata URL* and *IdP Metadata*. Click on *Create Connection*
-
-<img src="/wp-content/uploads/sso-pingidentity-20.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-ping-identity-sso-connect.png" class="img-bordered img-responsive center">
 
 21.	Now the users who were added in step 7 can *Sign in with SSO*.
 
