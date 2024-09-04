@@ -25,8 +25,6 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) 
 
 _“Label the maple table with sable staples.”_
 
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-10-3-0) and see how it all works!_
-
 ### Wednesday, September 4th, 2024
 
 ### New ✨
