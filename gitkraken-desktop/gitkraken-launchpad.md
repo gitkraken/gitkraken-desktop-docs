@@ -50,6 +50,10 @@ The Launchpad can be viewed in Personal or Team mode. Personal mode displays onl
 
 Note that Personal mode allows to see all items where you are involved in the remote hosting service, without limiting to a selected Workspace (select None in the Workspace dropdown). But Team mode requires a Workspace to be selected.
 
+In Team View you can filter items by users, giving you a more focused view of specific team members' work.
+
+<img src="/wp-content/uploads/gkd-launchpad-teamview-filter-10.3.0.png" class="img-bordered img-responsive center">
+
 ***
 
 ### Pull Requests
@@ -89,9 +93,10 @@ If you are working with a GitHub.com Workspace, you may select a pull request to
 
 ### Issues
 
-You can switch the Issue Tracker provider from the Issues section. The Issue Tracker provider can be set up in the <kbd>Preferences > Integrations</kbd> tab.
+You can switch the Issue Tracker provider from the Issues section. The Issue Tracker provider can be set up in the <kbd>Preferences > Integrations</kbd> tab. 
+Issues can be filtered by created, assigned or mentioned, and labels.
 
-<img src="/wp-content/uploads/gkc-launchpad-issues-10-0-0.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-launchpad-issues-10-3-0.png" class="img-bordered img-responsive center">
 ***
 
 ### WIPs

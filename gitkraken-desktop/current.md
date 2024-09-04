@@ -14,6 +14,43 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) to see what we’re working on.
 
+
+***
+<a id="v10-3-0"></a>
+## Version 10.3.0
+
+<div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/U0BNklVfZQg" frameborder="0" allowfullscreen></iframe>
+</div>
+
+_“Label the maple table with sable staples.”_
+
+### Wednesday, September 4th, 2024
+
+### New ✨
+ - **Customize Launchpad to create the ultimate hub for you and your team's work**
+   - Launchpad can now be filtered by PR and Issue labels.
+   - The Team Launchpad can now be filtered by users, giving you a more focused view of specific team members' work.
+
+
+### Improvements 🙌
+ - Commit Graph:
+   - Added support for having no commit selected in the graph by left-clicking the selected commit. This is an easy way to hide the Commit Details Panel and give the graph more screen space. You can still hide the Commit Details Panel manually with <kbd>cmd/ctrl+K</kbd> or from the `View` app menu.
+   - The author filter in the Commit Graph now groups emails for organization members so you can more easily filter by people instead of selecting all emails associated with a person.
+
+### Bug Fixes 🐛
+ - Experimental Feature - Git Executable:
+   - Fixed an issue with renamed branches where pulling could overwrite local commits.
+   - Fixed an issue where the WIP was not autostashed when dropping the latest commit(s).
+   - Fixed an issue where interactive rebase failed when executed within a submodule.
+   - Fixed an issue on Windows where updating preferences (like long path) was failing when only the bundled Git version was installed.
+ - Fixed an issue where Cloud Patches couldn't be created from commits due to input validation.
+ - GitKraken will now correctly detect Beyond-Compare 5 installations on Windows.
+ - Improved the message in the Launchpad summary to explain when an integration is not connected or not selected.
+ - Fixed an issue where certain repositories were not displayed in the Repository Management tab.
+ - Fixed an issue where transparent branch/tag avatars were displayed with a black background. 
+ - Fixed an issue where repository aliases were not showing in the Repo Management tab.  
+
 ***
 
 <a id="v10-2-0"></a>
