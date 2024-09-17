@@ -300,6 +300,7 @@ How to Create SAML Application in Ping Identity
 12.	Select *Manually Enter*. Type in the URL for *ACS URLs* and *Entity ID*, then click on *Save*.
 (URL: `https://api.gitkraken.com/oauth/sso/callback`)
 
+
 <img src="/wp-content/uploads/sso-pingidentity-12.png" class="img-bordered img-responsive center">
 
 13.	Click on the toggle button so the users would have access to your application.
@@ -328,7 +329,7 @@ How to Create SAML Application in Ping Identity
 
 <img src="/wp-content/uploads/sso-pingidentity-18.png" class="img-bordered img-responsive center">
 
-19.	Log into https://staging.gitkraken.dev/settings/sso and select "Setup SSO". Type in your Connection name and Domain. 
+19.	Log into https://gitkraken.dev/settings/sso and select "Setup SSO". Type in your Connection name and Domain. 
 
 20.	Then use the *IDP Metadata URL* and *Metadata* from step 18 for *Metadata URL* and *Metadata*. Click on *Create Connection*
 
