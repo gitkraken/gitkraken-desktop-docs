@@ -77,7 +77,7 @@ Single sign-on requires a GitKraken Teams, GitKraken Enterprise, or a 30-day mul
 
 ### Just-in-time provisioning (JIT)
 
-You can enable JIT on gitkraken.dev/settings/sso. With JIT enabled, when a user logs in with SSO successfully and is not part of your organization, they will automatically join your organization and consume a license. You do need to have spare licenses available for this to work, if all licenses are used then the user will not join automatically even if JIT is on.
+You can enable JIT on [gitkraken.dev/settings/sso](gitkraken.dev/settings/sso). With JIT enabled, when a user logs in with SSO successfully and is not part of your organization, they will automatically join your organization and consume a license. You do need to have spare licenses available for this to work, if all licenses are used then the user will not join automatically even if JIT is on.
 
 ### SSO login experience
 
@@ -90,7 +90,7 @@ You can enable JIT on gitkraken.dev/settings/sso. With JIT enabled, when a user 
 
 ## Setup SSO
 
-- Login to gitkraken.dev.
+- Login to [gitkraken.dev](gitkraken.dev).
   - Login as an owner or admin.
   - Navigate the left sidebar to [Settings], then [Single sign-on].
 - Click [Setup SSO].
@@ -329,7 +329,7 @@ How to Create SAML Application in Ping Identity
 
 <img src="/wp-content/uploads/sso-pingidentity-18.png" class="img-bordered img-responsive center">
 
-19.	Log into https://gitkraken.dev/settings/sso and select "Setup SSO". Type in your Connection name and Domain. 
+19.	Log into [gitkraken.dev/settings/sso](https://gitkraken.dev/settings/sso) and select "Setup SSO". Type in your Connection name and Domain. 
 
 20.	Then use the *IDP Metadata URL* and *Metadata* from step 18 for *Metadata URL* and *Metadata*. Click on *Create Connection*
 
