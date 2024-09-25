@@ -30,9 +30,9 @@ To authenticate with Bitbucket, navigate to the upper right corner to access <kb
 
 <img src="/wp-content/uploads/preferences.png" srcset="/wp-content/uploads/preferences@2x.png" class="img-bordered img-responsive center">
 
-Or alternatively if you are in the <kbd>New Tab</kbd> view, click on <kbd>Preferences</kbd> under <strong>Customize</strong>.
+Or alternatively if you are in the <kbd>New Tab</kbd> view, click on <kbd>See all the integrations</kbd> under <strong>Integrations</strong>.
 
-<img src="/wp-content/uploads/customize.png" srcset="/wp-content/uploads/customize@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-newtab-integrations.png" srcset="/wp-content/uploads/gkc-newtab-integrations@2x.png" class="img-bordered img-responsive center">
 
 From the Integrations window, select Bitbucket.org and then hit the <button class='button button--success button--ui button--nolink'>Connect to Bitbucket</span></button> button.
 

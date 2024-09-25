@@ -34,9 +34,9 @@ To authenticate with GitLab Self-Managed, navigate to the upper right corner to 
 
 <img src="/wp-content/uploads/preferences.png" srcset="/wp-content/uploads/preferences@2x.png" class="img-bordered img-responsive center">
 
-Or alternatively if you are in the <kbd>New Tab</kbd> view, click on <kbd>Preferences</kbd> under <strong>Customize</strong>.
+Or alternatively if you are in the <kbd>New Tab</kbd> view, click on <kbd>See all the integrations</kbd> under <strong>Integrations</strong>.
 
-<img src="/wp-content/uploads/customize.png" srcset="/wp-content/uploads/customize@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-newtab-integrations.png" srcset="/wp-content/uploads/gkc-newtab-integrations@2x.png" class="img-bordered img-responsive center">
 
 From the _Integrations_ window, enter your _Host Domain_, then click the Generate a token on GitLab link.  Note the permissions that need to be assigned to the token on your GitLab Self-Managed server.
 
