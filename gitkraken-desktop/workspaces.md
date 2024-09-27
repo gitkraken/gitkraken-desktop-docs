@@ -147,4 +147,4 @@ Similar to what you can do with Edit Workspace, change the color of your Workspa
 
 ## Requirement for Azure Workspaces and Insights
 
-In order to work with Workspaces and [Insights](/gitkraken-desktop/insights/) for Azure, `Third-party application access via OAuth` will need to be enabled in Azure from `Organization Settings > Policies`. You can find more information on this setting [here](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops).
+In order to work with Workspaces and [Insights](/gk-dev/gk-dev-insights/) for Azure, `Third-party application access via OAuth` will need to be enabled in Azure from `Organization Settings > Policies`. You can find more information on this setting [here](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops).

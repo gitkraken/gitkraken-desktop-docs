@@ -179,4 +179,4 @@ To delete a cloud path, right-click it and select `Delete Cloud Patch`.
 
 #### Self-Hosting Cloud Patch data
 
-If you do not want your Cloud Patch data stored on GitKraken Servers, we offer the ability for you to host Cloud Patches on your own AWS S3 storage instance. For more information on configuring this, see our documentation [here](/gk-dev/gk-dev-administration/#self-hosted).
+If you do not want your Cloud Patch data stored on GitKraken Servers, we offer the ability for you to host Cloud Patches on your own AWS S3 storage instance. For more information on configuring this, see our documentation [here](/gk-dev/gk-dev-security-controls/#self-hosted).

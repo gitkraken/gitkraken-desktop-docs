@@ -133,7 +133,7 @@ GitKraken Desktop supports HTTPS and SSH authentication, and provides useful int
 - [GitLab Self-Managed Integration](/gitkraken-desktop/gitlab-self-hosted/)
 - [Bitbucket Integration](/gitkraken-desktop/bitbucket/)
 - [Bitbucket Server Integration](/gitkraken-desktop/bitbucket-server/)
-- [Azure DevOps Integration](/gitkraken-desktop/visual-studio-team-services/)
+- [Azure DevOps Integration](/gitkraken-desktop/azure-devops/)
 - [TFS, AWS CodeCommit, custom service, etc](/gitkraken-desktop/authentication/)
 - [Jira Cloud Integration](/gitkraken-desktop/jira/)
 - [Jira Data Center Integration](/gitkraken-desktop/jira-data-center/)
@@ -217,12 +217,12 @@ Activate [Experimental Features](/gitkraken-desktop/experimental-features.md) an
 Repo-Specific preferences only apply to the repo currently open in GitKraken Desktop. The following preferences are repo-specific:
 
 - [Encoding](/gitkraken-desktop/editing-files/#encoding)
-- [Gitflow](/git-workflows-and-extensions/git-flow/)
-- [Git Hooks](/working-with-repositories/githooks/)
+- [Gitflow](/gitkraken-desktop/git-flow/)
+- [Git Hooks](/gitkraken-desktop/githooks/)
 - [Commit](/working-with-commits/commits/)
-- [LFS](/git-workflows-and-extensions/intro-and-requirements/)
-- [Issues](/integrations/jira/)
-- [Team](/working-with-repositories/team-view)
+- [LFS](/gitkraken-desktop/git-lfs/)
+- [Issues](/gitkraken-desktop/jira/)
+- [Team](/gitkraken-desktop/team-view/)
 - [Submodules](/gitkraken-desktop/submodules/#keep-submodules-up-to-date)
 
 You may configure unique repo-specific settings for each repo.
