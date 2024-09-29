@@ -17,6 +17,8 @@ Perfomance issues in GitKraken Desktop are often related to a specific repositor
 
 #### How to troubleshoot slow performance
 
+- `Perform Repo Maintenance` from the [Command Palette](/start-here/command-palette). This command will execute `git maintenance run`, which may take several minutes on larger repositories.
+
 - Perform a [git gc](https://git-scm.com/docs/git-gc) on the repository.  
 
 - Take a fresh clone of the repository to a new local directory.

@@ -145,7 +145,7 @@ GitKraken Insights is a powerful tool that helps you visualize how pull requests
 
 Insights is available for Github.com, Bitbucket.org, Gitlab.com, and Azure DevOps (Hosted).
 
-Click on the Insights icon to open a browser window to gitkraken.dev/insights.
+To access GitKraken Insights for your Workspace, click on the Insights icon. This will open a new browser window, directing you to the Insights view for that specific Workspace on [GitKraken.dev](https://gitkraken.dev).
 
 <img src="/wp-content/uploads/gkd-10.4-insights-icon.png" class="img-bordered img-responsive center">
 
