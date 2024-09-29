@@ -23,39 +23,4 @@ Insights is available for Github.com, Bitbucket.org, Gitlab.com, and Azure DevOp
 
 ### How do I use GitKraken Insights?
 
-To enable GitKraken Insights, you’ll first need to open a Cloud Workspace at the Repo Management Tab and then click on the <i class="fa-solid fa-chart-column"></i> icon. From here, click to connect to your remote hosting service.
-
-<img src="/wp-content/uploads/gkc-10-insights-connect.gif" class="img-bordered img-responsive center">
-
-
-You can also connect Gitkraken Insights to your remote hosting service from <kbd>Preferences > Integrations</kbd>
-
-<img src="/wp-content/uploads/gkc-10-insights-connect-integration.png" class="img-responsive center img-bordered">
-
-<div class='callout callout--note'>
-    <p>
-        <strong>Note:</strong> When using Insights, we will attempt to add webhooks to your workspace repositories in order to reduce API calls and improve data performance.
-    </p>
-</div>
-
-### Metrics
-
-<img src="/wp-content/uploads/gkc-insights-metrics.png" srcset="/wp-content/uploads/gkc-insights-metrics@2x.png" class="img-bordered img-responsive center">
-
-Once you've connected to your remote hosting service, you'll be able to see the following metrics:
-
-* **Cycle Time**: Measures the average time it takes for a pull request to be merged for the selected timeframe.
-* **Average Throughput**: Measures the average number of pull requests merged for the selected timeframe. 
-* **Merge** Rate: The percentage of merged pull requests compared to open pull requests for the selected timeframe. 
-* **Open**: The total number of pull requests opened for the selected timeframe.
-* **Merged**: The total number of pull requests merged for the selected timeframe.
-
-You can see the metrics for the last 7 or 14 days.
-
-The <i class="fa-solid fa-circle-info"></i> icon will provide information about the metric.
-
-<img src="/wp-content/uploads/insights-metrics-info.gif" class="img-responsive center img-bordered">
-
-### Requirement for Azure Insights and Workspaces
-
-In order to work with Insights and [Workspaces](/gitkraken-desktop/workspaces/) for Azure, `Third-party application access via OAuth` will need to be enabled in Azure from `Organization Settings > Policies`. You can find more information on this setting [here](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops).
+Insights has been moved to gitkraken.dev
