@@ -147,7 +147,7 @@ Insights is available for Github.com, Bitbucket.org, Gitlab.com, and Azure DevOp
 
 To access GitKraken Insights for your Workspace, click on the Insights icon. This will open a new browser window, directing you to the Insights view for that specific Workspace on [GitKraken.dev](https://gitkraken.dev).
 
-<img src="/wp-content/uploads/gkd-10.4-insights-icon.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-10-4-insights-icon.png" class="img-bordered img-responsive center">
 
 ### Change Color
 

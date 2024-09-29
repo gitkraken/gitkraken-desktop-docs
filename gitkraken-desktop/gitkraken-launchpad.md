@@ -117,6 +117,12 @@ The SNOOZED section displays all snoozed pull requests and issues. You can unsno
 
 ***
 
+### Filtering by Jira Fix Versions and Sprints or GitHub and GitLab Milestones
+
+You can now filter the Launchpad by Jira Fix Versions and Sprints or GitHub and GitLab Milestones.
+
+<img src="/wp-content/uploads/gkd-10-4-launchpad-jira-sprint-filter.gif" class="img-bordered img-responsive center">
+
 ### Launchpad Summary
 
 The Launchpad summary in the status bar displays your most critical pull request. To view a detailed summary of your pull requests categorized by status (e.g., ready to merge, blocked, needs review), click on the indicator in the status bar. This action will open the Launchpad tab with the relevant status group expanded, allowing you to see more details and take appropriate actions on the pull requests.
