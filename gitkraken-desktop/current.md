@@ -14,6 +14,55 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) to see what we’re working on.
 
+***
+<a id="v10-4-0"></a>
+## Version 10.4.0
+
+<div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eIkg6M7lMzs" frameborder="0" allowfullscreen></iframe>
+</div>
+
+_“Tell Miles Tones they finally got their big break in the next GoJira movie!"_
+
+### Tuesday, October 1st, 2024
+
+### New ✨
+
+ - **New Launchpad filters allow you to get a more focused view of your next sprint or milestone.**
+   - You can now see and filter by Jira fix versions and sprints in Launchpad.
+   - You can now see and filter by GitHub and GitLab milestones in Launchpad.
+ - **Insights has moved to GitKraken.dev, offering greater control and visibility into key project metrics.**
+   - Clicking on the Insights icon for a Cloud Workspace in the Repo Management tab will now direct you to Insights for that Workspace on [GitKraken.dev](https://gitkraken.dev).
+ - **Optimize your repo on disk with the new command `Perform Repo Maintenance` in the Command Palette.**
+   - Open the Command Palette with the shortcut <kbd>Cmd/Ctrl+P</kbd>.
+   - This command will execute `git maintenance run`, which may take several minutes on larger repositories.
+
+### Improvements 🙌
+ - Added support for descriptions (multiple lines) in stash messages.
+ - You can now invite Azure DevOps users to your GitKraken organization from the Launchpad user filter.
+ - Improved performance shortly after start-up by reducing wasteful pre-loading of data.
+ - First-time onboarding:
+   - The dialog for opening a repository has improved to search for repositories in subfolders if the selected directory is not a repository.
+
+### Bug Fixes 🐛
+ - Fixed an issue where long repository or remote names could overlap with the next column in the Repository Management tab.
+ - Fixed an issue connecting the Azure DevOps integration while signing in with Azure DevOps.
+ - Commit author emails with different casing should now be treated as the same email by the author filter in the Commit Graph.
+ - Fixed an issue where the commit button(s) could be pushed off the bottom of the screen in some cases.
+ - Adjusted several toasts to look better in Light theme.
+ - Pull Requests will now only show on graph ref labels when the remotes match, not just the branch name. This will eliminate cases where PR icons could appear on a remote which was unrelated to the PR.
+ - Fixed an issue where clicking on the WIP input box would deselect the WIP.
+ - Fixed an issue where interactive rebase didn't checkout the branch being rebased.
+ - Fixed an issue where the Launchpad user filter did not search by users' names in the filter dropdown.
+ - Fixed showing user columns in Launchpad when they were not currently fetched.
+ - Fixed a case in the Launchpad WIPS tab where opening a repository in the browser would not work.
+ - The Commit Details Panel will now open when creating a Cloud Patch, even when it was previously hidden by the user.
+ - Fixed cases where the Launchpad user filter would not detect a user is within an org for Azure DevOps.
+ - Fixed an issue where the Launchpad summary in the status bar would show data from the Team view instead of the Personal view.
+ - Experimental Feature - Git Executable:
+   - Fixed an issue where switching from a branch with submodules to a branch without them did not delete submodule folders.
+   - Fixed an issue where `user.signingKey` in global `.gitconfig` was not updated when switching between GPG and SSH signing formats.
+
 
 ***
 <a id="v10-3-0"></a>

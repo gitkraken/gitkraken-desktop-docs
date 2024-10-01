@@ -139,6 +139,16 @@ Customize your workspace by editing its name, color in the Repo Management Tab, 
 
 ***
 
+### Insights
+
+GitKraken Insights is a powerful tool that helps you visualize how pull requests are merged into your repositories. It provides a visual representation of your repository's history, allowing you to see how your codebase has evolved over time. You can use this information to make informed decisions about how to improve your workflow.
+
+Insights is available for Github.com, Bitbucket.org, Gitlab.com, and Azure DevOps (Hosted).
+
+To access GitKraken Insights for your Workspace, click on the Insights icon. This will open a new browser window, directing you to the Insights view for that specific Workspace on [GitKraken.dev](https://gitkraken.dev).
+
+<img src="/wp-content/uploads/gkd-10-4-insights-icon.png" class="img-bordered img-responsive center">
+
 ### Change Color
 
 Similar to what you can do with Edit Workspace, change the color of your Workspace (or group) by selecting `Change color` in the three-dot menu of any repo group. Use color to categorize Workspaces or highlight your most used groups of repositories.
