@@ -38,6 +38,17 @@ When you create a new branch, GitKraken Desktop will automatically checkout the 
 
 To checkout a different branch, double click on the branch label on the left panel or via the graph.  Checkout is also available by right-clicking a branch.
 
+### Rename a branch
+
+Rename a branch by right-clicking the branch tag in the Commit Graph (or right-click the branch in the branch list on the left panel) and selecting `Rename branch-name`.
+
+<img src="/wp-content/uploads/rename-branch.png" srcset="/wp-content/uploads/rename-branch@2x.png 2x" class="img-bordered img-responsive center">
+
+For hardcore keyboard warriors, you can also rename a branch using the Command Palette (Cmd+P or Ctrl+P) and type `Rename Branch`.
+
+<img src="/wp-content/uploads/rename-branch-command-palette.png" srcset="/wp-content/uploads/rename-branch-command-palette@2x.png 2x" class="img-bordered img-responsive center">
+
+Note: You can only rename the current branch you are on.
 ### Delete a branch
 
 To <a href="https://gitkraken.com/learn/git/problems/delete-local-git-branch" target="_blank">delete a branch</a>, right-click the branch and select `Delete {branch-name}`. You cannot delete a branch that is checked out.
