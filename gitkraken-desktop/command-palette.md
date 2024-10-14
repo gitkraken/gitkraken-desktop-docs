@@ -39,6 +39,7 @@ Use the _Command Palette_ to open repositories, history for files in the current
  * `Repo Management: Clone`
  * `Repo Management: Init`
  * `Repo Management: Open`
+ * `Perform Repo Maintenance`
 
 ### Settings
  * `Configure Git Flow`
