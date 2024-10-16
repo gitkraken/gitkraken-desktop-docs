@@ -16,7 +16,6 @@ GitKraken Workspaces allow you to create easily accessible groups of repositorie
 Workspaces are listed in the Repo Management Tab. To access the Repo Management tab, either click on the folder icon located at the top left or utilize the keyboard shortcut <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
 <img src='/wp-content/uploads/gkc-repo-mngmt-tab.png' class='img-bordered img-responsive center'>
 
-
 ***
 
 ## Cloud Workspaces
@@ -47,6 +46,7 @@ Then, select "Cloud Workspace”, name your Workspace, selecting the hosting ser
 Actions can be performed on multiple repositories within the Workspace at once, making it easy to get a new member of your team onboarded quickly or keep repository information up-to-date. To perform an action on multiple repositories, select the check box next to the repository name and then select the desired action from the options at the top.
 
 <img src="/wp-content/uploads/gkc-10-cloud-workspace-multi-action.png" class="img-bordered img-responsive center">
+
 <img src="/wp-content/uploads/gkc-10-cloud-workspace-multi-action-2.png" class="img-bordered img-responsive center">
 
 The following multi-repository actions can be performed:
@@ -61,12 +61,9 @@ The following multi-repository actions can be performed:
 
 You can see all open pull requests for all repositories in [Launchpad](https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/) within the selected Workspace. Information shown here includes the pull request title, pull request number, CI status, complexity, the name of the branch being merged, and number of comments.
 
-
-
 ### Create a Local Workspace
 
 To create a Local Workspace, select <button class="button button--success button--ui button--nolink">New Workspace</button>. Then, select “Local Workspace”, name your Workspace, and browse to select repositories to add to your Local Workspace. You may select individual repositories, a directory of repositories, or a VS Code Workspace (.code-workspace). Optionally, you can also provide an icon and description. 
-
 
 The option "Sync with local directory" will allow you to sync the Workspace with a local directory. This will automatically add any repositories in the selected directory to the Workspace.
 
@@ -105,8 +102,6 @@ Edit a Workspace by selecting the ellipsis <i class="fas fa-ellipsis-v"></i> ico
 
 The available options are:
 
-***
-
 ### Hide
 
 You can hide a workspace to declutter your view, just as you can hide other groups in the Repo Management Tab (e.g., Recent Repositories or Favorites).
@@ -115,13 +110,9 @@ To show a hidden workspace or group, simply click the <i class="fa-solid fa-eye-
 
 <img src="/wp-content/uploads/gkd-10-2-hide-workspaces.png" class="img-bordered img-responsive center">
 
-***
-
 ### Select/Unselect
 
 You can select or unselect repositories within a workspace. This functionality allows you to perform specific actions, such as fetching, pulling, or opening repositories in VS Code, on the selected repositories only.
-
-***
 
 ### Open/Clone/Locate Repositories
 
@@ -129,17 +120,19 @@ Use this option to open, clone, or locate repositories. You can apply these acti
 
 <img src="/wp-content/uploads/gkd-10-2-open-clone-locate-workspaces.png" class="img-bordered img-responsive center">
 
-***
-
 ### Edit Workspace
 
 Customize your workspace by editing its name, color in the Repo Management Tab, description, and the list of members with access to the workspace. This helps you keep your workspace organized and accessible to the right team members.
 
 <img src="/wp-content/uploads/gkd-10-2-edit-workspace.png" class="img-bordered img-responsive center">
 
+### Change Color
+
+Similar to what you can do with Edit Workspace, change the color of your Workspace (or group) by selecting `Change color` in the three-dot menu of any repo group. Use color to categorize Workspaces or highlight your most used groups of repositories.
+
 ***
 
-### Insights
+## Insights
 
 GitKraken Insights is a powerful tool that helps you visualize how pull requests are merged into your repositories. It provides a visual representation of your repository's history, allowing you to see how your codebase has evolved over time. You can use this information to make informed decisions about how to improve your workflow.
 
@@ -147,11 +140,9 @@ Insights is available for Github.com, Bitbucket.org, Gitlab.com, and Azure DevOp
 
 To access GitKraken Insights for your Workspace, click on the Insights icon. This will open a new browser window, directing you to the Insights view for that specific Workspace on [GitKraken.dev](https://gitkraken.dev).
 
+See [gitkraken.dev Insights](/gk-dev/gk-dev-insights/) for more information on working with Insights. 
+
 <img src="/wp-content/uploads/gkd-10-4-insights-icon.png" class="img-bordered img-responsive center">
-
-### Change Color
-
-Similar to what you can do with Edit Workspace, change the color of your Workspace (or group) by selecting `Change color` in the three-dot menu of any repo group. Use color to categorize Workspaces or highlight your most used groups of repositories.
 
 ***
 
