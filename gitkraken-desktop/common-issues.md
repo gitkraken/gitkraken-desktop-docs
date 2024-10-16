@@ -109,3 +109,18 @@ In order to work with with a repository owned by a GitHub organization with the 
 * If access has been allowed, then the organization will need to allow [Organization Approval](https://help.github.com/articles/requesting-organization-approval-for-your-authorized-applications/)
 * If you are attempting to use GitKraken with a repository owned by a different individual, consider forking their repository to use GitKraken for your changes. Otherwise this other individual will need to first [install GitKraken](/gitkraken-desktop/how-to-install/) and connect it to GitHub to authorize GitKraken.
 * For details about third-party application restrictions view [Third-party apps list](https://help.github.com/articles/about-third-party-application-restrictions/)
+
+***
+
+## Problem executing Rust Socket Bridge
+
+If you are seeing the following error message when trying to push/pull/clone/fetch:
+
+<img src="/wp-content/uploads/error-socket-bridge.png" class="img-bordered img-responsive center">
+
+This is typically caused by the Rust Socket Bridge executable being blocked by your system's security software.
+
+
+
+
+
