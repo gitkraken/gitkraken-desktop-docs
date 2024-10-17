@@ -116,9 +116,18 @@ In order to work with with a repository owned by a GitHub organization with the 
 
 If you are seeing the following error message when trying to push/pull/clone/fetch:
 
-<img src="/wp-content/uploads/error-socket-bridge.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-10-4-rust-socket-bridge-error.png" class="img-bordered img-responsive center">
 
 This is typically caused by the Rust Socket Bridge executable being blocked by your system's security software.
+
+### Solution
+
+Contact your IT department to allow the Rust Socket Bridge executable to run (optimally with an exclusion rule for Gitkraken Desktop installation directory).
+
+
+
+
+
 
 
 
