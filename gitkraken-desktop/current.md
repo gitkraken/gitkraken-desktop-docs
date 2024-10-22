@@ -15,6 +15,28 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) to see what we’re working on.
 
 ***
+
+<a id="v10-4-1"></a>
+## Version 10.4.1
+
+_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-10-4-1) and see how it all works!_
+
+### Tuesday, October 22nd, 2024
+
+### New ✨
+ - You can now add a reviewer when creating GitLab or GitLab Self-Managed merge requests.
+
+### Improvements 🙌
+ - Experimental Feature - Git Executable:
+   - Added support for amending and rewording the latest (HEAD) commit, providing full support for SSH commit signing.
+ - The `Show All` button in the left panel now only appears when there are hidden branches, remotes, or tags.
+ - Old app update notifications will automatically be marked as read on update.
+
+### Bug Fixes 🐛
+ - Fixed an issue where GitKraken would prompt for credentials on every push or branch switch in LFS repositories.
+
+***
+
 <a id="v10-4-0"></a>
 ## Version 10.4.0
 

@@ -93,6 +93,9 @@ Find below a list of features using the Git binary if the Git Executable experim
 **Added in 10.2.0:**
 - Added git status support.
 
+**Added in 10.4.1:**
+- Added support for amending and rewording the latest (HEAD) commit, providing full support for SSH commit signing.
+
 ---
 
 ### AI Commit Message Generation
