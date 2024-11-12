@@ -16,6 +16,49 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) 
 
 ***
 
+<a id="v10-5-0"></a>
+## Version 10.5.0
+
+<div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aV-ZIwfgyio?si=NQcgJYc8QZPAVy3T" frameborder="0" allowfullscreen></iframe>
+</div>
+
+_"It was the #1 request, and now Worktrees are here! Guess good things really do come to those who wait… and wait… and wait!"_
+
+### Tuesday, November 12th, 2024
+
+### New ✨
+ - **Worktree Support:** Use worktrees to work on multiple branches at once without impacting your main working directory. Effortlessly switch between testing changes or working on multiple tasks in the same repository without having to worry about losing your work. [Learn more about worktrees in this video.](https://youtu.be/grAsFn5yvjA?si=K1ThB1BWdrKw_WoO)
+   - Creating worktrees:
+     - Right click on any branch in the Commit Graph to create a new worktree on that branch, or create a worktree for a new branch on any commit in the Commit Graph.
+     - Open a pull request in a new worktree from Launchpad by selecting the option `Checkout in New Worktree` in the action menu.
+     - You can also hover over the `WORKTREES` Left Panel section header and click on the `+` button to create a new worktree (Tip: You can show or hide left panel sections like `WORKTREES` by right-clicking on any Left Panel section header).
+   - Switching between worktrees:
+     - Double click on any worktree in the `WORKTREES` Left Panel section to open that worktree.
+     - Double clicking on a branch in the graph that is checked out in a worktree will open that worktree in the current tab.
+ - **Saved Launchpad Views:** Save your customized Launchpad views and access them on the web and across all your devices.
+   - Click the `Save a View` button in the Launchpad tab bar to save the current view's filters and view settings as a new view.
+   - Your saved Launchpad views will be available on [GitKraken.dev](gitkraken.dev) and in GitKraken Client on any device that is logged in to your GitKraken account.
+
+### Improvements 🙌
+ - You can now add reviewers when creating Bitbucket or Bitbucket Server pull requests.
+ - Checking out a remote branch will automatically fast-forward the local branch if possible without prompting to reset the branch.
+ - You can now choose to always skip the force push confirmation prompt by checking 'Don't ask again' on your next force push (always force push with caution - you may lose commits).
+ - Experimental Feature - AI Commit Message Generation:
+   - Added support for GPT-4 Turbo, GPT-4o, and GPT-4o mini Open AI models.
+ - Experimental Feature - Git Executable:
+   - Automatically populate GPG Format, GPG SSH Program and Signing Key if initially empty, with the global Git config or default values.
+   - For Allowed Signers File in GPG SSH Preferences, consider local git config value if set and warn if used file does not exist. Also renamed `GPG` Preferences section as `Commit Signing`.
+
+### Bug Fixes 🐛
+ - Commit search now closes when pressing <kbd>Esc</kbd>.
+ - When stashing changes, the pending commit description will now be saved as the stash description.
+ - GitKraken will bypass hooks when creating a merge commit after resolving a conflict if the commit option `Skip hooks` is enabled.
+ - Fixed an issue where the value for the GPG Program in Preferences would not save correctly.
+ - Fixed an issue where the Azure DevOps integration would stay connected even if the refresh token expired.
+
+***
+
 <a id="v10-4-1"></a>
 ## Version 10.4.1
 
