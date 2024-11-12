@@ -54,13 +54,13 @@ If you have GPG installed on your local machine, you will be able to generate a 
     <p><strong>Note:</strong> Make sure that you have <a href="/gitkraken-desktop/commit-signing-with-gpg/#configure-gpg-in-gitkraken">configured GPG inside of GitKraken Desktop</a>.</p>
 </div>
 
-Under `Preferences` → `GPG Preferences`, there is an option to `Generate new GPG Key`. If you wish to enter a passphrase, make sure you do so prior to selecting `Generate`.
+Under `Preferences` → `Commit Signing`, there is an option to `Generate new GPG Key`. If you wish to enter a passphrase, make sure you do so prior to selecting `Generate`.
 
 <img src="/wp-content/uploads/generate-new-gpg-key.png" srcset="/wp-content/uploads/generate-new-gpg-key@2x.png 2x" class="img-bordered img-responsive center">
 
 ####Configure GPG in GitKraken
 
-Once you have GPG installed on your machine, you will need to configure GitKraken to use GPG. Launch GitKraken Desktop and navigate to Preferences → GPG Preferences.
+Once you have GPG installed on your machine, you will need to configure GitKraken to use GPG. Launch GitKraken Desktop and navigate to Preferences → Commit Signing.
 
 <img src="/wp-content/uploads/gpg-preferences.png" srcset="/wp-content/uploads/gpg-preferences@2x.png 2x" class="img-bordered img-responsive center">
 
@@ -173,7 +173,7 @@ Go to <kbd>Preferences > Experimental > Git Executable</kbd> and enable it.
 
 [See this documentation to select the program used for the signing format](https://git-scm.com/docs/git-config#Documentation/git-config.txt-gpgltformatgtprogram)
 
-At <kbd>Preferences > GPG > GPG Format</kbd>, select <kbd>SSH</kbd>.
+At <kbd>Preferences > Commit Signing > GPG Format</kbd>, select <kbd>SSH</kbd>.
 
 Automatically GitKraken Desktop will change your preferences in `.gitconfig` and populate GPG SSH Program with ssh-keygen.
 
@@ -199,7 +199,7 @@ And select the file in GitKraken Desktop.
 
 ####Enable Commit Signing by Default in GitKraken Desktop:
 
-Preferences > GPG > Sign Commits/Tags By default
+Preferences > Commit Signing > Sign Commits/Tags By default
 
 ####Add the SSH key to your remote hosting 
 
