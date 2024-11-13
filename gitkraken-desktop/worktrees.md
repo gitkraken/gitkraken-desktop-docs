@@ -1,6 +1,6 @@
 ---
 
-title: GitKraken Desktop and Worktrees
+title: Worktrees
 description: How to use Git Worktrees in GitKraken Desktop
 taxonomy:
     category: gitkraken-desktop
