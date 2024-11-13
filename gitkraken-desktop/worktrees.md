@@ -10,7 +10,7 @@ taxonomy:
 Learn more about Git Worktrees in GitKraken Desktop and how to use them.
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://youtu.be/grAsFn5yvjA?si=-Qrc1NYL8RwZKYnX?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/grAsFn5yvjA?si=5U8cIbu_m_41yGxR?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>
 
 ***
