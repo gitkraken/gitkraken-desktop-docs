@@ -177,3 +177,13 @@ To perform a rebase, drag and drop one branch onto another branch then select <k
 You can rebase onto a local or remote.
 
 <img src="/wp-content/uploads/select-rebase-sidebar.png" srcset="/wp-content/uploads/select-rebase-sidebar@2x.png" class="img-bordered img-responsive center">
+
+***
+
+## Automatic Conflict Detection (Preview)
+
+GitKraken will monitor your base branch for conflicts and alert you with an icon in the toolbar when conflicts are detected, providing options to resolve your conflicts sooner rather than later.
+   - When a conflict is detected, click on the icon in the toolbar to view details about the conflict and choose to rebase your current branch onto the base branch or merge changes from the base branch into your current branch.
+   - You can limit which branches GitKraken may consider as "base branches" when scanning for conflicts. Navigate to _Preferences > Conflict Detection_ to set the preffered branches for a repository.
+   - This feature is currently in preview and may undergo significant updates based on feedback. Share your thoughts with us to help shape its future direction!
+

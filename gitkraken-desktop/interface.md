@@ -314,9 +314,6 @@ An alias can be set for repository tabs. To give an alias to a repository tab, r
 
 <img src='/wp-content/uploads/repository-alias.png' class='img-bordered img-responsive center'>
 
-A name can be set for terminal tabs. To give a name to a terminal tab, right-click the tab and select <kbd>Rename Tab</kbd>. After filling out the name, select save.
-
-<img src='/wp-content/uploads/terminal-name.png' class='img-bordered img-responsive center'>
 
 ***
 

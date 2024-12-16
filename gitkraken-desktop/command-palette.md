@@ -55,7 +55,6 @@ Use the _Command Palette_ to open repositories, history for files in the current
  * `Decrease Zoom`
  * `Increase Zoom`
  * `Keyboard Shortcuts`
- * `Open a new Terminal Tab`
  * `Reset Zoom`
  * `Toggle Left Panel`
  * `Toggle Commit Detail Panel`

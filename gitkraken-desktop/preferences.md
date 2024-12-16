@@ -67,6 +67,8 @@ You may open a repo in your preferred external editor program using the [Command
 - Sublime
 - IntelliJ
 
+You may also set your preferred external editor from this preference option by going to _Preferences > External Tools_ and selecting `<Custom>` and entering the path for the editor you want to use. If needed, you can configure the arguments to pass when opening repos or files in your selected editor.
+
 
 ### Delete ".orig" files
 
