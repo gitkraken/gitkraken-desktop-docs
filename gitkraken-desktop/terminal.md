@@ -9,15 +9,10 @@ taxonomy:
 
 Open the Terminal to use Git CLI commands while still viewing the graph.
 
-To get started open up a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar, from the new tab view by clicking <kbd>New Terminal Tab</kbd>, or by searching for "terminal" in the <a href="/working-with-repositories/command-palette">command palette</a>.
+To get started open up a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar or by searching for "terminal" in the <a href="/working-with-repositories/command-palette">command palette</a>.
 
 <img src="/wp-content/uploads/open-gitkraken-terminal.gif" class="img-responsive center img-bordered">
 
-Open a Terminal:
-
-* From the "New Terminal Tab" button in a New tab
-* With `Ctrl/Cmd + T` when inside a Terminal tab
-* From the Command Palette (`Ctrl/Cmd + P`)
 
 ---
 
@@ -54,14 +49,6 @@ Different views can be accessed using the `gkc` CLI program in the Terminal:
 * `gkc --help`: shows the list of `gk` commands.
 
 <img src="/wp-content/uploads/terminal-gk-command-example-2.gif" class="img-responsive center img-bordered">
-
----
-
-### Toolbar
-
-A toolbar above the panel will display the current repo name, branch, tag, and number of changes pending to pull/push. Clicking this toolbar will also toggle the panel on/off.
-
-<img src="/wp-content/uploads/terminal-toolbar-toggle.gif" class="img-responsive center img-bordered">
 
 ---
 
