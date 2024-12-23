@@ -18,11 +18,8 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) 
 <a id="v10-6-0"></a>
 ## Version 10.6.0
 
-<div class="embed-container embed-container--16-9" style="position: relative; width: 560px; height: 310px; overflow: hidden;">
-    <a href="https://www.youtube.com/watch?v=xR1ko96bApM" target="_blank">
-        <img src="https://img.youtube.com/vi/xR1ko96bApM/0.jpg" alt="YouTube video thumbnail"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;">
-    </a>
+<div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xR1ko96bApM?si=FcfuH8Zd_0xZv8qd" frameborder="0" allowfullscreen></iframe>
 </div>
 
 _"'Twas the night before Gitmas when all through the house // not a keyboard was clicking, not even a mouse!"_
