@@ -14,6 +14,33 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) to see what we’re working on.
 
+
+***
+<a id="v10-6-1"></a>
+## Version 10.6.1
+
+_"Do y'all call these 'dot-dot' releases too?"_
+
+_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-10-6-1) and see how it all works!_
+
+### Tuesday, January 14th, 2025
+
+### Improvements 🙌
+ - Automatic Conflict Detection:
+   - If your currently checked out branch is associated with a pull request, the pull request's target branch will be prioritized for checking conflicts.
+   - You can now exclude branches when setting the base branches for a repository.
+   - When resolving a detected conflict, the initial conflict that appears won't trigger a "failed to merge/rebase" message, as initiating the conflict is intentional and expected.
+   - Improved the clarity of the toolbar popover.
+ - Added a context menu option to open a GitHub Action's workflow runs on GitHub from the Left Panel.
+ - Consolidated context menu options for creating a worktree and checking out a branch into submenus.
+
+### Bug Fixes 🐛
+ - Fixed an issue where some App Menu items did not do anything when selected.
+ - Fixed an issue where closing an issue or PR from Launchpad would crash the app.
+ - Dropping multiple stashes at once from the Left Panel will no longer drop the wrong stashes.
+
+
+
 ***
 <a id="v10-6-0"></a>
 ## Version 10.6.0
