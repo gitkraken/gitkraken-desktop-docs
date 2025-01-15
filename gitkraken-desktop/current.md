@@ -77,7 +77,7 @@ _Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/curr
  - When auto-fetch fails silently, a warning icon will show on the `REMOTES` left panel section header.
  - Updated Git to 2.47.0.
  - _We periodically remove features with low usage in order to focus our maintenance efforts on areas that impact users the most._
-   - Removed the dedicated `Terminal` tab. (We found that users overwhelmingly prefer to use the terminal panel which is embedded in repository tabs.)
+   - Removed the dedicated `Terminal` tab and `gkc` commands. (We found that users overwhelmingly prefer to use the terminal panel which is embedded in repository tabs.)
    - Removed a rarely-used feature where the Commit Detail Panel could be pinned to the bottom of the screen.
 
 ### Bug Fixes 🐛

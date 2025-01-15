@@ -31,25 +31,6 @@ Auto-complete suggestions will also appear for flags.
     <p><strong>Note:</strong> Other auto-complete programs can cause the Terminal auto-complete suggestions to not work. You may need to uninstall or disable these programs before using the Terminal.</p>
 </div>
 
-### GK Commands
-You can access GitKraken CLI specific commands by typing `gkc`. 
-
-<img src="/wp-content/uploads/autocomplete-suggestions-gk-2.png" class="img-responsive center img-bordered">
-
-As well as suggestions for additional parameters.
-
-<img src="/wp-content/uploads/autocomplete-suggestions-gk-diff-2.png" class="img-responsive center img-bordered">
-
-Different views can be accessed using the `gkc` CLI program in the Terminal:
-
-* `gkc panel`: toggles the visualization panel. Also has parameters to reposition the panel top/bottom/left/right.
-* `gkc graph`: shows the graph view. Same behavior as the `gk panel`, but additionally it will return to the graph if you're in a different view, and has subcommands for toggling the graph columns with the keyboard.
-* `gkc history` and `gk blame`: opens the history/blame panel for a specific file.
-* `gkc diff`: shows changes between commits. If no SHAs are provided, it will use your WIP and HEAD. If only one SHA is provided, it will be compared with HEAD.
-* `gkc --help`: shows the list of `gk` commands.
-
-<img src="/wp-content/uploads/terminal-gk-command-example-2.gif" class="img-responsive center img-bordered">
-
 ---
 
 ### Terminal Preferences 
