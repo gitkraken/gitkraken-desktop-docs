@@ -14,6 +14,21 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) to see what we’re working on.
 
+***
+<a id="v10-6-2"></a>
+## Version 10.6.2
+
+_"Anotha one!"_
+
+
+### Tuesday, January 21st, 2025
+
+### Improvements 🙌
+ - Updated Git to 2.47.2.
+
+### Bug Fixes 🐛
+ - Fixed some context menu options related to Pull Requests that were missing from the Commit Graph.
+ - Fixed an issue on Windows where the bundled Git was not detected from the Terminal panel.
 
 ***
 <a id="v10-6-1"></a>
@@ -21,7 +36,6 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) 
 
 _"Do y'all call these 'dot-dot' releases too?"_
 
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-10-6-1) and see how it all works!_
 
 ### Tuesday, January 14th, 2025
 
@@ -51,7 +65,6 @@ _Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/curr
 
 _"'Twas the night before Gitmas when all through the house // not a keyboard was clicking, not even a mouse!"_
 
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-10-6-0) and see how it all works!_
 
 ### Tuesday, December 17th, 2024
 
