@@ -15,6 +15,19 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) to see what we’re working on.
 
 ***
+<a id="v10-6-3"></a>
+## Version 10.6.3
+
+_"Anotha one!"_
+
+_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-10-6-3) and see how it all works!_
+
+### Tuesday, January 28th, 2025
+
+### Bug Fixes 🐛
+ - Updated Launchpad pull request fetching for Bitbucket in preparation for an upcoming Bitbucket API change. To avoid disruption, Bitbucket users are strongly encouraged to upgrade promptly.
+
+***
 <a id="v10-6-2"></a>
 ## Version 10.6.2
 
