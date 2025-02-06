@@ -85,7 +85,9 @@ GitKraken Desktop currently _only supports_ the following diff tools:
 
 If your diff tool from the list above is installed and is not showing up in the dropdown, then look for an option to install command line tools.
 
-<img src='/wp-content/uploads/beyond-compare.png' srcset='/wp-content/uploads/beyond-compare@2x.png 2x' class='img-bordered img-responsive center' />
+<img src='/wp-content/uploads/beyond-compare.png' srcset='/wp-content/uploads/beyond-compare@2x.png 2x' class='img-bordered center' style="display: block; margin-left: auto; margin-right: auto;" />
+
+
 
 If you would like to use another diff tool, navigate to <em class="context-menu">Preferences <i class="fa fa-caret-right"></i> General</em> and set the <kbd>Diff Tool</kbd> to _Git Config Default_. Then open your global `.gitconfig` file and add these additional lines to use that diff tool. Here are some examples for each operating system:
 

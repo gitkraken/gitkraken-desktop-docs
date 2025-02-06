@@ -141,7 +141,7 @@ GitKraken Desktop currently supports the following merge tools:
 
 If your merge tool from the list above is installed and is not showing up in the dropdown, then look for an option to install command line tools.
 
-<img src='/wp-content/uploads/beyond-compare.png' srcset='/wp-content/uploads/beyond-compare@2x.png' class='img-bordered img-responsive center' />
+<img src='/wp-content/uploads/beyond-compare.png' srcset='/wp-content/uploads/beyond-compare@2x.png 2x' class='img-bordered center' style="display: block; margin-left: auto; margin-right: auto;" />
 
 GitKraken Desktop does _not support_ the following merge tools:
 
