@@ -15,6 +15,31 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) to see what we’re working on.
 
 ***
+<a id="v10-7-0"></a>
+## Version 10.7.0
+
+_"you know what would be cool? if when i clicked on the repository breadcrumb it turned into a textbox"_ - Ash M, GitKraken Engineer
+
+_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-10-7-0) and see how it all works!_
+
+### Tuesday, February 11th, 2025
+
+### New ✨
+ - Find your repos and branches faster! You can now search directly in the repository and branch dropdowns from the breadcrumb in the toolbar.
+   - Repository search: Searching in the repository dropdown will search through all repositories in the Repository Management tab. Selecting a new repo will open it in the current tab or switch to that tab if it’s already opened.
+   - Branch search: Searching in branch dropdown will search through all local branches in the repo, and selecting a branch will checkout that branch. If your repository has worktrees, they’ll appear at the top of the branches list for easy access.
+
+### Improvements 🙌
+ - Custom Launchpad views are now only visible when the corresponding Team or Personal mode they were created in is selected.
+ - Experimental Feature - Git Executable:
+   - Added support for 'Discard all changes' and connected Undo/Redo actions.
+   - Added partial support for 'Discard changes' of unstaged files.
+   - Interactive rebase now replays all rebased commits instead of fast-forwarding over the unchanged ones.
+
+### Bug Fixes 🐛
+ - Fixed an issue where cloning a repo can create an undefined folder with hooks files inside.
+
+***
 <a id="v10-6-3"></a>
 ## Version 10.6.3
 
