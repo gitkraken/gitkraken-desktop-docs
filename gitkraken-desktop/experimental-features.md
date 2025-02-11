@@ -96,6 +96,11 @@ Find below a list of features using the Git binary if the Git Executable experim
 **Added in 10.4.1:**
 - Added support for amending and rewording the latest (HEAD) commit, providing full support for SSH commit signing.
 
+**Added in 10.7.0:**
+- Added support for 'Discard all changes' and connected Undo/Redo actions.
+- Added partial support for 'Discard changes' of unstaged files.
+- Interactive rebase now replays all rebased commits instead of fast-forwarding over the unchanged ones.
+
 ---
 
 ### AI Commit Message Generation
