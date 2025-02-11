@@ -253,3 +253,16 @@ There may be times when you want to skip your Git hooks when making a commit. Th
 </div>
 
 <img src='/wp-content/uploads/bypass-git-hooks.png' class='img-responsive center img-bordered' />
+
+### Global Git Hooks
+
+GitKraken Desktop honors global Git hooks setting in your .gitconfig file. These hooks are applied to all repositories that you have cloned.
+
+To set this up, you can add the following to your .gitconfig file:
+
+```
+[core]
+    hooksPath = /path/to/your/hooks
+```
+
+
