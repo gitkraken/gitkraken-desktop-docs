@@ -86,6 +86,8 @@ GitKraken connects to one Azure DevOps account at a time. However, with a paid G
 
 ## Requirement for connecting to Azure DevOps using OAuth
 
+<img src="/wp-content/uploads/gkd-ado-oauth-error.png" class="img-bordered img-responsive center">
+
 In order connect the Azure Devops integrations using OAuth, `Third-party application access via OAuth` will need to be enabled in Azure from `Organization Settings > Policies`. You can find more information on this setting [here](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops).
 
 If enabling this setting is not possible, you can connect using a Password Access Token.

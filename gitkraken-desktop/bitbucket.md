@@ -79,3 +79,7 @@ Of course, you still have the option of manually entering repo URLs.
 ## Connecting to multiple Bitbucket accounts
 
 GitKraken connects to one Bitbucket account at a time. However, with GitKraken Pro's multiple <a href="/start-here/profiles">profile</a> support, you can easily switch between profiles that each have their own associated Bitbucket accounts.
+
+## Bitbucket Pull Request Reviewers
+
+Bitbucket supports pull request reviewers. GitKraken Desktop will display the list of reviewers for a pull request. In order to view the list of reviewers, you must have Project Admin permissions.
