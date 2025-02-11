@@ -60,7 +60,7 @@ In Team View you can filter items by users, giving you a more focused view of sp
 
 You can save your Launchpad views by clicking the <i class="fa-solid fa-plus"></i> Save View icon in the Launchpad tab bar.
 
-<img src="/wp-content/uploads/gkd-launchpad-save-view-10.4.0.gif" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-10-5-launchpad-save-view.gif" class="img-bordered img-responsive center">
 
 ***
 
