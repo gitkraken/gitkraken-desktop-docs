@@ -81,3 +81,11 @@ Of course, you still have the option of manually entering repo URLs.
 ## Connecting to multiple Azure DevOps accounts
 
 GitKraken connects to one Azure DevOps account at a time. However, with a paid GitKraken Pro/Teams/Enterprise plan, you can easily switch between multiple <a href="/start-here/profiles">profiles</a> that each have their own associated Azure DevOps accounts.
+
+***
+
+## Requirement for connecting to Azure DevOps using OAuth
+
+In order connect the Azure Devops integrations using OAuth, `Third-party application access via OAuth` will need to be enabled in Azure from `Organization Settings > Policies`. You can find more information on this setting [here](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops).
+
+If enabling this setting is not possible, you can connect using a Password Access Token.
