@@ -1,7 +1,7 @@
 ---
 
-title: Security Information for GKC
-description: Data Security Information for GKC
+title: Security Information for GitKraken Desktop
+description: Data Security Information for GitKraken Desktop
 taxonomy:
     category: gitkraken-desktop
 
@@ -16,3 +16,4 @@ Below is a chart outlining some basic security information regarding the type of
 | Subscriptions | Billing info: lastFour, name, type (credit card, paypal, ach...), zip, country, creditCard type (mastercard, visa...) | Encrypted with TLS | MongoDB Atlas | Encrypted at rest (AES-256) |
 | Launchpad | Storing meta-data for issues/pull-requests/URLs | Encrypted with TLS | Postgres (RDS) | Encrypted at rest (AES-256) |
 | Cloud Patches | Info related to the patch (repo name/URL/provider/base branch name/etc.) + the patch content itself. | Encrypted with TLS | Patch info is stored in a Postgres database, patch content is stored in AWS S3. | SSE-S3, which uses 256-bit Advanced Encryption Standard (AES-256) |
+| Proactive Conflict Detection | Repo-relative file paths, name and commit SHA of relevant branches, names of files changed, line numbers with changes, and first commit SHA of the repository | Encrypted with TLS | Redis (max TTL of 108 hours) | Encrypted at rest (AES-256)
