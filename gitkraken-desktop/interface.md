@@ -246,9 +246,6 @@ The three parts in order of operations on the staging panel are:
 
 <img src='/wp-content/uploads/symbol-guide@2x.png' class='img-bordered img-responsive center'>
 
-<div class='callout callout--basic'>
-    <p>This panel can also be fixed on the bottom of the client. Just click the <i class="far fa-caret-square-down"></i> icon in the upper right corner of the Commit Panel.</p>
-</div>
 
 For deeper waters on staging, dive into [committing work](/working-with-commits/commits).
 
