@@ -109,7 +109,7 @@ If you are on Linux and are unable to launch GitKraken Desktop after installatio
 Be sure you are logged in with the same email address registered with your GitKraken subscription. Click your profile icon in the upper right corner to check which email you're using or to sign into your account.
 
 <p style="text-align: center;">
-  <img src="/wp-content/uploads/sign-into-a-different-account.png" class="center img-bordered">
+  <img src="/wp-content/uploads/sign-into-a-different-account.png" class="center img-bordered" style="width: 600px;">
 </p>
 
 ***
