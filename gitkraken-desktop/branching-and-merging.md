@@ -20,7 +20,7 @@ Looking for a sharable summary? Learn about [how GitKraken solves merge conflict
 ## Branches
 When starting work on a new feature or bug, <a href="https://gitkraken.com/learn/git/problems/create-git-branch" target="_blank">create a new branch</a>. Right click on any existing commit to create a branch:
 
-<img src="/wp-content/uploads/add-branch.png" srcset="/wp-content/uploads/add-branch@2x.png 2x" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/add-branch-2025.png" srcset="/wp-content/uploads/add-branch@2x.png 2x" class="img-bordered img-responsive center">
 
 A branch is a pointer to a specific commit in the repo, rather than making entire copies of the working directory files.
 
