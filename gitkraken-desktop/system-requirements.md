@@ -25,3 +25,5 @@ Here are [Docker's requirements](https://docs.docker.com/engine/installation/lin
     * Zesty 17.04
     * Xenial 16.04 (LTS)
     * Trusty 14.04 (LTS)
+
+Looking to start a free trial? Learn more about [GitKraken On-Premise](https://www.gitkraken.com/git-client/on-premise-pricing).

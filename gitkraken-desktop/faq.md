@@ -40,7 +40,7 @@ For more information authenticating with repos, check out our [SSH and HTTPS](/i
 ***
 
 ### What Linux distributions are supported by GitKraken Desktop?
-GitKraken Desktop currently supports Ubuntu 16.04 LTS+, RHEL 7+, CentOS 7+, and Fedora 30+. While GitKraken Desktop might be able to be installed on other distros, we cannot guarantee that it will behave properly.
+GitKraken Desktop currently supports Ubuntu 18.04 LTS+, RHEL 8+, and Fedora 39+. While GitKraken Desktop might be able to be installed on other distros, we cannot guarantee that it will behave properly.
 
 ***
 
@@ -62,7 +62,7 @@ Yes, your GitKraken paid subscription is associated with your email address, not
 ***
 
 ### Why can't I see remotes under my integration drop-down menu?
-The remote drop-down menu is for adding remotes from an integration (such as GitHub, GitLab, Bitbucket, etc.) and will only display **forks** of the repository. To add a remote that is not a fork, use the URL option instead.
+The remote drop-down menu is for adding remotes from an integration (such as GitHub, GitLab, Bitbucket, etc.) and will only display **forks** of the repository. To add a remote that is not a fork, use the [URL option](https://help.gitkraken.com/gitkraken-desktop/pushing-and-pulling/#adding-remotes) instead.
 
 ***
 
@@ -84,7 +84,7 @@ You are done! Your local project is now on your hosting service.
 
 You may sign into a different account by selecting your profile icon in the top right corner and selecting _Sign into a different account_. 
 
-While there is no way to sign out of GitKraken, you may delete all of your GitKraken data by deleting the `~/.gitkraken` folder. You can find the Data Location for your operating system [here](/gitkraken-desktop/how-to-install/).
+While there is no way to sign out of GitKraken, you may delete all of your GitKraken data by deleting the `~/.gitkraken` folder. To locate this folder on your machine, [refer to your operating system](/gitkraken-desktop/how-to-install/).
 
 ## Technical issues
 
@@ -108,7 +108,9 @@ If you are on Linux and are unable to launch GitKraken Desktop after installatio
 ### I just subscribed but FREE is still shown in the lower right corner.
 Be sure you are logged in with the same email address registered with your GitKraken subscription. Click your profile icon in the upper right corner to check which email you're using or to sign into your account.
 
-<img src="/wp-content/uploads/sign-into-a-different-account.png" class="img-responsive center img-bordered">
+<p style="text-align: center;">
+  <img src="/wp-content/uploads/sign-into-a-different-account.png" class="center img-bordered">
+</p>
 
 ***
 
