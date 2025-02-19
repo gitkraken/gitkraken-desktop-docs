@@ -25,7 +25,7 @@ When starting work on a new feature or bug, <a href="https://gitkraken.com/learn
 
 A branch is a pointer to a specific commit in the repo.
 
-Branches allow you to isolate new work from other areas of the repository, and interact with other collaborators. If you're looking for direction,consider implementing <a href="/git-workflows-and-extensions/git-flow">GitFlow</a> as a merging strategy.
+Branches allow you to isolate new work from other areas of the repository, and interact with other collaborators. If you're looking for direction, consider implementing <a href="/git-workflows-and-extensions/git-flow">GitFlow</a> as a merging strategy.
 
 ### Checking out branches
 Branch checkout updates files in the working directory to reflect the version defined by that branch.
@@ -35,7 +35,7 @@ New commits are added to the currently checked out branch. If you find yourself 
 When you create a new branch, GitKraken Desktop will automatically checkout the branch for you:
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/Add-branch.gif'>
+    <img src='/wp-content/uploads/add-branch-2025.gif'>
     <figcaption>Right click to create a new branch.</figcaption>
 </figure>
 
