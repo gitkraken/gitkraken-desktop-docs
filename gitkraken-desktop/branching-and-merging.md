@@ -13,23 +13,24 @@ Learn how to branch and merge in GitKraken Desktop. 🌳 🔀
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8-qRKyy-v7I?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>
 
+
 Looking for a sharable summary? Learn about [how GitKraken solves merge conflicts](https://www.gitkraken.com/developer-problems/merge-conflicts).   
 
 ***
 
 ## Branches
-When starting work on a new feature or bug, <a href="https://gitkraken.com/learn/git/problems/create-git-branch" target="_blank">create a new branch</a>. Right click on any existing commit to create a branch:
+When starting work on a new feature or bug, <a href="https://gitkraken.com/learn/git/problems/create-git-branch" target="_blank">create a new branch</a>. Right-click on any existing commit to create a branch:
 
 <img src="/wp-content/uploads/add-branch-2025.png" srcset="/wp-content/uploads/add-branch@2x.png 2x" class="img-bordered img-responsive center">
 
-A branch is a pointer to a specific commit in the repo, rather than making entire copies of the working directory files.
+A branch is a pointer to a specific commit in the repo.
 
-Branches allow you to isolate new work from other areas of the repository, and consider implementing <a href="/git-workflows-and-extensions/git-flow">GitFlow</a> as a merging strategy.
+Branches allow you to isolate new work from other areas of the repository, and interact with other collaborators. If you're looking for direction,consider implementing <a href="/git-workflows-and-extensions/git-flow">GitFlow</a> as a merging strategy.
 
 ### Checking out branches
 Branch checkout updates files in the working directory to reflect the version defined by that branch.
 
-New commits are added to the checked out branch. If you find yourself on the wrong branch, <a href="/gitkraken-desktop/stashing">stash</a> your changes, switch to the correct branch, and then *pop* the stash.
+New commits are added to the currently checked out branch. If you find yourself on the wrong branch, <a href="/gitkraken-desktop/stashing">stash</a> your changes, switch to the correct branch, and then *pop* the stash.
 
 When you create a new branch, GitKraken Desktop will automatically checkout the branch for you:
 
@@ -38,11 +39,11 @@ When you create a new branch, GitKraken Desktop will automatically checkout the 
     <figcaption>Right click to create a new branch.</figcaption>
 </figure>
 
-To checkout a different branch, double click on the branch label on the left panel or via the graph.  Checkout is also available by right-clicking a branch.
+To checkout a different branch, double-click on the branch label on the Left Panel or via the Commit Graph.  Checkout is also available by right-clicking a branch.
 
 ### Rename a branch
 
-Rename a branch by right-clicking the branch tag in the Commit Graph (or right-click the branch in the branch list on the left panel) and selecting `Rename branch-name`.
+Rename a branch by right-clicking the branch tag in the Commit Graph (or right-click the branch in the branch list on the Left Panel) and selecting `Rename branch-name`.
 
 <img src="/wp-content/uploads/rename-branch.png" srcset="/wp-content/uploads/rename-branch@2x.png 2x" class="img-bordered img-responsive center">
 
@@ -53,9 +54,9 @@ For hardcore keyboard warriors, you can also rename a branch using the Command P
 Note: You can only rename the current branch you are on.
 ### Delete a branch
 
-To <a href="https://gitkraken.com/learn/git/problems/delete-local-git-branch" target="_blank">delete a branch</a>, right-click the branch and select `Delete {branch-name}`. You cannot delete a branch that is checked out.
+To <a href="https://gitkraken.com/learn/git/problems/delete-local-git-branch" target="_blank">delete a branch</a>, right-click the branch and select `Delete {branch-name}`. You cannot delete a branch that is checked out, so be sure to first checkout a different branch to then delete it. 
 
-To delete multiple local branches in the left panel, hold <kbd>Shift</kbd> then click to select a range of branches or hold <kbd>&#8984; | Ctrl</kbd>  then click to select specific branches. Then right-click to access the delete option.
+To delete multiple local branches in the Left Panel, hold <kbd>Shift</kbd> then click to select a range of branches or hold <kbd>&#8984; | Ctrl</kbd>  then click to select specific branches. Then right-click to access the delete option.
 
 <img src="/wp-content/uploads/multi-delete-branches.gif" class="img-bordered img-responsive center">
 
@@ -75,7 +76,7 @@ Drag and drop one branch onto another to initiate a merge, or just right click t
 <img src="/wp-content/uploads/merge-right.png" srcset="/wp-content/uploads/merge-right@2x.png" class="img-bordered img-responsive center">
 
 <div class='callout callout--warning'>
-    <p>Note 📝 - The In-app merge conflict output editor is only available with a <a href="https://gitkraken.com/pricing" target=_blank>Paid</a> license. </p>
+    <p>Note 📝 - The in-app merge conflict output editor is only available with a <a href="https://gitkraken.com/pricing" target=_blank>Paid</a> license. </p>
 </div>
 
 
@@ -113,7 +114,7 @@ Clicking the up and down arrows will move you to the next conflict.
 </div>
 
 <div class='callout callout--warning'>
-    <p>Note 📝 - The In-app merge conflict output editor is only available with a <a href="https://gitkraken.com/pricing" target=_blank>Paid</a> license. </p>
+    <p>Note 📝 - The in-app merge conflict output editor is only available with a <a href="https://gitkraken.com/pricing" target=_blank>Paid</a> license. </p>
 </div>
 
 <figure class='figure center'>
@@ -198,3 +199,4 @@ You can rebase onto a local or remote.
 
 <img src="/wp-content/uploads/select-rebase-sidebar.png" srcset="/wp-content/uploads/select-rebase-sidebar@2x.png" class="img-bordered img-responsive center">
 
+Remember, rebasing rewrites history in exchange for a visually cleaner history. 
