@@ -259,7 +259,7 @@ For deeper waters on staging, dive into [committing work](/working-with-commits/
 
 Oooo <span style='color: #0669f7;'>c</span><span style='color: #8e00c2;'>o</span><span style='color: #c517b6;'>l</span><span style='color: #d90171;'>o</span><span style='color: #f25d2e;'>r</span><span style='color: #7bd938;'>s</span>!
 
-<img src='/wp-content/uploads/commit-graph-2025.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/commit-graph-2025.gif' class="help-center-img img-bordered">
 
 The **Commit Graph** in GitKraken Desktop is the core of your repo and a representation of the [Directed Acyclic Graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (DAG).  Your commits are displayed here, along with commits from other contributors.
 
