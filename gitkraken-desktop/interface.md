@@ -14,7 +14,8 @@ GitKraken Desktop's UI helps make sense of Git. Below we cover the layout and wh
 
 From left to right, GitKraken Desktop displays a left reference panel, center graph, and the Commit Panel when working with a repository.
 
-<img src="/wp-content/uploads/interface.png" class="img-responsive center">
+<img src="/wp-content/uploads/interface.png" class="help-center-img img-bordered">
+
 
 ## Toolbar
 
@@ -116,20 +117,20 @@ In addition to Undo and Redo, the main toolbar houses common repo actions.
 <div class='callout callout--basic'><p><strong>Note:</strong> Toggle the toolbar labels by navigating to <kbd><strong>Preferences > UI Preferences</strong></kbd> and toggling the <code>Show toolbar icon labels</code> checkbox.</p></div>
 
 ***
-## Left reference panel
+## Left Panel
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/4uSXlUUU0ds?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-Referred to as the left "ref" panel, GitKraken Desktop shows the properties below specific to your repository.
+Referred to as the Left "ref" Panel, GitKraken Desktop shows the properties below specific to your repository.
 
 * The panel and each section can be collapsed or expanded as needed. 
 * The panel and each section can be resized by clicking and dragging. 
 * Sections can be toggled by right-clicking a section and selecting the desired section from the context menu.
 * Sections can be maximized by double-clicking a section header.
 
-<img src='/wp-content/uploads/left-panel-resize-and-collapse.gif' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/left-panel-resize-and-collapse.gif' class="help-center-img img-bordered">
 
 <h3>Local</h3>
 <div class="flex-wrap">
@@ -230,7 +231,7 @@ Referred to as the left "ref" panel, GitKraken Desktop shows the properties belo
 
 The Commit Panel is where files and changes from your working directory are staged and committed.
 
-<img src='/wp-content/uploads/commit-panel@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/commit-panel@2x.png' class="help-center-img img-bordered">
 
 The three parts in order of operations on the staging panel are:
 
@@ -244,13 +245,13 @@ The three parts in order of operations on the staging panel are:
 
  Also, here is a quick color guide for the file symbols:
 
-<img src='/wp-content/uploads/symbol-guide@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/symbol-guide@2x.png' class="help-center-img img-bordered">
 
 
 For deeper waters on staging, dive into [committing work](/working-with-commits/commits).
 
 ***
-## The Graph
+## Commit Graph
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/YWGpKPMALOs?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -258,9 +259,9 @@ For deeper waters on staging, dive into [committing work](/working-with-commits/
 
 Oooo <span style='color: #0669f7;'>c</span><span style='color: #8e00c2;'>o</span><span style='color: #c517b6;'>l</span><span style='color: #d90171;'>o</span><span style='color: #f25d2e;'>r</span><span style='color: #7bd938;'>s</span>!
 
-<img src='/wp-content/uploads/graph-gif.gif' class='figure img-floated img-floated--right'>
+<img src='/wp-content/uploads/graph-gif.gif' class="help-center-img img-bordered">
 
-The **graph** in GitKraken Desktop is the core of your repo and a representation of the [Directed Acyclic Graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (DAG).  Your commits are displayed here, along with commits from other contributors.
+The **Commit Graph** in GitKraken Desktop is the core of your repo and a representation of the [Directed Acyclic Graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (DAG).  Your commits are displayed here, along with commits from other contributors.
 
 Each row of the graph represents one commit, and the top is always for the latest changes. An interactive _//WIP_ (Work-In-Progress) node will show if the working directory has changed since the last commit.
 
@@ -268,7 +269,7 @@ Branches and tag labels on the left side of the graph are pointers to specific c
 
 Columns can intersect through merge commits as shown in the graph legend. As also shown, multiple branches can be at the same place of a single commit and can be both local and remote.
 
-<img src='/wp-content/uploads/graph-elements.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/graph-elements.png' class="help-center-img img-bordered">
 
 For a given vertical track, you can read from bottom to top, and right to left to see how changes are introduced into a focused branch.
 
@@ -284,7 +285,7 @@ For a given vertical track, you can read from bottom to top, and right to left t
 
 Quickly switch between multiple repositories.
 
-<img src='/wp-content/uploads/tabs.gif' class='figure img-floated img-floated--right'>
+<img src='/wp-content/uploads/tabs.gif' class="help-center-img img-bordered">
 
 You can  add new tabs, drag & drop to rearrange, and remove tabs from the top bar. You can also use the corresponding shortcut keys <kbd>cmd</kbd>+<kbd>1-9</kbd> on Windows/Linux and <kbd>cmd</kbd>+<kbd>1-9</kbd> on mac to quickly switch between repositories.
 
@@ -295,21 +296,21 @@ You can  add new tabs, drag & drop to rearrange, and remove tabs from the top ba
 
 Tabs are saved for each profile, so you can have multiple sets of tabs that will open when you switch [profiles](/start-here/profiles/)!
 
-<img src='/wp-content/uploads/switchprofilestabs.gif' class='figure img-floated img-floated--right'>
+<img src='/wp-content/uploads/switchprofilestabs.gif' class="help-center-img img-bordered">
 
 Access a list of all open repositories from the arrow drop-down.
 
-<img src='/wp-content/uploads/tab-drop-down.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/tab-drop-down.png' class="help-center-img img-bordered">
 
 Hover over an open tab to quickly see the end portion of the file path.
 
-<img src='/wp-content/uploads/tab-hover.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/tab-hover.png' class="help-center-img img-bordered">
 
 ### Tab alias and name
 
 An alias can be set for repository tabs. To give an alias to a repository tab, right-click the tab and select <kbd>Alias reposiotry</kbd>. After filling out the name, select save.
 
-<img src='/wp-content/uploads/repository-alias.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/repository-alias.png' class="help-center-img img-bordered">
 
 
 ***
@@ -318,15 +319,15 @@ An alias can be set for repository tabs. To give an alias to a repository tab, r
 
 GitKraken Desktop will show 3 columns in the header by default: <kbd>Branch/Tag</kbd>, <kbd>Graph</kbd>, and <kbd>Commit Message</kbd>. These 3 columns are static and cannot be rearranged or removed.
 
-<img src='/wp-content/uploads/columns@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/columns@2x.png' class="help-center-img img-bordered">
 
 Optionally users may right-click to add <kbd>Commit Author</kbd>, <kbd>Commit Date/Time</kbd>, or <kbd>Sha</kbd>. 
 
-<img src='/wp-content/uploads/right-click@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/right-click@2x.png' class="help-center-img img-bordered">
 
 Users may also left-click the <i class="fas fa-cog"></i> icon to enable or disable <kbd>Commit Author</kbd>, <kbd>Commit Date/Time</kbd>, or <kbd>Sha</kbd> (commit ID). 
 
-<img src='/wp-content/uploads/gear@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/gear@2x.png' class="help-center-img img-bordered">
 
 In addition to using <kbd>cmd/ctrl</kbd>+<kbd>F</kbd> to search commits, users may also filter by commit author. Click the <i class='fa fa-filter'></i>  icon in the AUTHOR column and you can:
 
@@ -334,10 +335,8 @@ In addition to using <kbd>cmd/ctrl</kbd>+<kbd>F</kbd> to search commits, users m
 - Select one or more teams which will filter by all users in that team
 - Search for teams or users in the search field
 
-<img src='/wp-content/uploads/filter-author@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/filter-author@2x.png' class="help-center-img img-bordered">
 
 Columns may also be toggled from <kbd><strong>Preferences > UI Customization</strong></kbd>, GitKraken Desktop will remember which columns you have selected, column size, and orientation for each repo. 
-
-***
 
 For more details on the interface, like soloing remotes, visit [Hiding and Soloing](/working-with-repositories/hiding-and-soloing).
