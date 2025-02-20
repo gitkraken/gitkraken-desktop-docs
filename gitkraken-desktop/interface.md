@@ -12,7 +12,7 @@ GitKraken Desktop's UI helps make sense of Git. Below we cover the layout and wh
 
 ***
 
-From left to right, GitKraken Desktop displays a left reference panel, center graph, and the Commit Panel when working with a repository.
+From left to right, GitKraken Desktop displays a left reference panel, Commit Graph, and the Commit Panel when working with a repository.
 
 <img src="/wp-content/uploads/interface.png" class="help-center-img img-bordered">
 
@@ -231,7 +231,7 @@ Referred to as the Left "ref" Panel, GitKraken Desktop shows the properties belo
 
 The Commit Panel is where files and changes from your working directory are staged and committed.
 
-<img src='/wp-content/uploads/commit-panel@2x.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/commit-graph-2025.png' class="help-center-img img-bordered">
 
 The three parts in order of operations on the staging panel are:
 
@@ -245,7 +245,7 @@ The three parts in order of operations on the staging panel are:
 
  Also, here is a quick color guide for the file symbols:
 
-<img src='/wp-content/uploads/symbol-guide@2x.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/color-guide-2025.png' class="help-center-img img-bordered">
 
 
 For deeper waters on staging, dive into [committing work](/working-with-commits/commits).
@@ -259,7 +259,7 @@ For deeper waters on staging, dive into [committing work](/working-with-commits/
 
 Oooo <span style='color: #0669f7;'>c</span><span style='color: #8e00c2;'>o</span><span style='color: #c517b6;'>l</span><span style='color: #d90171;'>o</span><span style='color: #f25d2e;'>r</span><span style='color: #7bd938;'>s</span>!
 
-<img src='/wp-content/uploads/graph-gif.gif' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/commit-graph-2025.gif' class="help-center-img img-bordered">
 
 The **Commit Graph** in GitKraken Desktop is the core of your repo and a representation of the [Directed Acyclic Graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (DAG).  Your commits are displayed here, along with commits from other contributors.
 
@@ -285,7 +285,7 @@ For a given vertical track, you can read from bottom to top, and right to left t
 
 Quickly switch between multiple repositories.
 
-<img src='/wp-content/uploads/tabs.gif' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/tabs-2025.gif' class="help-center-img img-bordered">
 
 You can  add new tabs, drag & drop to rearrange, and remove tabs from the top bar. You can also use the corresponding shortcut keys <kbd>cmd</kbd>+<kbd>1-9</kbd> on Windows/Linux and <kbd>cmd</kbd>+<kbd>1-9</kbd> on mac to quickly switch between repositories.
 
