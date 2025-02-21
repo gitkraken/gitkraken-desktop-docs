@@ -259,7 +259,7 @@ For deeper waters on staging, dive into [committing work](/working-with-commits/
 
 Oooo <span style='color: #0669f7;'>c</span><span style='color: #8e00c2;'>o</span><span style='color: #c517b6;'>l</span><span style='color: #d90171;'>o</span><span style='color: #f25d2e;'>r</span><span style='color: #7bd938;'>s</span>!
 
-<img src='/wp-content/uploads/commit-graph-2025.gif' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/commit-graph-adjust-2025.gif' class="help-center-img img-bordered">
 
 The **Commit Graph** in GitKraken Desktop is the core of your repo and a representation of the [Directed Acyclic Graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (DAG).  Your commits are displayed here, along with commits from other contributors.
 
@@ -296,15 +296,15 @@ You can  add new tabs, drag & drop to rearrange, and remove tabs from the top ba
 
 Tabs are saved for each profile, so you can have multiple sets of tabs that will open when you switch [profiles](/start-here/profiles/)!
 
-<img src='/wp-content/uploads/switchprofilestabs.gif' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/profile-tabs-2025.gif' class="help-center-img img-bordered">
 
 Access a list of all open repositories from the arrow drop-down.
 
-<img src='/wp-content/uploads/tab-drop-down.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/tab-drop-down-2025.png' class="help-center-img img-bordered">
 
 Hover over an open tab to quickly see the end portion of the file path.
 
-<img src='/wp-content/uploads/tab-hover.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/tab-hover-2025.png' class="help-center-img img-bordered">
 
 ### Tab alias and name
 
@@ -317,17 +317,17 @@ An alias can be set for repository tabs. To give an alias to a repository tab, r
 
 ## Columns
 
-GitKraken Desktop will show 3 columns in the header by default: <kbd>Branch/Tag</kbd>, <kbd>Graph</kbd>, and <kbd>Commit Message</kbd>. These 3 columns are static and cannot be rearranged or removed.
+GitKraken Desktop will show 3 columns in the header by default: <kbd>Branch/Tag</kbd>, <kbd>Graph</kbd>, and <kbd>Commit Message</kbd>. These 3 columns are dynamic and can be rearranged with a drag-and-drop.
 
-<img src='/wp-content/uploads/columns@2x.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/columns-2025.png' class="help-center-img img-bordered">
 
-Optionally users may right-click to add <kbd>Commit Author</kbd>, <kbd>Commit Date/Time</kbd>, or <kbd>Sha</kbd>. 
+Right-click on any column header to enable or disable additional columns such as <kbd>Commit Author</kbd>, <kbd>Commit Date/Time</kbd>, or <kbd>Sha</kbd>. 
 
-<img src='/wp-content/uploads/right-click@2x.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/customize-columns-2025.png' class="help-center-img img-bordered">
 
-Users may also left-click the <i class="fas fa-cog"></i> icon to enable or disable <kbd>Commit Author</kbd>, <kbd>Commit Date/Time</kbd>, or <kbd>Sha</kbd> (commit ID). 
+Alternatively, click the <i class="fas fa-cog"></i> icon to enable or disable columns like Branch/Tag, Graph, Commit Message,Author, Date/Time, Sha, or change to compact view. 
 
-<img src='/wp-content/uploads/gear@2x.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/gear-2025.png' class="help-center-img img-bordered">
 
 In addition to using <kbd>cmd/ctrl</kbd>+<kbd>F</kbd> to search commits, users may also filter by commit author. Click the <i class='fa fa-filter'></i>  icon in the AUTHOR column and you can:
 
