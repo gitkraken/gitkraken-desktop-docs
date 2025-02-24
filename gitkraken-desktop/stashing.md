@@ -17,7 +17,7 @@ Let's talk about how to save your changes for later with stashing.
 
 Stash your changes by hitting the **Stash** icon in the top toolbar.
 
-<img src='/wp-content/uploads/stash.png' srcset='/wp-content/uploads/stash@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/stash.png' srcset='/wp-content/uploads/stash@2x.png' class="help-center-img img-bordered">
 
 Your stash will appear on the graph. If you right click on the stash, you will be given the option to:
 
@@ -28,11 +28,11 @@ Your stash will appear on the graph. If you right click on the stash, you will b
 * **Hide all stashes**: Hides all stashes from the commit graph
 * **Show all stashes**: Shows all stashes on the commit graph
 
-<img src='/wp-content/uploads/stash-options.png' srcset='/wp-content/uploads/stash-options@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/stash-options.png' srcset='/wp-content/uploads/stash-options@2x.png' class="help-center-img img-bordered">
 
 If you only need to pop your stash, then use the Pop Stash button in the upper toolbar:
 
-<img src='/wp-content/uploads/pop-stash.png' srcset='/wp-content/uploads/pop-stash@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/pop-stash.png' srcset='/wp-content/uploads/pop-stash@2x.png' class="help-center-img img-bordered">
 
 <a name="stashing-from-the-left-panel"></a>
 
@@ -40,13 +40,13 @@ If you only need to pop your stash, then use the Pop Stash button in the upper t
 
 Stage your file and click on the Stash icon to enable the option.
 
-<img src='/wp-content/uploads/gkd-10-2-0-stash.gif' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/gkd-10-2-0-stash.gif' class="help-center-img img-bordered">
 
 ### Stashing from the left panel
 
 Your stashes will be available from the left panel for review. The same options to Apply, Pop, Delete, Hide, Hide all, or Show all are present too:
 
-<img src='/wp-content/uploads/stash-left.png' srcset='/wp-content/uploads/stash-left@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/stash-left.png' srcset='/wp-content/uploads/stash-left@2x.png' class="help-center-img img-bordered">
 
 This is helpful for those times you cannot find your stash on the graph.
 
@@ -56,13 +56,13 @@ This is helpful for those times you cannot find your stash on the graph.
 
 To name your stash, type the desired name in the `// WIP` field at the top of the graph.
 
-<img src='/wp-content/uploads/custom-stash-wip.png' srcset='/wp-content/uploads/custom-stash-wip@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/custom-stash-wip.png' srcset='/wp-content/uploads/custom-stash-wip@2x.png' class="help-center-img img-bordered">
 
 The stash will now appear in the left panel and the graph with the desired name.
 
-<img src='/wp-content/uploads/custom-stash-panel.png' srcset='/wp-content/uploads/custom-stash-panel@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/custom-stash-panel.png' srcset='/wp-content/uploads/custom-stash-panel@2x.png' class="help-center-img img-bordered">
 
-<img src='/wp-content/uploads/custom-stash-graph.png' srcset='/wp-content/uploads/custom-stash-graph@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/custom-stash-graph.png' srcset='/wp-content/uploads/custom-stash-graph@2x.png' class="help-center-img img-bordered">
 
 ### Partial stash
 
@@ -70,13 +70,13 @@ Sometimes you only need to stash some of the files in your WIP.
 
 Partial stashing is found in the "staged files" panel. Right-click individual files, or multiple files, and select the “Stash file” option to stash those selected files and have their changes reset.
 
-<img src='/wp-content/uploads/partial-stash.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/partial-stash.png' class="help-center-img img-bordered">
 
 **Apply changes from stash to working directory**
 
 You can also partially apply a stash. When a stash is selected, right click files in the right panel to apply their changes to the working directory.
 
-<img src='/wp-content/uploads/partial-stash-apply.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/partial-stash-apply.png' class="help-center-img img-bordered">
 
 Partial stash tips
 

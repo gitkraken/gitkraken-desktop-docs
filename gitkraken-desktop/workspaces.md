@@ -32,7 +32,7 @@ To create a Cloud Workspace, select <button class="button button--success button
 
 Then, select "Cloud Workspace”, name your Workspace, selecting the hosting service, and then select repositories to add. Optionally, you can also provide an icon, description and select teams or individual users to share with.
 
-<img src="/wp-content/uploads/gkc-10-create-cloud-workspace.gif" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-10-create-cloud-workspace.gif" class="help-center-img img-bordered">
 
 <div class='callout callout--warning'>
     <p>
@@ -45,9 +45,9 @@ Then, select "Cloud Workspace”, name your Workspace, selecting the hosting ser
 
 Actions can be performed on multiple repositories within the Workspace at once, making it easy to get a new member of your team onboarded quickly or keep repository information up-to-date. To perform an action on multiple repositories, select the check box next to the repository name and then select the desired action from the options at the top.
 
-<img src="/wp-content/uploads/gkc-10-cloud-workspace-multi-action.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-10-cloud-workspace-multi-action.png" class="help-center-img img-bordered">
 
-<img src="/wp-content/uploads/gkc-10-cloud-workspace-multi-action-2.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-10-cloud-workspace-multi-action-2.png" class="help-center-img img-bordered">
 
 The following multi-repository actions can be performed:
 - Clone: clone all selected repositories. HTTPS will be used by default unless you have SSH configured in your [Integration settings](https://help.gitkraken.com/gitkraken-desktop/integrations/). This option is only available if the repositories are not already cloned locally. If one or more repositories are already cloned, you have to select the repositories that are not cloned and then select the clone option.
@@ -83,7 +83,7 @@ You can create a Cloud Workspace from a Local Workspace which will enable more v
 
 To do this, select your local Workspace to open it and then select `Create cloud workspace`. From here, you will need to select the provider for your new Cloud Workspace, select the repositories you would like added, and you can even add more repositories to this Workspace from the selected provider.
 
-<img src="/wp-content/uploads/gkc-10-local-to-cloud-workspace.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-10-local-to-cloud-workspace.png" class="help-center-img img-bordered">
 
 <div class='callout callout--warning'>
     <p>
@@ -98,7 +98,7 @@ To do this, select your local Workspace to open it and then select `Create cloud
 
 Edit a Workspace by selecting the ellipsis <i class="fas fa-ellipsis-v"></i> icon by the Workspace name.
 
-<img src="/wp-content/uploads/gkd-10-2-edit-a-workspace.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-10-2-edit-a-workspace.png" class="help-center-img img-bordered">
 
 The available options are:
 
@@ -108,7 +108,7 @@ You can hide a workspace to declutter your view, just as you can hide other grou
 
 To show a hidden workspace or group, simply click the <i class="fa-solid fa-eye-slash"></i> icon to unhide.
 
-<img src="/wp-content/uploads/gkd-10-2-hide-workspaces.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-10-2-hide-workspaces.png" class="help-center-img img-bordered">
 
 ### Select/Unselect
 
@@ -118,13 +118,13 @@ You can select or unselect repositories within a workspace. This functionality a
 
 Use this option to open, clone, or locate repositories. You can apply these actions to the selected repositories or to all repositories within the workspace.
 
-<img src="/wp-content/uploads/gkd-10-2-open-clone-locate-workspaces.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-10-2-open-clone-locate-workspaces.png" class="help-center-img img-bordered">
 
 ### Edit Workspace
 
 Customize your workspace by editing its name, color in the Repo Management Tab, description, and the list of members with access to the workspace. This helps you keep your workspace organized and accessible to the right team members.
 
-<img src="/wp-content/uploads/gkd-10-2-edit-workspace.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-10-2-edit-workspace.png" class="help-center-img img-bordered">
 
 ### Change Color
 
@@ -142,7 +142,7 @@ To access GitKraken Insights for your Workspace, click on the Insights icon. Thi
 
 See [gitkraken.dev Insights](/gk-dev/gk-dev-insights/) for more information on working with Insights. 
 
-<img src="/wp-content/uploads/gkd-10-4-insights-icon.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-10-4-insights-icon.png" class="help-center-img img-bordered">
 
 ***
 

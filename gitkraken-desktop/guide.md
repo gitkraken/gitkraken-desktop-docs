@@ -83,7 +83,7 @@ In the example, the `README.md` file was created automatically to provide contex
 
 You can select _Initial Commit_ from the graph, and click `README.md` to open the built-in editor.
 
-<img src='/wp-content/uploads/open-file1.gif' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/open-file1.gif' class="help-center-img img-bordered">
 
 ### Staging and Committing
 Say you made changes to the `README.md` file. When selecting the _//WIP_ node, there will now be pending changes to `README.md` in the staging panel under _Unstaged Files_.
@@ -107,7 +107,7 @@ Now that our `develop` branch is up to date, we want to roll out these changes i
 
 From the graph we see that `develop` is ahead of `master` by exactly 1 commit.  
 
-<img src='/wp-content/uploads/graph-commit.png' srcset='/wp-content/uploads/graph-commit@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/graph-commit.png' srcset='/wp-content/uploads/graph-commit@2x.png' class="help-center-img img-bordered">
 
 In order to add this commit into the original branch, we will merge `develop` back into `master`.  This will take all of the changes introduced since the last commit and play them on this branch by performing a new commit (called a merge commit) with the changes.
 
@@ -115,7 +115,7 @@ There are a few ways to perform the merge action in GitKraken Desktop, but perha
 
 In the graph, you can see we have things in a new branch, `develop`, that we want in our source branch, `master`. Like any sensible person, we would only have to pick up `develop` and throw it at `master` right? Right! Simply drag `develop` and drop it on `master` to get the merge option.
 
-<img src='/wp-content/uploads/draganddrop.gif' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/draganddrop.gif' class="help-center-img img-bordered">
 
 Alternatively the same merge can be performed through right click and other means.  Revisit and learn more about merging and other options available through [Branching and Merging](/working-with-repositories/branching-and-merging).
 

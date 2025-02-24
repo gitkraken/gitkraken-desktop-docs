@@ -123,7 +123,7 @@ With this setting enabled, GitKraken Desktop will have the ability to generate c
 
 Once you have AI commit message generation enabled you will see ✨ sparkles ✨ in the commit message field. Stage your changes and click this button to get the AI magic started!
 
-<img src='/wp-content/uploads/gkc-commit-message-ai-gen.gif' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/gkc-commit-message-ai-gen.gif' class="help-center-img img-bordered">
 
 Once the commit message has been generated, you can still fully edit the message before committing. You can also click the ✨ to have OpenAI try again.
 
@@ -166,7 +166,7 @@ Cloud Patches allow the ability to engage early with your team before a pull req
 
 To create a Cloud Patch, stage the changes you want to include in the Cloud Patch and click on the Cloud Patch icon. You can also create a Cloud Patch from a commit by right-clicking on a commit in the Commit Graph and selecting `Share commit as Cloud Patch`. Once created, you can select `Copy Cloud Patch link` from the toast or by right-clicking a Cloud Patch in the left panel where all your Cloud Patches will be listed.
 
-<img src='/wp-content/uploads/gkd-10-2-0-create-cloud-patch.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/gkd-10-2-0-create-cloud-patch.png' class="help-center-img img-bordered">
 
 When creating a Cloud Patch, you have the following sharing options:
 
@@ -181,7 +181,7 @@ Cloud Patches shared with you can be viewed in the Cloud Patches Left Panel sect
 
 Cloud Patch links can be shared with users to open the Cloud Patch in GitKraken Desktop or GitLens. When a Cloud Patch link is opened, the user will be prompted to open the client, clone or open the repository if not known to GitKraken Desktop, and then select the base branch to apply the patch to. From here, they can simply select `apply patch to <branch>`. 
 
-<img src='/wp-content/uploads/gkc-apply-cloud-patch-example.gif' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/gkc-apply-cloud-patch-example.gif' class="help-center-img img-bordered">
 
 To delete a cloud path, right-click it and select `Delete Cloud Patch`.
 

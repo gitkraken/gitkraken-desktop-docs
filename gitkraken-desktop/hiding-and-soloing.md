@@ -11,7 +11,7 @@ The left panel allows you to modify the view of the graph for cleanliness and fo
 ***
 
 
-<img src="/wp-content/uploads//solo-hide.gif" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads//solo-hide.gif" class="help-center-img img-bordered">
 
 <div class="flex-wrap" style="align-items: flex-start">
     <div class="flex-item">

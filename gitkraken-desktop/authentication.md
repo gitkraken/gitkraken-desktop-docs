@@ -26,7 +26,7 @@ To clone a remote repository over HTTPS, first navigate to your hosting service 
 
 Then go to GitKraken Desktop and clone the project through <kbd><strong>File > Clone Repo</strong></kbd>.
 
-<img src='/wp-content/uploads/clone.png' srcset='/wp-content/uploads/clone@2x.png 2x' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/clone.png' srcset='/wp-content/uploads/clone@2x.png 2x' class="help-center-img img-bordered">
 
 Paste the URL, hit <button class='button button--success button--ui button--nolink'>Clone the repo</button>, and then open the repo in GitKraken.
 
@@ -55,7 +55,7 @@ To clone a remote repository over SSH, first navigate to your hosting service an
 
 Then go to GitKraken Desktop and clone the project through <em class='context-menu'>File <i class="fa fa-caret-right"></i> Clone</em>.
 
-<img src='/wp-content/uploads/clone.png' srcset='/wp-content/uploads/clone@2x.png 2x' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/clone.png' srcset='/wp-content/uploads/clone@2x.png 2x' class="help-center-img img-bordered">
 
 Paste the URL, hit <button class='button button--success button--ui button--nolink'>Clone the repo</button>, and then open the repo in GitKraken.
 
@@ -124,7 +124,7 @@ Well if it's not working 100% of the time, the most common issues are:
 
 You may tell GitKraken to forget all usernames and passwords from <kbd><strong>Preferences > General</strong></kbd>:
 
-<img src="/wp-content/uploads/forget-all.png" srcset="/wp-content/uploads/forget-all@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/forget-all.png" srcset="/wp-content/uploads/forget-all@2x.png" class="help-center-img img-bordered">
 
 Use this if you need the app to prompt for username or password for remote actions like push or pull.
 

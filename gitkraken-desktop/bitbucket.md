@@ -28,21 +28,19 @@ GitKraken Desktop allows you to authenticate with Bitbucket, which will help you
 
 To authenticate with Bitbucket, navigate to the upper right corner to access <kbd><i> <i class="fas fa-cog"></i> Preferences    <i class='fa fa-caret-right'></i>     Integrations</i></kbd>
 
-<img src="/wp-content/uploads/preferences.png" srcset="/wp-content/uploads/preferences@2x.png" class="img-bordered img-responsive center">
-
+<img src="/wp-content/uploads/preferences.png" srcset="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
 Or alternatively if you are in the <kbd>New Tab</kbd> view, click on <kbd>See all the integrations</kbd> under <strong>Integrations</strong>.
 
-<img src="/wp-content/uploads/gkc-newtab-integrations.png" srcset="/wp-content/uploads/gkc-newtab-integrations@2x.png" class="img-bordered img-responsive center">
-
+<img src="/wp-content/uploads/gkc-newtab-integrations.png" srcset="/wp-content/uploads/gkc-newtab-integrations@2x.png" class="help-center-img img-bordered">
 From the Integrations window, select Bitbucket.org and then hit the <button class='button button--success button--ui button--nolink'>Connect to Bitbucket</span></button> button.
 
-<img src="/wp-content/uploads//preferences-authentication.png" srcset="/wp-content/uploads//preferences-authentication@2x.png 2x" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads//preferences-authentication.png" srcset="/wp-content/uploads//preferences-authentication@2x.png 2x" class="help-center-img img-bordered">
 
 This will open a web browser where you will need to log in with your Bitbucket credentials to allow GitKraken access.
 
 Upon login, a success message appears. Finish connecting by selecting `Open GitKraken`. 
 
-<img src="/wp-content/uploads//bitbucket-success-1.png" srcset="/wp-content/uploads//bitbucket-success-1@2x.png 2x" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads//bitbucket-success-1.png" srcset="/wp-content/uploads//bitbucket-success-1@2x.png 2x" class="help-center-img img-bordered">
 
 Alternativley, you can connect the integration by copy and pasting the OAuth token manually. 
  
@@ -66,12 +64,10 @@ GitKraken's integration with Bitbucket provides handy information about your rep
 
 First, you may search through your existing repositories when cloning:
 
-<img src="/wp-content/uploads//clone.png" srcset="/wp-content/uploads//clone@2x.png" class="img-bordered img-responsive center">
-
+<img src="/wp-content/uploads//clone.png" srcset="/wp-content/uploads//clone@2x.png" class="help-center-img img-bordered">
 Next, GitKraken Desktop presents a list of forks of the current repository when adding remotes:
 
-<img src="/wp-content/uploads//remote.png" srcset="/wp-content/uploads//remote@2x.png" class="img-bordered img-responsive center">
-
+<img src="/wp-content/uploads//remote.png" srcset="/wp-content/uploads//remote@2x.png" class="help-center-img img-bordered">
 Of course, you still have the option of manually entering repo URLs.
 
 ***

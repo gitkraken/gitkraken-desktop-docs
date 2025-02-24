@@ -9,11 +9,11 @@ taxonomy:
 
 GitKraken Desktop tracks errors from <kbd><strong>Help > Support > View Error Logs</strong></kbd>.
 
-<img src="/wp-content/uploads/view-error-log.png" srcset="/wp-content/uploads/view-error-log@2x.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/view-error-log.png" srcset="/wp-content/uploads/view-error-log@2x.png" class="help-center-img img-bordered">
 
 You may also access error logs from the Command Palette.
 
-<img src="/wp-content/uploads/fuzzy-finder-error.gif"  class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/fuzzy-finder-error.gif"  class="help-center-img img-bordered">
 
 This will open a text file will a list of the most recent error toasts, which are the red pop-up errors that appear in the upper right corner of GitKraken Desktop.
 

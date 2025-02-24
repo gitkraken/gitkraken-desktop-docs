@@ -94,7 +94,7 @@ folder at the top level.
 ## Update License
 
 If you need to update your GitKraken Self-Hosted license, you will first need to copy the license.dat file over to your GitKraken Self-Hosted server.  Then, select the new license by going to the License tab on your Enterprise site.  From here you can browse to the new license file:
-<img src='/wp-content/uploads/license-settings.png' srcset='/wp-content/uploads/license-settings@2x.png 2x' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/license-settings.png' srcset='/wp-content/uploads/license-settings@2x.png 2x' class="help-center-img img-bordered">
 
 <a id="reset-the-super-user-password"></a>
 

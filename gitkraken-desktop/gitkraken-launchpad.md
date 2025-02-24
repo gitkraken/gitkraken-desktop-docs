@@ -21,14 +21,14 @@ Integrate your repositories, issues, and pull requests with the Launchpad to con
 
 You can easily connect your integrations at <kbd>Preferences > Integrations</kbd>
 
-<img src="/wp-content/uploads/gkc-launchpad-hosting-service-10-0-0.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-launchpad-hosting-service-10-0-0.png" class="help-center-img img-bordered">
 
 #### Set up Workspaces and Integrations
 
 Create a [Workspace](/gitkraken-desktop/workspaces/) with the relevant integration. Once created, you will be able to filter and focus on WIPs for specific repositories, issues, and pull requests.
 
 
-<img src="/wp-content/uploads/gkc-launchpad-10-0-0.gif" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-launchpad-10-0-0.gif" class="help-center-img img-bordered">
 
 * PULL REQUESTS: Shows all open pull requests for the repositories in selected Workspace.
 * ISSUES: Shows all issues for the repositories in selected Workspace.
@@ -38,13 +38,13 @@ Create a [Workspace](/gitkraken-desktop/workspaces/) with the relevant integrati
 
 Pull Requests and Issues can be pinned (and unpinned) by selecting the <i class="fa-solid fa-thumbtack"></i> icon to move them to the top of the list. Additionally, you have the option to Snooze PRs either indefinitely or for a specific duration by clicking the <i class="fa-solid fa-snooze"></i> icon, which will relocate them to the 'Snoozed' section. To retrieve these PRs, simply visit the 'Snoozed' section and remove them from the snooze state."
 
-<img src="/wp-content/uploads/gkc-launchpad-pinsnooze-10-0-0.gif" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-launchpad-pinsnooze-10-0-0.gif" class="help-center-img img-bordered">
 
 ***
 
 ### Personal or Team view
 
-<img src="/wp-content/uploads/gkc-launchpad-personal-team-10.0.0.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-launchpad-personal-team-10.0.0.png" class="help-center-img img-bordered">
 
 The Launchpad can be viewed in Personal or Team mode. Personal mode displays only the items where you are involved (created by you, assigned to you or created by you), while Team mode shows all pull requests and issues for the repositories in your Workspace - giving you a high level view of your team's coding efforts. You can toggle between these views by selecting the corresponding icon in the top right corner of the Launchpad.
 
@@ -52,7 +52,7 @@ Note that Personal mode allows to see all items where you are involved in the re
 
 In Team View you can filter items by users, giving you a more focused view of specific team members' work.
 
-<img src="/wp-content/uploads/gkd-launchpad-teamview-filter-10.3.0.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-launchpad-teamview-filter-10.3.0.png" class="help-center-img img-bordered">
 
 ***
 
@@ -61,7 +61,7 @@ In Team View you can filter items by users, giving you a more focused view of sp
 You can save your Launchpad views by clicking the <i class="fa-solid fa-plus"></i> Save View icon in the Launchpad tab bar.
 Custom Launchpad views are only visible when the corresponding Team or Personal mode they were created in is selected.
 
-<img src="/wp-content/uploads/gkd-10-5-launchpad-save-view.gif" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-10-5-launchpad-save-view.gif" class="help-center-img img-bordered">
 
 ***
 
@@ -74,7 +74,7 @@ From the Launchpad, you can take action quickly on items such as:
 - Mark issue as closed
 - Open pull request/issue in the browser
 
-<img src="/wp-content/uploads/gkc-launchpad-actions-10-0-0.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-launchpad-actions-10-0-0.png" class="help-center-img img-bordered">
 
 Pull Requests section has the following columns:
 
@@ -105,7 +105,7 @@ If you are working with a GitHub.com Workspace, you may select a pull request to
 You can switch the Issue Tracker provider from the Issues section. The Issue Tracker provider can be set up in the <kbd>Preferences > Integrations</kbd> tab. 
 Issues can be filtered by created, assigned or mentioned, and labels.
 
-<img src="/wp-content/uploads/gkc-launchpad-issues-10-3-0.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-launchpad-issues-10-3-0.png" class="help-center-img img-bordered">
 ***
 
 ### WIPs
@@ -130,7 +130,7 @@ The SNOOZED section displays all snoozed pull requests and issues. You can unsno
 
 You can now filter the Launchpad by Jira Fix Versions and Sprints or GitHub and GitLab Milestones.
 
-<img src="/wp-content/uploads/gkd-10-4-launchpad-jira-sprint-filter.gif" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-10-4-launchpad-jira-sprint-filter.gif" class="help-center-img img-bordered">
 
 ### Launchpad Summary
 
@@ -138,4 +138,4 @@ The Launchpad summary in the status bar displays your most critical pull request
 
 The pull requests shown in the Launchpad summary are determined by the filters applied in the Launchpad tab.
 
-<img src="/wp-content/uploads/gkd-launchpad-summary.gif" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-launchpad-summary.gif" class="help-center-img img-bordered">

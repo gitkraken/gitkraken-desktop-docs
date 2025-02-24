@@ -19,7 +19,7 @@ Git LFS allows the user to track binary files directly or by extension. After th
 
 When viewing the diff of tracked LFS files in GitKraken Desktop, you will see a versioned URL, a generated SHA, and a size pertaining to the size of the original contents of the file:
 
-<img src='/wp-content/uploads/lfs-ref.png' srcset='/wp-content/uploads/lfs-ref@2x.png 2x' class='img-responsive center img-bordered' />
+<img src='/wp-content/uploads/lfs-ref.png' srcset='/wp-content/uploads/lfs-ref@2x.png 2x' class="help-center-img img-bordered" />
 
 Git LFS stores the binary file content on a custom server or via GitHub, GitLab, or BitBucket’s built-in LFS storage. To find the binary content's location, look in your repository’s `.git/lfs/objects` folder.
 
@@ -118,7 +118,7 @@ You will likely need to add both git and git LFS (LFS can have multiple paths, y
 
 Navigate to your Preferences and you should see the LFS tab in the left panel:
 
-<img src='/wp-content/uploads/lfs-tab.png' srcset='/wp-content/uploads/lfs-tab@2x.png 2x' class='img-responsive center img-bordered' />
+<img src='/wp-content/uploads/lfs-tab.png' srcset='/wp-content/uploads/lfs-tab@2x.png 2x' class="help-center-img img-bordered" />
 
 <div class='callout callout--warning'>
     <p><strong>Note:</strong> If you do not see the LFS tab, make sure you have a GitKraken Desktop v3.0.0+ installed and you meet these <a href="/gitkraken-desktop/git-lfs/#git-lfs-requirements">System Requirements</a>.</p>
@@ -126,11 +126,11 @@ Navigate to your Preferences and you should see the LFS tab in the left panel:
 
 Click to initialize LFS on the repo:
 
-<img src='/wp-content/uploads/init-lfs.png' srcset='/wp-content/uploads/init-lfs@2x.png 2x' class='img-responsive center img-bordered' />
+<img src='/wp-content/uploads/init-lfs.png' srcset='/wp-content/uploads/init-lfs@2x.png 2x' class="help-center-img img-bordered" />
 
 Exit preferences to access two new things: an LFS button in the toolbar and an unstaged change to the `.gitattributes` file that needs to be committed.
 
-<img src='/wp-content/uploads/lfs-toolbar.png' srcset='/wp-content/uploads/lfs-toolbar@2x.png 2x' class='img-responsive center img-bordered' />
+<img src='/wp-content/uploads/lfs-toolbar.png' srcset='/wp-content/uploads/lfs-toolbar@2x.png 2x' class="help-center-img img-bordered" />
 
 Stage and commit the changes to the `.gitattributes` file to finish the LFS initialization.
 
@@ -142,13 +142,13 @@ The re-added files should now follow your new LFS tracking pattern.
 
 When you initialize a new repository, you will have the option to _Initialize with LFS_.
 
-<img src='/wp-content/uploads/init-with-lfs.png' srcset='/wp-content/uploads/init-with-lfs@2x.png 2x' class='img-responsive center img-bordered'/>
+<img src='/wp-content/uploads/init-with-lfs.png' srcset='/wp-content/uploads/init-with-lfs@2x.png 2x' class="help-center-img img-bordered"/>
 
 ## Configuring LFS
 
 Once LFS is initialized on a repository, add tracking patterns to the `.gitattributes` file.  These tracking patterns will tell LFS which files to monitor in your repository.
 
-<img src='/wp-content/uploads/tracking-patterns-lfs.png' srcset='/wp-content/uploads/tracking-patterns-lfs@2x.png 2x' class='img-responsive center img-bordered'/>
+<img src='/wp-content/uploads/tracking-patterns-lfs.png' srcset='/wp-content/uploads/tracking-patterns-lfs@2x.png 2x' class="help-center-img img-bordered"/>
 
 Access the `.gitattributes` file by going to <kbd><strong>Preferences > LFS</strong></kbd> or by editing the `.gitattributes` file directly in your text editor.
 
@@ -156,7 +156,7 @@ As another option, add tracking patterns to the repository’s `.gitattributes` 
 
 Select the WIP node, right click the file you wish to be tracked by LFS, and select the desired option under LFS.
 
-<img src='/wp-content/uploads/context-menu-lfs.png' srcset='/wp-content/uploads/context-menu-lfs@2x.png 2x' class='img-responsive center img-bordered' />
+<img src='/wp-content/uploads/context-menu-lfs.png' srcset='/wp-content/uploads/context-menu-lfs@2x.png 2x' class="help-center-img img-bordered" />
 
 <div class='callout callout--success'>
     <p>Note: GitKraken Desktop will automatically perform an LFS pull after cloning a repo or initializing a submodule with LFS </p>
@@ -166,11 +166,11 @@ Select the WIP node, right click the file you wish to be tracked by LFS, and sel
 
 When a file matches a pattern that is being tracked by LFS, an LFS tag appears next to the file name in the right panel.
 
-<img src='/wp-content/uploads/lfs-tag.png' srcset='/wp-content/uploads/lfs-tag@2x.png 2x' class='img-responsive center img-bordered' />
+<img src='/wp-content/uploads/lfs-tag.png' srcset='/wp-content/uploads/lfs-tag@2x.png 2x' class="help-center-img img-bordered" />
 
 Clicking on the file shows the LFS reference information:
 
-<img src='/wp-content/uploads/lfs-ref.png' srcset='/wp-content/uploads/lfs-ref@2x.png 2x' class='img-responsive center img-bordered'/>
+<img src='/wp-content/uploads/lfs-ref.png' srcset='/wp-content/uploads/lfs-ref@2x.png 2x' class="help-center-img img-bordered"/>
 
 Staging and committing LFS tracked files results in the reference files being saved to your local repo and the actual files being saved to your local LFS cache.
 
@@ -178,7 +178,7 @@ Once your repo is pushed to an LFS-capable remote, the reference files will be s
 
 Most LFS actions, such as Checkout, Fetch, Pull, and Push will happen automatically as you use the standard commands in GitKraken Desktop. However, if you want to use an LFS command in isolation, use the LFS toolbar menu:
 
- <img src='/wp-content/uploads/lfs-dropdown.png' srcset='/wp-content/uploads/lfs-dropdown@2x.png 2x' class='img-responsive center img-bordered' />
+ <img src='/wp-content/uploads/lfs-dropdown.png' srcset='/wp-content/uploads/lfs-dropdown@2x.png 2x' class="help-center-img img-bordered" />
 
 Click the arrow on the button and select the desired command. Other than _Prune_, all of the commands are run by GitKraken Desktop via the traditional operations.
 

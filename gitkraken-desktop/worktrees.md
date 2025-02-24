@@ -38,7 +38,7 @@ Since version 10.5.0, GitKraken Desktop supports worktrees, allowing you to crea
 
 To create a worktree, right click on a branch in the Repository View and select `Create worktree`.
 
-<img src="/wp-content/uploads/gkd-10-5-create-worktree.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-10-5-create-worktree.png" class="help-center-img img-bordered">
 
 ***
 
@@ -46,7 +46,7 @@ To create a worktree, right click on a branch in the Repository View and select 
 
 To switch to a different worktree, right click on the worktree in the left panel and select `Open this worktree`.
 
-<img src="/wp-content/uploads/gkd-10-5-worktrees-actions.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkd-10-5-worktrees-actions.png" class="help-center-img img-bordered">
 
 Or check out the branch you want to switch to in the Repository View to switch to that worktree.
 

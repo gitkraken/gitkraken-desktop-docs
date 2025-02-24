@@ -16,7 +16,7 @@ By default, GitKraken Desktop displays up to 2000 commits on the graph. To view 
 
 Navigate to <kbd>Preferences</kbd> from the hamburger menu in the upper right corner, and find <kbd>Max Commits in Graph</kbd> under <kbd>General</kbd>. There is no limit to how many commits can be displayed. 
 
-<img src='/wp-content/uploads/max-commits.png' srcset='/wp-content/uploads/max-commits@2x.png 2x' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/max-commits.png' srcset='/wp-content/uploads/max-commits@2x.png 2x' class="help-center-img img-bordered">
 
 You'll also find option to <kbd>Show All Commits in Graph</kbd> for those behemoth projects of yours. 
 
@@ -24,7 +24,7 @@ You'll also find option to <kbd>Show All Commits in Graph</kbd> for those behemo
 
 The search bar in the upper right of the application defaults to search for commits.
 
-<img src='/wp-content/uploads/search.png' srcset='/wp-content/uploads/search@2x.png 2x' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/search.png' srcset='/wp-content/uploads/search@2x.png 2x' class="help-center-img img-bordered">
 
 Search commits by message, SHA, or author and watch GitKraken Desktop update the results live.
 

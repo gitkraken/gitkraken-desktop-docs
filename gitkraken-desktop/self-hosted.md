@@ -17,7 +17,7 @@ Benefits of Self-Hosted Server:
 - Supports both built-in authentication using email as well as LDAP for user management
 - Control version updates
 
-<img src='/wp-content/uploads/manage-users.png' srcset='/wp-content/uploads/manage-users@2x.png 2x' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/manage-users.png' srcset='/wp-content/uploads/manage-users@2x.png 2x' class="help-center-img img-bordered">
 
 ## System Requirements
 

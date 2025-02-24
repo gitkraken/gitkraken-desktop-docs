@@ -27,15 +27,15 @@ GitKraken Desktop makes it easy to integrate with Jira Cloud and Jira Data Cente
 
 Set up the integration from the ISSUES pane in the left panel or from <kbd><i>Preferences    <i class='fa fa-caret-right'></i>     Integrations</i></kbd>.
 
-<img src="/wp-content/uploads/choose-boards-jira-server-integration.png" srcset="/wp-content/uploads/choose-boards-jira-server-integration@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/choose-boards-jira-server-integration.png" srcset="/wp-content/uploads/choose-boards-jira-server-integration@2x.png" class="help-center-img img-bordered">
 
 Enter the Host Domain URL and a Personal Access Token generated from Jira Data Center.
 
-<img src="/wp-content/uploads/connect-jira-server-integration-1.png" srcset="/wp-content/uploads/connect-jira-server-integration-1@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/connect-jira-server-integration-1.png" srcset="/wp-content/uploads/connect-jira-server-integration-1@2x.png" class="help-center-img img-bordered">
 
 With a successful network connection to your Jira Data Center instance, the app will connect.
 
-<img src="/wp-content/uploads/connected-jira-integration.png" srcset="/wp-content/uploads/connected-jira-integration@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/connected-jira-integration.png" srcset="/wp-content/uploads/connected-jira-integration@2x.png" class="help-center-img img-bordered">
 
 <div class='callout callout--warning'>
   <p><strong>Note:</strong> Some SSO (single sign on) configurations are not supported for the Jira Data Center integration at this time.</p>

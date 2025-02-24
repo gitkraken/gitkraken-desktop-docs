@@ -24,14 +24,14 @@ Hooks are stored in the `hooks` subdirectory of the `.git` directory. This folde
 
 Hooks are unique to your local repository and will not be copied over if you create a new repository nor will be tracked by git. Feel free to add, change, or remove scripts from this folder as necessary.
 
-<img src='/wp-content/uploads/gkc_hook_location_terminal.png' srcset='/wp-content/uploads/gkc_hook_location_terminal@2x.png 2x' class='img-responsive center img-bordered' />
+<img src='/wp-content/uploads/gkc_hook_location_terminal.png' srcset='/wp-content/uploads/gkc_hook_location_terminal@2x.png 2x' class="help-center-img img-bordered" />
 
-<img src='/wp-content/uploads/gkc_hook_location_explorer.png' srcset='/wp-content/uploads/gkc_hook_location_explorer@2x.png 2x' class='img-responsive center img-bordered' />
+<img src='/wp-content/uploads/gkc_hook_location_explorer.png' srcset='/wp-content/uploads/gkc_hook_location_explorer@2x.png 2x' class="help-center-img img-bordered" />
 
 
 GitKraken Desktop will seamlessly detect any Git hooks in your repository, but if you are running OSX or Linux, you need to give execution rights to the hook file. If you forgot to set your files to executables, GitKraken Desktop will throw an error as a heads up.
 
-<img src='/wp-content/uploads/gkc_hook_exit_error_126.png' srcset='/wp-content/uploads/gkc_hook_exit_error_126@2x.png 2x' class='img-responsive center img-bordered' />
+<img src='/wp-content/uploads/gkc_hook_exit_error_126.png' srcset='/wp-content/uploads/gkc_hook_exit_error_126@2x.png 2x' class="help-center-img img-bordered" />
 
 Any script that exits with anything other than exit code 0 is considered a fail.
 
@@ -43,7 +43,7 @@ Users can define a custom path for git hooks by going to <em class='context-menu
 
 This custom git hook path is defined on a per-repository basis.
 
-<img src='/wp-content/uploads/gkc_hook_preferences.png' srcset='/wp-content/uploads/gkc_hook_preferences@2x.png 2x' class='img-responsive center img-bordered' />
+<img src='/wp-content/uploads/gkc_hook_preferences.png' srcset='/wp-content/uploads/gkc_hook_preferences@2x.png 2x' class="help-center-img img-bordered" />
 
 ***
 
@@ -172,7 +172,7 @@ In this example, we'll create a `pre-commit` hook. This hook validates the git c
 #### Step 1
 First navigate to the hooks directory for the target repo. Open a Visual Studio Code window and navigate to <kbd><strong>~/repo/.git/hooks</strong></kbd>. From here, add a new file to the `.git/hooks` directory called `pre-commit`.
 
-<img src='/wp-content/uploads/vscode-to-hooks.png' class='img-responsive center img-bordered' />
+<img src='/wp-content/uploads/vscode-to-hooks.png' class="help-center-img img-bordered" />
 
 <div class='callout callout--warning'>
     <p>Note 📝 - To make the .git folder visible in Visual Studio Code you will need to remove **/.git from files.exclude in the Visual Studio Code settings.</p>
@@ -185,7 +185,7 @@ Open the Gitkraken Terminal window by clicking the Terminal <i class="fa fa-term
 
 Then use the command `chmod +x pre-commit` to make the pre-commit file executable.
 
-<img src='/wp-content/uploads/gkc-chmod-pre-commit.gif' class='img-responsive center img-bordered' />
+<img src='/wp-content/uploads/gkc-chmod-pre-commit.gif' class="help-center-img img-bordered" />
 
 <div class='callout callout--warning'>
     <p>Note 📝 - If you do not have your terminal setup in GitKraken Desktop, please review the <a href="/start-here/tips/#9-open-terminal">Start Here Tips</a> for setup details.</p>
@@ -234,7 +234,7 @@ fi
 ```
 
 ### Git hook in action
-<img src='/wp-content/uploads/gkc-hook-in-action.gif' class='img-responsive center img-bordered' />
+<img src='/wp-content/uploads/gkc-hook-in-action.gif' class="help-center-img img-bordered" />
 
 ### Environment Variables & Git Hooks
 
@@ -252,7 +252,7 @@ There may be times when you want to skip your Git hooks when making a commit. Th
     <p>Note 📝 - Using this option will bypass all hooks that trigger with git commit action.</p>
 </div>
 
-<img src='/wp-content/uploads/bypass-git-hooks.png' class='img-responsive center img-bordered' />
+<img src='/wp-content/uploads/bypass-git-hooks.png' class="help-center-img img-bordered" />
 
 ### Global Git Hooks
 

@@ -16,7 +16,7 @@ taxonomy:
 GitKraken Desktop uses profiles to store your app preferences, current [Tabs](/start-here/interface/#tabs), and Git config information.
 
 
-<img src="/wp-content/uploads/profiles@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/profiles@2x.png" class="help-center-img img-bordered">
 
 <div class='callout callout--success'>
     <p>Create and quickly switch between additional profiles for your different projects and work environments. This requires <a href="https://www.gitkraken.com/pricing" target="_blank">GitKraken Pro</a> subscription or higher.</p>
@@ -26,7 +26,7 @@ GitKraken Desktop uses profiles to store your app preferences, current [Tabs](/s
 ## Profiles
 
 
-<img src="/wp-content/uploads/profiles-preferences@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/profiles-preferences@2x.png" class="help-center-img img-bordered">
 
 The _Keep my .gitconfig updated with my profile info_ option updates your global `.gitconfig` file with the name and email address of your current profile.
 
@@ -37,30 +37,30 @@ The _General_, _Integrations_, and _UI Preferences_ settings configured under yo
 
 [Tabs](/start-here/interface/#tabs) are unique to each profile. When creating a new profile, GitKraken Desktop will use the same tabs that are open in your current profile.
 
-<img src="/wp-content/uploads/switchprofilestabs.gif" class="img-bordered img-responsive center">
+<img src='/wp-content/uploads/profile-tabs-2025.gif' class="help-center-img img-bordered">
 
 Integrations are unique to each profile. If you need to connect to a second remote hosting account, create a second profile and connect the other account from the <kbd>Integrations</kbd> tab. You can do this for any of the integrations.
 
-<img src="/wp-content/uploads/profile-example@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/profile-example@2x.png" class="help-center-img img-bordered">
 
 ### Changing Avatars
 Your commit avatar is either a generated identicon, or the active [Gravatar](https://gravatar.com) image linked to your <code>.gitconfig</code> email address. If you change your Gravatar, your GitKraken Desktop avatar will update itself.
 
 To change the image, click the profile icon in the top right corner then <kbd>Manage Profiles <i class='fa fa-caret-right'></i> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></kbd>.
 
-<img src="/wp-content/uploads/edit-profile@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/edit-profile@2x.png" class="help-center-img img-bordered">
 
-<img src="/wp-content/uploads/edit-profile-2@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/edit-profile-2@2x.png" class="help-center-img img-bordered">
 
 You can choose from the list of icons available on the left then click <button class='button button--success button--ui button--nolink'>Save changes</span></button>. Alternatively, you can set a different email address for this profile if the email address has a different Gravatar image associated to it.
 
-<img src="/wp-content/uploads/gravatar.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gravatar.png" class="help-center-img img-bordered">
 
 ### Author initials in graph
 
 GitKraken Desktop lets you replace all commit nodes with the commit author's initials. 
 
-<img src="/wp-content/uploads/author-initials@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/author-initials@2x.png" class="help-center-img img-bordered">
 
 Navigate to <kbd><strong>Preferences > UI Preferences</strong></kbd> to enable the setting.
 

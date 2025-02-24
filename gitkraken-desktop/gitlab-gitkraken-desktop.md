@@ -26,29 +26,29 @@ GitKraken allows you to connect to [GitLab](https://gitlab.com), which will help
 
 To authenticate with GitLab, navigate to the upper right corner to access <kbd><i> <i class="fas fa-cog"></i> Preferences    <i class='fa fa-caret-right'></i>     Integrations</i></kbd>
 
-<img src="/wp-content/uploads/preferences.png" srcset="/wp-content/uploads/preferences@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/preferences.png" srcset="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
 
 Or alternatively if you are in the <kbd>New Tab</kbd> view, click on <kbd>GitLab</kbd> under <strong>Integrations</strong>.
 
-<img src="/wp-content/uploads/gkc-newtab-integrations.png" srcset="/wp-content/uploads/gkc-newtab-integrations@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-newtab-integrations.png" srcset="/wp-content/uploads/gkc-newtab-integrations@2x.png" class="help-center-img img-bordered">
 
 From the Integrations window, select _GitLab.com_ and then hit the <button class='button button--success button--ui button--nolink'>Connect to GitLab</button> button.
 
-<img src="/wp-content/uploads/gitlab-authentication.png" srcset="/wp-content/uploads/gitlab-authentication@2x.png 2x" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gitlab-authentication.png" srcset="/wp-content/uploads/gitlab-authentication@2x.png 2x" class="help-center-img img-bordered">
 
 This will open your default web browser where you can click <button class='button button--success button--ui button--nolink'>Continue authorization</button> and then log in with your GitLab credentials.
 
-<img src="/wp-content/uploads/authorize-gitlab.png" srcset="/wp-content/uploads/authorize-gitlab@2x.png 2x" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/authorize-gitlab.png" srcset="/wp-content/uploads/authorize-gitlab@2x.png 2x" class="help-center-img img-bordered">
 
-<img src="/wp-content/uploads/gitlab-sign-in.png" srcset="/wp-content/uploads/gitlab-sign-in@2x.png 2x" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gitlab-sign-in.png" srcset="/wp-content/uploads/gitlab-sign-in@2x.png 2x" class="help-center-img img-bordered">
 
 Upon login, a success message appears. Finish connecting by selecting `Open GitKraken`. 
 
-<img src="/wp-content/uploads/auth-success-gitlab-1.png" srcset="/wp-content/uploads/auth-success-gitlab-1@2x.png 2x" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/auth-success-gitlab-1.png" srcset="/wp-content/uploads/auth-success-gitlab-1@2x.png 2x" class="help-center-img img-bordered">
 
 Alternativley, you can connect the integration by copy and pasting the OAuth token manually. 
  
-<img src="/wp-content/uploads/gitlab-oauth-token.png" class="img-bordered img-responsive center"> 
+<img src="/wp-content/uploads/gitlab-oauth-token.png" class="help-center-img img-bordered"> 
 
 ### Generating an SSH Key for GitLab
 <div class='callout callout'>
@@ -61,7 +61,7 @@ Click the magic <button class='button button--success button--ui button--nolink'
 
 Alternatively add a key from  _SSH Defaults_ with <button class='button button--uiorange button--ui button--nolink'>Add key to GitLab</button> or an existing key pair through _Add existing SSH key_.
 
-<img src="/wp-content/uploads/gitlab-ssh.png" srcset="/wp-content/uploads/gitlab-ssh@2x.png 2x" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gitlab-ssh.png" srcset="/wp-content/uploads/gitlab-ssh@2x.png 2x" class="help-center-img img-bordered">
 
 ***
 ## OAuth integration with GitLab
@@ -69,11 +69,11 @@ GitKraken's integration with GitLab provides handy information about your reposi
 
 First, you may search through your existing repositories when cloning:
 
-<img src="/wp-content/uploads/clone-gitlab.png" srcset="/wp-content/uploads/clone-gitlab@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/clone-gitlab.png" srcset="/wp-content/uploads/clone-gitlab@2x.png" class="help-center-img img-bordered">
 
 Next, GitKraken presents a list of forks of the current repository when adding remotes:
 
-<img src="/wp-content/uploads/remote-gitlab.png" srcset="/wp-content/uploads/remote-gitlab@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/remote-gitlab.png" srcset="/wp-content/uploads/remote-gitlab@2x.png" class="help-center-img img-bordered">
 
 Of course, you still have the option of manually entering repo URLs.
 

@@ -16,7 +16,7 @@ Microsoft also introduced <a href="https://learn.microsoft.com/en-us/windows/wsl
 
 ## How to use GitKraken Desktop with WSL 2
 
-<img src="/wp-content/uploads/wsl-full-screen.png" srcset="/wp-content/uploads/wsl-full-screen@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/wsl-full-screen.png" srcset="/wp-content/uploads/wsl-full-screen@2x.png" class="help-center-img img-bordered">
 
 GitKraken Desktop can work with repos stored on your WSL 2 file system when installed within the WSL 2 environment and using WSL’s built-in display server functionality, <a href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps" target="_blank">WSLg</a>, for GUI support. The Linux version of GitKraken Desktop has been updated to fix common issues when operating GitKraken within WSL 2, and includes settings to [set preferences](#preferences-for-gitkraken-on-wsl-2) for where to open web links and files opened by GitKraken running within WSL 2.
 
@@ -84,7 +84,7 @@ Note: If you choose to install GitKraken Desktop from the .tar.gz file, gitkrake
 
 When running GitKraken Desktop within WSL 2, additional preferences are available to tell GitKraken where you'd like to open URLs and files opened by GitKraken. You'll see these settings in `Preferences` > `General` when running within WSL 2.
 
-<img src="/wp-content/uploads/wsl-host-settings.png" srcset="/wp-content/uploads/wsl-host-settings@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/wsl-host-settings.png" srcset="/wp-content/uploads/wsl-host-settings@2x.png" class="help-center-img img-bordered">
 
 By default, URLs will open in your Windows default browser and other files opened by GitKraken will attempt to open on the host distribution.
 
@@ -122,7 +122,7 @@ Then, reopen your Linux distribution or GitKraken Desktop as administrator.
 
 Microsoft recommends against working across operating systems when using WSL 2, and GitKraken does not currently support cross file system access of repos. To get around this limitation, you can install a seperate GitKraken Desktop on both the Windows side and WSL Linux side. Then GitKraken will notify you when opening a repo across operating systems and allow you to directly open the repo in the recommended installation of GitKraken. When attempting to open a new repo that is on WSL 2 from GitKraken installed on Windows, or Windows from GitKraken installed on WSL 2, the following message will appear:
 
-<img src="/wp-content/uploads/wsl-toast.png" srcset="/wp-content/uploads/wsl-toast@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/wsl-toast.png" srcset="/wp-content/uploads/wsl-toast@2x.png" class="help-center-img img-bordered">
 
 You will be asked to choose an option to proceed:
 - `Open Help Center` will take you to this page in your browser for information on how to set up GitKraken within WSL 2.

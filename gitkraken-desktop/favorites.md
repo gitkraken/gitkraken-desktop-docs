@@ -16,11 +16,11 @@ Navigate to <kbd><strong>File > Open</strong></kbd> to open the Repo Management 
 
 Click on the star icon at the left of the repo.
 
-<img src="/wp-content/uploads/gkc-repo-mngmt-tab-star-repos.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-repo-mngmt-tab-star-repos.png" class="help-center-img img-bordered">
 
 Once added, favorites will appear at the Favorites section in the Repo Management tab.
 
-<img src="/wp-content/uploads/gkc-repo-mngmt-tab-favorites-list.png"  class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-repo-mngmt-tab-favorites-list.png"  class="help-center-img img-bordered">
 
 ## Shortcut Keys
 

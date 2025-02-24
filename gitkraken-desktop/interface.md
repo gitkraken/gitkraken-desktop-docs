@@ -325,7 +325,7 @@ Right-click on any column header to enable or disable additional columns such as
 
 <img src='/wp-content/uploads/customize-columns-2025.png' class="help-center-img img-bordered">
 
-Alternatively, click the <i class="fas fa-cog"></i> icon to enable or disable columns like Branch/Tag, Graph, Commit Message,Author, Date/Time, Sha, or change to compact view. 
+Alternatively, click the <i class="fas fa-cog"></i> icon to enable or disable columns like Branch/Tag, Graph, Commit Message, Author, Date/Time, Sha, or change to Compact Graph view. 
 
 <img src='/wp-content/uploads/gear-2025.png' class="help-center-img img-bordered">
 

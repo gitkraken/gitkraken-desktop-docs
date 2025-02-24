@@ -15,7 +15,7 @@ Here's the TLDR of the best features in GitKraken Desktop.
 
 If you have personal projects you wish to separate from work repos–or if you need to connect to multiple instances of GitHub, GitLab, Bitbucket, etc.–then set up [Profiles](/start-here/profiles).
 
-<img src="/wp-content/uploads/profile-example.png" srcset="/wp-content/uploads/profile-example@2x.png 2x" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/profile-example.png" srcset="/wp-content/uploads/profile-example@2x.png 2x" class="help-center-img img-bordered">
 
 Each profile stores different app preferences and Git config information, which makes it easier to switch context.
 
@@ -29,7 +29,7 @@ Each profile stores different app preferences and Git config information, which 
 
 Work like the pros, and use the [Command Palette](/start-here/command-palette) to quickly access GitKraken Desktop actions.
 
-<img src="/wp-content/uploads/FFcommands.gif" srcset="/wp-content/uploads/FFcommands.gif" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/FFcommands.gif" srcset="/wp-content/uploads/FFcommands.gif" class="help-center-img img-bordered">
 
 As you type, the Command Palette will find the most relevant commands, allowing you to perform many actions without clicking. Here are a few examples:
 
