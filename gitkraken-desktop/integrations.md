@@ -19,7 +19,7 @@ GitKraken Desktop allows you to connect many different services and platforms, m
 - [GitLab](/gitkraken-desktop/gitlab-gitkraken-desktop/)
 - [GitLab Self-Managed](/gitkraken-desktop/gitlab-self-hosted/)
 - [Bitbucket](/gitkraken-desktop/bitbucket)
-- [Bitbucket Data Center](/gitkraken-desktop/bitbucket-server/)
+- [Bitbucket Data Center](/gitkraken-desktop/bitbucket-data-center/)
 - [Azure DevOps](/gitkraken-desktop/azure-devops/)
 
 ## Issue tracker integrations
