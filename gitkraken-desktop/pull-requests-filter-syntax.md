@@ -100,5 +100,5 @@ We do not support all filters on other integrations, including GitLab, Bitbucket
 |---------------------|:------:|:---------------:|:-------:|:-------------------------------------------------:|:-------------------------------------------------------------------:|
 |GitLab + Self Managed|✔       |                 |✔        |✔                                                  |                                                                     |
 |Bitbucket            |✔       |                 |✔        |✔                                                  |                                                                     |
-|Bitbucket Server     |✔       |✔                |         |✔                                                  |                                                                     |
+|Bitbucket Data Center     |✔       |✔                |         |✔                                                  |                                                                     |
 |Azure DevOps         |        |                 |✔        |✔                                                  |                                                                     |

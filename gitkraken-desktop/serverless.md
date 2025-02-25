@@ -51,7 +51,7 @@ Double-click the downloaded executable file, and follow the installation instruc
 
 #### Data Location
 
-GitKraken data is stored within your home profile in `C:\\Users\\{user}\\AppData\\Roaming` or `%APPDATA%\\.gitkraken` on older versions. No data is stored outside of the user's machine or remote services _(GitHub Enterprise, Bitbucket Server, etc)_.
+GitKraken data is stored within your home profile in `C:\\Users\\{user}\\AppData\\Roaming` or `%APPDATA%\\.gitkraken` on older versions. No data is stored outside of the user's machine or remote services _(GitHub Enterprise, Bitbucket Data Center, etc)_.
 
 
 ***
@@ -68,7 +68,7 @@ Double click the downloaded DMG file and when prompted, drag and drop the GitKra
 
 #### Data Location
 
-GitKraken data is stored in `/Users/{user}/.gitkraken` == `~/.gitkraken`. No data is stored outside of user's machine or remote services _(GitHub Enterprise, Bitbucket Server, etc)_.
+GitKraken data is stored in `/Users/{user}/.gitkraken` == `~/.gitkraken`. No data is stored outside of user's machine or remote services _(GitHub Enterprise, Bitbucket Data Center, etc)_.
 
 ***
 
@@ -103,7 +103,7 @@ Note: for older distros that do not have `dnf`, you should use `yum` instead.
 
 #### Data Location
 
-GitKraken data is stored in `/home/{user}/.gitkraken` == `~/.gitkraken`. No data is stored outside of user's machine or remote services _(GitHub Enterprise, Bitbucket Server, etc)_.
+GitKraken data is stored in `/home/{user}/.gitkraken` == `~/.gitkraken`. No data is stored outside of user's machine or remote services _(GitHub Enterprise, Bitbucket Data Center, etc)_.
 
 ***
 
