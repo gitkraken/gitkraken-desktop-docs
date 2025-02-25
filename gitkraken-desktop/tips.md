@@ -99,18 +99,6 @@ To delete a file, right-click on the file from the Commit Panel to access the de
 
 ***
 
-### 5. Favorite Repos
-
-Favorite the repos you work on most so they show up at the top of your list.
-
-<img src="/wp-content/uploads/list.png" srcset="/wp-content/uploads/list.png" class="img-bordered img-responsive center">
-
-You can favorite a repository by right-cliking a recently opened repository in the drop down list, or you can click the heart from the repository management window.
-
-<img src="/wp-content/uploads/star-repos.png" srcset="/wp-content/uploads/star-repos@2x.png" class="img-bordered img-responsive center">
-
-***
-
 ### 6. Integrate with GitHub, GitLab, Bitbucket, and Azure DevOps
 
 GitKraken Desktop allows you to authenticate with GitHub, GitLab, Bitbucket, and Azure DevOps (previously VSTS), which will help you find repos when cloning or adding your remotes.
@@ -161,13 +149,15 @@ Use the top toggle button to switch between Diff View, which shows the selected 
 
 ***
 
-### 9. Open Terminal 
+### 9. Gitkraken Desktop Terminal
 
-You can open the terminal or CLI from GitKraken Desktop!
+The GitKraken Desktop terminal is a fully-featured terminal emulator that allows you to run Git commands directly from the app.
+Click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar.
 
-To open the current repo folder in terminal, go to <em class="context-menu">File <i class='fa fa-caret-right'></i> Open Terminal</em> or use the keyboard shortcuts <kbd>opt</kbd> + <kbd>T</kbd> (Mac) / <kbd>alt</kbd> + <kbd>T</kbd> (Windows + Linux). 
+To open the current repo folder in an external terminal, go to <em class="context-menu">File <i class='fa fa-caret-right'></i> Open Terminal</em> or use the keyboard shortcuts <kbd>opt</kbd> + <kbd>T</kbd> (Mac) / <kbd>alt</kbd> + <kbd>T</kbd> (Windows + Linux). 
 
-You can set your default terminal from <em class="context-menu">Preferences <i class='fa fa-caret-right'></i> General</em>.
+You can set your default terminal from <em class="context-menu">Preferences <i class='fa fa-caret-right'></i> External Tools</em>.
+
 
 ***
 
