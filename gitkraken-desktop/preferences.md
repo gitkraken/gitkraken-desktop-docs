@@ -134,7 +134,7 @@ GitKraken Desktop supports HTTPS and SSH authentication, and provides useful int
 - [GitLab Integration](/gitkraken-desktop/gitlab/)
 - [GitLab Self-Managed Integration](/gitkraken-desktop/gitlab-self-hosted/)
 - [Bitbucket Integration](/gitkraken-desktop/bitbucket/)
-- [Bitbucket Server Integration](/gitkraken-desktop/bitbucket-server/)
+- [Bitbucket Data Center Integration](/gitkraken-desktop/bitbucket-data-center/)
 - [Azure DevOps Integration](/gitkraken-desktop/azure-devops/)
 - [TFS, AWS CodeCommit, custom service, etc](/gitkraken-desktop/authentication/)
 - [Jira Cloud Integration](/gitkraken-desktop/jira/)
