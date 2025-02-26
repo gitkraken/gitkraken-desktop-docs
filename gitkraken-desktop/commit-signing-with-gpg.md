@@ -105,7 +105,7 @@ To upload your GPG public key to your remote hosting service, we recommend viewi
 
 * <em class='context-menu'><i class="fab fa-github"></i></em> [GitHub](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account)
 * <em class='context-menu'><i class="fab fa-gitlab" aria-hidden="true"></i></em> [GitLab](https://docs.gitlab.com/ee/user/project/repository/signed_commits/gpg.html#add-a-gpg-key-to-your-account)
-* <em class='context-menu'><i class="fab fa-bitbucket" aria-hidden="true"></i></em> Only Bitbucket Data Center[Bitbucket](https://confluence.atlassian.com/bitbucketserver/using-gpg-keys-913477014.html#UsingGPGkeys-AddaGPGkeytoBitbucketServer)
+* <em class='context-menu'><i class="fab fa-bitbucket" aria-hidden="true"></i></em> [Bitbucket] (https://support.atlassian.com/bitbucket-cloud/docs/use-gpg-keys-to-sign-commits/#Add-a-GPG-key)
 
 To copy your GPG public key in GitKraken Desktop, navigate to Preferences → GPG Preferences and below your Signing Key, select `Copy GPG Public Key`.
 
@@ -205,5 +205,5 @@ Preferences > Commit Signing > Sign Commits/Tags By default
 
 * <em class='context-menu'><i class="fab fa-github"></i></em> [GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 * <em class='context-menu'><i class="fab fa-gitlab" aria-hidden="true"></i></em> [GitLab](https://docs.gitlab.com/ee/user/project/repository/signed_commits/gpg.html#add-a-gpg-key-to-your-account)
-* <em class='context-menu'><i class="fab fa-bitbucket" aria-hidden="true"></i></em> Commit Signing verification is not supported on Bitbucket.org
+* <em class='context-menu'><i class="fab fa-bitbucket" aria-hidden="true"></i></em> Commit Signing verification with SSH key is not supported on Bitbucket.org, only GPG keys.
 
