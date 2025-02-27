@@ -6,9 +6,9 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: February 2025</kbd>
 
 GitKraken Desktop's UI helps make sense of Git. Below we cover the layout and what the icons represent.
-
 
 ***
 
