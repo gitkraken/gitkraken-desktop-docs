@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: February 2025</kbd>
 
 The _Command Palette_ is a faster way to access GitKraken Desktop's actions.
 

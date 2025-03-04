@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: February 2025</kbd>
 
 We know keyboard shortcuts help get things done faster, and here’s a handy list of the shortcuts currently supported by GitKraken Desktop.
 
@@ -187,7 +188,7 @@ We know keyboard shortcuts help get things done faster, and here’s a handy lis
             <td><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>H</kbd></td>
         </tr>
         <tr>
-            <td>Focus the left panel filter bar</td>
+            <td>Focus the Left Panel filter bar</td>
             <td><kbd>&#8984;</kbd><kbd>Option</kbd><kbd>F</kbd></td>
             <td><kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>F</kbd></td>
         </tr>
@@ -252,12 +253,12 @@ We know keyboard shortcuts help get things done faster, and here’s a handy lis
             <td><kbd>Ctrl</kbd><kbd>0</kbd></td>
         </tr>
         <tr>
-            <td>Toggle the left panel</td>
+            <td>Toggle the Left Panel</td>
             <td><kbd>&#8984;</kbd><kbd>J</kbd></td>
             <td><kbd>Ctrl</kbd><kbd>J</kbd></td>
         </tr>
         <tr>
-            <td>Toggle the Commit Details panel</td>
+            <td>Toggle the Commit Detail panel</td>
             <td><kbd>&#8984;</kbd><kbd>K</kbd></td>
             <td><kbd>Ctrl</kbd><kbd>K</kbd></td>
         </tr>
@@ -267,7 +268,7 @@ We know keyboard shortcuts help get things done faster, and here’s a handy lis
             <td><kbd>Ctrl</kbd><kbd>F</kbd></td>
         </tr>
         <tr>
-            <td>Focus the left panel filter bar</td>
+            <td>Focus the Left Panel filter bar</td>
             <td><kbd>&#8984;</kbd><kbd>Option</kbd><kbd>F</kbd></td>
             <td><kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>F</kbd></td>
         </tr>

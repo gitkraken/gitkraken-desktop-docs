@@ -6,17 +6,18 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: February 2025</kbd>
 
 Navigate to <i class="fas fa-cog"></i> <kbd><strong>Preferences</strong></kbd> to customize your GitKraken Desktop experience. Here are what each of the major sections do.
 
 
-<img src="/wp-content/uploads/preferences.png" srcset="/wp-content/uploads/preferences@2x.png 2x" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/preferences-2025.png" srcset="/wp-content/uploads/preferences@2x.png 2x" class="help-center-img img-bordered">
 
 *** 
 
 ## Organization
 
-This section will actually be labeled with your organization name rather than "Organization".  It shows the members and teams within your organization. Click `switch organization` to swap to another organization.
+This section will be labeled with your organization name rather than "Organization".  It shows the members and teams within your organization. Click `switch organization` to swap to another organization.
 
 The Owner and any Admins are able to:
 
@@ -26,7 +27,7 @@ The Owner and any Admins are able to:
 
 
 <div class='callout callout--warning'>
-    <p><strong>Note:</strong> the Organization section is only available to users who have a Pro or Enterprise license.
+    <p><strong>Note:</strong> the Organization section is only available to users who have a Pro, Teams, or Enterprise license.
 </p>
 </div>
 
@@ -45,8 +46,10 @@ Removes any remote-tracking references that no longer exist on the remote.
 ### Automatic Conflict Detection
 
 GitKraken will monitor your base branch for conflicts and alert you with an icon in the toolbar when conflicts are detected, providing options to resolve your conflicts sooner rather than later.
+
 Unchecking this option will disable the automatic conflict detection feature for all repositories. You can disable this feature on a per-repo basis by going to the repo preferences and unchecking the box for automatic conflict detection.
-More information on [Automatic Conflict Detection](https://help.gitkraken.com/gitkraken-desktop/branching-and-merging/#automatic-conflict-detection-preview)
+
+Learn more about [Automatic Conflict Detection](https://help.gitkraken.com/gitkraken-desktop/branching-and-merging/#automatic-conflict-detection-preview).
 
 ### Keep Submodules Up to Date
 
@@ -71,7 +74,7 @@ Set the max number of commits GitKraken Desktop will show in the graph. Lower co
 
 ### Lazy Load Commits
 
-When enabled, GitKraken Desktop will only load additional commits if you reach the earliest commit in the Graph. This setting may cause performance issues with large repositories.
+When enabled, GitKraken Desktop will only load additional commits if you reach the earliest commit in the Commit Graph. This setting may cause performance issues with large repositories.
 
 ### Remember tabs
 
@@ -79,11 +82,15 @@ This will remember open tabs when you quit GitKraken Desktop. This option will a
 
 ### Longpaths (Windows Only)
 
-For Windows users, GitKraken Desktop will respect the `core.longpaths` setting in the global .gitconfig. Adjusting this setting will change `core.longpaths` in your .gitconfig. `core.longpaths` only applies to the files in the working directory, not in the .git directory, to maintain compatibility with Git for Windows.
+For Windows users, GitKraken Desktop will respect the `core.longpaths` setting in the global .gitconfig. 
+
+Adjusting this setting will change `core.longpaths` in your .gitconfig. `core.longpaths` only applies to the files in the working directory, not in the .git directory, to maintain compatibility with Git for Windows.
 
 ### AutoCRLF (Windows Only)
 
-For Windows users, GitKraken Desktop will respect the `core.autocrlf` setting in the global .gitconfig. Adjusting this setting will change `core.autocrlf` in your .gitconfig. Enabling this option auto-converts CRLF line endings into LF when adding a file to index, and vice versa when checking out code onto your file system. For more information check out this [git documentation](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf)
+For Windows users, GitKraken Desktop will respect the `core.autocrlf` setting in the global .gitconfig. 
+
+Adjusting this setting will change `core.autocrlf` in your .gitconfig. Enabling this option auto-converts CRLF line endings into LF when adding a file to index, and vice versa when checking out code onto your file system. For more information check out this [git documentation](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf)
 
 
 ### Use extended logging in activity log
@@ -98,9 +105,11 @@ Removes credentials that currently stored by GitKraken Desktop.
 
 Allows other users in your team to see your local work in progress files. This is directly related to the [Teams](/working-with-repositories/teams) feature.
 
+***
+
 ## Profiles
 
-GitKraken Desktop uses profiles to store your app preferences, current [Tabs](/start-here/interface/#tabs), and Git config information.
+GitKraken Desktop uses profiles to store your app preferences, current [tabs](/start-here/interface/#tabs), and Git config information.
 
 [Learn more about Profiles](/start-here/profiles)
 
@@ -168,10 +177,11 @@ GitKraken Desktop's notification system is designed to tell you about updates, b
 - Receive Help Notifications
 
 <div class='callout callout--basic'>
-    <p><strong>Note:</strong> Marketing notifications can only be disabled by Pro users.
+    <p><strong>Note:</strong> Marketing notifications can only be disabled by Pro, Teams, and Enterprise users. 
 </p>
 </div>
 
+***
 
 ## UI Customization
 
@@ -229,6 +239,8 @@ These settings only effect to the in-app `Terminal`.
 - Cursor Style
 - Autocomplete behavior
 - Default Terminal (Windows only)
+
+***
  
 ## Experimental
 

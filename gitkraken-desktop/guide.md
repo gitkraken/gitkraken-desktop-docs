@@ -7,7 +7,9 @@ taxonomy:
 
 ---
 
-Whether you are a newborn or a wizened deep-ocean octopod, this Getting Started Guide uses a basic workflow to provide an overview of GitKraken Desktop interface from cloning your repository to successfully executing Git actions.
+<kbd>Last updated: March 2025</kbd>
+
+This Getting Started Guide uses a basic workflow to provide an overview of GitKraken Desktop interface from cloning your repository to successfully executing Git actions.
 
 ***
 
@@ -36,7 +38,7 @@ Need a hand jumping into the product? Here's a playlist with a few video tutoria
 
 Most of the work you do in GitKraken Desktop is using the local repository, meaning the files and changes are saved on your local machine.
 
-You can easily identify any local branches in the graph as they are shown with the <em class='context-menu'><i class="fa fa-laptop" aria-hidden="true"></i></em> icon.
+You can easily identify any local branches in the Commit Graph as they are shown with the <em class='context-menu'><i class="fa fa-laptop" aria-hidden="true"></i></em> icon.
 
 One of the reasons why Git is so fast when compared to other SCM tools is because all changes are made locally rather than on a remote server.  The local repository includes all of the branches, and changes made to the repo, since the time it was created.  
 
@@ -60,15 +62,15 @@ Up until this point, you have created an entire folder representing your project
 
 
 ### Branching
-The newly initialized repository created results in a default `master` branch.  Synonymous with production, typically commits are not made directly to this, but rather are reviewed and merged in.
+The newly initialized repository created results in a default `main` branch.  Synonymous with production, typically commits are not made directly to this, but rather are reviewed and merged in.
 
 <div class='callout callout--basic'>
     <p>Branches can be thought of as an area to silo where to commit. Its reference is specifically a moving pointer to an individual commit object.</p>
 </div>
 
-<img src='/wp-content/uploads/create-new-branch.png' srcset='/wp-content/uploads/create-new-branch@2x.png 2x' class='img-bordered img-floated img-floated--right'>
+<img src='/wp-content/uploads/create-new-branch-2025.png' class='img-bordered img-responsive center'>
 
-On our newly created repo, we'll branch off from `master` to silo our normal development.  To do this, right-click master on the graph and select <em class='context-menu'>Create branch here</em>.  Let's call this branch `develop` in "_enter branch name_" which is going to be an indefinite main track branch to the project.
+On our newly created repo, we'll branch off from `main` to silo our normal development.  To do this, right-click main on the Commit Graph and select <em class='context-menu'>Create branch here</em>.  Let's call this branch `develop` in "_enter branch name_" which is going to be an indefinite main track branch to the project.
 
 Once created, GitKraken Desktop will auto checkout `develop` and switch to that new branch.
 
@@ -81,14 +83,14 @@ In the example, the `README.md` file was created automatically to provide contex
 `README.md` was created as a placeholder and the project can become more meaningful by modifying the file with the project context, as well as adding additional project files.  Any modifications and additions will have to be staged and committed, which will only affect our current branch.
 
 
-You can select _Initial Commit_ from the graph, and click `README.md` to open the built-in editor.
+You can select _Initial Commit_ from the Commit Graph, and click `README.md` to open the built-in editor.
 
-<img src='/wp-content/uploads/open-file1.gif' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/open-file-2025.png' class='img-bordered img-responsive center'>
 
 ### Staging and Committing
 Say you made changes to the `README.md` file. When selecting the _//WIP_ node, there will now be pending changes to `README.md` in the staging panel under _Unstaged Files_.
 
-<img src='/wp-content/uploads/unstage.png' srcset='/wp-content/uploads/unstage@2x.png 2x' class='img-bordered img-floated img-floated--right'>
+<img src='/wp-content/uploads/unstage-2025.png' class='img-bordered img-responsive center'>
 
 Next, let's move these changes into the _Staged Files_ section by selecting the green <button class='button button--success button--ui button--nolink'>Stage all changes</button> button.
 
@@ -105,17 +107,17 @@ Visit [staging](/working-with-commits/staging) for vast coverage of the topic, i
 ### Merging
 Now that our `develop` branch is up to date, we want to roll out these changes into production.
 
-From the graph we see that `develop` is ahead of `master` by exactly 1 commit.  
+From the Commit Graph we see that `develop` is ahead of `main` by exactly 1 commit.  
 
-<img src='/wp-content/uploads/graph-commit.png' srcset='/wp-content/uploads/graph-commit@2x.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/graph-commit-2025.png' class='img-bordered img-responsive center'>
 
-In order to add this commit into the original branch, we will merge `develop` back into `master`.  This will take all of the changes introduced since the last commit and play them on this branch by performing a new commit (called a merge commit) with the changes.
+In order to add this commit into the original branch, we will merge `develop` back into `main`.  This will take all of the changes introduced since the last commit and play them on this branch by performing a new commit (called a merge commit) with the changes.
 
-There are a few ways to perform the merge action in GitKraken Desktop, but perhaps the easiest is from within the graph.
+There are a few ways to perform the merge action in GitKraken Desktop, but perhaps the easiest is from within the Commit Graph.
 
-In the graph, you can see we have things in a new branch, `develop`, that we want in our source branch, `master`. Like any sensible person, we would only have to pick up `develop` and throw it at `master` right? Right! Simply drag `develop` and drop it on `master` to get the merge option.
+In the Commit Graph, you can see we have things in a new branch, `develop`, that we want in our source branch, `main`. Like any sensible person, we would only have to pick up `develop` and throw it at `main` right? Right! Simply drag `develop` and drop it on `main` to get the merge option.
 
-<img src='/wp-content/uploads/draganddrop.gif' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/drag-and-drop-2025.png' class='img-bordered img-responsive center'>
 
 Alternatively the same merge can be performed through right click and other means.  Revisit and learn more about merging and other options available through [Branching and Merging](/working-with-repositories/branching-and-merging).
 
@@ -131,5 +133,5 @@ Your quest continues!
 
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/9YCO-3_MApI?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/8a6fYPkBDbY?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>
