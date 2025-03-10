@@ -15,6 +15,55 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) to see what we’re working on.
 
 ***
+<a id="v10-8-0"></a>
+## Version 10.8.0
+
+<div class="embed-container embed-container--16-9" style="position: relative; width: 560px; height: 310px; overflow: hidden;">
+    <a href="https://www.youtube.com/watch?v=yK5GZpzamhA" target="_blank">
+        <img src="https://img.youtube.com/vi/yK5GZpzamhA/0.jpg" alt="YouTube video thumbnail"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;">
+    </a>
+</div>
+
+_"Every merge conflict is a battle between alternate realities… and only one can survive."_
+
+_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-10-8-0) and see how it all works!_
+
+### Tuesday, March 11th, 2025
+
+### New ✨
+ - **Conflict Prevention (Preview):** Avoid painful merge issues before they happen so your team can spend less time resolving conflicts.
+   - GitKraken now warns you of potential conflicts by detecting overlapping edits between your branch and your org members' unmerged changes.
+     - When overlapping edits are detected, an avatar of the person you have potential conflicts with will show in the toolbar.
+     - Click on the avatar in the toolbar to open a menu for more information and take action to coordinate with teammates. Share your changes as a Cloud Patch or copy the summary of overlapping edits to share with your teammate to reduce headaches down the road.
+     - If you have local changes that are not yet pushed to a remote branch, there will be an option to push your changes so your teammates can fetch them.
+   - A target branch status indicator will appear in the toolbar if a target branch is detected.
+     - When no conflicts are detected between your checked out branch and the target branch, click on the merge target icon to quickly open a pull request or set your repo's target branches in preferences.
+     - When there are conflicts detected, the target branch status indicator will show a warning, and opening the menu will provide options to rebase or merge so you can proactively resolve conflicts before they get worse.
+ - **Cherry Pick Multiple Commits**: Easily grab multiple commits in one action, reducing repetitive steps when applying changes across branches.
+   - Use <kbd>Cmd/Ctrl</kbd> or <kbd>Shift</kbd> to select multiple commits in the Commit Graph and right click on one of the selected commits to access the option to cherry pick the selected commits.
+   - Selecting the option to cherry pick multiple commits opens an interactive cherry pick tool that allows you to reorder, squash, reword, or drop any of the commits selected.
+
+### Improvements 🙌
+ - The personal Launchpad is now available for on-premise clients.
+ - Experimental Feature - AI Commit Message Generation:
+   - Added support for OpenAI o1 and o3-mini models
+ - Experimental Feature - Git Executable:
+   - Allow commit hooks when amending the latest commit message in the current branch.
+   - Added partial support for 'Discard changes' of unstaged files (renames).
+   - Added partial support for 'Unstage and delete file' (new file).
+   - Support squashing latest commits in the current branch.
+ - In line with Atlassian's end of support for Bitbucket Server and transition to Bitbucket Data Center, we have updated our UI to reference Bitbucket Data Center in place of Bitbucket Server. Your existing integration will continue to work the same as it did before.
+
+
+### Bug Fixes 🐛
+ - Fixed an issue where during conflict resolution, selecting staged files with the keyboard Up/Down arrow keys would fail to show the files.
+ - Fixed an issue where switching between profiles causes git operations to fail.
+ - Fixed an issue where squashing the latest commits with a deleted LFS file did not remove it from the working directory.
+ - Merging GitLab merge requests in Launchpad will no longer fail.
+ - Fetching in an Azure DevOps repo with a deleted parent will no longer fail.
+
+***
 <a id="v10-7-0"></a>
 ## Version 10.7.0
 
