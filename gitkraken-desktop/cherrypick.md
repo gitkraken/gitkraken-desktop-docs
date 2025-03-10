@@ -20,6 +20,11 @@ Here, cherry pick grabs the changes from the commit referenced by the HEAD of th
 
 <img src='/wp-content/uploads/cherrypick-left-panel.png' srcset='/wp-content/uploads/cherrypick-left-panel@2x.png 2x' class="help-center-img img-bordered">
 
+### Cherry Pick Multiple Commits
+
+To cherry pick multiple commits, you can select multiple commits by holding down the kbd>Cmd/Ctrl</kbd> or <kbd>Shift</kbd> key and clicking on the desired commits. Then, right-click on one of the selected commits and choose the Cherry Pick Commits option.
+Selecting the option to cherry pick multiple commits opens an interactive cherry pick tool that allows you to reorder, squash, reword, or drop any of the commits selected.
+
 ***
 ### Additional Learning Git Resources:
 
