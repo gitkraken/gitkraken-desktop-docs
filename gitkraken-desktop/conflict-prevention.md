@@ -7,6 +7,8 @@ taxonomy:
 
 ---
 
+<kbd>Last updated: March 2025</kbd>
+
 Merge conflicts can be a major pain, whether they happen during your coding session or while reviewing work. They often lead to delays, rework, and frustration.  
 
 GitKraken Desktop’s **Conflict Prevention** helps you detect and manage potential conflicts before they cause disruptions.  
@@ -22,7 +24,7 @@ GitKraken detects potential merge conflicts with **Org Members** based on overla
 ### How It Works:
 
 #### 1. Conflict Alert Icon
-After a coding session, open GitKraken Desktop If potential conflicts exist, you’ll see an **alert icon**.
+After a coding session, open GitKraken Desktop. If potential conflicts exist, you’ll see an **alert icon**.
 
 <img src="/wp-content/uploads/GKD-org-member-conflict.png" class="help-center-img img-bordered">
 
@@ -49,7 +51,7 @@ This will open a conflict detection menu with options to manage conflicts.
 <img src="/wp-content/uploads/GKD-non-org-conflict-menu.png" class="help-center-img img-bordered">
 
 ### When No Conflicts Are Detected
-If there are no conflicts detected with your target branch and there are no overlapping edits with other org members’ branches, you will see a target branch status indicator to confirm there are no conflicts with the target branch. The menu provides a quick open to open a pull request against the target branch or adjust your target branch preferences for the repository.
+If there are no conflicts detected with your target branch and there are no overlapping edits with other org members’ branches, you will see a target branch status indicator to confirm there are no conflicts with the target branch. The menu provides a quick option to open a pull request against the target branch or adjust your target branch preferences for the repository.
 
 <img src="/wp-content/uploads/GKD-no-conflict-detected-with-PR.png" class="help-center-img img-bordered">
 

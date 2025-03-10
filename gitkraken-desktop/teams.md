@@ -6,12 +6,15 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: March 2025</kbd>
 
 GitKraken Desktop users with <a href="https://www.gitkraken.com/git-client/pricing">Pro, Teams, or Enterprise Cloud</a> accounts can use the Teams feature to group users within an Organization.
 
 Teams can be utilized for:
 - The [Team View](/gitkraken-desktop/working-with-repositories/team-view/) - see what branches and files others are working on and detect potential conflcits. 
-- [Sharing a Workspace](https://help.gitkraken.com/gitkraken-desktop/workspaces/#create-a-cloud-workspace) - manage, share and take action on a gorup of repositories.
+- [Sharing a Workspace](https://help.gitkraken.com/gitkraken-desktop/workspaces/#create-a-cloud-workspace) - manage, share and take action on a group of repositories.
+- [Share a Cloud Patch](https://help.gitkraken.com/gitkraken-desktop/experimental-features) - securely send a patch file to other team members.
+
 
 <div class='callout callout--basic'>
     <p><strong>Note:</strong> Pro accounts are limited to 1 Team. Upgrade to a <a href="https://app.gitkraken.com/subscription">GitKraken Teams or Enterprise Cloud</a> plan to create and manage more than 1 Team.
