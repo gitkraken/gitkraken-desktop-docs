@@ -1,7 +1,7 @@
 ---
 
-title: Conflict Prevention in Gitkraken
-description: Learn about conflict prevention in Gitkraken Desktop
+title: Conflict Prevention in GitKraken
+description: Learn about conflict prevention in GitKraken Desktop
 taxonomy:
     category: gitkraken-desktop
 
