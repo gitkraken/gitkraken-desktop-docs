@@ -18,11 +18,8 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) 
 <a id="v10-8-0"></a>
 ## Version 10.8.0
 
-<div class="embed-container embed-container--16-9" style="position: relative; width: 560px; height: 310px; overflow: hidden;">
-    <a href="https://www.youtube.com/watch?v=yK5GZpzamhA" target="_blank">
-        <img src="https://img.youtube.com/vi/yK5GZpzamhA/0.jpg" alt="YouTube video thumbnail"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;">
-    </a>
+<div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=yK5GZpzamhA" frameborder="0" allowfullscreen></iframe>
 </div>
 
 _"Every merge conflict is a battle between alternate realities… and only one can survive."_
