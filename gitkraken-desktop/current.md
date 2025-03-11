@@ -19,7 +19,7 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap) 
 ## Version 10.8.0
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=yK5GZpzamhA" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yK5GZpzamhA?si=oNmvgLBzRB8dtxyB" frameborder="0" allowfullscreen></iframe>
 </div>
 
 _"Every merge conflict is a battle between alternate realities… and only one can survive."_
