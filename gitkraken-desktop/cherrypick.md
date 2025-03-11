@@ -7,6 +7,8 @@ taxonomy:
 
 ---
 
+<kbd>Last Updated: March 2025</kbd>
+
 Sometimes you commit to one branch, when you meant to commit to another. Here's how to grab the changes you need.
 
 ***
@@ -22,8 +24,34 @@ Here, cherry pick grabs the changes from the commit referenced by the HEAD of th
 
 ### Cherry Pick Multiple Commits
 
-To cherry pick multiple commits, you can select multiple commits by holding down the kbd>Cmd/Ctrl</kbd> or <kbd>Shift</kbd> key and clicking on the desired commits. Then, right-click on one of the selected commits and choose the Cherry Pick Commits option.
-Selecting the option to cherry pick multiple commits opens an interactive cherry pick tool that allows you to reorder, squash, reword, or drop any of the commits selected.
+To cherry pick multiple commits, you can select multiple commits by holding down the <kbd>Cmd/Ctrl</kbd> or <kbd>Shift</kbd> key and clicking on the desired commits. Then, right-click on one of the selected commits and choose the "Cherry pick X commits" option.
+
+<img src='/wp-content/uploads/multi-cherry-pick-menu.png' class="help-center-img img-bordered">
+
+Selecting the option to cherry pick multiple commits opens an interactive cherry pick tool that allows you to reorder (with drag and drop of mouse), squash, reword, or drop any of the commits selected.
+
+<img src='/wp-content/uploads/interactive-cherry-pick.png' class="help-center-img img-bordered">
+
+## Commit Actions
+
+### Pick
+Pick takes the commits from one branch and places them onto the last commit of another branch.
+
+
+### Reword
+When selecting reword you will see the <em class='context-menu'>Reword commit message</em> modal open. Here you can edit the summary and description of your commit.
+
+### Squash
+When you squash you are taking the child commit and in turn writing that commit to the parent commit. In order for squash to be an option there will have to be a parent child relationship.
+
+### Drop commit
+Drop removes the commit from the branch, completes rebase and rewrites the commit graph.
+
+
+---
+
+### Keyboard Shortcuts and Reset
+Use keyboard shortcuts <kbd>P</kbd>ick, <kbd>S</kbd>quash, <kbd>R</kbd>eword and <kbd>D</kbd>rop to perform commit actions. If you wish to start over, click <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Reset</span></button>.
 
 ***
 ### Additional Learning Git Resources:
