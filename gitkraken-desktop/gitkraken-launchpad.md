@@ -154,3 +154,15 @@ The Launchpad summary in the status bar displays your most critical pull request
 The pull requests shown in the Launchpad summary are determined by the filters applied in the Launchpad tab.
 
 <img src="/wp-content/uploads/gkd-launchpad-summary.gif" class="help-center-img img-bordered">
+
+### On-Premise vs. Cloud Launchpad
+
+Since GitKraken On-Premise is designed to function without sending data outside your network, we’ve right-sized Launchpad to fit this use case. Here’s what’s changed:
+
+- ❌ No Cloud Workspaces – In the cloud version, workspaces help teams organize repositories across providers. The on-premise version focuses solely on your personal repositories and activity from your connected Git provider.
+- ❌ No Snoozing or Pinning – Since these features require cloud storage, they’ve been removed from the on-prem version.
+- ❌ No Team Launchpad – Because Cloud Workspaces are not available, Team Launchpad remains cloud-only.
+- ✅ Filtering Still Works – You can still filter issues and PRs by assignment, mention, and status, just like in the cloud version.
+- ✅ View Settings – While you can’t save Views, you can still toggle view settings and the app will remember your preferences.  
+
+Since this is a fully local experience, no data leaves your network, making it ideal for teams with strict security and compliance requirements.
