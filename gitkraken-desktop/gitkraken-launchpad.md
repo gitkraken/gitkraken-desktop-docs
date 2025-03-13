@@ -7,7 +7,11 @@ taxonomy:
 
 ---
 
-The Launchpad displays all of your Pull Requests, Issues, and Works In Progress (WIPs) relevant to you for a selected filters. You have a search bar to filter the results and columns that represent different states of the PRs, Issues, and WIPs, and dropdown selectors for workspace-based filtering.
+<kbd>Last Updated: March 2025</kbd>
+
+Start your day with Launchpad! The Launchpad displays all of your Pull Requests, Issues, and Works In Progress (WIPs) relevant to you for a selected filters. 
+
+The Launchpad is also available for GitKraken On-Premise customers, with some variations in features. 
 
 ### Getting started with the Launchpad
 
@@ -30,6 +34,10 @@ Create a [Workspace](/gitkraken-desktop/workspaces/) with the relevant integrati
 
 <img src="/wp-content/uploads/gkc-launchpad-10-0-0.gif" class="help-center-img img-bordered">
 
+<div class='callout callout--warning'>
+    <p>To respect security requirements, Cloud Workspaces are not available for GitKaken On-Premise and will therefore not show in the Launchpad in those clients.</p>
+</div>
+
 * PULL REQUESTS: Shows all open pull requests for the repositories in selected Workspace.
 * ISSUES: Shows all issues for the repositories in selected Workspace.
 * WIPS: Shows all uncommitted changes for the repositories in selected Workspace.
@@ -48,6 +56,10 @@ Pull Requests and Issues can be pinned (and unpinned) by selecting the <i class=
 
 The Launchpad can be viewed in Personal or Team mode. Personal mode displays only the items where you are involved (created by you, assigned to you or created by you), while Team mode shows all pull requests and issues for the repositories in your Workspace - giving you a high level view of your team's coding efforts. You can toggle between these views by selecting the corresponding icon in the top right corner of the Launchpad.
 
+<div class='callout callout--warning'>
+    <p>Because Team View depends on Cloud Workspaces, Team View is not available for GitKaken On-Premise and will not show in the Launchpad for those clients.</p>
+</div>
+
 Note that Personal mode allows to see all items where you are involved in the remote hosting service, without limiting to a selected Workspace (select None in the Workspace dropdown). But Team mode requires a Workspace to be selected.
 
 In Team View you can filter items by users, giving you a more focused view of specific team members' work.
@@ -62,6 +74,10 @@ You can save your Launchpad views by clicking the <i class="fa-solid fa-plus"></
 Custom Launchpad views are only visible when the corresponding Team or Personal mode they were created in is selected.
 
 <img src="/wp-content/uploads/gkd-10-5-launchpad-save-view.gif" class="help-center-img img-bordered">
+
+<div class='callout callout--basic'>
+    <p>Saved Views is only available on GitKraken Cloud clients.</p>
+</div>
 
 ***
 
@@ -106,23 +122,22 @@ You can switch the Issue Tracker provider from the Issues section. The Issue Tra
 Issues can be filtered by created, assigned or mentioned, and labels.
 
 <img src="/wp-content/uploads/gkc-launchpad-issues-10-3-0.png" class="help-center-img img-bordered">
-***
 
-### WIPs
+#### WIPs
 
 The WIPs section displays all uncommitted changes for the repositories in the selected Workspace. You can quickly open the repository in a repository tab by clicking on <button class="button button--success button--ui button--nolink">View Repo</button>.
 
-***
-
-### All
+#### All
 
 The ALL section displays all pull requests, issues, and WIPs for the repositories in the selected Workspace.
 
-***
-
-### Snoozed
+#### Snoozed
 
 The SNOOZED section displays all snoozed pull requests and issues. You can unsnooze them by clicking on the <i class="fa-solid fa-snooze"></i> icon.
+
+<div class='callout callout--basic'>
+    <p>Pinning and Snoozing is only available on GitKraken Cloud clients.</p>
+</div>
 
 ***
 
