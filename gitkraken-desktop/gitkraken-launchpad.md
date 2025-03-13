@@ -165,4 +165,6 @@ Since GitKraken On-Premise is designed to function without sending data outside 
 - ✅ Filtering Still Works – You can still filter issues and PRs by assignment, mention, and status, just like in the cloud version.
 - ✅ View Settings – While you can’t save Views, you can still toggle view settings and the app will remember your preferences.  
 
+<img src="/wp-content/uploads/launchpad-prs.png" class="help-center-img img-bordered">
+
 Since this is a fully local experience, no data leaves your network, making it ideal for teams with strict security and compliance requirements.
