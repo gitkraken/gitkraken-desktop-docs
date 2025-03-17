@@ -152,6 +152,10 @@ You may open a repo in your preferred external editor program using the [Command
 - IntelliJ
 
 You may also set your preferred external editor selecting `<Custom>` and entering the path for the editor you want to use. If needed, you can configure the arguments to pass when opening repos or files in your selected editor.
+<div class='callout callout--warning'>
+    <p><strong>Note:</strong> When using MacOS, you must make sure to select the editor's executable rather than the .app
+</p>
+</div>
 
 
 ### Default Terminal
