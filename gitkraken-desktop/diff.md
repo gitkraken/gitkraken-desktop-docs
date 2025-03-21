@@ -70,7 +70,7 @@ Split view will show a side by side diff comparing how the file looked before (l
 ***
 
 ## External diff tools
-Configure your preferred external diff tool from <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> General</em>:
+Configure your preferred external diff tool from <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> External Tools</em>:
 
 <img src="/wp-content/uploads/externaldiff.png" srcset="/wp-content/uploads/externaldiff@2x.png" class="help-center-img img-bordered">
 
