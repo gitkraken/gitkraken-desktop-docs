@@ -9,6 +9,10 @@ taxonomy:
 
 After installing GitKraken Self-Hosted Server (AKA Enterprise Self-Hosted), you are ready to configure the Server.
 
+<div class='callout callout--warning'>
+    <p>Gitkraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from our normal subscriptions. If you would like to purhcase these products, please see our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?_gl=1*vtr4xk*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmv98H0EKgytPnuCPuTqdL2vy4GQaCsizBMO9m8mz2n1hMMXO3AAw7YaAiyKEALw_wcB?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
+</div>
+
 ***
 
 <a id="server-license"></a>

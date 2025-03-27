@@ -18,6 +18,10 @@ GitKraken Desktop allows you to authenticate with Bitbucket, which will help you
 * Add remotes for Bitbucket repos
 * Create and view Pull Requests
 
+<div class='callout callout--warning'>
+    <p>All Self-Hosted server integrations require an Advanced subscription tier or higher</p>
+</div>
+
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/sQ4ouJpAeR8?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>

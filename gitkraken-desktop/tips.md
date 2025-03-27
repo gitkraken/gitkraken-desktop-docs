@@ -105,7 +105,12 @@ GitKraken Desktop allows you to authenticate with GitHub, GitLab, Bitbucket, and
 
 <img src="/wp-content/uploads/authentication.png" srcset="/wp-content/uploads/authentication@2x.png" class="img-bordered img-responsive center">
 
-### Benefits
+Availability of Integrations can vary based on your Gitkraken plan.
+- Community Plan users are limited to public repos only for Github.com, Gitlab.com, and Bitbucket cloud.
+- Azure DevOps cloud availability is restricted to Pro users.
+- All Self-Hosted server integrations require an Advanced subscription tiers or higher
+
+#### Benefits
 
 - Create repositories on GitHub/GitLab/Bitbucket/Azure DevOps including .gitignore and license
 - Save authentication into profiles

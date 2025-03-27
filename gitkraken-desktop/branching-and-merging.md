@@ -159,6 +159,11 @@ You may resolve a conflicted file by right-clicking the file in the commit panel
 
 ## Automatic Conflict Detection (Preview)
 
+
+<div class='callout callout--warning'>
+    <p>This Feature will only available for Advanced subscription tier or higher</p>
+</div>
+
 GitKraken will monitor your base branch for conflicts and alert you with an icon in the toolbar when conflicts are detected, providing options to resolve your conflicts sooner rather than later.
 
 <img src='/wp-content/uploads/Automatic-conflict-detection-GKD.png' class="help-center-img img-bordered"/>

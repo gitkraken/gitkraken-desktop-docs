@@ -47,7 +47,7 @@ GitKraken Desktop currently supports Ubuntu 18.04 LTS+, RHEL 8+, and Fedora 39+.
 ### How can I use multiple GitHub / GitLab / Bitbucket / Azure DevOps accounts with GitKraken?
 By default, GitKraken Desktop connects to one integration at a time. However, a <a href='https://gitkraken.com/features'>paid GitKraken license</a> provides multiple profile support, allowing you to easily switch between profiles that each have their own associated integrations.
 
-If you have a GitKraken Pro, Teams, or Enterprise license, [set up profiles](/start-here/profiles) to configure a GitHub, GitLab, Bitbucket, or Azure DevOps account for each profile.
+If you have a GitKraken Pro subscription or higher [set up profiles](/start-here/profiles) to configure a GitHub, GitLab, Bitbucket, or Azure DevOps account for each profile.
 
 ***
 
@@ -105,7 +105,7 @@ If you are on Linux and are unable to launch GitKraken Desktop after installatio
 
 ***
 
-### I just subscribed but FREE is still shown in the lower right corner.
+### I just subscribed but COMMUNITY is still shown in the lower right corner.
 Be sure you are logged in with the same email address registered with your GitKraken subscription. Click your profile icon in the upper right corner to check which email you're using or to sign into your account.
 
 <p style="text-align: center;">

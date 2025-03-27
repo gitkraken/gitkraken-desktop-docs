@@ -19,6 +19,9 @@ GitKraken allows you to connect to [GitLab](https://gitlab.com), which will help
 * Create and view Pull Requests
 * Work with [GitLab Issues](/integrations/gitlab-issues/)
 
+<div class='callout callout--warning'>
+    <p>Community plan is restricted to Public Repositories only.</p>
+</div>
 
 ***
 

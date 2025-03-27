@@ -27,7 +27,7 @@ The Owner and any Admins are able to:
 
 
 <div class='callout callout--warning'>
-    <p><strong>Note:</strong> the Organization section is only available to users who have a Pro, Teams, or Enterprise license.
+    <p><strong>Note:</strong> the Organization section is only available to users who have a Pro subscription tier and above.
 </p>
 </div>
 

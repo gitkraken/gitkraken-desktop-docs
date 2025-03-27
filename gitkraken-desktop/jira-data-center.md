@@ -13,8 +13,8 @@ GitKraken Desktop makes it easy to integrate with Jira Cloud and Jira Data Cente
     <iframe width="560" height="315" src="https://www.youtube.com/embed/On83cso-w3U" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<div class='callout callout--basic'>
-    <p>The Jira Data Center integration is view-only for free users. To unlock all features for the Jira Data Center integration, consider upgrading to <a href="https://gitkraken.com/pricing"> GitKraken Pro </a>. </p>
+<div class='callout callout--warning'>
+    <p>This Feature is only available for Advanced subscription tiers or higher</p>
 </div>
 
 <div class='callout callout--warning'>

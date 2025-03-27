@@ -13,6 +13,10 @@ taxonomy:
 
 GitKraken allows you to connect to GitLab Self-Managed (CE or EE), which will help you find repos when cloning or adding your remotes.
 
+<div class='callout callout--warning'>
+    <p>All Self-Hosted server integrations require an Advanced subscription tier or higher</p>
+</div>
+
 **Benefits**
 
 * Create repositories on GitLab Self-Managed server including .gitignore and license
