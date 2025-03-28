@@ -26,7 +26,7 @@ GitKraken can generate natural language explanations of your commits, right from
 
 3. GitKraken provides an AI-generated summary of what changed in that commit.
 
-<img src="/wp-content/uploads/gkd-11-AI-Explain-2.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gkd-11-commit-explain-2.png" class="help-center-img img-bordered">
 
 ## AI-Generated Commit Messages
 
