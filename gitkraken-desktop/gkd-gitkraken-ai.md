@@ -63,5 +63,5 @@ Additionally you may include **custom instructions** to guide how GitKraken AI g
 Additional AI-powered features are in development to help automate repetitive tasks and keep you focused on what matters. These tools are built to reduce friction while giving you full control over your development workflow.
 
 <div class='callout callout--basic'>
-    <p>More questions about Gitkraken AI? Please see our <a href="https://help.gitkraken.com/general/ai-faq/">GitKraken AI FAQ page</a> for more details</p>
+    <p>More questions about Gitkraken AI? Please see our <a href="https://help.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai">GitKraken AI FAQ page</a> for more details</p>
 </div>
