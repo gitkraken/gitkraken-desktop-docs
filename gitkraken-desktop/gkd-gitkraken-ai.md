@@ -1,22 +1,20 @@
 ---
 
-title: New Page Title
-description: New Page Description
+title: GitKraken AI
+description: Generate plain text commit explanations and more with GitKraken AI
 taxonomy:
     category: gitkraken-desktop
 
 ---
-## GitKraken AI: Commit Explain & Commit Message Generation
-
 <kbd>Last Updated: March 2025</kbd>
 
 GitKraken offers built-in AI features to fast track your workflow—no extra tools, no switching interfaces.
 
-### AI-Powered Commit Explain
+## AI-Powered Commit Explain
 
 GitKraken can generate natural language explanations of your commits, right from the UI.
 
-#### How to use Commit Explain
+### How to use Commit Explain
 
 1. Open GitKraken Desktop and select one or more commits (Use <kbd>Shift</kbd> or <kbd>Ctrl/Cmd</kbd>)
 
