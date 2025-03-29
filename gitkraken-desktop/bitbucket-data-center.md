@@ -18,6 +18,10 @@ GitKraken Desktop allows you to authenticate with Bitbucket Data Center, which w
 * Add remotes for Bitbucket Data Center repos
 * Create and view Pull Requests
 
+<div class='callout callout--warning'>
+    <p>All Self-Hosted server integrations require an Advanced subscription tier or higher</p>
+</div>
+
 ***
 
 ## Connecting to Bitbucket Data Center

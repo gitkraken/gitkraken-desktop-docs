@@ -11,7 +11,7 @@ GitKraken Desktop makes it easy to work with your GitHub Enterprise Server Issue
 
 
 <div class='callout callout--basic'>
-    <p>The GitHub Enterprise Server Issues integration is view-only for free users. To unlock all features for the GitHub Enterprise Server Issues integration, consider upgrading to a <a href="https://gitkraken.com/pricing"> paid GitKraken license</a>. </p>
+    <p>The GitHub Enterprise Server Issues integration is view-only for Community users. To unlock all features for the GitHub Enterprise Server Issues integration, consider upgrading to a <a href="https://gitkraken.com/pricing"> paid GitKraken license</a>. </p>
 </div>
 
 ***

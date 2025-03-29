@@ -57,7 +57,7 @@ Pull Requests and Issues can be pinned (and unpinned) by selecting the <i class=
 The Launchpad can be viewed in Personal or Team mode. Personal mode displays only the items where you are involved (created by you, assigned to you or created by you), while Team mode shows all pull requests and issues for the repositories in your Workspace - giving you a high level view of your team's coding efforts. You can toggle between these views by selecting the corresponding icon in the top right corner of the Launchpad.
 
 <div class='callout callout--warning'>
-    <p>Because Team View depends on Cloud Workspaces, Team View is not available for GitKaken On-Premise and will not show in the Launchpad for those clients.</p>
+    <p>Because Team View depends on Cloud Workspaces, Team View is not available for GitKaken On-Premise and will not show in the Launchpad for those clients. The Team View is available for Advanced users and higher.</p>
 </div>
 
 Note that Personal mode allows to see all items where you are involved in the remote hosting service, without limiting to a selected Workspace (select None in the Workspace dropdown). But Team mode requires a Workspace to be selected.
@@ -136,7 +136,7 @@ The ALL section displays all pull requests, issues, and WIPs for the repositorie
 The SNOOZED section displays all snoozed pull requests and issues. You can unsnooze them by clicking on the <i class="fa-solid fa-snooze"></i> icon.
 
 <div class='callout callout--basic'>
-    <p>Pinning and Snoozing is only available on GitKraken Cloud clients.</p>
+    <p>Snoozing is only available for GitKraken Pro clients.</p>
 </div>
 
 ***

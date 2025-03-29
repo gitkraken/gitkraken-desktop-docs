@@ -16,18 +16,26 @@ You can always reach out to us by using the [Contact support](https://help.gitkr
 
 ## GitKraken Desktop Support
 
-- Support requests for GitKraken Desktop are to be submitted at [Contact Support](https://help.gitkraken.com/gitkraken-desktop/contact-support/). Interactions with users submitting tickets are done primarily through emails, though other communication services such as phone calls, screenshare services might be used to deliver Support Services. 
-- Support Hours are 7:00am to 4:00pm Monday to Friday, Arizona Time (UTC-7) with a response time of 1 (one) business day. While support requests can be submitted by users at any time, responses to requests and interactions with support are provided during Support Hours only.
-- The following product plans are guaranteed support: Pro, Teams and Enterprise. Enterprise encompasses cloud, on-premise server and on-premise serverless plans. This includes any bundle products which contain GitKraken Desktop. 
-- GitKraken Desktop is available for Windows, Mac, and Linux systems, see the current supported versions on our [how to install](https://help.gitkraken.com/gitkraken-desktop/how-to-install/) page.
-- Best effort support is provided for Students and Education users, we aim to respond quickly and help as much as possible, but we do not have any guaranteed response window.
-- While we try to get to everyone who reaches out, a response is not guaranteed to all users. This includes any users who are free users and any old plans which did not include support, such as the Individual plan which is no longer offered. We encourage all users to engage in our community and utilize our free resources. [Additional Resources](https://help.gitkraken.com/gitkraken-desktop/gitkraken-desktop-home/#additional-resources)
+- Support requests for GitKraken Desktop are to be submitted at [Contact Support](https://help.gitkraken.com/gitkraken-desktop/contact-support/). Users submitting tickets interact primarily through emails, though other communication services, such as phone calls and screen share services, might be used to deliver Support Services.
+
+- The following product plans are guaranteed support: Pro, Advanced, Business, and Enterprise. Enterprise encompasses cloud, on-premise server, and on-premise serverless plans. 
+
+- Support Hours are 10:00 am to 10:00 pm, Monday to Friday, UTC. While users can submit support requests anytime, responses to requests and interactions with support are provided during Support Hours only. Below are the response times for each of our Plans during support hours.
+
+|  | PRO | Advanced | Business | Enterprise |
+| :--- | :--- | :--- | :--- | :--- |
+| Response Time | 3 Business Days | 1 Business day | 12 Hours | 6 Hours |
+
+- While we try to get to everyone who reaches out, a response is not guaranteed to all users. This includes any users who are on Student and Community plans. We encourage all users to engage in our community and utilize our self service resources. Additional Resources
+
+- GitKraken Desktop is available for Windows, Mac, and Linux systems. The current supported versions are on our how-to-install page.
 
 ### Support Period
  
 We will support Generally Available (GA) releases of products. Eligible code fixes and hot fixes are provided via a new release (Z) on top of the latest “Major release” and “minor release” branch. A major release is identified by a change in the first (X), minor release is identified by the second (Y) digit in the following versioning nomenclature: Version X.Y.Z.
 
-As a best practice, we expect customers to stay at the current release in order to receive optimal support. Release updates for customers are provided regularly on the GitKraken Help Center for each GitKraken product. While we will provide troubleshooting assistance to GA products, we might ask customers to upgrade to the current release during the troubleshooting process in order for them to receive functionality enhancements, security updates, and code fixes. 
+As a best practice, we expect customers to stay at the current release in order to receive optimal support. Release updates for customers are provided regularly on the GitKraken Help Center for each GitKraken product. While we will provide troubleshooting assistance to GA products, we might ask customers to upgrade to the current release during the troubleshooting process in order for them to receive functionality enhancements, security updates, and code fixes.
+
 
 ### End-of-Life 
 

@@ -8,16 +8,16 @@ taxonomy:
 ---
 <kbd>Last updated: March 2025</kbd>
 
-GitKraken Desktop users with <a href="https://www.gitkraken.com/git-client/pricing">Pro, Teams, or Enterprise Cloud</a> accounts can use the Teams feature to group users within an Organization.
+GitKraken Desktop users with <a href="https://www.gitkraken.com/git-client/pricing?source=help_center&product=gitkraken">Pro, Advanced, Business, or Enterprise Cloud</a> accounts can use the Teams feature to group users within an Organization.
 
 Teams can be utilized for:
-- The [Team View](/gitkraken-desktop/working-with-repositories/team-view/) - see what branches and files others are working on and detect potential conflcits. 
-- [Sharing a Workspace](https://help.gitkraken.com/gitkraken-desktop/workspaces/#create-a-cloud-workspace) - manage, share and take action on a group of repositories.
+- The [Team View](/gitkraken-desktop/working-with-repositories/team-view/) - see what branches and files others are working on and detect potential conflcits. *Advanced plan and above
+- [Sharing a Workspace](https://help.gitkraken.com/gitkraken-desktop/workspaces/#create-a-cloud-workspace) - manage, share and take action on a group of repositories. *Pro plan and above
 - [Share a Cloud Patch](https://help.gitkraken.com/gitkraken-desktop/experimental-features) - securely send a patch file to other team members.
 
 
 <div class='callout callout--basic'>
-    <p><strong>Note:</strong> Pro accounts are limited to 1 Team. Upgrade to a <a href="https://app.gitkraken.com/subscription">GitKraken Teams or Enterprise Cloud</a> plan to create and manage more than 1 Team.
+    <p><strong>Note:</strong> Pro accounts are limited to 1 Team. Upgrade to a <a href="https://gitkraken.dev/subscription?source=help_center&product=gitkraken">GitKraken Advanced or Business</a> plan to create and manage more than 1 Team.
 </div>
 
 ***
@@ -46,8 +46,8 @@ You may create a Team from the <i class="fas fa-plus-square" style="color:green"
 
 <img src="/wp-content/uploads/add-team.png" srcset="/wp-content/uploads/add-team@2x.png" class="help-center-img img-bordered">
 
-<div class="callout callout--basic">
-    <p>Pro accounts are limited to 1 Team. Upgrade to <a href="https://app.gitkraken.com/subscription">GitKraken Enterprise</a> to create and manage more than 1 Team.</p>
+<div class='callout callout--basic'>
+    <p><strong>Note:</strong> Pro accounts are limited to 1 Team. Upgrade to a <a href="https://gitkraken.dev/subscription?source=help_center&product=gitkraken">GitKraken Advanced or Business</a> plan to create and manage more than 1 Team.
 </div>
 
 You may delete a Team by selecting the Team and selecting the <i class="fas fa-ellipsis-h"></i> icon.

@@ -10,7 +10,7 @@ taxonomy:
 GitKraken Desktop makes it easy to work with your GitLab Self-Managed Issues.
 
 <div class='callout callout--basic'>
-    <p>The GitLab Self-Managed Issues integration is view-only for free users. To unlock all features for the integration, consider upgrading to a <a href="https://gitkraken.com/pricing">paid GitKraken license</a>. </p>
+    <p>The GitLab Self-Managed Issues integration is view-only for Community users. To unlock all features for the integration, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken license</a>. </p>
 </div>
 
 ***

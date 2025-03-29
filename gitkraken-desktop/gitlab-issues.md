@@ -10,7 +10,7 @@ taxonomy:
 GitKraken Desktop makes it easy to integrate with GitLab Issues.
 
 <div class='callout callout--basic'>
-    <p>The GitLab Issues integration is view-only for free users. To unlock all features for the GitLab Issues integration, consider upgrading to a <a href="https://gitkraken.com/pricing">paid GitKraken subscription</a>.</p>
+    <p>The GitHub Issues integration is restricted to Public repositories only for Community users. To unlock all features for the GitHub Issues integration, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken"> paid GitKraken license </a>. </p>
 </div>
 
 ***

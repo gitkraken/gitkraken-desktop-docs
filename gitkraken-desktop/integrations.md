@@ -17,6 +17,10 @@ taxonomy:
 
 GitKraken Desktop allows you to connect many different services and platforms, making it easy to work with your remote repositories. 
 
+<div class='callout callout--warning'>
+    <p>All Self-Hosted server integrations require an Advanced subscription tier or higher</p>
+</div>
+
 - [GitHub](/gitkraken-desktop/github-gitkraken-desktop/)
 - [GitHub Enterprise Server](/gitkraken-desktop/github-enterprise/)
 - [GitLab](/gitkraken-desktop/gitlab-gitkraken-desktop/)
@@ -29,8 +33,12 @@ GitKraken Desktop allows you to connect many different services and platforms, m
 
 GitKraken Desktop makes it easy to integrate with a wide variety of issue tracking and project management tools.
 
+<div class='callout callout--warning'>
+    <p>Community plan users are restricted to Public Repositories only for Github and Gitlab, and View only for Jira Cloud, Github Enterprise, Gitlab Self-Managed, and Trello. </p>
+</div>
+
 - [Jira](/gitkraken-desktop/jira/)
-- [Jira Data Center](/gitkraken-desktop/jira-data-center/)
+- [Jira Data Center](/gitkraken-desktop/jira-data-center/) *Advanced users and above
 - [Trello](/gitkraken-desktop/trello/)
 - [GitLab Issues](/gitkraken-desktop/gitlab-issues/)
 - [GitLab Self-Managed Issues](/gitkraken-desktop/gitlab-self-managed-issues/)

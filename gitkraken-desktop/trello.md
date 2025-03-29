@@ -14,7 +14,7 @@ GitKraken Desktop makes it easy to integrate with Trello.
 </div>
 
 <div class='callout callout--basic'>
-    <p>The Trello integration is view-only for free users. To unlock all features for the Trello integration, consider upgrading to a <a href="https://gitkraken.com/pricing">paid GitKraken subscription</a>.</p>
+    <p>The Trello integration is view-only for Community users. To unlock all features for the Trello integration, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken subscription</a>.</p>
 </div>
 
 ***

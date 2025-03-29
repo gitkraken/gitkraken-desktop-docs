@@ -9,6 +9,11 @@ taxonomy:
 
 GitKraken allows you to connect to GitHub Enterprise Server, which will help you find repos when cloning or adding your remotes.
 
+<div class='callout callout--warning'>
+    <p>All Self-Hosted server integrations require an Advanced subscription tier or higher</p>
+</div>
+
+
 **Benefits**
 
 * Create repositories on GitHub Enterprise Server account including .gitignore and license
@@ -18,6 +23,7 @@ GitKraken allows you to connect to GitHub Enterprise Server, which will help you
 * Clone from GitHub Enterprise Server repo list
 * Add remotes for GitHub Enterprise Server repos
 * Create and view Pull Requests
+
 
 ***
 ## GitHub Enterprise Server Authentication

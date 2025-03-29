@@ -9,8 +9,9 @@ taxonomy:
 
 The <i class="fas fa-users"></i> Team View allows you to see what branches and files members of your organization are currently working on. This is helpful for avoiding and collaborating on merge conflicts.
 
-<div class="callout callout--basic">
-    <p><strong>Note:</strong> Team View is only available for users in an organization. See the <a href="/start-here/teams/">Teams</a> page for more information on managing teams.</p>
+
+<div class='callout callout--warning'>
+    <p><strong>Note:</strong> Team View is only available for Advanced subscription tiers or higher. See the <a href="/start-here/teams/">Teams</a> page for more information on managing teams.</p>
 </div>
 
 ***
