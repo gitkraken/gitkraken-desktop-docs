@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last updated: February 2025</kbd>
+<kbd>Last updated: March 2025</kbd>
 
 Navigate to <i class="fas fa-cog"></i> <kbd><strong>Preferences</strong></kbd> to customize your GitKraken Desktop experience. Here are what each of the major sections do.
 
@@ -128,6 +128,10 @@ GitKraken Desktop supports HTTPS and SSH authentication, and provides useful int
 - [TFS, AWS CodeCommit, custom service, etc](/gitkraken-desktop/authentication/)
 - [Jira Cloud Integration](/gitkraken-desktop/jira/)
 - [Jira Data Center Integration](/gitkraken-desktop/jira-data-center/)
+
+## Gitkraken AI
+
+A seamless extension of your development workflow, [GitKraken AI](https://www.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai) automates tedious tasks to improve your efficiency and focus.
 
 ## External Tools
 
