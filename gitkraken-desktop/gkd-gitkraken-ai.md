@@ -46,6 +46,7 @@ You can generate clear, consistent commit messages based on your staged changes.
 
 <img src="/wp-content/uploads/gkd-11-commit-message-generation-2.png" class="help-center-img img-bordered">
 
+
 ## Bring your own key
 
 By default, commit explanations and message generation use **Gemini**, and no API key is required—requests are included as part of your GitKraken subscription.
@@ -57,6 +58,52 @@ If you prefer to use **OpenAI** or **Anthropic** with your own API key, you may 
 Additionally you may include **custom instructions** to guide how GitKraken AI generates messages or explanations for Commit Message Generation and Explain Commits respectively: 
 
 <img src="/wp-content/uploads/gkd-11-custom-instructions.png" class="help-center-img img-bordered">
+
+### Commit Prompt Examples
+
+Not sure how to advise GitKraken AI? Here are some starter prompts, and we encourage tinkering!
+
+#### Prompt for brevity
+
+```
+Keep the summary short, but informative
+```
+
+#### Prompt to add conventional commit prefix
+
+```
+Format the summary as:
+
+<type>: <summary>
+
+Where <type> is one of the following prefixes:
+
+    feat: A new feature
+
+    fix: A bug fix
+
+    docs: Documentation only changes
+
+    style: Changes that do not affect the meaning of the code (e.g. formatting)
+
+    refactor: Code changes that neither fix a bug nor add a feature
+
+    perf: Code changes that improve performance
+
+    test: Adding or updating tests
+
+    chore: Routine tasks or maintenance not related to source code
+
+The <summary> should be a short (max 72 characters) description of what was changed, in the imperative mood (e.g., "add login button", "fix broken link", "refactor user auth logic").
+
+Only output the final commit message — no explanations, no extra formatting.
+```
+
+#### Prompt for different language 
+
+```
+Write the output in Spanish.
+```
 
 ## What’s Next?
 
