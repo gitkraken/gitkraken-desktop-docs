@@ -26,7 +26,7 @@ _Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/curr
 ### Monday, March 31st, 2025
 
 ### New ✨
- - **GitKraken AI:** A seamless extension of your development workflow, [GitKraken AI](https://www.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai) automates tedious tasks to improve your efficiency and focus.
+ - **GitKraken AI:** A seamless extension of your development workflow, [GitKraken AI](https://help.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai/) automates tedious tasks to improve your efficiency and focus.
    - Commit Message Generation
      - You'll now be able to generate clear, meaningful commit messages based on your code changes in just a click.
      - With a WIP selected, click on the sparkle icon in the commit message form to have GitKraken AI generate a commit message for you based on your staged changes.
