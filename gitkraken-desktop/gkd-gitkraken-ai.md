@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last Updated: March 2025</kbd>
+<kbd>Last Updated: April 2025</kbd>
 
 GitKraken offers built-in AI features to fast track your workflow—no extra tools, no switching interfaces.
 
