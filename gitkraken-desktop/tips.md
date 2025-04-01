@@ -6,7 +6,8 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>>Last updated: April 2025</kbd>
+<kbd>Last updated: April 2025</kbd>
+
 Here's the TLDR of the best features in GitKraken Desktop.
 
 ***
@@ -90,7 +91,7 @@ From here, you can decide to reorder, squash, drop, or rename commits before com
 
 GitKraken Desktop allows you to authenticate with GitHub, GitLab, Bitbucket, and Azure DevOps (previously VSTS), which will help you find repos when cloning or adding your remotes.
 
-<img src="/wp-content/uploads/authentication.png" srcset="/wp-content/uploads/authentication@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/authentication.png" srcset="/wp-content/uploads/authentication@2x.png" class="help-center-img img-bordered">
 
 Availability of Integrations can vary based on your Gitkraken plan.
 - Community Plan users are limited to public repos only for Github.com, Gitlab.com, and Bitbucket cloud.
@@ -111,15 +112,15 @@ Availability of Integrations can vary based on your Gitkraken plan.
 
 If you are using the GitLab or GitHub integration, you may also add a pull request assignee and label(s) to your pull request. GitKraken Desktop will then pass these values onto GitLab or GitHub when the pull request is created. 
 
-<img src='/wp-content/uploads/gitlab-assignee.png' srcset='/wp-content/uploads/gitlab-assignee@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/gitlab-assignee.png' srcset='/wp-content/uploads/gitlab-assignee@2x.png' class="help-center-img img-bordered">
 
 If you are using the GitHub integration, you may also add reviewers and multiple assignees to a pull request. 
 
-<img src='/wp-content/uploads/github-assignee.png' srcset='/wp-content/uploads/github-assignee@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/github-assignee.png' srcset='/wp-content/uploads/github-assignee@2x.png' class="help-center-img img-bordered">
 
 Additionally for GitHub pull requests, this tooltip will show assignees, labels, reviewers, and build status.
 
-<img src='/wp-content/uploads/tooltip-github.png' srcset='/wp-content/uploads/tooltip-github@2x.png' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/tooltip-github.png' srcset='/wp-content/uploads/tooltip-github@2x.png'class="help-center-img img-bordered">
 
 Learn more about [pull requests](/working-with-repositories/pull-requests).
 
@@ -131,11 +132,11 @@ File History and File Blame information display in the same view.
 
 To access either option, first click on a commit in the graph. Then right click a file to access File History or File Blame.
 
-<img src='/wp-content/uploads/file-history.png' srcset='/wp-content/uploads/file-history@2x.png 2x' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/file-history.png' srcset='/wp-content/uploads/file-history@2x.png 2x' class="help-center-img img-bordered">
 
 File History shows that file's commit history on the left.
 
-<img src='/wp-content/uploads/file-diff.png' srcset='/wp-content/uploads/file-diff.png 2x' class='img-bordered img-responsive center'>
+<img src='/wp-content/uploads/file-diff.png' srcset='/wp-content/uploads/file-diff.png 2x' class="help-center-img img-bordered">
 
 Use the top toggle button to switch between Diff View, which shows the selected commit's changes to the file, and the File View, which shows the file's state at that commit, including the blame info.
 
