@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-
+<kbd>>Last updated: April 2025</kbd>
 Here's the TLDR of the best features in GitKraken Desktop.
 
 ***
@@ -15,12 +15,12 @@ Here's the TLDR of the best features in GitKraken Desktop.
 
 If you have personal projects you wish to separate from work repos–or if you need to connect to multiple instances of GitHub, GitLab, Bitbucket, etc.–then set up [Profiles](/start-here/profiles).
 
-<img src="/wp-content/uploads/profile-example.png" srcset="/wp-content/uploads/profile-example@2x.png 2x" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/profile-example-2025.png" class="help-center-img img-bordered">
 
 Each profile stores different app preferences and Git config information, which makes it easier to switch context.
 
 <div class='callout callout--success'>
-    <p>Multiple Profiles is a <a href="https://www.gitkraken.com/git-client" target="_blank">GitKraken Pro</a> only feature.</p>
+    <p>Note, access to multiple profiles requires a <a href="https://www.gitkraken.com/pricing" target="_blank">GitKraken subscription</a>.</p>
 </div>
 
 ***
@@ -29,7 +29,7 @@ Each profile stores different app preferences and Git config information, which 
 
 Work like the pros, and use the [Command Palette](/start-here/command-palette) to quickly access GitKraken Desktop actions.
 
-<img src="/wp-content/uploads/FFcommands.gif" srcset="/wp-content/uploads/FFcommands.gif" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/command-palette-2025.gif" srcset="/wp-content/uploads/command-palette-2025.gif" class="help-center-img img-bordered">
 
 As you type, the Command Palette will find the most relevant commands, allowing you to perform many actions without clicking. Here are a few examples:
 
@@ -76,26 +76,13 @@ For fast fingers, check out our [keyboard shortcuts](/start-here/keyboard-shortc
 
 ***
 
-### 4. Create, Open and Edit Files in the Built-In Code Editor
+### 4. Cherry Pick Multiple Commits
 
-To create a file directly in GitKraken Desktop, use the keyboard shortcut  <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>P</kbd> to open the Command Palette, type `Create File`, and then type the name of your file before hitting <kbd>Enter</kbd>.
+To cherry pick multiple commits, you can select multiple commits by holding down the <kbd>Cmd/Ctrl</kbd> or <kbd>Shift</kbd> key and clicking on the desired commits. Then, right-click on one of the selected commits and choose the "Cherry pick X commits" option.
 
-The code editor will automatically open so you can jump right in and start working on your project. 
+<img src='/wp-content/uploads/multi-cherry-pick-menu.png' class="help-center-img img-bordered">
 
-<img src='/wp-content/uploads/Editor-gif.gif' class='img-bordered img-responsive center'>
-
-You can also right click the empty space in the Commit Panel and click the `Create File` context menu option.
-
-To open an existing file to the built-in code editor, select a branch and navigate to the file you'd like to edit in the Commit Panel.
-
-Double click the file to bring it to File View. From File View, you can click to edit a file and make changes directly. You'll notice syntax highlighting, code hinting, a file minimap, and the ability to search your file.
-
-<img src='/wp-content/uploads/Updated-editor.gif' class='img-bordered img-responsive center'>
-
-Learn more about [editing files](/working-with-files/editing-files) in GitKraken Desktop.
-
-To delete a file, right-click on the file from the Commit Panel to access the delete option. 
-
+From here, you can decide to reorder, squash, drop, or rename commits before completing the cherry pick. Learn more about [Interactive Cherry Pick](/gitkraken-desktop/cherrypick/)
 
 ***
 

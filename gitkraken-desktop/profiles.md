@@ -21,7 +21,7 @@ GitKraken Desktop uses profiles to store your app preferences, current [Tabs](/s
 <img src="/wp-content/uploads/profiles@2x.png" class="help-center-img img-bordered">
 
 <div class='callout callout--success'>
-    <p>Create and quickly switch between additional profiles for your different projects and work environments. This requires <a href="https://www.gitkraken.com/pricing" target="_blank">GitKraken Pro</a> subscription or higher.</p>
+    <p>Create and quickly switch between additional profiles for your different projects and work environments. Note, access to multiple profiles requires a <a href="https://www.gitkraken.com/pricing" target="_blank">GitKraken subscription</a>.</p>
 </div>
 
 ***
