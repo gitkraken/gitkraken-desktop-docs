@@ -6,8 +6,9 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
-Coming from the icy depths of the Git ocean are GitKraken Desktop experimental features! These are ideas we are trying out that are still being worked on, but we want to share with the world sooner. 
+Coming from the icy depths of the Git ocean are GitKraken Desktop experimental features! These are ideas we are trying out that are still being worked on, but we want to share with the world sooner 🧪
 
 ---
 
@@ -15,7 +16,7 @@ Coming from the icy depths of the Git ocean are GitKraken Desktop experimental f
 
 Navigate to <i class="fas fa-cog"></i><kbd><strong>Preferences</strong> <i class='fa fa-caret-right'></i> <strong>Experimental</strong></i></kbd> to access the experimental features menu.
 
-Experimental Features are still under development - treat these as an early sneak peek at some of the new functionality we're working on at GitKraken. Experimental features may not work as intended and could be changed or removed in the future. These settings are entirely optional and can be turned off at any time.
+Experimental features are still under development - treat these as an early sneak peek at some of the new functionality we're working on at GitKraken. Experimental features may not work as intended and could be changed or removed in the future. These settings are entirely optional and can be turned off at any time.
 
 If you do experience issues, or have any other feedback, please reach out to us [Contact Support](https://help.gitkraken.com/gitkraken-desktop/contact-support/?issue_category__customer_facing_field_=Experimental+feedback&subject=GitKraken+Client+Experimental+feedback).
 
@@ -23,7 +24,7 @@ If you do experience issues, or have any other feedback, please reach out to us 
 
 ### Git Executable
 
-When this setting is enabled, GitKraken Desktop will utilize the Git executable instead of the NodeGit library for certain Git actions including fetching and committing. This may provide increased performance and compatibility with certain projects and development environments. This is a partial implementation and will only affect some aspects of Git within GitKraken Desktop - the amount of Git commands using the Git executable will increase with each release.
+When this setting is enabled, GitKraken Desktop will utilize the Git Executable instead of the NodeGit library for certain Git actions including fetching and committing. This may provide increased performance and compatibility with certain projects and development environments. This is a partial implementation and will only affect some aspects of Git within GitKraken Desktop - the amount of Git commands using the Git executable will increase with each release.
 
 **Use Git Executable:** <i class="fa-regular fa-square-check"></i> turn on this experimental feature! Check the box to immediately apply the setting.
 
@@ -39,7 +40,7 @@ Find below a list of features using the Git binary if the Git Executable experim
 - commit
 - fetch
 - branch ahead/behind count (e.g. from pull request panel)
-- merge base calculation (e.g. from right clicking a local branch in the left panel)
+- merge base calculation (e.g. from right clicking a local branch in the Left Panel)
 - branch rename
 - branch delete (local branch only)
 
@@ -60,26 +61,26 @@ Find below a list of features using the Git binary if the Git Executable experim
 - Signing tags with SSH
 
 **Added in 9.9.0:**
-- Added revert commit support.
-- Added pageant ssh agent support.
+- Added revert commit support
+- Added pageant ssh agent support
 
 **Added in 9.10.0:**
-- Added Pull (fast-forward if possible) and Pull (fast-forward only) support.
+- Added Pull (fast-forward if possible) and Pull (fast-forward only) support
 - Added cherry-pick support
 
 **Added in 9.11.0:**
-- Added merge support.
-- Add pull support when the selected branch is not active.
-- Added new log level `GIT_SILLY` to get extra info about `git` and `ssh` commands in logs.
+- Added merge support
+- Add pull support when the selected branch is not active
+- Added new log level `GIT_SILLY` to get extra info about `git` and `ssh` commands in logs
 
 **Added in 9.12.0:**
-- Added clone support.
+- Added clone support
 
 **Added in 9.13.0:**
-- Added rebase support.
-- Added pull (rebase) support.
-- Added checkout suppport.
-- LFS improvements by calling git-lfs directly.
+- Added rebase support
+- Added pull (rebase) support
+- Added checkout suppport
+- LFS improvements by calling git-lfs directly
 
 **Added in 10.0:**
 - Added stage files support
@@ -88,52 +89,52 @@ Find below a list of features using the Git binary if the Git Executable experim
 - Added support for Git Credential Manager on SSH settings
 
 **Added in 10.0.2:**
-- Added push tag support.
+- Added push tag support
 
 **Added in 10.2.0:**
-- Added git status support.
+- Added git status support
 
 **Added in 10.4.1:**
-- Added support for amending and rewording the latest (HEAD) commit, providing full support for SSH commit signing.
+- Added support for amending and rewording the latest (HEAD) commit, providing full support for SSH commit signing
 
 **Added in 10.7.0:**
-- Added support for 'Discard all changes' and connected Undo/Redo actions.
-- Added partial support for 'Discard changes' of unstaged files.
-- Interactive rebase now replays all rebased commits instead of fast-forwarding over the unchanged ones.
+- Added support for 'Discard all changes' and connected Undo/Redo actions
+- Added partial support for 'Discard changes' of unstaged files
+- Interactive rebase now replays all rebased commits instead of fast-forwarding over the unchanged ones
 
 **Added in 10.8.0:**
-- Allow commit hooks when amending the latest commit message in the current branch.
-- Added partial support for 'Discard changes' of unstaged files (renames).
-- Added partial support for 'Unstage and delete file' (new file).
-- Support squashing latest commits in the current branch.
+- Allow commit hooks when amending the latest commit message in the current branch
+- Added partial support for 'Discard changes' of unstaged files (renames)
+- Added partial support for 'Unstage and delete file' (new file)
+- Support squashing latest commits in the current branch
 
 ---
 
 ### AI Commit Message Generation
 
-With this setting enabled, GitKraken Desktop will have the ability to generate commit messages from any staged changes. You can access this feature from the Command Palette (⌘P/Ctrl P, or the magic wand icon ✨ in the toolbar), or you can click the sparkle icon () in the commit panel when you have staged changes.
+With this setting enabled, GitKraken Desktop will have the ability to generate commit messages from any staged changes. You can access this feature from the Command Palette (⌘P/Ctrl P, or the magic wand icon ✨ in the toolbar), or you can click the sparkle icon ✨ in the Commit Panel when you have staged changes.
 
 <div class='callout callout--danger'>
     <p> This feature requires sending a diff of your code changes to Gitkraken AI which utilizes the Gemini 2.0 Flash AI Model. Ensure your code does not contain sensitive information before generating a commit message.</p>
 </div>
 
 <div class='callout callout--warning'>
-    <p>This Feature is only available for Pro subscription tier or higher</p>
+    <p>AI Commit Message Generation is only available with a paid GitKraken subscription.</p>
 </div>
 
-**Generate Commit Messages with AI:** <i class="fa-regular fa-square-check"></i> turn on this experimental feature! Check the box to immediately enable the setting.
+- **Generate Commit Messages with AI:** <i class="fa-regular fa-square-check"></i> turn on this experimental feature! Check the box to immediately enable the setting.
 
-**Bring Your Own Key** By default, Gitkraken AI will be use, but you can choose to provide your own key if you would like to utilize a different model.
+- **Bring Your Own Key** By default, Gitkraken AI will be use, but you can choose to provide your own key if you would like to utilize a different model.
 
-**Prompt:** This is what is sent to Gitkraken AI. We have it pre-filled to hopefully get Gitkraken AI on the right track. However, you can enter whatever you want here and it will be sent when you click ✨.
+- **Prompt:** This is what is sent to GitKraken AI. We have it pre-filled to hopefully get Gitkraken AI on the right track. However, you can enter whatever you want here and it will be sent when you click ✨.
 
 #### How to use in GitKraken Desktop
 
 Once you have AI commit message generation enabled you will see ✨ sparkles ✨ in the commit message field. Stage your changes and click this button to get the AI magic started!
 
-<img src='/wp-content/uploads/gkc-commit-message-ai-gen.gif' class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gkd-11-commit-message-generation-1.png" class="help-center-img img-bordered">
 
-Once the commit message has been generated, you can still fully edit the message before committing. You can also click the ✨ to have OpenAI try again.
+Once the commit message has been generated, you can still fully edit the message before committing. You can also click the ✨ to have the AI try again. Learn more about [GitKraken AI](/gkd-gitkraken-ai)
 
 ---
 
@@ -155,7 +156,7 @@ Cloud Patches allow the ability to engage early with your team before a pull req
 
 #### How to work with Cloud Patches
 
-To create a Cloud Patch, stage the changes you want to include in the Cloud Patch and click on the Cloud Patch icon. You can also create a Cloud Patch from a commit by right-clicking on a commit in the Commit Graph and selecting `Share commit as Cloud Patch`. Once created, you can select `Copy Cloud Patch link` from the toast or by right-clicking a Cloud Patch in the left panel where all your Cloud Patches will be listed.
+To create a Cloud Patch, stage the changes you want to include in the Cloud Patch and click on the Cloud Patch icon. You can also create a Cloud Patch from a commit by right-clicking on a commit in the Commit Graph and selecting `Share commit as Cloud Patch`. Once created, you can select `Copy Cloud Patch link` from the toast or by right-clicking a Cloud Patch in the Left Panel where all your Cloud Patches will be listed.
 
 <img src='/wp-content/uploads/gkd-10-2-0-create-cloud-patch.png' class="help-center-img img-bordered">
 
@@ -180,4 +181,4 @@ To delete a cloud path, right-click it and select `Delete Cloud Patch`.
 
 #### Self-Hosting Cloud Patch data
 
-If you do not want your Cloud Patch data stored on GitKraken Servers, we offer the ability for you to host Cloud Patches on your own AWS S3 storage instance. For more information on configuring this, see our documentation [here](/gk-dev/gk-dev-security-controls/#self-hosted).
+If you do not want your Cloud Patch data stored on GitKraken Servers, we offer the ability for you to host Cloud Patches on your own AWS S3 storage instance. For more information on configuring this, see our [security documentation](/gk-dev/gk-dev-security-controls/#self-hosted).
