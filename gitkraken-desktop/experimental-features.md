@@ -128,9 +128,11 @@ Cloud Patches allow the ability to engage early with your team before a pull req
 
 #### How to work with Cloud Patches
 
-To create a Cloud Patch, stage the changes you want to include in the Cloud Patch and click on the Cloud Patch icon. You can also create a Cloud Patch from a commit by right-clicking on a commit in the Commit Graph and selecting `Share commit as Cloud Patch`. Once created, you can select `Copy Cloud Patch link` from the toast or by right-clicking a Cloud Patch in the Left Panel where all your Cloud Patches will be listed.
+To create a Cloud Patch, stage the changes you want to include in the Cloud Patch and click on the Cloud Patch icon. You can also create a Cloud Patch from a commit by right-clicking on a commit in the Commit Graph and selecting `Share commit as Cloud Patch`. 
 
-<img src='/wp-content/uploads/gkd-10-2-0-create-cloud-patch.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/create-cloud-patch-2025.png' class="help-center-img img-bordered">
+
+Once created, you can select `Copy Cloud Patch link` from the toast or by right-clicking a Cloud Patch in the Left Panel where all your Cloud Patches will be listed.
 
 When creating a Cloud Patch, you have the following sharing options:
 
