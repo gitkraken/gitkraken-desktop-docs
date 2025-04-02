@@ -7,7 +7,7 @@ taxonomy:
 
 ---
 
-The left panel allows you to modify the view of the graph for cleanliness and focus.
+The Left Panel allows you to modify the view of the graph for cleanliness and focus.
 ***
 
 

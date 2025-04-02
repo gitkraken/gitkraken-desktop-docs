@@ -91,11 +91,11 @@ From here, you can decide to reorder, squash, drop, or rename commits before com
 
 GitKraken Desktop allows you to authenticate with GitHub, GitLab, Bitbucket, and Azure DevOps (previously VSTS), which will help you find repos when cloning or adding your remotes.
 
-<img src="/wp-content/uploads/authentication.png" srcset="/wp-content/uploads/authentication@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/authentication-2025.png" class="help-center-img img-bordered">
 
-Availability of Integrations can vary based on your Gitkraken plan.
-- Community Plan users are limited to public repos only for Github.com, Gitlab.com, and Bitbucket cloud.
-- Azure DevOps cloud availability is restricted to Pro users.
+Availability of integrations can vary based on your GitKraken subscription.
+- Community plan users are limited to public repos only for GitHub.com, GitLab.com, and Bitbucket Cloud
+- Azure DevOps Cloud integration requires a GitKraken subscription
 - All Self-Hosted server integrations require an Advanced subscription tiers or higher
 
 #### Benefits
@@ -108,22 +108,34 @@ Availability of Integrations can vary based on your Gitkraken plan.
 
 ***
 
-### 7. Build Status, Assignees, and Reviewers in PRs
+### 7. Hide and Solo branches
 
-If you are using the GitLab or GitHub integration, you may also add a pull request assignee and label(s) to your pull request. GitKraken Desktop will then pass these values onto GitLab or GitHub when the pull request is created. 
+Tailor the Commit Graph to display the branches you need. Hide branches temporarily, or solo 1 branch focus it in the app.
 
-<img src='/wp-content/uploads/gitlab-assignee.png' srcset='/wp-content/uploads/gitlab-assignee@2x.png' class="help-center-img img-bordered">
+<div class="flex-wrap" style="align-items: flex-start">
+    <div class="flex-item">
+        <img src="/wp-content/uploads/gk-hide-icon-green.svg" class='img-responsive' style="width: 70px; height: 70px">
+    </div>
+    <div class="flex-item">
+        <h3>Hide</h3>
+        <p>Hides the selected branch from the graph.</p>
+        <p>To hide a branch, mouse over that branch, and you will see the eye <i class='fa fa-eye icon-green'></i> icon appear to the left of the branch name; click this to hide. Or perform this task by right-clicking the branch and selecting `Hide`.</p>
+        <p>Hidden branches will now have a gray eye <i class='fa fa-eye-slash'></i> icon. Clicking this will restore that repo to the graph.</p>
+    </div>
+</div>
 
-If you are using the GitHub integration, you may also add reviewers and multiple assignees to a pull request. 
-
-<img src='/wp-content/uploads/github-assignee.png' srcset='/wp-content/uploads/github-assignee@2x.png' class="help-center-img img-bordered">
-
-Additionally for GitHub pull requests, this tooltip will show assignees, labels, reviewers, and build status.
-
-<img src='/wp-content/uploads/tooltip-github.png' srcset='/wp-content/uploads/tooltip-github@2x.png'class="help-center-img img-bordered">
-
-Learn more about [pull requests](/working-with-repositories/pull-requests).
-
+ <div class="flex-wrap" style="align-items: flex-start">
+    <div class="flex-item">
+        <img src="/wp-content/uploads/gk-solo-icon-orange.svg" class='img-responsive' style="width: 70px; height: 70px">
+    </div>
+    <div class="flex-item">
+        <h3>Solo</h3>
+        <p>Soloing a branch will hide all other branches which have not been soloed, showing <i>only</i> soloed branches.</p>
+        <p>To solo a branch, right-click the branch and select `Solo`. This initiates Solo Mode, with soloed branches highlighted in orange and with a solid orange <i class='fa fa-dot-circle-o icon-orange'></i> icon to the left of the branch name.</p>
+        <p>Solo/unsolo additional branches by clicking on the semi-opaque icon to the left of that branch's name.</p>
+        <p>Consider hiding/soloing entire remotes if you only need about two remotes, and then hiding everything else.</p>
+    </div>
+</div>
 ***
 
 ### 8. File History and File Blame
@@ -132,17 +144,18 @@ File History and File Blame information display in the same view.
 
 To access either option, first click on a commit in the graph. Then right click a file to access File History or File Blame.
 
-<img src='/wp-content/uploads/file-history.png' srcset='/wp-content/uploads/file-history@2x.png 2x' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/file-history-content-menu-2025.png' class="help-center-img img-bordered">
+
 
 File History shows that file's commit history on the left.
 
-<img src='/wp-content/uploads/file-diff.png' srcset='/wp-content/uploads/file-diff.png 2x' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/file-diff-2025.png' class="help-center-img img-bordered">
 
 Use the top toggle button to switch between Diff View, which shows the selected commit's changes to the file, and the File View, which shows the file's state at that commit, including the blame info.
 
 ***
 
-### 9. Gitkraken Desktop Terminal
+### 9. GitKraken Desktop Terminal
 
 The GitKraken Desktop terminal is a fully-featured terminal emulator that allows you to run Git commands directly from the app.
 Click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar.
@@ -158,7 +171,7 @@ You can set your default terminal from <em class="context-menu">Preferences <i c
 
 It's simple, but easy to miss. Hover over any of the colored lines to drag and drop the graph.
 
-<img src='/wp-content/uploads/graph-gif.gif' class='figure img-floated img-floated--right'>
+<img src='/wp-content/uploads/graph-drag-2025.gif' class='figure img-floated img-floated--right'>
 
 
 Resize and marvel at the colors of the rainbow.
