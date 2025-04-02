@@ -149,7 +149,7 @@ Cloud Patch links can be shared with users to open the Cloud Patch in GitKraken 
 
 To delete a cloud path, right-click it and select `Delete Cloud Patch`.
 
-<img src="/wp-content/uploads/gkc-delete-cloud-patch.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gkc-delete-cloud-patch.png" class="help-center-img img-bordered">
 
 #### Self-Hosting Cloud Patches
 
