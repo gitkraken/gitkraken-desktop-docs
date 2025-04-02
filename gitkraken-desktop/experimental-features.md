@@ -110,34 +110,6 @@ Find below a list of features using the Git binary if the Git Executable experim
 
 ---
 
-### AI Commit Message Generation
-
-With this setting enabled, GitKraken Desktop will have the ability to generate commit messages from any staged changes. You can access this feature from the Command Palette (⌘P/Ctrl P, or the magic wand icon ✨ in the toolbar), or you can click the sparkle icon ✨ in the Commit Panel when you have staged changes.
-
-<div class='callout callout--danger'>
-    <p> This feature requires sending a diff of your code changes to Gitkraken AI which utilizes the Gemini 2.0 Flash AI Model. Ensure your code does not contain sensitive information before generating a commit message.</p>
-</div>
-
-<div class='callout callout--warning'>
-    <p>AI Commit Message Generation is only available with a paid GitKraken subscription.</p>
-</div>
-
-- **Generate Commit Messages with AI:** <i class="fa-regular fa-square-check"></i> turn on this experimental feature! Check the box to immediately enable the setting.
-
-- **Bring Your Own Key** By default, Gitkraken AI will be use, but you can choose to provide your own key if you would like to utilize a different model.
-
-- **Prompt:** This is what is sent to GitKraken AI. We have it pre-filled to hopefully get Gitkraken AI on the right track. However, you can enter whatever you want here and it will be sent when you click ✨.
-
-#### How to use in GitKraken Desktop
-
-Once you have AI commit message generation enabled you will see ✨ sparkles ✨ in the commit message field. Stage your changes and click this button to get the AI magic started!
-
-<img src="/wp-content/uploads/gkd-11-commit-message-generation-1.png" class="help-center-img img-bordered">
-
-Once the commit message has been generated, you can still fully edit the message before committing. You can also click the ✨ to have the AI try again. Learn more about [GitKraken AI](/gkd-gitkraken-ai)
-
----
-
 ### Cloud Patches
 
 <div class='embed-container embed-container--16-9'>
@@ -179,6 +151,6 @@ To delete a cloud path, right-click it and select `Delete Cloud Patch`.
 
 <img src="/wp-content/uploads/gkc-delete-cloud-patch.png" class="img-bordered img-responsive center">
 
-#### Self-Hosting Cloud Patch data
+#### Self-Hosting Cloud Patches
 
 If you do not want your Cloud Patch data stored on GitKraken Servers, we offer the ability for you to host Cloud Patches on your own AWS S3 storage instance. For more information on configuring this, see our [security documentation](/gk-dev/gk-dev-security-controls/#self-hosted).
