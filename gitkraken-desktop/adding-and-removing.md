@@ -6,6 +6,8 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
+
 Learn how to add and remove files in GitKraken Desktop.
 ***
 
@@ -17,11 +19,11 @@ To initiate the Command Palette, hit <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>P</kb
 
 You can also right click the empty space in the commit panel and click the `Create File` context menu option.
 
-<img src='/wp-content/uploads/create-file.png' srcset='/wp-content/uploads/create-file@2x.png 2x' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/create-file-2025.png' class="help-center-img img-bordered">
 
 Type the desired filename and hit <kbd>Enter</kbd>.
 
-<img src='/wp-content/uploads/create-file.gif' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/create-file-2025.gif' class="help-center-img img-bordered">
 
 Folders can be created while creating a file by including a "/" in the file name.
 
