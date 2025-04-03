@@ -138,8 +138,7 @@ GitKraken Desktop supports HTTPS and SSH authentication, and provides useful int
 A seamless extension of your development workflow, [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai) automates tedious tasks to improve your efficiency and focus.
 
 <div class='callout callout--basic'>
-    <p>More questions about Gitkraken AI? Please see our <a href="https://help.gitkraken.com/general/gitkraken-ai-faq/">GitKraken AI FAQ page</a> for more 
-details</p>
+    <p>More questions about Gitkraken AI? Please see our <a href="https://help.gitkraken.com/general/gitkraken-ai-faq/">GitKraken AI FAQ page</a> for more details</p>
 </div>
 ## External Tools
 
