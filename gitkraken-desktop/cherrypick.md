@@ -7,16 +7,16 @@ taxonomy:
 
 ---
 
-<kbd>Last Updated: March 2025</kbd>
+<kbd>Last Updated: April 2025</kbd>
 
 Sometimes you commit to one branch, when you meant to commit to another. Here's how to grab the changes you need.
 
 ***
-To cherry pick a commit, right click on a commit node and select the Cherrypick Commit option:
+To cherry pick a commit, right click on a commit node and select the "Cherrypick commit" option:
 
 <img src='/wp-content/uploads/cherrypick.png' srcset='/wp-content/uploads/cherrypick@2x.png 2x' class="help-center-img img-bordered">
 
-The cherry pick action is also available from _Local_ on the left panel.
+The cherry pick action is also available when interacting with branches from _Local_ in the Left Panel.
 
 Here, cherry pick grabs the changes from the commit referenced by the HEAD of that branch, and places them onto the branch currently checked out.
 
