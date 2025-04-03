@@ -19,7 +19,7 @@ To initiate the Command Palette, hit <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>P</kb
 
 You can also right click the empty space in the commit panel and click the `Create File` context menu option.
 
-<img src='/wp-content/uploads/create-file-2025.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/create-file-command-palette-2025.png' class="help-center-img img-bordered">
 
 Type the desired filename and hit <kbd>Enter</kbd>.
 
