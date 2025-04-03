@@ -51,7 +51,7 @@ To add co-authors to a commit, add a line to your commit description using the f
 
 <img src='/wp-content/uploads/co-author.png' srcset='/wp-content/uploads/co-author@2x.png 2x' class="help-center-img img-bordered">
 
-The commit panel will then show the co-author in the history for that commit:
+The Commit Panel will then show the co-author in the history for that commit:
 
 <img src='/wp-content/uploads/co-author-history.png' srcset='/wp-content/uploads/co-author-history@2x.png 2x' class="help-center-img img-bordered">
 
