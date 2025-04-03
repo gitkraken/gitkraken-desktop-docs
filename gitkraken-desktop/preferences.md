@@ -129,10 +129,18 @@ GitKraken Desktop supports HTTPS and SSH authentication, and provides useful int
 - [Jira Cloud Integration](/gitkraken-desktop/jira/)
 - [Jira Data Center Integration](/gitkraken-desktop/jira-data-center/)
 
-## Gitkraken AI
+## GitKraken AI
 
-A seamless extension of your development workflow, [GitKraken AI](https://www.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai) automates tedious tasks to improve your efficiency and focus.
+<div class='callout callout--warning'>
+    <p>This feature is only available for Pro subscription tiers or higher</p>
+</div>
 
+A seamless extension of your development workflow, [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai) automates tedious tasks to improve your efficiency and focus.
+
+<div class='callout callout--basic'>
+    <p>More questions about Gitkraken AI? Please see our <a href="https://help.gitkraken.com/general/gitkraken-ai-faq/">GitKraken AI FAQ page</a> for more 
+details</p>
+</div>
 ## External Tools
 
 ### External Merge Tool
@@ -185,7 +193,7 @@ GitKraken Desktop's notification system is designed to tell you about updates, b
 - Receive Help Notifications
 
 <div class='callout callout--basic'>
-    <p><strong>Note:</strong> Marketing notifications can only be disabled by Pro, Teams, and Enterprise users. 
+    <p><strong>Note:</strong> Marketing notifications can only be disabled by Pro, Advance, Business, and Enterprise users. 
 </p>
 </div>
 

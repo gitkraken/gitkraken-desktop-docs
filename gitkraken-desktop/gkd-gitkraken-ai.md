@@ -10,6 +10,10 @@ taxonomy:
 
 GitKraken offers built-in AI features to fast track your workflow—no extra tools, no switching interfaces.
 
+<div class='callout callout--warning'>
+    <p>This feature is only available for Pro subscription tiers or higher</p>
+</div>
+
 ## AI-Powered Commit Explain
 
 GitKraken can generate natural language explanations of your commits, right from the UI.
