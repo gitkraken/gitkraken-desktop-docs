@@ -14,7 +14,7 @@ Compare changes within GitKraken Desktop _diffs_. Learn where to access _diffs_,
     <iframe width="560" height="315" src="https://www.youtube.com/embed/-0bn2H63axM?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-Compare changes within GitKraken Desktop _diffs_. Learn where to access _diffs_, and how to access _file history_ or _file blame_.
+
 
 ***
 
@@ -62,13 +62,13 @@ Hunk view will show the diff as blocks, without the context of the rest of the f
 
 Inline view will show the diff within the context of the entire file. 
 
-<img src='/wp-content/uploads/inline-2025.png' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/inline-annotated-2025.png' class="help-center-img img-bordered" />
 
 ### Split view
 
 Split view will show a side by side diff comparing how the file looked before (left), and how it looks after the change (right). Note, you may select deleted lines with your mouse from split view. 
 
-<img src='/wp-content/uploads/split-2025.png' srcset='/wp-content/uploads/split@2x.png 2x' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/split-2025.png' class="help-center-img img-bordered" />
 
 ***
 
@@ -167,7 +167,7 @@ A patch, or patchfile, is a file describing changes between 2 files. Patch files
 
 To create a patch from a commit, right-click a commit and select `Create patch from commit`. You will be prompted to name the patch after.
 
-<img src='/wp-content/uploads/ccreate-patch-2025.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/create-patch-2025.png' class="help-center-img img-bordered">
 
 To create a patch from a file, right-click a file and select `Create patch from file changes`. You will be prompted to name the patch after.
 
