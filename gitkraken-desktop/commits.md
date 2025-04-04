@@ -88,7 +88,11 @@ If a commit template was read from your local git config, any changes you make t
 
 If a commit template was not read from your default `.gitconfig` or you are creating a template for the first time, any change you make to the template in GitKraken Desktop will be written to a file called `gkcommittemplate.txt` in your repository's `.git/` directory. GitKraken Desktop will also update your repository's git config `commit.template` setting to point to this file. This allows you to make changes to your local commit template without overwriting your global commit template for all of your other repositories.
 
-Checking the `Apply this template to commit messages` option will automatically apply the template to the commit message pane.  If this option is not checked, the commit message pane will be blank.
+#### Commit Template Options
+
+- Checking the `Apply this template to commit messages` option will automatically apply the template to the commit message pane.  If this option is not checked, the commit message pane will be blank.
+
+- Checking the `Remove comments from commit messages` will remove lines in the template that start with `#` when creating the commit message. 
 
 ### Configuring Commit Templates
 
