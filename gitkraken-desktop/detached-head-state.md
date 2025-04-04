@@ -34,7 +34,7 @@ When you check out a branch, the `HEAD` tag indicator will disappear and any com
 <img src='/wp-content/uploads/discard-commits.gif' class="help-center-img img-bordered">
  
 <div class='callout callout--danger'>
-    <p><strong>IMPORTANT:</strong> Any commits made in detached HEAD state will be lost when you check out any branch. However, you may still [recover commits manually](https://help.gitkraken.com/gitkraken-desktop/detached-head-state/#recovering-lost-commits). 
+    <p><strong>IMPORTANT:</strong> Any commits made in detached HEAD state will be lost when you check out any branch. However, you may still <a href="https://help.gitkraken.com/gitkraken-desktop/detached-head-state/#recovering-lost-commits">recover commits manually</a>. 
 </p>
 </div>
 
