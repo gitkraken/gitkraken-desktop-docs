@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 GitKraken Self-Hosted Server runs on a Linux virtual machine (CentOS, Ubuntu, or RHEL7) inside Docker containers, so before we can boldy go where no Kraken has gone before, we'll have to install Docker.
 

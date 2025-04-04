@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 After installing GitKraken Self-Hosted Server (AKA Enterprise Self-Hosted), you are ready to configure the Server.
 

@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-
+<kbd>Last updated: April 2025</kbd>
 
 The upgrade procedure is the same whether you are running GitKraken Self-Hosted on CentOS, Ubuntu, or RHEL7.
 

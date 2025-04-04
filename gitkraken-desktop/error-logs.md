@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 GitKraken Desktop tracks errors from <kbd><strong>Help > Support > View Error Logs</strong></kbd>.
 

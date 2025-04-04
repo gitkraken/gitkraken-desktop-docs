@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 Learn all about GitKraken Desktop and WSL 2.
 ## What is WSL/WSL 2?

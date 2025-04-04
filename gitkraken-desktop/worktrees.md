@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 Learn more about Git Worktrees in GitKraken Desktop and how to use them.
 

@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 ***
 ### General Troubleshooting for GitKraken Desktop 9.4.0+

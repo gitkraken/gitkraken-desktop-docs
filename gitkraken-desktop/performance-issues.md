@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 We're always on a quest to streamline the git experience as well as improve the performance of GitKraken Desktop. If you're experiencing slow performance, it can often be remedied using one of the troubleshooting steps below.
 

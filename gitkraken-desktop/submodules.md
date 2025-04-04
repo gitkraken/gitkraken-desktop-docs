@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 Submodules allow you to include other Git repositories within a Git repository and can be managed directly inside of GitKraken Desktop.
 

@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 Ever use the command line, hit the enter key and have that awful moment where you're not sure if something dreadful just happened? How often do you or your coworkers find yourselves wishing you could undo something in Git?
 
