@@ -124,7 +124,6 @@ To accommodate viewing a longer commit description, click on the bar at the the 
 
 <img src='/wp-content/uploads/amend-box-2025.png' class="help-center-img img-bordered">
 
-
 Select <button class='button button--success button--ui button--nolink'>Update Message</button> to save your changes or <button class='button button--danger button--ui button--nolink'>Cancel Amend</button> to discard.
 
 <div class='callout callout--basic'>
