@@ -90,9 +90,9 @@ If a commit template was not read from your default `.gitconfig` or you are crea
 
 #### Commit Template Options
 
-- Checking the `Apply this template to commit messages` option will automatically apply the template to the commit message pane.  If this option is not checked, the commit message pane will be blank.
+- `Apply this template to commit messages` option will automatically apply the template to the commit message pane.  If this option is not checked, the commit message pane will be blank.
 
-- Checking the `Remove comments from commit messages` will remove lines in the template that start with `#` when creating the commit message. 
+- `Remove comments from commit messages` will remove lines in the template that start with `#` when creating the commit message. 
 
 ### Configuring Commit Templates
 
