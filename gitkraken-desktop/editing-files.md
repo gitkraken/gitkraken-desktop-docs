@@ -9,6 +9,7 @@ taxonomy:
 <kbd>Last updated: April 2025</kbd>
 
 Learn how to edit files in GitKraken Desktop.
+
 ***
 
 ## Editing a file
@@ -57,6 +58,7 @@ To exit the file without saving your changes, hover over the blue dot, click the
 Clicking the <button class='button button--success button--ui button--nolink'>Stage File</span></button> button with pending changes will give you the options to `Save and stage` or `Stage saved changes only`. 
 
 <img src='/wp-content/uploads/save-and-stage-2025.png' class="help-center-img img-bordered">
+
 
 ## Encoding
 
