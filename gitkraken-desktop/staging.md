@@ -18,7 +18,7 @@ When you are working on a project, the staging pane is where changes are prepped
 Staging adds selected file contents to the index, which is like flagging your work as good to go.
 To start, select the _//WIP_ node to see all your files on the Commit Panel.
 
-<img src='/wp-content/uploads/commit-template-setting-2025.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/select-WIP-2025.png' class="help-center-img img-bordered">
 
 Once the //WIP node is selected, a <button class='button button--success button--ui button--nolink'>Stage File</span></button> will appear when you hover over a file in the Commit Panel.
 
