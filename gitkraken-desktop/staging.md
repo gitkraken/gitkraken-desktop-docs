@@ -18,7 +18,7 @@ When you are working on a project, the staging pane is where changes are prepped
 Staging adds selected file contents to the index, which is like flagging your work as good to go.
 To start, select the _//WIP_ node to see all your files on the Commit Panel.
 
-<img src='/wp-content/uploads/WIP-stage.png' srcset='/wp-content/uploads/WIP-stage@2x.png 2x' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/commit-template-setting-2025.png' class="help-center-img img-bordered">
 
 Once the //WIP node is selected, a <button class='button button--success button--ui button--nolink'>Stage File</span></button> will appear when you hover over a file in the Commit Panel.
 
@@ -78,7 +78,7 @@ You can use the `.gitignore` file to tell GitKraken Desktop to ignore files in y
 
 You can view the `.gitignore` documentation for rules and formatting on the  <a href="https://git-scm.com/docs/gitignore">git-scm website</a>.
 
-To ignore a file, right click on the file in the commit panel and select Ignore.
+To ignore a file, right click on the file in the Commit Panel and select Ignore.
 
 <img src='/wp-content/uploads/ignore-file.png' srcset='/wp-content/uploads/ignore-file@2x.png 2x' class="help-center-img img-bordered">
 
