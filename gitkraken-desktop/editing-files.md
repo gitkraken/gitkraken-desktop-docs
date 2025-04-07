@@ -72,4 +72,4 @@ You can also set your file encoding to `GUESS ENCODING` and GitKraken Desktop wi
     <p>Note 📝 - GitKraken Desktop is NOT intended to be used to change a file(s) encoding and it will not change the encoding when saving. We recommend using another editor, such as VSCode, to make file encoding changes.</p>
 </div>
 
-<img src='/wp-content/uploads/preferences-encoding-select.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/preferences-encoding-select-2025.png' class="help-center-img img-bordered">

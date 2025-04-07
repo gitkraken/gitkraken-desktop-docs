@@ -6,25 +6,26 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 Learn how to search for commits in GitKraken Desktop.
 
 ***
-## Max commits 
+## Initial number of displayed commits 
 
-By default, GitKraken Desktop displays up to 2000 commits on the graph. To view a deeper history of your repo, set the max number of commits that display on the graph to the number of your liking. 
+By default, GitKraken Desktop displays up to 2000 commits on the Commit Graph. To view a deeper history of your repo, set the inital number of commits that display on the graph to the number of your liking. 
 
-Navigate to <kbd>Preferences</kbd> from the hamburger menu in the upper right corner, and find <kbd>Max Commits in Graph</kbd> under <kbd>General</kbd>. There is no limit to how many commits can be displayed. 
+Navigate to <kbd>Preferences</kbd> from the hamburger menu in the upper right corner, and find <kbd>Initial Commits in Graph</kbd> under <kbd>General</kbd>. There is no limit to how many commits can be displayed. 
 
-<img src='/wp-content/uploads/max-commits.png' srcset='/wp-content/uploads/max-commits@2x.png 2x' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/max-commits-2025.png' class="help-center-img img-bordered">
 
-You'll also find option to <kbd>Show All Commits in Graph</kbd> for those behemoth projects of yours. 
+Above this setting, you'll also find option to <kbd>Show All Commits in Graph</kbd> for those behemoth projects of yours. 
 
 ## Search bar
 
 The search bar in the upper right of the application defaults to search for commits.
 
-<img src='/wp-content/uploads/search.png' srcset='/wp-content/uploads/search@2x.png 2x' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/commit-search-2025.png' class="help-center-img img-bordered">
 
 Search commits by message, SHA, or author and watch GitKraken Desktop update the results live.
 

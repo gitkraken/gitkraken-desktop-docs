@@ -6,12 +6,15 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/cr1N8VTRmfM?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
 ***
+
+### Squash requirements
 
 Squashing is available for commits that meet the following requirements:
 
@@ -20,11 +23,11 @@ Squashing is available for commits that meet the following requirements:
 * Chronologically consecutive
 * The oldest commit in the list has a parent
 
-If all these conditions are met, the Squash option appears when you right click the commit node.
+If all these conditions are met, the Squash option appears when you right-click a range of selected commits. To select more than 1 commit, use the Shift or Cmd/Ctrl key:
 
 <img src='/wp-content/uploads/squash.gif' srcset='/wp-content/uploads/squash@2x.gif' class="help-center-img img-bordered">
 
-Clicking the squashed commit will display the commit message in the right panel.  You can click on the commit message to amend it and consolidate all of the commit messages from your squashed commits.
+Clicking the squashed commit will display the commit message in the Commit Panel.  You can click on the commit message to amend it and consolidate all of the commit messages from your squashed commits.
 
 <img src='/wp-content/uploads/amend-commitmsg.png' srcset='/wp-content/uploads/amend-commitmsg@2x.png' class="help-center-img img-bordered">
 

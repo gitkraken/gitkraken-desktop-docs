@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 Whether you are a newborn or a wizened deep-ocean octopod, each user will need to open, clone, or initialize a repo in GitKraken Desktop.
 
@@ -27,17 +28,17 @@ Once this is complete, you are ready for your oceanic journey!
 
 The Repo Management tab provides an overview of your active repositories, Workspaces, and favorite repositories. To access the Repo Management tab, either click on the folder icon located at the top left or utilize the keyboard shortcut <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
 
-<img src='/wp-content/uploads/gkc-repo-mngmt-tab.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/repo-mgmt-2025.png' class="help-center-img img-bordered">
 
-At the top right corner, you'll find three options for managing Git repositories within your projects:
+At the top left corner, you'll find three options for managing Git repositories within your projects:
 
-1. **Open** - Open a local Git repository already initialized and available locally.
+1. **Browse** - Open a local Git repository already initialized and available locally.
 2. **Clone** - Clone a remote Git repository already initialized.
 3. **Init** - Create an empty Git repository or reinitialize an existing one.
 
 Additionally, you can create a new Workspace and manage your integrations.
 
-In the Repo Management tab you will find a list of your active repos (Open Repositories), your favorites (Favorites) and your Workspaces.
+In the Repo Management tab you will find a list of your active repos (Open Repositories), your favorites (Favorites) and your [Workspaces](/gitkraken-desktop/workspaces/).
 
 For each repo, you have three available actions:
 * Open repository in VS Code.
@@ -50,9 +51,13 @@ For each repo, you have three available actions:
 ### Opening an existing project
 GitKraken Desktop allows you to load your existing repositories and pick up where you left off. It's also useful for visualizing past work done.  
 
-If you're coming from a Git project you already have locally, navigate to <kbd><strong>File > Open Repo</strong></kbd> to get started immediately in GitKraken Desktop. A file explorer window will appear, select the repository folder to open it in Gitkraken Desktop.
+From the Repository Management window, select <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Browse</span></button> to open a file explorer window and select the repository folder to open it in Gitkraken Desktop.
 
-<img src='/wp-content/uploads/gkc-repo-mngmt-open-repo.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/open-repo-2025.png' class="help-center-img img-bordered">
+
+Alternatively, click the + icon to open a New Tab and access the <strong>Browse</strong> button from there.
+
+<img src='/wp-content/uploads/open-new-tab-2025.png' class="help-center-img img-bordered">
 
 ***
 ### Cloning an existing project
@@ -61,19 +66,27 @@ If you're coming from a Git project you already have locally, navigate to <kbd><
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OA9o09Bq5M8?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-If your project is not on your local machine or you want a new copy, clone the project through <kbd><strong>File > Clone</strong></kbd>.
+If your project is not on your local machine or you want a new copy, clone the project from the Repository Management window by selecting <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Clone</span></button>.
+
+<img src='/wp-content/uploads/clone-repo-mgmt-2025.png' class="help-center-img img-bordered">
+
+Alternatively, you may also clone from <kbd><strong>File > Clone</strong></kbd> or from the New Tab view. No matter how you access the Clone option, you'll be prompted to open the newly copied project in GitKraken Desktop.
 
 <img src='/wp-content/uploads/clone-url.png' srcset='/wp-content/uploads/clone-url@2x.png 2x' class="help-center-img img-bordered">
 
-This will then prompt you to open the newly copied project in GitKraken Desktop.
+
 
 ***
 ### Initialize a new project
-Starting a project in GitKraken Desktop is easy through <kbd><strong>File > Init</strong></kbd>
+There are a few ways to initialize a new repo.
 
-<img src='/wp-content/uploads/gkc-repo-mngmt-init-repo.png' class="help-center-img img-bordered">
+From the Repository Management window, just hit the <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Init</span></button> button. 
+
+<img src='/wp-content/uploads/init-2025.png' class="help-center-img img-bordered">
 
 All you need to do is fill out the fields and select <button class='button button--success button--ui button--nolink'>Create Repository</span></button> for the magic to begin.
+
+You may also initialize a repo from <kbd><strong>File > Init</strong></kbd> or from the New Tab view. 
 
 #### Input
 * New repository path
@@ -87,7 +100,7 @@ All you need to do is fill out the fields and select <button class='button butto
 #### Output
 * A new initialized Git project at the specified repository path by creating a `.git` folder.
 * The project is opened in GitKraken Desktop
-* An "Initial commit" on a `master` branch containing a blank `README.md` along with a `.gitignore` and `LICENSE.md` if applicable.
+* An "Initial commit" on a `main` branch containing a blank `README.md` along with a `.gitignore` and `LICENSE.md` if applicable.
 
  <div class='callout callout--success'>
      <p>GitKraken Desktop also allows initializing a repository directly to a remote Git hosting provider such as GitHub and Bitbucket.</p>
@@ -97,9 +110,9 @@ All you need to do is fill out the fields and select <button class='button butto
 
 ### Customize your Repository Management tab
 
-* Reorder repository groups by dragging and dropping the header to create a more organized list that fits your workflow.
-* Change the color of a group by selecting Change color in the three-dot menu of any repo group. Use color to categorize Workspaces or highlight your most used groups of repositories.
-* Set a default color for Workspaces and other groups in Preferences > UI Customization
+* Reorder repository groups by dragging and dropping the header to create a more organized list.
+* Change the color of a group by selecting <kbd>Change color</kbd> in the three-dot menu of any repo group. 
+* Set a default color for Workspaces and other groups in <kbd>Preferences > UI Customization</kbd>.
 
 <img src='/wp-content/uploads/gkd-repo-mgm-tab-customize1.gif' class="help-center-img img-bordered">
 
