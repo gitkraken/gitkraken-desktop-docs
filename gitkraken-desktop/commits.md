@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last Updated: April 2025</kbd>
+<kbd>Last updated: April 2025</kbd>
 
 Commit to save work with GitKraken Desktop when changing files.  Whether you commit to other things in life is up to you...
 
