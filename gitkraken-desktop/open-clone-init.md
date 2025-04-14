@@ -82,7 +82,7 @@ There are a few ways to initialize a new repo.
 
 From the Repository Management window, just hit the <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Init</span></button> button. 
 
-<img src='/wp-content/uploads/init-2025.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/init-2025.png' srcset="/wp-content/uploads/init-2025@2x.png" class="help-center-img img-bordered">
 
 All you need to do is fill out the fields and select <button class='button button--success button--ui button--nolink'>Create Repository</span></button> for the magic to begin.
 

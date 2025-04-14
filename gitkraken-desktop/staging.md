@@ -23,7 +23,7 @@ To start, select the _//WIP_ node from the Commit Graph to see all your changes 
 
 Once the //WIP node is selected, a <button class='button button--success button--ui button--nolink'>Stage File</span></button> will appear when you hover over a file in the Commit Panel.
 
-<img src='/wp-content/uploads/stage-file-2025.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/stage-file-2025.png' srcset="/wp-content/uploads/stage-file-2025@2x.png" class="help-center-img img-bordered">
 
 Additionally, you may click on a file for review in the diff or click the <button class='button button--success button--ui button--nolink'>Stage all changes</span></button>. To stage specific lines, select the file, highlight the target lines, then right-click to access the <em>Stage selected lines</em> option.
 
@@ -41,7 +41,7 @@ From here you should be set to  <a href="/gitkraken-desktop/commits">commit</a>!
 
 Unstage files by selecting a staged file and hitting the <button class='button button--danger button--ui button--nolink'>Unstage File</span></button> button that appears. 
 
-<img src='/wp-content/uploads/unstage-file-2025.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/unstage-file-2025.png' srcset="/wp-content/uploads/unstage-file-2025@2x.png" class="help-center-img img-bordered">
 
 If you click on a file to view the diff, you can selectively unstage lines or hunks.
 
@@ -61,11 +61,11 @@ As you review your files, you may meticulously stage lines or hunks of changes o
 
 To discard changes, select the _//WIP_ node to summon the <i class="fa fa-trash-o" aria-hidden="true"></i> icon. This option will discard all changes or discard any multi-selected files.
 
-<img src='/wp-content/uploads/discard-all-changes-2025.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/discard-all-changes-2025.png' srcset="/wp-content/uploads/discard-all-changes-2025@2x.png"  class="help-center-img img-bordered">
 
 To discard a specific group of changes, multi-select files and then right-click to **multi-discard**, or click the <i class="fa fa-trash-o" aria-hidden="true"></i> icon.
 
-<img src='/wp-content/uploads/multi-discard-2025.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/multi-discard-2025.png' srcset="/wp-content/uploads/multi-discard-2025@2x.png" class="help-center-img img-bordered">
 
 Next, you may discard hunks of changes from the  <a href="/gitkraken-desktop/diff">diff</a> of any file.
 
