@@ -28,7 +28,7 @@ Once this is complete, you are ready for your oceanic journey!
 
 The Repo Management tab provides an overview of your active repositories, Workspaces, and favorite repositories. To access the Repo Management tab, either click on the folder icon located at the top left or utilize the keyboard shortcut <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
 
-<img src='/wp-content/uploads/repo-mgmt-2025.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/repo-mgmt-2025.png' srcset="/wp-content/uploads/repo-mgmt-2025@2x.png" class="help-center-img img-bordered">
 
 At the top left corner, you'll find three options for managing Git repositories within your projects:
 
@@ -53,7 +53,7 @@ GitKraken Desktop allows you to load your existing repositories and pick up wher
 
 From the Repository Management window, select <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Browse</span></button> to open a file explorer window and select the repository folder to open it in Gitkraken Desktop.
 
-<img src='/wp-content/uploads/open-repo-2025.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/open-repo-2025.png' srcset="/wp-content/uploads/open-repo-2025@2x.png"  class="help-center-img img-bordered">
 
 Alternatively, click the + icon to open a New Tab and access the <strong>Browse</strong> button from there.
 
@@ -68,7 +68,7 @@ Alternatively, click the + icon to open a New Tab and access the <strong>Browse<
 
 If your project is not on your local machine or you want a new copy, clone the project from the Repository Management window by selecting <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Clone</span></button>.
 
-<img src='/wp-content/uploads/clone-repo-mgmt-2025.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/clone-repo-mgmt-2025.png' srcset="/wp-content/uploads/clone-repo-mgmt-2025@2x.png" class="help-center-img img-bordered">
 
 Alternatively, you may also clone from <kbd><strong>File > Clone</strong></kbd> or from the New Tab view. No matter how you access the Clone option, you'll be prompted to open the newly copied project in GitKraken Desktop.
 
