@@ -185,5 +185,5 @@ Select your .patch file to then apply changes to your working directory.
 
 
 <div class='callout callout--basic'>
-    <p>Note: GitKraken Desktop does not yet support generating patches from binary files. This is a preliminary release with better support coming, and if you have feedback please reach out to our <a href="https://www.gitkraken.com/git-client/contact-support">support team</a>. </p>
+    <p>Note: GitKraken Desktop does not yet support generating patches from binary files. This is a preliminary release with better support coming, and if you have feedback please reach out to our <a href="https://www.gitkraken.com/git-client/contact-support?product=gitkraken&source=help_center">support team</a>. </p>
 </div>

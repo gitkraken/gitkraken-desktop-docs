@@ -14,12 +14,12 @@ Learn how to branch and merge in GitKraken Desktop. 🌳 🔀
 </div>
 
 
-Looking for a sharable summary? Learn about [how GitKraken solves merge conflicts](https://www.gitkraken.com/developer-problems/merge-conflicts).   
+Looking for a sharable summary? Learn about [how GitKraken solves merge conflicts](https://www.gitkraken.com/developer-problems/merge-conflicts?product=gitkraken&source=help_center).   
 
 ***
 
 ## Branches
-When starting work on a new feature or bug, <a href="https://gitkraken.com/learn/git/problems/create-git-branch" target="_blank">create a new branch</a>. Right-click on any existing commit to create a branch:
+When starting work on a new feature or bug, <a href="https://gitkraken.com/learn/git/problems/create-git-branch?product=gitkraken&source=help_center" target="_blank">create a new branch</a>. Right-click on any existing commit to create a branch:
 
 <img src="/wp-content/uploads/add-branch-2025.png" srcset="/wp-content/uploads/add-branch@2x.png 2x" class="help-center-img img-bordered">
 A branch is a pointer to a specific commit in the repo.
@@ -51,7 +51,7 @@ For hardcore keyboard warriors, you can also rename a branch using the Command P
 Note: You can only rename the current branch you are on.
 ### Delete a branch
 
-To <a href="https://gitkraken.com/learn/git/problems/delete-local-git-branch" target="_blank">delete a branch</a>, right-click the branch and select `Delete {branch-name}`. You cannot delete a branch that is checked out, so be sure to first checkout a different branch to then delete it. 
+To <a href="https://gitkraken.com/learn/git/problems/delete-local-git-branch?product=gitkraken&source=help_center" target="_blank">delete a branch</a>, right-click the branch and select `Delete {branch-name}`. You cannot delete a branch that is checked out, so be sure to first checkout a different branch to then delete it. 
 
 To delete multiple local branches in the Left Panel, hold <kbd>Shift</kbd> then click to select a range of branches or hold <kbd>&#8984; | Ctrl</kbd>  then click to select specific branches. Then right-click to access the delete option.
 
@@ -71,7 +71,7 @@ Drag and drop one branch onto another to initiate a merge, or just right click t
 
 <img src="/wp-content/uploads/merge-right.png" srcset="/wp-content/uploads/merge-right@2x.png" class="help-center-img img-bordered">
 <div class='callout callout--warning'>
-    <p>Note 📝 - The in-app merge conflict output editor is only available with a <a href="https://gitkraken.com/pricing" target=_blank>Paid</a> license. </p>
+    <p>Note 📝 - The in-app merge conflict output editor is only available with a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center" target=_blank>Paid</a> license. </p>
 </div>
 
 
@@ -106,7 +106,7 @@ Clicking the up and down arrows will move you to the next conflict.
 </div>
 
 <div class='callout callout--warning'>
-    <p>Note 📝 - The in-app merge conflict output editor is only available with a <a href="https://gitkraken.com/pricing" target=_blank>Paid</a> license. </p>
+    <p>Note 📝 - The in-app merge conflict output editor is only available with a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center" target=_blank>Paid</a> license. </p>
 </div>
 
 <figure class='figure center'>
@@ -116,7 +116,7 @@ Clicking the up and down arrows will move you to the next conflict.
 After the conflict is resolved, save the output and commit the changes.
 
 <div class='callout callout--basic'>
-    <p>Watch our Learn Git Tutorial on <a href="https://www.gitkraken.com/learn/git/tutorials/how-to-resolve-merge-conflict-in-git" target="_blank">how to resolve merge conflicts in git</a>.</p>
+    <p>Watch our Learn Git Tutorial on <a href="https://www.gitkraken.com/learn/git/tutorials/how-to-resolve-merge-conflict-in-git?product=gitkraken&source=help_center" target="_blank">how to resolve merge conflicts in git</a>.</p>
 </div>
 
 
@@ -174,7 +174,7 @@ How it works:
 
 <img src='/wp-content/uploads/base-branch.png' class="help-center-img img-bordered"/>
 
-This feature is currently in preview and may undergo significant updates based on feedback. [Share your thoughts](https://feedback.gitkraken.com) with us to help shape its future direction!
+This feature is currently in preview and may undergo significant updates based on feedback. [Share your thoughts](https://feedback.gitkraken.com?product=gitkraken&source=help_center) with us to help shape its future direction!
 
 
 

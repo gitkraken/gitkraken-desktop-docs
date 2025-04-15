@@ -18,4 +18,4 @@ You may also access error logs from the Command Palette.
 
 This will open a text file will a list of the most recent error toasts, which are the red pop-up errors that appear in the upper right corner of GitKraken Desktop.
 
-If you're running into issues with GitKraken Desktop, send us a copy of this log with your support ticket submission <a href="https://www.gitkraken.com/git-client/contact-support" target=_blank>here</a>.
+If you're running into issues with GitKraken Desktop, send us a copy of this log with your support ticket submission <a href="https://www.gitkraken.com/git-client/contact-support?product=gitkraken&source=help_center" target=_blank>here</a>.

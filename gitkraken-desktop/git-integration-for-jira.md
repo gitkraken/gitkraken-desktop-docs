@@ -7,7 +7,7 @@ taxonomy:
 
 ---
 
-GitKraken connects with the <a href="https://marketplace.atlassian.com/apps/4984/git-integration-for-jira" target="_blank">Git Integration for Jira</a> app, which provides seamless navigation between GitKraken Git Client and Jira when viewing commit and file diffs related to Jira issues.
+GitKraken connects with the <a href="https://marketplace.atlassian.com/apps/4984/git-integration-for-jira?product=gitkraken&source=help_center" target="_blank">Git Integration for Jira</a> app, which provides seamless navigation between GitKraken Git Client and Jira when viewing commit and file diffs related to Jira issues.
 
 ### How to connect
 
