@@ -114,7 +114,7 @@ Five kinds of actions are currently supported: posting a comment, adding a check
 
 ## Managing Saved Automations
 
-After creating your first automation you will now see a list of all your saved automations on [GitKraken.dev](https://gitkraken.dev/automations/general?product=gitkraken&source=help_center). From this screen you can add additional automations, disable/enable, delete, sort, edit and duplicate your saved automations. 
+After creating your first automation you will now see a list of all your saved automations on [GitKraken.dev](https://gitkraken.dev/automations/list?product=gitkraken&source=help_center). From this screen you can add additional automations, disable/enable, delete, sort, edit and duplicate your saved automations. 
 
 <img src="/wp-content/uploads/Createautomations5.png" class="help-center-img img-bordered">
 
