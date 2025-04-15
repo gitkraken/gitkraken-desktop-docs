@@ -31,7 +31,7 @@ These are just a few ways teams are already using Automations to reduce manual e
 
 ## Get Started with Automations
 
-To get started with Automations simply login to [gitkraken.dev](https://gitkraken.dev/automations/general) and select Automations on the left side menu. If this is your first automation you will be directed to our get started landing page, from here you can create a new automation or select a template from the suggestion list. 
+To get started with Automations simply login to [gitkraken.dev](https://gitkraken.dev/automations/general?source=help_center&product=gitkraken) and select Automations on the left side menu. If this is your first automation you will be directed to our get started landing page, from here you can create a new automation or select a template from the suggestion list. 
 
 <img src="/wp-content/uploads/Createautomations-scaled.jpeg" class="help-center-img img-bordered">
 
@@ -114,7 +114,7 @@ Five kinds of actions are currently supported: posting a comment, adding a check
 
 ## Managing Saved Automations
 
-After creating your first automation you will now see a list of all your saved automations on [GitKraken.dev](https://gitkraken.dev/automations/general). From this screen you can add additional automations, disable/enable, delete, sort, edit and duplicate your saved automations. 
+After creating your first automation you will now see a list of all your saved automations on [GitKraken.dev](https://gitkraken.dev/automations/general?source=help_center&product=gitkraken). From this screen you can add additional automations, disable/enable, delete, sort, edit and duplicate your saved automations. 
 
 <img src="/wp-content/uploads/Createautomations5.png" class="help-center-img img-bordered">
 
