@@ -7,7 +7,7 @@ taxonomy:
 
 ---
 
-<kbd>Last Updated: April 2025</kbd>
+<kbd>Last updated: April 2025</kbd>
 
 Sometimes you commit to one branch, when you meant to commit to another. Here's how to grab the changes you need.
 
@@ -57,5 +57,5 @@ Use keyboard shortcuts <kbd>P</kbd>ick, <kbd>S</kbd>quash, <kbd>R</kbd>eword and
 ### Additional Learning Git Resources:
 
 <p class="small">
-	<a href="https://gitkraken.com/learn/git/tutorials/cherry-pick" target="_blank">Cherry Pick Tutorial</a> | <a href="https://gitkraken.com/learn/git/cherry-pick" target="_blank">Learn Git: What is Cherry Pick?</a></a>
+	<a href="https://gitkraken.com/learn/git/tutorials/cherry-pick?product=gitkraken&source=help_center" target="_blank">Cherry Pick Tutorial</a> | <a href="https://gitkraken.com/learn/git/cherry-pick?product=gitkraken&source=help_center" target="_blank">Learn Git: What is Cherry Pick?</a></a>
 </p>

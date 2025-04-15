@@ -100,15 +100,15 @@ where git
 
 Search `Env` in the start menu.
 
-<img src="/wp-content/uploads/lfs-AddPathVariable-0.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/lfs-AddPathVariable-0.png" class="help-center-img img-bordered">
 
 Next navigate to `Environmental Variables...` <i class='fa fa-caret-right'></i> Double click **Path** <i class='fa fa-caret-right'></i> Click `New` to add the paths.
 
-<img src="/wp-content/uploads/lfs-AddPathVariable-1.png" srcset="/wp-content/uploads/lfs-AddPathVariable@2x-1.png 2x" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/lfs-AddPathVariable-1.png" srcset="/wp-content/uploads/lfs-AddPathVariable@2x-1.png 2x" class="help-center-img img-bordered">
 
-<img src="/wp-content/uploads/lfs-AddPathVariable-2.png" srcset="/wp-content/uploads/lfs-AddPathVariable@2x-2.png 2x" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/lfs-AddPathVariable-2.png" srcset="/wp-content/uploads/lfs-AddPathVariable@2x-2.png 2x" class="help-center-img img-bordered">
 
-<img src="/wp-content/uploads/lfs-AddPathVariable-3.png" srcset="/wp-content/uploads/lfs-AddPathVariable@2x-3.png 2x" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/lfs-AddPathVariable-3.png" srcset="/wp-content/uploads/lfs-AddPathVariable@2x-3.png 2x" class="help-center-img img-bordered">
 
 You will likely need to add both git and git LFS (LFS can have multiple paths, you would want to add them all).
 

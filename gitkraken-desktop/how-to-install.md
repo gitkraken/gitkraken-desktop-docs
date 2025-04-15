@@ -9,7 +9,7 @@ taxonomy:
 
 There are three steps to success with GitKraken Desktop. That's it!
 
-1. [Download](https://gitkraken.com/download) GitKraken Desktop
+1. [Download](https://gitkraken.com/download?product=gitkraken&source=help_center) GitKraken Desktop
 2. Install GitKraken Desktop
 3. Use GitKraken Desktop
 
@@ -44,7 +44,7 @@ GitKraken Desktop data is stored with your home profile in `C:\\Users\\{user}\\A
 * **System requirements:**
     * Intel: macOS 10.15+
     * Apple Silicon: macOS 11+
-* [Download](https://gitkraken.com/download/mac)
+* [Download](https://gitkraken.com/download/mac?product=gitkraken&source=help_center)
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/22HD1ZnNytk?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -80,21 +80,21 @@ GitKraken Desktop has a simple package available for Debian based distributions.
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
 sudo apt install ./gitkraken-amd64.deb
 ```
-Or [download the file](https://gitkraken.com/download/linux-deb).
+Or [download the file](https://gitkraken.com/download/linux-deb?product=gitkraken&source=help_center).
 
 ### .tar
 ```
 wget https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz
 sudo tar -xvzf gitkraken-amd64.tar.gz
 ```
-Or [download the file](https://gitkraken.com/download/linux-gzip).
+Or [download the file](https://gitkraken.com/download/linux-gzip?product=gitkraken&source=help_center).
 
 ### .rpm
 ```
 wget https://release.gitkraken.com/linux/gitkraken-amd64.rpm
 sudo dnf install ./gitkraken-amd64.rpm
 ```
-Or [download the file](https://gitkraken.com/download/linux-rpm).
+Or [download the file](https://gitkraken.com/download/linux-rpm?product=gitkraken&source=help_center).
 
 Note: for older distros that do not have ```dnf```, you should use ```yum``` instead.
 
@@ -102,7 +102,7 @@ Note: for older distros that do not have ```dnf```, you should use ```yum``` ins
 
 ### Snap
 
-Snap is an easy-to-install package for Linux distributions (supported versions above). Get it from the snap store or [Snapcraft.io](https://snapcraft.io/gitkraken).
+Snap is an easy-to-install package for Linux distributions (supported versions above). Get it from the snap store or [Snapcraft.io](https://snapcraft.io/gitkraken?product=gitkraken&source=help_center).
 
 ### Linux Data Location
 GitKraken Desktop data is stored in `/home/{user}/.gitkraken` == `~/.gitkraken`.

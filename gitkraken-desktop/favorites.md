@@ -6,21 +6,22 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 Quickly access your favorite repos using the drop-down menu or shortcut keys.
 
 ***
 ## Adding favorites
 
-Navigate to <kbd><strong>File > Open</strong></kbd> to open the Repo Management tab.
+Navigate to <kbd><strong>File > Open</strong></kbd> or click the folder icon in the upper left of the app to open the Repo Management tab.
 
 Click on the star icon at the left of the repo.
 
-<img src="/wp-content/uploads/gkc-repo-mngmt-tab-star-repos.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/favorite-repo-2025.png" srcset="/wp-content/uploads/favorite-repo-2025@2x.png" class="help-center-img img-bordered">
 
 Once added, favorites will appear at the Favorites section in the Repo Management tab.
 
-<img src="/wp-content/uploads/gkc-repo-mngmt-tab-favorites-list.png"  class="help-center-img img-bordered">
+<img src="/wp-content/uploads/favorites-list-2025.png"   srcset="/wp-content/uploads/favorites-list-2025@2x.png"  class="help-center-img img-bordered">
 
 ## Shortcut Keys
 

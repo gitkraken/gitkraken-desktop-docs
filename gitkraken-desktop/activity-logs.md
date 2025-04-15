@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 Learn how to view all Git actions made to repositories and all application actions made in GitKraken Desktop through Activity Logs.
 
@@ -46,8 +47,7 @@ Refer to your *Repository* log to increase your project scope as a greater sourc
 *Repository* activity reflects action taken in the repository currently open in focus. 
 
 <div class='callout callout--warning'>
-    <p><strong>Note:</strong> 
-    For more verbose logging, navigate to <em>Preferences > General > Use extended logging in activity log</em>.
+    <p><strong>Note:</strong> For more verbose logging, navigate to <em>Preferences > General > Use extended logging in activity log</em>.
  </p>
 </div>
 

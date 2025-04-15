@@ -14,8 +14,8 @@ The answers to your important **F**requently **A**sked **Q**uestions.
         <div class='callout'>
             <h4>Just a sec! Before you dive in, perhaps one of these resources might help?</h4>
             <ul class='dl-list plm prm'>
-                <li>📝 <a href='https://www.gitkraken.com/resources/gitkraken-cheat-sheet' target="_blank" rel='noopener'><em>GitKraken Desktop</em> Cheat Sheet</a></li>
-                <li>📝 <a href='https://www.gitkraken.com/resources/gitkraken-github-cheat-sheet' target="_blank" rel='noopener'><em>GitKraken Desktop for GitHub Users</em> Cheat Sheet</a></li>
+                <li>📝 <a href='https://www.gitkraken.com/resources/gitkraken-cheat-sheet?product=gitkraken&source=help_center' target="_blank" rel='noopener'><em>GitKraken Desktop</em> Cheat Sheet</a></li>
+                <li>📝 <a href='https://www.gitkraken.com/resources/gitkraken-github-cheat-sheet?product=gitkraken&source=help_center' target="_blank" rel='noopener'><em>GitKraken Desktop for GitHub Users</em> Cheat Sheet</a></li>
             </ul>
         </div>
     </section>
@@ -128,7 +128,7 @@ The most common issues are:
 ### I can't view any of my GitHub remotes from GitKraken Desktop.
 GitKraken needs to be authorized in your GitHub account in order to browse remote repositories, view and create pull requests, and perform other actions. You can double-check that GitKraken is authorized from <a href='https://github.com/settings/applications' target='_blank'>your GitHub authorized applications page</a>.<br><br>
 If GitKraken is authorized on your GitHub account, you should be able to browse and connect to any of your personal repositories. However to connect to any repositories owned by an organization, GitKraken usually also needs to be authorized by the organization. After authorizing GitKraken on your own account, you can make access requests to your organizations from <a href='https://github.com/settings/connections/applications/a7557949433b7d282a76' target='_blank'>here</a>. Requests must be approved by organization owners, as explained in <a href='https://help.github.com/articles/approving-third-party-applications-for-your-organization/' target='_blank'>GitHub's documentation</a>.<br><br>
-If you are attempting to use GitKraken Desktop with a repository owned by a different individual, consider forking their repository to use GitKraken Desktop for your changes. Otherwise this other individual will need to first <a href='https://gitkraken.com/download' target='_blank'>install GitKraken Desktop</a> and [connect it to GitHub](/integrations/github) to authorize GitKraken.
+If you are attempting to use GitKraken Desktop with a repository owned by a different individual, consider forking their repository to use GitKraken Desktop for your changes. Otherwise this other individual will need to first <a href='https://gitkraken.com/download?product=gitkraken&source=help_center' target='_blank'>install GitKraken Desktop</a> and [connect it to GitHub](/integrations/github) to authorize GitKraken.
 
 ***
 

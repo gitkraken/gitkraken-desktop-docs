@@ -31,7 +31,7 @@ These are just a few ways teams are already using Automations to reduce manual e
 
 ## Get Started with Automations
 
-To get started with Automations simply login to [gitkraken.dev](https://gitkraken.dev/automations/general) and select Automations on the left side menu. If this is your first automation you will be directed to our get started landing page, from here you can create a new automation or select a template from the suggestion list. 
+To get started with Automations simply login to [gitkraken.dev](https://gitkraken.dev/automations/list?product=gitkraken&source=help_center) and select Automations on the left side menu. If this is your first automation you will be directed to our get started landing page, from here you can create a new automation or select a template from the suggestion list. 
 
 <img src="/wp-content/uploads/Createautomations-scaled.jpeg" class="help-center-img img-bordered">
 
@@ -91,7 +91,7 @@ The Following File Contet trigger options can be selected:
 The Following Pull Request trigger options can be selected: 
 - Number of changed files condition: This condition matches when the number of files that are part of this pull request satisfy the inequality. 
 - PR Author condition: This condition matches the author of the pull request. This automation will only run if the author matches this condition.
-- Labels on the PR condition: This condition matches the GitHub Labels specified 
+- Labels on the PR condition: This condition matches the GitHub Labels specified.
 
 
 ## Actions
@@ -114,7 +114,7 @@ Five kinds of actions are currently supported: posting a comment, adding a check
 
 ## Managing Saved Automations
 
-After creating your first automation you will now see a list of all your saved automations on [GitKraken.dev](https://gitkraken.dev/automations/general). From this screen you can add additional automations, disable/enable, delete, sort, edit and duplicate your saved automations. 
+After creating your first automation you will now see a list of all your saved automations on [GitKraken.dev](https://gitkraken.dev/automations/general?product=gitkraken&source=help_center). From this screen you can add additional automations, disable/enable, delete, sort, edit and duplicate your saved automations. 
 
 <img src="/wp-content/uploads/Createautomations5.png" class="help-center-img img-bordered">
 

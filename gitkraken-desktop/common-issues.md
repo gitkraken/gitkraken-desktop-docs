@@ -27,7 +27,7 @@ If this does resolve your issue, it is very important to note that GitKraken Des
 
 As such, it is crucial for our team to be made aware of any issues related to using the Git Executable so we can look into and address them. Please reach out to our [support team](https://help.gitkraken.com/gitkraken-desktop/contact-support/) if you experience any issues with using this Experimental feature.
 
-For more information on what this feature is and why it is being implimented, you can check out this [blog post](https://www.gitkraken.com/blog/gitkraken-client-migrating-from-libgit2-to-git-executable).
+For more information on what this feature is and why it is being implimented, you can check out this [blog post](https://www.gitkraken.com/blog/gitkraken-client-migrating-from-libgit2-to-git-executable?product=gitkraken&source=help_center).
 
 ***
 
@@ -45,7 +45,7 @@ These are general authentication errors.  First, verify you used the correct cre
 
 - If that is not working you can also try changing your operating system default browser to be a different browser. Once this is changed you can restart GitKraken Desktop and attempt to authenticate again.
 
-If that still does not work, please contact our [support team](https://www.gitkraken.com/contact) and we can troubleshoot further.
+If that still does not work, please contact our [support team](https://www.gitkraken.com/contact?product=gitkraken&source=help_center) and we can troubleshoot further.
 
  
 ***

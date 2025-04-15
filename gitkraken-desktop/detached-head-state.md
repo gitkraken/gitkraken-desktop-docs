@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last Updated: April 2025</kbd>
+<kbd>Last updated: April 2025</kbd>
 
 Git power-users of GitKraken Desktop: rejoice! Entering detached HEAD state is just a right click away.
 
