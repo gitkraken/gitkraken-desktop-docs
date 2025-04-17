@@ -7,6 +7,8 @@ taxonomy:
 
 ---
 
+<kbd>Last updated: April 2025</kbd>
+
 Git hooks are shell scripts that execute after an event such as a commit or push.
 
 In the following video, we will take you through the basics of what a Git hook is and demonstrate how to use one in GitKraken Desktop.
@@ -22,14 +24,14 @@ In the following video, we will take you through the basics of what a Git hook i
 
 Hooks are stored in the `hooks` subdirectory of the `.git` directory. This folder is automatically created when you initialize a new repository in GitKraken Desktop and is located in `.git\hooks` in your project directory with a `README.sample` file in it.
 
-Hooks are unique to your local repository and will not be copied over if you create a new repository nor will be tracked by git. Feel free to add, change, or remove scripts from this folder as necessary.
+Hooks are unique to your local repository and will not be copied over if you create a new repository nor will be tracked by Git. Feel free to add, change, or remove scripts from this folder as necessary.
 
 <img src='/wp-content/uploads/gkc_hook_location_terminal.png' srcset='/wp-content/uploads/gkc_hook_location_terminal@2x.png 2x' class="help-center-img img-bordered" />
 
 <img src='/wp-content/uploads/gkc_hook_location_explorer.png' srcset='/wp-content/uploads/gkc_hook_location_explorer@2x.png 2x' class="help-center-img img-bordered" />
 
 
-GitKraken Desktop will seamlessly detect any Git hooks in your repository, but if you are running OSX or Linux, you need to give execution rights to the hook file. If you forgot to set your files to executables, GitKraken Desktop will throw an error as a heads up.
+GitKraken Desktop will seamlessly detect any Git hooks in your repository, but if you are running OSX or Linux, you need to give execution rights to the hook file. If you forgot to set your files to executables, GitKraken Desktop will throw an error like the one shown below.
 
 <img src='/wp-content/uploads/gkc_hook_exit_error_126.png' srcset='/wp-content/uploads/gkc_hook_exit_error_126@2x.png 2x' class="help-center-img img-bordered" />
 
@@ -39,9 +41,9 @@ Any script that exits with anything other than exit code 0 is considered a fail.
 
 ## Define a custom hook path
 
-Users can define a custom path for git hooks by going to <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> Git Hooks</em>. <button class="button button--primary button--ui button--nolink">Browse</button> to the location or enter the path to your git hook folder.
+Users can define a custom path for Git hooks by going to <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> Git Hooks</em>. <button class="button button--primary button--ui button--nolink">Browse</button> to the location or enter the path to your Git hook folder.
 
-This custom git hook path is defined on a per-repository basis.
+This custom Git hook path is defined on a per-repository basis.
 
 <img src='/wp-content/uploads/gkc_hook_preferences.png' srcset='/wp-content/uploads/gkc_hook_preferences@2x.png 2x' class="help-center-img img-bordered" />
 
@@ -66,17 +68,12 @@ Here are the hooks supported by GitKraken Desktop. Where appropriate, beneath ea
       <tr>
           <td style="width: 35%;"> <h3><code>prepare-commit-msg</code></h3> </td>
           <td style="width: 65%;">
-            - Commit
-            <br>
-            - Amend
-            <br>
-            - Cherrypick
-            <br>
-            - Merge
-            <br>
-            - Squash
-            <br>
-            - Revert
+            Commit
+            Amend
+            Cherrypick
+            Merge
+            Squash
+            Revert
           </td>
       </tr>
       <tr>
@@ -156,16 +153,16 @@ Here are the hooks supported by GitKraken Desktop. Where appropriate, beneath ea
 ***
 ## Git hooks example
 
-Git hooks are scripts that perform automated actions when a specific action is performed in GitKraken Desktop or the command line. The git hook name usually indicates the hook’s trigger (e.g. pre-commit).
+Git hooks are scripts that perform automated actions when a specific action is performed in GitKraken Desktop or the command line. The Git hook name usually indicates the hook’s trigger (e.g. pre-commit).
 
-Git hooks live under the .git folder of your repo in a directory called hooks. The path to the hooks will look similar to repo/.git/hooks.
+Git hooks live under the .git folder of your repo in a directory called hooks. The path to the hooks will look similar to <kbd>repo/.git/hooks</kbd>.
 ### Tools needed
 - GitKraken Desktop
 - Text Editor - I will be using [Visual Studio Code](https://code.visualstudio.com/)
-- Terminal - I will be using [Gitkraken Terminal](https://help.gitkraken.com/gitkraken-desktop/terminal/)
+- Terminal - I will be using the in-app [GitKraken Terminal](https://help.gitkraken.com/gitkraken-desktop/terminal/)
 
 ### Hook Purpose
-In this example, we'll create a `pre-commit` hook. This hook validates the git config's global user email. The hook is useful so that the commits contain the correct committer email address.
+In this example, we'll create a `pre-commit` hook. This hook validates the Git config's global user email. The hook is useful so that the commits contain the correct committer email address.
 
 ### Creating the git hook
 
@@ -181,7 +178,7 @@ First navigate to the hooks directory for the target repo. Open a Visual Studio 
 #### Step 2
 Now that we have our pre-commit file, we need to make it executable. To do this we will need the command line.
 
-Open the Gitkraken Terminal window by clicking the Terminal <i class="fa fa-terminal" aria-hidden="true"> </i> icon in toolbar (or by searching "terminal" in the command palette). Once the terminal is open, change directory to `.git/hooks`.
+Open the GitKraken Terminal window by clicking the Terminal <i class="fa fa-terminal" aria-hidden="true"> </i> icon in toolbar (or by searching "terminal" in the Command Palette). Once the terminal is open, change directory to `.git/hooks`.
 
 Then use the command `chmod +x pre-commit` to make the pre-commit file executable.
 
