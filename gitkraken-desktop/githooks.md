@@ -58,92 +58,94 @@ Here are the hooks supported by GitKraken Desktop. Where appropriate, beneath ea
       <tr>
           <td style="width: 35%;"> <h3> <code>pre-commit</code></h3> </td>
           <td style="width: 65%;">
-            - Commit
-            <br>
-            - Amend
-            <br>
-            - Merge Resolve
+            <ul>
+              <li>Amend</li>
+              <li>Commit</li>
+              <li>Merge Resolve</li>
+            </ul>
           </td>
       </tr>
       <tr>
           <td style="width: 35%;"> <h3><code>prepare-commit-msg</code></h3> </td>
           <td style="width: 65%;">
-            Commit
-            Amend
-            Cherrypick
-            Merge
-            Squash
-            Revert
+            <ul>
+              <li>Amend</li>
+              <li>Commit</li>
+              <li>Cherrypick</li>
+              <li>Merge</li>
+              <li>Revert</li>
+              <li>Squash</li>
+            </ul>
           </td>
       </tr>
       <tr>
           <td style="width: 35%;"> <h3> <code>commit-msg</code></h3> </td>
           <td style="width: 65%;">
-          - Commit
-          <br>
-          - Amend
-          <br>
-          - Merge Resolve
+            <ul>
+              <li>Amend</li>
+              <li>Commit</li>
+              <li>Merge Resolve</li>
+            </ul>
           </td>
       </tr>
       <tr>
           <td style="width: 35%;"> <h3> <code>post-commit</code></h3> </td>
           <td style="width: 65%;">
-          - Commit
-          <br>
-          - Amend
-          <br>
-          - Cherrypick
-          <br>
-          - Merge Resolve
-          <br>
-          - Revert
+            <ul>
+              <li>Amend</li>
+              <li>Cherrypick</li>
+              <li>Commit</li>
+              <li>Merge Resolve</li>
+              <li>Revert</li>
+            </ul>
           </td>
       </tr>
       <tr>
           <td style="width: 35%;"> <h3> <code>pre-rebase</code></h3> </td>
           <td style="width: 65%;">
-          - Rebase
-          <br>
-          - Squash
+            <ul>
+              <li>Rebase</li>
+              <li>Squash</li>
+            </ul>
           </td>
       </tr>
       <tr>
           <td style="width: 35%;"> <h3> <code>post-checkout</code></h3> </td>
           <td style="width: 65%;">
-          - Checkout
-          <br>
-          - Discard Changes (selectively)
+            <ul>
+              <li>Checkout</li>
+              <li>Discard Changes (selectively)</li>
+            </ul>
           </td>
       </tr>
       <tr>
           <td style="width: 35%;"> <h3> <code>post-merge</code></h3> </td>
           <td style="width: 65%;">
-          - Merge (Without Conflicts)
-          <br>
-          - Fast-Forward
+            <ul>
+              <li>Fast-Forward</li>
+              <li>Merge (Without Conflicts)</li>
+            </ul>
           </td>
       </tr>
       <tr>
           <td style="width: 35%;"> <h3> <code>post-rewrite</code></h3> </td>
           <td style="width: 65%;">
-          - Amend
-          <br>
-          - Squash
-          <br>
-          - Rebase
+            <ul>
+              <li>Amend</li>
+              <li>Rebase</li>
+              <li>Squash</li>
+            </ul>
           </td>
       </tr>
       <tr>
           <td style="width: 35%;"> <h3> <code>pre-push</code></h3> </td>
           <td style="width: 65%;">
-          - Push Branch
-          <br>
-          - Push Tag
-          <br>
-          - Delete Remote Branch
-          <br>
-          - Delete Remote Tag
+            <ul>
+              <li>Delete Remote Branch</li>
+              <li>Delete Remote Tag</li>
+              <li>Push Branch</li>
+              <li>Push Tag</li>
+            </ul>
           </td>
       </tr>
   </tbody>
