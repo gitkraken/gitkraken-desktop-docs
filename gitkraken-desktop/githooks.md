@@ -45,7 +45,7 @@ Users can define a custom path for Git hooks by going to <em class='context-menu
 
 This custom Git hook path is defined on a per-repository basis.
 
-<img src='/wp-content/uploads/git-hooks-pref-2025.png' srcset='/wp-content/uploads/git-hooks-pref-2025s@2x.png 2x' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/git-hooks-pref-2025.png' srcset='/wp-content/uploads/git-hooks-pref-2025@2x.png 2x' class="help-center-img img-bordered" />
 
 ***
 
