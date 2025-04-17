@@ -26,7 +26,7 @@ Hooks are stored in the `hooks` subdirectory of the `.git` directory. This folde
 
 Hooks are unique to your local repository and will not be copied over if you create a new repository nor will be tracked by Git. Feel free to add, change, or remove scripts from this folder as necessary.
 
-<img src='/wp-content/uploads/gkc_hook_location_terminal.png' srcset='/wp-content/uploads/gkc_hook_location_terminal@2x.png 2x' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/terminal-hooks.png' srcset='/wp-content/uploads/terminal-hooks@2x.png 2x' class="help-center-img img-bordered" />
 
 <img src='/wp-content/uploads/gkc_hook_location_explorer.png' srcset='/wp-content/uploads/gkc_hook_location_explorer@2x.png 2x' class="help-center-img img-bordered" />
 
@@ -45,7 +45,7 @@ Users can define a custom path for Git hooks by going to <em class='context-menu
 
 This custom Git hook path is defined on a per-repository basis.
 
-<img src='/wp-content/uploads/gkc_hook_preferences.png' srcset='/wp-content/uploads/gkc_hook_preferences@2x.png 2x' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/git-hooks-pref-2025.png' srcset='/wp-content/uploads/git-hooks-pref-2025s@2x.png 2x' class="help-center-img img-bordered" />
 
 ***
 
@@ -251,7 +251,7 @@ There may be times when you want to skip your Git hooks when making a commit. Th
     <p>Note 📝 - Using this option will bypass all hooks that trigger with git commit action.</p>
 </div>
 
-<img src='/wp-content/uploads/bypass-git-hooks.png' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/skip-hook-2025.png' srcset='/wp-content/uploads/skip-hook-2025@2x.png 2x' class="help-center-img img-bordered" />
 
 ### Global Git Hooks
 
