@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 Learn how to rewrite your commit history with interactive rebase in GitKraken Desktop.
 
@@ -18,14 +19,14 @@ To initiate interactive rebase, drag and drop one branch onto another branch or 
 
 Right-click on any parent commit to see the interactive rebase option. However, please note that interactive rebase is not available for merge commits.
 
-### Interactive rebase limits
+### Interactive rebase requirements
 
 The drag and drop option will only show the interactive rebase option if:
 
 - No merge commits are present on the branch you’re rebasing
 - The 2 branches share a common ancestor
 - Neither branch has the repo’s initial commit
-- You are not attempting to rebase a parent branch onto a child (like master into a feature branch)
+- You are not attempting to rebase a parent branch onto a child (like main into a feature branch)
 
 <div class='callout callout--note'>
     <p><strong>Note:</strong> If you start the interactive rebase with GitKraken Desktop you must finish the rebase with GitKraken Desktop.</p>
@@ -51,7 +52,7 @@ When you squash you are taking the child commit and in turn writing that commit 
 <img src='/wp-content/uploads/squash.png' class="help-center-img img-bordered" />
 
 ### Drop commit
-Drop removes the commit from the branch, completes rebase and rewrites the commit graph.
+Drop removes the commit from the branch, completes rebase and rewrites the Commit Graph.
 
 <img src='/wp-content/uploads/drop.gif' class="help-center-img img-bordered" />
 

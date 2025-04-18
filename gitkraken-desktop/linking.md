@@ -6,20 +6,19 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 Use links to quickly share specific remote repositories, commits, branches, and tags with your teammates to open them in GitKraken Desktop.
 
-### Where to grab a link
+### Get links from menus
 
 You can find links in most right-click context menus throughout GitKraken Desktop.
  
 <img src="/wp-content/uploads/link_context_menu_options.gif" class="help-center-img img-bordered">
 
-<img src="/wp-content/uploads/link_context_menu_options.gif" class="help-center-img img-bordered">
+### Sharing links
 
-### What to do with a link
-
-The link is copied to your clipboard. You can paste anywhere to share with others, for example on a Jira issue or a Slack conversation.
+With the link copied to your clipboard, you can paste anywhere to share with others through communication tools like Jira, GitHub, Slack, or Teams.   
 
 When you have a link shared with you, simply click and away you go!
 

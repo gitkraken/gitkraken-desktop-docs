@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 A pull request (sometimes called merge requests), is a review request. You are asking someone to check the changes on a branch before merging into another branch.
 
@@ -15,15 +16,15 @@ A pull request (sometimes called merge requests), is a review request. You are a
 
 ***
 ## Creating a pull request
-If connected to a remote on GitHub, GitLab, Bitbucket, or Visual Studio Team Services, create pull requests by dragging and dropping one branch to another and selecting <em class='context-menu'>Start a pull request</em>.
+If connected to a remote on GitHub, GitLab, Bitbucket, or Azure DevOps, create pull requests by dragging and dropping one branch to another and selecting <em class='context-menu'>Start a pull request</em>.
 
-<img src="/wp-content/uploads/pull-request-gif.gif" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/create-pull-request-drag-and-drop-2025.gif" class="help-center-img img-bordered">
 
 Alternatively, try right-clicking the target branch and selecting <em class='context-menu'>Start a pull request</em>.
 
-Or click the <button class='button button--success button--ui button--nolink'>+</button> in the pull requests section on the left panel, and select the repo and branch to create the pull request.
+Or click the <button class='button button--success button--ui button--nolink'>+</button> in the pull requests section on the Left Panel, and select the repo and branch to create the pull request.
 
-<img src="/wp-content/uploads/pull-request.png" srcset="/wp-content/uploads//pull-request@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/create-pr-2025.png" srcset="/wp-content/uploads/create-pr-2025@2x.png" class="help-center-img img-bordered">
 
 ### Pull request templates
 
@@ -31,7 +32,7 @@ GitKraken Desktop supports pull request templates from your GitHub, GitLab, and 
 
 Once your pull request templates are commited to your remote, the template field will appear when you create a pull request in GitKraken Desktop:
 
-<img src="/wp-content/uploads//pr-template.png" srcset="/wp-content/uploads//pr-template@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/pr-template-2025.png" srcset="/wp-content/uploads/pr-template-2025@2x.png" class="help-center-img img-bordered">
 
 If this is your first time working with pull request templates, consider reviewing the following instructions for GitHub, GitLab, or Azure DevOps pull request templates.
 
@@ -44,17 +45,13 @@ If this is your first time working with pull request templates, consider reviewi
 
 ### Assignee, Labels, and Reviewers
 
-Some integrations will allow you to also add a pull request assignee and label(s) to your pull request. GitKraken Desktop will then pass these values onto your remote service when the pull request is created.
+Some integrations will allow you to also add a pull request assignee(s), reviewer(s) and label(s) to your pull request. GitKraken Desktop will then pass these values onto your remote service when the pull request is created.
 
-<img src='/wp-content/uploads//gitlab-assignee.png' srcset='/wp-content/uploads//gitlab-assignee@2x.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/add-reviewers-assignees-labels-2025.png' srcset='/wp-content/uploads/add-reviewers-assignees-labels-2025@2x.png' class="help-center-img img-bordered">
 
-<div class='callout callout--basicwarning'>
-  <p> <strong>Note</strong> - When creating pull request, GitKraken Desktop will now detect whether your source branch has conflicts with the target branch in the pull request modal.</p>
-</div>
+When creating pull request, GitKraken Desktop detects whether your source branch has conflicts with the target branch in the pull request modal.
 
-Depending on the integration, you may also add reviewers and multiple assignees to a pull request.
-
-<img src='/wp-content/uploads//github-assignee.png' srcset='/wp-content/uploads//github-assignee@2x.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/pr-merge-conflict-warning-2025.png' srcset='/wp-content/uploads/pr-merge-conflict-warning-2025@2x.png' class="help-center-img img-bordered">
 
 <div class='callout callout--basic'>
   <p><strong>Note:</strong> Because pull requests occur in the remote, first push your branch before creating the request.</p>
@@ -64,7 +61,7 @@ Depending on the integration, you may also add reviewers and multiple assignees 
 
 If connected to the [GitHub Integration](/gitkraken-desktop/github-gitkraken-desktop/), you may create a draft pull request by checking this box when creating a pull request in GitKraken Desktop.
 
-<img src='/wp-content/uploads//draft-pr.png' srcset='/wp-content/uploads//draft-pr@2x.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/create-draft-pr-2025.png' srcset='/wp-content/uploads/create-draft-pr-2025@2x.png' class="help-center-img img-bordered">
 
 As the name implies, this will create a "draft" pull request in GitHub. However please note that not all GitHub free or paid plans support the draft feature. Please check your GitHub plan if you do not see this option.
 
@@ -74,7 +71,7 @@ As the name implies, this will create a "draft" pull request in GitHub. However 
 
 GitHub.com users may utilize the pull request view for GitHub pull requests.
 
-To enable this feature, first set up the [GitHub integration](/gitkraken-desktop/github-gitkraken-desktop/). Then with a GitHub repo open inside of GitKraken Desktop, select a pull request in the left panel (or checkout the source branch and a PR icon with the number shows up next to the branch) to bring up the pull request view. Or from the Launchpad, click on the icon at the right side of the Pull Request.
+To enable this feature, first set up the [GitHub integration](/gitkraken-desktop/github-gitkraken-desktop/). Then with a GitHub repo open inside of GitKraken Desktop, select a pull request in the Left Panel (or checkout the source branch and a PR icon with the number shows up next to the branch) to bring up the pull request view. Or from the Launchpad, click on the icon at the right side of the Pull Request.
 
 Repository tab:
 <img src='/wp-content/uploads/gkc-github-pr-view.png' class="help-center-img img-bordered">
@@ -153,7 +150,7 @@ By default, the merge will default to the <kbd>Create a merge commit</kbd> setti
 
 ## Working with active pull requests
 
-GitKraken Desktop displays active pull requests in your graph with this <em class='context-menu'><img style='height:1.5em;' src='/wp-content/uploads/gk-pull-request-icon.svg'></em> icon. Pull requests also appear in the left panel PULL REQUESTS section.
+GitKraken Desktop displays active pull requests in your graph with this <em class='context-menu'><img style='height:1.5em;' src='/wp-content/uploads/gk-pull-request-icon.svg'></em> icon. Pull requests also appear in the Left Panel PULL REQUESTS section.
 
 Sections in PULL REQUESTS each denote a filtered view of pull requests on this repository. GitKraken Desktop will start with several pull request filters for you, note the filters such as *My pull requests* and <i>All pull requests</i>. You can modify, delete, or create your own <a href="/working-with-repositories/pull-requests-filter-syntax/">pull request filters</a>.
 
@@ -161,7 +158,7 @@ Sections in PULL REQUESTS each denote a filtered view of pull requests on this r
 
 Quickly search for pull requests using the <i class='fa fa-search'></i>  *Search pull requests* box.
 
-If using the integration with GitHub, GitLab, Azure DevOps, or Bitbucket, you may hover over the pull request in the left panel to get a quick view of when the pull request was opened and for which branches.
+If using the integration with GitHub, GitLab, Azure DevOps, or Bitbucket, you may hover over the pull request in the Left Panel to get a quick view of when the pull request was opened and for which branches.
 
 <img src='/wp-content/uploads//tooltip-general.png' srcset='/wp-content/uploads//tooltip-general@2x.png' class="help-center-img img-bordered">
 

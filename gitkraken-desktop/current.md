@@ -1,7 +1,7 @@
 ---
 
 title: GitKraken Desktop Release Notes
-description: View a history of the new features and fixes in GitKraken Desktop's Version 10.
+description: View a history of the new features and fixes in GitKraken Desktop's Version 11.
 og_image: /img/GitKrakenClient-Hero.png
 taxonomy:
     category: gitkraken-desktop
@@ -10,20 +10,19 @@ taxonomy:
 
 Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo;s fixed, or just take a trip down memory lane with a nostalgic swagger, remembering those bugs of yesterday.
 
+<a href="https://www.gitkraken.com/download?product=gitkraken&source=help_center" target="_blank" class="button button--basic ">Download Current Version Now</a>
+
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 ***
 <a id="v11-0-0"></a>
 ## Version 11.0.0
+<kbd>Monday, March 31st, 2025</kbd>
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/sVLftA_jpak?si=87vB8ooSU5GAn5wk" frameborder="0" allowfullscreen></iframe>
 </div>
 
 _"Turn it up to 11! 🎸"_
-
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-11-0-0) and see how it all works!_
-
-### Monday, March 31st, 2025
 
 ### New ✨
  - **GitKraken AI:** A seamless extension of your development workflow, [GitKraken AI](https://help.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai/) automates tedious tasks to improve your efficiency and focus.
@@ -47,6 +46,4 @@ _Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/curr
 ### Bug Fixes 🐛
  - Launchpad now works with GitHub users set as Enterprise Managed Users.
 
-***
 
-[View all release notes at GitKraken.com](https://help.gitkraken.com/gitkraken-desktop/current/)
