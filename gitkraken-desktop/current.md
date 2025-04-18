@@ -1,7 +1,7 @@
 ---
 
 title: GitKraken Desktop Release Notes
-description: View a history of the new features and fixes in GitKraken Desktop's Version 10.
+description: View a history of the new features and fixes in GitKraken Desktop's Version 11.
 og_image: /img/GitKrakenClient-Hero.png
 taxonomy:
     category: gitkraken-desktop
