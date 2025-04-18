@@ -16,14 +16,13 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 ***
 <a id="v11-0-0"></a>
 ## Version 11.0.0
+<kbd>Monday, March 31st, 2025</kbd>
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/sVLftA_jpak?si=87vB8ooSU5GAn5wk" frameborder="0" allowfullscreen></iframe>
 </div>
 
 _"Turn it up to 11! 🎸"_
-
-### Monday, March 31st, 2025
 
 ### New ✨
  - **GitKraken AI:** A seamless extension of your development workflow, [GitKraken AI](https://help.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai/) automates tedious tasks to improve your efficiency and focus.
