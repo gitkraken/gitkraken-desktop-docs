@@ -93,13 +93,15 @@ From this view, GitHub users may edit the pull request:
 - Labels
 
 
-From the upper right of the Pull Request view, you may click the <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Review Code and Suggest Changes</span></button> button to review the affected files for this pull request. Note, code review and code comment are not currently available from within GitKraken Desktop.
+From the upper right of the Pull Request view, you may click the <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Review Code and Suggest Changes</span></button> button to review the affected files for this pull request. Note, GitHub's code review and GitHub's code comments are not currently available from within GitKraken Desktop.
 
 <img src='/wp-content/uploads/gkc-pr-code-suggestions.png' class="help-center-img img-bordered">
 
 ### Review Code and Suggest Changes
 
-In Gitkraken Desktop, Review Code and Suggest Changes simplifies code review by allowing you to make suggestions and edits across the entire project, not just on the lines that were changed, GitKraken Desktop, and GitKraken.dev. When a Pull Request is open, you can make suggestions to the pull request that others can then review and accept to include in the pull request. 
+GitKraken has its own native code review, whichs allows you to make suggestions and edits across the entire project in GitKraken Desktop or [gitkraken.dev](https://gitkraken.dev?source=help_center&product=gitkraken). 
+
+With an open Pull Request, you can make suggestions that others can then review and accept.
 
 Open the Pull Request and click on <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Review Code and Suggest Changes</span></button>, edit the file, save changes and click on <button class='button button--success button--ui button--nolink'>Suggest X file change to PR #XX </button>
 

@@ -7,7 +7,7 @@ taxonomy:
 
 ---
 
-<kbd>Last updated: March 2025</kbd>
+<kbd>Last updated: April 2025</kbd>
 
 Merge conflicts can be a major pain, whether they happen during your coding session or while reviewing work. They often lead to delays, rework, and frustration.  
 
@@ -55,10 +55,22 @@ If there are no conflicts detected with your target branch and there are no over
 
 <img src="/wp-content/uploads/GKD-no-conflict-detected-with-PR.png" class="help-center-img img-bordered">
 
-### Want to Detect Conflicts Even Earlier
+### Detect Conflicts Even Earlier
 
 You can invite the **author of the conflicting changes** directly from the conflict detection menu. 
 
 <img src="/wp-content/uploads/GKD-invite-org-member-conflict.png" class="help-center-img img-bordered">
 
 Once they’re in your GitKraken organization, you’ll be notified as soon as they are editing in the same areas as you - no need to wait for the changes to merge into the target branch.
+
+### Conflict Prevention Settings
+
+Conflict Prevention is a repo specific setting.
+
+Limit which branches GitKraken considers as "base branches" when scanning for conflicts by navigating to <kbd>_Preferences > Conflict Prevention_</kbd> to set the preferred branches for a repository.
+
+<img src='/wp-content/uploads/conflict-prevention-settings.png' srcset='/wp-content/uploads/conflict-prevention-settings@2x.png 2x' class="help-center-img img-bordered"/>
+
+You may use `**` to denote a wild card and the `!` character to set exclusions.
+
+This is also where you may toggle the setting for the currently opened repository. 

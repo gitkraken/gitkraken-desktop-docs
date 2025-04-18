@@ -157,26 +157,15 @@ You may resolve a conflicted file by right-clicking the file in the commit panel
 
 ***
 
-## Automatic Conflict Detection (Preview)
+## Conflict Prevention
 
+GitKraken Desktop’s **Conflict Prevention** helps you detect and manage potential conflicts before they cause disruptions. 
+
+Learn more about [Conflict Prevention →](/gitkraken-desktop/conflict-prevention/)
 
 <div class='callout callout--warning'>
-    <p>This Feature will only available for Advanced subscription tier or higher</p>
+    <p>Conflict Prevention is available for customers on the Advanced tier or higher.</p>
 </div>
-
-GitKraken will monitor your base branch for conflicts and alert you with an icon in the toolbar when conflicts are detected, providing options to resolve your conflicts sooner rather than later.
-
-<img src='/wp-content/uploads/Automatic-conflict-detection-GKD.png' class="help-center-img img-bordered"/>
-
-How it works:
-   - When a conflict is detected, click on the icon in the toolbar to view details about the conflict. Choose to either rebase your current branch onto the base branch or merge changes from the base branch into your current branch.
-   - Limit which branches GitKraken considers as "base branches" when scanning for conflicts by navigating to _Preferences > Conflict Detection_ to set the preferred branches for a repository.
-
-<img src='/wp-content/uploads/base-branch.png' class="help-center-img img-bordered"/>
-
-This feature is currently in preview and may undergo significant updates based on feedback. [Share your thoughts](https://feedback.gitkraken.com?product=gitkraken&source=help_center) with us to help shape its future direction!
-
-
 
 ***
 
