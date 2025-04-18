@@ -65,7 +65,7 @@ Once they’re in your GitKraken organization, you’ll be notified as soon as t
 
 ### Conflict Prevention Settings
 
-Conflict Prevention is a repo specific setting.
+Conflict Prevention is a repo-specific setting.
 
 Limit which branches GitKraken considers as "base branches" when scanning for conflicts by navigating to <kbd>_Preferences > Conflict Prevention_</kbd> to set the preferred branches for a repository.
 

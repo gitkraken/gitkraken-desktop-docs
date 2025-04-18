@@ -10,6 +10,8 @@ taxonomy:
 
 Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo;s fixed, or just take a trip down memory lane with a nostalgic swagger, remembering those bugs of yesterday.
 
+<a href="https://www.gitkraken.com/download?product=gitkraken&source=help_center" target="_blank" class="button button--basic ">Download Current Version Now</a>
+
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 ***
 <a id="v11-0-0"></a>
@@ -20,8 +22,6 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 </div>
 
 _"Turn it up to 11! 🎸"_
-
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-11-0-0) and see how it all works!_
 
 ### Monday, March 31st, 2025
 
@@ -47,6 +47,4 @@ _Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/curr
 ### Bug Fixes 🐛
  - Launchpad now works with GitHub users set as Enterprise Managed Users.
 
-***
 
-[View all release notes at GitKraken.com](https://help.gitkraken.com/gitkraken-desktop/current/)
