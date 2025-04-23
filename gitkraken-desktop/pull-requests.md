@@ -74,7 +74,7 @@ GitHub.com users may utilize the pull request view for GitHub pull requests.
 To enable this feature, first set up the [GitHub integration](/gitkraken-desktop/github-gitkraken-desktop/). Then with a GitHub repo open inside of GitKraken Desktop, select a pull request in the Left Panel (or checkout the source branch and a PR icon with the number shows up next to the branch) to bring up the pull request view. Or from the Launchpad, click on the icon at the right side of the Pull Request.
 
 Repository tab:
-<img src='/wp-content/uploads/gkc-github-pr-view.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/github-pr-view-2025.png' srcset='/wp-content/uploads/github-pr-view-2025@2x.png' class="help-center-img img-bordered">
 
 Launchpad:
 
