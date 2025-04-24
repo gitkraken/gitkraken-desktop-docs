@@ -92,7 +92,7 @@ From this view, GitHub users may edit the pull request:
 
 From the upper right of the Pull Request view, you may click the <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Review Code and Suggest Changes</span></button> button to review the affected files for this pull request. Note, GitHub's code review and GitHub's code comments are not currently available from within GitKraken Desktop.
 
-<img src='/wp-content/uploads/gkc-pr-code-suggestions.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/github-pr-review-2025.png' srcset='/wp-content/uploads/github-pr-review-2025@2x.png' class="help-center-img img-bordered">
 
 ### Review Code and Suggest Changes
 
@@ -118,11 +118,11 @@ Clicking on one of the Code Suggestions opens the repo tab. The right panel show
 ### Comment on GitHub pull requests
 Users may comment on a pull request -- which is great for submitting reviews, approving pull requests, or requesting changes. You may also use the refresh icon in the top right to quickly refresh the comments feed.
 
-<img src='/wp-content/uploads//refresh-comments.png' srcset='/wp-content/uploads//refresh-comments@2x.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/refresh-comments-2025.png' srcset='/wp-content/uploads/refresh-comments-2025@2x.png' class="help-center-img img-bordered">
 
 You can also quote other comments in your reply from the elipsies <kbd> <i class="fa fa-ellipsis-v"></i> </kbd> menu
 
-<img src='/wp-content/uploads//quote-reply.png' srcset='/wp-content/uploads//quote-reply@2x.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/quote-reply-2025.png' srcset='/wp-content/uploadsquote-reply-2025@2x.png' class="help-center-img img-bordered">
 
 ### Branch checkout, build status, and adding remote
 If you double-click the branch name in the bottom right of the PR view, GitKraken Desktop will automatically check out the branch and open the graph.
