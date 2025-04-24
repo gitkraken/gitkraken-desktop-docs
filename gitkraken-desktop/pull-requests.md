@@ -106,12 +106,12 @@ Open the Pull Request and click on <button class='button button--primary button-
 
 ### Accept or Reject Code Suggestions
 
-In the Github Pull Request panel, you have the ability to review, accept or reject your teammate's code suggestions.
+In the GitHub Pull Request panel, you have the ability to review, accept or reject your teammate's code suggestions.
 A Pull Request with Code Suggestions has the <em class='context-menu'>Code Suggestions</em> label in it:
 
-<img src='/wp-content/uploads/gkc-pr-code-suggestions2.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/code-suggestion-2025.png' srcset='/wp-content/uploads/code-suggestion-2025@2x.png' class="help-center-img img-bordered">
 
-Clicking on one of the Code Suggestions opens the repo tab. The right panel shows a diff with the changes so you can review and two options on bottom `Apply suggestion to branch` or `Reject suggestion`.
+Clicking on one of the Code Suggestions opens the repo tab. The Commit Panel shows a diff with the changes so you can review and two options on bottom `Apply suggestion to branch` or `Reject suggestion`.
 
 <img src='/wp-content/uploads/gkc-pr-code-suggestions-apply.gif' class="help-center-img img-bordered">
 
@@ -122,14 +122,14 @@ Users may comment on a pull request -- which is great for submitting reviews, ap
 
 You can also quote other comments in your reply from the elipsies <kbd> <i class="fa fa-ellipsis-v"></i> </kbd> menu
 
-<img src='/wp-content/uploads/quote-reply-2025.png' srcset='/wp-content/uploadsquote-reply-2025@2x.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/quote-reply-2025.png' srcset='/wp-content/uploads/quote-reply-2025@2x.png' class="help-center-img img-bordered">
 
 ### Branch checkout, build status, and adding remote
 If you double-click the branch name in the bottom right of the PR view, GitKraken Desktop will automatically check out the branch and open the graph.
 
 If you click on the build status, GitKraken Desktop will take you to the build URL in your default web browser.
 
-<img src='/wp-content/uploads//build-status.png' srcset='/wp-content/uploads//build-status@2x.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/build-status-2025.png' srcset='/wp-content/uploads/build-status-2025@2x.png' class="help-center-img img-bordered">
 
 Additionally if you have not added the remote, GitKraken Desktop will ask if you wish to add the remote to the app (which should help you review changes locally).
 
@@ -154,7 +154,7 @@ GitKraken Desktop displays active pull requests in your graph with this <em clas
 
 Sections in PULL REQUESTS each denote a filtered view of pull requests on this repository. GitKraken Desktop will start with several pull request filters for you, note the filters such as *My pull requests* and <i>All pull requests</i>. You can modify, delete, or create your own <a href="/working-with-repositories/pull-requests-filter-syntax/">pull request filters</a>.
 
-<img src='/wp-content/uploads//pull-request-icon-and-panel.png' srcset='/wp-content/uploads//pull-request-icon-and-panel@2x.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/pull-request-icon-and-panel-2025.png' srcset='/wp-content/uploads/pull-request-icon-and-panel-2025@2x.png' class="help-center-img img-bordered">
 
 Quickly search for pull requests using the <i class='fa fa-search'></i>  *Search pull requests* box.
 
