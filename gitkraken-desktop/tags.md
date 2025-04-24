@@ -12,16 +12,16 @@ Tags <em class='context-menu'><img style='translate:rotate(180deg);height:1em;' 
 ***
 ### Adding tags
 
-To create a new tag in GitKraken Desktop, right click on the commit you'd like to tag, and select <kbd>Create tag here</kbd> at the bottom.
+To create a new tag in GitKraken Desktop, right-click on the commit you'd like to tag, and select <kbd>Create tag here</kbd> at the bottom.
 
-<img src="/wp-content/uploads/add-tag.png" srcset="/wp-content/uploads/add-tag.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/create-tag-2025.png" srcset="/wp-content/uploads/create-tag-2025.png" class="help-center-img img-bordered">
 
 
-Tags are created locally, but available for remotes by right clicking the tag and selecting to push the tag to the remote.
+Tags are created locally, but available for remotes by right-clicking the tag and selecting to push the tag to the remote.
 
-<img src="/wp-content/uploads/tag-remote.png" srcset="/wp-content/uploads/tag-remote.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/push-tag-2025.png" srcset="/wp-content/uploads/push-tag-2025@2x.png" class="help-center-img img-bordered">
 
-Double click a tag in the left panel to jump to when the tag was added.  Tags can also be hidden and soloed just like branches from the right click menu.
+Double-click a tag in the Left Panel to jump to when the tag was added.  Tags can also be hidden and soloed just like branches from the context menu.
 
 <img src="/wp-content/uploads/tag-right.png" srcset="/wp-content/uploads/tag-right.png" class="help-center-img img-bordered">
 
@@ -38,19 +38,27 @@ Alternatively, consider using the [detached HEAD state](/working-with-commits/de
 ***
 
 ### Moving tags
-To move a tag to the branch HEAD, checkout the new branch, right click the tag, and select fast-forward.
+To move a tag to the branch HEAD, checkout the new branch, right-click the tag, and select fast-forward.
 
 If a tag cannot be fast-forwarded, you can delete and then add a new one.  Be sure to delete the tag on remote as well.
 
 ***
 
 ### Tag messages
-Create annotated tags by right clicking a branch or commit and selecting <kbd>Create annotated tag here</kbd>. You can annotate an existing tag by right clicking the tag and selecting <kbd>Annotate tag</kbd>. This message will be displayed when hovering over the tag in the left panel, or in the graph.
+Create annotated tags by right-clicking a branch or commit and selecting <kbd>Create annotated tag here</kbd>. You can annotate an existing tag by right-clicking the tag and selecting <kbd>Annotate tag</kbd>. This message will be displayed when hovering over the tag in the Left Panel, or in the Commit Graph.
 
 <img src="/wp-content/uploads/tag-annotation.png" srcset="/wp-content/uploads/tag-annotation.png" class="help-center-img img-bordered">
 
 ### Search or filter tags
 
-You may filter tags from the filter bar in the left panel. Use this to quickly find a tag.
+You may filter tags from the filter bar in the Left Panel. Use this to quickly find a tag.
 
 <img src="/wp-content/uploads/filter-tags.png" srcset="/wp-content/uploads/filter-tags@2x.png" class="help-center-img img-bordered">
+
+### Hide or show Tags in Left Panel
+
+All panes in the Left Panel can be toggled on or off by right-clicking on any pane header.
+
+<img src="/wp-content/uploads/toggle-panes-2025.png" srcset="/wp-content/uploads/toggle-panes-2025@2x.png" class="help-center-img img-bordered">
+
+Check the panes you wish to see, and uncheck any panes you wish to hide. 

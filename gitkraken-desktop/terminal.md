@@ -9,9 +9,9 @@ taxonomy:
 
 Open the Terminal to use Git CLI commands while still viewing the graph.
 
-To get started open up a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar or by searching for "terminal" in the <a href="/working-with-repositories/command-palette">command palette</a>.
+To get started open up a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar or by searching for "terminal" in the <a href="/working-with-repositories/command-palette">Command Palette</a>.
 
-<img src="/wp-content/uploads/open-gitkraken-terminal.gif" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/terminal-button-2025.png" srcset="/wp-content/uploads/terminal-button-2025@2x.png" class="help-center-img img-bordered">
 
 
 ---
@@ -35,9 +35,9 @@ Auto-complete suggestions will also appear for flags.
 
 ### Terminal Preferences 
 
-Navigate to <kbd><strong>Preferences > Terminal</strong></kbd> to change your Terminal preferences.
+Navigate to <kbd><strong>Preferences > In-app Terminal</strong></kbd> to change your Terminal preferences.
 
-<img src="/wp-content/uploads/terminal-preferences.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/terminal-preferences-2025.png" srcset="/wp-content/uploads/terminal-preferences-2025@2x.png" class="help-center-img img-bordered">
 
 #### Setting the default terminal on Mac and Linux
 

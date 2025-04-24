@@ -16,9 +16,17 @@ Submodules allow you to include other Git repositories within a Git repository a
 
 ***
 
+## Toggle submodules in Left Panel
+
+All panes in the Left Panel can be toggled on or off. To enable the submodules pane, right-click on any pane header. 
+
+<img src="/wp-content/uploads/toggle-panes-2025.png" srcset="/wp-content/uploads/toggle-panes-2025@2x.png" class="help-center-img img-bordered">
+
+Check the submodule pane, and uncheck any panes you wish to hide. 
+
 ## Adding submodules
 
-Add a submodule by clicking the <button class='button button--success button--ui button--nolink'>+</button> when hovering over <img src='/wp-content/uploads/icons/gk-new-submodules-icon.svg' style='height:1em;'> _Submodules_ in the left panel. Paste the HTTPS or SSH link to the repository, and then enter the path.
+Add a submodule by clicking the <button class='button button--success button--ui button--nolink'>+</button> when hovering over <img src='/wp-content/uploads/gk-new-submodules-icon.svg' style='height:1em;'> _Submodules_ in the Left Panel. Paste the HTTPS or SSH link to the repository, and then enter the path.
 
 <img src="/wp-content/uploads//add-submodule.png" srcset="/wp-content/uploads//add-submodule@2x.png" class="help-center-img img-bordered">
 
@@ -32,7 +40,7 @@ Your repository tracks the submodule's checked out commit.  If there are any upd
 
 ## Updating submodules
 
-To update submodules, navigate to the Submodule pane in the left panel and right click on the submodule.
+To update submodules, navigate to the Submodule pane in the Left Panel and right-click on the submodule.
 
 <img src="/wp-content/uploads//update-submodule.png" srcset="/wp-content/uploads//update-submodule@2x.png" class="help-center-img img-bordered">
 

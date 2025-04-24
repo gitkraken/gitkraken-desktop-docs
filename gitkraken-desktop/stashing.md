@@ -59,7 +59,7 @@ To name your stash, type the desired name in the `// WIP` field at the top of th
 
 <img src='/wp-content/uploads/custom-stash-wip.png' srcset='/wp-content/uploads/custom-stash-wip@2x.png' class="help-center-img img-bordered">
 
-The stash will now appear in the left panel and the graph with the desired name.
+The stash will now appear in the Left Panel and the graph with the desired name.
 
 <img src='/wp-content/uploads/custom-stash-panel.png' srcset='/wp-content/uploads/custom-stash-panel@2x.png' class="help-center-img img-bordered">
 

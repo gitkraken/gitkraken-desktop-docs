@@ -78,7 +78,7 @@ Repository tab:
 
 Launchpad:
 
-<img src='/wp-content/uploads/gkc-launchpad-pr-actions.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/launchpad-open-pr-panel-2025.png' srcset='/wp-content/uploads/launchpad-open-pr-panel-2025@2x.png' class="help-center-img img-bordered">
 
 From this view, GitHub users may edit the pull request:
 
