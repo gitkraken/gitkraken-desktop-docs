@@ -151,6 +151,10 @@ Pull Requests section has the following columns:
       <td>Creator(s) of the pull request.</td>
     </tr>
     <tr>
+      <td>Collaborators</td>
+      <td>Other contributors actively working on the pull request.</td>
+    </tr>
+    <tr>
       <td>Repository and Branch</td>
       <td>Name of the repository and the associated branch.</td>
     </tr>
@@ -160,7 +164,6 @@ Pull Requests section has the following columns:
     </tr>
   </tbody>
 </table>
-
 
 
 #### GitHub Pull Requests
@@ -180,20 +183,20 @@ The Issue Tracker provider can be set up in the <kbd>Preferences > Integrations<
 
 <img src="/wp-content/uploads/issue-filters-launchpad-2025.png" srcset="/wp-content/uploads/issue-filters-launchpad-2025@2x.png" class="help-center-img img-bordered">
 
-#### WIPs
+### WIPs
 
 The WIPs section displays all uncommitted changes for the repositories in the selected Workspace. You can quickly open the repository in a repository tab by clicking on <button class="button button--success button--ui button--nolink">View Repo</button>.
 
-#### All
+### All
 
 The ALL section displays all pull requests, issues, and WIPs for the repositories in the selected Workspace.
 
-#### Snoozed
+### Snoozed
 
 The SNOOZED section displays all snoozed pull requests and issues. You can unsnooze them by clicking on the <i class="fa-solid fa-snooze"></i> icon.
 
 <div class='callout callout--basic'>
-    <p>Snoozing is only available for GitKraken Pro clients.</p>
+    <p>Snoozing is only available with a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank" rel="noopener noreferrer">paid GitKraken subscription</a>.</p>
 </div>
 
 ***
@@ -225,3 +228,102 @@ Since GitKraken On-Premise is designed to function without sending data outside 
 <img src="/wp-content/uploads/launchpad-prs.png" class="help-center-img img-bordered">
 
 Since this is a fully local experience, no data leaves your network, making it ideal for teams with strict security and compliance requirements.
+
+## Launchpad Changelog
+
+Take a trip down memory lane, and see how Launchpad has evolved over time.
+
+<table>
+  <thead>
+    <tr>
+      <th>Version</th>
+      <th>Change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-5-0">10.5</a></td>
+      <td>Add Saved Views</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-4-0">10.4</a></td>
+      <td>Added time-based filters</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-3-0">10.3</a></td>
+      <td>Filter Launchpad by PR and Issue labels</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-2-0">10.2</a></td>
+      <td>Add Team Launchpad (Preview)</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-1-0">10.1</a></td>
+      <td>Added Launchpad Status Bar</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-12-0">10.0</a></td>
+      <td>Focus View renamed to Launchpad</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-12-0">9.12</a></td>
+      <td>Focus View gets its own tab</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-11-0">9.11</a></td>
+      <td>Add PR actions to Focus View</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-9-0">9.9</a></td>
+      <td>Add pin and snooze support</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-8-0">9.8</a></td>
+      <td>Redesigned Focus View</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-5-0">9.5</a></td>
+      <td>Invite others to Workspace</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-4-0">9.4</a></td>
+      <td>Support Azure projects</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-3-0">9.3</a></td>
+      <td>Support Azure Issues</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-2-0">9.2</a></td>
+      <td>Start branch from issue</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-0-0">9.0</a></td>
+      <td>Added Cloud and Local Workspaces, Rename Overview to Focus View</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#wednesday-september-7th-2022">8.9</a></td>
+      <td>Add Team Overview</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#workspace-updates-overview">8.8</a></td>
+      <td>Add Workspace Overview</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#version-8-6-0">8.6</a></td>
+      <td>Add support for Bitbucket Server</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#tuesday-may-17th-2022">8.5</a></td>
+      <td>Add Workspace support for Azure DevOps</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#version-8-4-0">8.4</a></td>
+      <td>Pull Request View added to Workspaces</td>
+    </tr>
+    <tr>
+      <td><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#monday-december-13th-2021">8.2</a></td>
+      <td>Workspaces introduced</td>
+    </tr>
+  </tbody>
+</table>
