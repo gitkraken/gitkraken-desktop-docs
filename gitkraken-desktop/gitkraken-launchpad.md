@@ -9,7 +9,7 @@ taxonomy:
 
 <kbd>Last Updated: April 2025</kbd>
 
-Start your day with Launchpad! The Launchpad displays all of your Pull Requests, Issues, and Works In Progress (WIPs) relevant to you for a selected filters. 
+Start your day with Launchpad! The Launchpad displays all of your Pull Requests, Issues, and Works In Progress (WIPs) relevant to you or your fellow collaborators. 
 
 <img src="/wp-content/uploads/launchpad-highlight-2025.png" srcset="/wp-content/uploads/launchpad-highlight-2025@2x.png" class="help-center-img img-bordered">
 
@@ -233,97 +233,94 @@ Since this is a fully local experience, no data leaves your network, making it i
 
 Take a trip down memory lane, and see how Launchpad has evolved over time.
 
-<table>
-  <thead>
-    <tr>
-      <th>Version</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-5-0">10.5</a></td>
-      <td>Add Saved Views</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-4-0">10.4</a></td>
-      <td>Added time-based filters</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-3-0">10.3</a></td>
-      <td>Filter Launchpad by PR and Issue labels</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-2-0">10.2</a></td>
-      <td>Add Team Launchpad (Preview)</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-1-0">10.1</a></td>
-      <td>Added Launchpad Status Bar</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-12-0">10.0</a></td>
-      <td>Focus View renamed to Launchpad</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-12-0">9.12</a></td>
-      <td>Focus View gets its own tab</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-11-0">9.11</a></td>
-      <td>Add PR actions to Focus View</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-9-0">9.9</a></td>
-      <td>Add pin and snooze support</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-8-0">9.8</a></td>
-      <td>Redesigned Focus View</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-5-0">9.5</a></td>
-      <td>Invite others to Workspace</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-4-0">9.4</a></td>
-      <td>Support Azure projects</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-3-0">9.3</a></td>
-      <td>Support Azure Issues</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-2-0">9.2</a></td>
-      <td>Start branch from issue</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-0-0">9.0</a></td>
-      <td>Added Cloud and Local Workspaces, Rename Overview to Focus View</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#wednesday-september-7th-2022">8.9</a></td>
-      <td>Add Team Overview</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#workspace-updates-overview">8.8</a></td>
-      <td>Add Workspace Overview</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#version-8-6-0">8.6</a></td>
-      <td>Add support for Bitbucket Server</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#tuesday-may-17th-2022">8.5</a></td>
-      <td>Add Workspace support for Azure DevOps</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#version-8-4-0">8.4</a></td>
-      <td>Pull Request View added to Workspaces</td>
-    </tr>
-    <tr>
-      <td><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#monday-december-13th-2021">8.2</a></td>
-      <td>Workspaces introduced</td>
-    </tr>
-  </tbody>
+<table style="border-collapse: collapse; width: 100%; font-size: 90%;">
+  <tr>
+    <th style="text-align: left; padding: 4px;">Version</th>
+    <th style="text-align: left; padding: 4px;">Change</th>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-5-0">10.5</a></td>
+    <td style="padding: 2px;">Add Saved Views</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-4-0">10.4</a></td>
+    <td style="padding: 2px;">Added time-based filters</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-3-0">10.3</a></td>
+    <td style="padding: 2px;">Filter Launchpad by PR and Issue labels</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-2-0">10.2</a></td>
+    <td style="padding: 2px;">Add Team Launchpad (Preview)</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-1-0">10.1</a></td>
+    <td style="padding: 2px;">Added Launchpad Status Bar</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-12-0">10.0</a></td>
+    <td style="padding: 2px;">Focus View renamed to Launchpad</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-12-0">9.12</a></td>
+    <td style="padding: 2px;">Focus View gets its own tab</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-11-0">9.11</a></td>
+    <td style="padding: 2px;">Add PR actions to Focus View</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-9-0">9.9</a></td>
+    <td style="padding: 2px;">Add pin and snooze support</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-8-0">9.8</a></td>
+    <td style="padding: 2px;">Redesigned Focus View</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-5-0">9.5</a></td>
+    <td style="padding: 2px;">Invite others to Workspace</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-4-0">9.4</a></td>
+    <td style="padding: 2px;">Support Azure projects</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-3-0">9.3</a></td>
+    <td style="padding: 2px;">Support Azure Issues</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-2-0">9.2</a></td>
+    <td style="padding: 2px;">Start branch from issue</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-0-0">9.0</a></td>
+    <td style="padding: 2px;">Added Cloud and Local Workspaces, Rename Overview to Focus View</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#wednesday-september-7th-2022">8.9</a></td>
+    <td style="padding: 2px;">Add Team Overview</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#workspace-updates-overview">8.8</a></td>
+    <td style="padding: 2px;">Add Workspace Overview</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#version-8-6-0">8.6</a></td>
+    <td style="padding: 2px;">Add support for Bitbucket Server</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#tuesday-may-17th-2022">8.5</a></td>
+    <td style="padding: 2px;">Add Workspace support for Azure DevOps</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#version-8-4-0">8.4</a></td>
+    <td style="padding: 2px;">Pull Request View added to Workspaces</td>
+  </tr>
+  <tr>
+    <td style="padding: 2px;"><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#monday-december-13th-2021">8.2</a></td>
+    <td style="padding: 2px;">Workspaces introduced</td>
+  </tr>
 </table>
+
