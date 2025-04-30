@@ -34,6 +34,11 @@ Once your pull request templates are commited to your remote, the template field
 
 <img src="/wp-content/uploads/pr-template-2025.png" srcset="/wp-content/uploads/pr-template-2025@2x.png" class="help-center-img img-bordered">
 
+A few considerations to keep in mind:
+- The pull request template must exist in the root of the repository
+- The pull request template must already exist on your currently checked out branch
+
+
 If this is your first time working with pull request templates, consider reviewing the following instructions for GitHub, GitLab, or Azure DevOps pull request templates.
 
 * [Creating Pull Request templates on GitHub](https://help.github.com/articles/creating-a-pull-request-template-for-your-repository/)
