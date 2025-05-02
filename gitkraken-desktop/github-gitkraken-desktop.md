@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last Updated: May 2025</kbd>
 
 GitKraken allows you to create an account and authenticate with GitHub, which will help you find repos on GitHub when cloning or adding your remotes.
 
@@ -35,18 +36,18 @@ GitKraken lets you log in with your GitHub account.  Yay, one less password to r
 
 When logging into GitKraken, click <button class='button button--uiblue button--ui button--nolink'>Sign in with GitHub</button>  and log in with your credentials.  This will automatically connect your account for the GitHub integration.
 
-<img src='/wp-content/uploads/menu-login.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/sign-in-github-2025.png' class="help-center-img img-bordered">
 
 ***
 ## GitHub Authentication
 
 To authenticate with GitHub, navigate to the upper right corner to access <kbd><i> <i class="fas fa-cog"></i> Preferences    <i class='fa fa-caret-right'></i>     Integrations</i></kbd>
 
-<img src="/wp-content/uploads/preferences.png" srcset="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/preferences-menu-gear-2025.png" class="help-center-img img-bordered">
 
 Or alternatively if you are in the <kbd>New Tab</kbd> view, click on <kbd>See all the integrations</kbd> under <strong>Integrations</strong>.
 
-<img src="/wp-content/uploads/gkc-newtab-integrations.png" srcset="/wp-content/uploads/gkc-newtab-integrations@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/see-all-integrations-2025.png" srcset="/wp-content/uploads/see-all-integrations-2025@2x.png" class="help-center-img img-bordered">
 
 From the Integrations window, select **GitHub.com** and then hit the <button class='button button--success button--ui button--nolink'>Connect to GitHub</button> button.
 
