@@ -67,7 +67,7 @@ To install GitKraken within WSL, please follow our instructions for <a href="htt
 
 If you are using Ubuntu as your Linux distribution, you will run the following commands within the Linux terminal to download and install GitKraken Desktop within WSL:
 ```
-wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
+wget https://api.gitkraken.dev/releases/production/linux/x64/active/gitkraken-amd64.deb
 sudo apt install ./gitkraken-amd64.deb
 ```
 If the installation does not complete because of missing packages, you may need to run the following command before attempting to install again. 
