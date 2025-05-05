@@ -6,12 +6,12 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last Updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
-GitKraken offers built-in AI features to fast track your workflow—no extra tools, no switching interfaces.
+Let the app handle the boring parts! GitKraken offers built-in AI features to fast track your code contributions.
 
 <div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher</p>
+    <p>GitKraken AI requires a paid GitKraken subscription.</p>
 </div>
 
 ## AI-Powered Commit Explain
@@ -50,16 +50,34 @@ You can generate clear, consistent commit messages based on your staged changes.
 
 <img src="/wp-content/uploads/gkd-11-commit-message-generation-2.png" class="help-center-img img-bordered">
 
+## AI-Generated Pull Request Title and Description
+
+When connected to [GitHub, GitLab, Bitbucket, or Azure DevOps](/gitkraken-desktop/integrations/), you get the ability to create a pull request from inside GitKraken Desktop. Use AI to populate the title and description based on the incoming changes. 
+
+### To generate a PR title and description:
+
+1. Create a pull request from the Left Panel or by drag and dropping a branch to another branch. 
+
+<img src="/wp-content/uploads/create-pr-v11-1-Q2-2025.png" srcset="/wp-content/uploads/create-pr-v11-1-Q2-2025@2x.png" class="help-center-img img-bordered">
+
+2. Click the **Generate title and descritption** button. If using [pull request templates](/gitkraken-desktop/pull-requests/#pull-request-templates), be sure to first select your template and GitKraken AI will apply it. 
+
+<img src="/wp-content/uploads/pr-ai-title-desc-11-1.png" srcset="/wp-content/uploads/pr-ai-title-desc-11-1@2x.png" class="help-center-img img-bordered">
+
+3. GitKraken suggests a title and description, which you can review and edit.
+
+<img src="/wp-content/uploads/pr-ai-title-and-description.png" srcset="/wp-content/uploads/pr-ai-title-and-description@2x.png" class="help-center-img img-bordered">
+
 
 ## Bring your own key
 
 By default, commit explanations and message generation use **Gemini**, and no API key is required—requests are included as part of your GitKraken subscription.
 
-If you prefer to use **OpenAI** or **Anthropic** with your own API key, you may configure this in your settings from <kbd>Preferences > GitKraken AI</kbd>.
+If you prefer to use **OpenAI**, **Azure**, **Anthropic**, or a Custom URL with your own API key, you may configure this in your settings from <kbd>Preferences > GitKraken AI</kbd>.
 
 <img src="/wp-content/uploads/gkd-11-Preferences-GitKraken-AI.png" class="help-center-img img-bordered">
 
-Additionally you may include **custom instructions** to guide how GitKraken AI generates messages or explanations for Commit Message Generation and Explain Commits respectively: 
+Additionally you may include **custom instructions** to guide how GitKraken AI generates messages or explanations for Commit Message Generation, Explain Commits, Stash Message Generation, and Pull Requests title and description respectively: 
 
 <img src="/wp-content/uploads/gkd-11-custom-instructions.png" class="help-center-img img-bordered">
 
