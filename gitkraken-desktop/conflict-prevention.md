@@ -59,7 +59,7 @@ If there are no conflicts detected with your target branch and there are no over
 
 You can invite the **author of the conflicting changes** directly from the conflict detection menu. 
 
-<img src="/wp-content/uploads/GKD-invite-org-member-conflict.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/invite-to-org-11-1.png" srcset='/wp-content/uploads/invite-to-org-11-1@2x.png' class="help-center-img img-bordered">
 
 Once they’re in your GitKraken organization, you’ll be notified as soon as they are editing in the same areas as you - no need to wait for the changes to merge into the target branch.
 
