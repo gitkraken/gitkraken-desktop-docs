@@ -36,7 +36,7 @@ GitKraken can generate natural language explanations of your commits, right from
 
 You can generate clear, consistent commit messages based on your staged changes.
 
-### To generate a commit message:
+### How to generate a commit message
 
 1. Stage your changes. 
 
@@ -49,6 +49,34 @@ You can generate clear, consistent commit messages based on your staged changes.
 3. GitKraken suggests a summary and description, which you can review and edit.
 
 <img src="/wp-content/uploads/gkd-11-commit-message-generation-2.png" class="help-center-img img-bordered">
+
+### Amend commit messages
+
+You may amend the most recent commit message by selecting the commit in the graph, and then clicking into its message box in the Commit Panel.
+
+<img src="/wp-content/uploads/amend-recent-commit-ai-2025.png" srcset="/wp-content/uploads/amend-recent-commit-ai-2025@2x.png" class="help-center-img img-bordered">
+
+Similar to commit messages, you may use AI to generate an updated commit message and description for your amended commit. 
+
+<img src="/wp-content/uploads/generate-ai-amend-message.png" srcset="/wp-content/uploads/generate-ai-amend-message@2x.png" class="help-center-img img-bordered">
+
+## AI-Generated Stash Messages
+
+Similar to commit messages, you can generate stash messages based on the staged changes. 
+
+### How to generate a stash message
+
+1. Stage your changes. 
+
+<img src="/wp-content/uploads/gkd-11-stage-changes.png" class="help-center-img img-bordered">
+
+2. Click on the stash icon next to the "Commit" tab and then click the **AI** button.
+
+<img src="/wp-content/uploads/stash-ai-message.png" srcset="/wp-content/uploads/stash-ai-message@2x.png" class="help-center-img img-bordered">
+
+3. GitKraken AI generates a stash message, which you can review and edit.
+
+<img src="/wp-content/uploads/stash-message-generated-2025.png" srcset="/wp-content/uploads/stash-message-generated-2025@2x.png" class="help-center-img img-bordered">
 
 ## AI-Generated Pull Request Title and Description
 
@@ -67,7 +95,6 @@ When connected to [GitHub, GitLab, Bitbucket, or Azure DevOps](/gitkraken-deskto
 3. GitKraken suggests a title and description, which you can review and edit.
 
 <img src="/wp-content/uploads/pr-ai-title-and-description.png" srcset="/wp-content/uploads/pr-ai-title-and-description@2x.png" class="help-center-img img-bordered">
-
 
 ## Bring your own key
 
