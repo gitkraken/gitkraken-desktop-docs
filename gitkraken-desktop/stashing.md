@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
 Let's talk about how to save your changes for later with stashing.
 
@@ -37,11 +37,15 @@ If you only need to pop your stash, then use the Pop Stash button in the upper t
 
 <a name="stashing-from-the-left-panel"></a>
 
-### Stashing from Commit Panel
+### Stashing from Commit Panel (+AI)
 
 Stage your changes and click on the Stash icon (instead of Commit) to enable the option. This is also the best place to write out a stash description.
 
 <img src='/wp-content/uploads/stash-commit-panel-2025.png' class="help-center-img img-bordered">
+
+If you've set up [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/), hit the sparkle AI to generate a stash message based on your staged changes.
+
+<img src="/wp-content/uploads/stash-ai-message.png" srcset="/wp-content/uploads/stash-ai-message@2x.png" class="help-center-img img-bordered">
 
 ### Stashing from the Left Panel
 
