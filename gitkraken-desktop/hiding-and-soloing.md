@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
 The Left Panel allows you to modify the view of the graph for cleanliness and focus. Hide references you don't need, or spotlight a branch for a Solo. 
 ***
@@ -38,3 +38,9 @@ The Left Panel allows you to modify the view of the graph for cleanliness and fo
         <p>Consider hiding/soloing entire remotes if you only need about two remotes, and then hiding everything else.</p>
     </div>
 </div>
+
+### Hide or Show all refs
+
+You may hide or show all remotes, tags, branches, or stashes from the Left Panel. Simply right-click on the header for the Local, Remotes, Tags, or Stashes pane in the Left Panel to access the options.
+
+<img src='/wp-content/uploads/hide-show-all.png' srcset='/wp-content/uploads/hide-show-all@2x.png' class="help-center-img img-bordered">
