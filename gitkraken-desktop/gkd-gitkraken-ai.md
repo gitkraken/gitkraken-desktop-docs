@@ -6,12 +6,12 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last Updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
-GitKraken offers built-in AI features to fast track your workflow—no extra tools, no switching interfaces.
+Let the app handle the boring parts! GitKraken offers built-in AI features to fast track your code contributions.
 
 <div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher</p>
+    <p>GitKraken AI requires a paid GitKraken subscription.</p>
 </div>
 
 ## AI-Powered Commit Explain
@@ -36,7 +36,7 @@ GitKraken can generate natural language explanations of your commits, right from
 
 You can generate clear, consistent commit messages based on your staged changes.
 
-### To generate a commit message:
+### How to generate a commit message
 
 1. Stage your changes. 
 
@@ -50,30 +50,83 @@ You can generate clear, consistent commit messages based on your staged changes.
 
 <img src="/wp-content/uploads/gkd-11-commit-message-generation-2.png" class="help-center-img img-bordered">
 
+### Amend commit messages
+
+You may amend the most recent commit message by selecting the commit in the graph, and then clicking into its message box in the Commit Panel.
+
+<img src="/wp-content/uploads/amend-recent-commit-ai-2025.png" srcset="/wp-content/uploads/amend-recent-commit-ai-2025@2x.png" class="help-center-img img-bordered">
+
+Similar to commit messages, you may use AI to generate an updated commit message and description for your amended commit. 
+
+<img src="/wp-content/uploads/generate-ai-amend-message.png" srcset="/wp-content/uploads/generate-ai-amend-message@2x.png" class="help-center-img img-bordered">
+
+## AI-Generated Stash Messages
+
+Similar to commit messages, you can generate stash messages based on the staged changes. 
+
+### How to generate a stash message
+
+1. Stage your changes. 
+
+<img src="/wp-content/uploads/gkd-11-stage-changes.png" class="help-center-img img-bordered">
+
+2. Click on the stash icon next to the "Commit" tab and then click the **AI** button.
+
+<img src="/wp-content/uploads/stash-ai-message.png" srcset="/wp-content/uploads/stash-ai-message@2x.png" class="help-center-img img-bordered">
+
+3. GitKraken AI generates a stash message, which you can review and edit.
+
+<img src="/wp-content/uploads/stash-message-generated-2025.png" srcset="/wp-content/uploads/stash-message-generated-2025@2x.png" class="help-center-img img-bordered">
+
+## AI-Generated Pull Request Title and Description
+
+When connected to [GitHub, GitLab, Bitbucket, or Azure DevOps](/gitkraken-desktop/integrations/), you get the ability to create a pull request from inside GitKraken Desktop. Use AI to populate the title and description based on the incoming changes. 
+
+### To generate a PR title and description:
+
+1. Create a pull request from the Left Panel or by drag and dropping a branch to another branch. 
+
+<img src="/wp-content/uploads/create-pr-v11-1-Q2-2025.png" srcset="/wp-content/uploads/create-pr-v11-1-Q2-2025@2x.png" class="help-center-img img-bordered">
+
+2. Click the **Generate title and descritption** button. If using [pull request templates](/gitkraken-desktop/pull-requests/#pull-request-templates), be sure to first select your template and GitKraken AI will apply it. 
+
+<img src="/wp-content/uploads/pr-ai-title-desc-11-1.png" srcset="/wp-content/uploads/pr-ai-title-desc-11-1@2x.png" class="help-center-img img-bordered">
+
+3. GitKraken suggests a title and description, which you can review and edit.
+
+<img src="/wp-content/uploads/pr-ai-title-and-description.png" srcset="/wp-content/uploads/pr-ai-title-and-description@2x.png" class="help-center-img img-bordered">
 
 ## Bring your own key
 
 By default, commit explanations and message generation use **Gemini**, and no API key is required—requests are included as part of your GitKraken subscription.
 
-If you prefer to use **OpenAI** or **Anthropic** with your own API key, you may configure this in your settings from <kbd>Preferences > GitKraken AI</kbd>.
+If you prefer to use **OpenAI**, **Azure**, **Anthropic**, or a Custom URL with your own API key, you may configure this in your settings from <kbd>Preferences > GitKraken AI</kbd>.
 
 <img src="/wp-content/uploads/gkd-11-Preferences-GitKraken-AI.png" class="help-center-img img-bordered">
 
-Additionally you may include **custom instructions** to guide how GitKraken AI generates messages or explanations for Commit Message Generation and Explain Commits respectively: 
+### Custom API Endpoint
+
+The "Custom URL" may be of interest to customers with security requirements. This option allows users to configure a designated AI service for Commit Explain, Commit & Stash message generation, and Pull Request title and description generation.
+
+<img src="/wp-content/uploads/custom-url-11-1.png" srcset="/wp-content/uploads/custom-url-11-1@2x.png" class="help-center-img img-bordered">
+
+### Custom AI Prompt Instructions
+
+You may include **custom instructions** to guide how GitKraken AI generates messages or explanations for Commit Message Generation, Explain Commits, Stash Message Generation, and Pull Requests title and description respectively: 
 
 <img src="/wp-content/uploads/gkd-11-custom-instructions.png" class="help-center-img img-bordered">
 
-### Commit Prompt Examples
+#### Commit Prompt Examples
 
 Not sure how to advise GitKraken AI? Here are some starter prompts, and we encourage tinkering!
 
-#### Prompt for brevity
+##### Prompt for brevity
 
 ```
 Keep the summary short, but informative
 ```
 
-#### Prompt to add conventional commit prefix
+##### Prompt to add conventional commit prefix
 
 ```
 Format the summary as:
@@ -101,12 +154,6 @@ Where <type> is one of the following prefixes:
 The <summary> should be a short (max 72 characters) description of what was changed, in the imperative mood (e.g., "add login button", "fix broken link", "refactor user auth logic").
 
 Only output the final commit message — no explanations, no extra formatting.
-```
-
-#### Prompt for different language 
-
-```
-Write the output in Spanish.
 ```
 
 ## What’s Next?

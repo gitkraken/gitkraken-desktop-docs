@@ -14,6 +14,57 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 ***
+
+<a id="v11-1-0"></a>
+## Version 11.1.0
+<kbd>>Tuesday, May 6th, 2025</kbd>
+
+<div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jg3n_dg4IjM?si=87vB8ooSU5GAn5wk" frameborder="0" allowfullscreen></iframe>
+</div>
+ 
+_"More Jarvis. Less Skynet."_
+
+### New ✨
+ - **GitKraken AI:** New AI-powered capabilities to accelerate your development workflow, with expanded support for additional providers and environments.
+   - Pull Request Title and Description Generation
+     - Generate titles and descriptions for Pull Requests based on the commits of the PR in just a click.
+     - When creating a Pull Request, click `Generate title and description` to automatically populate the fields using GitKraken AI.
+     - If you have a Pull Request template selected, GitKraken AI will attempt to generate content that adheres to the selected template.
+   - Stash Message Generation
+     - Generate stash messages based on your code changes in just a click.
+     - With a WIP selected, click on the sparkle icon in the stash message form to have GitKraken AI generate a stash message based on your staged changes.
+   - Amend Commit Message
+     - You can now also generate a new commit message when amending a previous commit message.
+   - Expanded provider support when using your own API key
+     - Added support for OpenAI GPT-4.1 models.
+     - Removed the deprecated OpenAI o1-mini model.
+     - Added Google Gemini as a provider.
+     - Added Azure as a provider (private AI model providers such as Azure require GitKraken Advanced).
+     - You can now configure a custom URL endpoint for an OpenAI compatible API to use with GitKraken AI, like a local or self-hosted AI server.
+
+
+### Improvements 🙌
+ - You can now Hide All / Show All items in the Local and Remote sections of the Left Panel from each section header's context menu.
+    - The Hide All / Show All actions for Tags and Stashes have also been moved to their respective section headers.
+ - GitHub user avatars will now display in the Commit Graph and Commit Details Panel for commits made on GitHub repositories.
+ - Experimental Feature - Git Executable:
+   - Respects `core.commentString` and `core.commentChar` values from your Git config.
+   - Improved stability and performance for on-premise clients when authenticating with Git remotes.
+ - Conflict Prevention:
+   - Potential conflict alerts with your teammates will now work when the current branch has no upstream.
+   - You can now access the branches involved in a potential conflict directly from the menu, and each branch label matches the color of the branch in the Commit Graph.
+ - Upgraded Electron to v34.
+
+### Bug Fixes 🐛
+ - The Repository Management tab now displays GitLab workspaces with more than 25 repos.
+ - Fixed an issue in the graph where branch labels wouldn't render properly.
+ - Fixed several styling issues across the application.
+ - Experimental Feature - Git Executable:
+   - Fixed an issue where Pull failed with files having the same name but different casing in a case-insensitive file system.
+
+
+***
 <a id="v11-0-0"></a>
 ## Version 11.0.0
 <kbd>Monday, March 31st, 2025</kbd>

@@ -26,13 +26,13 @@ GitKraken detects potential merge conflicts with **Org Members** based on overla
 #### 1. Conflict Alert Icon
 After a coding session, open GitKraken Desktop. If potential conflicts exist, you’ll see an **alert icon**.
 
-<img src="/wp-content/uploads/GKD-org-member-conflict.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/GKD-org-member-conflict-11-1.png" srcset='/wp-content/uploads/GKD-org-member-conflict-11-1@2x.png' class="help-center-img img-bordered">
 
 #### 2. Click the Alert Icon
 
 This will open a conflict detection menu with options to manage conflicts.  
 
-<img src="/wp-content/uploads/GKD-unfurl-org-member-conflict.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/GKD-unfurl-org-member-conflict-11-1.png" srcset='/wp-content/uploads/GKD-unfurl-org-member-conflict-11-1@2x.png' class="help-center-img img-bordered">
 
 <div class='callout callout--success'>
     <p>The active conflict with the target takes priority over org member potential conflicts. The potential conflicts only show up if you don't have an active conflict with the target, not the other way around.</p>
@@ -48,7 +48,7 @@ This will open a conflict detection menu with options to manage conflicts.
 - Even without Org Members, GitKraken will still proactively detect conflicts between your branch and its target branch so you can resolve them before they get worse.  
 - You’ll be able to **rebase or merge** to resolve conflicts. 
 
-<img src="/wp-content/uploads/GKD-non-org-conflict-menu.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/generic-conflict-prevention-11-1.png" srcset='/wp-content/uploads/generic-conflict-prevention-11-1@2x.png' class="help-center-img img-bordered">
 
 ### When No Conflicts Are Detected
 If there are no conflicts detected with your target branch and there are no overlapping edits with other org members’ branches, you will see a target branch status indicator to confirm there are no conflicts with the target branch. The menu provides a quick option to open a pull request against the target branch or adjust your target branch preferences for the repository.
@@ -59,7 +59,7 @@ If there are no conflicts detected with your target branch and there are no over
 
 You can invite the **author of the conflicting changes** directly from the conflict detection menu. 
 
-<img src="/wp-content/uploads/GKD-invite-org-member-conflict.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/invite-to-org-11-1.png" srcset='/wp-content/uploads/invite-to-org-11-1@2x.png' class="help-center-img img-bordered">
 
 Once they’re in your GitKraken organization, you’ll be notified as soon as they are editing in the same areas as you - no need to wait for the changes to merge into the target branch.
 
