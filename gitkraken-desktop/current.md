@@ -17,7 +17,7 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 
 <a id="v11-1-0"></a>
 ## Version 11.1.0
-<kbd>>Tuesday, May 6th, 2025</kbd>
+<kbd>Tuesday, May 6th, 2025</kbd>
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/jg3n_dg4IjM?si=87vB8ooSU5GAn5wk" frameborder="0" allowfullscreen></iframe>
