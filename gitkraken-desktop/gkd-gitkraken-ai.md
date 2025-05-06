@@ -104,21 +104,29 @@ If you prefer to use **OpenAI**, **Azure**, **Anthropic**, or a Custom URL with 
 
 <img src="/wp-content/uploads/gkd-11-Preferences-GitKraken-AI.png" class="help-center-img img-bordered">
 
-Additionally you may include **custom instructions** to guide how GitKraken AI generates messages or explanations for Commit Message Generation, Explain Commits, Stash Message Generation, and Pull Requests title and description respectively: 
+### Custom API Endpoint
+
+The "Custom URL" may be of interest to customers with security requirements. This option allows users to configure a designated AI service for Commit Explain, Commit & Stash message generation, and Pull Request title and description generation.
+
+<img src="/wp-content/uploads/custom-url-11-1.png" srcset="/wp-content/uploads/custom-url-11-1@2x.png" class="help-center-img img-bordered">
+
+### Custom AI Prompt Instructions
+
+You may include **custom instructions** to guide how GitKraken AI generates messages or explanations for Commit Message Generation, Explain Commits, Stash Message Generation, and Pull Requests title and description respectively: 
 
 <img src="/wp-content/uploads/gkd-11-custom-instructions.png" class="help-center-img img-bordered">
 
-### Commit Prompt Examples
+#### Commit Prompt Examples
 
 Not sure how to advise GitKraken AI? Here are some starter prompts, and we encourage tinkering!
 
-#### Prompt for brevity
+##### Prompt for brevity
 
 ```
 Keep the summary short, but informative
 ```
 
-#### Prompt to add conventional commit prefix
+##### Prompt to add conventional commit prefix
 
 ```
 Format the summary as:
@@ -146,12 +154,6 @@ Where <type> is one of the following prefixes:
 The <summary> should be a short (max 72 characters) description of what was changed, in the imperative mood (e.g., "add login button", "fix broken link", "refactor user auth logic").
 
 Only output the final commit message — no explanations, no extra formatting.
-```
-
-#### Prompt for different language 
-
-```
-Write the output in Spanish.
 ```
 
 ## What’s Next?
