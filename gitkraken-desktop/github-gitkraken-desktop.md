@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last Updated: May 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
 GitKraken allows you to create an account and authenticate with GitHub, which will help you find repos on GitHub when cloning or adding your remotes.
 
@@ -22,11 +22,7 @@ GitKraken allows you to create an account and authenticate with GitHub, which wi
 * Create and work with [Pull Requests](/working-with-repositories/pull-requests/#assignee-labels-and-reviewers)
 
 <div class='callout callout--warning'>
-    <p>Community plan is restricted to Public Repositories only.</p>
-</div>
-
-<div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/5nhNfMcczlQ?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
+    <p>Note: The GitKraken Community plan only supports public repositories.</p>
 </div>
 
 ***
@@ -51,7 +47,7 @@ Or alternatively if you are in the <kbd>New Tab</kbd> view, click on <kbd>See al
 
 From the Integrations window, select **GitHub.com** and then hit the <button class='button button--success button--ui button--nolink'>Connect to GitHub</button> button.
 
-<img src="/wp-content/uploads/preferences-authentication.png" srcset="/wp-content/uploads/preferences-authentication@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connect-github-2025.png" srcset="/wp-content/uploads/connect-github-2025@2x.png" class="help-center-img img-bordered">
 
 This opens a web browser where you first log in with your GitHub credentials to allow GitKraken access.
 
@@ -74,7 +70,7 @@ Click the magic <button class='button button--success button--ui button--nolink'
 
 Alternatively, add a key from  _SSH Defaults_ with <button class='button button--uiorange button--ui button--nolink'>Add key to GitHub</button> or an existing key pair through _Add existing SSH key_.
 
-<img src="/wp-content/uploads/generate-ssh.png" srcset="/wp-content/uploads/generate-ssh@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/add-ssh-key-2025.png" srcset="/wp-content/uploads/add-ssh-key-2025@2x.png" class="help-center-img img-bordered">
 
 ***
 ## OAuth integration with GitHub
@@ -97,16 +93,19 @@ Create [Pull Requests](/working-with-repositories/pull-requests/#assignee-labels
 
 ## GitHub pull request view
 
+<div class='embed-container embed-container--16-9'>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/MZIPpyQDQ_U?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
+</div>
+
 GitHub.com users may utilize the pull request view for GitHub pull requests.
 
-To enable this feature, first set up the [GitHub integration](/gitkraken-desktop/github-gitkraken-desktop/). Then with a GitHub repo open inside of GitKraken Desktop, select a pull request in the left panel (or checkout the source branch and a PR icon with the number shows up next to the branch) to bring up the pull request view. Or from the Launchpad, click on the icon at the right side of the Pull Request.
+To enable this feature, first set up the [GitHub integration](/gitkraken-desktop/github-gitkraken-desktop/). Then with a GitHub repo open inside of GitKraken Desktop, select a pull request in the Left Panel (or checkout the source branch and a PR icon with the number shows up next to the branch) to bring up the pull request view. 
 
-Repository tab:
-<img src='/wp-content/uploads/gkc-github-pr-view.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/github-pr-view-2025.png' srcset="/wp-content/uploads/github-pr-view-2025@2x.png" class="help-center-img img-bordered">
 
-Launchpad:
+Or from the Launchpad, click on the icon at the right side of the Pull Request.
 
-<img src='/wp-content/uploads/gkc-launchpad-pr-actions.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/github-pr-view-launchpad.png' srcset="/wp-content/uploads/github-pr-view-launchpad@2x.png" class="help-center-img img-bordered">
 
 From this view, GitHub users may edit the pull request:
 
@@ -120,7 +119,7 @@ From this view, GitHub users may edit the pull request:
 
 From the upper right of the Pull Request view, you may click the <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Review Code and Suggest Changes</span></button> button to review the affected files for this pull request. Note, code review and code comment are not currently available from within GitKraken Desktop.
 
-<img src='/wp-content/uploads/gkc-pr-code-suggestions.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/github-pr-review-2025.png' srcset="/wp-content/uploads/github-pr-review-2025@2x.png" class="help-center-img img-bordered">
 
 ### Review Code and Suggest Changes
 
@@ -135,7 +134,7 @@ Open the Pull Request and click on <button class='button button--primary button-
 In the Github Pull Request panel, you have the ability to review, accept or reject your teammate's code suggestions.
 A Pull Request with Code Suggestions has the <em class='context-menu'>Code Suggestions</em> label in it:
 
-<img src='/wp-content/uploads/gkc-pr-code-suggestions2.png' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/code-suggestion-2025.png' srcset='/wp-content/uploads/code-suggestion-2025@2x.png' class="help-center-img img-bordered">
 
 Clicking on one of the Code Suggestions opens the repo tab. The right panel shows a diff with the changes so you can review and two options on bottom `Apply suggestion to branch` or `Reject suggestion`.
 
