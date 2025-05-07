@@ -20,7 +20,7 @@ GitKraken allows you to connect to [GitLab](https://gitlab.com), which will help
 * Work with [GitLab Issues](/integrations/gitlab-issues/)
 
 <div class='callout callout--warning'>
-    <p>Community plan is restricted to Public Repositories only.</p>
+    <p>Note: The <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">GitKraken Community plan</a> only supports public repositories.</p>
 </div>
 
 ***

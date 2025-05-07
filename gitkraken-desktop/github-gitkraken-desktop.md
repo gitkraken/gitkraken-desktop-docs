@@ -22,8 +22,9 @@ GitKraken allows you to create an account and authenticate with GitHub, which wi
 * Create and work with [Pull Requests](/working-with-repositories/pull-requests/#assignee-labels-and-reviewers)
 
 <div class='callout callout--warning'>
-    <p>Note: The GitKraken Community plan only supports public repositories.</p>
+    <p>Note: The <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">GitKraken Community plan</a> only supports public repositories.</p>
 </div>
+
 
 ***
 ## Sign in with GitHub
