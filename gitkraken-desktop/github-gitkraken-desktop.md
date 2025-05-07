@@ -51,7 +51,7 @@ From the Integrations window, select **GitHub.com** and then hit the <button cla
 
 This opens a web browser where you first log in with your GitHub credentials to allow GitKraken access.
 
-Upon login, a success message appears. Finish connecting by selecting `Open GitKraken`. 
+Upon login, a success message appears. Finish connecting by selecting `Open GitKraken`
 
 <img src="/wp-content/uploads/github-success-1.png" srcset="/wp-content/uploads/github-success-1@2x.png" class="help-center-img img-bordered">
 
@@ -105,7 +105,7 @@ To enable this feature, first set up the [GitHub integration](/gitkraken-desktop
 
 Or from the Launchpad, click on the icon at the right side of the Pull Request.
 
-<img src='/wp-content/uploads/github-pr-view-launchpad.png' srcset="/wp-content/uploads/github-pr-view-launchpad@2x.png" class="help-center-img img-bordered">
+<img src='/wp-content/uploads/github-pr-view-launchpad.png' class="help-center-img img-bordered">
 
 From this view, GitHub users may edit the pull request:
 
