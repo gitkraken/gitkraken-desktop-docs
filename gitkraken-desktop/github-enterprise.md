@@ -6,12 +6,14 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: May 2025</kbd>
 
 GitKraken allows you to connect to GitHub Enterprise Server, which will help you find repos when cloning or adding your remotes.
 
 <div class='callout callout--warning'>
-    <p>All Self-Hosted server integrations require an Advanced subscription tier or higher</p>
+    <p>Note: All Self-Hosted server integrations, including GitHub Enterprise, require an <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">Advanced subscription</a> tier or higher.</p>
 </div>
+
 
 
 **Benefits**
@@ -19,14 +21,14 @@ GitKraken allows you to connect to GitHub Enterprise Server, which will help you
 * Create repositories on GitHub Enterprise Server account including .gitignore and license
 * Automatically generate an SSH key pair and add it to GitHub Enterprise Server
 * [Fork repositories](/working-with-repositories/fork/) from GitKraken
-* Save authentication into profiles
+* Save authentication into [profiles](/gitkraken-desktop/profiles/)
 * Clone from GitHub Enterprise Server repo list
 * Add remotes for GitHub Enterprise Server repos
 * Create and view Pull Requests
 
 
 ***
-## GitHub Enterprise Server Authentication
+## Connecting GitHub Enterprise Server
 
 <div class='callout callout'>
     <p>Note 📝 - GitKraken supports any version of GitHub Enterprise Server released within one year.</p>
@@ -38,7 +40,7 @@ To authenticate with GitHub Enterprise Server, navigate to the upper right corne
 
 Or alternatively if you are in the <kbd>New Tab</kbd> view, click on <kbd>See all the integrations</kbd> under <strong>Integrations</strong>.
 
-<img src="/wp-content/uploads/gkc-newtab-integrations.png" srcset="/wp-content/uploads/gkc-newtab-integrations@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/see-all-integrations-2025.png" srcset="/wp-content/uploads/see-all-integrations-2025@2x.png" class="help-center-img img-bordered">
 
 From the Integrations window, enter your _Host Domain_ then click the Generate an access token on _your URL_ link.
 
