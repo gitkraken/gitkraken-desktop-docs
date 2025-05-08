@@ -13,10 +13,10 @@ Below is a chart outlining some basic security information regarding the type of
   <thead>
     <tr>
       <th><strong>Service</strong></th>
-      <th><strong>What information are we collecting</strong></th>
-      <th><strong>How is this information secured in the transfer</strong></th>
-      <th><strong>Where is this information stored</strong></th>
-      <th><strong>How is this information secured in storage</strong></th>
+      <th><strong>What info are we collecting</strong></th>
+      <th><strong>How is this info secured in transfer</strong></th>
+      <th><strong>Where is this info stored</strong></th>
+      <th><strong>How is this info secured in storage</strong></th>
     </tr>
   </thead>
   <tbody>
