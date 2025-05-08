@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: May 2025</kbd>
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/BhIX7fGSM8k?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -14,14 +15,14 @@ taxonomy:
 GitKraken allows you to connect to GitLab Self-Managed (CE or EE), which will help you find repos when cloning or adding your remotes.
 
 <div class='callout callout--warning'>
-    <p>All Self-Hosted server integrations require an Advanced subscription tier or higher</p>
+    <p>Note: All Self-Hosted server integrations, including GitLab Self-Managed, require an <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">Advanced subscription</a> tier or higher.</p>
 </div>
 
 **Benefits**
 
 * Create repositories on GitLab Self-Managed server including .gitignore and license
 * Automatically generate an SSH key pair and add it to GitLab Self-Managed
-* Save authentication into profiles
+* Save authentication into [profiles](/gitkraken-desktop/profiles/)
 * Clone from GitLab Self-Managed repo list
 * Add remotes for GitLab Self-Managed repos
 * Create and view Pull Requests
@@ -40,21 +41,21 @@ To authenticate with GitLab Self-Managed, navigate to the upper right corner to 
 
 Or alternatively if you are in the <kbd>New Tab</kbd> view, click on <kbd>See all the integrations</kbd> under <strong>Integrations</strong>.
 
-<img src="/wp-content/uploads/gkc-newtab-integrations.png" srcset="/wp-content/uploads/gkc-newtab-integrations@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/see-all-integrations-2025.png" srcset="/wp-content/uploads/see-all-integrations-2025@2x.png" class="help-center-img img-bordered">
 
 From the _Integrations_ window, enter your _Host Domain_, then click the Generate a token on GitLab link.  Note the permissions that need to be assigned to the token on your GitLab Self-Managed server.
 
-<img src="/wp-content/uploads/authentication-gitlab-self-managed.png" srcset="/wp-content/uploads/authentication-gitlab-self-managed@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connect-gitlab-self-managed-2025.png" srcset="/wp-content/uploads/connect-gitlab-self-managed-2025@2x.png" class="help-center-img img-bordered">
 
 This opens a web browser where you will log in with your GitLab Self-Managed credentials and generate an access token.
 
-GitKraken needs the token to have `api` and `read_user` scope and we recommend leaving the Expiration field blank.
+GitKraken needs the token to have `api` and `read_user` scope and we recommend leaving the expiration field blank.
 
 <img src="/wp-content/uploads/access-token-gitlab-self-managed.png" srcset="/wp-content/uploads/access-token-gitlab-self-managed@2x.png" class="help-center-img img-bordered">
 
 Copy your token to the clipboard as this is the only time you will see this token.  Paste the token into GitKraken and click on <button class='button button--success button--ui button--nolink'>Connect</button>.
 
-<img src="/wp-content/uploads/authentication-connect-gitlab-self-managed.png" srcset="/wp-content/uploads/authentication-connect-gitlab-self-managed@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connect-gitlab-self-managed-PAT-2025.png" srcset="/wp-content/uploads/connect-gitlab-self-managed-PAT-2025@2x.png" class="help-center-img img-bordered">
 
 ## Generating an SSH Key for GitLab Self-Managed
 
@@ -64,7 +65,7 @@ Copy your token to the clipboard as this is the only time you will see this toke
 
 Once your GitLab Self-Managed account has been connected to GitKraken, you may easily generate an SSH key and add it to your GitLab Self-Managed account from <kbd><i>Preferences    <i class='fa fa-caret-right'></i>     Integrations</i></kbd>.
 
-<img src="/wp-content/uploads/ssh-gitlab-self-managed.png" srcset="/wp-content/uploads/ssh-gitlab-self-managed@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/add-key-gitlab-self-managed-2025.png" srcset="/wp-content/uploads/add-key-gitlab-self-managed-2025@2x.png" class="help-center-img img-bordered">
 
 Click the <button class='button button--success button--ui button--nolink'>Generate SSH key and add to GitLab</button> button and watch the magic happen.
 
