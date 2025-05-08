@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: May 2025</kbd>
 
 GitKraken allows you to connect to [GitLab](https://gitlab.com), which will help you find repos on GitLab when cloning.
 
@@ -25,7 +26,7 @@ GitKraken allows you to connect to [GitLab](https://gitlab.com), which will help
 
 ***
 
-## GitLab Authentication
+## Connecting the GitLab integration
 
 To authenticate with GitLab, navigate to the upper right corner to access <kbd><i> <i class="fas fa-cog"></i> Preferences    <i class='fa fa-caret-right'></i>     Integrations</i></kbd>
 
@@ -33,17 +34,15 @@ To authenticate with GitLab, navigate to the upper right corner to access <kbd><
 
 Or alternatively if you are in the <kbd>New Tab</kbd> view, click on <kbd>GitLab</kbd> under <strong>Integrations</strong>.
 
-<img src="/wp-content/uploads/gkc-newtab-integrations.png" srcset="/wp-content/uploads/gkc-newtab-integrations@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/see-all-integrations-2025.png" srcset="/wp-content/uploads/see-all-integrations-2025@2x.png" class="help-center-img img-bordered">
 
 From the Integrations window, select _GitLab.com_ and then hit the <button class='button button--success button--ui button--nolink'>Connect to GitLab</button> button.
 
-<img src="/wp-content/uploads/gitlab-authentication.png" srcset="/wp-content/uploads/gitlab-authentication@2x.png 2x" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connect-gitlab-2025.png" srcset="/wp-content/uploads/connect-gitlab-2025@2x.png 2x" class="help-center-img img-bordered">
 
-This will open your default web browser where you can click <button class='button button--success button--ui button--nolink'>Continue authorization</button> and then log in with your GitLab credentials.
+This will open your default web browser where you can log in with your GitLab credentials.
 
-<img src="/wp-content/uploads/authorize-gitlab.png" srcset="/wp-content/uploads/authorize-gitlab@2x.png 2x" class="help-center-img img-bordered">
-
-<img src="/wp-content/uploads/gitlab-sign-in.png" srcset="/wp-content/uploads/gitlab-sign-in@2x.png 2x" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gitlab-sign-in-2025.png" srcset="/wp-content/uploads/gitlab-sign-in-2025@2x.png 2x" class="help-center-img img-bordered">
 
 Upon login, a success message appears. Finish connecting by selecting `Open GitKraken`. 
 
@@ -64,7 +63,7 @@ Click the magic <button class='button button--success button--ui button--nolink'
 
 Alternatively add a key from  _SSH Defaults_ with <button class='button button--uiorange button--ui button--nolink'>Add key to GitLab</button> or an existing key pair through _Add existing SSH key_.
 
-<img src="/wp-content/uploads/gitlab-ssh.png" srcset="/wp-content/uploads/gitlab-ssh@2x.png 2x" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/add-key-to-gitlab-2025.png" srcset="/wp-content/uploads/add-key-to-gitlab-2025@2x.png 2x" class="help-center-img img-bordered">
 
 ***
 ## OAuth integration with GitLab
