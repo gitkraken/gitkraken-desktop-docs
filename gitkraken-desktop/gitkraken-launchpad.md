@@ -7,7 +7,7 @@ taxonomy:
 
 ---
 
-<kbd>Last Updated: April 2025</kbd>
+<kbd>Last updated: April 2025</kbd>
 
 Start your day with Launchpad! The Launchpad displays all of your Pull Requests, Issues, and Works In Progress (WIPs) relevant to you or your fellow collaborators. 
 
