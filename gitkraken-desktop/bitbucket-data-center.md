@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: May 2025</kbd>
 
 GitKraken Desktop allows you to authenticate with Bitbucket Data Center, which will help you find repos on Bitbucket Data Center when cloning or adding your remotes.
 
@@ -19,7 +20,7 @@ GitKraken Desktop allows you to authenticate with Bitbucket Data Center, which w
 * Create and view Pull Requests
 
 <div class='callout callout--warning'>
-    <p>All Self-Hosted server integrations require an Advanced subscription tier or higher</p>
+    <p>Note: All Self-Hosted server integrations, including Bitbucket Data Center, require an <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">Advanced subscription</a> tier or higher.</p>
 </div>
 
 ***
@@ -36,11 +37,11 @@ To authenticate with Bitbucket Data Center, navigate to the upper right corner t
 
 Or alternatively if you are in the <kbd>New Tab</kbd> view, click on <kbd>See all the integrations</kbd> under <strong>Integrations</strong>.
 
-<img src="/wp-content/uploads/gkc-newtab-integrations.png" srcset="/wp-content/uploads/gkc-newtab-integrations@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/see-all-integrations-2025.png" srcset="/wp-content/uploads/see-all-integrations-2025@2x.png" class="help-center-img img-bordered">
 
 From the Integrations window, select **Bitbucket Data Center**. Enter your host domain URL and then click the Generate a token on Bitbucket Data Center button. Note the permissions that need to be assigned to the token on your Bitbucket Self-Hosted server.
 
-<img src="/wp-content/uploads/preferences-authentication-bitbucket-server.png" srcset="/wp-content/uploads/preferences-authentication-bitbucket-server@2x.png 2x" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connecting-bb-data-center-2025.png" srcset="/wp-content/uploads/connecting-bb-data-center-2025@2x.png 2x" class="help-center-img img-bordered">
 
 This opens a web browser where you will log in with your Bitbucket Data Center credentials and create an access token.
 
@@ -48,7 +49,6 @@ This opens a web browser where you will log in with your Bitbucket Data Center c
 
 Copy the token and paste it into GitKraken Desktop, then click the <button class='button button--success button--ui button--nolink'>Connect</span></button> button.
 
-<img src="/wp-content/uploads/bitbucket-server-connected.png" srcset="/wp-content/uploads/bitbucket-server-connected@2x.png 2x" class="help-center-img img-bordered">
 
 ***
 ## Generating SSH keys for Bitbucket Data Center.
@@ -58,9 +58,9 @@ Copy the token and paste it into GitKraken Desktop, then click the <button class
 
 Once your Bitbucket Data Center account has been connected to your GitKraken Desktop, you may then generate an SSH key and add it to your Bitbucket Data Center account from <em class='context-menu'>Preferences     <i class='fa fa-caret-right'></i>    Integrations</em>
 
-Click <button class='button button--success button--ui button--nolink'>Generate SSH key and copy to clipboard</span></button> and follow the toast prompt to add the key to your Bitbucket Data Center account. If you miss the toast pop-up or need to copy the public key later, you can use the link as well.
+<img src="/wp-content/uploads/ssh-bb-data-center-2025.png" srcset="/wp-content/uploads/ssh-bb-data-center-2025@2x.png 2x" class="help-center-img img-bordered">
 
-<img src='/wp-content/uploads/bitbucket-server-SSHkey.png' class="help-center-img img-bordered">
+Click <button class='button button--success button--ui button--nolink'>Generate SSH key and copy to clipboard</span></button> and follow the toast prompt to add the key to your Bitbucket Data Center account. If you miss the toast pop-up or need to copy the public key later, you can use the link as well.
 
 In your Bitbucket Data Center SSH keys page, click <button class='button button--primary button--ui button--nolink'>Add Key</span></button>.
 
@@ -76,11 +76,11 @@ GitKraken's integration with Bitbucket Data Center provides handy information ab
 
 First, you may search through your existing repositories when cloning:
 
-<img src="/wp-content/uploads/bitbucket-server-clone-menu.png" srcset="/wp-content/uploads/bitbucket-server-clone-menu@2x.png 2x" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/bb-data-center-clone.png" srcset="/wp-content/uploads/bb-data-center-clone@2x.png 2x" class="help-center-img img-bordered">
 
 Next, GitKraken Desktop presents a list of forks of the current repository when adding remotes:
 
-<img src="/wp-content/uploads/bitbucket-server-add-remote.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/add-remote-bb-dc-2025.png" srcset="/wp-content/uploads/add-remote-bb-dc-2025@2x.png 2x" class="help-center-img img-bordered">
 
 Of course, you still have the option of manually entering repo URLs.
 

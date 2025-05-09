@@ -14,14 +14,10 @@ GitKraken Desktop allows you to authenticate with Bitbucket, which will help you
 
 * Create repositories on Bitbucket account including .gitignore and license
 * Easily generate an SSH key pair and copy to clipboard to add to Bitbucket
-* Save authentication into profiles
+* Save authentication into [profiles](/gitkraken-desktop/profiles/)
 * Clone from Bitbucket repo list
 * Add remotes for Bitbucket repos
 * Create and view Pull Requests
-
-<div class='callout callout--warning'>
-    <p>All Self-Hosted server integrations require an Advanced subscription tier or higher</p>
-</div>
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/sQ4ouJpAeR8?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
