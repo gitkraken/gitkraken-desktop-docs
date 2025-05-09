@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: May 2025</kbd>
 
 GitKraken Desktop allows you to authenticate with Bitbucket, which will help you find repos on Bitbucket when cloning or adding your remotes.
 
@@ -35,10 +36,11 @@ To authenticate with Bitbucket, navigate to the upper right corner to access <kb
 <img src="/wp-content/uploads/preferences.png" srcset="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
 Or alternatively if you are in the <kbd>New Tab</kbd> view, click on <kbd>See all the integrations</kbd> under <strong>Integrations</strong>.
 
-<img src="/wp-content/uploads/gkc-newtab-integrations.png" srcset="/wp-content/uploads/gkc-newtab-integrations@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/see-all-integrations-2025.png" srcset="/wp-content/uploads/see-all-integrations-2025@2x.png" class="help-center-img img-bordered">
+
 From the Integrations window, select Bitbucket.org and then hit the <button class='button button--success button--ui button--nolink'>Connect to Bitbucket</span></button> button.
 
-<img src="/wp-content/uploads//preferences-authentication.png" srcset="/wp-content/uploads//preferences-authentication@2x.png 2x" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connect-bitbucket-2025.png" srcset="/wp-content/uploads/connect-bitbucket-2025@2x.png 2x" class="help-center-img img-bordered">
 
 This will open a web browser where you will need to log in with your Bitbucket credentials to allow GitKraken access.
 
@@ -60,7 +62,7 @@ Once your Bitbucket account has been connected to GitKraken, you may then genera
 
 Click <button class='button button--success button--ui button--nolink'>Generate SSH key and copy to clipboard</span></button> and add the key to your [Bitbucket](https://bitbucket.org) account settings.
 
-<img src='/wp-content/uploads//generate-ssh.png' srcset='/wp-content/uploads//generate-ssh@2x.png' class='center img-responsive img-bordered'>
+<img src='/wp-content/uploads/ssh-bitbucket-2025.png' srcset='/wp-content/uploads/ssh-bitbucket-2025@2x.png' class='center img-responsive img-bordered'>
 
 ***
 ## OAuth integration with Bitbucket
