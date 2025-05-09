@@ -14,7 +14,7 @@ GitKraken Desktop allows you to authenticate with Bitbucket Data Center, which w
 
 * Create repositories on Bitbucket Data Center including .gitignore and license
 * Easily generate an SSH key pair and copy to clipboard to add to Bitbucket Data Center
-* Save authentication into profiles
+* Save authentication into [profiles](/gitkraken-desktop/profiles/)
 * Clone from Bitbucket Data Center repo list
 * Add remotes for Bitbucket Data Center repos
 * Create and view Pull Requests
