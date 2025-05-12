@@ -5,6 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: May 2025</kbd>
 
 GitKraken allows you to connect to Azure DevOps (formerly VSTS), which will help you find repos on Azure DevOps when cloning.
 
@@ -30,30 +31,30 @@ To authenticate with Azure DevOps, navigate to the upper right corner to access 
 
 Or alternatively if you are in the <kbd>New Tab</kbd> view, click on <kbd>See all the integrations</kbd> under <strong><i class="fa-solid fa-plug"></i> Integrations</strong>.
 
-<img src="/wp-content/uploads/gkc-newtab-integrations.png" srcset="/wp-content/uploads/gkc-newtab-integrations@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/see-all-integrations-2025.png" srcset="/wp-content/uploads/see-all-integrations-2025@2x.png" class="help-center-img img-bordered">
 
 From the Integrations window, select **Azure DevOps** and then hit the <button class='button button--success button--ui button--nolink'>Connect to Azure DevOps</button> button.
 
-<img src="/wp-content/uploads/gkc-azure-integration.png" srcset="/wp-content/uploads/gkc-azure-integration@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connect-azure-devops-2025.png" srcset="/wp-content/uploads/connect-azure-devops-2025@2x.png" class="help-center-img img-bordered">
 
-This opens a web browser where you first log in with your GitHub credentials to allow GitKraken access.
+This opens a web browser where you first log in with your Azure DevOps credentials to allow GitKraken access.
 
 Upon login, a success message appears. Finish connecting by selecting `Open GitKraken`. Then, select the organization from your Azure DevOps account.
 
-<img src="/wp-content/uploads/gkc-azure-integration-org.png" srcset="/wp-content/uploads/gkc-azure-integration-org@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/select-azure-organization-2025.png" srcset="/wp-content/uploads/select-azure-organization-2025@2x.png" class="help-center-img img-bordered">
 
 You can connect using a Password Access Token too. Enter your _Host Domain_ then click the <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Generate a token on Azure DevOps</span></button>
 
-<img src="/wp-content/uploads/gkc-azure-devops-token.png" srcset="/wp-content/uploads/gkc-azure-devops-token@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/generate-token-azure-devops-2025.png" srcset="/wp-content/uploads/generate-token-azure-devops-2025@2x.png" class="help-center-img img-bordered">
 
 This opens a web browser where you next log in with your Azure DevOps credentials and generate an access token.
 
-<img src="/wp-content/uploads/azure-devops-token.png" srcset="/wp-content/uploads/azure-devops-token@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/azure-PAT-scopes-2025.png" srcset="/wp-content/uploads/azure-PAT-scopes-2025@2x.png" class="help-center-img img-bordered">
 
 
 Copy your token to the clipboard as this is the only time you will see this token.  Paste the token into GitKraken and click on <button class='button button--success button--ui button--nolink'>Connect</button>.
 
-<img src="/wp-content/uploads/gkc-azure-devops-connect.png" srcset="/wp-content/uploads/gkc-azure-devops-connect@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/PAT-azure-added-2025.png" srcset="/wp-content/uploads/PAT-azure-added-2025@2x.png" class="help-center-img img-bordered">
 
 ### Generating an SSH Key for Azure DevOps
 GitKraken uses your local SSH Config from _SSH Defaults_ to fetch and push unless you set up a Azure DevOps-specific SSH key, or enable your local SSH Agent.
