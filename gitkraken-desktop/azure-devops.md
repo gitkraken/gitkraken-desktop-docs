@@ -14,13 +14,14 @@ GitKraken allows you to connect to Azure DevOps (formerly VSTS), which will help
 * Create repositories on Azure DevOps account including .gitignore and license
 * Automatically generate an SSH key pair and copy it to Azure DevOps
 * Clone from Azure DevOps repo list
-* Identify Azure DevOps repos with remote avatars on graph
+* Identify Azure DevOps repos with remote avatars on the Commit Graph
 * Add remotes for Azure DevOps repos
-* Create and view Pull Requests, including the option to add Reviewers.
+* Create and view Pull Requests, including the option to add Reviewers
 
 <div class='callout callout--warning'>
-    <p>Azure DevOpos integrations requires a Pro subscription tier or higher.</p>
+    <p>The Azure DevOps integration requires a <a href="https://www.gitkraken.com/pricing" target="_blank">Pro subscription</a> tier or higher.</p>
 </div>
+
 ***
 
 ## Azure DevOps Authentication
@@ -91,6 +92,6 @@ GitKraken connects to one Azure DevOps account at a time. However, with a paid G
 
 <img src="/wp-content/uploads/gkd-ado-oauth-error.png" class="img-bordered center" style="display: block; margin-left: auto; margin-right: auto;" />
 
-In order connect the Azure Devops integrations using OAuth, `Third-party application access via OAuth` will need to be enabled in Azure from `Organization Settings > Policies`. You can find more information on this setting [here](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops).
+In order connect the Azure Devops integrations using OAuth, `Third-party application access via OAuth` will need to be enabled in Azure from `Organization Settings > Policies`. You can find more information on this setting on [Microsoft's Learn Resources](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops).
 
 If enabling this setting is not possible, you can connect using a Password Access Token.
