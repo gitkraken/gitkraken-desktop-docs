@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: May 2025</kbd>
 
 GitKraken Desktop can connect to repositories hosted on most services (like TFS, AWS CodeCommit, [Google Cloud Source Repositories](/integrations/authentication/#google-cloud-source-repositories), custom service, etc), over HTTPS or SSH.
 
@@ -24,9 +25,9 @@ To clone a remote repository over HTTPS, first navigate to your hosting service 
 
 
 
-Then go to GitKraken Desktop and clone the project through <kbd><strong>File > Clone Repo</strong></kbd>.
+Then go to GitKraken Desktop and clone the project through <kbd><strong>File > Clone Repo</strong></kbd>
 
-<img src='/wp-content/uploads/clone.png' srcset='/wp-content/uploads/clone@2x.png 2x' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/clone-repository-menu-2025.png' srcset='/wp-content/uploads/clone-repository-menu-2025@2x.png 2x' class="help-center-img img-bordered">
 
 Paste the URL, hit <button class='button button--success button--ui button--nolink'>Clone the repo</button>, and then open the repo in GitKraken.
 
@@ -41,9 +42,9 @@ By default when cloning a repo using HTTPS, your remote tracking at `origin` wil
 
 Before you can clone a repo over SSH, you must first set up your SSH keys in GitKraken Desktop.
 
-Navigate to <kbd><strong>Preferences > SSH</strong></kbd>.
+Navigate to <kbd><strong>Preferences > SSH</strong></kbd>
 
-<img src="/wp-content/uploads/authentication.png" srcset="/wp-content/uploads/authentication@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/ssh-preferences-2025.png" srcset="/wp-content/uploads/ssh-preferences-2025@2x.png" class="img-bordered img-responsive center">
 
 Here you may choose an SSH key pair by browsing your file system, or let GitKraken Desktop generate a key for you (recommended). Make sure that you copy your public SSH key and paste it into your remote hosting service!
 
@@ -53,9 +54,9 @@ Once your keys are set up, you are ready to clone.
 
 To clone a remote repository over SSH, first navigate to your hosting service and copy the SSH link.
 
-Then go to GitKraken Desktop and clone the project through <em class='context-menu'>File <i class="fa fa-caret-right"></i> Clone</em>.
+Then go to GitKraken Desktop and clone the project through <em class='context-menu'>File <i class="fa fa-caret-right"></i> Clone</em>
 
-<img src='/wp-content/uploads/clone.png' srcset='/wp-content/uploads/clone@2x.png 2x' class="help-center-img img-bordered">
+<img src='/wp-content/uploads/ssh-clone-2025.png' srcset='/wp-content/uploads/ssh-clone-2025@2x.png 2x' class="help-center-img img-bordered">
 
 Paste the URL, hit <button class='button button--success button--ui button--nolink'>Clone the repo</button>, and then open the repo in GitKraken.
 
@@ -124,7 +125,7 @@ Well if it's not working 100% of the time, the most common issues are:
 
 You may tell GitKraken to forget all usernames and passwords from <kbd><strong>Preferences > General</strong></kbd>:
 
-<img src="/wp-content/uploads/forget-all.png" srcset="/wp-content/uploads/forget-all@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/forget-all-2025.png" srcset="/wp-content/uploads/forget-all-2025@2x.png" class="help-center-img img-bordered">
 
 Use this if you need the app to prompt for username or password for remote actions like push or pull.
 

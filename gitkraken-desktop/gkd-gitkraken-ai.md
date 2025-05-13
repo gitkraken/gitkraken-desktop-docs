@@ -11,7 +11,7 @@ taxonomy:
 Let the app handle the boring parts! GitKraken offers built-in AI features to fast track your code contributions.
 
 <div class='callout callout--warning'>
-    <p>GitKraken AI requires a paid GitKraken subscription.</p>
+    <p>GitKraken AI requires a <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">paid GitKraken subscription</a>.</p>
 </div>
 
 ## AI-Powered Commit Explain
@@ -161,5 +161,5 @@ Only output the final commit message — no explanations, no extra formatting.
 Additional AI-powered features are in development to help automate repetitive tasks and keep you focused on what matters. These tools are built to reduce friction while giving you full control over your development workflow.
 
 <div class='callout callout--basic'>
-    <p>More questions about Gitkraken AI? Please see our <a href="https://help.gitkraken.com/general/gitkraken-ai-faq">GitKraken AI FAQ page</a> for more details</p>
+    <p>More questions about Gitkraken AI? Please visit our <a href="https://help.gitkraken.com/general/gitkraken-ai-faq">GitKraken AI FAQ page</a> for more details.</p>
 </div>

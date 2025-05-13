@@ -19,7 +19,7 @@ GitKraken allows you to connect to Azure DevOps (formerly VSTS), which will help
 * Create and view Pull Requests, including the option to add Reviewers
 
 <div class='callout callout--warning'>
-    <p>The Azure DevOps integration requires a <a href="https://www.gitkraken.com/pricing" target="_blank">Pro subscription</a> tier or higher.</p>
+    <p>The Azure DevOps integration requires a <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">Pro subscription</a> tier or higher.</p>
 </div>
 
 ***
