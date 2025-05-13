@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: May 2025</kbd>
 
 GitKraken Desktop makes it easy to integrate with Jira Cloud and Jira Data Center.
 
@@ -20,13 +21,13 @@ GitKraken Desktop makes it easy to integrate with Jira Cloud and Jira Data Cente
 
 ### Connect Jira Integration
 
-Set up the integration from the ISSUES pane in the left panel or from <kbd><i>Preferences    <i class='fa fa-caret-right'></i>     Integrations</i></kbd>.
+Set up the integration from the ISSUES pane in the Left Panel or from <kbd><i>Preferences    <i class='fa fa-caret-right'></i>     Integrations</i></kbd>. If you do not see the ISSUES pane, right-click on any Left Panel header to access the context menu and check the option for Issues.
 
-<img src="/wp-content/uploads/connect-jira-integration.png" srcset="/wp-content/uploads/connect-jira-integration@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connect-jira-issues-2025.png" srcset="/wp-content/uploads/connect-jira-issues-2025@2x.png" class="help-center-img img-bordered">
 
 You will then be prompted by an Atlassian page to allow GitKraken Desktop to connect to your Jira account. Hit <em>Accept</em> to proceed.
 
-<img src="/wp-content/uploads/atlassian-jira-integration.png" srcset="/wp-content/uploads/atlassian-jira-integration@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connect-atlassian-2025.png" srcset="/wp-content/uploads/connect-atlassian-2025@2x.png" class="help-center-img img-bordered">
 
 Alternatively, you may copy the token from the _Success_ page and paste it into the Jira Cloud integration page inside GitKraken Desktop.
 
@@ -34,13 +35,13 @@ Alternatively, you may copy the token from the _Success_ page and paste it into 
 
 ### Preview Jira Issues
 
-Once connected, your Jira issues will start to appear in the left panel. The app will default to a _My Issues_ filter which will show issues assigned to you.
+Once connected, your Jira issues will start to appear in the Left Panel. The app will default to a _My Issues_ filter which will show issues assigned to you.
 
-<img src="/wp-content/uploads/issue-list-jira-integration.png" srcset="/wp-content/uploads/issue-list-jira-integration@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/preview-jira-issues-2025.png" srcset="/wp-content/uploads/preview-jira-issues-2025@2x.png" class="help-center-img img-bordered">
 
 Hover over any issue to get a preview of the issue Title, Description, Status, Assignee, and Reporter.
 
-<img src="/wp-content/uploads/view-issue-jira-integration.png" srcset="/wp-content/uploads/view-issue-jira-integration@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/hover-issue-2025.png" srcset="/wp-content/uploads/hover-issue-2025@2x.png" class="help-center-img img-bordered">
 
 ***
 
@@ -48,7 +49,7 @@ Hover over any issue to get a preview of the issue Title, Description, Status, A
 
 Click to select an issue to view the issue details.
 
-<img src="/wp-content/uploads/issue-details-jira-integration.gif" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/jira-issue-view.png" srcset="/wp-content/uploads/jira-issue-view@2x.png" class="help-center-img img-bordered">
 
 Here you may view and edit:
 
@@ -63,9 +64,9 @@ Any changes made here will be reflected in your Jira board.
 
 ### Create New Jira Issue
 
-From the left panel, click the <button class='button button--success button--ui button--nolink'>+</button> icon to add a new Jira issue.
+From the Left Panel, click the <button class='button button--success button--ui button--nolink'>+</button> icon to add a new Jira issue.
 
-<img src="/wp-content/uploads/create-issue-jira-integration.gif" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/create-jira-issue-2025.png" srcset="/wp-content/uploads/create-jira-issue-2025@2x.png" class="help-center-img img-bordered">
 
 Your new issue will automatically sync with your Jira project.
 
@@ -75,7 +76,7 @@ Your new issue will automatically sync with your Jira project.
 
 You may create filters to view the issues you need. Atlassian uses JQL syntax for filters, and the integration will help you auto-complete your filter fields.
 
-<img src="/wp-content/uploads/create-filter-jira-integration.png" srcset="/wp-content/uploads/create-filter-jira-integration@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/create-jira-filter-2025.png" srcset="/wp-content/uploads/create-jira-filter-2025@2x.png" class="help-center-img img-bordered">
 
 However for more details about how to write your JQL filters, please refer to the [Get started with Advanced Search and JQL](https://www.atlassian.com/software/jira/guides/expand-jira/jql#visualize-results) guide by Atlassian.
 
@@ -97,7 +98,7 @@ From here, it should be possible to configure triggers on the Jira side for chan
 
 Click the <kbd> <i class="fa fa-ellipsis-v"></i> </kbd> icon to copy the issue link or view the item directly in Jira.
 
-<img src="/wp-content/uploads/view-issue-in-jira.png" srcset="/wp-content/uploads/view-issue-in-jira@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/view-jira-issue-2025.png" srcset="/wp-content/uploads/view-jira-issue-2025@2x.png" class="help-center-img img-bordered">
 
 ### Git Integration for Jira
 
