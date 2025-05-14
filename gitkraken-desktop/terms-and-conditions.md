@@ -18,7 +18,7 @@ You can always reach out to us by using the [Contact support](https://help.gitkr
 
 - Support requests for GitKraken Desktop are to be submitted at [Contact Support](https://help.gitkraken.com/gitkraken-desktop/contact-support/). Users submitting tickets interact primarily through emails, though other communication services, such as phone calls and screen share services, might be used to deliver Support Services.
 
-- The following product plans are guaranteed support: Pro, Advanced, Business, and Enterprise. Enterprise encompasses cloud, on-premise server, and on-premise serverless plans. 
+- The following product plans are guaranteed support: Pro, Advanced, Business, and Enterprise. Enterprise encompasses Cloud, On-Premise Server, and On-Premise Serverless plans. 
 
 - Support Hours are 10:00 am to 10:00 pm, Monday to Friday, UTC. While users can submit support requests anytime, responses to requests and interactions with support are provided during Support Hours only. Below are the response times for each of our Plans during support hours.
 
@@ -28,7 +28,7 @@ You can always reach out to us by using the [Contact support](https://help.gitkr
 
 - While we try to get to everyone who reaches out, a response is not guaranteed to all users. This includes any users who are on Student and Community plans. We encourage all users to engage in our community and utilize our self service resources. Additional Resources
 
-- GitKraken Desktop is available for Windows, Mac, and Linux systems. The current supported versions are on our how-to-install page.
+- GitKraken Desktop is available for Windows, Mac, and Linux systems. The current supported versions are on our [how-to-install](/gitkraken-desktop/how-to-install/) page.
 
 ### Support Period
  

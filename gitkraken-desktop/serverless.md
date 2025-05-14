@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: May 2025</kbd>
 
 GitKraken Desktop On-Premise Serverless (also known as *GitKraken Stand-Alone* or simply *GitKraken Serverless*) is built for teams and enterprises who work in a disconnected development environment. You get most of the same core <a href="https://www.gitkraken.com/git-client" target=_blank>GitKraken features</a>, along with these additional benefits:
 
@@ -13,7 +14,7 @@ GitKraken Desktop On-Premise Serverless (also known as *GitKraken Stand-Alone* o
 - No account creation required
 - No server installation
 
-<img src="/wp-content/uploads/standalone-glory.png" srcset="/wp-content/uploads/standalone-glory@2x.png 2x" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/serverless-example-2025.png" srcset="/wp-content/uploads/serverless-example-2025@2x.png 2x" class="img-responsive center img-bordered">
 <div class='callout callout--warning'>
     <p>Gitkraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from our normal subscriptions. If you would like to purchase these products, please see our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?_gl=1*vtr4xk*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmv98H0EKgytPnuCPuTqdL2vy4GQaCsizBMO9m8mz2n1hMMXO3AAw7YaAiyKEALw_wcB?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
 </div>
@@ -120,7 +121,7 @@ If you do not have the license, please contact your GitKraken administrator. If 
 
 Once the license file is applied, you are ready to get crackin'!
 
-<img src="/wp-content/uploads/standalone.png" srcset="/wp-content/uploads/standalone@2x.png 2x" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/serverless-2025.png" srcset="/wp-content/uploads/serverless-2025@2x.png 2x" class="img-responsive center img-bordered">
 
 #### License.dat Location
 
@@ -152,4 +153,4 @@ You can also place your license file into specific directory locations for GitKr
 
 If your license has expired, you can replace your license file in one of the above mentioned locations or manually provide your new license file. To manually update the file in the client, select the text `Licensed to [Your Organization] for [number] users` in the bottom left and then select `Update License`.
 
-<img src="/wp-content/uploads/update-license-file.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/serverless-license-2025.png" srcset='/wp-content/uploads/serverless-license-2025@2x.png 2x' class="img-responsive center img-bordered">
