@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: May 2025</kbd>
 
 GitKraken Desktop makes it easy to integrate with Jira Cloud and Jira Data Center.
 
@@ -14,28 +15,28 @@ GitKraken Desktop makes it easy to integrate with Jira Cloud and Jira Data Cente
 </div>
 
 <div class='callout callout--warning'>
-    <p>This Feature is only available for Advanced subscription tiers or higher</p>
+    <p>This integration is only available for the <a href="https://www.gitkraken.com/pricing" target="_blank">Advanced subscriptions tier</a> or higher.</p>
 </div>
 
-<div class='callout callout--warning'>
-    <p>The Jira Data Center integration requires version 8.4 or newer to function.</p>
+<div class='callout callout--basic'>
+    <p>The Jira Data Center integration requires version 8.4 or newer.</p>
 </div>
 
 ***
 
 ### Connect Jira Data Center Integration
 
-Set up the integration from the ISSUES pane in the left panel or from <kbd><i>Preferences    <i class='fa fa-caret-right'></i>     Integrations</i></kbd>.
+Set up the integration from the ISSUES pane in the Left Panel or from <kbd><i>Preferences    <i class='fa fa-caret-right'></i>     Integrations</i></kbd>. If you do not see the ISSUES pane, right-click on any Left Panel header to access the context menu and check the option for Issues.
 
-<img src="/wp-content/uploads/choose-boards-jira-server-integration.png" srcset="/wp-content/uploads/choose-boards-jira-server-integration@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connect-jira-dc-issues-2025.png" srcset="/wp-content/uploads/connect-jira-dc-issues-2025@2x.png" class="help-center-img img-bordered">
 
 Enter the Host Domain URL and a Personal Access Token generated from Jira Data Center.
 
-<img src="/wp-content/uploads/connect-jira-server-integration-1.png" srcset="/wp-content/uploads/connect-jira-server-integration-1@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connect-jira-dc-2025.png" srcset="/wp-content/uploads/connect-jira-dc-2025@2x.png" class="help-center-img img-bordered">
 
 With a successful network connection to your Jira Data Center instance, the app will connect.
 
-<img src="/wp-content/uploads/connected-jira-integration.png" srcset="/wp-content/uploads/connected-jira-integration@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connected-jira-dc-2025.png" srcset="/wp-content/uploads/connected-jira-dc-2025@2x.png" class="help-center-img img-bordered">
 
 <div class='callout callout--warning'>
   <p><strong>Note:</strong> Some SSO (single sign on) configurations are not supported for the Jira Data Center integration at this time.</p>
