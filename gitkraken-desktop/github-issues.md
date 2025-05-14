@@ -7,23 +7,23 @@ taxonomy:
 
 ---
 
+<kbd>Last updated: May 2025</kbd>
+
 GitKraken Desktop makes it easy to integrate with GitHub Issues.
 
 <div class='callout callout--basic'>
-    <p>The GitHub Issues integration is restricted to Public repositories only for Community users. To unlock all features for the GitHub Issues integration, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken"> paid GitKraken license </a>. </p>
+    <p>The GitHub Issues integration is restricted to Public repositories only for Community users. To unlock all features for the GitHub Issues integration, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken"> paid GitKraken license</a>.</p>
 </div>
 
 ### Connect GitHub Integration
 
-The GitHub integration and GitHub Issues integration share the same connection. You can Set up the integration from the ISSUES pane in the left panel or from <kbd><i>Preferences   <i class='fa fa-caret-right'></i>   Integrations</i></kbd>.
+The GitHub integration and GitHub Issues integration share the same connection. You can Set up the integration from the ISSUES pane in the Left Panel or from <kbd><i>Preferences   <i class='fa fa-caret-right'></i>   Integrations</i></kbd>.
 
-<img src="/wp-content/uploads/connect-github-issues.png" srcset="/wp-content/uploads/connect-github-issues@2x.png" class="help-center-img img-bordered">
-
-<img src='/wp-content/uploads/preferences.png' class='center img-bordered'>
+<img src="/wp-content/uploads/connect-github-issues-2025.png" srcset="/wp-content/uploads/connect-github-issues-2025@2x.png" class="help-center-img img-bordered">
 
 From the Integrations window, select _GitHub.com_ and then hit the <button class='button button--success button--ui button--nolink'>Connect to GitHub</button> button.
 
-<img src="/wp-content/uploads/preferences-authentication.png" srcset="/wp-content/uploads/preferences-authentication@2x.png 2x" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/connect-github-2025.png" srcset="/wp-content/uploads/connect-github-2025@2x.png 2x" class="img-responsive center img-bordered">
 
 This will open your default web browser where you can click <button class='button button--success button--ui button--nolink'>Continue authorization</button> and then log in with your GitHub credentials.
 
@@ -34,9 +34,9 @@ You'll then see a success message below and the connection will be active in Git
 
 ### Preview GitHub Issues
 
-Once connected, your GitHub issues will start to appear in the left panel. You will initally see  _My Open Issues_ and _All Open Issues_ filters by default. You can edit or remove these as needed.
+Once connected, your GitHub issues will start to appear in the Left Panel. You will initally see  _My Open Issues_ and _All Open Issues_ filters by default. You can edit or remove these as needed.
 
-<img src="/wp-content/uploads/issues-panel-github-issues.png" srcset="/wp-content/uploads/issues-panel-github-issues@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/github-issues-left-panel-2025.png" srcset="/wp-content/uploads/github-issues-left-panel-2025@2x.png" class="help-center-img img-bordered">
 
 Hover over any issue to get a preview of the issue Title, Description, Status, Labels, Assignees and Reporter.
 
@@ -52,7 +52,7 @@ Here any edits made here will be reflected in your GitHub issues.
 
 ### Create New GitHub Issue
 
-From the left panel, click the <button class='button button--success button--ui button--nolink'>+</button> icon to add a new GitHub issue.
+From the Left Panel, click the <button class='button button--success button--ui button--nolink'>+</button> icon to add a new GitHub issue.
 
 <img src="/wp-content/uploads/new-issue-github-issues.png" srcset="/wp-content/uploads/new-issue-github-issues@2x.png" class="help-center-img img-bordered">
 
