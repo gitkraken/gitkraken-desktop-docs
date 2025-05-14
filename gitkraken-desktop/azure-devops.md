@@ -1,5 +1,5 @@
 ---
-title: Azure DevOps Integration
+title: GitKraken Desktop & Azure DevOps Integration
 description: Integrate GitKraken with your Azure DevOps (formerly VSTS) repository by following these steps.
 taxonomy:
     category: gitkraken-desktop

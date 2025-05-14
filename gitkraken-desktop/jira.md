@@ -1,6 +1,6 @@
 ---
 
-title: GitKraken Desktop and Jira Issues Integration
+title: GitKraken Desktop & Jira Issues Integration
 description: Learn how to access Jira Issues from GitKraken Desktop
 taxonomy:
     category: gitkraken-desktop

@@ -1,6 +1,6 @@
 ---
 
-title: GitKraken Desktop Bitbucket Integration
+title: GitKraken Desktop & Bitbucket Integration
 description: Integrate GitKraken with your Bitbucket repository by following these steps.
 taxonomy:
     category: gitkraken-desktop
