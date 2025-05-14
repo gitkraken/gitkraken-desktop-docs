@@ -23,7 +23,7 @@ To use this integration, you first need to:
 
 ### Open File Diff in Jira from GitKraken
 
-Once connected to a Jira Project, the <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Open in Jira</span></button> button will become available from the file diff view.
+Once connected to a Jira Project, the <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Open in Jira</span></button> button will become available from the [file diff view](/gitkraken-desktop/diff/).
 
 
 <img src="/wp-content/uploads/open-in-jira-2025.png" srcset="/wp-content/uploads/open-in-jira-2025@2x.png" class="help-center-img img-bordered">
