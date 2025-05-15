@@ -40,7 +40,7 @@ You can double click any existing workflow to be taken to view the code, make ch
 
 ### Delete Workflow
 
-You can quickly delete workflows by right-clicking on them and selecting `Delete-Workflow`.
+You can quickly delete workflows by right-clicking on them and selecting `Delete Workflow`.
 
 <img src='/wp-content/uploads/delete-github-action-2025.png' srcset='/wp-content/uploads/delete-github-action-2025@2x.png 2x' class="help-center-img img-bordered" />
 
