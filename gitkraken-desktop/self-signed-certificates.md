@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: April 2025</kbd>
 
 GitKraken's remote hosting platform integrations may require users to have a certificate in place. Follow the instructions below to add a certifiate to your local certificate store.
 
@@ -121,7 +122,6 @@ You may also recieve additional information about why the certificate is detecte
 These will likely require the admin of the remote server to update the indicated field(s) and issue a new certificate. In this example a *Server Alternate Name (SAN)* is missing or incorrect.
 
 ---
-<kbd>Last updated: April 2025</kbd>
 
 ### Operating system guides
 
