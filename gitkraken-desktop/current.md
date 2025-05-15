@@ -15,6 +15,19 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 ***
 
+<a id="v11-1-1"></a>
+## Version 11.1.1
+<kbd>Tuesday, May 15th, 2025</kbd>
+
+_"We fixed launching VS Code from GitKraken Desktop! Sorry it took so long; we were trying to figure out how to launch VS Code without GitKraken Desktop."_
+
+### Bug Fixes 🐛
+ - Fixed a regression in the last release where opening repositories/files in an external editor caused an "unknown error".
+ - Experimental Feature - Git Executable:
+    - When discarding all changes fails, error details will be provided in the error message.
+
+***
+
 <a id="v11-1-0"></a>
 ## Version 11.1.0
 <kbd>Tuesday, May 6th, 2025</kbd>
