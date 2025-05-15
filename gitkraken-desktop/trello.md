@@ -49,7 +49,7 @@ Hover over any card to get a preview of the card Title, Description, List, Label
 
 Click to select a card to view the card details.
 
-<img src="/wp-content/uploads/trello-card-view-2025.gif" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/trello-card-details-view-2025.png" srcset="/wp-content/uploads/trello-card-details-view-2025@2x.png" class="help-center-img img-bordered">
 
 Here you may view and edit:
 
