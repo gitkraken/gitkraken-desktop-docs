@@ -6,6 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: May 2025</kbd>
 
 ## What is Git LFS and how does it work?
 
@@ -46,7 +47,7 @@ To enable LFS in GitKraken Desktop, you must first install Git and LFS. The mini
 * GitKraken Desktop version 7.0.0+
 
 <div class='callout callout--success'>
-    <p><strong>Note:</strong> Usually GitKraken Desktopdoes not require Git CLI to perform its operations. However, since we do utilize Git CLI to interact with LFS files you will need to have <a href="https://git-scm.com/" target="_blank">Git installed</a> on your machine if you plan to use LFS. </p>
+    <p><strong>Note:</strong> Usually GitKraken Desktop does not require Git CLI to perform its operations. However, since we do utilize Git CLI to interact with LFS files you will need to have <a href="https://git-scm.com/" target="_blank">Git installed</a> on your machine if you plan to use LFS. </p>
 </div>
 
 ### Verify Git and LFS Versions
@@ -104,11 +105,11 @@ Search `Env` in the start menu.
 
 Next navigate to `Environmental Variables...` <i class='fa fa-caret-right'></i> Double click **Path** <i class='fa fa-caret-right'></i> Click `New` to add the paths.
 
-<img src="/wp-content/uploads/lfs-AddPathVariable-1.png" srcset="/wp-content/uploads/lfs-AddPathVariable@2x-1.png 2x" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/lfs-add-env-variable-image1-2025.png" srcset="/wp-content/uploads/lfs-add-env-variable-image1-2025@2x.png 2x" class="help-center-img img-bordered">
 
-<img src="/wp-content/uploads/lfs-AddPathVariable-2.png" srcset="/wp-content/uploads/lfs-AddPathVariable@2x-2.png 2x" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/lfs-add-env-variable-image2-2025.png" srcset="/wp-content/uploads/lfs-add-env-variable-image2-2025@2x.png 2x" class="help-center-img img-bordered">
 
-<img src="/wp-content/uploads/lfs-AddPathVariable-3.png" srcset="/wp-content/uploads/lfs-AddPathVariable@2x-3.png 2x" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/lfs-add-env-variable-image3-2025.png" srcset="/wp-content/uploads/lfs-add-env-variable-image3-2025@2x.png 2x" class="help-center-img img-bordered">
 
 You will likely need to add both git and git LFS (LFS can have multiple paths, you would want to add them all).
 
@@ -116,21 +117,17 @@ You will likely need to add both git and git LFS (LFS can have multiple paths, y
 
 ## Initializing LFS on an existing repo
 
-Navigate to your Preferences and you should see the LFS tab in the left panel:
+With the target repo open in GitKraken Desktop, navigate to your Preferences and you should see the LFS tab in the left navigation when you scroll down. Click to initialize LFS on the repo:
 
-<img src='/wp-content/uploads/lfs-tab.png' srcset='/wp-content/uploads/lfs-tab@2x.png 2x' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/lfs-preferences-2025.png' srcset='/wp-content/uploads/lfs-preferences-2025@2x.png 2x' class="help-center-img img-bordered" />
 
 <div class='callout callout--warning'>
     <p><strong>Note:</strong> If you do not see the LFS tab, make sure you have a GitKraken Desktop v3.0.0+ installed and you meet these <a href="/gitkraken-desktop/git-lfs/#git-lfs-requirements">System Requirements</a>.</p>
 </div>
 
-Click to initialize LFS on the repo:
-
-<img src='/wp-content/uploads/init-lfs.png' srcset='/wp-content/uploads/init-lfs@2x.png 2x' class="help-center-img img-bordered" />
-
 Exit preferences to access two new things: an LFS button in the toolbar and an unstaged change to the `.gitattributes` file that needs to be committed.
 
-<img src='/wp-content/uploads/lfs-toolbar.png' srcset='/wp-content/uploads/lfs-toolbar@2x.png 2x' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/lfs-gitattributes-2025.png' srcset='/wp-content/uploads/lfs-gitattributes-2025@2x.png 2x' class="help-center-img img-bordered" />
 
 Stage and commit the changes to the `.gitattributes` file to finish the LFS initialization.
 
@@ -142,29 +139,29 @@ The re-added files should now follow your new LFS tracking pattern.
 
 When you initialize a new repository, you will have the option to _Initialize with LFS_.
 
-<img src='/wp-content/uploads/init-with-lfs.png' srcset='/wp-content/uploads/init-with-lfs@2x.png 2x' class="help-center-img img-bordered"/>
+<img src='/wp-content/uploads/init-with-lfs-2025.png' srcset='/wp-content/uploads/init-with-lfs-2025@2x.png 2x' class="help-center-img img-bordered"/>
 
 ## Configuring LFS
 
 Once LFS is initialized on a repository, add tracking patterns to the `.gitattributes` file.  These tracking patterns will tell LFS which files to monitor in your repository.
 
-<img src='/wp-content/uploads/tracking-patterns-lfs.png' srcset='/wp-content/uploads/tracking-patterns-lfs@2x.png 2x' class="help-center-img img-bordered"/>
+<img src='/wp-content/uploads/lfs-tracking-patterns-2025.png' srcset='/wp-content/uploads/lfs-tracking-patterns-2025@2x.png 2x' class="help-center-img img-bordered"/>
 
 Access the `.gitattributes` file by going to <kbd><strong>Preferences > LFS</strong></kbd> or by editing the `.gitattributes` file directly in your text editor.
 
-As another option, add tracking patterns to the repository’s `.gitattributes` file through the Unstage pane in the right panel.
+As another option, add tracking patterns to the repository’s `.gitattributes` file through the Unstage pane in the Commit Panel.
 
 Select the WIP node, right click the file you wish to be tracked by LFS, and select the desired option under LFS.
 
-<img src='/wp-content/uploads/context-menu-lfs.png' srcset='/wp-content/uploads/context-menu-lfs@2x.png 2x' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/add-tracked-file-lfs-2025.png' srcset='/wp-content/uploads/add-tracked-file-lfs-2025@2x.png 2x' class="help-center-img img-bordered" />
 
 <div class='callout callout--success'>
-    <p>Note: GitKraken Desktop will automatically perform an LFS pull after cloning a repo or initializing a submodule with LFS </p>
+    <p>Note: GitKraken Desktop will automatically perform an LFS pull after cloning a repo or initializing a submodule with LFS.</p>
 </div>
 
 ---
 
-When a file matches a pattern that is being tracked by LFS, an LFS tag appears next to the file name in the right panel.
+When a file matches a pattern that is being tracked by LFS, an LFS tag appears next to the file name in the Commit Panel.
 
 <img src='/wp-content/uploads/lfs-tag.png' srcset='/wp-content/uploads/lfs-tag@2x.png 2x' class="help-center-img img-bordered" />
 
