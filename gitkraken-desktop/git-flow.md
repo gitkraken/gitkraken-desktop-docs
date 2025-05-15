@@ -68,9 +68,10 @@ Hotfixes are the same as Releases in Gitflow, except hotfix branches are created
 
 Hotfixes are for quickly pushing out a change to your production branch.  Common examples of hotfixes are fixing typos, and bugs that need to be pushed out as soon as possible to production.
 
+<img src="/wp-content/uploads/finish-hotfix-2025.png" srcset="/wp-content/uploads/finish-hotfix-2025@2x.png" class="help-center-img img-bordered">
+
 When finishing a hotfix, GitKraken Desktop will merge the changes into both `main` and `develop`.
 
-<img src="/wp-content/uploads//finish-hotfix.gif" class="help-center-img img-bordered">
 
 ### Tag
 
@@ -86,5 +87,5 @@ Tags can be created from the Gitflow menu, or from the command line. When creati
 
 In `Preferences > Gitflow`, you can set a tag prefix.  This prefix will be added to the tag name when creating a tag from the Gitflow menu.  For example, if you set the tag prefix to `v`, and create a tag from a `release/1.0.0` branch, GitKraken Desktop will create a tag named `v1.0.0`.
 
-<img src="/wp-content/uploads//tag-prefix.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/tag-prefix-2025.png" srcset="/wp-content/uploads/tag-prefix-2025.png" class="help-center-img img-bordered">
 
