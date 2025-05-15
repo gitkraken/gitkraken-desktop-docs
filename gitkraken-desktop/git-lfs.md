@@ -20,7 +20,7 @@ Git LFS allows the user to track binary files directly or by extension. After th
 
 When viewing the diff of tracked LFS files in GitKraken Desktop, you will see a versioned URL, a generated SHA, and a size pertaining to the size of the original contents of the file:
 
-<img src='/wp-content/uploads/lfs-ref.png' srcset='/wp-content/uploads/lfs-ref@2x.png 2x' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/lfs-ref-2025.png' srcset='/wp-content/uploads/lfs-ref-2025@2x.png 2x' class="help-center-img img-bordered" />
 
 Git LFS stores the binary file content on a custom server or via GitHub, GitLab, or BitBucket’s built-in LFS storage. To find the binary content's location, look in your repository’s `.git/lfs/objects` folder.
 
@@ -163,11 +163,11 @@ Select the WIP node, right click the file you wish to be tracked by LFS, and sel
 
 When a file matches a pattern that is being tracked by LFS, an LFS tag appears next to the file name in the Commit Panel.
 
-<img src='/wp-content/uploads/lfs-tag.png' srcset='/wp-content/uploads/lfs-tag@2x.png 2x' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/lfs-tags-2025.png' srcset='/wp-content/uploads/lfs-tags-2025@2x.png 2x' class="help-center-img img-bordered" />
 
 Clicking on the file shows the LFS reference information:
 
-<img src='/wp-content/uploads/lfs-ref.png' srcset='/wp-content/uploads/lfs-ref@2x.png 2x' class="help-center-img img-bordered"/>
+<img src='/wp-content/uploads/lfs-ref-2025.png' srcset='/wp-content/uploads/lfs-ref-2025@2x.png 2x' class="help-center-img img-bordered"/>
 
 Staging and committing LFS tracked files results in the reference files being saved to your local repo and the actual files being saved to your local LFS cache.
 
@@ -175,7 +175,7 @@ Once your repo is pushed to an LFS-capable remote, the reference files will be s
 
 Most LFS actions, such as Checkout, Fetch, Pull, and Push will happen automatically as you use the standard commands in GitKraken Desktop. However, if you want to use an LFS command in isolation, use the LFS toolbar menu:
 
- <img src='/wp-content/uploads/lfs-dropdown.png' srcset='/wp-content/uploads/lfs-dropdown@2x.png 2x' class="help-center-img img-bordered" />
+ <img src='/wp-content/uploads/lfs-actions-2025.png' srcset='/wp-content/uploads/lfs-actions-2025@2x.png 2x' class="help-center-img img-bordered" />
 
 Click the arrow on the button and select the desired command. Other than _Prune_, all of the commands are run by GitKraken Desktop via the traditional operations.
 
