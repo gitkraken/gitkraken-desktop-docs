@@ -1,11 +1,12 @@
 ---
 
-title: GitKraken Desktop GitLab Self-Managed Issues Integration
+title: GitKraken Desktop & GitLab Self-Managed Issues Integration
 description: Learn how to access GitLab Self-Managed Issues from GitKraken Desktop
 taxonomy:
     category: gitkraken-desktop
 
 ---
+<kbd>Last updated: May 2025</kbd>
 
 GitKraken Desktop makes it easy to work with your GitLab Self-Managed Issues.
 
@@ -18,12 +19,12 @@ GitKraken Desktop makes it easy to work with your GitLab Self-Managed Issues.
 ### Connect GitLab Self-Managed Integration
 
 <div class='callout callout--warning'>
-    <p>The GitLab Self-Managed Issues Integration requires GitLab Self-Managed version 13.1 or newer to function</p>
+    <p>The GitLab Self-Managed Issues Integration requires GitLab Self-Managed version 13.1 or newer.</p>
 </div>
 
-The GitLab Self-Managed integration and GitLab Self-Managed Issues integration share the same connection. You can Set up the integration from the ISSUES pane in the left panel or from <kbd><i>Preferences   <i class='fa fa-caret-right'></i>   Integrations</i></kbd>.
+The GitLab Self-Managed integration and GitLab Self-Managed Issues integration share the same connection. You can Set up the integration from the ISSUES pane in the left panel or from <kbd><i>Preferences   <i class='fa fa-caret-right'></i>   Integrations</i></kbd>
 
-Follow the instructions [here](/integrations/gitlab-self-hosted/#gitlab-self-managed-authentication) to get connected to your GitLab Self-Managed instance.
+Follow the [integration instructions](/integrations/gitlab-self-hosted/#gitlab-self-managed-authentication) to get connected to your GitLab Self-Managed instance.
 
 ***
 
