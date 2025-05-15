@@ -89,7 +89,7 @@ You can verify a commit has been signed by selecting a commit and viewing the Co
 
 If you hover over the badge, you will see a tooltip which displays the Signature details.
 
-<img src="/wp-content/uploads/gpg-signature-details.png" srcset="/wp-content/uploads/gpg-signature-details@2x.png 2x" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gpg-sig-details-2025.png" srcset="/wp-content/uploads/gpg-sig-details-2025@2x.png 2x" class="help-center-img img-bordered">
 
 Below is a list of possible signature codes and what they mean:
 
