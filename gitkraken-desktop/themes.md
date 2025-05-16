@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last updated: March 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/_TMprlLc740?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -18,7 +18,10 @@ You can set your GitKraken Desktop theme by navigating to  <i class="fas fa-cog"
 
 This can also be done quickly from the <i  class="fa fa-magic" style="transform: rotate(225deg)"></i> [Command Palette](/start-here/command-palette/) (shortcut <kbd>&#8984;</kbd><kbd>P</kbd> or <kbd>Ctrl</kbd><kbd>P</kbd>), typing `switch theme`, and then the name of the theme.
 
-<img src="/wp-content/uploads/theme-switch.gif" class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src="/wp-content/uploads/theme-switch.gif" class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Switch themes from the Command Palette.</figcaption>
+</figure>
 
 ### Sync with System
 

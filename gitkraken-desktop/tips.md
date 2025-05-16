@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
 Here's the TLDR of the best features in GitKraken Desktop.
 
@@ -16,7 +16,10 @@ Here's the TLDR of the best features in GitKraken Desktop.
 
 If you have personal projects you wish to separate from work repos–or if you need to connect to multiple instances of GitHub, GitLab, Bitbucket, etc.–then set up [Profiles](/start-here/profiles).
 
-<img src="/wp-content/uploads/profile-example-2025.png" class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src="/wp-content/uploads/profile-example-2025.png" class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Each profile can save a unique integration connection.</figcaption>
+</figure>
 
 Each profile stores different app preferences and Git config information, which makes it easier to switch context.
 
@@ -30,7 +33,10 @@ Each profile stores different app preferences and Git config information, which 
 
 Work like the pros, and use the [Command Palette](/start-here/command-palette) to quickly access GitKraken Desktop actions.
 
-<img src="/wp-content/uploads/command-palette-2025.gif" srcset="/wp-content/uploads/command-palette-2025.gif" class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src="/wp-content/uploads/command-palette-2025.gif" srcset="/wp-content/uploads/command-palette-2025.gif" class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Use the Command Palette to open the current repo in VS Code and more.</figcaption>
+</figure>
 
 As you type, the Command Palette will find the most relevant commands, allowing you to perform many actions without clicking. Here are a few examples:
 
@@ -81,7 +87,10 @@ For fast fingers, check out our [keyboard shortcuts](/start-here/keyboard-shortc
 
 To cherry pick multiple commits, you can select multiple commits by holding down the <kbd>Cmd/Ctrl</kbd> or <kbd>Shift</kbd> key and clicking on the desired commits. Then, right-click on one of the selected commits and choose the "Cherry pick X commits" option.
 
-<img src='/wp-content/uploads/multi-cherry-pick-menu.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/multi-cherry-pick-menu.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Select multiple commits from the Commit Graph to access multi-cherry pick.</figcaption>
+</figure>
 
 From here, you can decide to reorder, squash, drop, or rename commits before completing the cherry pick. Learn more about [Interactive Cherry Pick](/gitkraken-desktop/cherrypick/)
 
@@ -91,7 +100,10 @@ From here, you can decide to reorder, squash, drop, or rename commits before com
 
 GitKraken Desktop allows you to authenticate with GitHub, GitLab, Bitbucket, and Azure DevOps (previously VSTS), which will help you find repos when cloning or adding your remotes.
 
-<img src="/wp-content/uploads/authentication-2025.png" class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src="/wp-content/uploads/authentication-2025.png" class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Connect your remote hosting service to get more bang for your buck.</figcaption>
+</figure>
 
 Availability of integrations can vary based on your GitKraken subscription.
 - Community plan users are limited to public repos only for GitHub.com, GitLab.com, and Bitbucket Cloud
@@ -144,12 +156,18 @@ File History and File Blame information display in the same view.
 
 To access either option, first click on a commit in the graph. Then right click a file to access File History or File Blame.
 
-<img src='/wp-content/uploads/file-history-content-menu-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/file-history-content-menu-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Right-click a file to get access to its History or Blame.</figcaption>
+</figure>
 
 
 File History shows that file's commit history on the left.
 
-<img src='/wp-content/uploads/file-diff-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/file-diff-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Review the list and diffs of all commits made to this file.</figcaption>
+</figure>
 
 Use the top toggle button to switch between Diff View, which shows the selected commit's changes to the file, and the File View, which shows the file's state at that commit, including the blame info.
 
@@ -171,7 +189,10 @@ You can set your default terminal from <em class="context-menu">Preferences <i c
 
 It's simple, but easy to miss. Hover over any of the colored lines to drag and drop the graph.
 
-<img src='/wp-content/uploads/graph-drag-2025.gif' class='figure img-floated img-floated--right'>
+<figure class='figure center'>
+    <img src='/wp-content/uploads/graph-drag-2025.gif' class='figure img-floated img-floated--right'>
+    <figcaption style="text-align: center; color: #888;">Resize the graph to your liking.</figcaption>
+</figure>
 
 
 Resize and marvel at the colors of the rainbow.
