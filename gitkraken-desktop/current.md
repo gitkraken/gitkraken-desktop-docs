@@ -40,7 +40,7 @@ _"More Jarvis. Less Skynet."_
 
 ### New ✨
  - **[GitKraken AI:](/gitkraken-desktop/gkd-gitkraken-ai/)** New AI-powered capabilities to accelerate your development workflow, with expanded support for additional providers and environments.
-   - Pull Request Title and Description Generation
+   - [Pull Request Title and Description Generation](/gitkraken-desktop/gkd-gitkraken-ai/#ai-generated-pull-request-title-and-description)
      - Generate titles and descriptions for Pull Requests based on the commits of the PR in just a click.
      - When creating a Pull Request, click `Generate title and description` to automatically populate the fields using GitKraken AI.
      - If you have a Pull Request template selected, GitKraken AI will attempt to generate content that adheres to the selected template.
@@ -70,8 +70,8 @@ _"More Jarvis. Less Skynet."_
  - Upgraded Electron to v34.
 
 ### Bug Fixes 🐛
- - The Repository Management tab now displays GitLab workspaces with more than 25 repos.
- - Fixed an issue in the graph where branch labels wouldn't render properly.
+ - The [Repository Management tab](/gitkraken-desktop/open-clone-init/#repository-management) now displays GitLab workspaces with more than 25 repos.
+ - Fixed an issue in the Commit Graph where branch labels wouldn't render properly.
  - Fixed several styling issues across the application.
  - Experimental Feature - Git Executable:
    - Fixed an issue where Pull failed with files having the same name but different casing in a case-insensitive file system.
