@@ -7,7 +7,7 @@ taxonomy:
 
 ---
 
-<kbd>Last updated: March 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
 This Getting Started Guide uses a basic workflow to provide an overview of GitKraken Desktop interface from cloning your repository to successfully executing Git actions.
 
@@ -68,7 +68,10 @@ The newly initialized repository created results in a default `main` branch.  Sy
     <p>Branches can be thought of as an area to silo where to commit. Its reference is specifically a moving pointer to an individual commit object.</p>
 </div>
 
-<img src='/wp-content/uploads/create-new-branch-2025.png' class='img-bordered img-responsive center'>
+<figure class='figure center'>
+    <img src='/wp-content/uploads/create-new-branch-2025.png' class='img-bordered img-responsive center'>
+    <figcaption style="text-align: center; color: #888;">Right-click  main to create a new branch.</figcaption>
+</figure>
 
 On our newly created repo, we'll branch off from `main` to silo our normal development.  To do this, right-click main on the Commit Graph and select <em class='context-menu'>Create branch here</em>.  Let's call this branch `develop` in "_enter branch name_" which is going to be an indefinite main track branch to the project.
 
@@ -85,12 +88,18 @@ In the example, the `README.md` file was created automatically to provide contex
 
 You can select _Initial Commit_ from the Commit Graph, and click `README.md` to open the built-in editor.
 
-<img src='/wp-content/uploads/open-file-2025.png' class='img-bordered img-responsive center'>
+<figure class='figure center'>
+    <img src='/wp-content/uploads/open-file-2025.png' class='img-bordered img-responsive center'>
+    <figcaption style="text-align: center; color: #888;">Click on the file name from the Commit Panel to access the Edit button.</figcaption>
+</figure>
 
 ### Staging and Committing
 Say you made changes to the `README.md` file. When selecting the _//WIP_ node, there will now be pending changes to `README.md` in the staging panel under _Unstaged Files_.
 
-<img src='/wp-content/uploads/unstage-2025.png' class='img-bordered img-responsive center'>
+<figure class='figure center'>
+    <img src='/wp-content/uploads/unstage-2025.png' class='img-bordered img-responsive center'>
+    <figcaption style="text-align: center; color: #888;">Click the WIP node to see the list of pending changes.</figcaption>
+</figure>
 
 Next, let's move these changes into the _Staged Files_ section by selecting the green <button class='button button--success button--ui button--nolink'>Stage all changes</button> button.
 
@@ -109,7 +118,10 @@ Now that our `develop` branch is up to date, we want to roll out these changes i
 
 From the Commit Graph we see that `develop` is ahead of `main` by exactly 1 commit.  
 
-<img src='/wp-content/uploads/graph-commit-2025.png' class='img-bordered img-responsive center'>
+<figure class='figure center'>
+    <img src='/wp-content/uploads/graph-commit-2025.png' class='img-bordered img-responsive center'>
+    <figcaption style="text-align: center; color: #888;">Develop is ahead of main by 1 commit.</figcaption>
+</figure>
 
 In order to add this commit into the original branch, we will merge `develop` back into `main`.  This will take all of the changes introduced since the last commit and play them on this branch by performing a new commit (called a merge commit) with the changes.
 
@@ -117,7 +129,10 @@ There are a few ways to perform the merge action in GitKraken Desktop, but perha
 
 In the Commit Graph, you can see we have things in a new branch, `develop`, that we want in our source branch, `main`. Like any sensible person, we would only have to pick up `develop` and throw it at `main` right? Right! Simply drag `develop` and drop it on `main` to get the merge option.
 
-<img src='/wp-content/uploads/drag-and-drop-2025.png' class='img-bordered img-responsive center'>
+<figure class='figure center'>
+    <img src='/wp-content/uploads/drag-and-drop-2025.png' class='img-bordered img-responsive center'>
+    <figcaption style="text-align: center; color: #888;">Drag and drop develop onto main to access the Merge action.</figcaption>
+</figure>
 
 Alternatively the same merge can be performed through right click and other means.  Revisit and learn more about merging and other options available through [Branching and Merging](/working-with-repositories/branching-and-merging).
 

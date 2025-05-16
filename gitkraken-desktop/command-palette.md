@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last updated: February 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
 The _Command Palette_ is a faster way to access GitKraken Desktop's actions.
 
@@ -19,9 +19,10 @@ The _Command Palette_ is a faster way to access GitKraken Desktop's actions.
 
 Use the _Command Palette_ to open repositories, history for files in the current repository, and settings.
 
-
-<img src="/wp-content/uploads/command-palette-example.gif" srcset="/wp-content/uploads/command-palette-example.gif" class="help-center-img img-bordered">
-
+<figure class='figure center'>
+    <img src="/wp-content/uploads/command-palette-example.gif" srcset="/wp-content/uploads/command-palette-example.gif" class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Start typing to filter commands, files, repos, and more.</figcaption>
+</figure>
 
 ## Open Command Palette
 * Use the keyboard shortcut <kbd>&#8984;</kbd><kbd>P</kbd> or <kbd>Ctrl</kbd><kbd>P</kbd> and begin typing.

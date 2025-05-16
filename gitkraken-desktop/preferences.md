@@ -6,12 +6,14 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last updated: March 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
 Navigate to <i class="fas fa-cog"></i> <kbd><strong>Preferences</strong></kbd> to customize your GitKraken Desktop experience. Here are what each of the major sections do.
 
-
-<img src="/wp-content/uploads/preferences-2025.png" srcset="/wp-content/uploads/preferences@2x.png 2x" class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src="/wp-content/uploads/preferences-2025.png" srcset="/wp-content/uploads/preferences@2x.png 2x" class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Navigate to the gear in the top right of GitKraken Desktop.</figcaption>
+</figure>
 
 *** 
 
