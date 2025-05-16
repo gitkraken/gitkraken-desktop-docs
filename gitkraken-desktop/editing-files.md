@@ -64,7 +64,7 @@ Clicking the <button class='button button--success button--ui button--nolink'>St
 
 All files have encoding that defines how the binary should be read. 
 
-<img src="/wp-content/uploads/encoding-preferences2.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/file-encoding-diff2.png" class="help-center-img img-bordered">
 
 GitKraken Desktop expects most files to use `UTF-8` file encoding. If you are using another encoding type, you can set it at the top when editing your file or from the preferences menu.
 

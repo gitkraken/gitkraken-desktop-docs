@@ -165,6 +165,8 @@ Use the top toggle button to switch between <kbd>Diff View</kbd>, which shows th
 
 A patch, or patchfile, is a file describing changes between 2 files. Patch files can be used to distribute changes that a given user would like to make to a particular revision without codifying it onto a git server. Patches can be created from either a commit(s) or a file(s).
 
+### Create patch from file(s)
+
 To create a patch from a commit, right-click a commit and select `Create patch from commit`. You will be prompted to name the patch after.
 
 <img src='/wp-content/uploads/create-patch-2025.png' class="help-center-img img-bordered">
@@ -176,6 +178,14 @@ To create a patch from a file, right-click a file and select `Create patch from 
 You can also multi-select files or commits by holding command/ctrl or shift and clicking. You can then right-click the selected files or commits to create a patch from the selected.
 
 <img src='/wp-content/uploads/patch-from-many-files-2025.png' class="help-center-img img-bordered">
+
+### Create patch from Command Palette
+
+Click on the Command Palette icon on the toolbar, or use the keyboard shortcut <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> to launch Command Palette.
+
+<img src="/wp-content/uploads/create-patch-from-command-palette.png" class="help-center-img img-bordered">
+
+### Apply patch from Command Palette
 
 To apply a patch, use the keyboard shortcut `command/ctrl + Shift + P` or click the <i  class="fa fa-magic" style="transform: rotate(225deg)"></i> in the top right of the UI to bring up the Command Palette. Type “Apply Patch" to summon the “Apply Patch” command, and select it to open your file explorer. 
 
