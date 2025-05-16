@@ -34,9 +34,10 @@ New commits are added to the currently checked out branch. If you find yourself 
 When you create a new branch, GitKraken Desktop will automatically checkout the branch for you:
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/add-branch-2025.gif'>
-    <figcaption>Right click to create a new branch.</figcaption>
+    <img src='/wp-content/uploads/add-branch-2025.gif' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Right click to create a new branch.</figcaption>
 </figure>
+
 
 To checkout a different branch, double-click on the branch label on the Left Panel or via the Commit Graph.  Checkout is also available by right-clicking a branch.
 
