@@ -98,10 +98,10 @@ From here, you can decide to reorder, squash, drop, or rename commits before com
 
 ### 6. Integrate with GitHub, GitLab, Bitbucket, and Azure DevOps
 
-GitKraken Desktop allows you to authenticate with GitHub, GitLab, Bitbucket, and Azure DevOps (previously VSTS), which will help you find repos when cloning or adding your remotes.
+GitKraken Desktop allows you to authenticate with [GitHub, GitLab, Bitbucket, and Azure DevOps](/gitkraken-desktop/integrations/) (previously VSTS), which will help you find repos when cloning or adding your remotes.
 
 <figure class='figure center'>
-    <img src="/wp-content/uploads/authentication-2025.png" class="help-center-img img-bordered">
+    <img src="/wp-content/uploads/connect-azure-devops-2025.png" srcset="/wp-content/uploads/connect-azure-devops-2025@2x.png" class="help-center-img img-bordered">
     <figcaption style="text-align: center; color: #888;">Connect your remote hosting service to get more bang for your buck.</figcaption>
 </figure>
 
@@ -122,7 +122,7 @@ Availability of integrations can vary based on your GitKraken subscription.
 
 ### 7. Hide and Solo branches
 
-Tailor the Commit Graph to display the branches you need. Hide branches temporarily, or solo 1 branch focus it in the app.
+Tailor the Commit Graph to display the branches you need with [Hiding and Soloing](/gitkraken-desktop/hiding-and-soloing/). Hide branches temporarily, or solo 1 branch focus it in the app.
 
 <div class="flex-wrap" style="align-items: flex-start">
     <div class="flex-item">
@@ -152,7 +152,7 @@ Tailor the Commit Graph to display the branches you need. Hide branches temporar
 
 ### 8. File History and File Blame
 
-File History and File Blame information display in the same view.
+[File History and File Blame](/gitkraken-desktop/diff/#file-blame-and-history) information display in the same view.
 
 To access either option, first click on a commit in the graph. Then right click a file to access File History or File Blame.
 
@@ -175,7 +175,7 @@ Use the top toggle button to switch between Diff View, which shows the selected 
 
 ### 9. GitKraken Desktop Terminal
 
-The GitKraken Desktop terminal is a fully-featured terminal emulator that allows you to run Git commands directly from the app.
+The [GitKraken Desktop terminal](/gitkraken-desktop/terminal/) is a fully-featured terminal emulator that allows you to run Git commands directly from the app.
 Click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar.
 
 To open the current repo folder in an external terminal, go to <em class="context-menu">File <i class='fa fa-caret-right'></i> Open Terminal</em> or use the keyboard shortcuts <kbd>opt</kbd> + <kbd>T</kbd> (Mac) / <kbd>alt</kbd> + <kbd>T</kbd> (Windows + Linux). 
