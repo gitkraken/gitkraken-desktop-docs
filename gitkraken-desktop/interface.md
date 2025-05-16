@@ -125,12 +125,15 @@ In addition to Undo and Redo, the main toolbar houses common repo actions.
 
 Referred to as the Left "ref" Panel, GitKraken Desktop shows the properties below specific to your repository.
 
-* The panel and each section can be collapsed or expanded as needed. 
+* The entire panel and each section can be collapsed or expanded as needed. 
 * The panel and each section can be resized by clicking and dragging. 
 * Sections can be toggled by right-clicking a section and selecting the desired section from the context menu.
 * Sections can be maximized by double-clicking a section header.
 
-<img src='/wp-content/uploads/left-panel-resize-and-collapse.gif' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/left-panel-resize-and-collapse.gif' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Resize, collapse, or expand any part of the Left Panel.</figcaption>
+</figure>
 
 <h3>Local</h3>
 <div class="flex-wrap">
@@ -231,7 +234,10 @@ Referred to as the Left "ref" Panel, GitKraken Desktop shows the properties belo
 
 The Commit Panel is where files and changes from your working directory are staged and committed.
 
-<img src='/wp-content/uploads/commit-graph-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/commit-graph-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Previously known as the right panel, the Commit Panel shows file changes and commit details.</figcaption>
+</figure>
 
 The three parts in order of operations on the staging panel are:
 
@@ -245,7 +251,10 @@ The three parts in order of operations on the staging panel are:
 
  Also, here is a quick color guide for the file symbols:
 
-<img src='/wp-content/uploads/color-guide-2025.png' class="help-center-img img-bordered">
+ <figure class='figure center'>
+    <img src='/wp-content/uploads/color-guide-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Reference guide for different types of file changes.</figcaption>
+</figure>
 
 
 For deeper waters on staging, dive into [committing work](/working-with-commits/commits).
@@ -259,7 +268,10 @@ For deeper waters on staging, dive into [committing work](/working-with-commits/
 
 Oooo <span style='color: #0669f7;'>c</span><span style='color: #8e00c2;'>o</span><span style='color: #c517b6;'>l</span><span style='color: #d90171;'>o</span><span style='color: #f25d2e;'>r</span><span style='color: #7bd938;'>s</span>!
 
-<img src='/wp-content/uploads/commit-graph-adjust-2025.gif' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/commit-graph-adjust-2025.gif' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Drag and drop to resize the Commit Graph.</figcaption>
+</figure>
 
 The **Commit Graph** in GitKraken Desktop is the core of your repo and a representation of the [Directed Acyclic Graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (DAG).  Your commits are displayed here, along with commits from other contributors.
 
@@ -269,7 +281,10 @@ Branches and tag labels on the left side of the graph are pointers to specific c
 
 Columns can intersect through merge commits as shown in the graph legend. As also shown, multiple branches can be at the same place of a single commit and can be both local and remote.
 
-<img src='/wp-content/uploads/graph-elements.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/graph-elements.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Use this as a guide for interpreting your commit history om GitKraken Desktop.</figcaption>
+</figure>
 
 For a given vertical track, you can read from bottom to top, and right to left to see how changes are introduced into a focused branch.
 
@@ -277,13 +292,20 @@ For a given vertical track, you can read from bottom to top, and right to left t
 
 Hover over a commit to view the "ghost" branch, which is the closest branch that contains that commit. The “ghost” branch will also show when a commit is selected, and double-clicking that ghost branch will checkout the head of the referenced branch.
 
-<img src="/wp-content/uploads/ghost.gif" class="help-center-img img-bordered">
+
+<figure class='figure center'>
+    <img src="/wp-content/uploads/ghost.gif" class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Note the branches that appear on the left side of the figure with each mouse action.</figcaption>
+</figure>
 
 ### Commit highlighting
 
 When you hover over a branch, the app will highlight all commits referenced by that branch.
 
-<img src="/wp-content/uploads/Commit-highlight.png" class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src="/wp-content/uploads/Commit-highlight.png" class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Note how unrelated commits fade when you hover over a branch.</figcaption>
+</figure>
 
 Users may toggle this setting on or off from <kbd>Preferences > UI Customization</kbd>.
 
@@ -299,7 +321,10 @@ Users may toggle this setting on or off from <kbd>Preferences > UI Customization
 
 Quickly switch between multiple repositories.
 
-<img src='/wp-content/uploads/tabs-2025.gif' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/tabs-2025.gif' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Rearrange the tab order with a drag and drop.</figcaption>
+</figure>
 
 You can  add new tabs, drag & drop to rearrange, and remove tabs from the top bar. You can also use the corresponding shortcut keys <kbd>cmd</kbd>+<kbd>1-9</kbd> on Windows/Linux and <kbd>cmd</kbd>+<kbd>1-9</kbd> on mac to quickly switch between repositories.
 
@@ -310,21 +335,34 @@ You can  add new tabs, drag & drop to rearrange, and remove tabs from the top ba
 
 Tabs are saved for each profile, so you can have multiple sets of tabs that will open when you switch [profiles](/start-here/profiles/)!
 
-<img src='/wp-content/uploads/profile-tabs-2025.gif' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/profile-tabs-2025.gif' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Note how the tabs automatically change when switching profiles.</figcaption>
+</figure>
 
 Access a list of all open repositories from the arrow drop-down.
 
-<img src='/wp-content/uploads/tab-drop-down-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/tab-drop-down-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">See all open tabs from this carrot icon.</figcaption>
+</figure>
 
 Hover over an open tab to quickly see the end portion of the file path.
 
-<img src='/wp-content/uploads/tab-hover-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/tab-hover-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Get path information when you hover over a tab.</figcaption>
+</figure>
 
 ### Tab alias and name
 
 An alias can be set for repository tabs. To give an alias to a repository tab, right-click the tab and select <kbd>Alias reposiotry</kbd>. After filling out the name, select save.
 
-<img src='/wp-content/uploads/repository-alias.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/repository-alias.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Right-click a tab to set a different name.</figcaption>
+</figure>
+
 
 
 ***
@@ -333,15 +371,26 @@ An alias can be set for repository tabs. To give an alias to a repository tab, r
 
 GitKraken Desktop will show 3 columns in the header by default: <kbd>Branch/Tag</kbd>, <kbd>Graph</kbd>, and <kbd>Commit Message</kbd>. These 3 columns are dynamic and can be rearranged with a drag-and-drop.
 
-<img src='/wp-content/uploads/columns-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/columns-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Rearrange the column order by drag and drop.</figcaption>
+</figure>
+
 
 Right-click on any column header to enable or disable additional columns such as <kbd>Commit Author</kbd>, <kbd>Commit Date/Time</kbd>, or <kbd>Sha</kbd>. 
 
-<img src='/wp-content/uploads/customize-columns-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/customize-columns-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Toggle which columns to show or hide from any header.</figcaption>
+</figure>
 
 Alternatively, click the <i class="fas fa-cog"></i> icon to enable or disable columns like Branch/Tag, Graph, Commit Message, Author, Date/Time, Sha, or change to Compact Graph view. 
 
-<img src='/wp-content/uploads/gear-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/gear-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Get the same toggle menu from the gear icon.</figcaption>
+</figure>
+
 
 In addition to using <kbd>cmd/ctrl</kbd>+<kbd>F</kbd> to search commits, users may also filter by commit author. Click the <i class='fa fa-filter'></i>  icon in the AUTHOR column and you can:
 
@@ -349,7 +398,10 @@ In addition to using <kbd>cmd/ctrl</kbd>+<kbd>F</kbd> to search commits, users m
 - Select one or more teams which will filter by all users in that team
 - Search for teams or users in the search field
 
-<img src='/wp-content/uploads/filter-author@2x.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/filter-author@2x.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Type the name of an author or team to filter the Commit Graph.</figcaption>
+</figure>
 
 Columns may also be toggled from <kbd><strong>Preferences > UI Customization</strong></kbd>, GitKraken Desktop will remember which columns you have selected, column size, and orientation for each repo. 
 
