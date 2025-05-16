@@ -283,7 +283,7 @@ Columns can intersect through merge commits as shown in the graph legend. As als
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/graph-elements.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Use this as a guide for interpreting your commit history om GitKraken Desktop.</figcaption>
+    <figcaption style="text-align: center; color: #888;">Use this as a guide for interpreting your commit history in GitKraken Desktop.</figcaption>
 </figure>
 
 For a given vertical track, you can read from bottom to top, and right to left to see how changes are introduced into a focused branch.
