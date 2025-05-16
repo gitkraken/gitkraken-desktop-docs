@@ -108,9 +108,10 @@ If you are on Linux and are unable to launch GitKraken Desktop after installatio
 ### I just subscribed but COMMUNITY is still shown in the lower right corner.
 Be sure you are logged in with the same email address registered with your GitKraken subscription. Click your profile icon in the upper right corner to check which email you're using or to sign into your account.
 
-<p style="text-align: center;">
-  <img src="/wp-content/uploads/sign-into-a-different-account.png" class="center img-bordered" style="width: 600px;">
-</p>
+<figure class='figure center'>
+    <img src="/wp-content/uploads/sign-into-a-different-account.png" class="center img-bordered" style="width: 600px;">
+    <figcaption style="text-align: center; color: #888;">Unfurl the menu from the top right to sign into a different account.</figcaption>
+</figure>
 
 ***
 

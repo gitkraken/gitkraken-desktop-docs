@@ -51,11 +51,13 @@ GitKraken Desktop data is stored with your home profile in `C:\\Users\\{user}\\A
 </div>
 
 ### Install Instructions
-Double click the downloaded DMG file and when prompted, drag and drop the GitKraken icon to your Applications folder.
+Double-click the downloaded DMG file and when prompted, drag and drop the GitKraken icon to your Applications folder.
 
 
-<img src="/wp-content/uploads/mac-install.png" class="help-center-img img-bordered">
-
+<figure class='figure center'>
+    <img src="/wp-content/uploads/mac-install.png" class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Drag and drop the GitKraken icon to the Applications folder.</figcaption>
+</figure>
 
 
 ### Mac OS Data Location
