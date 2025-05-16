@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
 Learn how to edit files in GitKraken Desktop.
 
@@ -63,6 +63,8 @@ Clicking the <button class='button button--success button--ui button--nolink'>St
 ## Encoding
 
 All files have encoding that defines how the binary should be read. 
+
+<img src="/wp-content/uploads/encoding-preferences2.png" class="help-center-img img-bordered">
 
 GitKraken Desktop expects most files to use `UTF-8` file encoding. If you are using another encoding type, you can set it at the top when editing your file or from the preferences menu.
 

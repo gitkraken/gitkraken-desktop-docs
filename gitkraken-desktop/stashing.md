@@ -69,6 +69,14 @@ The stash will now appear in the Left Panel and the graph with the desired name.
 
 <img src='/wp-content/uploads/custom-stash-graph.png' srcset='/wp-content/uploads/custom-stash-graph@2x.png' class="help-center-img img-bordered">
 
+### Amend Stash Messages
+
+Users may amend stash messages by right-clicking a stash in the Commit Graph and then click on “Edit stash message.” 
+
+<img src="/wp-content/uploads/amend-stash-graph2.png" class="help-center-img img-bordered">
+
+You may also right click on a stash in the Left Panel to access the same option.
+
 ### Partial stash
 
 Sometimes you only need to stash some of the files in your WIP.  

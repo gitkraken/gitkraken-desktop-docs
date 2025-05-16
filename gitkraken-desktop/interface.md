@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last updated: February 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
 GitKraken Desktop's UI helps make sense of Git. Below we cover the layout and what the icons represent.
 
@@ -272,6 +272,20 @@ Columns can intersect through merge commits as shown in the graph legend. As als
 <img src='/wp-content/uploads/graph-elements.png' class="help-center-img img-bordered">
 
 For a given vertical track, you can read from bottom to top, and right to left to see how changes are introduced into a focused branch.
+
+### Ghost branches
+
+Hover over a commit to view the "ghost" branch, which is the closest branch that contains that commit. The “ghost” branch will also show when a commit is selected, and double-clicking that ghost branch will checkout the head of the referenced branch.
+
+<img src="/wp-content/uploads/ghost.gif" class="help-center-img img-bordered">
+
+### Commit highlighting
+
+When you hover over a branch, the app will highlight all commits referenced by that branch.
+
+<img src="/wp-content/uploads/Commit-highlight.png" class="help-center-img img-bordered">
+
+Users may toggle this setting on or off from <kbd>Preferences > UI Customization</kbd>.
 
 ***
 
