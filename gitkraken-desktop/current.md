@@ -23,7 +23,7 @@ _"We fixed launching VS Code from GitKraken Desktop! Sorry it took so long; we w
 
 ### Bug Fixes 🐛
  - Fixed a regression in the last release where opening repositories/files in an external editor caused an "unknown error".
- - Experimental Feature - Git Executable:
+ - Experimental Feature - [Git Executable](/gitkraken-desktop/experimental-features/#git-executable):
     - When discarding all changes fails, error details will be provided in the error message.
 
 ***
@@ -39,17 +39,17 @@ _"We fixed launching VS Code from GitKraken Desktop! Sorry it took so long; we w
 _"More Jarvis. Less Skynet."_
 
 ### New ✨
- - **GitKraken AI:** New AI-powered capabilities to accelerate your development workflow, with expanded support for additional providers and environments.
+ - **[GitKraken AI:](/gitkraken-desktop/gkd-gitkraken-ai/)** New AI-powered capabilities to accelerate your development workflow, with expanded support for additional providers and environments.
    - Pull Request Title and Description Generation
      - Generate titles and descriptions for Pull Requests based on the commits of the PR in just a click.
      - When creating a Pull Request, click `Generate title and description` to automatically populate the fields using GitKraken AI.
      - If you have a Pull Request template selected, GitKraken AI will attempt to generate content that adheres to the selected template.
-   - Stash Message Generation
+   - [Stash Message Generation](/gitkraken-desktop/gkd-gitkraken-ai/#ai-generated-stash-messages)
      - Generate stash messages based on your code changes in just a click.
      - With a WIP selected, click on the sparkle icon in the stash message form to have GitKraken AI generate a stash message based on your staged changes.
-   - Amend Commit Message
+   - [Amend Commit Message](/gitkraken-desktop/gkd-gitkraken-ai/#amend-commit-messages)
      - You can now also generate a new commit message when amending a previous commit message.
-   - Expanded provider support when using your own API key
+   - [Expanded provider support when using your own API key](/gitkraken-desktop/gkd-gitkraken-ai/#bring-your-own-key)
      - Added support for OpenAI GPT-4.1 models.
      - Removed the deprecated OpenAI o1-mini model.
      - Added Google Gemini as a provider.
@@ -58,13 +58,13 @@ _"More Jarvis. Less Skynet."_
 
 
 ### Improvements 🙌
- - You can now Hide All / Show All items in the Local and Remote sections of the Left Panel from each section header's context menu.
+ - You can now [Hide All / Show All](/gitkraken-desktop/hiding-and-soloing/#hide-or-show-all-refs) items in the Local and Remote sections of the Left Panel from each section header's context menu.
     - The Hide All / Show All actions for Tags and Stashes have also been moved to their respective section headers.
  - GitHub user avatars will now display in the Commit Graph and Commit Details Panel for commits made on GitHub repositories.
- - Experimental Feature - Git Executable:
+ - Experimental Feature - [Git Executable](/gitkraken-desktop/experimental-features/#git-executable):
    - Respects `core.commentString` and `core.commentChar` values from your Git config.
    - Improved stability and performance for on-premise clients when authenticating with Git remotes.
- - Conflict Prevention:
+ - [Conflict Prevention](/gitkraken-desktop/conflict-prevention/):
    - Potential conflict alerts with your teammates will now work when the current branch has no upstream.
    - You can now access the branches involved in a potential conflict directly from the menu, and each branch label matches the color of the branch in the Commit Graph.
  - Upgraded Electron to v34.
@@ -90,13 +90,13 @@ _"Turn it up to 11! 🎸"_
 
 ### New ✨
  - **GitKraken AI:** A seamless extension of your development workflow, [GitKraken AI](https://help.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai/) automates tedious tasks to improve your efficiency and focus.
-   - Commit Message Generation
+   - [Commit Message Generation](/gitkraken-desktop/gkd-gitkraken-ai/#ai-generated-commit-messages)
      - You'll now be able to generate clear, meaningful commit messages based on your code changes in just a click.
      - With a WIP selected, click on the sparkle icon in the commit message form to have GitKraken AI generate a commit message for you based on your staged changes.
-   - Explain Commits
+   - [Explain Commits](/gitkraken-desktop/gkd-gitkraken-ai/#ai-powered-commit-explain)
      - You can now get detailed summaries of changes made in your repository without spending time diving through files and diffs.
      - With one or multiple commits selected in the Commit Graph, click on the `Explain` button in the top right of the Commit Panel to generate an explanation of changes made in the selected commits.
-   - Configure GitKraken AI from _Preferences > GitKraken AI_
+   - [Configure GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/#bring-your-own-key) from _Preferences > GitKraken AI_
      - Use the `Custom Instructions` setting to provide additional details so GitKraken AI can better tailor commit messages and explanations for you.
      - With GitKraken AI enabled, you can also select to use your own API key to make requests directly to OpenAI or Anthropic. When one of those providers is selected, you can choose what model you'd like to use for each AI feature.
      - Note: The AI Commit Message Generation section has been removed from _Preferences > Experimental_.
@@ -108,6 +108,6 @@ _"Turn it up to 11! 🎸"_
  - Updated Git to 2.49.0.
 
 ### Bug Fixes 🐛
- - Launchpad now works with GitHub users set as Enterprise Managed Users.
+ - [Launchpad](/gitkraken-desktop/gitkraken-launchpad/) now works with GitHub users set as Enterprise Managed Users.
 
 
