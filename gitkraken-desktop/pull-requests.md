@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
 A pull request (sometimes called merge requests), is a review request. You are asking someone to check the changes on a branch before merging into another branch.
 
@@ -27,9 +27,10 @@ Or click the <button class='button button--success button--ui button--nolink'>+<
 <img src="/wp-content/uploads/create-pr-2025.png" srcset="/wp-content/uploads/create-pr-2025@2x.png" class="help-center-img img-bordered">
 
 <div class='callout callout'>
-  <p><strong>Note:</strong> If you are using Azure DevOps integration, and the Pull Request form is not populating, see this article on [Azure DevOps Integration](/gitkraken-desktop/azure-devops/#azure-devops-pull-requests-form-not-populating-in-gitkraken-desktop) for more information.
-</p>
+  <p><strong>Note:</strong> If you are using Azure DevOps integration, and the Pull Request form is not populating, see this article on <a href="https://help.gitkraken.com/gitkraken-desktop/azure-devops/#azure-devops-pull-requests-form-not-populating-in-gitkraken-desktop">Azure DevOps Integration</a> for more information.
+  </p>
 </div>
+
 
 ### Pull request templates
 
