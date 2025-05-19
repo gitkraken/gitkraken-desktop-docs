@@ -108,6 +108,6 @@ When you create a Pull Request with Azure DevOps, it may not populate in GitKrak
 
 2. Edit the URLs and make sure they match the format of your Host Domain URL used to connect via <kbd>Preferences > Integrations</kbd> (if you are using a PAT) or the URL used to connect via OAuth.
 
-3. Verify that the format is [organisationname]@dev.azure.com" and **not** the old VSTS format of "[organisationname].visualstudio.com [http://visualstudio.com/]"
+3. Verify that the format is "[organisationname]@dev.azure.com" and **not** the old VSTS format of "[organisationname].visualstudio.com".
 
 4. Click "Edit Remote" to complete the process.
