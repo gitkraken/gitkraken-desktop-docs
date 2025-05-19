@@ -7,30 +7,42 @@ taxonomy:
 
 ---
 
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
 Sometimes you commit to one branch, when you meant to commit to another. Here's how to grab the changes you need.
 
 ***
-To cherry pick a commit, right click on a commit node and select the "Cherrypick commit" option:
+To cherry pick a commit, right-click on a commit node and select the "Cherrypick commit" option:
 
-<img src='/wp-content/uploads/cherrypick.png' srcset='/wp-content/uploads/cherrypick@2x.png 2x' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/cherrypick.png' srcset='/wp-content/uploads/cherrypick@2x.png 2x' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Check out the target branch, and then right-click a commit to cherry pick it.</figcaption>
+</figure>
 
 The cherry pick action is also available when interacting with branches from _Local_ in the Left Panel.
 
 Here, cherry pick grabs the changes from the commit referenced by the HEAD of that branch, and places them onto the branch currently checked out.
 
-<img src='/wp-content/uploads/cherrypick-left-panel.png' srcset='/wp-content/uploads/cherrypick-left-panel@2x.png 2x' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/cherrypick-left-panel.png' srcset='/wp-content/uploads/cherrypick-left-panel@2x.png 2x' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Check out the target branch, and then right-click a branch to cherry pick its HEAD ref.</figcaption>
+</figure>
 
 ### Cherry Pick Multiple Commits
 
 To cherry pick multiple commits, you can select multiple commits by holding down the <kbd>Cmd/Ctrl</kbd> or <kbd>Shift</kbd> key and clicking on the desired commits. Then, right-click on one of the selected commits and choose the "Cherry pick X commits" option.
 
-<img src='/wp-content/uploads/multi-cherry-pick-menu.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/multi-cherry-pick-menu.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Select a range of commits with Shift or Cmd/Ctrl and right-click to cherry pick multiple commits.</figcaption>
+</figure>
 
 Selecting the option to cherry pick multiple commits opens an interactive cherry pick tool that allows you to reorder (with drag and drop of mouse), squash, reword, or drop any of the commits selected.
 
-<img src='/wp-content/uploads/interactive-cherry-pick.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/interactive-cherry-pick.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Use the interactive cherrypick editor to pick, reword, squash, drop, or reorder commits.</figcaption>
+</figure>
 
 ## Commit Actions
 
