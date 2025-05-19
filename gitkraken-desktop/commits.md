@@ -6,7 +6,7 @@ taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
 Commit to save work with GitKraken Desktop when changing files.  Whether you commit to other things in life is up to you...
 
@@ -22,7 +22,10 @@ Commit to save work with GitKraken Desktop when changing files.  Whether you com
 
 To make a commit in GitKraken Desktop, select your _Work in Progress_ and to view recent changes on the Commit Panel.
 
-<img src='/wp-content/uploads/select-WIP-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/select-WIP-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">The WIP node will automatically appear at the top of the Commit Graph when you save changes to your files.</figcaption>
+</figure>
 
 Select the files you wish to stage, and click on any files you wish to review in the diff. To stage all your files, use the keyboard shortcut <kbd>&#8984;</kbd><kbd>Shift</kbd><kbd>S</kbd> for Mac or <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>S</kbd> for Windows or Linux.
 
@@ -33,7 +36,10 @@ When you’re ready, type your message and hit commit to commit your changes. Yo
 
 You can commit and automatically push your changes to the remote. Stage changes and type a commit message to enable the option for commit and push.
 
-<img src='/wp-content/uploads/push-after-commit-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/push-after-commit-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">If it feels right, check this option to both commit and push.</figcaption>
+</figure>
 
 The graph updates with your commit, but the undo button or this keyboard shortcut
 <kbd>&#8984;</kbd> + <kbd>Z</kbd> for Mac or <kbd>Ctrl</kbd> + <kbd>Z</kbd> for Windows/Linux can undo a commit made by mistake.
@@ -50,11 +56,17 @@ To add co-authors to a commit, add a line to your commit description using the f
 
 ```
 
-<img src='/wp-content/uploads/co-author.png' srcset='/wp-content/uploads/co-author@2x.png 2x' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/co-author.png' srcset='/wp-content/uploads/co-author@2x.png 2x' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Add a co-author to a commit using this syntax.</figcaption>
+</figure>
 
 The Commit Panel will then show the co-author in the history for that commit:
 
-<img src='/wp-content/uploads/co-author-history.png' srcset='/wp-content/uploads/co-author-history@2x.png 2x' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/co-author-history.png' srcset='/wp-content/uploads/co-author-history@2x.png 2x' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Co-authors are listed under the author details in the Commit Panel.</figcaption>
+</figure>
 
 ### Bypass git hooks
 
@@ -64,7 +76,11 @@ There may be times when you want to skip your Git hooks when making a commit. Th
     <p>Note 📝 - Using this option will bypass all hooks that trigger with git commit action.</p>
 </div>
 
-<img src='/wp-content/uploads/skip-commits-2025.png' class="help-center-img img-bordered" />
+
+<figure class='figure center'>
+    <img src='/wp-content/uploads/skip-commits-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Check this option to skip Git hooks during a commit.</figcaption>
+</figure>
 
 ***
 
@@ -82,7 +98,10 @@ When you open a repository, GitKraken Desktop first checks for a commit template
 ### Creating and Updating the Commit Template
 You can create and update a commit template in GitKraken Desktop by visiting <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> Commit </em> (scroll down in Preferences nav).
 
-<img src='/wp-content/uploads/commit-template-setting-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/commit-template-setting-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Set the initial commit message for commits from Preferences > Commit.</figcaption>
+</figure>
 
 If a commit template was read from your local git config, any changes you make to the template in GitKraken Desktop will save to the file specified.
 
@@ -118,15 +137,24 @@ GitKraken Desktop allows you to amend a commit message, add additional changes, 
 
 To add more changes to the previous commit, first make the code changes in your working directory. Then when you stage changes in GitKraken Desktop, select the option to _"Amend the previous commit."_
 
-<img src='/wp-content/uploads/amend-commit-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/amend-commit-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Check this option to add changes to the previous commit.</figcaption>
+</figure>
 
 To only update the commit message, select the most recent commit in the graph and then click in the message box to amend the message.
 
-<img src='/wp-content/uploads/amend-message-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/amend-message-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Drag and drop this bar to resize the commit message box.</figcaption>
+</figure>
 
 To accommodate viewing a longer commit description, click on the bar at the the bottom of the message box and drag downwards to dynamically resize the text field.
 
-<img src='/wp-content/uploads/amend-box-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/amend-box-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">You can edit your most recent commit message from the Commit Panel.</figcaption>
+</figure>
 
 Select <button class='button button--success button--ui button--nolink'>Update Message</button> to save your changes or <button class='button button--danger button--ui button--nolink'>Cancel Amend</button> to discard.
 
@@ -145,7 +173,11 @@ Git keeps track of your current commit in a file called the HEAD.  When resettin
 * **Mixed** - resets the HEAD to the selected commit, unstages your changes, but keeps them in your WIP directory
 * **Hard** - resets the HEAD to the selected commit, unstages your changes, and deletes your WIP files
 
-<img src='/wp-content/uploads/reset-commit-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/reset-commit-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Perform a reset by right-clicking a branch or commit.</figcaption>
+</figure>
+
 
 You may also drag and drop a branch onto another to select from the three reset options above or access the reset options from your local repos in the left panel.
 
@@ -157,7 +189,10 @@ You may also drag and drop a branch onto another to select from the three reset 
 
 Undo, undo, undo. You can undo many of your actions in GitKraken Desktop with the Undo icon.
 
-<img src='/wp-content/uploads/undo-undo-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/undo-undo-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">If you haven't pushed it, you can probably undo it.</figcaption>
+</figure>
 
 If you're a keyboard fan, you may also enjoy using the keyboard shortcut
 <kbd>&#8984;</kbd> + <kbd>z</kbd> for Mac or <kbd>Ctrl</kbd> + <kbd>Z</kbd> for not-Mac.
@@ -174,4 +209,7 @@ Reverting commits is trivial thanks to GitKraken Desktop.
 
 If you wish to revert a commit (perhaps Undo is not available), the option is available when right-clicking on a commit node.  This will create a new commit to reverse your previous changes.
 
-<img src='/wp-content/uploads/revert-commit-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/revert-commit-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Right-click any commit to revert it.</figcaption>
+</figure>
