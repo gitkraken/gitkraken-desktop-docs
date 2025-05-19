@@ -146,14 +146,14 @@ To only update the commit message, select the most recent commit in the graph an
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/amend-message-2025.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Drag and drop this bar to resize the commit message box.</figcaption>
+    <figcaption style="text-align: center; color: #888;">You can edit your most recent commit message from the Commit Panel.</figcaption>
 </figure>
 
 To accommodate viewing a longer commit description, click on the bar at the the bottom of the message box and drag downwards to dynamically resize the text field.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/amend-box-2025.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">You can edit your most recent commit message from the Commit Panel.</figcaption>
+    <figcaption style="text-align: center; color: #888;">Drag and drop this bar to resize the commit message box.</figcaption>
 </figure>
 
 Select <button class='button button--success button--ui button--nolink'>Update Message</button> to save your changes or <button class='button button--danger button--ui button--nolink'>Cancel Amend</button> to discard.
