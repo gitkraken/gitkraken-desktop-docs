@@ -130,7 +130,10 @@ Cloud Patches allow the ability to engage early with your team before a pull req
 
 To create a Cloud Patch, stage the changes you want to include in the Cloud Patch and click on the Cloud Patch icon. You can also create a Cloud Patch from a commit by right-clicking on a commit in the Commit Graph and selecting `Share commit as Cloud Patch`. 
 
-<img src='/wp-content/uploads/create-cloud-patch-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/create-cloud-patch-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">When you stage files in the Commit Panel, click this icon to create a Cloud Patch.</figcaption>
+</figure>
 
 Once created, you can select `Copy Cloud Patch link` from the toast or by right-clicking a Cloud Patch in the Left Panel where all your Cloud Patches will be listed.
 
@@ -147,11 +150,17 @@ Cloud Patches shared with you can be viewed in the Cloud Patches Left Panel sect
 
 Cloud Patch links can be shared with users to open the Cloud Patch in GitKraken Desktop or GitLens. When a Cloud Patch link is opened, the user will be prompted to open the client, clone or open the repository if not known to GitKraken Desktop, and then select the base branch to apply the patch to. From here, they can simply select `apply patch to <branch>`. 
 
-<img src='/wp-content/uploads/gkc-apply-cloud-patch-example.gif' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/gkc-apply-cloud-patch-example.gif' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Commit a Cloud Patch immediately, or say "No" to stage more changes.</figcaption>
+</figure>
 
 To delete a cloud path, right-click it and select `Delete Cloud Patch`.
 
-<img src="/wp-content/uploads/gkc-delete-cloud-patch.png" class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src="/wp-content/uploads/gkc-delete-cloud-patch.png" class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Delete a Cloud Patch from the Left Panel.</figcaption>
+</figure>
 
 #### Self-Hosting Cloud Patches
 
