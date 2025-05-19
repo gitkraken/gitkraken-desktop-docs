@@ -26,6 +26,11 @@ Or click the <button class='button button--success button--ui button--nolink'>+<
 
 <img src="/wp-content/uploads/create-pr-2025.png" srcset="/wp-content/uploads/create-pr-2025@2x.png" class="help-center-img img-bordered">
 
+<div class='callout callout'>
+  <p><strong>Note:</strong> If you are using Azure DevOps integration, and the Pull Request form is not populating, see this article on [Azure DevOps Integration](/gitkraken-desktop/azure-devops/#azure-devops-pull-requests-form-not-populating-in-gitkraken-desktop) for more information.
+</p>
+</div>
+
 ### Pull request templates
 
 GitKraken Desktop supports pull request templates from your GitHub, GitLab, and Azure DevOps (including legacy VSTS URLs).

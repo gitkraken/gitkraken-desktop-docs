@@ -95,3 +95,14 @@ GitKraken connects to one Azure DevOps account at a time. However, with a paid G
 In order connect the Azure Devops integrations using OAuth, `Third-party application access via OAuth` will need to be enabled in Azure from `Organization Settings > Policies`. You can find more information on this setting on [Microsoft's Learn Resources](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops).
 
 If enabling this setting is not possible, you can connect using a Password Access Token.
+
+***
+
+## Azure DevOps Pull Requests form not populating in GitKraken Desktop
+
+When you create a Pull Request with Azure DevOps, it may not populate in Gitkraken Desktop. This is due to the remote URL not using the correct format:
+
+- In the left panel, right-click on your remote (typically origin) and select **Edit**.
+- Edit the URLs and make sure they match the format of your Host Domain URL used to connect via **Preferences > Integrations** (if you are using a PAT) or the URL used to connect via OAuth.
+- Specifically ensure that the format is [organisationname]@dev.azure.com" and **not** the old VSTS format of "[organisationname].visualstudio.com [http://visualstudio.com/]"
+- Click "edit remote" to complete the process
