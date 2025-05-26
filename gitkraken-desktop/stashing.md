@@ -21,7 +21,7 @@ Click the **Stash** icon in the top toolbar to create a new stash.
   <figcaption style="text-align:center; color:#888">Create a stash from the top toolbar.</figcaption>
 </figure>
 
-Your stash will appear in the commit graph. Right-click on the stash node to see available options:
+Your stash will appear in the Commit Graph. Right-click on the stash node to see available options:
 
 * **Apply Stash**: Apply changes to your working directory and keep the stash.
 * **Pop Stash**: Apply changes and remove the stash.
