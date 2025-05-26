@@ -1,76 +1,101 @@
 ---
-
 title: Conflict Prevention in GitKraken
 description: Learn about conflict prevention in GitKraken Desktop
 taxonomy:
     category: gitkraken-desktop
-
 ---
+<kbd>Last updated: May 2025</kbd>
 
-<kbd>Last updated: April 2025</kbd>
+GitKraken Desktop’s **Conflict Prevention** helps you identify potential merge conflicts before they happen, reducing delays and easing collaboration.
 
-Merge conflicts can be a major pain, whether they happen during your coding session or while reviewing work. They often lead to delays, rework, and frustration.  
+<figure>
+  <img src="/wp-content/uploads/GKD-conflict-prevention.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Conflict prevention interface in GitKraken Desktop</figcaption>
+</figure>
 
-GitKraken Desktop’s **Conflict Prevention** helps you detect and manage potential conflicts before they cause disruptions.  
+***
 
-<img src="/wp-content/uploads/GKD-conflict-prevention.png" class="help-center-img img-bordered">
+## How Conflict Prevention Works
 
----
+GitKraken detects potential conflicts from **Org Members** by identifying overlapping edits in committed changes that haven’t yet merged into the target branch.
 
-## Conflict Prevention
+### 1. Conflict Alert Icon
 
-GitKraken detects potential merge conflicts with **Org Members** based on overlapping edits in committed changes that haven’t yet been merged into your target branch.  
+When you open GitKraken Desktop, an alert icon indicates potential conflicts.
 
-### How It Works:
+<figure>
+  <img src="/wp-content/uploads/GKD-org-member-conflict-11-1.png" srcset='/wp-content/uploads/GKD-org-member-conflict-11-1@2x.png' class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Alert icon shows when conflicts are detected</figcaption>
+</figure>
 
-#### 1. Conflict Alert Icon
-After a coding session, open GitKraken Desktop. If potential conflicts exist, you’ll see an **alert icon**.
+### 2. View Conflict Details
 
-<img src="/wp-content/uploads/GKD-org-member-conflict-11-1.png" srcset='/wp-content/uploads/GKD-org-member-conflict-11-1@2x.png' class="help-center-img img-bordered">
+Clicking the icon opens a menu with options to investigate and address the conflict.
 
-#### 2. Click the Alert Icon
-
-This will open a conflict detection menu with options to manage conflicts.  
-
-<img src="/wp-content/uploads/GKD-unfurl-org-member-conflict-11-1.png" srcset='/wp-content/uploads/GKD-unfurl-org-member-conflict-11-1@2x.png' class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/GKD-unfurl-org-member-conflict-11-1.png" srcset='/wp-content/uploads/GKD-unfurl-org-member-conflict-11-1@2x.png' class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Conflict details with management options</figcaption>
+</figure>
 
 <div class='callout callout--success'>
-    <p>The active conflict with the target takes priority over org member potential conflicts. The potential conflicts only show up if you don't have an active conflict with the target, not the other way around.</p>
+  <p>Active conflicts with the target branch take priority over Org Member alerts.</p>
 </div>
 
-#### 3. Resolve Conflicts Proactively  
-- Share edits as a **Cloud Patch**.  
-- Push your changes (if they aren’t already pushed).  
-- Copy a summary of overlapping edits to share with team members.  
+### 3. Resolve Conflicts Early
 
-## Target Branch Status
-### What if You Don't Have Org Members
-- Even without Org Members, GitKraken will still proactively detect conflicts between your branch and its target branch so you can resolve them before they get worse.  
-- You’ll be able to **rebase or merge** to resolve conflicts. 
+From the conflict detection menu, you can:
+- Share edits as a **Cloud Patch**
+- Push changes to make them visible to others
+- Copy summaries of overlapping edits for your team
 
-<img src="/wp-content/uploads/generic-conflict-prevention-11-1.png" srcset='/wp-content/uploads/generic-conflict-prevention-11-1@2x.png' class="help-center-img img-bordered">
+***
 
-### When No Conflicts Are Detected
-If there are no conflicts detected with your target branch and there are no overlapping edits with other org members’ branches, you will see a target branch status indicator to confirm there are no conflicts with the target branch. The menu provides a quick option to open a pull request against the target branch or adjust your target branch preferences for the repository.
+## Conflict Detection Without Org Members
 
-<img src="/wp-content/uploads/GKD-no-conflict-detected-with-PR.png" class="help-center-img img-bordered">
+Even if your repository has no Org Members, GitKraken still checks for conflicts with your **target branch**.
 
-### Detect Conflicts Even Earlier
+You’ll be prompted to merge or rebase proactively.
 
-You can invite the **author of the conflicting changes** directly from the conflict detection menu. 
+<figure>
+  <img src="/wp-content/uploads/generic-conflict-prevention-11-1.png" srcset='/wp-content/uploads/generic-conflict-prevention-11-1@2x.png' class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Conflict detection between your branch and its target</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/invite-to-org-11-1.png" srcset='/wp-content/uploads/invite-to-org-11-1@2x.png' class="help-center-img img-bordered">
+### Target Branch Status When No Conflicts Are Found
 
-Once they’re in your GitKraken organization, you’ll be notified as soon as they are editing in the same areas as you - no need to wait for the changes to merge into the target branch.
+If no potential conflicts are detected:
+- A status indicator confirms your branch is conflict-free
+- You’ll see quick links to open a pull request or adjust preferences
 
-### Conflict Prevention Settings
+<figure>
+  <img src="/wp-content/uploads/GKD-no-conflict-detected-with-PR.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">No conflicts found with an option to create PR</figcaption>
+</figure>
 
-Conflict Prevention is a repo-specific setting.
+***
 
-Limit which branches GitKraken considers as "base branches" when scanning for conflicts by navigating to <kbd>_Preferences > Conflict Prevention_</kbd> to set the preferred branches for a repository.
+## Invite Contributors to Resolve Conflicts Earlier
 
-<img src='/wp-content/uploads/conflict-prevention-settings.png' srcset='/wp-content/uploads/conflict-prevention-settings@2x.png 2x' class="help-center-img img-bordered"/>
+Invite the authors of conflicting changes to your GitKraken Org directly from the conflict menu:
 
-You may use `**` to denote a wild card and the `!` character to set exclusions.
+<figure>
+  <img src="/wp-content/uploads/invite-to-org-11-1.png" srcset='/wp-content/uploads/invite-to-org-11-1@2x.png' class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Send invites to potential collaborators from the alert</figcaption>
+</figure>
 
-This is also where you may toggle the setting for the currently opened repository. 
+Once added, you’ll receive real-time updates when they’re working in the same areas.
+
+***
+
+## Configure Conflict Prevention Settings
+
+Conflict Prevention settings are repository-specific. You can:
+- Set which branches GitKraken should monitor
+- Use `**` for wildcards or `!` to exclude branches
+
+Navigate to <kbd>Preferences > Conflict Prevention</kbd> to configure these settings.
+
+<figure>
+  <img src='/wp-content/uploads/conflict-prevention-settings.png' srcset='/wp-content/uploads/conflict-prevention-settings@2x.png 2x' class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Conflict Prevention preferences panel</figcaption>
+</figure>
