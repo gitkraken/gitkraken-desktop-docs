@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: April 2025</kbd>
 
 Learn how to stage files, review changes, and manage tracked content in GitKraken Desktop.
 
@@ -126,15 +126,15 @@ If a file is already tracked, you’ll see two options:
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/ignore-stop-tracking-2025.png' class="help-center-img img-bordered" alt="Prompt to ignore a tracked file">
+    <figcaption style="text-align: center; color: #888;">Prompt showing options to ignore a file already tracked by Git.</figcaption>
 </figure>
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/ignore-only.png' srcset='/wp-content/uploads/ignore-only@2x.png' class="help-center-img img-bordered" alt="Option to ignore but keep tracking">
+    <figcaption style="text-align: center; color: #888;">Ignore file but keep it tracked by Git.</figcaption>
 </figure>
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/ignore-untrack.png' srcset='/wp-content/uploads/ignore-untrack@2x.png' class="help-center-img img-bordered" alt="Option to ignore and stop tracking">
+    <figcaption style="text-align: center; color: #888;">Ignore file and remove it from Git tracking.</figcaption>
 </figure>
-
-- <strong>Ignore</strong>: Adds to `.gitignore`, but Git will still track the file
-- <strong>Ignore and Stop Tracking</strong>: Adds to `.gitignore` and removes from Git’s index
