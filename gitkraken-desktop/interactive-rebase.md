@@ -1,64 +1,88 @@
 ---
-
 title: Interactive Rebase
 description: Learn about interactive rebase in GitKraken Desktop.
 taxonomy:
     category: gitkraken-desktop
-
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
-Learn how to rewrite your commit history with interactive rebase in GitKraken Desktop.
+Interactive rebase lets you rewrite commit history by editing, reordering, combining, or removing commits. Use it to clean up your commit history before merging a feature branch.
 
 ***
 
-## Initiating Interactive Rebase
-To initiate interactive rebase, drag and drop one branch onto another branch or right-click the target branch and select <em class='context-menu'>Interactive Rebase</em>.
+## Start an Interactive Rebase
 
-<img src='/wp-content/uploads/interactive-rebase-init.gif' class="help-center-img img-bordered" />
+To begin:
+- Drag and drop one branch onto another
+- Or right-click a target branch and select <em class='context-menu'>Interactive Rebase</em>
 
-Right-click on any parent commit to see the interactive rebase option. However, please note that interactive rebase is not available for merge commits.
+<figure>
+  <img src='/wp-content/uploads/interactive-rebase-init.gif' class="help-center-img img-bordered" />
+  <figcaption style="text-align:center; color:#888">Start interactive rebase via drag-and-drop or right-click</figcaption>
+</figure>
 
-### Interactive rebase requirements
+You can also right-click any parent commit to access the option. Note: Interactive rebase is not available for merge commits.
 
-The drag and drop option will only show the interactive rebase option if:
-
-- No merge commits are present on the branch you’re rebasing
-- The 2 branches share a common ancestor
-- Neither branch has the repo’s initial commit
-- You are not attempting to rebase a parent branch onto a child (like main into a feature branch)
+### Requirements
+Interactive rebase is available only if:
+- The branches share a common ancestor
+- No merge commits exist on the source branch
+- Neither branch includes the repo’s initial commit
+- You’re not trying to rebase a parent onto a child (e.g., `main` onto `feature`)
 
 <div class='callout callout--note'>
-    <p><strong>Note:</strong> If you start the interactive rebase with GitKraken Desktop you must finish the rebase with GitKraken Desktop.</p>
+  <p><strong>Note:</strong> If you start the rebase in GitKraken Desktop, you must complete it there.</p>
 </div>
 
----
+***
 
 ## Commit Actions
 
 ### Pick
-Pick takes the commits from one branch and places them onto the last commit of another branch.
+Moves the commit onto the target branch as-is.
 
-<img src='/wp-content/uploads/pick.gif' class="help-center-img img-bordered" />
+<figure>
+  <img src='/wp-content/uploads/pick.gif' class="help-center-img img-bordered" />
+  <figcaption style="text-align:center; color:#888">Pick applies the commit without modifications</figcaption>
+</figure>
 
 ### Reword
-When selecting reword you will see the <em class='context-menu'>Reword commit message</em> modal open. Here you can edit the summary and description of your commit.
+Opens a modal to edit the commit summary and description.
 
-<img src='/wp-content/uploads/reword.png' class="help-center-img img-bordered" />
+<figure>
+  <img src='/wp-content/uploads/reword.png' class="help-center-img img-bordered" />
+  <figcaption style="text-align:center; color:#888">Reword lets you update the commit message</figcaption>
+</figure>
 
 ### Squash
-When you squash you are taking the child commit and in turn writing that commit to the parent commit. In order for squash to be an option there will have to be a parent child relationship.
+Combines the selected commit into its parent.
 
-<img src='/wp-content/uploads/squash.png' class="help-center-img img-bordered" />
+<figure>
+  <img src='/wp-content/uploads/squash.png' class="help-center-img img-bordered" />
+  <figcaption style="text-align:center; color:#888">Squash merges the commit into the one above</figcaption>
+</figure>
 
-### Drop commit
-Drop removes the commit from the branch, completes rebase and rewrites the Commit Graph.
+### Drop
+Removes the commit entirely and rewrites the graph.
 
-<img src='/wp-content/uploads/drop.gif' class="help-center-img img-bordered" />
+<figure>
+  <img src='/wp-content/uploads/drop.gif' class="help-center-img img-bordered" />
+  <figcaption style="text-align:center; color:#888">Drop deletes the commit from history</figcaption>
+</figure>
 
----
+***
 
-### Keyboard Shortcuts and Reset
-Use keyboard shortcuts <kbd>P</kbd>ick, <kbd>S</kbd>quash, <kbd>R</kbd>eword and <kbd>D</kbd>rop to perform commit actions. If you wish to start over, click <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Reset</span></button>.
+## Shortcuts and Reset
 
-<img src='/wp-content/uploads/keyboard-shortcut-reset.gif' class="help-center-img img-bordered" />
+Use these keyboard shortcuts during rebase:
+- <kbd>P</kbd>: Pick
+- <kbd>S</kbd>: Squash
+- <kbd>R</kbd>: Reword
+- <kbd>D</kbd>: Drop
+
+To undo all changes during setup, click <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Reset</span></button>.
+
+<figure>
+  <img src='/wp-content/uploads/keyboard-shortcut-reset.gif' class="help-center-img img-bordered" />
+  <figcaption style="text-align:center; color:#888">Use Reset to cancel changes and start over</figcaption>
+</figure>
