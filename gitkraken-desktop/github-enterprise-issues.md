@@ -1,37 +1,41 @@
 ---
-
 title: GitKraken Desktop & GitHub Enterprise Server Issues Integration
 description: Learn how to access GitHub Enterprise Server Issues from GitKraken Desktop
 taxonomy:
     category: gitkraken-desktop
-
 ---
+
 <kbd>Last updated: May 2025</kbd>
 
-GitKraken Desktop makes it easy to work with your GitHub Enterprise Server Issues.
-
+GitKraken Desktop supports integration with GitHub Enterprise Server Issues, making it easier to manage issues alongside your codebase.
 
 <div class='callout callout--basic'>
-    <p>The GitHub Enterprise Server Issues integration is view-only for Community users. To unlock all features for the GitHub Enterprise Server Issues integration, consider upgrading to a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center"> paid GitKraken license</a>. </p>
+    <p>The GitHub Enterprise Server Issues integration is view-only for Community users. To unlock full features, consider upgrading to a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center">paid GitKraken license</a>.</p>
 </div>
 
-***
+---
 
-### Connect GitHub Enterprise Server Integration
+## Requirements
 
 <div class='callout callout--warning'>
-    <p>The GitHub Enterprise Server Issues Integration requires GitHub Enterprise Server version 2.20.24 or newer to function</p>
+    <p>This integration requires GitHub Enterprise Server version 2.20.24 or newer.</p>
 </div>
 
-The GitHub Enterprise Server integration and GitHub Enterprise Server Issues integration share the same connection. You can set up the integration connection from the ISSUES pane in the Left Panel or from <kbd><i>Preferences   <i class='fa fa-caret-right'></i>   Integrations</i></kbd>.
+---
 
-Follow the [integration instructions](/integrations/github-enterprise/#github-enterprise-authentication) to get connected to your GitHub Enterprise Server instance.
+## Connect GitHub Enterprise Server Integration
 
-***
+The GitHub Enterprise Server integration and GitHub Enterprise Server Issues integration share the same connection.
 
-### GitHub Enterprise Server Integration features
+You can set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
-Once connected, the GitHub Enterprise Server integration shares the same features as the GitHub integration. 
+Follow these [GitHub Enterprise authentication steps](/integrations/github-enterprise/#github-enterprise-authentication) to connect your instance.
+
+---
+
+## Features
+
+Once connected, this integration offers the same features as the GitHub Issues integration:
 
 - [Preview GitHub Issues](/integrations/github-issues/#preview-github-issues)
 - [View and Edit GitHub Issue Details](/integrations/github-issues/#view-and-edit-github-issue-details)
@@ -39,4 +43,3 @@ Once connected, the GitHub Enterprise Server integration shares the same feature
 - [Create GitHub Filters](/integrations/github-issues/#create-filters)
 - [Create Branch from Issue](/integrations/github-issues/#create-branches-from-issue)
 - [Shortcuts to view Issues in GitHub](/integrations/github-issues/#copy-issue-link-or-view-in-github)
-
