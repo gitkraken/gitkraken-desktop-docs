@@ -1,46 +1,45 @@
 ---
-
-title: Git integration for Jira
-description: GitKraken and Git Integration for Jira working together
+title: Git Integration for Jira
+description: Use GitKraken Desktop with Git Integration for Jira to enhance issue and commit navigation.
 taxonomy:
     category: gitkraken-desktop
-
 ---
+
 <kbd>Last updated: May 2025</kbd>
 
-GitKraken connects with the <a href="https://marketplace.atlassian.com/apps/4984/git-integration-for-jira?product=gitkraken&source=help_center" target="_blank">Git Integration for Jira</a> app, which provides seamless navigation between GitKraken Desktop and Jira when viewing commit and file diffs related to Jira issues.
-
-### How to connect
-
-To use this integration, you first need to:
-
-* Connect  <a href="/integrations/jira">Jira Cloud Integration</a> in GitKraken Desktop
-* Select  <a href="/integrations/jira/#connect-jira-integration">Jira Cloud as the Issue Tracker</a> for a repository <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> Issue Tracker</em>
-* Select a Jira Project in the Left Panel
-* Git Integration for Jira must be installed on the same Jira Cloud instance
+GitKraken Desktop connects with the <a href="https://marketplace.atlassian.com/apps/4984/git-integration-for-jira?product=gitkraken&source=help_center" target="_blank">Git Integration for Jira</a> app. This integration enables seamless navigation between GitKraken Desktop and Jira, letting you open commit and file diffs directly from your Jira issues.
 
 ---
 
-### Open File Diff in Jira from GitKraken
+## Setup Requirements
 
-Once connected to a Jira Project, the <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Open in Jira</span></button> button will become available from the [file diff view](/gitkraken-desktop/diff/).
+Before using this integration, ensure the following:
 
-
-<img src="/wp-content/uploads/open-in-jira-2025.png" srcset="/wp-content/uploads/open-in-jira-2025@2x.png" class="help-center-img img-bordered">
-
-
-### Open Jira to a commit from GitKraken
-
-Once connected to a Jira Project, right-click on a commit in the graph to access the option to open the commit in your Jira instance.
-
-<img src="/wp-content/uploads/open-jira-to-commit-2025.png" srcset="/wp-content/uploads/open-jira-to-commit-2025@2x.png" class="help-center-img img-bordered">
-
-This provides a quick link for opening Jira with the target commit already in focus.
+1. Connect the [Jira Cloud Integration](/integrations/jira) in GitKraken Desktop.
+2. Set <kbd>Preferences > Issue Tracker</kbd> to use Jira Cloud for the relevant repository.
+3. Select a Jira Project in the Left Panel.
+4. The Git Integration for Jira app must be installed on the same Jira Cloud instance.
 
 ---
 
-### Open GitKraken from the Git Integration for Jira
+## Open File Diff in Jira
 
-It's easy to dive deeper into your commits and branches. Within the Git Integration for Jira, the commits and diffs will have links to open in GitKraken - just look for Keif <i class="fab fa-gitkraken"></i> !
+Once connected, a <strong>Open in Jira</strong> button appears in the [file diff view](/gitkraken-desktop/diff/). Clicking this opens the specific file diff in your Jira instance.
 
-<img src="/wp-content/uploads/open-in-gitkraken-2025.png" srcset="/wp-content/uploads/open-in-gitkraken-2025@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/open-in-jira-2025.png" srcset="/wp-content/uploads/open-in-jira-2025@2x.png" class="help-center-img img-bordered" alt="Open file diff in Jira from GitKraken">
+
+---
+
+## Open Jira to a Commit
+
+Right-click any commit in the graph and choose <strong>Open in Jira</strong>. This launches Jira focused on the selected commit.
+
+<img src="/wp-content/uploads/open-jira-to-commit-2025.png" srcset="/wp-content/uploads/open-jira-to-commit-2025@2x.png" class="help-center-img img-bordered" alt="Open Jira to a commit from GitKraken">
+
+---
+
+## Open GitKraken from Jira
+
+Within Jira, Git Integration for Jira adds buttons to open commits and diffs in GitKraken. Look for the GitKraken logo to launch GitKraken Desktop for a deeper view.
+
+<img src="/wp-content/uploads/open-in-gitkraken-2025.png" srcset="/wp-content/uploads/open-in-gitkraken-2025@2x.png" class="help-center-img img-bordered" alt="Open GitKraken from a Jira issue via Git Integration">
