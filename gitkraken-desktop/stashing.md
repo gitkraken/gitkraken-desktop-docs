@@ -1,98 +1,124 @@
 ---
-
 title: Stash
 description: Save your changes for later with stashing in GitKraken Desktop.
 taxonomy:
     category: gitkraken-desktop
-
 ---
 <kbd>Last updated: May 2025</kbd>
 
-Let's talk about how to save your changes for later with stashing.
+Save your uncommitted changes for later by creating a stash. Stashing is useful when you need to switch context quickly or test something without committing unfinished work.
 
 ***
 
 <a name="stashing-files"></a>
 
-## Stashing files
+## Stash changes from the top toolbar
 
-Stash your changes by hitting the **Stash** icon in the top toolbar.
+Click the **Stash** icon in the top toolbar to create a new stash.
 
-<img src='/wp-content/uploads/stash.png' srcset='/wp-content/uploads/stash@2x.png' class="help-center-img img-bordered">
+<figure>
+  <img src='/wp-content/uploads/stash.png' srcset='/wp-content/uploads/stash@2x.png' class="help-center-img img-bordered">
+  <figcaption>Create a stash from the top toolbar.</figcaption>
+</figure>
 
-Your stash will appear on the graph. If you right click on the stash, you will be given the option to:
+Your stash will appear in the commit graph. Right-click on the stash node to see available options:
 
-* **Apply Stash**: Applies the changes to your WIP and retains stash for reusability
-* **Pop Stash**: Applies the changes to your WIP and then deletes your stash
-* **Delete Stash**: Annihilates a stash
-* **Hide**: Hides the selected stash from the commit graph
-* **Hide all stashes**: Hides all stashes from the commit graph
-* **Show all stashes**: Shows all stashes on the commit graph
+* **Apply Stash**: Apply changes to your working directory and keep the stash.
+* **Pop Stash**: Apply changes and remove the stash.
+* **Delete Stash**: Permanently remove the stash.
+* **Hide**: Hide the stash from the graph.
+* **Hide all stashes**: Hide all stashes from the graph.
+* **Show all stashes**: Display all hidden stashes.
 
-<img src='/wp-content/uploads/stash-options.png' srcset='/wp-content/uploads/stash-options@2x.png' class="help-center-img img-bordered">
+<figure>
+  <img src='/wp-content/uploads/stash-options.png' srcset='/wp-content/uploads/stash-options@2x.png' class="help-center-img img-bordered">
+  <figcaption>Right-click a stash to manage it.</figcaption>
+</figure>
 
-If you only need to pop your stash, then use the Pop Stash button in the upper toolbar:
+To quickly pop the latest stash, use the **Pop Stash** button:
 
-<img src='/wp-content/uploads/pop-stash.png' srcset='/wp-content/uploads/pop-stash@2x.png' class="help-center-img img-bordered">
+<figure>
+  <img src='/wp-content/uploads/pop-stash.png' srcset='/wp-content/uploads/pop-stash@2x.png' class="help-center-img img-bordered">
+  <figcaption>Use the Pop Stash button for one-click restore and delete.</figcaption>
+</figure>
 
 <a name="stashing-from-the-left-panel"></a>
 
-### Stashing from Commit Panel (+AI)
+## Stash from the Commit Panel
 
-Stage your changes and click on the Stash icon (instead of Commit) to enable the option. This is also the best place to write out a stash description.
+You can stash changes from the Commit Panel. Stage your files and click the Stash icon (instead of Commit).
 
-<img src='/wp-content/uploads/stash-commit-panel-2025.png' class="help-center-img img-bordered">
+<figure>
+  <img src='/wp-content/uploads/stash-commit-panel-2025.png' class="help-center-img img-bordered">
+  <figcaption>Stage files and click the Stash icon to save changes.</figcaption>
+</figure>
 
-If you've set up [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/), hit the sparkle AI to generate a stash message based on your staged changes.
+If you use [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/), click the sparkle icon to auto-generate a stash message based on your staged changes.
 
-<img src="/wp-content/uploads/stash-ai-message.png" srcset="/wp-content/uploads/stash-ai-message@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/stash-ai-message.png" srcset="/wp-content/uploads/stash-ai-message@2x.png" class="help-center-img img-bordered">
+  <figcaption>Use GitKraken AI to generate a stash description.</figcaption>
+</figure>
 
-### Stashing from the Left Panel
+## View and manage stashes from the Left Panel
 
-Your stashes will be available from the Left Panel for review. The same options to Apply, Pop, Delete, Hide, Hide all, or Show all are present too:
+All your stashes are listed in the Left Panel. Right-click to Apply, Pop, Delete, Hide, or Show them.
 
-<img src='/wp-content/uploads/stash-left-2025.png' class="help-center-img img-bordered">
-
-This is helpful for those times you cannot find your stash on the graph.
+<figure>
+  <img src='/wp-content/uploads/stash-left-2025.png' class="help-center-img img-bordered">
+  <figcaption>Review and manage your stashes from the Left Panel.</figcaption>
+</figure>
 
 <a name="naming-a-stash"></a>
 
-### Naming a stash
+## Name a stash
 
-To name your stash, type the desired name in the `// WIP` field at the top of the graph.
+To give a stash a name, type into the `// WIP` field at the top of the graph before stashing.
 
-<img src='/wp-content/uploads/custom-stash-wip.png' srcset='/wp-content/uploads/custom-stash-wip@2x.png' class="help-center-img img-bordered">
+<figure>
+  <img src='/wp-content/uploads/custom-stash-wip.png' srcset='/wp-content/uploads/custom-stash-wip@2x.png' class="help-center-img img-bordered">
+  <figcaption>Enter a custom stash name before saving.</figcaption>
+</figure>
 
-The stash will now appear in the Left Panel and the graph with the desired name.
+Named stashes are easier to recognize in the Left Panel and commit graph.
 
-<img src='/wp-content/uploads/custom-stash-panel.png' srcset='/wp-content/uploads/custom-stash-panel@2x.png' class="help-center-img img-bordered">
+<figure>
+  <img src='/wp-content/uploads/custom-stash-panel.png' srcset='/wp-content/uploads/custom-stash-panel@2x.png' class="help-center-img img-bordered">
+  <figcaption>Named stash in the Left Panel.</figcaption>
+</figure>
 
-<img src='/wp-content/uploads/custom-stash-graph.png' srcset='/wp-content/uploads/custom-stash-graph@2x.png' class="help-center-img img-bordered">
+<figure>
+  <img src='/wp-content/uploads/custom-stash-graph.png' srcset='/wp-content/uploads/custom-stash-graph@2x.png' class="help-center-img img-bordered">
+  <figcaption>Named stash in the graph view.</figcaption>
+</figure>
 
-### Amend Stash Messages
+## Edit a stash message
 
-Users may amend stash messages by right-clicking a stash in the Commit Graph and then click on “Edit stash message.” 
+To update a stash description, right-click the stash in the graph or the Left Panel, then select **Edit stash message**.
 
-<img src="/wp-content/uploads/amend-stash-graph2.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/amend-stash-graph2.png" class="help-center-img img-bordered">
+  <figcaption>Edit a stash message from the context menu.</figcaption>
+</figure>
 
-You may also right click on a stash in the Left Panel to access the same option.
+## Create and apply a partial stash
 
-### Partial stash
+Stash specific files by right-clicking them in the **Staged Files** panel and selecting **Stash file**. This clears their changes and saves them to a partial stash.
 
-Sometimes you only need to stash some of the files in your WIP.  
+<figure>
+  <img src='/wp-content/uploads/partial-stash.png' class="help-center-img img-bordered">
+  <figcaption>Select individual files to stash partially.</figcaption>
+</figure>
 
-Partial stashing is found in the "staged files" panel. Right-click individual files, or multiple files, and select the “Stash file” option to stash those selected files and have their changes reset.
+You can also apply changes from a partial stash one file at a time. Right-click a file in the Right Panel while a stash is selected.
 
-<img src='/wp-content/uploads/partial-stash.png' class="help-center-img img-bordered">
+<figure>
+  <img src='/wp-content/uploads/partial-stash-apply.png' class="help-center-img img-bordered">
+  <figcaption>Apply part of a stash by selecting specific files.</figcaption>
+</figure>
 
-**Apply changes from stash to working directory**
+### Tips for partial stashes
 
-You can also partially apply a stash. When a stash is selected, right click files in the right panel to apply their changes to the working directory.
-
-<img src='/wp-content/uploads/partial-stash-apply.png' class="help-center-img img-bordered">
-
-Partial stash tips
-
-* You may name a partial stash by typing into the //WIP node or summary section before creating the stash.
-* Select additional files for stashing or applying by holding down the Shift or Control key.
-* Applying a file from a stash does not remove the file from the stash – use this to safely explore!
+* Name a partial stash via the `// WIP` node or summary field before stashing.
+* Hold **Shift** or **Ctrl** to select multiple files.
+* Applying a file from a stash doesn’t remove it from the stash.
