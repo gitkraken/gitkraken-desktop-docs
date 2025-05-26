@@ -41,7 +41,7 @@ Right-click a file (from a previous commit or via **View all files**) and select
 
 ### 3. Use the Diff or File View
 
-Click the <button class='button button--primary button--ui button--nolink'>Edit this file</button> button from a file preview.
+Click the <button class='button button--primary button--ui button--nolink'>Edit this file</button> button from a file diff.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/edit-file-diff-2025.png' class="help-center-img img-bordered" alt="Editing a file from Diff view">
@@ -56,7 +56,7 @@ Click the <button class='button button--primary button--ui button--nolink'>Edit 
 
 ## File Edit Indicators
 
-The upper-right corner of the file editor shows:
+The upper-left corner of the file editor shows:
 
 - <strong>editable</strong> tag: Indicates the file can be modified
 - <strong>blue dot</strong>: Indicates unsaved changes
