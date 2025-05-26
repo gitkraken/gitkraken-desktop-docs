@@ -18,7 +18,7 @@ Click the **Stash** icon in the top toolbar to create a new stash.
 
 <figure>
   <img src='/wp-content/uploads/stash.png' srcset='/wp-content/uploads/stash@2x.png' class="help-center-img img-bordered">
-  <figcaption>Create a stash from the top toolbar.</figcaption>
+  <figcaption style="text-align:center; color:#888">Create a stash from the top toolbar.</figcaption>
 </figure>
 
 Your stash will appear in the commit graph. Right-click on the stash node to see available options:
@@ -32,14 +32,14 @@ Your stash will appear in the commit graph. Right-click on the stash node to see
 
 <figure>
   <img src='/wp-content/uploads/stash-options.png' srcset='/wp-content/uploads/stash-options@2x.png' class="help-center-img img-bordered">
-  <figcaption>Right-click a stash to manage it.</figcaption>
+  <figcaption style="text-align:center; color:#888">Right-click a stash to manage it.</figcaption>
 </figure>
 
 To quickly pop the latest stash, use the **Pop Stash** button:
 
 <figure>
   <img src='/wp-content/uploads/pop-stash.png' srcset='/wp-content/uploads/pop-stash@2x.png' class="help-center-img img-bordered">
-  <figcaption>Use the Pop Stash button for one-click restore and delete.</figcaption>
+  <figcaption style="text-align:center; color:#888">Use the Pop Stash button for one-click restore and delete.</figcaption>
 </figure>
 
 <a name="stashing-from-the-left-panel"></a>
@@ -50,14 +50,14 @@ You can stash changes from the Commit Panel. Stage your files and click the Stas
 
 <figure>
   <img src='/wp-content/uploads/stash-commit-panel-2025.png' class="help-center-img img-bordered">
-  <figcaption>Stage files and click the Stash icon to save changes.</figcaption>
+  <figcaption style="text-align:center; color:#888">Stage files and click the Stash icon to save changes.</figcaption>
 </figure>
 
 If you use [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/), click the sparkle icon to auto-generate a stash message based on your staged changes.
 
 <figure>
   <img src="/wp-content/uploads/stash-ai-message.png" srcset="/wp-content/uploads/stash-ai-message@2x.png" class="help-center-img img-bordered">
-  <figcaption>Use GitKraken AI to generate a stash description.</figcaption>
+  <figcaption style="text-align:center; color:#888">Use GitKraken AI to generate a stash description.</figcaption>
 </figure>
 
 ## View and manage stashes from the Left Panel
@@ -66,7 +66,7 @@ All your stashes are listed in the Left Panel. Right-click to Apply, Pop, Delete
 
 <figure>
   <img src='/wp-content/uploads/stash-left-2025.png' class="help-center-img img-bordered">
-  <figcaption>Review and manage your stashes from the Left Panel.</figcaption>
+  <figcaption style="text-align:center; color:#888">Review and manage your stashes from the Left Panel.</figcaption>
 </figure>
 
 <a name="naming-a-stash"></a>
@@ -77,19 +77,19 @@ To give a stash a name, type into the `// WIP` field at the top of the graph bef
 
 <figure>
   <img src='/wp-content/uploads/custom-stash-wip.png' srcset='/wp-content/uploads/custom-stash-wip@2x.png' class="help-center-img img-bordered">
-  <figcaption>Enter a custom stash name before saving.</figcaption>
+  <figcaption style="text-align:center; color:#888">Enter a custom stash name before saving.</figcaption>
 </figure>
 
 Named stashes are easier to recognize in the Left Panel and commit graph.
 
 <figure>
   <img src='/wp-content/uploads/custom-stash-panel.png' srcset='/wp-content/uploads/custom-stash-panel@2x.png' class="help-center-img img-bordered">
-  <figcaption>Named stash in the Left Panel.</figcaption>
+  <figcaption style="text-align:center; color:#888">Named stash in the Left Panel.</figcaption>
 </figure>
 
 <figure>
   <img src='/wp-content/uploads/custom-stash-graph.png' srcset='/wp-content/uploads/custom-stash-graph@2x.png' class="help-center-img img-bordered">
-  <figcaption>Named stash in the graph view.</figcaption>
+  <figcaption style="text-align:center; color:#888">Named stash in the graph view.</figcaption>
 </figure>
 
 ## Edit a stash message
@@ -98,7 +98,7 @@ To update a stash description, right-click the stash in the graph or the Left Pa
 
 <figure>
   <img src="/wp-content/uploads/amend-stash-graph2.png" class="help-center-img img-bordered">
-  <figcaption>Edit a stash message from the context menu.</figcaption>
+  <figcaption style="text-align:center; color:#888">Edit a stash message from the context menu.</figcaption>
 </figure>
 
 ## Create and apply a partial stash
@@ -107,14 +107,14 @@ Stash specific files by right-clicking them in the **Staged Files** panel and se
 
 <figure>
   <img src='/wp-content/uploads/partial-stash.png' class="help-center-img img-bordered">
-  <figcaption>Select individual files to stash partially.</figcaption>
+  <figcaption style="text-align:center; color:#888">Select individual files to stash partially.</figcaption>
 </figure>
 
-You can also apply changes from a partial stash one file at a time. Right-click a file in the Right Panel while a stash is selected.
+You can also apply changes from a partial stash one file at a time. Right-click a file in the Commit Panel while a stash is selected.
 
 <figure>
   <img src='/wp-content/uploads/partial-stash-apply.png' class="help-center-img img-bordered">
-  <figcaption>Apply part of a stash by selecting specific files.</figcaption>
+  <figcaption style="text-align:center; color:#888">Apply part of a stash by selecting specific files.</figcaption>
 </figure>
 
 ### Tips for partial stashes
