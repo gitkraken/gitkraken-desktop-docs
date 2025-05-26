@@ -1,14 +1,12 @@
 ---
-
 title: Submodules
 description: Submodules allow you to include other Git repositories within another Git repository. Work with submodules in GitKraken Desktop.
 taxonomy:
     category: gitkraken-desktop
-
 ---
 <kbd>Last updated: April 2025</kbd>
 
-Submodules allow you to include other Git repositories within a Git repository and can be managed directly inside of GitKraken Desktop.
+Submodules allow you to include another Git repository inside a parent repository. Use submodules to incorporate independent projects while maintaining separate commit histories.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/moC2KyxGb10?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
@@ -16,67 +14,88 @@ Submodules allow you to include other Git repositories within a Git repository a
 
 ***
 
-## Toggle submodules in Left Panel
+## Enable the Submodules Pane
 
-All panes in the Left Panel can be toggled on or off. To enable the submodules pane, right-click on any pane header. 
+To toggle the Submodules pane:
+1. Right-click any pane header in the Left Panel.
+2. Check or uncheck “Submodules” to show or hide the pane.
 
-<img src="/wp-content/uploads/toggle-panes-2025.png" srcset="/wp-content/uploads/toggle-panes-2025@2x.png" class="help-center-img img-bordered">
-
-Check the submodule pane, and uncheck any panes you wish to hide. 
-
-## Adding submodules
-
-Add a submodule by clicking the <button class='button button--success button--ui button--nolink'>+</button> when hovering over <img src='/wp-content/uploads/gk-new-submodules-icon.svg' style='height:1em;'> _Submodules_ in the Left Panel. Paste the HTTPS or SSH link to the repository, and then enter the path.
-
-<img src="/wp-content/uploads//add-submodule.png" srcset="/wp-content/uploads//add-submodule@2x.png" class="help-center-img img-bordered">
-
-Adding a submodule to the repository adds a link to the submodule's repository in the <code>.gitmodules</code> file.
-
-When the parent repository is cloned, it includes the reference to any submodules and the submodules require initialization.
-
-Your repository tracks the submodule's checked out commit.  If there are any updates to the submodule, the files will not automatically update your working directory.
+<figure>
+  <img src="/wp-content/uploads/toggle-panes-2025.png" srcset="/wp-content/uploads/toggle-panes-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Toggle the Submodules pane from the Left Panel</figcaption>
+</figure>
 
 ***
 
-## Updating submodules
+## Add a Submodule
 
-To update submodules, navigate to the Submodule pane in the Left Panel and right-click on the submodule.
+To add a submodule:
+1. Hover over <em>Submodules</em> in the Left Panel.
+2. Click the <button class='button button--success button--ui button--nolink'>+</button> icon.
+3. Paste the HTTPS or SSH repository URL.
+4. Enter the desired path.
 
-<img src="/wp-content/uploads//update-submodule.png" srcset="/wp-content/uploads//update-submodule@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads//add-submodule.png" srcset="/wp-content/uploads//add-submodule@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Add a submodule using HTTPS or SSH URL</figcaption>
+</figure>
 
-If you clone a repository that contains a submodule, you will be prompted to initialize the submodule.  This will clone the submodule's repository and check out the referenced commit.
+Adding a submodule updates the `.gitmodules` file and references the submodule commit.
 
-***
-
-## Changing pointer commit
-
-To change the pointer commit, open the submodule in GitKraken Desktop and then check out the new commit. You may need to first create a branch on the target commit before you can check it out.
-
-Then when you exit the submodule, GitKraken Desktop will detect the change and ask you if you wish to save the change.
-
-<img src="/wp-content/uploads//submodule-commit.png" srcset="/wp-content/uploads//submodule-commit@2x.png" class="help-center-img img-bordered">
-
-***
-
-## Statuses
-
-Below are possible statuses of your submodules and their remedies:
-
-- _Out of sync_ -- The checked out commit of the submodule has changed.  There is a change to the submodule reference in your work in progress that should be stashed, committed or discarded.
-- _Added but not initialized_ -- Right click and select initialize.
-- _Added and initialized but not committed_ -- When adding a submodule, commit the submodule folder to the repository and insert the reference to the submodule in the <code>.gitmodules</code> file.
+When cloning the parent repository, you’ll be prompted to initialize the submodule to fetch and checkout its commit.
 
 ***
 
-### Keep submodules up to date
+## Update a Submodule
 
-There is a setting to automatically _Keep submodules up to date_ when performing Git actions. This can be enabled or disabled:
+To update a submodule:
+1. Open the Submodules pane.
+2. Right-click the submodule.
+3. Select <kbd>Update</kbd> to fetch the latest commit.
 
-+ Globally - from <kbd>Preferences > General</kbd>
-+ Per repository - from <kbd>Preferences > Submodules</kbd>
+<figure>
+  <img src="/wp-content/uploads//update-submodule.png" srcset="/wp-content/uploads//update-submodule@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Update a submodule from the Left Panel</figcaption>
+</figure>
+
+When cloning a repository that includes submodules, GitKraken prompts you to initialize them.
 
 ***
 
-### GitKraken Desktop and subtree, not submodules
+## Change the Pointer Commit
 
-GitKraken Desktop does not currently support subtree in-app.
+To update the tracked commit:
+1. Open the submodule in GitKraken Desktop.
+2. Check out a new commit or branch.
+3. Exit the submodule to return to the parent repo.
+
+GitKraken will prompt you to save the updated pointer commit.
+
+<figure>
+  <img src="/wp-content/uploads//submodule-commit.png" srcset="/wp-content/uploads//submodule-commit@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Update the pointer commit for a submodule</figcaption>
+</figure>
+
+***
+
+## Submodule Statuses
+
+Possible submodule states and how to resolve them:
+
+- **Out of sync**: The pointer commit changed. Stash, commit, or discard changes.
+- **Added but not initialized**: Right-click and select <kbd>Initialize</kbd>.
+- **Added and initialized but not committed**: Commit the submodule folder and update `.gitmodules`.
+
+***
+
+## Keep Submodules Up to Date
+
+Enable automatic submodule updates:
+- Globally: <kbd>Preferences > General</kbd>
+- Per repository: <kbd>Preferences > Submodules</kbd>
+
+***
+
+## Subtree Support
+
+GitKraken Desktop does **not** support subtree workflows in-app.
