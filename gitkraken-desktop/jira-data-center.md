@@ -1,52 +1,51 @@
 ---
-
 title: GitKraken Desktop & Jira Data Center Issues Integration
 description: Learn how to access Jira Issues from GitKraken Desktop
 taxonomy:
     category: gitkraken-desktop
-
 ---
+
 <kbd>Last updated: May 2025</kbd>
 
-GitKraken Desktop makes it easy to integrate with Jira Cloud and Jira Data Center.
+GitKraken Desktop supports integration with both Jira Cloud and Jira Data Center to help you manage issues directly from your Git workflow.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/On83cso-w3U" frameborder="0" allowfullscreen></iframe>
 </div>
 
+---
+
+## Requirements
+
 <div class='callout callout--warning'>
-    <p>This integration is only available for the <a href="https://www.gitkraken.com/pricing" target="_blank">Advanced subscriptions tier</a> or higher.</p>
+    <p>This integration is only available for <a href="https://www.gitkraken.com/pricing" target="_blank">Advanced subscription tiers</a> or higher.</p>
 </div>
 
 <div class='callout callout--basic'>
-    <p>The Jira Data Center integration requires version 8.4 or newer.</p>
+    <p>The Jira Data Center integration requires Jira version 8.4 or newer. Some SSO (single sign-on) configurations are not supported.</p>
 </div>
 
-***
+---
 
-### Connect Jira Data Center Integration
+## Connect to Jira Data Center
 
-Set up the integration from the ISSUES pane in the Left Panel or from <kbd><i>Preferences    <i class='fa fa-caret-right'></i>     Integrations</i></kbd>. If you do not see the ISSUES pane, right-click on any Left Panel header to access the context menu and check the option for Issues.
+Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>. If you don't see the ISSUES section, right-click any header in the Left Panel and enable it from the context menu.
 
-<img src="/wp-content/uploads/connect-jira-dc-issues-2025.png" srcset="/wp-content/uploads/connect-jira-dc-issues-2025@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connect-jira-dc-issues-2025.png" srcset="/wp-content/uploads/connect-jira-dc-issues-2025@2x.png" class="help-center-img img-bordered" alt="Open Jira Data Center integration settings">
 
-Enter the Host Domain URL and a Personal Access Token generated from Jira Data Center.
+Enter your Host Domain URL and a Personal Access Token generated in your Jira Data Center instance.
 
-<img src="/wp-content/uploads/connect-jira-dc-2025.png" srcset="/wp-content/uploads/connect-jira-dc-2025@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connect-jira-dc-2025.png" srcset="/wp-content/uploads/connect-jira-dc-2025@2x.png" class="help-center-img img-bordered" alt="Enter domain and access token for Jira Data Center">
 
-With a successful network connection to your Jira Data Center instance, the app will connect.
+Once connected, GitKraken Desktop will confirm the integration.
 
-<img src="/wp-content/uploads/connected-jira-dc-2025.png" srcset="/wp-content/uploads/connected-jira-dc-2025@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connected-jira-dc-2025.png" srcset="/wp-content/uploads/connected-jira-dc-2025@2x.png" class="help-center-img img-bordered" alt="Successful Jira Data Center connection">
 
-<div class='callout callout--warning'>
-  <p><strong>Note:</strong> Some SSO (single sign on) configurations are not supported for the Jira Data Center integration at this time.</p>
-</div>
+---
 
-***
+## Features
 
-### Jira Data Center Integration features
-
-Once connected, the Jira Data Center integration shares the same features as the Jira Cloud integration.
+The Jira Data Center integration includes the same functionality as the Jira Cloud integration:
 
 - [Preview Jira Issues](/integrations/jira/#preview-jira-issues)
 - [View Jira Issue Details](/integrations/jira/#view-jira-issue-details)
@@ -55,3 +54,4 @@ Once connected, the Jira Data Center integration shares the same features as the
 - [Create Branch from Issue](/integrations/jira/#create-branches-from-issue)
 - [Copy Issue link or View in Jira](/integrations/jira/#copy-issue-link-or-view-in-jira)
 
+For more information on each feature, refer to the [Jira Cloud integration guide](/integrations/jira).
