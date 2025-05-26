@@ -1,36 +1,41 @@
 ---
-
 title: GitKraken Desktop & GitLab Self-Managed Issues Integration
 description: Learn how to access GitLab Self-Managed Issues from GitKraken Desktop
 taxonomy:
     category: gitkraken-desktop
-
 ---
+
 <kbd>Last updated: May 2025</kbd>
 
-GitKraken Desktop makes it easy to work with your GitLab Self-Managed Issues.
+GitKraken Desktop supports integration with GitLab Self-Managed Issues, helping teams track work and manage issues alongside their repositories.
 
 <div class='callout callout--basic'>
-    <p>The GitLab Self-Managed Issues integration is view-only for Community users. To unlock all features for the integration, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken license</a>. </p>
+    <p>The GitLab Self-Managed Issues integration is view-only for Community users. To unlock all features, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken license</a>.</p>
 </div>
 
-***
+---
 
-### Connect GitLab Self-Managed Integration
+## Requirements
 
 <div class='callout callout--warning'>
-    <p>The GitLab Self-Managed Issues Integration requires GitLab Self-Managed version 13.1 or newer.</p>
+    <p>This integration requires GitLab Self-Managed version 13.1 or newer.</p>
 </div>
 
-The GitLab Self-Managed integration and GitLab Self-Managed Issues integration share the same connection. You can Set up the integration from the ISSUES pane in the left panel or from <kbd><i>Preferences   <i class='fa fa-caret-right'></i>   Integrations</i></kbd>
+---
 
-Follow the [integration instructions](/integrations/gitlab-self-hosted/#gitlab-self-managed-authentication) to get connected to your GitLab Self-Managed instance.
+## Connect GitLab Self-Managed Integration
 
-***
+The GitLab Self-Managed and GitLab Self-Managed Issues integrations share the same connection.
 
-### GitLab Self-Managed Integration features
+Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
-Once connected, the GitLab Self-Managed integration shares the same features as the GitLab integration. 
+Follow these [GitLab Self-Managed authentication steps](/integrations/gitlab-self-hosted/#gitlab-self-managed-authentication) to connect your instance.
+
+---
+
+## Features
+
+Once connected, the GitLab Self-Managed Issues integration provides the same functionality as the GitLab Issues integration:
 
 - [Preview GitLab Issues](/integrations/gitlab-issues/#preview-gitlab-issues)
 - [View and Edit GitLab Issue Details](/integrations/gitlab-issues/#view-and-edit-gitlab-issue-details)
@@ -38,4 +43,3 @@ Once connected, the GitLab Self-Managed integration shares the same features as 
 - [Create GitLab Filters](/integrations/gitlab-issues/#create-filters)
 - [Create Branch from Issue](/integrations/gitlab-issues/#create-branches-from-issue)
 - [Shortcuts to view Issues in GitLab](/integrations/gitlab-issues/#copy-issue-link-or-view-in-gitlab)
-
