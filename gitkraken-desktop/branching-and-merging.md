@@ -29,10 +29,11 @@ A branch is a pointer to a specific commit, allowing you to isolate changes from
 
 ### Checkout a Branch
 
+Branch checkout updates files in the working directory to reflect the version defined by that branch.
+
 To update your working directory:
-- Double-click a branch label
-- Use the Commit Graph or the Left Panel
-- Right-click a branch and select **Checkout**
+- Double-click a branch label from the Commit Graph or the Left Panel
+- Right-click a branch from the Commit Graph or the Left Panel and select **Checkout**
 
 <figure>
   <img src="/wp-content/uploads/add-branch-2025.gif" class="help-center-img img-bordered">
