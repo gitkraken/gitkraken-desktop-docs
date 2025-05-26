@@ -1,186 +1,214 @@
 ---
-
 title: Branching and Merging
 description: Learn about branching and merging in GitKraken Desktop.
 taxonomy:
     category: gitkraken-desktop
-
 ---
+<kbd>Last updated: May 2025</kbd>
 
-Learn how to branch and merge in GitKraken Desktop. 🌳 🔀
+Learn how to branch, merge, and rebase in GitKraken Desktop.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8-qRKyy-v7I?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>
 
-
-Looking for a sharable summary? Learn about [how GitKraken solves merge conflicts](https://www.gitkraken.com/developer-problems/merge-conflicts?product=gitkraken&source=help_center).   
+Looking for a quick summary? See [how GitKraken solves merge conflicts](https://www.gitkraken.com/developer-problems/merge-conflicts?product=gitkraken&source=help_center).
 
 ***
 
 ## Branches
-When starting work on a new feature or bug, <a href="https://gitkraken.com/learn/git/problems/create-git-branch?product=gitkraken&source=help_center" target="_blank">create a new branch</a>. Right-click on any existing commit to create a branch:
 
-<img src="/wp-content/uploads/add-branch-2025.png" srcset="/wp-content/uploads/add-branch@2x.png 2x" class="help-center-img img-bordered">
-A branch is a pointer to a specific commit in the repo.
+Create a new branch when working on a feature or fix. Right-click any commit to open the context menu and create a branch.
 
-Branches allow you to isolate new work from other areas of the repository, and interact with other collaborators. If you're looking for direction, consider implementing <a href="/git-workflows-and-extensions/git-flow">GitFlow</a> as a merging strategy.
-
-### Checking out branches
-Branch checkout updates files in the working directory to reflect the version defined by that branch.
-
-New commits are added to the currently checked out branch. If you find yourself on the wrong branch, <a href="/gitkraken-desktop/stashing">stash</a> your changes, switch to the correct branch, and then *pop* the stash.
-
-When you create a new branch, GitKraken Desktop will automatically checkout the branch for you:
-
-<figure class='figure center'>
-    <img src='/wp-content/uploads/add-branch-2025.gif' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Right click to create a new branch.</figcaption>
+<figure>
+  <img src="/wp-content/uploads/add-branch-2025.png" srcset="/wp-content/uploads/add-branch@2x.png 2x" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Create a branch by right-clicking on a commit</figcaption>
 </figure>
 
+A branch is a pointer to a specific commit, allowing you to isolate changes from the main codebase. Consider adopting [GitFlow](/git-workflows-and-extensions/git-flow) for structured branching strategies.
 
-To checkout a different branch, double-click on the branch label on the Left Panel or via the Commit Graph.  Checkout is also available by right-clicking a branch.
+### Checkout a Branch
 
-### Rename a branch
+To update your working directory:
+- Double-click a branch label
+- Use the Commit Graph or the Left Panel
+- Right-click a branch and select **Checkout**
 
-Rename a branch by right-clicking the branch tag in the Commit Graph (or right-click the branch in the branch list on the Left Panel) and selecting `Rename branch-name`.
+<figure>
+  <img src="/wp-content/uploads/add-branch-2025.gif" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Creating and checking out a new branch</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/rename-branch.png" srcset="/wp-content/uploads/rename-branch@2x.png 2x" class="help-center-img img-bordered">
-For hardcore keyboard warriors, you can also rename a branch using the Command Palette (Cmd+P or Ctrl+P) and type `Rename Branch`.
+If you’re on the wrong branch, [stash](/gitkraken-desktop/stashing) your changes, switch branches, and pop the stash.
 
-<img src="/wp-content/uploads/rename-branch-command-palette.png" srcset="/wp-content/uploads/rename-branch-command-palette@2x.png 2x" class="help-center-img img-bordered">
-Note: You can only rename the current branch you are on.
-### Delete a branch
+### Rename a Branch
 
-To <a href="https://gitkraken.com/learn/git/problems/delete-local-git-branch?product=gitkraken&source=help_center" target="_blank">delete a branch</a>, right-click the branch and select `Delete {branch-name}`. You cannot delete a branch that is checked out, so be sure to first checkout a different branch to then delete it. 
+Right-click the branch label or use the Left Panel to rename the current branch.
 
-To delete multiple local branches in the Left Panel, hold <kbd>Shift</kbd> then click to select a range of branches or hold <kbd>&#8984; | Ctrl</kbd>  then click to select specific branches. Then right-click to access the delete option.
+<figure>
+  <img src="/wp-content/uploads/rename-branch.png" srcset="/wp-content/uploads/rename-branch@2x.png 2x" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Rename a branch from the graph or Left Panel</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/multi-delete-branches.gif" class="help-center-img img-bordered">
+You can also rename using the Command Palette (Cmd+P / Ctrl+P):
+
+<figure>
+  <img src="/wp-content/uploads/rename-branch-command-palette.png" srcset="/wp-content/uploads/rename-branch-command-palette@2x.png 2x" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Search for "Rename Branch" in Command Palette</figcaption>
+</figure>
+
+### Delete a Branch
+
+To delete a branch:
+1. Switch to another branch
+2. Right-click the branch you wish to delete
+
+Use multi-select in the Left Panel to delete several branches at once:
+- <kbd>Shift</kbd> to select a range
+- <kbd>&#8984;</kbd> / <kbd>Ctrl</kbd> to select specific branches
+
+<figure>
+  <img src="/wp-content/uploads/multi-delete-branches.gif" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Select and delete multiple branches</figcaption>
+</figure>
+
 <div class='callout callout--warning'>
-    <p><strong>Caution:</strong> Deleting a branch is a destructive action.</p>
+  <p><strong>Caution:</strong> Deleting a branch is permanent.</p>
 </div>
 
 ***
+
 ## Merging
 
-Merging takes the commits on two different branches and combines them.
+Merging combines changes from one branch into another. To merge:
+- Drag and drop one branch onto your target branch
+- Or right-click the source branch and choose **Merge**
 
-With a merge, files are automatically merged unless there are two conflicting set of changes, i.e. commits on the different branches updating the same line in different ways.
+<figure>
+  <img src="/wp-content/uploads/merge-right.png" srcset="/wp-content/uploads/merge-right@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Merge via drag-and-drop or right-click</figcaption>
+</figure>
 
-Drag and drop one branch onto another to initiate a merge, or just right click the branch you would like to merge in and select merge from the menu.
+If no conflicts exist, changes will be merged automatically.
 
-<img src="/wp-content/uploads/merge-right.png" srcset="/wp-content/uploads/merge-right@2x.png" class="help-center-img img-bordered">
 <div class='callout callout--warning'>
-    <p>Note 📝 - The in-app merge conflict output editor is only available with a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center" target=_blank>Paid</a> license. </p>
+  <p>The in-app merge conflict output editor is available with a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center" target="_blank">Paid</a> license.</p>
 </div>
-
-
-### Choose your own adventure
-* I want to merge my own stuff in -- Continue onward!
-* I want someone else to review and merge for me -- You want a <a href="/gitkraken-desktop/pull-requests">Pull Request</a>!
-
 
 ### Merge Conflict Editor
 
-Merge conflicts may happen when team members make different changes to the same line of the same file, or when one team member edits a file and another deletes the same file. Oops!
+When conflicts occur, the Commit Panel shows the conflicted files. Click a file to open the Merge Tool.
 
-When collaboration goes wrong, GitKraken Desktop Merge Conflict Editor is here to clear the murky waters.
-
-If your merge attempt triggers a merge conflict, GitKraken Desktop display the conflicting files in the Commit Panel.
-
-<img src="/wp-content/uploads/merge-conflict.png" srcset="/wp-content/uploads/merge-conflict@2x.png" class="help-center-img img-bordered">
-Clicking a conflicted file opens the _Merge Tool_.
-
-The current branch is on the left, and the target branch that you're merging into is shown on the right. The _Merge Tool_ output is at the bottom.
-
-<img src="/wp-content/uploads/merge-tool2.png" srcset="/wp-content/uploads/merge-tool2@2x.png" class="help-center-img img-bordered">
-Each conflict section has a checkbox. Checking a section adds it to the **Output** at the bottom so you can see the options in context to decide which makes the most sense to commit.
-
-<img src="/wp-content/uploads/merge-tool-toggle.gif" class="help-center-img img-bordered">
-You can also mouse over the line number and click <button class='button button--success button--ui button--nolink'>+</button> to select specific lines for the  Output, or edit the Output window directly.
-
-Clicking the up and down arrows will move you to the next conflict.
-
-<div class='callout callout--basic'>
-    <p><strong>Tip</strong> - Use the keyboard shortcut <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>F</kbd> to search any of the 3 diffs inside the merge tool. </p>
-</div>
-
-<div class='callout callout--warning'>
-    <p>Note 📝 - The in-app merge conflict output editor is only available with a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center" target=_blank>Paid</a> license. </p>
-</div>
-
-<figure class='figure center'>
-    <img src='/wp-content/uploads/merge-tool-gif.gif'>
+<figure>
+  <img src="/wp-content/uploads/merge-conflict.png" srcset="/wp-content/uploads/merge-conflict@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Conflicted files shown in Commit Panel</figcaption>
 </figure>
 
-After the conflict is resolved, save the output and commit the changes.
+The Merge Tool shows:
+- Current branch on the left
+- Target branch on the right
+- Output at the bottom
+
+<figure>
+  <img src="/wp-content/uploads/merge-tool2.png" srcset="/wp-content/uploads/merge-tool2@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Review and resolve conflicts in the Merge Tool</figcaption>
+</figure>
+
+Use checkboxes or click <button class='button button--success button--ui button--nolink'>+</button> to select lines. Use arrow keys to navigate conflicts.
+
+<figure>
+  <img src="/wp-content/uploads/merge-tool-toggle.gif" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Select specific lines or edit output directly</figcaption>
+</figure>
+
+After resolving, save and commit the output.
 
 <div class='callout callout--basic'>
-    <p>Watch our Learn Git Tutorial on <a href="https://www.gitkraken.com/learn/git/tutorials/how-to-resolve-merge-conflict-in-git?product=gitkraken&source=help_center" target="_blank">how to resolve merge conflicts in git</a>.</p>
+  <p><strong>Tip:</strong> Use <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>F</kbd> to search inside the Merge Tool.</p>
 </div>
 
+<figure>
+  <img src="/wp-content/uploads/merge-tool-gif.gif" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Animated merge resolution process</figcaption>
+</figure>
 
-### External merge tools
-Configure GitKraken Desktop to launch your tool of choice by navigating to <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> General</em>:
+### Use an External Merge Tool
 
-<img src="/wp-content/uploads/configureExternalTool.png" srcset="/wp-content/uploads/configureExternalTool@2x.png" class="help-center-img img-bordered">
-GitKraken Desktop currently supports the following merge tools:
+Set your preferred merge tool under <em>Preferences > General</em>.
 
-* Beyond Compare
-* FileMerge
-* Kaleidoscope
-* KDiff
-* Araxis
-* P4Merge
+Supported tools:
+- Beyond Compare
+- FileMerge
+- Kaleidoscope
+- KDiff
+- Araxis
+- P4Merge
 
-If your merge tool from the list above is installed and is not showing up in the dropdown, then look for an option to install command line tools.
+<figure>
+  <img src="/wp-content/uploads/configureExternalTool.png" srcset="/wp-content/uploads/configureExternalTool@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Select a merge tool in Preferences</figcaption>
+</figure>
 
-<img src='/wp-content/uploads/beyond-compare.png' srcset='/wp-content/uploads/beyond-compare@2x.png 2x' class='img-bordered center' style="display: block; margin-left: auto; margin-right: auto;" />
+If not appearing, ensure command line tools are installed:
 
-GitKraken Desktop does _not support_ the following merge tools:
+<figure>
+  <img src="/wp-content/uploads/beyond-compare.png" srcset="/wp-content/uploads/beyond-compare@2x.png 2x" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Sample view of configured merge tool</figcaption>
+</figure>
 
-* Meld
-* SemanticMerge
-* TortoiseMerge
-* WinMerge
+Unsupported tools include:
+- Meld
+- SemanticMerge
+- TortoiseMerge
+- WinMerge
 
-While GitKraken Desktop allows Git Config Default merge tools, not all tools will be compatible. Find more information about configuring a <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_external_merge_tools">default merge tool in your Git Config</a>.
+For compatibility details, visit [Git Config merge tools](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_external_merge_tools).
 
-### Resolving a conflicted file using current or incoming
+### Resolve with Take Current/Incoming
 
-You may resolve a conflicted file by right-clicking the file in the commit panel and selecting the option `Take current (branch)` or `Take incoming (branch)`.
+Right-click a conflicted file and select:
+- `Take current (branch)` – Use your current branch’s changes
+- `Take incoming (branch)` – Use changes from the incoming branch
 
-* `Take current (branch)` will apply the changes of the current branch.
-* `Take incoming (branch)` will apply the changes of the incoming branch.
-
-<img src='/wp-content/uploads/current-incoming.png' class="help-center-img img-bordered"/>
+<figure>
+  <img src="/wp-content/uploads/current-incoming.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Quick resolve using current or incoming options</figcaption>
+</figure>
 
 ***
 
 ## Conflict Prevention
 
-GitKraken Desktop’s **Conflict Prevention** helps you detect and manage potential conflicts before they cause disruptions. 
+GitKraken Desktop’s **Conflict Prevention** helps identify potential issues before a merge.
 
-Learn more about [Conflict Prevention →](/gitkraken-desktop/conflict-prevention/)
+[Learn more →](/gitkraken-desktop/conflict-prevention/)
 
 <div class='callout callout--warning'>
-    <p>Conflict Prevention is available for customers on the Advanced tier or higher.</p>
+  <p>Available to users on the Advanced tier or higher.</p>
 </div>
 
 ***
 
 ## Rebasing
-Rebasing takes the commits from one branch and places them onto the last commit of another branch. This alters the tree structure by moving the commits and their changes onto the target branch.
+
+Rebasing moves commits from one branch onto another for a cleaner history.
 
 <div class='embed-container embed-container--16-9'>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xot40u-_1FI" frameborder="0" allowfullscreen></iframe>
 </div>
 
-To perform a rebase, drag and drop one branch onto another branch then select <kbd>Rebase</kbd>.
+To rebase:
+- Drag and drop the source branch onto the target branch
+- Select <kbd>Rebase</kbd> from the menu
 
-<img src="/wp-content/uploads/select-rebase.png" srcset="/wp-content/uploads/select-rebase@2x.png" class="help-center-img img-bordered">
-You can rebase onto a local or remote.
+<figure>
+  <img src="/wp-content/uploads/select-rebase.png" srcset="/wp-content/uploads/select-rebase@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Rebase one branch onto another</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/select-rebase-sidebar.png" srcset="/wp-content/uploads/select-rebase-sidebar@2x.png" class="help-center-img img-bordered">
-Remember, rebasing rewrites history in exchange for a visually cleaner history. 
+<figure>
+  <img src="/wp-content/uploads/select-rebase-sidebar.png" srcset="/wp-content/uploads/select-rebase-sidebar@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Sidebar shows rebase confirmation</figcaption>
+</figure>
+
+Rebasing rewrites history but results in a more linear and readable commit tree.
