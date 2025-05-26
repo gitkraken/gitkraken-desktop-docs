@@ -1,14 +1,12 @@
 ---
-
 title: Open, Clone, and Init
 description: Learn the basics of GitKraken Desktop, like initializing or cloning projects!
 taxonomy:
     category: gitkraken-desktop
-
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
-Whether you are a newborn or a wizened deep-ocean octopod, each user will need to open, clone, or initialize a repo in GitKraken Desktop.
+Each user will need to open, clone, or initialize a repository in GitKraken Desktop. This guide explains how.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8uxrA56VJgY?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
@@ -16,103 +14,114 @@ Whether you are a newborn or a wizened deep-ocean octopod, each user will need t
 
 ***
 ## Setup
-The essential setup process includes:
+Complete these setup steps before managing repositories:
 
-1. [Installing](/gitkraken-desktop/how-to-install) GitKraken Desktop
-2. Creating an account and setting up your [profile](/gitkraken-desktop/profiles)
-
-Once this is complete, you are ready for your oceanic journey!
+1. [Install GitKraken Desktop](/gitkraken-desktop/how-to-install)
+2. Create an account and configure your [profile](/gitkraken-desktop/profiles)
 
 ***
 ## Repository Management
 
-The Repo Management tab provides an overview of your active repositories, Workspaces, and favorite repositories. To access the Repo Management tab, either click on the folder icon located at the top left or utilize the keyboard shortcut <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
+The **Repository Management** tab provides an overview of active repositories, Workspaces, and favorites. Open this tab by clicking the folder icon in the top-left or using:
+- <kbd>Alt + O</kbd> (Windows/Linux)
+- <kbd>Cmd + O</kbd> (Mac)
 
-<img src='/wp-content/uploads/repo-mgmt-2025.png' srcset="/wp-content/uploads/repo-mgmt-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src='/wp-content/uploads/repo-mgmt-2025.png' srcset="/wp-content/uploads/repo-mgmt-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Repository Management tab in GitKraken Desktop</figcaption>
+</figure>
 
-At the top left corner, you'll find three options for managing Git repositories within your projects:
+From here, you can:
+- **Browse**: Open a local Git repository.
+- **Clone**: Copy a remote Git repository to your machine.
+- **Init**: Initialize a new Git repository or reinitialize an existing one.
 
-1. **Browse** - Open a local Git repository already initialized and available locally.
-2. **Clone** - Clone a remote Git repository already initialized.
-3. **Init** - Create an empty Git repository or reinitialize an existing one.
-
-Additionally, you can create a new Workspace and manage your integrations.
-
-In the Repo Management tab you will find a list of your active repos (Open Repositories), your favorites (Favorites) and your [Workspaces](/gitkraken-desktop/workspaces/).
-
-For each repo, you have three available actions:
-* Open repository in VS Code.
-* Open repository details (this toggles a panel with the README.md content)
-* Open/Close repo tab.
-
-
-***
-
-### Opening an existing project
-GitKraken Desktop allows you to load your existing repositories and pick up where you left off. It's also useful for visualizing past work done.  
-
-From the Repository Management window, select <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Browse</span></button> to open a file explorer window and select the repository folder to open it in Gitkraken Desktop.
-
-<img src='/wp-content/uploads/open-repo-2025.png' srcset="/wp-content/uploads/open-repo-2025@2x.png"  class="help-center-img img-bordered">
-
-Alternatively, click the + icon to open a New Tab and access the <strong>Browse</strong> button from there.
-
-<img src='/wp-content/uploads/open-new-tab-2025.png' class="help-center-img img-bordered">
+This tab also includes Workspaces and repository actions:
+- Open in VS Code
+- View repository details (README.md panel)
+- Open/Close repo tab
 
 ***
-### Cloning an existing project
+### Open an Existing Project
+
+To open an existing repo:
+
+1. From Repository Management, select <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Browse</span></button>
+2. Use the file explorer to locate your repo
+
+<figure>
+  <img src='/wp-content/uploads/open-repo-2025.png' srcset="/wp-content/uploads/open-repo-2025@2x.png"  class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Select an existing repository to open</figcaption>
+</figure>
+
+You can also access this via the <strong>New Tab</strong> by clicking the + icon.
+
+<figure>
+  <img src='/wp-content/uploads/open-new-tab-2025.png' class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">New tab view with Browse option</figcaption>
+</figure>
+
+***
+### Clone a Project
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OA9o09Bq5M8?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-If your project is not on your local machine or you want a new copy, clone the project from the Repository Management window by selecting <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Clone</span></button>.
+To clone a remote repo:
 
-<img src='/wp-content/uploads/clone-repo-mgmt-2025.png' srcset="/wp-content/uploads/clone-repo-mgmt-2025@2x.png" class="help-center-img img-bordered">
+1. In Repository Management, select <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Clone</span></button>
 
-Alternatively, you may also clone from <kbd><strong>File > Clone</strong></kbd> or from the New Tab view. No matter how you access the Clone option, you'll be prompted to open the newly copied project in GitKraken Desktop.
+<figure>
+  <img src='/wp-content/uploads/clone-repo-mgmt-2025.png' srcset="/wp-content/uploads/clone-repo-mgmt-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Clone from Repository Management tab</figcaption>
+</figure>
 
-<img src='/wp-content/uploads/clone-url.png' srcset='/wp-content/uploads/clone-url@2x.png 2x' class="help-center-img img-bordered">
+2. You can also access clone options via <kbd><strong>File > Clone</strong></kbd> or the New Tab.
 
-
-
-***
-### Initialize a new project
-There are a few ways to initialize a new repo.
-
-From the Repository Management window, just hit the <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Init</span></button> button. 
-
-<img src='/wp-content/uploads/init-2025.png' srcset="/wp-content/uploads/init-2025@2x.png" class="help-center-img img-bordered">
-
-All you need to do is fill out the fields and select <button class='button button--success button--ui button--nolink'>Create Repository</span></button> for the magic to begin.
-
-You may also initialize a repo from <kbd><strong>File > Init</strong></kbd> or from the New Tab view. 
-
-#### Input
-* New repository path
-* `.gitignore` template (**optional**)
- * Automatically creates a `.gitignore` file in your working copy.
-
-* License (**optional**)
- * On init, GitKraken Desktop will create a `LICENSE` file in your repository.
- * Check out the [Open Source Initiative](https://opensource.org/licenses) or find out more about [Choosing a License](http://choosealicense.com/).
-
-#### Output
-* A new initialized Git project at the specified repository path by creating a `.git` folder.
-* The project is opened in GitKraken Desktop
-* An "Initial commit" on a `main` branch containing a blank `README.md` along with a `.gitignore` and `LICENSE.md` if applicable.
-
- <div class='callout callout--success'>
-     <p>GitKraken Desktop also allows initializing a repository directly to a remote Git hosting provider such as GitHub and Bitbucket.</p>
- </div>
+<figure>
+  <img src='/wp-content/uploads/clone-url.png' srcset='/wp-content/uploads/clone-url@2x.png 2x' class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Enter the clone URL to start</figcaption>
+</figure>
 
 ***
+### Initialize a New Project
 
-### Customize your Repository Management tab
+To start a new repo:
 
-* Reorder repository groups by dragging and dropping the header to create a more organized list.
-* Change the color of a group by selecting <kbd>Change color</kbd> in the three-dot menu of any repo group. 
-* Set a default color for Workspaces and other groups in <kbd>Preferences > UI Customization</kbd>.
+1. Select <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Init</span></button> in Repository Management.
 
-<img src='/wp-content/uploads/gkd-repo-mgm-tab-customize1.gif' class="help-center-img img-bordered">
+<figure>
+  <img src='/wp-content/uploads/init-2025.png' srcset="/wp-content/uploads/init-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Repository initialization options</figcaption>
+</figure>
 
+2. Fill in:
+   - Repository path
+   - `.gitignore` template (optional)
+   - License (optional)
+
+3. Click <button class='button button--success button--ui button--nolink'>Create Repository</span></button>
+
+Also accessible via <kbd><strong>File > Init</strong></kbd> or New Tab.
+
+**Initialization result:**
+- `.git` directory created
+- Repo opens in GitKraken Desktop
+- Includes `README.md`, and optionally `.gitignore` and `LICENSE`
+
+<div class='callout callout--success'>
+    <p>You can also initialize a repository directly to GitHub, Bitbucket, or other remote providers.</p>
+</div>
+
+***
+### Customize Repository Management
+
+- Drag and drop group headers to reorder
+- Change colors via <kbd>Change color</kbd> in the repo group menu
+- Set default colors in <kbd>Preferences > UI Customization</kbd>
+
+<figure>
+  <img src='/wp-content/uploads/gkd-repo-mgm-tab-customize1.gif' class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Customize repo group layout and colors</figcaption>
+</figure>
