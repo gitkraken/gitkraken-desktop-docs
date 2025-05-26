@@ -1,45 +1,42 @@
 ---
-
-title: GitKraken Desktop Support Home
-description: Your source for GitKraken Desktop documentation
+title: GitKraken Desktop Support & Documentation Hub
+description: Your source for GitKraken Desktop documentation, tutorials, and support
 taxonomy:
     category: gitkraken-desktop
-
 ---
 
-Everything you need to know about GitKraken Desktop with an intuitive Git GUI & powerful CLI.
+<kbd>Last updated: May 2025</kbd>
 
-Check out the introduction video and links below to get started with GitKraken Desktop. Use the left navigation to explore further.
+Welcome to the GitKraken Desktop support hub — your all-in-one source for mastering the world’s most legendary Git GUI.
+
+Watch the overview video or use the navigation menu to dive straight into what you need. 
 
 ## GitKraken Desktop Tutorial
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/LBlijN29gb8?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/LBlijN29gb8?rel=0&vq=hd1080' frameborder='0' allowfullscreen title="GitKraken Desktop tutorial video"></iframe>
 </div>
 
-***
+---
 
 ## Getting Started
 
+Let’s get you rolling. Whether you’re new to Git or just new to GitKraken, here’s where the journey begins:
 
-- [Interface Basics](/gitkraken-desktop/interface/) - Get familiar with the intuitive GitKraken Desktop UI.
-- [How to Install](/gitkraken-desktop/how-to-install/) -  Quick, easy instructions for Windows, Mac & Linux. 
-- [New to Git](/gitkraken-desktop/guide/) - Get started using & learning Git with GitKraken Desktop.
-- [Cheat Sheet](https://www.gitkraken.com/pdfs/gitkraken-git-gui-cheat-sheet?product=gitkraken&source=help_center) - Quick reference for keyboard shortcuts & common actions.
-- [Integrations](/gitkraken-desktop/integrations/) - Set up repo hosting & issue tracking integrations.
-- [Release Notes](/gitkraken-desktop/current/) - Keep up with all the new features & improvements.
-- [FAQ](/gitkraken-desktop/faq/) - Find answers to frequently asked questions.
+- [Interface Basics](/gitkraken-desktop/interface/) – A tour of your new Git command centre.
+- [How to Install](/gitkraken-desktop/how-to-install/) – Quick-start setup guides for Windows, Mac, and Linux.
+- [New to Git](/gitkraken-desktop/guide/) – A friendly intro to Git workflows.
+- [Cheat Sheet](https://www.gitkraken.com/pdfs/gitkraken-git-gui-cheat-sheet?product=gitkraken&source=help_center) – Key actions and shortcuts at your fingertips.
+- [Integrations](/gitkraken-desktop/integrations/) – Connect your repos, issue trackers, and cloud services.
+- [Release Notes](/gitkraken-desktop/current/) – What's new? What's fixed? What’s cooking?
+- [FAQ](/gitkraken-desktop/faq/) – Answers to your most burning questions.
 
-***
+---
 
 ## Additional Resources
 
-Have an idea or feedback for improving GitKraken Desktop? Upvote existing user suggestions ⬆️ or add your idea 📝.
-[Make a Feature Request ☑](https://feedback.gitkraken.com/?product=gitkraken&source=help_center)
+Want more than docs? Get involved, get support, or help shape where we go next:
 
-Join our public slack community and interact with other GitKraken Desktop users from around the world 🌐.
-[Join GitKraken Slack](https://www.gitkraken.com/join-slack-community?product=gitkraken&source=help_center)
-
-Didn't find what you're looking for in all of our documentation and help articles? Then please contact our support team.
-[Contact Support](https://help.gitkraken.com/gitkraken-desktop/contact-support?product=gitkraken&source=help_center)
-
+- [Make a Feature Request](https://feedback.gitkraken.com/?product=gitkraken&source=help_center) – Your ideas fuel our roadmap. Go on, pitch us.
+- [Join GitKraken Slack](https://www.gitkraken.com/join-slack-community?product=gitkraken&source=help_center) – Trade tips, tricks, or memes with fellow Krakenites.
+- [Contact Support](https://help.gitkraken.com/gitkraken-desktop/contact-support?product=gitkraken&source=help_center) – Hit a snag? We’ve got your back.
