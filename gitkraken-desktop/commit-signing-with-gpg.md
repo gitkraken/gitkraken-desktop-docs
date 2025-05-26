@@ -45,7 +45,7 @@ gpg --version
 <img src="/wp-content/uploads/gpg-version-2025.png" srcset="/wp-content/uploads/gpg-version-2025@2x.png 2x" class="help-center-img img-bordered" alt="GPG version output">
 
 <div class='callout callout--success'>
-    <p><strong>Note:</strong> Use `gpg2` if `gpg` isn’t aliased. Prefix commands accordingly.</p>
+    <p><strong>Note:</strong> Use <code>gpg2</code> if <code>gpg</code> isn’t aliased. Prefix commands accordingly.</p>
 </div>
 
 ### Generate a GPG Key in GitKraken
@@ -127,7 +127,7 @@ To add emails or renew a key:
 
 [GNU’s full GPG key guide](https://www.gnupg.org/gph/en/manual/r899.html)
 
-After editing, re-upload the key to your host.
+After editing, re-upload the key to your host. See <a href="#uploading-gpg-key-to-hosting-service">Uploading Your GPG Key to a Remote Hosting Service</a>.
 
 ### Deleting a GPG Key
 
@@ -187,5 +187,3 @@ SSH signing is available through Git Executable.
    - [GitHub SSH setup](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
    - [GitLab SSH setup](https://docs.gitlab.com/ee/user/project/repository/signed_commits/gpg.html#add-a-gpg-key-to-your-account)
    - ⚠️ Bitbucket does **not** support SSH-signed commit verification.
-
----
