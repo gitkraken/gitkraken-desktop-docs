@@ -1,55 +1,53 @@
 ---
-
-title: Favorite Repos
-description: Quickly access your favorite repos from the repo list, drop-down menu, or shortcut keys.
+title: Manage Favorite Repositories
+description: Quickly access your favorite repos from the Repo Management tab, drop-down menu, or shortcut keys.
 taxonomy:
     category: gitkraken-desktop
-
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
-Quickly access your favorite repos using the drop-down menu or shortcut keys.
+Favoriting repositories allows you to quickly access commonly used projects in GitKraken Desktop from the Repo Management tab, dropdown menus, or keyboard shortcuts.
 
 ***
-## Adding favorites
 
-Navigate to <kbd><strong>File > Open</strong></kbd> or click the folder icon in the upper left of the app to open the Repo Management tab.
+## Add a Repository to Favorites
 
-Click on the star icon at the left of the repo.
+To favorite a repository:
 
-<img src="/wp-content/uploads/favorite-repo-2025.png" srcset="/wp-content/uploads/favorite-repo-2025@2x.png" class="help-center-img img-bordered">
+1. Open the Repo Management tab via <kbd><strong>File > Open</strong></kbd> or by clicking the folder icon in the top-left corner.
+2. Click the star icon next to the repository name.
 
-Once added, favorites will appear at the Favorites section in the Repo Management tab.
+<figure>
+  <img src="/wp-content/uploads/favorite-repo-2025.png" srcset="/wp-content/uploads/favorite-repo-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Click the star icon to favorite a repository</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/favorites-list-2025.png"   srcset="/wp-content/uploads/favorites-list-2025@2x.png"  class="help-center-img img-bordered">
+Favorited repositories appear in the **Favorites** section of the Repo Management tab.
 
-## Shortcut Keys
+<figure>
+  <img src="/wp-content/uploads/favorites-list-2025.png" srcset="/wp-content/uploads/favorites-list-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Favorites listed in the Repo Management view</figcaption>
+</figure>
 
-Once you have a repository favorited, you can quickly swap to it using the assigned keyboard shortcut. Up to 9 repositories can be assigned to the 1-9 keys:
+***
+
+## Use Shortcut Keys
+
+You can switch to your favorite repositories using keyboard shortcuts. GitKraken Desktop supports shortcuts for up to 9 favorite repositories.
 
 <table class='table table--bordered table--shortcuts'>
-    <thead>
-        <tr>
-            <th>&nbsp;</th>
-            <th>Mac</th>
-            <th>Windows/Linux</th>
-        </tr>
-    </thead>
-    <tbody>
-            <tr>
-            <td>Swap to Favorite Repo #1</td>
-            <td><kbd>&#8984;</kbd><kbd>control</kbd><kbd>1</kbd></td>
-            <td><kbd>Ctrl</kbd><kbd>alt</kbd><kbd>1</kbd></td>
-        </tr>
-                <tr>
-            <td>Swap to Favorite Repo #2</td>
-            <td><kbd>&#8984;</kbd><kbd>control</kbd><kbd>2</kbd></td>
-            <td><kbd>Ctrl</kbd><kbd>alt</kbd><kbd>2</kbd></td>
-        </tr>
-        <tr>
-            <td>Swap to Favorite Repo #1-9</td>
-            <td><kbd>&#8984;</kbd><kbd>control</kbd><kbd>#1-9</kbd></td>
-            <td><kbd>Ctrl</kbd><kbd>alt</kbd><kbd>#1-9</kbd></td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th>Action</th>
+      <th>Mac</th>
+      <th>Windows/Linux</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Swap to Favorite Repo #1-9</td>
+      <td><kbd>&#8984;</kbd><kbd>Control</kbd><kbd>#1–9</kbd></td>
+      <td><kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>#1–9</kbd></td>
+    </tr>
+  </tbody>
 </table>

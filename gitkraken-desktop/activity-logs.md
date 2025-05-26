@@ -1,71 +1,93 @@
 ---
-
 title: Activity Logs 
 description: Learn where to find feedback Activity Logs in GitKraken Desktop.
 taxonomy:
     category: gitkraken-desktop
-
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
-Learn how to view all Git actions made to repositories and all application actions made in GitKraken Desktop through Activity Logs.
+Learn how to view all Git and application-level actions made in GitKraken Desktop using Activity Logs.
 
 ***
 
-## Activity Logs 
+## What are Activity Logs?
 
-Looking to increase your project scope?
+The <kbd>Activity Logs</kbd> panel, located in the footer toolbar of GitKraken Desktop, provides real-time feedback on actions taken within the application and your repositories.
 
-Pop open the hood of your project and check out the <kbd>Activity Logs</kbd> located in the footer toolbar of GitKraken Desktop.
+<figure>
+  <img src='/wp-content/uploads/activity.gif' class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Accessing Activity Logs from the footer toolbar</figcaption>
+</figure>
 
-<kbd>Activity Logs</kbd> provide real time feedback of application and repository-level interactions that occurred in GitKraken Desktop.
+Each log entry includes a timestamp, a description of the action, and performance data in milliseconds. The logs are stored in plain text and presented in a standard log format.
 
-<img src='/wp-content/uploads/activity.gif' class="help-center-img img-bordered">
+<figure>
+  <img src='/wp-content/uploads/data-line.png' srcset='/wp-content/uploads/data-line@2x.png' class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Sample log line showing timestamp and performance data</figcaption>
+</figure>
 
-<kbd>Activity Logs</kbd> files are plain text in a standard log file format. Each line displays time of action, action feedback, and performance data measured in milliseconds.
+***
 
-<img src='/wp-content/uploads/data-line.png' srcset='/wp-content/uploads/data-line@2x.png' class="help-center-img img-bordered">
+## Application Log
 
-<kbd>Activity Logs</kbd> collate Git actions, outputs information chronologically, and displays activity history indefinitely.
+The **Application** tab in <kbd>Activity Logs</kbd> displays actions specific to the GitKraken Desktop instance. Events include:
+- Creating a project
+- Clearing SSH credentials
+- Setting the global gitconfig
 
-### Application Log
+<figure>
+  <img src='/wp-content/uploads/app-level.png' srcset='/wp-content/uploads/app-level@2x.png' class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Application tab showing GitKraken Desktop actions</figcaption>
+</figure>
 
-The *Applications* tab in <kbd>Activity Logs</kbd> contains messages about actions made in GitKraken Desktop application. Discover events from your GitKraken Desktop instance such as: project creation, clearing SSH, setting global gitconfig, etc.
+This log remains static regardless of which repository is currently open.
 
-<img src='/wp-content/uploads/app-level.png' srcset='/wp-content/uploads/app-level@2x.png' class="help-center-img img-bordered">
+***
 
-This tab information remains consistent regardless of the repository currently in focus: switching repositories will not alter the Application system log files. 
+## Repository Log
 
-### Repository Log 
+The **Repository** tab displays Git operations performed on the currently active repository, such as:
+- Fetch
+- Push
+- Merge
 
-The *Repository* tab in <kbd>Activity Logs</kbd> contains logged messages of Git operations taken while working with your repository. 
+<figure>
+  <img src='/wp-content/uploads/repository-level.png' srcset='/wp-content/uploads/repository-level@2x.png' class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Repository-level Git actions displayed in the log</figcaption>
+</figure>
 
-Refer to your *Repository* log to increase your project scope as a greater source of truth of your Git activity such as: fetch, push, merge, etc.
-
-<img src='/wp-content/uploads/repository-level.png' srcset='/wp-content/uploads/repository-level@2x.png' class="help-center-img img-bordered">
-
-*Repository* activity reflects action taken in the repository currently open in focus. 
+Repository logs only reflect actions from the active repo.
 
 <div class='callout callout--warning'>
-    <p><strong>Note:</strong> For more verbose logging, navigate to <em>Preferences > General > Use extended logging in activity log</em>.
- </p>
+    <p><strong>Note:</strong> For more detailed entries, go to <em>Preferences > General > Use extended logging in activity log</em>.</p>
 </div>
 
-Enabling extended logging provides even greater scope into repository-level Git actions, including Auto-fetch feedback. 
+Enabling extended logging adds more granularity, including details like Auto-fetch activity.
 
-<img src='/wp-content/uploads/extended.png' srcset='/wp-content/uploads/extended@2x.png' class="help-center-img img-bordered">
+<figure>
+  <img src='/wp-content/uploads/extended.png' srcset='/wp-content/uploads/extended@2x.png' class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Extended logging shows additional Git operations</figcaption>
+</figure>
 
-### Git Hook Log
+***
 
-Do you automate your workflow with <a href= "/working-with-repositories/githooks/"> Git hooks</a>? 
+## Git Hook Log
 
-<kbd>Activity Logs</kbd> log all hook activity - successes, warnings, failures, errors, etc.
+If you use <a href="/working-with-repositories/githooks/">Git hooks</a>, the *Repository* tab will display hook activity such as:
+- Success messages
+- Warnings and failures
+- Errors
 
-The *Repository* tab populates a new tab in <kbd>Activity Logs</kbd> to provide active insight on feedback of your Git hook activity. View your error log in context to find how an event caused the change for faster troubleshooting. 
+<figure>
+  <img src='/wp-content/uploads/githook-log.gif' class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Git hook activity displayed in the log</figcaption>
+</figure>
 
-<img src='/wp-content/uploads/githook-log.gif' class="help-center-img img-bordered">
+This provides context for events, making it easier to troubleshoot issues.
 
-You can also access a hook log from the snackbox notification that populates near the footer toolbar when an error is thrown.
+Additionally, you can open the Git hook log directly from the snackbox notification if a hook-related error occurs.
 
-<img src='/wp-content/uploads/snackbox-error.png' srcset='/wp-content/uploads/snackbox-error@2x.png' class="help-center-img img-bordered">
-
+<figure>
+  <img src='/wp-content/uploads/snackbox-error.png' srcset='/wp-content/uploads/snackbox-error@2x.png' class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Error snackbox linking to Git hook log</figcaption>
+</figure>
