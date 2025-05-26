@@ -1,51 +1,51 @@
 ---
-
 title: GitHub Actions
 description: GitHub Actions help you to automate your workflow
 taxonomy:
     category: gitkraken-desktop
-
 ---
+
 <kbd>Last updated: May 2025</kbd>
 
-<a href="https://github.com/features/actions" target="_blank">GitHub Actions</a> is a service provided by Github, which can help automate your workflow. More specifically, it allows you to add/edit/delete _workflows_, which are files stored in `.github/workflows` as part of the GitHub Actions feature.
+[GitHub Actions](https://github.com/features/actions) is a service from GitHub that lets you automate tasks in your repository using workflow files. These workflows are written in YAML and stored in the `.github/workflows` directory of your repository.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/qr3vwIvXUfc?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>
 
-***
+---
 
-### Create Workflow
+## Managing Workflows in GitKraken Desktop
 
-GitKraken Desktop will allow you to create new workflows from the Left Panel.
-
-<img src='/wp-content/uploads/create-github-action-2025.png' srcset='/wp-content/uploads/create-github-action-2025@2x.png 2x' class="help-center-img img-bordered" />
-
-Hovering over `GitHub Actions` and clicking the <button class='button button--success button--ui button--nolink'>+</button> button will open the `Create Workflow` panel. From here you can select from availible workflow templates or create a blank workflow. Workflows will be placed in the `.github/workflows folder` that GitHub uses (it will create the folder if none exists).
+GitKraken Desktop provides basic tools for creating, editing, and deleting GitHub Action workflows directly within your repository.
 
 <div class='callout callout--success'>
-    <p><strong>Note:</strong> the <strong>GitHub Actions</strong> section will only appear when working in GitHub repositories</p>
+    <p><strong>Note:</strong> The <strong>GitHub Actions</strong> section appears only when you're working in a GitHub-hosted repository.</p>
 </div>
 
-***
+### Create a Workflow
 
-### Edit Workflow
+1. In the left panel, hover over <strong>GitHub Actions</strong>.
+2. Click the <code>+</code> button to open the <strong>Create Workflow</strong> panel.
+3. Choose from available workflow templates or start with a blank workflow.
+4. The workflow file will be saved in the `.github/workflows` directory (created automatically if it doesn’t exist).
 
-You can double click any existing workflow to be taken to view the code, make changes, and save.
+<img src='/wp-content/uploads/create-github-action-2025.png' srcset='/wp-content/uploads/create-github-action-2025@2x.png 2x' class="help-center-img img-bordered" alt="Creating GitHub Action workflow from GitKraken Desktop">
 
-<img src='/wp-content/uploads/github-actions-edit.png' srcset='/wp-content/uploads/github-actions-edit@2x.png 2x' class="help-center-img img-bordered" />
+### Edit a Workflow
 
-***
+Double-click any existing workflow file to open it. You can view, modify, and save changes directly.
 
-### Delete Workflow
+<img src='/wp-content/uploads/github-actions-edit.png' srcset='/wp-content/uploads/github-actions-edit@2x.png 2x' class="help-center-img img-bordered" alt="Editing a GitHub Action workflow in GitKraken Desktop">
 
-You can quickly delete workflows by right-clicking on them and selecting `Delete Workflow`.
+### Delete a Workflow
 
-<img src='/wp-content/uploads/delete-github-action-2025.png' srcset='/wp-content/uploads/delete-github-action-2025@2x.png 2x' class="help-center-img img-bordered" />
+Right-click a workflow file and select <strong>Delete Workflow</strong> to remove it.
 
-***
+<img src='/wp-content/uploads/delete-github-action-2025.png' srcset='/wp-content/uploads/delete-github-action-2025@2x.png 2x' class="help-center-img img-bordered" alt="Deleting a GitHub Action workflow in GitKraken Desktop">
 
-### GitHub Actions Documentation
+---
 
-You can find examples and more information on <a href="https://developer.github.com/actions/" target="_blank">GitHub Actions Documentation</a> page.
+## Learn More
+
+For workflow syntax, best practices, and advanced automation examples, visit the [GitHub Actions Documentation](https://docs.github.com/en/actions).
