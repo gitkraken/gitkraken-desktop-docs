@@ -21,7 +21,7 @@ Git Large File Storage (Git LFS) is a Git extension that helps you manage large 
 
 - Git LFS tracks specific files or file types based on defined patterns.
 - When viewing diffs for LFS-tracked files, you’ll see metadata: a URL, a SHA hash, and file size.
-- The actual binary content is stored in `.git/lfs/objects` or hosted on GitHub, GitLab, BitBucket, or a custom server.
+- The actual binary content is stored in `.git/lfs/objects` or hosted on GitHub, GitLab, Bitbucket, or a custom server.
 - Git LFS uses Git hooks and filters to manage file commits and retrieval.
 
 <img src='/wp-content/uploads/lfs-ref-2025.png' srcset='/wp-content/uploads/lfs-ref-2025@2x.png 2x' class="help-center-img img-bordered" alt="LFS file metadata in GitKraken Desktop" />
@@ -39,7 +39,7 @@ Make sure the following are installed:
 - GitKraken Desktop version `7.0.0+`
 
 <div class='callout callout--success'>
-    <p><strong>Note:</strong> GitKraken Desktop usually does not require Git CLI. However, to use Git LFS, Git CLI must be installed.</p>
+    <p><strong>Note:</strong> GitKraken Desktop usually does not require <a href="https://git-scm.com/">Git</a>. However, to use Git LFS, Git must be installed.</p>
 </div>
 
 ### Verify Installation
@@ -84,6 +84,12 @@ If versions are missing or outdated, visit:
 4. Click `New` to add paths to Git and Git LFS.
 
 <img src="/wp-content/uploads/lfs-AddPathVariable-0.png" class="help-center-img img-bordered" alt="Windows environment variable dialog">
+
+<img src="/wp-content/uploads/lfs-add-env-variable-image1-2025.png" srcset="/wp-content/uploads/lfs-add-env-variable-image1-2025@2x.png 2x" class="help-center-img img-bordered" alt="Add Path Environment Variable Step 1">
+
+<img src="/wp-content/uploads/lfs-add-env-variable-image2-2025.png" srcset="/wp-content/uploads/lfs-add-env-variable-image2-2025@2x.png 2x" class="help-center-img img-bordered" alt="Add Path Environment Variable Step 2">
+
+<img src="/wp-content/uploads/lfs-add-env-variable-image3-2025.png" srcset="/wp-content/uploads/lfs-add-env-variable-image3-2025@2x.png 2x" class="help-center-img img-bordered" alt="Add Path Environment Variable Step 3">
 
 ***
 
@@ -133,6 +139,10 @@ To track a file:
 Files tracked by LFS will show an LFS tag in the Commit Panel:
 
 <img src='/wp-content/uploads/lfs-tags-2025.png' srcset='/wp-content/uploads/lfs-tags-2025@2x.png 2x' class="help-center-img img-bordered" alt="LFS tag in commit panel">
+
+Clicking on the file shows the LFS reference information:
+
+<img src='/wp-content/uploads/lfs-ref-2025.png' srcset='/wp-content/uploads/lfs-ref-2025@2x.png 2x' class="help-center-img img-bordered" alt="LFS reference information">
 
 Use the LFS menu in the toolbar to run commands:
 
