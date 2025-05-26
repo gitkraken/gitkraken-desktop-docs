@@ -129,6 +129,9 @@ If a file is already tracked, you’ll see two options:
     <figcaption style="text-align: center; color: #888;">Prompt showing options to ignore a file already tracked by Git.</figcaption>
 </figure>
 
+- Selecting <strong>Ignore</strong> will add the corresponding entry to the `.gitignore` file, but Git will continue tracking the file.
+- Selecting <strong>Ignore and Stop Tracking</strong> will add the entry and remove the file from the Git index, so Git stops tracking it.
+
 <figure class='figure center'>
     <img src='/wp-content/uploads/ignore-only.png' srcset='/wp-content/uploads/ignore-only@2x.png' class="help-center-img img-bordered" alt="Option to ignore but keep tracking">
     <figcaption style="text-align: center; color: #888;">Ignore file but keep it tracked by Git.</figcaption>
