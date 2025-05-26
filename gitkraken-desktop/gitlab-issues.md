@@ -1,103 +1,96 @@
 ---
-
-title: GitKraken Desktop GitLab Issues Integration
+title: GitKraken Desktop & GitLab Issues Integration
 description: Learn how to access GitLab Issues from GitKraken Desktop
 taxonomy:
     category: gitkraken-desktop
-
 ---
 
 <kbd>Last updated: May 2025</kbd>
 
-GitKraken Desktop makes it easy to integrate with GitLab Issues.
+GitKraken Desktop makes it easy to integrate with GitLab Issues for seamless issue tracking and repository collaboration.
 
 <div class='callout callout--basic'>
-    <p>The GitHub Issues integration is restricted to Public repositories only for Community users. To unlock all features for the GitHub Issues integration, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken"> paid GitKraken license</a>. </p>
+    <p>The GitLab Issues integration is restricted to public repositories for Community users. To unlock all features, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken license</a>.</p>
 </div>
 
-***
+---
 
-### Connect GitLab Integration
+## Connect GitLab Integration
 
-The GitLab integration and GitLab Issues integration share the same connection. You can Set up the integration from the ISSUES pane in the left panel or from <kbd><i>Preferences   <i class='fa fa-caret-right'></i>   Integrations</i></kbd>.
+The GitLab and GitLab Issues integrations share the same connection. Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
-<img src="/wp-content/uploads/connect-gitlab-issues-2025.png" srcset="/wp-content/uploads/connect-gitlab-issues-2025@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/connect-gitlab-issues-2025.png" srcset="/wp-content/uploads/connect-gitlab-issues-2025@2x.png" class="help-center-img img-bordered" alt="Connect GitLab Issues integration">
 
+From the Integrations window, select <em>GitLab.com</em> and click <strong>Connect to GitLab</strong>.
 
-From the Integrations window, select _GitLab.com_ and then hit the <button class='button button--success button--ui button--nolink'>Connect to GitLab</button> button.
+<img src="/wp-content/uploads/connect-gitlab-2025.png" srcset="/wp-content/uploads/connect-gitlab-2025@2x.png 2x" class="help-center-img img-bordered" alt="Connect to GitLab prompt">
 
-<img src="/wp-content/uploads/connect-gitlab-2025.png" srcset="/wp-content/uploads/connect-gitlab-2025@2x.png 2x" class="help-center-img img-bordered">
+A browser window will open to authorize the connection. Log in with your GitLab credentials and click <strong>Continue authorization</strong>.
 
-This will open your default web browser where you can click <button class='button button--success button--ui button--nolink'>Continue authorization</button> and then log in with your GitLab credentials.
+<img src="/wp-content/uploads/authorize-gitlab.png" srcset="/wp-content/uploads/authorize-gitlab@2x.png 2x" class="help-center-img img-bordered" alt="GitLab authorization dialog">
 
-<img src="/wp-content/uploads/authorize-gitlab.png" srcset="/wp-content/uploads/authorize-gitlab@2x.png 2x" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gitlab-sign-in.png" srcset="/wp-content/uploads/gitlab-sign-in@2x.png 2x" class="help-center-img img-bordered" alt="GitLab sign-in screen">
 
-<img src="/wp-content/uploads/gitlab-sign-in.png" srcset="/wp-content/uploads/gitlab-sign-in@2x.png 2x" class="help-center-img img-bordered">
+Once authorized, GitKraken will display a success message.
 
-You'll then see a success message below and the connection will be active in GitKraken 🎉
+<img src="/wp-content/uploads/auth-success-gitlab-1.png" srcset="/wp-content/uploads/auth-success-gitlab-1@2x.png 2x" class="help-center-img img-bordered" alt="Successful GitLab integration">
 
-<img src="/wp-content/uploads/auth-success-gitlab-1.png" srcset="/wp-content/uploads/auth-success-gitlab-1@2x.png 2x" class="help-center-img img-bordered">
+---
 
-***
+## Preview GitLab Issues
 
-### Preview GitLab Issues
+After connecting, your GitLab issues will appear in the Left Panel. Default filters include _My Issues_ and _All Issues_.
 
-Once connected, your GitLab issues will start to appear in the left panel. You will initally see  _My Issues_ and _All Issues_ filters by default. You can edit or remove these as needed.
+<img src="/wp-content/uploads/gitlab-issues-list-2025.png" srcset="/wp-content/uploads/gitlab-issues-list-2025@2x.png" class="help-center-img img-bordered" alt="GitLab Issues in Left Panel">
 
-<img src="/wp-content/uploads/gitlab-issues-list-2025.png" srcset="/wp-content/uploads/gitlab-issues-list-2025@2x.png" class="help-center-img img-bordered">
+Hover over an issue to preview the title, description, labels, milestones, and assignee.
 
-Hover over any issue to get a preview of the issue Title, Description, labels, milestones and assignee.
+<img src="/wp-content/uploads/gitlab-issue-hover-2025.png" srcset="/wp-content/uploads/gitlab-issue-hover-2025@2x.png" class="help-center-img img-bordered" alt="GitLab issue preview tooltip">
 
-<img src="/wp-content/uploads/gitlab-issue-hover-2025.png" srcset="/wp-content/uploads/gitlab-issue-hover-2025@2x.png" class="help-center-img img-bordered">
+---
 
-***
+## View and Edit Issue Details
 
-### View and Edit GitLab Issue Details
+Click an issue to view its details.
 
-Click to select an issue to view the issue details.
+<img src="/wp-content/uploads/github-issue-view-click-2025.png" srcset="/wp-content/uploads/github-issue-view-click-2025@2x.png" class="help-center-img img-bordered" alt="View GitLab issue details">
 
-<img src="/wp-content/uploads/github-issue-view-click-2025.png" srcset="/wp-content/uploads/github-issue-view-click-2025@2x.png" class="help-center-img img-bordered">
+Edits made here will sync with your GitLab issue tracker.
 
-Here any edits made here will be reflected in your GitLab issues.
+---
 
-***
+## Create a New GitLab Issue
 
-### Create New GitLab Issue
+Click the <code>+</code> icon from the Left Panel to add a new issue.
 
-From the left panel, click the <button class='button button--success button--ui button--nolink'>+</button> icon to add a new GitLab issue.
+<img src="/wp-content/uploads/gitlab-issue-create-2025.png" srcset="/wp-content/uploads/gitlab-issue-create-2025@2x.png" class="help-center-img img-bordered" alt="Create new GitLab issue">
 
-<img src="/wp-content/uploads/gitlab-issue-create-2025.png" srcset="/wp-content/uploads/gitlab-issue-create-2025@2x.png" class="help-center-img img-bordered">
+Required fields are marked with <code>*</code>. The issue will sync automatically to your GitLab repository.
 
-Note that required fields are denoted by `*`. Your new issue will automatically sync with your GitLab issues.
+---
 
-***
+## Create Filters
 
-### Create Filters
+Use GitLab’s issue syntax to create filters and narrow your view.
 
-You may create filters to view the issues you need. We use the same syntax that GitLab uses for thier issues.
+<img src="/wp-content/uploads/gitlab-filter-create-2025.png" srcset="/wp-content/uploads/gitlab-filter-create-2025@2x.png" class="help-center-img img-bordered" alt="Create GitLab filter">
 
-<img src="/wp-content/uploads/gitlab-filter-create-2025.png" srcset="/wp-content/uploads/gitlab-filter-create-2025@2x.png" class="help-center-img img-bordered">
+Refer to GitLab’s [issue filtering guide](https://docs.gitlab.com/ee/user/search/index.html#filtering-issue-and-merge-request-lists) for examples.
 
-You can refer to [GitLab issue filtering](https://docs.gitlab.com/ee/user/search/index.html#filtering-issue-and-merge-request-lists) docs from GitLab for more information.
+---
 
-***
+## Create Branches from Issues
 
-### Create Branches from Issue
+From the issue detail view, click <strong>Create a branch for this issue</strong>. You can also right-click the issue or use the <kbd><i class="fa fa-ellipsis-v"></i></kbd> menu.
 
-You may create a branches tied to an issue from the issue details view <button class='button button--success button--ui button--nolink'>Create a branch for this issue</button> button. You can also right-click the issue or click the <kbd> <i class="fa fa-ellipsis-v"></i> </kbd>.
+<img src="/wp-content/uploads/gitlab-issue-create-branch-2025.png" srcset="/wp-content/uploads/gitlab-issue-create-branch-2025@2x.png" class="help-center-img img-bordered" alt="Create branch from GitLab issue">
 
-<img src="/wp-content/uploads/gitlab-issue-create-branch-2025.png" srcset="/wp-content/uploads/gitlab-issue-create-branch-2025@2x.png" class="help-center-img img-bordered">
+The branch name is auto-filled based on the issue title. These branches show the GitLab icon to indicate the connection.
 
-The branch name will automatically prefill based on the issue name. After the branch is created, these branches will be denoted with the GitLab icon to reflect its link to a GitLab issue.
+---
 
-From here, it should be possible to configure triggers on the GitLab side for changes made to this branch.
+## Copy Issue Link or View in GitLab
 
-***
+Use the <kbd><i class="fa fa-ellipsis-v"></i></kbd> menu or <i class="fa fa-external-link" aria-hidden="true"></i> icon to open the issue in GitLab or copy the link.
 
-### Copy Issue link or View in GitLab
-
-You can quickly navigate to the issue in GitLab from the <kbd> <i class="fa fa-ellipsis-v"></i> </kbd> menu or by clicking <i class="fa fa-external-link" aria-hidden="true"></i> in the top right.
-
-<img src="/wp-content/uploads/gitlab-issue-copy-link-2025.png" srcset="/wp-content/uploads/gitlab-issue-copy-link-2025@2x.png" class="help-center-img img-bordered">
-
-
+<img src="/wp-content/uploads/gitlab-issue-copy-link-2025.png" srcset="/wp-content/uploads/gitlab-issue-copy-link-2025@2x.png" class="help-center-img img-bordered" alt="View GitLab issue on web">
