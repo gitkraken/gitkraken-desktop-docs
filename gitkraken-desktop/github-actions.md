@@ -25,7 +25,7 @@ GitKraken Desktop provides basic tools for creating, editing, and deleting GitHu
 
 ### Create a Workflow
 
-1. In the left panel, hover over <strong>GitHub Actions</strong>.
+1. In the Left Panel, hover over <strong>GitHub Actions</strong>.
 2. Click the <code>+</code> button to open the <strong>Create Workflow</strong> panel.
 3. Choose from available workflow templates or start with a blank workflow.
 4. The workflow file will be saved in the `.github/workflows` directory (created automatically if it doesn’t exist).
