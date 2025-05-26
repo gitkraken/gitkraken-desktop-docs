@@ -1,31 +1,47 @@
 ---
-
 title: Deep Linking
 description: Share links to specific remote repositories, commits, branches, and tags in GitKraken Desktop.
 taxonomy:
     category: gitkraken-desktop
-
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
-Use links to quickly share specific remote repositories, commits, branches, and tags with your teammates to open them in GitKraken Desktop.
+Use deep links in GitKraken Desktop to share or open specific remote repositories, commits, branches, or tags. This allows your team to quickly access relevant project context with a single click.
 
-### Get links from menus
+***
 
-You can find links in most right-click context menus throughout GitKraken Desktop.
- 
-<img src="/wp-content/uploads/link_context_menu_options.gif" class="help-center-img img-bordered">
+## Copy a Link from GitKraken Desktop
 
-### Sharing links
+Right-click on a branch, commit, tag, or repository to copy a deep link.
 
-With the link copied to your clipboard, you can paste anywhere to share with others through communication tools like Jira, GitHub, Slack, or Teams.   
+<figure>
+  <img src="/wp-content/uploads/link_context_menu_options.gif" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Copy link from context menu options</figcaption>
+</figure>
 
-When you have a link shared with you, simply click and away you go!
+These links can be pasted into tools like Jira, GitHub, Slack, or Microsoft Teams.
 
-<img src="/wp-content/uploads/click_link_slack.gif" class="help-center-img img-bordered">
+***
 
-Additional information:
+## Open a Deep Link
 
-* If the link is to a branch, commit, or tag, and the repository is not open, GitKraken Desktop will attempt to open the repository.
-* If you do not have the repository cloned, GitKraken Desktop will ask if you want to clone the repository, take you to the clone modal, and autofill the clone information.
-* If you have multiple copies of a repository on your local machine GitKraken Desktop will prompt you asking which repository you want to open.
+If someone sends you a GitKraken Desktop link:
+- Click the link
+- GitKraken Desktop will open and navigate to the specified item
+
+<figure>
+  <img src="/wp-content/uploads/click_link_slack.gif" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Opening a GitKraken deep link from Slack</figcaption>
+</figure>
+
+***
+
+## What Happens When...
+
+GitKraken Desktop handles links dynamically depending on your local setup:
+
+- **Repository is not open**: The app will try to open it automatically.
+- **Repository is not cloned**: You'll be prompted to clone and the modal will be pre-filled.
+- **Multiple copies of the repo**: You'll be prompted to choose which local copy to use.
+
+Deep links streamline collaboration by ensuring you and your teammates view the same Git objects instantly, even across different environments.
