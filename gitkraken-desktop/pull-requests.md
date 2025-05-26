@@ -84,7 +84,7 @@ Conflict warnings appear if your source and target branches differ:
 
 ## Draft Pull Requests (GitHub)
 
-With GitHub integration, select the draft checkbox to mark the pull request as a draft.
+With the GitHub integration, select the draft checkbox to mark the pull request as a draft.
 
 <figure>
   <img src='/wp-content/uploads/create-draft-pr-2025.png' srcset='/wp-content/uploads/create-draft-pr-2025@2x.png' class="help-center-img img-bordered">
@@ -219,7 +219,7 @@ Tooltips show branch, author, status, and more:
 
 <figure>
   <img src='/wp-content/uploads//tooltip-gitlab.png' srcset='/wp-content/uploads//tooltip-gitlab@2x.png' class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">GitLab tooltip with labels and assignee</figcaption>
+  <figcaption style="text-align:center; color:#888">GitLab tooltip with an assignee</figcaption>
 </figure>
 
 <figure>
