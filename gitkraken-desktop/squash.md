@@ -1,5 +1,5 @@
 ---
-title: Squash Commits in GitKraken Desktop
+title: Squash Commits
 description: Learn how to squash commits to simplify your Git history.
 taxonomy:
     category: gitkraken-desktop
@@ -21,7 +21,7 @@ You can squash commits if they meet all the following conditions:
 
 - More than one commit is selected
 - Commits are in a straight line (ancestor-descendant)
-- Commits are in chronological order
+- Commits are chronologically consecutive
 - The oldest selected commit has a parent
 
 To select multiple commits, hold <kbd>Shift</kbd> or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> and click the commits.
