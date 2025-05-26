@@ -37,6 +37,6 @@ Let’s get you rolling. Whether you’re new to Git or just new to GitKraken, h
 
 Want more than docs? Get involved, get support, or help shape where we go next:
 
-- [Make a Feature Request](https://feedback.gitkraken.com/?product=gitkraken&source=help_center) – Your ideas fuel our roadmap. Go on, pitch us.
-- [Join GitKraken Slack](https://www.gitkraken.com/join-slack-community?product=gitkraken&source=help_center) – Trade tips, tricks, or memes with fellow Krakenites.
+- [Make a Feature Request](https://feedback.gitkraken.com/?product=gitkraken&source=help_center) – Your ideas fuel our roadmap. 
+- [Join GitKraken Slack](https://www.gitkraken.com/join-slack-community?product=gitkraken&source=help_center) – Trade tips, tricks, or memes with fellow Krakeneers.
 - [Contact Support](https://help.gitkraken.com/gitkraken-desktop/contact-support?product=gitkraken&source=help_center) – Hit a snag? We’ve got your back.

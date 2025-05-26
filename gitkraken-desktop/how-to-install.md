@@ -1,120 +1,107 @@
 ---
-
-title: How to Install GitKraken Desktop 
-description: Learn how to install GitKraken Desktop on Windows, Mac, and Linux.
+title: How to Install GitKraken Desktop
+description: Step-by-step installation instructions for GitKraken Desktop on Windows, macOS, and Linux.
 taxonomy:
     category: gitkraken-desktop
+---
+
+<kbd>Last updated: May 2025</kbd>
+
+This guide covers how to install GitKraken Desktop across Windows, macOS, and various Linux distributions. It also explains optional command-line enhancements.
 
 ---
 
-There are three steps to success with GitKraken Desktop. That's it!
+## Requirements
 
-1. [Download](https://gitkraken.com/download?product=gitkraken&source=help_center) GitKraken Desktop
-2. Install GitKraken Desktop
-3. Use GitKraken Desktop
+Before installing, ensure your system meets these requirements:
 
-No Git tools are required for GitKraken Desktop, so once you’ve run the installer, you can open the app and get going.
+- An internet connection to download and authorize GitKraken.
+- A Git hosting service account (e.g., GitHub, GitLab, Bitbucket) to connect your repos.
 
-If you want to utilize additional features such as the terminal, expermimental features, or LFS, <a href='https://git-scm.com/' target="_blank">download Git</a>.
+---
 
+## Windows Installation
 
-Below are platform-specific instructions and details on minimum requirements.
+Download and run the installer:
 
-<div class='callout callout--basic'>
-    <p>Looking for <em>GitKraken On-Premise Self-Hosted</em> installation instructions? Then please start in with our <a href="/enterprise/system-requirements">On-Premise System Requirements</a> page. </p>
-</div>
+[Download GitKraken for Windows](https://www.gitkraken.com/download?platform=windows&product=gitkraken&source=help_center)
 
-***
-## Windows (.exe file)
-* **System requirements:** Windows 10+
-    * [Download (64-bit)](https://gitkraken.com/download/windows64)
+The installer automatically handles updates and path configuration.
 
-<div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/obIK_732_9M?ecver=1" frameborder="0" allowfullscreen></iframe>
-</div>
+To verify installation:
 
-### Install Instructions
-Double-click the downloaded executable file. You will see a splash screen while GitKraken Desktop is insalled, and then the application will automatically start.
+1. Open GitKraken from the Start Menu.
+2. Check the version under <kbd>Preferences > About GitKraken</kbd>.
 
-### Windows Data Location
-GitKraken Desktop data is stored with your home profile in `C:\\Users\\{user}\\AppData\\Roaming` in the `.gitkraken` folder.
+---
 
-***
-## Mac OS (.dmg file)
-* **System requirements:**
-    * Intel: macOS 10.15+
-    * Apple Silicon: macOS 11+
-* [Download](https://gitkraken.com/download/mac?product=gitkraken&source=help_center)
+## macOS Installation
 
-<div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/22HD1ZnNytk?ecver=1" frameborder="0" allowfullscreen></iframe>
-</div>
+Download the `.dmg` file and drag GitKraken to your Applications folder:
 
-### Install Instructions
-Double-click the downloaded DMG file and when prompted, drag and drop the GitKraken icon to your Applications folder.
+[Download GitKraken for macOS](https://www.gitkraken.com/download?platform=mac&product=gitkraken&source=help_center)
 
+After installing:
 
-<figure class='figure center'>
-    <img src="/wp-content/uploads/mac-install.png" class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Drag and drop the GitKraken icon to the Applications folder.</figcaption>
-</figure>
+1. Launch GitKraken from the Applications folder.
+2. Authorize when prompted.
 
+---
 
-### Mac OS Data Location
-GitKraken Desktop data is stored in `/Users/{user}/.gitkraken` == `~/.gitkraken`.
+## Linux Installation
 
-***
-## Linux (.deb, .rpm, and .tar.gz files)
-* **.deb system requirements:** Ubuntu 18.04+ LTS or Debian 10+
-* **.rpm system requirements:** RHEL 8+ or Fedora 39+
+GitKraken is available for `.deb`, `.rpm`, and `.tar.gz` formats.
 
-<div class='callout callout--warning'>
-    <p>Note 📝 - GitKraken Desktop currently supports Ubuntu 18.04+ LTS, RHEL 8+, and Fedora 39+. While GitKraken Desktop may be able to be installed on other Linux distributions, we cannot guarantee that it will work as expected.</p>
-</div>
-
-<div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Cx4aQzlMSw4?ecver=1" frameborder="0" allowfullscreen></iframe>
-</div>
-
-### .deb
-GitKraken Desktop has a simple package available for Debian based distributions.
+### Debian/Ubuntu (.deb)
+```bash
+sudo dpkg -i gitkraken-amd64.deb
+sudo apt-get install -f
 ```
-wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
-sudo apt install ./gitkraken-amd64.deb
-```
-Or [download the file](https://gitkraken.com/download/linux-deb?product=gitkraken&source=help_center).
 
-### .tar
-```
-wget https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz
-sudo tar -xvzf gitkraken-amd64.tar.gz
-```
-Or [download the file](https://gitkraken.com/download/linux-gzip?product=gitkraken&source=help_center).
-
-### .rpm
-```
-wget https://release.gitkraken.com/linux/gitkraken-amd64.rpm
+### Fedora/RHEL (.rpm)
+```bash
 sudo dnf install ./gitkraken-amd64.rpm
 ```
-Or [download the file](https://gitkraken.com/download/linux-rpm?product=gitkraken&source=help_center).
 
-Note: for older distros that do not have ```dnf```, you should use ```yum``` instead.
+### Generic (.tar.gz)
+```bash
+tar -xvzf gitkraken.tar.gz
+./gitkraken
+```
 
+For all Linux versions:
 
+- Install from [gitkraken.com](https://www.gitkraken.com/download?platform=linux&product=gitkraken&source=help_center).
+- After installing, launch GitKraken and connect your Git provider.
 
-### Snap
+---
 
-Snap is an easy-to-install package for Linux distributions (supported versions above). Get it from the snap store or [Snapcraft.io](https://snapcraft.io/gitkraken?product=gitkraken&source=help_center).
+## Git Executable CLI (Optional)
 
-### Linux Data Location
-GitKraken Desktop data is stored in `/home/{user}/.gitkraken` == `~/.gitkraken`.
+GitKraken Desktop includes an internal Git binary. For advanced use or compatibility, you can configure GitKraken to use your system’s Git executable.
 
-### WSL
-If you're attempting to use GitKraken Desktop within Windows Subsystem for Linux (WSL), visit our page on <a href="https://help.gitkraken.com/gitkraken-desktop/windows-subsystem-for-linux/">How to use GitKraken Desktop with WSL</a> for additional details.
+Enable this from <kbd>Preferences > Experimental > Git Executable</kbd>.
 
-## Run GitKraken Desktop
+<img src="/wp-content/uploads/enable-git-executable-2025.png" class="help-center-img img-bordered" alt="Enable Git Executable in Preferences">
 
-Upon installation, some Linux distros do not automatically create shortcuts to the app.
+You can also specify a Git path manually.
 
-To run GitKraken Desktop manually, open the terminal and type `gitkraken` to start the app.
+---
 
+## GitKraken CLI (Optional)
+
+GitKraken Desktop includes a built-in GitKraken CLI, offering terminal-style Git operations with visual feedback.
+
+You can open the CLI by pressing <kbd>Ctrl/Cmd + Shift + P</kbd> or selecting <kbd>Open GitKraken CLI</kbd> from the toolbar.
+
+<img src="/wp-content/uploads/open-gitkraken-cli-2025.png" class="help-center-img img-bordered" alt="Open GitKraken CLI">
+
+---
+
+## GitKraken Desktop Overview
+
+Watch the video below to explore GitKraken Desktop features:
+
+<div class='embed-container embed-container--16-9'>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/LBlijN29gb8?rel=0&vq=hd1080' frameborder='0' allowfullscreen title="GitKraken Desktop Overview"></iframe>
+</div>
