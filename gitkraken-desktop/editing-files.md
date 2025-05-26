@@ -1,77 +1,125 @@
 ---
-
-title: Editing Files
-description: Learn how to edit files in GitKraken Desktop.
+title: Edit Files in GitKraken Desktop
+description: Learn how to edit files using GitKraken Desktop’s built-in editor.
 taxonomy:
     category: gitkraken-desktop
-
 ---
+
 <kbd>Last updated: May 2025</kbd>
 
-Learn how to edit files in GitKraken Desktop.
+Learn how to edit, save, and manage files using GitKraken Desktop’s built-in editor.
 
 ***
 
-## Editing a file
+## Enter Edit Mode Automatically
 
-If you just [created a new file](/working-with-files/adding-and-removing#adding-a-file) in GitKraken Desktop, then you will automatically be placed into edit mode, so you can start coding right away.
+If you [create a new file](/working-with-files/adding-and-removing#adding-a-file), GitKraken Desktop opens the file immediately in edit mode so you can begin editing right away.
 
-There are several ways to edit an existing file:
- * Right click the file from a previous commit or when `View all files` is enabled and select `Edit file`.
+***
 
- <img src='/wp-content/uploads/edit-file-menu-2025.png' class="help-center-img img-bordered">
+## Ways to Edit an Existing File
 
- * Use the Edit File subcommand in the Command Palette.  
- Hit <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>P</kbd>, type `Edit File`, hit <kbd>Enter</kbd>, type the name of the file, and hit <kbd>Enter</kbd>.
+### 1. Use the Context Menu
 
-    <img src='/wp-content/uploads/edit-file-fuzzy.gif' class="help-center-img img-bordered">
-    
- * Click the <button class='button button--primary button--ui button--nolink'>Edit this file</span></button> from Diff/File View.  
-    <img src='/wp-content/uploads/edit-file-diff-2025.png' class="help-center-img img-bordered">
-    <div class='callout callout--success'>
-    <p><strong>Note:</strong> If viewing a file on a different branch, the button will say <button class='button button--primary button--ui button--nolink'>Edit in working directory</span></button> and clicking the button will take you to edit mode of the version of that file from your current branch.</p>
-    </div>
- 
+Right-click a file (from a previous commit or via **View all files**) and select <kbd>Edit file</kbd>.
 
-The `editable` tag in the upper right corner, denotes that you can edit the current file.
+<figure class='figure center'>
+    <img src='/wp-content/uploads/edit-file-menu-2025.png' class="help-center-img img-bordered" alt="Context menu to edit a file">
+    <figcaption style="text-align: center; color: #888;">Right-click any file and select Edit file.</figcaption>
+</figure>
 
-<img src='/wp-content/uploads/editable-2025.png' class="help-center-img img-bordered">
+### 2. Use the Command Palette
 
-IntelliSense suggestions are shown based on the extension of the file.
+1. Press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>P</kbd>
+2. Type `Edit File` and press <kbd>Enter</kbd>
+3. Type the filename and press <kbd>Enter</kbd>
 
-<img src='/wp-content/uploads/intellisense.png' srcset='/wp-content/uploads/intellisense@2x.png 2x' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/edit-file-fuzzy.gif' class="help-center-img img-bordered" alt="Use Command Palette to open a file for editing">
+    <figcaption style="text-align: center; color: #888;">Find and open files using the Command Palette.</figcaption>
+</figure>
 
-### Saving edits
+### 3. Use the Diff or File View
 
-The blue dot in the upper right corner indicates unsaved changes. 
+Click the <button class='button button--primary button--ui button--nolink'>Edit this file</button> button from a file preview.
 
-<img src='/wp-content/uploads/save-changes-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src='/wp-content/uploads/edit-file-diff-2025.png' class="help-center-img img-bordered" alt="Editing a file from Diff view">
+    <figcaption style="text-align: center; color: #888;">Click Edit this file from the Diff/File view panel.</figcaption>
+</figure>
 
-To save your changes, hit <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>S</kbd>
-
-To exit the file without saving your changes, hover over the blue dot, click the `X`, and select `Don't Save`.
-
-<img src='/wp-content/uploads/do-not-save-prompt-2025.png' class="help-center-img img-bordered">
-
-### Staging edits
-
-Clicking the <button class='button button--success button--ui button--nolink'>Stage File</span></button> button with pending changes will give you the options to `Save and stage` or `Stage saved changes only`. 
-
-<img src='/wp-content/uploads/save-and-stage-2025.png' class="help-center-img img-bordered">
-
-
-## Encoding
-
-All files have encoding that defines how the binary should be read. 
-
-<img src="/wp-content/uploads/file-encoding-diff2.png" class="help-center-img img-bordered">
-
-GitKraken Desktop expects most files to use `UTF-8` file encoding. If you are using another encoding type, you can set it at the top when editing your file or from the preferences menu.
-
-You can also set your file encoding to `GUESS ENCODING` and GitKraken Desktop will try to match the file encoding so that it is displayed correctly. Take care to select the correct file encoding when editing the file, as selecting the incorrect encoding could lead to unexpected errors.
-
-<div class='callout callout--warning'>
-    <p>Note 📝 - GitKraken Desktop is NOT intended to be used to change a file(s) encoding and it will not change the encoding when saving. We recommend using another editor, such as VSCode, to make file encoding changes.</p>
+<div class='callout callout--success'>
+<p><strong>Note:</strong> If viewing a file on a different branch, the button will read <kbd>Edit in working directory</kbd>. It opens the file version from your current branch.</p>
 </div>
 
-<img src='/wp-content/uploads/preferences-encoding-select-2025.png' class="help-center-img img-bordered">
+***
+
+## File Edit Indicators
+
+The upper-right corner of the file editor shows:
+
+- <strong>editable</strong> tag: Indicates the file can be modified
+- <strong>blue dot</strong>: Indicates unsaved changes
+
+<figure class='figure center'>
+    <img src='/wp-content/uploads/editable-2025.png' class="help-center-img img-bordered" alt="Editable tag indicator">
+    <figcaption style="text-align: center; color: #888;">The file editor shows editable state.</figcaption>
+</figure>
+
+<figure class='figure center'>
+    <img src='/wp-content/uploads/save-changes-2025.png' class="help-center-img img-bordered" alt="Unsaved changes indicated by a blue dot">
+    <figcaption style="text-align: center; color: #888;">Unsaved changes are indicated with a blue dot.</figcaption>
+</figure>
+
+***
+
+## Save or Discard Changes
+
+- Press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>S</kbd> to save
+- To discard unsaved changes:
+  1. Hover over the blue dot
+  2. Click the <kbd>X</kbd>
+  3. Select <kbd>Don't Save</kbd>
+
+<figure class='figure center'>
+    <img src='/wp-content/uploads/do-not-save-prompt-2025.png' class="help-center-img img-bordered" alt="Prompt to discard changes">
+    <figcaption style="text-align: center; color: #888;">Prompt to discard unsaved changes.</figcaption>
+</figure>
+
+***
+
+## Stage Your File Edits
+
+After editing, click <button class='button button--success button--ui button--nolink'>Stage File</button> to commit your changes. Options include:
+
+- <kbd>Save and stage</kbd>
+- <kbd>Stage saved changes only</kbd>
+
+<figure class='figure center'>
+    <img src='/wp-content/uploads/save-and-stage-2025.png' class="help-center-img img-bordered" alt="Save and stage file options">
+    <figcaption style="text-align: center; color: #888;">Save and stage or stage only saved changes.</figcaption>
+</figure>
+
+***
+
+## File Encoding
+
+GitKraken Desktop expects most files to use `UTF-8` encoding. To review or adjust encoding:
+
+- Use the dropdown at the top of the editor
+- Visit <kbd>Preferences</kbd> > <kbd>Encoding</kbd>
+- Or select <kbd>Guess Encoding</kbd> to let GitKraken match it automatically
+
+<figure class='figure center'>
+    <img src='/wp-content/uploads/file-encoding-diff2.png' class="help-center-img img-bordered" alt="File encoding option in editor">
+    <figcaption style="text-align: center; color: #888;">Encoding dropdown available from file editor.</figcaption>
+</figure>
+
+<div class='callout callout--warning'>
+<p><strong>Note:</strong> GitKraken Desktop does not change a file’s encoding upon save. Use an external editor like VS Code if you need to convert encodings.</p>
+</div>
+
+<figure class='figure center'>
+    <img src='/wp-content/uploads/preferences-encoding-select-2025.png' class="help-center-img img-bordered" alt="File encoding selection from preferences">
+    <figcaption style="text-align: center; color: #888;">Choose your default encoding from preferences.</figcaption>
+</figure>
