@@ -6,7 +6,7 @@ taxonomy:
 ---
 <kbd>Last updated: May 2025</kbd>
 
-GitKraken Desktop includes experimental features—early previews of in-development functionality. These features may change or be removed in future releases.
+GitKraken Desktop includes experimental features, which are early previews of in-development functionality. These features may change or be removed in future releases.
 
 ---
 
@@ -41,7 +41,7 @@ Git actions that currently use the Git executable (by version):
 - SSH signing, Git Credential Manager
 - Discard changes, undo/redo, hooks output
 
-See full details per release in GitKraken changelogs.
+See full details per release in the [GitKraken Desktop release notes](/gitkraken-desktop/current/).
 
 ---
 
