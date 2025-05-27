@@ -1,64 +1,101 @@
 ---
-
 title: Tags
-description: Designating important points of the Git history. Creating Tags in GitKraken Desktop on commits is easy with the graph.
+description: Learn how to mark key commits and manage Git tags in GitKraken Desktop.
 taxonomy:
     category: gitkraken-desktop
-
 ---
+<kbd>Last updated: May 2025</kbd>
 
-Tags <em class='context-menu'><img style='translate:rotate(180deg);height:1em;' src='/wp-content/uploads/gk-tag-icon.svg'></em> are pointers to a commit.  Some examples of these are for marking versions of your product or important changes.
-
-***
-### Adding tags
-
-To create a new tag in GitKraken Desktop, right-click on the commit you'd like to tag, and select <kbd>Create tag here</kbd> at the bottom.
-
-<img src="/wp-content/uploads/create-tag-2025.png" srcset="/wp-content/uploads/create-tag-2025.png" class="help-center-img img-bordered">
-
-
-Tags are created locally, but available for remotes by right-clicking the tag and selecting to push the tag to the remote.
-
-<img src="/wp-content/uploads/push-tag-2025.png" srcset="/wp-content/uploads/push-tag-2025@2x.png" class="help-center-img img-bordered">
-
-Double-click a tag in the Left Panel to jump to when the tag was added.  Tags can also be hidden and soloed just like branches from the context menu.
-
-<img src="/wp-content/uploads/tag-right.png" srcset="/wp-content/uploads/tag-right.png" class="help-center-img img-bordered">
+Tags <em class='context-menu'><img style='transform:rotate(180deg);height:1em;' src='/wp-content/uploads/gk-tag-icon.svg'></em> are labels that point to a specific commit in your Git history. They’re useful for marking version releases or significant project milestones.
 
 ***
 
-### Checkout a tag
+## Add a Tag
 
-While you cannot directly checkout a tag, right-click on a tag and choose the <kbd>Create branch here</kbd> to create and then immediately checkout the commit tied with the tag.
+To create a new tag:
+1. Right-click a commit.
+2. Select <kbd>Create tag here</kbd>.
 
-<img src="/wp-content/uploads/tag-branch.png" srcset="/wp-content/uploads/tag-branch@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/create-tag-2025.png" srcset="/wp-content/uploads/create-tag-2025.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Create a tag from a commit's context menu</figcaption>
+</figure>
 
-Alternatively, consider using the [detached HEAD state](/working-with-commits/detached-head-state/) to checkout the commit directly.
+To share a tag with collaborators, right-click it and choose <kbd>Push tag</kbd>.
+
+<figure>
+  <img src="/wp-content/uploads/push-tag-2025.png" srcset="/wp-content/uploads/push-tag-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Push a local tag to a remote</figcaption>
+</figure>
+
+Double-click a tag in the Left Panel to jump to that commit in the graph. You can also hide or solo tags via the context menu.
+
+<figure>
+  <img src="/wp-content/uploads/tag-right.png" srcset="/wp-content/uploads/tag-right.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Access tag options from the Left Panel</figcaption>
+</figure>
 
 ***
 
-### Moving tags
-To move a tag to the branch HEAD, checkout the new branch, right-click the tag, and select fast-forward.
+## Create a Branch from a Tag
 
-If a tag cannot be fast-forwarded, you can delete and then add a new one.  Be sure to delete the tag on remote as well.
+While you can't check out a tag directly, you can branch from it:
+1. Right-click the tag.
+2. Select <kbd>Create branch here</kbd>.
+
+<figure>
+  <img src="/wp-content/uploads/tag-branch.png" srcset="/wp-content/uploads/tag-branch@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Create a branch from a tag</figcaption>
+</figure>
+
+Alternatively, use the [detached HEAD state](/working-with-commits/detached-head-state/) to inspect a tagged commit.
 
 ***
 
-### Tag messages
-Create annotated tags by right-clicking a branch or commit and selecting <kbd>Create annotated tag here</kbd>. You can annotate an existing tag by right-clicking the tag and selecting <kbd>Annotate tag</kbd>. This message will be displayed when hovering over the tag in the Left Panel, or in the Commit Graph.
+## Move a Tag
 
-<img src="/wp-content/uploads/tag-annotation.png" srcset="/wp-content/uploads/tag-annotation.png" class="help-center-img img-bordered">
+To move a tag to a new commit:
+1. Check out the new branch.
+2. Right-click the tag.
+3. Choose <kbd>Fast-forward</kbd>.
 
-### Search or filter tags
+If fast-forwarding is not possible, delete the tag locally and remotely, then recreate it on the new commit.
 
-You may filter tags from the filter bar in the Left Panel. Use this to quickly find a tag.
+***
 
-<img src="/wp-content/uploads/filter-tags.png" srcset="/wp-content/uploads/filter-tags@2x.png" class="help-center-img img-bordered">
+## Annotate a Tag
 
-### Hide or show Tags in Left Panel
+To add a message to a tag:
+- Right-click a commit and choose <kbd>Create annotated tag here</kbd>
+- Or right-click an existing tag and select <kbd>Annotate tag</kbd>
 
-All panes in the Left Panel can be toggled on or off by right-clicking on any pane header.
+Annotated messages appear in the graph and Left Panel on hover.
 
-<img src="/wp-content/uploads/toggle-panes-2025.png" srcset="/wp-content/uploads/toggle-panes-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/tag-annotation.png" srcset="/wp-content/uploads/tag-annotation.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Hover to preview an annotated tag</figcaption>
+</figure>
 
-Check the panes you wish to see, and uncheck any panes you wish to hide. 
+***
+
+## Search or Filter Tags
+
+Use the filter bar in the Left Panel to search for tags.
+
+<figure>
+  <img src="/wp-content/uploads/filter-tags.png" srcset="/wp-content/uploads/filter-tags@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Search for tags from the Left Panel</figcaption>
+</figure>
+
+***
+
+## Show or Hide Tags Panel
+
+To toggle visibility of the Tags section:
+- Right-click any header in the Left Panel
+- Check or uncheck <kbd>Tags</kbd>
+
+<figure>
+  <img src="/wp-content/uploads/toggle-panes-2025.png" srcset="/wp-content/uploads/toggle-panes-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Show or hide the Tags pane in the Left Panel</figcaption>
+</figure>
