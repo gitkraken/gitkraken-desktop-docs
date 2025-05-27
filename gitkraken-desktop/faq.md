@@ -65,13 +65,13 @@ While there’s no sign-out button, you can:
 
 ## Technical Issues
 
-**Why am I getting a repo compatibility error?**  
+### Why am I getting a repo compatibility error? 
 Try closing other tools like IDEs, then relaunch GitKraken. Use `git status` to check for uncommitted changes. Try switching branches or cloning to a new directory.
 
-**Why won’t GitKraken launch on Linux?**  
+### Why won’t GitKraken launch on Linux?
 Launch from terminal to check for missing dependencies. Refer to the [installation guide](/gitkraken-desktop/how-to-install/).
 
-**Why does my subscription show COMMUNITY?**  
+### Why does my subscription show COMMUNITY?  
 Verify that you're logged into the email associated with your subscription. Check this via your profile icon.
 
 <figure class='figure center'>
@@ -79,38 +79,35 @@ Verify that you're logged into the email associated with your subscription. Chec
   <figcaption style="text-align: center; color: #888;">Access alternate login via the profile menu.</figcaption>
 </figure>
 
-**Why isn’t GitKraken authenticating my SSH key?**  
+### Why isn’t GitKraken authenticating my SSH key?
 - Confirm remote URLs start with `ssh://` or `{user}@{host}:{repo}`.
 - GitKraken does not use `~/.ssh/config`. Load the key manually or use your OS agent.
 - On Windows, only Pageant is supported. [Download here](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
-**Why can’t GitKraken access my GitHub remote?**  
+### Why can’t GitKraken access my GitHub remote?
 - Confirm GitKraken is [authorized](https://github.com/settings/applications).
 - Org access may require approval from the owner. [Request access](https://github.com/settings/connections/applications/a7557949433b7d282a76).
 
-**Why can’t GitKraken connect to the internet (firewall or proxy)?**  
+### Why can’t GitKraken connect to the internet (firewall or proxy)?
 - GitKraken works with most firewalls but some PACs or proxy settings may need manual config.
 - Use `http.proxy` or `remote.<name>.proxy` in Git config. See [Authentication](/integrations/authentication).
 
-**Why is the graph missing commits or showing errors?**  
+### Why is the graph missing commits or showing errors?
 Run `git gc` in terminal or clone into a fresh directory.
 
-**Why is the window blank or UI not displaying properly?**  
+### Why is the window blank or UI not displaying properly?
 Launch GitKraken with:
 ```bash
 gitkraken --disable-gpu
 ```
 
-**Why is my file encoding incorrect or unreadable?**  
+### Why is my file encoding incorrect or unreadable?
 Set encoding to `UTF-8` or use `GUESS ENCODING` under repository preferences.
 
-**How can I enable extended logging for troubleshooting?**  
+### How can I enable extended logging for troubleshooting?
 1. Close GitKraken  
 2. Rename or delete `~/.gitkraken/logs`  
 3. Start GitKraken using: `gitkraken -d SILLY`  
 4. Reproduce the issue  
 5. Logs will be saved in the new `logs` folder
 
----
-
-Still stuck? <a href='https://help.gitkraken.com/gitkraken-desktop/contact-support/'>Contact us</a>.
