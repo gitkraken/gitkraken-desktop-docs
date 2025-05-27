@@ -1,283 +1,170 @@
 ---
-
 title: Preferences
-description: Customize your GitKraken Desktop experience to match your tastes!
+description: Customize your GitKraken Desktop experience to match your workflow and preferences.
 taxonomy:
     category: gitkraken-desktop
-
 ---
 <kbd>Last updated: May 2025</kbd>
 
-Navigate to <i class="fas fa-cog"></i> <kbd><strong>Preferences</strong></kbd> to customize your GitKraken Desktop experience. Here are what each of the major sections do.
+Navigate to <i class="fas fa-cog"></i> <kbd><strong>Preferences</strong></kbd> in GitKraken Desktop to tailor your environment. Here's what each major section controls.
 
-<figure class='figure center'>
-    <img src="/wp-content/uploads/preferences-2025.png" srcset="/wp-content/uploads/preferences@2x.png 2x" class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Navigate to the gear in the top right of GitKraken Desktop.</figcaption>
+<figure>
+  <img src="/wp-content/uploads/preferences-2025.png" srcset="/wp-content/uploads/preferences@2x.png 2x" class="help-center-img img-bordered" alt="GitKraken Desktop Preferences screen">
+  <figcaption style="text-align:center; color:#888">Access Preferences from the gear icon in the top right corner</figcaption>
 </figure>
 
-*** 
+***
 
 ## Organization
 
-This section will be labeled with your organization name rather than "Organization".  It shows the members and teams within your organization. Click `switch organization` to swap to another organization.
-
-The Owner and any Admins are able to:
-
-- Change role of members within the organization
-- Invite members to the organization and purchase licenses
+This section is labeled with your organization's name. It shows members and teams, and allows Owners and Admins to:
+- Manage member roles
+- Invite users and assign licenses
 - Create and manage teams
 
-
 <div class='callout callout--warning'>
-    <p><strong>Note:</strong> the Organization section is only available to users who have a Pro subscription tier and above.
-</p>
+  <p><strong>Note:</strong> Organization settings are available on the <strong>Pro</strong> plan and above.</p>
 </div>
+
+***
 
 ## General
 
-### Auto-Fetch
+Configure app-wide behavior like auto-fetch, conflict detection, and commit graph settings.
 
-Set the number of minutes between auto-fetches. This value must be between 0 and 60 minutes, and it will fetch all visible remotes for the repository. Setting the value to 0 minutes will disable auto-fetch.
-
-If you’re experiencing issues with performance, consider setting your auto-fetch value to 0 and restarting the application. 
- 
-### Auto-Prune
-
-Removes any remote-tracking references that no longer exist on the remote.
-
-### Automatic Conflict Detection
-
-GitKraken will monitor your base branch for conflicts and alert you with an icon in the toolbar when conflicts are detected, providing options to resolve your conflicts sooner rather than later.
-
-Unchecking this option will disable the automatic conflict detection feature for all repositories. You can disable this feature on a per-repo basis by going to the repo preferences and unchecking the box for automatic conflict detection.
-
-Learn more about [Automatic Conflict Detection](https://help.gitkraken.com/gitkraken-desktop/branching-and-merging/#automatic-conflict-detection-preview).
-
-### Keep Submodules Up to Date
-
-When enabled, GitKraken Desktop will automatically update all submodules after performing a Git action. This setting can be configured on a per-repo basis.
-
-### Default Branch Name
-
-Set the default name when initializing a new repo. The app defaults to `main`.
-
-
-### Delete ".orig" files
-
-GitKraken Desktop will make .orig files during a merge. If turned off, these before and after files will not be automatically deleted. 
-
-### Show All Commits in Graph
-
-Enabling this option will force GitKraken Desktop to always show all commits in repo. This setting may cause performance issues with large repositories.
-
-### Initial Commits in Graph
-
-Set the max number of commits GitKraken Desktop will show in the graph. Lower counts may help improve performance, and the minimum value is 500 commits.
-
-### Lazy Load Commits
-
-When enabled, GitKraken Desktop will only load additional commits if you reach the earliest commit in the Commit Graph. This setting may cause performance issues with large repositories.
-
-### Remember tabs
-
-This will remember open tabs when you quit GitKraken Desktop. This option will also remember what tabs you have open for each profile. 
-
-### Longpaths (Windows Only)
-
-For Windows users, GitKraken Desktop will respect the `core.longpaths` setting in the global .gitconfig. 
-
-Adjusting this setting will change `core.longpaths` in your .gitconfig. `core.longpaths` only applies to the files in the working directory, not in the .git directory, to maintain compatibility with Git for Windows.
-
-### AutoCRLF (Windows Only)
-
-For Windows users, GitKraken Desktop will respect the `core.autocrlf` setting in the global .gitconfig. 
-
-Adjusting this setting will change `core.autocrlf` in your .gitconfig. Enabling this option auto-converts CRLF line endings into LF when adding a file to index, and vice versa when checking out code onto your file system. For more information check out this [git documentation](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf)
-
-
-### Use extended logging in activity log
-
-Provides more information for the activity log. You may access the activity log from <kbd><strong>Help > Support Logs > Activity Logs</strong></kbd>.
-
-### Forget all Usernames and Passwords
-
-Removes credentials that currently stored by GitKraken Desktop.
-
-### Share work-in-progress status with my team
-
-Allows other users in your team to see your local work in progress files. This is directly related to the [Teams](/working-with-repositories/teams) feature.
+- **Auto-Fetch**: Set an interval (0–60 minutes); 0 disables auto-fetch.
+- **Auto-Prune**: Removes stale remote-tracking references.
+- **Automatic Conflict Detection**: GitKraken monitors for base branch conflicts.
+- **Keep Submodules Up to Date**: Auto-update submodules after Git actions.
+- **Default Branch Name**: Used when initializing new repos (default is `main`).
+- **Delete ".orig" Files**: Control cleanup of merge backup files.
+- **Show All Commits in Graph**: May affect performance on large repos.
+- **Initial Commits in Graph**: Define max visible commits (minimum: 500).
+- **Lazy Load Commits**: Loads more commits only as needed.
+- **Remember Tabs**: Saves open tabs and profile context between sessions.
+- **Longpaths / AutoCRLF**: Windows-only settings tied to global `.gitconfig`.
+- **Extended Logging**: Toggle detailed activity logs from <kbd>Help > Support Logs</kbd>.
+- **Forget All Credentials**: Clears stored usernames and passwords.
+- **Share Work-in-Progress**: Enables visibility for teammates via the [Team View](/gitkraken-desktop/team-view/).
 
 ***
 
 ## Profiles
 
-GitKraken Desktop uses profiles to store your app preferences, current [tabs](/start-here/interface/#tabs), and Git config information.
+Store unique settings, tabs, and integrations per context. Useful for multi-account workflows.
 
 [Learn more about Profiles](/start-here/profiles)
 
+***
+
 ## SSH & Integrations
 
-GitKraken Desktop supports HTTPS and SSH authentication, and provides useful integrations with many Git hosting services. Here's how to get started.
+Control access and connections to remote repositories:
 
-- [General SSH settings](/gitkraken-desktop/authentication/#ssh)
-- [GitHub Integration](/gitkraken-desktop/github-gitkraken-desktop/)
-- [GitHub Enterprise Server Integration](/gitkraken-desktop/github-enterprise/)
-- [GitLab Integration](/gitkraken-desktop/gitlab/)
-- [GitLab Self-Managed Integration](/gitkraken-desktop/gitlab-self-hosted/)
-- [Bitbucket Integration](/gitkraken-desktop/bitbucket/)
-- [Bitbucket Data Center Integration](/gitkraken-desktop/bitbucket-data-center/)
-- [Azure DevOps Integration](/gitkraken-desktop/azure-devops/)
-- [TFS, AWS CodeCommit, custom service, etc](/gitkraken-desktop/authentication/)
-- [Jira Cloud Integration](/gitkraken-desktop/jira/)
-- [Jira Data Center Integration](/gitkraken-desktop/jira-data-center/)
+- [SSH settings](/gitkraken-desktop/authentication/#ssh)
+- Git hosting integrations for GitHub, GitLab, Bitbucket, Azure DevOps, etc.
+- Issue tracker integrations like Jira and Trello
+
+***
 
 ## GitKraken AI
 
 <div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher</p>
+  <p>This feature is available for <strong>Pro</strong> plans or higher.</p>
 </div>
 
-A seamless extension of your development workflow, [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai) automates tedious tasks to improve your efficiency and focus.
+Let [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai) automate repetitive Git tasks to improve your efficiency.
 
 <div class='callout callout--basic'>
-    <p>More questions about Gitkraken AI? Please see our <a href="https://help.gitkraken.com/general/gitkraken-ai-faq/">GitKraken AI FAQ page</a> for more details</p>
+  <p>See the <a href="https://help.gitkraken.com/general/gitkraken-ai-faq/">GitKraken AI FAQ</a> for common questions.</p>
 </div>
+
+***
+
 ## External Tools
 
-### External Merge Tool
-This is where you may set your preferred external merge tool. 
+Configure your preferred editors, terminals, and diff/merge tools.
 
-- [Supported Merge Tools](/working-with-repositories/branching-and-merging/#external-merge-tools)
- 
-### External Diff Tool
+- **External Merge Tool**: [View supported tools](/working-with-repositories/branching-and-merging/#external-merge-tools)
+- **External Diff Tool**: [View supported tools](/working-with-commits/diff/#external-diff-tools)
+- **External Editor**: Choose from VS Code, Atom, Sublime, IntelliJ, or custom path
+- **Default Terminal**: Launch from <kbd>File > Open Terminal</kbd> or <kbd>Alt</kbd>/<kbd>Option</kbd> + <kbd>T</kbd>
+- **Use Custom Terminal Command**: Example for PowerShell: `start "" "C:\Program Files\PowerShell\7\pwsh.exe" -noexit -command "cd %d"`
 
-There is where you may set your preferred external diff tool.
-
-- [Supported Diff Tools](/working-with-commits/diff/#external-diff-tools)
-
-### External Editor
-
-You may open a repo in your preferred external editor program using the [Command Palette](/start-here/command-palette/). Supported editors include:
-
-- VS Code
-- Atom
-- Sublime
-- IntelliJ
-
-You may also set your preferred external editor selecting `<Custom>` and entering the path for the editor you want to use. If needed, you can configure the arguments to pass when opening repos or files in your selected editor.
 <div class='callout callout--warning'>
-    <p><strong>Note:</strong> When using MacOS, you must make sure to select the editor's executable rather than the .app when setting a custom editor.
-</p>
+  <p><strong>macOS Note:</strong> Use the executable file, not the .app, when selecting a custom editor.</p>
 </div>
 
-
-### Default Terminal
-
-You may open the current repo folder in terminal by navigating to  <kbd><strong>File > Open Terminal</strong></kbd> or use the keyboard shortcuts <kbd><strong>opt</strong></kbd> + <kbd><strong>T</strong></kbd> (Mac) / <kbd><strong>alt</strong></kbd> + <kbd><strong>T</strong></kbd> (Windows + Linux). 
-
-Set your preferred terminal from this preference option for this action.
- 
-### Use Custom Terminal Command
-
-Enables the option to specify a custom command to open a terminal window. 
-
-For example, to set up GitKraken Desktop to open Powershell 7, use the command `start "" "C:\Program Files\PowerShell\7\pwsh.exe" -noexit -command "cd %d"`
-
-
+***
 
 ## Notifications
 
-GitKraken Desktop's notification system is designed to tell you about updates, bug fixes, product tips, and more. The following preferences are available:
-
+Control product and marketing messages:
 - Enable Desktop Notifications
-- Receive Marketing Notifications
-- Receive Help Notifications
+- Receive Marketing and Help Notifications
 
 <div class='callout callout--basic'>
-    <p><strong>Note:</strong> Marketing notifications can only be disabled by Pro, Advance, Business, and Enterprise users. 
-</p>
+  <p><strong>Note:</strong> Marketing notifications can be disabled only by Pro, Advanced, Business, and Enterprise users.</p>
 </div>
 
 ***
 
 ## UI Customization
 
-The following UI preferences are available:
-
-- [Theme](/start-here/themes)
+Visual preferences for theming and commit graph display:
+- [Themes](/start-here/themes)
 - Notification location
-- Date/Time Locale
-- Date/Time Short Format
-- Default Workspace Color
-- Default color for default groups
-- Show toolbar icon labels
-- Enable spell checking
-- Display author initials instead of avatars (Gravatar) and generic remote icons instead of avatars
-- Show ghost branch/tag when hovering over or selecting a commit
-- Highlight associated rows when hovering over a branch
-- Show branches and tags in graph
-- Show commit author in graph
-- Show commit date/time in graph
-- Show commit message in graph
-- Show commit description in graph
-- Show commit sha in graph
-- Show commit tree in graph
-- Hide Launchpad in status bar
+- Date/time locale and formatting
+- Author initials vs. avatars
+- Graph metadata: branches, tags, author, commit message, SHA, etc.
+- Hide Launchpad from the status bar
 
-### Date/Time Locale and Short Format
-
-Date and Time Locale can be set from the UI Customization to match your system or you can set a custom locale. The Date/Time Short Format will match the Date/Time Locale. However, you can define a custom format as well.
-
-See all formatting options that can be used <a href="https://momentjs.com/docs/#/displaying/format/">here</a>. 
+***
 
 ## Commit Signing
 
-Learn more about how to [configure GPG signing](/git-workflows-and-extensions/commit-signing-with-gpg/#configure-gpg-in-gitkraken) in GitKraken Desktop.
+Enable and configure [GPG signing](/git-workflows-and-extensions/commit-signing-with-gpg/#configure-gpg-in-gitkraken) for commit verification.
+
+***
 
 ## Editor Preferences
 
-Customize the following settings for your GitKraken Desktop editor and diff:
-
-- Font
-- Font size
-- Tab size
-- End of line character
+Customize code and diff viewer:
+- Font, size, tab spacing
+- EOL characters
 - Syntax highlighting
-- Show line numbers
-- Word wrap
+- Line numbers and word wrap
+
+***
 
 ## In-App Terminal
 
-These settings only effect to the in-app `Terminal`.
-
-- Font
-- Font Size
-- Line Height
-- Cursor Style
+Adjust the appearance and behavior of GitKraken’s terminal:
+- Font, size, line height, cursor
 - Autocomplete behavior
-- Default Terminal (Windows only)
+- Default terminal for Windows
 
 ***
- 
+
 ## Experimental
 
-Activate [Experimental Features](/gitkraken-desktop/experimental-features.md) and try out ideas that are still being worked on.
+Preview [Experimental Features](/gitkraken-desktop/experimental-features):
+- Switch from NodeGit to Git binary (limited support)
+- AI commit message generation
 
-- Git Binary: Use Git executable instead of NodeGit Git actions (partially, not all git actions are implemented to Git executable)
-- AI Commit Message Generation
+***
 
 ## Repo-Specific Preferences
 
-Repo-Specific preferences only apply to the repo currently open in GitKraken Desktop. The following preferences are repo-specific:
+These apply only to the open repository:
 
 - [Encoding](/gitkraken-desktop/editing-files/#encoding)
 - [Gitflow](/gitkraken-desktop/git-flow/)
 - [Git Hooks](/gitkraken-desktop/githooks/)
-- [Commit](/working-with-commits/commits/)
 - [LFS](/gitkraken-desktop/git-lfs/)
+- [Commit settings](/working-with-commits/commits/)
 - [Issues](/gitkraken-desktop/jira/)
-- [Team](/gitkraken-desktop/team-view/)
+- [Team View](/gitkraken-desktop/team-view/)
 - [Submodules](/gitkraken-desktop/submodules/#keep-submodules-up-to-date)
 
-You may configure unique repo-specific settings for each repo.
-
+You can configure these uniquely per repository.
