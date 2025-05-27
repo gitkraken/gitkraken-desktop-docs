@@ -1,89 +1,86 @@
 ---
-
 title: Teams
 description: Working with Teams in GitKraken Desktop.
 taxonomy:
     category: gitkraken-desktop
-
 ---
 <kbd>Last updated: May 2025</kbd>
 
-GitKraken Desktop users with <a href="https://www.gitkraken.com/git-client/pricing?source=help_center&product=gitkraken">Pro, Advanced, Business, or Enterprise Cloud</a> accounts can use the Teams feature to group users within an Organization.
+GitKraken Desktop users with a <a href="https://www.gitkraken.com/git-client/pricing?source=help_center&product=gitkraken">Pro, Advanced, Business, or Enterprise Cloud</a> account can use the Teams feature to group users within an Organization.
 
-Teams can be utilized for:
-- The [Team View](/gitkraken-desktop/working-with-repositories/team-view/) - see what branches and files others are working on and detect potential conflcits. *Advanced plan and above
-- [Sharing a Workspace](https://help.gitkraken.com/gitkraken-desktop/workspaces/#create-a-cloud-workspace) - manage, share and take action on a group of repositories. *Pro plan and above
-- [Share a Cloud Patch](https://help.gitkraken.com/gitkraken-desktop/experimental-features) - securely send a patch file to other team members.
-
+Teams can be used for:
+- The [Team View](/gitkraken-desktop/working-with-repositories/team-view/): View branches and files others are working on and detect potential conflicts. <em>Advanced plan and above</em>
+- [Sharing a Workspace](/gitkraken-desktop/workspaces/#create-a-cloud-workspace): Manage and collaborate on a group of repositories. <em>Pro plan and above</em>
+- [Sharing a Cloud Patch](/gitkraken-desktop/experimental-features): Securely send a patch file to other team members.
 
 <div class='callout callout--basic'>
-    <p><strong>Note:</strong> Pro accounts are limited to 1 Team. Upgrade to a <a href="https://gitkraken.dev/subscription?source=help_center&product=gitkraken">GitKraken Advanced or Business</a> plan to create and manage more than 1 Team.
+  <p><strong>Note:</strong> Pro accounts are limited to 1 Team. Upgrade to an <a href="https://gitkraken.dev/subscription?source=help_center&product=gitkraken">Advanced or Business plan</a> to manage multiple Teams.</p>
 </div>
 
 ***
 
-### Managing an Organization
+## Manage Your Organization
 
-To manage the Team Members in your Organization, navigate to Preferences <i class="fas fa-cog"></i> and select your Organization name.
+To manage team members in your Organization:
+1. Open <kbd><strong>Preferences</strong></kbd>
+2. Select your Organization name from the sidebar
 
-<figure class='figure center'>
-    <img src="/wp-content/uploads/organization-2025-2.png" class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Click on the [Organization Name] from Preferences.</figcaption>
+<figure>
+  <img src="/wp-content/uploads/organization-2025-2.png" class="help-center-img img-bordered" alt="Select organization from preferences">
+  <figcaption style="text-align:center; color:#888">Access your organization from the Preferences sidebar.</figcaption>
 </figure>
 
-Under the Members section you may <button class="button button--success button--ui button--nolink">Invite member</button>s to your Organization and use the search bar to search for members by name, username, or email.
+You can:
+- <button class="button button--success button--ui button--nolink">Invite members</button> by name, username, or email
+- Change roles or remove users via the <i class="fas fa-ellipsis-h"></i> menu
 
-You may edit a users role or remove the user from the Organization by selecting the <i class="fas fa-ellipsis-h"></i> on the user.
-
-<figure class='figure center'>
-    <img src="/wp-content/uploads/edit-users-2025.png"  class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">If you are an Admin or Owner, change the role of any user or remove them if needed.</figcaption>
+<figure>
+  <img src="/wp-content/uploads/edit-users-2025.png" class="help-center-img img-bordered" alt="Edit user roles or remove users">
+  <figcaption style="text-align:center; color:#888">Admins and Owners can edit roles or remove users.</figcaption>
 </figure>
 
-If you do not have extra licenses while inviting a member, you will be prompted to purchase an additional license.
+If no additional licenses are available, you’ll be prompted to purchase one when inviting a new member.
 
 ***
 
-### Managing a Team
+## Manage Teams
 
-You may create a Team from the <i class="fas fa-plus-square" style="color:green"></i> icon.
+Create a new Team by clicking the <i class="fas fa-plus-square" style="color:green"></i> icon.
 
-<figure class='figure center'>
-    <img src="/wp-content/uploads/add-team-2025-2.png" class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Click the + icon to group users into teams.</figcaption>
+<figure>
+  <img src="/wp-content/uploads/add-team-2025-2.png" class="help-center-img img-bordered" alt="Create a new team">
+  <figcaption style="text-align:center; color:#888">Click the + icon to group users into a team.</figcaption>
 </figure>
 
-<div class='callout callout--basic'>
-    <p><strong>Note:</strong> Pro accounts are limited to 1 Team. Upgrade to a <a href="https://gitkraken.dev/subscription?source=help_center&product=gitkraken">GitKraken Advanced or Business</a> plan to create and manage more than 1 Team.
-</div>
+You can:
+- Delete a team via the <i class="fas fa-ellipsis-h"></i> menu
+- Rename a team by double-clicking its name
 
-You may delete a Team by selecting the Team and selecting the <i class="fas fa-ellipsis-h"></i> icon.
-
-<figure class='figure center'>
-    <img src="/wp-content/uploads/delete-team-2025.png" class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Delete a team from this menu.</figcaption>
+<figure>
+  <img src="/wp-content/uploads/delete-team-2025.png" class="help-center-img img-bordered" alt="Delete a team from its menu">
+  <figcaption style="text-align:center; color:#888">Use the menu to delete a team.</figcaption>
 </figure>
 
-
-You may rename a Team by double clicking the Team name.
-
-<figure class='figure center'>
-    <img src="/wp-content/uploads/rename-team-2025.png" class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Click into the team name to rename it.</figcaption>
+<figure>
+  <img src="/wp-content/uploads/rename-team-2025.png" class="help-center-img img-bordered" alt="Rename a team by double-clicking">
+  <figcaption style="text-align:center; color:#888">Double-click a team name to rename it.</figcaption>
 </figure>
 
+### Manage Team Members
 
-#### Managing Users in a Team
+To add users to a Team:
+1. Select the Team
+2. Click <button class="button button--success button--ui button--nolink">Add a member</button>
 
-To add a user to a Team, select the Team and then select <button class="button button--success button--ui button--nolink">Add a member</button>. Users can be removed from a Team by selecting the <i class="fas fa-ellipsis-h"></i> on the user.
+Remove a user by selecting <i class="fas fa-ellipsis-h"></i> on their entry.
 
 ***
 
-### Suggested Members
+## Suggested Members
 
-GitKraken Desktop will suggest users that contribute to the current repository that are not in your Organization. You may <button class="button button--success button--ui button--nolink">Invite</button> the member to your Organization to help future collaboration.
+GitKraken Desktop can suggest users who contribute to the current repository but aren’t in your Organization. Invite them to collaborate.
 
-<figure class='figure center'>
-    <img src="/wp-content/uploads/suggested-members-2025.png" class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Get a list of suggested team members based on the current repo.</figcaption>
+<figure>
+  <img src="/wp-content/uploads/suggested-members-2025.png" class="help-center-img img-bordered" alt="Suggested contributors for your repo">
+  <figcaption style="text-align:center; color:#888">Suggested users based on repository activity.</figcaption>
 </figure>
