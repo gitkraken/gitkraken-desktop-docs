@@ -30,11 +30,19 @@ To install Docker CE on CentOS, you need:
 - 64-bit version of CentOS 7
 - [Docker CE for CentOS requirements](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)
 
-### Ubuntu
+### Ubuntu (Current)
 To install Docker CE on Ubuntu, use a 64-bit version of one of the following:
 - Ubuntu 20.04 LTS (recommended)
 - Ubuntu 18.04 LTS
 - [Docker CE for Ubuntu requirements](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
+
+### Ubuntu (Legacy Support)
+These older versions were previously supported:
+- Ubuntu Zesty 17.04
+- Ubuntu Xenial 16.04 (LTS)
+- Ubuntu Trusty 14.04 (LTS)
+
+> Note: These distributions are no longer officially supported by Docker or the Ubuntu team. Proceed with caution and only for legacy deployments.
 
 ### Red Hat Enterprise Linux
 - RHEL 7 or later is supported with Docker CE
