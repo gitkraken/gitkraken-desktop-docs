@@ -1,201 +1,164 @@
 ---
-
 title: Tips
 description: Find out all the things users should know to boost their GitKraken Desktop experience.
 taxonomy:
     category: gitkraken-desktop
-
 ---
 <kbd>Last updated: May 2025</kbd>
 
-Here's the TLDR of the best features in GitKraken Desktop.
+Here's the TL;DR of GitKraken Desktop’s most powerful productivity features.
 
 ***
 
-### 1. Set up Profiles
+### 1. Set Up Profiles
 
-If you have personal projects you wish to separate from work repos–or if you need to connect to multiple instances of GitHub, GitLab, Bitbucket, etc.–then set up [Profiles](/start-here/profiles).
+Separate work and personal repositories—or manage multiple accounts with [Profiles](/start-here/profiles).
 
 <figure class='figure center'>
-    <img src="/wp-content/uploads/profile-example-2025.png" class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Each profile can save a unique integration connection.</figcaption>
+  <img src="/wp-content/uploads/profile-example-2025.png" class="help-center-img img-bordered" alt="Example of unique integrations for each profile">
+  <figcaption style="text-align: center; color: #888;">Each profile can save a unique integration connection.</figcaption>
 </figure>
 
-Each profile stores different app preferences and Git config information, which makes it easier to switch context.
+Each profile retains its own Git config, preferences, and open tabs.
 
 <div class='callout callout--success'>
-    <p>Note, access to multiple profiles requires a <a href="https://www.gitkraken.com/pricing" target="_blank">GitKraken subscription</a>.</p>
+  <p>Note: Access to multiple profiles requires a <a href="https://www.gitkraken.com/pricing" target="_blank">GitKraken subscription</a>.</p>
 </div>
 
 ***
 
 ### 2. Use the Command Palette
 
-Work like the pros, and use the [Command Palette](/start-here/command-palette) to quickly access GitKraken Desktop actions.
+The [Command Palette](/start-here/command-palette) helps you navigate GitKraken quickly with keyboard-driven actions.
 
 <figure class='figure center'>
-    <img src="/wp-content/uploads/command-palette-2025.gif" srcset="/wp-content/uploads/command-palette-2025.gif" class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Use the Command Palette to open the current repo in VS Code and more.</figcaption>
+  <img src="/wp-content/uploads/command-palette-2025.gif" class="help-center-img img-bordered" alt="Command Palette in use to open repo in VS Code">
+  <figcaption style="text-align: center; color: #888;">Use the Command Palette to launch repositories, open editors, and more.</figcaption>
 </figure>
 
-As you type, the Command Palette will find the most relevant commands, allowing you to perform many actions without clicking. Here are a few examples:
+Common actions:
 
-<h3>Core:</h3>
+**Core**
+- `Undo`, `Redo`
 
- * `Redo`
- * `Undo`
-
-<h3>File:</h3>
-
-* `Create File` + `filename`
-* `Delete File` + `filename`
-* `Open File` + `filename`
-* `View File` + `filename`
-* `Edit File` + `filename`
-* `Discard all changes`
-* `Stage all changes`
-* `Unstage all changes`
-
-
+**File**
+- `Create File`, `Delete File`, `Open File`, `Edit File`, `View File`
+- `Discard all changes`, `Stage all changes`, `Unstage all changes`
 
 ***
 
 ### 3. Keyboard Shortcuts
 
-For fast fingers, check out our [keyboard shortcuts](/start-here/keyboard-shortcuts). These will help you blitz through the app.
+Speed through tasks with [keyboard shortcuts](/start-here/keyboard-shortcuts).
 
 <table class='table table--bordered table--shortcuts'>
-    <thead>
-        <tr>
-            <th>&nbsp;</th>
-            <th>Mac</th>
-            <th>Windows/Linux</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Open keyboard shortcuts</td>
-            <td><kbd>&#8984;</kbd><kbd>/</kbd></td>
-            <td><kbd>Ctrl</kbd><kbd>/</kbd></td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th>Action</th>
+      <th>Mac</th>
+      <th>Windows/Linux</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Open keyboard shortcuts</td>
+      <td><kbd>&#8984;</kbd><kbd>/</kbd></td>
+      <td><kbd>Ctrl</kbd><kbd>/</kbd></td>
+    </tr>
+  </tbody>
 </table>
 
 ***
 
 ### 4. Cherry Pick Multiple Commits
 
-To cherry pick multiple commits, you can select multiple commits by holding down the <kbd>Cmd/Ctrl</kbd> or <kbd>Shift</kbd> key and clicking on the desired commits. Then, right-click on one of the selected commits and choose the "Cherry pick X commits" option.
+Select multiple commits using <kbd>Cmd/Ctrl</kbd> or <kbd>Shift</kbd>, then right-click and select <kbd>Cherry pick X commits</kbd>.
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/multi-cherry-pick-menu.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Select multiple commits from the Commit Graph to access multi-cherry pick.</figcaption>
+  <img src='/wp-content/uploads/multi-cherry-pick-menu.png' class="help-center-img img-bordered" alt="Multi-commit cherry pick menu in GitKraken">
+  <figcaption style="text-align: center; color: #888;">Select multiple commits from the graph to cherry pick them together.</figcaption>
 </figure>
 
-From here, you can decide to reorder, squash, drop, or rename commits before completing the cherry pick. Learn more about [Interactive Cherry Pick](/gitkraken-desktop/cherrypick/)
+You can reorder, squash, drop, or rename commits before completing. Learn more in [Interactive Cherry Pick](/gitkraken-desktop/cherrypick/).
 
 ***
 
-### 6. Integrate with GitHub, GitLab, Bitbucket, and Azure DevOps
+### 5. Integrate with Git Services
 
-GitKraken Desktop allows you to authenticate with [GitHub, GitLab, Bitbucket, and Azure DevOps](/gitkraken-desktop/integrations/) (previously VSTS), which will help you find repos when cloning or adding your remotes.
+Connect GitKraken Desktop with [GitHub, GitLab, Bitbucket, and Azure DevOps](/gitkraken-desktop/integrations/) to streamline cloning, remotes, and PR workflows.
 
 <figure class='figure center'>
-    <img src="/wp-content/uploads/connect-azure-devops-2025.png" srcset="/wp-content/uploads/connect-azure-devops-2025@2x.png" class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Connect your remote hosting service to get more bang for your buck.</figcaption>
+  <img src="/wp-content/uploads/connect-azure-devops-2025.png" class="help-center-img img-bordered" alt="Git hosting integration settings">
+  <figcaption style="text-align: center; color: #888;">Connect your Git provider to speed up repository access.</figcaption>
 </figure>
 
-Availability of integrations can vary based on your GitKraken subscription.
-- Community plan users are limited to public repos only for GitHub.com, GitLab.com, and Bitbucket Cloud
-- Azure DevOps Cloud integration requires a GitKraken subscription
-- All Self-Hosted server integrations require an Advanced subscription tiers or higher
+**Note:**
+- Community users are limited to public repositories on GitHub/GitLab/Bitbucket.
+- Azure DevOps integration requires a GitKraken subscription.
+- Self-Hosted services require an Advanced plan or higher.
 
-#### Benefits
-
-- Create repositories on GitHub/GitLab/Bitbucket/Azure DevOps including .gitignore and license
-- Save authentication into profiles
-- Clone from remote repo list
-- Add remotes 
-- Create and view pull requests
+**Benefits:**
+- Create repos and configure `.gitignore` or license files
+- Clone via remote repo list
+- Manage remotes and pull requests
 
 ***
 
-### 7. Hide and Solo branches
+### 6. Hide and Solo Branches
 
-Tailor the Commit Graph to display the branches you need with [Hiding and Soloing](/gitkraken-desktop/hiding-and-soloing/). Hide branches temporarily, or solo 1 branch focus it in the app.
+Control the Commit Graph display with [Hide and Solo](/gitkraken-desktop/hiding-and-soloing/) options.
 
 <div class="flex-wrap" style="align-items: flex-start">
-    <div class="flex-item">
-        <img src="/wp-content/uploads/gk-hide-icon-green.svg" class='img-responsive' style="width: 70px; height: 70px">
-    </div>
-    <div class="flex-item">
-        <h3>Hide</h3>
-        <p>Hides the selected branch from the graph.</p>
-        <p>To hide a branch, mouse over that branch, and you will see the eye <i class='fa fa-eye icon-green'></i> icon appear to the left of the branch name; click this to hide. Or perform this task by right-clicking the branch and selecting `Hide`.</p>
-        <p>Hidden branches will now have a gray eye <i class='fa fa-eye-slash'></i> icon. Clicking this will restore that repo to the graph.</p>
-    </div>
+  <div class="flex-item">
+    <img src="/wp-content/uploads/gk-hide-icon-green.svg" class='img-responsive' style="width: 70px; height: 70px" alt="Hide branch icon">
+  </div>
+  <div class="flex-item">
+    <h3>Hide</h3>
+    <p>Click the eye <i class='fa fa-eye icon-green'></i> next to a branch or right-click to hide it. Hidden branches show a gray <i class='fa fa-eye-slash'></i> icon.</p>
+  </div>
 </div>
 
- <div class="flex-wrap" style="align-items: flex-start">
-    <div class="flex-item">
-        <img src="/wp-content/uploads/gk-solo-icon-orange.svg" class='img-responsive' style="width: 70px; height: 70px">
-    </div>
-    <div class="flex-item">
-        <h3>Solo</h3>
-        <p>Soloing a branch will hide all other branches which have not been soloed, showing <i>only</i> soloed branches.</p>
-        <p>To solo a branch, right-click the branch and select `Solo`. This initiates Solo Mode, with soloed branches highlighted in orange and with a solid orange <i class='fa fa-dot-circle-o icon-orange'></i> icon to the left of the branch name.</p>
-        <p>Solo/unsolo additional branches by clicking on the semi-opaque icon to the left of that branch's name.</p>
-        <p>Consider hiding/soloing entire remotes if you only need about two remotes, and then hiding everything else.</p>
-    </div>
+<div class="flex-wrap" style="align-items: flex-start">
+  <div class="flex-item">
+    <img src="/wp-content/uploads/gk-solo-icon-orange.svg" class='img-responsive' style="width: 70px; height: 70px" alt="Solo branch icon">
+  </div>
+  <div class="flex-item">
+    <h3>Solo</h3>
+    <p>Right-click a branch and select `Solo` to show only that branch. Repeat to solo/unsolo other branches using the orange <i class='fa fa-dot-circle-o icon-orange'></i> icon.</p>
+  </div>
 </div>
-***
-
-### 8. File History and File Blame
-
-[File History and File Blame](/gitkraken-desktop/diff/#file-blame-and-history) information display in the same view.
-
-To access either option, first click on a commit in the graph. Then right click a file to access File History or File Blame.
-
-<figure class='figure center'>
-    <img src='/wp-content/uploads/file-history-content-menu-2025.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Right-click a file to get access to its History or Blame.</figcaption>
-</figure>
-
-
-File History shows that file's commit history on the left.
-
-<figure class='figure center'>
-    <img src='/wp-content/uploads/file-diff-2025.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Review the list and diffs of all commits made to this file.</figcaption>
-</figure>
-
-Use the top toggle button to switch between Diff View, which shows the selected commit's changes to the file, and the File View, which shows the file's state at that commit, including the blame info.
 
 ***
 
-### 9. GitKraken Desktop Terminal
+### 7. File History and Blame
 
-The [GitKraken Desktop terminal](/gitkraken-desktop/terminal/) is a fully-featured terminal emulator that allows you to run Git commands directly from the app.
-Click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar.
+[View file history and blame](/gitkraken-desktop/diff/#file-blame-and-history) by clicking a commit and right-clicking a file.
 
-To open the current repo folder in an external terminal, go to <em class="context-menu">File <i class='fa fa-caret-right'></i> Open Terminal</em> or use the keyboard shortcuts <kbd>opt</kbd> + <kbd>T</kbd> (Mac) / <kbd>alt</kbd> + <kbd>T</kbd> (Windows + Linux). 
+<figure class='figure center'>
+  <img src='/wp-content/uploads/file-history-content-menu-2025.png' class="help-center-img img-bordered" alt="File history and blame menu">
+  <figcaption style="text-align: center; color: #888;">Right-click a file to view its history or blame.</figcaption>
+</figure>
 
-You can set your default terminal from <em class="context-menu">Preferences <i class='fa fa-caret-right'></i> External Tools</em>.
-
+<figure class='figure center'>
+  <img src='/wp-content/uploads/file-diff-2025.png' class="help-center-img img-bordered" alt="File diff and commit history">
+  <figcaption style="text-align: center; color: #888;">Switch between commit diff and file view with blame.</figcaption>
+</figure>
 
 ***
 
-### 10. Resize the Graph
+### 8. GitKraken Desktop Terminal
 
-It's simple, but easy to miss. Hover over any of the colored lines to drag and drop the graph.
+Run Git commands with the [GitKraken Terminal](/gitkraken-desktop/terminal/). Click <i class="fa fa-terminal"></i> in the toolbar or use <kbd>Alt/Opt + T</kbd>.
+
+Set a default terminal from <kbd>Preferences > External Tools</kbd>.
+
+***
+
+### 9. Resize the Commit Graph
+
+Hover over the graph’s colored lines and drag to resize.
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/graph-drag-2025.gif' class='figure img-floated img-floated--right'>
-    <figcaption style="text-align: center; color: #888;">Resize the graph to your liking.</figcaption>
+  <img src='/wp-content/uploads/graph-drag-2025.gif' class='help-center-img img-bordered' alt='Resize GitKraken commit graph'>
+  <figcaption style="text-align: center; color: #888;">Adjust the graph view to focus on the information you need.</figcaption>
 </figure>
-
-
-Resize and marvel at the colors of the rainbow.
-
-
-
