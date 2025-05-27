@@ -1,21 +1,21 @@
 ---
-
 title: Interface Basics
 description: Learn the basics of working with the GitKraken Desktop interface.
 taxonomy:
     category: gitkraken-desktop
-
 ---
 <kbd>Last updated: May 2025</kbd>
 
-GitKraken Desktop's UI helps make sense of Git. Below we cover the layout and what the icons represent.
+GitKraken Desktop's interface simplifies Git usage by providing a visual layout of core actions and repository elements.
 
 ***
 
-From left to right, GitKraken Desktop displays a left reference panel, Commit Graph, and the Commit Panel when working with a repository.
+From left to right, GitKraken Desktop displays a Left Panel, Commit Graph, and the Commit Panel when working with a repository.
 
-<img src="/wp-content/uploads/interface.png" class="help-center-img img-bordered">
-
+<figure class='figure center'>
+    <img src="/wp-content/uploads/interface.png" class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">GitKraken Desktop UI includes Left Panel, Commit Graph, and Commit Panel.</figcaption>
+</figure>
 
 ## Toolbar
 
@@ -23,116 +23,114 @@ From left to right, GitKraken Desktop displays a left reference panel, Commit Gr
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Xv9EAJqucOI?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-In addition to Undo and Redo, the main toolbar houses common repo actions.
+The main toolbar provides quick access to common repository actions, including Undo, Redo, Pull, Push, Branching, and more.
 
-<h3>Undo</h3>
+### Undo
 <div class="flex-wrap">
 	<div class="flex-item">
 		<img src='/wp-content/uploads/gk-new-undo-icon.svg' class='img-responsive'></div>
 	<div class="flex-item">
-		<p>Many actions performed in GitKraken Desktop can be undone. If an action is undoable, the <kbd>Undo</kbd> button will be a solid color ready for action.</p>
+		<p>If an action can be undone, the <kbd>Undo</kbd> button is activated. Click to reverse the last undoable action.</p>
 	</div>
 </div>
 
-<h3>Redo</h3>
+### Redo
 <div class="flex-wrap">
 	<div class="flex-item">
 		<img src='/wp-content/uploads/gk-new-redo-icon.svg' class='img-responsive'>
 	</div>
 	<div class="flex-item">
-		<p>What if you undid something, only to realize that you didn't want to undo it? GitKraken Desktop also has a </kbd>Redo</kbd> button so you can undo your undos.</p>
+		<p>Click <kbd>Redo</kbd> to reverse the last undo command.</p>
 	</div>
 </div>
 
-
-<h3>Pull</h3>
+### Pull
 <div class="flex-wrap">
 	<div class="flex-item">
 		<img src='/wp-content/uploads/gk-new-pull-icon.svg' class='img-responsive'>
 	</div>
 	<div class="flex-item">
-		<p>Pull changes from your remote repos with this button. See the <kbd><i class='fa fa-caret-down'></i></kbd> button next to the icon? Click that to customize the type of pull you want to perform:</p>
+		<p>Click to pull changes from the remote repository. Use the adjacent dropdown to choose pull behavior:</p>
 	</div>
 </div>
 
 * Fetch All
 * Pull (fast-forward if possible)
-* Pull (fast-forward only): equivalent of `git fetch git merge --ff-only` in the CLI
-* Pull (rebase): equivalent of `git fetch git rebase` in the CLI
+* Pull (fast-forward only): same as `git fetch && git merge --ff-only`
+* Pull (rebase): same as `git fetch && git rebase`
 
-<div class='callout callout--basic'><p><strong>Tip:</strong> If you find yourself repeatedly performing the same pull actions, set the default pull type by clicking the <i class="fa fa-circle"></i> icon to the pull type's left. The default selection will appear as a <i class="fa fa-dot-circle"></i> icon.</p></div>
+<div class='callout callout--basic'><p><strong>Tip:</strong> Click the <i class="fa fa-circle"></i> next to a pull type to make it the default. The selected default displays a <i class="fa fa-dot-circle"></i>.</p></div>
 
-<h3>Push</h3>
+### Push
 <div class="flex-wrap">
 	<div class="flex-item">
-		<img src='/wp-content/uploads//gk-new-push-icon.svg' class='img-responsive'>
+		<img src='/wp-content/uploads/gk-new-push-icon.svg' class='img-responsive'>
 	</div>
 	<div class="flex-item">
-		<p>Push changes to the remote repo as set in your upstream.</p>
+		<p>Push changes to the upstream remote repository.</p>
 	</div>
 </div>
 
-<h3>Branch</h3>
+### Branch
 <div class="flex-wrap">
 	<div class="flex-item">
-		<img src='/wp-content/uploads//gk-new-branch-icon.svg' class='img-responsive'>
+		<img src='/wp-content/uploads/gk-new-branch-icon.svg' class='img-responsive'>
 	</div>
 	<div class="flex-item">
-		<p>Create a branch on your current local repo.</p>
+		<p>Create a new branch from your current HEAD.</p>
 	</div>
 </div>
 
-<h3>Stash</h3>
+### Stash
 <div class="flex-wrap">
 	<div class="flex-item">
-		<img src='/wp-content/uploads//gk-new-stash-icon.svg' class='img-responsive'>
+		<img src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive'>
 	</div>
 	<div class="flex-item">
-		<p>Stash your work-in-process (<code>// WIP</code>) changes.</p>
+		<p>Temporarily save your changes without committing using a stash.</p>
 	</div>
 </div>
 
-
-<h3>Pop Stash</h3>
+### Pop Stash
 <div class="flex-wrap">
 	<div class="flex-item">
-		<img src='/wp-content/uploads//gk-new-pop-icon.svg' class='img-responsive'>
+		<img src='/wp-content/uploads/gk-new-pop-icon.svg' class='img-responsive'>
 	</div>
 	<div class="flex-item">
-		<p>Ready to restore your <code>// WIP</code>? Pop that stash and carry on as you were.</p>
+		<p>Restore changes from the most recent stash.</p>
 	</div>
 </div>
 
-<h3>LFS</h3>
+### LFS
 <div class="flex-wrap">
 	<div class="flex-item">
-		<img src='/wp-content/uploads//gk-lfs-icon.svg' class='img-responsive'>
+		<img src='/wp-content/uploads/gk-lfs-icon.svg' class='img-responsive'>
 	</div>
 	<div class="flex-item">
-		<p> Have large files in your repo? This button will appear when you have <a href="/gitkraken-desktop/git-lfs/">LFS</a> enabled on the repository.</p>
+		<p>This button appears if <a href="/gitkraken-desktop/git-lfs/">LFS</a> is enabled for your repository.</p>
 	</div>
 </div>
 
-
-<div class='callout callout--basic'><p><strong>Note:</strong> Toggle the toolbar labels by navigating to <kbd><strong>Preferences > UI Preferences</strong></kbd> and toggling the <code>Show toolbar icon labels</code> checkbox.</p></div>
+<div class='callout callout--basic'><p><strong>Note:</strong> To toggle toolbar labels, go to <kbd><strong>Preferences > UI Preferences</strong></kbd> and enable <code>Show toolbar icon labels</code>.</p></div>
 
 ***
+
 ## Left Panel
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/4uSXlUUU0ds?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-Referred to as the Left "ref" Panel, GitKraken Desktop shows the properties below specific to your repository.
+The Left Panel provides access to repository references, such as local branches, remotes, and tags. You can:
 
-* The entire panel and each section can be collapsed or expanded as needed. 
-* The panel and each section can be resized by clicking and dragging. 
-* Sections can be toggled by right-clicking a section and selecting the desired section from the context menu.
-* Sections can be maximized by double-clicking a section header.
+* Collapse or expand sections
+* Resize the panel and sections
+* Toggle visibility via the context menu
+* Maximize a section by double-clicking the header
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/left-panel-resize-and-collapse.gif' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Resize, collapse, or expand any part of the Left Panel.</figcaption>
+    <figcaption style="text-align: center; color: #888;">Resize, collapse, or expand any section of the Left Panel.</figcaption>
 </figure>
 
 <h3>Local</h3>
