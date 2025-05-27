@@ -99,4 +99,4 @@ GitKraken Desktop uses initials based on the commit’s author name:
 
 ### Can Profiles Use Different Avatars?
 
-Yes—if each profile has a unique email address linked to a different Gravatar. GitKraken currently does not support custom image uploads.
+Yes it can, if each profile has a unique email address linked to a different Gravatar. GitKraken currently does not support custom image uploads.
