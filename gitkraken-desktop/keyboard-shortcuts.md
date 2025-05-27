@@ -1,36 +1,37 @@
 ---
-
 title: Keyboard Shortcuts
-description: At anytime in GitKraken Desktop, you can pull up a full list of keyboard shortcuts available. Work faster in GitKraken Desktop with keyboard shortcuts. Learn more.
+description: Learn how to accelerate your workflow in GitKraken Desktop with keyboard shortcuts.
 taxonomy:
     category: gitkraken-desktop
-
 ---
-<kbd>Last updated: February 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
-We know keyboard shortcuts help get things done faster, and here’s a handy list of the shortcuts currently supported by GitKraken Desktop.
+GitKraken Desktop includes a variety of keyboard shortcuts to help you work faster. Use this reference to find shortcuts for common actions like staging files, toggling panels, and managing tabs.
+
+<blockquote><strong>Note:</strong> The <kbd>&#8984;</kbd> symbol refers to the <strong>Command</strong> key on macOS.</blockquote>
 
 ***
-### Open list of keyboard shortcuts
+
+## Open Keyboard Shortcuts List
 
 <table class='table table--bordered table--shortcuts'>
-    <thead>
-        <tr>
-            <th>&nbsp;</th>
-            <th>Mac</th>
-            <th>Windows/Linux</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Open keyboard shortcuts</td>
-            <td><kbd>&#8984;</kbd><kbd>/</kbd></td>
-            <td><kbd>Ctrl</kbd><kbd>/</kbd></td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th scope="col">Action</th>
+      <th scope="col">Mac</th>
+      <th scope="col">Windows/Linux</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Open keyboard shortcuts</td>
+      <td><kbd>&#8984;</kbd><kbd>/</kbd></td>
+      <td><kbd>Ctrl</kbd><kbd>/</kbd></td>
+    </tr>
+  </tbody>
 </table>
 
-### Repo actions
+## Repo Actions
 <table class='table table--bordered table--shortcuts'>
     <thead>
         <tr>
