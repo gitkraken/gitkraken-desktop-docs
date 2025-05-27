@@ -1,48 +1,73 @@
 ---
-
 title: Terminal
 description: A Git-enhanced terminal experience with GitKraken’s powerful visual Git commit graph
 taxonomy:
     category: gitkraken-desktop
+---
+<kbd>Last updated: May 2025</kbd>
+
+Open the Terminal to run Git CLI commands while viewing the commit graph.
+
+To get started, open a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar, or search for "terminal" using the <a href="/working-with-repositories/command-palette">Command Palette</a>.
+
+<figure>
+  <img src="/wp-content/uploads/terminal-button-2025.png" srcset="/wp-content/uploads/terminal-button-2025@2x.png" class="help-center-img img-bordered" alt="Terminal button in GitKraken toolbar">
+  <figcaption style="text-align:center; color:#888">Launch the terminal from the GitKraken toolbar</figcaption>
+</figure>
 
 ---
 
-Open the Terminal to use Git CLI commands while still viewing the graph.
+## Git Commands and Auto-complete
 
-To get started open up a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar or by searching for "terminal" in the <a href="/working-with-repositories/command-palette">Command Palette</a>.
+The GitKraken Terminal supports most <a href="https://git-scm.com/" target="_blank">Git</a> commands. Start typing `git` to see command suggestions via auto-complete.
 
-<img src="/wp-content/uploads/terminal-button-2025.png" srcset="/wp-content/uploads/terminal-button-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/autocomplete-suggestions.png" class="help-center-img img-bordered" alt="Auto-complete suggestions for Git commands">
+  <figcaption style="text-align:center; color:#888">Git commands appear in auto-complete suggestions</figcaption>
+</figure>
 
+Flag suggestions are also supported:
 
----
-
-## Terminal Commands
-
-### Git Commands and Auto-complete
-Most <a href="https://git-scm.com/" target="_blank">Git</a> commands are supported and will appear in the Terminal's auto-complete suggestions, start typing `git` to see them.  
-
-<img src="/wp-content/uploads/autocomplete-suggestions.png" class="help-center-img img-bordered">
-
-Auto-complete suggestions will also appear for flags.
-
-<img src="/wp-content/uploads/autocomplete-suggestions-flags.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/autocomplete-suggestions-flags.png" class="help-center-img img-bordered" alt="Auto-complete for Git command flags">
+  <figcaption style="text-align:center; color:#888">Flag suggestions enhance Git command efficiency</figcaption>
+</figure>
 
 <div class='callout callout--warning'>
-    <p><strong>Note:</strong> Other auto-complete programs can cause the Terminal auto-complete suggestions to not work. You may need to uninstall or disable these programs before using the Terminal.</p>
+    <p><strong>Note:</strong> Conflicting auto-complete programs may disable suggestions. You may need to uninstall or disable such programs for GitKraken's suggestions to work correctly.</p>
 </div>
 
 ---
 
-### Terminal Preferences 
+## Customize Terminal Preferences
 
-Navigate to <kbd><strong>Preferences > In-app Terminal</strong></kbd> to change your Terminal preferences.
+Visit <kbd><strong>Preferences > In-app Terminal</strong></kbd> to modify your terminal settings.
 
-<img src="/wp-content/uploads/terminal-preferences-2025.png" srcset="/wp-content/uploads/terminal-preferences-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/terminal-preferences-2025.png" srcset="/wp-content/uploads/terminal-preferences-2025@2x.png" class="help-center-img img-bordered" alt="Terminal preferences in GitKraken">
+  <figcaption style="text-align:center; color:#888">Access terminal settings under Preferences</figcaption>
+</figure>
 
-#### Setting the default terminal on Mac and Linux
+### Default Terminal on macOS and Linux
 
-ZSH and Bash are currently supported for Mac and Linux. To switch shells you'll need to set the new shell as default in your operating system settings and restart your computer for auto-complete to continue working as expected.
+GitKraken supports ZSH and Bash. To switch shells:
+1. Set the preferred shell as default in your OS settings.
+2. Restart your machine to apply changes.
 
-#### Setting the default terminal on Windows
+### Default Terminal on Windows
 
-PowerShell and Bash are currently supported for Windows. To switch shells, adjust the _Default Terminal_ under <em class='context-menu'>Preferences > Terminal</em>.
+PowerShell and Bash are currently supported. To change the shell:
+1. Open <kbd>Preferences > Terminal</kbd>.
+2. Set the _Default Terminal_ to your desired shell.
+
+---
+
+## Tip: Try Common Git Commands
+
+Use the terminal to quickly execute common Git operations:
+
+- `git status` – View working directory and staging status
+- `git commit -m "message"` – Commit changes with a message
+- `git log --oneline` – View a condensed commit history
+
+These commands complement GitKraken’s visual graph for a comprehensive Git experience.
