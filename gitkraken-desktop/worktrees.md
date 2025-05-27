@@ -1,65 +1,77 @@
 ---
-
 title: Worktrees
 description: How to use Git Worktrees in GitKraken Desktop
 taxonomy:
     category: gitkraken-desktop
-
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
-Learn more about Git Worktrees in GitKraken Desktop and how to use them.
+Learn how to manage Git worktrees using GitKraken Desktop. Worktrees let you work on multiple branches at the same time—each in its own working directory.
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/grAsFn5yvjA?si=5U8cIbu_m_41yGxR?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/grAsFn5yvjA?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>
 
 ***
 
-## Worktrees
+## What Are Worktrees?
 
-A Git worktree is a linked working copy of your Git repository that allows you to work on multiple branches simultaneously. Unlike branches which share the same working directory, each worktree has its own working directory with its own set of files. This means you can have different branches checked out in different locations on your filesystem at the same time.
+A Git worktree is a linked working copy of your repository. Each worktree:
 
-Worktrees are particularly useful when you need to:
+- Has its own working directory and index
+- Shares Git history with the main repository
+- Lets you keep different branches checked out simultaneously
 
-+ Work on multiple features or bug fixes in parallel without switching branches
-+ Build and test different versions of your code simultaneously  
-+ Keep a clean main branch while working on experimental changes
-+ Review pull requests while continuing development on another branch
+Worktrees are useful when you want to:
 
-Each worktree maintains its own index and working tree state, but shares the same Git history and objects with the main repository. Changes made in one worktree can be seen from other worktrees once committed.
+- Work on multiple features or fixes without switching branches
+- Build or test alternate versions of your code
+- Experiment safely while keeping your main branch clean
+- Review pull requests without halting other work
 
-***
-
-## Worktrees in GitKraken Desktop
-
-Since version 10.5.0, GitKraken Desktop supports worktrees, allowing you to create, switch, delete, and lock or unlock them directly from the left panel. By hovering over a worktree, you can view its full path in your filesystem
-
-## Creating a Worktree
-
-To create a worktree, right click on a branch in the Repository View and select `Create worktree`.
-
-<img src="/wp-content/uploads/gkd-10-5-create-worktree.png" class="help-center-img img-bordered">
+Once committed, changes in one worktree become visible in others.
 
 ***
 
-## Switching Worktrees
+## Using Worktrees in GitKraken Desktop
 
-To switch to a different worktree, right click on the worktree in the left panel and select `Open this worktree`.
+GitKraken Desktop has supported worktrees since version **10.5.0**. From the Left Panel, you can:
 
-<img src="/wp-content/uploads/gkd-10-5-worktrees-actions.png" class="help-center-img img-bordered">
+- Create and switch between worktrees
+- Remove or lock/unlock worktrees
+- Hover over a worktree to see its full file path
 
-Or check out the branch you want to switch to in the Repository View to switch to that worktree.
+### Create a Worktree
 
-***
+To create a worktree:
+1. Right-click a branch in the Repository View
+2. Select <kbd>Create worktree</kbd>
 
-## Deleting a Worktree
+<figure>
+  <img src="/wp-content/uploads/gkd-10-5-create-worktree.png" class="help-center-img img-bordered" alt="Create worktree from branch context menu">
+  <figcaption style="text-align:center; color:#888">Create a new worktree from any branch</figcaption>
+</figure>
 
-To delete a worktree, right click on the worktree in the left panel and select `Remove this Worktree`.
+### Switch Worktrees
 
+To switch to another worktree:
+- Right-click the desired worktree in the Left Panel and choose <kbd>Open this worktree</kbd>
+- Or check out the corresponding branch from the Repository View
 
-## Locking/Unlocking a Worktree
+<figure>
+  <img src="/wp-content/uploads/gkd-10-5-worktrees-actions.png" class="help-center-img img-bordered" alt="Worktree context menu with open option">
+  <figcaption style="text-align:center; color:#888">Switch between worktrees from the Left Panel</figcaption>
+</figure>
 
-To lock or unlock a worktree, right click on the worktree in the left panel and select `Lock this worktree` or `Unlock this worktree`.
+### Delete a Worktree
 
+To remove a worktree:
+1. Right-click it in the Left Panel
+2. Select <kbd>Remove this worktree</kbd>
 
+### Lock or Unlock a Worktree
+
+To change lock status:
+- Right-click the worktree and choose <kbd>Lock this worktree</kbd> or <kbd>Unlock this worktree</kbd>
+
+Locking a worktree prevents accidental changes while you work elsewhere.

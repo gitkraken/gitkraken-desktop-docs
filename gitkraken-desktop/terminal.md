@@ -6,7 +6,7 @@ taxonomy:
 ---
 <kbd>Last updated: May 2025</kbd>
 
-Open the Terminal to run Git CLI commands while viewing the commit graph.
+Open the Terminal to run Git CLI commands while viewing the Commit Graph.
 
 To get started, open a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar, or search for "terminal" using the <a href="/working-with-repositories/command-palette">Command Palette</a>.
 
