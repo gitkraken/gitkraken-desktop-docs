@@ -1,152 +1,127 @@
 ---
-
 title: New to Git
 description: Learn how to get started with GitKraken Desktop.
 taxonomy:
     category: gitkraken-desktop
-
 ---
-
 <kbd>Last updated: May 2025</kbd>
 
-This Getting Started Guide uses a basic workflow to provide an overview of GitKraken Desktop interface from cloning your repository to successfully executing Git actions.
+This Getting Started Guide introduces GitKraken Desktop with a basic workflow—cloning a repository, making changes, and merging them.
 
 ***
 
-## Learning Git with GitKraken
+## Learn Git with GitKraken
 
-In this series, we'll provide Git tutorial videos. You'll learn Git concepts and how to apply them in GitKraken Desktop.
+In this series, you'll learn Git concepts and how to apply them using GitKraken Desktop.
 
-<div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/playlist?list=PLe6EXFvnTV7-_41SpakZoTIYCgX4aMTdU" frameborder="0" gesture="media" allowfullscreen></iframe>
-</div>
+<figure>
+  <div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/playlist?list=PLe6EXFvnTV7-_41SpakZoTIYCgX4aMTdU" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <figcaption style="text-align:center; color:#888">Watch our Git tutorial series for beginners.</figcaption>
+</figure>
 
-Interested in how version control fits into a DevOps workflow? Check out our [DevOps Tools Report](https://www.gitkraken.com/resources/devops-report-2020) to learn more.
+Explore how version control fits into a DevOps workflow by reading our [DevOps Tools Report](https://www.gitkraken.com/resources/devops-report-2020).
+
 ***
 
 ## GitKraken Tutorials
 
-Need a hand jumping into the product? Here's a playlist with a few video tutorials.
+Need help getting started with the product interface? Watch these video tutorials.
 
-<div class='embed-container embed-container--16-9'>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/playlist?list=PLe6EXFvnTV78WqGmGSq8JPnafR3lAa55n" frameborder="0" gesture="media" allowfullscreen></iframe>
-</div>
+<figure>
+  <div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/playlist?list=PLe6EXFvnTV78WqGmGSq8JPnafR3lAa55n" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <figcaption style="text-align:center; color:#888">Video tutorials for using GitKraken Desktop.</figcaption>
+</figure>
 
 ***
 
-## Define local
+## Understanding Local Repositories
 
-Most of the work you do in GitKraken Desktop is using the local repository, meaning the files and changes are saved on your local machine.
+Most Git actions in GitKraken Desktop occur in the local repository, meaning changes are made on your machine.
 
-You can easily identify any local branches in the Commit Graph as they are shown with the <em class='context-menu'><i class="fa fa-laptop" aria-hidden="true"></i></em> icon.
+Local branches are indicated in the graph with the <i class="fa fa-laptop"></i> icon.
 
-One of the reasons why Git is so fast when compared to other SCM tools is because all changes are made locally rather than on a remote server.  The local repository includes all of the branches, and changes made to the repo, since the time it was created.  
+Git is fast because all changes occur locally, not over a network. Even if a remote server fails, your team retains full copies of the project.
 
-Because you make a copy of the entire remote repo, you can change branches, view history, and commit changes without needing a network connection.  It also means if there is a catastrophic event on the remote server, or if another user makes an unwanted change on a remote, all of the other members of the team would still have a copy of the full repo so it can easily be restored.
+### .git Folder
 
-### .git folder
-When initializing a Git repo or cloning from a remote, you will notice a `.git` folder in the project root.  This contains all of the information required for the Git repository and if this folder is deleted, you would no longer be able to switch branches, pull from remotes, or view commit history.
+This folder contains all the metadata and commit history. If deleted, Git operations like switching branches or pulling remotes won’t work.
 
-### Working directory
-The working directory is the currently checked out version of the files in the local repository.  When you change branches, pull in changes, or reset, GitKraken Desktop will update the files in the working directory to reflect the changes.
+### Working Directory
 
-For more information on Git repositories, check out the [Git repository tutorial](https://www.gitkraken.com/learn/git/tutorials/what-is-a-git-repository) blog post including a video from one of our developers.
+This is your active file state. When switching branches or pulling updates, Git modifies your working directory to match the current branch.
+
+Learn more about [Git repositories](https://www.gitkraken.com/learn/git/tutorials/what-is-a-git-repository).
 
 ***
 
-## Workflow Example
-Once your repository is initialized and the [interface](/start-here/interface) is out of the way, it's time to get cracking ... _Whaahh-pssh!_ ... and tie all of the interface and concepts together to perform work on your repository.
+## Example Workflow
 
+Follow this workflow to make your first commit in GitKraken Desktop.
 
-Up until this point, you have created an entire folder representing your project with great potential. With this example, we'll take the next step and make a commit to production in a basic workflow.
+### Create a Branch
 
+Right-click `main` in the Commit Graph and choose <kbd>Create branch here</kbd>. Name it `develop`—a branch for ongoing development.
 
-### Branching
-The newly initialized repository created results in a default `main` branch.  Synonymous with production, typically commits are not made directly to this, but rather are reviewed and merged in.
-
-<div class='callout callout--basic'>
-    <p>Branches can be thought of as an area to silo where to commit. Its reference is specifically a moving pointer to an individual commit object.</p>
-</div>
-
-<figure class='figure center'>
-    <img src='/wp-content/uploads/create-new-branch-2025.png' class='img-bordered img-responsive center'>
-    <figcaption style="text-align: center; color: #888;">Right-click  main to create a new branch.</figcaption>
+<figure>
+  <img src='/wp-content/uploads/create-new-branch-2025.png' class='img-bordered img-responsive center' alt='Create new branch from main'>
+  <figcaption style="text-align:center; color:#888">Right-click main to create a new branch.</figcaption>
 </figure>
 
-On our newly created repo, we'll branch off from `main` to silo our normal development.  To do this, right-click main on the Commit Graph and select <em class='context-menu'>Create branch here</em>.  Let's call this branch `develop` in "_enter branch name_" which is going to be an indefinite main track branch to the project.
+### Modify a File
 
-Once created, GitKraken Desktop will auto checkout `develop` and switch to that new branch.
+Edit `README.md` to reflect your project. You can open this file directly from the Commit Graph.
 
-### Changing file content
-Now that `develop` is set, we can make some new changes without affecting anything on production.
-
-In the example, the `README.md` file was created automatically to provide context about the project. This involves creating the file, writing content, and then saving it to disk.  With Git, the last step to save becomes more granular in order to write desired changes for revision history.  
-
-
-`README.md` was created as a placeholder and the project can become more meaningful by modifying the file with the project context, as well as adding additional project files.  Any modifications and additions will have to be staged and committed, which will only affect our current branch.
-
-
-You can select _Initial Commit_ from the Commit Graph, and click `README.md` to open the built-in editor.
-
-<figure class='figure center'>
-    <img src='/wp-content/uploads/open-file-2025.png' class='img-bordered img-responsive center'>
-    <figcaption style="text-align: center; color: #888;">Click on the file name from the Commit Panel to access the Edit button.</figcaption>
+<figure>
+  <img src='/wp-content/uploads/open-file-2025.png' class='img-bordered img-responsive center' alt='Open file from commit panel'>
+  <figcaption style="text-align:center; color:#888">Click a filename to access the Edit button.</figcaption>
 </figure>
 
-### Staging and Committing
-Say you made changes to the `README.md` file. When selecting the _//WIP_ node, there will now be pending changes to `README.md` in the staging panel under _Unstaged Files_.
+### Stage and Commit
 
-<figure class='figure center'>
-    <img src='/wp-content/uploads/unstage-2025.png' class='img-bordered img-responsive center'>
-    <figcaption style="text-align: center; color: #888;">Click the WIP node to see the list of pending changes.</figcaption>
+After editing, select the <kbd>//WIP</kbd> node to view unstaged changes. Stage all with the green <button class='button button--success button--ui button--nolink'>Stage all changes</button> button.
+
+<figure>
+  <img src='/wp-content/uploads/unstage-2025.png' class='img-bordered img-responsive center' alt='Pending file changes in staging area'>
+  <figcaption style="text-align:center; color:#888">Click the WIP node to view and stage changes.</figcaption>
 </figure>
 
-Next, let's move these changes into the _Staged Files_ section by selecting the green <button class='button button--success button--ui button--nolink'>Stage all changes</button> button.
+Then enter a commit message and click <button class='button button--success button--ui button--nolink'>Commit</button>.
 
-Outside of Git, work is done in a typical <em class='context-menu'>File <i class="fa fa-caret-right"></i> Save</em> method or written automatically when changes are detected.  In a way, committing in Git is like the Save, where we've made a pointer to the changes in this current version of the file to keep in history.
+Learn more about [staging](/working-with-commits/staging) and [committing](/working-with-commits/commits).
 
-From here, type a brief summary of your changes and click <button class='button button--success button--ui button--nolink'>Commit</button> to save your changes to the `README.md` file.  This effectively updates the reference on `develop`, pointing to your first modification after _Initial Commit_.
+### Merge to Main
 
-<div class='callout callout--basic'>
-    <p>It's easy to distinguish between different types of changes including Added, Modified, Renamed, and Deleted files.</p>
-</div>
+When `develop` is ahead of `main`, you can merge:
 
-Visit [staging](/working-with-commits/staging) for vast coverage of the topic, including staging individual lines or hunks of file changes. Be sure to check out [commits](/working-with-commits/commits) too.
-
-### Merging
-Now that our `develop` branch is up to date, we want to roll out these changes into production.
-
-From the Commit Graph we see that `develop` is ahead of `main` by exactly 1 commit.  
-
-<figure class='figure center'>
-    <img src='/wp-content/uploads/graph-commit-2025.png' class='img-bordered img-responsive center'>
-    <figcaption style="text-align: center; color: #888;">Develop is ahead of main by 1 commit.</figcaption>
+<figure>
+  <img src='/wp-content/uploads/graph-commit-2025.png' class='img-bordered img-responsive center' alt='Commit graph showing develop ahead of main'>
+  <figcaption style="text-align:center; color:#888">Develop is ahead by 1 commit.</figcaption>
 </figure>
 
-In order to add this commit into the original branch, we will merge `develop` back into `main`.  This will take all of the changes introduced since the last commit and play them on this branch by performing a new commit (called a merge commit) with the changes.
+To merge, drag `develop` onto `main` in the graph and choose <kbd>Merge</kbd>.
 
-There are a few ways to perform the merge action in GitKraken Desktop, but perhaps the easiest is from within the Commit Graph.
-
-In the Commit Graph, you can see we have things in a new branch, `develop`, that we want in our source branch, `main`. Like any sensible person, we would only have to pick up `develop` and throw it at `main` right? Right! Simply drag `develop` and drop it on `main` to get the merge option.
-
-<figure class='figure center'>
-    <img src='/wp-content/uploads/drag-and-drop-2025.png' class='img-bordered img-responsive center'>
-    <figcaption style="text-align: center; color: #888;">Drag and drop develop onto main to access the Merge action.</figcaption>
+<figure>
+  <img src='/wp-content/uploads/drag-and-drop-2025.png' class='img-bordered img-responsive center' alt='Drag develop branch onto main to merge'>
+  <figcaption style="text-align:center; color:#888">Drag develop onto main to merge branches.</figcaption>
 </figure>
 
-Alternatively the same merge can be performed through right click and other means.  Revisit and learn more about merging and other options available through [Branching and Merging](/working-with-repositories/branching-and-merging).
+Learn more in [Branching and Merging](/working-with-repositories/branching-and-merging).
 
-### Summary
+***
 
-In the end, this is as simple as it gets in terms of workflow and paves the way for incorporating changes into [pushing and pulling](/working-with-repositories/pushing-and-pulling) or venturing to advanced models like [GitFlow](/git-workflows-and-extensions/git-flow).
+## Summary
 
-Remember, you must crawl before you can walk and without a doubt you will be running in no time!
+This basic workflow sets the foundation for more advanced topics like [pushing and pulling](/working-with-repositories/pushing-and-pulling) and [GitFlow](/git-workflows-and-extensions/git-flow).
 
-Below is a sample video on how a simple commit is created as was explained in this guide.  For more topics `checkout` the rest of the categories and pages listed.
+Watch how a commit is made using GitKraken Desktop:
 
-Your quest continues!
-
-
-<div class='embed-container embed-container--16-9'>
+<figure>
+  <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8a6fYPkBDbY?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
-</div>
+  </div>
+  <figcaption style="text-align:center; color:#888">Walkthrough of creating a commit in GitKraken Desktop.</figcaption>
+</figure>
