@@ -1,15 +1,12 @@
 ---
-
 title: Team View
 description: Working with the Team View in GitKraken Desktop.
 taxonomy:
     category: gitkraken-desktop
-
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
 The <i class="fas fa-users"></i> Team View allows you to see what branches and files members of your organization are currently working on. This is helpful for avoiding and collaborating on merge conflicts.
-
 
 <div class='callout callout--warning'>
     <p><strong>Note:</strong> Team View is only available for Advanced subscription tiers or higher. See the <a href="/start-here/teams/">Teams</a> page for more information on managing teams.</p>
@@ -17,48 +14,61 @@ The <i class="fas fa-users"></i> Team View allows you to see what branches and f
 
 ***
 
-### Team View
+## Select a Team
 
-You may select any team you are a part of in the Team dropdown. Additionally, from <kbd> Preferences > Team </kbd> you have the option to select the team for the repository as well as _Use this as the default for all repositories_.
+Select any team you're a member of from the Team dropdown. You can also choose a team for the repository in <kbd>Preferences > Team</kbd>, and optionally check <em>Use this as the default for all repositories</em>.
 
-For each team member you can see the branch they currently have checked out and the files that they currently have local, uncommitted changes in. 
+For each team member, Team View displays their checked-out branch and any files with local, uncommitted changes.
 
-<img src="/wp-content/uploads/team-view-2025.png" srcset="/wp-content/uploads/team-view-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/team-view-2025.png" srcset="/wp-content/uploads/team-view-2025@2x.png" class="help-center-img img-bordered" alt="Team View showing branches and files with changes">
+  <figcaption style="text-align:center; color:#888">See teammates' active branches and modified files</figcaption>
+</figure>
 
-Additional lines to their files will be shown in <span style="color: green;">green</span> and lines removed will be shown in <span style="color: red;">red</span>. When you have local, uncommitted changes in the same file as another team member, there will be a <i class="fas fa-exclamation-triangle" style="color:orange"></i> icon on that file indicating there can be potential conflicts.
+Lines added by a teammate appear in <span style="color: green;">green</span>, and removed lines in <span style="color: red;">red</span>. If you and a teammate have local changes in the same file, GitKraken displays an <i class="fas fa-exclamation-triangle" style="color:orange"></i> icon to signal a potential conflict.
 
-<img src="/wp-content/uploads/team-view-conflict-2025.png" srcset="/wp-content/uploads/team-view-conflict-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/team-view-conflict-2025.png" srcset="/wp-content/uploads/team-view-conflict-2025@2x.png" class="help-center-img img-bordered" alt="Warning icon on file with overlapping edits">
+  <figcaption style="text-align:center; color:#888">Potential conflict warning icon on a file</figcaption>
+</figure>
 
 Learn more about [how to create a team](/start-here/teams/).
 
 ***
 
-### Status
+## Status Indicators
 
-The  <i class="fas fa-circle" style="color:green"></i> **status**  will display on the avatars of members in your GitKraken Organization or Team, indicating if they are actively using GitKraken Desktop. This activity status icon is visible in the Team View section in the Left Panel, or in the Organization view in Preferences.
+The <i class="fas fa-circle" style="color:green"></i> **status** icon appears on team member avatars to show who is currently active in GitKraken Desktop. This indicator is visible in both the Team View and the Organization section of Preferences.
 
-<img src="/wp-content/uploads/status-in-teams.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/status-in-teams.png" class="help-center-img img-bordered" alt="Avatars with status circles in Team View">
+  <figcaption style="text-align:center; color:#888">Status icons display user activity</figcaption>
+</figure>
 
-Users can manually set their **status** to “Active” or “Away” by selecting the circle icon in the top right corner, or by opening the <kbd>Profile/Account</kbd> dropdown menu.
+Users can set their own status to “Active” or “Away” from the circle icon in the top-right corner or via the <kbd>Profile/Account</kbd> menu.
 
-<img src="/wp-content/uploads/active-away-2025.png" srcset="/wp-content/uploads/active-away-2025@2x.png" class="help-center-img img-bordered">
-
-
-***
-
-### Opt Out
-
-You may opt out of team sharing by toggling _Share work-in-progress status with my team_ under <kbd> Preferences > General </kbd>.
-
-<img src="/wp-content/uploads/team-setting.png" srcset="/wp-content/uploads/team-setting@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/active-away-2025.png" srcset="/wp-content/uploads/active-away-2025@2x.png" class="help-center-img img-bordered" alt="Status toggle in Profile dropdown">
+  <figcaption style="text-align:center; color:#888">Manually set your status as Active or Away</figcaption>
+</figure>
 
 ***
 
-### More Team features 
+## Opt Out of Team View
 
-This is just the beginning! Teams can be utilized for:
+You can opt out of team sharing by disabling <em>Share work-in-progress status with my team</em> in <kbd>Preferences > General</kbd>.
 
-- [Group users](/gitkraken-desktop/teams/) – create teams in your GitKraken organization.  
-- [Sharing a Workspace](/workspaces/#create-a-cloud-workspace) – manage, share and take action on a group of repositories. *Pro plan and above*  
-- [Share a Cloud Patch](experimental-features/#elementor-toc__heading-anchor-3) – securely send a patch file to other team members.
+<figure>
+  <img src="/wp-content/uploads/team-setting.png" srcset="/wp-content/uploads/team-setting@2x.png" class="help-center-img img-bordered" alt="Setting to disable team sharing">
+  <figcaption style="text-align:center; color:#888">Disable sharing work-in-progress status</figcaption>
+</figure>
 
+***
+
+## More Team Features
+
+Take advantage of these additional collaboration tools:
+
+- [Group users](/gitkraken-desktop/teams/) – Create and manage teams in your GitKraken organization.
+- [Share a Workspace](/workspaces/#create-a-cloud-workspace) – Manage and collaborate across repositories. <em>Pro plan and above</em>.
+- [Share a Cloud Patch](experimental-features/#elementor-toc__heading-anchor-3) – Send a patch file to teammates securely.
