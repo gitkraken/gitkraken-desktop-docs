@@ -6,7 +6,7 @@ taxonomy:
 ---
 <kbd>Last updated: May 2025</kbd>
 
-Learn how to manage Git worktrees using GitKraken Desktop. Worktrees let you work on multiple branches at the same time—each in its own working directory.
+Learn how to manage Git worktrees using GitKraken Desktop. Worktrees let you work on multiple branches at the same time, with each in its own working directory.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/grAsFn5yvjA?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
