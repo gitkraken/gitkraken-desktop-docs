@@ -234,15 +234,15 @@ exit 0
 
 Save the file. Your `pre-commit` hook is now ready to enforce proper committer email usage before any commit is made.
 
-***
-
 ### Git hook in action
 <figure>
 <img src='/wp-content/uploads/gkc-hook-in-action.gif' class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Git hook example triggered during commit</figcaption>
 </figure>
 
-### Environment Variables & Git Hooks
+***
+
+## Environment Variables & Git Hooks
 
 On macOS, GUI applications do not inherit shell profile variables. If your Git hooks rely on environment variables set in your shell, use the following command to make them available:
 
@@ -250,7 +250,7 @@ On macOS, GUI applications do not inherit shell profile variables. If your Git h
 launchctl setenv YOURVAR value
 ```
 
-### Bypass Git hooks
+## Bypass Git hooks
 
 To skip Git hooks during a commit, use the `Commit and skip hooks` option.
 
@@ -263,7 +263,7 @@ To skip Git hooks during a commit, use the `Commit and skip hooks` option.
 <figcaption style="text-align: center; color: #888">Option to commit while skipping hooks in GitKraken Desktop</figcaption>
 </figure>
 
-### Global Git Hooks
+## Global Git Hooks
 
 GitKraken Desktop respects global Git hook paths set in your `.gitconfig` file. These hooks apply to all cloned repositories.
 
