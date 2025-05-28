@@ -1,41 +1,38 @@
 ---
-
 title: Performance Issues
 description: What to do if GitKraken Desktop is performing poorly
 taxonomy:
     category: gitkraken-desktop
-
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
-We're always on a quest to streamline the git experience as well as improve the performance of GitKraken Desktop. If you're experiencing slow performance, it can often be remedied using one of the troubleshooting steps below.
+If GitKraken Desktop is running slowly, it’s often due to the size or complexity of the repository. Try the steps below to improve performance.
 
 ***
 
-### Improving Performance
+## Improving Performance
 
-Perfomance issues in GitKraken Desktop are often related to a specific repository. Some large or complex repositories with many references may cause GitKraken Desktop to slow down. 
+Performance issues are commonly linked to large repositories with many references. Try these steps to improve responsiveness:
 
-#### How to troubleshoot slow performance
+### Repository-Level Actions
 
-- `Perform Repo Maintenance` from the [Command Palette](/start-here/command-palette). This command will execute `git maintenance run`, which may take several minutes on larger repositories.
+- Use the <kbd>Perform Repo Maintenance</kbd> command from the [Command Palette](/start-here/command-palette). This runs `git maintenance run`, which may take several minutes on large repos.
+- Run [`git gc`](https://git-scm.com/docs/git-gc) in your local repository.
+- Clone a fresh copy of the repository to a new directory.
 
-- Perform a [git gc](https://git-scm.com/docs/git-gc) on the repository.  
+### Interface Optimization
 
-- Take a fresh clone of the repository to a new local directory.
+- Disable auto-fetch by setting the [Auto-fetch interval](/gitkraken-desktop/preferences/#auto-fetch) to `0`.
+- Reduce the number of commits shown in the graph by setting a lower [Max Commits value](/gitkraken-desktop/preferences/#max-commits-in-graph).
+- [Solo or Hide](/gitkraken-desktop/hiding-and-soloing/) branches and tags to reduce visual complexity.
 
-#### Additional troubleshooting steps
+### Cleanup and Maintenance
 
-- Disable auto-fetch by setting the [Auto-fetch](/gitkraken-desktop/preferences/#auto-fetch) Interval to 0. 
+- [Delete unnecessary local branches](/gitkraken-desktop/branching-and-merging/#delete-a-branch).
+- If using Git LFS, perform an [LFS prune](/gitkraken-desktop/git-lfs/).
+- Run [`git status`](https://git-scm.com/docs/git-status) to check for unexpected working directory states.
+- Restart GitKraken Desktop daily to clear any accumulated memory or cache usage.
 
-- Perform a [git status](https://git-scm.com/docs/git-status) on the repository.
-
-- [Delete local branches](branching-and-merging/#delete-a-branch) that are not needed. 
-
-- [Soloing or Hiding](/gitkraken-desktop/hiding-and-soloing/) branches/tags.
-
-- Set the Max Commits in Graph to [show fewer commits](/gitkraken-desktop/preferences/#max-commits-in-graph).
-
-- If [working with an LFS repository](/gitkraken-desktop/git-lfs/), you can perfom an LFS prune.
-
-- Restart GitKraken Desktop daily
+<div class='callout callout--basic'>
+    <p><strong>Note:</strong> Performance issues may also be impacted by file system speed, antivirus scanning, or external integrations. If the above steps don’t help, reach out to <a href="https://help.gitkraken.com/gitkraken-desktop/contact-support/">GitKraken support</a>.</p>
+</div>
