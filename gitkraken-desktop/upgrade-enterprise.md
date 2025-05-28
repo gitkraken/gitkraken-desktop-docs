@@ -1,139 +1,129 @@
 ---
-
 title: Upgrade GitKraken Self-Hosted Server
 description: Learn how to upgrade your GitKraken Self-Hosted Server instance
 taxonomy:
     category: gitkraken-desktop
-
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
-The upgrade procedure is the same whether you are running GitKraken Self-Hosted on CentOS, Ubuntu, or RHEL7.
+The upgrade procedure is the same whether you're running GitKraken Self-Hosted on CentOS, Ubuntu, or RHEL7.
 
 <div class='callout callout--warning'>
-    <p>Gitkraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from our normal subscriptions. If you would like to purchase these products, please see our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?_gl=1*vtr4xk*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmv98H0EKgytPnuCPuTqdL2vy4GQaCsizBMO9m8mz2n1hMMXO3AAw7YaAiyKEALw_wcB?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
+    <p><strong>Note:</strong> GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, see our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
 </div>
 
 ***
 
-<a id="upgrade-enterprise-server"></a>
-
 ## Upgrade Self-Hosted Server
 
-<span>1.</span> Go to the folder where the previous installation of GitKraken Self-Hosted resides
-(the folder that contains the _docker-compose.yml_).
+1. Navigate to the folder where GitKraken Self-Hosted is installed (the folder with `docker-compose.yml`).
 
-<span>2.</span> Take down the current instance of GitKraken Self-Hosted:
-```
-sudo docker-compose down
-```
+2. Take down the current instance:
+   ```bash
+   sudo docker-compose down
+   ```
 
-<span>3.</span> Back up the _docker-compose.yml_ file.
+3. Back up the `docker-compose.yml` file.
 
-<span>4.</span> Extract _GitKrakenEnterpriseServer.zip_ in the folder you installed GitKraken Self-Hosted.
-This should overwrite your current _docker-compose.yml_ file.
+4. Extract `GitKrakenEnterpriseServer.zip` in the same folder. This will overwrite `docker-compose.yml`.
 
-<span>5.</span> Make sure to address any configuration differences between the new _docker-compose.yml_ and the
-old _docker-compose.yml_. This includes:
+5. Compare the new and old `docker-compose.yml` for differences, such as:
+   - Port configurations
+   - Volume mount paths
+   - Environment variable updates
 
-  * Any public facing port changes.
-  * Location of volumes on the host computer.
-  * Any environment variable changes.
+6. If you are not using `docker-compose` (e.g., Nomad setup), adjust image names/tags in your swarm manager accordingly.
 
-<span>6.</span> For setups that do not utilize docker-compose, make note of the image names and tags,
-and ensure that your swarm manager addresses those changes (an example would be Nomad
-setups).
+7. Load Docker images:
+   ```bash
+   sudo sh loadImages.sh
+   ```
 
-<span>7.</span> Load the images into Docker:
-```
-sudo sh loadImages.sh
-```
+8. Restart the server from the same directory:
+   ```bash
+   sudo docker-compose up
+   ```
 
-<span>8.</span> In the same folder containing the _docker-compose.yml_ file, run the following command:
-```
-sudo docker-compose up
-```
-
-**Note**: If server configuration is lost after upgrading, verify that `docker-compose up` was ran from the same directory as before.
-
-**Note**: If upgrading in CentOS or RHEL7, you may need to specify the full path to the docker-compose installation.  The following commands should allow you to run the docker-compose command successfully:
-
-```
+**Note:** Always run `docker-compose up` from the original directory. On CentOS or RHEL7, you may need full paths:
+```bash
 sudo systemctl start docker.service
 sudo /usr/local/bin/docker-compose up
 ```
 
-<a id="upgrade-enterprise-clients"></a>
+***
 
 ## Upgrade Self-Hosted Clients
-<span>1.</span> Open your _docker-compose.yml_ file where you installed GitKraken Self-Hosted.
 
-<span>2.</span> Locate the `gk-enterprise-controller` service. Under volumes, there should be a volume:
-```
--./gk-data/release:/controller/release # The volume where GitKraken Self-Hosted clients go.
-```
+1. Open your `docker-compose.yml` file.
 
-<span>3.</span> We can divide this line into 2 distinct parts by separating at the ":".
-The first half in our example is _./gk-data/release_ and the second half is _/enterprise/release_.
-The first half represents where the clients are located on your host machine, and it may be different
-than this example.
+2. Find the `gk-enterprise-controller` service. Under `volumes`, identify the client volume:
+   ```
+   - ./gk-data/release:/controller/release
+   ```
 
-<span>4.</span> Navigate to the folder where the clients are stored. Extract _release.zip_ and overwrite all data in that
-folder at the top level.
+3. This line splits into:
+   - Host path: `./gk-data/release`
+   - Container path: `/controller/release`
 
-<span>5.</span> When you have completed extracting the zip, in our example, our release folder will have the following shape:
-```
-./gk-data/
-   └── release/
-       ├── linux/
-       ├── darwin/
-       ├── win32/
-       └── win64/
-```
+4. Navigate to the release folder on the host machine. Extract `release.zip` and overwrite existing content.
 
-<span>6.</span> Users of GitKraken Self-Hosted should now start receiving the latest client.
+5. After extracting, your folder should look like:
+   ```
+   ./gk-data/
+      └── release/
+          ├── linux/
+          ├── darwin/
+          ├── win32/
+          └── win64/
+   ```
 
-<a id="update-license"></a>
+6. GitKraken Self-Hosted users will now receive the latest client.
+
+***
 
 ## Update License
 
-If you need to update your GitKraken Self-Hosted license, you will first need to copy the license.dat file over to your GitKraken Self-Hosted server.  Then, select the new license by going to the License tab on your Enterprise site.  From here you can browse to the new license file:
-<img src='/wp-content/uploads/license-settings.png' srcset='/wp-content/uploads/license-settings@2x.png 2x' class="help-center-img img-bordered">
+To update your GitKraken Self-Hosted license:
 
-<a id="reset-the-super-user-password"></a>
+1. Copy the new `license.dat` file to the server.
+2. Open the License tab on your Enterprise site.
+3. Browse to and select the new license file.
 
-### Reset the Super User Password
+<figure class='figure center'>
+  <img src='/wp-content/uploads/license-settings.png' srcset='/wp-content/uploads/license-settings@2x.png 2x' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Use the License tab to upload a new license file.</figcaption>
+</figure>
 
-Follow these steps to reset the Super User password.
+***
 
-Shutdown GitKraken Self-Hosted by running:
-```
-sudo docker-compose down
-```
+## Reset the Super User Password
 
-Set the `gk-services` environment variable `SUPER_USER_RESET` to 1 in the `docker-compose.yml` file.
-```yaml
-environment:
-  SUPER_USER_RESET: 1
-```
+1. Stop GitKraken Self-Hosted:
+   ```bash
+   sudo docker-compose down
+   ```
 
-Restart GitKraken Self-Hosted by running:
-```
-sudo docker-compose up
-```
+2. Add the environment variable `SUPER_USER_RESET: 1` under `gk-services` in `docker-compose.yml`:
+   ```yaml
+   environment:
+     SUPER_USER_RESET: 1
+   ```
 
-On the account site, visit `/reset/super-user` and provide the new password.
+3. Start the instance:
+   ```bash
+   sudo docker-compose up
+   ```
 
-After resetting the super user, verify that you can login as the super user.  
+4. Visit `/reset/super-user` in your browser to set a new password.
 
-Once login is verified, you need to restart without the reset flag.  Shutdown GitKraken Self-Hosted by running:
-```
-sudo docker-compose down
-```
+5. Confirm login works, then shut down the server:
+   ```bash
+   sudo docker-compose down
+   ```
 
-Delete the `SUPER_USER_RESET` environment variable from `gk-services` in the `docker-compose.yml`.
+6. Remove the `SUPER_USER_RESET` variable from `docker-compose.yml`.
 
-Restart GitKraken Self-Hosted by running:
-```
-sudo docker-compose up
-```
+7. Restart GitKraken Self-Hosted:
+   ```bash
+   sudo docker-compose up
+   ```
