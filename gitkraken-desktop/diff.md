@@ -1,83 +1,104 @@
 ---
-
-title: Diff, Patch, Blame, and History 
-description: Compare your changes with diffs in GitKraken Desktop. Learn about where to access diffs, file blame, and more.
+title: Diff, Patch, Blame, and History
+description: Compare your changes using diffs in GitKraken Desktop. Learn how to access diffs, view file history and blame, and configure external diff tools.
 taxonomy:
     category: gitkraken-desktop
-
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
-Compare changes within GitKraken Desktop _diffs_. Learn where to access _diffs_, and how to access _file history_ or _file blame_.
+Compare changes within GitKraken Desktop using _diffs_. Learn how to access them, view file history or file blame, and use external tools.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/-0bn2H63axM?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-
-
 ***
 
 <a id="what-is-a-diff-in-gitkraken"></a>
 
-## What is a diff in GitKraken Desktop?
+## What Is a Diff in GitKraken Desktop?
 
-A diff shows what was added or removed from a file. <span style='color: #d90171;'>Red</span> is for lines where content was removed whereas <span style='color: #7bd938;'>green</span> is for new lines added.
+A diff displays lines added and removed from a file:
+- <span style='color: #d90171;'>Red</span> indicates removed lines.
+- <span style='color: #7bd938;'>Green</span> indicates added lines.
 
-<img src='/wp-content/uploads/diff-full-screen-2025.png' class="help-center-img img-bordered" />
+<figure class='figure center'>
+  <img src='/wp-content/uploads/diff-full-screen-2025.png' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Full-screen diff view with color-coded changes.</figcaption>
+</figure>
 
-GitKraken Desktop's diff comes included with the following:
+GitKraken Desktop’s built-in diff viewer includes:
 
 - Word diffing
 - Syntax highlighting
 - File mini-map
-- Toggles between Hunk View, Inline View, and Split View
-- Arrows to move between change sets
+- Toggleable views: Hunk, Inline, Split
+- Arrows to navigate between change sets
 
-Most importantly, the <button class="button button--primary button--ui button--nolink"><span style="color:#141422;">Edit in working directory</span></button> button allows you to edit this file directly. Learn more about this feature in [Editing Files](/working-with-files/editing-files) section.
-
-***
-## Where can I access the diff?
-
-Access the diff of a file from:
-
-* **Staging**: Click on a file
-* **Commit node**: With a commit node selected, click on any file
-
-If you have two commits selected, GitKraken Desktop shows the difference between the two commits.
-
-<img src='/wp-content/uploads/diff-2-commits-2025.png' class="help-center-img img-bordered">
-
-Additionally, select multiple commit rows in the graph using <kbd>Shift</kbd> <kbd>Click</kbd> to show its merged diff:
-
-<img src='/wp-content/uploads/combined-diff-2025.png' class="help-center-img img-bordered">
-
-### Hunk view
-
-Hunk view will show the diff as blocks, without the context of the rest of the file. It's great if you prefer to focus on the change set.
-
-<img src='/wp-content/uploads/hunk-2025.png' class="help-center-img img-bordered" />
-
-### Inline view
-
-Inline view will show the diff within the context of the entire file. 
-
-<img src='/wp-content/uploads/inline-annotated-2025.png' class="help-center-img img-bordered" />
-
-### Split view
-
-Split view will show a side by side diff comparing how the file looked before (left), and how it looks after the change (right). Note, you may select deleted lines with your mouse from split view. 
-
-<img src='/wp-content/uploads/split-2025.png' class="help-center-img img-bordered" />
+Use the <button class="button button--primary button--ui button--nolink"><span style="color:#141422;">Edit in working directory</span></button> button to directly edit the file. Learn more in the [Editing Files](/working-with-files/editing-files) section.
 
 ***
 
-## External diff tools
-Configure your preferred external diff tool from <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> External Tools</em>:
+## Where Can I Access the Diff?
 
-<img src="/wp-content/uploads/external-diff-2025.png" class="help-center-img img-bordered">
+You can view diffs from:
 
-GitKraken Desktop currently _only supports_ the following diff tools:
+- **Staging area**: Click a file to open its diff
+- **Commit node**: Select a commit and click any file
+
+Selecting two commits shows the differences between them.
+
+<figure class='figure center'>
+  <img src='/wp-content/uploads/diff-2-commits-2025.png' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Diff view comparing two selected commits.</figcaption>
+</figure>
+
+You can also select multiple commit rows using <kbd>Shift</kbd> + <kbd>Click</kbd> to show a combined diff:
+
+<figure class='figure center'>
+  <img src='/wp-content/uploads/combined-diff-2025.png' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Combined diff across multiple selected commits.</figcaption>
+</figure>
+
+### Hunk View
+
+Displays only the changed blocks of a file.
+
+<figure class='figure center'>
+  <img src='/wp-content/uploads/hunk-2025.png' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Hunk view highlights change blocks without full context.</figcaption>
+</figure>
+
+### Inline View
+
+Displays changes within the full context of the file.
+
+<figure class='figure center'>
+  <img src='/wp-content/uploads/inline-annotated-2025.png' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Inline view shows changes inline with full file content.</figcaption>
+</figure>
+
+### Split View
+
+Displays changes side-by-side, with the original file on the left and the updated version on the right.
+
+<figure class='figure center'>
+  <img src='/wp-content/uploads/split-2025.png' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Split view compares before (left) and after (right) file states.</figcaption>
+</figure>
+
+***
+
+## External Diff Tools
+
+Configure an external diff tool in <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> External Tools</em>:
+
+<figure class='figure center'>
+  <img src="/wp-content/uploads/external-diff-2025.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Configure your preferred diff tool from Preferences.</figcaption>
+</figure>
+
+Supported tools include:
 
 - Beyond Compare
 - FileMerge
@@ -86,51 +107,56 @@ GitKraken Desktop currently _only supports_ the following diff tools:
 - Araxis
 - P4Merge
 
-If your diff tool from the list above is installed and is not showing up in the dropdown, then look for an option to install command line tools.
+If a supported tool does not appear in the dropdown, verify that its command line tools are installed.
 
-<img src='/wp-content/uploads/beyond-compare.png' srcset='/wp-content/uploads/beyond-compare@2x.png 2x' class='img-bordered center' style="display: block; margin-left: auto; margin-right: auto;" />
+<figure class='figure center'>
+  <img src='/wp-content/uploads/beyond-compare.png' srcset='/wp-content/uploads/beyond-compare@2x.png 2x' class='img-bordered'>
+  <figcaption style="text-align: center; color: #888;">Example setup with Beyond Compare.</figcaption>
+</figure>
 
+To use a different diff tool, go to <em class="context-menu">Preferences <i class="fa fa-caret-right"></i> General</em> and set the <kbd>Diff Tool</kbd> to _Git Config Default_. Then add the appropriate configuration in your global `.gitconfig`:
 
-
-If you would like to use another diff tool, navigate to <em class="context-menu">Preferences <i class="fa fa-caret-right"></i> General</em> and set the <kbd>Diff Tool</kbd> to _Git Config Default_. Then open your global `.gitconfig` file and add these additional lines to use that diff tool. Here are some examples for each operating system:
-
-#### Mac OS
+#### macOS
 ```
 [diff]
     tool = meld
 [difftool "meld"]
-    cmd = open -a Meld --args \"$LOCAL\" \"$REMOTE\"
+    cmd = open -a Meld --args "$LOCAL" "$REMOTE"
 ```
 
 #### Linux
 ```
 [diff]
-  tool = meld
+    tool = meld
 [difftool "meld"]
-  cmd = meld \"$LOCAL\" \"$REMOTE\"
+    cmd = meld "$LOCAL" "$REMOTE"
 ```
 
 #### Windows
 ```
 [diff]
-  tool = meld
+    tool = meld
 [difftool]
-  prompt = false
+    prompt = false
 [difftool "meld"]
-  cmd = meld "$LOCAL" "$REMOTE"
+    cmd = meld "$LOCAL" "$REMOTE"
 ```
 
 ***
-## Diff multiple commits
 
-Use the <kbd>Shift</kbd> or <kbd>Cmd/Ctrl</kbd> key to select multiple commits in the Commit Graph.
+## Diff Multiple Commits
 
-<img src="/wp-content/uploads/select-commits-2025.gif" class="help-center-img img-bordered">
+Use <kbd>Shift</kbd> or <kbd>Cmd/Ctrl</kbd> to select multiple commits in the Commit Graph.
 
-This will produce a combined diff, which lists all files that were added, modified, renamed or deleted between the selected commits in the Commit Panel.
+<figure class='figure center'>
+  <img src="/wp-content/uploads/select-commits-2025.gif" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Multi-select commits to generate a combined diff.</figcaption>
+</figure>
+
+This generates a combined diff showing all added, modified, renamed, or deleted files between the selected commits.
 
 <div class='callout callout--basic'>
-    <p><strong>Note:</strong> Are you looking to diff branches? Consider using the <kbd>Cmd/Ctrl</kbd> key to select the head commits of each branch.</p>
+    <p><strong>Note:</strong> To diff branches, use <kbd>Cmd/Ctrl</kbd> to select the head commits of each branch.</p>
 </div>
 
 ***
