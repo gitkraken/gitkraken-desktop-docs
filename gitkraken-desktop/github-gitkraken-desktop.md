@@ -153,14 +153,14 @@ To access this view:
 3. Select a pull request from the Left Panel, or check out the source branch to reveal a PR icon with the pull request number.
 
 <figure>
-    <img src='/wp-content/uploads/github-pr-view-2025.png' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img src='/wp-content/uploads/github-pr-view-2025.png' srcset='/wp-content/uploads/github-pr-view-2025@2x.png 2x' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Accessing Pull Request View via the Left Panel</figcaption>
 </figure>
 
 Alternatively, launch the view from the **Launchpad** by clicking the pull request icon on the right.
 
 <figure>
-    <img src='/wp-content/uploads/github-pr-view-launchpad.png' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img src='/wp-content/uploads/github-pr-view-launchpad.png' srcset='/wp-content/uploads/github-pr-view-launchpad@2x.png 2x' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Opening Pull Request View from the Launchpad</figcaption>
 </figure>
 
@@ -176,7 +176,7 @@ Within the Pull Request View, you can edit the following:
 To review the files affected by a pull request, click the <kbd>Review Code and Suggest Changes</kbd> button in the top-right corner.
 
 <figure>
-    <img src='/wp-content/uploads/github-pr-review-2025.png' class="help-center-img img-bordered">
+    <img src='/wp-content/uploads/github-pr-review-2025.png' srcset='/wp-content/uploads/github-pr-review-2025@2x.png 2x' class="help-center-img img-bordered" style="max-width: 75%;>
     <figcaption style="text-align:center;color:#888">Reviewing files within a pull request</figcaption>
 </figure>
 
@@ -203,7 +203,7 @@ In GitKraken Desktop, the **Review Code and Suggest Changes** feature lets you p
 In the Pull Request panel, suggestions from teammates are labeled with <em class='context-menu'>Code Suggestions</em>.
 
 <figure>
-    <img src='/wp-content/uploads/code-suggestion-2025.png' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img src='/wp-content/uploads/code-suggestion-2025.png' srcset='/wp-content/uploads/code-suggestion-2025@2x.png 2x' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Label showing code suggestions</figcaption>
 </figure>
 
@@ -220,7 +220,7 @@ Clicking a suggestion opens the diff view, where you can choose to apply or reje
 - **Click the build status** to open the related URL in your browser.
 
 <figure>
-    <img src='/wp-content/uploads//build-status.png' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img src='/wp-content/uploads//build-status.png' srcset='/wp-content/uploads/build-status@2x.png 2x' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Build status with link to CI/CD pipeline</figcaption>
 </figure>
 
@@ -237,7 +237,7 @@ To merge a pull request:
    - <kbd>Rebase and merge</kbd>
 
 <figure>
-    <img src='/wp-content/uploads//merge-options.png' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img src='/wp-content/uploads//merge-options.png' srcset='/wp-content/uploads/merge-options@2x.png 2x' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Merge options in GitKraken</figcaption>
 </figure>
 
