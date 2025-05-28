@@ -76,7 +76,7 @@ curl -L https://github.com/docker/compose/releases/download/1.14.0/docker-compos
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-10. Proceed to the <a href="#install_enterprise">installation section</a>.
+10. Proceed to the installation section.
 
 ### Without internet access
 
@@ -109,7 +109,7 @@ chmod +x /usr/local/bin/docker-compose
 sudo systemctl start docker
 ```
 
-8. Continue to the <a href="#install_enterprise">installation section</a>.
+8. Continue to the installation section.
 
 <a id="install_ubuntu"></a>
 
@@ -164,107 +164,69 @@ curl -L https://github.com/docker/compose/releases/download/1.14.0/docker-compos
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-10. Proceed to the <a href="#install_enterprise">installation section</a>.
+10. Proceed to the installation section.
 
-
-<a id="install_rhel7"></a> 
+<a id="install_rhel7"></a>
 
 ## Install Docker CE on RHEL7
 
 ### With internet access
 
-<span>1.</span> Install required packages:
-```
+1. Install required packages:
+```bash
 sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 ```
 
-<span>2.</span> Use the following command to set up the stable repository:
-```
+2. Set up the Docker repository:
+```bash
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
-<span>3.</span> Update the yum package index:
-```
+3. Update the yum package index:
+```bash
 sudo yum makecache fast
 ```
 
-<span>4.</span> Install the latest version of Docker:
-```
+4. Install Docker:
+```bash
 sudo yum install --setopt=obsoletes=0 docker-ce-17.03.2.ce-1.el7.centos.x86_64 docker-ce-selinux-17.03.2.ce-1.el7.centos.noarch
 ```
-  * Note: If you would like to install the latest version of Docker CE, you can run the following command to get the latest version:
-```
+
+5. (Optional) To view available Docker versions:
+```bash
 yum list docker-ce --showduplicates | sort -r
 ```
-Insert the desired Docker CE version into the install command by replacing that portion of the string for the Docker CE version and the selinux version.
 
-<span>5.</span> Edit _/etc/docker/daemon.json_. If it does not yet exist, create it:
-```
+6. Configure the Docker daemon:
+```json
 {
-"storage-driver": "devicemapper"
+  "storage-driver": "devicemapper"
 }
 ```
+Edit or create the `/etc/docker/daemon.json` file with the above content.
 
-<span>6.</span> Start Docker:
-```
+7. Start Docker:
+```bash
 sudo systemctl start docker
 ```
 
-<span>7.</span> Switch to root user:
-```
+8. Switch to root user:
+```bash
 sudo su
 ```
 
-<span>8.</span> Download Docker Compose:
-```
+9. Download Docker Compose:
+```bash
 curl -L https://github.com/docker/compose/releases/download/1.14.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 ```
 
-<span>9.</span> Apply executable permissions:
-```
+10. Apply executable permissions:
+```bash
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-<span>10.</span> Install GitKraken Self-Hosted - [jump](#install_enterprise) to Installation section.
+11. Proceed to the installation section.
 
-### Without internet access
-
-<span>1.</span> Download Docker CE and Docker Compose packages from a machine with internet access.
-
-  * [Docker CE for CentOS](https://download.docker.com/linux/centos/7/x86_64/stable/Packages/)  (both the docker-ceselinux and the docker-ce of the same version (e.g. 17.03.1))
-  * [Docker Compose](https://github.com/docker/compose/releases/download/1.14.0/docker-compose-Linux-x86_64)
-
-<span>2.</span> Get the 3 files over to the host server where Docker will be installed.
-
-<span>3.</span> Install Docker (change the path to where you copied the files, and the package names appropriately):
-```
-sudo yum install /path/to/docker-ce-selinux-package.rpm
-sudo yum install /path/to/docker-ce-package.rpm
-```
-
-<span>4.</span> Copy and rename the Docker Compose file to _/usr/local/bin/docker-compose_:
-```
-sudo mv docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
-```
-
-<span>5.</span> Change access permission for _docker-compose_:
-```
-chmod +x /usr/local/bin/docker-compose
-```
-
-<span>6.</span> Edit _/etc/docker/daemon.json_. If it does not yet exist, create it:
-```
-{
-"storage-driver": "devicemapper"
-}
-```
-
-<span>7.</span> Start Docker:
-```
-sudo systemctl start docker
-```
-
-<span>8.</span> Install GitKraken Self-Hosted Server - [jump](#install_enterprise) to Installation section.
 
 <a id="install_enterprise"></a>
 
