@@ -260,6 +260,47 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 <a id="install_enterprise"></a>
 
+### Without internet access
+
+1. Download Docker CE and Docker Compose packages from a machine with internet access.
+
+   * [Docker CE for CentOS](https://download.docker.com/linux/centos/7/x86_64/stable/Packages/)  (select both the docker-ce-selinux and the docker-ce package of the same version, e.g., 17.03.1)
+   * [Docker Compose](https://github.com/docker/compose/releases/download/1.14.0/docker-compose-Linux-x86_64)
+
+2. Transfer the files to the host server.
+
+3. Install Docker:
+```bash
+sudo yum install /path/to/docker-ce-selinux-package.rpm
+sudo yum install /path/to/docker-ce-package.rpm
+```
+
+4. Move Docker Compose to the appropriate directory:
+```bash
+sudo mv docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
+```
+
+5. Apply executable permissions:
+```bash
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+6. Configure the Docker daemon:
+
+Edit or create the `/etc/docker/daemon.json` file:
+```json
+{
+  "storage-driver": "devicemapper"
+}
+```
+
+7. Start Docker:
+```bash
+sudo systemctl start docker
+```
+
+8. Proceed to the [installation section](#install_enterprise).
+
 ## Install GitKraken Self-Hosted Server
 
 1. Extract the `GitKrakenEnterpriseServer.zip` file into a directory of your choice. All subsequent commands assume you are operating within this directory.
