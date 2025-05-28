@@ -1,14 +1,12 @@
 ---
-
 title: Committing Changes
-description: Commit to save your work with GitKraken Desktop easily when changing files.  Learn how to squash, amend and save work when committing.
+description: Commit to save your work with GitKraken Desktop easily when changing files. Learn how to squash, amend, and save work when committing.
 taxonomy:
     category: gitkraken-desktop
-
 ---
 <kbd>Last updated: May 2025</kbd>
 
-Commit to save work with GitKraken Desktop when changing files.  Whether you commit to other things in life is up to you...
+GitKraken Desktop simplifies the Git commit process by helping you stage, commit, and push your work—all from a visual interface.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8a6fYPkBDbY?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
@@ -20,112 +18,71 @@ Commit to save work with GitKraken Desktop when changing files.  Whether you com
 
 ## Making a commit
 
-To make a commit in GitKraken Desktop, select your _Work in Progress_ and to view recent changes on the Commit Panel.
+To create a commit, select your _Work in Progress_ (WIP) node to view file changes in the Commit Panel.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/select-WIP-2025.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">The WIP node will automatically appear at the top of the Commit Graph when you save changes to your files.</figcaption>
+    <figcaption style="text-align: center; color: #888;">The WIP node appears at the top of the Commit Graph when you save file changes.</figcaption>
 </figure>
 
-Select the files you wish to stage, and click on any files you wish to review in the diff. To stage all your files, use the keyboard shortcut <kbd>&#8984;</kbd><kbd>Shift</kbd><kbd>S</kbd> for Mac or <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>S</kbd> for Windows or Linux.
+Select files to stage by clicking them individually or reviewing diffs. To stage all files:
+- **Mac:** <kbd>&#8984;</kbd><kbd>Shift</kbd><kbd>S</kbd>
+- **Windows/Linux:** <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>S</kbd>
 
-When you’re ready, type your message and hit commit to commit your changes. You can also use this **Commit** keyboard shortcut <kbd>&#8984;</kbd> + <kbd>Enter</kbd> for Mac or <kbd>Ctrl</kbd> + <kbd>Enter</kbd> if you are on Linux or Windows.
+Type your commit message, then click **Commit**, or use the shortcut:
+- **Mac:** <kbd>&#8984;</kbd> + <kbd>Enter</kbd>
+- **Windows/Linux:** <kbd>Ctrl</kbd> + <kbd>Enter</kbd>
 
 <a id="commit-and-push"></a>
+
 ### Commit and push
 
-You can commit and automatically push your changes to the remote. Stage changes and type a commit message to enable the option for commit and push.
+To commit and immediately push changes, stage files and enter a message. Then select the **Commit and Push** option.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/push-after-commit-2025.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">If it feels right, check this option to both commit and push.</figcaption>
+    <figcaption style="text-align: center; color: #888;">Enable this option to commit and push changes in one step.</figcaption>
 </figure>
 
-The graph updates with your commit, but the undo button or this keyboard shortcut
-<kbd>&#8984;</kbd> + <kbd>Z</kbd> for Mac or <kbd>Ctrl</kbd> + <kbd>Z</kbd> for Windows/Linux can undo a commit made by mistake.
+The graph updates with your commit. If needed, undo it with:
+- **Mac:** <kbd>&#8984;</kbd> + <kbd>Z</kbd>
+- **Windows/Linux:** <kbd>Ctrl</kbd> + <kbd>Z</kbd>
 
 <a id="committing-with-co-authors"></a>
 
 ### Committing with Co-Authors
 
-To add co-authors to a commit, add a line to your commit description using the following format:
-```
-    Co-authored-by: INSERT NAME 1 <Email address 1>
-    Co-authored-by: INSERT NAME 2 <Email address 2>
-    ...and so on
+To credit co-authors in a commit, add lines to the commit message using the following format:
 
+```
+Co-authored-by: Name One <email1@example.com>
+Co-authored-by: Name Two <email2@example.com>
 ```
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/co-author.png' srcset='/wp-content/uploads/co-author@2x.png 2x' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Add a co-author to a commit using this syntax.</figcaption>
+    <figcaption style="text-align: center; color: #888;">Use this syntax to attribute co-authors in a commit.</figcaption>
 </figure>
 
-The Commit Panel will then show the co-author in the history for that commit:
+Co-authors appear in the Commit Panel history:
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/co-author-history.png' srcset='/wp-content/uploads/co-author-history@2x.png 2x' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Co-authors are listed under the author details in the Commit Panel.</figcaption>
+    <figcaption style="text-align: center; color: #888;">Co-authors are listed with the primary author in the commit history.</figcaption>
 </figure>
 
-### Bypass git hooks
+### Bypass Git hooks
 
-There may be times when you want to skip your Git hooks when making a commit. This can be done on a commit-by-commit basis by selecting the `Skip git hooks` option. 
+To skip Git hooks for a specific commit, enable the **Skip Git hooks** checkbox in the Commit Panel.
 
 <div class='callout callout--warning'>
-    <p>Note 📝 - Using this option will bypass all hooks that trigger with git commit action.</p>
+    <p><strong>Warning:</strong> Skipping this will bypass all configured Git hooks for the commit action.</p>
 </div>
-
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/skip-commits-2025.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Check this option to skip Git hooks during a commit.</figcaption>
+    <figcaption style="text-align: center; color: #888;">Enable this option to bypass Git commit hooks.</figcaption>
 </figure>
-
-***
-
-<a id="commit-templates"></a>
-
-## Commit Templates
-
-<a id="reading-the-commit-template"></a>
-
-### Reading the Commit Template
-When you open a repository, GitKraken Desktop first checks for a commit template set up in your repository's `.git/config`. If no commit template is found, it will then check your default (global) `.gitconfig`. If no commit template is found there either, then no commit template will be populated in GitKraken Desktop.
-
-<a id="creating-and-updating-the-commit-template"></a>
-
-### Creating and Updating the Commit Template
-You can create and update a commit template in GitKraken Desktop by visiting <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> Commit </em> (scroll down in Preferences nav).
-
-<figure class='figure center'>
-    <img src='/wp-content/uploads/commit-template-setting-2025.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Set the initial commit message for commits from Preferences > Commit.</figcaption>
-</figure>
-
-If a commit template was read from your local git config, any changes you make to the template in GitKraken Desktop will save to the file specified.
-
-If a commit template was not read from your default `.gitconfig` or you are creating a template for the first time, any change you make to the template in GitKraken Desktop will be written to a file called `gkcommittemplate.txt` in your repository's `.git/` directory. GitKraken Desktop will also update your repository's git config `commit.template` setting to point to this file. This allows you to make changes to your local commit template without overwriting your global commit template for all of your other repositories.
-
-#### Commit Template Options
-
-- `Apply this template to commit messages` option will automatically apply the template to the commit message pane.  If this option is not checked, the commit message pane will be blank.
-
-- `Remove comments from commit messages` will remove lines in the template that start with `#` when creating the commit message. 
-
-### Configuring Commit Templates
-
-There are three different ways to set up commit templates in GitKraken Desktop:
-
-* **Create the template in GitKraken Desktop** - This will create a file called `gkcommittemplate.txt` in your repository's `.git/` directory.
-
-* **Add a repo-specific commit template** - Open a terminal in your local repository and run `git config commit.template <path_to_template>`
-
-* **Add a global commit template** - Open a terminal window and run `git config --global commit.template <path_to_template>`
-<div class='callout callout--basic'>
-    <p> <strong>Note:</strong> Any changes made in GitKraken Desktop to a global commit template will cause GitKraken Desktop to create a `gkcommittemplate.txt` file in your local `.git/` directory and point your repository's git config `commit.template` setting to the `gkcommittemplate.txt` file</p>
-</div>
-
 
 ***
 
