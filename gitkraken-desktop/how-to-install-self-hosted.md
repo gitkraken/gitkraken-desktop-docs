@@ -1,208 +1,171 @@
 ---
-
 title: Install GitKraken Self-Hosted Server
 description: How to install GitKraken Self-Hosted Server
 taxonomy:
     category: gitkraken-desktop
-
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
-GitKraken Self-Hosted Server runs on a Linux virtual machine (CentOS, Ubuntu, or RHEL7) inside Docker containers, so before we can boldy go where no Kraken has gone before, we'll have to install Docker.
+GitKraken Self-Hosted Server runs on a Linux virtual machine (CentOS, Ubuntu, or RHEL7) inside Docker containers. To begin, you'll first need to install Docker.
 
 <div class='callout callout--warning'>
-    <p>Gitkraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from our normal subscriptions. If you would like to purchase these products, please see our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?_gl=1*vtr4xk*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmv98H0EKgytPnuCPuTqdL2vy4GQaCsizBMO9m8mz2n1hMMXO3AAw7YaAiyKEALw_wcB?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
+    <p>GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, visit our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?_gl=1*vtr4xk*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmv98H0EKgytPnuCPuTqdL2vy4GQaCsizBMO9m8mz2n1hMMXO3AAw7YaAiyKEALw_wcB?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
 </div>
 
-[Jump](#install_centos) to CentOS</br>
-[Jump](#install_ubuntu) to Ubuntu</br>
-[Jump](#install_rhel7) to RedHat Enterprise Linux 7</br>
+<ul>
+  <li><a href="#install_centos">Install on CentOS</a></li>
+  <li><a href="#install_ubuntu">Install on Ubuntu</a></li>
+  <li><a href="#install_rhel7">Install on RHEL7</a></li>
+</ul>
 
 ***
 
- <a id="install_centos"></a> 
+<a id="install_centos"></a>
 
-##Install Docker CE on CentOS
+## Install Docker CE on CentOS
 
-These instructions can also be found on [Docker's documentation site](https://docs.docker.com/engine/installation/linux/centos/#install-docker).
+These instructions are based on the official [Docker documentation](https://docs.docker.com/engine/installation/linux/centos/#install-docker).
+
 ### With internet access
 
-[comment]: <> (Enclosing list number with <span></span> allows list to be held and code snippet to be copied)
-
-<span>1.</span> Install required packages:
-```
+1. Install required packages:
+```bash
 sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 ```
 
-<span>2.</span> Use the following command to set up the stable repository:<br/>
-```
+2. Set up the stable repository:
+```bash
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
-<span>3.</span> Update the yum package index:
-```
+3. Update the yum package index:
+```bash
 sudo yum makecache fast
 ```
 
-<span>4.</span> Install the latest version of Docker:
-```
+4. Install Docker:
+```bash
 sudo yum install docker-ce
 ```
 
-<span>5.</span> Edit _/etc/docker/daemon.json_. If it does not yet exist, create it:
-```
+5. Configure the Docker daemon:
+```json
 {
-"storage-driver": "devicemapper"
+  "storage-driver": "devicemapper"
 }
 ```
+Edit or create the `/etc/docker/daemon.json` file with the above content.
 
-<span>6.</span> Start Docker:
-```
+6. Start Docker:
+```bash
 sudo systemctl start docker
 ```
 
-<span>7.</span> Switch to root user:
-```
+7. Switch to root user:
+```bash
 sudo su
 ```
 
-<span>8.</span> Download Docker Compose:
-```
+8. Download Docker Compose:
+```bash
 curl -L https://github.com/docker/compose/releases/download/1.14.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 ```
 
-<span>9.</span> Apply executable permissions:
-```
+9. Apply executable permissions:
+```bash
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-<span>10.</span> Install GitKraken Self-Hosted - [jump](#install_enterprise) to Installation section.
+10. Proceed to the <a href="#install_enterprise">installation section</a>.
 
 ### Without internet access
 
-<span>1.</span> Download Docker CE and Docker Compose packages from a machine with internet access.
-
-  * [Docker CE for CentOS](https://download.docker.com/linux/centos/7/x86_64/stable/Packages/)  (both the docker-ceselinux and the docker-ce of the same version (e.g. 17.03.1))
+1. Download Docker CE and Docker Compose on a different machine.
+  * [Docker CE for CentOS](https://download.docker.com/linux/centos/7/x86_64/stable/Packages/)
   * [Docker Compose](https://github.com/docker/compose/releases/download/1.14.0/docker-compose-Linux-x86_64)
 
-<span>2.</span> Get the 3 files over to the host server where Docker will be installed.
+2. Transfer the packages to the target server.
 
-<span>3.</span> Install Docker (change the path to where you copied the files, and the package names appropriately):
-```
+3. Install the packages:
+```bash
 sudo yum install /path/to/docker-ce-selinux-package.rpm
 sudo yum install /path/to/docker-ce-package.rpm
 ```
 
-<span>4.</span> Copy and rename the Docker Compose file to _/usr/local/bin/docker-compose_:
-```
+4. Move and rename Docker Compose:
+```bash
 sudo mv docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
 ```
 
-<span>5.</span> Change access permission for _docker-compose_:
-```
+5. Change permissions:
+```bash
 chmod +x /usr/local/bin/docker-compose
 ```
 
-<span>6.</span> Edit _/etc/docker/daemon.json_. If it does not yet exist, create it:
-```
-{
-"storage-driver": "devicemapper"
-}
-```
+6. Configure the Docker daemon as previously described.
 
-<span>7.</span> Start Docker:
-```
+7. Start Docker:
+```bash
 sudo systemctl start docker
 ```
 
-<span>8.</span> Install GitKraken Self-Hosted Server - [jump](#install_enterprise) to Installation section.
+8. Continue to the <a href="#install_enterprise">installation section</a>.
 
 <a id="install_ubuntu"></a>
 
 ## Install Docker CE on Ubuntu
 
-These instructions can also be found on [Docker's documentation site](https://docs.docker.com/engine/installation/linux/ubuntu/#install-docker).
+Refer to the official [Docker documentation](https://docs.docker.com/engine/installation/linux/ubuntu/#install-docker).
 
 ### With internet access
-<span>1.</span> Install packages to allow apt over HTTPS:
-```
+
+1. Install required packages:
+```bash
 sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
 ```
 
-<span>2.</span> Add Docker's GPG key:
-```
+2. Add Docker’s GPG key:
+```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
-   You can verify the key with:
-   ```
-   sudo apt-key fingerprint 0EBFCD88
-   ```
 
-<span>3.</span> Set up the stable repository:
-```
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu
-$(lsb_release -cs) stable"
+3. Verify the key:
+```bash
+sudo apt-key fingerprint 0EBFCD88
 ```
 
-<span>4.</span> Update apt package index:
+4. Set up the stable repository:
+```bash
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 ```
+
+5. Update the apt package index:
+```bash
 sudo apt-get update
 ```
 
-<span>5.</span> Install Docker:
-```
+6. Install Docker:
+```bash
 sudo apt-get install docker-ce
 ```
 
-<span>6.</span> Switch to root user:
-```
+7. Switch to root user:
+```bash
 sudo su
 ```
 
-<span>7.</span> Download Docker Compose:
-```
-curl -L https://github.com/docker/compose/releases/download/1.14.0/docker-compose-
-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+8. Download Docker Compose:
+```bash
+curl -L https://github.com/docker/compose/releases/download/1.14.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 ```
 
-<span>8.</span> Apply executable permissions:
-```
+9. Apply executable permissions:
+```bash
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-<span>9.</span> Install GitKraken Self-Hosted Server - [jump](#install_enterprise) to Installation section.
+10. Proceed to the <a href="#install_enterprise">installation section</a>.
 
-### Without internet access
-
-<span>1.</span> Download Docker CE package from a machine with internet access.
-
-  * [Docker CE for Ubuntu](https://download.docker.com/linux/ubuntu/dists/) choose your Ubuntu version, browse to pool/stable, and choose your architecture.
-
-   You can check your version using:
-   ```
-   lsb_release -a
-   ```
-
-<span>2.</span> Download Docker Compose package from a machine with internet access.
-  * [Docker Compose](https://github.com/docker/compose/releases/download/1.14.0/docker-compose-Linux-x86_64)
-
-<span>3.</span> Get the 2 files over to the host server where Docker will be installed.
-
-<span>4.</span> Install Docker (change the path to where you copied the files, and change the package names appropriately):
-```
-sudo dpkg -i /path/to/package.deb`
-(e.g. `sudo dpkg -i docker-ce_17.06.0-ce-0-ubuntu_amd64.deb`)
-```
-
-<span>5.</span> Move Docker Compose file and rename it:
-```
-sudo mv docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
-```
-
-<span>6.</span> Apply executable permissions:
-```
-sudo chmod +x /usr/local/bin/docker-compose
-```
 
 <a id="install_rhel7"></a> 
 
