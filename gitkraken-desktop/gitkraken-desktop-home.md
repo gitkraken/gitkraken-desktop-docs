@@ -7,7 +7,7 @@ taxonomy:
 
 <kbd>Last updated: May 2025</kbd>
 
-Welcome to the GitKraken Desktop support hub — your all-in-one source for mastering the world’s most legendary Git GUI.
+Welcome to the GitKraken Desktop Help Center, your all-in-one source for mastering the world’s most legendary Git GUI.
 
 Watch the overview video or use the navigation menu to dive straight into what you need. 
 
