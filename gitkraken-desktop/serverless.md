@@ -1,156 +1,157 @@
 ---
-
 title: GitKraken On-Premise Serverless
 description: How to install and use GitKraken On-Premise Serverless.
 taxonomy:
     category: gitkraken-desktop
-
 ---
 <kbd>Last updated: May 2025</kbd>
 
-GitKraken Desktop On-Premise Serverless (also known as *GitKraken Stand-Alone* or simply *GitKraken Serverless*) is built for teams and enterprises who work in a disconnected development environment. You get most of the same core <a href="https://www.gitkraken.com/git-client" target=_blank>GitKraken features</a>, along with these additional benefits:
+**GitKraken On-Premise Serverless** (also known as *GitKraken Stand-Alone*) is designed for teams operating in disconnected or secure environments. It includes most core <a href="https://www.gitkraken.com/git-client" target=_blank>GitKraken features</a>, with additional advantages:
 
-- For use without internet
-- No account creation required
-- No server installation
+- Works without internet access
+- Requires no account creation
+- Requires no server installation
 
-<img src="/wp-content/uploads/serverless-example-2025.png" srcset="/wp-content/uploads/serverless-example-2025@2x.png 2x" class="img-responsive center img-bordered">
+<figure class='figure center'>
+  <img src="/wp-content/uploads/serverless-example-2025.png" srcset="/wp-content/uploads/serverless-example-2025@2x.png 2x" class="img-responsive img-bordered">
+  <figcaption style="text-align: center; color: #888;">Example view of GitKraken Serverless in use.</figcaption>
+</figure>
+
 <div class='callout callout--warning'>
-    <p>Gitkraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from our normal subscriptions. If you would like to purchase these products, please see our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?_gl=1*vtr4xk*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmv98H0EKgytPnuCPuTqdL2vy4GQaCsizBMO9m8mz2n1hMMXO3AAw7YaAiyKEALw_wcB?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
+    <p><strong>Note:</strong> GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately. Visit our <a href='https://www.gitkraken.com/git-client/on-premise-pricing'>On-Premise Pricing</a> page to purchase.</p>
 </div>
 
 <div class='callout callout--basic'>
-    <p>Looking to get started with GitKraken Serverless? Email <a href="mailto:sales@gitkraken.com" target=_blank>sales@gitkraken.com</a> for a trial key.</p>
+    <p>To request a trial key, email <a href="mailto:sales@gitkraken.com">sales@gitkraken.com</a>.</p>
 </div>
+
+***
+
+## How to Install GitKraken Serverless
+
+Follow these steps to get started:
+
+<ol>
+<li><a href="https://www.gitkraken.com/download-on-premise-serverless" target=_blank>Download GitKraken Serverless</a></li>
+<li>Install GitKraken Serverless</li>
+<li>Load your `.dat` license file</li>
+</ol>
+
 ---
-
-## How to install GitKraken Serverless
-
-There are 3 steps to installing GitKraken Serverless
-
-1. <a href="https://www.gitkraken.com/download-on-premise-serverless" target=_blank>Download</a> GitKraken Serverless
-2. Install GitKraken Serverless
-3. Load `.dat` license file
 
 ### 1. Download GitKraken Serverless
 
-The GitKraken Serverless Clients are available on our <a href="https://www.gitkraken.com/download-on-premise-serverless" target=_blank>downloads</a> page.
+Download the appropriate client for your operating system from our <a href="https://www.gitkraken.com/download-on-premise-serverless" target=_blank>downloads page</a>.
 
-If you are unable to access this page, please contact your GitKraken administrator for GitKraken Serverless client downloads. There is a high probability they have made the files available in a different, internal location.
+If the page is inaccessible, contact your GitKraken administrator for internal distribution options.
 
+---
 
 ### 2. Install GitKraken Serverless
 
-Once you download the client, double click the file to install the GitKraken Serverless Client on your machine. 
+#### Windows (.exe)
 
-Below are platform-specific details on minimum requirements.
+**System Requirements:** Windows 10+
 
-### Windows (.exe file)
+**Install:** Double-click the downloaded `.exe` file and follow the setup instructions.
 
-* **System requirements:** Windows 10+
+**Data Location:**
+- `C:\Users\{user}\AppData\Roaming`
+- `%APPDATA%\.gitkraken` (for older versions)
 
-#### Install Instructions
+<figure class='figure center'>
+  <img src="/wp-content/uploads/license.png" class="img-responsive img-bordered">
+  <figcaption style="text-align: center; color: #888;">Prompt to load license file after install.</figcaption>
+</figure>
 
-Double-click the downloaded executable file, and follow the installation instructions.
+---
 
-#### Data Location
+#### macOS (.dmg)
 
-GitKraken data is stored within your home profile in `C:\\Users\\{user}\\AppData\\Roaming` or `%APPDATA%\\.gitkraken` on older versions. No data is stored outside of the user's machine or remote services _(GitHub Enterprise, Bitbucket Data Center, etc)_.
+**System Requirements:**
+- Intel: macOS 10.15+
+- Apple Silicon: macOS 11+
 
+**Install:** Open the DMG file and drag the GitKraken icon into your Applications folder.
 
-***
+**Data Location:** `/Users/{user}/.gitkraken` (or `~/.gitkraken`)
 
-### Mac OS (.dmg file)
+---
 
-* **System requirements:**
-    * Intel: MacOS 10.15+
-    * Apple Silicon: MacOS 11+
+#### Linux (.deb, .rpm, .tar.gz)
 
-#### Install Instructions
+**System Requirements:**
+- `.deb`: Ubuntu 18.04+ LTS, Debian 10+
+- `.rpm`: RHEL 8+, Fedora 39+
 
-Double click the downloaded DMG file and when prompted, drag and drop the GitKraken icon to your Applications folder.
+**Install Commands:**
 
-#### Data Location
-
-GitKraken data is stored in `/Users/{user}/.gitkraken` == `~/.gitkraken`. No data is stored outside of user's machine or remote services _(GitHub Enterprise, Bitbucket Data Center, etc)_.
-
-***
-
-### Linux (.deb and .tar.gz files)
-
-* **.deb system requirements:** Ubuntu 18.04+ LTS or Debian 10+
-* **.rpm system requirements:** RHEL 8+ or Fedora 39+
-
-#### .deb
-
-GitKraken has a simple package available for Debian based distributions.
+`.deb`
 ```
 wget https://release.gitkraken.com/linux-standalone/gitkraken-amd64.deb
 dpkg -i gitkraken-amd64.deb
 ```
 
-#### .tar
-
+`.tar.gz`
 ```
 wget https://release.gitkraken.com/linux-standalone/gitkraken-amd64.tar.gz
 tar -xvzf gitkraken-amd64.tar.gz
 ```
 
-#### .rpm
-
+`.rpm`
 ```
 wget https://release.gitkraken.com/linux-standalone/gitkraken-amd64.rpm
 sudo dnf install ./gitkraken-amd64.rpm
 ```
 
-Note: for older distros that do not have `dnf`, you should use `yum` instead.
+**Note:** For older distros, use `yum` if `dnf` is not available.
 
-#### Data Location
+**Data Location:** `/home/{user}/.gitkraken` (or `~/.gitkraken`)
 
-GitKraken data is stored in `/home/{user}/.gitkraken` == `~/.gitkraken`. No data is stored outside of user's machine or remote services _(GitHub Enterprise, Bitbucket Data Center, etc)_.
+---
 
-***
+### 3. Load License File
 
-### 3. Load license file
+At first launch, you’ll be prompted to load the `.dat` license file.
 
-When you first open GitKraken Serverless Client, you will be prompted to load the `.dat` license file. 
+If you don’t have the file, contact your GitKraken admin. Admins can retrieve it from app.gitkraken.com. For older accounts or help locating the file, <a href="https://help.gitkraken.com/gitkraken-desktop/contact-support/">contact support</a>.
 
-<img src="/wp-content/uploads/license.png" class="img-responsive center img-bordered">
+<figure class='figure center'>
+  <img src="/wp-content/uploads/serverless-2025.png" srcset="/wp-content/uploads/serverless-2025@2x.png 2x" class="img-responsive img-bordered">
+  <figcaption style="text-align: center; color: #888;">GitKraken Serverless ready after license activation.</figcaption>
+</figure>
 
-If you do not have the license, please contact your GitKraken administrator. If you are the GitKraken administrator, you can find your license file on app.gitkraken.com. If you have an older account or you need assistance locating your license file, [contact us](https://help.gitkraken.com/gitkraken-desktop/contact-support/).
+---
 
-Once the license file is applied, you are ready to get crackin'!
+### License File Locations
 
-<img src="/wp-content/uploads/serverless-2025.png" srcset="/wp-content/uploads/serverless-2025@2x.png 2x" class="img-responsive center img-bordered">
+GitKraken checks the following locations for license files:
 
-#### License.dat Location
-
-You can also place your license file into specific directory locations for GitKraken to check. Here are all of the locations GitKraken Desktop will look:
-
-**Linux/Mac:**
-
+**Linux/macOS:**
 - `/usr/local/share/gitkraken`
-
 - `/usr/share/gitkraken`
-
-- directory above the application
-
-- directory of the application
-
+- Directory above application
+- Application directory
 - `~/.gitkraken`
 
 **Windows:**
+- `C:\ProgramData\GitKraken`
+- Directory above the `.exe`
+- Directory of the `.exe`
+- `%APPDATA%\.gitkraken`
 
-- `C:\\ProgramData\\GitKraken`
+---
 
-- directory above the `exe`
+### Updating Your License File
 
-- directory of the `exe`
+If your license expires, you can:
 
-- `%APPDATA%\\.gitkraken`
+- Replace the file in one of the directories listed above
+- Or, update manually:
+  - In GitKraken, click the license text in the bottom-left corner
+  - Select <kbd>Update License</kbd>
 
-#### Updating License file
-
-If your license has expired, you can replace your license file in one of the above mentioned locations or manually provide your new license file. To manually update the file in the client, select the text `Licensed to [Your Organization] for [number] users` in the bottom left and then select `Update License`.
-
-<img src="/wp-content/uploads/serverless-license-2025.png" srcset='/wp-content/uploads/serverless-license-2025@2x.png 2x' class="img-responsive center img-bordered">
+<figure class='figure center'>
+  <img src="/wp-content/uploads/serverless-license-2025.png" srcset="/wp-content/uploads/serverless-license-2025@2x.png 2x" class="img-responsive img-bordered">
+  <figcaption style="text-align: center; color: #888;">Update your license manually from the client footer.</figcaption>
+</figure>
