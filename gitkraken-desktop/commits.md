@@ -180,8 +180,6 @@ Use the **Update Message** button to save changes, or **Cancel Amend** to discar
 
 ***
 
-...
-
 <a id="resetting-commits"></a>
 
 ## Resetting Commits
