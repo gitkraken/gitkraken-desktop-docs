@@ -1,109 +1,172 @@
 ---
-
 title: Configure GitKraken Self-Hosted Server
 description: Instructions for configuring GitKraken Self-Hosted Server
 taxonomy:
     category: gitkraken-desktop
-
 ---
-<kbd>Last updated: April 2025</kbd>
 
-After installing GitKraken Self-Hosted Server (AKA Enterprise Self-Hosted), you are ready to configure the Server.
+<kbd>Last updated: May 2025</kbd>
+
+After installing GitKraken Self-Hosted Server (also known as Enterprise Self-Hosted), you're ready to configure your server.
 
 <div class='callout callout--warning'>
-    <p>GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from our normal subscriptions. If you would like to purchase these products, please see our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?_gl=1*vtr4xk*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmv98H0EKgytPnuCPuTqdL2vy4GQaCsizBMO9m8mz2n1hMMXO3AAw7YaAiyKEALw_wcB?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
+  <p>GitKraken Desktop Self-Hosted and On-Premise Serverless products are sold separately from standard subscriptions. Visit our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?source=help_center&product=gitkraken'>On-Premise Pricing</a> page to learn more.</p>
 </div>
 
 ***
 
 <a id="server-license"></a>
 
-### Server License
-Browse to your GitKraken Self-Hosted server:
-<img src='/wp-content/uploads/select-license.png' srcset='/wp-content/uploads/select-license@2x.png' class="help-center-img img-bordered">
+## Server License
 
-Select _Browse for license_ file and browse to the the license file that was provided to you with the GitKraken Self-Hosted installation files.  Once selected, the license file will show you the details of your license:
-<img src='/wp-content/uploads/license-details.png' srcset='/wp-content/uploads/license-details@2x.png' class="help-center-img img-bordered">
+Navigate to your GitKraken Self-Hosted server.
+
+<figure>
+<img src='/wp-content/uploads/select-license.png' srcset='/wp-content/uploads/select-license@2x.png' class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Prompt to upload your GitKraken Self-Hosted license file</figcaption>
+</figure>
+
+Click **Browse for license** and upload the license file provided with your installation package. Once selected, license details will be displayed.
+
+<figure>
+<img src='/wp-content/uploads/license-details.png' srcset='/wp-content/uploads/license-details@2x.png' class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Details view of your Self-Hosted license</figcaption>
+</figure>
 
 <a id="authentication"></a>
 
-### Authentication
-Select the Authentication Config for your server:
+## Authentication
 
-  * Built-in: Users will be authenticated using an email address and password
-  * LDAP: Users will be authenticated using LDAP
-<img src='/wp-content/uploads/auth-config.png' srcset='/wp-content/uploads/auth-config@2x.png' class="help-center-img img-bordered">
+Choose the authentication configuration for your server:
 
-If you're using Built-in authentication, [jump](#smtp-server) to the next step.
+- **Built-in**: Users sign in using an email and password.
+- **LDAP**: Users authenticate using LDAP credentials.
+
+<figure>
+<img src='/wp-content/uploads/auth-config.png' srcset='/wp-content/uploads/auth-config@2x.png' class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Select authentication mode: Built-in or LDAP</figcaption>
+</figure>
+
+If using Built-in authentication, [skip to the SMTP Server section](#smtp-server).
 
 <a id="ldap-configuration"></a>
 
-#### LDAP Configuration
-Provide the hostname and port for your LDAP server.
-<img src='/wp-content/uploads/ldap-host-port.png' srcset='/wp-content/uploads/ldap-host-port@2x.png' class="help-center-img img-bordered">
+### LDAP Configuration
 
-Select the encryption method.  This should correspond with the port entered above.
-<img src='/wp-content/uploads/encryption-method.png' srcset='/wp-content/uploads/encryption-method@2x.png' class="help-center-img img-bordered">
+Enter your LDAP server hostname and port:
 
-Assign the Base Distinguished Names, Access Group, and Admin Group Common Names.
+<figure>
+<img src='/wp-content/uploads/ldap-host-port.png' srcset='/wp-content/uploads/ldap-host-port@2x.png' class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Configure hostname and port for LDAP</figcaption>
+</figure>
 
-  * **Base Distinguish Names** - These are the top-level locations used to search in your directory
+Choose the corresponding encryption method:
 
-  * **Access Group Common Names** - Used to specify the group name whose users will be granted licenses for GitKraken.  If no access group is specified, all users found will be granted a license.
+<figure>
+<img src='/wp-content/uploads/encryption-method.png' srcset='/wp-content/uploads/encryption-method@2x.png' class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Select the appropriate LDAP encryption method</figcaption>
+</figure>
 
-  * **Admin Group Common Names** - Used to specify the group name whose users will be granted admin access to the GitKraken Self-Hosted site.  If no admin group is specified, no users found will be granted admin rights.
-<img src='/wp-content/uploads/base-dn.png' srcset='/wp-content/uploads/base-dn@2x.png' class="help-center-img img-bordered">
+Specify the following LDAP configuration fields:
 
-Assign the user attributes needed to identify LDAP users.
+- **Base Distinguished Names** – Top-level directory paths to search for users.
+- **Access Group Common Names** – Groups that are granted GitKraken licenses. If omitted, all found users are granted access.
+- **Admin Group Common Names** – Groups granted administrative access. If omitted, no users receive admin rights.
 
-  * **Username Attribute** (Required) - Used to map to the user's username in GitKraken.
+<figure>
+<img src='/wp-content/uploads/base-dn.png' srcset='/wp-content/uploads/base-dn@2x.png' class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Assign base DNs and group CNs for LDAP integration</figcaption>
+</figure>
 
-  * **Email Attribute** (Required) - Used to map to the user's email in GitKraken.
+Set the required user attribute mappings:
 
-  * **Name Attribute** - Used to map to the user's name in GitKraken.
+- **Username Attribute** – Maps to GitKraken usernames (required).
+- **Email Attribute** – Maps to user emails (required).
+- **Name Attribute** – Maps to user display names (optional).
 
-<img src='/wp-content/uploads/user-attributes.png' srcset='/wp-content/uploads/user-attributes@2x.png' class="help-center-img img-bordered">
+<figure>
+<img src='/wp-content/uploads/user-attributes.png' srcset='/wp-content/uploads/user-attributes@2x.png' class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Assign LDAP attributes for username, email, and name</figcaption>
+</figure>
 
-Provide the Distinguished Name for the user that will be used to search LDAP for users and groups.  
-This can be a separate user that only has rights to search LDAP.  
-*This user is required when anonymous binding in LDAP is disabled.*
-<img src='/wp-content/uploads/search-user.png' srcset='/wp-content/uploads/search-user@2x.png' class="help-center-img img-bordered">
+Provide the DN of a search user account with read access to users and groups:
+
+<figure>
+<img src='/wp-content/uploads/search-user.png' srcset='/wp-content/uploads/search-user@2x.png' class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Designate an LDAP search user account</figcaption>
+</figure>
 
 <div class='callout callout--warning'>
-  <p>Note: The Domain Search Password field will display blank, even when the field is set.</p>
+  <p>Note: The Domain Search Password field will always appear blank, even when a value is set.</p>
 </div>
 
-Enable the sync server, if desired, and set the sync interval.  The sync server will automatically search LDAP at the set interval and update GitKraken licenses accordingly.
+Enable the Sync Server if you want GitKraken to regularly sync with LDAP:
 
-If the sync server is not enabled, you will need to manually manage user accounts.
-<img src='/wp-content/uploads/sync-server.png' srcset='/wp-content/uploads/sync-server@2x.png' class="help-center-img img-bordered">
+<figure>
+<img src='/wp-content/uploads/sync-server.png' srcset='/wp-content/uploads/sync-server@2x.png' class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Configure LDAP sync interval</figcaption>
+</figure>
+
+If Sync Server is disabled, you'll need to manage user accounts manually.
 
 <a id="smtp-server"></a>
 
-### SMTP Server
-An SMTP server is required, unless LDAP authentication is in use.
+## SMTP Server
 
-Set the SMTP server IP address or hostname, the _SMTP port_, and the _From Address_.  If your SMTP server needs a secure connection, check the box for secure protocols and provide the username and password, if needed.  The test connection button will allow you to verify the connection information is accurate:
-<img src='/wp-content/uploads/smtp-setup.png' srcset='/wp-content/uploads/smtp-setup@2x.png' class="help-center-img img-bordered">
+An SMTP server is required unless you're using LDAP authentication.
+
+Specify the server details:
+- **SMTP IP address or hostname**
+- **SMTP port**
+- **From Address**
+
+Enable secure protocols if necessary and provide authentication credentials. Use the test connection button to verify:
+
+<figure>
+<img src='/wp-content/uploads/smtp-setup.png' srcset='/wp-content/uploads/smtp-setup@2x.png' class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Set up SMTP server settings and test connection</figcaption>
+</figure>
 
 <a id="super-user"></a>
 
-### Super User
-The super user will be the Owner of the GitKraken Self-Hosted license.  The super user does not consume a license, cannot log into GitKraken Desktop, and cannot be changed or viewed from the account site user management page.
-<img src='/wp-content/uploads/super-user.png' srcset='/wp-content/uploads/super-user@2x.png' class="help-center-img img-bordered">
+## Super User
+
+The Super User is the license owner of GitKraken Self-Hosted. This account:
+
+- Does not consume a user license
+- Cannot log into GitKraken Desktop
+- Cannot be viewed or modified via the account site user management page
+
+<figure>
+<img src='/wp-content/uploads/super-user.png' srcset='/wp-content/uploads/super-user@2x.png' class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Define the Super User account</figcaption>
+</figure>
 
 <div class='callout callout--neutral'>
-  <p>Note: Visit the <a href="/enterprise/upgrade-enterprise/#reset-the-super-user-password">upgrade page</a> to see how to reset the super user password.</p>
+  <p>Note: To reset the Super User password, visit the <a href="/enterprise/upgrade-enterprise/#reset-the-super-user-password">upgrade guide</a>.</p>
 </div>
 
-Configuration is complete!  You should now be at the 'Manage Users' screen where you can begin adding users to GitKraken Self-Hosted.
-<img src='/wp-content/uploads/manage-users.png' srcset='/wp-content/uploads/manage-users@2x.png' class="help-center-img img-bordered">
+Configuration is now complete! You should see the 'Manage Users' screen, where you can begin adding users.
+
+<figure>
+<img src='/wp-content/uploads/manage-users.png' srcset='/wp-content/uploads/manage-users@2x.png' class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Manage Users interface after setup</figcaption>
+</figure>
 
 <a id="adding-users"></a>
 
-### Adding Users
-To add a user click on the Add user button and provide the email address of the user:
-<img src='/wp-content/uploads/user-email.png' srcset='/wp-content/uploads/user-email@2x.png' class="help-center-img img-bordered">
+## Adding Users
 
-By default, users can create an account themselves from the GitKraken Self-Hosted site.  If you don't want to allow this functionality you can click the Registration tab on the left.  
-<img src='/wp-content/uploads/registration-settings.png' srcset='/wp-content/uploads/registration-settings@2x.png' class="help-center-img img-bordered">
+To add a user, click **Add user** and enter the user's email address:
+
+<figure>
+<img src='/wp-content/uploads/user-email.png' srcset='/wp-content/uploads/user-email@2x.png' class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Enter email address to add a new user</figcaption>
+</figure>
+
+By default, users can self-register on the GitKraken Self-Hosted site. To disable self-registration, go to the **Registration** tab:
+
+<figure>
+<img src='/wp-content/uploads/registration-settings.png' srcset='/wp-content/uploads/registration-settings@2x.png' class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Modify user registration settings</figcaption>
+</figure>
