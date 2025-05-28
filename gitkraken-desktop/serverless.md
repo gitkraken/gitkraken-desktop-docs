@@ -34,7 +34,7 @@ Follow these steps to get started:
 <ol>
 <li><a href="https://www.gitkraken.com/download-on-premise-serverless" target=_blank>Download GitKraken Serverless</a></li>
 <li>Install GitKraken Serverless</li>
-<li>Load your `.dat` license file</li>
+<li>Load your <code>.dat</code> license file</li>
 </ol>
 
 ---
