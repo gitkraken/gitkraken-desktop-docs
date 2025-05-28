@@ -1,46 +1,50 @@
 ---
-
 title: Hiding and Soloing
-description: The secret menu to GitKraken Desktop.  Learn more about the Command bar, Command Palette, and general tips for working faster.  Learn GitKraken Desktop's Advanced Interface!
+description: Learn how to manage visual clutter in GitKraken Desktop using Hide and Solo features in the Left Panel.
 taxonomy:
     category: gitkraken-desktop
-
 ---
 <kbd>Last updated: May 2025</kbd>
 
-The Left Panel allows you to modify the view of the graph for cleanliness and focus. Hide references you don't need, or spotlight a branch for a Solo. 
+The Left Panel lets you control the Commit Graph view for better focus. Use _Hide_ to temporarily remove references, or _Solo_ to spotlight specific branches.
+
 ***
 
-
-<img src="/wp-content/uploads//solo-hide.gif" class="help-center-img img-bordered">
+<figure class='figure center'>
+  <img src="/wp-content/uploads//solo-hide.gif" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Animation demonstrating hiding and soloing branches from the Left Panel.</figcaption>
+</figure>
 
 <div class="flex-wrap" style="align-items: flex-start">
-    <div class="flex-item">
-        <img src="/wp-content/uploads/gk-hide-icon-green.svg" class='img-responsive' style="width: 70px; height: 70px">
-    </div>
-    <div class="flex-item">
-        <h3>Hide</h3>
-        <p>Hides the selected branch from the Commit Graph.</p>
-        <p>To hide a branch, mouse over that branch in the Left Panel, and you will see the eye <i class='fa fa-eye icon-green'></i> icon appear to the left of the branch name; click this to hide. Or perform this task by right-clicking a branch and selecting <kbd>Hide</kbd> from the context menu.</p>
-        <p>Hidden branches will now have a gray eye <i class='fa fa-eye-slash'></i> icon. Clicking this will restore that repo to the graph.</p>
-    </div>
+  <div class="flex-item">
+    <img src="/wp-content/uploads/gk-hide-icon-green.svg" class='img-responsive' style="width: 70px; height: 70px">
+  </div>
+  <div class="flex-item">
+    <h3>Hide</h3>
+    <p>Hiding a branch removes it from the Commit Graph view without affecting your repository.</p>
+    <p>To hide a branch, hover over it in the Left Panel and click the <i class='fa fa-eye icon-green'></i> icon that appears. Or right-click the branch and select <kbd>Hide</kbd> from the context menu.</p>
+    <p>Hidden branches are marked with a gray <i class='fa fa-eye-slash'></i> icon. Click the icon to show the branch again.</p>
+  </div>
 </div>
 
- <div class="flex-wrap" style="align-items: flex-start">
-    <div class="flex-item">
-        <img src="/wp-content/uploads/gk-solo-icon-orange.svg" class='img-responsive' style="width: 70px; height: 70px">
-    </div>
-    <div class="flex-item">
-        <h3>Solo</h3>
-        <p>Soloing a branch will hide all other branches which have not been soloed, showing <i>only</i> soloed branches.</p>
-        <p>To solo a branch, right-click the branch and select <kbd>Solo</kbd>. This initiates Solo Mode, with soloed branches highlighted in orange and with a solid orange <i class='fa fa-dot-circle-o icon-orange'></i> icon to the left of the branch name.</p>
-        <p>Solo/unsolo additional branches by clicking on the semi-opaque icon to the left of that branch's name.</p>
-        <p>Consider hiding/soloing entire remotes if you only need about two remotes, and then hiding everything else.</p>
-    </div>
+<div class="flex-wrap" style="align-items: flex-start">
+  <div class="flex-item">
+    <img src="/wp-content/uploads/gk-solo-icon-orange.svg" class='img-responsive' style="width: 70px; height: 70px">
+  </div>
+  <div class="flex-item">
+    <h3>Solo</h3>
+    <p>Soloing a branch hides all others that haven’t been explicitly soloed. This narrows your focus to selected references.</p>
+    <p>Right-click a branch and select <kbd>Solo</kbd> to enter Solo Mode. Soloed branches display with an orange <i class='fa fa-dot-circle-o icon-orange'></i> icon.</p>
+    <p>To solo or unsolo additional branches, click the semi-opaque icon beside each name.</p>
+    <p>You can also hide or solo entire remotes to isolate just the few branches you need.</p>
+  </div>
 </div>
 
-### Hide or Show all refs
+### Hide or Show All References
 
-You may hide or show all remotes, tags, branches, or stashes from the Left Panel. Simply right-click on the header for the Local, Remotes, Tags, or Stashes pane in the Left Panel to access the options.
+You can hide or show all **Remotes**, **Tags**, **Branches**, or **Stashes** from the Left Panel. Right-click the corresponding header to access bulk options.
 
-<img src='/wp-content/uploads/hide-show-all.png' srcset='/wp-content/uploads/hide-show-all@2x.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+  <img src='/wp-content/uploads/hide-show-all.png' srcset='/wp-content/uploads/hide-show-all@2x.png' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Right-click section headers to hide or show all references.</figcaption>
+</figure>
