@@ -1,165 +1,225 @@
 ---
-
 title: GitKraken AI
 description: Generate plain text commit explanations and more with GitKraken AI
 taxonomy:
     category: gitkraken-desktop
-
 ---
+
 <kbd>Last updated: May 2025</kbd>
 
-Let the app handle the boring parts! GitKraken offers built-in AI features to fast track your code contributions.
+Let the app handle the boring parts! GitKraken offers built-in AI features to fast-track your code contributions.
 
 <div class='callout callout--warning'>
     <p>GitKraken AI requires a <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">paid GitKraken subscription</a>.</p>
 </div>
 
+***
+
 ## AI-Powered Commit Explain
 
-GitKraken can generate natural language explanations of your commits, right from the UI.
+GitKraken can generate natural language explanations of your commits directly from the UI.
 
 ### How to use Commit Explain
 
-1. Open GitKraken Desktop and select one or more commits (Use <kbd>Shift</kbd> or <kbd>Ctrl/Cmd</kbd>)
+1. Open GitKraken Desktop and select one or more commits (Use <kbd>Shift</kbd> or <kbd>Ctrl/Cmd</kbd>).
 
-<img src="/wp-content/uploads/gkd-11-Select-Commits.png" class="help-center-img img-bordered">
+<figure>
+<img src="/wp-content/uploads/gkd-11-Select-Commits.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Select one or more commits from the commit graph</figcaption>
+</figure>
 
-2. Click the **Explain** button in the top-right corner of the Commit Panel.  
+2. Click the **Explain** button in the top-right corner of the Commit Panel.
 
-<img src="/wp-content/uploads/gkd-11-AI-Explain.png" class="help-center-img img-bordered">
+<figure>
+<img src="/wp-content/uploads/gkd-11-AI-Explain.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Use the Explain button to trigger AI-generated summaries</figcaption>
+</figure>
 
 3. GitKraken provides an AI-generated summary of what changed in that commit.
 
-<img src="/wp-content/uploads/gkd-11-commit-explain-2.png" class="help-center-img img-bordered">
+<figure>
+<img src="/wp-content/uploads/gkd-11-commit-explain-2.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">AI-generated explanation appears in the Commit Panel</figcaption>
+</figure>
+
+***
 
 ## AI-Generated Commit Messages
 
-You can generate clear, consistent commit messages based on your staged changes.
+Generate clear, consistent commit messages based on your staged changes.
 
 ### How to generate a commit message
 
-1. Stage your changes. 
+1. Stage your changes.
 
-<img src="/wp-content/uploads/gkd-11-stage-changes.png" class="help-center-img img-bordered">
+<figure>
+<img src="/wp-content/uploads/gkd-11-stage-changes.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Stage your changes in the Commit Panel</figcaption>
+</figure>
 
-2. Click the **AI** button near the commit input.
+2. Click the **AI** button near the commit message input.
 
-<img src="/wp-content/uploads/gkd-11-commit-message-generation-1.png" class="help-center-img img-bordered">
+<figure>
+<img src="/wp-content/uploads/gkd-11-commit-message-generation-1.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Click the AI button to generate a commit message</figcaption>
+</figure>
 
 3. GitKraken suggests a summary and description, which you can review and edit.
 
-<img src="/wp-content/uploads/gkd-11-commit-message-generation-2.png" class="help-center-img img-bordered">
+<figure>
+<img src="/wp-content/uploads/gkd-11-commit-message-generation-2.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Review and edit the suggested commit message</figcaption>
+</figure>
+
+***
 
 ### Amend commit messages
 
-You may amend the most recent commit message by selecting the commit in the graph, and then clicking into its message box in the Commit Panel.
+To amend the most recent commit message:
+1. Select the commit in the graph.
+2. Click into its message box in the Commit Panel.
 
-<img src="/wp-content/uploads/amend-recent-commit-ai-2025.png" srcset="/wp-content/uploads/amend-recent-commit-ai-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+<img src="/wp-content/uploads/amend-recent-commit-ai-2025.png" srcset="/wp-content/uploads/amend-recent-commit-ai-2025@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Select and edit the latest commit message</figcaption>
+</figure>
 
-Similar to commit messages, you may use AI to generate an updated commit message and description for your amended commit. 
+You can then use the AI button again to generate a revised commit message.
 
-<img src="/wp-content/uploads/generate-ai-amend-message.png" srcset="/wp-content/uploads/generate-ai-amend-message@2x.png" class="help-center-img img-bordered">
+<figure>
+<img src="/wp-content/uploads/generate-ai-amend-message.png" srcset="/wp-content/uploads/generate-ai-amend-message@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Use AI to regenerate an updated commit message</figcaption>
+</figure>
+
+***
 
 ## AI-Generated Stash Messages
 
-Similar to commit messages, you can generate stash messages based on the staged changes. 
+Similar to commit messages, you can generate stash messages based on staged changes.
 
 ### How to generate a stash message
 
-1. Stage your changes. 
+1. Stage your changes.
 
-<img src="/wp-content/uploads/gkd-11-stage-changes.png" class="help-center-img img-bordered">
+<figure>
+<img src="/wp-content/uploads/gkd-11-stage-changes.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Stage your changes for stashing</figcaption>
+</figure>
 
-2. Click on the stash icon next to the "Commit" tab and then click the **AI** button.
+2. Click the stash icon next to the "Commit" tab and then click the **AI** button.
 
-<img src="/wp-content/uploads/stash-ai-message.png" srcset="/wp-content/uploads/stash-ai-message@2x.png" class="help-center-img img-bordered">
+<figure>
+<img src="/wp-content/uploads/stash-ai-message.png" srcset="/wp-content/uploads/stash-ai-message@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Use the AI button to generate a stash message</figcaption>
+</figure>
 
 3. GitKraken AI generates a stash message, which you can review and edit.
 
-<img src="/wp-content/uploads/stash-message-generated-2025.png" srcset="/wp-content/uploads/stash-message-generated-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+<img src="/wp-content/uploads/stash-message-generated-2025.png" srcset="/wp-content/uploads/stash-message-generated-2025@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Review and edit the AI-generated stash message</figcaption>
+</figure>
+
+***
 
 ## AI-Generated Pull Request Title and Description
 
-When connected to [GitHub, GitLab, Bitbucket, or Azure DevOps](/gitkraken-desktop/integrations/), you get the ability to create a pull request from inside GitKraken Desktop. Use AI to populate the title and description based on the incoming changes. 
+When connected to [GitHub, GitLab, Bitbucket, or Azure DevOps](/gitkraken-desktop/integrations/), you can use GitKraken AI to create a pull request with a generated title and description based on the incoming changes.
 
-### To generate a PR title and description:
+### How to generate a PR title and description
 
-1. Create a pull request from the Left Panel or by drag and dropping a branch to another branch. 
+1. Create a pull request from the Left Panel or by drag-and-dropping a branch onto another.
 
-<img src="/wp-content/uploads/create-pr-v11-1-Q2-2025.png" srcset="/wp-content/uploads/create-pr-v11-1-Q2-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+<img src="/wp-content/uploads/create-pr-v11-1-Q2-2025.png" srcset="/wp-content/uploads/create-pr-v11-1-Q2-2025@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Start creating a pull request from the left panel or graph</figcaption>
+</figure>
 
-2. Click the **Generate title and descritption** button. If using [pull request templates](/gitkraken-desktop/pull-requests/#pull-request-templates), be sure to first select your template and GitKraken AI will apply it. 
+2. Click **Generate title and description**. If using [pull request templates](/gitkraken-desktop/pull-requests/#pull-request-templates), select the template first—GitKraken AI will apply it.
 
-<img src="/wp-content/uploads/pr-ai-title-desc-11-1.png" srcset="/wp-content/uploads/pr-ai-title-desc-11-1@2x.png" class="help-center-img img-bordered">
+<figure>
+<img src="/wp-content/uploads/pr-ai-title-desc-11-1.png" srcset="/wp-content/uploads/pr-ai-title-desc-11-1@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Click the AI button to generate a pull request title and description</figcaption>
+</figure>
 
-3. GitKraken suggests a title and description, which you can review and edit.
+3. GitKraken provides a suggested title and description for your PR.
 
-<img src="/wp-content/uploads/pr-ai-title-and-description.png" srcset="/wp-content/uploads/pr-ai-title-and-description@2x.png" class="help-center-img img-bordered">
+<figure>
+<img src="/wp-content/uploads/pr-ai-title-and-description.png" srcset="/wp-content/uploads/pr-ai-title-and-description@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Review and edit the AI-generated title and description</figcaption>
+</figure>
 
-## Bring your own key
 
-By default, commit explanations and message generation use **Gemini**, and no API key is required—requests are included as part of your GitKraken subscription.
+***
 
-If you prefer to use **OpenAI**, **Azure**, **Anthropic**, or a Custom URL with your own API key, you may configure this in your settings from <kbd>Preferences > GitKraken AI</kbd>.
+## Bring Your Own Key
 
-<img src="/wp-content/uploads/gkd-11-Preferences-GitKraken-AI.png" class="help-center-img img-bordered">
+By default, GitKraken AI uses **Gemini** to power commit explanations and message generation. No API key is needed—usage is included with your GitKraken subscription.
+
+If you prefer using your own API key with **OpenAI**, **Azure**, **Anthropic**, or a **Custom URL**, you can configure this in:
+
+<kbd>Preferences > GitKraken AI</kbd>
+
+<figure>
+<img src="/wp-content/uploads/gkd-11-Preferences-GitKraken-AI.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Configure GitKraken AI providers in Preferences</figcaption>
+</figure>
 
 ### Custom API Endpoint
 
-The "Custom URL" may be of interest to customers with security requirements. This option allows users to configure a designated AI service for Commit Explain, Commit & Stash message generation, and Pull Request title and description generation.
+For users with advanced security requirements, you may use a **Custom URL** to direct AI requests to a private or internal service.
 
-<img src="/wp-content/uploads/custom-url-11-1.png" srcset="/wp-content/uploads/custom-url-11-1@2x.png" class="help-center-img img-bordered">
+This endpoint can handle:
+- Commit explanations
+- Commit and stash message generation
+- Pull request title and description generation
+
+<figure>
+<img src="/wp-content/uploads/custom-url-11-1.png" srcset="/wp-content/uploads/custom-url-11-1@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Example of configuring a custom AI endpoint</figcaption>
+</figure>
 
 ### Custom AI Prompt Instructions
 
-You may include **custom instructions** to guide how GitKraken AI generates messages or explanations for Commit Message Generation, Explain Commits, Stash Message Generation, and Pull Requests title and description respectively: 
+Guide how GitKraken AI responds for specific scenarios like:
+- Commit message generation
+- Commit explanations
+- Stash message generation
+- Pull request title/description
 
-<img src="/wp-content/uploads/gkd-11-custom-instructions.png" class="help-center-img img-bordered">
+<figure>
+<img src="/wp-content/uploads/gkd-11-custom-instructions.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Add custom AI instructions for personalized responses</figcaption>
+</figure>
 
 #### Commit Prompt Examples
 
-Not sure how to advise GitKraken AI? Here are some starter prompts, and we encourage tinkering!
+Need help crafting instructions? Try these examples:
 
-##### Prompt for brevity
-
+**Prompt for brevity**
 ```
 Keep the summary short, but informative
 ```
 
-##### Prompt to add conventional commit prefix
-
+**Prompt to add conventional commit prefix**
 ```
 Format the summary as:
 
 <type>: <summary>
 
-Where <type> is one of the following prefixes:
+Where <type> is one of:
+  feat, fix, docs, style, refactor, perf, test, chore
 
-    feat: A new feature
-
-    fix: A bug fix
-
-    docs: Documentation only changes
-
-    style: Changes that do not affect the meaning of the code (e.g. formatting)
-
-    refactor: Code changes that neither fix a bug nor add a feature
-
-    perf: Code changes that improve performance
-
-    test: Adding or updating tests
-
-    chore: Routine tasks or maintenance not related to source code
-
-The <summary> should be a short (max 72 characters) description of what was changed, in the imperative mood (e.g., "add login button", "fix broken link", "refactor user auth logic").
-
-Only output the final commit message — no explanations, no extra formatting.
+<summary> should be a short, 72-character max imperative phrase.
+Only return the final commit message—no extra formatting.
 ```
+
+***
 
 ## What’s Next?
 
-Additional AI-powered features are in development to help automate repetitive tasks and keep you focused on what matters. These tools are built to reduce friction while giving you full control over your development workflow.
+Additional AI-powered features are in development to further streamline your workflow. GitKraken AI is built to reduce friction while keeping you in control.
 
 <div class='callout callout--basic'>
-    <p>More questions about Gitkraken AI? Please visit our <a href="https://help.gitkraken.com/general/gitkraken-ai-faq">GitKraken AI FAQ page</a> for more details.</p>
+    <p>Have more questions about GitKraken AI? Visit our <a href="https://help.gitkraken.com/general/gitkraken-ai-faq">GitKraken AI FAQ page</a> for details.</p>
 </div>
