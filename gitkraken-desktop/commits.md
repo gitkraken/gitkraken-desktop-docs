@@ -180,52 +180,55 @@ Use the **Update Message** button to save changes, or **Cancel Amend** to discar
 
 ***
 
+...
+
 <a id="resetting-commits"></a>
 
-## Resetting commits
-Git keeps track of your current commit in a file called the HEAD.  When resetting a commit, you update the HEAD of your repo to point to the selected commit.  GitKraken Desktop offers the following reset options:
+## Resetting Commits
 
-* **Soft** - resets the HEAD to the selected commit, but keeps your changes staged and in your WIP directory
-* **Mixed** - resets the HEAD to the selected commit, unstages your changes, but keeps them in your WIP directory
-* **Hard** - resets the HEAD to the selected commit, unstages your changes, and deletes your WIP files
+Git uses a pointer called <code>HEAD</code> to track your current commit. Resetting updates <code>HEAD</code> to point to a specific commit in your history. GitKraken Desktop offers three reset types:
+
+- **Soft** — Moves <code>HEAD</code> to the selected commit and retains staged and working directory changes.
+- **Mixed** — Moves <code>HEAD</code>, unstages files, but retains working directory changes.
+- **Hard** — Moves <code>HEAD</code>, unstages files, and discards all changes in your working directory.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/reset-commit-2025.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Perform a reset by right-clicking a branch or commit.</figcaption>
+    <figcaption style="text-align: center; color: #888;">Right-click a commit or branch to access reset options.</figcaption>
 </figure>
 
-
-You may also drag and drop a branch onto another to select from the three reset options above or access the reset options from your local repos in the left panel.
+You can also drag and drop a branch onto another to initiate a reset, or use the left panel for local repository actions.
 
 ***
 
 <a id="reverting-changes"></a>
 
-## Reverting changes
+## Reverting Changes
 
-Undo, undo, undo. You can undo many of your actions in GitKraken Desktop with the Undo icon.
+GitKraken Desktop provides an **Undo** button to reverse recent actions that haven’t been pushed.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/undo-undo-2025.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">If you haven't pushed it, you can probably undo it.</figcaption>
+    <figcaption style="text-align: center; color: #888;">Click Undo to revert local actions before they are pushed.</figcaption>
 </figure>
 
-If you're a keyboard fan, you may also enjoy using the keyboard shortcut
-<kbd>&#8984;</kbd> + <kbd>z</kbd> for Mac or <kbd>Ctrl</kbd> + <kbd>Z</kbd> for not-Mac.
+You can also use the Undo shortcut:
+- **Mac:** <kbd>&#8984;</kbd> + <kbd>Z</kbd>
+- **Windows/Linux:** <kbd>Ctrl</kbd> + <kbd>Z</kbd>
 
 <a id="reverting-commits"></a>
 
-### Reverting commits
+### Reverting Commits
 
-Reverting commits is trivial thanks to GitKraken Desktop.
+If Undo is not available, you can still reverse changes by creating a **revert commit**.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/U_axv67W1Ik?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-If you wish to revert a commit (perhaps Undo is not available), the option is available when right-clicking on a commit node.  This will create a new commit to reverse your previous changes.
+Right-click any commit node in the graph and choose **Revert Commit**. GitKraken Desktop will create a new commit that undoes the changes from the selected commit.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/revert-commit-2025.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Right-click any commit to revert it.</figcaption>
+    <figcaption style="text-align: center; color: #888;">Use the revert option to create a new commit that undoes a previous one.</figcaption>
 </figure>
