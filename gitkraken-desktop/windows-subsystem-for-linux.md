@@ -154,35 +154,6 @@ Then, reopen your Linux distribution or GitKraken Desktop.
 
 ---
 
-## Troubleshooting WSL 2
-
-If GitKraken opens with a black screen or other display issues, try these fixes:
-
-- Reopen GitKraken Desktop as administrator.
-- Update your graphics drivers.
-
-If issues persist, you can disable GPU acceleration:
-
-```bash
-gitkraken --disable-gpu
-```
-
-To bypass certificate errors (e.g., `NET::ERR_CERT_AUTHORITY_INVALID`), run:
-
-```bash
-gitkraken --ignore-certificate-errors
-```
-
-To fully restart WSL (use PowerShell or Command Prompt as administrator):
-
-```bash
-wsl --shutdown
-```
-
-Then, reopen your Linux distribution or GitKraken Desktop.
-
----
-
 ## Working Across File Systems in WSL 2
 
 GitKraken Desktop does not support opening repos stored on a different file system than where GitKraken is installed.
@@ -208,4 +179,4 @@ You can choose:
     <p><strong>Note:</strong> GitKraken cannot detect cross-system access when using mapped network drives. This may lead to unintended behavior.</p>
 </div>
 
----
+
