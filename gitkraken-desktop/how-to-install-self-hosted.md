@@ -166,6 +166,37 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 10. Proceed to the installation section.
 
+### Without internet access
+
+1. Download Docker CE package from a machine with internet access.
+  * [Docker CE for Ubuntu](https://download.docker.com/linux/ubuntu/dists/)
+
+   Check your version:
+```bash
+lsb_release -a
+```
+
+2. Download Docker Compose:
+  * [Docker Compose](https://github.com/docker/compose/releases/download/1.14.0/docker-compose-Linux-x86_64)
+
+3. Transfer both files to the host server.
+
+4. Install Docker:
+```bash
+sudo dpkg -i /path/to/package.deb
+# Example:
+sudo dpkg -i docker-ce_17.06.0-ce-0-ubuntu_amd64.deb
+```
+
+5. Move and rename Docker Compose:
+```bash
+sudo mv docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
+```
+
+6. Apply executable permissions:
+```bash
+sudo chmod +x /usr/local/bin/docker-compose
+
 <a id="install_rhel7"></a>
 
 ## Install Docker CE on RHEL7
@@ -227,79 +258,66 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 11. Proceed to the installation section.
 
-
 <a id="install_enterprise"></a>
 
-##  Install GitKraken Self-Hosted Server
+## Install GitKraken Self-Hosted Server
 
-<span>1.</span> Extract _GitKrakenEnterpriseServer.zip_ in a folder of your choosing
-(all commands in the following instructions will be performed in that folder).
+1. Extract the `GitKrakenEnterpriseServer.zip` file into a directory of your choice. All subsequent commands assume you are operating within this directory.
 
-<span>2.</span> Load the images into Docker:
-```
+2. Load the Docker images:
+```bash
 sudo sh loadImages.sh
 ```
 
-<span>3.</span> Configure what port GitKraken Self-Hosted should run on the host server.
-By default GitKraken Self-Hosted server will run on port 3000.
+3. Configure the port on which GitKraken Self-Hosted should run. By default, it runs on port 3000. To change it, edit the `docker-compose.yml` file:
 
-  You can change the port by opening up the _docker-compose.yml_ file and making a few modifications.  
-  First, find the `ports` section under `gk-enterprise-controller`:
-  ```yaml
-    ports:
-      "3000:3000"
-  ```
-
-  Modify the first `3000` to the desired port
-  For example, to use port 80 change it to:
-
-  ```yml
-    ports:
-      "80:3000"
-  ```
-
-  Then update the `GITKRAKEN_ENTERPRISE_URL` environment variable to use the desired port.  Again, for port 80 it would look like:
-  ```yaml
-    environment:
-        GITKRAKEN_ENTERPRISE_URL: http://localhost:80
-  ```
-
-  Finally, find the `GITKRAKEN_ENTERPRISE_URL` environment variable in the `gk-services` section and modify the port.  For port 80, this would look like:
-  ```yaml
-    environment:
-        GITKRAKEN_ENTERPRISE_URL: http://localhost:80
-  ```
-<span>4.</span> *Optional* Update the base URL from localhost. If you want to access the user management page from outside of this server, you will want to update the base URL. This means updating `GITKRAKEN_ENTERPRISE_URL` wherever it exists in the `docker-compose.yml` file. An example:
-
-  ```yaml
-    environment:
-        GITKRAKEN_ENTERPRISE_URL: http://gitkraken.example.com:80
-  ```
-  
-<span>5.</span> Configure where GitKraken Desktop releases are stored on your host server.
-By default the releases folder is set to _./gk-data/release_. You can change the location by opening up
-the _docker-compose.yml_ file and finding the section under `gk-enterprise-controller`:
+Find the `ports` section under `gk-enterprise-controller`:
+```yaml
+ports:
+  - "3000:3000"
 ```
+
+Change the first value to your desired port. For example, to use port 80:
+```yaml
+ports:
+  - "80:3000"
+```
+
+Update the `GITKRAKEN_ENTERPRISE_URL` in both the `gk-enterprise-controller` and `gk-services` sections:
+```yaml
+environment:
+  GITKRAKEN_ENTERPRISE_URL: http://localhost:80
+```
+
+4. *(Optional)* To access GitKraken Self-Hosted from outside the server, update `GITKRAKEN_ENTERPRISE_URL` with your domain:
+```yaml
+environment:
+  GITKRAKEN_ENTERPRISE_URL: http://gitkraken.example.com:80
+```
+
+5. Configure the folder where GitKraken Desktop releases will be stored. The default path is `./gk-data/release`. To change this, update the volume under `gk-enterprise-controller`:
+```yaml
 volumes:
- ./gk-data/release:/controller/release # The volume where GitKraken Self-Hosted clients go.
+  - /your/custom/path:/controller/release
 ```
-and modifying _./gk-data/release_ to point to another directory on your host server.
 
-<span>6.</span> Create the folder specified in the above step on your host server.
+6. Create the directory you specified for storing releases on the host machine.
 
-<span>7.</span> Extract _release.zip_ in the folder you created on your host server
-(releases will always be extracted in this folder).
+7. Extract `release.zip` into the directory you created in step 6.
 
-<span>8.</span> In the same folder containing the _docker-compose.yml_ file, run the following command:
-```
+8. In the directory containing `docker-compose.yml`, start the application:
+```bash
 sudo docker-compose up
 ```
-  * To run this command in the background, use `docker-compose up -d` instead.
-  * Note: If installing in CentOS or RHEL7, you may need to specify the full path to the docker-compose installation.  The following commands should allow you to run the docker-compose command successfully:
+* To run in detached mode:
+```bash
+sudo docker-compose up -d
 ```
+
+* For CentOS or RHEL7, you may need to use the full path:
+```bash
 sudo systemctl start docker.service
 sudo /usr/local/bin/docker-compose up
 ```
 
-<span>9.</span> Navigate to http://localhost:3000 and complete the setup
-(the port in the URL should match the port from step 3, and the URL should match step 4, if either was changed).
+9. Visit `http://localhost:3000` (or the configured URL/port) in your browser to complete the setup.
