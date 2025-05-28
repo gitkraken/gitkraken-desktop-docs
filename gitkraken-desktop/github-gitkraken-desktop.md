@@ -60,7 +60,7 @@ To connect your GitHub account manually:
     <figcaption style="text-align:center;color:#888">Accessing all integrations from the new tab</figcaption>
 </figure>
 
-3. From the Integrations window, select **GitHub.com**.
+3. From the Integrations window, select **GitHub**.
 4. Click <kbd>Connect to GitHub</kbd>. This will open your browser to authenticate GitKraken with GitHub.
 
 <figure>
@@ -176,7 +176,7 @@ Within the Pull Request View, you can edit the following:
 To review the files affected by a pull request, click the <kbd>Review Code and Suggest Changes</kbd> button in the top-right corner.
 
 <figure>
-    <img src='/wp-content/uploads/github-pr-review-2025.png' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img src='/wp-content/uploads/github-pr-review-2025.png' class="help-center-img img-bordered">
     <figcaption style="text-align:center;color:#888">Reviewing files within a pull request</figcaption>
 </figure>
 
@@ -254,11 +254,11 @@ If remotes or repositories are missing in the Add Remote or Clone menus:
 3. If the repo is owned by another individual, they must also [install GitKraken](/gitkraken-client/how-to-install/) and authorize it.
 4. Learn more in [Third-party apps list](https://help.github.com/articles/about-third-party-application-restrictions/).
 
-### GitHub Actions
+## GitHub Actions
 
 For details about automation and CI/CD workflows, see the [GitHub Actions](/git-workflows-and-extensions/github-actions/) guide.
 
-### Connecting to Multiple GitHub Accounts
+## Connecting to Multiple GitHub Accounts
 
 GitKraken connects to one GitHub account at a time. However, if you're using the Pro version of GitKraken, you can take advantage of <a href="/start-here/profiles">multiple profiles</a>.
 
