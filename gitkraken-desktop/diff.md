@@ -110,7 +110,7 @@ Supported tools include:
 If a supported tool does not appear in the dropdown, verify that its command line tools are installed.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/beyond-compare.png' srcset='/wp-content/uploads/beyond-compare@2x.png 2x' class='img-bordered'>
+  <img src='/wp-content/uploads/beyond-compare.png' srcset='/wp-content/uploads/beyond-compare@2x.png 2x' class='help-center-img img-bordered'>
   <figcaption style="text-align: center; color: #888;">Example setup with Beyond Compare.</figcaption>
 </figure>
 
@@ -144,82 +144,96 @@ To use a different diff tool, go to <em class="context-menu">Preferences <i clas
 
 ***
 
-## Diff Multiple Commits
-
-Use <kbd>Shift</kbd> or <kbd>Cmd/Ctrl</kbd> to select multiple commits in the Commit Graph.
-
-<figure class='figure center'>
-  <img src="/wp-content/uploads/select-commits-2025.gif" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">Multi-select commits to generate a combined diff.</figcaption>
-</figure>
-
-This generates a combined diff showing all added, modified, renamed, or deleted files between the selected commits.
-
-<div class='callout callout--basic'>
-    <p><strong>Note:</strong> To diff branches, use <kbd>Cmd/Ctrl</kbd> to select the head commits of each branch.</p>
-</div>
-
-***
-
 ## Diff a WIP
 
-When you have a Work in Progress (WIP), you can diff this against any commit or branch by ctrl/command clicking the WIP and then the other desired commit. Alternativley, with your WIP sleected, you can right-click the desired commit or branch and select `Compare commit against working directory`.
+To compare your Work in Progress (WIP) with another commit or branch:
+- Use <kbd>Ctrl/Cmd</kbd> + click to select the WIP and another commit
+- Or, right-click a commit or branch and select <kbd>Compare commit against working directory</kbd>
 
-<img src='/wp-content/uploads/compare-WIP-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+  <img src='/wp-content/uploads/compare-WIP-2025.png' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Compare WIP with a commit or branch from the graph.</figcaption>
+</figure>
 
 ***
 
 ## File Blame and History
 
-_File History_ and _File Blame_ information display in the same view.
+Access _File History_ and _File Blame_ from the file diff view. Options appear in the upper-right corner.
 
-To access either option, click to view the file diff and the options will appear in the upper right.
+<figure class='figure center'>
+  <img src='/wp-content/uploads/blame-history-2025.png' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Use buttons in the top-right to view file history or blame.</figcaption>
+</figure>
 
-<img src='/wp-content/uploads/blame-history-2025.png' class="help-center-img img-bordered">
+Alternatively, right-click a file after selecting a commit in the graph.
 
-You may also click on a commit in the graph and then right click a file to access _File History_ or _File Blame_. _File History_ shows that file's commit history on the left.
+<figure class='figure center'>
+  <img src='/wp-content/uploads/file-history-commit-selected-2025.png' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Access history or blame from the commit graph.</figcaption>
+</figure>
 
-<img src='/wp-content/uploads/file-history-commit-selected-2025.png' class="help-center-img img-bordered">
+_File Blame_ color-codes each line or hunk by author.
 
-_File Blame_ will color code the commit author of each line or hunk.
+<figure class='figure center'>
+  <img src='/wp-content/uploads/blame-2025.png' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Blame view showing per-line author contributions.</figcaption>
+</figure>
 
-<img src='/wp-content/uploads/blame-2025.png' class="help-center-img img-bordered">
+Use the toggle in the top-right to switch between <kbd>Diff View</kbd> (showing changes) and <kbd>File View</kbd> (showing the full file with blame).
 
-Use the top toggle button to switch between <kbd>Diff View</kbd>, which shows the selected commit's changes to the file, and the <kbd>File View</kbd>, which shows the file's state at that commit, including the blame info.
+***
 
 ## Patch
 
-A patch, or patchfile, is a file describing changes between 2 files. Patch files can be used to distribute changes that a given user would like to make to a particular revision without codifying it onto a git server. Patches can be created from either a commit(s) or a file(s).
+A patch (or patch file) records the differences between files. Patches allow users to share changes without pushing them to a remote repository.
 
-### Create patch from file(s)
+### Create Patch from File(s)
 
-To create a patch from a commit, right-click a commit and select `Create patch from commit`. You will be prompted to name the patch after.
+To create a patch:
+- Right-click a **commit** and choose <kbd>Create patch from commit</kbd>
+- Right-click a **file** and choose <kbd>Create patch from file changes</kbd>
 
-<img src='/wp-content/uploads/create-patch-2025.png' class="help-center-img img-bordered">
+You will be prompted to name the patch file.
 
-To create a patch from a file, right-click a file and select `Create patch from file changes`. You will be prompted to name the patch after.
+<figure class='figure center'>
+  <img src='/wp-content/uploads/create-patch-2025.png' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Create a patch from a commit.</figcaption>
+</figure>
 
-<img src='/wp-content/uploads/patch-from-changes-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+  <img src='/wp-content/uploads/patch-from-changes-2025.png' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Create a patch from file changes.</figcaption>
+</figure>
 
-You can also multi-select files or commits by holding command/ctrl or shift and clicking. You can then right-click the selected files or commits to create a patch from the selected.
+You can also multi-select files or commits using <kbd>Shift</kbd> or <kbd>Cmd/Ctrl</kbd> + click, then right-click to create a patch.
 
-<img src='/wp-content/uploads/patch-from-many-files-2025.png' class="help-center-img img-bordered">
+<figure class='figure center'>
+  <img src='/wp-content/uploads/patch-from-many-files-2025.png' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Create a patch from multiple files or commits.</figcaption>
+</figure>
 
-### Create patch from Command Palette
+### Create Patch from Command Palette
 
-Click on the Command Palette icon on the toolbar, or use the keyboard shortcut <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> to launch Command Palette.
+Launch the Command Palette from the toolbar or with <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>, then search for “Create Patch.”
 
-<img src="/wp-content/uploads/create-patch-from-command-palette.png" class="help-center-img img-bordered">
+<figure class='figure center'>
+  <img src="/wp-content/uploads/create-patch-from-command-palette.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Create a patch using the Command Palette.</figcaption>
+</figure>
 
-### Apply patch from Command Palette
+### Apply Patch from Command Palette
 
-To apply a patch, use the keyboard shortcut `command/ctrl + Shift + P` or click the <i  class="fa fa-magic" style="transform: rotate(225deg)"></i> in the top right of the UI to bring up the Command Palette. Type “Apply Patch" to summon the “Apply Patch” command, and select it to open your file explorer. 
+To apply a patch:
+1. Open the Command Palette (<kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>)
+2. Type “Apply Patch” and select the command
+3. Choose your `.patch` file in the file explorer
 
-<img src='/wp-content/uploads/apply-patch-2025.png' class="help-center-img img-bordered">
-
-Select your .patch file to then apply changes to your working directory. 
-
+<figure class='figure center'>
+  <img src='/wp-content/uploads/apply-patch-2025.png' class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Apply a patch from the file system.</figcaption>
+</figure>
 
 <div class='callout callout--basic'>
-    <p>Note: GitKraken Desktop does not yet support generating patches from binary files. This is a preliminary release with better support coming, and if you have feedback please reach out to our <a href="https://www.gitkraken.com/git-client/contact-support?product=gitkraken&source=help_center">support team</a>. </p>
+    <p><strong>Note:</strong> GitKraken Desktop does not currently support generating patches from binary files. This is a preliminary release. For feedback, contact our <a href="https://www.gitkraken.com/git-client/contact-support?product=gitkraken&source=help_center">support team</a>.</p>
 </div>
