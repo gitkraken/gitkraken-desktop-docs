@@ -1,162 +1,152 @@
 ---
-
 title: Other Integrations
-description: Learn how to authenticate with GitKraken Desktop to manage your SSH keys for repositories and integrations.  Create a SSH key pair or bring your own!
+description: Learn how to authenticate with GitKraken Desktop to manage your SSH keys for repositories and integrations. Create a SSH key pair or bring your own!
 taxonomy:
-    category: gitkraken-desktop
-
+  category: gitkraken-desktop
 ---
+
 <kbd>Last updated: May 2025</kbd>
 
-GitKraken Desktop can connect to repositories hosted on most services (like TFS, AWS CodeCommit, [Google Cloud Source Repositories](/integrations/authentication/#google-cloud-source-repositories), custom service, etc), over HTTPS or SSH.
+GitKraken Desktop supports authentication with most repository hosting services (e.g., TFS, AWS CodeCommit, [Google Cloud Source Repositories](/integrations/authentication/#google-cloud-source-repositories), and custom services) over HTTPS or SSH.
 
+<figure>
 <div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/OA9o09Bq5M8?ecver=1" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OA9o09Bq5M8?ecver=1" frameborder="0" allowfullscreen title="Authentication Overview Video"></iframe>
 </div>
+</figure>
 
 ***
-## HTTPS
-The most common and default way to interact with a remote repository, HTTPS configuration will always require your Git username and password credentials.
 
-To clone a remote repository over HTTPS, first navigate to your hosting service and copy the HTTPS link. The URL should be formatted like this:
+## HTTPS Authentication
 
+This is the default and most common method for interacting with remotes. It requires your Git username and password.
 
+### How to clone with HTTPS
+
+1. Copy the HTTPS URL from your hosting service, which typically looks like:
+
+    ```
     https://example.com/username/myrepository.git
+    ```
 
+2. In GitKraken Desktop, go to <kbd><strong>File > Clone Repo</strong></kbd>.
 
+<figure>
+<img src='/wp-content/uploads/clone-repository-menu-2025.png' srcset='/wp-content/uploads/clone-repository-menu-2025@2x.png 2x' alt="GitKraken Clone Repo Menu" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Cloning a repository using HTTPS</figcaption>
+</figure>
 
-Then go to GitKraken Desktop and clone the project through <kbd><strong>File > Clone Repo</strong></kbd>
+3. Paste the URL, click <button class='button button--success button--ui button--nolink'>Clone the repo</button>, and open it in GitKraken.
 
-<img src='/wp-content/uploads/clone-repository-menu-2025.png' srcset='/wp-content/uploads/clone-repository-menu-2025@2x.png 2x' class="help-center-img img-bordered">
-
-Paste the URL, hit <button class='button button--success button--ui button--nolink'>Clone the repo</button>, and then open the repo in GitKraken.
-
-By default when cloning a repo using HTTPS, your remote tracking at `origin` will be set using this format.
+The remote tracking at `origin` is automatically set using this HTTPS format.
 
 ***
-## SSH
 
+## SSH Authentication
+
+<figure>
 <div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/z7jVOenqFYk?ecver=1" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/z7jVOenqFYk?ecver=1" frameborder="0" allowfullscreen title="SSH Authentication Video"></iframe>
 </div>
+</figure>
 
-Before you can clone a repo over SSH, you must first set up your SSH keys in GitKraken Desktop.
+Before cloning via SSH, you must first set up your SSH keys in GitKraken Desktop.
 
-Navigate to <kbd><strong>Preferences > SSH</strong></kbd>
+### Set up SSH keys
 
-<img src="/wp-content/uploads/ssh-preferences-2025.png" srcset="/wp-content/uploads/ssh-preferences-2025@2x.png" class="img-bordered img-responsive center">
+1. Navigate to <kbd><strong>Preferences > SSH</strong></kbd>.
 
-Here you may choose an SSH key pair by browsing your file system, or let GitKraken Desktop generate a key for you (recommended). Make sure that you copy your public SSH key and paste it into your remote hosting service!
+<figure>
+<img src="/wp-content/uploads/ssh-preferences-2025.png" srcset="/wp-content/uploads/ssh-preferences-2025@2x.png" alt="SSH Preferences Menu" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">SSH preferences in GitKraken Desktop</figcaption>
+</figure>
 
-Once your keys are set up, you are ready to clone.
+2. You can browse to select an existing SSH key pair or generate a new one (recommended).
+3. Copy the public key to your remote hosting service.
 
 ### Clone over SSH
 
-To clone a remote repository over SSH, first navigate to your hosting service and copy the SSH link.
+1. Copy the SSH URL from your hosting service.
+2. In GitKraken Desktop, go to <em class='context-menu'>File <i class="fa fa-caret-right"></i> Clone</em>.
 
-Then go to GitKraken Desktop and clone the project through <em class='context-menu'>File <i class="fa fa-caret-right"></i> Clone</em>
+<figure>
+<img src='/wp-content/uploads/ssh-clone-2025.png' srcset='/wp-content/uploads/ssh-clone-2025@2x.png 2x' alt="Clone over SSH UI" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Cloning a repository using SSH</figcaption>
+</figure>
 
-<img src='/wp-content/uploads/ssh-clone-2025.png' srcset='/wp-content/uploads/ssh-clone-2025@2x.png 2x' class="help-center-img img-bordered">
-
-Paste the URL, hit <button class='button button--success button--ui button--nolink'>Clone the repo</button>, and then open the repo in GitKraken.
+3. Paste the SSH URL, click <button class='button button--success button--ui button--nolink'>Clone the repo</button>, and open the repo.
 
 ### Supported SSH formats
 
-The standard protocol can be entered as a remote in one of following formats:
-
     ssh://{user}@{host}/{repo}
-
-or
-
     {user}@{host}:{repo}
 
-where
+Where:
+- `{host}` is the domain (e.g., example.com)
+- `{user}` is the username (typically `git`)
+- `{repo}` is the path to the repository
 
-* `{host}` can be example.com
-* `{user}` is the username (**git** by default)
-* `{repo}` is myrepository.git
-
-<div class='callout callout--basic'>
-    <p><strong>Note:</strong><code>{repo}</code> usually has an owner like a user or organization where the repository is located on which <code>ssh://{user}@{host}/{owner}/{repo}</code> would be used.</p>
-</div>
-
-For example, the original HTTPS URL in SSH is formulated as
-
-    git@example.com:org/username/myrepository.git
-
-By default when cloning a repo using SSH, your remote tracking at `origin` will be set using this format.
-
+<figure>
+<figcaption style="text-align: center; color: #888">Example: git@example.com:org/username/myrepository.git</figcaption>
+</figure>
 
 ### Custom SSH ports
 
-To use a custom SSH port, you need to use the `ssh://` format for your SSH URL.
+Use this format:
 
     ssh://{user}@{host}:{port}/{repo}
 
+### Use a Local SSH Agent
 
+Using a local agent can simplify SSH management, especially across multiple profiles. From <kbd><strong>Preferences > SSH</strong></kbd>, check _Use local SSH agent_.
 
-### Local SSH Agent
-> "Never send a human to do a machine's job."
+> Tip: This allows automatic key usage if already loaded in your system's agent.
 
-A local SSH agent handles key communication with your remote host, without needing a passphrase.
+### Troubleshooting SSH
 
-With SSH, it's not uncommon when working with many projects, and separate [profiles](/start-here/profiles) that you need different credentials.
-
-While you can specify a single SSH key pair as a default, and even have dedicated defaults per [profile](/start-here/profiles), it may be preferable to check _Use local SSH agent_ and have the keys managed externally.
-
-This way, provided your keys are loaded, every action requiring a chat with your known hosts can manage providing `l33tp@$$..&3` for success without your keyboard involved.
-
-100% of the time, it works every time.
-
-### I'm having an SSH issue.
-Well if it's not working 100% of the time, the most common issues are:
-
-* SSH-agent on Windows &mdash; GitKraken Desktop currently only supports Pageant for the SSH agent for Windows.
- * You can download PuTTY and Pageant from their page <a href='http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html' target='_blank'>here</a>.
-* Misconfigured SSH settings &mdash; remote URL format
- * Check in <kbd><strong>Preferences > SSH</strong></kbd> to confirm that your SSH settings are correct.
- * Edit remotes in the left ref panel to ensure push and pull urls are set and in the correct format
-* Expected use of SSH config &mdash; GitKraken Desktop does not currently respect your SSH config and cannot make use of any remote server nicknames or identities.
- * You can either load your SSH key directly into GitKraken Desktop or use your system&rsquo;s SSH agent to authenticate with your remote.
-
-
-***
-## Forget all
-
-You may tell GitKraken to forget all usernames and passwords from <kbd><strong>Preferences > General</strong></kbd>:
-
-<img src="/wp-content/uploads/forget-all-2025.png" srcset="/wp-content/uploads/forget-all-2025@2x.png" class="help-center-img img-bordered">
-
-Use this if you need the app to prompt for username or password for remote actions like push or pull.
+- **Windows**: Only Pageant is supported. Download from [PuTTY's site](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
+- **Misconfiguration**: Double-check your remote URL format and SSH settings.
+- **SSH config files**: GitKraken Desktop does **not** support `.ssh/config` aliases. Load your key directly or use your OS’s agent.
 
 ***
 
-## Proxy configuration
+## Forget All Credentials
 
-GitKraken Desktop supports proxies for Windows, OSX, and Linux. GitKraken Desktop should recognize your proxy settings by default, however please review the additional instructions below if you are using an authenticated proxy such as <em>basic</em>, <em>NTLM</em>, <em>Negotiate</em>, or <em>Digest</em>.
+Reset stored usernames and passwords from <kbd><strong>Preferences > General</strong></kbd>:
+
+<figure>
+<img src="/wp-content/uploads/forget-all-2025.png" srcset="/wp-content/uploads/forget-all-2025@2x.png" alt="Forget All Credentials UI" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Reset saved credentials</figcaption>
+</figure>
+
+***
+
+## Proxy Configuration
+
+GitKraken Desktop supports proxies for Windows, macOS, and Linux.
 
 ### Windows
 
-For Windows users, your Windows machine will prompt for your proxy credentials on GitKraken’s behalf. Enter the credentials to complete the proxy configuration with GitKraken Desktop.
+Your system will prompt for proxy credentials when needed.
 
-### OSX
+### macOS & Linux
 
-If you’re using an authenticated proxy on OSX, GitKraken will directly ask for the proxy credentials. Enter the credentials to complete the proxy configuration with GitKraken Desktop.
+GitKraken Desktop prompts for credentials directly.
 
-### Linux
-If you are using an authenticated proxy on Linux, GitKraken Desktop will directly ask for the proxy credentials. Additionally, you will need to run GitKraken Desktop with the command line flag:
+On Linux, run with this flag if needed:
 
     --proxy-server=10.200.0.1:8080
 
-
-where <code>10.200.0.1</code> and <code>8080</code> are the proxy IP and proxy port respectively. Without this flag, OAuth integrations are subject to fail.
+***
 
 ## Google Cloud Source Repositories
 
-Due to the non-standard way Google Source Cloud Repositories use HTTPS and SSH URLs, GitKraken Desktop will have trouble parsing the URLs. The SSH URL is normally formatted in this manner:
+Due to formatting, you may need to adjust SSH URLs:
+
+Original:
 
     ssh://example@gitkraken.com@source.developers.google.com:2021/p/test-project-12345/r/Test-Repo-1
 
-Instead, try replacing the first `@` symbol with `%40`:
+Fixed:
 
     ssh://example%40gitkraken.com@source.developers.google.com:2021/p/test-project-12345/r/Test-Repo-1

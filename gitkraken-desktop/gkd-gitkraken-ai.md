@@ -80,7 +80,7 @@ To amend the most recent commit message:
 2. Click into its message box in the Commit Panel.
 
 <figure>
-<img src="/wp-content/uploads/amend-recent-commit-ai-2025.png" srcset="/wp-content/uploads/amend-recent-commit-ai-2025@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img src="/wp-content/uploads/amend-recent-commit-ai-2025.png" srcset="/wp-content/uploads/amend-recent-commit-ai-2025@2x.png" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Select and edit the latest commit message</figcaption>
 </figure>
 
@@ -132,7 +132,7 @@ When connected to [GitHub, GitLab, Bitbucket, or Azure DevOps](/gitkraken-deskto
 
 <figure>
 <img src="/wp-content/uploads/create-pr-v11-1-Q2-2025.png" srcset="/wp-content/uploads/create-pr-v11-1-Q2-2025@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
-<figcaption style="text-align: center; color: #888">Start creating a pull request from the left panel or graph</figcaption>
+<figcaption style="text-align: center; color: #888">Start creating a pull request from the Left Panel or graph</figcaption>
 </figure>
 
 2. Click **Generate title and description**. If using [pull request templates](/gitkraken-desktop/pull-requests/#pull-request-templates), select the template first—GitKraken AI will apply it.
@@ -154,14 +154,14 @@ When connected to [GitHub, GitLab, Bitbucket, or Azure DevOps](/gitkraken-deskto
 
 ## Bring Your Own Key
 
-By default, GitKraken AI uses **Gemini** to power commit explanations and message generation. No API key is needed—usage is included with your GitKraken subscription.
+By default, GitKraken AI uses **Gemini** to power commit explanations and message generation. No API key is needed and usage is included with your GitKraken subscription.
 
 If you prefer using your own API key with **OpenAI**, **Azure**, **Anthropic**, or a **Custom URL**, you can configure this in:
 
 <kbd>Preferences > GitKraken AI</kbd>
 
 <figure>
-<img src="/wp-content/uploads/gkd-11-Preferences-GitKraken-AI.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img src="/wp-content/uploads/gkd-11-Preferences-GitKraken-AI.png" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Configure GitKraken AI providers in Preferences</figcaption>
 </figure>
 
