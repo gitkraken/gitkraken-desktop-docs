@@ -1,139 +1,211 @@
 ---
-
 title: GitKraken Desktop and Windows Subsystem for Linux (WSL)
 description: How to use GitKraken Desktop with Windows Subsystem for Linux (WSL)
 taxonomy:
     category: gitkraken-desktop
-
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
-Learn all about GitKraken Desktop and WSL 2.
+Learn how to run GitKraken Desktop on Windows Subsystem for Linux (WSL 2), including GUI integration and installation requirements.
+
 ## What is WSL/WSL 2?
 
-<a href="https://learn.microsoft.com/en-us/windows/wsl/about" target="_blank">Windows Subsystem for Linux (WSL)</a> lets developers install a Linux distribution and use Linux applications, utilities, and Bash command-line tools directly on Windows. <a href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions" target="_blank">WSL 2</a> utilizes an actual Linux kernel inside a managed virtual machine (VM) to provide improved performance and full system call capability, and is now the default WSL version. Microsoft notes that WSL 2 lacks performance across OS file systems however, and this issue can be addressed by storing your project files on the same operating system as the tools you are running to work on the project.
+<a href="https://learn.microsoft.com/en-us/windows/wsl/about" target="_blank">Windows Subsystem for Linux (WSL)</a> enables developers to run a Linux distribution and use Linux tools directly on Windows. <a href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions" target="_blank">WSL 2</a> runs an actual Linux kernel in a managed VM, offering better performance and full system call compatibility.
 
-Microsoft also introduced <a href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps" target="_blank">Windows Subsystem for Linux GUI (WSLg)</a>, a feature aimed to provide the ability to run Linux GUI applications in a Linux/WSL 2 environment. Using WSLg also better enables Linux GUI applications like the Linux version of GitKraken Desktop to feel native and natural to use on Windows by integrating them closely into the Windows desktop experience when running within WSL 2.
+To support Linux GUI apps, Microsoft introduced <a href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps" target="_blank">WSLg</a>, which integrates Linux apps into the Windows desktop experience. This feature makes GitKraken Desktop for Linux run smoothly within WSL 2.
+
+> Microsoft recommends storing project files on the same operating system as the tools you're using to avoid cross-OS performance issues.
 
 ## How to use GitKraken Desktop with WSL 2
 
-<img src="/wp-content/uploads/wsl-full-screen.png" srcset="/wp-content/uploads/wsl-full-screen@2x.png" class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src="/wp-content/uploads/wsl-full-screen.png" srcset="/wp-content/uploads/wsl-full-screen@2x.png" class="help-center-img img-bordered" alt="GitKraken Desktop running in WSL full screen">
+    <figcaption style="text-align: center; color: #888;">GitKraken Desktop running inside WSL 2.</figcaption>
+</figure>
 
-GitKraken Desktop can work with repos stored on your WSL 2 file system when installed within the WSL 2 environment and using WSL’s built-in display server functionality, <a href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps" target="_blank">WSLg</a>, for GUI support. The Linux version of GitKraken Desktop has been updated to fix common issues when operating GitKraken within WSL 2, and includes settings to [set preferences](#preferences-for-gitkraken-on-wsl-2) for where to open web links and files opened by GitKraken running within WSL 2.
+GitKraken Desktop works with repositories stored on your WSL 2 file system when installed and launched inside the WSL environment. With <a href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps" target="_blank">WSLg</a>, GitKraken Desktop displays natively within Windows.
 
 <div class='callout callout--warning'>
-    <p><strong>Note:</strong> GitKraken Desktop does not currently support cross file system access for repos stored on both Windows and WSL. GitKraken Desktop should be installed on the operating system where your repos are stored for the best experience. Opening repos across file systems may severly degrade performance and features may not work as intended.</p>
+    <p><strong>Note:</strong> GitKraken Desktop does not support accessing repos across file systems. Install GitKraken on the OS where your repos are stored to avoid degraded performance or non-functional features.</p>
 </div>
 
-GitKraken Desktop will also detect where a repo is stored and notify the end user via pop-up. This allows for quick management of GitKraken Desktop when working with both Windows and WSL repos. For more information, see the section on [Working Across File Systems](#working-across-file-systems-in-wsl-2).
+GitKraken will notify you when accessing repos across environments. For more, see [Working Across File Systems](#working-across-file-systems-in-wsl-2).
 
-There are 4 steps to start using GitKraken Desktop with your WSL repos:
-1. Confirm the latest version of WSL 2 is installed that supports WSLg
-2. Download the latest Linux version of GitKraken Desktop
-3. Install GitKraken Desktop on your WSL 2 environment
-4. Use GitKraken Desktop
+### Setup Steps
 
-No Git tools are required to use GitKraken Desktop, but if you want to utilize additional features such as the terminal or LFS, you will need to have Git installed within your WSL distribution. Git comes already installed with most of the Windows Subsystem for Linux distributions, however, if you want to manually update or install the latest version, visit the <a href="https://git-scm.com/download/linux" target="_blank">Git installation instructions for Linux</a>.
+Follow these four steps to get started:
 
-Below are instructions and minimum requirements to run GitKraken Desktop within WSL 2.
-***
+1. **Update WSL 2** — Ensure the latest version is installed with WSLg support.
+2. **Download GitKraken Desktop** — Get the latest Linux version.
+3. **Install in WSL** — Run the installer from your WSL 2 terminal.
+4. **Launch GitKraken Desktop** — You're ready to start working!
+
+> Most WSL distributions include Git by default. If needed, [install or update Git for Linux](https://git-scm.com/download/linux).
+
+---
+
 ## WSL 2/WSLg Requirements
 
-- Windows 11 or Windows 10 build 19044 or later
+- Windows 11 or Windows 10 build 19044+
 - WSL 2 distribution
 - GitKraken Desktop version 9.1.0+ for Linux
 
-***
+---
 
 ## Install or Update WSL 2 with WSLg Support
 
-GitKraken Desktop will only work with WSL 2 on Windows 11 or Windows 10 build 19044 or later, which includes WSLg for GUI support.
+GitKraken Desktop requires WSL 2 with WSLg support on Windows 11 or Windows 10 build 19044 or later.
 
-If you already have WSL installed with a Linux distro, run the following command from PowerShell or Windows Command Prompt to update to the latest version of WSL. Make sure to open as administrator if you use Windows Command Prompt.
+To update WSL from PowerShell or Command Prompt (run as Administrator):
+
+```bash
+wsl --update
 ```
-wsl --update 
-```
-If you need to install WSL with the default Ubuntu distribution of Linux, simply run the following command from PowerShell or Windows Command Prompt opened as administrator and reboot if prompted.
-```
+
+To install WSL with Ubuntu as the default distribution:
+
+```bash
 wsl --install -d ubuntu
 ```
-After reboot the installation will continue. You'll be asked to enter a username and password within the Linux terminal. These will be your Linux credentials.
 
-WSLg is automatically included as part of the update and initial WSL setup, so you are ready to install GitKraken Desktop.
-***
+After rebooting, complete the setup by creating a Linux username and password.
+
+WSLg is automatically included in this installation.
+
+---
+
 ## Download and Install GitKraken Desktop on WSL 2
 
-To install GitKraken within WSL, please follow our instructions for <a href="https://help.gitkraken.com/gitkraken-desktop/how-to-install/#linux-deb-rpm-and-tar-gz-files" target="_blank">installing GitKraken Desktop on Linux</a> and remember to open your Linux terminal from Windows as administrator.
+To install GitKraken Desktop within WSL, follow the <a href="https://help.gitkraken.com/gitkraken-desktop/how-to-install/#linux-deb-rpm-and-tar-gz-files" target="_blank">Linux installation instructions</a>.
 
-If you are using Ubuntu as your Linux distribution, you will run the following commands within the Linux terminal to download and install GitKraken Desktop within WSL:
-```
+For Ubuntu users:
+
+```bash
 wget https://api.gitkraken.dev/releases/production/linux/x64/active/gitkraken-amd64.deb
 sudo apt install ./gitkraken-amd64.deb
 ```
-If the installation does not complete because of missing packages, you may need to run the following command before attempting to install again. 
-```
+
+If dependencies are missing, fix broken packages with:
+
+```bash
 sudo apt --fix-broken install
 ```
-You’re all set! You should now be able to open GitKraken Desktop and work with repos stored within WSL.
-To open GitKraken Desktop within WSL, you can always run the following command from your Linux terminal:
-```
+
+Then, launch GitKraken Desktop with:
+
+```bash
 gitkraken
 ```
-Note: If you choose to install GitKraken Desktop from the .tar.gz file, gitkraken must be installed on `PATH` for this command to work
-***
+
+> If using the `.tar.gz` version, ensure `gitkraken` is in your PATH for the above command to work.
+
+---
+
 ## Preferences for GitKraken on WSL 2
 
-When running GitKraken Desktop within WSL 2, additional preferences are available to tell GitKraken where you'd like to open URLs and files opened by GitKraken. You'll see these settings in `Preferences` > `General` when running within WSL 2.
+GitKraken Desktop offers preferences to control how URLs and files are opened from the WSL environment. Navigate to `Preferences` > `General` to configure them.
 
-<img src="/wp-content/uploads/wsl-host-settings.png" srcset="/wp-content/uploads/wsl-host-settings@2x.png" class="help-center-img img-bordered">
+<figure class='figure center'>
+    <img src="/wp-content/uploads/wsl-host-settings.png" srcset="/wp-content/uploads/wsl-host-settings@2x.png" class="help-center-img img-bordered" alt="GitKraken WSL host settings">
+    <figcaption style="text-align: center; color: #888;">Choose where to open URLs and files when using GitKraken within WSL 2.</figcaption>
+</figure>
 
-By default, URLs will open in your Windows default browser and other files opened by GitKraken will attempt to open on the host distribution.
+By default:
+- URLs open in your Windows default browser.
+- Files attempt to open on the WSL host distribution.
 
-***
+---
+
 ## Known Issues with WSL 2
 
-- <a href="https://github.com/microsoft/wslg/issues/388" target="_blank">HiDPI Displays cause WSLg to inconsistently scale the UI</a>
-- <a href="https://github.com/microsoft/wslg/issues/727" target="_blank">Window snapping does not work with WSLg</a>
+Here are known limitations when using GitKraken Desktop with WSLg:
 
-***
+- <a href="https://github.com/microsoft/wslg/issues/388" target="_blank">HiDPI displays</a> may cause WSLg to inconsistently scale the UI.
+- <a href="https://github.com/microsoft/wslg/issues/727" target="_blank">Window snapping</a> might not function properly within WSLg.
+
+---
+
 ## Troubleshooting WSL 2
 
-If GitKraken loads with a black screen, or other graphical errors persist, try reopening GitKraken Desktop as administrator or update your graphics card drivers.
+If GitKraken opens with a black screen or other display issues, try these fixes:
 
-If graphical errors are still present, you can disable GPU hardware acceleration by running GitKraken Desktop with the following command:
+- Reopen GitKraken Desktop as administrator.
+- Update your graphics drivers.
 
-```
+If issues persist, you can disable GPU acceleration:
+
+```bash
 gitkraken --disable-gpu
 ```
 
-If you are receiving a `NET:ERR_CERT_AUTHORITY_INVALID` error when attempting to login, try running GitKraken Desktop with the following command:
+To bypass certificate errors (e.g., `NET::ERR_CERT_AUTHORITY_INVALID`), run:
 
-```
+```bash
 gitkraken --ignore-certificate-errors
 ```
 
-For other errors, you may need to restart WSL. You can run the following command from PowerShell or Windows Command Prompt running as administrator:
-```
+To fully restart WSL (use PowerShell or Command Prompt as administrator):
+
+```bash
 wsl --shutdown
 ```
-Then, reopen your Linux distribution or GitKraken Desktop as administrator.
 
-***
+Then, reopen your Linux distribution or GitKraken Desktop.
+
+---
+
+## Troubleshooting WSL 2
+
+If GitKraken opens with a black screen or other display issues, try these fixes:
+
+- Reopen GitKraken Desktop as administrator.
+- Update your graphics drivers.
+
+If issues persist, you can disable GPU acceleration:
+
+```bash
+gitkraken --disable-gpu
+```
+
+To bypass certificate errors (e.g., `NET::ERR_CERT_AUTHORITY_INVALID`), run:
+
+```bash
+gitkraken --ignore-certificate-errors
+```
+
+To fully restart WSL (use PowerShell or Command Prompt as administrator):
+
+```bash
+wsl --shutdown
+```
+
+Then, reopen your Linux distribution or GitKraken Desktop.
+
+---
+
 ## Working Across File Systems in WSL 2
 
-Microsoft recommends against working across operating systems when using WSL 2, and GitKraken does not currently support cross file system access of repos. To get around this limitation, you can install a seperate GitKraken Desktop on both the Windows side and WSL Linux side. Then GitKraken will notify you when opening a repo across operating systems and allow you to directly open the repo in the recommended installation of GitKraken. When attempting to open a new repo that is on WSL 2 from GitKraken installed on Windows, or Windows from GitKraken installed on WSL 2, the following message will appear:
+GitKraken Desktop does not support opening repos stored on a different file system than where GitKraken is installed.
 
-<img src="/wp-content/uploads/wsl-toast.png" srcset="/wp-content/uploads/wsl-toast@2x.png" class="help-center-img img-bordered">
+For the best experience:
+- Install GitKraken Desktop on both Windows and WSL.
+- Use the correct GitKraken instance based on repo location.
 
-You will be asked to choose an option to proceed:
-- `Open Help Center` will take you to this page in your browser for information on how to set up GitKraken within WSL 2.
+When accessing a repo stored on WSL from GitKraken installed on Windows (or vice versa), you'll see a prompt:
 
-- `Open with GitKraken on Ubuntu/Windows` will open the repository you're attempting to open in the recommended version of GitKraken if installed in the operating system where the repository is stored. This will work for both Windows and WSL 2 repositories that are being accessed from a different operating system.
+<figure class='figure center'>
+    <img src="/wp-content/uploads/wsl-toast.png" srcset="/wp-content/uploads/wsl-toast@2x.png" class="help-center-img img-bordered" alt="GitKraken WSL toast warning">
+    <figcaption style="text-align: center; color: #888;">Prompt for cross-system repo access in GitKraken Desktop.</figcaption>
+</figure>
 
-- `Open Anyway` will open the repository. Features may behave in unintended ways, simply not function, and performance may be severely degraded when opening from a different operating system.
-
-- Closing the message will cancel opening the repository
+You can choose:
+- **Open Help Center** — Opens this guide.
+- **Open with GitKraken on Ubuntu/Windows** — Switch to the correct GitKraken instance.
+- **Open Anyway** — Attempt to open the repo (may result in degraded performance or broken features).
+- **Close** — Cancels the action.
 
 <div class='callout callout--warning'>
-    <p><strong>Note:</strong> If you open a repository in WSL through a mapped network drive from Windows, GitKraken Desktop will not detect that the repository is being accessed across file systems and attempt to open normally. This may lead to unintended behavior and is not recommended.</p>
+    <p><strong>Note:</strong> GitKraken cannot detect cross-system access when using mapped network drives. This may lead to unintended behavior.</p>
 </div>
+
+---
