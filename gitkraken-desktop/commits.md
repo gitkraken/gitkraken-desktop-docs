@@ -6,7 +6,7 @@ taxonomy:
 ---
 <kbd>Last updated: May 2025</kbd>
 
-GitKraken Desktop simplifies the Git commit process by helping you stage, commit, and push your work—all from a visual interface.
+GitKraken Desktop simplifies the Git commit process by helping you stage, commit, and push your work from a visual interface.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8a6fYPkBDbY?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
@@ -86,37 +86,96 @@ To skip Git hooks for a specific commit, enable the **Skip Git hooks** checkbox 
 
 ***
 
+<a id="commit-templates"></a>
+
+## Commit Templates
+
+<a id="reading-the-commit-template"></a>
+
+### Reading the Commit Template
+
+When you open a repository, GitKraken Desktop checks for a commit template in this order:
+
+1. The repository’s local `.git/config` file
+2. Your global `.gitconfig`
+3. If neither contains a `commit.template` setting, GitKraken Desktop does not load a template
+
+<a id="creating-and-updating-the-commit-template"></a>
+
+### Creating and Updating the Commit Template
+
+To create or update a commit template, navigate to <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> Commit</em>.
+
+<figure class='figure center'>
+    <img src='/wp-content/uploads/commit-template-setting-2025.png' class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Set an initial commit message in Preferences > Commit.</figcaption>
+</figure>
+
+If a template is loaded from your local config, GitKraken Desktop saves changes to that file. If no template exists, your changes are saved to a new `gkcommittemplate.txt` file in your repo’s `.git/` directory. GitKraken Desktop also updates the `commit.template` path in the local config.
+
+This setup lets you maintain a local template without altering your global Git configuration.
+
+#### Commit Template Options
+
+- **Apply this template to commit messages**: Automatically inserts the template in the message editor.
+- **Remove comments from commit messages**: Omits lines starting with `#` when applying the template.
+
+### Configuring Commit Templates
+
+There are three ways to configure commit templates:
+
+* **Create in GitKraken Desktop** — Saves to `.git/gkcommittemplate.txt`
+* **Set a repo-specific template** — Use:
+  ```bash
+  git config commit.template <path_to_template>
+  ```
+* **Set a global template** — Use:
+  ```bash
+  git config --global commit.template <path_to_template>
+  ```
+
+<div class='callout callout--basic'>
+    <p><strong>Note:</strong> Editing a global template within GitKraken Desktop causes it to create `gkcommittemplate.txt` locally and point your repository’s config to that file.</p>
+</div>
+
+***
+
 <a id="amending-commits"></a>
 
-## Amending commits
+## Amending Commits
 
-GitKraken Desktop allows you to amend a commit message, add additional changes, or both.
+GitKraken Desktop lets you modify the last commit by updating the message, adding new changes, or both.
 
-To add more changes to the previous commit, first make the code changes in your working directory. Then when you stage changes in GitKraken Desktop, select the option to _"Amend the previous commit."_
+To include new changes:
+1. Modify files in your working directory.
+2. Stage the changes.
+3. Select **Amend the previous commit** in the Commit Panel.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/amend-commit-2025.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Check this option to add changes to the previous commit.</figcaption>
+    <figcaption style="text-align: center; color: #888;">Select this option to append changes to the most recent commit.</figcaption>
 </figure>
 
-To only update the commit message, select the most recent commit in the graph and then click in the message box to amend the message.
+To update only the message:
+1. Select the most recent commit in the graph.
+2. Click into the message box and revise the text.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/amend-message-2025.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">You can edit your most recent commit message from the Commit Panel.</figcaption>
+    <figcaption style="text-align: center; color: #888;">Edit your previous commit message directly in the message field.</figcaption>
 </figure>
 
-To accommodate viewing a longer commit description, click on the bar at the the bottom of the message box and drag downwards to dynamically resize the text field.
+To resize the commit message field, drag the bottom edge of the editor.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/amend-box-2025.png' class="help-center-img img-bordered">
-    <figcaption style="text-align: center; color: #888;">Drag and drop this bar to resize the commit message box.</figcaption>
+    <figcaption style="text-align: center; color: #888;">Resize the commit message box as needed.</figcaption>
 </figure>
 
-Select <button class='button button--success button--ui button--nolink'>Update Message</button> to save your changes or <button class='button button--danger button--ui button--nolink'>Cancel Amend</button> to discard.
+Use the **Update Message** button to save changes, or **Cancel Amend** to discard them.
 
 <div class='callout callout--basic'>
-    <p><strong>Note:</strong> Amending commits which are already pushed to a remote are more difficult to apply and would require a force push for the rewrite.</p>
+    <p><strong>Note:</strong> If you’ve already pushed a commit, amending it will require a force push to update the remote history.</p>
 </div>
 
 ***
