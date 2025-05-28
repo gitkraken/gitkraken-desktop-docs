@@ -160,7 +160,7 @@ To access this view:
 Alternatively, launch the view from the **Launchpad** by clicking the pull request icon on the right.
 
 <figure>
-    <img src='/wp-content/uploads/github-pr-view-launchpad.png' srcset='/wp-content/uploads/github-pr-view-launchpad@2x.png 2x' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img src='/wp-content/uploads/github-pr-view-launchpad.png' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Opening Pull Request View from the Launchpad</figcaption>
 </figure>
 
@@ -176,7 +176,7 @@ Within the Pull Request View, you can edit the following:
 To review the files affected by a pull request, click the <kbd>Review Code and Suggest Changes</kbd> button in the top-right corner.
 
 <figure>
-    <img src='/wp-content/uploads/github-pr-review-2025.png' srcset='/wp-content/uploads/github-pr-review-2025@2x.png 2x' class="help-center-img img-bordered" style="max-width: 75%;>
+    <img src='/wp-content/uploads/github-pr-review-2025.png' srcset='/wp-content/uploads/github-pr-review-2025@2x.png 2x' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Reviewing files within a pull request</figcaption>
 </figure>
 
@@ -194,8 +194,7 @@ In GitKraken Desktop, the **Review Code and Suggest Changes** feature lets you p
 4. Click <kbd>Suggest X file change to PR #XX</kbd>.
 
 <figure>
-    <img src='/wp-content/uploads/gkc-pr-suggest-code-changes.gif' class="help-center-img img-bordered" style="max-width: 75%;">
-    <figcaption style="text-align:center;color:#888">Suggesting code changes in a pull request</figcaption>
+    <img src='/wp-content/uploads/gkc-pr-suggest-code-changes.gif' class="help-center-img img-bordered" style="max-width: 75%;"><figcaption style="text-align:center;color:#888">Suggesting code changes in a pull request</figcaption>
 </figure>
 
 ### Accept or Reject Code Suggestions
