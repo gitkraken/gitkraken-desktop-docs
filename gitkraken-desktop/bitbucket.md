@@ -77,7 +77,7 @@ After connecting Bitbucket:
 3. Paste the key into your Bitbucket account settings.
 
 <figure>
-  <img src='/wp-content/uploads/ssh-bitbucket-2025.png' srcset='/wp-content/uploads/ssh-bitbucket-2025@2x.png' class='img-responsive img-bordered'>
+  <img class="img-bordered center aligncenter" decoding="async" src='/wp-content/uploads/ssh-bitbucket-2025.png' srcset='/wp-content/uploads/ssh-bitbucket-2025@2x.png' class="img-bordered" class="help-center" style="display:inline-block;">
   <figcaption style="color:#888; text-align:center">Copy and add your new SSH key to Bitbucket</figcaption>
 </figure>
 
