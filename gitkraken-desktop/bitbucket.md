@@ -1,83 +1,114 @@
 ---
-
 title: GitKraken Desktop & Bitbucket Integration
 description: Integrate GitKraken with your Bitbucket repository by following these steps.
 taxonomy:
     category: gitkraken-desktop
-
 ---
 <kbd>Last updated: May 2025</kbd>
 
-GitKraken Desktop allows you to authenticate with Bitbucket, which will help you find repos on Bitbucket when cloning or adding your remotes.
+GitKraken Desktop allows you to authenticate with Bitbucket to help you locate repositories for cloning, add remotes, and manage pull requests more efficiently.
 
-**Benefits**
+### Benefits
 
-* Create repositories on Bitbucket account including .gitignore and license
-* Easily generate an SSH key pair and copy to clipboard to add to Bitbucket
-* Save authentication into [profiles](/gitkraken-desktop/profiles/)
-* Clone from Bitbucket repo list
-* Add remotes for Bitbucket repos
-* Create and view Pull Requests
+- Create new repositories on your Bitbucket account with .gitignore and license templates.
+- Easily generate and copy an SSH key pair for Bitbucket.
+- Save authentication in reusable [profiles](/gitkraken-desktop/profiles/).
+- Clone from a personalized Bitbucket repository list.
+- Add and manage remotes from Bitbucket.
+- Create and view pull requests within GitKraken.
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/sQ4ouJpAeR8?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
+  <iframe width='560' height='315' src='https://www.youtube.com/embed/sQ4ouJpAeR8?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>
 
 ***
 
 ## Connecting to Bitbucket
 
-To authenticate with Bitbucket, navigate to the upper right corner to access <kbd><i> <i class="fas fa-cog"></i> Preferences    <i class='fa fa-caret-right'></i>     Integrations</i></kbd>
+To authenticate with Bitbucket:
 
-<img src="/wp-content/uploads/preferences.png" srcset="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
-Or alternatively if you are in the <kbd>New Tab</kbd> view, click on <kbd>See all the integrations</kbd> under <strong>Integrations</strong>.
+1. Navigate to <kbd><i class="fas fa-cog"></i> Preferences > Integrations</kbd> in the upper-right corner.
 
-<img src="/wp-content/uploads/see-all-integrations-2025.png" srcset="/wp-content/uploads/see-all-integrations-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/preferences.png" srcset="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Open Preferences to configure integrations</figcaption>
+</figure>
 
-From the Integrations window, select Bitbucket.org and then hit the <button class='button button--success button--ui button--nolink'>Connect to Bitbucket</span></button> button.
+2. From the <kbd>New Tab</kbd> view, click <kbd>See all the integrations</kbd> under <strong>Integrations</strong>.
 
-<img src="/wp-content/uploads/connect-bitbucket-2025.png" srcset="/wp-content/uploads/connect-bitbucket-2025@2x.png 2x" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/see-all-integrations-2025.png" srcset="/wp-content/uploads/see-all-integrations-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Accessing the Integrations panel</figcaption>
+</figure>
 
-This will open a web browser where you will need to log in with your Bitbucket credentials to allow GitKraken access.
+3. Select <strong>Bitbucket.org</strong> and click <button class='button button--success button--ui button--nolink'>Connect to Bitbucket</button>.
 
-Upon login, a success message appears. Finish connecting by selecting `Open GitKraken`. 
+<figure>
+  <img src="/wp-content/uploads/connect-bitbucket-2025.png" srcset="/wp-content/uploads/connect-bitbucket-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Click to authenticate via Bitbucket</figcaption>
+</figure>
 
-<img src="/wp-content/uploads//bitbucket-success-1.png" srcset="/wp-content/uploads//bitbucket-success-1@2x.png 2x" class="help-center-img img-bordered">
+4. A browser window opens prompting you to log in. Upon success, confirm by selecting <kbd>Open GitKraken</kbd>.
 
-Alternativley, you can connect the integration by copy and pasting the OAuth token manually. 
- 
-<img src="/wp-content/uploads/bitbucket-oauth-token.png" class="img-bordered img-responsive center"> 
+<figure>
+  <img src="/wp-content/uploads//bitbucket-success-1.png" srcset="/wp-content/uploads//bitbucket-success-1@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Login success prompt from Bitbucket</figcaption>
+</figure>
+
+Alternatively, you may authenticate manually using an OAuth token:
+
+<figure style="text-align:center;">
+  <img src="/wp-content/uploads/bitbucket-oauth-token.png" class="img-bordered" style="display:inline-block;">
+  <figcaption style="color:#888; text-align:center">Manual OAuth token entry for Bitbucket</figcaption>
+</figure>
 
 ***
-## Generating SSH keys for Bitbucket.
+
+## Generating SSH Keys for Bitbucket
+
 <div class='callout callout'>
-    <p>Note 📝 - GitKraken Desktop uses your SSH key defined in <kbd><i>Preferences  <i class='fa fa-caret-right'></i>  SSH</i></kbd> for git operations unless you set up a BitBucket-specific SSH key, or enable your local SSH Agent.</p>
+  <p><strong>Note:</strong> GitKraken uses your SSH key from <kbd>Preferences > SSH</kbd> unless a Bitbucket-specific key is configured or your system SSH Agent is enabled.</p>
 </div>
 
-Once your Bitbucket account has been connected to GitKraken, you may then generate an SSH key and add it to your Bitbucket account from <kbd><i>Preferences    <i class='fa fa-caret-right'></i>    Integrations</i></kbd>
+After connecting Bitbucket:
 
-Click <button class='button button--success button--ui button--nolink'>Generate SSH key and copy to clipboard</span></button> and add the key to your [Bitbucket](https://bitbucket.org) account settings.
+1. Go to <kbd>Preferences > Integrations</kbd>.
+2. Click <button class='button button--success button--ui button--nolink'>Generate SSH key and copy to clipboard</button>.
+3. Paste the key into your Bitbucket account settings.
 
-<img src='/wp-content/uploads/ssh-bitbucket-2025.png' srcset='/wp-content/uploads/ssh-bitbucket-2025@2x.png' class='center img-responsive img-bordered'>
-
-***
-## OAuth integration with Bitbucket
-GitKraken's integration with Bitbucket provides handy information about your repositories.
-
-First, you may search through your existing repositories when cloning:
-
-<img src="/wp-content/uploads//clone.png" srcset="/wp-content/uploads//clone@2x.png" class="help-center-img img-bordered">
-Next, GitKraken Desktop presents a list of forks of the current repository when adding remotes:
-
-<img src="/wp-content/uploads//remote.png" srcset="/wp-content/uploads//remote@2x.png" class="help-center-img img-bordered">
-Of course, you still have the option of manually entering repo URLs.
+<figure>
+  <img src='/wp-content/uploads/ssh-bitbucket-2025.png' srcset='/wp-content/uploads/ssh-bitbucket-2025@2x.png' class='img-responsive img-bordered'>
+  <figcaption style="color:#888; text-align:center">Copy and add your new SSH key to Bitbucket</figcaption>
+</figure>
 
 ***
 
-## Connecting to multiple Bitbucket accounts
+## OAuth Integration with Bitbucket
 
-GitKraken connects to one Bitbucket account at a time. However, with GitKraken Pro's multiple <a href="/start-here/profiles">profile</a> support, you can easily switch between profiles that each have their own associated Bitbucket accounts.
+GitKraken enhances your workflow with:
+
+- A searchable list of Bitbucket repositories when cloning:
+
+<figure>
+  <img src="/wp-content/uploads//clone.png" srcset="/wp-content/uploads//clone@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Cloning from your Bitbucket repositories</figcaption>
+</figure>
+
+- A list of forks when adding remotes:
+
+<figure>
+  <img src="/wp-content/uploads//remote.png" srcset="/wp-content/uploads//remote@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Forks available for remote setup</figcaption>
+</figure>
+
+Manual repo URLs are still supported.
+
+***
+
+## Connecting to Multiple Bitbucket Accounts
+
+GitKraken supports one Bitbucket account per profile. With GitKraken Pro, use multiple [profiles](/start-here/profiles) to manage several Bitbucket identities.
 
 ## Bitbucket Pull Request Reviewers
 
-Bitbucket supports pull request reviewers. GitKraken Desktop will display the list of reviewers for a pull request. In order to view the list of reviewers, you must have Project Admin permissions.
+Bitbucket supports pull request reviewers. GitKraken will show reviewer details if you have Project Admin permissions on the repository.
