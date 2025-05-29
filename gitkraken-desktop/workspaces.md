@@ -10,7 +10,7 @@ GitKraken Workspaces allow you to create easily accessible groups of repositorie
 
 <figure>
   <img src="/wp-content/uploads/workspaces-tab-2025.png" srcset="/wp-content/uploads/workspaces-tab-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">The Workspaces tab in GitKraken Desktop</figcaption>
+  <figcaption style="color:#888; text-align:center">Group your repos into a Workspace</figcaption>
 </figure>
 
 ***
@@ -96,7 +96,7 @@ More options are available via the ellipsis menu.
       <td style="padding: 4px;">Clone all selected repositories. HTTPS is used by default unless <a href="https://help.gitkraken.com/gitkraken-desktop/integrations/">SSH is configured in your settings</a>. Only available if repositories aren't already cloned.</td>
     </tr>
     <tr>
-      <td style="padding: 4px;"><strong>Fetch</strong> <img src="/wp-content/uploads/gk-fetch-pull-icon.svg" style="height:1em;"></td>
+      <td style="padding: 4px;"><strong>Fetch</strong></td>
       <td style="padding: 4px;">Fetch all selected repositories.</td>
     </tr>
     <tr>
@@ -283,14 +283,10 @@ To use Workspaces and [Insights](/gk-dev/gk-dev-insights/) with Azure DevOps:
 - You must enable **Third-party application access via OAuth** in Azure.
 - Navigate to <kbd>Organization Settings > Policies</kbd> in your Azure DevOps dashboard.
 
-<figure>
-  <img src="/wp-content/uploads/azure-oauth-settings.png" srcset="/wp-content/uploads/azure-oauth-settings@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Enable third-party OAuth access in Azure DevOps</figcaption>
-</figure>
-
 Learn more from Microsoft’s official guidance: [Change application connection & security policies for your organization](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops).
 
 
+***
 
 ## Workspace Changelog
 
