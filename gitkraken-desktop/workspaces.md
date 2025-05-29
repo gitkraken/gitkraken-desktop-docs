@@ -1,60 +1,87 @@
 ---
-
 title: Workspaces
 description: Workspaces allow you to create groups of repositories.
 taxonomy:
     category: gitkraken-desktop
-
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: May 2025</kbd>
 
 GitKraken Workspaces allow you to create easily accessible groups of repositories, take action across multiple repos, view details about their state at a glance, and share them with your team.
 
-<img src="/wp-content/uploads/workspaces-tab-2025.png" srcset="/wp-content/uploads/workspaces-tab-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/workspaces-tab-2025.png" srcset="/wp-content/uploads/workspaces-tab-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">The Workspaces tab in GitKraken Desktop</figcaption>
+</figure>
 
 ***
 
-## Access Workspaces
+## Access Your Workspaces
 
-Workspaces are listed in the Repo Management Tab. To access the Repo Management tab, either click on the folder icon located at the top left or utilize the keyboard shortcut <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
-<img src='/wp-content/uploads/open-workspaces-2025.png' srcset="/wp-content/uploads/open-workspaces-2025@2x.png" class='img-bordered img-responsive center'>
+To access the Repo Management tab:
+
+1. Click on the folder icon at the top left.
+2. Or use the keyboard shortcut <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
+
+<figure>
+  <img src='/wp-content/uploads/open-workspaces-2025.png' srcset="/wp-content/uploads/open-workspaces-2025@2x.png" class='img-bordered img-responsive center'>
+  <figcaption style="color:#888; text-align:center">Opening Workspaces from the Repo Management tab</figcaption>
+</figure>
 
 ***
 
 ## Cloud Workspaces
 
-Cloud Workspaces will be available for you to work with on any machine and the selected [teams](/start-here/teams/) within your organization. This helps ensure that everyone is up-to-date on the same set of repositories by offering [multi-repository actions](/gitkraken-desktop/workspaces/#cloud-multi-repository-actions) and the ability to [work with all pull requests](/gitkraken-desktop/workspaces/#pull-requests) from these repositories. 
+Cloud Workspaces are accessible from any machine and can be shared with selected [teams](/start-here/teams/) in your organization. They allow for [multi-repository actions](/gitkraken-desktop/workspaces/#cloud-multi-repository-actions) and centralized pull request management.
 
+<p>Watch the overview:</p>
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OIQVsNRqg1M?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
 ### Create a Cloud Workspace
 
-To create a Cloud Workspace, select <button class="button button--success button--ui button--nolink">+ New Workspace</button>.
+1. Click <button class="button button--success button--ui button--nolink">+ New Workspace</button>.
+2. Select "Cloud Workspace".
+3. Name your Workspace and select the hosting service.
+4. Choose repositories to add.
+5. (Optional) Add an icon, description, and share with teams or users.
 
-<img src="/wp-content/uploads/add-new-workspace-2025.png" srcset="/wp-content/uploads/add-new-workspace-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/add-new-workspace-2025.png" srcset="/wp-content/uploads/add-new-workspace-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Add a new Cloud Workspace</figcaption>
+</figure>
 
-Then, select "Cloud Workspace”, name your Workspace, selecting the hosting service, and then select repositories to add. Optionally, you can also provide an icon, description and select teams or individual users to share with.
-
-<img src="/wp-content/uploads/config-cloud-workspace-2025.png" srcset="/wp-content/uploads/config-cloud-workspace-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/config-cloud-workspace-2025.png" srcset="/wp-content/uploads/config-cloud-workspace-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Configuring Cloud Workspace settings</figcaption>
+</figure>
 
 <div class='callout callout--warning'>
     <p>
         <strong>Note:</strong>
-            The integration for the desired service must be connected under <kbd>Preferences > Integrations</kbd> to create a Cloud Workspace.
+        The integration for the desired service must be connected under <kbd>Preferences > Integrations</kbd>.
     </p>
 </div>
 
-### Cloud multi-repository actions
+### Perform Multi-repository Actions
 
-Perform an action on multiple repositories within the Workspace at once, making it easy to get a new member of your team onboarded quickly or keep repository information up-to-date. To perform an action on multiple repositories, select the check box next to the repository name and then select the desired action from the options at the top.
+To take action across multiple repositories:
 
-<img src="/wp-content/uploads/multi-fetch-ws-2025.png" srcset="/wp-content/uploads/multi-fetch-ws-2025@2x.png" class="help-center-img img-bordered">
+1. Select the checkboxes next to the desired repositories.
+2. Choose an action from the toolbar at the top.
 
-There are more multi-repo actions available from the ellipsis menu in the corner of each Workspace, in addition to general Workspace actions. 
+<figure>
+  <img src="/wp-content/uploads/multi-fetch-ws-2025.png" srcset="/wp-content/uploads/multi-fetch-ws-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Multi-repo fetch operation</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/more-multi-repo-actions-2025.png" srcset="/wp-content/uploads/more-multi-repo-actions-2025@2x.png" class="help-center-img img-bordered">
+More options are available via the ellipsis menu.
+
+<figure>
+  <img src="/wp-content/uploads/more-multi-repo-actions-2025.png" srcset="/wp-content/uploads/more-multi-repo-actions-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Accessing more multi-repo actions</figcaption>
+</figure>
+
 
 <table style="font-size: 14px; border-collapse: collapse;">
   <thead>
@@ -65,106 +92,98 @@ There are more multi-repo actions available from the ellipsis menu in the corner
   </thead>
   <tbody>
     <tr>
-      <td style="padding: 4px;">
-        <strong>Clone</strong> <img src="/wp-content/uploads/gk-remote-icon.svg" style="height:1em;">
-      </td>
-      <td style="padding: 4px;">
-        Clone all selected repositories. HTTPS will be used by default unless you have 
-        <a href="https://help.gitkraken.com/gitkraken-desktop/integrations/">SSH configured in your Integration settings</a>. 
-        This option is only available if the repositories are not already cloned locally. 
-        If one or more repositories are already cloned, you have to select the repositories 
-        that are not cloned and then select the clone option.
-      </td>
+      <td style="padding: 4px;"><strong>Clone</strong> <img src="/wp-content/uploads/gk-remote-icon.svg" style="height:1em;"></td>
+      <td style="padding: 4px;">Clone all selected repositories. HTTPS is used by default unless <a href="https://help.gitkraken.com/gitkraken-desktop/integrations/">SSH is configured in your settings</a>. Only available if repositories aren't already cloned.</td>
     </tr>
     <tr>
-      <td style="padding: 4px;">
-        <strong>Fetch</strong> <img src="/wp-content/uploads/gk-fetch-pull-icon.svg" style="height:1em;">
-      </td>
-      <td style="padding: 4px;">
-        Fetch all selected repositories.
-      </td>
+      <td style="padding: 4px;"><strong>Fetch</strong> <img src="/wp-content/uploads/gk-fetch-pull-icon.svg" style="height:1em;"></td>
+      <td style="padding: 4px;">Fetch all selected repositories.</td>
     </tr>
     <tr>
-      <td style="padding: 4px;">
-        <strong>Pull</strong> <img src="/wp-content/uploads/gk-pull-icon.svg" style="height:1em;">
-      </td>
-      <td style="padding: 4px;">
-        Pull all selected repositories. You can change the behavior of the pull button 
-        by selecting the dropdown and selecting the radio button next to the desired option.
-      </td>
+      <td style="padding: 4px;"><strong>Pull</strong> <img src="/wp-content/uploads/gk-pull-icon.svg" style="height:1em;"></td>
+      <td style="padding: 4px;">Pull all selected repositories. Customize pull behavior from the dropdown menu.</td>
     </tr>
     <tr>
-      <td style="padding: 4px;">
-        <strong>Open in GitKraken Desktop or an external editor</strong>
-      </td>
-      <td style="padding: 4px;">
-        Open all selected repositories in GitKraken or in your 
-        <a href="https://help.gitkraken.com/start-here/preferences/#external-editor">default editor</a>.
-      </td>
+      <td style="padding: 4px;"><strong>Open in GitKraken Desktop or an external editor</strong></td>
+      <td style="padding: 4px;">Open all selected repositories in GitKraken or your <a href="https://help.gitkraken.com/start-here/preferences/#external-editor">default editor</a>.</td>
     </tr>
     <tr>
-      <td style="padding: 4px;">
-        <strong>Locate in filesystem</strong>
-      </td>
-      <td style="padding: 4px;">
-        Point to all selected repositories locally or update the local location of 
-        the repositories if they have changed.
-      </td>
+      <td style="padding: 4px;"><strong>Locate in filesystem</strong></td>
+      <td style="padding: 4px;">Reveal local paths of selected repositories or update their location.</td>
     </tr>
     <tr>
-      <td style="padding: 4px;">
-        <strong>Remove</strong>
-      </td>
-      <td style="padding: 4px;">
-        Remove all selected repositories from the Workspace.
-      </td>
+      <td style="padding: 4px;"><strong>Remove</strong></td>
+      <td style="padding: 4px;">Remove selected repositories from the Workspace.</td>
     </tr>
   </tbody>
 </table>
 
+### View Pull Requests in Launchpad
 
-### Pull requests
+Access open pull requests for all repositories in a Workspace directly from [Launchpad](https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/).
 
-You can see all open pull requests for all repositories in [Launchpad](https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/) within the selected Workspace. 
+<figure>
+  <img src="/wp-content/uploads/open-ws-in-lp-2025.png" srcset="/wp-content/uploads/open-ws-in-lp-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Viewing a Workspace in Launchpad</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/open-ws-in-lp-2025.png" srcset="/wp-content/uploads/open-ws-in-lp-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/launchpad-team-view-2025.png" srcset="/wp-content/uploads/launchpad-team-view-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Launchpad showing team-wide pull request details</figcaption>
+</figure>
 
-Information shown here includes the pull request title, pull request number, CI status, complexity, the name of the branch being merged, and number of comments.
-
-<img src="/wp-content/uploads/launchpad-team-view-2025.png" srcset="/wp-content/uploads/launchpad-team-view-2025@2x.png" class="help-center-img img-bordered">
 
 ## Local Workspaces
 
 ### Create a Local Workspace
 
-To create a Local Workspace, select <button class="button button--success button--ui button--nolink">New Workspace</button>. Then, select “Local Workspace”, name your Workspace, and browse to select repositories to add to your Local Workspace. You may select individual repositories, a directory of repositories, or a VS Code Workspace (.code-workspace). Optionally, you can also provide an icon and description. 
+To create a Local Workspace:
 
-<img src="/wp-content/uploads/create-local-ws-2025.png" srcset="/wp-content/uploads/create-local-ws-2025@2x.png" class="help-center-img img-bordered">
+1. Click <button class="button button--success button--ui button--nolink">New Workspace</button>.
+2. Select “Local Workspace.”
+3. Name your Workspace.
+4. Browse to select one or more repositories. You can choose:
+   - Individual repositories
+   - A directory of repositories
+   - A VS Code Workspace file (`.code-workspace`)
+5. (Optional) Add an icon and description.
 
-The option "Sync with local directory" will allow you to sync the Workspace with a local directory. This will automatically add any repositories in the selected directory to the Workspace.
+<figure>
+  <img src="/wp-content/uploads/create-local-ws-2025.png" srcset="/wp-content/uploads/create-local-ws-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Creating a Local Workspace in GitKraken Desktop</figcaption>
+</figure>
 
-### Local multi-repository actions
+To automatically add all repositories in a selected folder, enable the <strong>Sync with local directory</strong> option.
 
-Actions can be performed on multiple repositories within the Workspace at once. To perform an action on multiple repositories, select the check box next to the repository name and then select the desired action from the options at the top.
+### Perform Multi-repository Actions
 
-The following multi-repository actions can be performed:
-- Fetch: fetch all selected repositories.
-- Pull: pull all selected repositories. You can change the behavior of the pull button by selecting the dropdown and selecting the radio button next to the desired option.
-- Open in GitKraken Desktop or an external editor: open all selected repositories in GitKraken or in your [default editor](/start-here/preferences/#external-editor).
-- Remove: remove all selected repositories from the Workspace.
+You can take actions across multiple repositories within a Local Workspace:
 
-### Create a Cloud Workspace from a Local Workspace
+1. Select the checkboxes next to the repositories.
+2. Use the action toolbar at the top to:
+   - **Fetch**: Update all selected repositories.
+   - **Pull**: Sync selected repositories with the latest changes. Use the dropdown to customize pull behavior.
+   - **Open**: Launch selected repositories in GitKraken or your [default external editor](/start-here/preferences/#external-editor).
+   - **Remove**: Delete selected repositories from the Workspace.
 
-You can create a Cloud Workspace from a Local Workspace which will enable more visibility into your pull requests, issues, and share your Workspace with teams.
+### Convert a Local Workspace to a Cloud Workspace
 
-To do this, select your local Workspace to open it and then select `Create cloud workspace`. From here, you will need to select the provider for your new Cloud Workspace, select the repositories you would like added, and you can even add more repositories to this Workspace from the selected provider.
+To enable sharing and enhanced visibility:
 
-<img src="/wp-content/uploads/local-to-cloud-ws-2025.png" srcset="/wp-content/uploads/local-to-cloud-ws-2025@2x.png" class="help-center-img img-bordered">
+1. Open your Local Workspace.
+2. Click <strong>Create cloud workspace</strong>.
+3. Choose a provider and select repositories to include.
+4. (Optional) Add additional repositories from the same provider.
+
+<figure>
+  <img src="/wp-content/uploads/local-to-cloud-ws-2025.png" srcset="/wp-content/uploads/local-to-cloud-ws-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Converting a Local Workspace to a Cloud Workspace</figcaption>
+</figure>
 
 <div class='callout callout--warning'>
     <p>
         <strong>Note:</strong>
-            The integration for the desired service must be connected under <kbd>Preferences > Integrations</kbd> to create a Cloud Workspace.
+        Ensure the provider integration is connected under <kbd>Preferences > Integrations</kbd> before creating a Cloud Workspace.
     </p>
 </div>
 
@@ -172,72 +191,105 @@ To do this, select your local Workspace to open it and then select `Create cloud
 
 ## Edit a Workspace
 
-Edit a Workspace by selecting the ellipsis <i class="fas fa-ellipsis-v"></i> icon by the Workspace name.
+To edit a Workspace, click the ellipsis <i class="fas fa-ellipsis-v"></i> next to the Workspace name.
 
-<img src="/wp-content/uploads/multi-actions-ws-2025.png" srcset="/wp-content/uploads/multi-actions-ws-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/multi-actions-ws-2025.png" srcset="/wp-content/uploads/multi-actions-ws-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Workspace actions menu</figcaption>
+</figure>
 
-The available options are:
+### Hide a Workspace
 
-### Hide
+Hide a Workspace to reduce clutter. Hidden groups (e.g., Recents, Favorites) can be shown again using the <i class="fa-solid fa-eye-slash"></i> icon.
 
-You can hide a workspace to declutter your view, just as you can hide other groups in the Repo Management Tab (e.g., Recent Repositories or Favorites).
+<figure>
+  <img src="/wp-content/uploads/unhide-group-2025.png" srcset="/wp-content/uploads/unhide-group-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Unhiding a group from the Repo Management tab</figcaption>
+</figure>
 
-To show a hidden workspace or group, simply click the <i class="fa-solid fa-eye-slash"></i> icon to unhide.
+### Select/Unselect Repositories
 
-<img src="/wp-content/uploads/unhide-group-2025.png" srcset="/wp-content/uploads/unhide-group-2025@2x.png" class="help-center-img img-bordered">
-
-### Select/Unselect
-
-You can select or unselect repositories within a workspace. This functionality allows you to perform specific actions, such as fetching, pulling, or opening repositories in VS Code, on the selected repositories only.
+Manually select repositories for targeted multi-repo actions like Fetch or Pull.
 
 ### Open/Clone/Locate Repositories
 
-Use this option to open, clone, or locate repositories. You can apply these actions to the selected repositories or to all repositories within the workspace.
+Open repositories in GitKraken Desktop or your preferred editor. You can also clone or locate repositories within the file system.
 
-<img src="/wp-content/uploads/clone-or-locate-ws-repos-2025.png" srcset="/wp-content/uploads/clone-or-locate-ws-repos-2025@2x.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/clone-or-locate-ws-repos-2025.png" srcset="/wp-content/uploads/clone-or-locate-ws-repos-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Cloning or locating repositories</figcaption>
+</figure>
 
-### Edit Workspace
+### Edit Workspace Details
 
-Customize your workspace by editing its name, color in the Repo Management Tab, description, and the list of members with access to the workspace. This helps you keep your workspace organized and accessible to the right team members.
+Customize your Workspace’s name, color, description, and access permissions.
 
-<img src="/wp-content/uploads/gkd-10-2-edit-workspace.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/gkd-10-2-edit-workspace.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Editing Workspace properties</figcaption>
+</figure>
 
-### Change Color
+### Change Workspace Color
 
-Similar to what you can do with Edit Workspace, change the color of your Workspace (or group) by selecting `Change color` in the three-dot menu of any repo group. Use color to categorize Workspaces or highlight your most used groups of repositories.
+Use color to visually organize and prioritize Workspaces. Select `Change color` from the three-dot menu.
 
 ***
+
 ## Reorder Workspaces
 
-Drag and drop your Workspaces to reorder the list. 
+Drag and drop Workspaces to arrange them in the desired order.
 
-<img src="/wp-content/uploads/reorder-workspaces-2025.png" srcset="/wp-content/uploads/reorder-workspaces-2025@2x.png" class="help-center-img img-bordered">
-
-Don't forget that you can [Hide Workspaces](/gitkraken-desktop/workspaces/#elementor-toc__heading-anchor-9) that you prefer not to see. 
-
-***
-## Insights
-
-GitKraken Insights is a powerful tool that helps you visualize how pull requests are merged into your repositories. It provides a visual representation of your repository's history, allowing you to see how your codebase has evolved over time. You can use this information to make informed decisions about how to improve your workflow.
-
-<img src="/wp-content/uploads/insights-gkdev-2025.png" srcset="/wp-content/uploads/insights-gkdev-2025@2x.png" class="help-center-img img-bordered">
-
-Insights is available for GitHub.com, Bitbucket.org, GitLab.com, and Azure DevOps (Hosted). To access GitKraken Insights for your Workspace, click on the Insights icon. 
-
-<img src="/wp-content/uploads/insights-icon-ws-2025.png" srcset="/wp-content/uploads/insights-icon-ws-2025@2x.png" class="help-center-img img-bordered">
-
-This will open a new browser window, directing you to the Insights view for that specific Workspace on [GitKraken.dev](https://gitkraken.dev?source=help_center&product=gitkraken
-).
-
-See [gitkraken.dev Insights](/gk-dev/gk-dev-insights/) for more information on working with Insights. 
+<figure>
+  <img src="/wp-content/uploads/reorder-workspaces-2025.png" srcset="/wp-content/uploads/reorder-workspaces-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Reordering Workspaces</figcaption>
+</figure>
 
 ***
 
-## Requirement for Azure Workspaces and Insights
+## Use Insights to Visualize Pull Request History
 
-In order to work with Workspaces and [Insights](/gk-dev/gk-dev-insights/) for Azure, `Third-party application access via OAuth` will need to be enabled in Azure from `Organization Settings > Policies`. 
+GitKraken Insights helps you understand how pull requests are merged into your repositories. It provides:
 
-You can find more information on this setting from Microsoft's [Change application connection & security policies for your organization](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops) article.
+- A visual history of your repository’s development
+- Insight into pull request trends and team workflows
+- Support for GitHub.com, Bitbucket.org, GitLab.com, and Azure DevOps (Hosted)
+
+<figure>
+  <img src="/wp-content/uploads/insights-gkdev-2025.png" srcset="/wp-content/uploads/insights-gkdev-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Insights timeline view in GitKraken.dev</figcaption>
+</figure>
+
+To launch GitKraken Insights:
+
+1. Open a Cloud Workspace.
+2. Click the <strong>Insights</strong> icon in the upper-right of the Workspace header.
+
+<figure>
+  <img src="/wp-content/uploads/insights-icon-ws-2025.png" srcset="/wp-content/uploads/insights-icon-ws-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Accessing GitKraken Insights from a Workspace</figcaption>
+</figure>
+
+This will open a new browser tab showing insights for that Workspace on <a href="https://gitkraken.dev?source=help_center&product=gitkraken">GitKraken.dev</a>.
+
+For more details, visit the [GitKraken.dev Insights documentation](/gk-dev/gk-dev-insights/).
+
+
+***
+
+## Azure DevOps Requirements for Insights
+
+To use Workspaces and [Insights](/gk-dev/gk-dev-insights/) with Azure DevOps:
+
+- You must enable **Third-party application access via OAuth** in Azure.
+- Navigate to <kbd>Organization Settings > Policies</kbd> in your Azure DevOps dashboard.
+
+<figure>
+  <img src="/wp-content/uploads/azure-oauth-settings.png" srcset="/wp-content/uploads/azure-oauth-settings@2x.png" class="help-center-img img-bordered">
+  <figcaption style="color:#888; text-align:center">Enable third-party OAuth access in Azure DevOps</figcaption>
+</figure>
+
+Learn more from Microsoft’s official guidance: [Change application connection & security policies for your organization](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops).
+
 
 
 ## Workspace Changelog
