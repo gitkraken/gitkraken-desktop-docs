@@ -10,7 +10,7 @@ Launchpad provides a unified overview of your Pull Requests, Issues, and Works I
 
 <figure>
   <img src="/wp-content/uploads/launchpad-highlight-2025.png" srcset="/wp-content/uploads/launchpad-highlight-2025@2x.png" class="help-center-img img-bordered" alt="Overview of GitKraken Launchpad UI">
-  <figcaption style="color:#888; text-align:center">Launchpad dashboard displaying pull requests, issues, and WIPs</figcaption>
+  <figcaption style="color:#888; text-align:center">Launchpad displaying a list unassigned reviewers, with a PR open for more details</figcaption>
 </figure>
 
 The Launchpad is also <a href="https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/#elementor-toc__heading-anchor-13">available for GitKraken On-Premise</a> customers with some feature variations.
@@ -293,6 +293,8 @@ GitKraken On-Premise respects network isolation, which limits certain cloud-base
 </figure>
 
 This local-only experience is ideal for teams requiring full network control.
+
+***
 
 ## Launchpad Changelog
 
