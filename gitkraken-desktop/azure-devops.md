@@ -127,7 +127,7 @@ GitKraken supports one Azure DevOps account per profile. With a paid Pro, Teams,
 To connect via OAuth, Azure DevOps must allow third-party applications:
 
 <figure style="text-align:center;">
-  <img src="/wp-content/uploads/gkd-ado-oauth-error.png" class="img-bordered" style="display:inline-block;">
+  <img class="img-bordered center aligncenter" decoding="async" src="/wp-content/uploads/gkd-ado-oauth-error.png" class="img-bordered" style="display:inline-block;">
   <figcaption style="color:#888; text-align:center">OAuth access error message in GitKraken</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ If this setting cannot be enabled, you can connect using a Personal Access Token
 
 If your Azure DevOps pull request does not appear in GitKraken:
 
-1. In the left panel, right-click the remote (typically `origin`) and select <kbd>Edit</kbd>.
+1. In the Left Panel, right-click the remote (typically `origin`) and select <kbd>Edit</kbd>.
 2. Make sure the URL matches the domain used for your integration:
    - If using a PAT: should match the Host Domain URL from <kbd>Preferences > Integrations</kbd>.
    - If using OAuth: should match the connected domain.
