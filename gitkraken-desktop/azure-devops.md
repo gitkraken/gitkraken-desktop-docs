@@ -126,8 +126,8 @@ GitKraken supports one Azure DevOps account per profile. With a paid Pro, Teams,
 
 To connect via OAuth, Azure DevOps must allow third-party applications:
 
-<figure>
-  <img src="/wp-content/uploads/gkd-ado-oauth-error.png" class="img-bordered center">
+<figure style="text-align:center;">
+  <img src="/wp-content/uploads/gkd-ado-oauth-error.png" class="img-bordered" style="display:inline-block;">
   <figcaption style="color:#888; text-align:center">OAuth access error message in GitKraken</figcaption>
 </figure>
 
