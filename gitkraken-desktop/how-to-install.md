@@ -5,7 +5,7 @@ description: Step-by-step installation guide for GitKraken Desktop on Windows, m
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken Desktop is a graphical Git client designed to make version control easier for developers, builders, and teams.
 
