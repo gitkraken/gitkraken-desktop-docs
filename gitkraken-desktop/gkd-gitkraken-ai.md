@@ -1,11 +1,11 @@
 ---
-title: GitKraken AI
-description: Generate plain text commit explanations and more with GitKraken AI
+title: GitKraken AI Features Overview
+description: Use GitKraken AI to generate commit messages, PR descriptions, and explanations of code changes. Customize your AI provider and prompts to fit your workflow.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Let the app handle the boring parts! GitKraken offers built-in AI features to fast-track your code contributions.
 
