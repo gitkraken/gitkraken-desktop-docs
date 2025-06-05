@@ -1,11 +1,11 @@
 ---
-title: Git Integration for Jira
-description: Use GitKraken Desktop with Git Integration for Jira to enhance issue and commit navigation.
+title: GitKraken Desktop + Git Integration for Jira
+description: Connect GitKraken Desktop with Git Integration for Jira to navigate commits and diffs directly from Jira issues, and open GitKraken from Jira for deeper Git context.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken Desktop connects with the <a href="https://marketplace.atlassian.com/apps/4984/git-integration-for-jira?product=gitkraken&source=help_center" target="_blank">Git Integration for Jira</a> app. This integration enables seamless navigation between GitKraken Desktop and Jira, letting you open commit and file diffs directly from your Jira issues.
 

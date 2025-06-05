@@ -1,11 +1,11 @@
 ---
-title: GitKraken Desktop & GitLab Issues Integration
-description: Learn how to access GitLab Issues from GitKraken Desktop
+title: GitKraken Desktop + GitLab Issues Integration
+description: Connect GitKraken with GitLab to view, filter, and manage issues directly from your local Git interface.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken Desktop makes it easy to integrate with GitLab Issues for seamless issue tracking and repository collaboration.
 
