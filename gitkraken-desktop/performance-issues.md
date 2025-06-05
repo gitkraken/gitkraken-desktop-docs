@@ -1,10 +1,10 @@
 ---
-title: Performance Issues
-description: What to do if GitKraken Desktop is performing poorly
+title: Improve GitKraken Desktop Performance
+description: Troubleshoot and fix performance issues in GitKraken Desktop with maintenance tips and optimization settings.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 If GitKraken Desktop is running slowly, it’s often due to the size or complexity of the repository. Try the steps below to improve performance.
 

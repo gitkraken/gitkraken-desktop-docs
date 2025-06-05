@@ -1,10 +1,10 @@
 ---
-title: Common Issues
-description: Learn about common issues that you may encounter when using GitKraken Desktop.
+title: GitKraken Desktop – Common Issues and Fixes
+description: Troubleshoot common GitKraken Desktop problems, including login errors, GitHub integrations, performance issues, and experimental Git behavior.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 ***
 
