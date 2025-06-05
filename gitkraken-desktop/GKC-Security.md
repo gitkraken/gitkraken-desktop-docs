@@ -1,7 +1,7 @@
 ---
 
-title: Security Information for GitKraken Desktop
-description: Data Security Information for GitKraken Desktop
+title: GitKraken Desktop – Data Security and Storage Practices
+description: Learn how GitKraken Desktop collects, transmits, and stores user and repository data securely. Includes encryption methods, data storage locations, and compliance details.
 taxonomy:
     category: gitkraken-desktop
 
