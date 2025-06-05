@@ -1,10 +1,10 @@
 ---
-title: GitKraken On-Premise Serverless
-description: How to install and use GitKraken On-Premise Serverless.
+title: GitKraken On-Premise Serverless (Stand-Alone) Setup
+description: Learn how to install, license, and run GitKraken On-Premise Serverless on Windows, macOS, and Linux in offline or secure environments.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 **GitKraken On-Premise Serverless** (also known as *GitKraken Stand-Alone*) is designed for teams operating in disconnected or secure environments. It includes most core <a href="https://www.gitkraken.com/git-client" target=_blank>GitKraken features</a>, with additional advantages:
 
