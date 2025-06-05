@@ -1,11 +1,11 @@
 ---
-title: Other Integrations
-description: Learn how to authenticate with GitKraken Desktop to manage your SSH keys for repositories and integrations. Create a SSH key pair or bring your own!
+title: Authentication with Other Git Hosts in GitKraken Desktop
+description: Learn how to authenticate with TFS, AWS CodeCommit, Google Cloud Source Repositories, and custom Git hosts using HTTPS or SSH in GitKraken Desktop.
 taxonomy:
   category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken Desktop supports authentication with most repository hosting services (e.g., TFS, AWS CodeCommit, [Google Cloud Source Repositories](/integrations/authentication/#google-cloud-source-repositories), and custom services) over HTTPS or SSH.
 

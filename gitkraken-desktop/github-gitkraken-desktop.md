@@ -1,10 +1,10 @@
 ---
-title: GitKraken Desktop GitHub Integration
-description: Integrate GitKraken with your GitHub repository by following these steps.
+title: GitHub Integration with GitKraken Desktop
+description: Learn how to connect GitKraken Desktop with GitHub to sign in, clone repos, create pull requests, manage SSH keys, and use OAuth features.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken allows you to create an account and authenticate with GitHub, making it easier to find and manage GitHub repositories within the application.
 

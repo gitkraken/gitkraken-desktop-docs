@@ -1,10 +1,10 @@
 ---
-title: GitKraken Desktop & Bitbucket Integration
-description: Integrate GitKraken with your Bitbucket repository by following these steps.
+title: Bitbucket Integration with GitKraken Desktop
+description: Connect GitKraken Desktop with Bitbucket to clone repositories, manage pull requests, and configure SSH authentication with OAuth or token-based access.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken Desktop allows you to authenticate with Bitbucket to help you locate repositories for cloning, add remotes, and manage pull requests more efficiently.
 

@@ -1,10 +1,10 @@
 ---
-title: GitKraken Desktop GitLab Self-Managed Integration
-description: Easily integrate GitKraken with your GitLab Self-Managed repository. Learn how to link GitKraken and GitLab Self-Managed by following these steps.
+title: GitLab Self-Managed Integration with GitKraken Desktop
+description: Connect GitKraken Desktop with your GitLab Self-Managed server to manage repositories, SSH keys, and pull requests using personal access tokens.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 <div class='embed-container embed-container--16-9'>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/BhIX7fGSM8k?ecver=1" frameborder="0" allowfullscreen></iframe>

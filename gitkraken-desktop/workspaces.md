@@ -1,5 +1,5 @@
 ---
-title: Git Workspaces in GitKraken Desktop
+title: Workspaces in GitKraken Desktop
 description: Learn how to create, manage, and share Cloud or Local Workspaces in GitKraken Desktop to organize and collaborate across repositories.
 taxonomy:
     category: gitkraken-desktop
