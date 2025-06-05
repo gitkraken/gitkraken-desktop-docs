@@ -1,6 +1,7 @@
 ---
-title: How to Install GitKraken Desktop
-description: Learn how to install GitKraken Desktop on Windows, Mac, and Linux.
+title: Install GitKraken Desktop on Windows, macOS & Linux | Setup Guide
+description: Step-by-step installation guide for GitKraken Desktop on Windows, macOS, and Linux. Includes system requirements, video tutorials, and tips for WSL users.
+
 taxonomy:
     category: gitkraken-desktop
 ---
