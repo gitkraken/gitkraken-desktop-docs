@@ -1,11 +1,11 @@
 ---
-title: Staging Files and Changes
-description: Learn how to stage, unstage, discard, and ignore files before committing in GitKraken Desktop.
+title: Stage, Unstage, and Ignore Files in GitKraken Desktop
+description: Learn how to stage, unstage, discard changes, and manage .gitignore rules when committing in GitKraken Desktop. Includes line-by-line diff staging.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Learn how to stage files, review changes, and manage tracked content in GitKraken Desktop.
 

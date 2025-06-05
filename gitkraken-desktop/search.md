@@ -1,10 +1,10 @@
 ---
-title: Searching Commits
-description: Learn how to search for commits in GitKraken Desktop.
+title: How to Search Git Commits in GitKraken Desktop
+description: Discover how to find commits by message, SHA, or author in GitKraken Desktop. Learn how to configure graph limits and use the search bar or Command Palette.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Learn how to search for commits in GitKraken Desktop.
 
