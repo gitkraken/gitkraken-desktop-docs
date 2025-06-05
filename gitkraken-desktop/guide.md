@@ -1,10 +1,10 @@
 ---
-title: New to Git
-description: Learn how to get started with GitKraken Desktop.
+title: Learn Git with GitKraken Desktop | Beginner Guide & Workflow
+description: New to Git? Get started with GitKraken Desktop using this beginner-friendly guide. Learn cloning, branching, staging, committing, and merging with tutorials and videos.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 This Getting Started Guide introduces GitKraken Desktop with a basic workflow—cloning a repository, making changes, and merging them.
 

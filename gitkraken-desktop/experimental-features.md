@@ -1,10 +1,10 @@
 ---
-title: Experimental Features
-description: Learn about experimental features that are being worked on for possible future inclusion into GitKraken Desktop.
+title: GitKraken Desktop Experimental Features | Cloud Patch & Git Executable
+description: Explore experimental GitKraken Desktop features like Git Executable integration and Cloud Patches. Learn how to enable, use, and self-host these in-development tools.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken Desktop includes experimental features, which are early previews of in-development functionality. These features may change or be removed in future releases.
 

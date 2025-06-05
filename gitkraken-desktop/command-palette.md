@@ -1,10 +1,10 @@
 ---
-title: Command Palette
-description: The Command Palette is a fast way to access GitKraken Desktop's actions.
+title: GitKraken Desktop Command Palette | Fast Actions & Navigation
+description: Discover how to use the Command Palette in GitKraken Desktop to quickly run commands, open files, switch repos, and customize settings with shortcuts.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 The <strong>Command Palette</strong> provides quick access to GitKraken Desktop actions, files, repositories, and settings.
 

@@ -1,10 +1,10 @@
 ---
-title: Integrations
-description: Connect GitKraken Desktop to remote Git services and issue trackers for streamlined collaboration.
+title: GitKraken Desktop Integrations | Connect Git & Issue Trackers
+description: Learn how to integrate GitKraken Desktop with GitHub, GitLab, Bitbucket, Jira, Trello, and other tools to streamline repo access and issue tracking.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 <figure>
   <div class='embed-container embed-container--16-9'>

@@ -1,10 +1,10 @@
 ---
-title: Keyboard Shortcuts
-description: Learn how to accelerate your workflow in GitKraken Desktop with keyboard shortcuts.
+title: GitKraken Desktop Keyboard Shortcuts | Speed Up Your Git Workflow
+description: Master GitKraken Desktop with this complete list of keyboard shortcuts for staging, navigating, committing, and managing tabs.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken Desktop includes a variety of keyboard shortcuts to help you work faster. Use this reference to find shortcuts for common actions like staging files, toggling panels, and managing tabs.
 

@@ -1,10 +1,10 @@
 ---
-title: Teams
-description: Working with Teams in GitKraken Desktop.
+title: GitKraken Desktop Teams | Manage Users, Roles & Collaboration
+description: Learn how to use GitKraken Desktop Teams to organize users, manage roles, and collaborate with features like Team View, shared Workspaces, and Cloud Patches.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken Desktop users with a <a href="https://www.gitkraken.com/git-client/pricing?source=help_center&product=gitkraken">Pro, Advanced, Business, or Enterprise Cloud</a> account can use the Teams feature to group users within an Organization.
 

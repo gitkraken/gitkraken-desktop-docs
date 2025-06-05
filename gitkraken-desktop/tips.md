@@ -1,6 +1,6 @@
 ---
-title: Tips
-description: Find out all the things users should know to boost their GitKraken Desktop experience.
+title: GitKraken Desktop Tips | Productivity Shortcuts & Power Features
+description: Discover top GitKraken Desktop tips to speed up your workflow—Profiles, Command Palette, integrations, cherry pick, and more advanced features.
 taxonomy:
     category: gitkraken-desktop
 ---

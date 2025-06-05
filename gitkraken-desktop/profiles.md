@@ -1,10 +1,10 @@
 ---
-title: Profiles
-description: Create multiple profiles in GitKraken Desktop to quickly switch between repository preferences. Manage different gitconfig settings, repositories, and more!
+title: GitKraken Desktop Profiles | Manage Git Configs & Accounts
+description: Learn how to use GitKraken Desktop profiles to manage Git settings, integrations, avatars, and multiple accounts across different projects. Manage different gitconfig settings, repositories, and more!
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZgYjeaJDbX8?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>
