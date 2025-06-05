@@ -1,10 +1,10 @@
 ---
-title: Tags
-description: Learn how to mark key commits and manage Git tags in GitKraken Desktop.
+title: Manage Git Tags in GitKraken Desktop
+description: Learn how to create, annotate, move, and share Git tags in GitKraken Desktop to mark releases and key commits.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Tags <em class='context-menu'><img style='transform:rotate(180deg);height:1em;' src='/wp-content/uploads/gk-tag-icon.svg'></em> are labels that point to a specific commit in your Git history. They’re useful for marking version releases or significant project milestones.
 

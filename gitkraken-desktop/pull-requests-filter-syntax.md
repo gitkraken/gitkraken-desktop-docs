@@ -1,10 +1,10 @@
 ---
-title: Filter Syntax
-description: Learn about pull request filter syntax in GitKraken Desktop.
+title: Pull Request Filter Syntax in GitKraken Desktop
+description: Use advanced filter syntax in GitKraken Desktop to find pull requests by title, author, label, branch, CI status, and more across supported integrations.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Use this syntax to filter pull requests in GitKraken Desktop and quickly find the items you need.
 

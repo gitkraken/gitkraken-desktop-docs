@@ -1,10 +1,10 @@
 ---
-title: GitKraken Desktop and Windows Subsystem for Linux (WSL)
-description: How to use GitKraken Desktop with Windows Subsystem for Linux (WSL)
+title: Use GitKraken Desktop with Windows Subsystem for Linux (WSL 2)
+description: Step-by-step guide to using GitKraken Desktop in WSL 2, including setup, installation, GUI support, known issues, and file system access.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Learn how to run GitKraken Desktop on Windows Subsystem for Linux (WSL 2), including GUI integration and installation requirements.
 

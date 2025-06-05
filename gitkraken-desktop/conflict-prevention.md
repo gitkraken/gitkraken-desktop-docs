@@ -1,10 +1,10 @@
 ---
-title: Conflict Prevention in GitKraken
-description: Learn about conflict prevention in GitKraken Desktop
+title: Conflict Prevention in GitKraken Desktop
+description: Discover how GitKraken Desktop prevents merge conflicts by alerting users to overlapping changes, target branch issues, and Org Member edits.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken Desktop’s **Conflict Prevention** helps you identify potential merge conflicts before they happen, reducing delays and easing collaboration.
 

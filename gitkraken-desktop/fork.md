@@ -1,10 +1,10 @@
 ---
-title: Forking GitHub Repos
-description: Fork your GitHub Repos using GitKraken Desktop.
+title: Fork GitHub Repositories from GitKraken Desktop
+description: Learn how to fork public or private GitHub repositories directly from GitKraken Desktop and manage them as remotes.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Forking allows you to create your own copy of a repository. You can use forks to propose changes, contribute to upstream projects, or maintain your own version of a project.
 

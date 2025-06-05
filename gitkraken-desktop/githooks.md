@@ -1,11 +1,11 @@
 ---
-title: Git Hooks
-description: Learn how to use Git hooks in GitKraken Desktop. Explore hook locations, custom paths, supported hooks, and an example setup.
+title: Git Hooks in GitKraken Desktop
+description: Learn how to create, configure, and manage Git hooks in GitKraken Desktop. Supports custom hook paths, error handling, and pre-push validations.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Git hooks are shell scripts that execute after Git events such as commits or pushes.
 

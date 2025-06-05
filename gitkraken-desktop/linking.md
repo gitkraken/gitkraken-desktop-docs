@@ -1,10 +1,10 @@
 ---
-title: Deep Linking
-description: Share links to specific remote repositories, commits, branches, and tags in GitKraken Desktop.
+title: Deep Linking in GitKraken Desktop
+description: Learn how to share and open deep links to specific branches, commits, tags, and repositories in GitKraken Desktop for faster collaboration.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Use deep links in GitKraken Desktop to share or open specific remote repositories, commits, branches, or tags. This allows your team to quickly access relevant project context with a single click.
 

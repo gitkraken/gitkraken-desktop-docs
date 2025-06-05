@@ -1,10 +1,10 @@
 ---
-title: Pull requests
-description: Create pull requests directly from GitKraken Desktop and merge one branch into another.
+title: Pull Requests in GitKraken Desktop
+description: Create, manage, and review pull requests in GitKraken Desktop. Supports GitHub, GitLab, Bitbucket, Azure DevOps, and includes templates, comments, and suggestions.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 A pull request (sometimes called merge requests) is a review workflow that lets you propose changes in one branch before merging it into another. GitKraken Desktop supports creating, managing, and reviewing pull requests with integrated Git services like GitHub, GitLab, Bitbucket, and Azure DevOps.
 
