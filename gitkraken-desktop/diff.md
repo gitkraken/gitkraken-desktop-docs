@@ -1,10 +1,10 @@
 ---
-title: Diff, Patch, Blame, and History
-description: Compare your changes using diffs in GitKraken Desktop. Learn how to access diffs, view file history and blame, and configure external diff tools.
+title: View Diffs, File History, and Blame in GitKraken Desktop
+description: Learn how to use GitKraken Desktop to compare changes with diffs, view file history and blame, configure external diff tools, and manage Git patches.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Compare changes within GitKraken Desktop using _diffs_. Learn how to access them, view file history or file blame, and use external tools.
 

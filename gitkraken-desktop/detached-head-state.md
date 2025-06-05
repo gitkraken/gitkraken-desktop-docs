@@ -1,11 +1,11 @@
 ---
-title: Detached HEAD State
-description: Learn how to enter detached HEAD state to view or experiment with past commits in GitKraken Desktop.
+title: Detached HEAD in GitKraken Desktop
+description: Learn how to safely enter, work in, and exit detached HEAD state in GitKraken Desktop. Includes recovery tips and commit preservation.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Detached HEAD state lets you check out any commit in GitKraken Desktop without creating a branch. This is useful for reviewing or experimenting with past changes without affecting your active branches.
 
