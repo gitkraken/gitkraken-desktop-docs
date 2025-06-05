@@ -1,11 +1,11 @@
 ---
-title: GitHub Actions
-description: GitHub Actions help you to automate your workflow
+title: Create and Manage GitHub Actions Workflows in GitKraken Desktop
+description: Learn how to automate tasks with GitHub Actions in GitKraken Desktop. Covers creating, editing, and deleting workflow files directly in your repository.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 [GitHub Actions](https://github.com/features/actions) is a service from GitHub that lets you automate tasks in your repository using workflow files. These workflows are written in YAML and stored in the `.github/workflows` directory of your repository.
 
