@@ -66,8 +66,8 @@ If fast-forwarding is not possible, delete the tag locally and remotely, then re
 ## Annotate a Tag
 
 To add a message to a tag:
-- Right-click a commit and choose <kbd>Create annotated tag here</kbd>
-- Or right-click an existing tag and select <kbd>Annotate tag</kbd>
+- Right-click a commit and choose <kbd>Create annotated tag here</kbd>.
+- Or right-click an existing tag and select <kbd>Annotate tag</kbd>.
 
 Annotated messages appear in the graph and Left Panel on hover.
 
@@ -90,7 +90,7 @@ To delete a tag from the remote:
 
 1. Right-click the tag in the Left Panel or Commit Graph.
 2. Select <kbd>Delete [tag name] from [remote]</kbd>.
-3. Confirm by clicking <kbd>Delete</kbd>.
+3. Confirm by clicking <kbd>Delete</kbd>
 
 > Deleting a tag is permanent and cannot be undone.
 
@@ -129,8 +129,8 @@ Use the filter bar in the Left Panel to search for tags.
 ## Show or Hide Tags Panel
 
 To toggle visibility of the Tags section:
-- Right-click any header in the Left Panel
-- Check or uncheck <kbd>Tags</kbd>
+- Right-click any header in the Left Panel.
+- Check or uncheck <kbd>Tags</kbd>.
 
 <figure>
   <img src="/wp-content/uploads/toggle-panes-2025.png" srcset="/wp-content/uploads/toggle-panes-2025@2x.png" class="help-center-img img-bordered">
