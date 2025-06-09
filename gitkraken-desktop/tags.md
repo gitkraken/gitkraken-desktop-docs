@@ -95,7 +95,7 @@ To delete a tag from the remote:
 > Deleting a tag is permanent and cannot be undone.
 
 <figure>
-  <img src="/wp-content/uploads/tag-annotation.png" srcset="/wp-content/uploads/delete-tag-context-menu-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/delete-tag-context-menu-2025.png" srcset="/wp-content/uploads/delete-tag-context-menu-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Right-click a tag to delete it locally or from a remote.</figcaption>
 </figure>
 
