@@ -93,6 +93,43 @@ You can then use the AI button again to generate a revised commit message.
 
 ***
 
+## AI-Powered Merge Conflict Resolution (Preview)
+
+Resolve merge conflicts faster with GitKraken AI.
+
+When you encounter a merge conflict, click into the conflicted file as usual. You’ll now see a new **Auto-resolve with AI** button that offers a context-aware resolution.
+
+<figure>
+<img src="/wp-content/uploads/Auto-resolve-with-AI-2025.png" srcset='/wp-content/uploads/Auto-resolve-with-AI-2025@2x.png 2x' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Click 'Auto-resolve with AI' to generate a suggested resolution</figcaption>
+</figure>
+
+GitKraken AI analyzes the conflicting code and proposes a solution, complete with:
+
+- A detailed explanation of the proposed resolution
+- A confidence level for each conflicted hunk
+
+You stay in control—review the AI output, make edits, or choose to accept or discard the changes. Use the confidence levels to decide which hunks might need more manual review.
+
+### Customize Conflict Resolution Prompts
+
+Want to fine-tune how AI handles your merge conflicts? You can add your own instructions for conflict resolution behavior.
+
+Go to: <kbd>Preferences > GitKraken AI > Conflict Resolution</kbd>
+
+<figure>
+<img src="/wp-content/uploads/custom-instructions-conflict-resolution-2025.png" srcset='/wp-content/uploads/custom-instructions-conflict-resolution-2025@2x.png 2x' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Set custom AI instructions for merge conflict resolution</figcaption>
+</figure>
+
+### Note on Preview Status
+
+This feature is currently in **Preview**. It's live and functional, but still evolving. 
+
+If GitKraken AI nails the merge, great! If it misses the mark, please share your experience or suggestions at [feedback.gitkraken.com](https://feedback.gitkraken.com).
+
+
+***
 ## AI-Generated Stash Messages
 
 Similar to commit messages, you can generate stash messages based on staged changes.
