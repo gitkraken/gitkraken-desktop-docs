@@ -1,6 +1,5 @@
 ---
 title: Committing Changes
-title: Committing in GitKraken Desktop
 description: Learn how to commit changes in GitKraken Desktop, including staging files, co-authoring, templates, amending commits, and resetting or reverting history.
 taxonomy:
     category: gitkraken-desktop
