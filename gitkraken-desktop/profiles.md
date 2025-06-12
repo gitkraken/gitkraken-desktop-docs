@@ -57,7 +57,7 @@ Profiles support unique integration connections. For example, use separate profi
 
 ### Change Profile Avatars
 
-If connected to [GitHub](/gitkraken-desktop/github-gitkraken-desktop/), your avatar will match your GitHub profile. Otherwise, GitKraken Desktop uses the [Gravatar](https://gravatar.com) linked to your profile’s email address.
+If connected to [GitHub](/gitkraken-desktop/github-gitkraken-desktop/), [GitHub Enterprise Server](/gitkraken-desktop/github-enterprise/),[GitLab](/gitkraken-desktop/gitlab-gitkraken-desktop/), [GitLab Self-Managed](/gitkraken-desktop/gitlab-self-hosted/), [Azure DevOps](/gitkraken-desktop/azure-devops/), or [Bitbucket](/gitkraken-desktop/bitbucket/) your avatar will match your GitHub profile. Otherwise, GitKraken Desktop uses the [Gravatar](https://gravatar.com) linked to your profile’s email address.
 
 To change your profile avatar:
 1. Click the profile icon in the top-right corner.
