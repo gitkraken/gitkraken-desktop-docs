@@ -251,6 +251,12 @@ Where <type> is one of:
 Only return the final commit message—no extra formatting.
 ```
 
+
+## Organization-wide AI Administration
+
+To disable GitKraken AI, restrict which AI models are available, or set up organization-wide API keys and custom URLs, see the [GitKraken Dev Security Controls](https://help.gitkraken.com/gk-dev/gk-dev-security-controls/).
+
+
 ***
 
 ## What’s Next?
