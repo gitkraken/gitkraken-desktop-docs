@@ -49,8 +49,9 @@ _"Because sometimes, even your conflicts need a mediator."_
 
 <br>
 
-> GitKraken also introduced Model Context Protocol (MCP) support via the GitKraken CLI! Spin up a local MCP server and connect AI tools like GitHub Copilot, Cursor, or Windsurf to surface real‑time code insights (e.g. list PRs, clean old branches, find your code expert) directly from your GitKraken Workspace. [Learn more.](https://www.gitkraken.com/blog/introducing-gitkraken-mcp)
+> **GitKraken also introduced Model Context Protocol (MCP) support via the GitKraken CLI!**<br>Spin up a local MCP server and connect AI tools like GitHub Copilot, Cursor, or Windsurf to surface real‑time code insights (e.g. list PRs, clean old branches, find your code expert) directly from your GitKraken Workspace. [Learn more.](https://www.gitkraken.com/blog/introducing-gitkraken-mcp)
 
+> **Heads up: Support for older Linux distros ending soon**<br>In an upcoming release, GitKraken Desktop will no longer support glibc versions older than 2.28. This affects users on older Linux distributions like Ubuntu 18, Debian 9, etc. If you're using one of these systems, please check these release notes before each update, and avoid updating GitKraken Desktop once support is dropped.
 
 ***
 
