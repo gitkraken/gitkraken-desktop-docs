@@ -15,6 +15,46 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 ***
 
+<a id="v11-2-0"></a>
+## Version 11.2.0
+
+<kbd>Tuesday, June 17th, 2025</kbd>
+
+<div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fQ23CWMoNCk?si=87vB8ooSU5GAn5wk" frameborder="0" allowfullscreen></iframe>
+</div>
+
+_"Because sometimes, even your conflicts need a mediator."_
+
+### New ✨
+- **AI-powered Merge Conflict Resolution (Preview):** Quickly handle conflicts by having AI suggest a resolution.
+   - When viewing a conflicted file, click `Auto-resolve with AI` to generate a suggested resolution in the Output panel.
+   - An explanation is provided for each conflict in the file with a confidence level so you can review with ease.
+- **Revert Individual Hunks from the Diff View**
+   - You can now revert specific hunks while viewing a diff in Hunk View mode. Selecting `Revert Hunk` will apply the inverse of that hunk’s changes to your working directory as unstaged changes.
+
+### Improvements 🙌
+ - The Commit Graph and Commit Details Panel now use provider avatars for GitLab, BitBucket, and Azure repos.
+ - Conflict Prevention menus now show the provider avatar of the user you have a potential conflict with.
+ - GitKraken AI:
+   - Added a cache of the last 5 AI explanations to prevent unnecessary token usage and give you quick access to explanations after navigating away from the Explain panel.
+   - Buttons that activate GitKraken AI now have a unified look and feel.
+   - GitKraken Desktop will now respect AI provider configurations and security controls enforced by your organization on [GitKraken.dev](https://gitkraken.dev)
+ - Experimental Feature - Git Executable:
+   - Fully support discard changes by also supporting cases for renamed file and multi-selection of added/renamed files.
+
+### Bug Fixes 🐛
+ - Fixed an issue when finishing a release or hotfix with Git Flow where changes did not merge into master after a conflict on develop.
+ - Fixed a crash when pressing the Generate button in SSH settings on Windows.
+
+<br>
+
+> **GitKraken also introduced Model Context Protocol (MCP) support via the GitKraken CLI!**<br>Spin up a local MCP server and connect AI tools like GitHub Copilot, Cursor, or Windsurf to surface real‑time code insights (e.g. list PRs, clean old branches, find your code expert) directly from your GitKraken Workspace. [Learn more.](https://www.gitkraken.com/blog/introducing-gitkraken-mcp)
+
+> **Heads up: Support for older Linux distros ending soon**<br>In an upcoming release, GitKraken Desktop will no longer support glibc versions older than 2.28. This affects users on older Linux distributions like Ubuntu 18, Debian 9, etc. If you're using one of these systems, please check these release notes before each update, and avoid updating GitKraken Desktop once support is dropped.
+
+***
+
 <a id="v11-1-1"></a>
 ## Version 11.1.1
 <kbd>Tuesday, May 15th, 2025</kbd>
