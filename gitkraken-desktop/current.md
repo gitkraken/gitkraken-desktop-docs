@@ -15,6 +15,28 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 ***
 
+<a id="v11-2-1"></a>
+## Version 11.2.1
+
+<kbd>Monday, July 7th, 2025</kbd>
+
+_"Tabsolutely better: smarter start, sharper avatars, speedier search."_
+
+_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-11-2-1) and see how it all works!_
+
+### Improvements 🙌
+- Revamped New Tab Experience:
+   - View more of your recent or favorite repositories and use search to quickly find and open any repo from the list.
+- Bitbucket Data Center avatars now show in the Commit Graph and Commit Details Panel.
+- Improved coverage for GitLab avatars in the Commit Graph.
+
+### Bug Fixes 🐛
+ - Fixed an issue where AI-generated PR titles and descriptions were not working correctly with some GitLab repositories.
+ - GitHub Student Pack users will no longer get "missing org header" errors when using GitKraken AI features.
+ - Fixed an issue where auto-resolving a conflict with AI did not work with a conflict generated from a cherry-pick or a stash.
+
+***
+
 <a id="v11-2-0"></a>
 ## Version 11.2.0
 
