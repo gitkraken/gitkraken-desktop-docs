@@ -34,14 +34,7 @@ To authenticate with Azure DevOps:
   <figcaption style="color:#888; text-align:center">Accessing integrations via Preferences</figcaption>
 </figure>
 
-2. Alternatively, from the <kbd>New Tab</kbd> view, click <kbd>See all the integrations</kbd> under <strong><i class="fa-solid fa-plug"></i> Integrations</strong>.
-
-<figure>
-  <img src="/wp-content/uploads/see-all-integrations-2025.png" srcset="/wp-content/uploads/see-all-integrations-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Viewing integrations from the New Tab</figcaption>
-</figure>
-
-3. Choose **Azure DevOps** and click <button class='button button--success button--ui button--nolink'>Connect to Azure DevOps</button>.
+2. Choose **Azure DevOps** and click <button class='button button--success button--ui button--nolink'>Connect to Azure DevOps</button>.
 
 <figure>
   <img src="/wp-content/uploads/connect-azure-devops-2025.png" srcset="/wp-content/uploads/connect-azure-devops-2025@2x.png" class="help-center-img img-bordered">

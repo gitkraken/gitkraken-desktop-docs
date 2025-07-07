@@ -35,14 +35,7 @@ To authenticate with GitLab:
   <figcaption style="color:#888; text-align:center">Access GitLab integration from Preferences</figcaption>
 </figure>
 
-2. From the <kbd>New Tab</kbd> view, click <kbd>GitLab</kbd> under <strong>Integrations</strong>.
-
-<figure>
-  <img src="/wp-content/uploads/see-all-integrations-2025.png" srcset="/wp-content/uploads/see-all-integrations-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Open integrations from the New Tab screen</figcaption>
-</figure>
-
-3. In the integration window, select _GitLab.com_ and click <button class='button button--success button--ui button--nolink'>Connect to GitLab</button>.
+2. In the integration window, select _GitLab.com_ and click <button class='button button--success button--ui button--nolink'>Connect to GitLab</button>.
 
 <figure>
   <img src="/wp-content/uploads/connect-gitlab-2025.png" srcset="/wp-content/uploads/connect-gitlab-2025@2x.png" class="help-center-img img-bordered">

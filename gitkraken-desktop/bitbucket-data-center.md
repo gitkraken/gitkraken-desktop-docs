@@ -38,14 +38,7 @@ To authenticate:
   <figcaption style="color:#888; text-align:center">Open Preferences to access Integrations</figcaption>
 </figure>
 
-2. From the <kbd>New Tab</kbd>, click <kbd>See all the integrations</kbd>.
-
-<figure>
-  <img src="/wp-content/uploads/see-all-integrations-2025.png" srcset="/wp-content/uploads/see-all-integrations-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Open all available integrations from New Tab</figcaption>
-</figure>
-
-3. Choose **Bitbucket Data Center**. Enter your host domain and click <button class='button button--success button--ui button--nolink'>Generate a token on Bitbucket Data Center</button>. Ensure the token has appropriate permissions.
+2. Choose **Bitbucket Data Center**. Enter your host domain and click <button class='button button--success button--ui button--nolink'>Generate a token on Bitbucket Data Center</button>. Ensure the token has appropriate permissions.
 
 <figure>
   <img src="/wp-content/uploads/connecting-bb-data-center-2025.png" srcset="/wp-content/uploads/connecting-bb-data-center-2025@2x.png" class="help-center-img img-bordered">
