@@ -22,8 +22,6 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 
 _"Tabsolutely better: smarter start, sharper avatars, speedier search."_
 
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-11-2-1) and see how it all works!_
-
 ### Improvements 🙌
 - Revamped New Tab Experience:
    - View more of your recent or favorite repositories and use search to quickly find and open any repo from the list.
