@@ -5,7 +5,11 @@ description: Automations for automating repository actions like pull requests an
 taxonomy:
     category: gitkraken-desktop
 
+
+
 ---
+
+# Automations
 
 GitKraken Automations makes it easier to manage your team’s workflows by codifying best practices, automating repetitive tasks, and proactively highlighting potential issues for you.
 
