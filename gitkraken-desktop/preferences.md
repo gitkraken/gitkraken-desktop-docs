@@ -1,10 +1,10 @@
 ---
-title: Preferences
-description: Customize your GitKraken Desktop experience to match your workflow and preferences.
+title: GitKraken Desktop Preferences | Customize Settings & Workflow
+description: Explore GitKraken Desktop’s Preferences to control themes, integrations, profiles, commit signing, notifications, terminal settings, and more.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Navigate to <i class="fas fa-cog"></i> <kbd><strong>Preferences</strong></kbd> in GitKraken Desktop to tailor your environment. Here's what each major section controls.
 

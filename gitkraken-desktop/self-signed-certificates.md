@@ -1,10 +1,10 @@
 ---
-title: Self-Signed Certificates
-description: How to install a self-signed certificate that is recognized by GitKraken.
+title: Installing Self-Signed Certificates for GitKraken Desktop
+description: Learn how to install a self-signed SSL certificate so GitKraken Desktop can recognize it. Follow step-by-step guides for Windows, macOS, and Linux.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken's remote hosting platform integrations may require users to have a certificate in place. Follow the instructions below to add a certificate to your local certificate store.
 

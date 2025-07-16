@@ -1,11 +1,11 @@
 ---
-title: Configure GitKraken Self-Hosted Server
-description: Instructions for configuring GitKraken Self-Hosted Server
+title: Configure GitKraken Self-Hosted Server (LDAP, SMTP, and Super User)
+description: Step-by-step instructions to configure GitKraken Self-Hosted Server. Set up licensing, LDAP authentication, SMTP server, and Super User access.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 After installing GitKraken Self-Hosted Server (also known as Enterprise Self-Hosted), you're ready to configure your server.
 

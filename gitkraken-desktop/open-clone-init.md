@@ -1,10 +1,10 @@
 ---
-title: Open, Clone, and Init
-description: Learn the basics of GitKraken Desktop, like initializing or cloning projects!
+title: Open, Clone, or Initialize a Git Repository in GitKraken Desktop
+description: Learn how to open, clone, or initialize repositories in GitKraken Desktop. Get started with repository management and project setup.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Each user will need to open, clone, or initialize a repository in GitKraken Desktop. This guide explains how.
 

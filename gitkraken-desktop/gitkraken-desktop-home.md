@@ -1,11 +1,11 @@
 ---
-title: GitKraken Desktop Support & Documentation Hub
-description: Your source for GitKraken Desktop documentation, tutorials, and support
+title: GitKraken Desktop Documentation & Support | Master Git with GitKraken
+description: Learn Git with GitKraken Desktop. Explore tutorials, installation guides, Git basics, integrations, release notes, FAQs, and more from the GitKraken Help Center.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Welcome to the GitKraken Desktop Help Center, your all-in-one source for mastering the world’s most legendary Git GUI.
 

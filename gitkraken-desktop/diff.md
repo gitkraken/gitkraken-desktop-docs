@@ -1,10 +1,10 @@
 ---
-title: Diff, Patch, Blame, and History
-description: Compare your changes using diffs in GitKraken Desktop. Learn how to access diffs, view file history and blame, and configure external diff tools.
+title: View Diffs, File History, and Blame in GitKraken Desktop
+description: Learn how to use GitKraken Desktop to compare changes with diffs, view file history and blame, configure external diff tools, and manage Git patches.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Compare changes within GitKraken Desktop using _diffs_. Learn how to access them, view file history or file blame, and use external tools.
 
@@ -68,6 +68,19 @@ Displays only the changed blocks of a file.
   <img src='/wp-content/uploads/hunk-2025.png' class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Hunk view highlights change blocks without full context.</figcaption>
 </figure>
+
+#### Revert Hunks
+
+GitKraken offers a convenient option in the diff view: **Revert Hunks**.
+
+In **Hunk View**, you can roll back a specific block of changes. Click the **Revert** button next to any hunk to apply an equal and opposite change to your working directory.
+
+<figure>
+<img src="/wp-content/uploads/revert-hunk-2025.png" srcset="/wp-content/uploads/revert-hunk-2025@2x.png 2x" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<figcaption style="text-align: center; color: #888">Click the Revert button to undo a specific hunk directly from the diff view.</figcaption>
+</figure>
+
+This lets you revert only what you need—no reset or manual edits required.
 
 ### Inline View
 

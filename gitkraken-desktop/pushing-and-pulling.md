@@ -1,10 +1,10 @@
 ---
-title: Pushing and Pulling
-description: Pushing and pulling data from remote repositories.
+title: Push, Pull, and Fetch in GitKraken Desktop
+description: Learn how to push, pull, and fetch changes with GitKraken Desktop. Understand upstream branches, default pull behavior, and drag-and-drop actions.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Push, pull, and fetch operations are essential for synchronizing local work with remote repositories in GitKraken Desktop.
 

@@ -1,11 +1,11 @@
 ---
-title: GitKraken Desktop & GitLab Self-Managed Issues Integration
-description: Learn how to access GitLab Self-Managed Issues from GitKraken Desktop
+title: GitKraken Desktop + GitLab Self-Managed Issues Integration
+description: Connect GitKraken with GitLab Self-Managed to preview, manage, and filter issues directly from your Git workflow.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken Desktop supports integration with GitLab Self-Managed Issues, helping teams track work and manage issues alongside their repositories.
 

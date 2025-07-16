@@ -1,10 +1,10 @@
 ---
-title: Upgrade GitKraken Self-Hosted Server
-description: Learn how to upgrade your GitKraken Self-Hosted Server instance
+title: Upgrade GitKraken Self-Hosted Server (Docker & Client Instructions)
+description: Step-by-step guide to upgrading GitKraken Self-Hosted Server, Docker images, client installers, and license file—including how to reset the Super User password.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 The upgrade procedure is the same whether you're running GitKraken Self-Hosted on CentOS, Ubuntu, or RHEL7.
 

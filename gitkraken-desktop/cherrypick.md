@@ -1,11 +1,11 @@
 ---
-title: Cherry Picking Commits
-description: Learn how to use cherry pick to apply commits across branches in GitKraken Desktop.
+title: Cherry Pick Commits in GitKraken Desktop
+description: Learn how to cherry pick single or multiple commits across branches in GitKraken Desktop, including using the interactive cherry-pick tool.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Use cherry pick to apply commits from one branch onto another in GitKraken Desktop. This is especially useful when you accidentally commit to the wrong branch or want to apply specific changes without merging.
 

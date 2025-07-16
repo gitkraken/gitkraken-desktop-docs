@@ -1,10 +1,10 @@
 ---
-title: Self-Hosted Server Setup
-description: Learn about the installation and requirements of GitKraken On-Premise Self-Hosted Server.
+title: Set Up GitKraken Self-Hosted Server (On-Premise)
+description: Learn how to install and configure GitKraken On-Premise Self-Hosted Server, including system requirements, supported OS versions, and benefits for secure environments.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 ## Overview
 

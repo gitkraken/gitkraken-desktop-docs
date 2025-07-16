@@ -1,10 +1,10 @@
 ---
-title: Branching and Merging
-description: Learn about branching and merging in GitKraken Desktop.
+title: Branch, Merge, and Rebase in GitKraken Desktop
+description: Learn how to create branches, merge code, and rebase commits using GitKraken Desktop. Includes merge conflict resolution and external tool setup.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Learn how to branch, merge, and rebase in GitKraken Desktop.
 

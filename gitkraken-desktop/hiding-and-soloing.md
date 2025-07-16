@@ -1,10 +1,10 @@
 ---
-title: Hiding and Soloing
-description: Learn how to manage visual clutter in GitKraken Desktop using Hide and Solo features in the Left Panel.
+title: Hide and Solo Branches in GitKraken Desktop
+description: Learn how to reduce visual clutter in GitKraken Desktop by hiding or soloing branches, tags, remotes, and stashes from the Left Panel.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 The Left Panel lets you control the Commit Graph view for better focus. Use _Hide_ to temporarily remove references, or _Solo_ to spotlight specific branches.
 

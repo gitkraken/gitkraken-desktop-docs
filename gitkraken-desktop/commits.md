@@ -1,10 +1,10 @@
 ---
 title: Committing Changes
-description: Commit to save your work with GitKraken Desktop easily when changing files. Learn how to squash, amend, and save work when committing.
+description: Learn how to commit changes in GitKraken Desktop, including staging files, co-authoring, templates, amending commits, and resetting or reverting history.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken Desktop simplifies the Git commit process by helping you stage, commit, and push your work from a visual interface.
 

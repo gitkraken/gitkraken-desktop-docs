@@ -1,10 +1,10 @@
 ---
-title: GitKraken Desktop GitLab Self-Managed Integration
-description: Easily integrate GitKraken with your GitLab Self-Managed repository. Learn how to link GitKraken and GitLab Self-Managed by following these steps.
+title: GitLab Self-Managed Integration with GitKraken Desktop
+description: Connect GitKraken Desktop with your GitLab Self-Managed server to manage repositories, SSH keys, and pull requests using personal access tokens.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 <div class='embed-container embed-container--16-9'>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/BhIX7fGSM8k?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -43,14 +43,7 @@ To authenticate:
   <figcaption style="color:#888; text-align:center">Open Preferences to access Integrations</figcaption>
 </figure>
 
-2. Or from the <kbd>New Tab</kbd> view, click <kbd>See all the integrations</kbd>.
-
-<figure>
-  <img src="/wp-content/uploads/see-all-integrations-2025.png" srcset="/wp-content/uploads/see-all-integrations-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Open available integrations from the New Tab</figcaption>
-</figure>
-
-3. Enter your GitLab Self-Managed host domain. Click <button class='button button--success button--ui button--nolink'>Generate a token on GitLab</button> and follow the link.
+2. Choose **Gitlab Self-Managed**. Enter your GitLab Self-Managed host domain. Click <button class='button button--success button--ui button--nolink'>Generate a token on GitLab</button> and follow the link.
 
 <figure>
   <img src="/wp-content/uploads/connect-gitlab-self-managed-2025.png" srcset="/wp-content/uploads/connect-gitlab-self-managed-2025@2x.png" class="help-center-img img-bordered">

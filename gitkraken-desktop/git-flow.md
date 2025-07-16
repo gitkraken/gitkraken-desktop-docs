@@ -1,11 +1,11 @@
 ---
-title: Gitflow
-description: Gitflow helps organize your repository history, making it easier to manage releases, bug fixes, and features.
+title: Gitflow in GitKraken Desktop
+description: Learn how to use Gitflow in GitKraken Desktop to manage features, releases, and hotfixes with organized branching workflows.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Gitflow helps organize your repository history, making it easier to manage releases, bug fixes, and features.
 

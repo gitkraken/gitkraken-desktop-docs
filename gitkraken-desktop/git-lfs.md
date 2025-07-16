@@ -1,11 +1,11 @@
 ---
-title: Git LFS
-description: Learn all about Git LFS within GitKraken Desktop.
+title: Using Git LFS in GitKraken Desktop
+description: Learn how to manage large files with Git LFS in GitKraken Desktop. Covers installation, initialization, configuration, and common troubleshooting.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 ## What is Git LFS?
 

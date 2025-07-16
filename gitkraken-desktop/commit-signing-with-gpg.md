@@ -1,11 +1,11 @@
 ---
-title: Commit Signing
-description: Learn how to sign your commits in GitKraken Desktop
+title: Sign Commits with GPG or SSH in GitKraken Desktop
+description: Learn how to verify your commits using GPG or SSH keys in GitKraken Desktop. Includes setup, configuration, and troubleshooting for Git commit signing.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 ## What is Commit Signing?
 

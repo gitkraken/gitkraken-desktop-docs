@@ -1,12 +1,13 @@
 ---
 
-title: Security Information for GitKraken Desktop
-description: Data Security Information for GitKraken Desktop
+title: GitKraken Desktop – Data Security and Storage Practices
+description: Learn how GitKraken Desktop collects, transmits, and stores user and repository data securely. Includes encryption methods, data storage locations, and compliance details.
 taxonomy:
     category: gitkraken-desktop
 
 ---
 
+## Information Collection/Storage
 Below is a chart outlining some basic security information regarding the type of data that we collect and how we store it.
 
 <table>
@@ -65,3 +66,16 @@ Below is a chart outlining some basic security information regarding the type of
   </tbody>
 </table>
 
+## SOC2
+Gitkraken and it’s tools are now SOC 2 Certified! If you would like to request a copy of our SOC2 report, please visit our [Trust Center](https://trust.gitkraken.com/) to get the request process started. Please note that in order to provide a copy of the report, we will need you to sign an MNDA.
+
+<div class="bbb-callout bbb--info">
+    <div class="irow">
+    <div class="ilogobox">
+        <span class="logoimg"></span>
+    </div>
+    <div class="imsgbox">
+       SOC 2 reports are only available for Business and Enterprise customers.
+    </div>
+    </div>
+</div>

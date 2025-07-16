@@ -1,10 +1,10 @@
 ---
-title: Interface Basics
-description: Learn the basics of working with the GitKraken Desktop interface.
+title: GitKraken Desktop Interface Guide | Toolbar, Panels, and Graph
+description: Learn how to navigate the GitKraken Desktop interface. Explore the toolbar, Left Panel, Commit Panel, and Commit Graph with visual guides and tips.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken Desktop's interface simplifies Git usage by providing a visual layout of core actions and repository elements.
 

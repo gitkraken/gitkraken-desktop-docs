@@ -1,11 +1,11 @@
 ---
 title: GitKraken Desktop & Jira Issues Integration
-description: Learn how to access Jira Issues from GitKraken Desktop
+description: Learn how to connect and manage Jira Issues in GitKraken Desktop. Preview, edit, and create issues, filter with JQL, and sync changes with Jira Cloud or Data Center.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken Desktop makes it easy to integrate with Jira Cloud and Jira Data Center.
 

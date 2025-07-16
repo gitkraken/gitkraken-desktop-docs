@@ -1,10 +1,10 @@
 ---
-title: Activity Logs 
-description: Learn where to find feedback Activity Logs in GitKraken Desktop.
+title: View Activity Logs in GitKraken Desktop
+description: Learn how to view real-time Git actions, application events, and Git hook feedback using Activity Logs in GitKraken Desktop.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Learn how to view all Git and application-level actions made in GitKraken Desktop using Activity Logs.
 

@@ -1,10 +1,10 @@
 ---
-title: GitKraken Desktop & Bitbucket Integration
-description: Integrate GitKraken with your Bitbucket repository by following these steps.
+title: Bitbucket Integration with GitKraken Desktop
+description: Connect GitKraken Desktop with Bitbucket to clone repositories, manage pull requests, and configure SSH authentication with OAuth or token-based access.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken Desktop allows you to authenticate with Bitbucket to help you locate repositories for cloning, add remotes, and manage pull requests more efficiently.
 
@@ -34,14 +34,7 @@ To authenticate with Bitbucket:
   <figcaption style="color:#888; text-align:center">Open Preferences to configure integrations</figcaption>
 </figure>
 
-2. From the <kbd>New Tab</kbd> view, click <kbd>See all the integrations</kbd> under <strong>Integrations</strong>.
-
-<figure>
-  <img src="/wp-content/uploads/see-all-integrations-2025.png" srcset="/wp-content/uploads/see-all-integrations-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Accessing the Integrations panel</figcaption>
-</figure>
-
-3. Select <strong>Bitbucket.org</strong> and click <button class='button button--success button--ui button--nolink'>Connect to Bitbucket</button>.
+2. Select <strong>Bitbucket.org</strong> and click <button class='button button--success button--ui button--nolink'>Connect to Bitbucket</button>.
 
 <figure>
   <img src="/wp-content/uploads/connect-bitbucket-2025.png" srcset="/wp-content/uploads/connect-bitbucket-2025@2x.png" class="help-center-img img-bordered">

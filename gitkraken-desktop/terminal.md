@@ -1,10 +1,10 @@
 ---
-title: Terminal
-description: A Git-enhanced terminal experience with GitKraken’s powerful visual Git commit graph
+title: GitKraken Terminal Guide
+description: Learn how to use GitKraken’s in-app terminal to run Git commands, use auto-complete, and customize shell preferences.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Open the Terminal to run Git CLI commands while viewing the Commit Graph.
 

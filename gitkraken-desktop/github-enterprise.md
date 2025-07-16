@@ -1,10 +1,10 @@
 ---
-title: GitKraken Desktop & GitHub Enterprise Server Integration
-description: Easily integrate GitKraken with your GitHub Enterprise Server repository. Learn how to link GitKraken and GitHub Enterprise Server by following these steps.
+title: GitHub Enterprise Integration with GitKraken Desktop
+description: Connect GitKraken Desktop with your GitHub Enterprise Server to manage repos, pull requests, SSH keys, and profiles using OAuth or access tokens.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 GitKraken allows you to connect to GitHub Enterprise Server to streamline development workflows. Integration enables quick repository access, authentication, and pull request management.
 
@@ -39,14 +39,7 @@ To authenticate with GitHub Enterprise Server:
   <figcaption style="color:#888; text-align:center">Accessing Preferences and Integrations</figcaption>
 </figure>
 
-2. In the <kbd>New Tab</kbd> view, you can also click <kbd>See all the integrations</kbd> under <strong>Integrations</strong>.
-
-<figure>
-  <img src="/wp-content/uploads/see-all-integrations-2025.png" srcset="/wp-content/uploads/see-all-integrations-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Alternative access to integrations from the New Tab</figcaption>
-</figure>
-
-3. Enter your GitHub Enterprise Server host domain and follow the link to generate an access token.
+2. Enter your GitHub Enterprise Server host domain and follow the link to generate an access token.
 
 <figure>
   <img src="/wp-content/uploads/gkc-github-enterprise-server-integration.png" class="help-center-img img-bordered">

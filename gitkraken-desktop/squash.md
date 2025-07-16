@@ -1,11 +1,11 @@
 ---
-title: Squash Commits
-description: Learn how to squash commits to simplify your Git history.
+title: Squash Git Commits in GitKraken Desktop
+description: Learn how to squash commits to combine multiple changes into one using GitKraken Desktop. Clean up Git history before pushing or finalizing branches.
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Squashing lets you combine multiple commits into one to clean up your Git history. This is helpful before pushing to a shared branch or finalizing a feature branch.
 

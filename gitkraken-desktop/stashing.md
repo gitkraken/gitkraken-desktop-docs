@@ -1,10 +1,10 @@
 ---
-title: Stash
-description: Save your changes for later with stashing in GitKraken Desktop.
+title: How to Stash Changes in GitKraken Desktop
+description: Save and manage your uncommitted changes with stashing in GitKraken Desktop. Learn to stash, pop, name, edit, and apply partial stashes using the GUI.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Save your uncommitted changes for later by creating a stash. Stashing is useful when you need to switch context quickly or test something without committing unfinished work.
 

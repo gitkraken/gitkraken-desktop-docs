@@ -1,10 +1,10 @@
 ---
-title: Tags
-description: Learn how to mark key commits and manage Git tags in GitKraken Desktop.
+title: Manage Git Tags in GitKraken Desktop
+description: Learn how to create, annotate, move, and share Git tags in GitKraken Desktop to mark releases and key commits.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Tags <em class='context-menu'><img style='transform:rotate(180deg);height:1em;' src='/wp-content/uploads/gk-tag-icon.svg'></em> are labels that point to a specific commit in your Git history. They’re useful for marking version releases or significant project milestones.
 
@@ -66,8 +66,8 @@ If fast-forwarding is not possible, delete the tag locally and remotely, then re
 ## Annotate a Tag
 
 To add a message to a tag:
-- Right-click a commit and choose <kbd>Create annotated tag here</kbd>
-- Or right-click an existing tag and select <kbd>Annotate tag</kbd>
+- Right-click a commit and choose <kbd>Create annotated tag here</kbd>.
+- Or right-click an existing tag and select <kbd>Annotate tag</kbd>.
 
 Annotated messages appear in the graph and Left Panel on hover.
 
@@ -75,6 +75,43 @@ Annotated messages appear in the graph and Left Panel on hover.
   <img src="/wp-content/uploads/tag-annotation.png" srcset="/wp-content/uploads/tag-annotation.png" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Hover to preview an annotated tag</figcaption>
 </figure>
+
+***
+
+## Delete a Tag
+
+To delete a tag locally:
+
+1. Right-click the tag in the Left Panel or Commit Graph.
+2. Select <kbd>Delete [tag name] locally</kbd>.
+3. Confirm by clicking <kbd>Delete</kbd>.
+
+To delete a tag from the remote:
+
+1. Right-click the tag in the Left Panel or Commit Graph.
+2. Select <kbd>Delete [tag name] from [remote]</kbd>.
+3. Confirm by clicking <kbd>Delete</kbd>
+
+> Deleting a tag is permanent and cannot be undone.
+
+<figure>
+  <img src="/wp-content/uploads/delete-tag-context-menu-2025.png" srcset="/wp-content/uploads/delete-tag-context-menu-2025@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Right-click a tag to delete it locally or from a remote.</figcaption>
+</figure>
+
+***
+
+## Rename a Tag
+
+GitKraken Desktop does not support renaming tags directly. To rename a tag, delete the existing one and create a new tag with the desired name.
+
+1. Right-click the tag in the Left Panel or Commit Graph.
+2. Select <kbd>Delete [tag name] locally</kbd>.
+3. If the tag also exists on a remote, right-click it again and select <kbd>Delete [tag name] from [remote]</kbd>.
+4. Right-click the commit where you want to place the tag.
+5. Select <kbd>Create tag here</kbd> and enter the new name.
+
+> This workaround reflects Git’s limitations—Git tags are immutable once created.
 
 ***
 
@@ -92,8 +129,8 @@ Use the filter bar in the Left Panel to search for tags.
 ## Show or Hide Tags Panel
 
 To toggle visibility of the Tags section:
-- Right-click any header in the Left Panel
-- Check or uncheck <kbd>Tags</kbd>
+- Right-click any header in the Left Panel.
+- Check or uncheck <kbd>Tags</kbd>.
 
 <figure>
   <img src="/wp-content/uploads/toggle-panes-2025.png" srcset="/wp-content/uploads/toggle-panes-2025@2x.png" class="help-center-img img-bordered">

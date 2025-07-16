@@ -1,10 +1,10 @@
 ---
-title: Themes
-description: Using and creating themes in GitKraken Desktop.
+title: GitKraken Desktop Themes | Customize Light, Dark & Custom UI
+description: Learn how to switch between light and dark themes in GitKraken Desktop, sync with your system theme, and create custom themes using JSONC files.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 <figure>
   <div class='embed-container embed-container--16-9'>

@@ -1,6 +1,7 @@
 ---
-title: GitKraken Desktop FAQ
-description: Frequently Asked Questions about GitKraken Desktop
+title: GitKraken Desktop FAQ | Common Questions & Troubleshooting
+description: Get answers to frequently asked questions about GitKraken Desktop. Learn about features, integrations, installations, SSH issues, and troubleshooting steps.
+
 taxonomy:
     category: gitkraken-desktop
 ---

@@ -1,10 +1,10 @@
 ---
-title: Adding and Removing Files
-description: Learn how to add and remove files in GitKraken Desktop.
+title: Add, Delete, and Filter Files in GitKraken Desktop
+description: Learn how to create, delete, and manage files and folders in GitKraken Desktop using the Command Palette, context menu, and file filter.
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: June 2025</kbd>
 
 Learn how to add, create folders, delete, and filter files using GitKraken Desktop.
 
