@@ -1,7 +1,7 @@
 ---
 
-title: Workspaces
-description: Workspaces allow you to create groups of repositories.
+title: Automations
+description: Automations for automating repository actions like pull requests and issue management
 taxonomy:
     category: gitkraken-desktop
 
