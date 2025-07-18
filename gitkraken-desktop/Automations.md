@@ -1,144 +1,163 @@
 ---
-
 title: Automations
 description: Automations for automating repository actions like pull requests and issue management
 taxonomy:
     category: gitkraken-desktop
 
-
-
 ---
+<kbd>Last updated: July 2025</kbd>
 
-# Automations
+GitKraken Automations helps you streamline your team’s workflows by codifying best practices, eliminating repetitive tasks, and proactively flagging potential issues.
 
-GitKraken Automations makes it easier to manage your team’s workflows by codifying best practices, automating repetitive tasks, and proactively highlighting potential issues for you.
+## Automation Examples
 
+Teams use Automations to reduce manual effort, enforce standards, and build scalable, repeatable workflows. Here are some common use cases:
 
-
-## Auotmation Examples
-
-These are just a few ways teams are already using Automations to reduce manual effort, enforce best practice standards, and create more scalable, repeatable workflows.
-- Safe Deployments: Add a checklist for database migrations to ensure smooth rollouts.
-- Critical Code Reviews: Assign the right engineers to review high-impact areas of the codebase, such as a payment service.
-- Security Checks: Flag changes to sensitive areas like authentication and ensure a security review is completed.
-- Refactoring Guardrails: Prevent conflicting changes during refactors and follow up with post-refactor maintenance tasks.
-- SOC 2 Compliance: Automate checklists for encryption, security scans, and documentation to meet regulatory standards.
-- DevOps Enhancements: Simplify deployment pipelines, enforce pre-deployment quality checks, and manage infrastructure-as-code changes with Automation workflows tailored to your processes.
+- **Safe Deployments**: Add a checklist for database migrations to ensure smooth rollouts.
+- **Critical Code Reviews**: Automatically assign the right engineers to review high-impact areas of the codebase, such as a payment service.
+- **Security Checks**: Flag changes to sensitive areas like authentication and ensure a security review is completed.
+- **Refactoring Guardrails**: Prevent conflicting changes during refactors and trigger follow-up maintenance tasks.
+- **SOC 2 Compliance**: Automate checklists for encryption, security scans, and documentation to meet regulatory standards.
+- **DevOps Enhancements**: Streamline deployment pipelines, enforce pre-deployment quality checks, and manage infrastructure-as-code updates.
 
 <div class='callout callout--warning'>
     <p>
         <strong>Note:</strong>
-           Currently, Automations supports GitHub and GitLab repositories.
+        Currently, Automations supports GitHub and GitLab repositories.
     </p>
 </div>
-
 
 ## Get Started with Automations
 
-To get started with Automations simply login to [gitkraken.dev](https://gitkraken.dev/automations/list?product=gitkraken&source=help_center) and select Automations on the left side menu. If this is your first automation you will be directed to our get started landing page, from here you can create a new automation or select a template from the suggestion list. 
+To begin, log in to [GitKraken Automations](https://gitkraken.dev/automations/list?product=gitkraken&source=help_center) and select <strong>Automations</strong> from the left-hand menu.
 
-<img src="/wp-content/uploads/Createautomations-scaled.jpeg" class="help-center-img img-bordered">
+If this is your first time using Automations, you'll see a start page where you can either create a new automation or choose from a list of suggested templates.
 
+<figure>
+  <img src="/wp-content/uploads/Createautomations-scaled.jpeg" alt="Create Automations landing page" class="help-center-img img-bordered">
+</figure>
 
-### Create a Automation
+### Create an Automation
 
-To create a Automation, select <button class="button button--success button--ui button--nolink">+ Create Automation</button>.
+To create an automation:
 
-Then, create a name for your automation. Next, using the Provider drop down select either GitHub or GitLab as your hosting provider. And finally locate the repository you wish to apply the automation to in the Repository drop down. If you wish for the Automation to also apply to draft pull requests please select the checkbox. 
+1. Click <button class="button button--success button--ui button--nolink">+ Create Automation</button>.
+2. Enter a name for your automation.
+3. From the **Provider** dropdown, select either `GitHub` or `GitLab`.
+4. Use the **Repository** dropdown to choose the repository you want to apply the automation to.
+5. (Optional) To include draft pull requests, check the corresponding box.
 
-<img src="/wp-content/uploads/Createautomations2.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/Createautomations2.png" alt="Automation creation screen" class="help-center-img img-bordered">
+</figure>
 
 <div class='callout callout--warning'>
     <p>
         <strong>Note:</strong>
-            A webhook will be set up on the selected repository in order to trigger when saving the automation.
+        A webhook will be set up on the selected repository to trigger events when the automation is saved.
     </p>
 </div>
-
 
 ## Conditions
 
-Next up, you will set up conditions, which are a list of criteria that determine when a Trigger should execute. We currently support 3 types of conditions: "File location", "File contents", and "Pull Request"
+Conditions define when a trigger should execute. Automations currently support the following condition types:
 
-<img src="/wp-content/uploads/Createautomations3.png" class="help-center-img img-bordered">
+- **File Location**
+- **File Content**
+- **Pull Request**
 
-### Boolean logic
+<figure>
+  <img src="/wp-content/uploads/Createautomations3.png" alt="Set up conditions screenshot" class="help-center-img img-bordered">
+</figure>
 
-You can choose whether all or any of the conditions you set up apply to your Trigger:
+### Boolean Logic
 
-<img src="/wp-content/uploads/Createautomations4.png" class="help-center-img img-bordered">
+Choose whether **all** conditions or **any** conditions must be met for the trigger to execute.
 
-### File Location  
+- **All conditions**: The trigger fires only if every condition is met.
+- **Any condition**: The trigger fires if at least one condition is met.
 
-The Following File Location trigger options can be selected: 
-- File name condition: This condition matches the name of files in your repository.
-- File path condition: This condition matches the path of files in your repository.
-- File added in folder condition: This condition matches when files are added to a specific folder in a pull request. For example, the filter "File added in folder" with the operator "folder path equals" with the value "src/components/icons" would match any file that was added in that icons folder (or subfolders).
+<figure>
+  <img src="/wp-content/uploads/Createautomations4.png" alt="Boolean logic selection" class="help-center-img img-bordered">
+</figure>
+
+### File Location Conditions
+
+- **File name**: Matches filenames in the repository.
+- **File path**: Matches full paths of files in the repository.
+- **File added in folder**: Matches when files are added to a specified folder in a pull request. For example, using:
+  - Filter: `File added in folder`
+  - Operator: `Folder path equals`
+  - Value: `src/components/icons`
+
+  This would match any file added within the `icons` folder or its subfolders.
 
 <div class='callout callout--warning'>
     <p>
         <strong>Note:</strong>
-           A file path is different from a file name. For example: *src/app/index.ts* is a file path, while *index.ts* is a file name.
+        A file path includes the directory structure (e.g., <code>src/app/index.ts</code>), while a file name is just the filename (e.g., <code>index.ts</code>).
     </p>
 </div>
 
+### File Content Conditions
 
-### File Contents
+- **Old Code**: Matches modified lines *before* the code change (red in split diff view).
+- **New Code**: Matches modified lines *after* the code change (green in split diff view).
+- **New and Old Code**: Matches both sides of the split diff view.
 
-The Following File Contet trigger options can be selected: 
-- Old Code condition: Matches against modified lines of code from before your code change: the red on the left-hand side of a split view diff.
-- New Code condition: Matches against modified lines of code from after your code change: the green on the right-hand side of a split view diff.
-- New and Old Code condition: Matches both sides of the diff view
+### Pull Request Conditions
 
-### Pull Request
-
-The Following Pull Request trigger options can be selected: 
-- Number of changed files condition: This condition matches when the number of files that are part of this pull request satisfy the inequality. 
-- PR Author condition: This condition matches the author of the pull request. This automation will only run if the author matches this condition.
-- Labels on the PR condition: This condition matches the GitHub Labels specified.
-
+- **Number of changed files**: Matches based on how many files are changed in the pull request.
+- **PR author**: Matches the author of the pull request.
+- **Labels on the PR**: Matches if specific GitHub labels are present.
 
 ## Actions
 
-Five kinds of actions are currently supported: posting a comment, adding a checklist item, assigning a pull request, and assigning a reviewer.
+The following actions can be executed when a trigger is matched:
 
-- Add Comment: When this action is executed, GitKraken will post the comment on the matching pull request
-- Add to Checklist: When this action is executed, GitKraken will add a new checklist item to the PR description. You can add as many checklist items as you need by adding an action for each item.
-- Add Assignee: When this action is executed, GitKraken will assign the pull request to the user of your choice. If you'd like to assign multiple users, you can create multiple instances of this action on the same Trigger. If you supply an optional message to explain why this user is being assigned, GitKraken will post a comment notifying that user and explaining why they were assigned.
-- Add Label: When this action is executed, GitKraken will assign the selected GitHub label to the pull request. If you'd like to add multiple labels, you can create multiple instances of this action on the same Trigger.
-- Add Reviewer: When this action is executed, GitKraken will assign the person or team of your choice as a reviewer on the PR. If you'd like to add multiple reviewers, you can create multiple instances of this action on the same Trigger. If you supply an optional message to explain why this user is being assigned as a reviewer, GitKraken will post a comment notifying that user and explaining why they were assigned as a reviewer.
+- **Add Comment**: Posts a comment on the matching pull request.
+- **Add to Checklist**: Inserts checklist items into the PR description. You can add multiple items by creating separate actions.
+- **Add Assignee**: Assigns the pull request to a user. You can assign multiple users or include an optional comment explaining why they were assigned.
+- **Add Label**: Adds the specified GitHub label to the pull request. Use multiple actions to assign multiple labels.
+- **Add Reviewer**: Assigns a person or team as a reviewer. You can include an optional comment explaining the review request. Reviewers can be assigned in bulk using multiple actions.
 
 <div class='callout callout--warning'>
     <p>
         <strong>Note:</strong>
-           A pull request can never have the author of the pull request as a reviewer. If an action would cause the author to be a reviewer on their own pull request, GitKraken will skip over that action, but still perform all other actions on the trigger.
+        GitKraken will not assign the PR author as a reviewer. If such a match occurs, that action is skipped while other actions still run.
     </p>
 </div>
 
 
 ## Managing Saved Automations
 
-After creating your first automation you will now see a list of all your saved automations on [GitKraken.dev](https://gitkraken.dev/automations/list?product=gitkraken&source=help_center). From this screen you can add additional automations, disable/enable, delete, sort, edit and duplicate your saved automations. 
+After creating your first automation, you'll see a list of all your saved automations on [GitKraken.dev](https://gitkraken.dev/automations/list?product=gitkraken&source=help_center). From this screen, you can add, disable/enable, delete, sort, edit, or duplicate automations.
 
-<img src="/wp-content/uploads/Createautomations5.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/Createautomations5.png" alt="Saved automations list" class="help-center-img img-bordered">
+</figure>
 
+### Edit, Delete, or Duplicate an Automation
 
-### Edit / Delete / Duplicate an Automation
+To edit, delete, or duplicate an automation, click the ellipsis <i class="fas fa-ellipsis-v"></i> icon next to the automation name.
 
-Edit / Delete / Duplicate a Automation by selecting the ellipsis <i class="fas fa-ellipsis-v"></i> icon by the Automation name.
-
-<img src="/wp-content/uploads/Createautomations6.png" class="help-center-img img-bordered">
-
+<figure>
+  <img src="/wp-content/uploads/Createautomations6.png" alt="Ellipsis menu for automations" class="help-center-img img-bordered">
+</figure>
 
 ### Sort Automations
 
-GitKraken Automations has two options for sorting, Status and Action. Status is if the Automation is Enabled or Disabled. Actions allows you to sort by the triggered action of your automation. 
+You can sort automations by:
 
-<img src="/wp-content/uploads/Createautomations7.png" class="help-center-img img-bordered">
+- **Status**: Enabled or Disabled
+- **Action**: The type of action the automation executes
 
+<figure>
+  <img src="/wp-content/uploads/Createautomations7.png" alt="Sort automations options" class="help-center-img img-bordered">
+</figure>
 
 ### Add Additional Automations
 
-To create an additional Automation, select <button class="button button--success button--ui button--nolink">+ Create Automation</button>.
+To create an additional automation, click <button class="button button--success button--ui button--nolink">+ Create Automation</button>.
 
 
