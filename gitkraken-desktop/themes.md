@@ -4,7 +4,7 @@ description: Learn how to switch between light and dark themes in GitKraken Desk
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: July 2025</kbd>
 
 <figure>
   <div class='embed-container embed-container--16-9'>
@@ -84,3 +84,11 @@ Supported LESS functions include:
 - `mix`, `mixLess`
 
 See [LESS functions](https://lesscss.org/functions) for full documentation.
+
+***
+
+## Community Themes 
+
+Looking for inspiration? Some users share their custom themes online, such as the collection at [jonbunator.github.io/gitkraken-custom-themes](https://jonbunator.github.io/gitkraken-custom-themes). 
+
+Please note that this site is not affiliated with GitKraken, and we do not provide support for external or user-generated themes.

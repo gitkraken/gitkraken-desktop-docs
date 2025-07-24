@@ -5,7 +5,7 @@ description: Step-by-step installation guide for GitKraken Desktop on Windows, m
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: July 2025</kbd>
 
 GitKraken Desktop is a graphical Git client designed to make version control easier for developers, builders, and teams.
 
@@ -48,7 +48,7 @@ Double-click the downloaded executable file. A splash screen will appear while G
 GitKraken Desktop data is stored in your user profile directory at:
 
 ```
-C:\Users\{user}\AppData\Roaming\.gitkraken
+C:\\Users\\{user}\\AppData\\Roaming\\.gitkraken
 ```
 
 ---
