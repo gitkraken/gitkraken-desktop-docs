@@ -67,7 +67,7 @@ Below is a chart outlining some basic security information regarding the type of
 </table>
 
 ## SOC2
-Gitkraken and it’s tools are now SOC 2 Certified! If you would like to request a copy of our SOC2 report, please visit our [Trust Center](https://trust.gitkraken.com/) to get the request process started. Please note that in order to provide a copy of the report, we will need you to sign an MNDA.
+GitKraken and it’s tools are now SOC 2 Certified! If you would like to request a copy of our SOC2 report, please visit our [Trust Center](https://trust.gitkraken.com/) to get the request process started. Please note that in order to provide a copy of the report, we will need you to sign an MNDA.
 
 <div class="bbb-callout bbb--info">
     <div class="irow">
