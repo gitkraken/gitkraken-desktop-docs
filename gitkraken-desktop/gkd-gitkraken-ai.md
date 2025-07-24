@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: July 2025</kbd>
 
 Let the app handle the boring parts! GitKraken offers built-in AI features to fast-track your code contributions.
 
@@ -228,6 +228,10 @@ Guide how GitKraken AI responds for specific scenarios like:
 <img src="/wp-content/uploads/gkd-11-custom-instructions.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Add custom AI instructions for personalized responses</figcaption>
 </figure>
+
+The Custom URL option is ideal for developers connecting to local AI models or private endpoints. For example, you might connect to models hosted with Ollama, Hugging Face, OpenRouter, or an OpenAI-compatible service like LM Studio. 
+
+However, GitKraken does not validate or debug third-party implementations. If the connection works, great, but if it doesn’t, we’re unable to troubleshoot issues with custom endpoints.
 
 #### Commit Prompt Examples
 
