@@ -263,10 +263,4 @@ To disable GitKraken AI, restrict which AI models are available, or set up organ
 
 ***
 
-## What’s Next?
 
-Additional AI-powered features are in development to further streamline your workflow. GitKraken AI is built to reduce friction while keeping you in control.
-
-<div class='callout callout--basic'>
-    <p>Have more questions about GitKraken AI? Visit our <a href="https://help.gitkraken.com/general/gitkraken-ai-faq">GitKraken AI FAQ page</a> for details.</p>
-</div>

@@ -87,6 +87,3 @@ You can also:
 
 ***
 
-## Connecting to Multiple GitLab Self-Managed Accounts
-
-GitKraken supports one GitLab Self-Managed account per profile. Use multiple [profiles](/start-here/profiles) with GitKraken Pro to manage separate accounts.
