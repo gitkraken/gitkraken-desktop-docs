@@ -15,6 +15,77 @@ Let the app handle the boring parts! GitKraken offers built-in AI features to fa
 
 ***
 
+## AI-powered Commit Composer (Preview)
+
+Use AI to help organize your Git commits into clear, logical stories.
+
+### What it does
+
+The AI-powered Commit Composer can:
+
+- Break up unstaged changes into meaningful commits.
+- Recompose selected previous commits into a new structure.
+- Reorder, squash, or edit commit messages before pushing.
+
+<figure>
+  <img src="/wp-content/uploads/before-after-commit-compose.png" srcset="/wp-content/uploads/before-after-commit-compose@2x.png" class="help-center-img img-bordered" alt="Recompose a range of commits or working directory." />
+  <figcaption style="text-align: center; color: #888">AI Commit Composer button in the Commit Details Panel</figcaption>
+</figure>
+
+### How to use it
+
+To generate commits with AI:
+
+- **For uncommitted changes**:
+  1. Stage your changes.
+  2. In the Commit Details Panel, click **Compose Commit with AI**.
+  3. GitKraken AI will take a moment to compose the new commits. A new window will appear with the results of the composition.
+     - You can reorder, squash, or edit the commit messages.
+     - The branch will not be updated until you click **Create commits**.
+     - To cancel the process, click **Cancel**.
+     - To undo any changes made during composition (such as reordering or squashing), click **Reset**.
+
+<figure>
+  <img src="/wp-content/uploads/compose-WIP.png" srcset="/wp-content/uploads/compose-WIP@2x.png" class="help-center-img img-bordered" alt="Use your WIP to compose commits." />
+  <figcaption style="text-align: center; color: #888">Compose commits from your WIP.</figcaption>
+</figure>
+
+<figure>
+  <img src="/wp-content/uploads/compose-WIP-UI.png" srcset="/wp-content/uploads/compose-WIP-UI@2x.png" class="help-center-img img-bordered" alt="Shows an interactive window with options to pick, squash, or reword commits." />
+  <figcaption style="text-align: center; color: #888">Made adjustments, and confirm to create commits.</figcaption>
+</figure>
+
+- **For existing committed changes**:
+  1. In the Commit Graph, select a contiguous range of commits using <kbd>Shift</kbd> or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>.
+  2. Do one of the following:
+     - Right-click the selection and choose **Recompose Commits with AI** from the context menu.
+     - Click **Recompose Commits with AI** in the Commit Details Panel.
+  3. GitKraken AI will take a moment to compose the new commits. A new window will appear with the results of the composition.
+     - You can reorder, squash, or edit the commit messages.
+     - The branch will not be updated until you click **Create commits**.
+     - To cancel the process, click **Cancel**.
+     - To undo any changes made during composition (such as reordering or squashing), click **Reset**.
+
+<figure>
+  <img src="/wp-content/uploads/compose-existing-commits.png" srcset="/wp-content/uploads/compose-existing-commits@2x.png" class="help-center-img img-bordered" alt="Commit selection rules example" />
+  <figcaption style="text-align: center; color: #888">Recompose an existing range of commits.</figcaption>
+</figure>
+
+<figure>
+  <img src="/wp-content/uploads/commit-composer-UI.png" srcset="/wp-content/uploads/commit-composer-UI@2x.png"  class="help-center-img img-bordered" alt="Shows an interactive window with options to pick, squash, or reword commits." />
+  <figcaption style="text-align: center; color: #888">Made adjustments, and confirm to create commits.</figcaption>
+</figure>
+
+### Rules for composing commits
+
+- If composing from the WIP node, ensure it's selected and use the WIP panel (top right).
+- If composing from existing commits:
+  - Selected commits must be contiguous and part of the current branch.
+  - There must be no merge commits between (and including) the branch head commit and the parent of the oldest selected commit.
+
+
+***
+
 ## AI-Powered Commit Explain
 
 GitKraken can generate natural language explanations of your commits directly from the UI.
