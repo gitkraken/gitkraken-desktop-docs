@@ -298,6 +298,8 @@ Guide how GitKraken AI responds for specific scenarios like:
 - Commit explanations
 - Stash message generation
 - Pull request title/description
+- Conflict Resolution
+- Commit Composer
 
 <figure>
 <img src="/wp-content/uploads/gkd-11-custom-instructions.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
