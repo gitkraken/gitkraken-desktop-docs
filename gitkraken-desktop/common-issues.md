@@ -7,162 +7,183 @@ taxonomy:
 <kbd>Last updated: August 2025</kbd>
 
 ***
-### Account/License/Entitlement issue
-#### My account shows Trial/Free/Community despite being a paid customer
-In Gitkraken Desktop: Verify you are logging with the correct account here:
+
+## Account, License, and Entitlement Issues
+
+### My account shows Trial/Free/Community despite being a paid customer
+In GitKraken Desktop, verify you're logged in with the correct account:
 <figure class='figure center'>
   <img src="/wp-content/uploads/GKD-Common-Issue-1.png" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">If the account is not correct, go to Sign into a different account and enter the email address associated with the subscription (Do not use Github or Google sign in options).</figcaption>
+  <figcaption style="text-align: center; color: #888;">Ensure you are signed in with the email address linked to your subscription. Avoid using GitHub or Google login options if your subscription is tied to an email address.</figcaption>
 </figure>
 
-#### The account is correct and license is applied but says I dont have AI tokens 
-Confirm you have the correct organization selected:
+### The account is correct but it says I don't have AI tokens
+Make sure the correct organization is selected:
 <figure class='figure center'>
   <img src="/wp-content/uploads/GKD-Common-Issue-2.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">AI token access is determined by the selected organization.</figcaption>
 </figure>
 
-#### Gitkraken.dev says my account is TRIAL / COMMUNITY
+### GitKraken.dev shows my account as TRIAL / COMMUNITY
 Select the correct organization:
 <figure class='figure center'>
   <img src="/wp-content/uploads/GKD-Common-Issue-3.png" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">This can happen sometimes if the wrong organization is selected that does not have a subscription</figcaption>
+  <figcaption style="text-align: center; color: #888;">This issue can occur if you're viewing an organization that doesn't have a subscription.</figcaption>
 </figure>
 
-### Gitkraken Desktop
-##### Clone repo always uses HTTPS, I want to use SSH
-By default, Gitkraken Desktop always use HTTPS URL when cloning. If you want to switch to SSH by default, you have to add an SSH key in the integration of your remote.
-Go to Preferences > Integrations > [INTEGRATION] > Add or generate SSH key > Restart Gitkraken Desktop.
+---
 
-##### Gitkraken throws error about issue tracker cannot be initialized every time I start or switch repo tab
-This happens because you have set a default issue tracker that is disconnected.
+## GitKraken Desktop Issues
 
-WIth a repo tab open, go to Preferences > Issue Tracker > Select "None" > Check "Use this as the default for all repositories"
+### Clone repo always uses HTTPS instead of SSH
+GitKraken Desktop defaults to HTTPS. To use SSH:
+1. Go to <kbd>Preferences > Integrations > [INTEGRATION]</kbd>
+2. Add or generate an SSH key
+3. Restart GitKraken Desktop
 
-##### I dont see the right panel anymore
-Go to View > Show Commit Details panel
+### Issue tracker error appears on repo startup or tab switch
+This happens if a disconnected issue tracker is set as default.
+- Go to <kbd>Preferences > Issue Tracker</kbd>
+- Select <kbd>None</kbd>
+- Check <kbd>Use this as the default for all repositories</kbd>
+
+### Commit details panel is missing
+To re-enable it: <kbd>View > Show Commit Details panel</kbd>
 <figure class='figure center'>
   <img src="/wp-content/uploads/GKD-Common-Issue-4.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">The right-side commit panel can be toggled from the View menu.</figcaption>
 </figure>
 
-##### No way to minimize/maximize or I cant get out of full screen mode
-To toggle the full-screen mode press Ctrl + Shift + F
+### Can't minimize/maximize or exit full-screen mode
+Toggle full-screen mode with <kbd>Ctrl + Shift + F</kbd>
 <figure class='figure center'>
   <img src="/wp-content/uploads/GKD-Common-Issue-5.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Keyboard shortcut to toggle full screen in GitKraken Desktop.</figcaption>
 </figure>
 
-##### Diff is displaying entire file
-This happens when both versions of the file have a different encoding or line ending (CRLF <> LF). 
-If you enable the ignore trailing/whitespaces, does the diff changes to "File contents are unchanged"?
+### Diff shows entire file instead of changes
+This can occur due to differences in line endings or encoding.
+- Enable "Ignore trailing whitespace"
+- If the message changes to "File contents are unchanged," the files are identical
 <figure class='figure center'>
   <img src="/wp-content/uploads/GKD-Common-Issue-6.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Line ending or whitespace differences may cause misleading diffs.</figcaption>
 </figure>
 
-##### I cant see my org private repos (Github)
-Please verify Gitkraken app has permissions to access the organization at (Github:)[https://github.com/settings/connections/applications/a7557949433b7d282a76]
+### Private organization repositories not visible (GitHub)
+Ensure GitKraken Desktop has organization access:
 <figure class='figure center'>
   <img src="/wp-content/uploads/GKD-Common-Issue-7.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Check your GitHub application settings to confirm permissions.</figcaption>
 </figure>
 
+[GitHub Application Access Settings](https://github.com/settings/connections/applications/a7557949433b7d282a76)
 
-#### WSL issues
-##### Scaling/Window too small
-This display issue is a known limitation when running GUI apps inside WSL, including GitKraken Desktop, they do not respect Windows DPI scaling settings, which can cause the interface to appear too small on high-resolution monitors.
-As a workaround, you can try launching GitKraken Desktop with a manual scaling flag:
-gitkraken --force-device-scale-factor=1.5
+---
 
-##### I run gitkraken in the console but nothing happens
-This typically occurs when GitKraken is run as the root user. Please switch to a standard user and try again.
+## WSL Issues
 
-##### Gitkraken closes suddenly and does not start again, I have to shutdown WSL
-Certain GUI applications running within WSL may close unexpectedly when network conditions change, such as switching Wi-Fi networks, connecting/disconnecting a VPN, or a network adapter disconnecting. This is a known bug in WSL, documented (here)[https://github.com/microsoft/wslg/issues/1092].
+### GitKraken window is too small
+GitKraken Desktop may not respect Windows DPI scaling when running in WSL.
+- Use this workaround: `gitkraken --force-device-scale-factor=1.5`
 
-Suggested workarounds for GitKraken users:
-Terminate all GitKraken processes (`pkill -f gitkraken`) and restart the application.
-Open another GUI application (e.g., gedit or nautilus); this may restore the GitKraken window.
+### GitKraken doesn't launch from the console
+Avoid running GitKraken as root. Switch to a regular user.
 
-##### I have GitKraken installed inside WSL2 and have an XServer running on Windows. Scaling is incorrect or does not open the window.
-WSL2 already supports GUI apps without Xserver. Please try using WSL2.
+### GitKraken closes suddenly and won't reopen
+This is a known WSL issue triggered by network changes.
+- Terminate GitKraken: `pkill -f gitkraken`
+- Launch another GUI app (e.g., `gedit`) to restore GUI functionality
 
-#### Ubuntu/Linux
-##### File Explorer not opening
-This is a known Electron issue. The browser window is opening in the background. Minimize the GitKraken window or use Alt+Tab.
+### GitKraken GUI does not launch or scales incorrectly under WSL2 with XServer
+- XServer is not required. Use native WSL2 GUI support instead.
 
-##### GKD not using my environment variables
-Gitkraken Desktop sources the environment variables set in .bashrc or .zshrc
+---
 
-##### File watching failed to start for this repository
-This error can be caused when GitKraken Desktop hits the limit of file watchers set in your system.
-To increase the number of file watch instances add the following in the file /etc/sysctl.conf:
-fs.inotify.max_user_instances=8192 
-fs.inotify.max_user_watches=524288 
+## Linux (Ubuntu)
 
-#### Windows
-##### [SSH] I want to use Gitkraken Desktop with Putty/Plink
-Set GIT_SSH/GIT_SSH_COMMAND as environment variable to plink executable or use core.sshComand in .gitconfig.
+### File explorer does not open
+GitKraken’s Electron window may be hidden behind the app.
+- Minimize GitKraken or use <kbd>Alt + Tab</kbd>
 
-Also, change the Git Executable version to yours, instead of Bundled (Preferences > Experimental > Git Executable > Select installed version).
+### GitKraken does not load my environment variables
+- GitKraken sources `.bashrc` or `.zshrc` for environment variables
 
-#### MacOS
-##### Githooks fail with X: command not found
-This is because the command/executable is not in your PATH env variable for GUI apps.
-If you start GitKraken from the CLI using gitkraken, does the hook run as expected?
+### File watching failed to start
+Increase file watchers in `/etc/sysctl.conf`:
+```bash
+fs.inotify.max_user_instances=8192
+fs.inotify.max_user_watches=524288
+```
 
-If so, on macOS, GUI applications do not have access to the environment variables set in your shell profile. This means that if you have environment variables set in your shell profile that you want to use in your Git hooks, you need to use the following command:
+---
 
-launchctl setenv YOURVAR variable
+## Windows
 
+### Use GitKraken Desktop with PuTTY/Plink
+- Set `GIT_SSH` or `GIT_SSH_COMMAND` to point to Plink
+- Or configure `core.sshCommand` in `.gitconfig`
+- Also update Git Executable under <kbd>Preferences > Experimental > Git Executable</kbd>
 
-### General Troubleshooting for GitKraken Desktop 9.4.0+
+---
 
-GitKraken Desktop 9.4.0 introduced an [experimental Git Executable feature](/gitkraken-desktop/experimental-features/#git-executable). This option can impact how Git operations perform.
+## macOS
 
-To adjust this:
+### Git hooks fail with `command not found`
+GUI apps on macOS do not inherit shell environment variables.
+- Try launching GitKraken from terminal
+- Use `launchctl setenv YOURVAR value` to set GUI-accessible environment variables
+
+---
+
+## General Troubleshooting for GitKraken Desktop 9.4.0+
+
+The [Git Executable](/gitkraken-desktop/experimental-features/#git-executable) option may affect Git behavior.
+
+Steps to modify:
 - Go to <kbd>Preferences > Experimental</kbd>
-- Switch from the **Bundled with GitKraken** Git version to your system-installed version
-- Download Git if needed from [git-scm.com](https://git-scm.com/download)
+- Choose system Git version instead of the bundled one
+- [Download Git](https://git-scm.com/download) if needed
 
 <figure class='figure center'>
   <img src="/wp-content/uploads/gkc-git-executable-version.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Switch Git Executable version under Preferences > Experimental.</figcaption>
 </figure>
 
-If issues persist, try disabling the executable by unchecking <kbd>Use Git Executable</kbd>.
-
+Disable the executable if problems continue:
 <figure class='figure center'>
   <img src="/wp-content/uploads/gkc-use-git-executable.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Disable Git Executable if needed.</figcaption>
 </figure>
 
-This feature will become the default method for Git operations in future releases. If you encounter any issues, [contact support](https://help.gitkraken.com/gitkraken-desktop/contact-support/) to report them.
+Report persistent issues via [GitKraken Support](https://help.gitkraken.com/gitkraken-desktop/contact-support/).
 
-Read more in this [blog post](https://www.gitkraken.com/blog/gitkraken-client-migrating-from-libgit2-to-git-executable?product=gitkraken&source=help_center).
+[Blog post on migrating to Git Executable](https://www.gitkraken.com/blog/gitkraken-client-migrating-from-libgit2-to-git-executable?product=gitkraken&source=help_center)
 
-***
+---
 
-## Integration - 1000 Series Errors
+## Integration – 1000 Series Errors
 
-When connecting to a service, you may see:
-- Error 1002
-- Error 1003
-- Error 1005
-- Error 1007
+Error codes include:
+- 1002
+- 1003
+- 1005
+- 1007
 
 <figure class='figure center'>
   <img src="/wp-content/uploads/error-1002.png" srcset="/wp-content/uploads/error-1002@2x.png 2x" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Example: Authentication error during integration.</figcaption>
 </figure>
 
-### Solution
-These are authentication-related errors. Try the following:
+**Solution:**
+- Check credentials
+- Sign out from your browser, then try again in GitKraken
+- Clear browser cache
+- Try a different default browser
 
-- Confirm your credentials are correct
-- Sign out of the service in your default browser, then retry in GitKraken
-- Clear browser cache and sign out of the hosting service
-- Change your system’s default browser and retry
+Still stuck? [Contact Support](https://www.gitkraken.com/contact?product=gitkraken&source=help_center)
 
-If none of these resolve the issue, [contact support](https://www.gitkraken.com/contact?product=gitkraken&source=help_center).
-
-***
+---
 
 ## Push Failed: `Cannot read property 'fullName' of undefined`
 
@@ -171,76 +192,17 @@ If none of these resolve the issue, [contact support](https://www.gitkraken.com/
   <figcaption style="text-align: center; color: #888;">Push error caused by case mismatch in branch name.</figcaption>
 </figure>
 
-### Solution
-Rename your local branch to match the casing of the remote branch exactly. If needed, use an intermediate name:
+**Solution:**
+Rename the local branch to match the remote branch exactly. Use an intermediate name if necessary:
+```bash
+git branch -m Test-branch temp-branch
+git branch -m temp-branch test-branch
+```
 
-> Example: `Test-branch` → `temp-name` → `test-branch`
-
-***
+---
 
 ## Branches or Files Missing – Capitalization Issues
 
-This typically occurs on case-insensitive file systems (e.g., Windows) when multiple branches or files differ only by case.
+On case-insensitive file systems like Windows, branches or files differing only by case may not appear correctly.
 
-### Symptoms
-- Only one version of a similarly named branch appears
-- Files with differing capitalization may disappear, appear deleted, or misbehave
-- Staged files may not show as staged via `git status`
-
-### Recommendation
-Use unique naming for all branches, files, and remotes to avoid conflicts.
-
-***
-
-## Cannot Log In: `Cannot read property 'email' of null`
-
-This error usually results from interference by proxy, firewall, or security tools such as Zscaler.
-
-### Solution
-1. Sign in using GitHub authentication
-2. Approve GitKraken
-3. Continue as Free user with 0 days
-4. Click the Free badge in the bottom right to trigger authentication within GitKraken
-5. Restart GitKraken and log in normally
-
-***
-
-## Missing Taskbar Icon on Windows
-
-This happens when the shortcut path changes from:
-- `C:\Users\USER\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Axosoft, LLC`
-- to `C:\Users\USER\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\GitKraken`
-
-### Solution
-Delete the old folder, then launch GitKraken from the Start Menu and re-pin to the taskbar.
-
-***
-
-## GitHub Remotes or Permissions Issues
-
-If GitHub repositories or remotes are missing, and you see errors about organization permissions:
-
-<figure class='figure center'>
-  <img src="/wp-content/uploads/error.png" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">GitHub authorization error when accessing remotes.</figcaption>
-</figure>
-
-### Checklist
-- Check [GitHub application access](https://github.com/settings/connections/applications/a7557949433b7d282a76)
-- Ensure the organization approves GitKraken under [Organization Approval](https://help.github.com/articles/requesting-organization-approval-for-your-authorized-applications/)
-- If using another person’s repo, fork it or ask them to [install GitKraken](/gitkraken-desktop/how-to-install/) and connect GitHub
-- Learn more from [GitHub’s app restriction guide](https://help.github.com/articles/about-third-party-application-restrictions/)
-
-***
-
-## Rust Socket Bridge Error
-
-You may see this error during Git actions like push/pull/clone/fetch:
-
-<figure class='figure center'>
-  <img src="/wp-content/uploads/gkd-10-4-rust-socket-bridge-error.png" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">Rust Socket Bridge blocked by security software.</figcaption>
-</figure>
-
-### Solution
-Ask your IT department to allow the Rust Socket Bridge executable or add an exclusion for GitKraken Desktop’s installation directory.
+<small class='text-muted'>End of document.</small>
