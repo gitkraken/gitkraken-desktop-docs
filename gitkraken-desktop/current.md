@@ -13,6 +13,38 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 <a href="https://www.gitkraken.com/download?product=gitkraken&source=help_center" target="_blank" class="button button--basic ">Download Current Version Now</a>
 
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
+
+***
+
+<a id="v11-3-0"></a>
+## Version 11.3.0
+
+<kbd>Tuesday, August 5th, 2025</kbd>
+
+<div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5_e_OBP20Do?si=87vB8ooSU5GAn5wk" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+_"Compose commits that hit the right note, every time."_
+
+### New ✨
+- **AI-powered Commit Composer (Preview):** Use AI to help organize your Git commits into clear, logical stories by breaking up uncommitted changes into meaningful commits or recomposing previous commits. _It's ideal for cleaning things up before a pull request or when you've just been… coding a little too fast._
+
+- **Launchpad:** Team mode is graduating from preview! Users will require an Advanced license (or higher) to continue using Team mode.
+
+### Improvements 🙌
+ - ⚠️ **Important:** Ubuntu 18 support has been discontinued. Users running Ubuntu 18 should not update to this version of GitKraken as it will no longer function properly. Please upgrade your operating system to a supported version of Ubuntu to continue receiving GitKraken updates.
+ - Experimental Feature - Git Executable:
+   - Bumped Bundled Git to v2.50.1
+ - <kbd>Cmd/Ctrl+O</kbd> will now open a system dialog to browse for a repo.
+ - <kbd>Cmd+Option+O / Ctrl+Alt+O</kbd> will now open the Repo Management Tabs
+ - **GitKraken AI** now follows your custom instructions more accurately
+
+### Bug Fixes 🐛
+ - Conflict detection button finally has a reserved parking spot on the toolbar, other buttons will not shift around. 
+ - Fixed issue where feedback form causes commit options to move off screen
+
 ***
 
 <a id="v11-2-1"></a>
