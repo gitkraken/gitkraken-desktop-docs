@@ -16,6 +16,24 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 
 ***
 
+<a id="v11-4-0"></a>
+## Version 11.4.0
+
+<kbd>Wednesday, September 3rd, 2025</kbd>
+
+_"No prob-llama: Ollama setup just got easier."_
+
+### Improvements 🙌
+ - Added a new Ollama option to the GitKraken AI preferences, which works the same as `<Custom URL>`. This provides a clearer path for users wanting to connect their local Ollama server, making the setup process more intuitive.
+
+### Bug Fixes 🐛
+ - Fixed an issue where custom instructions were not enabled when `GitKraken AI` was set as the only configured provider on `gitkraken.dev`.
+ - On Jira Cloud issue search, fixed "The requested API has been removed" errors.
+ - Fixed an issue where some integrations could not connect when using certain proxy configurations (such as those requesting optional client certificates).
+
+
+***
+
 <a id="v11-3-0"></a>
 ## Version 11.3.0
 
