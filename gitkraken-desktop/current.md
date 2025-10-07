@@ -21,11 +21,8 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 
 <kbd>Tuesday, October 7th, 2025</kbd>
 
-<div class="embed-container embed-container--16-9" style="position: relative; width: 560px; height: 310px; overflow: hidden;">
-    <a href="https://www.youtube.com/watch?v=YorNwlXEFHc" target="_blank">
-      <img src="https://help.gitkraken.com/wp-content/uploads/GKD-11.5-Thumb-2.png" alt="YouTube video thumbnail"
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;" />
-    </a>
+<div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YorNwlXEFHc?si=87vB8ooSU5GAn5wk" frameborder="0" allowfullscreen></iframe>
 </div>
 
 _"It was bothering us too."_
