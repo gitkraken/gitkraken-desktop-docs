@@ -32,7 +32,7 @@ GitKraken ships with Git built-in, or you can select a system Git path.
 
 Git actions that currently use the Git executable (by version):
 
-**v9.4.0–10.8.0:**
+**v9.4.0–11.85.0:**
 - Commit, fetch, push, pull
 - Branch rename/delete, merge base
 - Tag creation/deletion, revert commits
@@ -40,6 +40,9 @@ Git actions that currently use the Git executable (by version):
 - Staging, unstaging, stash support
 - SSH signing, Git Credential Manager
 - Discard changes, undo/redo, hooks output
+- Reset to commit (mixed, hard, soft)
+- Undo checkout
+- Submodules
 
 See full details per release in the [GitKraken Desktop release notes](/gitkraken-desktop/current/).
 

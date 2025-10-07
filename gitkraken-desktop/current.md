@@ -16,6 +16,51 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 
 ***
 
+<a id="v11-5-0"></a>
+## Version 11.5.0
+
+<kbd>Tuesday, October 7th, 2025</kbd>
+
+<div class="embed-container embed-container--16-9" style="position: relative; width: 560px; height: 310px; overflow: hidden;">
+    <a href="https://www.youtube.com/watch?v=YorNwlXEFHc" target="_blank">
+      <img src="https://help.gitkraken.com/wp-content/uploads/GKD-11.5-Thumb-2.png" alt="YouTube video thumbnail"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;" />
+    </a>
+</div>
+
+_"It was bothering us too."_
+
+### Performance ⚡️
+In 11.5, GitKraken Desktop got faster across the board: large repo load times, stash refreshes, branch and tag updates, and even memory usage have all improved. More perf improvements to come in future releases!      
+
+ - Faster commits and checkouts! We saw **>100%** speed-up on both in the VS Code repository!
+   - This is thanks to faster branch and tag refreshes (up to 98% faster!), massively speeding up graph updates on repos with thousands of branches/tags.
+ - Up to **480%** faster opening of large repositories! We now perform git maintenance in the background on your open repository. After this completes, future opens will be dramatically faster.
+ - Up to **100x** faster loading of stashes, further improving repo open speeds on repositories with many local stashes.
+ - Up to 20% less RAM use
+
+### New ✨
+ - **GitKraken AI:** 
+   - Users can now choose their preferred model from any provided by GitKraken AI, including our newly-added OpenAI GPT-5 models.
+   - GPT-5 is now available for those bringing their own OpenAI API key.
+   - Added a usage gauge in the profile menu for easy reference of your GitKraken AI token usage.
+ - Added organization suggestions in _Preferences > Members_ to help users discover and join relevant teams.
+ 
+### Improvements 🙌
+ - When creating a pull request, if only one PR template is available, it will be automatically selected.
+ - Hovering an annotated tag in the left panel now shows its annotation.
+ - Experimental Feature - Git Executable:
+   - Users who have opted out of the Git Executable (in the Experimental settings) should note that most of the performance gains in this release are only available with the Git Executable enabled. 
+   - Added support for `Reset branch (hard/mixed/soft) to commit`.
+   - Added support for `Undo checkout`.
+   - Added support for submodules.
+
+### Bug Fixes 🐛
+ - Fixed an issue where the Commit Detail panel was not refreshing after discarding unstaged renamed files or added staged files.
+ - Fixed issue where undoing a checkout to a branch with submodules did not update the submodules, even with `Keep submodules up to date` enabled.
+ - Fixed a visual issue in dropdowns where the selected content was misaligned in the Create Jira Issue panel.
+
+***
 <a id="v11-4-0"></a>
 ## Version 11.4.0
 
