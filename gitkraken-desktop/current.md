@@ -15,7 +15,25 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 
 ***
+<a id="v11-5-1"></a>
+## Version 11.5.1
 
+<kbd>Tuesday, October 14th, 2025</kbd>
+
+_"Hey I finished fixing those bugs... Wait, we released already?"_
+
+_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-11-5-1) and see how it all works!_
+ 
+### Improvements 🙌
+ - Upgraded Electron to v36 to address performance issues on MacOS Tahoe.
+
+### Bug Fixes 🐛
+ - Fixed an issue where submodules that contain dots in their path could not be loaded.
+ - Fixed an issue where we could fail to write log entries or Git Hooks executions.
+ - Fixed an issue where some repositories with unexpected branches or tags would fail to load.
+
+
+***
 <a id="v11-5-0"></a>
 ## Version 11.5.0
 
