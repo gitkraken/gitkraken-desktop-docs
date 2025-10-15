@@ -21,8 +21,6 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 <kbd>Tuesday, October 14th, 2025</kbd>
 
 _"Hey I finished fixing those bugs... Wait, we released already?"_
-
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-11-5-1) and see how it all works!_
  
 ### Improvements 🙌
  - Upgraded Electron to v36 to address performance issues on MacOS Tahoe.
