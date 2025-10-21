@@ -33,6 +33,26 @@ Performance issues are commonly linked to large repositories with many reference
 - Run [`git status`](https://git-scm.com/docs/git-status) to check for unexpected working directory states.
 - Restart GitKraken Desktop daily to clear any accumulated memory or cache usage.
 
+
+### Verify your GitKraken Desktop build on macOS
+
+Some Mac users have noticed that GitKraken Desktop **11.5.1** may feel less responsive. In most cases, the Mac installed the wrong build for the machine’s chip (Intel vs. Apple Silicon).
+
+It’s an easy check:
+
+1. **Open GitKraken.**
+
+   <figure>
+     <img src="/wp-content/uploads/arm.png" class="help-center-img img-bordered" alt="Check your version number and build (arm64 64-bit)" />
+     <figcaption style="text-align: center; color: #888">Check your version from the GitKraken menu.</figcaption>
+   </figure>
+
+2. **Confirm the build matches your Mac’s chip** (Apple Silicon/arm64 vs. Intel/x64).
+
+3. **If it doesn’t match,** [download the correct version](https://www.gitkraken.com/download) and reinstall.
+
+
+
 <div class='callout callout--basic'>
     <p><strong>Note:</strong> Performance issues may also be impacted by file system speed, antivirus scanning, or external integrations. If the above steps don’t help, reach out to <a href="https://help.gitkraken.com/gitkraken-desktop/contact-support/">GitKraken support</a>.</p>
 </div>
