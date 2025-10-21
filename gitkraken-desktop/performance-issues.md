@@ -40,10 +40,10 @@ Some Mac users have noticed that GitKraken Desktop **11.5.1** may feel less resp
 
 It’s an easy check:
 
-1. **Open GitKraken.**
+1. **Open GitKraken.** Navigate to the **GitKraken** menu from the top left of your machine.
 
    <figure>
-     <img src="/wp-content/uploads/arm.png" class="help-center-img img-bordered" alt="Check your version number and build (arm64 64-bit)" />
+     <img src="/wp-content/uploads/arm2.png" class="help-center-img img-bordered" alt="Check your version number and build (arm64 64-bit)" />
      <figcaption style="text-align: center; color: #888">Check your version from the GitKraken menu.</figcaption>
    </figure>
 
