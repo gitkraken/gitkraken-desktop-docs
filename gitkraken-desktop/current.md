@@ -15,6 +15,57 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 
 ***
+<a id="v11-6-0"></a>
+## Version 11.6.0
+
+<kbd>Tuesday, November 11th, 2025</kbd>
+
+<div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ySD7E_S1qDA?si=87vB8ooSU5GAn5wk" frameborder="0" allowfullscreen></iframe>
+</div>
+
+_"Shallow repos. It's not that deep."_
+
+
+### New ✨
+  - **Experimental Feature - Git Executable:**
+    - Shallow repo support is now in preview! If you have a shallowly-cloned repository, you can now open it inside of GitKraken Desktop, and most features will work as normal. If you run into any problems, please let us know!
+  - **GitKraken AI:**
+    - Explain Working Changes: Select your unstaged edits and get a clear summary of what changed and why.
+### Improvements 🙌
+ - **Merge Conflict Improvements**
+   - AI conflict resolution is now synced to the exact code line so you can review and apply changes faster.
+ - **GitKraken AI:**
+   - Added support for custom OpenAI, Anthropic & Gemini endpoint URLs. 
+   - Added the ability to cancel the Commit Composer while the AI is still composing.
+   - Added preset instruction choices to custom instructions in preferences.
+ - **Experimental Feature – Git Executable**:
+   - Bumped Bundled Git to v2.51.1.
+ - Upgraded Electron to v38.
+ - GitHub pull request templates now support organization-level templates.
+ - Added a left-panel context menu option to checkout a tag’s commit directly.
+ - Added HTML syntax highlighting for `.vue` files.
+ - When the graph is focused, using the **Select First** keybind (`Ctrl+Home`/`⌘+↑`) will now select the WIP/conflict when present, instead of the most recent commit/stash.
+
+### Bug Fixes 🐛
+ - Commit/Stash message generation no longer errors with `Cannot read properties of undefined (reading ‘requestIdleCallback')`.
+ - `Skip Hooks` now appears when committing from Git worktrees.
+ - GitHub issues using `<ul>` and `<li>` now format correctly.
+ - GitHub issues with descriptions will once again display tooltips on hover.
+  - **Submodules**
+	  - Fixed failure when cloning unreachable submodules that could leave repos unstable.
+	  - Fixed warnings in the Diff View that misattributed changes to uninitialized submodules, when the changes actually belonged to the parent repo.
+ - Git notes no longer appear as commits in the graph.
+ - Ambiguous branches, tags, and remotes no longer block branch deletion or cause other issues in the graph.
+ - Prefetch and other non-standard branches are no longer displayed in the graph.
+ - With Git Executable enabled, submodules in the left panel are now alphabetized.
+
+### Modernization Notice 🎨
+ - **Custom Themes**
+   - As part of our UI modernization efforts, we will be sunsetting custom themes supported starting in 11.7. Light, dark, and high-contrast themes will remain available.
+
+
+***
 <a id="v11-5-1"></a>
 ## Version 11.5.1
 
