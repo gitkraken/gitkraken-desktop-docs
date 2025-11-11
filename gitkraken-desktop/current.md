@@ -33,9 +33,7 @@ _"Shallow repos. It's not that deep."_
   - **GitKraken AI:**
     - Explain Working Changes: Select your unstaged edits and get a clear summary of what changed and why.
 
-
 ### Improvements 🙌
-
  - **Merge Conflict Improvements**
    - AI conflict resolution is now synced to the exact code line so you can review and apply changes faster.
  
