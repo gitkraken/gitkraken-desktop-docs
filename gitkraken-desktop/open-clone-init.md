@@ -4,7 +4,7 @@ description: Learn how to open, clone, or initialize repositories in GitKraken D
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: November 2025</kbd>
 
 Each user will need to open, clone, or initialize a repository in GitKraken Desktop. This guide explains how.
 
@@ -60,6 +60,15 @@ You can also access this via the <strong>New Tab</strong> by clicking the + icon
   <img src='/wp-content/uploads/open-new-tab-2025.png' class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">New tab view with Browse option</figcaption>
 </figure>
+
+#### Open Shallow Cloned Repos
+
+GitKraken Desktop supports opening shallow cloned repositories.
+
+No special setup is required. Just navigate to the shallow clone’s location and open it as you would any other repository (see above).
+
+> **Note**: GitKraken Desktop does not currently support *creating* shallow clones. You must use Git on the command line or another tool to perform the initial clone.
+
 
 ***
 ### Clone a Project
