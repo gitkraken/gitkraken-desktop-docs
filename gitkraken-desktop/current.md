@@ -32,9 +32,10 @@ _"Shallow repos. It's not that deep."_
     - Shallow repo support is now in preview! If you have a shallowly-cloned repository, you can now open it inside of GitKraken Desktop, and most features will work as normal. If you run into any problems, please let us know!
   - **GitKraken AI:**
     - Explain Working Changes: Select your unstaged edits and get a clear summary of what changed and why.
-    
+
 
 ### Improvements 🙌
+
  - **Merge Conflict Improvements**
    - AI conflict resolution is now synced to the exact code line so you can review and apply changes faster.
  
