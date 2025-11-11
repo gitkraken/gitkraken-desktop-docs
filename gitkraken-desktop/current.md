@@ -35,10 +35,12 @@ _"Shallow repos. It's not that deep."_
 ### Improvements 🙌
  - **Merge Conflict Improvements**
    - AI conflict resolution is now synced to the exact code line so you can review and apply changes faster.
+ 
  - **GitKraken AI:**
    - Added support for custom OpenAI, Anthropic & Gemini endpoint URLs. 
    - Added the ability to cancel the Commit Composer while the AI is still composing.
    - Added preset instruction choices to custom instructions in preferences.
+ 
  - **Experimental Feature – Git Executable**:
    - Bumped Bundled Git to v2.51.1.
  - Upgraded Electron to v38.
