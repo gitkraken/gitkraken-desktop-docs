@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: August 2025</kbd>
+<kbd>Last updated: November 2025</kbd>
 
 Let the app handle the boring parts! GitKraken offers built-in AI features to fast-track your code contributions.
 
@@ -164,7 +164,7 @@ You can then use the AI button again to generate a revised commit message.
 
 ***
 
-## AI-Powered Merge Conflict Resolution (Preview)
+## AI-Powered Merge Conflict Resolution
 
 Resolve merge conflicts faster with GitKraken AI.
 
@@ -281,6 +281,8 @@ This endpoint can handle:
 - Commit explanations
 - Commit and stash message generation
 - Pull request title and description generation
+- Conflict Resolution
+- Commit Composer
 
 <figure>
 <img src="/wp-content/uploads/custom-url-11-1.png" srcset="/wp-content/uploads/custom-url-11-1@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
@@ -294,10 +296,10 @@ However, GitKraken does not validate or debug third-party implementations. If th
 ### Custom AI Prompt Instructions
 
 Guide how GitKraken AI responds for specific scenarios like:
-- Commit message generation
-- Commit explanations
-- Stash message generation
-- Pull request title/description
+- Commit Message Generation
+- Commit Explanations
+- Stash Message Generation
+- Pull Request Title/Description
 - Conflict Resolution
 - Commit Composer
 
@@ -327,7 +329,7 @@ Where <type> is one of:
 <summary> should be a short, 72-character max imperative phrase.
 Only return the final commit message—no extra formatting.
 ```
-
+***
 
 ## Organization-wide AI Administration
 
