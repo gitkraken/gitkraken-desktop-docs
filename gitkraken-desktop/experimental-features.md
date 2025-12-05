@@ -32,7 +32,7 @@ GitKraken ships with Git built-in, or you can select a system Git path.
 
 Git actions that currently use the Git executable (by version):
 
-**v9.4.0–11.85.0:**
+**v9.4.0–11.6.0:**
 - Commit, fetch, push, pull
 - Branch rename/delete, merge base
 - Tag creation/deletion, revert commits
