@@ -164,6 +164,11 @@ You can then use the AI button again to generate a revised commit message.
 
 ***
 
+## Explain Branch Changes with AI 
+
+Right-click any branch and select **Explain Branch Changes** to get a summary of all changes on that branch.
+
+***
 ## AI-Powered Merge Conflict Resolution
 
 Resolve merge conflicts faster with GitKraken AI.
