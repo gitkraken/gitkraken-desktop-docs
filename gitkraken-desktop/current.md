@@ -15,6 +15,36 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 
 ***
+
+<a id="v11-7-0"></a>
+## Version 11.7.0
+
+<kbd>Tuesday, December 9th, 2025</kbd>
+
+_"Re-rebase (verb): To undo a rebase, only to redo it again."_
+
+
+### New ✨
+ - **Markdown File Preview:**
+   - You can now preview markdown files directly in the file viewer! Toggle between Code and Preview modes using the new buttons in the file header.
+ - **Undo/Redo for Rebase Operations:**
+   - Added support for undoing and redoing rebase operations, including Interactive Rebase, Multi-Commit Cherry Pick, dropping and rewording commits, and AI Commit Composer (Recompose with AI).
+ - **GitKraken AI:**
+   - **Explain Branch Changes:** Right-click any branch to get a clear summary of what changed and why.
+
+### Bug Fixes 🐛
+ - Fixed AI Commit Composer failing when composing commits that include empty new files, binary files, deleted or renamed files, or files with identical hunk headers.
+ - F11 now toggles fullscreen on Windows and Linux, matching platform conventions.
+ - "Revert Hunk" will no longer appear on working directory changes ("WIP"). "Discard Hunks" is still available for WIP changes.
+ - Fixed blank UI when selecting too many options in Launchpad filters for Jira issues.
+ - Fixed an issue where commit hook changes did not appear in the unstaged area.
+ - Fixed an issue where Git commit options ("skip hooks" and "push after commit") were not being honored when using the commit keyboard shortcut: <kbd>Shift/Cmd + Enter</kbd>.
+
+### Modernization Notice 🎨
+ - **Custom Themes:** Custom themes will be sunset in 11.8.0 as we modernize the UI for better performance and maintainability. Our new architecture requires rebuilding theme support from the ground up. Light, dark, and high-contrast themes will remain available during the transition.
+   - _We plan to restore custom theme support once the modernization is complete._
+
+***
 <a id="v11-6-0"></a>
 ## Version 11.6.0
 
