@@ -123,3 +123,6 @@ GitKraken Desktop expects most files to use `UTF-8` encoding. To review or adjus
     <img src='/wp-content/uploads/preferences-encoding-select-2025.png' class="help-center-img img-bordered" alt="File encoding selection from preferences">
     <figcaption style="text-align: center; color: #888;">Choose your default encoding from preferences.</figcaption>
 </figure>
+
+## Markdown Preview
+GitKraken Desktop includes a built-in Markdown preview for `.md` files. To toggle the preview pane click the <button class='button button--primary button--ui button--nolink'>Preview</button> button in the top of the editor. You can switch between editing and previewing the Markdown content.
