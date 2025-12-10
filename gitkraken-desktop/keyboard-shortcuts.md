@@ -234,7 +234,7 @@ GitKraken Desktop includes a variety of keyboard shortcuts to help you work fast
         <tr>
             <td>Toggle Fullscreen Mode</td>
             <td><kbd>Control</kbd><kbd>&#8984;</kbd><kbd>F</kbd><br>
-            <td><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>F</kbd><br>
+            <td><kbd>F11</kbd><br>
         </tr>
         <tr>
             <td>Increase Zoom</td>

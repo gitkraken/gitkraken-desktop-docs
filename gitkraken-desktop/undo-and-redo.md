@@ -26,6 +26,7 @@ You can undo the following actions in GitKraken Desktop:
 + Delete branch
 + Remove remote
 + Reset branch to a commit
++ Rebase operations, including Interactive Rebase, Multi-Commit Cherry Pick, dropping and rewording commits, and AI Commit Compose (Recompose with AI).
 
 These undo actions can help you recover from common missteps without going to the command line.
 

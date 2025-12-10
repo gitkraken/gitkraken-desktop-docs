@@ -55,7 +55,7 @@ To re-enable it: <kbd>View > Show Commit Details panel</kbd>
 </figure>
 
 ### Can't minimize/maximize or exit full-screen mode
-Toggle full-screen mode with <kbd>Ctrl + Shift + F</kbd>
+Toggle full-screen mode with <kbd>F11 (for Windows/Linux) or Ctrl + Cmd + F (for macOS)</kbd>
 <figure class='figure center'>
   <img src="/wp-content/uploads/GKD-Common-Issue-5.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Keyboard shortcut to toggle full screen in GitKraken Desktop.</figcaption>
