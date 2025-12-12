@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: November 2025</kbd>
+<kbd>Last updated: December 2025</kbd>
 
 Let the app handle the boring parts! GitKraken offers built-in AI features to fast-track your code contributions.
 
