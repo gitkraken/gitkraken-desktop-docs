@@ -83,6 +83,7 @@ To generate commits with AI:
   - Selected commits must be contiguous and part of the current branch.
   - There must be no merge commits between (and including) the branch head commit and the parent of the oldest selected commit.
 
+> **Tip**: Need to reverse the composed commits? Use the **Undo** button in the toolbar to undo any AI Commit Compose or Recompose commits with AI action. 
 
 ***
 
