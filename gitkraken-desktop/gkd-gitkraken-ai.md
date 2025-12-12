@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: November 2025</kbd>
+<kbd>Last updated: December 2025</kbd>
 
 Let the app handle the boring parts! GitKraken offers built-in AI features to fast-track your code contributions.
 
@@ -83,6 +83,7 @@ To generate commits with AI:
   - Selected commits must be contiguous and part of the current branch.
   - There must be no merge commits between (and including) the branch head commit and the parent of the oldest selected commit.
 
+> **Tip**: Need to reverse the composed commits? Use the **Undo** button in the toolbar to undo any AI Commit Compose or Recompose commits with AI action. 
 
 ***
 
@@ -164,9 +165,23 @@ You can then use the AI button again to generate a revised commit message.
 
 ***
 
-## Explain Branch Changes with AI 
+## Explain Branch Changes with AI
 
-Right-click any branch and select **Explain Branch Changes** to get a summary of all changes on that branch.
+Right-click any branch or `HEAD` commit and select **Explain Branch Changes** to generate a summary of all changes introduced on that branch.
+
+<figure>
+  <img src="/wp-content/uploads/explain-branch.png" srcset="/wp-content/uploads/explain-branch@2x.png" class="help-center-img img-bordered" alt="Explain Branch Changes context menu option in GitKraken." />
+  <figcaption style="text-align: center; color: #888">Right-click a branch or HEAD commit to explain changes.</figcaption>
+</figure>
+
+GitKraken AI selects all commits on the branch and compares the base commit to the `HEAD` commit. It uses this diff to generate change and impact summaries.
+
+<figure>
+  <img src="/wp-content/uploads/explain-branch-summaries.png" srcset="/wp-content/uploads/explain-branch-summaries@2x.png" class="help-center-img img-bordered" alt="Example of GitKraken AI change and impact summaries." />
+  <figcaption style="text-align: center; color: #888">GitKraken AI summarizes the diff between the base and HEAD commits.</figcaption>
+</figure>
+
+To customize how **Explain Branch Changes** works, go to **Preferences > GitKraken AI > Explain Changes**.
 
 ***
 ## AI-Powered Merge Conflict Resolution
