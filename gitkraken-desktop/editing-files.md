@@ -125,4 +125,20 @@ GitKraken Desktop expects most files to use `UTF-8` encoding. To review or adjus
 </figure>
 
 ## Markdown Preview
-GitKraken Desktop includes a built-in Markdown preview for `.md` files. To toggle the preview pane click the <button class='button button--primary button--ui button--nolink'>Preview</button> button in the top of the editor. You can switch between editing and previewing the Markdown content.
+
+GitKraken Desktop includes a built-in markdown preview for `.md` files. To access the option, first click to edit a file in the upper left of the file diff.
+
+<figure class='figure center'>
+    <img src='/wp-content/uploads/edit-file-diff-2025.png' class="help-center-img img-bordered" alt="Editing a file from Diff view">
+    <figcaption style="text-align: center; color: #888;">Click Edit this file from the Diff/File view panel.</figcaption>
+</figure>
+
+From here, toggle the preview pane by clicking the <button class='button button--primary button--ui button--nolink'>Preview</button> button in the top of the editor. 
+
+<figure class='figure center'>
+    <img src='/wp-content/uploads/markdown-preview@2x.png' class="help-center-img img-bordered" alt="Toggle the markdown preview">
+    <figcaption style="text-align: center; color: #888;">Toggle the markdown preview when editing a file.</figcaption>
+</figure>
+
+You can switch between editing and previewing the markdown content.
+
