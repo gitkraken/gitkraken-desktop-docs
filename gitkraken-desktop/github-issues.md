@@ -85,10 +85,4 @@ From the issue details view, click <strong>Create a branch for this issue</stron
 
 Branch names auto-fill based on the issue title. Created branches will display the GitHub icon to reflect their link.
 
----
 
-## Copy Issue Link or View in GitHub
-
-To open the issue in GitHub or copy its link, use the <kbd><i class="fa fa-ellipsis-v"></i></kbd> menu or click the <i class="fa fa-external-link" aria-hidden="true"></i> icon in the top right.
-
-<img src="/wp-content/uploads/view-github-issue-on-web-2025.png" srcset="/wp-content/uploads/view-github-issue-on-web-2025@2x.png" class="help-center-img img-bordered" alt="Open GitHub issue in browser">

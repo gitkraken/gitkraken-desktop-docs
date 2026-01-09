@@ -4,9 +4,9 @@ description: Discover how to use the Command Palette in GitKraken Desktop to qui
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: July 2025</kbd>
 
-The <strong>Command Palette</strong> provides quick access to GitKraken Desktop actions, files, repositories, and settings.
+The <strong>Command Palette</strong> (Actions button) provides quick access to GitKraken Desktop actions, files, repositories, and settings.
 
 <figure>
   <div class='embed-container embed-container--16-9'>
