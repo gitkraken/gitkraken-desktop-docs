@@ -15,7 +15,39 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 
 ***
+<a id="v11-8-0"></a>
+## Version 11.8.0
 
+<kbd>Tuesday, January 13th, 2026</kbd>
+
+<div class="embed-container embed-container--16-9" style="position: relative; width: 560px; height: 310px; overflow: hidden;">
+    <a href="https://www.youtube.com/watch?v=ySD7E_S1qDA" target="_blank">
+      <img src="https://help.gitkraken.com/wp-content/uploads/GKD-11-8-Thumbnail.png" alt="YouTube video thumbnail"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;" />
+    </a>
+</div>
+
+_"GitKraken Desktop is ARM'd with new performance improvements!"_
+
+
+### New ✨
+ - **ARM for Linux & Windows**
+  - Linux and Windows users on ARM should visit (https://gitkraken.com/download) to ensure the correct build for their chip architecture.
+ - **Shallow Clones**
+  - Shallow Clones can now be created directly from GitKraken Desktop as part of the clone workflow instead of requiring manual creation outside the app.
+
+### Bug Fixes 🐛
+ - Fixed inconsistent code block styling in issue and pull request views.
+ - AI context menu items (such as "Explain working changes" and "Explain branch changes") will no longer appear when AI is disabled in settings or when the organization does not allow AI.
+ - Users who provide their own OpenAI API key will no longer get an error when resolving conflicts with GPT-5 models.
+ - Switching providers in the AI preferences will no longer confuse GitKraken Desktop about which provider's AI models to show in the dropdowns.
+ - Fixed excessive whitespace in Jira automation comments and improved visual distinction of status badges.
+
+### Modernization Notice 🎨
+ - **Custom Themes:** Custom themes have been disabled in 11.8.0 as we modernize the UI for better performance and maintainability. Our new architecture requires rebuilding theme support from the ground up. Light, dark, and high-contrast themes will remain available during the transition.
+   - _We plan to restore custom theme support once the modernization is complete._
+
+***
 <a id="v11-7-0"></a>
 ## Version 11.7.0
 
