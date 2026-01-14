@@ -18,7 +18,7 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 <a id="v11-8-0"></a>
 ## Version 11.8.0
 
-<kbd>Tuesday, January 13th, 2026</kbd>
+<kbd>Wednesday, January 14th, 2026</kbd>
 
 <div class="embed-container embed-container--16-9" style="position: relative; width: 560px; height: 310px; overflow: hidden;">
     <a href="https://www.youtube.com/watch?v=ySD7E_S1qDA" target="_blank">
