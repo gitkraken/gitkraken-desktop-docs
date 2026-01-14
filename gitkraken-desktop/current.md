@@ -21,8 +21,9 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 <kbd>Wednesday, January 14th, 2026</kbd>
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ySD7E_S1qDA?si=87vB8ooSU5GAn5wk" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q9CpplgRhEE?si=B6SfWfzFOj4SLln5" frameborder="0" allowfullscreen></iframe>
 </div>
+
 
 _"GitKraken Desktop is ARM'd with new performance improvements!"_
 
