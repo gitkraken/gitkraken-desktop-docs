@@ -5,7 +5,7 @@ description: Step-by-step installation guide for GitKraken Desktop on Windows, m
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken Desktop is a graphical Git client designed to make version control easier for developers, builders, and teams.
 
@@ -56,8 +56,8 @@ C:\\Users\\{user}\\AppData\\Roaming\\.gitkraken
 ## macOS (.dmg file)
 
 **System requirements:**
-- Intel: macOS 10.15+
-- Apple Silicon: macOS 11+
+- Intel: macOS 12+
+- Apple Silicon: macOS 12+
 
 - [Download GitKraken Desktop for macOS](https://gitkraken.com/download/mac?product=gitkraken&source=help_center)
 
