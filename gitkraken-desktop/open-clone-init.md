@@ -67,9 +67,6 @@ GitKraken Desktop supports opening shallow cloned repositories.
 
 No special setup is required. Just navigate to the shallow clone’s location and open it as you would any other repository (see above).
 
-> **Note**: GitKraken Desktop does not currently support *creating* shallow clones. You must use Git on the command line or another tool to perform the initial clone.
-
-
 ***
 ### Clone a Project
 

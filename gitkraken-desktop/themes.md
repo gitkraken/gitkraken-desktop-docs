@@ -4,7 +4,7 @@ description: Learn how to switch between light and dark themes in GitKraken Desk
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 <figure>
   <div class='embed-container embed-container--16-9'>
@@ -14,7 +14,13 @@ taxonomy:
 </figure>
 
 ***
+<div class='callout callout--warning'>
+<notice info>
+  <p><strong>Note:</strong>Custom themes have been disabled in 11.8.0 as we modernize the UI for better performance and maintainability.</p>
+</notice>
+</div>
 
+***
 ## Built-in Themes
 
 To change your GitKraken Desktop theme:
