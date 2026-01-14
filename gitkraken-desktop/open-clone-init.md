@@ -4,7 +4,7 @@ description: Learn how to open, clone, or initialize repositories in GitKraken D
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: November 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Each user will need to open, clone, or initialize a repository in GitKraken Desktop. This guide explains how.
 
@@ -92,6 +92,33 @@ To clone a remote repo:
   <img src='/wp-content/uploads/clone-url.png' srcset='/wp-content/uploads/clone-url@2x.png 2x' class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Enter the clone URL to start</figcaption>
 </figure>
+
+#### Shallow Clone
+
+GitKraken Desktop supports **shallow cloning** when cloning a repository. Shallow clones let you limit the commit history that is downloaded, which can significantly reduce clone time and disk usage for large repositories.
+
+To perform a shallow clone:
+
+1. Open the **Clone** dialog from **Repository Management**, the **New Tab**, or <kbd><strong>File > Clone</strong></kbd>.
+2. Select the repository you want to clone.
+3. Enable the **Shallow Clone** option.
+
+<figure>
+  <img src="/wp-content/uploads/perform-shallow-clone.png" class="help-center-img img-bordered" alt="Clone a Repository dialog with the Shallow Clone option enabled" />
+  <figcaption style="text-align: center; color: #888">Shallow Clone option in the Clone dialog</figcaption>
+</figure>
+
+When **Shallow Clone** is selected, additional options become available:
+
+- **Branch to clone**: Specify the branch to clone. By default, GitKraken Desktop uses the repository’s default branch.
+- **Depth**: Set how many commits deep to clone from the selected branch.
+- **Since date**: Limit the clone to commits newer than a specific date.
+- **Custom flags**: Provide any additional flags you typically pass to the `git clone` command. Enter these exactly as you would in the command-line interface.
+
+4. Click <button class='button button--success button--ui button--nolink'>Clone the repo!</button> to complete the shallow clone.
+
+After cloning, the repository opens automatically in GitKraken Desktop. 
+
 
 ***
 ### Initialize a New Project
