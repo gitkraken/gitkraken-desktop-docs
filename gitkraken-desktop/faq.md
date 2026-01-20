@@ -112,3 +112,8 @@ Set encoding to `UTF-8` or use `GUESS ENCODING` under repository preferences.
 4. Reproduce the issue  
 5. Logs will be saved in the new `logs` folder
 
+### I can't select repo folders on Ubuntu 20.04 or prior versions. How do I fix this?
+This is due to a known Electron issue. Start GitKraken with:
+```bash
+gitkraken --xdg-portal-required-version=3
+```
