@@ -70,7 +70,7 @@ C:\\Users\\{user}\\AppData\\Roaming\\.gitkraken
 Double-click the downloaded DMG file. When prompted, drag and drop the GitKraken icon into your Applications folder.
 
 <figure class='figure center'>
-    <img src="/wp-content/uploads/mac-install.png" class="help-center-img img-bordered">
+    <img src="/wp-content/uploads/mac-install.png" class="help-center-img img-bordered" alt="Mac installation dialog prompting user to drag the GitKraken icon into the Applications folder.">
     <figcaption style="text-align: center; color: #888;">Drag and drop the GitKraken icon to the Applications folder.</figcaption>
 </figure>
 
