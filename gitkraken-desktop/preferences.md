@@ -4,12 +4,12 @@ description: Explore GitKraken Desktop’s Preferences to control themes, integr
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Navigate to <i class="fas fa-cog"></i> <kbd><strong>Preferences</strong></kbd> in GitKraken Desktop to tailor your environment. Here's what each major section controls.
 
 <figure>
-  <img src="/wp-content/uploads/preferences-2025.png" srcset="/wp-content/uploads/preferences@2x.png 2x" class="help-center-img img-bordered" alt="GitKraken Desktop Preferences screen">
+  <img src="/wp-content/uploads/preferences-2025.png" srcset="/wp-content/uploads/preferences@2x.png 2x" class="help-center-img img-bordered" alt="Highlighting the gear icon in GitKraken Desktop to explain where users access Preferences, enabling customization of integrations, UI and more.">
   <figcaption style="text-align:center; color:#888">Access Preferences from the gear icon in the top right corner</figcaption>
 </figure>
 

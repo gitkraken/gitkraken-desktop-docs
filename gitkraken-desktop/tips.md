@@ -15,7 +15,7 @@ Here's the TL;DR of GitKraken Desktop’s most powerful productivity features.
 Separate work and personal repositories—or manage multiple accounts with [Profiles](/start-here/profiles).
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/profile-example-2025.png" class="help-center-img img-bordered" alt="Example of unique integrations for each profile">
+  <img src="/wp-content/uploads/profile-example-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop showing how each profile can be linked to a different GitHub account, enabling users to manage separate work and personal identities with distinct credentials.">
   <figcaption style="text-align: center; color: #888;">Each profile can save a unique integration connection.</figcaption>
 </figure>
 

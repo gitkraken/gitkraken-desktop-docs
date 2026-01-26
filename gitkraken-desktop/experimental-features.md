@@ -4,7 +4,7 @@ description: Explore experimental GitKraken Desktop features like Git Executable
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken Desktop includes experimental features, which are early previews of in-development functionality. These features may change or be removed in future releases.
 

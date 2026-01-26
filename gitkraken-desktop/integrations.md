@@ -4,7 +4,7 @@ description: Learn how to integrate GitKraken Desktop with GitHub, GitLab, Bitbu
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 <figure>
   <div class='embed-container embed-container--16-9'>

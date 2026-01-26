@@ -26,7 +26,7 @@ To manage team members in your Organization:
 2. Select your Organization name from the sidebar
 
 <figure>
-  <img src="/wp-content/uploads/organization-2025-2.png" class="help-center-img img-bordered" alt="Select organization from preferences">
+  <img src="/wp-content/uploads/organization-2025-2.png" class="help-center-img img-bordered" alt="Navigating to the organization management panel in GitKraken Desktop via Preferences, allowing users to view members, assign roles, and manage teams.">
   <figcaption style="text-align:center; color:#888">Access your organization from the Preferences sidebar.</figcaption>
 </figure>
 

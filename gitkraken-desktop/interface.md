@@ -4,7 +4,7 @@ description: Learn how to navigate the GitKraken Desktop interface. Explore the 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken Desktop's interface simplifies Git usage by providing a visual layout of core actions and repository elements.
 
