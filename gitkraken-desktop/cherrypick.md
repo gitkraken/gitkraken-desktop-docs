@@ -67,8 +67,7 @@ Use keyboard shortcuts to manage commits in the interactive view:
 
 <kbd>P</kbd> = Pick <kbd>S</kbd> = Squash <kbd>R</kbd> = Reword <kbd>D</kbd> = Drop
 
-To abandon the cherry-pick session, click:
-<button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Reset</span></button>
+To abandon the cherry-pick session, click: <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Reset</span></button>
 
 ***
 
