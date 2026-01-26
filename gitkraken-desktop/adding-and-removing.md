@@ -4,7 +4,7 @@ description: Learn how to create, delete, and manage files and folders in GitKra
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Learn how to add, create folders, delete, and filter files using GitKraken Desktop.
 

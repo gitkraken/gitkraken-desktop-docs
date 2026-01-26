@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: December 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Learn how to edit, save, and manage files using GitKraken Desktop’s built-in editor.
 
