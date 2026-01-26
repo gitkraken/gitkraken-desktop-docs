@@ -4,7 +4,7 @@ description: Learn how to use GitKraken Desktop Teams to organize users, manage 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken Desktop users with a <a href="https://www.gitkraken.com/git-client/pricing?source=help_center&product=gitkraken">Pro, Advanced, Business, or Enterprise Cloud</a> account can use the Teams feature to group users within an Organization.
 
@@ -35,7 +35,7 @@ You can:
 - Change roles or remove users via the <i class="fas fa-ellipsis-h"></i> menu
 
 <figure>
-  <img src="/wp-content/uploads/edit-users-2025.png" class="help-center-img img-bordered" alt="Edit user roles or remove users">
+  <img src="/wp-content/uploads/edit-users-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop organization settings showing how admins can manage user permissions, including promoting to admin, assigning billing contact, or removing members.">
   <figcaption style="text-align:center; color:#888">Admins and Owners can edit roles or remove users.</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ If no additional licenses are available, you’ll be prompted to purchase one wh
 Create a new Team by clicking the <i class="fas fa-plus-square" style="color:green"></i> icon.
 
 <figure>
-  <img src="/wp-content/uploads/add-team-2025-2.png" class="help-center-img img-bordered" alt="Create a new team">
+  <img src="/wp-content/uploads/add-team-2025-2.png" class="help-center-img img-bordered" alt="GitKraken Desktop organization view showing how to create a new team to group users by project or department.">
   <figcaption style="text-align:center; color:#888">Click the + icon to group users into a team.</figcaption>
 </figure>
 
@@ -57,12 +57,12 @@ You can:
 - Rename a team by double-clicking its name
 
 <figure>
-  <img src="/wp-content/uploads/delete-team-2025.png" class="help-center-img img-bordered" alt="Delete a team from its menu">
+  <img src="/wp-content/uploads/delete-team-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop team settings menu showing how to delete a team, helping admins manage organization structure and remove outdated groups.">
   <figcaption style="text-align:center; color:#888">Use the menu to delete a team.</figcaption>
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/rename-team-2025.png" class="help-center-img img-bordered" alt="Rename a team by double-clicking">
+  <img src="/wp-content/uploads/rename-team-2025.png" class="help-center-img img-bordered" alt="Renaming a team in GitKraken Desktop by editing the team name field, allowing users to keep team structures accurate and up to date.">
   <figcaption style="text-align:center; color:#888">Double-click a team name to rename it.</figcaption>
 </figure>
 
@@ -81,6 +81,6 @@ Remove a user by selecting <i class="fas fa-ellipsis-h"></i> on their entry.
 GitKraken Desktop can suggest users who contribute to the current repository but aren’t in your Organization. Invite them to collaborate.
 
 <figure>
-  <img src="/wp-content/uploads/suggested-members-2025.png" class="help-center-img img-bordered" alt="Suggested contributors for your repo">
+  <img src="/wp-content/uploads/suggested-members-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop identifying contributors to suggest as members, helping admins quickly invite relevant collaborators based on repository activity.">
   <figcaption style="text-align:center; color:#888">Suggested users based on repository activity.</figcaption>
 </figure>

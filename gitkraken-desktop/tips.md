@@ -4,7 +4,7 @@ description: Discover top GitKraken Desktop tips to speed up your workflow—Pro
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Here's the TL;DR of GitKraken Desktop’s most powerful productivity features.
 
