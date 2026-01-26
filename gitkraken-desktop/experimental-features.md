@@ -73,7 +73,7 @@ Cloud Patches require the **Git Executable** to be enabled (it is by default).
 2. Click the Cloud Patch icon.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/create-cloud-patch-2025.png' class="help-center-img img-bordered" alt="Cloud Patch button in the Commit Panel">
+  <img src='/wp-content/uploads/create-cloud-patch-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop showing the Cloud Patch creation panel, illustrating how users can package and share staged changes as a lightweight patch, enabling quick peer review or collaboration without needing to push to a remote.">
   <figcaption style="text-align: center; color: #888;">Create a Cloud Patch from staged changes.</figcaption>
 </figure>
 
@@ -90,7 +90,7 @@ You can also right-click any commit in the graph and select <kbd>Share commit as
 Recipients can open the patch and apply it to a selected branch.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/gkc-apply-cloud-patch-example.gif' class="help-center-img img-bordered" alt="Applying a Cloud Patch from shared link">
+  <img src='/wp-content/uploads/gkc-apply-cloud-patch-example.gif' class="help-center-img img-bordered" alt="Applying a Cloud Patch in GitKraken Desktop, demonstrating how users can instantly review and merge shared patches without switching branches or pulling from a remote. This accelerates cross-branch collaboration and simplifies patch-based workflows.">
   <figcaption style="text-align: center; color: #888;">Apply Cloud Patch to a target branch in GitKraken Desktop.</figcaption>
 </figure>
 
@@ -99,7 +99,7 @@ Recipients can open the patch and apply it to a selected branch.
 To delete a patch, right-click it in the Left Panel and choose <kbd>Delete Cloud Patch</kbd>.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/gkc-delete-cloud-patch.png" class="help-center-img img-bordered" alt="Delete Cloud Patch from Left Panel">
+  <img src="/wp-content/uploads/gkc-delete-cloud-patch.png" class="help-center-img img-bordered" alt="GitKraken Desktop showing how users can manage Cloud Patches from the left panel, including the ability to open, copy, or delete patches, reinforcing that Cloud Patches are lightweight and user-controlled artifacts rather than permanent Git history.">
   <figcaption style="text-align: center; color: #888;">Manage Cloud Patches via context menu.</figcaption>
 </figure>
 

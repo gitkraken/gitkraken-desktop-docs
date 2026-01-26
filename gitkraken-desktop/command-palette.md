@@ -28,7 +28,7 @@ You can launch the Command Palette in three ways:
 - Go to the Help menu → <strong>Open Command Palette</strong>
 
 <figure>
-  <img src="/wp-content/uploads/command-palette-example.gif" srcset="/wp-content/uploads/command-palette-example.gif" class="help-center-img img-bordered" alt="Typing in the Command Palette to filter results">
+  <img src="/wp-content/uploads/command-palette-example.gif" srcset="/wp-content/uploads/command-palette-example.gif" class="help-center-img img-bordered" alt="Using the GitKraken Command Palette to filter and select commands, files, and branches, demonstrating how it accelerates navigation and common Git workflows without leaving the keyboard.">
   <figcaption style="text-align:center; color:#888">Start typing to filter commands, files, repos, and more.</figcaption>
 </figure>
 
