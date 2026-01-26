@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Use cherry pick to apply commits from one branch onto another in GitKraken Desktop. This is especially useful when you accidentally commit to the wrong branch or want to apply specific changes without merging.
 
@@ -18,15 +18,15 @@ Use cherry pick to apply commits from one branch onto another in GitKraken Deskt
 3. Select **Cherry pick commit**.
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/cherrypick.png' srcset='/wp-content/uploads/cherrypick@2x.png 2x' class="help-center-img img-bordered" alt="Right-clicking a commit node to cherry pick">
+    <img src='/wp-content/uploads/cherrypick.png' srcset='/wp-content/uploads/cherrypick@2x.png 2x' class="help-center-img img-bordered" alt="Right-click context menu in GitKraken showing option to cherry pick a commit.">
     <figcaption style="text-align: center; color: #888;">Check out the target branch, then right-click a commit to cherry pick it.</figcaption>
 </figure>
 
 You can also cherry pick the HEAD commit of a branch by right-clicking a branch name under the **Local** section of the Left Panel.
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/cherrypick-left-panel.png' srcset='/wp-content/uploads/cherrypick-left-panel@2x.png 2x' class="help-center-img img-bordered" alt="Cherry picking a branch from the Left Panel">
-    <figcaption style="text-align: center; color: #888;">Right-click a branch to cherry pick its HEAD commit.</figcaption>
+  <img src='/wp-content/uploads/cherrypick-left-panel.png' srcset='/wp-content/uploads/cherrypick-left-panel@2x.png 2x' class="help-center-img img-bordered" alt="Context menu in GitKraken showing option to cherry pick the HEAD commit of a selected branch from the Left Panel.">
+  <figcaption style="text-align: center; color: #888;">Right-click a branch in the Left Panel to cherry pick its HEAD commit.</figcaption>
 </figure>
 
 ***
@@ -38,8 +38,8 @@ You can also cherry pick the HEAD commit of a branch by right-clicking a branch 
 3. Choose **Cherry pick X commits**.
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/multi-cherry-pick-menu.png' class="help-center-img img-bordered" alt="Right-click menu for multiple cherry picks">
-    <figcaption style="text-align: center; color: #888;">Select a range of commits with Shift or Cmd/Ctrl and right-click to cherry pick.</figcaption>
+  <img src='/wp-content/uploads/multi-cherry-pick-menu.png' class="help-center-img img-bordered" alt="GitKraken Desktop context menu showing 'Cherry pick 5 commits' after selecting multiple commits from the commit graph.">
+  <figcaption style="text-align: center; color: #888;">Select a range of commits with Shift or Cmd/Ctrl and right-click to cherry pick.</figcaption>
 </figure>
 
 This opens the interactive cherry pick tool where you can:
@@ -50,8 +50,8 @@ This opens the interactive cherry pick tool where you can:
 - **Drop** a commit
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/interactive-cherry-pick.png' class="help-center-img img-bordered" alt="Interactive cherry pick editor">
-    <figcaption style="text-align: center; color: #888;">Use the interactive tool to modify selected commits before applying them.</figcaption>
+  <img src='/wp-content/uploads/interactive-cherry-pick.png' class="help-center-img img-bordered" alt="GitKraken Interactive Cherry Pick panel showing selected commits with a Reword option and an editable commit message field.">
+  <figcaption style="text-align: center; color: #888;">Use the interactive tool to modify selected commits before applying them.</figcaption>
 </figure>
 
 ***
@@ -67,8 +67,7 @@ Use keyboard shortcuts to manage commits in the interactive view:
 
 <kbd>P</kbd> = Pick <kbd>S</kbd> = Squash <kbd>R</kbd> = Reword <kbd>D</kbd> = Drop
 
-To abandon the cherry-pick session, click:
-<button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Reset</span></button>
+To abandon the cherry-pick session, click: <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Reset</span></button>
 
 ***
 
