@@ -4,7 +4,7 @@ description: Discover top GitKraken Desktop tips to speed up your workflow—Pro
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Here's the TL;DR of GitKraken Desktop’s most powerful productivity features.
 
@@ -15,7 +15,7 @@ Here's the TL;DR of GitKraken Desktop’s most powerful productivity features.
 Separate work and personal repositories—or manage multiple accounts with [Profiles](/start-here/profiles).
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/profile-example-2025.png" class="help-center-img img-bordered" alt="Example of unique integrations for each profile">
+  <img src="/wp-content/uploads/profile-example-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop showing how each profile can be linked to a different GitHub account, enabling users to manage separate work and personal identities with distinct credentials.">
   <figcaption style="text-align: center; color: #888;">Each profile can save a unique integration connection.</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ Each profile retains its own Git config, preferences, and open tabs.
 The [Command Palette](/start-here/command-palette) helps you navigate GitKraken quickly with keyboard-driven actions.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/command-palette-2025.gif" class="help-center-img img-bordered" alt="Command Palette in use to open repo in VS Code">
+  <img src="/wp-content/uploads/command-palette-2025.gif" class="help-center-img img-bordered" alt="Using the GitKraken Command Palette to execute actions like opening repositories or launching editors, demonstrating how it streamlines common Git tasks from a single keyboard-driven interface.">
   <figcaption style="text-align: center; color: #888;">Use the Command Palette to launch repositories, open editors, and more.</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ Speed through tasks with [keyboard shortcuts](/start-here/keyboard-shortcuts).
 Select multiple commits using <kbd>Cmd/Ctrl</kbd> or <kbd>Shift</kbd>, then right-click and select <kbd>Cherry pick X commits</kbd>.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/multi-cherry-pick-menu.png' class="help-center-img img-bordered" alt="Multi-commit cherry pick menu in GitKraken">
+  <img src='/wp-content/uploads/multi-cherry-pick-menu.png' class="help-center-img img-bordered" alt="GitKraken Desktop showing a context menu for cherry picking multiple selected commits, illustrating how users can apply specific changes across branches without merging full history.">
   <figcaption style="text-align: center; color: #888;">Select multiple commits from the graph to cherry pick them together.</figcaption>
 </figure>
 
@@ -88,7 +88,7 @@ You can reorder, squash, drop, or rename commits before completing. Learn more i
 Connect GitKraken Desktop with [GitHub, GitLab, Bitbucket, and Azure DevOps](/gitkraken-desktop/integrations/) to streamline cloning, remotes, and PR workflows.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/connect-azure-devops-2025.png" class="help-center-img img-bordered" alt="Git hosting integration settings">
+  <img src="/wp-content/uploads/connect-azure-devops-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop integration settings for Azure DevOps, illustrating how connecting a Git provider enables faster repository access and enhanced workflow automation.">
   <figcaption style="text-align: center; color: #888;">Connect your Git provider to speed up repository access.</figcaption>
 </figure>
 
@@ -135,12 +135,12 @@ Control the Commit Graph display with [Hide and Solo](/gitkraken-desktop/hiding-
 [View file history and blame](/gitkraken-desktop/diff/#file-blame-and-history) by clicking a commit and right-clicking a file.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/file-history-content-menu-2025.png' class="help-center-img img-bordered" alt="File history and blame menu">
+  <img src='/wp-content/uploads/file-history-content-menu-2025.png' class="help-center-img img-bordered" alt="Context menu in GitKraken Desktop showing options to view file history and blame, helping users trace changes and identify contributors to specific lines of code.">
   <figcaption style="text-align: center; color: #888;">Right-click a file to view its history or blame.</figcaption>
 </figure>
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/file-diff-2025.png' class="help-center-img img-bordered" alt="File diff and commit history">
+  <img src='/wp-content/uploads/file-diff-2025.png' class="help-center-img img-bordered" alt="File history panel alongside line-by-line commit diff in GitKraken Desktop, explaining how each commit modified a specific file to clarify the evolution of content and aid troubleshooting.">
   <figcaption style="text-align: center; color: #888;">Switch between commit diff and file view with blame.</figcaption>
 </figure>
 
@@ -159,6 +159,6 @@ Set a default terminal from <kbd>Preferences > External Tools</kbd>.
 Hover over the graph’s colored lines and drag to resize.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/graph-drag-2025.gif' class='help-center-img img-bordered' alt='Resize GitKraken commit graph'>
+  <img src='/wp-content/uploads/graph-drag-2025.gif' class='help-center-img img-bordered' alt='GitKraken commit graph being resized horizontally to help users focus on complex branching structures, improve readability, and navigate dense commit histories with greater precision.'>
   <figcaption style="text-align: center; color: #888;">Adjust the graph view to focus on the information you need.</figcaption>
 </figure>

@@ -4,7 +4,7 @@ description: New to Git? Get started with GitKraken Desktop using this beginner-
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 This Getting Started Guide introduces GitKraken Desktop with a basic workflow—cloning a repository, making changes, and merging them.
 
@@ -67,7 +67,7 @@ Follow this workflow to make your first commit in GitKraken Desktop.
 Right-click `main` in the Commit Graph and choose <kbd>Create branch here</kbd>. Name it `develop`—a branch for ongoing development.
 
 <figure>
-  <img src='/wp-content/uploads/create-new-branch-2025.png' class='img-bordered img-responsive center' alt='Create new branch from main'>
+  <img src='/wp-content/uploads/create-new-branch-2025.png' class='img-bordered img-responsive center' alt='Right-clicking the main branch in GitKraken Desktop to create a new branch at a specific commit, reinforcing how Git branching can point to any commit.'>
   <figcaption style="text-align:center; color:#888">Right-click main to create a new branch.</figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ Right-click `main` in the Commit Graph and choose <kbd>Create branch here</kbd>.
 Edit `README.md` to reflect your project. You can open this file directly from the Commit Graph.
 
 <figure>
-  <img src='/wp-content/uploads/open-file-2025.png' class='img-bordered img-responsive center' alt='Open file from commit panel'>
+  <img src='/wp-content/uploads/open-file-2025.png' class='img-bordered img-responsive center' alt='Clicking a file name in the GitKraken Desktop commit panel to open it for editing, illustrating how Git users can inspect or modify historical files directly from any commit.'>
   <figcaption style="text-align:center; color:#888">Click a filename to access the Edit button.</figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ Edit `README.md` to reflect your project. You can open this file directly from t
 After editing, select the <kbd>//WIP</kbd> node to view unstaged changes. Stage all with the green <button class='button button--success button--ui button--nolink'>Stage all changes</button> button.
 
 <figure>
-  <img src='/wp-content/uploads/unstage-2025.png' class='img-bordered img-responsive center' alt='Pending file changes in staging area'>
+  <img src='/wp-content/uploads/unstage-2025.png' class='img-bordered img-responsive center' alt='Viewing unstaged file changes from the WIP node in GitKraken Desktop, illustrating how users can access and stage modified files directly from the commit graph for efficient commit preparation.'>
   <figcaption style="text-align:center; color:#888">Click the WIP node to view and stage changes.</figcaption>
 </figure>
 
@@ -98,14 +98,14 @@ Learn more about [staging](/working-with-commits/staging) and [committing](/work
 When `develop` is ahead of `main`, you can merge:
 
 <figure>
-  <img src='/wp-content/uploads/graph-commit-2025.png' class='img-bordered img-responsive center' alt='Commit graph showing develop ahead of main'>
+  <img src='/wp-content/uploads/graph-commit-2025.png' class='img-bordered img-responsive center' alt='Commit graph showing the develop branch with one additional commit compared to main, visualizing how GitKraken Desktop helps users understand branch divergence and progress at a glance.'>
   <figcaption style="text-align:center; color:#888">Develop is ahead by 1 commit.</figcaption>
 </figure>
 
 To merge, drag `develop` onto `main` in the graph and choose <kbd>Merge</kbd>.
 
 <figure>
-  <img src='/wp-content/uploads/drag-and-drop-2025.png' class='img-bordered img-responsive center' alt='Drag develop branch onto main to merge'>
+  <img src='/wp-content/uploads/drag-and-drop-2025.png' class='img-bordered img-responsive center' alt='Dragging the develop branch onto main in GitKraken Desktop to trigger merge options, illustrating how visual interactions simplify common Git operations like branch merges.'>
   <figcaption style="text-align:center; color:#888">Drag develop onto main to merge branches.</figcaption>
 </figure>
 
