@@ -19,7 +19,10 @@ To support Linux GUI apps, Microsoft introduced <a href="https://learn.microsoft
 ## How to use GitKraken Desktop with WSL 2
 
 <figure class='figure center'>
-    <img src="/wp-content/uploads/wsl-full-screen.png" srcset="/wp-content/uploads/wsl-full-screen@2x.png" class="help-center-img img-bordered" alt="GitKraken Desktop running in WSL full screen">
+    <img src="/wp-content/uploads/wsl-full-screen.png" 
+         srcset="/wp-content/uploads/wsl-full-screen@2x.png" 
+         class="help-center-img img-bordered" 
+         alt="Full-screen view of GitKraken Desktop running on a WSL 2 environment with the repository, branches, commit graph, and details visible.">
     <figcaption style="text-align: center; color: #888;">GitKraken Desktop running inside WSL 2.</figcaption>
 </figure>
 
@@ -165,7 +168,10 @@ For the best experience:
 When accessing a repo stored on WSL from GitKraken installed on Windows (or vice versa), you'll see a prompt:
 
 <figure class='figure center'>
-    <img src="/wp-content/uploads/wsl-toast.png" srcset="/wp-content/uploads/wsl-toast@2x.png" class="help-center-img img-bordered" alt="GitKraken WSL toast warning">
+    <img src="/wp-content/uploads/wsl-toast.png" 
+         srcset="/wp-content/uploads/wsl-toast@2x.png" 
+         class="help-center-img img-bordered" 
+         alt="Warning prompt in GitKraken Desktop stating that working with repositories stored on WSL is not recommended from GitKraken on Windows, with options to open Help Center, open with GitKraken in Ubuntu, or open the repository anyway.">
     <figcaption style="text-align: center; color: #888;">Prompt for cross-system repo access in GitKraken Desktop.</figcaption>
 </figure>
 

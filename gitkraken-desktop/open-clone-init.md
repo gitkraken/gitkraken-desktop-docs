@@ -27,7 +27,7 @@ The **Repository Management** tab provides an overview of active repositories, W
 - <kbd>Cmd + O</kbd> (Mac)
 
 <figure>
-  <img src='/wp-content/uploads/repo-mgmt-2025.png' srcset="/wp-content/uploads/repo-mgmt-2025@2x.png" class="help-center-img img-bordered">
+  <img src='/wp-content/uploads/repo-mgmt-2025.png' srcset="/wp-content/uploads/repo-mgmt-2025@2x.png" class="help-center-img img-bordered"> alt="Repository Management tab showing buttons for Browse, Clone, and Init, with open, favorite, and recent repositories listed by group."
   <figcaption style="text-align:center; color:#888">Repository Management tab in GitKraken Desktop</figcaption>
 </figure>
 
@@ -79,14 +79,14 @@ To clone a remote repo:
 1. In Repository Management, select <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Clone</span></button>
 
 <figure>
-  <img src='/wp-content/uploads/clone-repo-mgmt-2025.png' srcset="/wp-content/uploads/clone-repo-mgmt-2025@2x.png" class="help-center-img img-bordered">
+  <img src='/wp-content/uploads/clone-repo-mgmt-2025.png' srcset="/wp-content/uploads/clone-repo-mgmt-2025@2x.png" class="help-center-img img-bordered" alt="Repository Management tab with the Clone button highlighted in GitKraken Desktop">
   <figcaption style="text-align:center; color:#888">Clone from Repository Management tab</figcaption>
 </figure>
 
 2. You can also access clone options via <kbd><strong>File > Clone</strong></kbd> or the New Tab.
 
 <figure>
-  <img src='/wp-content/uploads/clone-url.png' srcset='/wp-content/uploads/clone-url@2x.png 2x' class="help-center-img img-bordered">
+  <img src='/wp-content/uploads/clone-url.png' srcset='/wp-content/uploads/clone-url@2x.png 2x' class="help-center-img img-bordered" alt="Clone a Repo dialog with URL input and provider options in GitKraken Desktop">
   <figcaption style="text-align:center; color:#888">Enter the clone URL to start</figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ To perform a shallow clone:
 3. Enable the **Shallow Clone** option.
 
 <figure>
-  <img src="/wp-content/uploads/perform-shallow-clone.png" class="help-center-img img-bordered" alt="Clone a Repository dialog with the Shallow Clone option enabled" />
+  <img src="/wp-content/uploads/perform-shallow-clone.png" class="help-center-img img-bordered" alt="GitKraken Desktop shallow clone options, including branch to clone, depth, since date, and custom flags">
   <figcaption style="text-align: center; color: #888">Shallow Clone option in the Clone dialog</figcaption>
 </figure>
 
@@ -125,7 +125,7 @@ To start a new repo:
 1. Select <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Init</span></button> in Repository Management.
 
 <figure>
-  <img src='/wp-content/uploads/init-2025.png' srcset="/wp-content/uploads/init-2025@2x.png" class="help-center-img img-bordered">
+  <img src='/wp-content/uploads/init-2025.png' srcset="/wp-content/uploads/init-2025@2x.png" class="help-center-img img-bordered" alt="Initialize a Repository dialog in GitKraken Desktop showing local and remote provider options, with fields for repo name, location, and additional settings">
   <figcaption style="text-align:center; color:#888">Repository initialization options</figcaption>
 </figure>
 
@@ -155,6 +155,6 @@ Also accessible via <kbd><strong>File > Init</strong></kbd> or New Tab.
 - Set default colors in <kbd>Preferences > UI Customization</kbd>
 
 <figure>
-  <img src='/wp-content/uploads/gkd-repo-mgm-tab-customize1.gif' class="help-center-img img-bordered">
+  <img src='/wp-content/uploads/gkd-repo-mgm-tab-customize1.gif' class="help-center-img img-bordered" alt="User interacting with GitKraken Desktop Repository Management tab to change the color of a repo group via the group menu">
   <figcaption style="text-align:center; color:#888">Customize repo group layout and colors</figcaption>
 </figure>

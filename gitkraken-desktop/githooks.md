@@ -25,19 +25,19 @@ Hooks reside in the `hooks` subdirectory of the `.git` folder, created automatic
 Hooks are specific to your local repository and are neither tracked by Git nor copied to new repositories.
 
 <figure>
-<img src='/wp-content/uploads/terminal-hooks.png' srcset='/wp-content/uploads/terminal-hooks@2x.png 2x' class="help-center-img img-bordered" />
-<figcaption style="text-align: center; color: #888">Terminal view of the .git/hooks directory</figcaption>
+  <img src='/wp-content/uploads/terminal-hooks.png' srcset='/wp-content/uploads/terminal-hooks@2x.png 2x' class="help-center-img img-bordered" alt="Terminal output showing contents of the .git/hooks directory including various sample hook scripts" />
+  <figcaption style="text-align: center; color: #888">Terminal view of the .git/hooks directory</figcaption>
 </figure>
 
 <figure>
-<img src='/wp-content/uploads/gkc_hook_location_explorer.png' srcset='/wp-content/uploads/gkc_hook_location_explorer@2x.png 2x' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/gkc_hook_location_explorer.png' srcset='/wp-content/uploads/gkc_hook_location_explorer@2x.png 2x' class="help-center-img img-bordered" alt="Finder window showing the path to the Git hooks directory within a repository's .git folder" />
 <figcaption style="text-align: center; color: #888">Explorer view of the Git hooks directory</figcaption>
 </figure>
 
 If you're on OSX or Linux, you must set hook files to be executable. GitKraken Desktop will throw an error (e.g., exit code 126) if the file lacks executable permissions.
 
 <figure>
-<img src='/wp-content/uploads/gkc_hook_exit_error_126.png' srcset='/wp-content/uploads/gkc_hook_exit_error_126@2x.png 2x' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/gkc_hook_exit_error_126.png' srcset='/wp-content/uploads/gkc_hook_exit_error_126@2x.png 2x' class="help-center-img img-bordered" alt="Error notification in GitKraken Desktop indicating a pre-commit Git hook failed with exit code 126" />
 <figcaption style="text-align: center; color: #888">Git hook execution error in GitKraken Desktop (exit code 126)</figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ To use a custom Git hook path:
 This setting is defined per repository.
 
 <figure>
-<img src='/wp-content/uploads/git-hooks-pref-2025.png' srcset='/wp-content/uploads/git-hooks-pref-2025@2x.png 2x' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/git-hooks-pref-2025.png' srcset='/wp-content/uploads/git-hooks-pref-2025@2x.png 2x' class="help-center-img img-bordered" alt="GitKraken Desktop Preferences panel showing Git Hooks settings and custom directory option" />
 <figcaption style="text-align: center; color: #888">Setting a custom Git hooks path in Preferences</figcaption>
 </figure>
 
@@ -181,7 +181,7 @@ Git hooks automate actions when Git events occur in GitKraken Desktop or the com
 Open Visual Studio Code and go to <kbd><strong>~/repo/.git/hooks</strong></kbd>. Create a new file named `pre-commit`.
 
 <figure>
-<img src='/wp-content/uploads/vscode-to-hooks.png' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/vscode-to-hooks.png' class="help-center-img img-bordered" alt="VS Code file explorer showing the creation of a new pre-commit file inside the .git/hooks directory" />
 <figcaption style="text-align: center; color: #888">Creating a new Git hook file in VS Code</figcaption>
 </figure>
 
@@ -197,7 +197,7 @@ chmod +x pre-commit
 ```
 
 <figure>
-<img src='/wp-content/uploads/gkc-chmod-pre-commit.gif' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/gkc-chmod-pre-commit.gif' class="help-center-img img-bordered" alt="GitKraken Desktop terminal changing into .git/hooks directory to make the pre-commit file executable" />
 <figcaption style="text-align: center; color: #888">Making the pre-commit file executable using terminal</figcaption>
 </figure>
 
@@ -236,7 +236,7 @@ Save the file. Your `pre-commit` hook is now ready to enforce proper committer e
 
 ### Git hook in action
 <figure>
-<img src='/wp-content/uploads/gkc-hook-in-action.gif' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/gkc-hook-in-action.gif' class="help-center-img img-bordered" alt="GitKraken Desktop showing a pre-commit Git hook error after attempting to commit a staged file" />
 <figcaption style="text-align: center; color: #888">Git hook example triggered during commit</figcaption>
 </figure>
 
@@ -259,7 +259,7 @@ To skip Git hooks during a commit, use the `Commit and skip hooks` option.
 </div>
 
 <figure>
-<img src='/wp-content/uploads/skip-hook-2025.png' srcset='/wp-content/uploads/skip-hook-2025@2x.png 2x' class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/skip-hook-2025.png' srcset='/wp-content/uploads/skip-hook-2025@2x.png 2x' class="help-center-img img-bordered" alt="GitKraken Desktop commit panel showing a checkbox to skip Git hooks during commit" />
 <figcaption style="text-align: center; color: #888">Option to commit while skipping hooks in GitKraken Desktop</figcaption>
 </figure>
 

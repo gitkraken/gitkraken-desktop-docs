@@ -18,14 +18,14 @@ To favorite a repository:
 2. Click the star icon next to the repository name.
 
 <figure>
-  <img src="/wp-content/uploads/favorite-repo-2025.png" srcset="/wp-content/uploads/favorite-repo-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/favorite-repo-2025.png" srcset="/wp-content/uploads/favorite-repo-2025@2x.png" class="help-center-img img-bordered" alt="Repository Management view in GitKraken Desktop showing how to click the star icon to add a repository to Favorites">
   <figcaption style="text-align:center; color:#888">Click the star icon to favorite a repository</figcaption>
 </figure>
 
 Favorited repositories appear in the **Favorites** section of the Repo Management tab.
 
 <figure>
-  <img src="/wp-content/uploads/favorites-list-2025.png" srcset="/wp-content/uploads/favorites-list-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/favorites-list-2025.png" srcset="/wp-content/uploads/favorites-list-2025@2x.png" class="help-center-img img-bordered" alt="Favorites section in GitKraken Desktop displaying two repositories pinned for quick access">
   <figcaption style="text-align:center; color:#888">Favorites listed in the Repo Management view</figcaption>
 </figure>
 

@@ -22,8 +22,13 @@ To add a remote:
 3. Enter the remote URL or choose from integration-based dropdowns (GitHub, GitLab, Bitbucket).
 
 <figure>
-  <img src="/wp-content/uploads/add-remote.png" srcset="/wp-content/uploads/add-remote@2x.png" class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">Add a remote from the Left Panel</figcaption>
+  <img src="/wp-content/uploads/add-remote.png" 
+       srcset="/wp-content/uploads/add-remote@2x.png 2x"
+       class="help-center-img img-bordered"
+       alt="Add Remote dialog in GitKraken Desktop with GitHub selected">
+  <figcaption style="text-align:center; color:#888">
+    Add a remote from the Left Panel
+  </figcaption>
 </figure>
 
 <div class='callout callout--warning'>
@@ -46,7 +51,10 @@ To push local commits to a remote branch:
 - Or right-click a branch and select <em class='context-menu'>Push</em>
 
 <figure>
-  <img src="/wp-content/uploads//push.png" srcset="/wp-content/uploads//push@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads//push.png" 
+       srcset="/wp-content/uploads//push@2x.png" 
+       class="help-center-img img-bordered"
+       alt="Push button in GitKraken Desktop toolbar">
   <figcaption style="text-align:center; color:#888">Push a local branch to its upstream</figcaption>
 </figure>
 
@@ -60,7 +68,9 @@ If a remote branch doesn’t exist yet, GitKraken will prompt you to name and cr
 Drag a branch onto a remote branch (in the graph or Left Panel) to trigger a push.
 
 <figure>
-  <img src="/wp-content/uploads/push-branch-2025-HD.gif" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/push-branch-2025-HD.gif" 
+       class="help-center-img img-bordered"
+       alt="GitKraken Desktop showing drag-and-drop to push main branch to origin">
   <figcaption style="text-align:center; color:#888">Drag to push a branch to a remote</figcaption>
 </figure>
 
@@ -71,7 +81,10 @@ Drag a branch onto a remote branch (in the graph or Left Panel) to trigger a pus
 Fetching retrieves updates from remotes but doesn’t change your working directory.
 
 <figure>
-  <img src="/wp-content/uploads/fetch-menu-2025.png" srcset="/wp-content/uploads/fetch-menu-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/fetch-menu-2025.png" 
+       srcset="/wp-content/uploads/fetch-menu-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="GitKraken Desktop pull dropdown menu showing fetch and pull options, with the fetch option highlighted.">
   <figcaption style="text-align:center; color:#888">Fetch from the pull dropdown menu</figcaption>
 </figure>
 
@@ -79,7 +92,10 @@ Fetching retrieves updates from remotes but doesn’t change your working direct
 Shows how far ahead/behind your branches are compared to the remote.
 
 <figure>
-  <img src="/wp-content/uploads/branch-behind-2025.png" srcset="/wp-content/uploads/branch-behind-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/branch-behind-2025.png" 
+       srcset="/wp-content/uploads/branch-behind-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="GitKraken Desktop Left Panel showing branch main is 1 commit behind">
   <figcaption style="text-align:center; color:#888">Ahead/behind indicators in the Left Panel</figcaption>
 </figure>
 
@@ -95,7 +111,10 @@ Pulling performs a fetch and then updates your local branch.
 Fast-forwards your branch if there are no conflicting commits; otherwise, merges.
 
 <figure>
-  <img src='/wp-content/uploads/pull-ff-ex-2025.png' srcset="/wp-content/uploads/pull-ff-ex-2025@2x.png" class="help-center-img img-bordered">
+  <img src='/wp-content/uploads/pull-ff-ex-2025.png' 
+       srcset="/wp-content/uploads/pull-ff-ex-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="GitKraken Desktop commit graph showing fallback to merge when fast-forward pull is not possible">
   <figcaption style="text-align:center; color:#888">Example: Merge fallback when fast-forward not possible</figcaption>
 </figure>
 
@@ -106,7 +125,10 @@ Attempts to fast-forward. If not possible, no action is taken.
 Temporarily stashes your commits, pulls from remote, and replays your changes on top.
 
 <figure>
-  <img src='/wp-content/uploads/pull-rebase-2025.png' srcset="/wp-content/uploads/pull-rebase-2025@2x.png" class="help-center-img img-bordered">
+  <img src='/wp-content/uploads/pull-rebase-2025.png' 
+       srcset="/wp-content/uploads/pull-rebase-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="GitKraken Desktop commit graph demonstrating linear history using pull-rebase">
   <figcaption style="text-align:center; color:#888">Rebase keeps commit history linear</figcaption>
 </figure>
 
@@ -114,7 +136,10 @@ Temporarily stashes your commits, pulls from remote, and replays your changes on
 Select a default pull method via the dropdown menu.
 
 <figure>
-  <img src="/wp-content/uploads/set-default.png" srcset="/wp-content/uploads/set-default@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/set-default.png" 
+       srcset="/wp-content/uploads/set-default@2x.png" 
+       class="help-center-img img-bordered"
+       alt="GitKraken Desktop pull menu with option to set default pull behavior">
   <figcaption style="text-align:center; color:#888">Choose a default pull behavior</figcaption>
 </figure>
 
@@ -128,13 +153,18 @@ The upstream defines the remote branch a local branch tracks.
 - Or click the <kbd><i class="fa fa-ellipsis-v"></i></kbd> button
 
 <figure>
-  <img src="/wp-content/uploads/upstream.png" srcset="/wp-content/uploads//upstream@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/upstream.png" 
+       srcset="/wp-content/uploads/upstream@2x.png" 
+       class="help-center-img img-bordered"
+       alt="GitKraken Desktop context menu with 'Set Upstream' option selected">
   <figcaption style="text-align:center; color:#888">Set the upstream branch</figcaption>
 </figure>
 
 You can also drag and drop to push instead of explicitly setting the upstream:
 
 <figure>
-  <img src="/wp-content/uploads/drag-and-drop-push-2025.gif" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/drag-and-drop-push-2025.gif" 
+       class="help-center-img img-bordered" 
+       alt="GitKraken Desktop interface showing a user pushing a branch to origin/main using drag-and-drop">
   <figcaption style="text-align:center; color:#888">Push without setting upstream via drag-and-drop</figcaption>
 </figure>
