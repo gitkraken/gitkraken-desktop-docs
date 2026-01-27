@@ -50,16 +50,12 @@ To open an existing repo:
 2. Use the file explorer to locate your repo
 
 <figure>
-  <img src='/wp-content/uploads/open-repo-2025.png' srcset="/wp-content/uploads/open-repo-2025@2x.png"  class="help-center-img img-bordered">
+  <img src='/wp-content/uploads/open-repo-2025.png' srcset="/wp-content/uploads/open-repo-2025@2x.png"  class="help-center-img img-bordered" alt="Repository Management screen with the Browse button highlighted to open an existing repository">
   <figcaption style="text-align:center; color:#888">Select an existing repository to open</figcaption>
 </figure>
 
 You can also access this via the <strong>New Tab</strong> by clicking the + icon.
 
-<figure>
-  <img src='/wp-content/uploads/open-new-tab-2025.png' class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">New tab view with Browse option</figcaption>
-</figure>
 
 #### Open Shallow Cloned Repos
 
