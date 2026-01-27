@@ -12,7 +12,9 @@ Have you ever made a Git change and immediately wished you could take it back? W
 You can undo many common actions with a single click of the **Undo** button. If you undo something by mistake, you can also **redo** it just as easily.
 
 <figure>
-    <img src='/wp-content/uploads/undo-undo-2025.png' class="help-center-img img-bordered" alt="Undo button in GitKraken Desktop">
+    <img src='/wp-content/uploads/undo-undo-2025.png' 
+         class="help-center-img img-bordered" 
+         alt="GitKraken Desktop showing the Undo button with tooltip: 'Undo Commit amend “Updates the GitKraken commit documentation to reflect UI”'.">
     <figcaption style="color: #888; text-align: center;">Click the Undo button to revert supported Git actions.</figcaption>
 </figure>
 
