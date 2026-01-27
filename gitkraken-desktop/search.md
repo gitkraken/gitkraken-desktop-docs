@@ -4,7 +4,7 @@ description: Discover how to find commits by message, SHA, or author in GitKrake
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Learn how to search for commits in GitKraken Desktop.
 
