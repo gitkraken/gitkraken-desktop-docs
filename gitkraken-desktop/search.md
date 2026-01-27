@@ -16,7 +16,9 @@ By default, GitKraken Desktop displays up to 2000 commits on the Commit Graph. T
 Navigate to <kbd>Preferences</kbd> from the gear menu in the upper right corner, and find <kbd>Initial Commits in Graph</kbd> under <kbd>General</kbd>. There is no limit to how many commits can be displayed. 
 
 <figure>
-  <img src='/wp-content/uploads/max-commits-2025.png' class="help-center-img img-bordered">
+  <img src='/wp-content/uploads/max-commits-2025.png' 
+       class="help-center-img img-bordered" 
+       alt="Preferences > General view in GitKraken Desktop, with 'Initial Commits in Graph' highlighted to show where to set the number of commits to display.">
   <figcaption style="color:#888; text-align:center">Set the number of commits to display in the Commit Graph from Preferences.</figcaption>
 </figure>
 
@@ -27,7 +29,9 @@ Above this setting, you'll also find an option to <kbd>Show All Commits in Graph
 The search bar in the upper right of the application defaults to commit search.
 
 <figure>
-  <img src='/wp-content/uploads/commit-search-2025.png' class="help-center-img img-bordered">
+  <img src='/wp-content/uploads/commit-search-2025.png' 
+       class="help-center-img img-bordered" 
+       alt="GitKraken Desktop view showing a commit search for the term 'unbreak'. The search bar and match are highlighted in the interface.">
   <figcaption style="color:#888; text-align:center">Use the search bar to find commits by message, SHA, or author.</figcaption>
 </figure>
 
