@@ -4,7 +4,7 @@ description: Step-by-step guide to using GitKraken Desktop in WSL 2, including s
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Learn how to run GitKraken Desktop on Windows Subsystem for Linux (WSL 2), including GUI integration and installation requirements.
 

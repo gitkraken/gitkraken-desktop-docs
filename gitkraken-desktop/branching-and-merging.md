@@ -4,7 +4,7 @@ description: Learn how to create branches, merge code, and rebase commits using 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Learn how to branch, merge, and rebase in GitKraken Desktop.
 

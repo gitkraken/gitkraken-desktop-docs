@@ -4,7 +4,7 @@ description: Learn how to fork public or private GitHub repositories directly fr
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Forking allows you to create your own copy of a repository. You can use forks to propose changes, contribute to upstream projects, or maintain your own version of a project.
 

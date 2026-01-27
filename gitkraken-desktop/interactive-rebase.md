@@ -4,7 +4,7 @@ description: Step-by-step guide to using interactive rebase in GitKraken Desktop
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Interactive rebase lets you rewrite commit history by editing, reordering, combining, or removing commits. Use it to clean up your commit history before merging a feature branch.
 

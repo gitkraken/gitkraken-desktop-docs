@@ -4,14 +4,17 @@ description: Learn how to use GitKraken’s in-app terminal to run Git commands,
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Open the Terminal to run Git CLI commands while viewing the Commit Graph.
 
 To get started, open a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar, or search for "terminal" using the <a href="/working-with-repositories/command-palette">Command Palette</a>.
 
 <figure>
-  <img src="/wp-content/uploads/terminal-button-2025.png" srcset="/wp-content/uploads/terminal-button-2025@2x.png" class="help-center-img img-bordered" alt="Terminal button in GitKraken toolbar">
+  <img src="/wp-content/uploads/terminal-button-2025.png" 
+       srcset="/wp-content/uploads/terminal-button-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="GitKraken Desktop interface showing the Terminal button in the top toolbar and an open terminal panel running the git status command.">
   <figcaption style="text-align:center; color:#888">Launch the terminal from the GitKraken toolbar</figcaption>
 </figure>
 

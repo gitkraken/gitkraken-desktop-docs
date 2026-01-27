@@ -4,7 +4,7 @@ description: Learn how to add, update, and manage Git submodules in GitKraken De
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Submodules allow you to include another Git repository inside a parent repository. Use submodules to incorporate independent projects while maintaining separate commit histories.
 

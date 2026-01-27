@@ -4,7 +4,7 @@ description: Learn how to view real-time Git actions, application events, and Gi
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Learn how to view all Git and application-level actions made in GitKraken Desktop using Activity Logs.
 

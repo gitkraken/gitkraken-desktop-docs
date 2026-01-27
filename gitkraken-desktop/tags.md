@@ -4,7 +4,7 @@ description: Learn how to create, annotate, move, and share Git tags in GitKrake
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Tags <em class='context-menu'><img style='transform:rotate(180deg);height:1em;' src='/wp-content/uploads/gk-tag-icon.svg'></em> are labels that point to a specific commit in your Git history. They’re useful for marking version releases or significant project milestones.
 

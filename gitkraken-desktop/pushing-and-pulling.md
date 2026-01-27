@@ -4,7 +4,7 @@ description: Learn how to push, pull, and fetch changes with GitKraken Desktop. 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Push, pull, and fetch operations are essential for synchronizing local work with remote repositories in GitKraken Desktop.
 

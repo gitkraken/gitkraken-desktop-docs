@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Git hooks are shell scripts that execute after Git events such as commits or pushes.
 

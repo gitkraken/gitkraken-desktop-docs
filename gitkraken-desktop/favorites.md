@@ -4,7 +4,7 @@ description: Learn how to favorite repositories in GitKraken Desktop for quick a
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Favoriting repositories allows you to quickly access commonly used projects in GitKraken Desktop from the Repo Management tab, dropdown menus, or keyboard shortcuts.
 
