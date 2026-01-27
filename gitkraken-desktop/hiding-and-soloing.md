@@ -4,14 +4,14 @@ description: Learn how to reduce visual clutter in GitKraken Desktop by hiding o
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 The Left Panel lets you control the Commit Graph view for better focus. Use _Hide_ to temporarily remove references, or _Solo_ to spotlight specific branches.
 
 ***
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads//solo-hide.gif" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/solo-hide.gif" class="help-center-img img-bordered" alt="Animated demonstration of soloing and hiding branches in GitKraken Desktop's Left Panel">
   <figcaption style="text-align: center; color: #888;">Animation demonstrating hiding and soloing branches from the Left Panel.</figcaption>
 </figure>
 
@@ -45,6 +45,11 @@ The Left Panel lets you control the Commit Graph view for better focus. Use _Hid
 You can hide or show all **Remotes**, **Tags**, **Branches**, or **Stashes** from the Left Panel. Right-click the corresponding header to access bulk options.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/hide-show-all.png' srcset='/wp-content/uploads/hide-show-all@2x.png' class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">Right-click section headers to hide or show all references.</figcaption>
+  <img src='/wp-content/uploads/hide-show-all.png' 
+       srcset='/wp-content/uploads/hide-show-all@2x.png' 
+       class="help-center-img img-bordered"
+       alt="Context menu showing the 'Show all remotes' option after right-clicking the REMOTE section in GitKraken Desktop">
+  <figcaption style="text-align: center; color: #888;">
+    Right-click section headers to hide or show all references.
+  </figcaption>
 </figure>

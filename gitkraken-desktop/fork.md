@@ -4,7 +4,7 @@ description: Learn how to fork public or private GitHub repositories directly fr
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Forking allows you to create your own copy of a repository. You can use forks to propose changes, contribute to upstream projects, or maintain your own version of a project.
 
@@ -19,21 +19,21 @@ With the [GitHub integration](/gitkraken-desktop/github-gitkraken-desktop/) or [
 3. Select the <kbd>GitHub.com</kbd> or <kbd>GitHub Enterprise Server</kbd> tab.
 
 <figure>
-  <img src="/wp-content/uploads/add-remote.png" srcset="/wp-content/uploads/add-remote@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/add-remote.png" srcset="/wp-content/uploads/add-remote@2x.png" class="help-center-img img-bordered" alt="GitKraken interface showing the Add Remote panel with a green plus icon on the REMOTE section and GitHub.com selected as the source.">
   <figcaption style="text-align:center; color:#888">Add a remote using the + icon in the Left Panel</figcaption>
 </figure>
 
 If no fork is currently linked, GitKraken Desktop offers to fork the repo and add it as a remote.
 
 <figure>
-  <img src="/wp-content/uploads/fork-github-2025.png" srcset="/wp-content/uploads/fork-github-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/fork-github-2025.png" srcset="/wp-content/uploads/fork-github-2025@2x.png" class="help-center-img img-bordered" alt="GitKraken Desktop UI showing an alert that the user has not yet forked the DiceDB/dice repository on GitHub, with a button to 'Fork and Add Remote'.">
   <figcaption style="text-align:center; color:#888">GitKraken detects the repo is not yet forked</figcaption>
 </figure>
 
 Click <button class='button button--success button--ui button--nolink'>Fork and Add Remote</button> to fork the repository and link it.
 
 <figure>
-  <img src="/wp-content/uploads/add-fork-2025.png" srcset="/wp-content/uploads/add-fork-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/add-fork-2025.png" srcset="/wp-content/uploads/add-fork-2025@2x.png" class="help-center-img img-bordered" alt="Fork remote named 'jjsilva4' shown in the Left Panel of GitKraken Desktop">
   <figcaption style="text-align:center; color:#888">Fork is added as a remote in the Left Panel</figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ If you've already forked the repo on GitHub:
 GitKraken Desktop will detect the existing fork and offer to add it.
 
 <figure>
-  <img src="/wp-content/uploads/detect-fork.png" srcset="/wp-content/uploads/detect-fork@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/detect-fork.png" srcset="/wp-content/uploads/detect-fork@2x.png" class="help-center-img img-bordered" alt="GitKraken Desktop detecting a fork from the Add Remote pane and prompting to add it as a remote">
   <figcaption style="text-align:center; color:#888">Add an existing fork as a remote</figcaption>
 </figure>
 

@@ -4,7 +4,7 @@ description: Learn how to add, update, and manage Git submodules in GitKraken De
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Submodules allow you to include another Git repository inside a parent repository. Use submodules to incorporate independent projects while maintaining separate commit histories.
 
@@ -21,7 +21,10 @@ To toggle the Submodules pane:
 2. Check or uncheck “Submodules” to show or hide the pane.
 
 <figure>
-  <img src="/wp-content/uploads/toggle-panes-2025.png" srcset="/wp-content/uploads/toggle-panes-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/toggle-panes-2025.png" 
+       srcset="/wp-content/uploads/toggle-panes-2025@2x.png" 
+       alt="GitKraken Desktop Left Panel showing the toggle pane menu with options to show or hide sections like Remote, Pull Requests, Tags, and Submodules" 
+       class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Toggle the Submodules pane from the Left Panel</figcaption>
 </figure>
 
@@ -36,7 +39,10 @@ To add a submodule:
 4. Enter the desired path.
 
 <figure>
-  <img src="/wp-content/uploads//add-submodule.png" srcset="/wp-content/uploads//add-submodule@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads//add-submodule.png" 
+       srcset="/wp-content/uploads//add-submodule@2x.png" 
+       alt="GitKraken Desktop interface showing the Add Submodule modal with fields for Remote URL and Name/Path, and a green Add Submodule button" 
+       class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Add a submodule using HTTPS or SSH URL</figcaption>
 </figure>
 
@@ -54,7 +60,10 @@ To update a submodule:
 3. Select <kbd>Update</kbd> to fetch the latest commit.
 
 <figure>
-  <img src="/wp-content/uploads//update-submodule.png" srcset="/wp-content/uploads//update-submodule@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads//update-submodule.png" 
+       srcset="/wp-content/uploads//update-submodule@2x.png" 
+       alt="Context menu in GitKraken Desktop showing options to update, edit, open, or delete the submodule vendor/libgit2" 
+       class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Update a submodule from the Left Panel</figcaption>
 </figure>
 
@@ -69,10 +78,13 @@ To update the tracked commit:
 2. Check out a new commit or branch.
 3. Exit the submodule to return to the parent repo.
 
-GitKraken will prompt you to save the updated pointer commit.
+GitKraken Desktop will prompt you to save the updated pointer commit.
 
 <figure>
-  <img src="/wp-content/uploads//submodule-commit.png" srcset="/wp-content/uploads//submodule-commit@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads//submodule-commit.png" 
+       srcset="/wp-content/uploads//submodule-commit@2x.png" 
+       alt="GitKraken Desktop interface showing submodule vendor/libgit2 out-of-sync, with options to commit or discard changes, and view or delete the submodule" 
+       class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Update the pointer commit for a submodule</figcaption>
 </figure>
 

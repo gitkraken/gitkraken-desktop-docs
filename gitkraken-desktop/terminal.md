@@ -4,14 +4,17 @@ description: Learn how to use GitKraken’s in-app terminal to run Git commands,
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Open the Terminal to run Git CLI commands while viewing the Commit Graph.
 
 To get started, open a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar, or search for "terminal" using the <a href="/working-with-repositories/command-palette">Command Palette</a>.
 
 <figure>
-  <img src="/wp-content/uploads/terminal-button-2025.png" srcset="/wp-content/uploads/terminal-button-2025@2x.png" class="help-center-img img-bordered" alt="Terminal button in GitKraken toolbar">
+  <img src="/wp-content/uploads/terminal-button-2025.png" 
+       srcset="/wp-content/uploads/terminal-button-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="GitKraken Desktop interface showing the Terminal button in the top toolbar and an open terminal panel running the git status command.">
   <figcaption style="text-align:center; color:#888">Launch the terminal from the GitKraken toolbar</figcaption>
 </figure>
 
@@ -22,14 +25,18 @@ To get started, open a repository and click the Terminal <i class="fa fa-termina
 The GitKraken Terminal supports most <a href="https://git-scm.com/" target="_blank">Git</a> commands. Start typing `git` to see command suggestions via auto-complete.
 
 <figure>
-  <img src="/wp-content/uploads/autocomplete-suggestions.png" class="help-center-img img-bordered" alt="Auto-complete suggestions for Git commands">
+  <img src="/wp-content/uploads/autocomplete-suggestions.png" 
+       class="help-center-img img-bordered" 
+       alt="Autocomplete dropdown in GitKraken Desktop terminal suggesting Git commands after typing 'git'. Suggestions include commit, config, rebase, add, and others.">
   <figcaption style="text-align:center; color:#888">Git commands appear in auto-complete suggestions</figcaption>
 </figure>
 
 Flag suggestions are also supported:
 
 <figure>
-  <img src="/wp-content/uploads/autocomplete-suggestions-flags.png" class="help-center-img img-bordered" alt="Auto-complete for Git command flags">
+  <img src="/wp-content/uploads/autocomplete-suggestions-flags.png" 
+       class="help-center-img img-bordered" 
+       alt="Autocomplete dropdown in the GitKraken Desktop terminal showing flag suggestions for the 'git status' command. Flags include --verbose, --branch, --show-stash, and others.">
   <figcaption style="text-align:center; color:#888">Flag suggestions enhance Git command efficiency</figcaption>
 </figure>
 
@@ -44,7 +51,10 @@ Flag suggestions are also supported:
 Visit <kbd><strong>Preferences > In-app Terminal</strong></kbd> to modify your terminal settings.
 
 <figure>
-  <img src="/wp-content/uploads/terminal-preferences-2025.png" srcset="/wp-content/uploads/terminal-preferences-2025@2x.png" class="help-center-img img-bordered" alt="Terminal preferences in GitKraken">
+  <img src="/wp-content/uploads/terminal-preferences-2025.png" 
+       srcset="/wp-content/uploads/terminal-preferences-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="GitKraken Desktop Preferences window with In-App Terminal settings selected. Options visible include font selection, font size, line height, cursor style, and autocomplete behavior.">
   <figcaption style="text-align:center; color:#888">Access terminal settings under Preferences</figcaption>
 </figure>
 

@@ -4,7 +4,7 @@ description: Learn how to share and open deep links to specific branches, commit
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Use deep links in GitKraken Desktop to share or open specific remote repositories, commits, branches, or tags. This allows your team to quickly access relevant project context with a single click.
 
@@ -15,8 +15,12 @@ Use deep links in GitKraken Desktop to share or open specific remote repositorie
 Right-click on a branch, commit, tag, or repository to copy a deep link.
 
 <figure>
-  <img src="/wp-content/uploads/link_context_menu_options.gif" class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">Copy link from context menu options</figcaption>
+  <img src="/wp-content/uploads/link_context_menu_options.gif"
+       class="help-center-img img-bordered"
+       alt="GitKraken Desktop context menu showing 'Copy link to this commit' options">
+  <figcaption style="text-align:center; color:#888">
+    Copy link from context menu options
+  </figcaption>
 </figure>
 
 These links can be pasted into tools like Jira, GitHub, Slack, or Microsoft Teams.
@@ -30,8 +34,12 @@ If someone sends you a GitKraken Desktop link:
 - GitKraken Desktop will open and navigate to the specified item
 
 <figure>
-  <img src="/wp-content/uploads/click_link_slack.gif" class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">Opening a GitKraken deep link from Slack</figcaption>
+  <img src="/wp-content/uploads/click_link_slack.gif" 
+       class="help-center-img img-bordered"
+       alt="User clicking a GitKraken deep link in Slack, opening the commit in GitKraken Desktop">
+  <figcaption style="text-align:center; color:#888">
+    Opening a GitKraken deep link from Slack
+  </figcaption>
 </figure>
 
 ***

@@ -4,7 +4,7 @@ description: Learn how to create, switch, and manage Git worktrees in GitKraken 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Learn how to manage Git worktrees using GitKraken Desktop. Worktrees let you work on multiple branches at the same time, with each in its own working directory.
 
@@ -48,8 +48,12 @@ To create a worktree:
 2. Select <kbd>Create worktree</kbd>
 
 <figure>
-  <img src="/wp-content/uploads/gkd-10-5-create-worktree.png" class="help-center-img img-bordered" alt="Create worktree from branch context menu">
-  <figcaption style="text-align:center; color:#888">Create a new worktree from any branch</figcaption>
+  <img src="/wp-content/uploads/gkd-10-5-create-worktree.png" 
+       class="help-center-img img-bordered" 
+       alt="GitKraken Desktop context menu showing the option to create a worktree from the branch updates-10-4, with the branch 10-5-updates currently checked out.">
+  <figcaption style="text-align:center; color:#888">
+    Create a new worktree from any branch
+  </figcaption>
 </figure>
 
 ### Switch Worktrees
@@ -59,8 +63,12 @@ To switch to another worktree:
 - Or check out the corresponding branch from the Repository View
 
 <figure>
-  <img src="/wp-content/uploads/gkd-10-5-worktrees-actions.png" class="help-center-img img-bordered" alt="Worktree context menu with open option">
-  <figcaption style="text-align:center; color:#888">Switch between worktrees from the Left Panel</figcaption>
+  <img src="/wp-content/uploads/gkd-10-5-worktrees-actions.png" 
+       class="help-center-img img-bordered" 
+       alt="GitKraken Desktop worktree context menu with options to open, remove, or lock the selected worktree named 10-4-1-updates.">
+  <figcaption style="text-align:center; color:#888">
+    Switch between worktrees from the Left Panel
+  </figcaption>
 </figure>
 
 ### Delete a Worktree

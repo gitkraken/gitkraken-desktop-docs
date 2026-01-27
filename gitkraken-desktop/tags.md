@@ -4,7 +4,7 @@ description: Learn how to create, annotate, move, and share Git tags in GitKrake
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Tags <em class='context-menu'><img style='transform:rotate(180deg);height:1em;' src='/wp-content/uploads/gk-tag-icon.svg'></em> are labels that point to a specific commit in your Git history. They’re useful for marking version releases or significant project milestones.
 
@@ -17,21 +17,30 @@ To create a new tag:
 2. Select <kbd>Create tag here</kbd>.
 
 <figure>
-  <img src="/wp-content/uploads/create-tag-2025.png" srcset="/wp-content/uploads/create-tag-2025.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/create-tag-2025.png" 
+       srcset="/wp-content/uploads/create-tag-2025.png" 
+       alt="GitKraken Desktop context menu on a commit with options to create tag or annotated tag" 
+       class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Create a tag from a commit's context menu</figcaption>
 </figure>
 
 To share a tag with collaborators, right-click it and choose <kbd>Push tag</kbd>.
 
 <figure>
-  <img src="/wp-content/uploads/push-tag-2025.png" srcset="/wp-content/uploads/push-tag-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/push-tag-2025.png" 
+       srcset="/wp-content/uploads/push-tag-2025@2x.png" 
+       alt="GitKraken Desktop tag context menu showing push, merge, rebase, and delete options" 
+       class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Push a local tag to a remote</figcaption>
 </figure>
 
 Double-click a tag in the Left Panel to jump to that commit in the graph. You can also hide or solo tags via the context menu.
 
 <figure>
-  <img src="/wp-content/uploads/tag-right.png" srcset="/wp-content/uploads/tag-right.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/tag-right.png" 
+       srcset="/wp-content/uploads/tag-right.png" 
+       alt="GitKraken Desktop context menu for a tag with options to push, merge, rebase, create branch, and delete" 
+       class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Access tag options from the Left Panel</figcaption>
 </figure>
 
@@ -44,7 +53,10 @@ While you can't check out a tag directly, you can branch from it:
 2. Select <kbd>Create branch here</kbd>.
 
 <figure>
-  <img src="/wp-content/uploads/tag-branch.png" srcset="/wp-content/uploads/tag-branch@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/tag-branch.png" 
+       srcset="/wp-content/uploads/tag-branch@2x.png" 
+       alt="GitKraken Desktop tag context menu showing options to push, merge, rebase, create branch, and more. The `create a branch` option is selected." 
+       class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Create a branch from a tag</figcaption>
 </figure>
 
@@ -72,7 +84,10 @@ To add a message to a tag:
 Annotated messages appear in the graph and Left Panel on hover.
 
 <figure>
-  <img src="/wp-content/uploads/tag-annotation.png" srcset="/wp-content/uploads/tag-annotation.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/tag-annotation.png" 
+       srcset="/wp-content/uploads/tag-annotation.png" 
+       alt="GitKraken Desktop interface showing a hover tooltip for the annotated Git tag v1.9.0 in the Commit Graph" 
+       class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Hover to preview an annotated tag</figcaption>
 </figure>
 
@@ -95,7 +110,10 @@ To delete a tag from the remote:
 > Deleting a tag is permanent and cannot be undone.
 
 <figure>
-  <img src="/wp-content/uploads/delete-tag-context-menu-2025.png" srcset="/wp-content/uploads/delete-tag-context-menu-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/delete-tag-context-menu-2025.png" 
+       srcset="/wp-content/uploads/delete-tag-context-menu-2025@2x.png" 
+       alt="GitKraken Desktop context menu showing options to delete a Git tag locally or from the origin remote" 
+       class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Right-click a tag to delete it locally or from a remote.</figcaption>
 </figure>
 
@@ -120,7 +138,10 @@ GitKraken Desktop does not support renaming tags directly. To rename a tag, dele
 Use the filter bar in the Left Panel to search for tags.
 
 <figure>
-  <img src="/wp-content/uploads/filter-tags.png" srcset="/wp-content/uploads/filter-tags@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/filter-tags.png" 
+       srcset="/wp-content/uploads/filter-tags@2x.png" 
+       alt="GitKraken Desktop interface showing filtered Git tags matching '20160' under the 'translation' category in the left panel" 
+       class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Search for tags from the Left Panel</figcaption>
 </figure>
 
@@ -133,6 +154,9 @@ To toggle visibility of the Tags section:
 - Check or uncheck <kbd>Tags</kbd>.
 
 <figure>
-  <img src="/wp-content/uploads/toggle-panes-2025.png" srcset="/wp-content/uploads/toggle-panes-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/toggle-panes-2025.png" 
+       srcset="/wp-content/uploads/toggle-panes-2025@2x.png" 
+       alt="GitKraken Desktop interface with a dropdown menu showing toggles for Left Panel sections such as Remote, Pull Requests, Tags, and GitHub Actions" 
+       class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Show or hide the Tags pane in the Left Panel</figcaption>
 </figure>
