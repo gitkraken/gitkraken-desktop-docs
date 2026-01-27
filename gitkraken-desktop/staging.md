@@ -18,14 +18,14 @@ Staging prepares your file changes for commit. To begin:
 1. Select the <strong>//WIP</strong> node in the Commit Graph to open the Commit Panel.
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/select-WIP-2025.png' class="help-center-img img-bordered" alt="Select the WIP node to view changes">
+    <img src='/wp-content/uploads/select-WIP-2025.png' class="help-center-img img-bordered" alt="Working directory changes shown in GitKraken Desktop with the //WIP node selected in the commit graph">
     <figcaption style="text-align: center; color: #888;">Select the //WIP node to view your working changes.</figcaption>
 </figure>
 
 2. Hover over a file and click <button class='button button--success button--ui button--nolink'>Stage File</button> to stage it.
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/stage-file-2025.png' srcset="/wp-content/uploads/stage-file-2025@2x.png" class="help-center-img img-bordered" alt="Stage file button appears on hover">
+    <img src='/wp-content/uploads/stage-file-2025.png' srcset="/wp-content/uploads/stage-file-2025@2x.png" class="help-center-img img-bordered" alt="GitKraken Desktop showing unstaged files with the 'Stage File' button visible next to markdown.md">
     <figcaption style="text-align: center; color: #888;">Click Stage File on hover.</figcaption>
 </figure>
 
@@ -37,7 +37,7 @@ You can also:
   - Right-click and select <kbd>Stage selected lines</kbd>
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/stage-selected-lines-2025.png' class="help-center-img img-bordered" alt="Select lines to stage from diff view">
+    <img src='/wp-content/uploads/stage-selected-lines-2025.png' class="help-center-img img-bordered" alt="Context menu in GitKraken Desktop showing 'Stage selected lines' for staging specific changes from the diff view.">
     <figcaption style="text-align: center; color: #888;">Right-click to stage specific lines or hunks.</figcaption>
 </figure>
 
@@ -55,14 +55,14 @@ To unstage a file:
 2. Click <button class='button button--danger button--ui button--nolink'>Unstage File</button>
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/unstage-file-2025.png' srcset="/wp-content/uploads/unstage-file-2025@2x.png" class="help-center-img img-bordered" alt="Unstage a file button">
+    <img src='/wp-content/uploads/unstage-file-2025.png' srcset="/wp-content/uploads/unstage-file-2025@2x.png" class="help-center-img img-bordered" alt="The staged files list in GitKraken Desktop showing the Unstage File button for a selected file.">
     <figcaption style="text-align: center; color: #888;">Click Unstage File to move it back to working changes.</figcaption>
 </figure>
 
 To unstage lines or hunks, click a file to view its diff and right-click the content to unstage.
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/unstage-hunk-2025.png' class="help-center-img img-bordered" alt="Unstage hunk from file diff view">
+    <img src='/wp-content/uploads/unstage-hunk-2025.png' class="help-center-img img-bordered" alt="The file diff view in GitKraken Desktop showing the Unstage Hunk option with a pointer from the staged file list.">
     <figcaption style="text-align: center; color: #888;">Unstage specific hunks directly from the diff view.</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ To discard changes across your working directory:
 2. Click the <i class="fa fa-trash-o" aria-hidden="true"></i> trash icon to discard all or selected files
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/discard-all-changes-2025.png' srcset="/wp-content/uploads/discard-all-changes-2025@2x.png" class="help-center-img img-bordered" alt="Discard all changes from WIP">
+    <img src='/wp-content/uploads/discard-all-changes-2025.png' srcset="/wp-content/uploads/discard-all-changes-2025@2x.png" class="help-center-img img-bordered" alt="Discard all changes button highlighted above a list of unstaged files.">
     <figcaption style="text-align: center; color: #888;">Discard changes for all or multiple selected files.</figcaption>
 </figure>
 
@@ -91,7 +91,7 @@ You can also:
 - Right-click within the staging panel and choose <strong>Discard Changes</strong>
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/discard-hunk-ex-2025.png' class="help-center-img img-bordered" alt="Discard individual hunk from diff">
+    <img src='/wp-content/uploads/discard-hunk-ex-2025.png' class="help-center-img img-bordered" alt="Discard hunk button highlighted above a section of modified code.">
     <figcaption style="text-align: center; color: #888;">Discard selected hunks of code.</figcaption>
 </figure>
 
@@ -104,7 +104,7 @@ To prevent Git from tracking certain files, add them to a `.gitignore` file.
 Right-click a file and select <strong>Ignore</strong>:
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/ignore-file.png' srcset='/wp-content/uploads/ignore-file@2x.png 2x' class="help-center-img img-bordered" alt="Ignore option in file context menu">
+    <img src='/wp-content/uploads/ignore-file.png' srcset='/wp-content/uploads/ignore-file@2x.png 2x' class="help-center-img img-bordered" alt="Context menu with Ignore options for a selected file in the Tree view">
     <figcaption style="text-align: center; color: #888;">Choose ignore rules based on file, extension, or folder.</figcaption>
 </figure>
 
@@ -125,20 +125,20 @@ GitKraken Desktop will add the rule to a `.gitignore` file at the root of your r
 If a file is already tracked, you’ll see two options:
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/ignore-stop-tracking-2025.png' class="help-center-img img-bordered" alt="Prompt to ignore a tracked file">
+    <img src='/wp-content/uploads/ignore-stop-tracking-2025.png' class="help-center-img img-bordered" alt="Dialog with options to ignore, ignore and stop tracking, or cancel for a selected tracked file">
     <figcaption style="text-align: center; color: #888;">Prompt showing options to ignore a file already tracked by Git.</figcaption>
 </figure>
 
 Selecting <strong>Ignore</strong> will add the corresponding entry to the `.gitignore` file, but Git will continue tracking the file.
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/ignore-only.png' srcset='/wp-content/uploads/ignore-only@2x.png' class="help-center-img img-bordered" alt="Option to ignore but keep tracking">
+    <img src='/wp-content/uploads/ignore-only.png' srcset='/wp-content/uploads/ignore-only@2x.png' class="help-center-img img-bordered" alt="Untracked .gitignore and test.txt files displayed under the obj folder in the Unstaged Files section.">
     <figcaption style="text-align: center; color: #888;">Ignore file but keep it tracked by Git.</figcaption>
 </figure>
 
 Selecting <strong>Ignore and Stop Tracking</strong> will add the entry and remove the file from the Git index, so Git stops tracking it.
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/ignore-untrack.png' srcset='/wp-content/uploads/ignore-untrack@2x.png' class="help-center-img img-bordered" alt="Option to ignore and stop tracking">
+    <img src='/wp-content/uploads/ignore-untrack.png' srcset='/wp-content/uploads/ignore-untrack@2x.png' class="help-center-img img-bordered" alt=".gitignore file shown as unstaged; test.txt under obj folder shown as staged for removal">
     <figcaption style="text-align: center; color: #888;">Ignore file and remove it from Git tracking.</figcaption>
 </figure>
