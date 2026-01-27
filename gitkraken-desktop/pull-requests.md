@@ -162,14 +162,19 @@ All code suggestions are posted a comments in the GitHub pull request conversati
 Code suggestions display in the PR view under the “Code Suggestions” label:
 
 <figure>
-  <img src='/wp-content/uploads/code-suggestion-2025.png' srcset='/wp-content/uploads/code-suggestion-2025@2x.png' class="help-center-img img-bordered">
+  <img src='/wp-content/uploads/code-suggestion-2025.png' 
+       srcset='/wp-content/uploads/code-suggestion-2025@2x.png' 
+       alt="Code suggestion label displayed in the PR list and detailed panel in GitKraken Desktop" 
+       class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Label for PRs containing code suggestions</figcaption>
 </figure>
 
 You can apply or reject each suggestion in the Commit Panel:
 
 <figure>
-  <img src='/wp-content/uploads/gkc-pr-code-suggestions-apply.gif' class="help-center-img img-bordered">
+  <img src='/wp-content/uploads/gkc-pr-code-suggestions-apply.gif' 
+       alt="User applying a code suggestion to the main branch from a pull request in GitKraken Desktop" 
+       class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Review and apply suggestions</figcaption>
 </figure>
 
