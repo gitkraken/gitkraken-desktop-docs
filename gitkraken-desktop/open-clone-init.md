@@ -27,7 +27,7 @@ The **Repository Management** tab provides an overview of active repositories, W
 - <kbd>Cmd + O</kbd> (Mac)
 
 <figure>
-  <img src='/wp-content/uploads/repo-mgmt-2025.png' srcset="/wp-content/uploads/repo-mgmt-2025@2x.png" class="help-center-img img-bordered"> alt="Repository Management tab showing buttons for Browse, Clone, and Init, with open, favorite, and recent repositories listed by group."
+  <img src='/wp-content/uploads/repo-mgmt-2025.png' srcset="/wp-content/uploads/repo-mgmt-2025@2x.png" class="help-center-img img-bordered"   alt="Repository Management tab showing buttons for Browse, Clone, and Init, with open, favorite, and recent repositories listed by group.">
   <figcaption style="text-align:center; color:#888">Repository Management tab in GitKraken Desktop</figcaption>
 </figure>
 
