@@ -4,13 +4,18 @@ description: Learn how to create, manage, and share Cloud or Local Workspaces in
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken Workspaces allow you to create easily accessible groups of repositories, take action across multiple repos, view details about their state at a glance, and share them with your team.
 
 <figure>
-  <img src="/wp-content/uploads/workspaces-tab-2025.png" srcset="/wp-content/uploads/workspaces-tab-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Group your repos into a Workspace</figcaption>
+  <img src="/wp-content/uploads/workspaces-tab-2025.png" 
+       srcset="/wp-content/uploads/workspaces-tab-2025@2x.png" 
+       class="help-center-img img-bordered"
+       alt="GitKraken Desktop showing multiple cloud Workspaces, each grouping related repositories with options to clone, locate, or manage them.">
+  <figcaption style="color:#888; text-align:center">
+    Group your repos into a Workspace
+  </figcaption>
 </figure>
 
 ***
