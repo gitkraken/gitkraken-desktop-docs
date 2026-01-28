@@ -28,8 +28,13 @@ To access the Repo Management tab:
 2. Or use the keyboard shortcut <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
 
 <figure>
-  <img src='/wp-content/uploads/open-workspaces-2025.png' srcset="/wp-content/uploads/open-workspaces-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Opening Workspaces from the Repo Management tab</figcaption>
+  <img src="/wp-content/uploads/open-workspaces-2025.png" 
+       srcset="/wp-content/uploads/open-workspaces-2025@2x.png" 
+       class="help-center-img img-bordered"
+       alt="GitKraken Desktop interface highlighting the folder icon used to access Workspaces from the Repo Management tab.">
+  <figcaption style="color:#888; text-align:center">
+    Opening Workspaces from the Repo Management tab
+  </figcaption>
 </figure>
 
 ***
@@ -52,13 +57,23 @@ Cloud Workspaces are accessible from any machine and can be shared with selected
 5. (Optional) Add an icon, description, and share with teams or users.
 
 <figure>
-  <img src="/wp-content/uploads/add-new-workspace-2025.png" srcset="/wp-content/uploads/add-new-workspace-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Add a new Cloud Workspace</figcaption>
+  <img src="/wp-content/uploads/add-new-workspace-2025.png" 
+       srcset="/wp-content/uploads/add-new-workspace-2025@2x.png" 
+       class="help-center-img img-bordered"
+       alt="Highlighted 'New Workspace' button in the Repository Management view of GitKraken Desktop.">
+  <figcaption style="color:#888; text-align:center">
+    Add a new Cloud Workspace
+  </figcaption>
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/config-cloud-workspace-2025.png" srcset="/wp-content/uploads/config-cloud-workspace-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Configuring Cloud Workspace settings</figcaption>
+  <img src="/wp-content/uploads/config-cloud-workspace-2025.png" 
+       srcset="/wp-content/uploads/config-cloud-workspace-2025@2x.png" 
+       class="help-center-img img-bordered"
+       alt="Cloud Workspace creation form in GitKraken Desktop, showing workspace name, color selection, provider, and repository fields.">
+  <figcaption style="color:#888; text-align:center">
+    Configuring Cloud Workspace settings
+  </figcaption>
 </figure>
 
 <div class='callout callout--warning'>
@@ -76,14 +91,20 @@ To take action across multiple repositories:
 2. Choose an action from the toolbar at the top.
 
 <figure>
-  <img src="/wp-content/uploads/multi-fetch-ws-2025.png" srcset="/wp-content/uploads/multi-fetch-ws-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/multi-fetch-ws-2025.png" 
+       srcset="/wp-content/uploads/multi-fetch-ws-2025@2x.png" 
+       class="help-center-img img-bordered"
+       alt="GitKraken Desktop interface showing multiple selected repositories in a workspace and the 'Fetch 3 repositories' button highlighted.">
   <figcaption style="color:#888; text-align:center">Multi-repo fetch operation</figcaption>
 </figure>
 
 More options are available via the ellipsis menu.
 
 <figure>
-  <img src="/wp-content/uploads/more-multi-repo-actions-2025.png" srcset="/wp-content/uploads/more-multi-repo-actions-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/more-multi-repo-actions-2025.png" 
+       srcset="/wp-content/uploads/more-multi-repo-actions-2025@2x.png" 
+       class="help-center-img img-bordered"
+       alt="GitKraken Desktop showing a dropdown menu with bulk workspace options, including Select All, Open repositories, and Remove repositories.">
   <figcaption style="color:#888; text-align:center">Accessing more multi-repo actions</figcaption>
 </figure>
 
@@ -128,13 +149,21 @@ More options are available via the ellipsis menu.
 Access open pull requests for all repositories in a Workspace directly from [Launchpad](https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/).
 
 <figure>
-  <img src="/wp-content/uploads/open-ws-in-lp-2025.png" srcset="/wp-content/uploads/open-ws-in-lp-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/open-ws-in-lp-2025.png" 
+       srcset="/wp-content/uploads/open-ws-in-lp-2025@2x.png" 
+       class="help-center-img img-bordered"
+       alt="GitKraken Desktop interface showing the rocket icon to open the workspace in Launchpad.">
   <figcaption style="color:#888; text-align:center">Viewing a Workspace in Launchpad</figcaption>
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/launchpad-team-view-2025.png" srcset="/wp-content/uploads/launchpad-team-view-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Launchpad showing team-wide pull request details</figcaption>
+  <img src="/wp-content/uploads/launchpad-team-view-2025.png" 
+       srcset="/wp-content/uploads/launchpad-team-view-2025@2x.png" 
+       class="help-center-img img-bordered"
+       alt="GitKraken Launchpad showing categorized pull requests with author, collaborators, repo, and branch information listed and actions like Open in GitHub, View Repo and open code suggestion available as a dropdown.">
+  <figcaption style="color:#888; text-align:center">
+    Launchpad showing team-wide pull request details
+  </figcaption>
 </figure>
 
 
@@ -154,8 +183,13 @@ To create a Local Workspace:
 5. (Optional) Add an icon and description.
 
 <figure>
-  <img src="/wp-content/uploads/create-local-ws-2025.png" srcset="/wp-content/uploads/create-local-ws-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Creating a Local Workspace in GitKraken Desktop</figcaption>
+  <img src="/wp-content/uploads/create-local-ws-2025.png" 
+       srcset="/wp-content/uploads/create-local-ws-2025@2x.png" 
+       class="help-center-img img-bordered"
+       alt="Dialog for creating a Local Workspace in GitKraken Desktop with workspace name, color, and repository options.">
+  <figcaption style="color:#888; text-align:center">
+    Creating a Local Workspace in GitKraken Desktop
+  </figcaption>
 </figure>
 
 To automatically add all repositories in a selected folder, enable the <strong>Sync with local directory</strong> option.
@@ -181,8 +215,13 @@ To enable sharing and enhanced visibility:
 4. (Optional) Add additional repositories from the same provider.
 
 <figure>
-  <img src="/wp-content/uploads/local-to-cloud-ws-2025.png" srcset="/wp-content/uploads/local-to-cloud-ws-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Converting a Local Workspace to a Cloud Workspace</figcaption>
+  <img src="/wp-content/uploads/local-to-cloud-ws-2025.png" 
+       srcset="/wp-content/uploads/local-to-cloud-ws-2025@2x.png" 
+       class="help-center-img img-bordered"
+       alt="Context menu in GitKraken showing the option to convert a Local Workspace to a Cloud Workspace.">
+  <figcaption style="color:#888; text-align:center">
+    Converting a Local Workspace to a Cloud Workspace
+  </figcaption>
 </figure>
 
 <div class='callout callout--warning'>
@@ -199,8 +238,13 @@ To enable sharing and enhanced visibility:
 To edit a Workspace, click the ellipsis <i class="fas fa-ellipsis-v"></i> next to the Workspace name.
 
 <figure>
-  <img src="/wp-content/uploads/multi-actions-ws-2025.png" srcset="/wp-content/uploads/multi-actions-ws-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Workspace actions menu</figcaption>
+  <img src="/wp-content/uploads/multi-actions-ws-2025.png" 
+       srcset="/wp-content/uploads/multi-actions-ws-2025@2x.png" 
+       class="help-center-img img-bordered"
+       alt="Dropdown menu in GitKraken showing workspace-level actions such as open, clone, locate, edit, change color, delete, and leave workspace.">
+  <figcaption style="color:#888; text-align:center">
+    Workspace actions menu
+  </figcaption>
 </figure>
 
 ### Hide a Workspace
@@ -208,8 +252,13 @@ To edit a Workspace, click the ellipsis <i class="fas fa-ellipsis-v"></i> next t
 Hide a Workspace to reduce clutter. Hidden groups (e.g., Recents, Favorites) can be shown again using the <i class="fa-solid fa-eye-slash"></i> icon.
 
 <figure>
-  <img src="/wp-content/uploads/unhide-group-2025.png" srcset="/wp-content/uploads/unhide-group-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Unhiding a group from the Repo Management tab</figcaption>
+  <img src="/wp-content/uploads/unhide-group-2025.png" 
+       srcset="/wp-content/uploads/unhide-group-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="GitKraken Desktop interface showing the option to unhide a group from the workspace list via the visibility settings menu.">
+  <figcaption style="color:#888; text-align:center">
+    Unhiding a group from the Repo Management tab
+  </figcaption>
 </figure>
 
 ### Select/Unselect Repositories
@@ -221,8 +270,13 @@ Manually select repositories for targeted multi-repo actions like Fetch or Pull.
 Open repositories in GitKraken Desktop or your preferred editor. You can also clone or locate repositories within the file system.
 
 <figure>
-  <img src="/wp-content/uploads/clone-or-locate-ws-repos-2025.png" srcset="/wp-content/uploads/clone-or-locate-ws-repos-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Cloning or locating repositories</figcaption>
+  <img src="/wp-content/uploads/clone-or-locate-ws-repos-2025.png" 
+       srcset="/wp-content/uploads/clone-or-locate-ws-repos-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="GitKraken Desktop interface showing options to clone or locate selected repositories within a workspace using the context menu.">
+  <figcaption style="color:#888; text-align:center">
+    Cloning or locating repositories
+  </figcaption>
 </figure>
 
 ### Edit Workspace Details
@@ -230,8 +284,12 @@ Open repositories in GitKraken Desktop or your preferred editor. You can also cl
 Customize your Workspace’s name, color, description, and access permissions.
 
 <figure>
-  <img src="/wp-content/uploads/gkd-10-2-edit-workspace.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Editing Workspace properties</figcaption>
+  <img src="/wp-content/uploads/gkd-10-2-edit-workspace.png" 
+       class="help-center-img img-bordered" 
+       alt="Edit Workspace modal in GitKraken Desktop with fields to update workspace name, color, description, and team sharing settings.">
+  <figcaption style="color:#888; text-align:center">
+    Editing Workspace properties
+  </figcaption>
 </figure>
 
 ### Change Workspace Color
@@ -245,8 +303,13 @@ Use color to visually organize and prioritize Workspaces. Select `Change color` 
 Drag and drop Workspaces to arrange them in the desired order.
 
 <figure>
-  <img src="/wp-content/uploads/reorder-workspaces-2025.png" srcset="/wp-content/uploads/reorder-workspaces-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Reordering Workspaces</figcaption>
+  <img src="/wp-content/uploads/reorder-workspaces-2025.png" 
+       srcset="/wp-content/uploads/reorder-workspaces-2025@2x.png" 
+       class="help-center-img img-bordered"
+       alt="GitKraken Desktop interface showing a hand cursor dragging a workspace section to reorder its position.">
+  <figcaption style="color:#888; text-align:center">
+    Reordering Workspaces
+  </figcaption>
 </figure>
 
 ***
