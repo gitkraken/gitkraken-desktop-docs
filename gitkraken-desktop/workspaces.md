@@ -260,8 +260,13 @@ GitKraken Insights helps you understand how pull requests are merged into your r
 - Support for GitHub.com, Bitbucket.org, GitLab.com, and Azure DevOps (Hosted)
 
 <figure>
-  <img src="/wp-content/uploads/insights-gkdev-2025.png" srcset="/wp-content/uploads/insights-gkdev-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Insights timeline view in GitKraken.dev</figcaption>
+  <img src="/wp-content/uploads/insights-gkdev-2026.png" 
+       srcset="/wp-content/uploads/insights-gkdev-2026@2x.png" 
+       class="help-center-img img-bordered"
+       alt="GitKraken.dev Insights dashboard for the GitLens Team, showing metrics like copy/paste vs moved code, change lead time, deployment frequency, duplicated code, number of PR reviews, cycle time, and active users over a 90-day period.">
+  <figcaption style="color:#888; text-align:center">
+    Insights metrics view in GitKraken.dev > Insights > Dashboards
+  </figcaption>
 </figure>
 
 To launch GitKraken Insights:
@@ -270,8 +275,13 @@ To launch GitKraken Insights:
 2. Click the <strong>Insights</strong> icon in the upper-right of the Workspace header.
 
 <figure>
-  <img src="/wp-content/uploads/insights-icon-ws-2025.png" srcset="/wp-content/uploads/insights-icon-ws-2025@2x.png" class="help-center-img img-bordered">
-  <figcaption style="color:#888; text-align:center">Accessing GitKraken Insights from a Workspace</figcaption>
+  <img src="/wp-content/uploads/insights-icon-ws-2025.png" 
+       srcset="/wp-content/uploads/insights-icon-ws-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="Insights icon highlighted in the Workspace header of GitKraken Desktop, showing how to open Insights for the selected Workspace.">
+  <figcaption style="color:#888; text-align:center">
+    Accessing GitKraken Insights from a Workspace
+  </figcaption>
 </figure>
 
 This will open a new browser tab showing insights for that Workspace on <a href="https://gitkraken.dev?source=help_center&product=gitkraken">GitKraken.dev</a>.
