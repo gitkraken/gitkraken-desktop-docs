@@ -30,13 +30,23 @@ To open Launchpad:
 2. Connect your integrations via <kbd>Preferences > Integrations</kbd>, or follow the in-app prompts for specific providers.
 
 <figure>
-  <img src="/wp-content/uploads/open-launchpad-2025.png" srcset="/wp-content/uploads/open-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="Clicking on Launchpad tab">
-  <figcaption style="color:#888; text-align:center">Accessing the Launchpad tab</figcaption>
+  <img src="/wp-content/uploads/open-launchpad-2025.png" 
+       srcset="/wp-content/uploads/open-launchpad-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="User highlighting the rocket icon in GitKraken Desktop to open the Launchpad tab for managing pull requests and issues.">
+  <figcaption style="color:#888; text-align:center">
+    Accessing the Launchpad tab
+  </figcaption>
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/connect-integration-launchpad-2025.png" srcset="/wp-content/uploads/connect-integration-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="Connecting integration in Launchpad">
-  <figcaption style="color:#888; text-align:center">Connecting your integrations for PRs and Issues</figcaption>
+  <img src="/wp-content/uploads/connect-integration-launchpad-2025.png" 
+       srcset="/wp-content/uploads/connect-integration-launchpad-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="No pull requests found in GitKraken Launchpad with options to connect a pull request hosting service like GitHub, GitLab, Bitbucket, or Azure DevOps.">
+  <figcaption style="color:#888; text-align:center">
+    Connecting your integrations for PRs and Issues
+  </figcaption>
 </figure>
 
 ### Set Up Workspaces and Integrations
@@ -47,8 +57,13 @@ Launchpad works best when connected to at least one Workspace. To set this up:
 2. Return to the Launchpad to view filtered WIPs, Issues, and PRs across selected repositories.
 
 <figure>
-  <img src="/wp-content/uploads/select-workspace-launchpad-2025.png" srcset="/wp-content/uploads/select-workspace-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="Selecting a Workspace in Launchpad">
-  <figcaption style="color:#888; text-align:center">Selecting a Workspace to view associated activity</figcaption>
+  <img src="/wp-content/uploads/select-workspace-launchpad-2025.png" 
+       srcset="/wp-content/uploads/select-workspace-launchpad-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="Dropdown menu in GitKraken Launchpad for selecting a Workspace to filter pull request and issue activity.">
+  <figcaption style="color:#888; text-align:center">
+    Selecting a Workspace to view associated activity
+  </figcaption>
 </figure>
 
 You can filter by:
@@ -68,13 +83,23 @@ Pinned and snoozed items help prioritize what you see first:
 - Click the <i class="fa-solid fa-snooze"></i> icon to snooze a PR. Snoozed items are moved to the <kbd>Snoozed</kbd> tab.
 
 <figure>
-  <img src="/wp-content/uploads/pin-launchpad-2025.png" srcset="/wp-content/uploads/pin-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="Pinning an item in Launchpad">
-  <figcaption style="color:#888; text-align:center">Pin items to prioritize visibility</figcaption>
+  <img src="/wp-content/uploads/pin-launchpad-2025.png" 
+       srcset="/wp-content/uploads/pin-launchpad-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="User interface showing a pin icon in GitKraken Launchpad for marking pull requests under Suggested Changes.">
+  <figcaption style="color:#888; text-align:center">
+    Pin items to prioritize visibility
+  </figcaption>
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/snooze-tab-launchpad-2025.png" srcset="/wp-content/uploads/snooze-tab-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="Accessing snoozed tab in Launchpad">
-  <figcaption style="color:#888; text-align:center">Manage snoozed pull requests and issues</figcaption>
+  <img src="/wp-content/uploads/snooze-tab-launchpad-2025.png" 
+       srcset="/wp-content/uploads/snooze-tab-launchpad-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="Interface showing snooze options in GitKraken Launchpad, allowing users to temporarily hide pull requests for 1 hour, 4 hours, or until the next day.">
+  <figcaption style="color:#888; text-align:center">
+    Manage snoozed pull requests and issues
+  </figcaption>
 </figure>
 
 
@@ -90,8 +115,12 @@ Personal View displays items where you're directly involved:
 - You are mentioned
 
 <figure>
-  <img src="/wp-content/uploads/gkc-launchpad-personal-team-10.0.0.png" class="help-center-img img-bordered" alt="Personal and Team View options">
-  <figcaption style="color:#888; text-align:center">Toggle between Personal and Team View</figcaption>
+  <img src="/wp-content/uploads/gkc-launchpad-personal-team-10.0.0.png" 
+       class="help-center-img img-bordered" 
+       alt="GitKraken Launchpad interface showing a toggle between Personal and Team views for managing pull requests.">
+  <figcaption style="color:#888; text-align:center">
+    Toggle between Personal and Team View
+  </figcaption>
 </figure>
 
 If you select "None" in the Workspace dropdown, you'll still see items related to your user identity across all connected services.
@@ -109,15 +138,25 @@ Switch to Team View using the toggle in the top-right corner of Launchpad. Team 
 - Others are listed as reviewers or mentioned
 
 <figure>
-  <img src="/wp-content/uploads/team-view-launchpad-2025.png" srcset="/wp-content/uploads/team-view-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="Team View with user filters">
-  <figcaption style="color:#888; text-align:center">Viewing team pull requests and issues</figcaption>
+  <img src="/wp-content/uploads/team-view-launchpad-2025.png" 
+       srcset="/wp-content/uploads/team-view-launchpad-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="GitKraken Launchpad interface with the Team view selected, showing team-wide PR and issue filters.">
+  <figcaption style="color:#888; text-align:center">
+    Viewing team pull requests and issues
+  </figcaption>
 </figure>
 
 You can filter by user to focus on specific collaborators’ activity.
 
 <figure>
-  <img src="/wp-content/uploads/filter-team-member-2025.png" srcset="/wp-content/uploads/filter-team-member-2025@2x.png" class="help-center-img img-bordered" alt="Filtering by team member">
-  <figcaption style="color:#888; text-align:center">Filter by contributor in Team View</figcaption>
+  <img src="/wp-content/uploads/filter-team-member-2025.png" 
+       srcset="/wp-content/uploads/filter-team-member-2025@2x.png" 
+       class="help-center-img img-bordered" 
+       alt="Launchpad filter menu showing GitKraken team members and external collaborators to narrow down pull request visibility.">
+  <figcaption style="color:#888; text-align:center">
+    Filter by contributor in Team View
+  </figcaption>
 </figure>
 
 Team View provides a high-level look at your team's current efforts across all repositories in the selected Workspace.
@@ -129,7 +168,7 @@ Team View provides a high-level look at your team's current efforts across all r
 You can save customized views by clicking the <i class="fa-solid fa-plus"></i> Save View icon in the Launchpad tab bar.
 
 <figure>
-  <img src="/wp-content/uploads/gkd-10-5-launchpad-save-view.gif" class="help-center-img img-bordered" alt="Saving a Launchpad view">
+  <img src="/wp-content/uploads/gkd-10-5-launchpad-save-view.gif" class="help-center-img img-bordered" alt="Saving a Launchpad view by entering a custom name and clicking 'Create View' in the GitKraken Launchpad interface">
   <figcaption style="color:#888; text-align:center">Save frequently used filters as a custom view</figcaption>
 </figure>
 
@@ -160,7 +199,7 @@ From Launchpad, you can quickly take action on pull requests:
 - Checkout in new worktree
 
 <figure>
-  <img src="/wp-content/uploads/pr-actions-launchpad-2025.png" srcset="/wp-content/uploads/pr-actions-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="Launchpad pull request actions">
+  <img src="/wp-content/uploads/pr-actions-launchpad-2025.png" srcset="/wp-content/uploads/pr-actions-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="GitKraken Desktop Launchpad showing a pull request with dropdown menu options including 'Open in GitHub', 'Review Pull Request', 'Checkout Branch', and more.">
   <figcaption style="color:#888; text-align:center">Quick actions available for pull requests in Launchpad</figcaption>
 </figure>
 
@@ -210,7 +249,7 @@ From Launchpad, you can quickly take action on pull requests:
 If your Workspace uses GitHub.com, you can view PRs directly in Launchpad’s GitHub pull request interface.
 
 <figure>
-  <img src="/wp-content/uploads/github-pr-view-launchpad.png" class="help-center-img img-bordered" alt="GitHub pull request view in Launchpad">
+  <img src="/wp-content/uploads/github-pr-view-launchpad.png" class="help-center-img img-bordered" alt="Launchpad Action column showing 'Open in GitHub' dropdown and icon button labeled 'Open Pull Request Panel'.">
   <figcaption style="color:#888; text-align:center">GitHub pull request details integrated in Launchpad</figcaption>
 </figure>
 
@@ -219,7 +258,7 @@ If your Workspace uses GitHub.com, you can view PRs directly in Launchpad’s Gi
 Launchpad supports multiple issue trackers including Jira, GitHub Issues, Azure DevOps, and Trello.
 
 <figure>
-  <img src="/wp-content/uploads/issues-tab-launchpad-2025.png" srcset="/wp-content/uploads/issues-tab-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="Issues tab in Launchpad">
+  <img src="/wp-content/uploads/issues-tab-launchpad-2025.png" srcset="/wp-content/uploads/issues-tab-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="Launchpad Issues tab with filters for workspace, issue source, project, labels, and fix versions, displaying a list of issues and associated actions.">
   <figcaption style="color:#888; text-align:center">View and filter issues from connected services</figcaption>
 </figure>
 
@@ -230,7 +269,7 @@ To customize your view:
 - Filter issues by creator, assignee, mentions, and labels.
 
 <figure>
-  <img src="/wp-content/uploads/issue-filters-launchpad-2025.png" srcset="/wp-content/uploads/issue-filters-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="Filtering issues by properties">
+  <img src="/wp-content/uploads/issue-filters-launchpad-2025.png" srcset="/wp-content/uploads/issue-filters-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="Launchpad Issues tab with filters for team member, workspace, issue source, project, labels, and fix versions, showing a list of issues and branch creation actions.">
   <figcaption style="color:#888; text-align:center">Use filters to target relevant issues</figcaption>
 </figure>
 
@@ -264,7 +303,7 @@ Launchpad allows you to filter issues and pull requests by:
 - GitHub and GitLab Milestones
 
 <figure>
-  <img src="/wp-content/uploads/gkd-10-4-launchpad-jira-sprint-filter.gif" class="help-center-img img-bordered" alt="Filtering by Jira Sprints and Fix Versions">
+  <img src="/wp-content/uploads/gkd-10-4-launchpad-jira-sprint-filter.gif" class="help-center-img img-bordered" alt="Launchpad user selecting a specific milestone from a dropdown filter labeled 'All milestones', showing options like '10.6 release', 'October refactor', and '10.5 release'.">
   <figcaption style="color:#888; text-align:center">Filter Launchpad by Jira or GitHub milestones</figcaption>
 </figure>
 
@@ -276,7 +315,7 @@ Your most important pull requests are summarized in the status bar.
 - Results reflect current filters set in the Launchpad tab.
 
 <figure>
-  <img src="/wp-content/uploads/gkd-launchpad-summary.gif" class="help-center-img img-bordered" alt="Launchpad PR summary in the status bar">
+  <img src="/wp-content/uploads/gkd-launchpad-summary.gif" class="help-center-img img-bordered" alt="GitKraken Desktop UI showing the commit graph, terminal, and Launchpad status bar listing pull request states like ready to merge, no assigned reviewers, and merge conflicts.">
   <figcaption style="color:#888; text-align:center">Launchpad status bar shows actionable pull requests</figcaption>
 </figure>
 
@@ -293,7 +332,7 @@ GitKraken On-Premise respects network isolation, which limits certain cloud-base
 | View Settings | ✅ | ✅ (unsaved only) |
 
 <figure>
-  <img src="/wp-content/uploads/launchpad-prs.png" class="help-center-img img-bordered" alt="Launchpad list view on On-Premise">
+  <img src="/wp-content/uploads/launchpad-prs.png" class="help-center-img img-bordered" alt="GitKraken Desktop Launchpad showing a filtered view of 32 personal pull requests in an on-premise GitHub Enterprise Server environment, with options to clone or open each PR.">
   <figcaption style="color:#888; text-align:center">Launchpad in On-Premise with limited cloud features</figcaption>
 </figure>
 
