@@ -4,7 +4,7 @@ description: Learn how to create, switch, and manage Git worktrees in GitKraken 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: January 29th 2026</kbd>
 
 Learn how to manage Git worktrees using GitKraken Desktop. Worktrees let you work on multiple branches at the same time, with each in its own working directory.
 
