@@ -15,6 +15,29 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 
 ***
+
+<a id="v11-9-0"></a>
+## Version 11.9.0
+
+<kbd>Tuesday, February 3th, 2026</kbd>
+
+_"This update's easy to wrap your head around."_
+
+### New ✨
+ - **Shallow Clone Settings:**
+   - You can now set shallow clone options directly in the Clone Repository dialog from Repository Management or the Launchpad tab.
+ - **Experimental Feature – Git Executable:**
+   - Added a new "Squash" setting under Commit preferences to squash commits when merging branches.
+ - **Word Wrap Toggle**
+   - Added button to enable word wrapping in diff view, file view, file history, and merge conflict resolution panels.
+
+### Bug Fixes 🐛
+ - Trello integrations will now work again.
+ - Fixed internal file links in markdown preview showing an external link icon and not opening when clicked.
+ - Fixed an issue where GitKraken Desktop would fail to start on x86_64 linux distributions older than GLIBC 2.33 (Ubuntu <= 20.04, Debian <= 11, etc.).
+
+
+***
 <a id="v11-8-0"></a>
 ## Version 11.8.0
 
