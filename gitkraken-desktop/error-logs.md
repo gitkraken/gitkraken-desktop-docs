@@ -4,7 +4,7 @@ description: Learn how to access GitKraken Desktop error logs to troubleshoot is
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2025</kbd>
 
 GitKraken Desktop allows you to view recent error messages for troubleshooting. These logs are useful when submitting a support ticket.
 

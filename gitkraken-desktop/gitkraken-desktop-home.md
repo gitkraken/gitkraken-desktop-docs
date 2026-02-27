@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2025</kbd>
 
 Welcome to the GitKraken Desktop Help Center, your all-in-one source for mastering the world’s most legendary Git GUI.
 

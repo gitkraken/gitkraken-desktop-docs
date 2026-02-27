@@ -4,7 +4,7 @@ description: Learn how to install and configure GitKraken On-Premise Self-Hosted
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2025</kbd>
 
 ## Overview
 
