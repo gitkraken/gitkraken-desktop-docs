@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2025</kbd>
 
 GitKraken Desktop supports integration with GitHub Enterprise Server Issues, making it easier to manage issues alongside your codebase.
 

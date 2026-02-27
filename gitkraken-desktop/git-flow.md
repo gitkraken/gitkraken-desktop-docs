@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2025</kbd>
 
 Gitflow helps organize your repository history, making it easier to manage releases, bug fixes, and features.
 
@@ -21,7 +21,7 @@ To configure Gitflow in GitKraken Desktop:
 1. Navigate to <code>Preferences > Gitflow</code>.
 2. Optionally, change the default branch names.
 
-<img src="/wp-content/uploads/gitflow-preferences-2025.png" srcset="/wp-content/uploads/gitflow-preferences-2025.png" class="help-center-img img-bordered" alt="Gitflow Preferences menu with default branch names">
+<img src="/wp-content/uploads/gitflow-preferences-2025@2x.png" class="help-center-img img-bordered" alt="Gitflow Preferences menu with default branch names">
 
 Once initialized, two branches will always be present:
 
@@ -35,7 +35,7 @@ If these branches don't exist locally, GitKraken Desktop will create them when G
 
 After initializing Gitflow, a Gitflow panel appears in the left sidebar. Use it to start or finish Gitflow branches.
 
-<img src="/wp-content/uploads/giflow-panel-2025.png" srcset="/wp-content/uploads/giflow-panel-2025@2x.png" class="help-center-img img-bordered" alt="Gitflow panel in left sidebar">
+<img src="/wp-content/uploads/giflow-panel-2025@2x.png" class="help-center-img img-bordered" alt="Gitflow panel in left sidebar">
 
 To create a Gitflow branch:
 
@@ -44,7 +44,7 @@ To create a Gitflow branch:
 
 Branches with a Gitflow prefix appear in the Gitflow panel. Others appear in the local repository section only.
 
-<img src="/wp-content/uploads/prefix-example-2025.png" srcset="/wp-content/uploads/prefix-example-2025@2x.png" class="help-center-img img-bordered" alt="Branch name prefixes">
+<img src="/wp-content/uploads/prefix-example-2025@2x.png" class="help-center-img img-bordered" alt="Branch name prefixes">
 
 <div class='callout callout--basic'>
     <p><strong>Note:</strong> Gitflow organizes features, hotfixes, and releases into separate folders.</p>
@@ -74,9 +74,9 @@ When you finish a release branch:
 - It's merged into both <code>main</code> and <code>develop</code>.
 - A tag is created with the release name.
 
-<img src="/wp-content/uploads/finish-release-context-menu-2025.png" srcset="/wp-content/uploads/finish-release-context-menu-2025@2x.png" class="help-center-img img-bordered" alt="Context menu for finishing a release">
+<img src="/wp-content/uploads/finish-release-context-menu-2025@2x.png" class="help-center-img img-bordered" alt="Context menu for finishing a release">
 
-<img src="/wp-content/uploads/finish-release-2025.png" srcset="/wp-content/uploads/finish-release-2025@2x.png" class="help-center-img img-bordered" alt="Finish release process">
+<img src="/wp-content/uploads/finish-release-2025@2x.png" class="help-center-img img-bordered" alt="Finish release process">
 
 ### Hotfix
 
@@ -84,7 +84,7 @@ Hotfix branches are similar to releases but created from <code>main</code>. Use 
 
 Examples include bug fixes or typos that must go live immediately.
 
-<img src="/wp-content/uploads/finish-hotfix-2025.png" srcset="/wp-content/uploads/finish-hotfix-2025@2x.png" class="help-center-img img-bordered" alt="Finish hotfix process">
+<img src="/wp-content/uploads/finish-hotfix-2025@2x.png" class="help-center-img img-bordered" alt="Finish hotfix process">
 
 When you finish a hotfix:
 
@@ -107,4 +107,4 @@ Create tags from the Gitflow panel or the command line. When tagging from the Gi
 
 In <code>Preferences > Gitflow</code>, set a tag prefix (e.g., <code>v</code>). This prefix is added to tags (e.g., <code>v1.0.0</code>).
 
-<img src="/wp-content/uploads/tag-prefix-2025.png" srcset="/wp-content/uploads/tag-prefix-2025.png" class="help-center-img img-bordered" alt="Setting tag prefix">
+<img src="/wp-content/uploads/tag-prefix-2025@2x.png" class="help-center-img img-bordered" alt="Setting tag prefix">

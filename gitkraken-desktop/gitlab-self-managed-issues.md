@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2025</kbd>
 
 GitKraken Desktop supports integration with GitLab Self-Managed Issues, helping teams track work and manage issues alongside their repositories.
 

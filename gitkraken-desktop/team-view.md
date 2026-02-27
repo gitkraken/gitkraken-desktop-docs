@@ -21,14 +21,14 @@ Select any team you're a member of from the Team dropdown. You can also choose a
 For each team member, Team View displays their checked-out branch and any files with local, uncommitted changes.
 
 <figure>
-  <img src="/wp-content/uploads/team-view-2025.png" srcset="/wp-content/uploads/team-view-2025@2x.png" class="help-center-img img-bordered" alt="Team View showing branches and files with changes">
+  <img src="/wp-content/uploads/team-view-2025@2x.png" class="help-center-img img-bordered" alt="Team View showing branches and files with changes">
   <figcaption style="text-align:center; color:#888">See teammates' active branches and modified files</figcaption>
 </figure>
 
 Lines added by a teammate appear in <span style="color: green;">green</span>, and removed lines in <span style="color: red;">red</span>. If you and a teammate have local changes in the same file, GitKraken displays an <i class="fas fa-exclamation-triangle" style="color:orange"></i> icon to signal a potential conflict.
 
 <figure>
-  <img src="/wp-content/uploads/team-view-conflict-2025.png" srcset="/wp-content/uploads/team-view-conflict-2025@2x.png" class="help-center-img img-bordered" alt="Warning icon on file with overlapping edits">
+  <img src="/wp-content/uploads/team-view-conflict-2025@2x.png" class="help-center-img img-bordered" alt="Warning icon on file with overlapping edits">
   <figcaption style="text-align:center; color:#888">Potential conflict warning icon on a file</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ The <i class="fas fa-circle" style="color:green"></i> **status** icon appears on
 Users can set their own status to “Active” or “Away” from the circle icon in the top-right corner or via the <kbd>Profile/Account</kbd> menu.
 
 <figure>
-  <img src="/wp-content/uploads/active-away-2025.png" srcset="/wp-content/uploads/active-away-2025@2x.png" class="help-center-img img-bordered" alt="Status toggle in Profile dropdown">
+  <img src="/wp-content/uploads/active-away-2025@2x.png" class="help-center-img img-bordered" alt="Status toggle in Profile dropdown">
   <figcaption style="text-align:center; color:#888">Manually set your status as Active or Away</figcaption>
 </figure>
 
@@ -59,7 +59,7 @@ Users can set their own status to “Active” or “Away” from the circle ico
 You can opt out of team sharing by disabling <em>Share work-in-progress status with my team</em> in <kbd>Preferences > General</kbd>.
 
 <figure>
-  <img src="/wp-content/uploads/team-setting.png" srcset="/wp-content/uploads/team-setting@2x.png" class="help-center-img img-bordered" alt="Setting to disable team sharing">
+  <img src="/wp-content/uploads/team-setting@2x.png" class="help-center-img img-bordered" alt="Setting to disable team sharing">
   <figcaption style="text-align:center; color:#888">Disable sharing work-in-progress status</figcaption>
 </figure>
 

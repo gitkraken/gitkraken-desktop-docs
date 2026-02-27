@@ -4,7 +4,7 @@ description: Learn how to install and configure GitKraken On-Premise Self-Hosted
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2025</kbd>
 
 ## Overview
 
@@ -17,7 +17,7 @@ taxonomy:
 - Full control over version management
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/manage-users.png' srcset='/wp-content/uploads/manage-users@2x.png 2x' class="help-center-img img-bordered">
+  <img src='/wp-content/uploads/manage-users@2x.png' class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Manage users and settings within your private GitKraken instance.</figcaption>
 </figure>
 

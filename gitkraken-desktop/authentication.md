@@ -5,7 +5,7 @@ taxonomy:
   category: gitkraken-desktop
 ---
 
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2025</kbd>
 
 GitKraken Desktop supports authentication with most repository hosting services (e.g., TFS, AWS CodeCommit, [Google Cloud Source Repositories](/integrations/authentication/#google-cloud-source-repositories), and custom services) over HTTPS or SSH.
 
@@ -32,7 +32,7 @@ This is the default and most common method for interacting with remotes. It requ
 2. In GitKraken Desktop, go to <kbd><strong>File > Clone Repo</strong></kbd>.
 
 <figure>
-<img src='/wp-content/uploads/clone-repository-menu-2025.png' srcset='/wp-content/uploads/clone-repository-menu-2025@2x.png 2x' alt="GitKraken Clone Repo Menu" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/clone-repository-menu-2025@2x.png' alt="GitKraken Clone Repo Menu" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Cloning a repository using HTTPS</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ Before cloning via SSH, you must first set up your SSH keys in GitKraken Desktop
 1. Navigate to <kbd><strong>Preferences > SSH</strong></kbd>.
 
 <figure>
-<img src="/wp-content/uploads/ssh-preferences-2025.png" srcset="/wp-content/uploads/ssh-preferences-2025@2x.png" alt="SSH Preferences Menu" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img src="/wp-content/uploads/ssh-preferences-2025@2x.png" alt="SSH Preferences Menu" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">SSH preferences in GitKraken Desktop</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ Before cloning via SSH, you must first set up your SSH keys in GitKraken Desktop
 2. In GitKraken Desktop, go to <em class='context-menu'>File <i class="fa fa-caret-right"></i> Clone</em>.
 
 <figure>
-<img src='/wp-content/uploads/ssh-clone-2025.png' srcset='/wp-content/uploads/ssh-clone-2025@2x.png 2x' alt="Clone over SSH UI" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img src='/wp-content/uploads/ssh-clone-2025@2x.png' alt="Clone over SSH UI" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Cloning a repository using SSH</figcaption>
 </figure>
 
@@ -115,7 +115,7 @@ Using a local agent can simplify SSH management, especially across multiple prof
 Reset stored usernames and passwords from <kbd><strong>Preferences > General</strong></kbd>:
 
 <figure>
-<img src="/wp-content/uploads/forget-all-2025.png" srcset="/wp-content/uploads/forget-all-2025@2x.png" alt="Forget All Credentials UI" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img src="/wp-content/uploads/forget-all-2025@2x.png" alt="Forget All Credentials UI" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Reset saved credentials</figcaption>
 </figure>
 

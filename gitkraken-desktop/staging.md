@@ -25,7 +25,7 @@ Staging prepares your file changes for commit. To begin:
 2. Hover over a file and click <button class='button button--success button--ui button--nolink'>Stage File</button> to stage it.
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/stage-file-2025.png' srcset="/wp-content/uploads/stage-file-2025@2x.png" class="help-center-img img-bordered" alt="GitKraken Desktop showing unstaged files with the 'Stage File' button visible next to markdown.md">
+    <img src='/wp-content/uploads/stage-file-2025@2x.png' class="help-center-img img-bordered" alt="GitKraken Desktop showing unstaged files with the 'Stage File' button visible next to markdown.md">
     <figcaption style="text-align: center; color: #888;">Click Stage File on hover.</figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ To unstage a file:
 2. Click <button class='button button--danger button--ui button--nolink'>Unstage File</button>
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/unstage-file-2025.png' srcset="/wp-content/uploads/unstage-file-2025@2x.png" class="help-center-img img-bordered" alt="The staged files list in GitKraken Desktop showing the Unstage File button for a selected file.">
+    <img src='/wp-content/uploads/unstage-file-2025@2x.png' class="help-center-img img-bordered" alt="The staged files list in GitKraken Desktop showing the Unstage File button for a selected file.">
     <figcaption style="text-align: center; color: #888;">Click Unstage File to move it back to working changes.</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ To discard changes across your working directory:
 2. Click the <i class="fa fa-trash-o" aria-hidden="true"></i> trash icon to discard all or selected files
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/discard-all-changes-2025.png' srcset="/wp-content/uploads/discard-all-changes-2025@2x.png" class="help-center-img img-bordered" alt="Discard all changes button highlighted above a list of unstaged files.">
+    <img src='/wp-content/uploads/discard-all-changes-2025@2x.png' class="help-center-img img-bordered" alt="Discard all changes button highlighted above a list of unstaged files.">
     <figcaption style="text-align: center; color: #888;">Discard changes for all or multiple selected files.</figcaption>
 </figure>
 
@@ -104,7 +104,7 @@ To prevent Git from tracking certain files, add them to a `.gitignore` file.
 Right-click a file and select <strong>Ignore</strong>:
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/ignore-file.png' srcset='/wp-content/uploads/ignore-file@2x.png 2x' class="help-center-img img-bordered" alt="Context menu with Ignore options for a selected file in the Tree view">
+    <img src='/wp-content/uploads/ignore-file@2x.png' class="help-center-img img-bordered" alt="Context menu with Ignore options for a selected file in the Tree view">
     <figcaption style="text-align: center; color: #888;">Choose ignore rules based on file, extension, or folder.</figcaption>
 </figure>
 
@@ -132,13 +132,13 @@ If a file is already tracked, you’ll see two options:
 Selecting <strong>Ignore</strong> will add the corresponding entry to the `.gitignore` file, but Git will continue tracking the file.
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/ignore-only.png' srcset='/wp-content/uploads/ignore-only@2x.png' class="help-center-img img-bordered" alt="Untracked .gitignore and test.txt files displayed under the obj folder in the Unstaged Files section.">
+    <img src='/wp-content/uploads/ignore-only@2x.png' class="help-center-img img-bordered" alt="Untracked .gitignore and test.txt files displayed under the obj folder in the Unstaged Files section.">
     <figcaption style="text-align: center; color: #888;">Ignore file but keep it tracked by Git.</figcaption>
 </figure>
 
 Selecting <strong>Ignore and Stop Tracking</strong> will add the entry and remove the file from the Git index, so Git stops tracking it.
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/ignore-untrack.png' srcset='/wp-content/uploads/ignore-untrack@2x.png' class="help-center-img img-bordered" alt=".gitignore file shown as unstaged; test.txt under obj folder shown as staged for removal">
+    <img src='/wp-content/uploads/ignore-untrack@2x.png' class="help-center-img img-bordered" alt=".gitignore file shown as unstaged; test.txt under obj folder shown as staged for removal">
     <figcaption style="text-align: center; color: #888;">Ignore file and remove it from Git tracking.</figcaption>
 </figure>

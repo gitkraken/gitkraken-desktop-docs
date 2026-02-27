@@ -4,7 +4,7 @@ description: Learn how to access GitKraken Desktop error logs to troubleshoot is
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2025</kbd>
 
 GitKraken Desktop allows you to view recent error messages for troubleshooting. These logs are useful when submitting a support ticket.
 
@@ -14,7 +14,7 @@ You can access error logs via:
 - The Command Palette
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/view-error-log.png" srcset="/wp-content/uploads/view-error-log@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/view-error-log@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Access logs from Help > Support > View Error Logs.</figcaption>
 </figure>
 

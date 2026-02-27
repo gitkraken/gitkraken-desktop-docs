@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2025</kbd>
 
 GitKraken Desktop makes it easy to integrate with GitLab Issues for seamless issue tracking and repository collaboration.
 
@@ -19,21 +19,21 @@ GitKraken Desktop makes it easy to integrate with GitLab Issues for seamless iss
 
 The GitLab and GitLab Issues integrations share the same connection. Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
-<img src="/wp-content/uploads/connect-gitlab-issues-2025.png" srcset="/wp-content/uploads/connect-gitlab-issues-2025@2x.png" class="help-center-img img-bordered" alt="Connect GitLab Issues integration">
+<img src="/wp-content/uploads/connect-gitlab-issues-2025@2x.png" class="help-center-img img-bordered" alt="Connect GitLab Issues integration">
 
 From the Integrations window, select <em>GitLab.com</em> and click <strong>Connect to GitLab</strong>.
 
-<img src="/wp-content/uploads/connect-gitlab-2025.png" srcset="/wp-content/uploads/connect-gitlab-2025@2x.png 2x" class="help-center-img img-bordered" alt="Connect to GitLab prompt">
+<img src="/wp-content/uploads/connect-gitlab-2025@2x.png" class="help-center-img img-bordered" alt="Connect to GitLab prompt">
 
 A browser window will open to authorize the connection. Log in with your GitLab credentials and click <strong>Continue authorization</strong>.
 
-<img src="/wp-content/uploads/authorize-gitlab.png" srcset="/wp-content/uploads/authorize-gitlab@2x.png 2x" class="help-center-img img-bordered" alt="GitLab authorization dialog">
+<img src="/wp-content/uploads/authorize-gitlab@2x.png" class="help-center-img img-bordered" alt="GitLab authorization dialog">
 
-<img src="/wp-content/uploads/gitlab-sign-in.png" srcset="/wp-content/uploads/gitlab-sign-in@2x.png 2x" class="help-center-img img-bordered" alt="GitLab sign-in screen">
+<img src="/wp-content/uploads/gitlab-sign-in@2x.png" class="help-center-img img-bordered" alt="GitLab sign-in screen">
 
 Once authorized, GitKraken will display a success message.
 
-<img src="/wp-content/uploads/auth-success-gitlab-1.png" srcset="/wp-content/uploads/auth-success-gitlab-1@2x.png 2x" class="help-center-img img-bordered" alt="Successful GitLab integration">
+<img src="/wp-content/uploads/auth-success-gitlab-1@2x.png" class="help-center-img img-bordered" alt="Successful GitLab integration">
 
 ---
 
@@ -41,11 +41,11 @@ Once authorized, GitKraken will display a success message.
 
 After connecting, your GitLab issues will appear in the Left Panel. Default filters include _My Issues_ and _All Issues_.
 
-<img src="/wp-content/uploads/gitlab-issues-list-2025.png" srcset="/wp-content/uploads/gitlab-issues-list-2025@2x.png" class="help-center-img img-bordered" alt="GitLab Issues in Left Panel">
+<img src="/wp-content/uploads/gitlab-issues-list-2025@2x.png" class="help-center-img img-bordered" alt="GitLab Issues in Left Panel">
 
 Hover over an issue to preview the title, description, labels, milestones, and assignee.
 
-<img src="/wp-content/uploads/gitlab-issue-hover-2025.png" srcset="/wp-content/uploads/gitlab-issue-hover-2025@2x.png" class="help-center-img img-bordered" alt="GitLab issue preview tooltip">
+<img src="/wp-content/uploads/gitlab-issue-hover-2025@2x.png" class="help-center-img img-bordered" alt="GitLab issue preview tooltip">
 
 ---
 
@@ -53,7 +53,7 @@ Hover over an issue to preview the title, description, labels, milestones, and a
 
 Click an issue to view its details.
 
-<img src="/wp-content/uploads/github-issue-view-click-2025.png" srcset="/wp-content/uploads/github-issue-view-click-2025@2x.png" class="help-center-img img-bordered" alt="View GitLab issue details">
+<img src="/wp-content/uploads/github-issue-view-click-2025@2x.png" class="help-center-img img-bordered" alt="View GitLab issue details">
 
 Edits made here will sync with your GitLab issue tracker.
 
@@ -63,7 +63,7 @@ Edits made here will sync with your GitLab issue tracker.
 
 Click the <code>+</code> icon from the Left Panel to add a new issue.
 
-<img src="/wp-content/uploads/gitlab-issue-create-2025.png" srcset="/wp-content/uploads/gitlab-issue-create-2025@2x.png" class="help-center-img img-bordered" alt="Create new GitLab issue">
+<img src="/wp-content/uploads/gitlab-issue-create-2025@2x.png" class="help-center-img img-bordered" alt="Create new GitLab issue">
 
 Required fields are marked with <code>*</code>. The issue will sync automatically to your GitLab repository.
 
@@ -73,7 +73,7 @@ Required fields are marked with <code>*</code>. The issue will sync automaticall
 
 Use GitLab’s issue syntax to create filters and narrow your view.
 
-<img src="/wp-content/uploads/gitlab-filter-create-2025.png" srcset="/wp-content/uploads/gitlab-filter-create-2025@2x.png" class="help-center-img img-bordered" alt="Create GitLab filter">
+<img src="/wp-content/uploads/gitlab-filter-create-2025@2x.png" class="help-center-img img-bordered" alt="Create GitLab filter">
 
 Refer to GitLab’s [issue filtering guide](https://docs.gitlab.com/ee/user/search/index.html#filtering-issue-and-merge-request-lists) for examples.
 
@@ -83,7 +83,7 @@ Refer to GitLab’s [issue filtering guide](https://docs.gitlab.com/ee/user/sear
 
 From the issue detail view, click <strong>Create a branch for this issue</strong>. You can also right-click the issue or use the <kbd><i class="fa fa-ellipsis-v"></i></kbd> menu.
 
-<img src="/wp-content/uploads/gitlab-issue-create-branch-2025.png" srcset="/wp-content/uploads/gitlab-issue-create-branch-2025@2x.png" class="help-center-img img-bordered" alt="Create branch from GitLab issue">
+<img src="/wp-content/uploads/gitlab-issue-create-branch-2025@2x.png" class="help-center-img img-bordered" alt="Create branch from GitLab issue">
 
 The branch name is auto-filled based on the issue title. These branches show the GitLab icon to indicate the connection.
 
@@ -93,4 +93,4 @@ The branch name is auto-filled based on the issue title. These branches show the
 
 Use the <kbd><i class="fa fa-ellipsis-v"></i></kbd> menu or <i class="fa fa-external-link" aria-hidden="true"></i> icon to open the issue in GitLab or copy the link.
 
-<img src="/wp-content/uploads/gitlab-issue-copy-link-2025.png" srcset="/wp-content/uploads/gitlab-issue-copy-link-2025@2x.png" class="help-center-img img-bordered" alt="View GitLab issue on web">
+<img src="/wp-content/uploads/gitlab-issue-copy-link-2025@2x.png" class="help-center-img img-bordered" alt="View GitLab issue on web">

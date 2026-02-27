@@ -4,7 +4,7 @@ description: Connect GitKraken Desktop with Bitbucket to clone repositories, man
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: January 2025</kbd>
 
 GitKraken Desktop allows you to authenticate with Bitbucket to help you locate repositories for cloning, add remotes, and manage pull requests more efficiently.
 
@@ -30,21 +30,21 @@ To authenticate with Bitbucket:
 1. Navigate to <kbd><i class="fas fa-cog"></i> Preferences > Integrations</kbd> in the upper-right corner.
 
 <figure>
-  <img src="/wp-content/uploads/preferences.png" srcset="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Open Preferences to configure integrations</figcaption>
 </figure>
 
 2. Select <strong>Bitbucket.org</strong> and click <button class='button button--success button--ui button--nolink'>Connect to Bitbucket</button>.
 
 <figure>
-  <img src="/wp-content/uploads/connect-bitbucket-2025.png" srcset="/wp-content/uploads/connect-bitbucket-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/connect-bitbucket-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Click to authenticate via Bitbucket</figcaption>
 </figure>
 
 4. A browser window opens prompting you to log in. Upon success, confirm by selecting <kbd>Open GitKraken</kbd>.
 
 <figure>
-  <img src="/wp-content/uploads//bitbucket-success-1.png" srcset="/wp-content/uploads//bitbucket-success-1@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/bitbucket-success-1@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Login success prompt from Bitbucket</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ After connecting Bitbucket:
 3. Paste the key into your Bitbucket account settings.
 
 <figure>
-  <img class="img-bordered center aligncenter" decoding="async" src='/wp-content/uploads/ssh-bitbucket-2025.png' srcset='/wp-content/uploads/ssh-bitbucket-2025@2x.png' class="img-bordered" class="help-center" style="display:inline-block;">
+  <img class="img-bordered center aligncenter" decoding="async" src='/wp-content/uploads/ssh-bitbucket-2025@2x.png' class="img-bordered" class="help-center" style="display:inline-block;">
   <figcaption style="color:#888; text-align:center">Copy and add your new SSH key to Bitbucket</figcaption>
 </figure>
 
@@ -83,14 +83,14 @@ GitKraken enhances your workflow with:
 - A searchable list of Bitbucket repositories when cloning:
 
 <figure>
-  <img src="/wp-content/uploads//clone.png" srcset="/wp-content/uploads//clone@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/clone@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Cloning from your Bitbucket repositories</figcaption>
 </figure>
 
 - A list of forks when adding remotes:
 
 <figure>
-  <img src="/wp-content/uploads//remote.png" srcset="/wp-content/uploads//remote@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/remote@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Forks available for remote setup</figcaption>
 </figure>
 

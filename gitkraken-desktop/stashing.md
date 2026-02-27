@@ -17,7 +17,7 @@ Save your uncommitted changes for later by creating a stash. Stashing is useful 
 Click the **Stash** icon in the top toolbar to create a new stash.
 
 <figure>
-  <img src='/wp-content/uploads/stash.png' srcset='/wp-content/uploads/stash@2x.png' class="help-center-img img-bordered" alt="GitKraken top toolbar with Stash button highlighted">
+  <img src='/wp-content/uploads/stash@2x.png' class="help-center-img img-bordered" alt="GitKraken top toolbar with Stash button highlighted">
   <figcaption style="text-align:center; color:#888">Create a stash from the top toolbar.</figcaption>
 </figure>
 
@@ -31,14 +31,14 @@ Your stash will appear in the Commit Graph. Right-click on the stash node to see
 * **Show all stashes**: Display all hidden stashes.
 
 <figure>
-  <img src='/wp-content/uploads/stash-options.png' srcset='/wp-content/uploads/stash-options@2x.png' class="help-center-img img-bordered" alt="Right-click stash options menu in GitKraken Desktop showing Apply, Pop, Delete, and visibility controls">
+  <img src='/wp-content/uploads/stash-options@2x.png' class="help-center-img img-bordered" alt="Right-click stash options menu in GitKraken Desktop showing Apply, Pop, Delete, and visibility controls">
   <figcaption style="text-align:center; color:#888">Right-click a stash to manage it.</figcaption>
 </figure>
 
 To quickly pop the latest stash, use the **Pop Stash** button:
 
 <figure>
-  <img src='/wp-content/uploads/pop-stash.png' srcset='/wp-content/uploads/pop-stash@2x.png' class="help-center-img img-bordered" alt="Top toolbar in GitKraken Desktop with Pop Stash button highlighted">
+  <img src='/wp-content/uploads/pop-stash@2x.png' class="help-center-img img-bordered" alt="Top toolbar in GitKraken Desktop with Pop Stash button highlighted">
   <figcaption style="text-align:center; color:#888">Use the Pop Stash button for one-click restore and delete.</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ You can stash changes from the Commit Panel. Stage your files and click the Stas
 If you use [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/), click the sparkle icon to auto-generate a stash message based on your staged changes.
 
 <figure>
-  <img src="/wp-content/uploads/stash-ai-message.png" srcset="/wp-content/uploads/stash-ai-message@2x.png" class="help-center-img img-bordered" alt="GitKraken Stash panel (inside Commit Panel) with tooltip pointing to the AI icon for generating a stash message">
+  <img src="/wp-content/uploads/stash-ai-message@2x.png" class="help-center-img img-bordered" alt="GitKraken Stash panel (inside Commit Panel) with tooltip pointing to the AI icon for generating a stash message">
   <figcaption style="text-align:center; color:#888">Use GitKraken AI to generate a stash description.</figcaption>
 </figure>
 
@@ -76,23 +76,21 @@ All your stashes are listed in the Left Panel. Right-click to Apply, Pop, Delete
 To give a stash a name, type into the `// WIP` field at the top of the graph before stashing.
 
 <figure>
-  <img src='/wp-content/uploads/custom-stash-wip.png' srcset='/wp-content/uploads/custom-stash-wip@2x.png' class="help-center-img img-bordered" alt="User typing a custom stash name in the GitKraken commit graph WIP node">
+  <img src='/wp-content/uploads/custom-stash-wip@2x.png' class="help-center-img img-bordered" alt="User typing a custom stash name in the GitKraken commit graph WIP node">
   <figcaption style="text-align:center; color:#888">Enter a custom stash name before saving.</figcaption>
 </figure>
 
 Named stashes are easier to recognize in the Left Panel and commit graph.
 
 <figure>
-  <img src='/wp-content/uploads/custom-stash-panel.png' 
-       srcset='/wp-content/uploads/custom-stash-panel@2x.png' 
+  <img src='/wp-content/uploads/custom-stash-panel@2x.png' 
        class="help-center-img img-bordered" 
        alt="Custom-named stash labeled 'my-custom-stash-name' displayed under STASHES in the GitKraken Left Panel on the master branch">
   <figcaption style="text-align:center; color:#888">Named stash in the Left Panel.</figcaption>
 </figure>
 
 <figure>
-  <img src='/wp-content/uploads/custom-stash-graph.png' 
-       srcset='/wp-content/uploads/custom-stash-graph@2x.png' 
+  <img src='/wp-content/uploads/custom-stash-graph@2x.png' 
        class="help-center-img img-bordered" 
        alt="Commit Graph showing a WIP stash labeled 'my-custom-stash-name' created on the master branch.">
   <figcaption style="text-align:center; color:#888">Named stash in the graph view.</figcaption>

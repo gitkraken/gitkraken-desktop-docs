@@ -11,8 +11,7 @@ Open the Terminal to run Git CLI commands while viewing the Commit Graph.
 To get started, open a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar, or search for "terminal" using the <a href="/working-with-repositories/command-palette">Command Palette</a>.
 
 <figure>
-  <img src="/wp-content/uploads/terminal-button-2025.png" 
-       srcset="/wp-content/uploads/terminal-button-2025@2x.png" 
+  <img src="/wp-content/uploads/terminal-button-2025@2x.png" 
        class="help-center-img img-bordered" 
        alt="GitKraken Desktop interface showing the Terminal button in the top toolbar and an open terminal panel running the git status command.">
   <figcaption style="text-align:center; color:#888">Launch the terminal from the GitKraken toolbar</figcaption>
@@ -51,8 +50,7 @@ Flag suggestions are also supported:
 Visit <kbd><strong>Preferences > In-app Terminal</strong></kbd> to modify your terminal settings.
 
 <figure>
-  <img src="/wp-content/uploads/terminal-preferences-2025.png" 
-       srcset="/wp-content/uploads/terminal-preferences-2025@2x.png" 
+  <img src="/wp-content/uploads/terminal-preferences-2025@2x.png" 
        class="help-center-img img-bordered" 
        alt="GitKraken Desktop Preferences window with In-App Terminal settings selected. Options visible include font selection, font size, line height, cursor style, and autocomplete behavior.">
   <figcaption style="text-align:center; color:#888">Access terminal settings under Preferences</figcaption>

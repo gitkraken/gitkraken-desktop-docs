@@ -76,7 +76,7 @@ GitKraken offers a convenient option in the diff view: **Revert Hunks**.
 In **Hunk View**, you can roll back a specific block of changes. Click the **Revert** button next to any hunk to apply an equal and opposite change to your working directory.
 
 <figure>
-  <img src="/wp-content/uploads/revert-hunk-2025.png" srcset="/wp-content/uploads/revert-hunk-2025@2x.png 2x" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="GitKraken Desktop showing the Revert Hunk button in the diff view, with a tooltip explaining it will reverse the selected code changes in the working directory." />
+  <img src="/wp-content/uploads/revert-hunk-2025@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="GitKraken Desktop showing the Revert Hunk button in the diff view, with a tooltip explaining it will reverse the selected code changes in the working directory." />
   <figcaption style="text-align: center; color: #888">Click the Revert button to undo a specific hunk directly from the diff view.</figcaption>
 </figure>
 
@@ -123,7 +123,7 @@ Supported tools include:
 If a supported tool does not appear in the dropdown, verify that its command line tools are installed.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/beyond-compare.png' srcset='/wp-content/uploads/beyond-compare@2x.png 2x' class='help-center-img img-bordered' alt="Beyond Compare application menu with Install Command Line Tools option highlighted, used to enable CLI integration." />
+  <img src='/wp-content/uploads/beyond-compare@2x.png' class='help-center-img img-bordered' alt="Beyond Compare application menu with Install Command Line Tools option highlighted, used to enable CLI integration." />
   <figcaption style="text-align: center; color: #888;">Example setup with Beyond Compare.</figcaption>
 </figure>
 
