@@ -13,7 +13,7 @@ taxonomy:
 - Requires no server installation
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/serverless-example-2025.png" srcset="/wp-content/uploads/serverless-example-2025@2x.png 2x" class="img-responsive img-bordered">
+  <img src="/wp-content/uploads/serverless-example-2025@2x.png" class="img-responsive img-bordered">
   <figcaption style="text-align: center; color: #888;">Example view of GitKraken Serverless in use.</figcaption>
 </figure>
 
@@ -117,7 +117,7 @@ At first launch, you’ll be prompted to load the `.dat` license file.
 If you don’t have the file, contact your GitKraken admin. Admins can retrieve it from app.gitkraken.com. For older accounts or help locating the file, <a href="https://help.gitkraken.com/gitkraken-desktop/contact-support/">contact support</a>.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/serverless-2025.png" srcset="/wp-content/uploads/serverless-2025@2x.png 2x" class="img-responsive img-bordered">
+  <img src="/wp-content/uploads/serverless-2025@2x.png" class="img-responsive img-bordered">
   <figcaption style="text-align: center; color: #888;">GitKraken Serverless ready after license activation.</figcaption>
 </figure>
 
@@ -152,6 +152,6 @@ If your license expires, you can:
   - Select <kbd>Update License</kbd>
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/serverless-license-2025.png" srcset="/wp-content/uploads/serverless-license-2025@2x.png 2x" class="img-responsive img-bordered">
+  <img src="/wp-content/uploads/serverless-license-2025@2x.png" class="img-responsive img-bordered">
   <figcaption style="text-align: center; color: #888;">Update your license manually from the client footer.</figcaption>
 </figure>

@@ -30,19 +30,19 @@ GitKraken Desktop provides basic tools for creating, editing, and deleting GitHu
 3. Choose from available workflow templates or start with a blank workflow.
 4. The workflow file will be saved in the `.github/workflows` directory (created automatically if it doesn’t exist).
 
-<img src='/wp-content/uploads/create-github-action-2025.png' srcset='/wp-content/uploads/create-github-action-2025@2x.png 2x' class="help-center-img img-bordered" alt="Creating GitHub Action workflow from GitKraken Desktop">
+<img src='/wp-content/uploads/create-github-action-2025@2x.png' class="help-center-img img-bordered" alt="Creating GitHub Action workflow from GitKraken Desktop">
 
 ### Edit a Workflow
 
 Double-click any existing workflow file to open it. You can view, modify, and save changes directly.
 
-<img src='/wp-content/uploads/github-actions-edit.png' srcset='/wp-content/uploads/github-actions-edit@2x.png 2x' class="help-center-img img-bordered" alt="Editing a GitHub Action workflow in GitKraken Desktop">
+<img src='/wp-content/uploads/github-actions-edit@2x.png' class="help-center-img img-bordered" alt="Editing a GitHub Action workflow in GitKraken Desktop">
 
 ### Delete a Workflow
 
 Right-click a workflow file and select <strong>Delete Workflow</strong> to remove it.
 
-<img src='/wp-content/uploads/delete-github-action-2025.png' srcset='/wp-content/uploads/delete-github-action-2025@2x.png 2x' class="help-center-img img-bordered" alt="Deleting a GitHub Action workflow in GitKraken Desktop">
+<img src='/wp-content/uploads/delete-github-action-2025@2x.png' class="help-center-img img-bordered" alt="Deleting a GitHub Action workflow in GitKraken Desktop">
 
 ---
 

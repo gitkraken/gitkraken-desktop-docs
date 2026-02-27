@@ -30,7 +30,7 @@ Learn how to add, create folders, delete, and filter files using GitKraken Deskt
 To create a folder and a file at once, include a forward slash (/) in the file name:
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/create-folder.png' srcset='/wp-content/uploads/create-folder@2x.png 2x' class="help-center-img img-bordered" alt="Creating a new folder by including a slash in the file name, demonstrating how GitKraken Desktop auto-generates nested directory structures during file creation.">
+  <img src='/wp-content/uploads/create-folder@2x.png' class="help-center-img img-bordered" alt="Creating a new folder by including a slash in the file name, demonstrating how GitKraken Desktop auto-generates nested directory structures during file creation.">
   <figcaption style="text-align: center; color: #888;">This creates a folder called &quot;folder-name&quot; that contains &quot;file-name.txt.&quot;</figcaption>
 </figure>
 
@@ -51,7 +51,7 @@ You can also add files via the Commit Panel:
 2. Select `Delete file` from the context menu.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/delete-file.png' srcset='/wp-content/uploads/delete-file@2x.png 2x' class="help-center-img img-bordered" alt="Context menu in GitKraken Desktop showing file actions, including the option to delete a file from the Commit Panel.">
+  <img src='/wp-content/uploads/delete-file@2x.png' class="help-center-img img-bordered" alt="Context menu in GitKraken Desktop showing file actions, including the option to delete a file from the Commit Panel.">
   <figcaption style="text-align: center; color: #888;">Use the context menu to delete a file from the Commit Panel.</figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ You can also add files via the Commit Panel:
 3. Select `Delete file` from the context menu.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/delete-any-file.png' srcset='/wp-content/uploads/delete-any-file@2x.png 2x' class="help-center-img img-bordered" alt="Right-click context menu with file deletion option after enabling 'View all files' in GitKraken Desktop.">
+  <img src='/wp-content/uploads/delete-any-file@2x.png' class="help-center-img img-bordered" alt="Right-click context menu with file deletion option after enabling 'View all files' in GitKraken Desktop.">
   <figcaption style="text-align: center; color: #888;">Check the 'View all files' option to find a file, and then delete it from the context menu.</figcaption>
 </figure>
 

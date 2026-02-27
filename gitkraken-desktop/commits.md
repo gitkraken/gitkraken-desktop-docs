@@ -60,14 +60,14 @@ Co-authored-by: Name Two <email2@example.com>
 ```
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/co-author.png' srcset='/wp-content/uploads/co-author@2x.png 2x' class="help-center-img img-bordered" alt="GitKraken commit panel showing a commit message with a co-author attribution line using the format 'Co-authored-by: Name <email>'." />
+    <img src='/wp-content/uploads/co-author@2x.png' class="help-center-img img-bordered" alt="GitKraken commit panel showing a commit message with a co-author attribution line using the format 'Co-authored-by: Name <email>'." />
     <figcaption style="text-align: center; color: #888;">Use this syntax to attribute co-authors in a commit.</figcaption>
 </figure>
 
 Co-authors appear in the Commit Panel history:
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/co-author-history.png' srcset='/wp-content/uploads/co-author-history@2x.png 2x' class="help-center-img img-bordered" alt="Commit details in GitKraken showing a co-authored commit with the primary author and a listed co-author under the commit message." />
+    <img src='/wp-content/uploads/co-author-history@2x.png' class="help-center-img img-bordered" alt="Commit details in GitKraken showing a co-authored commit with the primary author and a listed co-author under the commit message." />
     <figcaption style="text-align: center; color: #888;">Co-authors are listed with the primary author in the commit history.</figcaption>
 </figure>
 

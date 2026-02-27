@@ -171,7 +171,7 @@ Error codes include:
 - 1007
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/error-1002.png" srcset="/wp-content/uploads/error-1002@2x.png 2x" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/error-1002@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Example: Authentication error during integration.</figcaption>
 </figure>
 

@@ -88,7 +88,7 @@ You can reorder, squash, drop, or rename commits before completing. Learn more i
 Connect GitKraken Desktop with [GitHub, GitLab, Bitbucket, and Azure DevOps](/gitkraken-desktop/integrations/) to streamline cloning, remotes, and PR workflows.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/connect-azure-devops-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop integration settings for Azure DevOps, illustrating how connecting a Git provider enables faster repository access and enhanced workflow automation.">
+  <img src="/wp-content/uploads/connect-azure-devops-2025@2x.png" class="help-center-img img-bordered" alt="GitKraken Desktop integration settings for Azure DevOps, illustrating how connecting a Git provider enables faster repository access and enhanced workflow automation.">
   <figcaption style="text-align: center; color: #888;">Connect your Git provider to speed up repository access.</figcaption>
 </figure>
 

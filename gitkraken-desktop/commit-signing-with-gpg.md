@@ -42,7 +42,7 @@ To verify installation:
 gpg --version
 ```
 
-<img src="/wp-content/uploads/gpg-version-2025.png" srcset="/wp-content/uploads/gpg-version-2025@2x.png 2x" class="help-center-img img-bordered" alt="GPG version output">
+<img src="/wp-content/uploads/gpg-version-2025@2x.png" class="help-center-img img-bordered" alt="GPG version output">
 
 <div class='callout callout--success'>
     <p><strong>Note:</strong> Use <code>gpg2</code> if <code>gpg</code> isn’t aliased. Prefix commands accordingly.</p>
@@ -56,7 +56,7 @@ Once GPG is installed:
 2. Click **Generate new GPG Key**.
 3. (Optional) Enter a passphrase before generating.
 
-<img src="/wp-content/uploads/generate-new-gpg-key-2025.png" srcset="/wp-content/uploads/generate-new-gpg-key-2025@2x.png 2x" class="help-center-img img-bordered" alt="Generate new GPG key in Preferences">
+<img src="/wp-content/uploads/generate-new-gpg-key-2025@2x.png" class="help-center-img img-bordered" alt="Generate new GPG key in Preferences">
 
 <div class='callout callout--success'>
     <p><strong>Note:</strong> Ensure GPG is configured in GitKraken. See <a href="#configure-gpg-in-gitkraken">Configure GPG in GitKraken</a>.</p>
@@ -73,18 +73,18 @@ Once GPG is installed:
    which gpg # macOS/Linux
    where gpg # Windows
    ```
-   <img src="/wp-content/uploads/gpg-browse-button.png" srcset="/wp-content/uploads/gpg-browse-button.png 2x" class="help-center-img img-bordered" alt="Browse to GPG executable">
+   <img src="/wp-content/uploads/gpg-browse-button.png" class="help-center-img img-bordered" alt="Browse to GPG executable">
 4. Enable **Sign Commits by Default** and/or **Sign Tags by Default** as needed.
 
 ### Verifying Signed Commits
 
 Signed commits show an icon next to the SHA in the Commit Panel.
 
-<img src="/wp-content/uploads/gpg-icon-2025.png" srcset="/wp-content/uploads/gpg-icon-2025@2x.png 2x" class="help-center-img img-bordered" alt="Signed commit badge">
+<img src="/wp-content/uploads/gpg-icon-2025@2x.png" class="help-center-img img-bordered" alt="Signed commit badge">
 
 Hover to view signature details:
 
-<img src="/wp-content/uploads/gpg-sig-details-2025.png" srcset="/wp-content/uploads/gpg-sig-details-2025@2x.png 2x" class="help-center-img img-bordered" alt="GPG signature details tooltip">
+<img src="/wp-content/uploads/gpg-sig-details-2025@2x.png" class="help-center-img img-bordered" alt="GPG signature details tooltip">
 
 **Common GPG signature codes:**
 
@@ -113,7 +113,7 @@ To add emails or renew a key:
    ```bash
    gpg --list-secret-keys --keyid-format LONG
    ```
-   <img src="/wp-content/uploads/list-secret-keys.png" class="help-center-img img-bordered" alt="List GPG secret keys">
+   <img src="/wp-content/uploads/list-secret-keys@2x.png" class="help-center-img img-bordered" alt="List GPG secret keys">
 2. Edit:
    ```bash
    gpg --edit-key YOUR_KEY_ID
@@ -161,11 +161,11 @@ SSH signing is available through Git Executable.
    ```bash
    ssh-keygen -t ed25519 -C "your_email@example.com"
    ```
-   <img src="/wp-content/uploads/gkc-ssh-keygen.png" srcset="/wp-content/uploads/gkc-ssh-keygen@2x.png 2x" class="help-center-img img-bordered" alt="Generating SSH key">
+   <img src="/wp-content/uploads/gkc-ssh-keygen@2x.png" class="help-center-img img-bordered" alt="Generating SSH key">
 
 2. **Enable Git Executable:**
    Go to <kbd>Preferences > Experimental > Git Executable</kbd>.
-   <img src="/wp-content/uploads/gkc-git-executable.png" srcset="/wp-content/uploads/gkc-git-executable@2x.png 2x" class="help-center-img img-bordered" alt="Enable Git Executable">
+   <img src="/wp-content/uploads/gkc-git-executable@2x.png" class="help-center-img img-bordered" alt="Enable Git Executable">
 
 3. **Set GPG Format to SSH:**
    <kbd>Preferences > Commit Signing > GPG Format</kbd> → select <kbd>SSH</kbd>.

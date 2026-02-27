@@ -31,15 +31,15 @@ GitKraken Desktop supports integration with both Jira Cloud and Jira Data Center
 
 Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>. If you don't see the ISSUES section, right-click any header in the Left Panel and enable it from the context menu.
 
-<img src="/wp-content/uploads/connect-jira-dc-issues-2025.png" srcset="/wp-content/uploads/connect-jira-dc-issues-2025@2x.png" class="help-center-img img-bordered" alt="Open Jira Data Center integration settings">
+<img src="/wp-content/uploads/connect-jira-dc-issues-2025@2x.png" class="help-center-img img-bordered" alt="Open Jira Data Center integration settings">
 
 Enter your Host Domain URL and a Personal Access Token generated in your Jira Data Center instance.
 
-<img src="/wp-content/uploads/connect-jira-dc-2025.png" srcset="/wp-content/uploads/connect-jira-dc-2025@2x.png" class="help-center-img img-bordered" alt="Enter domain and access token for Jira Data Center">
+<img src="/wp-content/uploads/connect-jira-dc-2025@2x.png" class="help-center-img img-bordered" alt="Enter domain and access token for Jira Data Center">
 
 Once connected, GitKraken Desktop will confirm the integration.
 
-<img src="/wp-content/uploads/connected-jira-dc-2025.png" srcset="/wp-content/uploads/connected-jira-dc-2025@2x.png" class="help-center-img img-bordered" alt="Successful Jira Data Center connection">
+<img src="/wp-content/uploads/connected-jira-dc-2025@2x.png" class="help-center-img img-bordered" alt="Successful Jira Data Center connection">
 
 ---
 

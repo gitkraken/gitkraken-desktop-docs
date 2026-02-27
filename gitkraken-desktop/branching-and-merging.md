@@ -21,7 +21,7 @@ Looking for a quick summary? See [how GitKraken solves merge conflicts](https://
 Create a new branch when working on a feature or fix. Right-click any commit to open the context menu and create a branch.
 
 <figure>
-  <img src="/wp-content/uploads/add-branch-2025.png" srcset="/wp-content/uploads/add-branch@2x.png 2x" class="help-center-img img-bordered" alt="Right-click menu in GitKraken Desktop showing option to create a new branch from a selected commit">
+  <img src="/wp-content/uploads/add-branch@2x.png" class="help-center-img img-bordered" alt="Right-click menu in GitKraken Desktop showing option to create a new branch from a selected commit">
   <figcaption style="text-align:center; color:#888">Create a branch by right-clicking on a commit</figcaption>
 </figure>
 
@@ -47,14 +47,14 @@ If you’re on the wrong branch, [stash](/gitkraken-desktop/stashing) your chang
 Right-click the branch label or use the Left Panel to rename the current branch.
 
 <figure>
-  <img src="/wp-content/uploads/rename-branch.png" srcset="/wp-content/uploads/rename-branch@2x.png 2x" class="help-center-img img-bordered" alt="Context menu in GitKraken Desktop with the Rename branch option selected for the branch 'branch-rename'">
+  <img src="/wp-content/uploads/rename-branch@2x.png" class="help-center-img img-bordered" alt="Context menu in GitKraken Desktop with the Rename branch option selected for the branch 'branch-rename'">
   <figcaption style="text-align:center; color:#888">Rename a branch from the graph or Left Panel</figcaption>
 </figure>
 
 You can also rename using the Command Palette (Cmd+P / Ctrl+P):
 
 <figure>
-  <img src="/wp-content/uploads/rename-branch-command-palette.png" srcset="/wp-content/uploads/rename-branch-command-palette@2x.png 2x" class="help-center-img img-bordered" alt="Command Palette in GitKraken Desktop showing filtered results for 'Rename Branch'">
+  <img src="/wp-content/uploads/rename-branch-command-palette@2x.png" class="help-center-img img-bordered" alt="Command Palette in GitKraken Desktop showing filtered results for 'Rename Branch'">
   <figcaption style="text-align:center; color:#888">Search for "Rename Branch" in Command Palette</figcaption>
 </figure>
 
@@ -86,7 +86,7 @@ Merging combines changes from one branch into another. To merge:
 - Or right-click the source branch and choose **Merge**
 
 <figure>
-  <img src="/wp-content/uploads/merge-right.png" srcset="/wp-content/uploads/merge-right@2x.png" class="help-center-img img-bordered" alt="Context menu showing option to merge dev branch into production branch in GitKraken Desktop">
+  <img src="/wp-content/uploads/merge-right@2x.png" class="help-center-img img-bordered" alt="Context menu showing option to merge dev branch into production branch in GitKraken Desktop">
   <figcaption style="text-align:center; color:#888">Merge via drag-and-drop or right-click</figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ If no conflicts exist, changes will be merged automatically.
 When conflicts occur, the Commit Panel shows the conflicted files. Click a file to open the Merge Tool.
 
 <figure>
-  <img src="/wp-content/uploads/merge-conflict.png" srcset="/wp-content/uploads/merge-conflict@2x.png" class="help-center-img img-bordered" alt="GitKraken merge conflict interface showing conflicting file test.txt when merging origin/test-merge-pr into multi-conflict-left">
+  <img src="/wp-content/uploads/merge-conflict@2x.png" class="help-center-img img-bordered" alt="GitKraken merge conflict interface showing conflicting file test.txt when merging origin/test-merge-pr into multi-conflict-left">
   <figcaption style="text-align:center; color:#888">Conflicted files shown in Commit Panel</figcaption>
 </figure>
 
@@ -111,7 +111,7 @@ The Merge Tool shows:
 - Output at the bottom
 
 <figure>
-  <img src="/wp-content/uploads/merge-tool2.png" srcset="/wp-content/uploads/merge-tool2@2x.png" class="help-center-img img-bordered" alt="Screenshot of GitKraken's merge conflict tool showing side-by-side comparison of conflicting lines in glo/calendar.md">
+  <img src="/wp-content/uploads/merge-tool2@2x.png" class="help-center-img img-bordered" alt="Screenshot of GitKraken's merge conflict tool showing side-by-side comparison of conflicting lines in glo/calendar.md">
   <figcaption style="text-align:center; color:#888">Review and resolve conflicts in the Merge Tool</figcaption>
 </figure>
 
@@ -146,14 +146,14 @@ Supported tools:
 - P4Merge
 
 <figure>
-  <img src="/wp-content/uploads/configureExternalTool.png" srcset="/wp-content/uploads/configureExternalTool@2x.png" class="help-center-img img-bordered" alt="Preferences panel showing merge tool selection dropdown with Kaleidoscope selected.">
+  <img src="/wp-content/uploads/configureExternalTool@2x.png" class="help-center-img img-bordered" alt="Preferences panel showing merge tool selection dropdown with Kaleidoscope selected.">
   <figcaption style="text-align:center; color:#888">Select a merge tool in Preferences</figcaption>
 </figure>
 
 If not appearing, ensure command line tools are installed:
 
 <figure>
-  <img src="/wp-content/uploads/beyond-compare.png" srcset="/wp-content/uploads/beyond-compare@2x.png 2x" class="help-center-img img-bordered" alt="Beyond Compare application menu showing the Install Command Line Tools option.">
+  <img src="/wp-content/uploads/beyond-compare@2x.png" class="help-center-img img-bordered" alt="Beyond Compare application menu showing the Install Command Line Tools option.">
   <figcaption style="text-align:center; color:#888">Sample view of configured merge tool</figcaption>
 </figure>
 
@@ -203,12 +203,12 @@ To rebase:
 - Select <kbd>Rebase</kbd> from the menu
 
 <figure>
-  <img src="/wp-content/uploads/select-rebase.png" srcset="/wp-content/uploads/select-rebase@2x.png" class="help-center-img img-bordered" alt="Rebase menu with the option to rebase the testfill2 branch onto origin/develop.">
+  <img src="/wp-content/uploads/select-rebase@2x.png" class="help-center-img img-bordered" alt="Rebase menu with the option to rebase the testfill2 branch onto origin/develop.">
   <figcaption style="text-align:center; color:#888">Rebase one branch onto another</figcaption>
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/select-rebase-sidebar.png" srcset="/wp-content/uploads/select-rebase-sidebar@2x.png" class="help-center-img img-bordered" alt="Sidebar context menu showing options to fast-forward, merge, or rebase the testfill2 branch onto master.">
+  <img src="/wp-content/uploads/select-rebase-sidebar@2x.png" class="help-center-img img-bordered" alt="Sidebar context menu showing options to fast-forward, merge, or rebase the testfill2 branch onto master.">
   <figcaption style="text-align:center; color:#888">Sidebar shows rebase confirmation</figcaption>
 </figure>
 

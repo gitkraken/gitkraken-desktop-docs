@@ -35,7 +35,7 @@ To authenticate with GitHub Enterprise Server:
 1. Go to <kbd><i class="fas fa-cog"></i> Preferences > Integrations</kbd> in the upper-right corner.
 
 <figure>
-  <img src="/wp-content/uploads/preferences.png" srcset="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Accessing Preferences and Integrations</figcaption>
 </figure>
 

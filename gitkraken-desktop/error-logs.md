@@ -14,7 +14,7 @@ You can access error logs via:
 - The Command Palette
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/view-error-log.png" srcset="/wp-content/uploads/view-error-log@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/view-error-log@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Access logs from Help > Support > View Error Logs.</figcaption>
 </figure>
 

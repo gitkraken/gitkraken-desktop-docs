@@ -28,7 +28,7 @@ The AI-powered Commit Composer can:
 - Reorder, squash, or edit commit messages before pushing.
 
 <figure>
-  <img src="/wp-content/uploads/before-after-commit-compose.png" srcset="/wp-content/uploads/before-after-commit-compose@2x.png" class="help-center-img img-bordered" alt="GitKraken interface showing a selected range of commits before and after being composed into a cleaner history." />
+  <img src="/wp-content/uploads/before-after-commit-compose@2x.png" class="help-center-img img-bordered" alt="GitKraken interface showing a selected range of commits before and after being composed into a cleaner history." />
   <figcaption style="text-align: center; color: #888">AI Commit Composer button in the Commit Details Panel</figcaption>
 </figure>
 
@@ -46,12 +46,12 @@ To generate commits with AI:
      - To undo any changes made during composition (such as reordering or squashing), click **Reset**.
 
 <figure>
-  <img src="/wp-content/uploads/compose-WIP.png" srcset="/wp-content/uploads/compose-WIP@2x.png" class="help-center-img img-bordered" alt="Selected WIP commits in GitKraken UI with arrow pointing to the 'Compose commits with AI' button in the commit panel." />
+  <img src="/wp-content/uploads/compose-WIP@2x.png" class="help-center-img img-bordered" alt="Selected WIP commits in GitKraken UI with arrow pointing to the 'Compose commits with AI' button in the commit panel." />
   <figcaption style="text-align: center; color: #888">Compose commits from your WIP.</figcaption>
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/compose-WIP-UI.png" srcset="/wp-content/uploads/compose-WIP-UI@2x.png" class="help-center-img img-bordered" alt="Commit Composer interface showing a list of commits with dropdown options to pick, squash, or reword before composing." />
+  <img src="/wp-content/uploads/compose-WIP-UI@2x.png" class="help-center-img img-bordered" alt="Commit Composer interface showing a list of commits with dropdown options to pick, squash, or reword before composing." />
   <figcaption style="text-align: center; color: #888">Made adjustments, and confirm to create commits.</figcaption>
 </figure>
 
@@ -67,12 +67,12 @@ To generate commits with AI:
      - To undo any changes made during composition (such as reordering or squashing), click **Reset**.
 
 <figure>
-  <img src="/wp-content/uploads/compose-existing-commits.png" srcset="/wp-content/uploads/compose-existing-commits@2x.png" class="help-center-img img-bordered" alt="Context menu for a selected commit showing the option to recompose a series of commits with AI." />
+  <img src="/wp-content/uploads/compose-existing-commits@2x.png" class="help-center-img img-bordered" alt="Context menu for a selected commit showing the option to recompose a series of commits with AI." />
   <figcaption style="text-align: center; color: #888">Recompose an existing range of commits.</figcaption>
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/commit-composer-UI.png" srcset="/wp-content/uploads/commit-composer-UI@2x.png"  class="help-center-img img-bordered" alt="Commit Composer interface showing options to pick, squash, or reword each commit in a sequence." />
+  <img src="/wp-content/uploads/commit-composer-UI@2x.png"  class="help-center-img img-bordered" alt="Commit Composer interface showing options to pick, squash, or reword each commit in a sequence." />
   <figcaption style="text-align: center; color: #888">Made adjustments, and confirm to create commits.</figcaption>
 </figure>
 
@@ -152,14 +152,14 @@ To amend the most recent commit message:
 2. Click into its message box in the Commit Panel.
 
 <figure>
-<img src="/wp-content/uploads/amend-recent-commit-ai-2025.png" srcset="/wp-content/uploads/amend-recent-commit-ai-2025@2x.png" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Edit window open showing amended commit message and description using AI-suggested content." />
+<img src="/wp-content/uploads/amend-recent-commit-ai-2025@2x.png" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Edit window open showing amended commit message and description using AI-suggested content." />
 <figcaption style="text-align: center; color: #888">Select and edit the latest commit message</figcaption>
 </figure>
 
 You can then use the AI button again to generate a revised commit message.
 
 <figure>
-<img src="/wp-content/uploads/generate-ai-amend-message.png" srcset="/wp-content/uploads/generate-ai-amend-message@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Commit panel showing AI-assisted generation of an amended commit message and description." />
+<img src="/wp-content/uploads/generate-ai-amend-message@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Commit panel showing AI-assisted generation of an amended commit message and description." />
 <figcaption style="text-align: center; color: #888">Use AI to regenerate an updated commit message</figcaption>
 </figure>
 
@@ -170,14 +170,14 @@ You can then use the AI button again to generate a revised commit message.
 Right-click any branch or `HEAD` commit and select **Explain Branch Changes** to generate a summary of all changes introduced on that branch.
 
 <figure>
-  <img src="/wp-content/uploads/explain-branch.png" srcset="/wp-content/uploads/explain-branch@2x.png" class="help-center-img img-bordered" alt="Context menu in GitKraken showing the Explain Branch Changes option for generating AI-based summaries of branch differences." />
+  <img src="/wp-content/uploads/explain-branch@2x.png" class="help-center-img img-bordered" alt="Context menu in GitKraken showing the Explain Branch Changes option for generating AI-based summaries of branch differences." />
   <figcaption style="text-align: center; color: #888">Right-click a branch or HEAD commit to explain changes.</figcaption>
 </figure>
 
 GitKraken AI selects all commits on the branch and compares the base commit to the `HEAD` commit. It uses this diff to generate change and impact summaries.
 
 <figure>
-  <img src="/wp-content/uploads/explain-branch-summaries.png" srcset="/wp-content/uploads/explain-branch-summaries@2x.png" class="help-center-img img-bordered" alt="AI-generated explanation panel in GitKraken summarizing branch changes, grouped by commit with a detailed breakdown of updates and their impact." />
+  <img src="/wp-content/uploads/explain-branch-summaries@2x.png" class="help-center-img img-bordered" alt="AI-generated explanation panel in GitKraken summarizing branch changes, grouped by commit with a detailed breakdown of updates and their impact." />
   <figcaption style="text-align: center; color: #888">GitKraken AI summarizes the diff between the base and HEAD commits.</figcaption>
 </figure>
 
@@ -191,7 +191,7 @@ Resolve merge conflicts faster with GitKraken AI.
 When you encounter a merge conflict, click into the conflicted file as usual. You’ll now see a new **Auto-resolve with AI** button that offers a context-aware resolution.
 
 <figure>
-<img src="/wp-content/uploads/Auto-resolve-with-AI-2025.png" srcset='/wp-content/uploads/Auto-resolve-with-AI-2025@2x.png 2x' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="GitKraken merge conflict view showing AI-generated summary and resolution suggestions with confidence scores." />
+<img src="/wp-content/uploads/Auto-resolve-with-AI-2025@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="GitKraken merge conflict view showing AI-generated summary and resolution suggestions with confidence scores." />
 <figcaption style="text-align: center; color: #888">Click 'Auto-resolve with AI' to generate a suggested resolution</figcaption>
 </figure>
 
@@ -209,7 +209,7 @@ Want to fine-tune how AI handles your merge conflicts? You can add your own inst
 Go to: <kbd>Preferences > GitKraken AI > Conflict Resolution</kbd>
 
 <figure>
-<img src="/wp-content/uploads/custom-instructions-conflict-resolution-2025.png" srcset='/wp-content/uploads/custom-instructions-conflict-resolution-2025@2x.png 2x' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="GitKraken AI settings panel with editable fields for customizing instructions related to stash messages, pull requests, and conflict resolution." />
+<img src="/wp-content/uploads/custom-instructions-conflict-resolution-2025@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="GitKraken AI settings panel with editable fields for customizing instructions related to stash messages, pull requests, and conflict resolution." />
 <figcaption style="text-align: center; color: #888">Set custom AI instructions for merge conflict resolution</figcaption>
 </figure>
 
@@ -237,14 +237,14 @@ Similar to commit messages, you can generate stash messages based on staged chan
 2. Click the stash icon next to the "Commit" tab and then click the **AI** button.
 
 <figure>
-<img src="/wp-content/uploads/stash-ai-message.png" srcset="/wp-content/uploads/stash-ai-message@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Stash message input section with highlighted AI button labeled 'Generate a stash message with AI'." />
+<img src="/wp-content/uploads/stash-ai-message@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Stash message input section with highlighted AI button labeled 'Generate a stash message with AI'." />
 <figcaption style="text-align: center; color: #888">Use the AI button to generate a stash message</figcaption>
 </figure>
 
 3. GitKraken AI generates a stash message, which you can review and edit.
 
 <figure>
-<img src="/wp-content/uploads/stash-message-generated-2025.png" srcset="/wp-content/uploads/stash-message-generated-2025@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Stash message input field populated with AI-generated text, 'Adds documentation for AI-generated stash messages feature.'" />
+<img src="/wp-content/uploads/stash-message-generated-2025@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Stash message input field populated with AI-generated text, 'Adds documentation for AI-generated stash messages feature.'" />
 <figcaption style="text-align: center; color: #888">Review and edit the AI-generated stash message</figcaption>
 </figure>
 
@@ -259,21 +259,21 @@ When connected to [GitHub, GitLab, Bitbucket, or Azure DevOps](/gitkraken-deskto
 1. Create a pull request from the Left Panel or by drag-and-dropping a branch onto another.
 
 <figure>
-<img src="/wp-content/uploads/create-pr-v11-1-Q2-2025.png" srcset="/wp-content/uploads/create-pr-v11-1-Q2-2025@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Sidebar showing pull request filters and a highlighted 'Create Pull Request' button." />
+<img src="/wp-content/uploads/create-pr-v11-1-Q2-2025@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Sidebar showing pull request filters and a highlighted 'Create Pull Request' button." />
 <figcaption style="text-align: center; color: #888">Start creating a pull request from the Left Panel or graph</figcaption>
 </figure>
 
 2. Click **Generate title and description**. If using [pull request templates](/gitkraken-desktop/pull-requests/#pull-request-templates), select the template first—GitKraken AI will apply it.
 
 <figure>
-<img src="/wp-content/uploads/pr-ai-title-desc-11-1.png" srcset="/wp-content/uploads/pr-ai-title-desc-11-1@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Pull request creation panel with an AI button to generate a title and description based on branch changes." />
+<img src="/wp-content/uploads/pr-ai-title-desc-11-1@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Pull request creation panel with an AI button to generate a title and description based on branch changes." />
 <figcaption style="text-align: center; color: #888">Click the AI button to generate a pull request title and description</figcaption>
 </figure>
 
 3. GitKraken provides a suggested title and description for your PR.
 
 <figure>
-<img src="/wp-content/uploads/pr-ai-title-and-description.png" srcset="/wp-content/uploads/pr-ai-title-and-description@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Pull request form showing auto-generated title and description summarizing recent documentation changes." />
+<img src="/wp-content/uploads/pr-ai-title-and-description@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Pull request form showing auto-generated title and description summarizing recent documentation changes." />
 <figcaption style="text-align: center; color: #888">Review and edit the AI-generated title and description</figcaption>
 </figure>
 
@@ -305,7 +305,7 @@ This endpoint can handle:
 - Commit Composer
 
 <figure>
-<img src="/wp-content/uploads/custom-url-11-1.png" srcset="/wp-content/uploads/custom-url-11-1@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Custom AI provider settings in GitKraken showing provider, endpoint URL, token limit, and API key fields." />
+<img src="/wp-content/uploads/custom-url-11-1@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Custom AI provider settings in GitKraken showing provider, endpoint URL, token limit, and API key fields." />
 <figcaption style="text-align: center; color: #888">Example of configuring a custom AI endpoint</figcaption>
 </figure>
 

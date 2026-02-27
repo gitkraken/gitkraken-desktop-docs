@@ -39,28 +39,28 @@ To authenticate:
 1. Navigate to <kbd><i class="fas fa-cog"></i> Preferences > Integrations</kbd> in the upper-right corner.
 
 <figure>
-  <img src="/wp-content/uploads/preferences.png" srcset="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Open Preferences to access Integrations</figcaption>
 </figure>
 
 2. Choose **Gitlab Self-Managed**. Enter your GitLab Self-Managed host domain. Click <button class='button button--success button--ui button--nolink'>Generate a token on GitLab</button> and follow the link.
 
 <figure>
-  <img src="/wp-content/uploads/connect-gitlab-self-managed-2025.png" srcset="/wp-content/uploads/connect-gitlab-self-managed-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/connect-gitlab-self-managed-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Connect to GitLab Self-Managed</figcaption>
 </figure>
 
 4. In your browser, log in and generate a token. Required scopes: `api` and `read_user`. Leave expiration blank.
 
 <figure>
-  <img src="/wp-content/uploads/access-token-gitlab-self-managed.png" srcset="/wp-content/uploads/access-token-gitlab-self-managed@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/access-token-gitlab-self-managed@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Create a personal access token for GitLab</figcaption>
 </figure>
 
 5. Copy and paste the token into GitKraken, then click <button class='button button--success button--ui button--nolink'>Connect</button>.
 
 <figure>
-  <img src="/wp-content/uploads/connect-gitlab-self-managed-PAT-2025.png" srcset="/wp-content/uploads/connect-gitlab-self-managed-PAT-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/connect-gitlab-self-managed-PAT-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Token successfully connected in GitKraken</figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ To authenticate:
 2. Click <button class='button button--success button--ui button--nolink'>Generate SSH key and add to GitLab</button>.
 
 <figure>
-  <img src="/wp-content/uploads/add-key-gitlab-self-managed-2025.png" srcset="/wp-content/uploads/add-key-gitlab-self-managed-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/add-key-gitlab-self-managed-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Generate and upload SSH key to GitLab Self-Managed</figcaption>
 </figure>
 

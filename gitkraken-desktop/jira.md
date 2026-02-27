@@ -23,11 +23,11 @@ GitKraken Desktop makes it easy to integrate with Jira Cloud and Jira Data Cente
 
 Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>. If you do not see the ISSUES section, right-click on any Left Panel header and enable it from the context menu.
 
-<img src="/wp-content/uploads/connect-jira-issues-2025.png" srcset="/wp-content/uploads/connect-jira-issues-2025@2x.png" class="help-center-img img-bordered" alt="Connecting Jira integration in GitKraken">
+<img src="/wp-content/uploads/connect-jira-issues-2025@2x.png" class="help-center-img img-bordered" alt="Connecting Jira integration in GitKraken">
 
 You will be redirected to an Atlassian page to authorize the connection. Click <em>Accept</em> to proceed.
 
-<img src="/wp-content/uploads/connect-atlassian-2025.png" srcset="/wp-content/uploads/connect-atlassian-2025@2x.png" class="help-center-img img-bordered" alt="Atlassian OAuth prompt for Jira integration">
+<img src="/wp-content/uploads/connect-atlassian-2025@2x.png" class="help-center-img img-bordered" alt="Atlassian OAuth prompt for Jira integration">
 
 Alternatively, you may copy the token from the _Success_ page and paste it into the Jira Cloud integration screen in GitKraken Desktop.
 
@@ -37,11 +37,11 @@ Alternatively, you may copy the token from the _Success_ page and paste it into 
 
 Once connected, your Jira issues will appear in the Left Panel. By default, the app displays issues assigned to you under the _My Issues_ filter.
 
-<img src="/wp-content/uploads/preview-jira-issues-2025.png" srcset="/wp-content/uploads/preview-jira-issues-2025@2x.png" class="help-center-img img-bordered" alt="Preview of Jira issues in the Left Panel">
+<img src="/wp-content/uploads/preview-jira-issues-2025@2x.png" class="help-center-img img-bordered" alt="Preview of Jira issues in the Left Panel">
 
 Hover over any issue to preview key details including Title, Description, Status, Assignee, and Reporter.
 
-<img src="/wp-content/uploads/hover-issue-2025.png" srcset="/wp-content/uploads/hover-issue-2025@2x.png" class="help-center-img img-bordered" alt="Issue preview tooltip in GitKraken">
+<img src="/wp-content/uploads/hover-issue-2025@2x.png" class="help-center-img img-bordered" alt="Issue preview tooltip in GitKraken">
 
 ---
 
@@ -49,7 +49,7 @@ Hover over any issue to preview key details including Title, Description, Status
 
 Click an issue to open its detail view.
 
-<img src="/wp-content/uploads/jira-issue-view.png" srcset="/wp-content/uploads/jira-issue-view@2x.png" class="help-center-img img-bordered" alt="Jira issue detail view">
+<img src="/wp-content/uploads/jira-issue-view@2x.png" class="help-center-img img-bordered" alt="Jira issue detail view">
 
 You can:
 
@@ -66,7 +66,7 @@ These changes will sync with your Jira board.
 
 From the Left Panel, click the <code>+</code> icon to add a new Jira issue.
 
-<img src="/wp-content/uploads/create-jira-issue-2025.png" srcset="/wp-content/uploads/create-jira-issue-2025@2x.png" class="help-center-img img-bordered" alt="Create new Jira issue from GitKraken">
+<img src="/wp-content/uploads/create-jira-issue-2025@2x.png" class="help-center-img img-bordered" alt="Create new Jira issue from GitKraken">
 
 The issue will sync directly with your connected Jira project.
 
@@ -76,7 +76,7 @@ The issue will sync directly with your connected Jira project.
 
 You can create filters to show specific issues. The integration supports Atlassian’s JQL (Jira Query Language) and provides auto-complete for filter fields.
 
-<img src="/wp-content/uploads/create-jira-filter-2025.png" srcset="/wp-content/uploads/create-jira-filter-2025@2x.png" class="help-center-img img-bordered" alt="Creating a JQL filter in GitKraken">
+<img src="/wp-content/uploads/create-jira-filter-2025@2x.png" class="help-center-img img-bordered" alt="Creating a JQL filter in GitKraken">
 
 For advanced filtering tips, see Atlassian’s [JQL guide](https://www.atlassian.com/software/jira/guides/expand-jira/jql#visualize-results).
 
@@ -96,7 +96,7 @@ The branch name is prefilled based on the issue title. After creation, branches 
 
 Click the <kbd><i class="fa fa-ellipsis-v"></i></kbd> icon on an issue card to copy the issue link or open it directly in Jira.
 
-<img src="/wp-content/uploads/view-jira-issue-2025.png" srcset="/wp-content/uploads/view-jira-issue-2025@2x.png" class="help-center-img img-bordered" alt="Options to copy or view Jira issue">
+<img src="/wp-content/uploads/view-jira-issue-2025@2x.png" class="help-center-img img-bordered" alt="Options to copy or view Jira issue">
 
 ---
 

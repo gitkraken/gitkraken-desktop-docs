@@ -18,14 +18,14 @@ Use cherry pick to apply commits from one branch onto another in GitKraken Deskt
 3. Select **Cherry pick commit**.
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/cherrypick.png' srcset='/wp-content/uploads/cherrypick@2x.png 2x' class="help-center-img img-bordered" alt="Right-click context menu in GitKraken showing option to cherry pick a commit.">
+    <img src='/wp-content/uploads/cherrypick@2x.png' class="help-center-img img-bordered" alt="Right-click context menu in GitKraken showing option to cherry pick a commit.">
     <figcaption style="text-align: center; color: #888;">Check out the target branch, then right-click a commit to cherry pick it.</figcaption>
 </figure>
 
 You can also cherry pick the HEAD commit of a branch by right-clicking a branch name under the **Local** section of the Left Panel.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/cherrypick-left-panel.png' srcset='/wp-content/uploads/cherrypick-left-panel@2x.png 2x' class="help-center-img img-bordered" alt="Context menu in GitKraken showing option to cherry pick the HEAD commit of a selected branch from the Left Panel.">
+  <img src='/wp-content/uploads/cherrypick-left-panel@2x.png' class="help-center-img img-bordered" alt="Context menu in GitKraken showing option to cherry pick the HEAD commit of a selected branch from the Left Panel.">
   <figcaption style="text-align: center; color: #888;">Right-click a branch in the Left Panel to cherry pick its HEAD commit.</figcaption>
 </figure>
 

@@ -34,14 +34,14 @@ To authenticate:
 1. Go to <kbd><i class="fas fa-cog"></i> Preferences > Integrations</kbd>.
 
 <figure>
-  <img src="/wp-content/uploads/preferences.png" srcset="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Open Preferences to access Integrations</figcaption>
 </figure>
 
 2. Choose **Bitbucket Data Center**. Enter your host domain and click <button class='button button--success button--ui button--nolink'>Generate a token on Bitbucket Data Center</button>. Ensure the token has appropriate permissions.
 
 <figure>
-  <img src="/wp-content/uploads/connecting-bb-data-center-2025.png" srcset="/wp-content/uploads/connecting-bb-data-center-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/connecting-bb-data-center-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Start connection to Bitbucket Data Center</figcaption>
 </figure>
 
@@ -67,7 +67,7 @@ To authenticate:
 3. Follow the in-app toast or manual instructions to add the key.
 
 <figure>
-  <img src="/wp-content/uploads/ssh-bb-data-center-2025.png" srcset="/wp-content/uploads/ssh-bb-data-center-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/ssh-bb-data-center-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Generate and copy your SSH key</figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ To authenticate:
 5. Paste your public key and click <button class='button button--primary button--ui button--nolink'>Add Key</button>.
 
 <figure>
-  <img src="/wp-content/uploads/bitbucket-server-SSHkey-add.png" srcset="/wp-content/uploads/bitbucket-server-SSHkey-add@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/bitbucket-server-SSHkey-add@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">SSH key successfully added</figcaption>
 </figure>
 
@@ -95,14 +95,14 @@ GitKraken allows you to:
 - Search your repositories when cloning:
 
 <figure>
-  <img src="/wp-content/uploads/bb-data-center-clone.png" srcset="/wp-content/uploads/bb-data-center-clone@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/bb-data-center-clone@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Clone repositories from Bitbucket Data Center</figcaption>
 </figure>
 
 - View forks when adding remotes:
 
 <figure>
-  <img src="/wp-content/uploads/add-remote-bb-dc-2025.png" srcset="/wp-content/uploads/add-remote-bb-dc-2025@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/add-remote-bb-dc-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Remotes list includes repository forks</figcaption>
 </figure>
 
