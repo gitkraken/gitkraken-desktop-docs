@@ -8,7 +8,7 @@ taxonomy:
 ---
 
 <div class='callout callout--danger'>
-    <p> GitKraken Boards and GitKraken Timelines will sunset at the end of 2022. Please read our <a href="https://www.gitkraken.com/boards-and-timelines" target="_blank">full anouncement and FAQ</a> to learn more. </p>
+    <p> GitKraken Boards and GitKraken Timelines will sunset at the end of 2022. Please read our <a href="https://www.gitkraken.com/boards-and-timelines" target="_blank">full announcement and FAQ</a> to learn more. </p>
 </div>
 
 <img src='/wp-content/uploads/timelines/integrations/gitkraken/gitkrakentimelines.gif' class="help-center-img img-bordered">
