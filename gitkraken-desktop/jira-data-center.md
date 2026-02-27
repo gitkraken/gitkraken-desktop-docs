@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken Desktop supports integration with both Jira Cloud and Jira Data Center to help you manage issues directly from your Git workflow.
 

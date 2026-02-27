@@ -4,7 +4,7 @@ description: Minimum requirements for GitKraken Self-Hosted servers
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken Self-Hosted is deployed via Docker containers on a small-spec Linux server or virtual machine. Below are the minimum system and software requirements.
 

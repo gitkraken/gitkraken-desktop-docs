@@ -4,7 +4,7 @@ description: Connect GitKraken Desktop with your GitHub Enterprise Server to man
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken allows you to connect to GitHub Enterprise Server to streamline development workflows. Integration enables quick repository access, authentication, and pull request management.
 

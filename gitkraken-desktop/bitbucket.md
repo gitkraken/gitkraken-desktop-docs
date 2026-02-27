@@ -4,7 +4,7 @@ description: Connect GitKraken Desktop with Bitbucket to clone repositories, man
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken Desktop allows you to authenticate with Bitbucket to help you locate repositories for cloning, add remotes, and manage pull requests more efficiently.
 

@@ -4,7 +4,7 @@ description: Use advanced filter syntax in GitKraken Desktop to find pull reques
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Use this syntax to filter pull requests in GitKraken Desktop and quickly find the items you need.
 

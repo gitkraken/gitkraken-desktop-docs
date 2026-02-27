@@ -4,7 +4,7 @@ description: Connect GitKraken Desktop to your Bitbucket Data Center server for 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken Desktop allows you to connect to Bitbucket Data Center, so you can find repositories, manage remotes, and create pull requests from a self-hosted environment.
 
