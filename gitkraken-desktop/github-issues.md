@@ -5,13 +5,33 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop makes it easy to integrate with GitHub Issues for seamless issue management.
 
 <div class='callout callout--basic'>
     <p>The GitHub Issues integration is limited to public repositories for Community users. To unlock full access, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken license</a>.</p>
 </div>
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to GitHub Issues to view, create, and manage issues alongside your repository workflow.
+
+1. Go to <kbd>Preferences > Integrations</kbd> and select **GitHub.com**, or click the ISSUES section in the Left Panel.
+2. Click **Connect to GitHub** and complete authorization in the browser window that opens.
+3. Once connected, your GitHub issues appear in the Left Panel under default filters such as _My Open Issues_ and _All Open Issues_.
+
+**To view issue details:** Click any issue in the Left Panel to open its detail view. Changes made here sync with GitHub.
+
+**To create a new issue:** Click the **+** icon in the Left Panel, fill in the required fields, and submit. The issue syncs directly to GitHub.
+
+**To create a branch from an issue:** Open the issue detail view and click **Create a branch for this issue**. The branch name is pre-filled from the issue title.
+
+**To create custom filters:** Use GitHub's issue filter syntax to build filters in the Left Panel and narrow your view to specific labels, statuses, or assignees.
+
+To open an issue in GitHub or copy its link, use the ellipsis menu or the external link icon in the issue detail view.
 
 ---
 

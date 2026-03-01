@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop makes it easy to integrate with Jira Cloud and Jira Data Center.
 
@@ -16,6 +16,24 @@ GitKraken Desktop makes it easy to integrate with Jira Cloud and Jira Data Cente
 <div class='callout callout--basic'>
     <p>The Jira integration is view-only for Community users. To unlock full functionality, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken subscription</a>.</p>
 </div>
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to Jira to view, create, and manage Jira issues alongside your Git workflow.
+
+1. Go to <kbd>Preferences > Integrations</kbd> or click the ISSUES section in the Left Panel. If the ISSUES section is not visible, right-click any Left Panel header and enable it.
+2. Select **Jira Cloud** or **Jira Data Center** and click to authorize. Complete the authorization in the Atlassian browser page that opens.
+3. Once connected, your Jira issues appear in the Left Panel under the _My Issues_ filter by default.
+
+**To view and edit issue details:** Click any issue to open its detail view. You can edit the title, description, status, and assignee. Changes sync with your Jira board.
+
+**To create a new issue:** Click the **+** icon in the Left Panel, fill in the required fields, and submit. The issue syncs to Jira automatically.
+
+**To create a branch from an issue:** Open the issue detail view and click **Create a branch for this issue**. The branch name is pre-filled from the issue title.
+
+**To use JQL filters:** Use the filter syntax in the Left Panel to narrow issues by project, label, sprint, or status.
 
 ---
 
