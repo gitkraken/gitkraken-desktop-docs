@@ -4,13 +4,36 @@ description: Learn how to use GitKraken Desktop to compare changes with diffs, v
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Compare changes within GitKraken Desktop using _diffs_. Learn how to access them, view file history or file blame, and use external tools.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/-0bn2H63axM?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
+
+***
+
+## Quick Start
+
+Use GitKraken Desktop to view file diffs, inspect commit history, and trace changes by author.
+
+**To view a diff:**
+- Click a file in the staging area (WIP node) to see your uncommitted changes.
+- Click a commit in the graph, then click any file in the Commit Panel to view that commit's changes.
+- Select two commits using <kbd>Shift</kbd> + Click to compare them directly.
+
+**To switch diff view modes**, use the **Hunk**, **Inline**, or **Split** toggles in the diff viewer. To revert a specific block of changes, use the **Revert** button in Hunk view.
+
+**To view file history or blame:**
+- Open the diff for any file and click the **History** or **Blame** button in the upper-right corner.
+- Or right-click a file after selecting a commit in the graph.
+
+**To create or apply a patch:**
+- Right-click a commit and select **Create patch from commit**.
+- To apply a patch, open the Command Palette (<kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>P</kbd>), type `Apply Patch`, and select your `.patch` file.
+
+To use an external diff tool, go to <kbd>Preferences > External Tools</kbd> and select your preferred application.
 
 ***
 

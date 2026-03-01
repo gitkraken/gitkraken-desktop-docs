@@ -4,9 +4,24 @@ description: Learn how to view real-time Git actions, application events, and Gi
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Learn how to view all Git and application-level actions made in GitKraken Desktop using Activity Logs.
+
+***
+
+## Quick Start
+
+Use Activity Logs in GitKraken Desktop to monitor Git operations, application events, and Git hook output in real time.
+
+1. Open GitKraken Desktop and open any repository.
+2. Click the <kbd>Activity Logs</kbd> icon in the footer toolbar at the bottom of the window.
+3. Select the **Application** tab to view actions taken by GitKraken Desktop itself, such as opening repositories or refreshing the Git config.
+4. Select the **Repository** tab to see Git operations performed on the current repository, such as fetch, push, and merge.
+5. To include more detail in the Repository tab, go to <kbd>Preferences > General</kbd> and enable **Use extended logging in activity log**.
+6. If a Git hook fails, a snackbox notification will appear with a link to the hook log. Click it to view the hook output directly.
+
+Each log entry includes a timestamp, a description of the action, and duration in milliseconds. Logs are displayed in plain text format and update in real time as you work.
 
 ***
 

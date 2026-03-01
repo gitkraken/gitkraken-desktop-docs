@@ -4,9 +4,30 @@ description: Learn how to create, delete, and manage files and folders in GitKra
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Learn how to add, create folders, delete, and filter files using GitKraken Desktop.
+
+***
+
+## Quick Start
+
+Use GitKraken Desktop to create, delete, and filter files within your repository without leaving the application.
+
+**To create a file:**
+1. Press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>P</kbd> to open the Command Palette.
+2. Type `Create File` and press <kbd>Enter</kbd>.
+3. Enter a filename and press <kbd>Enter</kbd>. To create a folder at the same time, include a `/` in the name (e.g., `src/utils.js`).
+
+**To create a file using the context menu:**
+1. Right-click the empty space in the Commit Panel.
+2. Select `Create File`.
+
+**To delete a file:**
+1. Right-click the file in the Commit Panel.
+2. Select `Delete file`.
+
+To delete any file in the repository (not just staged files), first enable `View all files` in the Commit Panel. Once enabled, right-click any file and select `Delete file`. A **Filter Files** bar also appears when `View all files` is on, letting you type a filename or extension to locate files quickly.
 
 ***
 

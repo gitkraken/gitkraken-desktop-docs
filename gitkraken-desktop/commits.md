@@ -4,13 +4,31 @@ description: Learn how to commit changes in GitKraken Desktop, including staging
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop simplifies the Git commit process by helping you stage, commit, and push your work from a visual interface.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8a6fYPkBDbY?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>
+
+***
+
+## Quick Start
+
+Create a commit in GitKraken Desktop by staging your changes and entering a commit message.
+
+1. Save changes to your files. The **WIP** (Work in Progress) node appears at the top of the Commit Graph.
+2. Click the WIP node to open the Commit Panel and view changed files.
+3. Click a file to review its diff, then click the checkbox or the file name to stage it. To stage all files, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>.
+4. Enter a commit message in the message field.
+5. Click **Commit**, or press <kbd>Cmd</kbd>/<kbd>Enter</kbd> (macOS) or <kbd>Ctrl</kbd>/<kbd>Enter</kbd> (Windows/Linux).
+
+To commit and push in one step, enable the **Push after committing** option before clicking **Commit**.
+
+To amend the most recent commit, stage any additional changes, then check **Amend the previous commit** in the Commit Panel. To update only the message, click the most recent commit in the graph and edit the message field directly, then click **Update Message**.
+
+To undo a commit, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Z</kbd> or click the **Undo** button in the toolbar.
 
 ***
 

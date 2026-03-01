@@ -4,9 +4,30 @@ description: Step-by-step guide to using interactive rebase in GitKraken Desktop
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Interactive rebase lets you rewrite commit history by editing, reordering, combining, or removing commits. Use it to clean up your commit history before merging a feature branch.
+
+***
+
+## Quick Start
+
+Use interactive rebase in GitKraken Desktop to reorder, combine, rename, or remove commits before merging.
+
+**To start interactive rebase:**
+- Drag and drop a branch onto a target branch and select **Interactive Rebase**.
+- Or right-click a target branch in the Left Panel and choose **Interactive Rebase**.
+- Or right-click any parent commit in the graph and select the option.
+
+**Available commit actions:**
+- **Pick**: Keep the commit as-is.
+- **Reword**: Edit the commit message.
+- **Squash**: Combine the commit into its parent commit.
+- **Drop**: Remove the commit from history entirely.
+
+Keyboard shortcuts in the rebase view: <kbd>P</kbd> = Pick, <kbd>S</kbd> = Squash, <kbd>R</kbd> = Reword, <kbd>D</kbd> = Drop.
+
+To undo all changes before confirming, click **Reset**. Interactive rebase requires that branches share a common ancestor and that no merge commits exist on the source branch. If you start the rebase in GitKraken Desktop, you must complete it there.
 
 ***
 

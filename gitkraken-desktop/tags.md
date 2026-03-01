@@ -4,9 +4,29 @@ description: Learn how to create, annotate, move, and share Git tags in GitKrake
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
-Tags <em class='context-menu'><img style='transform:rotate(180deg);height:1em;' src='/wp-content/uploads/gk-tag-icon.svg'></em> are labels that point to a specific commit in your Git history. They’re useful for marking version releases or significant project milestones.
+Tags <em class=’context-menu’><img style=’transform:rotate(180deg);height:1em;’ src=’/wp-content/uploads/gk-tag-icon.svg’></em> are labels that point to a specific commit in your Git history. They’re useful for marking version releases or significant project milestones.
+
+***
+
+## Quick Start
+
+Create, annotate, push, and manage Git tags in GitKraken Desktop from the commit graph or Left Panel.
+
+**To create a tag:** Right-click a commit in the graph and select **Create tag here**. Enter the tag name and press Enter.
+
+**To create an annotated tag:** Right-click a commit and select **Create annotated tag here**. Annotation messages appear as tooltips in the graph and Left Panel.
+
+**To push a tag to a remote:** Right-click the tag in the Left Panel or graph and select **Push tag**.
+
+**To create a branch from a tag:** Right-click the tag and select **Create branch here**.
+
+**To delete a tag:** Right-click the tag and choose to delete it locally, from the remote, or both. Deletion is permanent.
+
+**To rename a tag:** Tags cannot be renamed directly. Delete the existing tag locally and from the remote, then recreate it with the desired name on the same commit.
+
+**To filter tags:** Use the filter bar at the top of the Tags section in the Left Panel. Toggle the Tags pane by right-clicking any Left Panel header.
 
 ***
 

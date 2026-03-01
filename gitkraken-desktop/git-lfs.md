@@ -5,7 +5,29 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
+
+***
+
+## Quick Start
+
+Set up Git LFS in GitKraken Desktop to track and manage large binary files in your repositories.
+
+**Prerequisites:** Install Git (version 2.39.3 or later) and Git LFS (version 3.0.0 or later), then verify with `git --version` and `git lfs version` in a terminal.
+
+**To initialize Git LFS on an existing repository:**
+1. Open the repository in GitKraken Desktop.
+2. Go to <kbd>Preferences > LFS</kbd> and click **Initialize LFS**.
+3. Commit the change to the `.gitattributes` file that GitKraken Desktop creates.
+
+**To track a file or file type:**
+- Go to <kbd>Preferences > LFS</kbd> and add a tracking pattern (e.g., `*.psd`).
+- Or right-click a file under WIP in the Commit Panel and select **LFS > Track file pattern**.
+
+**To initialize Git LFS on a new repository:**
+- Select **Initialize with LFS** when creating the repository.
+
+After tracking is configured, commit and push files as usual. LFS-tracked files show an **LFS** tag in the Commit Panel. Use the LFS menu in the toolbar to run additional commands such as pull and prune.
 
 ## What is Git LFS?
 

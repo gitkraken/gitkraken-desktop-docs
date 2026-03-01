@@ -5,9 +5,26 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Learn how to stage files, review changes, and manage tracked content in GitKraken Desktop.
+
+***
+
+## Quick Start
+
+Stage, unstage, and discard file changes in GitKraken Desktop from the Commit Panel.
+
+**To stage files:**
+1. Select the **//WIP** node in the Commit Graph to open the Commit Panel.
+2. Hover over a file and click **Stage File**, or click **Stage all changes** to stage everything at once.
+3. To stage specific lines, click a file to open its diff, highlight the lines, right-click, and select **Stage selected lines**.
+
+**To unstage files:** Select a file under Staged Files and click **Unstage File**. Use **Unstage all changes** to move all staged files back to the working directory.
+
+**To discard changes:** Select the **//WIP** node and click the trash icon to discard all changes or selected files. Right-click a file to discard individual hunks from the diff view.
+
+**To ignore a file:** Right-click any unstaged file and select **Ignore**. Choose to ignore by file name, extension, or directory. GitKraken Desktop adds the rule to the root-level `.gitignore`. For already-tracked files, select **Ignore and Stop Tracking** to also remove the file from the Git index.
 
 ***
 

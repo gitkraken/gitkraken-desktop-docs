@@ -5,13 +5,30 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Gitflow helps organize your repository history, making it easier to manage releases, bug fixes, and features.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/eTOgjQ9o4vQ?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
+
+***
+
+## Quick Start
+
+Set up and use Gitflow in GitKraken Desktop to manage features, releases, and hotfixes with structured branches.
+
+1. Go to <kbd>Preferences > Gitflow</kbd> and initialize Gitflow for the repository. Optionally adjust default branch names.
+2. GitKraken Desktop creates `main` and `develop` branches if they do not exist.
+3. A **Gitflow** panel appears in the Left Panel. Click the green button to start a branch, or create a branch manually using a Gitflow prefix (e.g., `feature/my-feature`, `release/1.0.0`).
+
+**To finish a branch type:**
+- **Feature**: Merges into `develop` and deletes the branch locally.
+- **Release**: Merges into both `main` and `develop`, and creates a tag.
+- **Hotfix**: Merges into both `main` and `develop`.
+
+Right-click a Gitflow branch in the Left Panel and select **Finish** to complete it. To set a tag prefix (e.g., `v`), configure it under <kbd>Preferences > Gitflow</kbd>. Publishing a Gitflow branch to a remote works the same as pushing any other branch.
 
 ***
 ## Configuration
