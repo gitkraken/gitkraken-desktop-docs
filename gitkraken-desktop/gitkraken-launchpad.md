@@ -4,13 +4,13 @@ description: Learn how to track pull requests, issues, and WIPs using GitKraken 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Launchpad provides a unified overview of your Pull Requests, Issues, and Works In Progress (WIPs) for your selected Workspace or collaborators. Use it to monitor your personal tasks and your team’s contributions in one place.
 
 <figure>
-  <img src="/wp-content/uploads/launchpad-highlight-2025@2x.png" 
-       class="help-center-img img-bordered" 
+  <img src="/wp-content/uploads/launchpad-highlight-2025@2x.png"
+       class="help-center-img img-bordered"
        alt="GitKraken Desktop Launchpad view showing a list of pull requests with unassigned reviewers on the left and detailed GitHub pull request panel open on the right.">
   <figcaption style="color:#888; text-align:center">
     Launchpad displaying a list of unassigned reviewers, with a PR open for more details
