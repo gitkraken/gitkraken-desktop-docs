@@ -5,9 +5,27 @@ description: Step-by-step installation guide for GitKraken Desktop on Windows, m
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop is a graphical Git client designed to make version control easier for developers, builders, and teams.
+
+***
+
+## Quick Start
+
+Install GitKraken Desktop on your operating system in three steps.
+
+1. [Download GitKraken Desktop](https://gitkraken.com/download?product=gitkraken&source=help_center) for your platform.
+2. Run the installer:
+   - **Windows**: Double-click the `.exe` file. GitKraken Desktop installs and launches automatically.
+   - **macOS**: Open the `.dmg` file and drag the GitKraken icon into your Applications folder.
+   - **Linux (.deb)**: Run `wget https://release.gitkraken.com/linux/gitkraken-amd64.deb && sudo apt install ./gitkraken-amd64.deb`.
+   - **Linux (.rpm)**: Run `wget https://release.gitkraken.com/linux/gitkraken-amd64.rpm && sudo dnf install ./gitkraken-amd64.rpm`.
+3. Launch GitKraken Desktop:
+   - **Windows/macOS**: Use the shortcut or Applications folder.
+   - **Linux**: Run `gitkraken` in a terminal.
+
+No Git command-line tools are required for basic use. For advanced features like the terminal, Git LFS, or experimental tools, [install Git from git-scm.com](https://git-scm.com/).
 
 There are three simple steps to get started with GitKraken Desktop:
 

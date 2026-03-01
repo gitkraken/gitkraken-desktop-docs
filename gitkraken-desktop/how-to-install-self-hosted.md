@@ -4,13 +4,30 @@ description: Step-by-step guide to installing GitKraken Self-Hosted Server on Ce
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Self-Hosted Server runs on a Linux virtual machine (CentOS, Ubuntu, or RHEL7) inside Docker containers. To begin, you'll first need to install Docker.
 
 <div class='callout callout--warning'>
     <p>GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, visit our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?_gl=1*vtr4xk*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmv98H0EKgytPnuCPuTqdL2vy4GQaCsizBMO9m8mz2n1hMMXO3AAw7YaAiyKEALw_wcB?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
 </div>
+
+***
+
+## Quick Start
+
+Install GitKraken Self-Hosted Server on a Linux machine using Docker and Docker Compose.
+
+1. Install Docker CE and Docker Compose on your Linux host (CentOS, Ubuntu, or RHEL7). Follow the platform-specific steps in the sections below, or refer to the official [Docker documentation](https://docs.docker.com/).
+2. Start Docker: `sudo systemctl start docker`.
+3. Extract `GitKrakenEnterpriseServer.zip` into a directory on your host machine.
+4. Load the Docker images: `sudo sh loadImages.sh`.
+5. (Optional) Edit `docker-compose.yml` to change the port (default: 3000) and set the `GITKRAKEN_ENTERPRISE_URL` to your server's address.
+6. Create the directory for GitKraken Desktop releases and extract `release.zip` into it (default path: `./gk-data/release`).
+7. From the directory containing `docker-compose.yml`, start the server: `sudo docker-compose up`.
+8. Open `http://localhost:3000` (or your configured URL) in a browser to complete the setup.
+
+For offline installations, download Docker CE and Docker Compose on a machine with internet access, transfer the packages to your server, and install them manually before proceeding.
 
 <ul>
   <li><a href="#install_centos">Install on CentOS</a></li>

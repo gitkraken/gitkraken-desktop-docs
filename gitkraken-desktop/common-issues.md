@@ -4,7 +4,23 @@ description: Troubleshoot common GitKraken Desktop problems, including login err
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
+
+***
+
+## Quick Start
+
+Use this page to diagnose and resolve common problems in GitKraken Desktop. Find the section that matches your issue and follow the steps listed.
+
+- **Account or license not recognized**: Verify you are signed in with the email address linked to your subscription, and that the correct organization is selected in GitKraken Desktop and on gitkraken.dev.
+- **Integration errors (1002, 1003, 1005, 1007)**: Sign out of your browser, clear its cache, and reconnect your integration from <kbd>Preferences > Integrations</kbd>.
+- **Clone always uses HTTPS instead of SSH**: Add or generate an SSH key under <kbd>Preferences > Integrations > [Integration]</kbd>, then restart GitKraken Desktop.
+- **Commit Details panel missing**: Go to <kbd>View > Show Commit Details panel</kbd> to restore it.
+- **Performance problems**: See the [Performance Issues](/gitkraken-desktop/performance-issues/) guide, or try running <kbd>Perform Repo Maintenance</kbd> from the Command Palette.
+- **Push failed with `Cannot read property 'fullName' of undefined`**: Rename your local branch to match the remote branch name exactly.
+- **WSL issues**: Avoid running GitKraken Desktop as root; use native WSL2 GUI support instead of XServer.
+
+If the steps on this page do not resolve your issue, contact [GitKraken Support](https://help.gitkraken.com/gitkraken-desktop/contact-support/).
 
 ***
 

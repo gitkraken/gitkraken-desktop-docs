@@ -4,9 +4,25 @@ description: New to Git? Get started with GitKraken Desktop using this beginner-
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 This Getting Started Guide introduces GitKraken Desktop with a basic workflow—cloning a repository, making changes, and merging them.
+
+***
+
+## Quick Start
+
+Follow this basic Git workflow in GitKraken Desktop to start contributing to a repository.
+
+1. **Clone a repository**: Go to <kbd>File > Clone Repo</kbd>, paste a repository URL or browse your connected Git hosting service, and click **Clone the repo**.
+2. **Create a branch**: Right-click any commit in the graph and select **Create branch here**. Name it and press <kbd>Enter</kbd>.
+3. **Make changes**: Edit files in your working directory. Saved changes appear under the WIP node in the Commit Graph.
+4. **Stage changes**: Click the WIP node to open the Commit Panel. Click files to stage them, or press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> to stage all.
+5. **Commit**: Enter a commit message and press <kbd>Cmd</kbd>/<kbd>Enter</kbd> (macOS) or <kbd>Ctrl</kbd>/<kbd>Enter</kbd> (Windows/Linux).
+6. **Push**: Click **Push** in the toolbar to upload your branch to the remote.
+7. **Merge**: When your work is ready, check out the target branch and right-click your feature branch to select **Merge**.
+
+If merge conflicts occur, GitKraken Desktop opens the Merge Tool, where you can select lines from each side and commit the resolution.
 
 ***
 

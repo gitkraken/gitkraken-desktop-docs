@@ -4,9 +4,27 @@ description: Troubleshoot and fix performance issues in GitKraken Desktop with m
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 If GitKraken Desktop is running slowly, it’s often due to the size or complexity of the repository. Try the steps below to improve performance.
+
+***
+
+## Quick Start
+
+Improve GitKraken Desktop performance by reducing repository complexity and adjusting interface settings.
+
+**Common fixes:**
+- Run **Perform Repo Maintenance** from the Command Palette. This executes `git maintenance run` to optimize the repository’s internal data structures.
+- Set the Auto-fetch interval to `0` in <kbd>Preferences > General</kbd> to disable automatic background fetches.
+- Lower the **Max Commits in Graph** value in <kbd>Preferences > General</kbd> to reduce the number of commits rendered.
+- Delete unnecessary local branches to reduce reference overhead.
+- If Git LFS is in use, run an LFS prune to clean up unreferenced objects.
+- Clone a fresh copy of the repository to a clean directory if the local copy has accumulated issues.
+
+**macOS users on version 11.5.1:** Confirm the installed build matches your chip type (Apple Silicon or Intel) by checking the GitKraken menu. Download the correct version from gitkraken.com if there is a mismatch.
+
+If problems persist after these steps, contact GitKraken support.
 
 ***
 

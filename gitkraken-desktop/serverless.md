@@ -4,13 +4,28 @@ description: Learn how to install, license, and run GitKraken On-Premise Serverl
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 **GitKraken On-Premise Serverless** (also known as *GitKraken Stand-Alone*) is designed for teams operating in disconnected or secure environments. It includes most core <a href="https://www.gitkraken.com/git-client" target=_blank>GitKraken features</a>, with additional advantages:
 
 - Works without internet access
 - Requires no account creation
 - Requires no server installation
+
+***
+
+## Quick Start
+
+Install and activate GitKraken On-Premise Serverless for use in offline or secure environments.
+
+1. Download the GitKraken Serverless installer for your operating system from the [downloads page](https://www.gitkraken.com/download-on-premise-serverless).
+2. Install the application:
+   - **Windows**: Double-click the `.exe` file and follow the setup prompts.
+   - **macOS**: Open the DMG and drag the GitKraken icon to your Applications folder.
+   - **Linux (.deb)**: Run `wget https://release.gitkraken.com/linux-standalone/gitkraken-amd64.deb && dpkg -i gitkraken-amd64.deb`.
+3. At first launch, load your `.dat` license file when prompted. If you do not have the file, contact your GitKraken administrator.
+
+If your license expires, replace the `.dat` file in one of the supported directories or click the license text in the bottom-left corner of the app and select **Update License**. GitKraken Serverless is sold separately from standard subscriptions.
 
 <figure class='figure center'>
   <img src="/wp-content/uploads/serverless-example-2025@2x.png" class="img-responsive img-bordered">

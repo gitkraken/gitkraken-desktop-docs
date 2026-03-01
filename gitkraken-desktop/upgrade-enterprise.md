@@ -4,13 +4,33 @@ description: Step-by-step guide to upgrading GitKraken Self-Hosted Server, Docke
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 The upgrade procedure is the same whether you're running GitKraken Self-Hosted on CentOS, Ubuntu, or RHEL7.
 
 <div class='callout callout--warning'>
     <p><strong>Note:</strong> GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, see our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
 </div>
+
+***
+
+## Quick Start
+
+Upgrade GitKraken Self-Hosted Server, client installers, and your license file using Docker Compose.
+
+**To upgrade the server:**
+1. Navigate to the folder containing `docker-compose.yml` and run `sudo docker-compose down`.
+2. Back up the existing `docker-compose.yml`.
+3. Extract the new `GitKrakenEnterpriseServer.zip` into the same folder.
+4. Compare the old and new `docker-compose.yml` for port, volume, or environment variable changes.
+5. Run `sudo sh loadImages.sh` to load the new Docker images.
+6. Run `sudo docker-compose up` to restart the server.
+
+**To upgrade client installers:** Locate the release volume path in `docker-compose.yml` under `gk-enterprise-controller`, navigate to the host path, and extract the new `release.zip` into that directory.
+
+**To update the license:** Copy the new `license.dat` file to the server, open the License tab on your Enterprise site, and upload the file.
+
+**To reset the Super User password:** Stop the server, add `SUPER_USER_RESET: 1` to the `gk-services` environment in `docker-compose.yml`, restart, and visit `/reset/super-user` in your browser.
 
 ***
 

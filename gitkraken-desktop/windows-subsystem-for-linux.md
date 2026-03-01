@@ -4,9 +4,27 @@ description: Step-by-step guide to using GitKraken Desktop in WSL 2, including s
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Learn how to run GitKraken Desktop on Windows Subsystem for Linux (WSL 2), including GUI integration and installation requirements.
+
+***
+
+## Quick Start
+
+Install and run GitKraken Desktop inside WSL 2 on Windows to work with Linux-hosted repositories.
+
+1. **Update WSL 2**: From PowerShell or Command Prompt (run as Administrator), run `wsl --update`. To install WSL with Ubuntu, run `wsl --install -d ubuntu` and reboot.
+2. **Download GitKraken Desktop for Linux**: For Ubuntu, run:
+   ```bash
+   wget https://api.gitkraken.dev/releases/production/linux/x64/active/gitkraken-amd64.deb
+   sudo apt install ./gitkraken-amd64.deb
+   ```
+3. **Launch GitKraken Desktop**: Run `gitkraken` in your WSL 2 terminal. With WSLg installed, the app displays natively within Windows.
+
+**Requirements:** Windows 11 or Windows 10 build 19044+, WSL 2 distribution, GitKraken Desktop 9.1.0+ for Linux.
+
+Keep your repositories on the same file system as the GitKraken Desktop installation you use. Accessing repos across file systems (for example, opening a WSL repo from GitKraken installed on Windows) results in degraded performance or non-functional features. If this happens, GitKraken Desktop will prompt you to open the repo with the correct installation.
 
 ## What is WSL/WSL 2?
 
