@@ -5,17 +5,31 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Have you ever made a Git change and immediately wished you could take it back? Whether it’s an accidental commit, a discarded change, or a deleted branch, GitKraken Desktop lets you undo many actions quickly and safely.
 
 You can undo many common actions with a single click of the **Undo** button. If you undo something by mistake, you can also **redo** it just as easily.
 
+***
+
+## Quick Start
+
+Undo or redo Git actions in GitKraken Desktop using the toolbar buttons or keyboard shortcuts.
+
+**To undo an action:** Click the **Undo** button in the toolbar, or press <kbd>Cmd + Z</kbd> (Mac) or <kbd>Ctrl + Z</kbd> (Windows/Linux).
+
+**To redo an undone action:** Press <kbd>Cmd + Y</kbd> or <kbd>Cmd + Shift + Z</kbd> (Mac), or <kbd>Ctrl + Y</kbd> or <kbd>Ctrl + Shift + Z</kbd> (Windows/Linux).
+
+**Supported undo actions include:** Checkout, Commit, Discard, Delete branch, Remove remote, Reset branch to a commit, and rebase operations including Interactive Rebase, Multi-Commit Cherry Pick, dropping and rewording commits, and AI Commit Compose.
+
+Undo is available for the most recent supported action. Redo is available for any action that was just undone.
+
 <figure>
-    <img src='/wp-content/uploads/undo-undo-2025.png' 
-         class="help-center-img img-bordered" 
-         alt="GitKraken Desktop showing the Undo button with tooltip: 'Undo Commit amend “Updates the GitKraken commit documentation to reflect UI”'.">
-    <figcaption style="color: #888; text-align: center;">Click the Undo button to revert supported Git actions.</figcaption>
+    <img src=’/wp-content/uploads/undo-undo-2025.png’
+         class=”help-center-img img-bordered”
+         alt=”GitKraken Desktop showing the Undo button with tooltip: ‘Undo Commit amend “Updates the GitKraken commit documentation to reflect UI”’.”>
+    <figcaption style=”color: #888; text-align: center;”>Click the Undo button to revert supported Git actions.</figcaption>
 </figure>
 
 ### Supported Undo Actions
