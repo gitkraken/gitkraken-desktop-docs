@@ -4,12 +4,35 @@ description: Learn how to create, manage, and share Cloud or Local Workspaces in
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Workspaces allow you to create easily accessible groups of repositories, take action across multiple repos, view details about their state at a glance, and share them with your team.
 
+***
+
+## Quick Start
+
+Create and use Workspaces in GitKraken Desktop to organize repositories and take actions across multiple repos at once.
+
+**To open the Workspaces view:** Click the folder icon in the top-left or press <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
+
+**To create a Cloud Workspace:**
+1. Click **+ New Workspace** and select **Cloud Workspace**.
+2. Name the Workspace, select a hosting service, and choose repositories.
+3. Optionally share with teams or users and add an icon and description.
+
+**To create a Local Workspace:** Click **New Workspace**, select **Local Workspace**, name it, and browse to select repositories or a directory.
+
+**To act across multiple repositories:** Select the checkboxes next to repositories, then use the toolbar to Fetch, Pull, Clone, Open, or Remove them in bulk.
+
+**To view pull requests for all repos:** Open a Cloud Workspace and click the Insights or Launchpad icon to see PRs across the entire Workspace.
+
+**To convert a Local Workspace to Cloud:** Open the Workspace and click **Create cloud workspace**. Requires a connected integration under <kbd>Preferences > Integrations</kbd>.
+
+Workspaces are accessible from the Repository Management tab.
+
 <figure>
-  <img src="/wp-content/uploads/workspaces-tab-2025@2x.png" 
+  <img src="/wp-content/uploads/workspaces-tab-2025@2x.png"
        class="help-center-img img-bordered"
        alt="GitKraken Desktop showing multiple cloud Workspaces, each grouping related repositories with options to clone, locate, or manage them.">
   <figcaption style="color:#888; text-align:center">

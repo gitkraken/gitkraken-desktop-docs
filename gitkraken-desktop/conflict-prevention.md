@@ -4,7 +4,7 @@ description: Discover how GitKraken Desktop prevents merge conflicts by alerting
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop’s **Conflict Prevention** helps you identify potential merge conflicts before they happen, reducing delays and easing collaboration.
 
@@ -12,6 +12,21 @@ GitKraken Desktop’s **Conflict Prevention** helps you identify potential merge
   <img src="/wp-content/uploads/GKD-conflict-prevention.png" class="help-center-img img-bordered" alt="Conflict prevention panel in GitKraken Desktop showing a warning about potential changes from another contributor, with options to send, push, or ignore warnings.">
   <figcaption style="text-align:center; color:#888">Conflict prevention interface in GitKraken Desktop</figcaption>
 </figure>
+
+***
+
+## Quick Start
+
+Use Conflict Prevention in GitKraken Desktop to catch potential merge conflicts with teammates or your target branch before they occur.
+
+- When GitKraken Desktop detects overlapping changes with an Org Member’s commits, a conflict alert icon appears in the interface. Click the icon to view conflict details and take action.
+- From the conflict details menu, you can share your edits as a Cloud Patch, push your changes to make them visible, or copy a summary of the overlapping edits.
+- If no Org Members are involved, GitKraken still checks your current branch against the target branch and prompts you to merge or rebase proactively.
+- To invite a contributor to your GitKraken Org so conflicts are detected earlier, use the **Invite** option from the conflict alert.
+
+To configure which branches GitKraken monitors for conflicts, go to <kbd>Preferences > Conflict Prevention</kbd>. Use `**` as a wildcard or prefix a branch pattern with `!` to exclude it. Settings are saved per repository.
+
+Conflict Prevention is available to users on the Advanced subscription tier or higher.
 
 ***
 

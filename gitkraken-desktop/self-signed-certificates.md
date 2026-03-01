@@ -4,9 +4,35 @@ description: Learn how to install a self-signed SSL certificate so GitKraken Des
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken's remote hosting platform integrations may require users to have a certificate in place. Follow the instructions below to add a certificate to your local certificate store.
+
+***
+
+## Quick Start
+
+Install a self-signed SSL certificate so GitKraken Desktop can connect to your remote hosting service.
+
+**On Windows (Chrome):**
+1. Navigate to your remote hosting service in Chrome and open the certificate details.
+2. Export the certificate using the Certificate Export Wizard.
+3. Open Chrome Settings, go to **Privacy and Security > Security**, and click **Manage certificates**.
+4. Import the certificate and add it to the Trusted Root Certificates store.
+
+**On macOS (Safari):**
+1. Open Safari and navigate to your remote host.
+2. Hold **Option** and drag the certificate icon to your desktop to save it as a `.pem` file.
+3. Double-click the file to open Keychain Access.
+4. Find the certificate in the login keychain, open it, and set trust to **Always Trust**.
+5. Restart your computer.
+
+**On Linux (Chrome/Ubuntu):**
+1. Export the certificate using the steps from the Windows Chrome section.
+2. Convert and install using `openssl` and `certutil` in the terminal.
+3. Reopen Chrome to confirm the warning no longer appears.
+
+If you have the Git Executable enabled, SSL settings in your global `.gitconfig` are also honored.
 
 ***
 

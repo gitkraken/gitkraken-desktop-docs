@@ -4,9 +4,35 @@ description: Explore experimental GitKraken Desktop features like Git Executable
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop includes experimental features, which are early previews of in-development functionality. These features may change or be removed in future releases.
+
+***
+
+## Quick Start
+
+Enable and use experimental features in GitKraken Desktop, including the Git Executable and Cloud Patches.
+
+**To enable experimental features:**
+- Go to <kbd>Preferences > Experimental</kbd> and toggle the features you want to use.
+
+**To use the Git Executable:**
+- Enable **Use Git Executable** under <kbd>Preferences > Experimental</kbd>. This lets GitKraken Desktop use your system's Git binary for core operations instead of the built-in library.
+
+**To create a Cloud Patch:**
+1. Stage files in the Commit Panel.
+2. Click the Cloud Patch icon to create the patch.
+3. Copy the generated link and share it with your team.
+
+**To apply a Cloud Patch:**
+1. Open the link in GitKraken Desktop, or find the patch in the Left Panel.
+2. Select a target branch and apply the patch.
+
+**To share a commit as a Cloud Patch:**
+- Right-click any commit in the graph and select **Share commit as Cloud Patch**.
+
+Cloud Patches are stored securely and can be shared with anyone who has the link, with your GitKraken organization, or with selected collaborators. To delete a patch, right-click it in the Left Panel and choose **Delete Cloud Patch**.
 
 ---
 

@@ -5,13 +5,39 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Let the app handle the boring parts! GitKraken offers built-in AI features to fast-track your code contributions.
 
 <div class='callout callout--warning'>
     <p>GitKraken AI requires a <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">paid GitKraken subscription</a>.</p>
 </div>
+
+***
+
+## Quick Start
+
+Use GitKraken AI to generate commit messages, compose logical commit histories, and write pull request descriptions.
+
+**To generate a commit message:**
+1. Stage your changes in the Commit Panel.
+2. Click the AI icon (sparkle) next to the commit message field.
+3. Review the suggested message and adjust as needed before committing.
+
+**To compose commits with AI from staged changes:**
+1. Stage your changes, then click **Compose Commit with AI** in the Commit Details Panel.
+2. GitKraken AI proposes a set of commits. Reorder, squash, or edit messages in the resulting window.
+3. Click **Create commits** to apply, or **Cancel** to discard.
+
+**To recompose existing commits:**
+1. Select a contiguous range of commits in the graph using <kbd>Shift</kbd> or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>.
+2. Right-click and choose **Recompose Commits with AI**, or click the button in the Commit Details Panel.
+3. Adjust the proposed structure and click **Create commits**.
+
+**To generate a pull request description:**
+- When creating a pull request, click the AI icon in the description field to generate a summary of your changes.
+
+To use a custom AI provider or customize the prompts, go to <kbd>Preferences > AI</kbd>.
 
 ***
 

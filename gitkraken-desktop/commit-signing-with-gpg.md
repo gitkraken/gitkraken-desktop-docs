@@ -5,7 +5,30 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
+
+***
+
+## Quick Start
+
+Sign Git commits in GitKraken Desktop using a GPG or SSH key to verify your identity when pushing to services like GitHub or GitLab.
+
+**To sign commits with GPG:**
+1. Install GPG for your operating system (Gpg4win on Windows, `brew install gpg` on macOS, or your Linux package manager).
+2. Close and reopen GitKraken Desktop.
+3. Go to <kbd>Preferences > Commit Signing</kbd>.
+4. Select a **Signing Key** from the dropdown, or click **Generate new GPG Key**.
+5. Set the **GPG Program** path if it is not auto-detected.
+6. Enable **Sign Commits by Default** and/or **Sign Tags by Default**.
+7. Copy your public key from <kbd>Preferences > GPG</kbd> and upload it to your hosting service (GitHub, GitLab, or Bitbucket).
+
+**To sign commits with SSH:**
+1. Generate an SSH key and enable the **Git Executable** under <kbd>Preferences > Experimental</kbd>.
+2. Go to <kbd>Preferences > Commit Signing</kbd>, set the **GPG Format** to **SSH**, and select your `.pub` key file.
+3. Create an `allowed_signers` file and select it in GitKraken Desktop.
+4. Enable **Sign Commits by Default**.
+
+Signed commits display a badge next to the SHA in the Commit Panel. Hover over it to view signature details.
 
 ## What is Commit Signing?
 

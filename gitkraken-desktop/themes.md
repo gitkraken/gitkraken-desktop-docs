@@ -4,7 +4,7 @@ description: Learn how to switch between light and dark themes in GitKraken Desk
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 <figure>
   <div class='embed-container embed-container--16-9'>
@@ -12,6 +12,24 @@ taxonomy:
   </div>
   <figcaption style="text-align:center; color:#888">Watch how to switch and create themes in GitKraken Desktop.</figcaption>
 </figure>
+
+***
+
+## Quick Start
+
+Change the GitKraken Desktop theme or create a custom theme to match your preferred visual style.
+
+**To switch themes:** Go to <kbd>Preferences > UI Customization</kbd> and select a theme, or open the Command Palette and type `switch theme`.
+
+**To sync with your system theme:** Enable the system theme sync option in <kbd>Preferences > UI Customization</kbd>. GitKraken Desktop will follow your OS light or dark setting when supported.
+
+**To create a custom theme:**
+1. Open <kbd>Preferences > UI Customization > Theme</kbd> and click the folder to navigate to `~/.gitkraken/themes/`.
+2. Copy a `.jsonc-default` template file and rename it with a `.jsonc` extension.
+3. Open the file in a text editor and set a unique `meta.name` and a `scheme` value of `light` or `dark`.
+4. Save the file. Your custom theme appears in the theme list immediately. Changes take effect live without restarting GitKraken Desktop.
+
+Custom themes have been disabled as of version 11.8.0 while the UI is being modernized. Built-in themes remain available.
 
 ***
 <div class='callout callout--warning'>

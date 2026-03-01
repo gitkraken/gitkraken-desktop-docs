@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Git hooks are shell scripts that execute after Git events such as commits or pushes.
 
@@ -15,6 +15,20 @@ Git hooks are shell scripts that execute after Git events such as commits or pus
 </div>
 <figcaption style="text-align: center; color: #888">Overview of Git hooks and demonstration in GitKraken Desktop</figcaption>
 </figure>
+
+***
+
+## Quick Start
+
+Create and configure Git hooks in GitKraken Desktop to run scripts automatically on Git events like commits and pushes.
+
+1. Navigate to your repository's `.git/hooks` directory. GitKraken Desktop creates this folder automatically when a repository is initialized.
+2. Create a new file with the hook name (e.g., `pre-commit`). On macOS or Linux, make it executable by running `chmod +x pre-commit` in the terminal.
+3. Add your script to the file. Start with `#!/bin/bash` and include your validation or automation logic. Any non-zero exit code causes the hook to fail and blocks the Git action.
+4. To set a custom hooks directory for the repository, go to <kbd>Preferences > Git Hooks</kbd> and click **Browse** to select the folder.
+5. To use global hooks across all repositories, add `hooksPath = /path/to/your/hooks` under `[core]` in your `.gitconfig`.
+
+To skip hooks for a specific commit, enable **Commit and skip hooks** in the Commit Panel. GitKraken Desktop supports `pre-commit`, `commit-msg`, `post-commit`, `pre-push`, `post-merge`, `post-rewrite`, and several other standard hooks.
 
 ***
 

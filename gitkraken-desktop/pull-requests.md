@@ -4,9 +4,31 @@ description: Create, manage, and review pull requests in GitKraken Desktop. Supp
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 A pull request (sometimes called merge requests) is a review workflow that lets you propose changes in one branch before merging it into another. GitKraken Desktop supports creating, managing, and reviewing pull requests with integrated Git services like GitHub, GitLab, Bitbucket, and Azure DevOps.
+
+***
+
+## Quick Start
+
+Create and manage pull requests in GitKraken Desktop directly from the commit graph or Left Panel.
+
+**To create a pull request:**
+- Drag one branch onto another in the commit graph and select **Start a pull request**.
+- Or right-click the target branch and choose the same option.
+- Or click the **+** icon in the PULL REQUESTS section of the Left Panel.
+
+**To review a pull request (GitHub integration):**
+1. Select a PR in the Left Panel or click the PR icon in the Launchpad.
+2. Click **Review Code and Suggest Changes** to open the diff view.
+3. Write suggestions directly in the editor. Suggestions are posted as comments on the GitHub PR.
+
+**To merge a pull request:** Click **Merge pull request** in the GitHub PR view and select a merge strategy (merge commit, squash, or rebase).
+
+**To filter pull requests:** Use predefined filters like "My pull requests" or create custom filters in the Left Panel. PR icons indicate CI status and review state.
+
+Push your branch to the remote before creating a pull request.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/2VX1ISk9XH8?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>

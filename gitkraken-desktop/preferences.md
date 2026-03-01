@@ -4,9 +4,27 @@ description: Explore GitKraken Desktop’s Preferences to control themes, integr
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Navigate to <i class="fas fa-cog"></i> <kbd><strong>Preferences</strong></kbd> in GitKraken Desktop to tailor your environment. Here's what each major section controls.
+
+***
+
+## Quick Start
+
+Configure GitKraken Desktop settings by clicking the gear icon in the top-right corner to open Preferences.
+
+- **General**: Set auto-fetch intervals, conflict detection behavior, commit graph limits, and tab retention.
+- **Profiles**: Create and switch between profiles to separate Git identities, integrations, and tab sets.
+- **SSH and Integrations**: Connect to GitHub, GitLab, Bitbucket, Azure DevOps, Jira, Trello, and more.
+- **GitKraken AI**: Enable AI-assisted commit messages and PR descriptions (Pro plan and above).
+- **External Tools**: Set your preferred editor, diff tool, merge tool, and default terminal.
+- **UI Customization**: Change themes, date formats, avatar display, and commit graph metadata.
+- **Commit Signing**: Enable GPG signing for verified commits.
+- **Experimental**: Try preview features such as the Git binary executor.
+- **Repo-Specific Preferences**: Configure encoding, Gitflow, hooks, LFS, issues, and Team View per repository.
+
+Preferences are stored per profile, so switching profiles resets integrations and UI options to that profile's configuration.
 
 <figure>
   <img src="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered" alt="Highlighting the gear icon in GitKraken Desktop to explain where users access Preferences, enabling customization of integrations, UI and more.">
