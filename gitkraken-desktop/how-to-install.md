@@ -27,6 +27,10 @@ Install GitKraken Desktop on your operating system in three steps.
 
 No Git command-line tools are required for basic use. For advanced features like the terminal, Git LFS, or experimental tools, [install Git from git-scm.com](https://git-scm.com/).
 
+***
+
+## Installation Instructions
+
 There are three simple steps to get started with GitKraken Desktop:
 
 1. [Download GitKraken Desktop](https://gitkraken.com/download?product=gitkraken&source=help_center)
