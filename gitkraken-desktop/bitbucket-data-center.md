@@ -4,9 +4,26 @@ description: Connect GitKraken Desktop to your Bitbucket Data Center server for 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop allows you to connect to Bitbucket Data Center, so you can find repositories, manage remotes, and create pull requests from a self-hosted environment.
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to a Bitbucket Data Center server to clone repositories and manage pull requests from your self-hosted environment.
+
+1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
+2. Select **Bitbucket Data Center**, enter your host domain, and click **Generate a token on Bitbucket Data Center**.
+3. Log in to your Bitbucket Data Center account in the browser and create a Personal Access Token with the appropriate permissions.
+4. Copy the token, paste it into GitKraken Desktop, and click **Connect**.
+
+To configure SSH access after connecting:
+1. In <kbd>Preferences > Integrations</kbd>, click **Generate SSH key and copy to clipboard**.
+2. Open your Bitbucket Data Center account settings and add the copied public key.
+
+Once connected, you can clone repositories directly from your Bitbucket Data Center list, add remotes including forks, and create and view pull requests from within GitKraken Desktop. GitKraken Desktop supports one Bitbucket Data Center account per profile. Use multiple [profiles](/gitkraken-desktop/profiles/) to work with more than one account.
 
 ### Benefits
 

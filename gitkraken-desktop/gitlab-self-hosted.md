@@ -4,7 +4,7 @@ description: Connect GitKraken Desktop with your GitLab Self-Managed server to m
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 <div class='embed-container embed-container--16-9'>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/BhIX7fGSM8k?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -15,6 +15,23 @@ GitKraken allows you to connect to GitLab Self-Managed (CE or EE), enabling repo
 <div class='callout callout--warning'>
   <p><strong>Note:</strong> All self-hosted server integrations, including GitLab Self-Managed, require an <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">Advanced subscription</a> tier or higher.</p>
 </div>
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to a GitLab Self-Managed server to clone repositories, manage remotes, and create pull requests.
+
+1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
+2. Select **GitLab Self-Managed**, enter your host domain, and click **Generate a token on GitLab**.
+3. Log in to your GitLab instance, generate a Personal Access Token with the `api` and `read_user` scopes (leave expiration blank), and copy the token.
+4. Paste the token into GitKraken Desktop and click **Connect**.
+
+To configure SSH access after connecting:
+- In <kbd>Preferences > Integrations</kbd>, click **Generate SSH key and add to GitLab** to generate and upload a key automatically.
+- Or click **Add key to GitLab** to upload your existing SSH default.
+
+Once connected, GitKraken Desktop lets you clone from your self-hosted repository list, add remotes, and create or view pull requests. To manage more than one GitLab Self-Managed account, use multiple [profiles](/start-here/profiles) with a GitKraken Pro plan.
 
 ### Benefits
 

@@ -5,7 +5,7 @@ taxonomy:
   category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop supports authentication with most repository hosting services (e.g., TFS, AWS CodeCommit, [Google Cloud Source Repositories](/integrations/authentication/#google-cloud-source-repositories), and custom services) over HTTPS or SSH.
 
@@ -14,6 +14,26 @@ GitKraken Desktop supports authentication with most repository hosting services 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OA9o09Bq5M8?ecver=1" frameborder="0" allowfullscreen title="Authentication Overview Video"></iframe>
 </div>
 </figure>
+
+***
+
+## Quick Start
+
+Authenticate GitKraken Desktop with a Git hosting service using either HTTPS or SSH.
+
+**To clone with HTTPS:**
+1. Copy the HTTPS URL from your hosting service (e.g., `https://example.com/username/repo.git`).
+2. In GitKraken Desktop, go to <kbd>File > Clone Repo</kbd>.
+3. Paste the URL and click **Clone the repo**.
+
+**To set up SSH and clone with SSH:**
+1. Go to <kbd>Preferences > SSH</kbd>.
+2. Generate a new SSH key pair or browse to an existing one.
+3. Copy the public key and add it to your hosting service's SSH settings.
+4. Copy the SSH URL from your hosting service.
+5. Go to <kbd>File > Clone</kbd>, paste the SSH URL, and click **Clone the repo**.
+
+To use a local SSH agent instead of managing keys manually, enable **Use local SSH agent** under <kbd>Preferences > SSH</kbd>. To reset stored HTTPS credentials, go to <kbd>Preferences > General</kbd> and click **Forget All**.
 
 ***
 

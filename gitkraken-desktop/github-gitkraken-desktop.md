@@ -4,9 +4,36 @@ description: Learn how to connect GitKraken Desktop with GitHub to sign in, clon
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken allows you to create an account and authenticate with GitHub, making it easier to find and manage GitHub repositories within the application.
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to GitHub to authenticate, clone repositories, and manage pull requests from your GitHub account.
+
+**To sign in with GitHub:**
+1. Open GitKraken Desktop and click **Sign in with GitHub**.
+2. Log in with your GitHub credentials in the browser. The connection completes automatically.
+
+**To connect manually or add SSH:**
+1. Go to <kbd>Preferences > Integrations</kbd> and select **GitHub**.
+2. Click **Connect to GitHub** and log in in the browser.
+3. To add an SSH key, click **Generate SSH key and add to GitHub** in the same panel.
+
+**To create a pull request:**
+1. Push your branch to GitHub.
+2. Select the branch in the Left Panel, then click **Start a pull request** or use the Command Palette.
+3. Fill in the title, description, reviewers, and labels, then submit.
+
+**To review a pull request:**
+1. Select a pull request from the Left Panel.
+2. Click **Review Code and Suggest Changes** to edit files and propose modifications.
+3. Click **Suggest X file change to PR** to submit your suggestions.
+
+To use multiple GitHub accounts, create separate [profiles](/start-here/profiles) in GitKraken Desktop (Pro plan required).
 
 **Benefits**
 

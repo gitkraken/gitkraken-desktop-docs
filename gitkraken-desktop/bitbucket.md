@@ -4,9 +4,26 @@ description: Connect GitKraken Desktop with Bitbucket to clone repositories, man
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop allows you to authenticate with Bitbucket to help you locate repositories for cloning, add remotes, and manage pull requests more efficiently.
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to Bitbucket.org to clone repositories, manage remotes, and work with pull requests from your Bitbucket account.
+
+1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
+2. Select **Bitbucket.org** and click **Connect to Bitbucket**.
+3. Log in to your Bitbucket account in the browser window that opens.
+4. Select **Open GitKraken** to complete the connection.
+
+To configure SSH access after connecting:
+1. In <kbd>Preferences > Integrations</kbd>, click **Generate SSH key and copy to clipboard**.
+2. Paste the key into your Bitbucket account SSH settings.
+
+Once connected, GitKraken Desktop displays your Bitbucket repositories when cloning, lists forks when adding remotes, and supports creating and viewing pull requests within the application. If you need to manage more than one Bitbucket account, use multiple [profiles](/gitkraken-desktop/profiles/) with a GitKraken Pro plan.
 
 ### Benefits
 
