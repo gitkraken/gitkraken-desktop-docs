@@ -4,9 +4,22 @@ description: Learn how to navigate the GitKraken Desktop interface. Explore the 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop's interface simplifies Git usage by providing a visual layout of core actions and repository elements.
+
+***
+
+## Quick Start
+
+Navigate GitKraken Desktop using its three main areas: the Left Panel, the Commit Graph, and the Commit Panel.
+
+- **Left Panel**: Lists your local branches, remotes, tags, stashes, submodules, and integrations. Click any item to interact with it. Right-click for additional actions like checkout, merge, and delete.
+- **Commit Graph**: Displays the visual commit history of the current repository. Click any commit to view its details in the Commit Panel. Click the WIP node at the top to view and stage pending changes.
+- **Commit Panel**: Shows file changes for the selected commit or WIP. Displays diffs, staged/unstaged files, and co-author information. Use it to stage files and write commit messages.
+- **Toolbar**: Located at the top of the window. Provides one-click access to Undo, Redo, Pull, Push, Branch, Stash, and Pop. Use the adjacent dropdowns to customize pull behavior or branch options.
+
+To open the Command Palette at any time, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>P</kbd>. To toggle the Left Panel, use <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> or the toggle in the toolbar. Preferences and integrations are accessible from the gear icon in the upper-right corner.
 
 ***
 

@@ -4,9 +4,31 @@ description: Learn how to open, clone, or initialize repositories in GitKraken D
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Each user will need to open, clone, or initialize a repository in GitKraken Desktop. This guide explains how.
+
+***
+
+## Quick Start
+
+Open, clone, or initialize repositories in GitKraken Desktop from the Repository Management tab.
+
+**To open an existing local repository:**
+1. Click the folder icon in the top-left corner or press <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
+2. Click **Browse** and select your repository folder.
+
+**To clone a remote repository:**
+1. Open the Repository Management tab and click **Clone**.
+2. Enter the repository URL or select a repository from your connected integration.
+3. Click **Clone the repo** to download it locally.
+
+**To initialize a new repository:**
+1. Click **Init** in the Repository Management tab.
+2. Fill in the repository path and optional settings (`.gitignore`, license).
+3. Click **Create Repository** to create the repo and open it.
+
+Shallow clone is supported when cloning. Enable the **Shallow Clone** option in the Clone dialog to limit commit history by depth or date. Access all three options from the Repository Management tab, the New Tab, or <kbd>File > Clone / Init / Open</kbd>.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8uxrA56VJgY?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>

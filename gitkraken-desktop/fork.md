@@ -4,11 +4,30 @@ description: Learn how to fork public or private GitHub repositories directly fr
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Forking allows you to create your own copy of a repository. You can use forks to propose changes, contribute to upstream projects, or maintain your own version of a project.
 
 With the [GitHub integration](/gitkraken-desktop/github-gitkraken-desktop/) or [GitHub Enterprise Server integration](/integrations/github-enterprise/), you can fork repositories directly from GitKraken Desktop.
+
+***
+
+## Quick Start
+
+Fork a GitHub repository from within GitKraken Desktop and add it as a remote in one step.
+
+**To fork a repository and add it as a remote:**
+1. Open the repository you want to fork in GitKraken Desktop.
+2. In the Left Panel, hover over **Remote** and click the **+** icon.
+3. Select the **GitHub.com** or **GitHub Enterprise Server** tab.
+4. If no fork is linked, GitKraken Desktop offers to fork the repo. Click **Fork and Add Remote**.
+
+**To add an existing fork as a remote:**
+1. Click the **+** icon next to **Remote** in the Left Panel.
+2. Select the **GitHub.com** or **GitHub Enterprise Server** tab.
+3. GitKraken Desktop detects the existing fork and offers to add it. Click **Add this Remote**.
+
+The fork appears in the Left Panel under **Remote** and is ready to use for pushing branches and creating pull requests. If you need to add a remote manually, use an HTTPS or SSH URL from the same panel.
 
 ***
 

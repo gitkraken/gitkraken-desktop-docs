@@ -4,9 +4,30 @@ description: Learn how to add, update, and manage Git submodules in GitKraken De
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Submodules allow you to include another Git repository inside a parent repository. Use submodules to incorporate independent projects while maintaining separate commit histories.
+
+***
+
+## Quick Start
+
+Add, update, and manage Git submodules in GitKraken Desktop from the Left Panel.
+
+**To show the Submodules pane:** Right-click any Left Panel header and check **Submodules**.
+
+**To add a submodule:**
+1. Hover over **Submodules** in the Left Panel and click the **+** icon.
+2. Paste the HTTPS or SSH repository URL and enter the desired path.
+3. GitKraken Desktop updates `.gitmodules` and references the submodule commit.
+
+**To update a submodule:** Open the Submodules pane, right-click the submodule, and select **Update** to fetch its latest commit.
+
+**To change the tracked commit:** Open the submodule in GitKraken Desktop, check out a new commit or branch, then exit the submodule. GitKraken Desktop will prompt you to save the updated pointer.
+
+**To enable automatic updates:** Go to <kbd>Preferences > General</kbd> to update all repos globally, or <kbd>Preferences > Submodules</kbd> for per-repository settings.
+
+When cloning a parent repository that includes submodules, GitKraken Desktop will prompt you to initialize them.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/moC2KyxGb10?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>

@@ -4,13 +4,36 @@ description: Learn how to use GitKraken Desktop to compare changes with diffs, v
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Compare changes within GitKraken Desktop using _diffs_. Learn how to access them, view file history or file blame, and use external tools.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/-0bn2H63axM?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
+
+***
+
+## Quick Start
+
+Use GitKraken Desktop to view file diffs, inspect commit history, and trace changes by author.
+
+**To view a diff:**
+- Click a file in the staging area (WIP node) to see your uncommitted changes.
+- Click a commit in the graph, then click any file in the Commit Panel to view that commit's changes.
+- Select two commits using <kbd>Shift</kbd> + Click to compare them directly.
+
+**To switch diff view modes**, use the **Hunk**, **Inline**, or **Split** toggles in the diff viewer. To revert a specific block of changes, use the **Revert** button in Hunk view.
+
+**To view file history or blame:**
+- Open the diff for any file and click the **History** or **Blame** button in the upper-right corner.
+- Or right-click a file after selecting a commit in the graph.
+
+**To create or apply a patch:**
+- Right-click a commit and select **Create patch from commit**.
+- To apply a patch, open the Command Palette (<kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>P</kbd>), type `Apply Patch`, and select your `.patch` file.
+
+To use an external diff tool, go to <kbd>Preferences > External Tools</kbd> and select your preferred application.
 
 ***
 
@@ -250,3 +273,12 @@ To apply a patch:
 <div class='callout callout--basic'>
     <p><strong>Note:</strong> GitKraken Desktop does not currently support generating patches from binary files. This is a preliminary release. For feedback, contact our <a href="https://www.gitkraken.com/git-client/contact-support?product=gitkraken&source=help_center">support team</a>.</p>
 </div>
+
+<style>
+pre{position:relative}
+.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s}
+pre:hover .copy-btn{opacity:1}
+.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
+.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
+</style>
+<script>(function(){var C='<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2 2v1"></path></svg>',K='<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p;cp(el.innerText.replace(/\n$/,'')).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>

@@ -4,7 +4,7 @@ description: Discover how to use the Command Palette in GitKraken Desktop to qui
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 The <strong>Command Palette</strong> provides quick access to GitKraken Desktop actions, files, repositories, and settings.
 
@@ -14,6 +14,25 @@ The <strong>Command Palette</strong> provides quick access to GitKraken Desktop 
   </div>
   <figcaption style="text-align:center; color:#888">Watch how to use the Command Palette for faster workflows.</figcaption>
 </figure>
+
+***
+
+## Quick Start
+
+Use the Command Palette in GitKraken Desktop to run actions, navigate files, and switch repositories without using the mouse.
+
+- Open with <kbd>Cmd</kbd> + <kbd>P</kbd> (macOS) or <kbd>Ctrl</kbd> + <kbd>P</kbd> (Windows/Linux), or click the wand icon in the top-right toolbar.
+- Start typing to filter available commands. Results update as you type.
+- Press <kbd>Enter</kbd> to run the selected command.
+
+Common actions available through the Command Palette:
+- **File management**: Create File, Delete File, Open File, Stage all changes, Discard all changes
+- **Branch operations**: Create Branch, Rename Branch, Checkout, Push, Pull, Fetch All
+- **Repository**: Open Repo, Clone, Init, Perform Repo Maintenance
+- **Stash**: Create, Apply, Pop
+- **View and settings**: Toggle Theme, Toggle Left Panel, Keyboard Shortcuts, Switch to Profile
+
+The Command Palette is available at any time regardless of which panel or view is currently active in GitKraken Desktop.
 
 ***
 

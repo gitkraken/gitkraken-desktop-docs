@@ -2869,9 +2869,24 @@ This version helps you create a hub for all your repos and makes working with mu
 # View Activity Logs in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/activity-logs/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Learn how to view all Git and application-level actions made in GitKraken Desktop using Activity Logs.
+
+***
+
+## Quick Start
+
+Use Activity Logs in GitKraken Desktop to monitor Git operations, application events, and Git hook output in real time.
+
+1. Open GitKraken Desktop and open any repository.
+2. Click the <kbd>Activity Logs</kbd> icon in the footer toolbar at the bottom of the window.
+3. Select the **Application** tab to view actions taken by GitKraken Desktop itself, such as opening repositories or refreshing the Git config.
+4. Select the **Repository** tab to see Git operations performed on the current repository, such as fetch, push, and merge.
+5. To include more detail in the Repository tab, go to <kbd>Preferences > General</kbd> and enable **Use extended logging in activity log**.
+6. If a Git hook fails, a snackbox notification will appear with a link to the hook log. Click it to view the hook output directly.
+
+Each log entry includes a timestamp, a description of the action, and duration in milliseconds. Logs are displayed in plain text format and update in real time as you work.
 
 ***
 
@@ -2962,9 +2977,30 @@ Additionally, you can open the Git hook log directly from the snackbox notificat
 # Add, Delete, and Filter Files in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/adding-and-removing/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Learn how to add, create folders, delete, and filter files using GitKraken Desktop.
+
+***
+
+## Quick Start
+
+Use GitKraken Desktop to create, delete, and filter files within your repository without leaving the application.
+
+**To create a file:**
+1. Press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>P</kbd> to open the Command Palette.
+2. Type `Create File` and press <kbd>Enter</kbd>.
+3. Enter a filename and press <kbd>Enter</kbd>. To create a folder at the same time, include a `/` in the name (e.g., `src/utils.js`).
+
+**To create a file using the context menu:**
+1. Right-click the empty space in the Commit Panel.
+2. Select `Create File`.
+
+**To delete a file:**
+1. Right-click the file in the Commit Panel.
+2. Select `Delete file`.
+
+To delete any file in the repository (not just staged files), first enable `View all files` in the Commit Panel. Once enabled, right-click any file and select `Delete file`. A **Filter Files** bar also appears when `View all files` is on, letting you type a filename or extension to locate files quickly.
 
 ***
 
@@ -3045,7 +3081,7 @@ When `View all files` is enabled, a <kbd>Filter Files</kbd> bar appears.
 URL: https://help.gitkraken.com/gitkraken-desktop/authentication/
 
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop supports authentication with most repository hosting services (e.g., TFS, AWS CodeCommit, [Google Cloud Source Repositories](/integrations/authentication/#google-cloud-source-repositories), and custom services) over HTTPS or SSH.
 
@@ -3054,6 +3090,26 @@ GitKraken Desktop supports authentication with most repository hosting services 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OA9o09Bq5M8?ecver=1" frameborder="0" allowfullscreen title="Authentication Overview Video"></iframe>
 </div>
 </figure>
+
+***
+
+## Quick Start
+
+Authenticate GitKraken Desktop with a Git hosting service using either HTTPS or SSH.
+
+**To clone with HTTPS:**
+1. Copy the HTTPS URL from your hosting service (e.g., `https://example.com/username/repo.git`).
+2. In GitKraken Desktop, go to <kbd>File > Clone Repo</kbd>.
+3. Paste the URL and click **Clone the repo**.
+
+**To set up SSH and clone with SSH:**
+1. Go to <kbd>Preferences > SSH</kbd>.
+2. Generate a new SSH key pair or browse to an existing one.
+3. Copy the public key and add it to your hosting service's SSH settings.
+4. Copy the SSH URL from your hosting service.
+5. Go to <kbd>File > Clone</kbd>, paste the SSH URL, and click **Clone the repo**.
+
+To use a local SSH agent instead of managing keys manually, enable **Use local SSH agent** under <kbd>Preferences > SSH</kbd>. To reset stored HTTPS credentials, go to <kbd>Preferences > General</kbd> and click **Forget All**.
 
 ***
 
@@ -3196,9 +3252,27 @@ Fixed:
 # Azure DevOps Integration with GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/azure-devops/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken lets you connect to Azure DevOps (formerly VSTS), making it easier to find and manage repositories when cloning, working with remotes, or handling pull requests.
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to Azure DevOps to clone repositories, manage remotes, and create pull requests from your Azure DevOps account.
+
+1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
+2. Select **Azure DevOps** and click **Connect to Azure DevOps**.
+3. Log in with your Azure DevOps credentials in the browser window that opens.
+4. Select **Open GitKraken** and choose your organization.
+
+If OAuth is not available (e.g., your organization has disabled third-party access), use a Personal Access Token (PAT) instead:
+1. In <kbd>Preferences > Integrations</kbd>, enter your host domain.
+2. Click **Generate a token on Azure DevOps** to open the token creation page.
+3. Copy the token and paste it into GitKraken, then click **Connect**.
+
+After connecting, GitKraken Desktop can browse your Azure DevOps repositories when cloning, display fork options when adding remotes, and show pull request details. To use SSH, go to <kbd>Preferences > Integrations</kbd>, click **Generate SSH key and copy to clipboard**, and add it to your Azure DevOps SSH settings.
 
 ### Benefits
 
@@ -3344,9 +3418,26 @@ If your Azure DevOps pull request does not appear in GitKraken:
 # Bitbucket Data Center Integration with GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/bitbucket-data-center/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop allows you to connect to Bitbucket Data Center, so you can find repositories, manage remotes, and create pull requests from a self-hosted environment.
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to a Bitbucket Data Center server to clone repositories and manage pull requests from your self-hosted environment.
+
+1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
+2. Select **Bitbucket Data Center**, enter your host domain, and click **Generate a token on Bitbucket Data Center**.
+3. Log in to your Bitbucket Data Center account in the browser and create a Personal Access Token with the appropriate permissions.
+4. Copy the token, paste it into GitKraken Desktop, and click **Connect**.
+
+To configure SSH access after connecting:
+1. In <kbd>Preferences > Integrations</kbd>, click **Generate SSH key and copy to clipboard**.
+2. Open your Bitbucket Data Center account settings and add the copied public key.
+
+Once connected, you can clone repositories directly from your Bitbucket Data Center list, add remotes including forks, and create and view pull requests from within GitKraken Desktop. GitKraken Desktop supports one Bitbucket Data Center account per profile. Use multiple [profiles](/gitkraken-desktop/profiles/) to work with more than one account.
 
 ### Benefits
 
@@ -3463,9 +3554,26 @@ If your token includes Project Admin and Repository Admin scopes, and you have t
 # Bitbucket Integration with GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/bitbucket/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop allows you to authenticate with Bitbucket to help you locate repositories for cloning, add remotes, and manage pull requests more efficiently.
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to Bitbucket.org to clone repositories, manage remotes, and work with pull requests from your Bitbucket account.
+
+1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
+2. Select **Bitbucket.org** and click **Connect to Bitbucket**.
+3. Log in to your Bitbucket account in the browser window that opens.
+4. Select **Open GitKraken** to complete the connection.
+
+To configure SSH access after connecting:
+1. In <kbd>Preferences > Integrations</kbd>, click **Generate SSH key and copy to clipboard**.
+2. Paste the key into your Bitbucket account SSH settings.
+
+Once connected, GitKraken Desktop displays your Bitbucket repositories when cloning, lists forks when adding remotes, and supports creating and viewing pull requests within the application. If you need to manage more than one Bitbucket account, use multiple [profiles](/gitkraken-desktop/profiles/) with a GitKraken Pro plan.
 
 ### Benefits
 
@@ -3570,7 +3678,7 @@ Bitbucket supports pull request reviewers. GitKraken will show reviewer details 
 # Branch, Merge, and Rebase in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/branching-and-merging/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Learn how to branch, merge, and rebase in GitKraken Desktop.
 
@@ -3579,6 +3687,28 @@ Learn how to branch, merge, and rebase in GitKraken Desktop.
 </div>
 
 Looking for a quick summary? See [how GitKraken solves merge conflicts](https://www.gitkraken.com/developer-problems/merge-conflicts?product=gitkraken&source=help_center).
+
+***
+
+## Quick Start
+
+Use GitKraken Desktop to create branches, merge changes, and rebase commits without leaving the application.
+
+**To create and check out a branch:**
+1. Right-click any commit in the graph and select **Create branch here**.
+2. Enter a branch name and press <kbd>Enter</kbd>.
+3. Double-click the branch label in the graph or Left Panel to check it out.
+
+**To merge a branch:**
+1. Check out the branch you want to merge into.
+2. Right-click the source branch in the Left Panel and select **Merge**, or drag and drop it onto the target branch.
+3. If conflicts occur, click a conflicted file in the Commit Panel to open the Merge Tool. Select lines from each side, save the output, and commit.
+
+**To rebase:**
+1. Drag the source branch onto the target branch and select **Rebase**.
+2. Resolve any conflicts if prompted, then confirm.
+
+To delete a branch, first check out a different branch, then right-click the target branch and select **Delete**. Use <kbd>Shift</kbd> or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> in the Left Panel to select and delete multiple branches at once.
 
 ***
 
@@ -3786,9 +3916,27 @@ Rebasing rewrites history but results in a more linear and readable commit tree.
 URL: https://help.gitkraken.com/gitkraken-desktop/cherrypick/
 
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Use cherry pick to apply commits from one branch onto another in GitKraken Desktop. This is especially useful when you accidentally commit to the wrong branch or want to apply specific changes without merging.
+
+***
+
+## Quick Start
+
+Use GitKraken Desktop to cherry pick one or more commits from any branch onto your current branch.
+
+**To cherry pick a single commit:**
+1. Check out the branch where you want to apply the commit.
+2. Right-click the commit in the Commit Graph.
+3. Select **Cherry pick commit**.
+
+**To cherry pick multiple commits:**
+1. Hold <kbd>Cmd</kbd> (Mac) or <kbd>Ctrl</kbd> (Windows/Linux), or use <kbd>Shift</kbd>, to select multiple commits in the graph.
+2. Right-click one of the selected commits.
+3. Select **Cherry pick X commits**.
+
+The interactive cherry-pick tool opens, where you can reorder commits by dragging, squash child commits into parents, reword commit messages, or drop commits before applying. Use keyboard shortcuts in the interactive view: <kbd>P</kbd> to pick, <kbd>S</kbd> to squash, <kbd>R</kbd> to reword, and <kbd>D</kbd> to drop. Click **Reset** to abandon the session without applying changes.
 
 ***
 
@@ -3863,7 +4011,7 @@ To abandon the cherry-pick session, click: <button class='button button--primary
 # GitKraken Desktop Command Palette | Fast Actions & Navigation
 URL: https://help.gitkraken.com/gitkraken-desktop/command-palette/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 The <strong>Command Palette</strong> provides quick access to GitKraken Desktop actions, files, repositories, and settings.
 
@@ -3873,6 +4021,25 @@ The <strong>Command Palette</strong> provides quick access to GitKraken Desktop 
   </div>
   <figcaption style="text-align:center; color:#888">Watch how to use the Command Palette for faster workflows.</figcaption>
 </figure>
+
+***
+
+## Quick Start
+
+Use the Command Palette in GitKraken Desktop to run actions, navigate files, and switch repositories without using the mouse.
+
+- Open with <kbd>Cmd</kbd> + <kbd>P</kbd> (macOS) or <kbd>Ctrl</kbd> + <kbd>P</kbd> (Windows/Linux), or click the wand icon in the top-right toolbar.
+- Start typing to filter available commands. Results update as you type.
+- Press <kbd>Enter</kbd> to run the selected command.
+
+Common actions available through the Command Palette:
+- **File management**: Create File, Delete File, Open File, Stage all changes, Discard all changes
+- **Branch operations**: Create Branch, Rename Branch, Checkout, Push, Pull, Fetch All
+- **Repository**: Open Repo, Clone, Init, Perform Repo Maintenance
+- **Stash**: Create, Apply, Pop
+- **View and settings**: Toggle Theme, Toggle Left Panel, Keyboard Shortcuts, Switch to Profile
+
+The Command Palette is available at any time regardless of which panel or view is currently active in GitKraken Desktop.
 
 ***
 
@@ -3983,7 +4150,30 @@ Below is a list of supported commands grouped by category.
 URL: https://help.gitkraken.com/gitkraken-desktop/commit-signing-with-gpg/
 
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
+
+***
+
+## Quick Start
+
+Sign Git commits in GitKraken Desktop using a GPG or SSH key to verify your identity when pushing to services like GitHub or GitLab.
+
+**To sign commits with GPG:**
+1. Install GPG for your operating system (Gpg4win on Windows, `brew install gpg` on macOS, or your Linux package manager).
+2. Close and reopen GitKraken Desktop.
+3. Go to <kbd>Preferences > Commit Signing</kbd>.
+4. Select a **Signing Key** from the dropdown, or click **Generate new GPG Key**.
+5. Set the **GPG Program** path if it is not auto-detected.
+6. Enable **Sign Commits by Default** and/or **Sign Tags by Default**.
+7. Copy your public key from <kbd>Preferences > GPG</kbd> and upload it to your hosting service (GitHub, GitLab, or Bitbucket).
+
+**To sign commits with SSH:**
+1. Generate an SSH key and enable the **Git Executable** under <kbd>Preferences > Experimental</kbd>.
+2. Go to <kbd>Preferences > Commit Signing</kbd>, set the **GPG Format** to **SSH**, and select your `.pub` key file.
+3. Create an `allowed_signers` file and select it in GitKraken Desktop.
+4. Enable **Sign Commits by Default**.
+
+Signed commits display a badge next to the SHA in the Commit Panel. Hover over it to view signature details.
 
 ## What is Commit Signing?
 
@@ -4169,13 +4359,31 @@ SSH signing is available through Git Executable.
 # Committing Changes
 URL: https://help.gitkraken.com/gitkraken-desktop/commits/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop simplifies the Git commit process by helping you stage, commit, and push your work from a visual interface.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8a6fYPkBDbY?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>
+
+***
+
+## Quick Start
+
+Create a commit in GitKraken Desktop by staging your changes and entering a commit message.
+
+1. Save changes to your files. The **WIP** (Work in Progress) node appears at the top of the Commit Graph.
+2. Click the WIP node to open the Commit Panel and view changed files.
+3. Click a file to review its diff, then click the checkbox or the file name to stage it. To stage all files, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>.
+4. Enter a commit message in the message field.
+5. Click **Commit**, or press <kbd>Cmd</kbd>/<kbd>Enter</kbd> (macOS) or <kbd>Ctrl</kbd>/<kbd>Enter</kbd> (Windows/Linux).
+
+To commit and push in one step, enable the **Push after committing** option before clicking **Commit**.
+
+To amend the most recent commit, stage any additional changes, then check **Amend the previous commit** in the Commit Panel. To update only the message, click the most recent commit in the graph and edit the message field directly, then click **Update Message**.
+
+To undo a commit, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Z</kbd> or click the **Undo** button in the toolbar.
 
 ***
 
@@ -4401,7 +4609,23 @@ Right-click any commit node in the graph and choose **Revert Commit**. GitKraken
 # GitKraken Desktop – Common Issues and Fixes
 URL: https://help.gitkraken.com/gitkraken-desktop/common-issues/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
+
+***
+
+## Quick Start
+
+Use this page to diagnose and resolve common problems in GitKraken Desktop. Find the section that matches your issue and follow the steps listed.
+
+- **Account or license not recognized**: Verify you are signed in with the email address linked to your subscription, and that the correct organization is selected in GitKraken Desktop and on gitkraken.dev.
+- **Integration errors (1002, 1003, 1005, 1007)**: Sign out of your browser, clear its cache, and reconnect your integration from <kbd>Preferences > Integrations</kbd>.
+- **Clone always uses HTTPS instead of SSH**: Add or generate an SSH key under <kbd>Preferences > Integrations > [Integration]</kbd>, then restart GitKraken Desktop.
+- **Commit Details panel missing**: Go to <kbd>View > Show Commit Details panel</kbd> to restore it.
+- **Performance problems**: See the [Performance Issues](/gitkraken-desktop/performance-issues/) guide, or try running <kbd>Perform Repo Maintenance</kbd> from the Command Palette.
+- **Push failed with `Cannot read property 'fullName' of undefined`**: Rename your local branch to match the remote branch name exactly.
+- **WSL issues**: Avoid running GitKraken Desktop as root; use native WSL2 GUI support instead of XServer.
+
+If the steps on this page do not resolve your issue, contact [GitKraken Support](https://help.gitkraken.com/gitkraken-desktop/contact-support/).
 
 ***
 
@@ -4601,13 +4825,29 @@ On case-insensitive file systems like Windows, branches or files differing only 
 URL: https://help.gitkraken.com/gitkraken-desktop/configure-self-managed/
 
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 After installing GitKraken Self-Hosted Server (also known as Enterprise Self-Hosted), you're ready to configure your server.
 
 <div class='callout callout--warning'>
   <p>GitKraken Desktop Self-Hosted and On-Premise Serverless products are sold separately from standard subscriptions. Visit our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?source=help_center&product=gitkraken'>On-Premise Pricing</a> page to learn more.</p>
 </div>
+
+***
+
+## Quick Start
+
+Configure GitKraken Self-Hosted Server after installation by completing the license, authentication, SMTP, and Super User setup steps.
+
+1. Navigate to your GitKraken Self-Hosted server in a browser.
+2. Click **Browse for license** and upload the license file included with your installation package.
+3. Choose an authentication method: **Built-in** (email and password) or **LDAP**.
+   - If using LDAP, enter your server hostname, port, encryption method, base DNs, group CNs, and user attribute mappings. Optionally enable the Sync Server for automatic user syncing.
+4. If using Built-in authentication, configure your SMTP server: enter the hostname, port, From Address, and credentials, then click the test connection button to verify.
+5. Create a Super User account by entering an email and password. This account manages the server but cannot log in to GitKraken Desktop directly.
+6. Click **Save** to complete configuration. The Manage Users screen will appear, where you can begin adding user accounts.
+
+To add users, click **Add user** and enter the user's email. To disable self-registration, adjust the setting in the **Registration** tab.
 
 ***
 
@@ -4772,7 +5012,7 @@ By default, users can self-register on the GitKraken Self-Hosted site. To disabl
 # Conflict Prevention in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/conflict-prevention/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop’s **Conflict Prevention** helps you identify potential merge conflicts before they happen, reducing delays and easing collaboration.
 
@@ -4780,6 +5020,21 @@ GitKraken Desktop’s **Conflict Prevention** helps you identify potential merge
   <img src="/wp-content/uploads/GKD-conflict-prevention.png" class="help-center-img img-bordered" alt="Conflict prevention panel in GitKraken Desktop showing a warning about potential changes from another contributor, with options to send, push, or ignore warnings.">
   <figcaption style="text-align:center; color:#888">Conflict prevention interface in GitKraken Desktop</figcaption>
 </figure>
+
+***
+
+## Quick Start
+
+Use Conflict Prevention in GitKraken Desktop to catch potential merge conflicts with teammates or your target branch before they occur.
+
+- When GitKraken Desktop detects overlapping changes with an Org Member’s commits, a conflict alert icon appears in the interface. Click the icon to view conflict details and take action.
+- From the conflict details menu, you can share your edits as a Cloud Patch, push your changes to make them visible, or copy a summary of the overlapping edits.
+- If no Org Members are involved, GitKraken still checks your current branch against the target branch and prompts you to merge or rebase proactively.
+- To invite a contributor to your GitKraken Org so conflicts are detected earlier, use the **Invite** option from the conflict alert.
+
+To configure which branches GitKraken monitors for conflicts, go to <kbd>Preferences > Conflict Prevention</kbd>. Use `**` as a wildcard or prefix a branch pattern with `!` to exclude it. Settings are saved per repository.
+
+Conflict Prevention is available to users on the Advanced subscription tier or higher.
 
 ***
 
@@ -5289,9 +5544,28 @@ _"Turn it up to 11! 🎸"_
 URL: https://help.gitkraken.com/gitkraken-desktop/detached-head-state/
 
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Detached HEAD state lets you check out any commit in GitKraken Desktop without creating a branch. This is useful for reviewing or experimenting with past changes without affecting your active branches.
+
+***
+
+## Quick Start
+
+Use GitKraken Desktop to enter, work in, and safely exit detached HEAD state.
+
+**To enter detached HEAD state:**
+1. Right-click any commit in the Commit Graph.
+2. Select **Checkout this commit**. The commit will display a `HEAD` label.
+
+**To preserve commits made in detached HEAD state:**
+1. Right-click the commit labeled `HEAD`.
+2. Select **Create branch here** and name the new branch.
+
+**To exit detached HEAD state:**
+- Double-click any local branch in the graph or Left Panel to check it out.
+
+Any commits made in detached HEAD state that were not saved to a branch will be removed when you switch branches. If you switch branches before creating a branch, use the **Undo** button if available, or run `git reflog` in the terminal to find the lost commit SHA and re-check it out with `git checkout <SHA>`.
 
 ***
 
@@ -5369,13 +5643,36 @@ If you accidentally switch branches before saving your changes:
 # View Diffs, File History, and Blame in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/diff/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Compare changes within GitKraken Desktop using _diffs_. Learn how to access them, view file history or file blame, and use external tools.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/-0bn2H63axM?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
+
+***
+
+## Quick Start
+
+Use GitKraken Desktop to view file diffs, inspect commit history, and trace changes by author.
+
+**To view a diff:**
+- Click a file in the staging area (WIP node) to see your uncommitted changes.
+- Click a commit in the graph, then click any file in the Commit Panel to view that commit's changes.
+- Select two commits using <kbd>Shift</kbd> + Click to compare them directly.
+
+**To switch diff view modes**, use the **Hunk**, **Inline**, or **Split** toggles in the diff viewer. To revert a specific block of changes, use the **Revert** button in Hunk view.
+
+**To view file history or blame:**
+- Open the diff for any file and click the **History** or **Blame** button in the upper-right corner.
+- Or right-click a file after selecting a commit in the graph.
+
+**To create or apply a patch:**
+- Right-click a commit and select **Create patch from commit**.
+- To apply a patch, open the Command Palette (<kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>P</kbd>), type `Apply Patch`, and select your `.patch` file.
+
+To use an external diff tool, go to <kbd>Preferences > External Tools</kbd> and select your preferred application.
 
 ***
 
@@ -5622,9 +5919,31 @@ To apply a patch:
 URL: https://help.gitkraken.com/gitkraken-desktop/editing-files/
 
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Learn how to edit, save, and manage files using GitKraken Desktop’s built-in editor.
+
+***
+
+## Quick Start
+
+Edit files directly in GitKraken Desktop without switching to an external editor.
+
+**To open a file for editing:**
+- Right-click any file in the Commit Panel or via **View all files** and select **Edit file**.
+- Or open the Command Palette (<kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>P</kbd>), type `Edit File`, and enter the filename.
+- Or click the **Edit this file** button from any file diff view.
+
+**To save changes:**
+- Press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>S</kbd>. A blue dot in the editor indicates unsaved changes.
+
+**To discard unsaved changes:**
+- Hover over the blue dot in the editor tab and click the **X**, then confirm with **Don’t Save**.
+
+**To stage your edits:**
+- Click **Stage File** in the Commit Panel. Choose **Save and stage** to save and stage together, or **Stage saved changes only** to stage only what was already saved.
+
+For `.md` files, click **Preview** in the editor toolbar to toggle a rendered Markdown preview alongside the editor. GitKraken Desktop expects UTF-8 encoding by default; adjust the encoding setting from the dropdown in the editor or under <kbd>Preferences > Encoding</kbd>.
 
 ***
 
@@ -5765,7 +6084,7 @@ You can switch between editing and previewing the markdown content.
 # View and Submit Error Logs
 URL: https://help.gitkraken.com/gitkraken-desktop/error-logs/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken Desktop allows you to view recent error messages for troubleshooting. These logs are useful when submitting a support ticket.
 
@@ -5793,9 +6112,35 @@ Include a copy of your error log when submitting a [support ticket](https://www.
 # GitKraken Desktop Experimental Features | Cloud Patch & Git Executable
 URL: https://help.gitkraken.com/gitkraken-desktop/experimental-features/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop includes experimental features, which are early previews of in-development functionality. These features may change or be removed in future releases.
+
+***
+
+## Quick Start
+
+Enable and use experimental features in GitKraken Desktop, including the Git Executable and Cloud Patches.
+
+**To enable experimental features:**
+- Go to <kbd>Preferences > Experimental</kbd> and toggle the features you want to use.
+
+**To use the Git Executable:**
+- Enable **Use Git Executable** under <kbd>Preferences > Experimental</kbd>. This lets GitKraken Desktop use your system's Git binary for core operations instead of the built-in library.
+
+**To create a Cloud Patch:**
+1. Stage files in the Commit Panel.
+2. Click the Cloud Patch icon to create the patch.
+3. Copy the generated link and share it with your team.
+
+**To apply a Cloud Patch:**
+1. Open the link in GitKraken Desktop, or find the patch in the Left Panel.
+2. Select a target branch and apply the patch.
+
+**To share a commit as a Cloud Patch:**
+- Right-click any commit in the graph and select **Share commit as Cloud Patch**.
+
+Cloud Patches are stored securely and can be shared with anyone who has the link, with your GitKraken organization, or with selected collaborators. To delete a patch, right-click it in the Left Panel and choose **Delete Cloud Patch**.
 
 
 ## Access Experimental Features
@@ -5898,7 +6243,7 @@ You can self-host Cloud Patch data on an AWS S3 instance instead of GitKraken se
 # GitKraken Desktop FAQ | Common Questions & Troubleshooting
 URL: https://help.gitkraken.com/gitkraken-desktop/faq/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 The answers to your most frequently asked questions.
 
@@ -6067,11 +6412,30 @@ You can switch to your favorite repositories using keyboard shortcuts. GitKraken
 # Fork GitHub Repositories from GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/fork/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Forking allows you to create your own copy of a repository. You can use forks to propose changes, contribute to upstream projects, or maintain your own version of a project.
 
 With the [GitHub integration](/gitkraken-desktop/github-gitkraken-desktop/) or [GitHub Enterprise Server integration](/integrations/github-enterprise/), you can fork repositories directly from GitKraken Desktop.
+
+***
+
+## Quick Start
+
+Fork a GitHub repository from within GitKraken Desktop and add it as a remote in one step.
+
+**To fork a repository and add it as a remote:**
+1. Open the repository you want to fork in GitKraken Desktop.
+2. In the Left Panel, hover over **Remote** and click the **+** icon.
+3. Select the **GitHub.com** or **GitHub Enterprise Server** tab.
+4. If no fork is linked, GitKraken Desktop offers to fork the repo. Click **Fork and Add Remote**.
+
+**To add an existing fork as a remote:**
+1. Click the **+** icon next to **Remote** in the Left Panel.
+2. Select the **GitHub.com** or **GitHub Enterprise Server** tab.
+3. GitKraken Desktop detects the existing fork and offers to add it. Click **Add this Remote**.
+
+The fork appears in the Left Panel under **Remote** and is ready to use for pushing branches and creating pull requests. If you need to add a remote manually, use an HTTPS or SSH URL from the same panel.
 
 ***
 
@@ -6126,13 +6490,30 @@ You can also [add any remote](/working-with/pushing-and-pulling/#adding-remotes)
 URL: https://help.gitkraken.com/gitkraken-desktop/git-flow/
 
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Gitflow helps organize your repository history, making it easier to manage releases, bug fixes, and features.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/eTOgjQ9o4vQ?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
+
+***
+
+## Quick Start
+
+Set up and use Gitflow in GitKraken Desktop to manage features, releases, and hotfixes with structured branches.
+
+1. Go to <kbd>Preferences > Gitflow</kbd> and initialize Gitflow for the repository. Optionally adjust default branch names.
+2. GitKraken Desktop creates `main` and `develop` branches if they do not exist.
+3. A **Gitflow** panel appears in the Left Panel. Click the green button to start a branch, or create a branch manually using a Gitflow prefix (e.g., `feature/my-feature`, `release/1.0.0`).
+
+**To finish a branch type:**
+- **Feature**: Merges into `develop` and deletes the branch locally.
+- **Release**: Merges into both `main` and `develop`, and creates a tag.
+- **Hotfix**: Merges into both `main` and `develop`.
+
+Right-click a Gitflow branch in the Left Panel and select **Finish** to complete it. To set a tag prefix (e.g., `v`), configure it under <kbd>Preferences > Gitflow</kbd>. Publishing a Gitflow branch to a remote works the same as pushing any other branch.
 
 ***
 ## Configuration
@@ -6236,7 +6617,7 @@ In <code>Preferences > Gitflow</code>, set a tag prefix (e.g., <code>v</code>). 
 URL: https://help.gitkraken.com/gitkraken-desktop/git-integration-for-jira/
 
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken Desktop connects with the <a href="https://marketplace.atlassian.com/apps/4984/git-integration-for-jira?product=gitkraken&source=help_center" target="_blank">Git Integration for Jira</a> app. This integration enables seamless navigation between GitKraken Desktop and Jira, letting you open commit and file diffs directly from your Jira issues.
 
@@ -6277,7 +6658,29 @@ Within Jira, Git Integration for Jira adds buttons to open commits and diffs in 
 URL: https://help.gitkraken.com/gitkraken-desktop/git-lfs/
 
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
+
+***
+
+## Quick Start
+
+Set up Git LFS in GitKraken Desktop to track and manage large binary files in your repositories.
+
+**Prerequisites:** Install Git (version 2.39.3 or later) and Git LFS (version 3.0.0 or later), then verify with `git --version` and `git lfs version` in a terminal.
+
+**To initialize Git LFS on an existing repository:**
+1. Open the repository in GitKraken Desktop.
+2. Go to <kbd>Preferences > LFS</kbd> and click **Initialize LFS**.
+3. Commit the change to the `.gitattributes` file that GitKraken Desktop creates.
+
+**To track a file or file type:**
+- Go to <kbd>Preferences > LFS</kbd> and add a tracking pattern (e.g., `*.psd`).
+- Or right-click a file under WIP in the Commit Panel and select **LFS > Track file pattern**.
+
+**To initialize Git LFS on a new repository:**
+- Select **Initialize with LFS** when creating the repository.
+
+After tracking is configured, commit and push files as usual. LFS-tracked files show an **LFS** tag in the Commit Panel. Use the LFS menu in the toolbar to run additional commands such as pull and prune.
 
 ## What is Git LFS?
 
@@ -6466,7 +6869,7 @@ Need more? Visit the [Git LFS GitHub](https://github.com/git-lfs/git-lfs).
 URL: https://help.gitkraken.com/gitkraken-desktop/githooks/
 
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Git hooks are shell scripts that execute after Git events such as commits or pushes.
 
@@ -6476,6 +6879,20 @@ Git hooks are shell scripts that execute after Git events such as commits or pus
 </div>
 <figcaption style="text-align: center; color: #888">Overview of Git hooks and demonstration in GitKraken Desktop</figcaption>
 </figure>
+
+***
+
+## Quick Start
+
+Create and configure Git hooks in GitKraken Desktop to run scripts automatically on Git events like commits and pushes.
+
+1. Navigate to your repository's `.git/hooks` directory. GitKraken Desktop creates this folder automatically when a repository is initialized.
+2. Create a new file with the hook name (e.g., `pre-commit`). On macOS or Linux, make it executable by running `chmod +x pre-commit` in the terminal.
+3. Add your script to the file. Start with `#!/bin/bash` and include your validation or automation logic. Any non-zero exit code causes the hook to fail and blocks the Git action.
+4. To set a custom hooks directory for the repository, go to <kbd>Preferences > Git Hooks</kbd> and click **Browse** to select the folder.
+5. To use global hooks across all repositories, add `hooksPath = /path/to/your/hooks` under `[core]` in your `.gitconfig`.
+
+To skip hooks for a specific commit, enable **Commit and skip hooks** in the Commit Panel. GitKraken Desktop supports `pre-commit`, `commit-msg`, `post-commit`, `pre-push`, `post-merge`, `post-rewrite`, and several other standard hooks.
 
 ***
 
@@ -6742,13 +7159,33 @@ To configure a global path, add the following to your `.gitconfig`:
 URL: https://help.gitkraken.com/gitkraken-desktop/github-actions/
 
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 [GitHub Actions](https://github.com/features/actions) is a service from GitHub that lets you automate tasks in your repository using workflow files. These workflows are written in YAML and stored in the `.github/workflows` directory of your repository.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/qr3vwIvXUfc?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>
+
+***
+
+## Quick Start
+
+Create, edit, and delete GitHub Actions workflow files from within GitKraken Desktop without leaving the application.
+
+**To create a workflow:**
+1. Open a GitHub-hosted repository in GitKraken Desktop. The **GitHub Actions** section appears in the Left Panel.
+2. Hover over **GitHub Actions** and click the **+** button to open the Create Workflow panel.
+3. Choose a workflow template or start with a blank file.
+4. The workflow is saved automatically in the `.github/workflows` directory.
+
+**To edit an existing workflow:**
+- Double-click the workflow file in the Left Panel under **GitHub Actions** to open and modify it.
+
+**To delete a workflow:**
+- Right-click the workflow file and select **Delete Workflow**.
+
+The **GitHub Actions** section is only visible when working with a GitHub-hosted repository that has the GitHub integration connected. For workflow syntax, triggers, and advanced configuration options, refer to the [GitHub Actions Documentation](https://docs.github.com/en/actions).
 
 
 ## Managing Workflows in GitKraken Desktop
@@ -6791,7 +7228,7 @@ For workflow syntax, best practices, and advanced automation examples, visit the
 URL: https://help.gitkraken.com/gitkraken-desktop/github-enterprise-issues/
 
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken Desktop supports integration with GitHub Enterprise Server Issues, making it easier to manage issues alongside your codebase.
 
@@ -6832,13 +7269,30 @@ Once connected, this integration offers the same features as the GitHub Issues i
 # GitHub Enterprise Integration with GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/github-enterprise/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken allows you to connect to GitHub Enterprise Server to streamline development workflows. Integration enables quick repository access, authentication, and pull request management.
 
 <div class='callout callout--warning'>
     <p><strong>Note:</strong> All self-hosted server integrations, including GitHub Enterprise, require an <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">Advanced subscription</a> tier or higher.</p>
 </div>
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to a GitHub Enterprise Server instance to clone repositories, manage remotes, and create pull requests.
+
+1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
+2. Enter your GitHub Enterprise Server host domain and click the link to generate an access token.
+3. Log in to your GitHub Enterprise Server, generate the token, and copy it.
+4. Paste the token into GitKraken Desktop and click **Connect**.
+
+To configure SSH access after connecting:
+- In <kbd>Preferences > Integrations</kbd>, click **Generate SSH key and add to GitHub Enterprise Server** to generate and upload a new key automatically.
+- Or click **Add key to GitHub Enterprise Server** to upload your existing SSH default.
+
+Once connected, you can browse repositories when cloning, add remotes, and create and view pull requests from within GitKraken Desktop. GitKraken Desktop supports one GitHub Enterprise Server account per profile. Use multiple [profiles](/start-here/profiles) to work with more than one account.
 
 ### Benefits
 
@@ -6916,9 +7370,36 @@ GitKraken supports one GitHub Enterprise Server account per profile. Use [multip
 # GitHub Integration with GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/github-gitkraken-desktop/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken allows you to create an account and authenticate with GitHub, making it easier to find and manage GitHub repositories within the application.
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to GitHub to authenticate, clone repositories, and manage pull requests from your GitHub account.
+
+**To sign in with GitHub:**
+1. Open GitKraken Desktop and click **Sign in with GitHub**.
+2. Log in with your GitHub credentials in the browser. The connection completes automatically.
+
+**To connect manually or add SSH:**
+1. Go to <kbd>Preferences > Integrations</kbd> and select **GitHub**.
+2. Click **Connect to GitHub** and log in in the browser.
+3. To add an SSH key, click **Generate SSH key and add to GitHub** in the same panel.
+
+**To create a pull request:**
+1. Push your branch to GitHub.
+2. Select the branch in the Left Panel, then click **Start a pull request** or use the Command Palette.
+3. Fill in the title, description, reviewers, and labels, then submit.
+
+**To review a pull request:**
+1. Select a pull request from the Left Panel.
+2. Click **Review Code and Suggest Changes** to edit files and propose modifications.
+3. Click **Suggest X file change to PR** to submit your suggestions.
+
+To use multiple GitHub accounts, create separate [profiles](/start-here/profiles) in GitKraken Desktop (Pro plan required).
 
 **Benefits**
 
@@ -7175,13 +7656,33 @@ Each profile can be associated with a different GitHub account, allowing you to 
 URL: https://help.gitkraken.com/gitkraken-desktop/github-issues/
 
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop makes it easy to integrate with GitHub Issues for seamless issue management.
 
 <div class='callout callout--basic'>
     <p>The GitHub Issues integration is limited to public repositories for Community users. To unlock full access, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken license</a>.</p>
 </div>
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to GitHub Issues to view, create, and manage issues alongside your repository workflow.
+
+1. Go to <kbd>Preferences > Integrations</kbd> and select **GitHub.com**, or click the ISSUES section in the Left Panel.
+2. Click **Connect to GitHub** and complete authorization in the browser window that opens.
+3. Once connected, your GitHub issues appear in the Left Panel under default filters such as _My Open Issues_ and _All Open Issues_.
+
+**To view issue details:** Click any issue in the Left Panel to open its detail view. Changes made here sync with GitHub.
+
+**To create a new issue:** Click the **+** icon in the Left Panel, fill in the required fields, and submit. The issue syncs directly to GitHub.
+
+**To create a branch from an issue:** Open the issue detail view and click **Create a branch for this issue**. The branch name is pre-filled from the issue title.
+
+**To create custom filters:** Use GitHub's issue filter syntax to build filters in the Left Panel and narrow your view to specific labels, statuses, or assignees.
+
+To open an issue in GitHub or copy its link, use the ellipsis menu or the external link icon in the issue detail view.
 
 
 ## Connect GitHub Integration
@@ -7262,7 +7763,7 @@ To open the issue in GitHub or copy its link, use the <kbd><i class="fa fa-ellip
 URL: https://help.gitkraken.com/gitkraken-desktop/gitkraken-desktop-home/
 
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Welcome to the GitKraken Desktop Help Center, your all-in-one source for mastering the world’s most legendary Git GUI.
 
@@ -7301,13 +7802,13 @@ Want more than docs? Get involved, get support, or help shape where we go next:
 # GitKraken Launchpad Overview
 URL: https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Launchpad provides a unified overview of your Pull Requests, Issues, and Works In Progress (WIPs) for your selected Workspace or collaborators. Use it to monitor your personal tasks and your team’s contributions in one place.
 
 <figure>
-  <img src="/wp-content/uploads/launchpad-highlight-2025@2x.png" 
-       class="help-center-img img-bordered" 
+  <img src="/wp-content/uploads/launchpad-highlight-2025@2x.png"
+       class="help-center-img img-bordered"
        alt="GitKraken Desktop Launchpad view showing a list of pull requests with unassigned reviewers on the left and detailed GitHub pull request panel open on the right.">
   <figcaption style="color:#888; text-align:center">
     Launchpad displaying a list of unassigned reviewers, with a PR open for more details
@@ -7315,6 +7816,24 @@ Launchpad provides a unified overview of your Pull Requests, Issues, and Works I
 </figure>
 
 The Launchpad is also <a href="https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/#elementor-toc__heading-anchor-13">available for GitKraken On-Premise</a> customers with some feature variations.
+
+***
+
+## Quick Start
+
+Use GitKraken Launchpad to monitor pull requests, issues, and uncommitted changes across your repositories in one place.
+
+1. Click the **Launchpad** tab in the top-left corner of GitKraken Desktop.
+2. Connect your integrations via <kbd>Preferences > Integrations</kbd>, or follow the in-app prompts.
+3. Select a Cloud Workspace from the dropdown to filter activity to specific repositories.
+4. Use the **Pull Requests**, **Issues**, **WIPs**, or **All** tabs to view relevant items.
+5. Toggle between **Personal View** (items assigned to or created by you) and **Team View** (items from others) using the toggle in the top-right.
+
+To prioritize items:
+- Click the pin icon to keep a PR or issue at the top of the list.
+- Click the snooze icon to hide an item temporarily. Snoozed items appear in the **Snoozed** tab.
+
+To save a filtered view for reuse, click the **+** Save View icon in the Launchpad tab bar and name it. Saved views are tied to the mode (Personal or Team) in which they were created.
 
 ***
 
@@ -7670,9 +8189,25 @@ Stay up to date with recent enhancements.
 # GitLab Integration with GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/gitlab-gitkraken-desktop/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken allows you to connect to [GitLab](https://gitlab.com), enabling streamlined access to your repositories for cloning, issue tracking, and pull request workflows.
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to GitLab.com to clone repositories, manage remotes, and create pull requests from your GitLab account.
+
+1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
+2. Select **GitLab.com** and click **Connect to GitLab**.
+3. Log in to GitLab in the browser window that opens, then click **Open GitKraken** to complete the connection.
+
+To configure SSH access after connecting:
+- In <kbd>Preferences > Integrations</kbd>, click **Generate SSH key and add to GitLab** to generate and upload a key automatically.
+- Or click **Add key to GitLab** to upload your existing SSH default.
+
+Once connected, GitKraken Desktop displays your GitLab repositories when cloning, shows forks when adding remotes, and supports creating and managing pull requests from within the application. To manage more than one GitLab account, use multiple [profiles](/start-here/profiles) with a GitKraken Pro plan.
 
 ### Benefits
 
@@ -7778,13 +8313,33 @@ GitKraken supports one GitLab account per profile. With [profile support](/start
 URL: https://help.gitkraken.com/gitkraken-desktop/gitlab-issues/
 
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop makes it easy to integrate with GitLab Issues for seamless issue tracking and repository collaboration.
 
 <div class='callout callout--basic'>
     <p>The GitLab Issues integration is restricted to public repositories for Community users. To unlock all features, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken license</a>.</p>
 </div>
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to GitLab Issues to view, create, and manage issues alongside your repository workflow.
+
+1. Go to <kbd>Preferences > Integrations</kbd> and select **GitLab.com**, or click the ISSUES section in the Left Panel.
+2. Click **Connect to GitLab** and authorize the connection in the browser.
+3. Once connected, your GitLab issues appear in the Left Panel under default filters such as _My Issues_ and _All Issues_.
+
+**To view issue details:** Click any issue to open its detail view. Changes sync with GitLab.
+
+**To create a new issue:** Click the **+** icon in the Left Panel, fill in the required fields, and submit. The issue syncs directly to GitLab.
+
+**To create a branch from an issue:** Open the issue detail view and click **Create a branch for this issue**. The branch name is pre-filled from the issue title.
+
+**To create custom filters:** Use GitLab's issue filter syntax in the Left Panel to narrow your view by label, milestone, assignee, or status.
+
+To open an issue in GitLab or copy its link, use the ellipsis menu or the external link icon in the issue detail view.
 
 
 ## Connect GitLab Integration
@@ -7866,7 +8421,7 @@ Use the <kbd><i class="fa fa-ellipsis-v"></i></kbd> menu or <i class="fa fa-exte
 # GitLab Self-Managed Integration with GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/gitlab-self-hosted/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 <div class='embed-container embed-container--16-9'>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/BhIX7fGSM8k?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -7877,6 +8432,23 @@ GitKraken allows you to connect to GitLab Self-Managed (CE or EE), enabling repo
 <div class='callout callout--warning'>
   <p><strong>Note:</strong> All self-hosted server integrations, including GitLab Self-Managed, require an <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">Advanced subscription</a> tier or higher.</p>
 </div>
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to a GitLab Self-Managed server to clone repositories, manage remotes, and create pull requests.
+
+1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
+2. Select **GitLab Self-Managed**, enter your host domain, and click **Generate a token on GitLab**.
+3. Log in to your GitLab instance, generate a Personal Access Token with the `api` and `read_user` scopes (leave expiration blank), and copy the token.
+4. Paste the token into GitKraken Desktop and click **Connect**.
+
+To configure SSH access after connecting:
+- In <kbd>Preferences > Integrations</kbd>, click **Generate SSH key and add to GitLab** to generate and upload a key automatically.
+- Or click **Add key to GitLab** to upload your existing SSH default.
+
+Once connected, GitKraken Desktop lets you clone from your self-hosted repository list, add remotes, and create or view pull requests. To manage more than one GitLab Self-Managed account, use multiple [profiles](/start-here/profiles) with a GitKraken Pro plan.
 
 ### Benefits
 
@@ -7959,7 +8531,7 @@ GitKraken supports one GitLab Self-Managed account per profile. Use multiple [pr
 URL: https://help.gitkraken.com/gitkraken-desktop/gitlab-self-managed-issues/
 
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken Desktop supports integration with GitLab Self-Managed Issues, helping teams track work and manage issues alongside their repositories.
 
@@ -8080,13 +8652,39 @@ GitKraken and it’s tools are now SOC 2 Certified! If you would like to request
 URL: https://help.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai/
 
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Let the app handle the boring parts! GitKraken offers built-in AI features to fast-track your code contributions.
 
 <div class='callout callout--warning'>
     <p>GitKraken AI requires a <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">paid GitKraken subscription</a>.</p>
 </div>
+
+***
+
+## Quick Start
+
+Use GitKraken AI to generate commit messages, compose logical commit histories, and write pull request descriptions.
+
+**To generate a commit message:**
+1. Stage your changes in the Commit Panel.
+2. Click the AI icon (sparkle) next to the commit message field.
+3. Review the suggested message and adjust as needed before committing.
+
+**To compose commits with AI from staged changes:**
+1. Stage your changes, then click **Compose Commit with AI** in the Commit Details Panel.
+2. GitKraken AI proposes a set of commits. Reorder, squash, or edit messages in the resulting window.
+3. Click **Create commits** to apply, or **Cancel** to discard.
+
+**To recompose existing commits:**
+1. Select a contiguous range of commits in the graph using <kbd>Shift</kbd> or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>.
+2. Right-click and choose **Recompose Commits with AI**, or click the button in the Commit Details Panel.
+3. Adjust the proposed structure and click **Create commits**.
+
+**To generate a pull request description:**
+- When creating a pull request, click the AI icon in the description field to generate a summary of your changes.
+
+To use a custom AI provider or customize the prompts, go to <kbd>Preferences > AI</kbd>.
 
 ***
 
@@ -8446,9 +9044,25 @@ Additional AI-powered features are in development to further streamline your wor
 # Learn Git with GitKraken Desktop | Beginner Guide & Workflow
 URL: https://help.gitkraken.com/gitkraken-desktop/guide/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 This Getting Started Guide introduces GitKraken Desktop with a basic workflow—cloning a repository, making changes, and merging them.
+
+***
+
+## Quick Start
+
+Follow this basic Git workflow in GitKraken Desktop to start contributing to a repository.
+
+1. **Clone a repository**: Go to <kbd>File > Clone Repo</kbd>, paste a repository URL or browse your connected Git hosting service, and click **Clone the repo**.
+2. **Create a branch**: Right-click any commit in the graph and select **Create branch here**. Name it and press <kbd>Enter</kbd>.
+3. **Make changes**: Edit files in your working directory. Saved changes appear under the WIP node in the Commit Graph.
+4. **Stage changes**: Click the WIP node to open the Commit Panel. Click files to stage them, or press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> to stage all.
+5. **Commit**: Enter a commit message and press <kbd>Cmd</kbd>/<kbd>Enter</kbd> (macOS) or <kbd>Ctrl</kbd>/<kbd>Enter</kbd> (Windows/Linux).
+6. **Push**: Click **Push** in the toolbar to upload your branch to the remote.
+7. **Merge**: When your work is ready, check out the target branch and right-click your feature branch to select **Merge**.
+
+If merge conflicts occur, GitKraken Desktop opens the Merge Tool, where you can select lines from each side and commit the resolution.
 
 ***
 
@@ -8627,13 +9241,30 @@ You can hide or show all **Remotes**, **Tags**, **Branches**, or **Stashes** fro
 # Install GitKraken Self-Hosted Server with Docker
 URL: https://help.gitkraken.com/gitkraken-desktop/how-to-install-self-hosted/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Self-Hosted Server runs on a Linux virtual machine (CentOS, Ubuntu, or RHEL7) inside Docker containers. To begin, you'll first need to install Docker.
 
 <div class='callout callout--warning'>
     <p>GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, visit our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?_gl=1*vtr4xk*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmv98H0EKgytPnuCPuTqdL2vy4GQaCsizBMO9m8mz2n1hMMXO3AAw7YaAiyKEALw_wcB?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
 </div>
+
+***
+
+## Quick Start
+
+Install GitKraken Self-Hosted Server on a Linux machine using Docker and Docker Compose.
+
+1. Install Docker CE and Docker Compose on your Linux host (CentOS, Ubuntu, or RHEL7). Follow the platform-specific steps in the sections below, or refer to the official [Docker documentation](https://docs.docker.com/).
+2. Start Docker: `sudo systemctl start docker`.
+3. Extract `GitKrakenEnterpriseServer.zip` into a directory on your host machine.
+4. Load the Docker images: `sudo sh loadImages.sh`.
+5. (Optional) Edit `docker-compose.yml` to change the port (default: 3000) and set the `GITKRAKEN_ENTERPRISE_URL` to your server's address.
+6. Create the directory for GitKraken Desktop releases and extract `release.zip` into it (default path: `./gk-data/release`).
+7. From the directory containing `docker-compose.yml`, start the server: `sudo docker-compose up`.
+8. Open `http://localhost:3000` (or your configured URL) in a browser to complete the setup.
+
+For offline installations, download Docker CE and Docker Compose on a machine with internet access, transfer the packages to your server, and install them manually before proceeding.
 
 <ul>
   <li><a href="#install_centos">Install on CentOS</a></li>
@@ -8991,9 +9622,27 @@ sudo /usr/local/bin/docker-compose up
 # Install GitKraken Desktop on Windows, macOS & Linux | Setup Guide
 URL: https://help.gitkraken.com/gitkraken-desktop/how-to-install/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop is a graphical Git client designed to make version control easier for developers, builders, and teams.
+
+***
+
+## Quick Start
+
+Install GitKraken Desktop on your operating system in three steps.
+
+1. [Download GitKraken Desktop](https://gitkraken.com/download?product=gitkraken&source=help_center) for your platform.
+2. Run the installer:
+   - **Windows**: Double-click the `.exe` file. GitKraken Desktop installs and launches automatically.
+   - **macOS**: Open the `.dmg` file and drag the GitKraken icon into your Applications folder.
+   - **Linux (.deb)**: Run `wget https://release.gitkraken.com/linux/gitkraken-amd64.deb && sudo apt install ./gitkraken-amd64.deb`.
+   - **Linux (.rpm)**: Run `wget https://release.gitkraken.com/linux/gitkraken-amd64.rpm && sudo dnf install ./gitkraken-amd64.rpm`.
+3. Launch GitKraken Desktop:
+   - **Windows/macOS**: Use the shortcut or Applications folder.
+   - **Linux**: Run `gitkraken` in a terminal.
+
+No Git command-line tools are required for basic use. For advanced features like the terminal, Git LFS, or experimental tools, [install Git from git-scm.com](https://git-scm.com/).
 
 There are three simple steps to get started with GitKraken Desktop:
 
@@ -9227,9 +9876,30 @@ For more details, see the [GitKraken pricing plans](https://www.gitkraken.com/pr
 # Interactive Rebase in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/interactive-rebase/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Interactive rebase lets you rewrite commit history by editing, reordering, combining, or removing commits. Use it to clean up your commit history before merging a feature branch.
+
+***
+
+## Quick Start
+
+Use interactive rebase in GitKraken Desktop to reorder, combine, rename, or remove commits before merging.
+
+**To start interactive rebase:**
+- Drag and drop a branch onto a target branch and select **Interactive Rebase**.
+- Or right-click a target branch in the Left Panel and choose **Interactive Rebase**.
+- Or right-click any parent commit in the graph and select the option.
+
+**Available commit actions:**
+- **Pick**: Keep the commit as-is.
+- **Reword**: Edit the commit message.
+- **Squash**: Combine the commit into its parent commit.
+- **Drop**: Remove the commit from history entirely.
+
+Keyboard shortcuts in the rebase view: <kbd>P</kbd> = Pick, <kbd>S</kbd> = Squash, <kbd>R</kbd> = Reword, <kbd>D</kbd> = Drop.
+
+To undo all changes before confirming, click **Reset**. Interactive rebase requires that branches share a common ancestor and that no merge commits exist on the source branch. If you start the rebase in GitKraken Desktop, you must complete it there.
 
 ***
 
@@ -9339,9 +10009,22 @@ To undo all changes during setup, click <button class='button button--primary bu
 # GitKraken Desktop Interface Guide | Toolbar, Panels, and Graph
 URL: https://help.gitkraken.com/gitkraken-desktop/interface/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop's interface simplifies Git usage by providing a visual layout of core actions and repository elements.
+
+***
+
+## Quick Start
+
+Navigate GitKraken Desktop using its three main areas: the Left Panel, the Commit Graph, and the Commit Panel.
+
+- **Left Panel**: Lists your local branches, remotes, tags, stashes, submodules, and integrations. Click any item to interact with it. Right-click for additional actions like checkout, merge, and delete.
+- **Commit Graph**: Displays the visual commit history of the current repository. Click any commit to view its details in the Commit Panel. Click the WIP node at the top to view and stage pending changes.
+- **Commit Panel**: Shows file changes for the selected commit or WIP. Displays diffs, staged/unstaged files, and co-author information. Use it to stage files and write commit messages.
+- **Toolbar**: Located at the top of the window. Provides one-click access to Undo, Redo, Pull, Push, Branch, Stash, and Pop. Use the adjacent dropdowns to customize pull behavior or branch options.
+
+To open the Command Palette at any time, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>P</kbd>. To toggle the Left Panel, use <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> or the toggle in the toolbar. Preferences and integrations are accessible from the gear icon in the upper-right corner.
 
 ***
 
@@ -9716,7 +10399,7 @@ For more advanced views, see [Hiding and Soloing](/working-with-repositories/hid
 URL: https://help.gitkraken.com/gitkraken-desktop/jira-data-center/
 
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken Desktop supports integration with both Jira Cloud and Jira Data Center to help you manage issues directly from your Git workflow.
 
@@ -9770,7 +10453,7 @@ For more information on each feature, refer to the [Jira Cloud integration guide
 URL: https://help.gitkraken.com/gitkraken-desktop/jira/
 
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop makes it easy to integrate with Jira Cloud and Jira Data Center.
 
@@ -9781,6 +10464,24 @@ GitKraken Desktop makes it easy to integrate with Jira Cloud and Jira Data Cente
 <div class='callout callout--basic'>
     <p>The Jira integration is view-only for Community users. To unlock full functionality, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken subscription</a>.</p>
 </div>
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to Jira to view, create, and manage Jira issues alongside your Git workflow.
+
+1. Go to <kbd>Preferences > Integrations</kbd> or click the ISSUES section in the Left Panel. If the ISSUES section is not visible, right-click any Left Panel header and enable it.
+2. Select **Jira Cloud** or **Jira Data Center** and click to authorize. Complete the authorization in the Atlassian browser page that opens.
+3. Once connected, your Jira issues appear in the Left Panel under the _My Issues_ filter by default.
+
+**To view and edit issue details:** Click any issue to open its detail view. You can edit the title, description, status, and assignee. Changes sync with your Jira board.
+
+**To create a new issue:** Click the **+** icon in the Left Panel, fill in the required fields, and submit. The issue syncs to Jira automatically.
+
+**To create a branch from an issue:** Open the issue detail view and click **Create a branch for this issue**. The branch name is pre-filled from the issue title.
+
+**To use JQL filters:** Use the filter syntax in the Left Panel to narrow issues by project, label, sprint, or status.
 
 
 ## Connect Jira Integration
@@ -10189,9 +10890,27 @@ GitKraken Desktop includes a variety of keyboard shortcuts to help you work fast
 # Deep Linking in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/linking/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Use deep links in GitKraken Desktop to share or open specific remote repositories, commits, branches, or tags. This allows your team to quickly access relevant project context with a single click.
+
+***
+
+## Quick Start
+
+Use deep links in GitKraken Desktop to share direct access to branches, commits, tags, or repositories with teammates.
+
+**To copy a deep link:**
+- Right-click a branch, commit, tag, or repository in the Commit Graph or Left Panel and select the copy link option.
+- Paste the copied link into tools like Jira, GitHub, Slack, or Microsoft Teams.
+
+**When a teammate clicks your link:**
+- If the repository is already open, GitKraken Desktop navigates directly to the referenced item.
+- If the repository is not open, GitKraken Desktop attempts to open it automatically.
+- If the repository is not cloned, a clone dialog appears with the URL pre-filled.
+- If multiple local copies exist, you will be prompted to select which copy to use.
+
+Deep links are available for any hosted remote repository that is connected through a GitKraken integration. No additional configuration is required beyond having the repository accessible locally.
 
 ***
 
@@ -10244,9 +10963,31 @@ Deep links streamline collaboration by ensuring you and your teammates view the 
 # Open, Clone, or Initialize a Git Repository in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/open-clone-init/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Each user will need to open, clone, or initialize a repository in GitKraken Desktop. This guide explains how.
+
+***
+
+## Quick Start
+
+Open, clone, or initialize repositories in GitKraken Desktop from the Repository Management tab.
+
+**To open an existing local repository:**
+1. Click the folder icon in the top-left corner or press <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
+2. Click **Browse** and select your repository folder.
+
+**To clone a remote repository:**
+1. Open the Repository Management tab and click **Clone**.
+2. Enter the repository URL or select a repository from your connected integration.
+3. Click **Clone the repo** to download it locally.
+
+**To initialize a new repository:**
+1. Click **Init** in the Repository Management tab.
+2. Fill in the repository path and optional settings (`.gitignore`, license).
+3. Click **Create Repository** to create the repo and open it.
+
+Shallow clone is supported when cloning. Enable the **Shallow Clone** option in the Clone dialog to limit commit history by depth or date. Access all three options from the Repository Management tab, the New Tab, or <kbd>File > Clone / Init / Open</kbd>.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8uxrA56VJgY?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
@@ -10400,9 +11141,27 @@ Also accessible via <kbd><strong>File > Init</strong></kbd> or New Tab.
 # Improve GitKraken Desktop Performance
 URL: https://help.gitkraken.com/gitkraken-desktop/performance-issues/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 If GitKraken Desktop is running slowly, it’s often due to the size or complexity of the repository. Try the steps below to improve performance.
+
+***
+
+## Quick Start
+
+Improve GitKraken Desktop performance by reducing repository complexity and adjusting interface settings.
+
+**Common fixes:**
+- Run **Perform Repo Maintenance** from the Command Palette. This executes `git maintenance run` to optimize the repository’s internal data structures.
+- Set the Auto-fetch interval to `0` in <kbd>Preferences > General</kbd> to disable automatic background fetches.
+- Lower the **Max Commits in Graph** value in <kbd>Preferences > General</kbd> to reduce the number of commits rendered.
+- Delete unnecessary local branches to reduce reference overhead.
+- If Git LFS is in use, run an LFS prune to clean up unreferenced objects.
+- Clone a fresh copy of the repository to a clean directory if the local copy has accumulated issues.
+
+**macOS users on version 11.5.1:** Confirm the installed build matches your chip type (Apple Silicon or Intel) by checking the GitKraken menu. Download the correct version from gitkraken.com if there is a mismatch.
+
+If problems persist after these steps, contact GitKraken support.
 
 ***
 
@@ -10458,9 +11217,27 @@ It’s an easy check:
 # GitKraken Desktop Preferences | Customize Settings & Workflow
 URL: https://help.gitkraken.com/gitkraken-desktop/preferences/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Navigate to <i class="fas fa-cog"></i> <kbd><strong>Preferences</strong></kbd> in GitKraken Desktop to tailor your environment. Here's what each major section controls.
+
+***
+
+## Quick Start
+
+Configure GitKraken Desktop settings by clicking the gear icon in the top-right corner to open Preferences.
+
+- **General**: Set auto-fetch intervals, conflict detection behavior, commit graph limits, and tab retention.
+- **Profiles**: Create and switch between profiles to separate Git identities, integrations, and tab sets.
+- **SSH and Integrations**: Connect to GitHub, GitLab, Bitbucket, Azure DevOps, Jira, Trello, and more.
+- **GitKraken AI**: Enable AI-assisted commit messages and PR descriptions (Pro plan and above).
+- **External Tools**: Set your preferred editor, diff tool, merge tool, and default terminal.
+- **UI Customization**: Change themes, date formats, avatar display, and commit graph metadata.
+- **Commit Signing**: Enable GPG signing for verified commits.
+- **Experimental**: Try preview features such as the Git binary executor.
+- **Repo-Specific Preferences**: Configure encoding, Gitflow, hooks, LFS, issues, and Team View per repository.
+
+Preferences are stored per profile, so switching profiles resets integrations and UI options to that profile's configuration.
 
 <figure>
   <img src="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered" alt="Highlighting the gear icon in GitKraken Desktop to explain where users access Preferences, enabling customization of integrations, UI and more.">
@@ -10628,7 +11405,7 @@ You can configure these uniquely per repository.
 # GitKraken Desktop Profiles | Manage Git Configs & Accounts
 URL: https://help.gitkraken.com/gitkraken-desktop/profiles/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZgYjeaJDbX8?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>
@@ -10637,6 +11414,29 @@ URL: https://help.gitkraken.com/gitkraken-desktop/profiles/
 ***
 
 GitKraken Desktop uses profiles to manage app preferences, [Tabs](/start-here/interface/#tabs), and Git config settings. You can create and switch between profiles for different projects and environments.
+
+***
+
+## Quick Start
+
+Use profiles in GitKraken Desktop to keep separate Git identities, integrations, and tab sessions for different work contexts.
+
+**To create a profile:**
+1. Click the profile icon in the top-right corner.
+2. Select **Manage Profiles**, then click the option to add a new profile.
+3. Enter a profile name, author name, and email address.
+
+**To switch profiles:**
+- Click the profile icon and select the profile you want to use.
+
+**What each profile stores:**
+- Preferences from General, Integrations, and UI Preferences
+- Open tabs (duplicated from the active profile when a new profile is created)
+- Integration connections (for example, connect one profile to a personal GitHub account and another to a work account)
+
+**To sync your profile email with Git's global config:** Enable the option "Keep my .gitconfig updated with my profile info" in <kbd>Preferences > Profiles</kbd>.
+
+Multiple profiles require a paid GitKraken subscription. Profiles are accessible from <kbd>Preferences > Profiles</kbd>.
 
 <figure>
   <img src="/wp-content/uploads/profiles@2x.png" class="help-center-img img-bordered" alt="Add Profile dialog in GitKraken showing selected avatar, profile name, author name, and email fields." />
@@ -10730,7 +11530,7 @@ Yes it can, if each profile has a unique email address linked to a different Gra
 # Pull Request Filter Syntax in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/pull-requests-filter-syntax/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 Use this syntax to filter pull requests in GitKraken Desktop and quickly find the items you need.
 
@@ -10833,9 +11633,31 @@ GitKraken Desktop supports some—but not all—filter options across integratio
 # Pull Requests in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/pull-requests/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 A pull request (sometimes called merge requests) is a review workflow that lets you propose changes in one branch before merging it into another. GitKraken Desktop supports creating, managing, and reviewing pull requests with integrated Git services like GitHub, GitLab, Bitbucket, and Azure DevOps.
+
+***
+
+## Quick Start
+
+Create and manage pull requests in GitKraken Desktop directly from the commit graph or Left Panel.
+
+**To create a pull request:**
+- Drag one branch onto another in the commit graph and select **Start a pull request**.
+- Or right-click the target branch and choose the same option.
+- Or click the **+** icon in the PULL REQUESTS section of the Left Panel.
+
+**To review a pull request (GitHub integration):**
+1. Select a PR in the Left Panel or click the PR icon in the Launchpad.
+2. Click **Review Code and Suggest Changes** to open the diff view.
+3. Write suggestions directly in the editor. Suggestions are posted as comments on the GitHub PR.
+
+**To merge a pull request:** Click **Merge pull request** in the GitHub PR view and select a merge strategy (merge commit, squash, or rebase).
+
+**To filter pull requests:** Use predefined filters like "My pull requests" or create custom filters in the Left Panel. PR icons indicate CI status and review state.
+
+Push your branch to the remote before creating a pull request.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/2VX1ISk9XH8?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
@@ -11104,9 +11926,28 @@ Pull request icons:
 # Push, Pull, and Fetch in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/pushing-and-pulling/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Push, pull, and fetch operations are essential for synchronizing local work with remote repositories in GitKraken Desktop.
+
+***
+
+## Quick Start
+
+Synchronize your work with remote repositories using push, pull, and fetch in GitKraken Desktop.
+
+**To push local commits:** Click **Push** in the toolbar, or right-click a branch and select **Push**. If the remote branch does not exist yet, GitKraken Desktop prompts you to create it. You can also drag a branch onto a remote branch to push.
+
+**To fetch updates:** Click the pull dropdown and select **Fetch All** to retrieve remote changes without modifying your working directory. Fetching runs automatically each minute by default.
+
+**To pull changes:** Click **Pull** in the toolbar. Use the dropdown to choose your preferred pull method:
+- **Fast-forward if possible**: Merges only if fast-forward fails.
+- **Fast-forward only**: Takes no action if fast-forward is not possible.
+- **Rebase**: Replays your commits on top of the updated remote branch.
+
+**To add a remote:** Hover over **Remote** in the Left Panel, click the **+** icon, and enter the URL or select from integration-based dropdowns.
+
+**To set an upstream branch:** Right-click a branch and select the upstream option. You can also drag and drop a branch onto a remote branch to push without setting the upstream explicitly.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/EZFyiSLr-Bc?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
@@ -11323,7 +12164,7 @@ To search from anywhere in the app, open the Command Palette:
 # Set Up GitKraken Self-Hosted Server (On-Premise)
 URL: https://help.gitkraken.com/gitkraken-desktop/self-hosted/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 ## Overview
 
@@ -11378,9 +12219,35 @@ To install Docker CE, the host system must meet Docker's requirements:
 # Installing Self-Signed Certificates for GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/self-signed-certificates/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken's remote hosting platform integrations may require users to have a certificate in place. Follow the instructions below to add a certificate to your local certificate store.
+
+***
+
+## Quick Start
+
+Install a self-signed SSL certificate so GitKraken Desktop can connect to your remote hosting service.
+
+**On Windows (Chrome):**
+1. Navigate to your remote hosting service in Chrome and open the certificate details.
+2. Export the certificate using the Certificate Export Wizard.
+3. Open Chrome Settings, go to **Privacy and Security > Security**, and click **Manage certificates**.
+4. Import the certificate and add it to the Trusted Root Certificates store.
+
+**On macOS (Safari):**
+1. Open Safari and navigate to your remote host.
+2. Hold **Option** and drag the certificate icon to your desktop to save it as a `.pem` file.
+3. Double-click the file to open Keychain Access.
+4. Find the certificate in the login keychain, open it, and set trust to **Always Trust**.
+5. Restart your computer.
+
+**On Linux (Chrome/Ubuntu):**
+1. Export the certificate using the steps from the Windows Chrome section.
+2. Convert and install using `openssl` and `certutil` in the terminal.
+3. Reopen Chrome to confirm the warning no longer appears.
+
+If you have the Git Executable enabled, SSL settings in your global `.gitconfig` are also honored.
 
 ***
 
@@ -11546,13 +12413,28 @@ Use the links below for more help installing certificates by OS:
 # GitKraken On-Premise Serverless (Stand-Alone) Setup
 URL: https://help.gitkraken.com/gitkraken-desktop/serverless/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 **GitKraken On-Premise Serverless** (also known as *GitKraken Stand-Alone*) is designed for teams operating in disconnected or secure environments. It includes most core <a href="https://www.gitkraken.com/git-client" target=_blank>GitKraken features</a>, with additional advantages:
 
 - Works without internet access
 - Requires no account creation
 - Requires no server installation
+
+***
+
+## Quick Start
+
+Install and activate GitKraken On-Premise Serverless for use in offline or secure environments.
+
+1. Download the GitKraken Serverless installer for your operating system from the [downloads page](https://www.gitkraken.com/download-on-premise-serverless).
+2. Install the application:
+   - **Windows**: Double-click the `.exe` file and follow the setup prompts.
+   - **macOS**: Open the DMG and drag the GitKraken icon to your Applications folder.
+   - **Linux (.deb)**: Run `wget https://release.gitkraken.com/linux-standalone/gitkraken-amd64.deb && dpkg -i gitkraken-amd64.deb`.
+3. At first launch, load your `.dat` license file when prompted. If you do not have the file, contact your GitKraken administrator.
+
+If your license expires, replace the `.dat` file in one of the supported directories or click the license text in the bottom-left corner of the app and select **Update License**. GitKraken Serverless is sold separately from standard subscriptions.
 
 <figure class='figure center'>
   <img src="/wp-content/uploads/serverless-example-2025@2x.png" class="img-responsive img-bordered">
@@ -11697,9 +12579,23 @@ If your license expires, you can:
 URL: https://help.gitkraken.com/gitkraken-desktop/squash/
 
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Squashing lets you combine multiple commits into one to clean up your Git history. This is helpful before pushing to a shared branch or finalizing a feature branch.
+
+***
+
+## Quick Start
+
+Squash multiple commits into one in GitKraken Desktop to produce a cleaner commit history.
+
+1. In the Commit Graph, hold <kbd>Shift</kbd> or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> and click to select two or more commits. The selected commits must be consecutive, in a straight ancestor-descendant line, and the oldest must have a parent commit.
+2. Right-click the selection and choose **Squash [N] commits**.
+3. The squashed commit appears in the Commit Panel. Click the commit message to edit and consolidate the messages from the original commits.
+
+**If you need to push a squashed commit that was already pushed:** GitKraken Desktop will warn that your local branch is behind the remote. Click **Force Push** to overwrite the remote branch with the squashed history. Force pushing is destructive and rewrites remote history, so use it only on branches where teammates are not actively working.
+
+Squashing is not available for merge commits or commits that do not meet the consecutive ancestor-descendant requirement.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/cr1N8VTRmfM?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -11767,9 +12663,26 @@ To resolve this:
 URL: https://help.gitkraken.com/gitkraken-desktop/staging/
 
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Learn how to stage files, review changes, and manage tracked content in GitKraken Desktop.
+
+***
+
+## Quick Start
+
+Stage, unstage, and discard file changes in GitKraken Desktop from the Commit Panel.
+
+**To stage files:**
+1. Select the **//WIP** node in the Commit Graph to open the Commit Panel.
+2. Hover over a file and click **Stage File**, or click **Stage all changes** to stage everything at once.
+3. To stage specific lines, click a file to open its diff, highlight the lines, right-click, and select **Stage selected lines**.
+
+**To unstage files:** Select a file under Staged Files and click **Unstage File**. Use **Unstage all changes** to move all staged files back to the working directory.
+
+**To discard changes:** Select the **//WIP** node and click the trash icon to discard all changes or selected files. Right-click a file to discard individual hunks from the diff view.
+
+**To ignore a file:** Right-click any unstaged file and select **Ignore**. Choose to ignore by file name, extension, or directory. GitKraken Desktop adds the rule to the root-level `.gitignore`. For already-tracked files, select **Ignore and Stop Tracking** to also remove the file from the Git index.
 
 ***
 
@@ -11910,9 +12823,27 @@ Selecting <strong>Ignore and Stop Tracking</strong> will add the entry and remov
 # How to Stash Changes in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/stashing/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Save your uncommitted changes for later by creating a stash. Stashing is useful when you need to switch context quickly or test something without committing unfinished work.
+
+***
+
+## Quick Start
+
+Stash and restore uncommitted changes in GitKraken Desktop using the toolbar or Commit Panel.
+
+**To stash all changes:** Click the **Stash** icon in the top toolbar. Your stash appears in the Commit Graph.
+
+**To manage a stash:** Right-click the stash node in the graph to apply, pop, delete, or hide it. Right-click a stash in the Left Panel for the same options.
+
+**To pop the latest stash:** Click the **Pop Stash** button in the toolbar to apply changes and delete the stash in one step.
+
+**To name a stash:** Type a name into the `// WIP` field at the top of the graph before clicking Stash.
+
+**To stash specific files (partial stash):** Stage your files in the Commit Panel, then right-click a file in the Staged Files section and select **Stash file**.
+
+**To apply a partial stash file by file:** Select the stash in the graph, then right-click a file in the Commit Panel and choose to apply it. Applying a single file does not remove the stash.
 
 ***
 
@@ -12044,9 +12975,30 @@ You can also apply changes from a partial stash one file at a time. Right-click 
 # Manage Git Submodules in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/submodules/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Submodules allow you to include another Git repository inside a parent repository. Use submodules to incorporate independent projects while maintaining separate commit histories.
+
+***
+
+## Quick Start
+
+Add, update, and manage Git submodules in GitKraken Desktop from the Left Panel.
+
+**To show the Submodules pane:** Right-click any Left Panel header and check **Submodules**.
+
+**To add a submodule:**
+1. Hover over **Submodules** in the Left Panel and click the **+** icon.
+2. Paste the HTTPS or SSH repository URL and enter the desired path.
+3. GitKraken Desktop updates `.gitmodules` and references the submodule commit.
+
+**To update a submodule:** Open the Submodules pane, right-click the submodule, and select **Update** to fetch its latest commit.
+
+**To change the tracked commit:** Open the submodule in GitKraken Desktop, check out a new commit or branch, then exit the submodule. GitKraken Desktop will prompt you to save the updated pointer.
+
+**To enable automatic updates:** Go to <kbd>Preferences > General</kbd> to update all repos globally, or <kbd>Preferences > Submodules</kbd> for per-repository settings.
+
+When cloning a parent repository that includes submodules, GitKraken Desktop will prompt you to initialize them.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/moC2KyxGb10?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
@@ -12153,7 +13105,7 @@ GitKraken Desktop does **not** support subtree workflows in-app.
 # System Requirements
 URL: https://help.gitkraken.com/gitkraken-desktop/system-requirements/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: January 2026</kbd>
 
 GitKraken Self-Hosted is deployed via Docker containers on a small-spec Linux server or virtual machine. Below are the minimum system and software requirements.
 
@@ -12201,9 +13153,29 @@ Learn more or start a free trial on the [GitKraken On-Premise pricing page](http
 # Manage Git Tags in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/tags/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
-Tags <em class='context-menu'><img style='transform:rotate(180deg);height:1em;' src='/wp-content/uploads/gk-tag-icon.svg'></em> are labels that point to a specific commit in your Git history. They’re useful for marking version releases or significant project milestones.
+Tags <em class=’context-menu’><img style=’transform:rotate(180deg);height:1em;’ src=’/wp-content/uploads/gk-tag-icon.svg’></em> are labels that point to a specific commit in your Git history. They’re useful for marking version releases or significant project milestones.
+
+***
+
+## Quick Start
+
+Create, annotate, push, and manage Git tags in GitKraken Desktop from the commit graph or Left Panel.
+
+**To create a tag:** Right-click a commit in the graph and select **Create tag here**. Enter the tag name and press Enter.
+
+**To create an annotated tag:** Right-click a commit and select **Create annotated tag here**. Annotation messages appear as tooltips in the graph and Left Panel.
+
+**To push a tag to a remote:** Right-click the tag in the Left Panel or graph and select **Push tag**.
+
+**To create a branch from a tag:** Right-click the tag and select **Create branch here**.
+
+**To delete a tag:** Right-click the tag and choose to delete it locally, from the remote, or both. Deletion is permanent.
+
+**To rename a tag:** Tags cannot be renamed directly. Delete the existing tag locally and from the remote, then recreate it with the desired name on the same commit.
+
+**To filter tags:** Use the filter bar at the top of the Tags section in the Left Panel. Toggle the Tags pane by right-clicking any Left Panel header.
 
 ***
 
@@ -12355,13 +13327,35 @@ To toggle visibility of the Tags section:
 # Team View in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/team-view/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 The <i class="fas fa-users"></i> Team View allows you to see what branches and files members of your organization are currently working on. This is helpful for avoiding and collaborating on merge conflicts.
 
 <div class='callout callout--warning'>
     <p><strong>Note:</strong> Team View is only available for Advanced subscription tiers or higher. See the <a href="/start-here/teams/">Teams</a> page for more information on managing teams.</p>
 </div>
+
+***
+
+## Quick Start
+
+Use Team View in GitKraken Desktop to monitor teammate activity and detect potential merge conflicts before they occur.
+
+**To enable Team View:**
+1. Go to <kbd>Preferences > Team</kbd> and select a team from the dropdown.
+2. Optionally check **Use this as the default for all repositories** to persist the selection.
+
+**What Team View shows:**
+- Each teammate's currently checked-out branch
+- Files with local, uncommitted changes per team member
+- Lines added by teammates appear in green; removed lines appear in red
+- An orange warning icon appears on files where you and a teammate have overlapping local changes
+
+**To set your status:** Click the circle icon in the top-right corner or use the Profile/Account menu to toggle between Active and Away.
+
+**To stop sharing your work-in-progress:** Disable **Share work-in-progress status with my team** in <kbd>Preferences > General</kbd>.
+
+Team View requires an Advanced plan or higher. Access it from the Team icon in the toolbar.
 
 ***
 
@@ -12429,7 +13423,7 @@ Take advantage of these additional collaboration tools:
 # GitKraken Desktop Teams | Manage Users, Roles & Collaboration
 URL: https://help.gitkraken.com/gitkraken-desktop/teams/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop users with a <a href="https://www.gitkraken.com/git-client/pricing?source=help_center&product=gitkraken">Pro, Advanced, Business, or Enterprise Cloud</a> account can use the Teams feature to group users within an Organization.
 
@@ -12441,6 +13435,27 @@ Teams can be used for:
 <div class='callout callout--basic'>
   <p><strong>Note:</strong> Pro accounts are limited to 1 Team. Upgrade to an <a href="https://gitkraken.dev/subscription?source=help_center&product=gitkraken">Advanced or Business plan</a> to manage multiple Teams.</p>
 </div>
+
+***
+
+## Quick Start
+
+Create and manage teams in GitKraken Desktop to organize users and enable team collaboration features.
+
+**To manage your organization:**
+1. Open <kbd>Preferences</kbd> and select your organization name in the sidebar.
+2. Click **Invite members** to add users by name, username, or email.
+3. Use the ellipsis menu on a member's entry to change their role or remove them.
+
+**To create a team:**
+1. In the Organization section, click the **+** icon next to Teams.
+2. Name your team, then add members using **Add a member**.
+
+**To rename or delete a team:** Double-click a team name to rename it. Use the ellipsis menu to delete it.
+
+**To remove a team member:** Select the team, then use the ellipsis menu on the member's entry.
+
+Teams are accessible under <kbd>Preferences > Organization</kbd>. Pro accounts support one team. Advanced and Business plans support multiple teams.
 
 ***
 
@@ -12515,15 +13530,33 @@ GitKraken Desktop can suggest users who contribute to the current repository but
 # GitKraken Terminal Guide
 URL: https://help.gitkraken.com/gitkraken-desktop/terminal/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Open the Terminal to run Git CLI commands while viewing the Commit Graph.
 
 To get started, open a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar, or search for "terminal" using the <a href="/working-with-repositories/command-palette">Command Palette</a>.
 
+***
+
+## Quick Start
+
+Use the GitKraken Desktop terminal to run Git commands alongside the visual commit graph.
+
+**To open the terminal:** Click the Terminal icon in the toolbar or search for "terminal" in the Command Palette.
+
+**To run commands:** Type any Git command such as `git status`, `git commit -m "message"`, or `git log --oneline`. Auto-complete suggestions appear as you type, including flag suggestions for each command.
+
+**To customize terminal appearance:** Go to <kbd>Preferences > In-App Terminal</kbd> to change font, size, line height, cursor style, and autocomplete behavior.
+
+**To set your default shell:**
+- **macOS/Linux**: Set ZSH or Bash as the default shell in your OS settings and restart your machine.
+- **Windows**: Open <kbd>Preferences > Terminal</kbd> and select PowerShell or Bash.
+
+The terminal shares context with the open repository, so commands run against the correct working directory automatically.
+
 <figure>
-  <img src="/wp-content/uploads/terminal-button-2025@2x.png" 
-       class="help-center-img img-bordered" 
+  <img src="/wp-content/uploads/terminal-button-2025@2x.png"
+       class="help-center-img img-bordered"
        alt="GitKraken Desktop interface showing the Terminal button in the top toolbar and an open terminal panel running the git status command.">
   <figcaption style="text-align:center; color:#888">Launch the terminal from the GitKraken toolbar</figcaption>
 </figure>
@@ -12593,7 +13626,7 @@ These commands complement GitKraken’s visual graph for a comprehensive Git exp
 # GitKraken Desktop Themes | Customize Light, Dark & Custom UI
 URL: https://help.gitkraken.com/gitkraken-desktop/themes/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 <figure>
   <div class='embed-container embed-container--16-9'>
@@ -12601,6 +13634,24 @@ URL: https://help.gitkraken.com/gitkraken-desktop/themes/
   </div>
   <figcaption style="text-align:center; color:#888">Watch how to switch and create themes in GitKraken Desktop.</figcaption>
 </figure>
+
+***
+
+## Quick Start
+
+Change the GitKraken Desktop theme or create a custom theme to match your preferred visual style.
+
+**To switch themes:** Go to <kbd>Preferences > UI Customization</kbd> and select a theme, or open the Command Palette and type `switch theme`.
+
+**To sync with your system theme:** Enable the system theme sync option in <kbd>Preferences > UI Customization</kbd>. GitKraken Desktop will follow your OS light or dark setting when supported.
+
+**To create a custom theme:**
+1. Open <kbd>Preferences > UI Customization > Theme</kbd> and click the folder to navigate to `~/.gitkraken/themes/`.
+2. Copy a `.jsonc-default` template file and rename it with a `.jsonc` extension.
+3. Open the file in a text editor and set a unique `meta.name` and a `scheme` value of `light` or `dark`.
+4. Save the file. Your custom theme appears in the theme list immediately. Changes take effect live without restarting GitKraken Desktop.
+
+Custom themes have been disabled as of version 11.8.0 while the UI is being modernized. Built-in themes remain available.
 
 ***
 <div class='callout callout--warning'>
@@ -12858,9 +13909,27 @@ Hover over the graph’s colored lines and drag to resize.
 URL: https://help.gitkraken.com/gitkraken-desktop/trello/
 
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop makes it easy to integrate with Trello to help manage cards and tasks alongside your repository.
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to Trello to view, create, and manage cards alongside your Git workflow.
+
+1. Go to <kbd>Preferences > Integrations</kbd> or click the ISSUES section in the Left Panel.
+2. Select **Trello** and click to authorize. Complete the authorization on the Trello page that opens and click **Allow**.
+3. Once connected, your Trello cards appear in the Left Panel under the _All Cards_ filter by default.
+
+**To view and edit a card:** Click any card to open its detail view. You can edit the title, description, list, assignees, and comments. Changes sync with your Trello board in real-time.
+
+**To create a new card:** Click the **+** icon in the Left Panel, fill in the required fields, and submit. The card syncs to Trello automatically.
+
+**To create a branch from a card:** Open the card detail view and click **Create branch**. The branch name is pre-filled from the card title and displays the Trello icon.
+
+**To filter cards:** Use Trello's filter syntax in the Left Panel to narrow results by board, list, label, or member.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/huH2nZaGG-s" frameborder="0" allowfullscreen></iframe>
@@ -12950,17 +14019,31 @@ Click the <kbd><i class="fa fa-ellipsis-v"></i></kbd> icon or the <i class="fa f
 URL: https://help.gitkraken.com/gitkraken-desktop/undo-and-redo/
 
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Have you ever made a Git change and immediately wished you could take it back? Whether it’s an accidental commit, a discarded change, or a deleted branch, GitKraken Desktop lets you undo many actions quickly and safely.
 
 You can undo many common actions with a single click of the **Undo** button. If you undo something by mistake, you can also **redo** it just as easily.
 
+***
+
+## Quick Start
+
+Undo or redo Git actions in GitKraken Desktop using the toolbar buttons or keyboard shortcuts.
+
+**To undo an action:** Click the **Undo** button in the toolbar, or press <kbd>Cmd + Z</kbd> (Mac) or <kbd>Ctrl + Z</kbd> (Windows/Linux).
+
+**To redo an undone action:** Press <kbd>Cmd + Y</kbd> or <kbd>Cmd + Shift + Z</kbd> (Mac), or <kbd>Ctrl + Y</kbd> or <kbd>Ctrl + Shift + Z</kbd> (Windows/Linux).
+
+**Supported undo actions include:** Checkout, Commit, Discard, Delete branch, Remove remote, Reset branch to a commit, and rebase operations including Interactive Rebase, Multi-Commit Cherry Pick, dropping and rewording commits, and AI Commit Compose.
+
+Undo is available for the most recent supported action. Redo is available for any action that was just undone.
+
 <figure>
-    <img src='/wp-content/uploads/undo-undo-2025.png' 
-         class="help-center-img img-bordered" 
-         alt="GitKraken Desktop showing the Undo button with tooltip: 'Undo Commit amend “Updates the GitKraken commit documentation to reflect UI”'.">
-    <figcaption style="color: #888; text-align: center;">Click the Undo button to revert supported Git actions.</figcaption>
+    <img src=’/wp-content/uploads/undo-undo-2025.png’
+         class=”help-center-img img-bordered”
+         alt=”GitKraken Desktop showing the Undo button with tooltip: ‘Undo Commit amend “Updates the GitKraken commit documentation to reflect UI”’.”>
+    <figcaption style=”color: #888; text-align: center;”>Click the Undo button to revert supported Git actions.</figcaption>
 </figure>
 
 ### Supported Undo Actions
@@ -13012,13 +14095,33 @@ Use these shortcuts to move faster and stay in your flow while working in GitKra
 # Upgrade GitKraken Self-Hosted Server (Docker & Client Instructions)
 URL: https://help.gitkraken.com/gitkraken-desktop/upgrade-enterprise/
 
-<kbd>Last updated: January 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 The upgrade procedure is the same whether you're running GitKraken Self-Hosted on CentOS, Ubuntu, or RHEL7.
 
 <div class='callout callout--warning'>
     <p><strong>Note:</strong> GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, see our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
 </div>
+
+***
+
+## Quick Start
+
+Upgrade GitKraken Self-Hosted Server, client installers, and your license file using Docker Compose.
+
+**To upgrade the server:**
+1. Navigate to the folder containing `docker-compose.yml` and run `sudo docker-compose down`.
+2. Back up the existing `docker-compose.yml`.
+3. Extract the new `GitKrakenEnterpriseServer.zip` into the same folder.
+4. Compare the old and new `docker-compose.yml` for port, volume, or environment variable changes.
+5. Run `sudo sh loadImages.sh` to load the new Docker images.
+6. Run `sudo docker-compose up` to restart the server.
+
+**To upgrade client installers:** Locate the release volume path in `docker-compose.yml` under `gk-enterprise-controller`, navigate to the host path, and extract the new `release.zip` into that directory.
+
+**To update the license:** Copy the new `license.dat` file to the server, open the License tab on your Enterprise site, and upload the file.
+
+**To reset the Super User password:** Stop the server, add `SUPER_USER_RESET: 1` to the `gk-services` environment in `docker-compose.yml`, restart, and visit `/reset/super-user` in your browser.
 
 ***
 
@@ -13141,9 +14244,27 @@ To update your GitKraken Self-Hosted license:
 # Use GitKraken Desktop with Windows Subsystem for Linux (WSL 2)
 URL: https://help.gitkraken.com/gitkraken-desktop/windows-subsystem-for-linux/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Learn how to run GitKraken Desktop on Windows Subsystem for Linux (WSL 2), including GUI integration and installation requirements.
+
+***
+
+## Quick Start
+
+Install and run GitKraken Desktop inside WSL 2 on Windows to work with Linux-hosted repositories.
+
+1. **Update WSL 2**: From PowerShell or Command Prompt (run as Administrator), run `wsl --update`. To install WSL with Ubuntu, run `wsl --install -d ubuntu` and reboot.
+2. **Download GitKraken Desktop for Linux**: For Ubuntu, run:
+   ```bash
+   wget https://api.gitkraken.dev/releases/production/linux/x64/active/gitkraken-amd64.deb
+   sudo apt install ./gitkraken-amd64.deb
+   ```
+3. **Launch GitKraken Desktop**: Run `gitkraken` in your WSL 2 terminal. With WSLg installed, the app displays natively within Windows.
+
+**Requirements:** Windows 11 or Windows 10 build 19044+, WSL 2 distribution, GitKraken Desktop 9.1.0+ for Linux.
+
+Keep your repositories on the same file system as the GitKraken Desktop installation you use. Accessing repos across file systems (for example, opening a WSL repo from GitKraken installed on Windows) results in degraded performance or non-functional features. If this happens, GitKraken Desktop will prompt you to open the repo with the correct installation.
 
 ## What is WSL/WSL 2?
 
@@ -13320,12 +14441,35 @@ You can choose:
 # Workspaces in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/workspaces/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Workspaces allow you to create easily accessible groups of repositories, take action across multiple repos, view details about their state at a glance, and share them with your team.
 
+***
+
+## Quick Start
+
+Create and use Workspaces in GitKraken Desktop to organize repositories and take actions across multiple repos at once.
+
+**To open the Workspaces view:** Click the folder icon in the top-left or press <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
+
+**To create a Cloud Workspace:**
+1. Click **+ New Workspace** and select **Cloud Workspace**.
+2. Name the Workspace, select a hosting service, and choose repositories.
+3. Optionally share with teams or users and add an icon and description.
+
+**To create a Local Workspace:** Click **New Workspace**, select **Local Workspace**, name it, and browse to select repositories or a directory.
+
+**To act across multiple repositories:** Select the checkboxes next to repositories, then use the toolbar to Fetch, Pull, Clone, Open, or Remove them in bulk.
+
+**To view pull requests for all repos:** Open a Cloud Workspace and click the Insights or Launchpad icon to see PRs across the entire Workspace.
+
+**To convert a Local Workspace to Cloud:** Open the Workspace and click **Create cloud workspace**. Requires a connected integration under <kbd>Preferences > Integrations</kbd>.
+
+Workspaces are accessible from the Repository Management tab.
+
 <figure>
-  <img src="/wp-content/uploads/workspaces-tab-2025@2x.png" 
+  <img src="/wp-content/uploads/workspaces-tab-2025@2x.png"
        class="help-center-img img-bordered"
        alt="GitKraken Desktop showing multiple cloud Workspaces, each grouping related repositories with options to clone, locate, or manage them.">
   <figcaption style="color:#888; text-align:center">
@@ -13747,9 +14891,27 @@ Take a trip down memory lane, and see how Workspaces have evolved over time.
 # Manage Git Worktrees in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/worktrees/
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Learn how to manage Git worktrees using GitKraken Desktop. Worktrees let you work on multiple branches at the same time, with each in its own working directory.
+
+***
+
+## Quick Start
+
+Create and manage Git worktrees in GitKraken Desktop to work on multiple branches simultaneously, each in its own working directory.
+
+**To create a worktree:**
+1. Right-click a branch in the Repository View.
+2. Select **Create worktree**.
+
+**To switch between worktrees:** Right-click a worktree in the Left Panel and choose **Open this worktree**, or check out the corresponding branch from the Repository View.
+
+**To remove a worktree:** Right-click it in the Left Panel and select **Remove this worktree**.
+
+**To lock or unlock a worktree:** Right-click the worktree and choose **Lock this worktree** or **Unlock this worktree**. Locking prevents accidental changes while you work in another worktree.
+
+Worktrees share Git history with the main repository. Changes committed in one worktree are visible in others. Hover over a worktree in the Left Panel to see its full file path. Worktrees are supported in GitKraken Desktop 10.5.0 and later.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/grAsFn5yvjA?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>

@@ -4,13 +4,30 @@ description: Step-by-step guide to installing GitKraken Self-Hosted Server on Ce
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Self-Hosted Server runs on a Linux virtual machine (CentOS, Ubuntu, or RHEL7) inside Docker containers. To begin, you'll first need to install Docker.
 
 <div class='callout callout--warning'>
     <p>GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, visit our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?_gl=1*vtr4xk*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmv98H0EKgytPnuCPuTqdL2vy4GQaCsizBMO9m8mz2n1hMMXO3AAw7YaAiyKEALw_wcB?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
 </div>
+
+***
+
+## Quick Start
+
+Install GitKraken Self-Hosted Server on a Linux machine using Docker and Docker Compose.
+
+1. Install Docker CE and Docker Compose on your Linux host (CentOS, Ubuntu, or RHEL7). Follow the platform-specific steps in the sections below, or refer to the official [Docker documentation](https://docs.docker.com/).
+2. Start Docker: `sudo systemctl start docker`.
+3. Extract `GitKrakenEnterpriseServer.zip` into a directory on your host machine.
+4. Load the Docker images: `sudo sh loadImages.sh`.
+5. (Optional) Edit `docker-compose.yml` to change the port (default: 3000) and set the `GITKRAKEN_ENTERPRISE_URL` to your server's address.
+6. Create the directory for GitKraken Desktop releases and extract `release.zip` into it (default path: `./gk-data/release`).
+7. From the directory containing `docker-compose.yml`, start the server: `sudo docker-compose up`.
+8. Open `http://localhost:3000` (or your configured URL) in a browser to complete the setup.
+
+For offline installations, download Docker CE and Docker Compose on a machine with internet access, transfer the packages to your server, and install them manually before proceeding.
 
 <ul>
   <li><a href="#install_centos">Install on CentOS</a></li>
@@ -362,3 +379,11 @@ sudo /usr/local/bin/docker-compose up
 ```
 
 9. Visit `http://localhost:3000` (or the configured URL/port) in your browser to complete the setup.
+<style>
+pre{position:relative}
+.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s}
+pre:hover .copy-btn{opacity:1}
+.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
+.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
+</style>
+<script>(function(){var C='<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2 2v1"></path></svg>',K='<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p;cp(el.innerText.replace(/\n$/,'')).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>

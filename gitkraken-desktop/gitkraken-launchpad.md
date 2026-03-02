@@ -4,13 +4,13 @@ description: Learn how to track pull requests, issues, and WIPs using GitKraken 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Launchpad provides a unified overview of your Pull Requests, Issues, and Works In Progress (WIPs) for your selected Workspace or collaborators. Use it to monitor your personal tasks and your team’s contributions in one place.
 
 <figure>
-  <img src="/wp-content/uploads/launchpad-highlight-2025@2x.png" 
-       class="help-center-img img-bordered" 
+  <img src="/wp-content/uploads/launchpad-highlight-2025@2x.png"
+       class="help-center-img img-bordered"
        alt="GitKraken Desktop Launchpad view showing a list of pull requests with unassigned reviewers on the left and detailed GitHub pull request panel open on the right.">
   <figcaption style="color:#888; text-align:center">
     Launchpad displaying a list of unassigned reviewers, with a PR open for more details
@@ -18,6 +18,24 @@ Launchpad provides a unified overview of your Pull Requests, Issues, and Works I
 </figure>
 
 The Launchpad is also <a href="https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/#elementor-toc__heading-anchor-13">available for GitKraken On-Premise</a> customers with some feature variations.
+
+***
+
+## Quick Start
+
+Use GitKraken Launchpad to monitor pull requests, issues, and uncommitted changes across your repositories in one place.
+
+1. Click the **Launchpad** tab in the top-left corner of GitKraken Desktop.
+2. Connect your integrations via <kbd>Preferences > Integrations</kbd>, or follow the in-app prompts.
+3. Select a Cloud Workspace from the dropdown to filter activity to specific repositories.
+4. Use the **Pull Requests**, **Issues**, **WIPs**, or **All** tabs to view relevant items.
+5. Toggle between **Personal View** (items assigned to or created by you) and **Team View** (items from others) using the toggle in the top-right.
+
+To prioritize items:
+- Click the pin icon to keep a PR or issue at the top of the list.
+- Click the snooze icon to hide an item temporarily. Snoozed items appear in the **Snoozed** tab.
+
+To save a filtered view for reuse, click the **+** Save View icon in the Launchpad tab bar and name it. Saved views are tied to the mode (Personal or Team) in which they were created.
 
 ***
 

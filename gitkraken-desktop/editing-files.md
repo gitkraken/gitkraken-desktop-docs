@@ -5,9 +5,31 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Learn how to edit, save, and manage files using GitKraken Desktop’s built-in editor.
+
+***
+
+## Quick Start
+
+Edit files directly in GitKraken Desktop without switching to an external editor.
+
+**To open a file for editing:**
+- Right-click any file in the Commit Panel or via **View all files** and select **Edit file**.
+- Or open the Command Palette (<kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>P</kbd>), type `Edit File`, and enter the filename.
+- Or click the **Edit this file** button from any file diff view.
+
+**To save changes:**
+- Press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>S</kbd>. A blue dot in the editor indicates unsaved changes.
+
+**To discard unsaved changes:**
+- Hover over the blue dot in the editor tab and click the **X**, then confirm with **Don’t Save**.
+
+**To stage your edits:**
+- Click **Stage File** in the Commit Panel. Choose **Save and stage** to save and stage together, or **Stage saved changes only** to stage only what was already saved.
+
+For `.md` files, click **Preview** in the editor toolbar to toggle a rendered Markdown preview alongside the editor. GitKraken Desktop expects UTF-8 encoding by default; adjust the encoding setting from the dropdown in the editor or under <kbd>Preferences > Encoding</kbd>.
 
 ***
 

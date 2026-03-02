@@ -4,9 +4,27 @@ description: Learn how to create, switch, and manage Git worktrees in GitKraken 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Learn how to manage Git worktrees using GitKraken Desktop. Worktrees let you work on multiple branches at the same time, with each in its own working directory.
+
+***
+
+## Quick Start
+
+Create and manage Git worktrees in GitKraken Desktop to work on multiple branches simultaneously, each in its own working directory.
+
+**To create a worktree:**
+1. Right-click a branch in the Repository View.
+2. Select **Create worktree**.
+
+**To switch between worktrees:** Right-click a worktree in the Left Panel and choose **Open this worktree**, or check out the corresponding branch from the Repository View.
+
+**To remove a worktree:** Right-click it in the Left Panel and select **Remove this worktree**.
+
+**To lock or unlock a worktree:** Right-click the worktree and choose **Lock this worktree** or **Unlock this worktree**. Locking prevents accidental changes while you work in another worktree.
+
+Worktrees share Git history with the main repository. Changes committed in one worktree are visible in others. Hover over a worktree in the Left Panel to see its full file path. Worktrees are supported in GitKraken Desktop 10.5.0 and later.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/grAsFn5yvjA?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>

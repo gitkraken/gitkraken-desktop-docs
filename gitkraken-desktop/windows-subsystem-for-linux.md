@@ -4,9 +4,27 @@ description: Step-by-step guide to using GitKraken Desktop in WSL 2, including s
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Learn how to run GitKraken Desktop on Windows Subsystem for Linux (WSL 2), including GUI integration and installation requirements.
+
+***
+
+## Quick Start
+
+Install and run GitKraken Desktop inside WSL 2 on Windows to work with Linux-hosted repositories.
+
+1. **Update WSL 2**: From PowerShell or Command Prompt (run as Administrator), run `wsl --update`. To install WSL with Ubuntu, run `wsl --install -d ubuntu` and reboot.
+2. **Download GitKraken Desktop for Linux**: For Ubuntu, run:
+   ```bash
+   wget https://api.gitkraken.dev/releases/production/linux/x64/active/gitkraken-amd64.deb
+   sudo apt install ./gitkraken-amd64.deb
+   ```
+3. **Launch GitKraken Desktop**: Run `gitkraken` in your WSL 2 terminal. With WSLg installed, the app displays natively within Windows.
+
+**Requirements:** Windows 11 or Windows 10 build 19044+, WSL 2 distribution, GitKraken Desktop 9.1.0+ for Linux.
+
+Keep your repositories on the same file system as the GitKraken Desktop installation you use. Accessing repos across file systems (for example, opening a WSL repo from GitKraken installed on Windows) results in degraded performance or non-functional features. If this happens, GitKraken Desktop will prompt you to open the repo with the correct installation.
 
 ## What is WSL/WSL 2?
 
@@ -184,3 +202,12 @@ You can choose:
 </div>
 
 
+
+<style>
+pre{position:relative}
+.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s}
+pre:hover .copy-btn{opacity:1}
+.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
+.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
+</style>
+<script>(function(){var C='<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2 2v1"></path></svg>',K='<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p;cp(el.innerText.replace(/\n$/,'')).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>

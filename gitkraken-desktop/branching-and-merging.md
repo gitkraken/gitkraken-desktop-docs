@@ -4,7 +4,7 @@ description: Learn how to create branches, merge code, and rebase commits using 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Learn how to branch, merge, and rebase in GitKraken Desktop.
 
@@ -13,6 +13,28 @@ Learn how to branch, merge, and rebase in GitKraken Desktop.
 </div>
 
 Looking for a quick summary? See [how GitKraken solves merge conflicts](https://www.gitkraken.com/developer-problems/merge-conflicts?product=gitkraken&source=help_center).
+
+***
+
+## Quick Start
+
+Use GitKraken Desktop to create branches, merge changes, and rebase commits without leaving the application.
+
+**To create and check out a branch:**
+1. Right-click any commit in the graph and select **Create branch here**.
+2. Enter a branch name and press <kbd>Enter</kbd>.
+3. Double-click the branch label in the graph or Left Panel to check it out.
+
+**To merge a branch:**
+1. Check out the branch you want to merge into.
+2. Right-click the source branch in the Left Panel and select **Merge**, or drag and drop it onto the target branch.
+3. If conflicts occur, click a conflicted file in the Commit Panel to open the Merge Tool. Select lines from each side, save the output, and commit.
+
+**To rebase:**
+1. Drag the source branch onto the target branch and select **Rebase**.
+2. Resolve any conflicts if prompted, then confirm.
+
+To delete a branch, first check out a different branch, then right-click the target branch and select **Delete**. Use <kbd>Shift</kbd> or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> in the Left Panel to select and delete multiple branches at once.
 
 ***
 

@@ -4,13 +4,31 @@ description: Learn how to commit changes in GitKraken Desktop, including staging
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop simplifies the Git commit process by helping you stage, commit, and push your work from a visual interface.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8a6fYPkBDbY?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>
+
+***
+
+## Quick Start
+
+Create a commit in GitKraken Desktop by staging your changes and entering a commit message.
+
+1. Save changes to your files. The **WIP** (Work in Progress) node appears at the top of the Commit Graph.
+2. Click the WIP node to open the Commit Panel and view changed files.
+3. Click a file to review its diff, then click the checkbox or the file name to stage it. To stage all files, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>.
+4. Enter a commit message in the message field.
+5. Click **Commit**, or press <kbd>Cmd</kbd>/<kbd>Enter</kbd> (macOS) or <kbd>Ctrl</kbd>/<kbd>Enter</kbd> (Windows/Linux).
+
+To commit and push in one step, enable the **Push after committing** option before clicking **Commit**.
+
+To amend the most recent commit, stage any additional changes, then check **Amend the previous commit** in the Commit Panel. To update only the message, click the most recent commit in the graph and edit the message field directly, then click **Update Message**.
+
+To undo a commit, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Z</kbd> or click the **Undo** button in the toolbar.
 
 ***
 
@@ -230,3 +248,11 @@ Right-click any commit node in the graph and choose **Revert Commit**. GitKraken
     <img src='/wp-content/uploads/revert-commit-2025.png' class="help-center-img img-bordered" alt="Context menu in GitKraken showing the 'Revert commit' option highlighted." />
     <figcaption style="text-align: center; color: #888;">Use the revert option to create a new commit that undoes a previous one.</figcaption>
 </figure>
+<style>
+pre{position:relative}
+.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s}
+pre:hover .copy-btn{opacity:1}
+.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
+.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
+</style>
+<script>(function(){var C='<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2 2v1"></path></svg>',K='<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p;cp(el.innerText.replace(/\n$/,'')).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>

@@ -5,9 +5,23 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Squashing lets you combine multiple commits into one to clean up your Git history. This is helpful before pushing to a shared branch or finalizing a feature branch.
+
+***
+
+## Quick Start
+
+Squash multiple commits into one in GitKraken Desktop to produce a cleaner commit history.
+
+1. In the Commit Graph, hold <kbd>Shift</kbd> or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> and click to select two or more commits. The selected commits must be consecutive, in a straight ancestor-descendant line, and the oldest must have a parent commit.
+2. Right-click the selection and choose **Squash [N] commits**.
+3. The squashed commit appears in the Commit Panel. Click the commit message to edit and consolidate the messages from the original commits.
+
+**If you need to push a squashed commit that was already pushed:** GitKraken Desktop will warn that your local branch is behind the remote. Click **Force Push** to overwrite the remote branch with the squashed history. Force pushing is destructive and rewrites remote history, so use it only on branches where teammates are not actively working.
+
+Squashing is not available for merge commits or commits that do not meet the consecutive ancestor-descendant requirement.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/cr1N8VTRmfM?ecver=1" frameborder="0" allowfullscreen></iframe>

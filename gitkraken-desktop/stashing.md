@@ -4,9 +4,27 @@ description: Save and manage your uncommitted changes with stashing in GitKraken
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Save your uncommitted changes for later by creating a stash. Stashing is useful when you need to switch context quickly or test something without committing unfinished work.
+
+***
+
+## Quick Start
+
+Stash and restore uncommitted changes in GitKraken Desktop using the toolbar or Commit Panel.
+
+**To stash all changes:** Click the **Stash** icon in the top toolbar. Your stash appears in the Commit Graph.
+
+**To manage a stash:** Right-click the stash node in the graph to apply, pop, delete, or hide it. Right-click a stash in the Left Panel for the same options.
+
+**To pop the latest stash:** Click the **Pop Stash** button in the toolbar to apply changes and delete the stash in one step.
+
+**To name a stash:** Type a name into the `// WIP` field at the top of the graph before clicking Stash.
+
+**To stash specific files (partial stash):** Stage your files in the Commit Panel, then right-click a file in the Staged Files section and select **Stash file**.
+
+**To apply a partial stash file by file:** Select the stash in the graph, then right-click a file in the Commit Panel and choose to apply it. Applying a single file does not remove the stash.
 
 ***
 

@@ -4,9 +4,28 @@ description: Learn how to push, pull, and fetch changes with GitKraken Desktop. 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Push, pull, and fetch operations are essential for synchronizing local work with remote repositories in GitKraken Desktop.
+
+***
+
+## Quick Start
+
+Synchronize your work with remote repositories using push, pull, and fetch in GitKraken Desktop.
+
+**To push local commits:** Click **Push** in the toolbar, or right-click a branch and select **Push**. If the remote branch does not exist yet, GitKraken Desktop prompts you to create it. You can also drag a branch onto a remote branch to push.
+
+**To fetch updates:** Click the pull dropdown and select **Fetch All** to retrieve remote changes without modifying your working directory. Fetching runs automatically each minute by default.
+
+**To pull changes:** Click **Pull** in the toolbar. Use the dropdown to choose your preferred pull method:
+- **Fast-forward if possible**: Merges only if fast-forward fails.
+- **Fast-forward only**: Takes no action if fast-forward is not possible.
+- **Rebase**: Replays your commits on top of the updated remote branch.
+
+**To add a remote:** Hover over **Remote** in the Left Panel, click the **+** icon, and enter the URL or select from integration-based dropdowns.
+
+**To set an upstream branch:** Right-click a branch and select the upstream option. You can also drag and drop a branch onto a remote branch to push without setting the upstream explicitly.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/EZFyiSLr-Bc?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>

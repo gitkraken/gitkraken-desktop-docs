@@ -5,13 +5,33 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 [GitHub Actions](https://github.com/features/actions) is a service from GitHub that lets you automate tasks in your repository using workflow files. These workflows are written in YAML and stored in the `.github/workflows` directory of your repository.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/qr3vwIvXUfc?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>
+
+***
+
+## Quick Start
+
+Create, edit, and delete GitHub Actions workflow files from within GitKraken Desktop without leaving the application.
+
+**To create a workflow:**
+1. Open a GitHub-hosted repository in GitKraken Desktop. The **GitHub Actions** section appears in the Left Panel.
+2. Hover over **GitHub Actions** and click the **+** button to open the Create Workflow panel.
+3. Choose a workflow template or start with a blank file.
+4. The workflow is saved automatically in the `.github/workflows` directory.
+
+**To edit an existing workflow:**
+- Double-click the workflow file in the Left Panel under **GitHub Actions** to open and modify it.
+
+**To delete a workflow:**
+- Right-click the workflow file and select **Delete Workflow**.
+
+The **GitHub Actions** section is only visible when working with a GitHub-hosted repository that has the GitHub integration connected. For workflow syntax, triggers, and advanced configuration options, refer to the [GitHub Actions Documentation](https://docs.github.com/en/actions).
 
 ---
 

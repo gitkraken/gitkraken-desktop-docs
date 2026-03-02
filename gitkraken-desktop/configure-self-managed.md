@@ -5,13 +5,29 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 After installing GitKraken Self-Hosted Server (also known as Enterprise Self-Hosted), you're ready to configure your server.
 
 <div class='callout callout--warning'>
   <p>GitKraken Desktop Self-Hosted and On-Premise Serverless products are sold separately from standard subscriptions. Visit our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?source=help_center&product=gitkraken'>On-Premise Pricing</a> page to learn more.</p>
 </div>
+
+***
+
+## Quick Start
+
+Configure GitKraken Self-Hosted Server after installation by completing the license, authentication, SMTP, and Super User setup steps.
+
+1. Navigate to your GitKraken Self-Hosted server in a browser.
+2. Click **Browse for license** and upload the license file included with your installation package.
+3. Choose an authentication method: **Built-in** (email and password) or **LDAP**.
+   - If using LDAP, enter your server hostname, port, encryption method, base DNs, group CNs, and user attribute mappings. Optionally enable the Sync Server for automatic user syncing.
+4. If using Built-in authentication, configure your SMTP server: enter the hostname, port, From Address, and credentials, then click the test connection button to verify.
+5. Create a Super User account by entering an email and password. This account manages the server but cannot log in to GitKraken Desktop directly.
+6. Click **Save** to complete configuration. The Manage Users screen will appear, where you can begin adding user accounts.
+
+To add users, click **Add user** and enter the user's email. To disable self-registration, adjust the setting in the **Registration** tab.
 
 ***
 

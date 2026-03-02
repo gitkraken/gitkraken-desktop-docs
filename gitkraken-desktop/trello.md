@@ -5,9 +5,27 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop makes it easy to integrate with Trello to help manage cards and tasks alongside your repository.
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to Trello to view, create, and manage cards alongside your Git workflow.
+
+1. Go to <kbd>Preferences > Integrations</kbd> or click the ISSUES section in the Left Panel.
+2. Select **Trello** and click to authorize. Complete the authorization on the Trello page that opens and click **Allow**.
+3. Once connected, your Trello cards appear in the Left Panel under the _All Cards_ filter by default.
+
+**To view and edit a card:** Click any card to open its detail view. You can edit the title, description, list, assignees, and comments. Changes sync with your Trello board in real-time.
+
+**To create a new card:** Click the **+** icon in the Left Panel, fill in the required fields, and submit. The card syncs to Trello automatically.
+
+**To create a branch from a card:** Open the card detail view and click **Create branch**. The branch name is pre-filled from the card title and displays the Trello icon.
+
+**To filter cards:** Use Trello's filter syntax in the Left Panel to narrow results by board, list, label, or member.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/huH2nZaGG-s" frameborder="0" allowfullscreen></iframe>

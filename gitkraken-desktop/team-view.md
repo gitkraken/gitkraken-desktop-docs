@@ -4,13 +4,35 @@ description: Learn how to use Team View in GitKraken Desktop to see branch activ
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 The <i class="fas fa-users"></i> Team View allows you to see what branches and files members of your organization are currently working on. This is helpful for avoiding and collaborating on merge conflicts.
 
 <div class='callout callout--warning'>
     <p><strong>Note:</strong> Team View is only available for Advanced subscription tiers or higher. See the <a href="/start-here/teams/">Teams</a> page for more information on managing teams.</p>
 </div>
+
+***
+
+## Quick Start
+
+Use Team View in GitKraken Desktop to monitor teammate activity and detect potential merge conflicts before they occur.
+
+**To enable Team View:**
+1. Go to <kbd>Preferences > Team</kbd> and select a team from the dropdown.
+2. Optionally check **Use this as the default for all repositories** to persist the selection.
+
+**What Team View shows:**
+- Each teammate's currently checked-out branch
+- Files with local, uncommitted changes per team member
+- Lines added by teammates appear in green; removed lines appear in red
+- An orange warning icon appears on files where you and a teammate have overlapping local changes
+
+**To set your status:** Click the circle icon in the top-right corner or use the Profile/Account menu to toggle between Active and Away.
+
+**To stop sharing your work-in-progress:** Disable **Share work-in-progress status with my team** in <kbd>Preferences > General</kbd>.
+
+Team View requires an Advanced plan or higher. Access it from the Team icon in the toolbar.
 
 ***
 

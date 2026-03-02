@@ -4,7 +4,7 @@ description: Learn how to use GitKraken Desktop profiles to manage Git settings,
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZgYjeaJDbX8?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>
@@ -13,6 +13,29 @@ taxonomy:
 ***
 
 GitKraken Desktop uses profiles to manage app preferences, [Tabs](/start-here/interface/#tabs), and Git config settings. You can create and switch between profiles for different projects and environments.
+
+***
+
+## Quick Start
+
+Use profiles in GitKraken Desktop to keep separate Git identities, integrations, and tab sessions for different work contexts.
+
+**To create a profile:**
+1. Click the profile icon in the top-right corner.
+2. Select **Manage Profiles**, then click the option to add a new profile.
+3. Enter a profile name, author name, and email address.
+
+**To switch profiles:**
+- Click the profile icon and select the profile you want to use.
+
+**What each profile stores:**
+- Preferences from General, Integrations, and UI Preferences
+- Open tabs (duplicated from the active profile when a new profile is created)
+- Integration connections (for example, connect one profile to a personal GitHub account and another to a work account)
+
+**To sync your profile email with Git's global config:** Enable the option "Keep my .gitconfig updated with my profile info" in <kbd>Preferences > Profiles</kbd>.
+
+Multiple profiles require a paid GitKraken subscription. Profiles are accessible from <kbd>Preferences > Profiles</kbd>.
 
 <figure>
   <img src="/wp-content/uploads/profiles@2x.png" class="help-center-img img-bordered" alt="Add Profile dialog in GitKraken showing selected avatar, profile name, author name, and email fields." />

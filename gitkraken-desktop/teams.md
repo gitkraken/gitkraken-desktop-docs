@@ -4,7 +4,7 @@ description: Learn how to use GitKraken Desktop Teams to organize users, manage 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop users with a <a href="https://www.gitkraken.com/git-client/pricing?source=help_center&product=gitkraken">Pro, Advanced, Business, or Enterprise Cloud</a> account can use the Teams feature to group users within an Organization.
 
@@ -16,6 +16,27 @@ Teams can be used for:
 <div class='callout callout--basic'>
   <p><strong>Note:</strong> Pro accounts are limited to 1 Team. Upgrade to an <a href="https://gitkraken.dev/subscription?source=help_center&product=gitkraken">Advanced or Business plan</a> to manage multiple Teams.</p>
 </div>
+
+***
+
+## Quick Start
+
+Create and manage teams in GitKraken Desktop to organize users and enable team collaboration features.
+
+**To manage your organization:**
+1. Open <kbd>Preferences</kbd> and select your organization name in the sidebar.
+2. Click **Invite members** to add users by name, username, or email.
+3. Use the ellipsis menu on a member's entry to change their role or remove them.
+
+**To create a team:**
+1. In the Organization section, click the **+** icon next to Teams.
+2. Name your team, then add members using **Add a member**.
+
+**To rename or delete a team:** Double-click a team name to rename it. Use the ellipsis menu to delete it.
+
+**To remove a team member:** Select the team, then use the ellipsis menu on the member's entry.
+
+Teams are accessible under <kbd>Preferences > Organization</kbd>. Pro accounts support one team. Advanced and Business plans support multiple teams.
 
 ***
 

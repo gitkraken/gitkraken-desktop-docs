@@ -5,9 +5,31 @@ description: Step-by-step installation guide for GitKraken Desktop on Windows, m
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken Desktop is a graphical Git client designed to make version control easier for developers, builders, and teams.
+
+***
+
+## Quick Start
+
+Install GitKraken Desktop on your operating system in three steps.
+
+1. [Download GitKraken Desktop](https://gitkraken.com/download?product=gitkraken&source=help_center) for your platform.
+2. Run the installer:
+   - **Windows**: Double-click the `.exe` file. GitKraken Desktop installs and launches automatically.
+   - **macOS**: Open the `.dmg` file and drag the GitKraken icon into your Applications folder.
+   - **Linux (.deb)**: Run `wget https://release.gitkraken.com/linux/gitkraken-amd64.deb && sudo apt install ./gitkraken-amd64.deb`.
+   - **Linux (.rpm)**: Run `wget https://release.gitkraken.com/linux/gitkraken-amd64.rpm && sudo dnf install ./gitkraken-amd64.rpm`.
+3. Launch GitKraken Desktop:
+   - **Windows/macOS**: Use the shortcut or Applications folder.
+   - **Linux**: Run `gitkraken` in a terminal.
+
+No Git command-line tools are required for basic use. For advanced features like the terminal, Git LFS, or experimental tools, [install Git from git-scm.com](https://git-scm.com/).
+
+***
+
+## Installation Instructions
 
 There are three simple steps to get started with GitKraken Desktop:
 
@@ -166,3 +188,12 @@ gitkraken
 
 You’re now ready to start using GitKraken! For help getting started with repositories, branches, and remotes, check out the [Getting Started Guide](https://help.gitkraken.com/gitkraken-client/introduction-to-gitkraken-client/).
 
+
+<style>
+pre{position:relative}
+.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s}
+pre:hover .copy-btn{opacity:1}
+.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
+.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
+</style>
+<script>(function(){var C='<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2 2v1"></path></svg>',K='<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p;cp(el.innerText.replace(/\n$/,'')).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>

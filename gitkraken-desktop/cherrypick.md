@@ -5,9 +5,27 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Use cherry pick to apply commits from one branch onto another in GitKraken Desktop. This is especially useful when you accidentally commit to the wrong branch or want to apply specific changes without merging.
+
+***
+
+## Quick Start
+
+Use GitKraken Desktop to cherry pick one or more commits from any branch onto your current branch.
+
+**To cherry pick a single commit:**
+1. Check out the branch where you want to apply the commit.
+2. Right-click the commit in the Commit Graph.
+3. Select **Cherry pick commit**.
+
+**To cherry pick multiple commits:**
+1. Hold <kbd>Cmd</kbd> (Mac) or <kbd>Ctrl</kbd> (Windows/Linux), or use <kbd>Shift</kbd>, to select multiple commits in the graph.
+2. Right-click one of the selected commits.
+3. Select **Cherry pick X commits**.
+
+The interactive cherry-pick tool opens, where you can reorder commits by dragging, squash child commits into parents, reword commit messages, or drop commits before applying. Use keyboard shortcuts in the interactive view: <kbd>P</kbd> to pick, <kbd>S</kbd> to squash, <kbd>R</kbd> to reword, and <kbd>D</kbd> to drop. Click **Reset** to abandon the session without applying changes.
 
 ***
 

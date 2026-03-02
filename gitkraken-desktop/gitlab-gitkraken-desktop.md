@@ -4,9 +4,25 @@ description: Connect GitKraken Desktop with GitLab to clone repositories, manage
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 GitKraken allows you to connect to [GitLab](https://gitlab.com), enabling streamlined access to your repositories for cloning, issue tracking, and pull request workflows.
+
+***
+
+## Quick Start
+
+Connect GitKraken Desktop to GitLab.com to clone repositories, manage remotes, and create pull requests from your GitLab account.
+
+1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
+2. Select **GitLab.com** and click **Connect to GitLab**.
+3. Log in to GitLab in the browser window that opens, then click **Open GitKraken** to complete the connection.
+
+To configure SSH access after connecting:
+- In <kbd>Preferences > Integrations</kbd>, click **Generate SSH key and add to GitLab** to generate and upload a key automatically.
+- Or click **Add key to GitLab** to upload your existing SSH default.
+
+Once connected, GitKraken Desktop displays your GitLab repositories when cloning, shows forks when adding remotes, and supports creating and managing pull requests from within the application. To manage more than one GitLab account, use multiple [profiles](/start-here/profiles) with a GitKraken Pro plan.
 
 ### Benefits
 

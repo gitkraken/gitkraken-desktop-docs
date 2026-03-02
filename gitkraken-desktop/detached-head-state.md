@@ -5,9 +5,28 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Detached HEAD state lets you check out any commit in GitKraken Desktop without creating a branch. This is useful for reviewing or experimenting with past changes without affecting your active branches.
+
+***
+
+## Quick Start
+
+Use GitKraken Desktop to enter, work in, and safely exit detached HEAD state.
+
+**To enter detached HEAD state:**
+1. Right-click any commit in the Commit Graph.
+2. Select **Checkout this commit**. The commit will display a `HEAD` label.
+
+**To preserve commits made in detached HEAD state:**
+1. Right-click the commit labeled `HEAD`.
+2. Select **Create branch here** and name the new branch.
+
+**To exit detached HEAD state:**
+- Double-click any local branch in the graph or Left Panel to check it out.
+
+Any commits made in detached HEAD state that were not saved to a branch will be removed when you switch branches. If you switch branches before creating a branch, use the **Undo** button if available, or run `git reflog` in the terminal to find the lost commit SHA and re-check it out with `git checkout <SHA>`.
 
 ***
 
