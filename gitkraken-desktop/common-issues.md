@@ -4,7 +4,7 @@ description: Troubleshoot common GitKraken Desktop problems, including login err
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 ***
 

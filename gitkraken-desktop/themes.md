@@ -4,7 +4,7 @@ description: Learn how to switch between light and dark themes in GitKraken Desk
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 <figure>
   <div class='embed-container embed-container--16-9'>

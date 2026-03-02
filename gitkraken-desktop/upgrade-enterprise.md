@@ -4,7 +4,7 @@ description: Step-by-step guide to upgrading GitKraken Self-Hosted Server, Docke
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 The upgrade procedure is the same whether you're running GitKraken Self-Hosted on CentOS, Ubuntu, or RHEL7.
 

@@ -4,7 +4,7 @@ description: Learn how to commit changes in GitKraken Desktop, including staging
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 GitKraken Desktop simplifies the Git commit process by helping you stage, commit, and push your work from a visual interface.
 

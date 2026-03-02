@@ -5,7 +5,7 @@ description: Get answers to frequently asked questions about GitKraken Desktop. 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 The answers to your most frequently asked questions.
 
