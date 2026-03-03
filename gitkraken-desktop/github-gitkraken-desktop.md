@@ -4,7 +4,7 @@ description: Learn how to connect GitKraken Desktop with GitHub to sign in, clon
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 GitKraken allows you to create an account and authenticate with GitHub, making it easier to find and manage GitHub repositories within the application.
 
@@ -273,9 +273,6 @@ If remotes or repositories are missing in the Add Remote or Clone menus:
 3. If the repo is owned by another individual, they must also [install GitKraken](/gitkraken-client/how-to-install/) and authorize it.
 4. Learn more in [Third-party apps list](https://help.github.com/articles/about-third-party-application-restrictions/).
 
-## GitHub Actions
-
-For details about automation and CI/CD workflows, see the [GitHub Actions](/git-workflows-and-extensions/github-actions/) guide.
 
 ## Connecting to Multiple GitHub Accounts
 

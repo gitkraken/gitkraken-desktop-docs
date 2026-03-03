@@ -132,7 +132,50 @@ When **Shallow Clone** is selected, additional options become available:
 
 4. Click <button class='button button--success button--ui button--nolink'>Clone the repo!</button> to complete the shallow clone.
 
-After cloning, the repository opens automatically in GitKraken Desktop. 
+After cloning, the repository opens automatically in GitKraken Desktop.
+
+#### Sparse Checkout
+
+Sparse checkout lets you check out only a subset of files from a repository, keeping your working directory smaller and improving performance on large repositories such as monorepos.
+
+To perform a sparse checkout when cloning:
+
+1. Open the **Clone** dialog from **Repository Management**, the **New Tab**, or <kbd><strong>File > Clone</strong></kbd>.
+2. Select the repository you want to clone.
+3. Enable the **Sparse Checkout** option.
+4. In the **Paths to include** field, enter one path per line (for example, `src/`, `docs/`, `README.md`). If no paths are provided, only root-level files will be checked out.
+
+<figure>
+  <img src="/wp-content/uploads/sparse-checkout.png" class="help-center-img img-bordered" alt="GitKraken Desktop Clone dialog with Sparse Checkout enabled, showing a Blobless clone option and a Paths to include text field with example paths such as src/, docs/, and README.md">
+  <figcaption style="text-align: center; color: #888">Enable Sparse Checkout in the Clone dialog and specify which paths to include.</figcaption>
+</figure>
+
+5. Click <button class='button button--success button--ui button--nolink'>Clone the repo!</button> to complete the clone.
+
+<div class='callout callout--basic'>
+  <p><strong>Note:</strong> Files at the root of the repository are always checked out regardless of the paths you specify.</p>
+</div>
+
+**Configuring sparse checkout on an existing repository**
+
+To enable or update sparse checkout rules on a repository you have already opened, go to <kbd>Preferences > Sparse Checkout</kbd> for that repository.
+
+<figure>
+  <img src="/wp-content/uploads/sparse-checkout-preferences.png" class="help-center-img img-bordered" alt="GitKraken Desktop Repo-Specific Preferences panel open to the Sparse Checkout section, showing a Paths to include text field and three action buttons: Enable sparse checkout, Disable sparse checkout, and Reapply sparse checkout">
+  <figcaption style="text-align: center; color: #888">Configure sparse checkout paths and actions under Repo-Specific Preferences.</figcaption>
+</figure>
+
+From this panel you can:
+- **Enable sparse checkout** — activates sparse checkout using the paths you have entered.
+- **Disable sparse checkout** — turns off sparse checkout and restores the full working directory.
+- **Reapply sparse checkout** — re-applies the current path rules, useful after pulling in new files or resolving inconsistencies.
+
+When a repository has sparse checkout active, a **Sparse** button appears in the toolbar. Click it to quickly edit your sparse checkout paths, disable sparse checkout, or reapply the current rules without opening Preferences.
+
+<figure>
+  <img src="/wp-content/uploads/toolbar-action-for-sparse-checkout-repos.png" class="help-center-img img-bordered" alt="GitKraken Desktop toolbar showing the Sparse button expanded, with a dropdown menu listing Sparse Checkout Commands: Edit sparse checkout paths, Disable sparse checkout, and Reapply sparse checkout">
+  <figcaption style="text-align: center; color: #888">The Sparse toolbar button provides quick access to sparse checkout commands on active repos.</figcaption>
+</figure>
 
 
 ***

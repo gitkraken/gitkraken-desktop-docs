@@ -4,7 +4,7 @@ description: Learn how to create branches, merge code, and rebase commits using 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 Learn how to branch, merge, and rebase in GitKraken Desktop.
 
@@ -64,6 +64,8 @@ To update your working directory:
 
 If you’re on the wrong branch, [stash](/gitkraken-desktop/stashing) your changes, switch branches, and pop the stash.
 
+If you only need a subset of files checked out, see [Sparse Checkout](/gitkraken-desktop/open-clone-init/#sparse-checkout).
+
 ### Rename a Branch
 
 Right-click the branch label or use the Left Panel to rename the current branch.
@@ -99,6 +101,37 @@ Use multi-select in the Left Panel to delete several branches at once:
   <p><strong>Caution:</strong> Deleting a branch is permanent.</p>
 </div>
 
+### Pin branch to the left
+
+Pinning a branch fixes it to the left side of the Commit Graph so that its direct commit history always appears on the left. This is particularly useful for long-lived branches like `main` or a production branch, where you want a stable reference point to see how other branches merge into it.
+
+To pin a branch:
+1. Right-click a branch label in the Commit Graph or the Left Panel.
+2. Select **Pin to left**.
+
+<figure>
+  <img src="/wp-content/uploads/pin-to-left.png" class="help-center-img img-bordered" alt="Right-click context menu on a branch in the GitKraken Desktop Commit Graph with the 'Pin to Left' option visible at the bottom of the menu">
+  <figcaption style="text-align:center; color:#888">Select "Pin to Left" from the branch context menu</figcaption>
+</figure>
+
+To unpin a branch, right-click the branch label again and select **Unpin from left**.
+
+### Smart Branches
+
+Smart Branch Visibility reduces visual noise in the Commit Graph by displaying only the branches most relevant to your current work. When enabled, the graph shows only your checked-out branch, its target branch, and their respective upstream branches — hiding all others.
+
+This is especially useful in repositories with a large number of branches where the full graph can be difficult to navigate.
+
+To enable Smart Branch Visibility:
+1. Click the gear icon in the top-right corner of the Commit Graph header.
+2. Select **Smart Branch Visibility**.
+
+<figure>
+  <img src="/wp-content/uploads/smart-visibility.png" class="help-center-img img-bordered" alt="GitKraken Desktop Commit Graph with Smart Branch Visibility enabled, showing a filtered branch list in the Left Panel and the column settings dropdown with the Smart Branch Visibility option checked">
+  <figcaption style="text-align:center; color:#888">Enable Smart Branch Visibility from the Commit Graph column settings</figcaption>
+</figure>
+
+Smart Branch Visibility activates on your currently checked-out branch. To disable it, follow the same steps and deselect **Smart Branch Visibility**.
 ***
 
 ## Merging
@@ -116,6 +149,27 @@ If no conflicts exist, changes will be merged automatically.
 
 <div class='callout callout--warning'>
   <p>The in-app merge conflict output editor is available with a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center" target="_blank">Paid</a> license.</p>
+</div>
+
+### Squash merges
+
+When you enable the **Squash** setting, GitKraken Desktop stages all changes from the source branch locally without creating a merge commit automatically. You then commit the squashed result manually, which produces a single, clean commit on the target branch.
+
+This is useful when you want to maintain a linear history on your main branch without preserving the individual commits from a feature branch.
+
+To enable squash merges:
+1. Go to **Preferences** > **Commit**.
+2. Enable the **Squash** toggle.
+
+<figure>
+  <img src="/wp-content/uploads/squash-merge.png" class="help-center-img img-bordered" alt="GitKraken Desktop Preferences panel open to the Commit section, with the Merge Behavior area highlighted showing the Squash checkbox and its description: 'When enabled, merging branches locally will stage all changes without creating a merge commit automatically. You will need to commit manually.'">
+  <figcaption style="text-align:center; color:#888">Enable the Squash toggle under Preferences > Commit > Merge Behavior</figcaption>
+</figure>
+
+After merging with squash enabled, review the staged changes in the Commit Panel and commit them manually.
+
+<div class='callout callout--basic'>
+  <p><strong>Note:</strong> With squash enabled, GitKraken Desktop stages all changes but does not create the merge commit for you. You must commit manually to complete the merge.</p>
 </div>
 
 ### Merge Conflict Editor
@@ -235,3 +289,26 @@ To rebase:
 </figure>
 
 Rebasing rewrites history but results in a more linear and readable commit tree.
+
+### Rebase N commits onto another branch
+
+You can rebase a specific range of commits onto another branch without performing a full interactive rebase. This is useful when you want to move only a subset of commits from your current branch onto a target branch.
+
+GitKraken Desktop provides two ways to do this:
+
+**Option 1: Multi-select a range of commits**
+1. Check out the target branch.
+2. In the Commit Graph, hold <kbd>Shift</kbd> and click to select a range of commits on the source branch.
+3. Right-click the base branch and select **Rebase X commits onto [branch]**.
+
+<figure>
+  <img src="/wp-content/uploads/rebase-N-commits.png" class="help-center-img img-bordered" alt="GitKraken Desktop Commit Graph showing a right-click context menu on a branch with the 'Rebase 4 commits onto gitkraken/main' option highlighted, after a range of commits has been selected">
+  <figcaption style="text-align:center; color:#888">Right-click the target branch after selecting a commit range to rebase</figcaption>
+</figure>
+
+**Option 2: Select a single pivot commit**
+1. Select one commit in the middle of your current branch. No merge commits should exist between the selected commit and the head of the branch.
+2. Right-click the target branch.
+3. Select **Rebase N commits onto [branch]**.
+
+GitKraken Desktop rebases the selected commit and all subsequent commits up to the branch head onto the target branch.

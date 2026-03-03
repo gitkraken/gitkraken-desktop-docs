@@ -3678,7 +3678,7 @@ Bitbucket supports pull request reviewers. GitKraken will show reviewer details 
 # Branch, Merge, and Rebase in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/branching-and-merging/
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 Learn how to branch, merge, and rebase in GitKraken Desktop.
 
@@ -3738,6 +3738,8 @@ To update your working directory:
 
 If you’re on the wrong branch, [stash](/gitkraken-desktop/stashing) your changes, switch branches, and pop the stash.
 
+If you only need a subset of files checked out, see [Sparse Checkout](/gitkraken-desktop/open-clone-init/#sparse-checkout).
+
 ### Rename a Branch
 
 Right-click the branch label or use the Left Panel to rename the current branch.
@@ -3773,6 +3775,37 @@ Use multi-select in the Left Panel to delete several branches at once:
   <p><strong>Caution:</strong> Deleting a branch is permanent.</p>
 </div>
 
+### Pin branch to the left
+
+Pinning a branch fixes it to the left side of the Commit Graph so that its direct commit history always appears on the left. This is particularly useful for long-lived branches like `main` or a production branch, where you want a stable reference point to see how other branches merge into it.
+
+To pin a branch:
+1. Right-click a branch label in the Commit Graph or the Left Panel.
+2. Select **Pin to left**.
+
+<figure>
+  <img src="/wp-content/uploads/pin-to-left.png" class="help-center-img img-bordered" alt="Right-click context menu on a branch in the GitKraken Desktop Commit Graph with the 'Pin to Left' option visible at the bottom of the menu">
+  <figcaption style="text-align:center; color:#888">Select "Pin to Left" from the branch context menu</figcaption>
+</figure>
+
+To unpin a branch, right-click the branch label again and select **Unpin from left**.
+
+### Smart Branches
+
+Smart Branch Visibility reduces visual noise in the Commit Graph by displaying only the branches most relevant to your current work. When enabled, the graph shows only your checked-out branch, its target branch, and their respective upstream branches — hiding all others.
+
+This is especially useful in repositories with a large number of branches where the full graph can be difficult to navigate.
+
+To enable Smart Branch Visibility:
+1. Click the gear icon in the top-right corner of the Commit Graph header.
+2. Select **Smart Branch Visibility**.
+
+<figure>
+  <img src="/wp-content/uploads/smart-visibility.png" class="help-center-img img-bordered" alt="GitKraken Desktop Commit Graph with Smart Branch Visibility enabled, showing a filtered branch list in the Left Panel and the column settings dropdown with the Smart Branch Visibility option checked">
+  <figcaption style="text-align:center; color:#888">Enable Smart Branch Visibility from the Commit Graph column settings</figcaption>
+</figure>
+
+Smart Branch Visibility activates on your currently checked-out branch. To disable it, follow the same steps and deselect **Smart Branch Visibility**.
 ***
 
 ## Merging
@@ -3790,6 +3823,27 @@ If no conflicts exist, changes will be merged automatically.
 
 <div class='callout callout--warning'>
   <p>The in-app merge conflict output editor is available with a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center" target="_blank">Paid</a> license.</p>
+</div>
+
+### Squash merges
+
+When you enable the **Squash** setting, GitKraken Desktop stages all changes from the source branch locally without creating a merge commit automatically. You then commit the squashed result manually, which produces a single, clean commit on the target branch.
+
+This is useful when you want to maintain a linear history on your main branch without preserving the individual commits from a feature branch.
+
+To enable squash merges:
+1. Go to **Preferences** > **Commit**.
+2. Enable the **Squash** toggle.
+
+<figure>
+  <img src="/wp-content/uploads/squash-merge.png" class="help-center-img img-bordered" alt="GitKraken Desktop Preferences panel open to the Commit section, with the Merge Behavior area highlighted showing the Squash checkbox and its description: 'When enabled, merging branches locally will stage all changes without creating a merge commit automatically. You will need to commit manually.'">
+  <figcaption style="text-align:center; color:#888">Enable the Squash toggle under Preferences > Commit > Merge Behavior</figcaption>
+</figure>
+
+After merging with squash enabled, review the staged changes in the Commit Panel and commit them manually.
+
+<div class='callout callout--basic'>
+  <p><strong>Note:</strong> With squash enabled, GitKraken Desktop stages all changes but does not create the merge commit for you. You must commit manually to complete the merge.</p>
 </div>
 
 ### Merge Conflict Editor
@@ -3910,7 +3964,28 @@ To rebase:
 
 Rebasing rewrites history but results in a more linear and readable commit tree.
 
----
+### Rebase N commits onto another branch
+
+You can rebase a specific range of commits onto another branch without performing a full interactive rebase. This is useful when you want to move only a subset of commits from your current branch onto a target branch.
+
+GitKraken Desktop provides two ways to do this:
+
+**Option 1: Multi-select a range of commits**
+1. Check out the target branch.
+2. In the Commit Graph, hold <kbd>Shift</kbd> and click to select a range of commits on the source branch.
+3. Right-click the base branch and select **Rebase X commits onto [branch]**.
+
+<figure>
+  <img src="/wp-content/uploads/rebase-N-commits.png" class="help-center-img img-bordered" alt="GitKraken Desktop Commit Graph showing a right-click context menu on a branch with the 'Rebase 4 commits onto gitkraken/main' option highlighted, after a range of commits has been selected">
+  <figcaption style="text-align:center; color:#888">Right-click the target branch after selecting a commit range to rebase</figcaption>
+</figure>
+
+**Option 2: Select a single pivot commit**
+1. Select one commit in the middle of your current branch. No merge commits should exist between the selected commit and the head of the branch.
+2. Right-click the target branch.
+3. Select **Rebase N commits onto [branch]**.
+
+GitKraken Desktop rebases the selected commit and all subsequent commits up to the branch head onto the target branch.
 
 # Cherry Pick Commits in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/cherrypick/
@@ -4359,7 +4434,7 @@ SSH signing is available through Git Executable.
 # Committing Changes
 URL: https://help.gitkraken.com/gitkraken-desktop/commits/
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 GitKraken Desktop simplifies the Git commit process by helping you stage, commit, and push your work from a visual interface.
 
@@ -4604,7 +4679,32 @@ Right-click any commit node in the graph and choose **Revert Commit**. GitKraken
     <figcaption style="text-align: center; color: #888;">Use the revert option to create a new commit that undoes a previous one.</figcaption>
 </figure>
 
----
+## Restore files from a commit
+
+GitKraken Desktop lets you restore any file to its state at a specific commit and place it directly into your working directory (WIP). This is useful when you want to retrieve an older version of a file, resurrect a deleted file, or selectively reverse changes without affecting the rest of your working directory.
+
+To restore a file from a commit:
+1. Select a commit in the Commit Graph to open it in the Commit Panel.
+2. Right-click any file listed in the Commit Panel.
+3. Select **Restore file from this commit**.
+
+The file is placed into your working directory as a staged change, ready to include in your next commit.
+
+<figure class=’figure center’>
+    <img src=’/wp-content/uploads/restore-files.png’ class="help-center-img img-bordered" alt="GitKraken Desktop Commit Panel showing multiple files selected from a commit’s file list, with a right-click context menu displaying the ‘Restore selected files from this commit’ option highlighted" />
+    <figcaption style="text-align: center; color: #888;">Right-click a file in the Commit Panel to restore it to your working directory.</figcaption>
+</figure>
+
+To restore multiple files at once, hold <kbd>Shift</kbd> or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> to multi-select files in the Commit Panel, then right-click and select **Restore selected files from this commit**.
+
+<style>
+pre{position:relative;min-height:3em}
+.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;height:28px;padding:0 8px;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s;font-size:11px;font-family:sans-serif}
+pre:hover .copy-btn{opacity:1}
+.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
+.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
+</style>
+<script>(function(){var C='Copy',K='Copied!';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p,cl=el.cloneNode(true),bn=cl.querySelector('.copy-btn');if(bn)bn.remove();cp((cl.innerText||cl.textContent).trimEnd()).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>
 
 # GitKraken Desktop – Common Issues and Fixes
 URL: https://help.gitkraken.com/gitkraken-desktop/common-issues/
@@ -5128,7 +5228,6 @@ Navigate to <kbd>Preferences > Conflict Prevention</kbd> to configure these sett
 # GitKraken Desktop Release Notes
 URL: https://help.gitkraken.com/gitkraken-desktop/current/
 
-
 Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo;s fixed, or just take a trip down memory lane with a nostalgic swagger, remembering those bugs of yesterday.
 
 <a href="https://www.gitkraken.com/download?product=gitkraken&source=help_center" target="_blank" class="button button--basic ">Download Current Version Now</a>
@@ -5136,7 +5235,45 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 
 ***
+<a id="v11-10-0"></a>
+## Version 11.10.0
 
+<kbd>Tuesday, March 3rd, 2026</kbd>
+
+<div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5ZSSZjtAG3E?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>
+</div>
+
+_Snap snap snap that branch where you want it._
+
+### New ✨
+ - **Pin branch to left:**
+   - Added support for pinning a branch to the left side of the Commit Graph. Right-click a pinned branch to unpin. 
+ - **Smart Branch Filtering:**
+   - Added smart branch filtering mode to focus the graph on the current branch and its related target/upstream refs.
+ - **Restore files from any commit:**
+   - Right-click on files in a commit to restore them to your working directory. Works with single or multiple file selections.
+ - **Sparse Checkout Support:**
+   - GitKraken Desktop can now work with sparse checkouts! You can also perform sparse checkouts when cloning a repo, and set sparse checkout rules for the open repo from the settings.
+ - **GitKraken AI:**
+   - Added support for Google Gemini 3 Flash.
+
+### Improvements 🙌
+ - **GitKraken AI:**
+   - Updated default AI model to Google Gemini 2.5 Flash and removed deprecated Gemini 1.5 and 2.0 models.
+ - **Experimental Feature – Git Executable**:
+   - Bumped Bundled Git to v2.53.0.
+
+### Bug Fixes 🐛
+ - Fixed a bug that prevented multi-selection options from appearing in the stash context menu in the left panel.
+ - Fixed an issue where the 'Copy file path' context menu option would not work for files in a worktree or a submodule.
+ - Fixed an issue where external changes made in worktrees (such as commits from the terminal) were not being detected.
+ - Fixed an issue where pulling with fast-forward failed with "Could not apply stash" when there were uncommitted changes.
+
+ ### Deprecation Notice 🧟
+ - GitHub Actions has been removed from the Left Panel to simplify navigation. Existing GitHub Actions workflows will continue to run normally. To update workflow files, edit and commit them directly within your repository.
+
+***
 <a id="v11-9-0"></a>
 ## Version 11.9.0
 
@@ -5538,8 +5675,6 @@ _"Turn it up to 11! 🎸"_
 
 
 
----
-
 # Detached HEAD in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/detached-head-state/
 
@@ -5643,7 +5778,7 @@ If you accidentally switch branches before saving your changes:
 # View Diffs, File History, and Blame in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/diff/
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 Compare changes within GitKraken Desktop using _diffs_. Learn how to access them, view file history or file blame, and use external tools.
 
@@ -5695,6 +5830,7 @@ GitKraken Desktop’s built-in diff viewer includes:
 - Syntax highlighting
 - File mini-map
 - Toggleable views: Hunk, Inline, Split
+- Word wrap toggle
 - Arrows to navigate between change sets
 
 Use the <button class="button button--primary button--ui button--nolink"><span style="color:#141422;">Edit in working directory</span></button> button to directly edit the file. Learn more in the [Editing Files](/working-with-files/editing-files) section.
@@ -5760,6 +5896,17 @@ Displays changes side-by-side, with the original file on the left and the update
 <figure class='figure center'>
   <img src='/wp-content/uploads/split-2025.png' class="help-center-img img-bordered" alt="Split View mode in GitKraken Desktop comparing changes between two versions of a file, highlighting additions, deletions, and updated image references side-by-side." />
   <figcaption style="text-align: center; color: #888;">Split view compares before (left) and after (right) file states.</figcaption>
+</figure>
+
+### Word Wrap
+
+The Word Wrap toggle wraps long lines in the diff view so that the full content of each line is visible without horizontal scrolling. This is particularly useful when reviewing files with long lines, such as Markdown documents, minified JavaScript, or LaTeX files.
+
+To toggle word wrap, click the **Word Wrap** button in the toolbar of the diff view, file view, file history, or merge conflict resolution panel.
+
+<figure class='figure center'>
+  <img src='/wp-content/uploads/word-wrap.png' class="help-center-img img-bordered" alt="GitKraken Desktop file view toolbar with the Word Wrap button highlighted in the top-right corner, showing a file with long lines wrapped for easier reading." />
+  <figcaption style="text-align: center; color: #888;">Click the Word Wrap button in the toolbar to toggle line wrapping.</figcaption>
 </figure>
 
 ***
@@ -5913,7 +6060,14 @@ To apply a patch:
     <p><strong>Note:</strong> GitKraken Desktop does not currently support generating patches from binary files. This is a preliminary release. For feedback, contact our <a href="https://www.gitkraken.com/git-client/contact-support?product=gitkraken&source=help_center">support team</a>.</p>
 </div>
 
----
+<style>
+pre{position:relative;min-height:3em}
+.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;height:28px;padding:0 8px;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s;font-size:11px;font-family:sans-serif}
+pre:hover .copy-btn{opacity:1}
+.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
+.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
+</style>
+<script>(function(){var C='Copy',K='Copied!';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p,cl=el.cloneNode(true),bn=cl.querySelector('.copy-btn');if(bn)bn.remove();cp((cl.innerText||cl.textContent).trimEnd()).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>
 
 # Edit and Save Files in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/editing-files/
@@ -7158,8 +7312,7 @@ To configure a global path, add the following to your `.gitconfig`:
 # Create and Manage GitHub Actions Workflows in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/github-actions/
 
-
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 [GitHub Actions](https://github.com/features/actions) is a service from GitHub that lets you automate tasks in your repository using workflow files. These workflows are written in YAML and stored in the `.github/workflows` directory of your repository.
 
@@ -7169,60 +7322,58 @@ URL: https://help.gitkraken.com/gitkraken-desktop/github-actions/
 
 ***
 
+<div class='callout callout--warning'>
+  <p><strong>Deprecation notice 🧟 — GitKraken Desktop 11.10:</strong> GitHub Actions has been removed from the Left Panel to simplify navigation. Existing workflows will continue to run normally. To update workflow files, edit and commit them directly within your repository.</p>
+</div>
+
+
 ## Quick Start
 
-Create, edit, and delete GitHub Actions workflow files from within GitKraken Desktop without leaving the application.
+Create and edit GitHub Actions workflow files directly in your repository from within GitKraken Desktop.
 
 **To create a workflow:**
-1. Open a GitHub-hosted repository in GitKraken Desktop. The **GitHub Actions** section appears in the Left Panel.
-2. Hover over **GitHub Actions** and click the **+** button to open the Create Workflow panel.
-3. Choose a workflow template or start with a blank file.
-4. The workflow is saved automatically in the `.github/workflows` directory.
+1. In your repository, create a `.github/workflows` directory if one does not already exist.
+2. Add a new YAML workflow file to that directory.
+3. Stage and commit the file. GitHub Actions detects and registers the workflow automatically.
 
 **To edit an existing workflow:**
-- Double-click the workflow file in the Left Panel under **GitHub Actions** to open and modify it.
+1. Open the workflow file from your repository's `.github/workflows` directory.
+2. Make your changes, then stage and commit them.
 
 **To delete a workflow:**
-- Right-click the workflow file and select **Delete Workflow**.
+1. Delete the workflow YAML file from your repository's `.github/workflows` directory.
+2. Stage and commit the deletion. GitHub Actions stops running the deleted workflow.
 
-The **GitHub Actions** section is only visible when working with a GitHub-hosted repository that has the GitHub integration connected. For workflow syntax, triggers, and advanced configuration options, refer to the [GitHub Actions Documentation](https://docs.github.com/en/actions).
+For workflow syntax, triggers, and advanced configuration options, refer to the [GitHub Actions Documentation](https://docs.github.com/en/actions).
 
+---
 
 ## Managing Workflows in GitKraken Desktop
 
-GitKraken Desktop provides basic tools for creating, editing, and deleting GitHub Action workflows directly within your repository.
-
-<div class='callout callout--success'>
-    <p><strong>Note:</strong> The <strong>GitHub Actions</strong> section appears only when you're working in a GitHub-hosted repository.</p>
-</div>
+As of version 11.10, GitHub Actions workflow management is handled by editing YAML files directly in your repository’s `.github/workflows` directory.
 
 ### Create a Workflow
 
-1. In the Left Panel, hover over <strong>GitHub Actions</strong>.
-2. Click the <code>+</code> button to open the <strong>Create Workflow</strong> panel.
-3. Choose from available workflow templates or start with a blank workflow.
-4. The workflow file will be saved in the `.github/workflows` directory (created automatically if it doesn’t exist).
-
-<img src='/wp-content/uploads/create-github-action-2025@2x.png' class="help-center-img img-bordered" alt="Creating GitHub Action workflow from GitKraken Desktop">
+1. Navigate to your repository’s `.github/workflows` directory. Create it if it does not already exist.
+2. Add a new YAML file for your workflow.
+3. Stage and commit the file. GitHub Actions automatically detects and registers the new workflow.
 
 ### Edit a Workflow
 
-Double-click any existing workflow file to open it. You can view, modify, and save changes directly.
-
-<img src='/wp-content/uploads/github-actions-edit@2x.png' class="help-center-img img-bordered" alt="Editing a GitHub Action workflow in GitKraken Desktop">
+1. Open the workflow file from your repository’s `.github/workflows` directory.
+2. Make your changes.
+3. Stage and commit the updated file.
 
 ### Delete a Workflow
 
-Right-click a workflow file and select <strong>Delete Workflow</strong> to remove it.
+1. Delete the workflow YAML file from your repository’s `.github/workflows` directory.
+2. Stage and commit the deletion. GitHub Actions stops running the deleted workflow.
 
-<img src='/wp-content/uploads/delete-github-action-2025@2x.png' class="help-center-img img-bordered" alt="Deleting a GitHub Action workflow in GitKraken Desktop">
-
+---
 
 ## Learn More
 
 For workflow syntax, best practices, and advanced automation examples, visit the [GitHub Actions Documentation](https://docs.github.com/en/actions).
-
----
 
 # GitKraken Desktop + GitHub Enterprise Issues Integration
 URL: https://help.gitkraken.com/gitkraken-desktop/github-enterprise-issues/
@@ -7370,7 +7521,7 @@ GitKraken supports one GitHub Enterprise Server account per profile. Use [multip
 # GitHub Integration with GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/github-gitkraken-desktop/
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 GitKraken allows you to create an account and authenticate with GitHub, making it easier to find and manage GitHub repositories within the application.
 
@@ -7639,9 +7790,6 @@ If remotes or repositories are missing in the Add Remote or Clone menus:
 3. If the repo is owned by another individual, they must also [install GitKraken](/gitkraken-client/how-to-install/) and authorize it.
 4. Learn more in [Third-party apps list](https://help.github.com/articles/about-third-party-application-restrictions/).
 
-## GitHub Actions
-
-For details about automation and CI/CD workflows, see the [GitHub Actions](/git-workflows-and-extensions/github-actions/) guide.
 
 ## Connecting to Multiple GitHub Accounts
 
@@ -7649,8 +7797,6 @@ GitKraken connects to one GitHub account at a time. However, if you're using the
 
 Each profile can be associated with a different GitHub account, allowing you to switch between accounts without needing to disconnect and reconnect each time.
 
-
----
 
 # GitKraken Desktop + GitHub Issues Integration
 URL: https://help.gitkraken.com/gitkraken-desktop/github-issues/
@@ -8651,8 +8797,7 @@ GitKraken and it’s tools are now SOC 2 Certified! If you would like to request
 # GitKraken AI Features Overview
 URL: https://help.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai/
 
-
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 Let the app handle the boring parts! GitKraken offers built-in AI features to fast-track your code contributions.
 
@@ -8955,9 +9100,13 @@ When connected to [GitHub, GitLab, Bitbucket, or Azure DevOps](/gitkraken-deskto
 
 ## Bring Your Own Key
 
-By default, GitKraken AI uses **Gemini** to power commit explanations and message generation. No API key is needed and usage is included with your GitKraken subscription.
+By default, GitKraken AI uses **Google Gemini 2.5 Flash** to power commit explanations and message generation. No API key is needed and usage is included with your GitKraken subscription.
 
-If you prefer using your own API key with **OpenAI**, **Azure**, **Anthropic**, or a **Custom URL**, you can configure this in:
+<div class='callout callout--basic'>
+  <p><strong>What's new in 11.10:</strong> The default model has been updated to Gemini 2.5 Flash. Gemini 3 Flash is now also available. Gemini 1.5 and 2.0 models have been removed.</p>
+</div>
+
+If you prefer using your own API key with **OpenAI**, **Azure**, **Anthropic**, **Google Gemini**, or a **Custom URL**, you can configure this in:
 
 <kbd>Preferences > GitKraken AI</kbd>
 
@@ -8989,8 +9138,9 @@ However, GitKraken does not validate or debug third-party implementations. If th
 ### Custom AI Prompt Instructions
 
 Guide how GitKraken AI responds for specific scenarios like:
+- Global instructions
 - Commit Message Generation
-- Commit Explanations
+- Explain Changes
 - Stash Message Generation
 - Pull Request Title/Description
 - Conflict Resolution
@@ -9039,7 +9189,14 @@ Additional AI-powered features are in development to further streamline your wor
     <p>Have more questions about GitKraken AI? Visit our <a href="https://help.gitkraken.com/general/gitkraken-ai-faq">GitKraken AI FAQ page</a> for details.</p>
 </div>
 
----
+<style>
+pre{position:relative;min-height:3em}
+.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;height:28px;padding:0 8px;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s;font-size:11px;font-family:sans-serif}
+pre:hover .copy-btn{opacity:1}
+.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
+.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
+</style>
+<script>(function(){var C='Copy',K='Copied!';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p,cl=el.cloneNode(true),bn=cl.querySelector('.copy-btn');if(bn)bn.remove();cp((cl.innerText||cl.textContent).trimEnd()).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>
 
 # Learn Git with GitKraken Desktop | Beginner Guide & Workflow
 URL: https://help.gitkraken.com/gitkraken-desktop/guide/
@@ -11091,7 +11248,50 @@ When **Shallow Clone** is selected, additional options become available:
 
 4. Click <button class='button button--success button--ui button--nolink'>Clone the repo!</button> to complete the shallow clone.
 
-After cloning, the repository opens automatically in GitKraken Desktop. 
+After cloning, the repository opens automatically in GitKraken Desktop.
+
+#### Sparse Checkout
+
+Sparse checkout lets you check out only a subset of files from a repository, keeping your working directory smaller and improving performance on large repositories such as monorepos.
+
+To perform a sparse checkout when cloning:
+
+1. Open the **Clone** dialog from **Repository Management**, the **New Tab**, or <kbd><strong>File > Clone</strong></kbd>.
+2. Select the repository you want to clone.
+3. Enable the **Sparse Checkout** option.
+4. In the **Paths to include** field, enter one path per line (for example, `src/`, `docs/`, `README.md`). If no paths are provided, only root-level files will be checked out.
+
+<figure>
+  <img src="/wp-content/uploads/sparse-checkout.png" class="help-center-img img-bordered" alt="GitKraken Desktop Clone dialog with Sparse Checkout enabled, showing a Blobless clone option and a Paths to include text field with example paths such as src/, docs/, and README.md">
+  <figcaption style="text-align: center; color: #888">Enable Sparse Checkout in the Clone dialog and specify which paths to include.</figcaption>
+</figure>
+
+5. Click <button class='button button--success button--ui button--nolink'>Clone the repo!</button> to complete the clone.
+
+<div class='callout callout--basic'>
+  <p><strong>Note:</strong> Files at the root of the repository are always checked out regardless of the paths you specify.</p>
+</div>
+
+**Configuring sparse checkout on an existing repository**
+
+To enable or update sparse checkout rules on a repository you have already opened, go to <kbd>Preferences > Sparse Checkout</kbd> for that repository.
+
+<figure>
+  <img src="/wp-content/uploads/sparse-checkout-preferences.png" class="help-center-img img-bordered" alt="GitKraken Desktop Repo-Specific Preferences panel open to the Sparse Checkout section, showing a Paths to include text field and three action buttons: Enable sparse checkout, Disable sparse checkout, and Reapply sparse checkout">
+  <figcaption style="text-align: center; color: #888">Configure sparse checkout paths and actions under Repo-Specific Preferences.</figcaption>
+</figure>
+
+From this panel you can:
+- **Enable sparse checkout** — activates sparse checkout using the paths you have entered.
+- **Disable sparse checkout** — turns off sparse checkout and restores the full working directory.
+- **Reapply sparse checkout** — re-applies the current path rules, useful after pulling in new files or resolving inconsistencies.
+
+When a repository has sparse checkout active, a **Sparse** button appears in the toolbar. Click it to quickly edit your sparse checkout paths, disable sparse checkout, or reapply the current rules without opening Preferences.
+
+<figure>
+  <img src="/wp-content/uploads/toolbar-action-for-sparse-checkout-repos.png" class="help-center-img img-bordered" alt="GitKraken Desktop toolbar showing the Sparse button expanded, with a dropdown menu listing Sparse Checkout Commands: Edit sparse checkout paths, Disable sparse checkout, and Reapply sparse checkout">
+  <figcaption style="text-align: center; color: #888">The Sparse toolbar button provides quick access to sparse checkout commands on active repos.</figcaption>
+</figure>
 
 
 ***
@@ -11135,8 +11335,6 @@ Also accessible via <kbd><strong>File > Init</strong></kbd> or New Tab.
   <img src='/wp-content/uploads/gkd-repo-mgm-tab-customize1.gif' class="help-center-img img-bordered" alt="User interacting with GitKraken Desktop Repository Management tab to change the color of a repo group via the group menu">
   <figcaption style="text-align:center; color:#888">Customize repo group layout and colors</figcaption>
 </figure>
-
----
 
 # Improve GitKraken Desktop Performance
 URL: https://help.gitkraken.com/gitkraken-desktop/performance-issues/
