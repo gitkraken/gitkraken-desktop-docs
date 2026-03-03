@@ -56,6 +56,7 @@ GitKraken Desktop’s built-in diff viewer includes:
 - Syntax highlighting
 - File mini-map
 - Toggleable views: Hunk, Inline, Split
+- Word wrap toggle
 - Arrows to navigate between change sets
 
 Use the <button class="button button--primary button--ui button--nolink"><span style="color:#141422;">Edit in working directory</span></button> button to directly edit the file. Learn more in the [Editing Files](/working-with-files/editing-files) section.
@@ -121,6 +122,17 @@ Displays changes side-by-side, with the original file on the left and the update
 <figure class='figure center'>
   <img src='/wp-content/uploads/split-2025.png' class="help-center-img img-bordered" alt="Split View mode in GitKraken Desktop comparing changes between two versions of a file, highlighting additions, deletions, and updated image references side-by-side." />
   <figcaption style="text-align: center; color: #888;">Split view compares before (left) and after (right) file states.</figcaption>
+</figure>
+
+### Word Wrap
+
+The Word Wrap toggle wraps long lines in the diff view so that the full content of each line is visible without horizontal scrolling. This is particularly useful when reviewing files with long lines, such as Markdown documents, minified JavaScript, or LaTeX files.
+
+To toggle word wrap, click the **Word Wrap** button in the toolbar of the diff view, file view, file history, or merge conflict resolution panel.
+
+<figure class='figure center'>
+  <img src='/wp-content/uploads/word-wrap.png' class="help-center-img img-bordered" alt="GitKraken Desktop file view toolbar with the Word Wrap button highlighted in the top-right corner, showing a file with long lines wrapped for easier reading." />
+  <figcaption style="text-align: center; color: #888;">Click the Word Wrap button in the toolbar to toggle line wrapping.</figcaption>
 </figure>
 
 ***
