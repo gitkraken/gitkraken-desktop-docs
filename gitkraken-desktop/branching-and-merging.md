@@ -287,3 +287,26 @@ To rebase:
 </figure>
 
 Rebasing rewrites history but results in a more linear and readable commit tree.
+
+### Rebase N commits onto another branch
+
+You can rebase a specific range of commits onto another branch without performing a full interactive rebase. This is useful when you want to move only a subset of commits from your current branch onto a target branch.
+
+GitKraken Desktop provides two ways to do this:
+
+**Option 1: Multi-select a range of commits**
+1. Check out the target branch.
+2. In the Commit Graph, hold <kbd>Shift</kbd> and click to select a range of commits on the source branch.
+3. Right-click the base branch and select **Rebase X commits onto [branch]**.
+
+<figure>
+  <img src="/wp-content/uploads/rebase-N-commits.png" class="help-center-img img-bordered" alt="GitKraken Desktop Commit Graph showing a right-click context menu on a branch with the 'Rebase 4 commits onto gitkraken/main' option highlighted, after a range of commits has been selected">
+  <figcaption style="text-align:center; color:#888">Right-click the target branch after selecting a commit range to rebase</figcaption>
+</figure>
+
+**Option 2: Select a single pivot commit**
+1. Select one commit in the middle of your current branch. No merge commits should exist between the selected commit and the head of the branch.
+2. Right-click the target branch.
+3. Select **Rebase N commits onto [branch]**.
+
+GitKraken Desktop rebases the selected commit and all subsequent commits up to the branch head onto the target branch.
