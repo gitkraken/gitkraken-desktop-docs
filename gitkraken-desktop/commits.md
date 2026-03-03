@@ -249,10 +249,23 @@ Right-click any commit node in the graph and choose **Revert Commit**. GitKraken
     <figcaption style="text-align: center; color: #888;">Use the revert option to create a new commit that undoes a previous one.</figcaption>
 </figure>
 
-## Restore files from commit
+## Restore files from a commit
 
-To restore a file from a previous commit, right-click the file in the commit’s diff view and select **Restore file from this commit**. This action retrieves the file version from that commit and stages it for your next commit.
-You can multiselect files to restore multiple at once. This is useful for undoing changes to specific files without affecting the rest of your working directory.
+GitKraken Desktop lets you restore any file to its state at a specific commit and place it directly into your working directory (WIP). This is useful when you want to retrieve an older version of a file, resurrect a deleted file, or selectively reverse changes without affecting the rest of your working directory.
+
+To restore a file from a commit:
+1. Select a commit in the Commit Graph to open it in the Commit Panel.
+2. Right-click any file listed in the Commit Panel.
+3. Select **Restore file from this commit**.
+
+The file is placed into your working directory as a staged change, ready to include in your next commit.
+
+<figure class=’figure center’>
+    <img src=’/wp-content/uploads/restore-files.png’ class="help-center-img img-bordered" alt="GitKraken Desktop Commit Panel showing multiple files selected from a commit’s file list, with a right-click context menu displaying the ‘Restore selected files from this commit’ option highlighted" />
+    <figcaption style="text-align: center; color: #888;">Right-click a file in the Commit Panel to restore it to your working directory.</figcaption>
+</figure>
+
+To restore multiple files at once, hold <kbd>Shift</kbd> or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> to multi-select files in the Commit Panel, then right-click and select **Restore selected files from this commit**.
 
 <style>
 pre{position:relative;min-height:3em}
