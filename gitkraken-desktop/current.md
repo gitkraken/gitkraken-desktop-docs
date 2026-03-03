@@ -20,16 +20,11 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 
 <kbd>Tuesday, March 3rd, 2026</kbd>
 
-<div class="embed-container embed-container--16-9" style="position: relative; width: 560px; height: 310px; overflow: hidden;">
-    <a href="https://www.youtube.com/watch?v=5ZSSZjtAG3E" target="_blank">
-      <img src="https://help.gitkraken.com/wp-content/uploads/GKD-11-10-Thumbnail.png" alt="YouTube video thumbnail"
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;" />
-    </a>
+<div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5ZSSZjtAG3E?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>
 </div>
 
 _Snap snap snap that branch where you want it._
-
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-11-10-0) and see how it all works!_
 
 ### New ✨
  - **Pin branch to left:**
