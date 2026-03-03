@@ -101,12 +101,35 @@ Use multi-select in the Left Panel to delete several branches at once:
 
 ### Pin branch to the left
 
-Branches can be pinned to the left in the commit graph for easy access. Right-click a branch (in commit graph or Left Panel) and select **Pin to left**.
+Pinning a branch fixes it to the left side of the Commit Graph so that its direct commit history always appears on the left. This is particularly useful for long-lived branches like `main` or a production branch, where you want a stable reference point to see how other branches merge into it.
+
+To pin a branch:
+1. Right-click a branch label in the Commit Graph or the Left Panel.
+2. Select **Pin to left**.
+
+<figure>
+  <img src="/wp-content/uploads/pin-to-left.png" class="help-center-img img-bordered" alt="Right-click context menu on a branch in the GitKraken Desktop Commit Graph with the 'Pin to Left' option visible at the bottom of the menu">
+  <figcaption style="text-align:center; color:#888">Select "Pin to Left" from the branch context menu</figcaption>
+</figure>
+
+To unpin a branch, right-click the branch label again and select **Unpin from left**.
 
 ### Smart Branches
-Smart branches is a feature that allows to focus on specific branches and it's upstream branches. When enabled, the graph will only show the selected branch and its upstream branches, hiding all other branches. This feature is useful to reduce visual noise and focus on the relevant branches when working with a large number of branches in a repository.
 
-To enable Smart Branches, right-click on commit graph's header and select **Smart Branch Visibility**. This will activate on the current checked out branch.
+Smart Branch Visibility reduces visual noise in the Commit Graph by displaying only the branches most relevant to your current work. When enabled, the graph shows only your checked-out branch, its target branch, and their respective upstream branches — hiding all others.
+
+This is especially useful in repositories with a large number of branches where the full graph can be difficult to navigate.
+
+To enable Smart Branch Visibility:
+1. Click the gear icon in the top-right corner of the Commit Graph header.
+2. Select **Smart Branch Visibility**.
+
+<figure>
+  <img src="/wp-content/uploads/smart-visibility.png" class="help-center-img img-bordered" alt="GitKraken Desktop Commit Graph with Smart Branch Visibility enabled, showing a filtered branch list in the Left Panel and the column settings dropdown with the Smart Branch Visibility option checked">
+  <figcaption style="text-align:center; color:#888">Enable Smart Branch Visibility from the Commit Graph column settings</figcaption>
+</figure>
+
+Smart Branch Visibility activates on your currently checked-out branch. To disable it, follow the same steps and deselect **Smart Branch Visibility**.
 ***
 
 ## Merging
