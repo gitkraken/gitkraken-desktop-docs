@@ -64,6 +64,8 @@ To update your working directory:
 
 If you’re on the wrong branch, [stash](/gitkraken-desktop/stashing) your changes, switch branches, and pop the stash.
 
+If you only need a subset of files checked out, see [Sparse Checkout](/gitkraken-desktop/open-clone-init/#sparse-checkout).
+
 ### Rename a Branch
 
 Right-click the branch label or use the Left Panel to rename the current branch.
