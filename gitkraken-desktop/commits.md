@@ -248,6 +248,12 @@ Right-click any commit node in the graph and choose **Revert Commit**. GitKraken
     <img src='/wp-content/uploads/revert-commit-2025.png' class="help-center-img img-bordered" alt="Context menu in GitKraken showing the 'Revert commit' option highlighted." />
     <figcaption style="text-align: center; color: #888;">Use the revert option to create a new commit that undoes a previous one.</figcaption>
 </figure>
+
+## Restore files from commit
+
+To restore a file from a previous commit, right-click the file in the commit’s diff view and select **Restore file from this commit**. This action retrieves the file version from that commit and stages it for your next commit.
+You can multiselect files to restore multiple at once. This is useful for undoing changes to specific files without affecting the rest of your working directory.
+
 <style>
 pre{position:relative;min-height:3em}
 .copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;height:28px;padding:0 8px;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s;font-size:11px;font-family:sans-serif}

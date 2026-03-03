@@ -342,8 +342,9 @@ However, GitKraken does not validate or debug third-party implementations. If th
 ### Custom AI Prompt Instructions
 
 Guide how GitKraken AI responds for specific scenarios like:
+- Global instructions
 - Commit Message Generation
-- Commit Explanations
+- Explain Changes
 - Stash Message Generation
 - Pull Request Title/Description
 - Conflict Resolution

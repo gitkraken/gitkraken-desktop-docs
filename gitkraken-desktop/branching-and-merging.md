@@ -4,7 +4,7 @@ description: Learn how to create branches, merge code, and rebase commits using 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 Learn how to branch, merge, and rebase in GitKraken Desktop.
 
@@ -99,6 +99,14 @@ Use multi-select in the Left Panel to delete several branches at once:
   <p><strong>Caution:</strong> Deleting a branch is permanent.</p>
 </div>
 
+### Pin branch to the left
+
+Branches can be pinned to the left in the commit graph for easy access. Right-click a branch (in commit graph or Left Panel) and select **Pin to left**.
+
+### Smart Branches
+Smart branches is a feature that allows to focus on specific branches and it's upstream branches. When enabled, the graph will only show the selected branch and its upstream branches, hiding all other branches. This feature is useful to reduce visual noise and focus on the relevant branches when working with a large number of branches in a repository.
+
+To enable Smart Branches, right-click on commit graph's header and select **Smart Branch Visibility**. This will activate on the current checked out branch.
 ***
 
 ## Merging

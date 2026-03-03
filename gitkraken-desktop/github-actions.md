@@ -5,7 +5,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 [GitHub Actions](https://github.com/features/actions) is a service from GitHub that lets you automate tasks in your repository using workflow files. These workflows are written in YAML and stored in the `.github/workflows` directory of your repository.
 
@@ -14,6 +14,10 @@ taxonomy:
 </div>
 
 ***
+<div class='callout callout'>
+  <p><strong>Note:</strong>In version 11.10.0, GitHub Actions has been removed from the Left Panel to simplify navigation. Existing GitHub Actions workflows will continue to run normally. To update workflow files, edit and commit them directly within your repository.</p>
+</div>
+
 
 ## Quick Start
 

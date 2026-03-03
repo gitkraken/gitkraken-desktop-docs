@@ -15,7 +15,50 @@ Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 
 ***
+<a id="v11-10-0"></a>
+## Version 11.10.0
 
+<kbd>Tuesday, March 3rd, 2026</kbd>
+
+<div class="embed-container embed-container--16-9" style="position: relative; width: 560px; height: 310px; overflow: hidden;">
+    <a href="https://www.youtube.com/watch?v=5ZSSZjtAG3E" target="_blank">
+      <img src="https://help.gitkraken.com/wp-content/uploads/GKD-11-10-Thumbnail.png" alt="YouTube video thumbnail"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;" />
+    </a>
+</div>
+
+_Snap snap snap that branch where you want it._
+
+_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-11-10-0) and see how it all works!_
+
+### New ✨
+ - **Pin branch to left:**
+   - Added support for pinning a branch to the left side of the Commit Graph. Right-click a pinned branch to unpin. 
+ - **Smart Branch Filtering:**
+   - Added smart branch filtering mode to focus the graph on the current branch and its related target/upstream refs.
+ - **Restore files from any commit:**
+   - Right-click on files in a commit to restore them to your working directory. Works with single or multiple file selections.
+ - **Sparse Checkout Support:**
+   - GitKraken Desktop can now work with sparse checkouts! You can also perform sparse checkouts when cloning a repo, and set sparse checkout rules for the open repo from the settings.
+ - **GitKraken AI:**
+   - Added support for Google Gemini 3 Flash.
+
+### Improvements 🙌
+ - **GitKraken AI:**
+   - Updated default AI model to Google Gemini 2.5 Flash and removed deprecated Gemini 1.5 and 2.0 models.
+ - **Experimental Feature – Git Executable**:
+   - Bumped Bundled Git to v2.53.0.
+
+### Bug Fixes 🐛
+ - Fixed a bug that prevented multi-selection options from appearing in the stash context menu in the left panel.
+ - Fixed an issue where the 'Copy file path' context menu option would not work for files in a worktree or a submodule.
+ - Fixed an issue where external changes made in worktrees (such as commits from the terminal) were not being detected.
+ - Fixed an issue where pulling with fast-forward failed with "Could not apply stash" when there were uncommitted changes.
+
+ ### Deprecation Notice 🧟
+ - GitHub Actions has been removed from the Left Panel to simplify navigation. Existing GitHub Actions workflows will continue to run normally. To update workflow files, edit and commit them directly within your repository.
+
+***
 <a id="v11-9-0"></a>
 ## Version 11.9.0
 
