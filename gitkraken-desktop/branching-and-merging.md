@@ -149,6 +149,27 @@ If no conflicts exist, changes will be merged automatically.
   <p>The in-app merge conflict output editor is available with a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center" target="_blank">Paid</a> license.</p>
 </div>
 
+### Squash merges
+
+When you enable the **Squash** setting, GitKraken Desktop stages all changes from the source branch locally without creating a merge commit automatically. You then commit the squashed result manually, which produces a single, clean commit on the target branch.
+
+This is useful when you want to maintain a linear history on your main branch without preserving the individual commits from a feature branch.
+
+To enable squash merges:
+1. Go to **Preferences** > **Commit**.
+2. Enable the **Squash** toggle.
+
+<figure>
+  <img src="/wp-content/uploads/squash-merge.png" class="help-center-img img-bordered" alt="GitKraken Desktop Preferences panel open to the Commit section, with the Merge Behavior area highlighted showing the Squash checkbox and its description: 'When enabled, merging branches locally will stage all changes without creating a merge commit automatically. You will need to commit manually.'">
+  <figcaption style="text-align:center; color:#888">Enable the Squash toggle under Preferences > Commit > Merge Behavior</figcaption>
+</figure>
+
+After merging with squash enabled, review the staged changes in the Commit Panel and commit them manually.
+
+<div class='callout callout--basic'>
+  <p><strong>Note:</strong> With squash enabled, GitKraken Desktop stages all changes but does not create the merge commit for you. You must commit manually to complete the merge.</p>
+</div>
+
 ### Merge Conflict Editor
 
 When conflicts occur, the Commit Panel shows the conflicted files. Click a file to open the Merge Tool.
