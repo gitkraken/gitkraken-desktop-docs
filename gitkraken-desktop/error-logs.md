@@ -1,12 +1,33 @@
 ---
 title: View and Submit Error Logs
 description: Learn how to access GitKraken Desktop error logs to troubleshoot issues and send diagnostics to support.
+product: GitKraken Desktop
+feature: Error Logs
+content_type: troubleshooting
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [error-logs, diagnostics, support, troubleshooting, errors]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop allows you to view recent error messages for troubleshooting. These logs are useful when submitting a support ticket.
+This page explains how to view recent GitKraken Desktop error logs so you can troubleshoot problems and share diagnostics with support. Use it when you see red error toasts in the app, need the underlying log text for a ticket, or want to capture recent failure details before reproducing an issue again.
+
+**Requirements and limits**
+- Error logs contain the most recent GitKraken Desktop error toasts, not a full application log history.
+- You can open error logs from the Help menu or the Command Palette.
+- Include the log contents when contacting support so the issue can be investigated faster.
+- Use this page for error toasts specifically; other diagnostics may live in separate log views.
+
+## How to open error logs in GitKraken Desktop
 
 You can access error logs via:
 
@@ -23,6 +44,10 @@ You can access error logs via:
   <figcaption style="text-align: center; color: #888;">You can also search for "error log" in the Command Palette.</figcaption>
 </figure>
 
-This will open a text file with a list of the most recent error toasts—the red notifications that appear in the upper-right corner of GitKraken Desktop.
+## What the error log contains
+
+This will open a text file with a list of the most recent error toasts, which are the red notifications that appear in the upper-right corner of GitKraken Desktop.
+
+## How to send error logs to support
 
 Include a copy of your error log when submitting a [support ticket](https://www.gitkraken.com/git-client/contact-support?product=gitkraken&source=help_center). This helps our team identify and resolve issues faster.

@@ -1,12 +1,32 @@
 ---
 title: GitKraken Desktop Command Palette | Fast Actions & Navigation
 description: Discover how to use the Command Palette in GitKraken Desktop to quickly run commands, open files, switch repos, and customize settings with shortcuts.
+product: GitKraken Desktop
+feature: Command Palette
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [command-palette, shortcuts, navigation, search, actions]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-The <strong>Command Palette</strong> provides quick access to GitKraken Desktop actions, files, repositories, and settings.
+Use this page to run GitKraken Desktop actions from the Command Palette when you want a keyboard-first workflow for commands, files, repositories, and settings. It explains how to open the palette, what command categories are available, and when it is faster than navigating the UI directly.
+
+**Requirements and limits**
+- Access methods: <kbd>Cmd/Ctrl + P</kbd>, the wand icon, or the Help menu
+- Scope: Commands, files, repositories, branches, stashes, settings, logs, and patches
+- Search behavior: Results filter live as you type
+- Execution model: Press <kbd>Enter</kbd> to run the selected item
+- Command availability depends on the current repository state, open repo context, and configured integrations
 
 <figure>
   <div class='embed-container embed-container--16-9'>
@@ -36,7 +56,7 @@ The Command Palette is available at any time regardless of which panel or view i
 
 ***
 
-## Open the Command Palette
+## How to open the Command Palette
 
 You can launch the Command Palette in three ways:
 
@@ -53,7 +73,7 @@ You can launch the Command Palette in three ways:
 
 ***
 
-## Available Command Categories
+## What command categories are available
 
 Below is a list of supported commands grouped by category.
 

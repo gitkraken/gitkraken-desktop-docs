@@ -1,13 +1,34 @@
 ---
 title: Authentication with Other Git Hosts in GitKraken Desktop
 description: Learn how to authenticate with TFS, AWS CodeCommit, Google Cloud Source Repositories, and custom Git hosts using HTTPS or SSH in GitKraken Desktop.
+product: GitKraken Desktop
+feature: Generic Git Host Authentication
+content_type: reference
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [authentication, https, ssh, codecommit, tfs]
 taxonomy:
   category: gitkraken-desktop
 ---
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop supports authentication with most repository hosting services (e.g., TFS, AWS CodeCommit, [Google Cloud Source Repositories](/integrations/authentication/#google-cloud-source-repositories), and custom services) over HTTPS or SSH.
+Use this page to authenticate GitKraken Desktop with Git hosts that do not have a dedicated integration page, including TFS, AWS CodeCommit, Google Cloud Source Repositories, and custom services. It covers HTTPS cloning, SSH key setup, SSH agent usage, proxy handling, and credential reset behavior.
+
+**Requirements and limits**
+- Host scope: Git hosts without a dedicated GitKraken integration page
+- Authentication methods: HTTPS or SSH
+- Supported SSH URL formats: `ssh://{user}@{host}/{repo}` and `{user}@{host}:{repo}`
+- Windows SSH note: Only Pageant is supported as the local SSH agent
+- SSH config limitation: GitKraken Desktop does not support `.ssh/config` aliases
+- Proxy behavior: Windows uses system proxy prompts; macOS and Linux prompt directly in GitKraken Desktop
 
 <figure>
 <div class='embed-container embed-container--16-9'>
@@ -37,9 +58,13 @@ To use a local SSH agent instead of managing keys manually, enable **Use local S
 
 ***
 
-## HTTPS Authentication
+## How HTTPS authentication works
 
 This is the default and most common method for interacting with remotes. It requires your Git username and password.
+
+<div class='callout callout--basic'>
+    <p><strong>Use HTTPS when:</strong> you want the simplest setup and your host supports standard username/password or token-based HTTPS access. <strong>Use SSH instead when:</strong> your environment already relies on SSH keys or you want to avoid repeated HTTPS credential prompts.</p>
+</div>
 
 ### How to clone with HTTPS
 
@@ -62,7 +87,7 @@ The remote tracking at `origin` is automatically set using this HTTPS format.
 
 ***
 
-## SSH Authentication
+## How SSH authentication works
 
 <figure>
 <div class='embed-container embed-container--16-9'>
@@ -72,7 +97,11 @@ The remote tracking at `origin` is automatically set using this HTTPS format.
 
 Before cloning via SSH, you must first set up your SSH keys in GitKraken Desktop.
 
-### Set up SSH keys
+<div class='callout callout--basic'>
+    <p><strong>Use SSH when:</strong> your host or team standard is key-based authentication and you want reusable key-based access across repositories. <strong>Don't use SSH when:</strong> your environment depends on unsupported `.ssh/config` aliases or SSH-agent behavior GitKraken Desktop cannot honor.</p>
+</div>
+
+### How to set up SSH keys
 
 1. Navigate to <kbd><strong>Preferences > SSH</strong></kbd>.
 
@@ -84,7 +113,7 @@ Before cloning via SSH, you must first set up your SSH keys in GitKraken Desktop
 2. You can browse to select an existing SSH key pair or generate a new one (recommended).
 3. Copy the public key to your remote hosting service.
 
-### Clone over SSH
+### How to clone over SSH
 
 1. Copy the SSH URL from your hosting service.
 2. In GitKraken Desktop, go to <em class='context-menu'>File <i class="fa fa-caret-right"></i> Clone</em>.
@@ -110,19 +139,23 @@ Where:
 <figcaption style="text-align: center; color: #888">Example: git@example.com:org/username/myrepository.git</figcaption>
 </figure>
 
-### Custom SSH ports
+### How to use custom SSH ports
 
 Use this format:
 
     ssh://{user}@{host}:{port}/{repo}
 
-### Use a Local SSH Agent
+### How to use a local SSH agent
 
 Using a local agent can simplify SSH management, especially across multiple profiles. From <kbd><strong>Preferences > SSH</strong></kbd>, check _Use local SSH agent_.
 
+<div class='callout callout--basic'>
+    <p><strong>Use a local SSH agent when:</strong> your keys are already loaded and you want GitKraken Desktop to reuse them. <strong>Don't use it when:</strong> your platform setup depends on agent behavior or alias configuration GitKraken Desktop does not support directly.</p>
+</div>
+
 > Tip: This allows automatic key usage if already loaded in your system's agent.
 
-### Troubleshooting SSH
+### How to troubleshoot SSH
 
 - **Windows**: Only Pageant is supported. Download from [PuTTY's site](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 - **Misconfiguration**: Double-check your remote URL format and SSH settings.
@@ -130,7 +163,7 @@ Using a local agent can simplify SSH management, especially across multiple prof
 
 ***
 
-## Forget All Credentials
+## How to forget all credentials
 
 Reset stored usernames and passwords from <kbd><strong>Preferences > General</strong></kbd>:
 
@@ -141,15 +174,15 @@ Reset stored usernames and passwords from <kbd><strong>Preferences > General</st
 
 ***
 
-## Proxy Configuration
+## How proxy configuration works
 
 GitKraken Desktop supports proxies for Windows, macOS, and Linux.
 
-### Windows
+### How proxy prompts work on Windows
 
 Your system will prompt for proxy credentials when needed.
 
-### macOS & Linux
+### How proxy prompts work on macOS and Linux
 
 GitKraken Desktop prompts for credentials directly.
 
@@ -159,7 +192,7 @@ On Linux, run with this flag if needed:
 
 ***
 
-## Google Cloud Source Repositories
+## How to format Google Cloud Source Repositories SSH URLs
 
 Due to formatting, you may need to adjust SSH URLs:
 

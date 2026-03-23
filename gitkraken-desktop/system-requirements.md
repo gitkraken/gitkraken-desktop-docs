@@ -1,16 +1,38 @@
 ---
 title: System Requirements
 description: Minimum requirements for GitKraken Self-Hosted servers
+product: GitKraken Self-Hosted
+feature: System Requirements
+content_type: reference
+audience: enterprise-admin
+plan_required: Enterprise
+os_support: [server-linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: self-hosted
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [system-requirements, self-hosted, docker, ports, storage]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Self-Hosted is deployed via Docker containers on a small-spec Linux server or virtual machine. Below are the minimum system and software requirements.
+Use this page to confirm the minimum server resources and supported Linux distributions for GitKraken Self-Hosted before deployment. It summarizes the CPU, memory, storage, and Docker-host operating system requirements you need to validate before starting an installation or upgrade.
+
+**Requirements summary**
+- Deployment target: GitKraken Self-Hosted server
+- Minimum CPU: 2 cores
+- Minimum RAM: 4 GB
+- Minimum disk space: 5 GB
+- Host requirement: Linux server with Docker CE support
+- Supported Linux families on this page: CentOS, Ubuntu, and Red Hat Enterprise Linux
+- Legacy note: Some Ubuntu versions listed below are legacy Docker-era requirements and are no longer officially supported upstream
 
 ---
 
-## Minimum Server Requirements
+## Minimum server requirements
 
 | Resource | Minimum |
 |----------|---------|
@@ -23,7 +45,7 @@ GitKraken Self-Hosted is deployed via Docker containers on a small-spec Linux se
 
 ---
 
-## Supported Linux Distributions
+## Supported Linux distributions
 
 ### CentOS
 To install Docker CE on CentOS, you need:
@@ -44,7 +66,7 @@ To install Docker CE on Ubuntu, use a 64-bit version of one of the following:
 
 ---
 
-## Getting Started
+## How to get started
 
 Interested in deploying GitKraken Self-Hosted?
 

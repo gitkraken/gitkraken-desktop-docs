@@ -1,13 +1,34 @@
 ---
 title: Stage, Unstage, and Ignore Files in GitKraken Desktop
 description: Learn how to stage, unstage, discard changes, and manage .gitignore rules when committing in GitKraken Desktop. Includes line-by-line diff staging.
+product: GitKraken Desktop
+feature: Staging
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [staging, unstage, gitignore, wip, diff]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Learn how to stage files, review changes, and manage tracked content in GitKraken Desktop.
+Use this page to stage, unstage, discard, and ignore files in GitKraken Desktop from the Commit Panel and diff view. It covers full-file staging, line-level staging, discard actions, and the difference between ignoring a file and ignoring it while also removing it from Git tracking.
+
+**Requirements and limits**
+- Workflow scope: Working directory and staged file management from the Commit Panel and diff view
+- Starting point: Select the `//WIP` node to work with current uncommitted changes
+- Line-level actions: Stage, unstage, and discard support is available from the diff view for selected lines or hunks
+- Ignore behavior: GitKraken Desktop writes ignore rules to the root-level `.gitignore`
+- Ignore limitation: Nested `.gitignore` files are not parsed by GitKraken Desktop
+- Tracked-file behavior: **Ignore and Stop Tracking** removes the file from the Git index in addition to adding the ignore rule
 
 ***
 
@@ -28,7 +49,7 @@ Stage, unstage, and discard file changes in GitKraken Desktop from the Commit Pa
 
 ***
 
-## Stage Files and Changes
+## How to stage files and changes
 
 Staging prepares your file changes for commit. To begin:
 
@@ -64,7 +85,7 @@ You can also:
 
 ***
 
-## Unstage Files or Lines
+## How to unstage files or lines
 
 To unstage a file:
 
@@ -89,7 +110,7 @@ To unstage all:
 
 ***
 
-## Discard Changes
+## How to discard changes
 
 To discard changes across your working directory:
 
@@ -114,7 +135,7 @@ You can also:
 
 ***
 
-## Ignore Files
+## How to ignore files
 
 To prevent Git from tracking certain files, add them to a `.gitignore` file.
 
@@ -137,7 +158,7 @@ GitKraken Desktop will add the rule to a `.gitignore` file at the root of your r
 <p><strong>Note:</strong> GitKraken Desktop only uses the root-level <code>.gitignore</code> file.</p>
 </div>
 
-### Ignore Previously Tracked Files
+### How to ignore previously tracked files
 
 If a file is already tracked, you’ll see two options:
 

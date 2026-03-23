@@ -1,12 +1,33 @@
 ---
 title: Workspaces in GitKraken Desktop
 description: Learn how to create, manage, and share Cloud or Local Workspaces in GitKraken Desktop to organize and collaborate across repositories.
+product: GitKraken Desktop
+feature: Workspaces
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
+integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [workspaces, cloud-workspaces, local-workspaces, multi-repo, launchpad]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Workspaces allow you to create easily accessible groups of repositories, take action across multiple repos, view details about their state at a glance, and share them with your team.
+Use this page to create Local or Cloud Workspaces in GitKraken Desktop so you can organize repositories, run multi-repository actions, review pull requests across a group of repos, and share workspace context with a team. Cloud Workspaces require connected integrations, while Local Workspaces stay on your machine until you convert them.
+
+**Requirements and limits**
+- Workspace types: Local Workspace or Cloud Workspace
+- Cloud Workspace requirement: The relevant hosting service integration must be connected in <kbd>Preferences &gt; Integrations</kbd>
+- Local Workspace scope: Stored on your machine until you convert it
+- Cloud Workspace scope: Accessible across machines and shareable with teams or users
+- Multi-repository actions: Clone, Fetch, Pull, Open, Locate, and Remove are available from the Workspace toolbar
+- Conversion path: Local Workspaces can be converted to Cloud Workspaces after connecting a supported integration
 
 ***
 
@@ -42,7 +63,7 @@ Workspaces are accessible from the Repository Management tab.
 
 ***
 
-## Access Your Workspaces
+## How to access your Workspaces
 
 To access the Repo Management tab:
 
@@ -60,16 +81,20 @@ To access the Repo Management tab:
 
 ***
 
-## Cloud Workspaces
+## How Cloud Workspaces work
 
 Cloud Workspaces are accessible from any machine and can be shared with selected [teams](/start-here/teams/) in your organization. They allow for [multi-repository actions](/gitkraken-desktop/workspaces/#cloud-multi-repository-actions) and centralized pull request management.
+
+<div class='callout callout--basic'>
+    <p><strong>Use a Cloud Workspace when:</strong> you need to share repository groups across machines or with teammates. <strong>Don't use a Cloud Workspace when:</strong> the repo list is only for your local machine and does not need shared or synced workspace context.</p>
+</div>
 
 <p>Watch the overview:</p>
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OIQVsNRqg1M?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-### Create a Cloud Workspace
+### How to create a Cloud Workspace
 
 1. Click <button class="button button--success button--ui button--nolink">+ New Workspace</button>.
 2. Select "Cloud Workspace".
@@ -102,7 +127,7 @@ Cloud Workspaces are accessible from any machine and can be shared with selected
     </p>
 </div>
 
-### Perform Multi-repository Actions
+### How to run multi-repository actions in a Cloud Workspace
 
 To take action across multiple repositories:
 
@@ -161,7 +186,7 @@ More options are available via the ellipsis menu.
   </tbody>
 </table>
 
-### View Pull Requests in Launchpad
+### How to view Workspace pull requests in Launchpad
 
 Access open pull requests for all repositories in a Workspace directly from [Launchpad](https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/).
 
@@ -182,9 +207,13 @@ Access open pull requests for all repositories in a Workspace directly from [Lau
 </figure>
 
 
-## Local Workspaces
+## How Local Workspaces work
 
-### Create a Local Workspace
+<div class='callout callout--basic'>
+    <p><strong>Use a Local Workspace when:</strong> you want a private repository grouping stored only on your machine. <strong>Convert to a Cloud Workspace when:</strong> you need cross-device access, sharing, or integration-backed workspace features.</p>
+</div>
+
+### How to create a Local Workspace
 
 To create a Local Workspace:
 
@@ -208,7 +237,7 @@ To create a Local Workspace:
 
 To automatically add all repositories in a selected folder, enable the <strong>Sync with local directory</strong> option.
 
-### Perform Multi-repository Actions
+### How to run multi-repository actions in a Local Workspace
 
 You can take actions across multiple repositories within a Local Workspace:
 
@@ -219,7 +248,7 @@ You can take actions across multiple repositories within a Local Workspace:
    - **Open**: Launch selected repositories in GitKraken or your [default external editor](/start-here/preferences/#external-editor).
    - **Remove**: Delete selected repositories from the Workspace.
 
-### Convert a Local Workspace to a Cloud Workspace
+### How to convert a Local Workspace to a Cloud Workspace
 
 To enable sharing and enhanced visibility:
 
@@ -246,7 +275,7 @@ To enable sharing and enhanced visibility:
 
 ***
 
-## Edit a Workspace
+## How to edit a Workspace
 
 To edit a Workspace, click the ellipsis <i class="fas fa-ellipsis-v"></i> next to the Workspace name.
 
@@ -259,7 +288,7 @@ To edit a Workspace, click the ellipsis <i class="fas fa-ellipsis-v"></i> next t
   </figcaption>
 </figure>
 
-### Hide a Workspace
+### How to hide a Workspace
 
 Hide a Workspace to reduce clutter. Hidden groups (e.g., Recents, Favorites) can be shown again using the <i class="fa-solid fa-eye-slash"></i> icon.
 
@@ -272,11 +301,11 @@ Hide a Workspace to reduce clutter. Hidden groups (e.g., Recents, Favorites) can
   </figcaption>
 </figure>
 
-### Select/Unselect Repositories
+### How to select or unselect repositories
 
 Manually select repositories for targeted multi-repo actions like Fetch or Pull.
 
-### Open/Clone/Locate Repositories
+### How to open, clone, or locate repositories
 
 Open repositories in GitKraken Desktop or your preferred editor. You can also clone or locate repositories within the file system.
 
@@ -289,7 +318,7 @@ Open repositories in GitKraken Desktop or your preferred editor. You can also cl
   </figcaption>
 </figure>
 
-### Edit Workspace Details
+### How to edit Workspace details
 
 Customize your Workspace’s name, color, description, and access permissions.
 
@@ -302,13 +331,13 @@ Customize your Workspace’s name, color, description, and access permissions.
   </figcaption>
 </figure>
 
-### Change Workspace Color
+### How to change Workspace color
 
 Use color to visually organize and prioritize Workspaces. Select `Change color` from the three-dot menu.
 
 ***
 
-## Reorder Workspaces
+## How to reorder Workspaces
 
 Drag and drop Workspaces to arrange them in the desired order.
 
@@ -323,7 +352,7 @@ Drag and drop Workspaces to arrange them in the desired order.
 
 ***
 
-## Use Insights to Visualize Pull Request History
+## How to use Insights to visualize pull request history
 
 GitKraken Insights helps you understand how pull requests are merged into your repositories. It provides:
 
@@ -361,7 +390,7 @@ For more details, visit the [GitKraken.dev Insights documentation](/gk-dev/gk-de
 
 ***
 
-## Azure DevOps Requirements for Insights
+## Azure DevOps requirements for Workspace Insights
 
 To use Workspaces and [Insights](/gk-dev/gk-dev-insights/) with Azure DevOps:
 
@@ -373,7 +402,7 @@ Learn more from Microsoft’s official guidance: [Change application connection 
 
 ***
 
-## Workspace Changelog
+## Workspace changelog
 
 Take a trip down memory lane, and see how Workspaces have evolved over time.
 
@@ -447,4 +476,3 @@ Take a trip down memory lane, and see how Workspaces have evolved over time.
     </tr>
   </tbody>
 </table>
-

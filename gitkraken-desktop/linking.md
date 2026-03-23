@@ -1,12 +1,33 @@
 ---
 title: Deep Linking in GitKraken Desktop
 description: Learn how to share and open deep links to specific branches, commits, tags, and repositories in GitKraken Desktop for faster collaboration.
+product: GitKraken Desktop
+feature: Deep Linking
+content_type: reference
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [deep-linking, links, branches, commits, repositories]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 Use deep links in GitKraken Desktop to share or open specific remote repositories, commits, branches, or tags. This allows your team to quickly access relevant project context with a single click.
+
+**Requirements and limits**
+- Scope: Deep links to repositories, commits, branches, and tags
+- Integration requirement: The repository must be hosted through a supported GitKraken integration
+- Local access behavior: If the repository is already open, GitKraken navigates directly to the referenced item
+- Clone fallback: If the repository is not cloned locally, GitKraken opens a clone dialog with the URL pre-filled
+- Multiple-copy behavior: If more than one local copy exists, GitKraken prompts the user to choose which one to use
+- Setup note: No extra configuration is required beyond having access to the repository locally or through cloning
 
 ***
 
@@ -28,7 +49,7 @@ Deep links are available for any hosted remote repository that is connected thro
 
 ***
 
-## Copy a Link from GitKraken Desktop
+## How to copy a link from GitKraken Desktop
 
 Right-click on a branch, commit, tag, or repository to copy a deep link.
 
@@ -45,7 +66,7 @@ These links can be pasted into tools like Jira, GitHub, Slack, or Microsoft Team
 
 ***
 
-## Open a Deep Link
+## How to open a deep link
 
 If someone sends you a GitKraken Desktop link:
 - Click the link
@@ -62,7 +83,7 @@ If someone sends you a GitKraken Desktop link:
 
 ***
 
-## What Happens When...
+## What happens when a deep link opens
 
 GitKraken Desktop handles links dynamically depending on your local setup:
 

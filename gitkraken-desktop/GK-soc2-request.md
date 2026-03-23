@@ -1,12 +1,25 @@
 ---
-
 title: Gitkraken SOC 2 Request
 description: Request form for a copy of GK's SOC2 report
+product: GitKraken Desktop
+feature: SOC 2 Report Request
+content_type: form
+audience: buyer
+plan_required: [Business, Enterprise]
+os_support: [n/a]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: false
+tags: [security, compliance, soc2, trust-center]
 taxonomy:
     category: general
-
 ---
-Please fill out the following form to start the SOC2 request process. You will receive an email with a copy of our NDA that you can sign and return to us. Once we have received the signed NDA, we will provide you with a copy of our SOC2 report.
+<kbd>Last updated: March 2026</kbd>
+
+Use this form to request GitKraken’s SOC 2 report. After you submit the request, GitKraken will email you an NDA to sign and return before the report is shared. This request process is intended for eligible Business and Enterprise customers that need security documentation for vendor review or procurement.
 
 <div class="bbb-callout bbb--info">
     <div class="irow">

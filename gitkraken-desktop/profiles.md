@@ -1,10 +1,23 @@
 ---
 title: GitKraken Desktop Profiles | Manage Git Configs & Accounts
 description: Learn how to use GitKraken Desktop profiles to manage Git settings, integrations, avatars, and multiple accounts across different projects. Manage different gitconfig settings, repositories, and more!
+product: GitKraken Desktop
+feature: Profiles
+content_type: reference
+audience: developer
+plan_required: Pro
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, Bitbucket, Azure DevOps]
+integrations: [GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, Bitbucket, Azure DevOps]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [profiles, accounts, gitconfig, avatars, integrations]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZgYjeaJDbX8?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>
@@ -12,7 +25,15 @@ taxonomy:
 
 ***
 
-GitKraken Desktop uses profiles to manage app preferences, [Tabs](/start-here/interface/#tabs), and Git config settings. You can create and switch between profiles for different projects and environments.
+Use profiles in GitKraken Desktop to keep separate Git identities, integrations, app preferences, and tab sets for different projects or environments. This page explains how to create and switch profiles, what a profile stores, how avatar behavior works, and when a paid GitKraken subscription is required for multiple profiles.
+
+**Requirements and limits**
+- Purpose: Separate Git identities, integrations, preferences, and tab sets by work context
+- Multiple profiles: Require a paid GitKraken subscription
+- Profile data: General, Integrations, and UI Preferences are stored per profile
+- Tab behavior: Open tabs are profile-specific; new profiles duplicate tabs from the active profile when created
+- Git config option: You can sync profile name and email into the global `.gitconfig`
+- Avatar behavior: Connected integrations use provider avatars; otherwise GitKraken Desktop uses the Gravatar tied to the profile email
 
 ***
 
@@ -48,7 +69,11 @@ Multiple profiles require a paid GitKraken subscription. Profiles are accessible
 
 ***
 
-## Manage Profiles
+## How to manage profiles
+
+<div class='callout callout--basic'>
+  <p><strong>Use profiles when:</strong> you need clean separation between work and personal Git identities, integrations, and tabs. <strong>Don't use multiple profiles when:</strong> one identity and one integration set already cover your workflow.</p>
+</div>
 
 <figure>
   <img src="/wp-content/uploads/profiles-preferences@2x.png" class="help-center-img img-bordered" alt="GitKraken Preferences showing Profiles tab with profile details including name, author info, and organization." />
@@ -57,7 +82,7 @@ Multiple profiles require a paid GitKraken subscription. Profiles are accessible
 
 Enable <em>Keep my .gitconfig updated with my profile info</em> to sync your name and email with Git’s global `.gitconfig`.
 
-### What Does a Profile Store?
+### What a profile stores
 
 Each profile retains settings under:
 - <kbd>Preferences > General</kbd>
@@ -73,14 +98,22 @@ Each profile retains settings under:
 
 Profiles support unique integration connections. For example, use separate profiles to connect different GitHub accounts.
 
+<div class='callout callout--basic'>
+  <p><strong>Use separate profiles when:</strong> you want integrations, UI settings, and open tabs isolated by context. <strong>Don't expect profiles to be lightweight if:</strong> constantly duplicating and switching tabs would slow down your workflow more than it helps.</p>
+</div>
+
 <figure>
   <img src="/wp-content/uploads/profile-example-2025.png" class="help-center-img img-bordered" alt="List of three GitKraken profiles showing author names and emails, with notes indicating connection to different GitHub accounts for work and personal use.">
   <figcaption style="text-align:center; color:#888">Profiles can connect to different remote hosting accounts.</figcaption>
 </figure>
 
-### Change Profile Avatars
+### How to change profile avatars
 
 If connected to [GitHub](/gitkraken-desktop/github-gitkraken-desktop/), [GitHub Enterprise Server](/gitkraken-desktop/github-enterprise/),[GitLab](/gitkraken-desktop/gitlab-gitkraken-desktop/), [GitLab Self-Managed](/gitkraken-desktop/gitlab-self-hosted/), [Azure DevOps](/gitkraken-desktop/azure-devops/), or [Bitbucket](/gitkraken-desktop/bitbucket/) your avatar will match your GitHub profile. Otherwise, GitKraken Desktop uses the [Gravatar](https://gravatar.com) linked to your profile’s email address.
+
+<div class='callout callout--basic'>
+  <p><strong>Use provider avatars when:</strong> the profile is connected to a supported integration and you want that service's identity reflected in GitKraken Desktop. <strong>Use separate Gravatar-backed emails when:</strong> you need profiles to display different non-provider avatars.</p>
+</div>
 
 To change your profile avatar:
 1. Click the profile icon in the top-right corner.
@@ -103,7 +136,7 @@ Choose an icon or change the email address to use a different Gravatar image.
   <figcaption style="text-align:center; color:#888">Set a different author email to change the profile Gravatar.</figcaption>
 </figure>
 
-### Author Initials in the Graph
+### How to show author initials in the graph
 
 Instead of avatars, display commit author initials in the commit graph:
 
@@ -114,12 +147,12 @@ Instead of avatars, display commit author initials in the commit graph:
 
 To enable, go to <kbd><strong>Preferences > UI Preferences > Display author initials and generic remote icons instead of avatars</strong></kbd>.
 
-#### Which Initials Are Used?
+#### Which initials GitKraken Desktop uses
 
 GitKraken Desktop uses initials based on the commit’s author name:
 - Commits made in GitKraken use profile name initials.
 - Commits from the CLI use initials from `.git/config` or `.gitconfig`.
 
-### Can Profiles Use Different Avatars?
+### Can profiles use different avatars?
 
 Yes it can, if each profile has a unique email address linked to a different Gravatar. GitKraken currently does not support custom image uploads.

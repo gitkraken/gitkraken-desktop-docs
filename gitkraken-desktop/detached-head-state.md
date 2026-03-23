@@ -1,13 +1,34 @@
 ---
 title: Detached HEAD in GitKraken Desktop
 description: Learn how to safely enter, work in, and exit detached HEAD state in GitKraken Desktop. Includes recovery tips and commit preservation.
+product: GitKraken Desktop
+feature: Detached HEAD
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [detached-head, recovery, commits, checkout, git]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Detached HEAD state lets you check out any commit in GitKraken Desktop without creating a branch. This is useful for reviewing or experimenting with past changes without affecting your active branches.
+Use this page to enter, work in, and recover from detached HEAD state in GitKraken Desktop when you need to inspect or test a specific commit without switching a branch pointer. It explains how to preserve commits created in detached HEAD state and how to recover lost work if you switch branches too early.
+
+**Requirements and limits**
+- Entry point: Check out a specific commit instead of a branch
+- HEAD behavior: The checked-out commit is labeled `HEAD`
+- Commit-preservation rule: Commits made in detached HEAD state are not attached to any branch until you create one
+- Exit behavior: Checking out another branch removes the detached `HEAD` state
+- Recovery options: Use GitKraken Desktop Undo if available, or use `git reflog` from the terminal to recover lost commit SHAs
+- Risk: Unpreserved commits can be lost from normal branch history when you switch branches
 
 ***
 
@@ -30,7 +51,7 @@ Any commits made in detached HEAD state that were not saved to a branch will be 
 
 ***
 
-## Enter Detached HEAD State
+## How to enter detached HEAD state
 
 1. Right-click the commit you want to inspect.
 2. Select <kbd><strong>Checkout this commit</strong></kbd>.
@@ -51,7 +72,7 @@ You can now review the full history and diffs, or create a branch from this stat
 
 ***
 
-## Commit in Detached HEAD State
+## How to commit in detached HEAD state
 
 You can make changes and commit them while in this state. However, these commits won’t belong to any branch.
 
@@ -72,7 +93,7 @@ To preserve your work, create a branch from the current commit:
 
 ***
 
-## Exit Detached HEAD State
+## How to exit detached HEAD state
 
 To exit detached HEAD state:
 
@@ -91,7 +112,7 @@ This will remove the `HEAD` label and discard any unpreserved commits.
 
 ***
 
-## Recover Lost Commits
+## How to recover lost commits
 
 If you accidentally switch branches before saving your changes:
 

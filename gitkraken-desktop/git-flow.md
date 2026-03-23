@@ -1,13 +1,34 @@
 ---
 title: Gitflow in GitKraken Desktop
 description: Learn how to use Gitflow in GitKraken Desktop to manage features, releases, and hotfixes with organized branching workflows.
+product: GitKraken Desktop
+feature: Gitflow
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [gitflow, branching, releases, hotfixes, workflow]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Gitflow helps organize your repository history, making it easier to manage releases, bug fixes, and features.
+Use this page to configure and run Gitflow in GitKraken Desktop when your team organizes work into feature, release, and hotfix branches. It covers the initial Gitflow setup, how the Gitflow panel works, and what happens when each Gitflow branch type is finished.
+
+**Requirements and limits**
+- Workflow scope: Gitflow-style branching with feature, release, and hotfix branches
+- Setup location: <kbd>Preferences &gt; Gitflow</kbd>
+- Initialization behavior: GitKraken Desktop creates `main` and `develop` locally if they do not exist
+- Panel behavior: Only branches with Gitflow prefixes appear in the Gitflow panel
+- Finish behavior: Features merge into `develop`; releases merge into `main` and `develop` and create a tag; hotfixes merge into `main` and `develop`
+- Publishing behavior: Publishing a Gitflow branch works the same as pushing any other Git branch
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/eTOgjQ9o4vQ?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -31,7 +52,7 @@ Set up and use Gitflow in GitKraken Desktop to manage features, releases, and ho
 Right-click a Gitflow branch in the Left Panel and select **Finish** to complete it. To set a tag prefix (e.g., `v`), configure it under <kbd>Preferences > Gitflow</kbd>. Publishing a Gitflow branch to a remote works the same as pushing any other branch.
 
 ***
-## Configuration
+## How Gitflow configuration works
 
 To configure Gitflow in GitKraken Desktop:
 
@@ -48,7 +69,7 @@ Once initialized, two branches will always be present:
 If these branches don't exist locally, GitKraken Desktop will create them when Gitflow is initialized.
 
 ***
-## Usage
+## How to use Gitflow
 
 After initializing Gitflow, a Gitflow panel appears in the left sidebar. Use it to start or finish Gitflow branches.
 
@@ -69,7 +90,7 @@ Branches with a Gitflow prefix appear in the Gitflow panel. Others appear in the
 
 Publishing a Gitflow branch (i.e., pushing it to a remote) works the same as with regular Git branches.
 
-### Feature
+### How feature branches work
 
 Feature branches are for new features or bug fixes. They're typically local and not shared.
 
@@ -82,7 +103,7 @@ When you finish a feature branch:
 
 Optionally, rebase the feature branch onto <code>develop</code> before finishing.
 
-### Release
+### How release branches work
 
 Release branches represent versions shared with collaborators.
 
@@ -95,7 +116,7 @@ When you finish a release branch:
 
 <img src="/wp-content/uploads/finish-release-2025@2x.png" class="help-center-img img-bordered" alt="Finish release process">
 
-### Hotfix
+### How hotfix branches work
 
 Hotfix branches are similar to releases but created from <code>main</code>. Use them for urgent production fixes.
 
@@ -107,7 +128,7 @@ When you finish a hotfix:
 
 - It's merged into both <code>main</code> and <code>develop</code>.
 
-### Tag
+### How Gitflow tags work
 
 Tags mark specific points in your repository's history, such as releases.
 

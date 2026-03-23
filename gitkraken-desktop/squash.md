@@ -1,13 +1,34 @@
 ---
 title: Squash Git Commits in GitKraken Desktop
 description: Learn how to squash commits to combine multiple changes into one using GitKraken Desktop. Clean up Git history before pushing or finalizing branches.
+product: GitKraken Desktop
+feature: Squash Commits
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [squash, commits, history, force-push]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Squashing lets you combine multiple commits into one to clean up your Git history. This is helpful before pushing to a shared branch or finalizing a feature branch.
+Use this page to squash multiple commits into one in GitKraken Desktop when you want a cleaner branch history before sharing or merging work. It covers the selection requirements for squash, what happens to the resulting commit message, and why force push may be required if the original commits were already pushed.
+
+**Requirements and limits**
+- Workflow scope: Combine multiple local commits into one commit
+- Selection requirement: Select two or more commits in a consecutive straight ancestor-descendant line
+- Oldest-commit requirement: The oldest selected commit must have a parent
+- Limitation: Squash is not available for merge commits
+- Post-squash behavior: Edit the resulting commit message in the Commit Panel
+- Remote-history warning: If the original commits were already pushed, updating the remote with the squashed history usually requires a force push
 
 ***
 
@@ -29,7 +50,7 @@ Squashing is not available for merge commits or commits that do not meet the con
 
 ***
 
-## Squash Requirements
+## Squash requirements
 
 You can squash commits if they meet all the following conditions:
 
@@ -54,7 +75,7 @@ After squashing, the new commit appears in the Commit Panel. You can click the c
 
 ***
 
-## Push a Squashed Commit
+## How to push a squashed commit
 
 Avoid pushing commits to your remote that you intend to squash. If you've already pushed them, and then squash locally, your local and remote branches will differ.
 

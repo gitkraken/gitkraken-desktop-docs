@@ -1,19 +1,41 @@
 ---
 title: GitLab Self-Managed Integration with GitKraken Desktop
 description: Connect GitKraken Desktop with your GitLab Self-Managed server to manage repositories, SSH keys, and pull requests using personal access tokens.
+product: GitKraken Desktop
+feature: GitLab Self-Managed Integration
+content_type: how-to
+audience: developer
+plan_required: Pro
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitLab Self-Managed]
+integrations: [GitLab Self-Managed]
+hosted_variant: self-hosted
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [gitlab-self-managed, self-hosted, pat, ssh, pull-requests]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
+
+Use this page to connect GitKraken Desktop to a GitLab Self-Managed server so you can authenticate with a personal access token, manage SSH keys, discover repositories, and work with pull requests in your self-hosted GitLab environment. This integration requires a Pro subscription tier or higher.
+
+<div class='callout callout--warning'>
+  <p><strong>Note:</strong> GitLab Self-Managed integration requires a <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">Pro subscription</a> tier or higher.</p>
+</div>
+
+**Requirements and limits**
+- Integration covered here: GitLab Self-Managed
+- Plan: Pro subscription tier or higher
+- Supported server versions: GitLab Self-Managed releases from the past year
+- Authentication: Personal access token with `api` and `read_user` scopes
+- Token setup note: Leave token expiration blank when following this workflow
+- Account limit: One GitLab Self-Managed account per profile; use Profiles for multiple accounts
+- SSH behavior: GitKraken uses the key in <kbd>Preferences &gt; SSH</kbd> unless you configure a GitLab-specific key or system SSH Agent
 
 <div class='embed-container embed-container--16-9'>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/BhIX7fGSM8k?ecver=1" frameborder="0" allowfullscreen></iframe>
-</div>
-
-GitKraken allows you to connect to GitLab Self-Managed (CE or EE), enabling repository discovery, pull request creation, and SSH key management within your self-hosted GitLab environment.
-
-<div class='callout callout--warning'>
-  <p><strong>Note:</strong> All self-hosted server integrations, including GitLab Self-Managed, require an <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">Advanced subscription</a> tier or higher.</p>
 </div>
 
 ***
@@ -33,7 +55,7 @@ To configure SSH access after connecting:
 
 Once connected, GitKraken Desktop lets you clone from your self-hosted repository list, add remotes, and create or view pull requests. To manage more than one GitLab Self-Managed account, use multiple [profiles](/start-here/profiles) with a GitKraken Pro plan.
 
-### Benefits
+### What the GitLab Self-Managed integration lets you do
 
 - Create new repositories with optional .gitignore and license files.
 - Automatically generate an SSH key and upload it to GitLab Self-Managed.
@@ -45,10 +67,14 @@ Once connected, GitKraken Desktop lets you clone from your self-hosted repositor
 
 ***
 
-## GitLab Self-Managed Authentication
+## How to authenticate with GitLab Self-Managed
 
 <div class='callout callout'>
   <p><strong>Note:</strong> GitKraken supports any version of GitLab Self-Managed released within the past year.</p>
+</div>
+
+<div class='callout callout--basic'>
+  <p><strong>Use GitLab Self-Managed integration when:</strong> your repositories live on a self-hosted GitLab server and you need PAT-based access. <strong>Don't use the GitLab.com page when:</strong> your environment requires self-managed host domains, self-hosted auth, or server-version compatibility checks.</p>
 </div>
 
 To authenticate:
@@ -83,7 +109,7 @@ To authenticate:
 
 ***
 
-## Generating an SSH Key for GitLab Self-Managed
+## How to generate an SSH key for GitLab Self-Managed
 
 <div class='callout callout'>
   <p><strong>Note:</strong> GitKraken uses the SSH key from <kbd>Preferences > SSH</kbd> unless overridden with a GitLab-specific key or a system SSH Agent.</p>
@@ -104,6 +130,10 @@ You can also:
 
 ***
 
-## Connecting to Multiple GitLab Self-Managed Accounts
+## How to connect multiple GitLab Self-Managed accounts
 
 GitKraken supports one GitLab Self-Managed account per profile. Use multiple [profiles](/start-here/profiles) with GitKraken Pro to manage separate accounts.
+
+<div class='callout callout--basic'>
+  <p><strong>Use multiple profiles when:</strong> you need to switch between separate GitLab Self-Managed servers or identities. <strong>Don't use multiple profiles when:</strong> one self-hosted account already covers the repositories you need to manage.</p>
+</div>

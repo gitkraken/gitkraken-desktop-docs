@@ -1,10 +1,32 @@
 ---
 title: GitKraken Desktop Integrations | Connect Git & Issue Trackers
 description: Learn how to integrate GitKraken Desktop with GitHub, GitLab, Bitbucket, Jira, Trello, and other tools to streamline repo access and issue tracking.
+product: GitKraken Desktop
+feature: Integrations
+content_type: overview
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, Bitbucket, Bitbucket Data Center, Azure DevOps, Jira Cloud, Jira Data Center, Trello]
+integrations: [GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, Bitbucket, Bitbucket Data Center, Azure DevOps, Jira Cloud, Jira Data Center, Trello]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [integrations, git-hosting, issue-trackers, setup]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
+
+Integrations connect GitKraken Desktop to Git hosting services and issue trackers so you can clone repositories, manage remotes, review pull requests, and work with issues from one interface. Use this page to find the right integration for GitHub, GitLab, Bitbucket, Azure DevOps, Jira, Trello, and self-hosted services.
+
+**Requirements and limits**
+- Git hosting integrations: GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, Bitbucket, Bitbucket Data Center, and Azure DevOps
+- Issue tracker integrations: Jira Cloud, Jira Data Center, Trello, GitLab Issues, GitLab Self-Managed Issues, GitHub Issues, and GitHub Enterprise Server Issues
+- Community plan: Public GitHub and GitLab repositories only; some issue tracker integrations are view-only
+- Self-hosted integrations: Require a paid plan; GitLab Self-Managed is available on Pro and up, while some other self-hosted integrations require higher tiers
+- Multiple profiles with separate integrations: Pro plan or higher
 
 <figure>
   <div class='embed-container embed-container--16-9'>
@@ -15,7 +37,7 @@ taxonomy:
 
 ***
 
-## Remote Repository Integrations
+## How to connect remote Git hosting integrations
 
 GitKraken Desktop supports easy connection to popular remote Git services:
 
@@ -28,12 +50,12 @@ GitKraken Desktop supports easy connection to popular remote Git services:
 - [Azure DevOps](/gitkraken-desktop/azure-devops/)
 
 <div class='callout callout--warning'>
-  <p><strong>Note:</strong> Self-Hosted server integrations require an <strong>Advanced</strong> subscription or higher.</p>
+  <p><strong>Note:</strong> Self-hosted server integrations require a paid plan. GitLab Self-Managed is available on Pro and up, while some other self-hosted integrations require higher tiers.</p>
 </div>
 
 ***
 
-## Issue Tracker Integrations
+## How to connect issue tracker integrations
 
 Track your development tasks by connecting GitKraken Desktop to your project management tools:
 
@@ -51,7 +73,7 @@ Track your development tasks by connecting GitKraken Desktop to your project man
 
 ***
 
-## Integration Benefits
+## What you can do with integrations
 
 By connecting integrations, you can:
 
@@ -62,11 +84,12 @@ By connecting integrations, you can:
 
 ***
 
-## Plan Requirements Summary
+## How plan requirements vary by integration
 
 | Feature Type | Integration | Minimum Plan |
 |--------------|-------------|----------------|
-| Self-Hosted Git Servers | GitHub Enterprise, GitLab Self-Managed, Bitbucket Data Center | Advanced |
+| Self-Hosted Git Servers | GitLab Self-Managed | Pro |
+| Self-Hosted Git Servers | GitHub Enterprise, Bitbucket Data Center | Advanced |
 | Issue Trackers with Write Access | Jira Cloud, Trello, etc. | Pro or Advanced |
 | Multiple Profiles with Separate Integrations | All | Pro + |
 

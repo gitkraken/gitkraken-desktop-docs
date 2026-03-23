@@ -1,18 +1,37 @@
 ---
 title: GitKraken Desktop Keyboard Shortcuts | Speed Up Your Git Workflow
 description: Master GitKraken Desktop with this complete list of keyboard shortcuts for staging, navigating, committing, and managing tabs.
+product: GitKraken Desktop
+feature: Keyboard Shortcuts
+content_type: reference
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [keyboard-shortcuts, shortcuts, navigation, command-palette, tabs]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop includes a variety of keyboard shortcuts to help you work faster. Use this reference to find shortcuts for common actions like staging files, toggling panels, and managing tabs.
+This keyboard shortcut reference helps you work faster in GitKraken Desktop on macOS, Windows, and Linux. Use it to find shortcuts for staging, committing, navigating the Commit Graph, opening the Command Palette, managing tabs, and toggling interface panels without leaving the keyboard.
+
+**Requirements and limits**
+- Shortcut values differ between macOS and Windows/Linux, so check the correct platform column before using a shortcut.
+- The <kbd>&#8984;</kbd> symbol refers to the Command key on macOS.
+- This page is a reference for built-in GitKraken Desktop shortcuts; availability depends on the relevant view or repository context being open.
+- Shortcuts are grouped by task area, including repo actions, navigation, the Command Palette, interface controls, and tabs.
 
 <blockquote><strong>Note:</strong> The <kbd>&#8984;</kbd> symbol refers to the <strong>Command</strong> key on macOS.</blockquote>
 
 ***
 
-## Open Keyboard Shortcuts List
+## How to open the keyboard shortcuts list
 
 <table class='table table--bordered table--shortcuts'>
   <thead>
@@ -31,7 +50,7 @@ GitKraken Desktop includes a variety of keyboard shortcuts to help you work fast
   </tbody>
 </table>
 
-## Repo Actions
+## Keyboard shortcuts for repo actions
 <table class='table table--bordered table--shortcuts'>
     <thead>
         <tr>
@@ -89,7 +108,7 @@ GitKraken Desktop includes a variety of keyboard shortcuts to help you work fast
     </tbody>
 </table>
 
-### Navigation
+### Keyboard shortcuts for navigation
 <table class='table table--bordered table--shortcuts'>
     <thead>
         <tr>
@@ -158,7 +177,7 @@ GitKraken Desktop includes a variety of keyboard shortcuts to help you work fast
     </tbody>
 </table>
 
-### Command Palette
+### Keyboard shortcuts for the Command Palette
 <table class='table table--bordered table--shortcuts'>
     <thead>
         <tr>
@@ -221,7 +240,7 @@ GitKraken Desktop includes a variety of keyboard shortcuts to help you work fast
     </tbody>
 </table>
 
-### UI
+### Keyboard shortcuts for the interface
 <table class='table table--bordered table--shortcuts'>
     <thead>
         <tr>
@@ -281,7 +300,7 @@ GitKraken Desktop includes a variety of keyboard shortcuts to help you work fast
     </tbody>
 </table>
 
-### Tabs
+### Keyboard shortcuts for tabs
 <table class='table table--bordered table--shortcuts'>
     <thead>
         <tr>
@@ -319,5 +338,3 @@ GitKraken Desktop includes a variety of keyboard shortcuts to help you work fast
         </tr>
     </tbody>
 </table>
-
-

@@ -1,12 +1,33 @@
 ---
 title: Pull Requests in GitKraken Desktop
 description: Create, manage, and review pull requests in GitKraken Desktop. Supports GitHub, GitLab, Bitbucket, Azure DevOps, and includes templates, comments, and suggestions.
+product: GitKraken Desktop
+feature: Pull Requests
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
+integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [pull-requests, review, templates, suggestions, merge]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-A pull request (sometimes called merge requests) is a review workflow that lets you propose changes in one branch before merging it into another. GitKraken Desktop supports creating, managing, and reviewing pull requests with integrated Git services like GitHub, GitLab, Bitbucket, and Azure DevOps.
+Use this page to create, review, filter, comment on, and merge pull requests in GitKraken Desktop across supported providers such as GitHub, GitLab, Bitbucket, and Azure DevOps. It also covers GitHub-specific review features such as code suggestions, pull request view, and merge options inside the app.
+
+**Requirements and limits**
+- Supported providers on this page: GitHub, GitLab, Bitbucket, and Azure DevOps
+- Precondition: Push your branch to the remote before creating a pull request
+- GitHub-specific features: Pull Request View, code suggestions, and in-app merge options
+- Template support: Pull request templates are supported for GitHub, GitLab, and Azure DevOps
+- Azure DevOps note: If the PR form does not populate, verify the remote URL and integration domain on the Azure DevOps integration page
+- Feature scope varies by provider, so some actions described here are GitHub-only
 
 ***
 
@@ -36,12 +57,16 @@ Push your branch to the remote before creating a pull request.
 
 ***
 
-## Creating a Pull Request
+## How to create a pull request
 
 To create a pull request:
 - Drag one branch onto another and select <em class='context-menu'>Start a pull request</em>
 - Or right-click the target branch and choose the same option
 - Or click the <button class='button button--success button--ui button--nolink'>+</button> icon in the Left Panel PULL REQUESTS section
+
+<div class='callout callout--basic'>
+  <p><strong>Use GitKraken Desktop PR creation when:</strong> your branch is already pushed and you want to open or manage the PR without leaving the app. <strong>Don't start the PR yet when:</strong> the branch is not pushed, the target branch is still unclear, or you need provider-specific options not exposed in GitKraken Desktop.</p>
+</div>
 
 <figure>
   <img src="/wp-content/uploads/create-pull-request-drag-and-drop-2025.gif" alt="User initiates a pull request in GitKraken Desktop by dragging a local branch (PM-34-docs-review-pr-page) onto the remote origin/main. The Create Pull Request dialog then appears, pre-filled with repository and branch information, ready for title, description, and assignee input." class="help-center-img img-bordered">
@@ -61,7 +86,7 @@ To create a pull request:
 
 ***
 
-## Pull Request Templates
+## How pull request templates work
 
 GitKraken Desktop supports PR templates on GitHub, GitLab, and Azure DevOps. When committed to the remote, the template appears during PR creation.
 
@@ -83,7 +108,7 @@ Resources:
 
 ***
 
-## Assignees, Labels, Reviewers
+## How assignees, labels, and reviewers work
 
 Some integrations allow adding:
 - Assignees
@@ -112,9 +137,13 @@ Conflict warnings appear if your source and target branches differ:
 
 ***
 
-## Draft Pull Requests (GitHub)
+## How draft pull requests work on GitHub
 
 With the GitHub integration, select the draft checkbox to mark the pull request as a draft.
+
+<div class='callout callout--basic'>
+  <p><strong>Use a draft pull request when:</strong> you want early visibility or feedback before the branch is ready to merge. <strong>Don't mark it ready too early when:</strong> the implementation still needs major changes and you are not ready for formal review.</p>
+</div>
 
 <figure>
   <img src='/wp-content/uploads/create-draft-pr-2025@2x.png' 
@@ -125,11 +154,15 @@ With the GitHub integration, select the draft checkbox to mark the pull request 
 
 ***
 
-## GitHub Pull Request View
+## How GitHub Pull Request View works
 
 Enable the GitHub integration to access GitHub PR view:
 - Select a PR in the Left Panel
 - Or click the PR icon in the Launchpad
+
+<div class='callout callout--basic'>
+  <p><strong>Use GitHub Pull Request View when:</strong> you want to update PR metadata, inspect changes, or suggest edits inside GitKraken Desktop. <strong>Don't rely on it for every review workflow when:</strong> your team depends on deeper provider-native review features outside the app.</p>
+</div>
 
 <figure>
   <img src='/wp-content/uploads/github-pr-view-2025@2x.png' 
@@ -157,9 +190,13 @@ Click <button class='button button--primary button--ui button--nolink'><span sty
 
 ***
 
-## Suggest Changes
+## How to suggest changes
 
 When you click to <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Review Code and Suggest Changes</span></button>, this will allow you to write the code suggestion directly in GitKraken Desktop's editor or [gitkraken.dev](https://gitkraken.dev?source=help_center&product=gitkraken).
+
+<div class='callout callout--basic'>
+  <p><strong>Use code suggestions when:</strong> you want to propose concrete edits for the PR author to review or apply. <strong>Don't use suggestions when:</strong> you only need a high-level comment or architectural discussion without an exact code change.</p>
+</div>
 
 <figure>
   <img src='/wp-content/uploads/gkd-10-2-0-pr-suggest-code-changes.gif' 
@@ -172,7 +209,7 @@ All code suggestions are posted a comments in the GitHub pull request conversati
 
 ***
 
-## Accept or Reject Suggestions
+## How to accept or reject suggestions
 
 Code suggestions display in the PR view under the “Code Suggestions” label:
 
@@ -194,7 +231,7 @@ You can apply or reject each suggestion in the Commit Panel:
 
 ***
 
-## Commenting and Quoting
+## How commenting and quoting work
 
 Comment on pull requests, refresh the comments feed, or quote replies:
 
@@ -214,7 +251,7 @@ Comment on pull requests, refresh the comments feed, or quote replies:
 
 ***
 
-## Branch Actions and Build Status
+## How branch actions and build status work
 
 Double-click a branch in the PR view to check it out. Click build status to open in browser.
 
@@ -229,7 +266,7 @@ If the remote isn’t added yet, GitKraken will prompt you to add it.
 
 ***
 
-## Merge in GitHub PR View
+## How to merge in GitHub PR View
 
 Click <button class='button button--success button--ui button--nolink'>Merge pull request</button> to merge.
 
@@ -251,7 +288,7 @@ Choose:
 
 ***
 
-## Active Pull Requests Panel
+## How the active pull requests panel works
 
 Active PRs appear with this icon <em class='context-menu'><img style='height:1.5em;' src='/wp-content/uploads/gk-pull-request-icon.svg'></em> and are listed in the PULL REQUESTS section of the Left Panel.
 

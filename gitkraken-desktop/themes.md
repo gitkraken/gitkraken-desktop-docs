@@ -1,10 +1,34 @@
 ---
 title: GitKraken Desktop Themes | Customize Light, Dark & Custom UI
 description: Learn how to switch between light and dark themes in GitKraken Desktop, sync with your system theme, and create custom themes using JSONC files.
+product: GitKraken Desktop
+feature: Themes
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [themes, dark-mode, light-mode, customization, jsonc]
 taxonomy:
     category: gitkraken-desktop
 ---
 <kbd>Last updated: March 2026</kbd>
+
+Use this page to change the GitKraken Desktop theme, sync the app with your system theme, and understand the current status of custom theme support. It explains where theme controls live, how built-in themes work, and why custom themes are currently disabled as of version 11.8.0.
+
+**Requirements and limits**
+- Scope: Built-in themes, system theme sync, and legacy custom theme behavior
+- Theme settings location: <kbd>Preferences &gt; UI Customization</kbd>
+- Built-in theme support: Available and supported
+- Custom theme status: Disabled as of GitKraken Desktop 11.8.0
+- Legacy custom theme location: `~/.gitkraken/themes/`
+- Invalid-theme behavior: If a theme file contains invalid syntax, GitKraken falls back to the default dark theme
+- Markdown on this page about custom themes is historical/reference-only until custom themes are restored
 
 <figure>
   <div class='embed-container embed-container--16-9'>
@@ -39,7 +63,7 @@ Custom themes have been disabled as of version 11.8.0 while the UI is being mode
 </div>
 
 ***
-## Built-in Themes
+## How built-in themes work
 
 To change your GitKraken Desktop theme:
 - Go to <i class="fas fa-cog"></i> <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> UI Customization</em>
@@ -50,17 +74,17 @@ To change your GitKraken Desktop theme:
   <figcaption style="text-align:center; color:#888">Switch themes from the Command Palette.</figcaption>
 </figure>
 
-### Sync with System Theme
+### How sync with system theme works
 
 If your OS supports theme switching, GitKraken Desktop can follow your system’s light/dark setting. Enable this from <kbd>Preferences > UI Customization</kbd>.
 
 ***
 
-## Custom Themes
+## How custom themes work
 
 GitKraken Desktop supports user-defined themes. To create a custom theme:
 
-### Locate Theme Files
+### How to locate theme files
 
 Theme files live in:
 ```
@@ -68,7 +92,7 @@ Theme files live in:
 ```
 You can open this folder from <kbd>Preferences > UI Customization > Theme</kbd>. Each `.jsonc-default` file is a template.
 
-### Create Your Custom Theme
+### How to create a custom theme
 
 1. Copy a `.jsonc-default` file you want to base your theme on.
 2. Rename the file (e.g., `MyCustomTheme.jsonc`).
@@ -79,7 +103,7 @@ You can open this folder from <kbd>Preferences > UI Customization > Theme</kbd>.
 
 Your custom theme will appear under <kbd>Preferences > UI Customization > Theme</kbd>.
 
-### Live Theme Editing
+### How live theme editing works
 
 Changes to your theme file take effect immediately—no need to restart GitKraken. If the file contains invalid syntax, GitKraken will revert to the default dark theme.
 
@@ -89,9 +113,9 @@ Changes to your theme file take effect immediately—no need to restart GitKrake
 
 ***
 
-## Supported Functions
+## What functions are supported in theme files
 
-### CSS Functions
+### Supported CSS functions
 GitKraken supports these CSS functions:
 - `calc`
 - `hsl` / `hsla`
@@ -101,7 +125,7 @@ GitKraken supports these CSS functions:
 
 See [CSS functions](https://www.w3schools.com/cssref/css_functions.asp) for reference.
 
-### LESS Functions
+### Supported LESS functions
 Supported LESS functions include:
 - `darken`, `lighten`, `fade`
 - `saturate`, `desaturate`
@@ -111,7 +135,7 @@ See [LESS functions](https://lesscss.org/functions) for full documentation.
 
 ***
 
-## Community Themes 
+## Community themes
 
 Looking for inspiration? Some users share their custom themes online, such as the collection at [jonbunator.github.io/gitkraken-custom-themes](https://jonbunator.github.io/gitkraken-custom-themes). 
 

@@ -1,12 +1,32 @@
 ---
 title: View Diffs, File History, and Blame in GitKraken Desktop
 description: Learn how to use GitKraken Desktop to compare changes with diffs, view file history and blame, configure external diff tools, and manage Git patches.
+product: GitKraken Desktop
+feature: Diff Viewer
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [diff, blame, history, patches, external-tools]
 taxonomy:
     category: gitkraken-desktop
 ---
 <kbd>Last updated: March 2026</kbd>
 
-Compare changes within GitKraken Desktop using _diffs_. Learn how to access them, view file history or file blame, and use external tools.
+Use this page to compare uncommitted changes, inspect commit diffs, switch between diff views, review file history or blame, and create or apply patches in GitKraken Desktop. It also covers external diff tools and key limits such as patch support being a preliminary feature that does not generate binary-file patches.
+
+**Key constraints**
+- Diff coverage: Use this page for built-in diff viewing, file history, blame, and patch workflows in GitKraken Desktop
+- Patch support: Patch creation and application are preliminary features
+- Binary files: GitKraken Desktop does not currently generate patches from binary files
+- External diff tools: Beyond Compare, FileMerge, Kaleidoscope, KDiff, Araxis, and P4Merge are supported directly
+- Other tools: Use <kbd>Git Config Default</kbd> and your global `.gitconfig` if your preferred diff tool is not listed in Preferences
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/-0bn2H63axM?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -44,6 +64,10 @@ To use an external diff tool, go to <kbd>Preferences > External Tools</kbd> and 
 A diff displays lines added and removed from a file:
 - <span style='color: #d90171;'>Red</span> indicates removed lines.
 - <span style='color: #7bd938;'>Green</span> indicates added lines.
+
+<div class='callout callout--basic'>
+  <p><strong>Use the built-in diff when:</strong> you want to inspect changes, compare commits, or review file history directly in GitKraken Desktop. <strong>Use an external diff tool when:</strong> you need a specialized comparison workflow that is not covered well by the built-in viewer.</p>
+</div>
 
 <figure class='figure center'>
   <img src='/wp-content/uploads/diff-full-screen-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop showing a full-screen side-by-side diff of a markdown file, with syntax-highlighted line changes and a file activity panel listing added images.">
@@ -84,16 +108,20 @@ You can also select multiple commit rows using <kbd>Shift</kbd> + <kbd>Click</kb
   <figcaption style="text-align: center; color: #888;">Combined diff across multiple selected commits.</figcaption>
 </figure>
 
-### Hunk View
+### When to use Hunk View
 
 Displays only the changed blocks of a file.
+
+<div class='callout callout--basic'>
+  <p><strong>Use Hunk View when:</strong> you want to focus only on changed blocks or revert a specific hunk quickly. <strong>Don't use it when:</strong> you need full-file context around the changes.</p>
+</div>
 
 <figure class='figure center'>
   <img src='/wp-content/uploads/hunk-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop displaying hunk view mode, focusing on a grouped block of code changes with syntax highlighting and minimal surrounding context.">
   <figcaption style="text-align: center; color: #888;">Hunk view highlights change blocks without full context.</figcaption>
 </figure>
 
-#### Revert Hunks
+#### How to revert a hunk
 
 GitKraken offers a convenient option in the diff view: **Revert Hunks**.
 
@@ -106,25 +134,33 @@ In **Hunk View**, you can roll back a specific block of changes. Click the **Rev
 
 This lets you revert only what you need—no reset or manual edits required.
 
-### Inline View
+### When to use Inline View
 
 Displays changes within the full context of the file.
+
+<div class='callout callout--basic'>
+  <p><strong>Use Inline View when:</strong> you want to read edits in the flow of the full file. <strong>Don't use it when:</strong> side-by-side comparison is easier for the change you are reviewing.</p>
+</div>
 
 <figure class='figure center'>
   <img src='/wp-content/uploads/inline-annotated-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop displaying Inline View mode for file diffs, with added lines and a selected image insertion shown directly in context." />
   <figcaption style="text-align: center; color: #888;">Inline view shows changes inline with full file content.</figcaption>
 </figure>
 
-### Split View
+### When to use Split View
 
 Displays changes side-by-side, with the original file on the left and the updated version on the right.
+
+<div class='callout callout--basic'>
+  <p><strong>Use Split View when:</strong> you want to compare old and new content line-by-line. <strong>Don't use it when:</strong> you want a more compact, single-column review for small changes.</p>
+</div>
 
 <figure class='figure center'>
   <img src='/wp-content/uploads/split-2025.png' class="help-center-img img-bordered" alt="Split View mode in GitKraken Desktop comparing changes between two versions of a file, highlighting additions, deletions, and updated image references side-by-side." />
   <figcaption style="text-align: center; color: #888;">Split view compares before (left) and after (right) file states.</figcaption>
 </figure>
 
-### Word Wrap
+### How to use Word Wrap in the diff view
 
 The Word Wrap toggle wraps long lines in the diff view so that the full content of each line is visible without horizontal scrolling. This is particularly useful when reviewing files with long lines, such as Markdown documents, minified JavaScript, or LaTeX files.
 
@@ -137,9 +173,13 @@ To toggle word wrap, click the **Word Wrap** button in the toolbar of the diff v
 
 ***
 
-## External Diff Tools
+## How to use external diff tools
 
 Configure an external diff tool in <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> External Tools</em>:
+
+<div class='callout callout--basic'>
+  <p><strong>Use an external diff tool when:</strong> you already rely on a supported third-party app or need its advanced comparison features. <strong>Don't use an external tool when:</strong> GitKraken Desktop's built-in diff already gives you the context and controls you need.</p>
+</div>
 
 <figure class='figure center'>
   <img src="/wp-content/uploads/external-diff-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop External Tools preferences showing dropdown to select an external diff tool, with options like FileMerge and Git Config Default." />
@@ -192,7 +232,7 @@ To use a different diff tool, go to <em class="context-menu">Preferences <i clas
 
 ***
 
-## Diff a WIP
+## How to compare a WIP against another commit or branch
 
 To compare your Work in Progress (WIP) with another commit or branch:
 - Use <kbd>Ctrl/Cmd</kbd> + click to select the WIP and another commit
@@ -205,7 +245,7 @@ To compare your Work in Progress (WIP) with another commit or branch:
 
 ***
 
-## File Blame and History
+## How to view file blame and history
 
 Access _File History_ and _File Blame_ from the file diff view. Options appear in the upper-right corner.
 
@@ -232,11 +272,15 @@ Use the toggle in the top-right to switch between <kbd>Diff View</kbd> (showing 
 
 ***
 
-## Patch
+## How patch files work in GitKraken Desktop
+
+<div class='callout callout--basic'>
+    <p><strong>Use patches when:</strong> you need to share changes without pushing them to a remote. <strong>Do not rely on patches for binary files:</strong> GitKraken Desktop does not currently generate patches from binary files.</p>
+</div>
 
 A patch (or patch file) records the differences between files. Patches allow users to share changes without pushing them to a remote repository.
 
-### Create Patch from File(s)
+### How to create a patch from files or commits
 
 To create a patch:
 - Right-click a **commit** and choose <kbd>Create patch from commit</kbd>
@@ -261,7 +305,7 @@ You can also multi-select files or commits using <kbd>Shift</kbd> or <kbd>Cmd/Ct
   <figcaption style="text-align: center; color: #888;">Create a patch from multiple files or commits.</figcaption>
 </figure>
 
-### Create Patch from Command Palette
+### How to create a patch from the Command Palette
 
 Launch the Command Palette from the toolbar or with <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>, then search for “Create Patch.”
 
@@ -270,7 +314,7 @@ Launch the Command Palette from the toolbar or with <kbd>Cmd/Ctrl</kbd> + <kbd>S
   <figcaption style="text-align: center; color: #888;">Create a patch using the Command Palette.</figcaption>
 </figure>
 
-### Apply Patch from Command Palette
+### How to apply a patch from the Command Palette
 
 To apply a patch:
 1. Open the Command Palette (<kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>)

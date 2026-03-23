@@ -1,13 +1,34 @@
 ---
-
 title: GitKraken Desktop – Data Security and Storage Practices
 description: Learn how GitKraken Desktop collects, transmits, and stores user and repository data securely. Includes encryption methods, data storage locations, and compliance details.
+product: GitKraken Desktop
+feature: Data Security and Storage Practices
+content_type: policy
+audience: buyer
+plan_required: all
+os_support: [n/a]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [security, compliance, storage, encryption, soc2]
 taxonomy:
     category: gitkraken-desktop
-
 ---
 
-## Information Collection/Storage
+<kbd>Last updated: March 2026</kbd>
+
+This page explains GitKraken Desktop data security and storage practices, including what information GitKraken services collect, how that data is secured in transit and at rest, and how SOC 2 report access works. Use it when reviewing security posture, storage locations, or compliance-related documentation for GitKraken Desktop.
+
+**Requirements and limits**
+- This page summarizes GitKraken cloud-service data handling and storage practices; it is not a product configuration guide.
+- Security details vary by service, so use the table below for service-specific storage and encryption information.
+- Data in transit is secured with TLS across the listed services.
+- SOC 2 reports are available only to Business and Enterprise customers and require a signed MNDA through the Trust Center.
+
+## How GitKraken Desktop services collect and store information
 Below is a chart outlining some basic security information regarding the type of data that we collect and how we store it.
 
 <table>
@@ -66,7 +87,7 @@ Below is a chart outlining some basic security information regarding the type of
   </tbody>
 </table>
 
-## SOC2
+## How to request the SOC 2 report
 GitKraken and it’s tools are now SOC 2 Certified! If you would like to request a copy of our SOC2 report, please visit our [Trust Center](https://trust.gitkraken.com/) to get the request process started. Please note that in order to provide a copy of the report, we will need you to sign an MNDA.
 
 <div class="bbb-callout bbb--info">

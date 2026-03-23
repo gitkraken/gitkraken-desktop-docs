@@ -1,10 +1,35 @@
 ---
 title: GitKraken Desktop – Common Issues and Fixes
 description: Troubleshoot common GitKraken Desktop problems, including login errors, GitHub integrations, performance issues, and experimental Git behavior.
+product: GitKraken Desktop
+feature: Common Issues
+content_type: troubleshooting
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, generic]
+integrations: [GitHub]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [troubleshooting, login, github, performance, issues]
 taxonomy:
     category: gitkraken-desktop
 ---
 <kbd>Last updated: March 2026</kbd>
+
+***
+
+Use this page to troubleshoot common GitKraken Desktop problems related to licensing, integrations, SSH, WSL, platform-specific behavior, and known error messages. Start with the Quick Start checklist for the most common fixes, then use the matching section below when you need issue-specific recovery steps.
+
+**Requirements and limits**
+- Scope: High-frequency troubleshooting for account, integration, SSH, WSL, platform, and known error conditions
+- First-step usage: Start with the Quick Start checklist before using issue-specific sections
+- Integration recovery pattern: Browser sign-out, cache clearing, and reconnecting from <kbd>Preferences &gt; Integrations</kbd> resolves many 1000-series errors
+- WSL limitation: Do not run GitKraken Desktop as root, and prefer native WSL2 GUI support over XServer-based setups
+- Experimental Git note: Some issues may be tied to the Git Executable setting in <kbd>Preferences &gt; Experimental</kbd>
+- Escalation path: Contact GitKraken Support if the matching section does not resolve the problem
 
 ***
 
@@ -24,7 +49,7 @@ If the steps on this page do not resolve your issue, contact [GitKraken Support]
 
 ***
 
-## Account, License, and Entitlement Issues
+## How to fix account, license, and entitlement issues
 
 ### My account shows Trial/Free/Community despite being a paid customer
 In GitKraken Desktop, verify you're logged in with the correct account:
@@ -49,7 +74,7 @@ Select the correct organization:
 
 ---
 
-## GitKraken Desktop Issues
+## How to fix common GitKraken Desktop issues
 
 ### Clone repo always uses HTTPS instead of SSH
 GitKraken Desktop defaults to HTTPS. To use SSH:
@@ -97,7 +122,7 @@ Ensure GitKraken Desktop has organization access:
 
 ---
 
-## WSL Issues
+## How to fix WSL issues
 
 ### GitKraken window is too small
 GitKraken Desktop may not respect Windows DPI scaling when running in WSL.
@@ -116,7 +141,7 @@ This is a known WSL issue triggered by network changes.
 
 ---
 
-## Linux (Ubuntu)
+## How to fix Linux issues on Ubuntu
 
 ### File explorer does not open
 GitKraken’s Electron window may be hidden behind the app.
@@ -134,7 +159,7 @@ fs.inotify.max_user_watches=524288
 
 ---
 
-## Windows
+## How to fix Windows-specific issues
 
 ### Use GitKraken Desktop with PuTTY/Plink
 - Set `GIT_SSH` or `GIT_SSH_COMMAND` to point to Plink
@@ -143,7 +168,7 @@ fs.inotify.max_user_watches=524288
 
 ---
 
-## macOS
+## How to fix macOS-specific issues
 
 ### Git hooks fail with `command not found`
 GUI apps on macOS do not inherit shell environment variables.
@@ -152,7 +177,7 @@ GUI apps on macOS do not inherit shell environment variables.
 
 ---
 
-## General Troubleshooting for GitKraken Desktop 9.4.0+
+## How to troubleshoot GitKraken Desktop 9.4.0 and later
 
 The [Git Executable](/gitkraken-desktop/experimental-features/#git-executable) option may affect Git behavior.
 
@@ -178,7 +203,7 @@ Report persistent issues via [GitKraken Support](https://help.gitkraken.com/gitk
 
 ---
 
-## Integration – 1000 Series Errors
+## How to fix 1000-series integration errors
 
 Error codes include:
 - 1002
@@ -201,7 +226,7 @@ Still stuck? [Contact Support](https://www.gitkraken.com/contact?product=gitkrak
 
 ---
 
-## Push Failed: `Cannot read property 'fullName' of undefined`
+## How to fix the `Cannot read property 'fullName' of undefined` push error
 
 <figure class='figure center'>
   <img src="/wp-content/uploads/push-error.png" class="help-center-img img-bordered">
@@ -217,7 +242,7 @@ git branch -m temp-branch test-branch
 
 ---
 
-## Branches or Files Missing – Capitalization Issues
+## How to fix missing branches or files caused by capitalization issues
 
 On case-insensitive file systems like Windows, branches or files differing only by case may not appear correctly.
 

@@ -1,12 +1,34 @@
 ---
 title: Install GitKraken Self-Hosted Server with Docker
 description: Step-by-step guide to installing GitKraken Self-Hosted Server on CentOS, Ubuntu, or RHEL7 using Docker and Docker Compose.
+product: GitKraken Self-Hosted
+feature: Self-Hosted Installation
+content_type: how-to
+audience: enterprise-admin
+plan_required: Enterprise
+os_support: [server-linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: self-hosted
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [self-hosted, docker, install, linux, on-premise]
 taxonomy:
     category: gitkraken-desktop
 ---
 <kbd>Last updated: March 2026</kbd>
 
-GitKraken Self-Hosted Server runs on a Linux virtual machine (CentOS, Ubuntu, or RHEL7) inside Docker containers. To begin, you'll first need to install Docker.
+Use this page to install GitKraken Self-Hosted Server on a Linux host with Docker and Docker Compose. It covers the initial server setup flow, offline installation notes, and platform-specific Docker installation steps for CentOS, Ubuntu, and RHEL7 before you bring the GitKraken services online.
+
+**Requirements and limits**
+- Product scope: GitKraken Self-Hosted Server installation on Linux
+- Host requirement: Linux machine with Docker CE and Docker Compose
+- Supported platforms on this page: CentOS, Ubuntu, and RHEL7
+- Installation inputs: `GitKrakenEnterpriseServer.zip`, `release.zip`, and Docker images must be present before startup
+- Offline installation note: Docker CE and Docker Compose can be downloaded on another machine and transferred manually
+- Default service port: `3000` unless changed in `docker-compose.yml`
+- Commercial note: Self-Hosted is sold separately from standard subscriptions and separately from Serverless
 
 <div class='callout callout--warning'>
     <p>GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, visit our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?_gl=1*vtr4xk*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmv98H0EKgytPnuCPuTqdL2vy4GQaCsizBMO9m8mz2n1hMMXO3AAw7YaAiyKEALw_wcB?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
@@ -39,11 +61,11 @@ For offline installations, download Docker CE and Docker Compose on a machine wi
 
 <a id="install_centos"></a>
 
-## Install Docker CE on CentOS
+## How to install Docker CE on CentOS
 
 These instructions are based on the official [Docker documentation](https://docs.docker.com/engine/installation/linux/centos/#install-docker).
 
-### With internet access
+### How to install on CentOS with internet access
 
 1. Install required packages:
 ```bash
@@ -95,7 +117,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 10. Proceed to the installation section.
 
-### Without internet access
+### How to install on CentOS without internet access
 
 1. Download Docker CE and Docker Compose on a different machine.
   * [Docker CE for CentOS](https://download.docker.com/linux/centos/7/x86_64/stable/Packages/)
@@ -130,11 +152,11 @@ sudo systemctl start docker
 
 <a id="install_ubuntu"></a>
 
-## Install Docker CE on Ubuntu
+## How to install Docker CE on Ubuntu
 
 Refer to the official [Docker documentation](https://docs.docker.com/engine/installation/linux/ubuntu/#install-docker).
 
-### With internet access
+### How to install on Ubuntu with internet access
 
 1. Install required packages:
 ```bash
@@ -183,7 +205,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 10. Proceed to the installation section.
 
-### Without internet access
+### How to install on Ubuntu without internet access
 
 1. Download Docker CE package from a machine with internet access.
   * [Docker CE for Ubuntu](https://download.docker.com/linux/ubuntu/dists/)
@@ -216,9 +238,9 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 <a id="install_rhel7"></a>
 
-## Install Docker CE on RHEL7
+## How to install Docker CE on RHEL7
 
-### With internet access
+### How to install on RHEL7 with internet access
 
 1. Install required packages:
 ```bash
@@ -277,7 +299,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 <a id="install_enterprise"></a>
 
-### Without internet access
+### How to install on RHEL7 without internet access
 
 1. Download Docker CE and Docker Compose packages from a machine with internet access.
 

@@ -1,12 +1,31 @@
 ---
 title: Hide and Solo Branches in GitKraken Desktop
 description: Learn how to reduce visual clutter in GitKraken Desktop by hiding or soloing branches, tags, remotes, and stashes from the Left Panel.
+product: GitKraken Desktop
+feature: Hide and Solo
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [hide, solo, branches, commit-graph, left-panel]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-The Left Panel lets you control the Commit Graph view for better focus. Use _Hide_ to temporarily remove references, or _Solo_ to spotlight specific branches.
+Hide and Solo help you reduce Commit Graph clutter in GitKraken Desktop without changing your repository. Use Hide to temporarily remove branches, tags, remotes, or stashes from view, and use Solo to focus only on the references you want to inspect when reviewing history or navigating a busy graph.
+
+**Requirements and limits**
+- Hide and Solo only change what is visible in the Commit Graph; they do not modify your repository data.
+- You can hide or solo branches, tags, remotes, and stashes from the Left Panel.
+- Solo mode keeps only the references you explicitly solo visible until you unsolo them.
+- Bulk hide and show actions are available from the Left Panel section headers for Remotes, Tags, Branches, and Stashes.
 
 ***
 
@@ -14,6 +33,8 @@ The Left Panel lets you control the Commit Graph view for better focus. Use _Hid
   <img src="/wp-content/uploads/solo-hide.gif" class="help-center-img img-bordered" alt="Animated demonstration of soloing and hiding branches in GitKraken Desktop's Left Panel">
   <figcaption style="text-align: center; color: #888;">Animation demonstrating hiding and soloing branches from the Left Panel.</figcaption>
 </figure>
+
+## How to hide references in the Left Panel
 
 <div class="flex-wrap" style="align-items: flex-start">
   <div class="flex-item">
@@ -26,6 +47,8 @@ The Left Panel lets you control the Commit Graph view for better focus. Use _Hid
     <p>Hidden branches are marked with a gray <i class='fa fa-eye-slash'></i> icon. Click the icon to show the branch again.</p>
   </div>
 </div>
+
+## How to solo branches and remotes
 
 <div class="flex-wrap" style="align-items: flex-start">
   <div class="flex-item">
@@ -40,7 +63,7 @@ The Left Panel lets you control the Commit Graph view for better focus. Use _Hid
   </div>
 </div>
 
-### Hide or Show All References
+## How to hide or show all references
 
 You can hide or show all **Remotes**, **Tags**, **Branches**, or **Stashes** from the Left Panel. Right-click the corresponding header to access bulk options.
 

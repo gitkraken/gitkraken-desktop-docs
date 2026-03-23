@@ -1,12 +1,34 @@
 ---
 title: Manage Git Submodules in GitKraken Desktop
 description: Learn how to add, update, and manage Git submodules in GitKraken Desktop, including how to track commits and enable automatic updates.
+product: GitKraken Desktop
+feature: Submodules
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [submodules, git, update, nested-repos, repositories]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Submodules allow you to include another Git repository inside a parent repository. Use submodules to incorporate independent projects while maintaining separate commit histories.
+Use this page to add, update, initialize, and manage Git submodules in GitKraken Desktop when one repository needs to reference another repository at a fixed commit. It covers how the Submodules pane works, how pointer commits are updated, and where to configure automatic submodule updates.
+
+**Requirements and limits**
+- Workflow scope: Git submodules, not Git subtree workflows
+- Pane access: Enable the Submodules pane from the Left Panel header menu
+- Add workflow: Requires an HTTPS or SSH repository URL and a target path
+- Clone behavior: GitKraken Desktop prompts you to initialize submodules when cloning a parent repository that includes them
+- Pointer behavior: Updating the tracked commit changes the parent repo’s submodule pointer and `.gitmodules` reference state
+- Auto-update settings: Configure globally in <kbd>Preferences &gt; General</kbd> or per repository in <kbd>Preferences &gt; Submodules</kbd>
+- Limitation: GitKraken Desktop does not support subtree workflows in-app
 
 ***
 
@@ -35,7 +57,7 @@ When cloning a parent repository that includes submodules, GitKraken Desktop wil
 
 ***
 
-## Enable the Submodules Pane
+## How to enable the Submodules pane
 
 To toggle the Submodules pane:
 1. Right-click any pane header in the Left Panel.
@@ -50,7 +72,7 @@ To toggle the Submodules pane:
 
 ***
 
-## Add a Submodule
+## How to add a submodule
 
 To add a submodule:
 1. Hover over <em>Submodules</em> in the Left Panel.
@@ -71,7 +93,7 @@ When cloning the parent repository, you’ll be prompted to initialize the submo
 
 ***
 
-## Update a Submodule
+## How to update a submodule
 
 To update a submodule:
 1. Open the Submodules pane.
@@ -89,7 +111,7 @@ When cloning a repository that includes submodules, GitKraken prompts you to ini
 
 ***
 
-## Change the Pointer Commit
+## How to change the pointer commit
 
 To update the tracked commit:
 1. Open the submodule in GitKraken Desktop.
@@ -107,7 +129,7 @@ GitKraken Desktop will prompt you to save the updated pointer commit.
 
 ***
 
-## Submodule Statuses
+## What submodule statuses mean
 
 Possible submodule states and how to resolve them:
 
@@ -117,7 +139,7 @@ Possible submodule states and how to resolve them:
 
 ***
 
-## Keep Submodules Up to Date
+## How to keep submodules up to date
 
 Enable automatic submodule updates:
 - Globally: <kbd>Preferences > General</kbd>
@@ -125,6 +147,6 @@ Enable automatic submodule updates:
 
 ***
 
-## Subtree Support
+## Subtree support
 
 GitKraken Desktop does **not** support subtree workflows in-app.

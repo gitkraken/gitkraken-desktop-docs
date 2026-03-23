@@ -1,12 +1,31 @@
 ---
 title: Learn Git with GitKraken Desktop | Beginner Guide & Workflow
 description: New to Git? Get started with GitKraken Desktop using this beginner-friendly guide. Learn cloning, branching, staging, committing, and merging with tutorials and videos.
+product: GitKraken Desktop
+feature: Beginner Guide
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [git, beginner, guide, workflow]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-This Getting Started Guide introduces GitKraken Desktop with a basic workflow—cloning a repository, making changes, and merging them.
+Use this getting started guide to learn a basic GitKraken Desktop workflow: clone a repository, create a branch, make and stage changes, commit them, push the branch, and merge the work back. It is aimed at new Git users who need a practical first path through the product rather than a reference page.
+
+**Requirements and limits**
+- This page is a beginner workflow guide, not a full reference for every GitKraken Desktop option or edge case.
+- You need access to a Git repository you can clone, change, commit to, and push from GitKraken Desktop.
+- Merging and pushing steps depend on your remote permissions and repository policy.
+- If merge conflicts occur, you may need separate merge-conflict guidance beyond this introductory walkthrough.
 
 ***
 
@@ -26,7 +45,7 @@ If merge conflicts occur, GitKraken Desktop opens the Merge Tool, where you can 
 
 ***
 
-## Learn Git with GitKraken
+## How to learn Git with GitKraken
 
 In this series, you'll learn Git concepts and how to apply them using GitKraken Desktop.
 
@@ -41,7 +60,7 @@ Explore how version control fits into a DevOps workflow by reading our [DevOps T
 
 ***
 
-## GitKraken Tutorials
+## GitKraken tutorials
 
 Need help getting started with the product interface? Watch these video tutorials.
 
@@ -54,7 +73,7 @@ Need help getting started with the product interface? Watch these video tutorial
 
 ***
 
-## Understanding Local Repositories
+## How local repositories work
 
 Most Git actions in GitKraken Desktop occur in the local repository, meaning changes are made on your machine.
 
@@ -62,11 +81,11 @@ Local branches are indicated in the graph with the <i class="fa fa-laptop"></i> 
 
 Git is fast because all changes occur locally, not over a network. Even if a remote server fails, your team retains full copies of the project.
 
-### .git Folder
+### What the `.git` folder does
 
 This folder contains all the metadata and commit history. If deleted, Git operations like switching branches or pulling remotes won’t work.
 
-### Working Directory
+### What the working directory does
 
 This is your active file state. When switching branches or pulling updates, Git modifies your working directory to match the current branch.
 
@@ -74,11 +93,11 @@ Learn more about [Git repositories](https://www.gitkraken.com/learn/git/tutorial
 
 ***
 
-## Example Workflow
+## How the example workflow works
 
 Follow this workflow to make your first commit in GitKraken Desktop.
 
-### Create a Branch
+### How to create a branch
 
 Right-click `main` in the Commit Graph and choose <kbd>Create branch here</kbd>. Name it `develop`—a branch for ongoing development.
 
@@ -87,7 +106,7 @@ Right-click `main` in the Commit Graph and choose <kbd>Create branch here</kbd>.
   <figcaption style="text-align:center; color:#888">Right-click main to create a new branch.</figcaption>
 </figure>
 
-### Modify a File
+### How to modify a file
 
 Edit `README.md` to reflect your project. You can open this file directly from the Commit Graph.
 
@@ -96,7 +115,7 @@ Edit `README.md` to reflect your project. You can open this file directly from t
   <figcaption style="text-align:center; color:#888">Click a filename to access the Edit button.</figcaption>
 </figure>
 
-### Stage and Commit
+### How to stage and commit changes
 
 After editing, select the <kbd>//WIP</kbd> node to view unstaged changes. Stage all with the green <button class='button button--success button--ui button--nolink'>Stage all changes</button> button.
 
@@ -109,7 +128,7 @@ Then enter a commit message and click <button class='button button--success butt
 
 Learn more about [staging](/working-with-commits/staging) and [committing](/working-with-commits/commits).
 
-### Merge to Main
+### How to merge back to main
 
 When `develop` is ahead of `main`, you can merge:
 
@@ -129,7 +148,7 @@ Learn more in [Branching and Merging](/working-with-repositories/branching-and-m
 
 ***
 
-## Summary
+## Getting started summary
 
 This basic workflow sets the foundation for more advanced topics like [pushing and pulling](/working-with-repositories/pushing-and-pulling) and [GitFlow](/git-workflows-and-extensions/git-flow).
 

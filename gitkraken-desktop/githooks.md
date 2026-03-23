@@ -1,13 +1,35 @@
 ---
 title: Git Hooks in GitKraken Desktop
 description: Learn how to create, configure, and manage Git hooks in GitKraken Desktop. Supports custom hook paths, error handling, and pre-push validations.
+product: GitKraken Desktop
+feature: Git Hooks
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [githooks, hooks, pre-push, validation, core-hookspath]
 taxonomy:
     category: gitkraken-desktop
 ---
 
 <kbd>Last updated: March 2026</kbd>
 
-Git hooks are shell scripts that execute after Git events such as commits or pushes.
+Use this page to create, configure, and troubleshoot Git hooks in GitKraken Desktop for commit, push, merge, and rebase workflows. It explains where hooks live, how custom hook paths work, which hook types GitKraken triggers, and how to bypass hooks intentionally when a commit should skip automation.
+
+**Requirements and limits**
+- Scope: Standard Git hook workflows triggered by GitKraken Desktop actions
+- Default hook location: `.git/hooks`
+- macOS/Linux requirement: Hook files must be executable or GitKraken Desktop will fail to run them
+- Failure behavior: Any non-zero exit code blocks the Git action
+- Custom path support: Repository-specific custom hook paths can be configured in <kbd>Preferences &gt; Git Hooks</kbd>
+- Global hook support: Global hooks can be configured through `core.hooksPath` in `.gitconfig`
+- Skip behavior: Commits can intentionally bypass hooks from the Commit Panel when needed
 
 <figure>
 <div class='embed-container embed-container--16-9'>
@@ -32,7 +54,7 @@ To skip hooks for a specific commit, enable **Commit and skip hooks** in the Com
 
 ***
 
-## Where are Git hooks?
+## Where Git hooks are stored
 
 Hooks reside in the `hooks` subdirectory of the `.git` folder, created automatically when initializing a repository in GitKraken Desktop. You'll find it at `.git/hooks`, typically containing a `README.sample` file.
 
@@ -59,7 +81,7 @@ Any script that returns a non-zero exit code is considered a failure.
 
 ***
 
-## Define a custom hook path
+## How to define a custom hook path
 
 To use a custom Git hook path:
 
@@ -75,7 +97,7 @@ This setting is defined per repository.
 
 ***
 
-## What hooks are supported by GitKraken Desktop?
+## Which hooks GitKraken Desktop supports
 
 GitKraken Desktop supports a wide array of Git hooks. Each hook is triggered by specific actions like commit, merge, or rebase.
 
@@ -189,7 +211,7 @@ Git hooks automate actions when Git events occur in GitKraken Desktop or the com
 - Text Editor (e.g., [Visual Studio Code](https://code.visualstudio.com/))
 - Terminal (e.g., [GitKraken Terminal](https://help.gitkraken.com/gitkraken-desktop/terminal/))
 
-### Step-by-step setup
+### How to set up a sample hook
 
 **1. Navigate to hooks directory**  
 Open Visual Studio Code and go to <kbd><strong>~/repo/.git/hooks</strong></kbd>. Create a new file named `pre-commit`.
@@ -248,7 +270,7 @@ exit 0
 
 Save the file. Your `pre-commit` hook is now ready to enforce proper committer email usage before any commit is made.
 
-### Git hook in action
+### What a Git hook looks like in action
 <figure>
 <img src='/wp-content/uploads/gkc-hook-in-action.gif' class="help-center-img img-bordered" alt="GitKraken Desktop showing a pre-commit Git hook error after attempting to commit a staged file" />
 <figcaption style="text-align: center; color: #888">Git hook example triggered during commit</figcaption>
@@ -256,7 +278,7 @@ Save the file. Your `pre-commit` hook is now ready to enforce proper committer e
 
 ***
 
-## Environment Variables & Git Hooks
+## How environment variables affect Git hooks
 
 On macOS, GUI applications do not inherit shell profile variables. If your Git hooks rely on environment variables set in your shell, use the following command to make them available:
 
@@ -264,7 +286,7 @@ On macOS, GUI applications do not inherit shell profile variables. If your Git h
 launchctl setenv YOURVAR value
 ```
 
-## Bypass Git hooks
+## How to bypass Git hooks
 
 To skip Git hooks during a commit, use the `Commit and skip hooks` option.
 
@@ -277,7 +299,7 @@ To skip Git hooks during a commit, use the `Commit and skip hooks` option.
 <figcaption style="text-align: center; color: #888">Option to commit while skipping hooks in GitKraken Desktop</figcaption>
 </figure>
 
-## Global Git Hooks
+## How global Git hooks work
 
 GitKraken Desktop respects global Git hook paths set in your `.gitconfig` file. These hooks apply to all cloned repositories.
 

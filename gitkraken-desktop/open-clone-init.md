@@ -1,12 +1,33 @@
 ---
 title: Open, Clone, or Initialize a Git Repository in GitKraken Desktop
 description: Learn how to open, clone, or initialize repositories in GitKraken Desktop. Get started with repository management and project setup.
+product: GitKraken Desktop
+feature: Repository Management
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps, generic]
+integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [open, clone, init, shallow-clone, sparse-checkout]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Each user will need to open, clone, or initialize a repository in GitKraken Desktop. This guide explains how.
+Use this page to open an existing local repository, clone a remote repository, or initialize a new repository in GitKraken Desktop. It also covers shallow clone, sparse checkout, and the Repository Management tab so you can choose the right setup path for a new or existing project.
+
+**Requirements and limits**
+- Entry points: Repository Management tab, New Tab, or <kbd>File &gt; Clone / Init / Open</kbd>
+- Open workflow: Requires an existing local Git repository
+- Clone workflow: Requires a remote repository URL or a connected integration
+- Shallow clone: Supports branch, depth, since-date, and custom clone flags
+- Sparse checkout: Root-level files are always checked out even when path rules are applied
+- Initialize workflow: Creates a `.git` directory and can optionally add a `README.md`, `.gitignore`, and `LICENSE`
 
 ***
 
@@ -35,14 +56,14 @@ Shallow clone is supported when cloning. Enable the **Shallow Clone** option in 
 </div>
 
 ***
-## Setup
+## How to complete the initial setup
 Complete these setup steps before managing repositories:
 
 1. [Install GitKraken Desktop](/gitkraken-desktop/how-to-install)
 2. Create an account and configure your [profile](/gitkraken-desktop/profiles)
 
 ***
-## Repository Management
+## How Repository Management works
 
 The **Repository Management** tab provides an overview of active repositories, Workspaces, and favorites. Open this tab by clicking the folder icon in the top-left or using:
 - <kbd>Alt + O</kbd> (Windows/Linux)
@@ -64,7 +85,7 @@ This tab also includes Workspaces and repository actions:
 - Open/Close repo tab
 
 ***
-### Open an Existing Project
+### How to open an existing project
 
 To open an existing repo:
 
@@ -79,14 +100,14 @@ To open an existing repo:
 You can also access this via the <strong>New Tab</strong> by clicking the + icon.
 
 
-#### Open Shallow Cloned Repos
+#### How to open shallow-cloned repositories
 
 GitKraken Desktop supports opening shallow cloned repositories.
 
 No special setup is required. Just navigate to the shallow clone’s location and open it as you would any other repository (see above).
 
 ***
-### Clone a Project
+### How to clone a project
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OA9o09Bq5M8?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -108,7 +129,7 @@ To clone a remote repo:
   <figcaption style="text-align:center; color:#888">Enter the clone URL to start</figcaption>
 </figure>
 
-#### Shallow Clone
+#### How shallow clone works
 
 GitKraken Desktop supports **shallow cloning** when cloning a repository. Shallow clones let you limit the commit history that is downloaded, which can significantly reduce clone time and disk usage for large repositories.
 
@@ -134,7 +155,7 @@ When **Shallow Clone** is selected, additional options become available:
 
 After cloning, the repository opens automatically in GitKraken Desktop.
 
-#### Sparse Checkout
+#### How sparse checkout works
 
 Sparse checkout lets you check out only a subset of files from a repository, keeping your working directory smaller and improving performance on large repositories such as monorepos.
 
@@ -179,7 +200,7 @@ When a repository has sparse checkout active, a **Sparse** button appears in the
 
 
 ***
-### Initialize a New Project
+### How to initialize a new project
 
 To start a new repo:
 
@@ -209,7 +230,7 @@ Also accessible via <kbd><strong>File > Init</strong></kbd> or New Tab.
 </div>
 
 ***
-### Customize Repository Management
+### How to customize Repository Management
 
 - Drag and drop group headers to reorder
 - Change colors via <kbd>Change color</kbd> in the repo group menu

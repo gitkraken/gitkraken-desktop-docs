@@ -1,16 +1,35 @@
 ---
 title: GitKraken Desktop Tips | Productivity Shortcuts & Power Features
 description: Discover top GitKraken Desktop tips to speed up your workflow—Profiles, Command Palette, integrations, cherry pick, and more advanced features.
+product: GitKraken Desktop
+feature: Tips and Power Features
+content_type: overview
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps, generic]
+integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [tips, productivity, shortcuts, integrations, advanced]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Here's the TL;DR of GitKraken Desktop’s most powerful productivity features.
+This page highlights GitKraken Desktop features that help developers move faster across everyday Git work. Use these tips to set up profiles, navigate with the Command Palette and shortcuts, connect integrations, manage complex history, and customize the Commit Graph when you want a more efficient workflow.
+
+**Requirements and limits**
+- This page is a curated overview that links to feature-specific documentation; use the linked pages for full steps and edge cases.
+- Some tips reference paid features, including multiple Profiles and certain integrations.
+- Integration capabilities vary by Git provider and plan, especially for Azure DevOps and self-hosted services.
+- Shortcut, Command Palette, and UI behavior may differ by operating system or repository context.
 
 ***
 
-### 1. Set Up Profiles
+## How to set up profiles
 
 Separate work and personal repositories—or manage multiple accounts with [Profiles](/start-here/profiles).
 
@@ -27,7 +46,7 @@ Each profile retains its own Git config, preferences, and open tabs.
 
 ***
 
-### 2. Use the Command Palette
+## How to use the Command Palette
 
 The [Command Palette](/start-here/command-palette) helps you navigate GitKraken quickly with keyboard-driven actions.
 
@@ -47,7 +66,7 @@ Common actions:
 
 ***
 
-### 3. Keyboard Shortcuts
+## How to use keyboard shortcuts
 
 Speed through tasks with [keyboard shortcuts](/start-here/keyboard-shortcuts).
 
@@ -70,7 +89,7 @@ Speed through tasks with [keyboard shortcuts](/start-here/keyboard-shortcuts).
 
 ***
 
-### 4. Cherry Pick Multiple Commits
+## How to cherry pick multiple commits
 
 Select multiple commits using <kbd>Cmd/Ctrl</kbd> or <kbd>Shift</kbd>, then right-click and select <kbd>Cherry pick X commits</kbd>.
 
@@ -92,10 +111,10 @@ Connect GitKraken Desktop with [GitHub, GitLab, Bitbucket, and Azure DevOps](/gi
   <figcaption style="text-align: center; color: #888;">Connect your Git provider to speed up repository access.</figcaption>
 </figure>
 
-**Note:**
+**Plan notes:**
 - Community users are limited to public repositories on GitHub/GitLab/Bitbucket.
 - Azure DevOps integration requires a GitKraken subscription.
-- Self-Hosted services require an Advanced plan or higher.
+- Self-Hosted services require a paid plan that supports self-hosted integrations.
 
 **Benefits:**
 - Create repos and configure `.gitignore` or license files
@@ -104,7 +123,7 @@ Connect GitKraken Desktop with [GitHub, GitLab, Bitbucket, and Azure DevOps](/gi
 
 ***
 
-### 6. Hide and Solo Branches
+## How to hide and solo branches
 
 Control the Commit Graph display with [Hide and Solo](/gitkraken-desktop/hiding-and-soloing/) options.
 
@@ -130,7 +149,7 @@ Control the Commit Graph display with [Hide and Solo](/gitkraken-desktop/hiding-
 
 ***
 
-### 7. File History and Blame
+## How to view file history and blame
 
 [View file history and blame](/gitkraken-desktop/diff/#file-blame-and-history) by clicking a commit and right-clicking a file.
 
@@ -146,7 +165,7 @@ Control the Commit Graph display with [Hide and Solo](/gitkraken-desktop/hiding-
 
 ***
 
-### 8. GitKraken Desktop Terminal
+## How to open the GitKraken Desktop terminal
 
 Run Git commands with the [GitKraken Terminal](/gitkraken-desktop/terminal/). Click <i class="fa fa-terminal"></i> in the toolbar or use <kbd>Alt/Opt + T</kbd>.
 
@@ -154,7 +173,7 @@ Set a default terminal from <kbd>Preferences > External Tools</kbd>.
 
 ***
 
-### 9. Resize the Commit Graph
+## How to resize the Commit Graph
 
 Hover over the graph’s colored lines and drag to resize.
 

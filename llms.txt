@@ -1,116 +1,114 @@
 # GitKraken Desktop Help Center
 
-> Official documentation for GitKraken Desktop — a cross-platform Git GUI client for Windows, macOS, and Linux. Covers installation, core Git workflows, integrations, AI features, team collaboration, self-hosted setup, and troubleshooting.
+> Official documentation for GitKraken Desktop, GitKraken AI, Launchpad, integrations, self-hosted deployment, and troubleshooting.
+> Generated from validated front matter on 2026-03-22. Includes only pages marked `llms_include: true`.
+
+## Scope
+
+- Included pages: 78 current Help Center documents
+- Excluded from this index: release-note archives, sunset pages, request forms, and low-signal policy pages marked `llms_include: false`
 
 ## Getting Started
 
-- [GitKraken Desktop Documentation Home](https://help.gitkraken.com/gitkraken-desktop/gitkraken-desktop-home/): Learn Git with GitKraken Desktop. Explore tutorials, installation guides, Git basics, integrations, release notes, FAQs, and more from the GitKraken Help Center.
-- [Beginner Guide & Workflow](https://help.gitkraken.com/gitkraken-desktop/guide/): New to Git? Get started with GitKraken Desktop using this beginner-friendly guide. Learn cloning, branching, staging, committing, and merging with tutorials and videos.
-- [Install GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/how-to-install/): Step-by-step installation guide for GitKraken Desktop on Windows, macOS, and Linux. Includes system requirements, video tutorials, and tips for WSL users.
-- [Interface Guide](https://help.gitkraken.com/gitkraken-desktop/interface/): Learn how to navigate the GitKraken Desktop interface. Explore the toolbar, Left Panel, Commit Panel, and Commit Graph with visual guides and tips.
-- [Preferences](https://help.gitkraken.com/gitkraken-desktop/preferences/): Explore GitKraken Desktop's Preferences to control themes, integrations, profiles, commit signing, notifications, terminal settings, and more.
-- [Keyboard Shortcuts](https://help.gitkraken.com/gitkraken-desktop/keyboard-shortcuts/): Master GitKraken Desktop with this complete list of keyboard shortcuts for staging, navigating, committing, and managing tabs.
-- [Tips & Power Features](https://help.gitkraken.com/gitkraken-desktop/tips/): Discover top GitKraken Desktop tips to speed up your workflow — Profiles, Command Palette, integrations, cherry pick, and more advanced features.
-- [Command Palette](https://help.gitkraken.com/gitkraken-desktop/command-palette/): Discover how to use the Command Palette in GitKraken Desktop to quickly run commands, open files, switch repos, and customize settings with shortcuts.
+- [GitKraken Desktop Command Palette | Fast Actions & Navigation](https://help.gitkraken.com/gitkraken-desktop/command-palette/): Discover how to use the Command Palette in GitKraken Desktop to quickly run commands, open files, switch repos, and customize settings with shortcuts.
+- [GitKraken Desktop Documentation & Support | Master Git with GitKraken](https://help.gitkraken.com/gitkraken-desktop/gitkraken-desktop-home/): Learn Git with GitKraken Desktop. Explore tutorials, installation guides, Git basics, integrations, release notes, FAQs, and more from the GitKraken Help Center.
+- [GitKraken Desktop Interface Guide | Toolbar, Panels, and Graph](https://help.gitkraken.com/gitkraken-desktop/interface/): Learn how to navigate the GitKraken Desktop interface. Explore the toolbar, Left Panel, Commit Panel, and Commit Graph with visual guides and tips.
+- [GitKraken Desktop Keyboard Shortcuts | Speed Up Your Git Workflow](https://help.gitkraken.com/gitkraken-desktop/keyboard-shortcuts/): Master GitKraken Desktop with this complete list of keyboard shortcuts for staging, navigating, committing, and managing tabs.
+- [GitKraken Desktop Preferences | Customize Settings & Workflow](https://help.gitkraken.com/gitkraken-desktop/preferences/): Explore GitKraken Desktop’s Preferences to control themes, integrations, profiles, commit signing, notifications, terminal settings, and more.
+- [GitKraken Desktop Tips | Productivity Shortcuts & Power Features](https://help.gitkraken.com/gitkraken-desktop/tips/): Discover top GitKraken Desktop tips to speed up your workflow—Profiles, Command Palette, integrations, cherry pick, and more advanced features.
+- [Install GitKraken Desktop on Windows, macOS & Linux | Setup Guide](https://help.gitkraken.com/gitkraken-desktop/how-to-install/): Step-by-step installation guide for GitKraken Desktop on Windows, macOS, and Linux. Includes system requirements, video tutorials, and tips for WSL users.
+- [Learn Git with GitKraken Desktop | Beginner Guide & Workflow](https://help.gitkraken.com/gitkraken-desktop/guide/): New to Git? Get started with GitKraken Desktop using this beginner-friendly guide. Learn cloning, branching, staging, committing, and merging with tutorials and videos.
+- [Open, Clone, or Initialize a Git Repository in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/open-clone-init/): Learn how to open, clone, or initialize repositories in GitKraken Desktop. Get started with repository management and project setup.
 
 ## Core Git Workflows
 
+- [Add, Delete, and Filter Files in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/adding-and-removing/): Learn how to create, delete, and manage files and folders in GitKraken Desktop using the Command Palette, context menu, and file filter. This page covers file and folder operations only — for adding or removing remotes, see the Remotes documentation.
+- [Branch, Merge, and Rebase in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/branching-and-merging/): Learn how to create branches, merge code, and rebase commits using GitKraken Desktop. Includes merge conflict resolution and external tool setup.
 - [Committing Changes](https://help.gitkraken.com/gitkraken-desktop/commits/): Learn how to commit changes in GitKraken Desktop, including staging files, co-authoring, templates, amending commits, and resetting or reverting history.
-- [Stage, Unstage, and Ignore Files](https://help.gitkraken.com/gitkraken-desktop/staging/): Learn how to stage, unstage, discard changes, and manage .gitignore rules when committing in GitKraken Desktop. Includes line-by-line diff staging.
-- [Branch, Merge, and Rebase](https://help.gitkraken.com/gitkraken-desktop/branching-and-merging/): Learn how to create branches, merge code, and rebase commits using GitKraken Desktop. Includes merge conflict resolution and external tool setup.
-- [Push, Pull, and Fetch](https://help.gitkraken.com/gitkraken-desktop/pushing-and-pulling/): Learn how to push, pull, and fetch changes with GitKraken Desktop. Understand upstream branches, default pull behavior, and drag-and-drop actions.
-- [Pull Requests](https://help.gitkraken.com/gitkraken-desktop/pull-requests/): Create, manage, and review pull requests in GitKraken Desktop. Supports GitHub, GitLab, Bitbucket, Azure DevOps, and includes templates, comments, and suggestions.
-- [View Diffs, File History, and Blame](https://help.gitkraken.com/gitkraken-desktop/diff/): Learn how to use GitKraken Desktop to compare changes with diffs, view file history and blame, configure external diff tools, and manage Git patches.
-- [Stashing Changes](https://help.gitkraken.com/gitkraken-desktop/stashing/): Save and manage your uncommitted changes with stashing in GitKraken Desktop. Learn to stash, pop, name, edit, and apply partial stashes using the GUI.
-- [Search Git Commits](https://help.gitkraken.com/gitkraken-desktop/search/): Discover how to find commits by message, SHA, or author in GitKraken Desktop. Learn how to configure graph limits and use the search bar or Command Palette.
-- [Undo and Redo Git Actions](https://help.gitkraken.com/gitkraken-desktop/undo-and-redo/): Learn how to quickly undo or redo Git actions like commits, discards, and checkouts in GitKraken Desktop using buttons, shortcuts, or the Command Palette.
-- [Open, Clone, or Initialize a Repository](https://help.gitkraken.com/gitkraken-desktop/open-clone-init/): Learn how to open, clone, or initialize repositories in GitKraken Desktop. Get started with repository management and project setup.
+- [Edit and Save Files in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/editing-files/): Learn how to open, edit, save, discard, and stage file changes using GitKraken Desktop’s built-in code editor. Includes shortcuts and encoding options.
+- [How to Search Git Commits in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/search/): Discover how to find commits by message, SHA, or author in GitKraken Desktop. Learn how to configure graph limits and use the search bar or Command Palette.
+- [How to Stash Changes in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/stashing/): Save and manage your uncommitted changes with stashing in GitKraken Desktop. Learn to stash, pop, name, edit, and apply partial stashes using the GUI.
+- [How to Undo and Redo Git Actions in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/undo-and-redo/): Learn how to quickly undo or redo Git actions like commits, discards, and checkouts in GitKraken Desktop using buttons, shortcuts, or the Command Palette.
+- [Pull Requests in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/pull-requests/): Create, manage, and review pull requests in GitKraken Desktop. Supports GitHub, GitLab, Bitbucket, Azure DevOps, and includes templates, comments, and suggestions.
+- [Push, Pull, and Fetch in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/pushing-and-pulling/): Learn how to push, pull, and fetch changes with GitKraken Desktop. Understand upstream branches, default pull behavior, and drag-and-drop actions.
+- [Stage, Unstage, and Ignore Files in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/staging/): Learn how to stage, unstage, discard changes, and manage .gitignore rules when committing in GitKraken Desktop. Includes line-by-line diff staging.
+- [View Diffs, File History, and Blame in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/diff/): Learn how to use GitKraken Desktop to compare changes with diffs, view file history and blame, configure external diff tools, and manage Git patches.
 
-## Advanced Git
+## Advanced Git & Repo Management
 
-- [Interactive Rebase](https://help.gitkraken.com/gitkraken-desktop/interactive-rebase/): Step-by-step guide to using interactive rebase in GitKraken Desktop to clean up your Git commit history by picking, squashing, rewording, or dropping commits.
-- [Cherry Pick Commits](https://help.gitkraken.com/gitkraken-desktop/cherrypick/): Learn how to cherry pick single or multiple commits across branches in GitKraken Desktop, including using the interactive cherry-pick tool.
-- [Squash Commits](https://help.gitkraken.com/gitkraken-desktop/squash/): Learn how to squash commits to combine multiple changes into one using GitKraken Desktop. Clean up Git history before pushing or finalizing branches.
-- [Manage Git Tags](https://help.gitkraken.com/gitkraken-desktop/tags/): Learn how to create, annotate, move, and share Git tags in GitKraken Desktop to mark releases and key commits.
-- [Gitflow](https://help.gitkraken.com/gitkraken-desktop/git-flow/): Learn how to use Gitflow in GitKraken Desktop to manage features, releases, and hotfixes with organized branching workflows.
-- [Git Submodules](https://help.gitkraken.com/gitkraken-desktop/submodules/): Learn how to add, update, and manage Git submodules in GitKraken Desktop, including how to track commits and enable automatic updates.
-- [Git LFS](https://help.gitkraken.com/gitkraken-desktop/git-lfs/): Learn how to manage large files with Git LFS in GitKraken Desktop. Covers installation, initialization, configuration, and common troubleshooting.
-- [Git Hooks](https://help.gitkraken.com/gitkraken-desktop/githooks/): Learn how to create, configure, and manage Git hooks in GitKraken Desktop. Supports custom hook paths, error handling, and pre-push validations.
-- [Detached HEAD State](https://help.gitkraken.com/gitkraken-desktop/detached-head-state/): Learn how to safely enter, work in, and exit detached HEAD state in GitKraken Desktop. Includes recovery tips and commit preservation.
-- [Git Worktrees](https://help.gitkraken.com/gitkraken-desktop/worktrees/): Learn how to create, switch, and manage Git worktrees in GitKraken Desktop to work on multiple branches in parallel.
-- [Sign Commits with GPG or SSH](https://help.gitkraken.com/gitkraken-desktop/commit-signing-with-gpg/): Learn how to verify your commits using GPG or SSH keys in GitKraken Desktop. Includes setup, configuration, and troubleshooting for Git commit signing.
+- [Cherry Pick Commits in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/cherrypick/): Learn how to cherry pick single or multiple commits across branches in GitKraken Desktop, including using the interactive cherry-pick tool.
+- [Deep Linking in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/linking/): Learn how to share and open deep links to specific branches, commits, tags, and repositories in GitKraken Desktop for faster collaboration.
+- [Fork GitHub Repositories from GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/fork/): Learn how to fork public or private GitHub repositories directly from GitKraken Desktop and manage them as remotes.
+- [Gitflow in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/git-flow/): Learn how to use Gitflow in GitKraken Desktop to manage features, releases, and hotfixes with organized branching workflows.
+- [GitKraken Desktop Profiles | Manage Git Configs & Accounts](https://help.gitkraken.com/gitkraken-desktop/profiles/): Learn how to use GitKraken Desktop profiles to manage Git settings, integrations, avatars, and multiple accounts across different projects. Manage different gitconfig settings, repositories, and more!
+- [Hide and Solo Branches in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/hiding-and-soloing/): Learn how to reduce visual clutter in GitKraken Desktop by hiding or soloing branches, tags, remotes, and stashes from the Left Panel.
+- [Interactive Rebase in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/interactive-rebase/): Step-by-step guide to using interactive rebase in GitKraken Desktop to clean up your Git commit history by picking, squashing, rewording, or dropping commits.
+- [Manage Favorite Repositories in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/favorites/): Learn how to favorite repositories in GitKraken Desktop for quick access via the Repo Management tab, dropdown menu, or shortcut keys.
+- [Manage Git Submodules in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/submodules/): Learn how to add, update, and manage Git submodules in GitKraken Desktop, including how to track commits and enable automatic updates.
+- [Manage Git Tags in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/tags/): Learn how to create, annotate, move, and share Git tags in GitKraken Desktop to mark releases and key commits.
+- [Manage Git Worktrees in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/worktrees/): Learn how to create, switch, and manage Git worktrees in GitKraken Desktop to work on multiple branches in parallel.
+- [Squash Git Commits in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/squash/): Learn how to squash commits to combine multiple changes into one using GitKraken Desktop. Clean up Git history before pushing or finalizing branches.
+- [Using Git LFS in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/git-lfs/): Learn how to manage large files with Git LFS in GitKraken Desktop. Covers installation, initialization, configuration, and common troubleshooting.
 
-## Integrations
+## Integrations & AI
 
-- [Integrations Overview](https://help.gitkraken.com/gitkraken-desktop/integrations/): Learn how to integrate GitKraken Desktop with GitHub, GitLab, Bitbucket, Jira, Trello, and other tools to streamline repo access and issue tracking.
-- [GitHub Integration](https://help.gitkraken.com/gitkraken-desktop/github-gitkraken-desktop/): Learn how to connect GitKraken Desktop with GitHub to sign in, clone repos, create pull requests, manage SSH keys, and use OAuth features.
-- [GitHub Enterprise Integration](https://help.gitkraken.com/gitkraken-desktop/github-enterprise/): Connect GitKraken Desktop with your GitHub Enterprise Server to manage repos, pull requests, SSH keys, and profiles using OAuth or access tokens.
-- [GitLab Integration](https://help.gitkraken.com/gitkraken-desktop/gitlab-gitkraken-desktop/): Connect GitKraken Desktop with GitLab to clone repositories, manage SSH keys, create pull requests, and streamline development with OAuth.
-- [GitLab Self-Managed Integration](https://help.gitkraken.com/gitkraken-desktop/gitlab-self-hosted/): Connect GitKraken Desktop with your GitLab Self-Managed server to manage repositories, SSH keys, and pull requests using personal access tokens.
-- [Bitbucket Integration](https://help.gitkraken.com/gitkraken-desktop/bitbucket/): Connect GitKraken Desktop with Bitbucket to clone repositories, manage pull requests, and configure SSH authentication with OAuth or token-based access.
-- [Bitbucket Data Center Integration](https://help.gitkraken.com/gitkraken-desktop/bitbucket-data-center/): Connect GitKraken Desktop to your Bitbucket Data Center server for repository access, SSH authentication, cloning, and pull request workflows.
-- [Azure DevOps Integration](https://help.gitkraken.com/gitkraken-desktop/azure-devops/): Connect GitKraken Desktop to Azure DevOps to manage repositories, SSH keys, and pull requests using OAuth or Personal Access Tokens.
-- [Authentication with Other Git Hosts](https://help.gitkraken.com/gitkraken-desktop/authentication/): Learn how to authenticate with TFS, AWS CodeCommit, Google Cloud Source Repositories, and custom Git hosts using HTTPS or SSH in GitKraken Desktop.
-- [GitHub Actions](https://help.gitkraken.com/gitkraken-desktop/github-actions/): Learn how to automate tasks with GitHub Actions in GitKraken Desktop. Covers creating, editing, and deleting workflow files directly in your repository.
+- [Azure DevOps Integration with GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/azure-devops/): Connect GitKraken Desktop to Azure DevOps to manage repositories, SSH keys, and pull requests using OAuth or Personal Access Tokens.
+- [Bitbucket Data Center Integration with GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/bitbucket-data-center/): Connect GitKraken Desktop to your Bitbucket Data Center server for repository access, SSH authentication, cloning, and pull request workflows.
+- [Bitbucket Integration with GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/bitbucket/): Connect GitKraken Desktop with Bitbucket to clone repositories, manage pull requests, and configure SSH authentication with OAuth or token-based access.
+- [Create and Manage GitHub Actions Workflows in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/github-actions/): Learn how to automate tasks with GitHub Actions in GitKraken Desktop. Covers creating, editing, and deleting workflow files directly in your repository.
+- [GitHub Enterprise Integration with GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/github-enterprise/): Connect GitKraken Desktop with your GitHub Enterprise Server to manage repos, pull requests, SSH keys, and profiles using OAuth or access tokens.
+- [GitHub Integration with GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/github-gitkraken-desktop/): Learn how to connect GitKraken Desktop with GitHub to sign in, clone repos, create pull requests, manage SSH keys, and use OAuth features.
+- [GitKraken AI Features Overview](https://help.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai/): Use GitKraken AI to generate commit messages, PR descriptions, and explanations of code changes. Customize your AI provider and prompts to fit your workflow.
+- [GitKraken Desktop & Jira Data Center Issues Integration](https://help.gitkraken.com/gitkraken-desktop/jira-data-center/): Learn how to connect Jira Data Center with GitKraken Desktop. Use Personal Access Tokens to manage, preview, create, and sync Jira issues from within your Git workflow.
+- [GitKraken Desktop & Jira Issues Integration](https://help.gitkraken.com/gitkraken-desktop/jira/): Learn how to connect and manage Jira Issues in GitKraken Desktop. Preview, edit, and create issues, filter with JQL, and sync changes with Jira Cloud or Data Center.
+- [GitKraken Desktop + Git Integration for Jira](https://help.gitkraken.com/gitkraken-desktop/git-integration-for-jira/): Connect GitKraken Desktop with Git Integration for Jira to navigate commits and diffs directly from Jira issues, and open GitKraken from Jira for deeper Git context.
+- [GitKraken Desktop + GitHub Enterprise Issues Integration](https://help.gitkraken.com/gitkraken-desktop/github-enterprise-issues/): Connect GitKraken Desktop with GitHub Enterprise Server to preview, filter, and create issues directly from your Git workflow.
+- [GitKraken Desktop + GitHub Issues Integration](https://help.gitkraken.com/gitkraken-desktop/github-issues/): Learn how to connect GitKraken Desktop with GitHub Issues to manage, filter, preview, and create issues directly from your Git workflow.
+- [GitKraken Desktop + GitLab Issues Integration](https://help.gitkraken.com/gitkraken-desktop/gitlab-issues/): Connect GitKraken with GitLab to view, filter, and manage issues directly from your local Git interface.
+- [GitKraken Desktop + GitLab Self-Managed Issues Integration](https://help.gitkraken.com/gitkraken-desktop/gitlab-self-managed-issues/): Connect GitKraken with GitLab Self-Managed to preview, manage, and filter issues directly from your Git workflow.
+- [GitKraken Desktop + Trello Integration](https://help.gitkraken.com/gitkraken-desktop/trello/): Connect GitKraken to Trello to preview, manage, and link cards with your branches and repositories.
+- [GitKraken Desktop Integrations | Connect Git & Issue Trackers](https://help.gitkraken.com/gitkraken-desktop/integrations/): Learn how to integrate GitKraken Desktop with GitHub, GitLab, Bitbucket, Jira, Trello, and other tools to streamline repo access and issue tracking.
+- [GitLab Integration with GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/gitlab-gitkraken-desktop/): Connect GitKraken Desktop with GitLab to clone repositories, manage SSH keys, create pull requests, and streamline development with OAuth.
+- [GitLab Self-Managed Integration with GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/gitlab-self-hosted/): Connect GitKraken Desktop with your GitLab Self-Managed server to manage repositories, SSH keys, and pull requests using personal access tokens.
 
-## Issue Tracker Integrations
+## Collaboration & Team Features
 
-- [GitHub Issues Integration](https://help.gitkraken.com/gitkraken-desktop/github-issues/): Learn how to connect GitKraken Desktop with GitHub Issues to manage, filter, preview, and create issues directly from your Git workflow.
-- [GitHub Enterprise Issues Integration](https://help.gitkraken.com/gitkraken-desktop/github-enterprise-issues/): Connect GitKraken Desktop with GitHub Enterprise Server to preview, filter, and create issues directly from your Git workflow.
-- [GitLab Issues Integration](https://help.gitkraken.com/gitkraken-desktop/gitlab-issues/): Connect GitKraken with GitLab to view, filter, and manage issues directly from your local Git interface.
-- [GitLab Self-Managed Issues Integration](https://help.gitkraken.com/gitkraken-desktop/gitlab-self-managed-issues/): Connect GitKraken with GitLab Self-Managed to preview, manage, and filter issues directly from your Git workflow.
-- [Jira Issues Integration](https://help.gitkraken.com/gitkraken-desktop/jira/): Learn how to connect and manage Jira Issues in GitKraken Desktop. Preview, edit, and create issues, filter with JQL, and sync changes with Jira Cloud or Data Center.
-- [Jira Data Center Integration](https://help.gitkraken.com/gitkraken-desktop/jira-data-center/): Learn how to connect Jira Data Center with GitKraken Desktop. Use Personal Access Tokens to manage, preview, create, and sync Jira issues from within your Git workflow.
-- [Git Integration for Jira](https://help.gitkraken.com/gitkraken-desktop/git-integration-for-jira/): Connect GitKraken Desktop with Git Integration for Jira to navigate commits and diffs directly from Jira issues.
-- [Trello Integration](https://help.gitkraken.com/gitkraken-desktop/trello/): Connect GitKraken to Trello to preview, manage, and link cards with your branches and repositories.
-
-## Collaboration & Teams
-
-- [Workspaces](https://help.gitkraken.com/gitkraken-desktop/workspaces/): Learn how to create, manage, and share Cloud or Local Workspaces in GitKraken Desktop to organize and collaborate across repositories.
-- [Teams](https://help.gitkraken.com/gitkraken-desktop/teams/): Learn how to use GitKraken Desktop Teams to organize users, manage roles, and collaborate with features like Team View, shared Workspaces, and Cloud Patches.
-- [Team View](https://help.gitkraken.com/gitkraken-desktop/team-view/): Learn how to use Team View in GitKraken Desktop to see branch activity, detect conflicts, and manage team visibility settings.
-- [Conflict Prevention](https://help.gitkraken.com/gitkraken-desktop/conflict-prevention/): Discover how GitKraken Desktop prevents merge conflicts by alerting users to overlapping changes, target branch issues, and Org Member edits.
-- [GitKraken Launchpad](https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/): Learn how to track pull requests, issues, and WIPs using GitKraken Launchpad, including Personal and Team Views, integrations, filters, and saved views.
-- [Pull Request Filter Syntax](https://help.gitkraken.com/gitkraken-desktop/pull-requests-filter-syntax/): Use advanced filter syntax in GitKraken Desktop to find pull requests by title, author, label, branch, CI status, and more across supported integrations.
-- [Fork GitHub Repositories](https://help.gitkraken.com/gitkraken-desktop/fork/): Learn how to fork public or private GitHub repositories directly from GitKraken Desktop and manage them as remotes.
-- [Deep Linking](https://help.gitkraken.com/gitkraken-desktop/linking/): Learn how to share and open deep links to specific branches, commits, tags, and repositories in GitKraken Desktop for faster collaboration.
-
-## AI & Productivity
-
-- [GitKraken AI Features](https://help.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai/): Use GitKraken AI to generate commit messages, PR descriptions, and explanations of code changes. Customize your AI provider and prompts to fit your workflow.
-- [Profiles](https://help.gitkraken.com/gitkraken-desktop/profiles/): Learn how to use GitKraken Desktop profiles to manage Git settings, integrations, avatars, and multiple accounts across different projects.
-- [Favorite Repositories](https://help.gitkraken.com/gitkraken-desktop/favorites/): Learn how to favorite repositories in GitKraken Desktop for quick access via the Repo Management tab, dropdown menu, or shortcut keys.
-- [Hide and Solo Branches](https://help.gitkraken.com/gitkraken-desktop/hiding-and-soloing/): Learn how to reduce visual clutter in GitKraken Desktop by hiding or soloing branches, tags, remotes, and stashes from the Left Panel.
-- [Edit and Save Files](https://help.gitkraken.com/gitkraken-desktop/editing-files/): Learn how to open, edit, save, discard, and stage file changes using GitKraken Desktop's built-in code editor. Includes shortcuts and encoding options.
-- [Add and Remove Files](https://help.gitkraken.com/gitkraken-desktop/adding-and-removing/): Learn how to create, delete, and manage files and folders in GitKraken Desktop using the Command Palette, context menu, and file filter.
-- [Terminal](https://help.gitkraken.com/gitkraken-desktop/terminal/): Learn how to use GitKraken's in-app terminal to run Git commands, use auto-complete, and customize shell preferences.
-- [Themes](https://help.gitkraken.com/gitkraken-desktop/themes/): Learn how to switch between light and dark themes in GitKraken Desktop, sync with your system theme, and create custom themes using JSONC files.
-- [Experimental Features](https://help.gitkraken.com/gitkraken-desktop/experimental-features/): Explore experimental GitKraken Desktop features like Git Executable integration and Cloud Patches. Learn how to enable, use, and self-host these in-development tools.
+- [Conflict Prevention in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/conflict-prevention/): Discover how GitKraken Desktop prevents merge conflicts by alerting users to overlapping changes, target branch issues, and Org Member edits.
+- [GitKraken Desktop Teams | Manage Users, Roles & Collaboration](https://help.gitkraken.com/gitkraken-desktop/teams/): Learn how to use GitKraken Desktop Teams to organize users, manage roles, and collaborate with features like Team View, shared Workspaces, and Cloud Patches.
+- [GitKraken Launchpad Overview](https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/): Learn how to track pull requests, issues, and WIPs using GitKraken Launchpad, including Personal and Team Views, integrations, filters, and saved views.
+- [Team View in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/team-view/): Learn how to use Team View in GitKraken Desktop to see branch activity, detect conflicts, and manage team visibility settings.
+- [Workspaces in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/workspaces/): Learn how to create, manage, and share Cloud or Local Workspaces in GitKraken Desktop to organize and collaborate across repositories.
 
 ## Self-Hosted & Enterprise
 
-- [Self-Hosted Server Setup](https://help.gitkraken.com/gitkraken-desktop/self-hosted/): Learn how to install and configure GitKraken On-Premise Self-Hosted Server, including system requirements, supported OS versions, and benefits for secure environments.
-- [Install Self-Hosted Server with Docker](https://help.gitkraken.com/gitkraken-desktop/how-to-install-self-hosted/): Step-by-step guide to installing GitKraken Self-Hosted Server on CentOS, Ubuntu, or RHEL7 using Docker and Docker Compose.
-- [On-Premise Serverless Setup](https://help.gitkraken.com/gitkraken-desktop/serverless/): Learn how to install, license, and run GitKraken On-Premise Serverless on Windows, macOS, and Linux in offline or secure environments.
-- [Configure Self-Hosted Server](https://help.gitkraken.com/gitkraken-desktop/configure-self-managed/): Step-by-step instructions to configure GitKraken Self-Hosted Server. Set up licensing, LDAP authentication, SMTP server, and Super User access.
-- [Upgrade Self-Hosted Server](https://help.gitkraken.com/gitkraken-desktop/upgrade-enterprise/): Step-by-step guide to upgrading GitKraken Self-Hosted Server, Docker images, client installers, and license file.
-- [Self-Signed Certificates](https://help.gitkraken.com/gitkraken-desktop/self-signed-certificates/): Learn how to install a self-signed SSL certificate so GitKraken Desktop can recognize it. Follow step-by-step guides for Windows, macOS, and Linux.
-- [System Requirements](https://help.gitkraken.com/gitkraken-desktop/system-requirements/): Minimum requirements for GitKraken Self-Hosted servers.
-- [Data Security and Storage Practices](https://help.gitkraken.com/gitkraken-desktop/GKC-Security/): Learn how GitKraken Desktop collects, transmits, and stores user and repository data securely. Includes encryption methods, data storage locations, and compliance details.
-- [Use GitKraken Desktop with WSL 2](https://help.gitkraken.com/gitkraken-desktop/windows-subsystem-for-linux/): Step-by-step guide to using GitKraken Desktop in WSL 2, including setup, installation, GUI support, known issues, and file system access.
+- [Configure GitKraken Self-Hosted Server (LDAP, SMTP, and Super User)](https://help.gitkraken.com/gitkraken-desktop/configure-self-managed/): Step-by-step instructions to configure GitKraken Self-Hosted Server. Set up licensing, LDAP authentication, SMTP server, and Super User access.
+- [GitKraken On-Premise Serverless (Stand-Alone) Setup](https://help.gitkraken.com/gitkraken-desktop/serverless/): Learn how to install, license, and run GitKraken On-Premise Serverless on Windows, macOS, and Linux in offline or secure environments.
+- [Install GitKraken Self-Hosted Server with Docker](https://help.gitkraken.com/gitkraken-desktop/how-to-install-self-hosted/): Step-by-step guide to installing GitKraken Self-Hosted Server on CentOS, Ubuntu, or RHEL7 using Docker and Docker Compose.
+- [Installing Self-Signed Certificates for GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/self-signed-certificates/): Learn how to install a self-signed SSL certificate so GitKraken Desktop can recognize it. Follow step-by-step guides for Windows, macOS, and Linux.
+- [Set Up GitKraken Self-Hosted Server (On-Premise)](https://help.gitkraken.com/gitkraken-desktop/self-hosted/): Learn how to install and configure GitKraken On-Premise Self-Hosted Server, including system requirements, supported OS versions, and benefits for secure environments.
+- [System Requirements](https://help.gitkraken.com/gitkraken-desktop/system-requirements/): Minimum requirements for GitKraken Self-Hosted servers
+- [Upgrade GitKraken Self-Hosted Server (Docker & Client Instructions)](https://help.gitkraken.com/gitkraken-desktop/upgrade-enterprise/): Step-by-step guide to upgrading GitKraken Self-Hosted Server, Docker images, client installers, and license file—including how to reset the Super User password.
+- [Use GitKraken Desktop with Windows Subsystem for Linux (WSL 2)](https://help.gitkraken.com/gitkraken-desktop/windows-subsystem-for-linux/): Step-by-step guide to using GitKraken Desktop in WSL 2, including setup, installation, GUI support, known issues, and file system access.
 
-## Troubleshooting
+## Troubleshooting & Reference
 
-- [FAQ](https://help.gitkraken.com/gitkraken-desktop/faq/): Get answers to frequently asked questions about GitKraken Desktop. Learn about features, integrations, installations, SSH issues, and troubleshooting steps.
-- [Common Issues and Fixes](https://help.gitkraken.com/gitkraken-desktop/common-issues/): Troubleshoot common GitKraken Desktop problems, including login errors, GitHub integrations, performance issues, and experimental Git behavior.
-- [Improve Performance](https://help.gitkraken.com/gitkraken-desktop/performance-issues/): Troubleshoot and fix performance issues in GitKraken Desktop with maintenance tips and optimization settings.
+- [Authentication with Other Git Hosts in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/authentication/): Learn how to authenticate with TFS, AWS CodeCommit, Google Cloud Source Repositories, and custom Git hosts using HTTPS or SSH in GitKraken Desktop.
+- [Git Hooks in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/githooks/): Learn how to create, configure, and manage Git hooks in GitKraken Desktop. Supports custom hook paths, error handling, and pre-push validations.
+- [GitKraken Desktop Experimental Features | Cloud Patch & Git Executable](https://help.gitkraken.com/gitkraken-desktop/experimental-features/): Explore experimental GitKraken Desktop features like Git Executable integration and Cloud Patches. Learn how to enable, use, and self-host these in-development tools.
+- [GitKraken Desktop FAQ | Common Questions & Troubleshooting](https://help.gitkraken.com/gitkraken-desktop/faq/): Get answers to frequently asked questions about GitKraken Desktop. Learn about features, integrations, installations, SSH issues, and troubleshooting steps.
+- [GitKraken Desktop Themes | Customize Light, Dark & Custom UI](https://help.gitkraken.com/gitkraken-desktop/themes/): Learn how to switch between light and dark themes in GitKraken Desktop, sync with your system theme, and create custom themes using JSONC files.
+- [GitKraken Desktop – Common Issues and Fixes](https://help.gitkraken.com/gitkraken-desktop/common-issues/): Troubleshoot common GitKraken Desktop problems, including login errors, GitHub integrations, performance issues, and experimental Git behavior.
+- [GitKraken Terminal Guide](https://help.gitkraken.com/gitkraken-desktop/terminal/): Learn how to use GitKraken’s in-app terminal to run Git commands, use auto-complete, and customize shell preferences.
+- [Improve GitKraken Desktop Performance](https://help.gitkraken.com/gitkraken-desktop/performance-issues/): Troubleshoot and fix performance issues in GitKraken Desktop with maintenance tips and optimization settings.
+- [Sign Commits with GPG or SSH in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/commit-signing-with-gpg/): Learn how to verify your commits using GPG or SSH keys in GitKraken Desktop. Includes setup, configuration, and troubleshooting for Git commit signing.
+- [View Activity Logs in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/activity-logs/): Learn how to view real-time Git actions, application events, and Git hook feedback using Activity Logs in GitKraken Desktop.
 - [View and Submit Error Logs](https://help.gitkraken.com/gitkraken-desktop/error-logs/): Learn how to access GitKraken Desktop error logs to troubleshoot issues and send diagnostics to support.
-- [Activity Logs](https://help.gitkraken.com/gitkraken-desktop/activity-logs/): Learn how to view real-time Git actions, application events, and Git hook feedback using Activity Logs in GitKraken Desktop.
 
-## Release Notes
+## Security & Policy
 
-- [Version 11 (Current)](https://help.gitkraken.com/gitkraken-desktop/current/): View a history of the new features and fixes in GitKraken Desktop's Version 11.
-- [Version 10](https://help.gitkraken.com/gitkraken-desktop/10x/): View a history of the new features and fixes in GitKraken Desktop's Version 10.
-- [Version 9](https://help.gitkraken.com/gitkraken-desktop/9x/): View a history of the new features and fixes in GitKraken Desktop's Version 9.
-- [Version 8](https://help.gitkraken.com/gitkraken-desktop/8x/): View a history of the new features and fixes in GitKraken Desktop's Version 8.
-- [Version 7](https://help.gitkraken.com/gitkraken-desktop/7x/): View a history of the new features and fixes in GitKraken Desktop's Version 7.
+- [GitKraken Desktop – Data Security and Storage Practices](https://help.gitkraken.com/gitkraken-desktop/GKC-Security/): Learn how GitKraken Desktop collects, transmits, and stores user and repository data securely. Includes encryption methods, data storage locations, and compliance details.
+
+## Other
+
+- [Detached HEAD in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/detached-head-state/): Learn how to safely enter, work in, and exit detached HEAD state in GitKraken Desktop. Includes recovery tips and commit preservation.
+- [Pull Request Filter Syntax in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/pull-requests-filter-syntax/): Use advanced filter syntax in GitKraken Desktop to find pull requests by title, author, label, branch, CI status, and more across supported integrations.

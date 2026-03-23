@@ -1,12 +1,25 @@
 ---
 title: GitKraken Launchpad Overview
 description: Learn how to track pull requests, issues, and WIPs using GitKraken Launchpad, including Personal and Team Views, integrations, filters, and saved views.
+product: GitKraken Launchpad
+feature: Launchpad
+content_type: overview
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps, Jira Cloud, Jira Data Center]
+integrations: [GitHub, GitLab, Bitbucket, Azure DevOps, Jira Cloud, Jira Data Center]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [launchpad, pull-requests, issues, wip, filters]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Launchpad provides a unified overview of your Pull Requests, Issues, and Works In Progress (WIPs) for your selected Workspace or collaborators. Use it to monitor your personal tasks and your team’s contributions in one place.
+Use GitKraken Launchpad to monitor pull requests, issues, and works in progress across a selected Workspace or team. This page explains how to open Launchpad, connect integrations, switch between Personal and Team Views, save filtered views, and understand feature differences between Cloud and On-Premise environments.
 
 <figure>
   <img src="/wp-content/uploads/launchpad-highlight-2025@2x.png"
@@ -39,7 +52,7 @@ To save a filtered view for reuse, click the **+** Save View icon in the Launchp
 
 ***
 
-## Getting Started
+## How to get started with Launchpad
 
 To open Launchpad:
 
@@ -64,7 +77,7 @@ To open Launchpad:
   </figcaption>
 </figure>
 
-### Set Up Workspaces and Integrations
+### How to set up Workspaces and integrations
 
 Launchpad works best when connected to at least one Workspace. To set this up:
 
@@ -117,7 +130,7 @@ Pinned and snoozed items help prioritize what you see first:
 
 ***
 
-## Personal View
+## How Personal View works
 
 Personal View displays items where you're directly involved:
 
@@ -141,7 +154,7 @@ If you select "None" in the Workspace dropdown, you'll still see items related t
   <p><strong>Note:</strong> Team View is not available for GitKraken On-Premise due to its dependency on Cloud Workspaces. Team View is available for Advanced plans and above.</p>
 </div>
 
-## Team View
+## How Team View works
 
 Switch to Team View using the toggle in the top-right corner of Launchpad. Team View displays items not associated with your user account:
 
@@ -173,7 +186,7 @@ Team View provides a high-level look at your team's current efforts across all r
 
 ***
 
-## Saved Views
+## How to save and reuse Launchpad views
 
 You can save customized views by clicking the <i class="fa-solid fa-plus"></i> Save View icon in the Launchpad tab bar.
 
@@ -196,7 +209,7 @@ Note that saved views are only visible when you’re in the same mode (Team or P
 
 ***
 
-## Pull Requests
+## How to work with pull requests in Launchpad
 
 From Launchpad, you can quickly take action on pull requests:
 
@@ -213,7 +226,7 @@ From Launchpad, you can quickly take action on pull requests:
   <figcaption style="color:#888; text-align:center">Quick actions available for pull requests in Launchpad</figcaption>
 </figure>
 
-### Pull Request Table Columns
+### What the pull request table columns mean
 
 <table>
   <thead>
@@ -254,7 +267,7 @@ From Launchpad, you can quickly take action on pull requests:
   </tbody>
 </table>
 
-### GitHub Pull Requests
+### How GitHub pull requests work in Launchpad
 
 If your Workspace uses GitHub.com, you can view PRs directly in Launchpad’s GitHub pull request interface.
 
@@ -263,7 +276,7 @@ If your Workspace uses GitHub.com, you can view PRs directly in Launchpad’s Gi
   <figcaption style="color:#888; text-align:center">GitHub pull request details integrated in Launchpad</figcaption>
 </figure>
 
-## Issues
+## How to work with issues in Launchpad
 
 Launchpad supports multiple issue trackers including Jira, GitHub Issues, Azure DevOps, and Trello.
 
@@ -283,7 +296,7 @@ To customize your view:
   <figcaption style="color:#888; text-align:center">Use filters to target relevant issues</figcaption>
 </figure>
 
-## WIPs
+## How to view works in progress in Launchpad
 
 The WIPs section shows uncommitted changes in the repositories of your selected Workspace. 
 
@@ -291,11 +304,11 @@ To view a repository with changes:
 
 - Click <button class="button button--success button--ui button--nolink">View Repo</button> next to the listing.
 
-## All
+## How the All tab works
 
 The All tab combines Pull Requests, Issues, and WIPs for all repositories in the selected Workspace, giving a unified snapshot of ongoing work.
 
-## Snoozed
+## How the Snoozed tab works
 
 The Snoozed tab lists all pull requests and issues you've chosen to hide temporarily.
 
@@ -305,7 +318,7 @@ The Snoozed tab lists all pull requests and issues you've chosen to hide tempora
   <p><strong>Note:</strong> Snoozing is available only with a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank" rel="noopener noreferrer">paid GitKraken subscription</a>.</p>
 </div>
 
-## Filter by Milestones and Sprints
+## How to filter by milestones and sprints
 
 Launchpad allows you to filter issues and pull requests by:
 
@@ -317,7 +330,7 @@ Launchpad allows you to filter issues and pull requests by:
   <figcaption style="color:#888; text-align:center">Filter Launchpad by Jira or GitHub milestones</figcaption>
 </figure>
 
-## Launchpad Summary
+## Launchpad summary
 
 Your most important pull requests are summarized in the status bar.
 
@@ -329,7 +342,7 @@ Your most important pull requests are summarized in the status bar.
   <figcaption style="color:#888; text-align:center">Launchpad status bar shows actionable pull requests</figcaption>
 </figure>
 
-## On-Premise vs. Cloud Launchpad
+## How On-Premise Launchpad differs from Cloud Launchpad
 
 GitKraken On-Premise respects network isolation, which limits certain cloud-based features.
 
@@ -350,7 +363,7 @@ This local-only experience is ideal for teams requiring full network control.
 
 ***
 
-## Launchpad Changelog
+## Launchpad changelog
 
 Stay up to date with recent enhancements.
 

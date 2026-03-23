@@ -1,16 +1,35 @@
 ---
 title: Manage Favorite Repositories in GitKraken Desktop
 description: Learn how to favorite repositories in GitKraken Desktop for quick access via the Repo Management tab, dropdown menu, or shortcut keys.
+product: GitKraken Desktop
+feature: Favorites
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [favorites, repositories, repo-management, shortcuts, navigation]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Favoriting repositories allows you to quickly access commonly used projects in GitKraken Desktop from the Repo Management tab, dropdown menus, or keyboard shortcuts.
+Favorites let you pin frequently used repositories in GitKraken Desktop so you can reopen them faster from Repo Management, dropdown menus, and keyboard shortcuts. Use favorites when you switch between a small set of active repos and want quick access without searching your full repository list each time.
+
+**Requirements and limits**
+- Favorites are managed from the Repo Management tab in GitKraken Desktop.
+- Keyboard shortcuts are available for up to 9 favorite repositories.
+- Favorites change how quickly you reopen repositories; they do not change the repository itself.
+- Favorited repositories appear in the Favorites section of Repo Management for faster access.
 
 ***
 
-## Add a Repository to Favorites
+## How to add a repository to Favorites
 
 To favorite a repository:
 
@@ -31,7 +50,7 @@ Favorited repositories appear in the **Favorites** section of the Repo Managemen
 
 ***
 
-## Use Shortcut Keys
+## How to open favorite repositories with keyboard shortcuts
 
 You can switch to your favorite repositories using keyboard shortcuts. GitKraken Desktop supports shortcuts for up to 9 favorite repositories.
 

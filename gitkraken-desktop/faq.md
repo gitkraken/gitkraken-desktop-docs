@@ -1,13 +1,33 @@
 ---
 title: GitKraken Desktop FAQ | Common Questions & Troubleshooting
 description: Get answers to frequently asked questions about GitKraken Desktop. Learn about features, integrations, installations, SSH issues, and troubleshooting steps.
+product: GitKraken Desktop
+feature: FAQ
+content_type: faq
+audience: all
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps, generic]
+integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [faq, troubleshooting, ssh, plans, os-support]
 
 taxonomy:
     category: gitkraken-desktop
 ---
 <kbd>Last updated: March 2026</kbd>
 
-The answers to your most frequently asked questions.
+This FAQ answers common GitKraken Desktop questions about supported platforms, account and plan limits, authentication, remote access, and troubleshooting. Use it when you need a quick answer or constraint check before opening a longer feature guide, especially for Linux support, SSH behavior, proxy issues, or subscription-related questions.
+
+**Key facts**
+- Supported Linux distributions: Ubuntu 18.04 LTS+, RHEL 8+, and Fedora 39+
+- Multiple accounts: Supported with a paid license by using Profiles
+- SSH limitation: GitKraken does not use `~/.ssh/config`
+- Windows SSH note: Pageant is the supported SSH agent on Windows
+- Community status troubleshooting: Verify that you are signed in with the email associated with your subscription
 
 <div class='faq container'>
   <section class='pts pbm'>
@@ -23,7 +43,7 @@ The answers to your most frequently asked questions.
 
 ---
 
-## Features and Interface
+## Common feature and interface questions
 
 ### Does GitKraken support TFS, Visual Studio Team Services, or Azure DevOps?
 Yes. GitKraken integrates with [Azure DevOps](/integrations/azure-devops/). For TFS, clone the repository manually using <kbd>File > Clone Repo</kbd> and provide the HTTPS URL. On Mac or Linux, enable _Basic Authentication_ in IIS for TFS. Consider using a Personal Access Token (PAT) if password authentication fails.
@@ -64,7 +84,7 @@ While there’s no sign-out button, you can:
 
 ---
 
-## Technical Issues
+## Common technical troubleshooting questions
 
 ### Why am I getting a repo compatibility error? 
 Try closing other tools like IDEs, then relaunch GitKraken. Use `git status` to check for uncommitted changes. Try switching branches or cloning to a new directory.

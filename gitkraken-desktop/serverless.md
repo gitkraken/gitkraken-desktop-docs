@@ -1,10 +1,33 @@
 ---
 title: GitKraken On-Premise Serverless (Stand-Alone) Setup
 description: Learn how to install, license, and run GitKraken On-Premise Serverless on Windows, macOS, and Linux in offline or secure environments.
+product: GitKraken Serverless
+feature: Serverless Setup
+content_type: overview
+audience: enterprise-admin
+plan_required: Enterprise
+os_support: [Windows, macOS, Linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: self-hosted
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [serverless, on-premise, offline, setup, enterprise]
 taxonomy:
     category: gitkraken-desktop
 ---
 <kbd>Last updated: March 2026</kbd>
+
+Use this page to install and license GitKraken On-Premise Serverless, also called GitKraken Stand-Alone, when your team works in offline or tightly controlled environments. It covers platform-specific installation steps, supported license file locations, and the manual license update flow required after expiration or renewal.
+
+**Requirements and limits**
+- Product scope: GitKraken On-Premise Serverless / Stand-Alone
+- Environment fit: Offline, disconnected, or tightly controlled environments
+- Account model: No internet account creation required
+- Activation requirement: A `.dat` license file must be loaded at first launch
+- License maintenance: Expired or renewed licenses must be updated manually by replacing the `.dat` file or using **Update License**
+- Commercial note: Serverless is sold separately from standard subscriptions and separately from Self-Hosted on-premise offerings
 
 **GitKraken On-Premise Serverless** (also known as *GitKraken Stand-Alone*) is designed for teams operating in disconnected or secure environments. It includes most core <a href="https://www.gitkraken.com/git-client" target=_blank>GitKraken features</a>, with additional advantages:
 
@@ -42,7 +65,7 @@ If your license expires, replace the `.dat` file in one of the supported directo
 
 ***
 
-## How to Install GitKraken Serverless
+## How to install GitKraken Serverless
 
 Follow these steps to get started:
 
@@ -54,7 +77,7 @@ Follow these steps to get started:
 
 ---
 
-### 1. Download GitKraken Serverless
+### How to download GitKraken Serverless
 
 Download the appropriate client for your operating system from our <a href="https://www.gitkraken.com/download-on-premise-serverless" target=_blank>downloads page</a>.
 
@@ -62,7 +85,7 @@ If the page is inaccessible, contact your GitKraken administrator for internal d
 
 ---
 
-### 2. Install GitKraken Serverless
+### How to install GitKraken Serverless on each platform
 
 #### Windows (.exe)
 
@@ -125,7 +148,7 @@ sudo dnf install ./gitkraken-amd64.rpm
 
 ---
 
-### 3. Load License File
+### How to load the license file
 
 At first launch, you’ll be prompted to load the `.dat` license file.
 
@@ -138,7 +161,7 @@ If you don’t have the file, contact your GitKraken admin. Admins can retrieve 
 
 ---
 
-### License File Locations
+### Where GitKraken checks for license files
 
 GitKraken checks the following locations for license files:
 
@@ -157,7 +180,7 @@ GitKraken checks the following locations for license files:
 
 ---
 
-### Updating Your License File
+### How to update the license file
 
 If your license expires, you can:
 

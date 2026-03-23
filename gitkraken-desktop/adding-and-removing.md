@@ -1,12 +1,36 @@
 ---
 title: Add, Delete, and Filter Files in GitKraken Desktop
-description: Learn how to create, delete, and manage files and folders in GitKraken Desktop using the Command Palette, context menu, and file filter.
+description: Learn how to create, delete, and manage files and folders in GitKraken Desktop using the Command Palette, context menu, and file filter. This page covers file and folder operations only — for adding or removing remotes, see the Remotes documentation.
+product: GitKraken Desktop
+feature: File Management
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [files, folders, create, delete, filter]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Learn how to add, create folders, delete, and filter files using GitKraken Desktop.
+<div class="callout callout--note">
+<p><strong>Note:</strong> This page covers creating, deleting, and filtering files inside a repository. To add or remove a remote repository, see <a href="/gitkraken-desktop/pushing-and-pulling/">Remote Repositories and Pushing/Pulling</a>.</p>
+</div>
+
+Use this page to create files, create folders, delete files, and filter repository contents from inside GitKraken Desktop. It covers both Command Palette and context-menu workflows, plus the `View all files` mode you need when you want to delete or locate files outside the current staged or changed set.
+
+**Requirements and limits**
+- Workflow scope: File and folder creation, deletion, and filtering inside an existing repository
+- Create-file access: Command Palette or Commit Panel context menu
+- Folder creation behavior: Include `/` in the new filename to create a folder and file at the same time
+- Delete-file limitation: To delete arbitrary repository files, enable `View all files` first
+- Filter behavior: The `Filter Files` bar appears only when `View all files` is enabled
 
 ***
 
@@ -31,7 +55,7 @@ To delete any file in the repository (not just staged files), first enable `View
 
 ***
 
-## Add a File Using the Command Palette
+## How to add a file using the Command Palette
 
 1. Press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>P</kbd> to open the Command Palette.
 2. Type `Create File` and press <kbd>Enter</kbd>.
@@ -57,7 +81,7 @@ To create a folder and a file at once, include a forward slash (/) in the file n
 
 ***
 
-## Add a File Using the Context Menu
+## How to add a file using the context menu
 
 You can also add files via the Commit Panel:
 
@@ -66,7 +90,7 @@ You can also add files via the Commit Panel:
 
 ***
 
-## Delete a File from a Commit
+## How to delete a file from the Commit Panel
 
 1. In the Commit Panel, right-click the file you want to delete.
 2. Select `Delete file` from the context menu.
@@ -78,7 +102,7 @@ You can also add files via the Commit Panel:
 
 ***
 
-## Delete Any File in the Repository
+## How to delete any file in the repository
 
 1. Enable the `View all files` option.
 2. Right-click the file you want to remove.
@@ -91,7 +115,7 @@ You can also add files via the Commit Panel:
 
 ***
 
-## Filter Files
+## How to filter files
 
 When `View all files` is enabled, a <kbd>Filter Files</kbd> bar appears.
 

@@ -1,12 +1,33 @@
 ---
 title: Installing Self-Signed Certificates for GitKraken Desktop
 description: Learn how to install a self-signed SSL certificate so GitKraken Desktop can recognize it. Follow step-by-step guides for Windows, macOS, and Linux.
+product: GitKraken Desktop
+feature: Self-Signed Certificates
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [certificates, ssl, self-signed, trust, troubleshooting]
 taxonomy:
     category: gitkraken-desktop
 ---
 <kbd>Last updated: March 2026</kbd>
 
-GitKraken's remote hosting platform integrations may require users to have a certificate in place. Follow the instructions below to add a certificate to your local certificate store.
+Use this page to install a self-signed SSL certificate so GitKraken Desktop can trust a private or internally signed remote host. It covers browser-based certificate export on Windows and macOS, Linux certificate installation steps, common SSL error messages, and how Git Executable respects global Git SSL settings.
+
+**Requirements and limits**
+- Use case: Private or internally signed remote hosts that GitKraken Desktop does not trust by default
+- Windows workflow on this page: Chrome-based certificate export and trusted root installation
+- macOS workflow on this page: Safari export and Keychain Access trust configuration
+- Linux workflow on this page: Chrome export plus `openssl` and `certutil` installation steps
+- Git Executable note: When enabled, GitKraken Desktop honors SSL settings in the global `.gitconfig`
+- Common failure mode: Missing or invalid SAN values can require the server certificate to be reissued
 
 ***
 
@@ -36,7 +57,7 @@ If you have the Git Executable enabled, SSL settings in your global `.gitconfig`
 
 ***
 
-## Adding a Self-Signed Certificate
+## How to add a self-signed certificate
 
 Self-signed certificates must be added to your trusted root directory before GitKraken will recognize the cert. This can be done through your operating system or in many browsers.
 
@@ -44,7 +65,7 @@ Self-signed certificates must be added to your trusted root directory before Git
     <p><strong>Note:</strong> If you have the <a href="https://help.gitkraken.com/gitkraken-desktop/experimental-features/#git-executable">Git Executable</a> enabled, SSL settings in the global <code>.gitconfig</code> file are honored by GitKraken Desktop for actions performed by the Git executable.</p>
 </div>
 
-### Using Google Chrome on Windows
+### How to use Google Chrome on Windows
 
 An easy way to install a certificate so that GitKraken can use it is via <a href='https://www.google.com/chrome/index.html' target='_blank'>Google Chrome</a>.
 
@@ -90,7 +111,7 @@ Ensure that the certificate is added to your trusted root certificates.
     <figcaption style="text-align:center;color:#888">Wizard with trusted root option</figcaption>
 </figure>
 
-### Using Safari on Mac
+### How to use Safari on macOS
 
 Open Safari and navigate to your remote hosting service.
 
@@ -129,7 +150,7 @@ Locate the certificate in the **login** section and double-click to configure.
 
 Set the trust level to *Always Trust*. Restart your computer to apply the changes.
 
-### Using Chrome on Ubuntu Linux
+### How to use Chrome on Ubuntu Linux
 
 Follow the same certificate export steps described in the [Windows section](/integrations/self-signed-certificates/#using-google-chrome-on-windows). Then:
 
@@ -152,9 +173,9 @@ certutil -d sql:$HOME/.pki/nssdb -L
 
 Close and reopen Chrome to confirm the certificate warning no longer appears.
 
-### Common Certificate Errors
+### Common certificate errors
 
-#### Error: `Invalid SSL Certificate`
+#### How to fix `Invalid SSL Certificate`
 
 <figure>
     <img src="/wp-content/uploads/invalid-error-2.png" class="help-center-img img-bordered" style="max-width: 75%;">
@@ -163,7 +184,7 @@ Close and reopen Chrome to confirm the certificate warning no longer appears.
 
 This usually indicates the certificate is invalid or missing. [Add a certificate](/integrations/self-signed-certificates/#adding-a-self-signed-certificate) to your local store.
 
-#### Additional Details
+#### Additional details about SSL certificate errors
 
 <figure>
     <img src="/wp-content/uploads/invalid-error-1.png" class="help-center-img img-bordered" style="max-width: 75%;">
@@ -172,7 +193,7 @@ This usually indicates the certificate is invalid or missing. [Add a certificate
 
 These errors often point to issues like a missing *Server Alternate Name (SAN)*. Contact your server administrator to fix and reissue the certificate.
 
-### Operating System Guides
+### Operating system guides
 
 Use the links below for more help installing certificates by OS:
 

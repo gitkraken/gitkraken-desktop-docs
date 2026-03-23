@@ -1,13 +1,33 @@
 ---
 title: GitKraken Desktop + Trello Integration
 description: Connect GitKraken to Trello to preview, manage, and link cards with your branches and repositories.
+product: GitKraken Desktop
+feature: Trello Integration
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [Trello]
+integrations: [Trello]
+hosted_variant: cloud
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [trello, cards, filters, branching, integration]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop makes it easy to integrate with Trello to help manage cards and tasks alongside your repository.
+Use this page to connect GitKraken Desktop to Trello so you can preview, create, edit, filter, and branch from cards without leaving your Git workflow. Trello is view-only for Community users, while paid GitKraken subscriptions unlock the full card management workflow.
+
+**Requirements and limits**
+- Integration covered here: Trello
+- Community plan limit: View-only access
+- Paid subscription requirement: Creating, editing, and branching from cards requires a paid GitKraken subscription
+- Connection scope: Trello cards appear in the ISSUES section after authorization
+- Custom filters use Trello filter syntax
 
 ***
 
@@ -37,9 +57,13 @@ Connect GitKraken Desktop to Trello to view, create, and manage cards alongside 
 
 ---
 
-## Connect Trello Integration
+## How to connect the Trello integration
 
 Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
+
+<div class='callout callout--basic'>
+    <p><strong>Use the Trello integration when:</strong> your team tracks work in Trello and you want cards visible beside your repository workflow. <strong>Don't use it as a full replacement for Trello when:</strong> you need broader board management features outside the card workflows covered here.</p>
+</div>
 
 <img src="/wp-content/uploads/connect-trello-2025@2x.png" class="help-center-img img-bordered" alt="Connect Trello integration in Preferences">
 
@@ -51,7 +75,7 @@ Alternatively, copy the token from the _Success_ page and paste it into GitKrake
 
 ---
 
-## Preview Trello Cards
+## How to preview Trello cards
 
 Once connected, your Trello cards will appear in the Left Panel under a default _All Cards_ filter.
 
@@ -63,7 +87,7 @@ Hover over any card to preview its title, description, list, labels, and members
 
 ---
 
-## View and Edit Card Details
+## How to view and edit Trello card details
 
 Click a card to open its detail view.
 
@@ -80,7 +104,7 @@ Changes sync with your Trello board in real-time.
 
 ---
 
-## Create a New Trello Card
+## How to create a new Trello card
 
 Click the <code>+</code> icon in the Left Panel to add a new card.
 
@@ -90,9 +114,13 @@ Fields marked with <code>*</code> are required. Your card will sync automaticall
 
 ---
 
-## Create Filters
+## How to create Trello card filters
 
 You can use Trello’s filter syntax to create custom filters for your cards.
+
+<div class='callout callout--basic'>
+    <p><strong>Use custom card filters when:</strong> you need to focus on a board, list, label, or member-specific queue. <strong>Don't rely on the default All Cards view when:</strong> it mixes too much unrelated work together.</p>
+</div>
 
 <img src="/wp-content/uploads/trello-create-filter-2025@2x.png" class="help-center-img img-bordered" alt="Create Trello filter">
 
@@ -100,9 +128,13 @@ See Trello’s [filtering guide](https://help.trello.com/article/808-searching-f
 
 ---
 
-## Create Branches from Cards
+## How to create branches from Trello cards
 
 You can create branches tied to cards directly from the card detail view. Use the <strong>Create branch</strong> button or right-click a card.
+
+<div class='callout callout--basic'>
+    <p><strong>Use card-based branch creation when:</strong> the branch should map directly to one Trello card. <strong>Don't use it when:</strong> the branch covers several cards or needs a branch name that should not be derived from the card title.</p>
+</div>
 
 <img src="/wp-content/uploads/create-branch-jira-integration.gif" class="help-center-img img-bordered" alt="Create branch from Trello card">
 
@@ -110,7 +142,7 @@ Branch names are prefilled based on the card title. These branches display the T
 
 ---
 
-## Copy Card Link or View in Trello
+## How to copy a card link or open it in Trello
 
 Click the <kbd><i class="fa fa-ellipsis-v"></i></kbd> icon or the <i class="fa fa-external-link" aria-hidden="true"></i> icon to copy the link or open the card in Trello.
 
