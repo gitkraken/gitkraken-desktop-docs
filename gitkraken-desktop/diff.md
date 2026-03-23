@@ -52,6 +52,10 @@ A diff displays lines added and removed from a file:
 - <span style='color: #d90171;'>Red</span> indicates removed lines.
 - <span style='color: #7bd938;'>Green</span> indicates added lines.
 
+<div class='callout callout--basic'>
+  <p><strong>Use the built-in diff when:</strong> you want to inspect changes, compare commits, or review file history directly in GitKraken Desktop. <strong>Use an external diff tool when:</strong> you need a specialized comparison workflow that is not covered well by the built-in viewer.</p>
+</div>
+
 <figure class='figure center'>
   <img src='/wp-content/uploads/diff-full-screen-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop showing a full-screen side-by-side diff of a markdown file, with syntax-highlighted line changes and a file activity panel listing added images.">
   <figcaption style="text-align: center; color: #888;">Full-screen diff view with color-coded changes.</figcaption>
@@ -95,6 +99,10 @@ You can also select multiple commit rows using <kbd>Shift</kbd> + <kbd>Click</kb
 
 Displays only the changed blocks of a file.
 
+<div class='callout callout--basic'>
+  <p><strong>Use Hunk View when:</strong> you want to focus only on changed blocks or revert a specific hunk quickly. <strong>Don't use it when:</strong> you need full-file context around the changes.</p>
+</div>
+
 <figure class='figure center'>
   <img src='/wp-content/uploads/hunk-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop displaying hunk view mode, focusing on a grouped block of code changes with syntax highlighting and minimal surrounding context.">
   <figcaption style="text-align: center; color: #888;">Hunk view highlights change blocks without full context.</figcaption>
@@ -117,6 +125,10 @@ This lets you revert only what you need—no reset or manual edits required.
 
 Displays changes within the full context of the file.
 
+<div class='callout callout--basic'>
+  <p><strong>Use Inline View when:</strong> you want to read edits in the flow of the full file. <strong>Don't use it when:</strong> side-by-side comparison is easier for the change you are reviewing.</p>
+</div>
+
 <figure class='figure center'>
   <img src='/wp-content/uploads/inline-annotated-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop displaying Inline View mode for file diffs, with added lines and a selected image insertion shown directly in context." />
   <figcaption style="text-align: center; color: #888;">Inline view shows changes inline with full file content.</figcaption>
@@ -125,6 +137,10 @@ Displays changes within the full context of the file.
 ### When to use Split View
 
 Displays changes side-by-side, with the original file on the left and the updated version on the right.
+
+<div class='callout callout--basic'>
+  <p><strong>Use Split View when:</strong> you want to compare old and new content line-by-line. <strong>Don't use it when:</strong> you want a more compact, single-column review for small changes.</p>
+</div>
 
 <figure class='figure center'>
   <img src='/wp-content/uploads/split-2025.png' class="help-center-img img-bordered" alt="Split View mode in GitKraken Desktop comparing changes between two versions of a file, highlighting additions, deletions, and updated image references side-by-side." />
@@ -147,6 +163,10 @@ To toggle word wrap, click the **Word Wrap** button in the toolbar of the diff v
 ## How to use external diff tools
 
 Configure an external diff tool in <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> External Tools</em>:
+
+<div class='callout callout--basic'>
+  <p><strong>Use an external diff tool when:</strong> you already rely on a supported third-party app or need its advanced comparison features. <strong>Don't use an external tool when:</strong> GitKraken Desktop's built-in diff already gives you the context and controls you need.</p>
+</div>
 
 <figure class='figure center'>
   <img src="/wp-content/uploads/external-diff-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop External Tools preferences showing dropdown to select an external diff tool, with options like FileMerge and Git Config Default." />

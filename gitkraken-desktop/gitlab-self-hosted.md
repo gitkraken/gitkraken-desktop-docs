@@ -60,6 +60,10 @@ Once connected, GitKraken Desktop lets you clone from your self-hosted repositor
   <p><strong>Note:</strong> GitKraken supports any version of GitLab Self-Managed released within the past year.</p>
 </div>
 
+<div class='callout callout--basic'>
+  <p><strong>Use GitLab Self-Managed integration when:</strong> your repositories live on a self-hosted GitLab server and you need PAT-based access. <strong>Don't use the GitLab.com page when:</strong> your environment requires self-managed host domains, self-hosted auth, or server-version compatibility checks.</p>
+</div>
+
 To authenticate:
 
 1. Navigate to <kbd><i class="fas fa-cog"></i> Preferences > Integrations</kbd> in the upper-right corner.
@@ -116,3 +120,7 @@ You can also:
 ## How to connect multiple GitLab Self-Managed accounts
 
 GitKraken supports one GitLab Self-Managed account per profile. Use multiple [profiles](/start-here/profiles) with GitKraken Pro to manage separate accounts.
+
+<div class='callout callout--basic'>
+  <p><strong>Use multiple profiles when:</strong> you need to switch between separate GitLab Self-Managed servers or identities. <strong>Don't use multiple profiles when:</strong> one self-hosted account already covers the repositories you need to manage.</p>
+</div>

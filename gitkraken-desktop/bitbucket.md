@@ -51,6 +51,10 @@ Once connected, GitKraken Desktop displays your Bitbucket repositories when clon
 
 To authenticate with Bitbucket:
 
+<div class='callout callout--basic'>
+  <p><strong>Use the browser-based Bitbucket connection when:</strong> standard OAuth access is available and you want the simplest setup. <strong>Use a manual OAuth token when:</strong> your environment requires token entry or you want to control the credential you paste into GitKraken Desktop.</p>
+</div>
+
 1. Navigate to <kbd><i class="fas fa-cog"></i> Preferences > Integrations</kbd> in the upper-right corner.
 
 <figure>
@@ -104,6 +108,10 @@ After connecting Bitbucket:
 
 GitKraken enhances your workflow with:
 
+<div class='callout callout--basic'>
+  <p><strong>Use the Bitbucket integration when:</strong> you want repo discovery, remotes, and pull request workflows tied to Bitbucket.org inside GitKraken Desktop. <strong>Don't use this page when:</strong> you need self-hosted Bitbucket guidance, which belongs on the Bitbucket Data Center page.</p>
+</div>
+
 - A searchable list of Bitbucket repositories when cloning:
 
 <figure>
@@ -125,6 +133,10 @@ Manual repo URLs are still supported.
 ## How to connect multiple Bitbucket accounts
 
 GitKraken supports one Bitbucket account per profile. With GitKraken Pro, use multiple [profiles](/start-here/profiles) to manage several Bitbucket identities.
+
+<div class='callout callout--basic'>
+  <p><strong>Use multiple profiles when:</strong> you need separate Bitbucket identities or workspaces in the same GitKraken Desktop install. <strong>Don't use multiple profiles when:</strong> one Bitbucket account already covers the repositories you work with.</p>
+</div>
 
 ## How Bitbucket pull request reviewers work
 

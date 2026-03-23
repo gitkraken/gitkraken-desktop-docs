@@ -46,6 +46,10 @@ To open an issue in GitLab or copy its link, use the ellipsis menu or the extern
 
 The GitLab and GitLab Issues integrations share the same connection. Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
+<div class='callout callout--basic'>
+    <p><strong>Use GitLab Issues in GitKraken Desktop when:</strong> you want issue context, issue editing, and branch creation close to your repository workflow. <strong>Don't use the in-app view alone when:</strong> you need broader GitLab project management outside the issue workflows covered here.</p>
+</div>
+
 <img src="/wp-content/uploads/connect-gitlab-issues-2025@2x.png" class="help-center-img img-bordered" alt="Connect GitLab Issues integration">
 
 From the Integrations window, select <em>GitLab.com</em> and click <strong>Connect to GitLab</strong>.
@@ -100,6 +104,10 @@ Required fields are marked with <code>*</code>. The issue will sync automaticall
 
 Use GitLab’s issue syntax to create filters and narrow your view.
 
+<div class='callout callout--basic'>
+    <p><strong>Use custom filters when:</strong> you need focused issue queues by label, assignee, milestone, or status. <strong>Don't rely on only the default filters when:</strong> your team needs a narrower view of active work.</p>
+</div>
+
 <img src="/wp-content/uploads/gitlab-filter-create-2025@2x.png" class="help-center-img img-bordered" alt="Create GitLab filter">
 
 Refer to GitLab’s [issue filtering guide](https://docs.gitlab.com/ee/user/search/index.html#filtering-issue-and-merge-request-lists) for examples.
@@ -109,6 +117,10 @@ Refer to GitLab’s [issue filtering guide](https://docs.gitlab.com/ee/user/sear
 ## How to create branches from GitLab issues
 
 From the issue detail view, click <strong>Create a branch for this issue</strong>. You can also right-click the issue or use the <kbd><i class="fa fa-ellipsis-v"></i></kbd> menu.
+
+<div class='callout callout--basic'>
+    <p><strong>Use issue-based branch creation when:</strong> you want the branch tied clearly to a specific GitLab issue. <strong>Don't use it when:</strong> the work spans multiple issues or the branch name needs a different structure than the issue title provides.</p>
+</div>
 
 <img src="/wp-content/uploads/gitlab-issue-create-branch-2025@2x.png" class="help-center-img img-bordered" alt="Create branch from GitLab issue">
 

@@ -51,6 +51,10 @@ Once connected, GitKraken Desktop displays your GitLab repositories when cloning
 
 To authenticate with GitLab:
 
+<div class='callout callout--basic'>
+  <p><strong>Use the browser-based GitLab connection when:</strong> standard GitLab OAuth access is available and you want the simplest setup. <strong>Use a manual OAuth token when:</strong> your environment requires token-based access or you need to paste a token directly into GitKraken Desktop.</p>
+</div>
+
 1. Open <kbd><i class="fas fa-cog"></i> Preferences > Integrations</kbd> from the upper-right corner.
 
 <figure>
@@ -107,6 +111,10 @@ Once GitLab is connected, you can generate a new SSH key or upload an existing o
 
 With GitLab connected, GitKraken enhances your workflow with features such as:
 
+<div class='callout callout--basic'>
+  <p><strong>Use the GitLab integration when:</strong> you want cloning, remotes, pull requests, and issue workflows tied directly to GitLab.com inside GitKraken Desktop. <strong>Don't use this page when:</strong> you need self-hosted GitLab guidance, which belongs on the self-managed GitLab integration pages.</p>
+</div>
+
 - Browsing your GitLab repositories during cloning:
 
 <figure>
@@ -128,3 +136,7 @@ You can still manually enter repository URLs if preferred.
 ## How to connect multiple GitLab accounts
 
 GitKraken supports one GitLab account per profile. With [profile support](/start-here/profiles) in GitKraken Pro, you can switch between multiple GitLab accounts easily.
+
+<div class='callout callout--basic'>
+  <p><strong>Use multiple profiles when:</strong> you need to switch between separate GitLab identities or organizations cleanly. <strong>Don't use multiple profiles when:</strong> one GitLab account already covers the repositories you need and profile switching would add unnecessary overhead.</p>
+</div>

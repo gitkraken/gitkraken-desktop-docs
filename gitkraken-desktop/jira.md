@@ -48,6 +48,10 @@ Connect GitKraken Desktop to Jira to view, create, and manage Jira issues alongs
 
 Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>. If you do not see the ISSUES section, right-click on any Left Panel header and enable it from the context menu.
 
+<div class='callout callout--basic'>
+    <p><strong>Use Jira Cloud on this page when:</strong> your organization uses Atlassian's hosted Jira authorization flow. <strong>Use Jira Data Center instead when:</strong> your team runs self-hosted Jira and needs PAT-based setup with Data Center-specific compatibility.</p>
+</div>
+
 <img src="/wp-content/uploads/connect-jira-issues-2025@2x.png" class="help-center-img img-bordered" alt="Connecting Jira integration in GitKraken">
 
 You will be redirected to an Atlassian page to authorize the connection. Click <em>Accept</em> to proceed.
@@ -101,6 +105,10 @@ The issue will sync directly with your connected Jira project.
 
 You can create filters to show specific issues. The integration supports Atlassian’s JQL (Jira Query Language) and provides auto-complete for filter fields.
 
+<div class='callout callout--basic'>
+    <p><strong>Use JQL filters when:</strong> you need focused issue queues by project, sprint, assignee, or status. <strong>Don't rely only on the default My Issues view when:</strong> your workflow depends on a more specific slice of Jira work.</p>
+</div>
+
 <img src="/wp-content/uploads/create-jira-filter-2025@2x.png" class="help-center-img img-bordered" alt="Creating a JQL filter in GitKraken">
 
 For advanced filtering tips, see Atlassian’s [JQL guide](https://www.atlassian.com/software/jira/guides/expand-jira/jql#visualize-results).
@@ -110,6 +118,10 @@ For advanced filtering tips, see Atlassian’s [JQL guide](https://www.atlassian
 ## How to create branches from Jira issues
 
 You can create branches tied to Jira issues directly from the issue detail view.
+
+<div class='callout callout--basic'>
+    <p><strong>Use issue-based branch creation when:</strong> one branch should map directly to one Jira issue. <strong>Don't use it when:</strong> the branch spans several tickets or the auto-filled issue-based name is not the branch structure you need.</p>
+</div>
 
 <img src="/wp-content/uploads/create-branch-jira-integration.gif" class="help-center-img img-bordered" alt="Creating a branch from Jira issue view">
 

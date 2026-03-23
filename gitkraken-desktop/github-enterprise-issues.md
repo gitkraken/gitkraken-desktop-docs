@@ -34,6 +34,10 @@ This page explains how GitKraken Desktop connects to GitHub Enterprise Server Is
 
 The GitHub Enterprise Server integration and GitHub Enterprise Server Issues integration share the same connection.
 
+<div class='callout callout--basic'>
+    <p><strong>Use GitHub Enterprise Server Issues in GitKraken Desktop when:</strong> you want enterprise issue context beside your repository workflow after connecting the base integration. <strong>Don't use this page when:</strong> you still need to set up the underlying GitHub Enterprise Server authentication first.</p>
+</div>
+
 You can set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
 Follow these [GitHub Enterprise authentication steps](/integrations/github-enterprise/#github-enterprise-authentication) to connect your instance.
@@ -43,6 +47,10 @@ Follow these [GitHub Enterprise authentication steps](/integrations/github-enter
 ## What you can do with GitHub Enterprise Server Issues
 
 Once connected, this integration offers the same features as the GitHub Issues integration:
+
+<div class='callout callout--basic'>
+    <p><strong>Use the in-app issue workflow when:</strong> you want preview, filtering, and issue-based actions inside GitKraken Desktop. <strong>Don't rely on it alone when:</strong> you need broader enterprise issue-management features outside the workflow covered here.</p>
+</div>
 
 - [Preview GitHub Issues](/integrations/github-issues/#preview-github-issues)
 - [View and Edit GitHub Issue Details](/integrations/github-issues/#view-and-edit-github-issue-details)

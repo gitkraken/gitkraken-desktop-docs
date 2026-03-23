@@ -46,6 +46,10 @@ To edit issues, create issue-based branches, or open issues in GitLab Self-Manag
 
 The GitLab Self-Managed and GitLab Self-Managed Issues integrations share the same connection.
 
+<div class='callout callout--basic'>
+    <p><strong>Use GitLab Self-Managed Issues in GitKraken Desktop when:</strong> you already have the self-managed GitLab integration connected and want issue workflows next to your repository work. <strong>Don't use this page when:</strong> you still need to configure the underlying self-managed GitLab connection first.</p>
+</div>
+
 Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
 Follow these [GitLab Self-Managed authentication steps](/integrations/gitlab-self-hosted/#gitlab-self-managed-authentication) to connect your instance.
@@ -55,6 +59,10 @@ Follow these [GitLab Self-Managed authentication steps](/integrations/gitlab-sel
 ## What the GitLab Self-Managed Issues integration supports
 
 Once connected, the GitLab Self-Managed Issues integration provides the same functionality as the GitLab Issues integration:
+
+<div class='callout callout--basic'>
+    <p><strong>Use the in-app issue workflow when:</strong> you want issue context, filtering, and branching without leaving GitKraken Desktop. <strong>Don't rely on it alone when:</strong> you need broader project-management features outside the issue workflows documented here.</p>
+</div>
 
 - [Preview GitLab Issues](/integrations/gitlab-issues/#preview-gitlab-issues)
 - [View and Edit GitLab Issue Details](/integrations/gitlab-issues/#view-and-edit-gitlab-issue-details)

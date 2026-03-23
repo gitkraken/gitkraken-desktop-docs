@@ -63,6 +63,10 @@ To use multiple GitHub accounts, create separate [profiles](/start-here/profiles
 
 To sign in to GitKraken using your GitHub account:
 
+<div class='callout callout--basic'>
+    <p><strong>Use GitHub sign-in when:</strong> you want GitHub to be your primary GitKraken Desktop identity and login path. <strong>Don't use sign-in as your only setup step when:</strong> you also need repository-level integration settings such as SSH key management or multiple profiles.</p>
+</div>
+
 1. Open GitKraken.
 2. Click <kbd>Sign in with GitHub</kbd>.
 3. Log in using your GitHub credentials.
@@ -79,6 +83,10 @@ This connects your GitHub account to GitKraken automatically.
 ## How to connect GitKraken Desktop to GitHub
 
 To connect your GitHub account manually:
+
+<div class='callout callout--basic'>
+    <p><strong>Use the browser-based GitHub connection when:</strong> standard OAuth access is available and you want the simplest setup. <strong>Use a manual token when:</strong> your environment requires token-based access or you need tighter control over the credentials you provide.</p>
+</div>
 
 1. Navigate to <kbd><i>Preferences</i> <i class='fa fa-caret-right'></i> <i>Integrations</i></kbd> in the upper right corner.
 
@@ -136,6 +144,10 @@ You may also:
 
 GitKraken's OAuth integration enhances how you interact with your repositories:
 
+<div class='callout callout--basic'>
+    <p><strong>Use the GitHub integration when:</strong> you want repository discovery, PR creation, and GitHub-aware workflows directly inside GitKraken Desktop. <strong>Don't rely on it alone when:</strong> you need full GitHub code review and commenting capabilities that still require GitHub's native review experience.</p>
+</div>
+
 - View a list of your GitHub repositories to simplify cloning.
 
 <figure>
@@ -172,6 +184,10 @@ Create and manage [Pull Requests](/working-with-repositories/pull-requests/#assi
 </figure>
 
 GitHub.com users can use the **Pull Request View** feature in GitKraken Desktop to review and edit pull requests.
+
+<div class='callout callout--basic'>
+    <p><strong>Use Pull Request View when:</strong> you want to inspect files, edit PR metadata, and suggest changes without leaving GitKraken Desktop. <strong>Don't use it as a full replacement for GitHub review when:</strong> you need the full in-browser code review and commenting feature set.</p>
+</div>
 
 To access this view:
 

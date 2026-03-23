@@ -20,6 +20,10 @@ Use this page to search commit history in GitKraken Desktop by message, SHA, or 
 
 By default, GitKraken Desktop displays up to 2000 commits on the Commit Graph. To view a deeper history of your repo, set the initial number of commits to display on the graph to your preference. 
 
+<div class='callout callout--basic'>
+  <p><strong>Increase graph depth when:</strong> search results look incomplete because GitKraken Desktop has not loaded enough history. <strong>Don't raise the limit unnecessarily when:</strong> the missing result is likely due to the query itself rather than the current graph depth.</p>
+</div>
+
 Navigate to <kbd>Preferences</kbd> from the gear menu in the upper right corner, and find <kbd>Initial Commits in Graph</kbd> under <kbd>General</kbd>. There is no limit to how many commits can be displayed. 
 
 <figure>
@@ -34,6 +38,10 @@ Above this setting, you'll also find an option to <kbd>Show All Commits in Graph
 ## How the search bar works
 
 The search bar in the upper right of the application defaults to commit search.
+
+<div class='callout callout--basic'>
+  <p><strong>Use commit search when:</strong> you know part of a message, SHA, or author and want to jump directly to matching commits. <strong>Use the Command Palette when:</strong> you need to start a search workflow from anywhere in the app instead of from the current repo view.</p>
+</div>
 
 <figure>
   <img src='/wp-content/uploads/commit-search-2025.png' 

@@ -53,6 +53,10 @@ After connecting, GitKraken Desktop can browse your Azure DevOps repositories wh
 
 To authenticate with Azure DevOps:
 
+<div class='callout callout--basic'>
+  <p><strong>Use OAuth when:</strong> your Azure DevOps organization allows third-party application access and you want the simplest browser-based setup. <strong>Use a PAT when:</strong> OAuth is blocked by policy or you need token-based access that matches your organization's security controls.</p>
+</div>
+
 1. Open <kbd><i class="fas fa-cog"></i> Preferences > Integrations</kbd> in the top-right corner.
 
 <figure>
@@ -117,6 +121,10 @@ Once connected, you can generate a new SSH key:
 
 When authenticated, GitKraken enables:
 
+<div class='callout callout--basic'>
+  <p><strong>Use the Azure DevOps integration when:</strong> you want repository discovery, remotes, and pull request workflows directly in GitKraken Desktop. <strong>Don't rely on it alone when:</strong> your Azure DevOps setup requires organization-specific workflows outside the features surfaced here.</p>
+</div>
+
 - Browsing your Azure DevOps repositories while cloning:
 
 <figure>
@@ -138,6 +146,10 @@ Manual URL entry is still available.
 ## How to connect multiple Azure DevOps accounts
 
 GitKraken supports one Azure DevOps account per profile. With a paid Pro, Teams, or Enterprise plan, use multiple [profiles](/start-here/profiles) to switch between accounts.
+
+<div class='callout callout--basic'>
+  <p><strong>Use multiple profiles when:</strong> you need to switch cleanly between separate Azure DevOps identities or organizations. <strong>Don't use multiple profiles when:</strong> one account already covers the repos you need and profile switching would only add overhead.</p>
+</div>
 
 ***
 

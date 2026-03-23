@@ -46,6 +46,10 @@ To open an issue in GitHub or copy its link, use the ellipsis menu or the extern
 
 The GitHub and GitHub Issues integrations share the same connection.
 
+<div class='callout callout--basic'>
+    <p><strong>Use GitHub Issues in GitKraken Desktop when:</strong> you want issue triage and branch creation directly beside your Git workflow. <strong>Don't use the in-app view alone when:</strong> you need broader GitHub project or issue-management features outside the issue flows covered here.</p>
+</div>
+
 You can set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
 <img src="/wp-content/uploads/connect-github-issues-2025@2x.png" class="help-center-img img-bordered" alt="Connect GitHub Issues from Preferences">
@@ -98,6 +102,10 @@ Required fields are marked with <code>*</code>. Your issue will sync directly to
 
 Create filters using GitHub's issue filter syntax. These help narrow your view to specific issue types, labels, or statuses.
 
+<div class='callout callout--basic'>
+    <p><strong>Use custom filters when:</strong> you need to focus on a subset of issues such as bugs, assigned work, or open review blockers. <strong>Don't rely only on default filters when:</strong> they leave you with too much issue noise.</p>
+</div>
+
 <img src="/wp-content/uploads/create-github-filter@2x.png" class="help-center-img img-bordered" alt="Create GitHub issue filter">
 
 Refer to GitHub’s [issue filtering guide](https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests) for syntax examples.
@@ -107,6 +115,10 @@ Refer to GitHub’s [issue filtering guide](https://docs.github.com/en/github/se
 ## How to create branches from GitHub issues
 
 From the issue details view, click <strong>Create a branch for this issue</strong>. You can also right-click an issue or use the <kbd><i class="fa fa-ellipsis-v"></i></kbd> menu.
+
+<div class='callout callout--basic'>
+    <p><strong>Use issue-based branch creation when:</strong> you want a clear branch-to-issue link and an auto-filled branch name. <strong>Don't use it when:</strong> the branch should represent a larger initiative or combine work from multiple issues.</p>
+</div>
 
 <img src="/wp-content/uploads/create-branch-github-issue@2x.png" class="help-center-img img-bordered" alt="Create branch from GitHub issue">
 

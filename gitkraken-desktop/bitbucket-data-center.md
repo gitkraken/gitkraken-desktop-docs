@@ -55,6 +55,10 @@ Once connected, you can clone repositories directly from your Bitbucket Data Cen
   <p><strong>Note:</strong> GitKraken Desktop supports Bitbucket Data Center versions released within the past year.</p>
 </div>
 
+<div class='callout callout--basic'>
+  <p><strong>Use Bitbucket Data Center integration when:</strong> your repositories live on a self-hosted Bitbucket Data Center server. <strong>Don't use the Bitbucket.org integration when:</strong> your environment requires self-hosted server access, PAT authentication, or Data Center-specific permissions.</p>
+</div>
+
 To authenticate:
 
 1. Go to <kbd><i class="fas fa-cog"></i> Preferences > Integrations</kbd>.
@@ -118,6 +122,10 @@ To authenticate:
 
 GitKraken allows you to:
 
+<div class='callout callout--basic'>
+  <p><strong>Use this integration when:</strong> you want cloning, remotes, and pull request workflows against your self-hosted Bitbucket Data Center instance inside GitKraken Desktop. <strong>Don't use it when:</strong> your repositories are on Bitbucket.org rather than a self-hosted server.</p>
+</div>
+
 - Search your repositories when cloning:
 
 <figure>
@@ -139,6 +147,10 @@ Manual entry of repository URLs is also supported.
 ## How to connect multiple Bitbucket Data Center accounts
 
 GitKraken supports one Bitbucket Data Center account per profile. Use multiple [profiles](/start-here/profiles) with GitKraken Pro to switch between accounts.
+
+<div class='callout callout--basic'>
+  <p><strong>Use multiple profiles when:</strong> you need to switch between separate Data Center accounts or host domains. <strong>Don't use multiple profiles when:</strong> one profile already covers the single self-hosted account you use.</p>
+</div>
 
 ## How Bitbucket Data Center pull request reviewers work
 

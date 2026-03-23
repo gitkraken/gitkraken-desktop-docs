@@ -49,6 +49,10 @@ Connect GitKraken Desktop to Jira Data Center to view and manage issues from you
 
 Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>. If you don't see the ISSUES section, right-click any header in the Left Panel and enable it from the context menu.
 
+<div class='callout callout--basic'>
+    <p><strong>Use Jira Data Center integration when:</strong> your organization runs self-hosted Jira Data Center and requires PAT-based setup. <strong>Don't use the Jira Cloud flow when:</strong> your environment depends on self-hosted server versions, PAT authentication, or Data Center-specific compatibility.</p>
+</div>
+
 <img src="/wp-content/uploads/connect-jira-dc-issues-2025@2x.png" class="help-center-img img-bordered" alt="Open Jira Data Center integration settings">
 
 Enter your Host Domain URL and a Personal Access Token generated in your Jira Data Center instance.
@@ -64,6 +68,10 @@ Once connected, GitKraken Desktop will confirm the integration.
 ## What the Jira Data Center integration supports
 
 The Jira Data Center integration includes the same functionality as the Jira Cloud integration:
+
+<div class='callout callout--basic'>
+    <p><strong>Use the in-app Jira workflow when:</strong> you want issue preview, issue creation, and issue-based branching inside GitKraken Desktop. <strong>Don't rely on it alone when:</strong> you need Jira administration or broader project workflows outside the integration scope.</p>
+</div>
 
 - [Preview Jira Issues](/integrations/jira/#preview-jira-issues)
 - [View Jira Issue Details](/integrations/jira/#view-jira-issue-details)

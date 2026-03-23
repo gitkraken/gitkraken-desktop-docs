@@ -52,6 +52,10 @@ To use a custom AI provider or customize the prompts, go to <kbd>Preferences > A
 
 Use AI to help organize your Git commits into clear, logical stories.
 
+<div class='callout callout--basic'>
+  <p><strong>Use AI Commit Composer when:</strong> your staged changes or recent commits need to be reorganized into a clearer narrative before you share them. <strong>Don't use it when:</strong> your commits are already atomic and you only need a quick manual message update.</p>
+</div>
+
 ### What AI Commit Composer does
 
 The AI-powered Commit Composer can:
@@ -124,6 +128,10 @@ To generate commits with AI:
 
 GitKraken can generate natural language explanations of your commits directly from the UI.
 
+<div class='callout callout--basic'>
+  <p><strong>Use AI Explain when:</strong> you need a fast summary of what changed in one or more commits. <strong>Don't use it when:</strong> you need authoritative implementation details that should come directly from reading the diff yourself.</p>
+</div>
+
 ### How to use AI Commit Explain
 
 1. Open GitKraken Desktop and select one or more commits (Use <kbd>Shift</kbd> or <kbd>Ctrl/Cmd</kbd>).
@@ -152,6 +160,10 @@ GitKraken can generate natural language explanations of your commits directly fr
 ## How to generate commit messages with AI
 
 Generate clear, consistent commit messages based on your staged changes.
+
+<div class='callout callout--basic'>
+  <p><strong>Use AI commit messages when:</strong> you want a strong starting point for summarizing staged changes. <strong>Don't use them when:</strong> the exact wording carries team-specific meaning and you already know the final message you need to write.</p>
+</div>
 
 ### How to generate an AI commit message
 
@@ -202,6 +214,10 @@ You can then use the AI button again to generate a revised commit message.
 
 Right-click any branch or `HEAD` commit and select **Explain Branch Changes** to generate a summary of all changes introduced on that branch.
 
+<div class='callout callout--basic'>
+  <p><strong>Use Explain Branch Changes when:</strong> you want a high-level summary before review, handoff, or pull request writing. <strong>Don't use it when:</strong> you need to inspect exact file-level behavior instead of a summarized narrative.</p>
+</div>
+
 <figure>
   <img src="/wp-content/uploads/explain-branch@2x.png" class="help-center-img img-bordered" alt="Context menu in GitKraken showing the Explain Branch Changes option for generating AI-based summaries of branch differences." />
   <figcaption style="text-align: center; color: #888">Right-click a branch or HEAD commit to explain changes.</figcaption>
@@ -220,6 +236,10 @@ To customize how **Explain Branch Changes** works, go to **Preferences > GitKrak
 ## How to resolve merge conflicts with AI
 
 Resolve merge conflicts faster with GitKraken AI.
+
+<div class='callout callout--basic'>
+  <p><strong>Use AI conflict resolution when:</strong> you want a suggested starting point for resolving a conflict and plan to review the result carefully. <strong>Don't use it when:</strong> the conflict involves sensitive logic or policy decisions that require a fully manual resolution.</p>
+</div>
 
 When you encounter a merge conflict, click into the conflicted file as usual. You’ll now see a new **Auto-resolve with AI** button that offers a context-aware resolution.
 

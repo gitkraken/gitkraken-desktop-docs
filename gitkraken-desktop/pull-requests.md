@@ -51,6 +51,10 @@ To create a pull request:
 - Or right-click the target branch and choose the same option
 - Or click the <button class='button button--success button--ui button--nolink'>+</button> icon in the Left Panel PULL REQUESTS section
 
+<div class='callout callout--basic'>
+  <p><strong>Use GitKraken Desktop PR creation when:</strong> your branch is already pushed and you want to open or manage the PR without leaving the app. <strong>Don't start the PR yet when:</strong> the branch is not pushed, the target branch is still unclear, or you need provider-specific options not exposed in GitKraken Desktop.</p>
+</div>
+
 <figure>
   <img src="/wp-content/uploads/create-pull-request-drag-and-drop-2025.gif" alt="User initiates a pull request in GitKraken Desktop by dragging a local branch (PM-34-docs-review-pr-page) onto the remote origin/main. The Create Pull Request dialog then appears, pre-filled with repository and branch information, ready for title, description, and assignee input." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Start a pull request by dragging a branch</figcaption>
@@ -124,6 +128,10 @@ Conflict warnings appear if your source and target branches differ:
 
 With the GitHub integration, select the draft checkbox to mark the pull request as a draft.
 
+<div class='callout callout--basic'>
+  <p><strong>Use a draft pull request when:</strong> you want early visibility or feedback before the branch is ready to merge. <strong>Don't mark it ready too early when:</strong> the implementation still needs major changes and you are not ready for formal review.</p>
+</div>
+
 <figure>
   <img src='/wp-content/uploads/create-draft-pr-2025@2x.png' 
        alt="GitKraken interface showing the Create Pull Request form with the 'Submit as draft' checkbox enabled." 
@@ -138,6 +146,10 @@ With the GitHub integration, select the draft checkbox to mark the pull request 
 Enable the GitHub integration to access GitHub PR view:
 - Select a PR in the Left Panel
 - Or click the PR icon in the Launchpad
+
+<div class='callout callout--basic'>
+  <p><strong>Use GitHub Pull Request View when:</strong> you want to update PR metadata, inspect changes, or suggest edits inside GitKraken Desktop. <strong>Don't rely on it for every review workflow when:</strong> your team depends on deeper provider-native review features outside the app.</p>
+</div>
 
 <figure>
   <img src='/wp-content/uploads/github-pr-view-2025@2x.png' 
@@ -168,6 +180,10 @@ Click <button class='button button--primary button--ui button--nolink'><span sty
 ## How to suggest changes
 
 When you click to <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Review Code and Suggest Changes</span></button>, this will allow you to write the code suggestion directly in GitKraken Desktop's editor or [gitkraken.dev](https://gitkraken.dev?source=help_center&product=gitkraken).
+
+<div class='callout callout--basic'>
+  <p><strong>Use code suggestions when:</strong> you want to propose concrete edits for the PR author to review or apply. <strong>Don't use suggestions when:</strong> you only need a high-level comment or architectural discussion without an exact code change.</p>
+</div>
 
 <figure>
   <img src='/wp-content/uploads/gkd-10-2-0-pr-suggest-code-changes.gif' 

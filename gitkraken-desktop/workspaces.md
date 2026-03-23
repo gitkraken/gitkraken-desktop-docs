@@ -72,6 +72,10 @@ To access the Repo Management tab:
 
 Cloud Workspaces are accessible from any machine and can be shared with selected [teams](/start-here/teams/) in your organization. They allow for [multi-repository actions](/gitkraken-desktop/workspaces/#cloud-multi-repository-actions) and centralized pull request management.
 
+<div class='callout callout--basic'>
+    <p><strong>Use a Cloud Workspace when:</strong> you need to share repository groups across machines or with teammates. <strong>Don't use a Cloud Workspace when:</strong> the repo list is only for your local machine and does not need shared or synced workspace context.</p>
+</div>
+
 <p>Watch the overview:</p>
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OIQVsNRqg1M?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -191,6 +195,10 @@ Access open pull requests for all repositories in a Workspace directly from [Lau
 
 
 ## How Local Workspaces work
+
+<div class='callout callout--basic'>
+    <p><strong>Use a Local Workspace when:</strong> you want a private repository grouping stored only on your machine. <strong>Convert to a Cloud Workspace when:</strong> you need cross-device access, sharing, or integration-backed workspace features.</p>
+</div>
 
 ### How to create a Local Workspace
 

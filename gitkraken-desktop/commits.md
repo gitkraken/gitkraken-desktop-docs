@@ -45,6 +45,10 @@ To undo a commit, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Z</kbd> or click t
 
 To create a commit, select your _Work in Progress_ (WIP) node to view file changes in the Commit Panel.
 
+<div class='callout callout--basic'>
+    <p><strong>Use this workflow when:</strong> you are recording a logical set of local changes that belong together in one commit. <strong>Don't use it when:</strong> your changes should be split into multiple commits first, or when you need to preserve published history without rewriting it.</p>
+</div>
+
 <figure class='figure center'>
     <img src='/wp-content/uploads/select-WIP-2025.png' class="help-center-img img-bordered" alt="WIP node displayed at the top of the GitKraken Commit Graph with a file listed as modified but unstaged." />
     <figcaption style="text-align: center; color: #888;">The WIP node appears at the top of the Commit Graph when you save file changes.</figcaption>
@@ -171,6 +175,10 @@ There are three ways to configure commit templates:
 
 GitKraken Desktop lets you modify the last commit by updating the message, adding new changes, or both.
 
+<div class='callout callout--basic'>
+    <p><strong>Use amend when:</strong> you need to fix the most recent commit before others depend on it. <strong>Don't use amend when:</strong> the commit is already shared and you want to avoid rewriting remote history for collaborators.</p>
+</div>
+
 <div class='callout callout--warning'>
     <p><strong>Warning:</strong> If you have already pushed the commit, amending it changes history and requires a force push to update the remote branch.</p>
 </div>
@@ -214,6 +222,10 @@ Use the **Update Message** button to save changes, or **Cancel Amend** to discar
 ## How to reset commits
 
 Git uses a pointer called <code>HEAD</code> to track your current commit. Resetting updates <code>HEAD</code> to point to a specific commit in your history. GitKraken Desktop offers three reset types:
+
+<div class='callout callout--basic'>
+    <p><strong>Use reset when:</strong> you need to move local history to another commit and you understand whether you want to keep staged or working directory changes. <strong>Don't use reset when:</strong> you need a safe, shareable reversal of changes that are already published to a remote branch.</p>
+</div>
 
 - **Soft** — Moves <code>HEAD</code> to the selected commit and retains staged and working directory changes.
 - **Mixed** — Moves <code>HEAD</code>, unstages files, but retains working directory changes.

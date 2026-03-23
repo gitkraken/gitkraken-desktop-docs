@@ -55,6 +55,10 @@ Once connected, you can browse repositories when cloning, add remotes, and creat
     <p><strong>Note:</strong> GitKraken supports any GitHub Enterprise Server version released within the past year.</p>
 </div>
 
+<div class='callout callout--basic'>
+    <p><strong>Use GitHub Enterprise Server integration when:</strong> your repositories live on a self-hosted GitHub Enterprise Server instance and require token-based access. <strong>Don't use the GitHub.com integration when:</strong> your environment depends on enterprise host domains, self-hosted server compatibility, or enterprise-specific credentials.</p>
+</div>
+
 To authenticate with GitHub Enterprise Server:
 
 1. Go to <kbd><i class="fas fa-cog"></i> Preferences > Integrations</kbd> in the upper-right corner.
@@ -107,3 +111,7 @@ You can:
 ## How to use multiple GitHub Enterprise Server accounts
 
 GitKraken supports one GitHub Enterprise Server account per profile. Use [multiple profiles](/start-here/profiles) to switch between accounts.
+
+<div class='callout callout--basic'>
+    <p><strong>Use multiple profiles when:</strong> you need to switch between separate enterprise servers or distinct enterprise identities. <strong>Don't use multiple profiles when:</strong> one enterprise account already covers the repositories you work with.</p>
+</div>

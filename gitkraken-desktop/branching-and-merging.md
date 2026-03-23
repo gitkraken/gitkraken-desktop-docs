@@ -49,6 +49,10 @@ To delete a branch, first check out a different branch, then right-click the tar
 
 Create a new branch when working on a feature or fix. Right-click any commit to open the context menu and create a branch.
 
+<div class='callout callout--basic'>
+  <p><strong>Use branches when:</strong> you want to isolate a feature, fix, or experiment from the main line of development. <strong>Don't keep branches around when:</strong> the work is complete and the branch can be merged or deleted to reduce graph clutter.</p>
+</div>
+
 <figure>
   <img src="/wp-content/uploads/add-branch@2x.png" class="help-center-img img-bordered" alt="Right-click menu in GitKraken Desktop showing option to create a new branch from a selected commit">
   <figcaption style="text-align:center; color:#888">Create a branch by right-clicking on a commit</figcaption>
@@ -151,6 +155,10 @@ Merging combines changes from one branch into another. To merge:
   <p><strong>Use merge when:</strong> you want to preserve the full branch history. <strong>Use rebase when:</strong> you want to move commits onto a new base and keep the history more linear before sharing or merging.</p>
 </div>
 
+<div class='callout callout--basic'>
+  <p><strong>Don't use merge when:</strong> your team expects a rebased, linear branch before review or integration. <strong>Don't use rebase when:</strong> collaborators are already building on the commits you plan to rewrite.</p>
+</div>
+
 <figure>
   <img src="/wp-content/uploads/merge-right@2x.png" class="help-center-img img-bordered" alt="Context menu showing option to merge dev branch into production branch in GitKraken Desktop">
   <figcaption style="text-align:center; color:#888">Merge via drag-and-drop or right-click</figcaption>
@@ -165,6 +173,10 @@ If no conflicts exist, changes will be merged automatically.
 ### When to use squash merges
 
 When you enable the **Squash** setting, GitKraken Desktop stages all changes from the source branch locally without creating a merge commit automatically. You then commit the squashed result manually, which produces a single, clean commit on the target branch.
+
+<div class='callout callout--basic'>
+  <p><strong>Use squash merges when:</strong> you want one clean commit on the target branch and do not need to preserve each feature-branch commit. <strong>Don't use squash when:</strong> the individual commits matter for auditing, review context, or future debugging.</p>
+</div>
 
 This is useful when you want to maintain a linear history on your main branch without preserving the individual commits from a feature branch.
 
@@ -223,6 +235,10 @@ After resolving, save and commit the output.
 ### How to use an external merge tool
 
 Set your preferred merge tool under <em>Preferences > General</em>.
+
+<div class='callout callout--basic'>
+  <p><strong>Use the built-in merge tool when:</strong> you want to stay inside GitKraken Desktop and the supported editor meets your needs. <strong>Use an external merge tool when:</strong> your team already relies on a supported third-party tool or you need a workflow GitKraken does not provide directly.</p>
+</div>
 
 Supported tools:
 - Beyond Compare
