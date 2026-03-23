@@ -33,6 +33,14 @@ Use this page to connect GitKraken Desktop to GitLab Self-Managed Issues so you 
 - Community plan: View-only access
 - Full issue workflows: Paid GitKraken license required for editing, branching, and full issue management
 
+| Capability | Community | Paid plans | Server/version note |
+|------------|-----------|------------|---------------------|
+| Preview issues | Yes | Yes | Requires GitLab Self-Managed 13.1 or newer |
+| Create issues | No | Yes | Requires GitLab Self-Managed 13.1 or newer |
+| Edit issue details | No | Yes | Requires GitLab Self-Managed 13.1 or newer |
+| Create branches from issues | No | Yes | Requires GitLab Self-Managed 13.1 or newer |
+| Filter issues | Yes | Yes | Uses the shared self-managed connection |
+
 ---
 
 ## Requirements

@@ -33,6 +33,15 @@ Use this page to install, initialize, and manage Git LFS in GitKraken Desktop wh
 - Auto behavior: GitKraken Desktop runs an LFS pull automatically after clone or submodule initialization
 - Destructive action warning: `git lfs prune` removes unreferenced LFS objects and should be used carefully
 
+| Requirement | Needed? | Notes |
+|-------------|---------|-------|
+| Git 2.39.3 or later | Yes | Required for Git LFS workflows |
+| Git LFS 3.0.0 or later | Yes | Required before tracking or pulling LFS-managed files |
+| GitKraken Desktop 7.0.0 or later | Yes | Minimum supported GitKraken Desktop version for this workflow |
+| LFS initialization in the repo | Yes | Initialize before tracking large files |
+| `.gitattributes` tracking rules | Yes | Defines which file patterns Git LFS manages |
+| Team members using Git LFS | Recommended | Prevents broken large-file workflows across contributors |
+
 ***
 
 ## Quick Start

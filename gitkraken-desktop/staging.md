@@ -30,6 +30,15 @@ Use this page to stage, unstage, discard, and ignore files in GitKraken Desktop 
 - Ignore limitation: Nested `.gitignore` files are not parsed by GitKraken Desktop
 - Tracked-file behavior: **Ignore and Stop Tracking** removes the file from the Git index in addition to adding the ignore rule
 
+| Action | Scope | Where to do it | Notes |
+|--------|-------|----------------|-------|
+| Stage file | Whole file | Commit Panel | Moves the file into Staged Files |
+| Unstage file | Whole file | Commit Panel | Returns the file to the working directory |
+| Stage selected lines | Partial file | Diff view | Supports line or hunk-level staging |
+| Discard changes | Whole file or selected hunk | Commit Panel or diff view | Permanently removes uncommitted changes |
+| Ignore | File, extension, or directory | Context menu on unstaged files | Writes to the root-level `.gitignore` |
+| Ignore and Stop Tracking | Already tracked file | Context menu on tracked files | Adds ignore rule and removes the file from the Git index |
+
 ***
 
 ## Quick Start

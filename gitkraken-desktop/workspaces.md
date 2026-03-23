@@ -29,6 +29,11 @@ Use this page to create Local or Cloud Workspaces in GitKraken Desktop so you ca
 - Multi-repository actions: Clone, Fetch, Pull, Open, Locate, and Remove are available from the Workspace toolbar
 - Conversion path: Local Workspaces can be converted to Cloud Workspaces after connecting a supported integration
 
+| Workspace type | Stored where | Shareable | Requires integration | Cross-device access |
+|----------------|-------------|-----------|----------------------|---------------------|
+| Local Workspace | On your machine | No | No | No |
+| Cloud Workspace | In your GitKraken account and connected service context | Yes | Yes | Yes |
+
 ***
 
 ## Quick Start

@@ -33,6 +33,14 @@ Use this page to connect GitKraken Desktop to GitHub Issues so you can preview, 
 - Issue workflows: Preview, create, edit, filter, and branch from issues after connecting GitHub
 - Filter syntax: Uses GitHub issue filtering syntax for custom filters
 
+| Capability | Community | Paid plans | Notes |
+|------------|-----------|------------|-------|
+| Preview issues | Yes | Yes | Uses the shared GitHub integration connection |
+| Create issues | Public repositories only | Yes | Requires the connected GitHub repository and account permissions |
+| Edit issue details | Public repositories only | Yes | Requires the connected GitHub repository and account permissions |
+| Create branches from issues | Public repositories only | Yes | Requires the connected GitHub repository and account permissions |
+| Filter issues | Yes | Yes | Uses GitHub issue filtering syntax |
+
 ***
 
 ## Quick Start

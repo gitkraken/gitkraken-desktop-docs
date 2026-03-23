@@ -28,6 +28,13 @@ Use this page to create commits, stage files, add co-authors, work with commit t
 - Commit templates: Repository-local commit templates take precedence over global templates
 - Undo vs. revert: Use Undo for local history changes you have not shared yet; use Revert when you need to preserve published history with a new reversing commit
 
+| Action | Use when | Rewrites history | Safe after push | Notes |
+|--------|----------|------------------|-----------------|-------|
+| Commit | You want to record staged changes as a new commit | No | Yes | Basic local commit workflow |
+| Amend | You need to change the most recent commit or its message | Yes | Not usually | Requires a force push if the commit was already pushed |
+| Undo | You want to remove a local commit that has not been shared yet | Yes | No | Best for local history cleanup |
+| Revert | You need to preserve published history while reversing changes | No | Yes | Creates a new reversing commit |
+
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8a6fYPkBDbY?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>

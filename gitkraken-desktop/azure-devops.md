@@ -29,6 +29,12 @@ Use this page to connect GitKraken Desktop to Azure DevOps for repository access
 - Account limit: One Azure DevOps account per profile; multiple profiles require a paid Pro, Teams, or Enterprise plan
 - SSH behavior: GitKraken uses the key in <kbd>Preferences &gt; SSH</kbd> unless you configure a service-specific key or system SSH Agent
 
+| Method | When to use | Requires | Limitation |
+|--------|-------------|----------|------------|
+| OAuth | Standard Azure DevOps browser-based connection | Pro subscription and third-party OAuth access | Not available if the organization blocks third-party OAuth |
+| Personal Access Token | OAuth is blocked or policy requires token-based access | Pro subscription, host domain, PAT | Manual token generation and paste flow |
+| SSH key setup | You want SSH-based Git operations after connecting | Existing integration connection and SSH key upload | Uses GitKraken SSH settings unless overridden |
+
 ***
 
 ## Quick Start

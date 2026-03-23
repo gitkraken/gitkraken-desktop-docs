@@ -29,6 +29,14 @@ This FAQ answers common GitKraken Desktop questions about supported platforms, a
 - Windows SSH note: Pageant is the supported SSH agent on Windows
 - Community status troubleshooting: Verify that you are signed in with the email associated with your subscription
 
+| Topic | Current answer |
+|-------|----------------|
+| Supported Linux distributions | Ubuntu 18.04 LTS+, RHEL 8+, Fedora 39+ |
+| Multiple accounts | Supported with a paid license by using Profiles |
+| `~/.ssh/config` support | GitKraken Desktop does not use `~/.ssh/config` |
+| Windows SSH agent | Pageant is the supported SSH agent on Windows |
+| Subscription shows Community | Verify that you are signed in with the email associated with your subscription |
+
 <div class='faq container'>
   <section class='pts pbm'>
     <div class='callout'>

@@ -28,6 +28,15 @@ Use this page to connect GitKraken Desktop to Bitbucket.org for repository disco
 - SSH behavior: GitKraken uses the key in <kbd>Preferences &gt; SSH</kbd> unless you configure a Bitbucket-specific key or use your system SSH Agent
 - Pull request reviewer visibility depends on having Project Admin permissions on the repository
 
+| Workflow | Supported | Notes |
+|----------|-----------|-------|
+| Connect Bitbucket account | Yes | Browser-based connection or manual OAuth token entry |
+| Clone and browse repositories | Yes | Uses the integrated repository list |
+| SSH key generation and upload | Yes | Uses GitKraken SSH settings unless overridden |
+| Create and view pull requests | Yes | Supported directly in GitKraken Desktop |
+| Add reviewers to pull requests | Partial | Reviewer visibility depends on Project Admin permissions |
+| Multiple Bitbucket accounts | Yes | Requires separate profiles and a Pro subscription |
+
 ***
 
 ## Quick Start

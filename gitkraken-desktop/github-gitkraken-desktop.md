@@ -28,6 +28,15 @@ Use this page to connect GitKraken Desktop to GitHub for sign-in, repository acc
 - SSH behavior: GitKraken uses the key set in <kbd>Preferences &gt; SSH</kbd> unless a GitHub-specific key or local SSH Agent is configured
 - Pull request review limit: GitKraken Desktop can view pull requests and suggest changes, but full in-app code review and commenting are not available
 
+| Workflow | GitHub.com support | Community limits | Notes |
+|----------|--------------------|------------------|-------|
+| Sign in and connect account | Yes | None | Browser-based GitHub connection |
+| Clone and browse repositories | Yes | Public repositories only | Private repo access requires a paid plan |
+| SSH key generation and upload | Yes | Public repositories only | Uses GitKraken SSH settings unless overridden |
+| Create and view pull requests | Yes | Public repositories only | Supported directly in GitKraken Desktop |
+| Review code and suggest changes | Partial | Public repositories only | Suggestions are supported, but full in-app review and commenting are not |
+| Multiple GitHub accounts | Yes | Not included | Requires separate profiles and a Pro plan |
+
 ***
 
 ## Quick Start

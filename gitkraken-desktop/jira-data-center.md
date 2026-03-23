@@ -30,6 +30,14 @@ Use this page to connect GitKraken Desktop to Jira Data Center so you can previe
 - SSO note: Some single sign-on configurations are not supported
 - Feature scope: Uses the same issue workflows documented for the Jira Cloud integration once connected
 
+| Requirement | Value |
+|-------------|-------|
+| Plan | Advanced subscription tier or higher |
+| Server version | Jira Data Center 8.4 or newer |
+| Authentication | Personal Access Token |
+| Single sign-on | Some SSO configurations are not supported |
+| Feature scope | Uses the same issue workflows documented for the Jira Cloud integration once connected |
+
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/On83cso-w3U" frameborder="0" allowfullscreen></iframe>
 </div>

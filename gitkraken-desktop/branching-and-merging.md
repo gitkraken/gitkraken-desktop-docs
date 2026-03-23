@@ -28,6 +28,13 @@ Use this page to create, rename, delete, merge, and rebase branches in GitKraken
 - Branch deletion: Deleting a branch is permanent
 - External merge tools: Review the supported and unsupported tool lists before relying on a third-party merge tool
 
+| Action | Use when | Preserves branch history | Rewrites history | Notes |
+|--------|----------|--------------------------|------------------|-------|
+| Branch | You need isolated work for a feature, fix, or experiment | Yes | No | Can be renamed or deleted later |
+| Merge | You want to combine branches and keep the branch structure visible | Yes | No | May create a merge commit |
+| Rebase | You want a more linear history before sharing or merging | No | Yes | Replays commits onto a new base |
+| Squash merge | You want one final commit from a branch's combined changes | Partial | Yes | Stages the result but does not create the final commit automatically |
+
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8-qRKyy-v7I?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>

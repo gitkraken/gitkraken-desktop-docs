@@ -35,6 +35,15 @@ Use profiles in GitKraken Desktop to keep separate Git identities, integrations,
 - Git config option: You can sync profile name and email into the global `.gitconfig`
 - Avatar behavior: Connected integrations use provider avatars; otherwise GitKraken Desktop uses the Gravatar tied to the profile email
 
+| Profile data | Stored per profile? | Notes |
+|--------------|---------------------|-------|
+| General preferences | Yes | Saved separately for each profile |
+| Integrations | Yes | Keeps different service accounts isolated |
+| UI Preferences | Yes | Theme and other UI settings are profile-specific |
+| Open tabs | Yes | New profiles duplicate tabs from the active profile when created |
+| Global `.gitconfig` sync | Optional | Can keep profile name and email in sync with Git |
+| Avatar | Yes | Uses provider avatar when connected, otherwise Gravatar from the profile email |
+
 ***
 
 ## Quick Start

@@ -34,6 +34,16 @@ Use this page to connect GitKraken Desktop to a GitLab Self-Managed server so yo
 - Account limit: One GitLab Self-Managed account per profile; use Profiles for multiple accounts
 - SSH behavior: GitKraken uses the key in <kbd>Preferences &gt; SSH</kbd> unless you configure a GitLab-specific key or system SSH Agent
 
+| Requirement | Value |
+|-------------|-------|
+| Plan | Pro subscription tier or higher |
+| Supported server versions | GitLab Self-Managed releases from the past year |
+| Authentication | Personal access token |
+| Required token scopes | `api`, `read_user` |
+| Token setup note | Leave expiration blank when following this workflow |
+| Account limit | One GitLab Self-Managed account per profile |
+| SSH behavior | Uses <kbd>Preferences &gt; SSH</kbd> unless overridden by a GitLab-specific key or system SSH Agent |
+
 <div class='embed-container embed-container--16-9'>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/BhIX7fGSM8k?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>

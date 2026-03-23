@@ -30,6 +30,15 @@ Use this page to add, update, initialize, and manage Git submodules in GitKraken
 - Auto-update settings: Configure globally in <kbd>Preferences &gt; General</kbd> or per repository in <kbd>Preferences &gt; Submodules</kbd>
 - Limitation: GitKraken Desktop does not support subtree workflows in-app
 
+| Workflow | Supported in app | Notes |
+|----------|------------------|-------|
+| Show Submodules pane | Yes | Enable it from the Left Panel header menu |
+| Add submodule | Yes | Requires repository URL and target path |
+| Initialize submodules after clone | Yes | GitKraken Desktop prompts you when needed |
+| Update submodule | Yes | Updates the tracked commit reference |
+| Configure auto-update | Yes | Available globally or per repository |
+| Git subtree workflow | No | Not supported in-app |
+
 ***
 
 ## Quick Start

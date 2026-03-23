@@ -33,6 +33,14 @@ GitKraken AI in GitKraken Desktop helps developers generate commit messages, exp
 - Preview feature on this page: AI Commit Composer
 - Feature availability varies by workflow; review each section for feature-specific status and behavior
 
+| Feature | What it generates or does | Status | Plan | Setup location |
+|---------|----------------------------|--------|------|----------------|
+| AI Commit Message | Commit message suggestions from staged changes | GA | Paid subscription | Commit Panel |
+| AI Commit Composer | Compose or recompose commits into a cleaner history | Preview | Paid subscription | Commit Details Panel |
+| AI Explain | Natural-language explanations of commits and branches | GA | Paid subscription | Commit Graph and context menus |
+| AI Pull Request Description | Draft pull request summaries and descriptions | GA | Paid subscription | Pull request description field |
+| AI provider and prompt settings | Model, provider, and prompt customization | GA | Paid subscription | <kbd>Preferences &gt; AI</kbd> |
+
 ***
 
 ## Quick Start

@@ -29,6 +29,14 @@ Use this page to create, switch, lock, and remove Git worktrees in GitKraken Des
 - Removal behavior: Removing a worktree detaches that working directory from the repo via the Left Panel workflow
 - Best fit: Use worktrees when you need multiple branches checked out simultaneously instead of repeatedly switching one working directory
 
+| Action | What it does | Affects shared history | Notes |
+|--------|--------------|------------------------|-------|
+| Create worktree | Creates another working directory for a branch | No | Requires GitKraken Desktop 10.5.0 or later |
+| Open worktree | Switches you into that working directory | No | Available from the Left Panel |
+| Lock worktree | Prevents accidental changes to that worktree | No | Useful when working elsewhere temporarily |
+| Remove worktree | Detaches that working directory from the repository | No | Removes the worktree entry, not shared history |
+| Commit in a worktree | Records history from that worktree | Yes | Committed changes become visible across all worktrees |
+
 ***
 
 ## Quick Start

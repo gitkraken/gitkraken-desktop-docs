@@ -29,6 +29,15 @@ Use this page to stash, apply, pop, rename, and partially restore uncommitted ch
 - GitKraken AI note: AI-generated stash messages require GitKraken AI to be enabled
 - Stash visibility: Stashes can be hidden from the graph without being deleted
 
+| Action | What it does | Keeps stash entry | Notes |
+|--------|--------------|-------------------|-------|
+| Stash | Saves current uncommitted changes | Yes | Creates a new stash entry |
+| Apply Stash | Restores stashed changes | Yes | Keeps the stash for reuse |
+| Pop Stash | Restores stashed changes | No | Applies and removes the stash |
+| Partial stash | Saves selected files only | Yes | Managed from staged files in the Commit Panel |
+| Apply partial stash file | Restores one file from a partial stash | Yes | Does not remove the stash |
+| Hide stash | Removes stash from graph view only | Yes | Does not delete the stash |
+
 ***
 
 ## Quick Start

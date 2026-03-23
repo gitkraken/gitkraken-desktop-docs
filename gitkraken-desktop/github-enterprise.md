@@ -33,6 +33,15 @@ This page explains how to connect GitKraken Desktop to GitHub Enterprise Server 
 - Account limit: One GitHub Enterprise Server account per profile
 - SSH behavior: GitKraken uses the key set in <kbd>Preferences &gt; SSH</kbd> unless a GitHub-specific key or system SSH Agent is configured
 
+| Requirement | Value |
+|-------------|-------|
+| Plan | Advanced, Business, or Enterprise |
+| Supported server versions | GitHub Enterprise Server releases from the past year |
+| Authentication | Personal access token |
+| Account limit | One GitHub Enterprise Server account per profile |
+| SSH behavior | Uses <kbd>Preferences &gt; SSH</kbd> unless overridden by a GitHub-specific key or system SSH Agent |
+| Hosted variant | Self-hosted GitHub Enterprise Server only |
+
 ***
 
 ## Quick Start

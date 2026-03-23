@@ -29,6 +29,12 @@ Use this page to install a self-signed SSL certificate so GitKraken Desktop can 
 - Git Executable note: When enabled, GitKraken Desktop honors SSL settings in the global `.gitconfig`
 - Common failure mode: Missing or invalid SAN values can require the server certificate to be reissued
 
+| OS | Export step | Install location | Notes |
+|----|-------------|------------------|-------|
+| Windows | Export the certificate from Chrome | Windows Trusted Root Certificates store | Restart GitKraken Desktop after installing if needed |
+| macOS | Export the certificate from Safari | Keychain Access | Set trust to **Always Trust** if required |
+| Linux | Export the certificate from Chrome | System certificate trust store | Exact install path depends on the distribution |
+
 ***
 
 ## Quick Start

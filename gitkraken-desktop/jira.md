@@ -29,6 +29,11 @@ Use this page to connect GitKraken Desktop to Jira Cloud or Jira Data Center so 
 - Filter syntax: Uses JQL for custom Jira issue filters
 - Data Center note: Jira Data Center uses a Personal Access Token flow instead of the Jira Cloud authorization flow
 
+| Variant | Auth flow | Community access | Full edit support | Filter syntax |
+|---------|-----------|------------------|-------------------|---------------|
+| Jira Cloud | Atlassian browser authorization flow | View-only | Paid GitKraken subscription required | JQL |
+| Jira Data Center | Personal Access Token | View-only | Paid GitKraken subscription required | JQL |
+
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/On83cso-w3U" frameborder="0" allowfullscreen></iframe>
 </div>

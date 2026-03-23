@@ -29,6 +29,13 @@ Use this page to create, review, filter, comment on, and merge pull requests in 
 - Azure DevOps note: If the PR form does not populate, verify the remote URL and integration domain on the Azure DevOps integration page
 - Feature scope varies by provider, so some actions described here are GitHub-only
 
+| Provider | Create PR or MR | View PR or MR | Merge in app | Notes |
+|----------|------------------|---------------|--------------|-------|
+| GitHub | Yes | Yes | Yes | Review and suggestion features are strongest here |
+| GitLab | Yes | Yes | Yes | Uses merge request terminology |
+| Bitbucket | Yes | Yes | Yes | Some reviewer workflows depend on permissions |
+| Azure DevOps | Yes | Yes | Yes | Verify remote URL and integration domain if the form does not populate |
+
 ***
 
 ## Quick Start

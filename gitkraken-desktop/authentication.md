@@ -30,6 +30,13 @@ Use this page to authenticate GitKraken Desktop with Git hosts that do not have 
 - SSH config limitation: GitKraken Desktop does not support `.ssh/config` aliases
 - Proxy behavior: Windows uses system proxy prompts; macOS and Linux prompt directly in GitKraken Desktop
 
+| Host type | HTTPS | SSH | Special requirement |
+|-----------|-------|-----|---------------------|
+| TFS | Yes | Possible | May require Basic Authentication on IIS |
+| AWS CodeCommit | Yes | Yes | Requires AWS-specific credentials or SSH setup |
+| Google Cloud Source Repositories | Yes | Yes | Requires the appropriate Google Cloud credentials |
+| Custom Git host | Yes | Yes | Depends on host-specific URL, SSH key, proxy, or certificate setup |
+
 <figure>
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OA9o09Bq5M8?ecver=1" frameborder="0" allowfullscreen title="Authentication Overview Video"></iframe>
