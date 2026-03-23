@@ -9,6 +9,14 @@ taxonomy:
 
 This installation guide explains how to install GitKraken Desktop on Windows, macOS, and Linux, including platform-specific download methods, system requirements, and data locations. Use it when setting up GitKraken Desktop for the first time or when verifying the correct installer and OS support for your environment.
 
+**Requirements and platform support**
+- Windows: Windows 10+
+- macOS: macOS 12+ on Intel and Apple Silicon
+- Linux `.deb`: Ubuntu 18.04+ LTS or Debian 10+
+- Linux `.rpm`: RHEL 8+ or Fedora 39+
+- Linux support note: Other distributions may work but are not officially supported
+- Advanced features note: Git command-line tools are optional for basic use, but recommended for features such as the terminal, experimental tools, or Git LFS
+
 ***
 
 ## Quick Start

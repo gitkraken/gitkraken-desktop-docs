@@ -8,6 +8,13 @@ taxonomy:
 
 Use this page to manage organizations and teams in GitKraken Desktop so you can invite members, assign roles, organize users into teams, and enable collaboration features such as Team View, shared Workspaces, and Cloud Patches. Team availability depends on your GitKraken subscription tier.
 
+**Requirements and limits**
+- This page covers organization and team management in GitKraken Desktop.
+- Pro accounts are limited to 1 team.
+- Advanced and Business plans support multiple teams.
+- Team-based collaboration features have different plan requirements: Team View requires Advanced or higher, while shared Workspaces require Pro or higher.
+- Inviting members requires available licenses, and administrators may be prompted to purchase more when seats are exhausted.
+
 Teams can be used for:
 - The [Team View](/gitkraken-desktop/working-with-repositories/team-view/): View branches and files others are working on and detect potential conflicts. <em>Advanced plan and above</em>
 - [Sharing a Workspace](/gitkraken-desktop/workspaces/#create-a-cloud-workspace): Manage and collaborate on a group of repositories. <em>Pro plan and above</em>

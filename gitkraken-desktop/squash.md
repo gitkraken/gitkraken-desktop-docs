@@ -9,6 +9,14 @@ taxonomy:
 
 Use this page to squash multiple commits into one in GitKraken Desktop when you want a cleaner branch history before sharing or merging work. It covers the selection requirements for squash, what happens to the resulting commit message, and why force push may be required if the original commits were already pushed.
 
+**Requirements and limits**
+- Workflow scope: Combine multiple local commits into one commit
+- Selection requirement: Select two or more commits in a consecutive straight ancestor-descendant line
+- Oldest-commit requirement: The oldest selected commit must have a parent
+- Limitation: Squash is not available for merge commits
+- Post-squash behavior: Edit the resulting commit message in the Commit Panel
+- Remote-history warning: If the original commits were already pushed, updating the remote with the squashed history usually requires a force push
+
 ***
 
 ## Quick Start

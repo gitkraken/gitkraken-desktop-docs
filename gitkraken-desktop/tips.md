@@ -8,6 +8,12 @@ taxonomy:
 
 This page highlights GitKraken Desktop features that help developers move faster across everyday Git work. Use these tips to set up profiles, navigate with the Command Palette and shortcuts, connect integrations, manage complex history, and customize the Commit Graph when you want a more efficient workflow.
 
+**Requirements and limits**
+- This page is a curated overview that links to feature-specific documentation; use the linked pages for full steps and edge cases.
+- Some tips reference paid features, including multiple Profiles and certain integrations.
+- Integration capabilities vary by Git provider and plan, especially for Azure DevOps and self-hosted services.
+- Shortcut, Command Palette, and UI behavior may differ by operating system or repository context.
+
 ***
 
 ## How to set up profiles

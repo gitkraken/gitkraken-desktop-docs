@@ -13,6 +13,13 @@ GitKraken AI in GitKraken Desktop helps developers generate commit messages, exp
     <p>GitKraken AI requires a <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">paid GitKraken subscription</a>.</p>
 </div>
 
+**Requirements and limits**
+- Product: GitKraken Desktop with GitKraken AI enabled
+- Plan: Paid GitKraken subscription required
+- Setup location: <kbd>Preferences &gt; AI</kbd> for provider, model, and prompt settings
+- Preview feature on this page: AI Commit Composer
+- Feature availability varies by workflow; review each section for feature-specific status and behavior
+
 ***
 
 ## Quick Start

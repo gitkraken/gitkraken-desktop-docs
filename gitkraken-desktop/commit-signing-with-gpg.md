@@ -11,6 +11,15 @@ taxonomy:
 
 Use this page to sign Git commits and tags in GitKraken Desktop with either GPG or SSH keys so hosting providers can verify your identity. It covers setup requirements, key generation, GitKraken configuration, verification behavior, and the extra Git Executable requirement for SSH-based signing.
 
+**Requirements and limits**
+- Scope: Commit and tag signing with GPG or SSH keys
+- GPG requirement: Install GPG before configuring signing in GitKraken Desktop
+- Restart requirement: Close and reopen GitKraken Desktop after installing GPG
+- SSH signing requirement: Git Executable must be enabled
+- SSH signing setup: Requires a `.pub` signing key and an `allowed_signers` file
+- Host verification note: GitHub and GitLab support SSH-signed commit verification; Bitbucket does not
+- Verification behavior: Signed commits show a badge in the Commit Panel with signature details on hover
+
 ***
 
 ## Quick Start

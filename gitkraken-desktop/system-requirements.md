@@ -8,6 +8,15 @@ taxonomy:
 
 Use this page to confirm the minimum server resources and supported Linux distributions for GitKraken Self-Hosted before deployment. It summarizes the CPU, memory, storage, and Docker-host operating system requirements you need to validate before starting an installation or upgrade.
 
+**Requirements summary**
+- Deployment target: GitKraken Self-Hosted server
+- Minimum CPU: 2 cores
+- Minimum RAM: 4 GB
+- Minimum disk space: 5 GB
+- Host requirement: Linux server with Docker CE support
+- Supported Linux families on this page: CentOS, Ubuntu, and Red Hat Enterprise Linux
+- Legacy note: Some Ubuntu versions listed below are legacy Docker-era requirements and are no longer officially supported upstream
+
 ---
 
 ## Minimum server requirements

@@ -8,6 +8,13 @@ taxonomy:
 
 Use this page to connect GitKraken Desktop to Bitbucket.org for repository discovery, SSH setup, clone and remote workflows, and pull request activity. It also covers multi-account usage through profiles and the reviewer visibility requirement for Bitbucket pull requests.
 
+**Requirements and limits**
+- Integration covered here: Bitbucket.org
+- Authentication options: Browser-based Bitbucket connection or manual OAuth token entry
+- Account limit: One Bitbucket account per profile; multiple accounts require multiple profiles and a GitKraken Pro subscription
+- SSH behavior: GitKraken uses the key in <kbd>Preferences &gt; SSH</kbd> unless you configure a Bitbucket-specific key or use your system SSH Agent
+- Pull request reviewer visibility depends on having Project Admin permissions on the repository
+
 ***
 
 ## Quick Start

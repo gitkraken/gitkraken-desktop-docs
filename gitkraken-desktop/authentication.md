@@ -9,6 +9,14 @@ taxonomy:
 
 Use this page to authenticate GitKraken Desktop with Git hosts that do not have a dedicated integration page, including TFS, AWS CodeCommit, Google Cloud Source Repositories, and custom services. It covers HTTPS cloning, SSH key setup, SSH agent usage, proxy handling, and credential reset behavior.
 
+**Requirements and limits**
+- Host scope: Git hosts without a dedicated GitKraken integration page
+- Authentication methods: HTTPS or SSH
+- Supported SSH URL formats: `ssh://{user}@{host}/{repo}` and `{user}@{host}:{repo}`
+- Windows SSH note: Only Pageant is supported as the local SSH agent
+- SSH config limitation: GitKraken Desktop does not support `.ssh/config` aliases
+- Proxy behavior: Windows uses system proxy prompts; macOS and Linux prompt directly in GitKraken Desktop
+
 <figure>
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OA9o09Bq5M8?ecver=1" frameborder="0" allowfullscreen title="Authentication Overview Video"></iframe>

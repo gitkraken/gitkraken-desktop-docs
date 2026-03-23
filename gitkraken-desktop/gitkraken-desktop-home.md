@@ -9,6 +9,12 @@ taxonomy:
 
 Use this page as the GitKraken Desktop Help Center entry point when you need to find installation guidance, interface walkthroughs, Git basics, integrations, release notes, or support resources. It is the best cold-start page for agents and users who need a routing layer into the rest of the documentation set.
 
+**Requirements and limits**
+- This page is a routing guide to the GitKraken Desktop Help Center, not a single-feature reference page.
+- Use the linked docs for plan requirements, OS support, version constraints, and step-by-step workflows.
+- Installation, integrations, and release notes each maintain their own constraints and compatibility details.
+- The overview video is optional; the navigation links are the primary path for finding current documentation.
+
 Watch the overview video or use the navigation menu to dive straight into what you need. 
 
 ## GitKraken Desktop tutorial

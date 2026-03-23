@@ -9,6 +9,14 @@ taxonomy:
 
 This page explains how GitKraken Desktop works with the <a href="https://marketplace.atlassian.com/apps/4984/git-integration-for-jira?product=gitkraken&source=help_center" target="_blank">Git Integration for Jira</a> app so you can jump between Jira issues, commits, and file diffs. Use it when your team works in Jira Cloud and you want direct navigation between issue context and Git history.
 
+**Requirements and limits**
+- Scope: Navigation between GitKraken Desktop and Jira via Git Integration for Jira
+- Jira requirement: Jira Cloud integration must already be connected in GitKraken Desktop
+- Repository requirement: Set <kbd>Preferences &gt; Issue Tracker</kbd> to Jira Cloud for the relevant repository
+- Project requirement: A Jira project must be selected in the Left Panel
+- App dependency: The Git Integration for Jira app must be installed on the same Jira Cloud instance
+- Workflow scope: This page covers navigation between Jira, commits, and file diffs rather than general Jira issue management
+
 ---
 
 ## What this integration requires

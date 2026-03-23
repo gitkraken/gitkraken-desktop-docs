@@ -8,6 +8,14 @@ taxonomy:
 
 Use this page to connect GitKraken Desktop to Azure DevOps for repository access, pull request work, and SSH setup by using OAuth or a personal access token. The integration requires a Pro subscription or higher, and PAT authentication is the fallback when an Azure DevOps organization blocks third-party OAuth access.
 
+**Requirements and limits**
+- Integration covered here: Azure DevOps
+- Plan: Pro subscription tier or higher
+- Authentication options: OAuth or Personal Access Token (PAT)
+- OAuth constraint: If the Azure DevOps organization disables third-party OAuth access, use a PAT instead
+- Account limit: One Azure DevOps account per profile; multiple profiles require a paid Pro, Teams, or Enterprise plan
+- SSH behavior: GitKraken uses the key in <kbd>Preferences &gt; SSH</kbd> unless you configure a service-specific key or system SSH Agent
+
 ***
 
 ## Quick Start

@@ -9,6 +9,14 @@ taxonomy:
 
 Use this page to enter, work in, and recover from detached HEAD state in GitKraken Desktop when you need to inspect or test a specific commit without switching a branch pointer. It explains how to preserve commits created in detached HEAD state and how to recover lost work if you switch branches too early.
 
+**Requirements and limits**
+- Entry point: Check out a specific commit instead of a branch
+- HEAD behavior: The checked-out commit is labeled `HEAD`
+- Commit-preservation rule: Commits made in detached HEAD state are not attached to any branch until you create one
+- Exit behavior: Checking out another branch removes the detached `HEAD` state
+- Recovery options: Use GitKraken Desktop Undo if available, or use `git reflog` from the terminal to recover lost commit SHAs
+- Risk: Unpreserved commits can be lost from normal branch history when you switch branches
+
 ***
 
 ## Quick Start

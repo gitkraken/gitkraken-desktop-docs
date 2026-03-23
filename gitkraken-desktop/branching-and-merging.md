@@ -8,6 +8,13 @@ taxonomy:
 
 Use this page to create, rename, delete, merge, and rebase branches in GitKraken Desktop. It also covers merge conflict resolution, external merge tools, and the difference between merge-based and rebase-based workflows so you can choose the right history strategy for your branch.
 
+**Key constraints**
+- Merge strategy: Use merge to preserve branch history; use rebase to move commits onto a new base and keep history more linear
+- Merge conflict editor: The in-app merge conflict output editor requires a paid GitKraken license
+- Squash merge behavior: With **Squash** enabled, GitKraken Desktop stages the merge result but does not create the final commit automatically
+- Branch deletion: Deleting a branch is permanent
+- External merge tools: Review the supported and unsupported tool lists before relying on a third-party merge tool
+
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8-qRKyy-v7I?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>

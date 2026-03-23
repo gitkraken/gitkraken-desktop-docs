@@ -8,6 +8,13 @@ taxonomy:
 
 Use this page to connect GitKraken Desktop to GitLab.com for repository access, SSH setup, clone and remote workflows, and pull request activity. It also explains the public-repository limitation on the Community plan and how multiple GitLab accounts are handled through profiles.
 
+**Requirements and limits**
+- Integration covered here: GitLab.com
+- Community plan limit: Public repositories only
+- Authentication options: Browser-based GitLab connection or manual OAuth token entry
+- Account limit: One GitLab account per profile; multiple accounts require multiple profiles and a GitKraken Pro subscription
+- SSH behavior: GitKraken uses the key in <kbd>Preferences &gt; SSH</kbd> unless you configure a GitLab-specific key or enable your local SSH Agent
+
 ***
 
 ## Quick Start

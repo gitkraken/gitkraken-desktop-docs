@@ -9,6 +9,14 @@ taxonomy:
 
 Use this page to configure and run Gitflow in GitKraken Desktop when your team organizes work into feature, release, and hotfix branches. It covers the initial Gitflow setup, how the Gitflow panel works, and what happens when each Gitflow branch type is finished.
 
+**Requirements and limits**
+- Workflow scope: Gitflow-style branching with feature, release, and hotfix branches
+- Setup location: <kbd>Preferences &gt; Gitflow</kbd>
+- Initialization behavior: GitKraken Desktop creates `main` and `develop` locally if they do not exist
+- Panel behavior: Only branches with Gitflow prefixes appear in the Gitflow panel
+- Finish behavior: Features merge into `develop`; releases merge into `main` and `develop` and create a tag; hotfixes merge into `main` and `develop`
+- Publishing behavior: Publishing a Gitflow branch works the same as pushing any other Git branch
+
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/eTOgjQ9o4vQ?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>

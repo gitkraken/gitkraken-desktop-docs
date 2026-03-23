@@ -8,6 +8,15 @@ taxonomy:
 
 Use this page to change the GitKraken Desktop theme, sync the app with your system theme, and understand the current status of custom theme support. It explains where theme controls live, how built-in themes work, and why custom themes are currently disabled as of version 11.8.0.
 
+**Requirements and limits**
+- Scope: Built-in themes, system theme sync, and legacy custom theme behavior
+- Theme settings location: <kbd>Preferences &gt; UI Customization</kbd>
+- Built-in theme support: Available and supported
+- Custom theme status: Disabled as of GitKraken Desktop 11.8.0
+- Legacy custom theme location: `~/.gitkraken/themes/`
+- Invalid-theme behavior: If a theme file contains invalid syntax, GitKraken falls back to the default dark theme
+- Markdown on this page about custom themes is historical/reference-only until custom themes are restored
+
 <figure>
   <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/_TMprlLc740?ecver=1" frameborder="0" allowfullscreen></iframe>

@@ -11,6 +11,13 @@ Have you ever made a Git change and immediately wished you could take it back? W
 
 You can undo many common actions with a single click of the **Undo** button. If you undo something by mistake, you can also **redo** it just as easily.
 
+**Requirements and limits**
+- Undo scope: The most recent supported action only
+- Redo scope: Only actions that were just undone
+- Supported actions include checkout, commit, discard, delete branch, remove remote, reset branch, and several rebase-related operations
+- Access methods: Toolbar buttons or keyboard shortcuts
+- Availability depends on whether the last action is one GitKraken Desktop can safely track and reverse
+
 ***
 
 ## Quick Start

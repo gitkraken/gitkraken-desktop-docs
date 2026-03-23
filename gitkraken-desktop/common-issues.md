@@ -10,6 +10,14 @@ taxonomy:
 
 Use this page to troubleshoot common GitKraken Desktop problems related to licensing, integrations, SSH, WSL, platform-specific behavior, and known error messages. Start with the Quick Start checklist for the most common fixes, then use the matching section below when you need issue-specific recovery steps.
 
+**Requirements and limits**
+- Scope: High-frequency troubleshooting for account, integration, SSH, WSL, platform, and known error conditions
+- First-step usage: Start with the Quick Start checklist before using issue-specific sections
+- Integration recovery pattern: Browser sign-out, cache clearing, and reconnecting from <kbd>Preferences &gt; Integrations</kbd> resolves many 1000-series errors
+- WSL limitation: Do not run GitKraken Desktop as root, and prefer native WSL2 GUI support over XServer-based setups
+- Experimental Git note: Some issues may be tied to the Git Executable setting in <kbd>Preferences &gt; Experimental</kbd>
+- Escalation path: Contact GitKraken Support if the matching section does not resolve the problem
+
 ***
 
 ## Quick Start

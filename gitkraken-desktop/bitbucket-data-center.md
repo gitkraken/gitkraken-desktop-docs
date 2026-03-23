@@ -8,6 +8,15 @@ taxonomy:
 
 Use this page to connect GitKraken Desktop to Bitbucket Data Center in a self-hosted environment so you can authenticate with a personal access token, configure SSH, clone repositories, and work with pull requests. This integration requires an Advanced subscription tier or higher.
 
+**Requirements and limits**
+- Integration covered here: Bitbucket Data Center in a self-hosted environment
+- Plan: Advanced subscription tier or higher for self-hosted integrations
+- Authentication: Personal Access Token (PAT)
+- Server support: Bitbucket Data Center versions released within the past year
+- Account limit: One Bitbucket Data Center account per profile; multiple accounts require multiple profiles
+- SSH behavior: GitKraken uses the key in <kbd>Preferences &gt; SSH</kbd> unless you configure a Bitbucket-specific key or use your system SSH Agent
+- Pull request reviewer visibility depends on token scopes and repository permissions
+
 ***
 
 ## Quick Start

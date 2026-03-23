@@ -8,6 +8,12 @@ taxonomy:
 
 Use this getting started guide to learn a basic GitKraken Desktop workflow: clone a repository, create a branch, make and stage changes, commit them, push the branch, and merge the work back. It is aimed at new Git users who need a practical first path through the product rather than a reference page.
 
+**Requirements and limits**
+- This page is a beginner workflow guide, not a full reference for every GitKraken Desktop option or edge case.
+- You need access to a Git repository you can clone, change, commit to, and push from GitKraken Desktop.
+- Merging and pushing steps depend on your remote permissions and repository policy.
+- If merge conflicts occur, you may need separate merge-conflict guidance beyond this introductory walkthrough.
+
 ***
 
 ## Quick Start

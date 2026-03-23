@@ -13,6 +13,13 @@ This page explains how GitKraken Desktop connects to GitHub Enterprise Server Is
     <p>The GitHub Enterprise Server Issues integration is view-only for Community users. To unlock full features, consider upgrading to a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center">paid GitKraken license</a>.</p>
 </div>
 
+**Requirements and limits**
+- Integration covered here: GitHub Enterprise Server Issues
+- Server version: GitHub Enterprise Server 2.20.24 or newer
+- Connection model: Shares the same connection as the GitHub Enterprise Server integration
+- Community plan: View-only access
+- Full issue workflows: Paid GitKraken license required for full feature access
+
 ---
 
 ## What this integration requires

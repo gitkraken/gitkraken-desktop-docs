@@ -8,6 +8,13 @@ taxonomy:
 
 Use this page to create commits, stage files, add co-authors, work with commit templates, amend recent history, and undo or revert changes in GitKraken Desktop. Basic local commit workflows are available in the app, while actions that rewrite pushed history require extra care because they may require a force push.
 
+**Key constraints**
+- Commit scope: This page covers local commit workflows in GitKraken Desktop
+- History rewrite warning: Amending a commit that has already been pushed requires a force push to update the remote branch
+- Hook behavior: Selecting **Skip Git hooks** bypasses all configured Git hooks for that commit
+- Commit templates: Repository-local commit templates take precedence over global templates
+- Undo vs. revert: Use Undo for local history changes you have not shared yet; use Revert when you need to preserve published history with a new reversing commit
+
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8a6fYPkBDbY?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>

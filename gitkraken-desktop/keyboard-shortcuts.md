@@ -8,6 +8,12 @@ taxonomy:
 
 This keyboard shortcut reference helps you work faster in GitKraken Desktop on macOS, Windows, and Linux. Use it to find shortcuts for staging, committing, navigating the Commit Graph, opening the Command Palette, managing tabs, and toggling interface panels without leaving the keyboard.
 
+**Requirements and limits**
+- Shortcut values differ between macOS and Windows/Linux, so check the correct platform column before using a shortcut.
+- The <kbd>&#8984;</kbd> symbol refers to the Command key on macOS.
+- This page is a reference for built-in GitKraken Desktop shortcuts; availability depends on the relevant view or repository context being open.
+- Shortcuts are grouped by task area, including repo actions, navigation, the Command Palette, interface controls, and tabs.
+
 <blockquote><strong>Note:</strong> The <kbd>&#8984;</kbd> symbol refers to the <strong>Command</strong> key on macOS.</blockquote>
 
 ***
@@ -319,4 +325,3 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
         </tr>
     </tbody>
 </table>
-

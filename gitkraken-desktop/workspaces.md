@@ -8,6 +8,14 @@ taxonomy:
 
 Use this page to create Local or Cloud Workspaces in GitKraken Desktop so you can organize repositories, run multi-repository actions, review pull requests across a group of repos, and share workspace context with a team. Cloud Workspaces require connected integrations, while Local Workspaces stay on your machine until you convert them.
 
+**Requirements and limits**
+- Workspace types: Local Workspace or Cloud Workspace
+- Cloud Workspace requirement: The relevant hosting service integration must be connected in <kbd>Preferences &gt; Integrations</kbd>
+- Local Workspace scope: Stored on your machine until you convert it
+- Cloud Workspace scope: Accessible across machines and shareable with teams or users
+- Multi-repository actions: Clone, Fetch, Pull, Open, Locate, and Remove are available from the Workspace toolbar
+- Conversion path: Local Workspaces can be converted to Cloud Workspaces after connecting a supported integration
+
 ***
 
 ## Quick Start

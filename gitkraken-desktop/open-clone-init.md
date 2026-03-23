@@ -8,6 +8,14 @@ taxonomy:
 
 Use this page to open an existing local repository, clone a remote repository, or initialize a new repository in GitKraken Desktop. It also covers shallow clone, sparse checkout, and the Repository Management tab so you can choose the right setup path for a new or existing project.
 
+**Requirements and limits**
+- Entry points: Repository Management tab, New Tab, or <kbd>File &gt; Clone / Init / Open</kbd>
+- Open workflow: Requires an existing local Git repository
+- Clone workflow: Requires a remote repository URL or a connected integration
+- Shallow clone: Supports branch, depth, since-date, and custom clone flags
+- Sparse checkout: Root-level files are always checked out even when path rules are applied
+- Initialize workflow: Creates a `.git` directory and can optionally add a `README.md`, `.gitignore`, and `LICENSE`
+
 ***
 
 ## Quick Start

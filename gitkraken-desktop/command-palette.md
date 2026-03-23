@@ -8,6 +8,13 @@ taxonomy:
 
 Use this page to run GitKraken Desktop actions from the Command Palette when you want a keyboard-first workflow for commands, files, repositories, and settings. It explains how to open the palette, what command categories are available, and when it is faster than navigating the UI directly.
 
+**Requirements and limits**
+- Access methods: <kbd>Cmd/Ctrl + P</kbd>, the wand icon, or the Help menu
+- Scope: Commands, files, repositories, branches, stashes, settings, logs, and patches
+- Search behavior: Results filter live as you type
+- Execution model: Press <kbd>Enter</kbd> to run the selected item
+- Command availability depends on the current repository state, open repo context, and configured integrations
+
 <figure>
   <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/lNsQesvuRj4?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>

@@ -8,6 +8,13 @@ taxonomy:
 
 Use this page to create files, create folders, delete files, and filter repository contents from inside GitKraken Desktop. It covers both Command Palette and context-menu workflows, plus the `View all files` mode you need when you want to delete or locate files outside the current staged or changed set.
 
+**Requirements and limits**
+- Workflow scope: File and folder creation, deletion, and filtering inside an existing repository
+- Create-file access: Command Palette or Commit Panel context menu
+- Folder creation behavior: Include `/` in the new filename to create a folder and file at the same time
+- Delete-file limitation: To delete arbitrary repository files, enable `View all files` first
+- Filter behavior: The `Filter Files` bar appears only when `View all files` is enabled
+
 ***
 
 ## Quick Start

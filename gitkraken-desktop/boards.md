@@ -15,6 +15,12 @@ taxonomy:
 
 This page documents the legacy GitKraken Boards integration in GitKraken Desktop after the product sunset. Use it if you need the current Boards announcement, want to find the archived Boards documentation, or need to remove the Boards button from the GitKraken Desktop toolbar.
 
+**Requirements and limits**
+- GitKraken Boards sunset at the end of 2022, so this page documents a legacy integration rather than an active product workflow.
+- Use this page for historical reference or UI cleanup only, such as removing the Boards button from the toolbar.
+- Current Boards usage and archived feature details live in the separate Boards documentation linked below.
+- Any Boards controls described here may not appear in newer GitKraken Desktop environments.
+
 For anything related to GitKraken Boards, refer to [this documentation](https://support.gitkraken.com/boards/quick-start/)
 
 ***

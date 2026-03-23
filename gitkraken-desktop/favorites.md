@@ -8,6 +8,12 @@ taxonomy:
 
 Favorites let you pin frequently used repositories in GitKraken Desktop so you can reopen them faster from Repo Management, dropdown menus, and keyboard shortcuts. Use favorites when you switch between a small set of active repos and want quick access without searching your full repository list each time.
 
+**Requirements and limits**
+- Favorites are managed from the Repo Management tab in GitKraken Desktop.
+- Keyboard shortcuts are available for up to 9 favorite repositories.
+- Favorites change how quickly you reopen repositories; they do not change the repository itself.
+- Favorited repositories appear in the Favorites section of Repo Management for faster access.
+
 ***
 
 ## How to add a repository to Favorites

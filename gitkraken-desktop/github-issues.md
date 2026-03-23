@@ -13,6 +13,13 @@ Use this page to connect GitKraken Desktop to GitHub Issues so you can preview, 
     <p>The GitHub Issues integration is limited to public repositories for Community users. To unlock full access, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken license</a>.</p>
 </div>
 
+**Requirements and limits**
+- Integration covered here: GitHub Issues for GitHub.com
+- Connection model: Shares the same connection as the GitHub integration
+- Community plan: Public repositories only
+- Issue workflows: Preview, create, edit, filter, and branch from issues after connecting GitHub
+- Filter syntax: Uses GitHub issue filtering syntax for custom filters
+
 ***
 
 ## Quick Start

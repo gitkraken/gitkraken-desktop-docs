@@ -9,6 +9,13 @@ taxonomy:
 
 This FAQ answers common GitKraken Desktop questions about supported platforms, account and plan limits, authentication, remote access, and troubleshooting. Use it when you need a quick answer or constraint check before opening a longer feature guide, especially for Linux support, SSH behavior, proxy issues, or subscription-related questions.
 
+**Key facts**
+- Supported Linux distributions: Ubuntu 18.04 LTS+, RHEL 8+, and Fedora 39+
+- Multiple accounts: Supported with a paid license by using Profiles
+- SSH limitation: GitKraken does not use `~/.ssh/config`
+- Windows SSH note: Pageant is the supported SSH agent on Windows
+- Community status troubleshooting: Verify that you are signed in with the email associated with your subscription
+
 <div class='faq container'>
   <section class='pts pbm'>
     <div class='callout'>

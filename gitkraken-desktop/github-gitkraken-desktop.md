@@ -8,6 +8,13 @@ taxonomy:
 
 Use this page to connect GitKraken Desktop to GitHub for sign-in, repository access, SSH setup, pull request work, and account management. It covers GitHub.com workflows inside GitKraken Desktop, highlights plan-related limits such as multiple profiles and Community plan restrictions, and points to troubleshooting steps when authentication or repo discovery fails.
 
+**Requirements and limits**
+- Integration covered here: GitHub.com
+- Community plan: Public repositories only
+- Multiple GitHub accounts: Use separate profiles in GitKraken Desktop; Pro plan required
+- SSH behavior: GitKraken uses the key set in <kbd>Preferences &gt; SSH</kbd> unless a GitHub-specific key or local SSH Agent is configured
+- Pull request review limit: GitKraken Desktop can view pull requests and suggest changes, but full in-app code review and commenting are not available
+
 ***
 
 ## Quick Start

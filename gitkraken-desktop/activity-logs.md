@@ -8,6 +8,14 @@ taxonomy:
 
 Use this page to inspect Activity Logs in GitKraken Desktop when you need to see recent Git operations, application events, performance timing, or Git hook output. It explains the difference between the Application and Repository tabs, how extended logging changes the output, and how hook failures surface in the log UI.
 
+**Requirements and limits**
+- Scope: Real-time GitKraken Desktop application and repository event logs
+- Access point: <kbd>Activity Logs</kbd> icon in the footer toolbar
+- Application tab: Shows GitKraken Desktop instance events and is not tied to the active repository
+- Repository tab: Shows Git operations for the currently active repository only
+- Extended logging: Enable in <kbd>Preferences &gt; General</kbd> for more detailed repository log output
+- Hook log behavior: Git hook failures surface in the Repository log and through snackbox links to the hook output
+
 ***
 
 ## Quick Start

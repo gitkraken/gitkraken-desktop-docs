@@ -8,6 +8,14 @@ taxonomy:
 
 Use this page to understand what GitKraken On-Premise Self-Hosted Server is, when to choose it, and what infrastructure it requires before installation. It summarizes the offline deployment model, supported operating systems, minimum server specs, and the distinction between Self-Hosted and Serverless on-premise offerings.
 
+**Requirements and limits**
+- Product scope: GitKraken On-Premise Self-Hosted Server
+- Environment fit: Internal-network, offline, or air-gapped deployments
+- Infrastructure model: Lightweight Linux server or VM running Docker containers
+- Minimum specs: 2 CPU cores, 4 GB RAM, 5 GB disk space
+- Supported OS families on this page: CentOS 7, selected Ubuntu versions, and RHEL 7
+- Commercial note: Self-Hosted and Serverless on-premise offerings are sold separately from standard subscriptions and from each other
+
 ## Overview
 
 **GitKraken On-Premise Self-Hosted Server** is a version of GitKraken Desktop that operates entirely within your internal network. Also referred to as *GitKraken Enterprise Self-Hosted*, *Enterprise On-Premise Server*, or *Self-Hosted*, this option allows users to authenticate and work without external internet access.

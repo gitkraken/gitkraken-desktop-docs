@@ -8,6 +8,13 @@ taxonomy:
 
 Use this page to run Git CLI commands from the GitKraken Desktop terminal while staying in the context of the open repository and commit graph. It covers how to open the terminal, how command and flag auto-complete works, and where to change shell and terminal appearance settings.
 
+**Requirements and limits**
+- Scope: In-app terminal for the currently open repository context
+- Repository context: Commands run in the active repository working directory automatically
+- Supported shell note: macOS and Linux use the OS default shell; Windows supports PowerShell and Bash via Preferences
+- Auto-complete limitation: Conflicting third-party auto-complete tools can disable GitKraken suggestions
+- Settings location: <kbd>Preferences &gt; In-App Terminal</kbd> for appearance and autocomplete behavior
+
 To get started, open a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar, or search for "terminal" using the <a href="/working-with-repositories/command-palette">Command Palette</a>.
 
 ***

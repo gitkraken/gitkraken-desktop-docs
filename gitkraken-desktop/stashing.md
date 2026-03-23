@@ -8,6 +8,14 @@ taxonomy:
 
 Use this page to stash, apply, pop, rename, and partially restore uncommitted changes in GitKraken Desktop when you need to switch context without creating a commit. It covers both full stashes and partial file-based stashes, along with the graph and Left Panel workflows for managing them.
 
+**Requirements and limits**
+- Workflow scope: Uncommitted local changes only
+- Apply vs. pop: **Apply Stash** keeps the stash; **Pop Stash** applies it and removes it
+- Partial stash behavior: Applying a single file from a partial stash does not remove the stash
+- Naming option: Name the stash before creating it by editing the `// WIP` field or stash summary field
+- GitKraken AI note: AI-generated stash messages require GitKraken AI to be enabled
+- Stash visibility: Stashes can be hidden from the graph without being deleted
+
 ***
 
 ## Quick Start

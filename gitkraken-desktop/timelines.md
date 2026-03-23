@@ -15,6 +15,12 @@ taxonomy:
 
 This page describes the legacy GitKraken Timelines integration in GitKraken Desktop and the remaining toolbar controls that were available before the product sunset. Use it only if you need to understand older workspace behavior or remove the Timelines button from the GitKraken Desktop toolbar in an environment that still shows it.
 
+**Requirements and limits**
+- GitKraken Timelines sunset at the end of 2022, so this page covers legacy behavior only.
+- Use this page for historical reference or to remove the Timelines button from the toolbar in older environments.
+- Timelines access depended on the toolbar button and a GitKraken account connection.
+- Any Timelines controls described here may not exist in current GitKraken Desktop releases.
+
 <img src='/wp-content/uploads/timelines/integrations/gitkraken/gitkrakentimelines.gif' class="help-center-img img-bordered">
 
 GitKraken Timelines are designed to show major milestones on a continuous line that represents time.

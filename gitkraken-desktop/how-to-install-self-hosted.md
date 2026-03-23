@@ -8,6 +8,15 @@ taxonomy:
 
 Use this page to install GitKraken Self-Hosted Server on a Linux host with Docker and Docker Compose. It covers the initial server setup flow, offline installation notes, and platform-specific Docker installation steps for CentOS, Ubuntu, and RHEL7 before you bring the GitKraken services online.
 
+**Requirements and limits**
+- Product scope: GitKraken Self-Hosted Server installation on Linux
+- Host requirement: Linux machine with Docker CE and Docker Compose
+- Supported platforms on this page: CentOS, Ubuntu, and RHEL7
+- Installation inputs: `GitKrakenEnterpriseServer.zip`, `release.zip`, and Docker images must be present before startup
+- Offline installation note: Docker CE and Docker Compose can be downloaded on another machine and transferred manually
+- Default service port: `3000` unless changed in `docker-compose.yml`
+- Commercial note: Self-Hosted is sold separately from standard subscriptions and separately from Serverless
+
 <div class='callout callout--warning'>
     <p>GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, visit our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?_gl=1*vtr4xk*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmv98H0EKgytPnuCPuTqdL2vy4GQaCsizBMO9m8mz2n1hMMXO3AAw7YaAiyKEALw_wcB?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
 </div>

@@ -8,6 +8,12 @@ taxonomy:
 
 Hide and Solo help you reduce Commit Graph clutter in GitKraken Desktop without changing your repository. Use Hide to temporarily remove branches, tags, remotes, or stashes from view, and use Solo to focus only on the references you want to inspect when reviewing history or navigating a busy graph.
 
+**Requirements and limits**
+- Hide and Solo only change what is visible in the Commit Graph; they do not modify your repository data.
+- You can hide or solo branches, tags, remotes, and stashes from the Left Panel.
+- Solo mode keeps only the references you explicitly solo visible until you unsolo them.
+- Bulk hide and show actions are available from the Left Panel section headers for Remotes, Tags, Branches, and Stashes.
+
 ***
 
 <figure class='figure center'>

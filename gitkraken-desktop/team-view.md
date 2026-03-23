@@ -12,6 +12,14 @@ Use this page to monitor what teammates are currently working on in GitKraken De
     <p><strong>Note:</strong> Team View is only available for Advanced subscription tiers or higher. See the <a href="/start-here/teams/">Teams</a> page for more information on managing teams.</p>
 </div>
 
+**Requirements and limits**
+- Plan: Advanced subscription tier or higher
+- Team requirement: You must belong to a team and select it in <kbd>Preferences &gt; Team</kbd>
+- Shared data: Checked-out branch, local file changes, and activity status
+- Conflict signal: Team View highlights overlapping local changes with an orange warning icon
+- Privacy control: Disable **Share work-in-progress status with my team** to opt out
+- Status scope: Users can set themselves to Active or Away; this affects what teammates see
+
 ***
 
 ## Quick Start

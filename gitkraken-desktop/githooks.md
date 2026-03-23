@@ -9,6 +9,15 @@ taxonomy:
 
 Use this page to create, configure, and troubleshoot Git hooks in GitKraken Desktop for commit, push, merge, and rebase workflows. It explains where hooks live, how custom hook paths work, which hook types GitKraken triggers, and how to bypass hooks intentionally when a commit should skip automation.
 
+**Requirements and limits**
+- Scope: Standard Git hook workflows triggered by GitKraken Desktop actions
+- Default hook location: `.git/hooks`
+- macOS/Linux requirement: Hook files must be executable or GitKraken Desktop will fail to run them
+- Failure behavior: Any non-zero exit code blocks the Git action
+- Custom path support: Repository-specific custom hook paths can be configured in <kbd>Preferences &gt; Git Hooks</kbd>
+- Global hook support: Global hooks can be configured through `core.hooksPath` in `.gitconfig`
+- Skip behavior: Commits can intentionally bypass hooks from the Commit Panel when needed
+
 <figure>
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZZgyILr-TjA?ecver=1" frameborder="0" allowfullscreen></iframe>

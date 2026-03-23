@@ -8,6 +8,13 @@ taxonomy:
 
 Use this page to search commit history in GitKraken Desktop by message, SHA, or author and to control how much history is loaded into the Commit Graph. It is useful when search results seem incomplete because the graph depth is limited or when you want to jump into commit search from anywhere in the app.
 
+**Requirements and limits**
+- Search scope: Commit message, SHA, and author
+- Default graph depth: GitKraken Desktop initially displays up to 2000 commits in the Commit Graph
+- Search limitation: If the graph is not loading enough history, search results can appear incomplete
+- Graph setting: Adjust <kbd>Initial Commits in Graph</kbd> or enable <kbd>Show All Commits in Graph</kbd> in Preferences
+- Global access: You can jump into commit search from anywhere by opening the Command Palette
+
 ***
 ## How the initial number of displayed commits works
 

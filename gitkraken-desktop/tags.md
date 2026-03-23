@@ -8,6 +8,15 @@ taxonomy:
 
 Use this page to create, annotate, push, move, delete, and filter Git tags in GitKraken Desktop. Tags are useful when you want to mark releases, deployment points, or other important commits and then share or inspect those references from the commit graph or Left Panel.
 
+**Requirements and limits**
+- Scope: Local and remote Git tag management in GitKraken Desktop
+- Creation points: Commit Graph or Left Panel tag actions
+- Checkout limitation: Tags cannot be checked out directly as branches
+- Rename limitation: Tags cannot be renamed directly; delete and recreate them instead
+- Move limitation: Moving a tag works only when fast-forwarding is possible; otherwise delete and recreate it
+- Deletion warning: Deleting a tag locally or remotely is permanent
+- Visibility control: The Tags pane can be filtered, shown, or hidden from the Left Panel
+
 ***
 
 ## Quick Start

@@ -9,6 +9,14 @@ taxonomy:
 
 Use this page to stage, unstage, discard, and ignore files in GitKraken Desktop from the Commit Panel and diff view. It covers full-file staging, line-level staging, discard actions, and the difference between ignoring a file and ignoring it while also removing it from Git tracking.
 
+**Requirements and limits**
+- Workflow scope: Working directory and staged file management from the Commit Panel and diff view
+- Starting point: Select the `//WIP` node to work with current uncommitted changes
+- Line-level actions: Stage, unstage, and discard support is available from the diff view for selected lines or hunks
+- Ignore behavior: GitKraken Desktop writes ignore rules to the root-level `.gitignore`
+- Ignore limitation: Nested `.gitignore` files are not parsed by GitKraken Desktop
+- Tracked-file behavior: **Ignore and Stop Tracking** removes the file from the Git index in addition to adding the ignore rule
+
 ***
 
 ## Quick Start

@@ -8,6 +8,13 @@ taxonomy:
 
 Use this page to compare uncommitted changes, inspect commit diffs, switch between diff views, review file history or blame, and create or apply patches in GitKraken Desktop. It also covers external diff tools and key limits such as patch support being a preliminary feature that does not generate binary-file patches.
 
+**Key constraints**
+- Diff coverage: Use this page for built-in diff viewing, file history, blame, and patch workflows in GitKraken Desktop
+- Patch support: Patch creation and application are preliminary features
+- Binary files: GitKraken Desktop does not currently generate patches from binary files
+- External diff tools: Beyond Compare, FileMerge, Kaleidoscope, KDiff, Araxis, and P4Merge are supported directly
+- Other tools: Use <kbd>Git Config Default</kbd> and your global `.gitconfig` if your preferred diff tool is not listed in Preferences
+
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/-0bn2H63axM?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>

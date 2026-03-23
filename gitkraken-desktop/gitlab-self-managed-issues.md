@@ -13,6 +13,13 @@ Use this page to connect GitKraken Desktop to GitLab Self-Managed Issues so you 
     <p>The GitLab Self-Managed Issues integration is view-only for Community users. To unlock all features, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken license</a>.</p>
 </div>
 
+**Requirements and limits**
+- Integration covered here: GitLab Self-Managed Issues
+- Server version: GitLab Self-Managed 13.1 or newer
+- Connection model: Shares the same connection as the GitLab Self-Managed integration
+- Community plan: View-only access
+- Full issue workflows: Paid GitKraken license required for editing, branching, and full issue management
+
 ---
 
 ## Requirements

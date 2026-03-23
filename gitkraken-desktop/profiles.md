@@ -14,6 +14,14 @@ taxonomy:
 
 Use profiles in GitKraken Desktop to keep separate Git identities, integrations, app preferences, and tab sets for different projects or environments. This page explains how to create and switch profiles, what a profile stores, how avatar behavior works, and when a paid GitKraken subscription is required for multiple profiles.
 
+**Requirements and limits**
+- Purpose: Separate Git identities, integrations, preferences, and tab sets by work context
+- Multiple profiles: Require a paid GitKraken subscription
+- Profile data: General, Integrations, and UI Preferences are stored per profile
+- Tab behavior: Open tabs are profile-specific; new profiles duplicate tabs from the active profile when created
+- Git config option: You can sync profile name and email into the global `.gitconfig`
+- Avatar behavior: Connected integrations use provider avatars; otherwise GitKraken Desktop uses the Gravatar tied to the profile email
+
 ***
 
 ## Quick Start

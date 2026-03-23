@@ -8,6 +8,14 @@ taxonomy:
 
 Use this page to understand the main areas of the GitKraken Desktop interface so you can navigate repository actions, history, staging, and collaboration features more efficiently. It covers the toolbar, Left Panel, Commit Panel, Commit Graph, and tabs, with links to deeper task-specific guides when you need more than a UI overview.
 
+**Requirements and limits**
+- Scope: Interface overview, not full task-specific workflows
+- Main areas covered: Toolbar, Left Panel, Commit Graph, Commit Panel, and tabs
+- Repository context: Most controls described here appear only when a repository is open
+- Left Panel behavior: Sections can be toggled, resized, collapsed, or expanded from the UI
+- Toolbar behavior: Some buttons appear only when the relevant feature or repo state is available, such as LFS
+- Deeper actions: Use linked feature pages for task-specific limits and workflows beyond this interface overview
+
 ***
 
 ## Quick Start

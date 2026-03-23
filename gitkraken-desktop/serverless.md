@@ -8,6 +8,14 @@ taxonomy:
 
 Use this page to install and license GitKraken On-Premise Serverless, also called GitKraken Stand-Alone, when your team works in offline or tightly controlled environments. It covers platform-specific installation steps, supported license file locations, and the manual license update flow required after expiration or renewal.
 
+**Requirements and limits**
+- Product scope: GitKraken On-Premise Serverless / Stand-Alone
+- Environment fit: Offline, disconnected, or tightly controlled environments
+- Account model: No internet account creation required
+- Activation requirement: A `.dat` license file must be loaded at first launch
+- License maintenance: Expired or renewed licenses must be updated manually by replacing the `.dat` file or using **Update License**
+- Commercial note: Serverless is sold separately from standard subscriptions and separately from Self-Hosted on-premise offerings
+
 **GitKraken On-Premise Serverless** (also known as *GitKraken Stand-Alone*) is designed for teams operating in disconnected or secure environments. It includes most core <a href="https://www.gitkraken.com/git-client" target=_blank>GitKraken features</a>, with additional advantages:
 
 - Works without internet access

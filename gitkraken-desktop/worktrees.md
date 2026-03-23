@@ -8,6 +8,14 @@ taxonomy:
 
 Use this page to create, switch, lock, and remove Git worktrees in GitKraken Desktop when you need multiple branches checked out at the same time. Worktrees keep separate working directories while sharing the same repository history, which makes them useful for parallel feature work, testing, and review workflows.
 
+**Requirements and limits**
+- GitKraken Desktop version: Worktrees are supported in version 10.5.0 and later
+- Worktree model: Each worktree has its own working directory and index but shares repository history with the main repo
+- Change visibility: Once committed, changes made in one worktree become visible in other worktrees
+- Lock behavior: Locking a worktree prevents accidental changes while you work elsewhere
+- Removal behavior: Removing a worktree detaches that working directory from the repo via the Left Panel workflow
+- Best fit: Use worktrees when you need multiple branches checked out simultaneously instead of repeatedly switching one working directory
+
 ***
 
 ## Quick Start

@@ -8,6 +8,14 @@ taxonomy:
 
 Use this page to create, review, filter, comment on, and merge pull requests in GitKraken Desktop across supported providers such as GitHub, GitLab, Bitbucket, and Azure DevOps. It also covers GitHub-specific review features such as code suggestions, pull request view, and merge options inside the app.
 
+**Requirements and limits**
+- Supported providers on this page: GitHub, GitLab, Bitbucket, and Azure DevOps
+- Precondition: Push your branch to the remote before creating a pull request
+- GitHub-specific features: Pull Request View, code suggestions, and in-app merge options
+- Template support: Pull request templates are supported for GitHub, GitLab, and Azure DevOps
+- Azure DevOps note: If the PR form does not populate, verify the remote URL and integration domain on the Azure DevOps integration page
+- Feature scope varies by provider, so some actions described here are GitHub-only
+
 ***
 
 ## Quick Start

@@ -8,6 +8,14 @@ taxonomy:
 
 Use deep links in GitKraken Desktop to share or open specific remote repositories, commits, branches, or tags. This allows your team to quickly access relevant project context with a single click.
 
+**Requirements and limits**
+- Scope: Deep links to repositories, commits, branches, and tags
+- Integration requirement: The repository must be hosted through a supported GitKraken integration
+- Local access behavior: If the repository is already open, GitKraken navigates directly to the referenced item
+- Clone fallback: If the repository is not cloned locally, GitKraken opens a clone dialog with the URL pre-filled
+- Multiple-copy behavior: If more than one local copy exists, GitKraken prompts the user to choose which one to use
+- Setup note: No extra configuration is required beyond having access to the repository locally or through cloning
+
 ***
 
 ## Quick Start

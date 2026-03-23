@@ -8,6 +8,14 @@ taxonomy:
 
 Use this page to understand what each major Preferences section controls in GitKraken Desktop, including profiles, integrations, AI settings, external tools, commit signing, terminal behavior, and repository-specific options. Start here when you need to know where a setting lives before changing your workflow or environment.
 
+**Requirements and limits**
+- Scope: Preferences overview for app-wide, profile-specific, and repository-specific settings
+- Access point: Gear icon in the top-right corner of GitKraken Desktop
+- Profile behavior: Preferences are stored per profile, so switching profiles changes integrations and UI configuration
+- Repo-specific settings: Some settings apply only to the currently open repository
+- Plan-gated sections: Organization settings, GitKraken AI, and some notification controls depend on plan level
+- Use this page for setting location and scope; follow linked feature pages for detailed workflow constraints
+
 ***
 
 ## Quick Start

@@ -8,6 +8,14 @@ taxonomy:
 
 Use this page to push, pull, fetch, add remotes, and set upstream branches in GitKraken Desktop when you need to synchronize local branches with a remote. It also explains the available pull behaviors, drag-and-drop shortcuts, and when GitKraken prompts you for remote creation or force-push decisions.
 
+**Requirements and limits**
+- Workflow scope: Remote synchronization for existing Git repositories in GitKraken Desktop
+- Add remote limitation: Integration dropdowns show forks only; use the URL option for non-fork remotes
+- Push behavior: GitKraken prompts to create a remote branch if one does not exist
+- Force-push warning: GitKraken may offer **Force Push** when fast-forwarding fails
+- Fetch behavior: Fetch updates remote state without modifying your working directory
+- Pull options: Fast-forward if possible, fast-forward only, and rebase behave differently and should be chosen intentionally per repo workflow
+
 ***
 
 ## Quick Start

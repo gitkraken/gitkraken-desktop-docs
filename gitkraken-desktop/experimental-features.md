@@ -8,6 +8,15 @@ taxonomy:
 
 Use this page to enable and evaluate GitKraken Desktop experimental features such as Git Executable and Cloud Patches. Experimental features are optional previews, so this page focuses on where to enable them, what they currently do, and which workflows depend on them.
 
+**Requirements and limits**
+- Scope: Optional preview features in GitKraken Desktop
+- Settings location: <kbd>Preferences &gt; Experimental</kbd>
+- Stability note: Experimental features can be enabled or disabled at any time and may change behavior across releases
+- Git Executable scope: Uses a Git executable instead of NodeGit for supported operations
+- Cloud Patch dependency: Cloud Patches require Git Executable to be enabled
+- Cloud Patch sharing modes: Anyone with the link, anyone in your org, or selected collaborators
+- Self-hosting note: Cloud Patch data can be self-hosted on AWS S3 instead of GitKraken servers
+
 ***
 
 ## Quick Start

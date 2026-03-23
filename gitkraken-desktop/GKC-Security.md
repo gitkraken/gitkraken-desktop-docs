@@ -11,6 +11,12 @@ taxonomy:
 
 This page explains GitKraken Desktop data security and storage practices, including what information GitKraken services collect, how that data is secured in transit and at rest, and how SOC 2 report access works. Use it when reviewing security posture, storage locations, or compliance-related documentation for GitKraken Desktop.
 
+**Requirements and limits**
+- This page summarizes GitKraken cloud-service data handling and storage practices; it is not a product configuration guide.
+- Security details vary by service, so use the table below for service-specific storage and encryption information.
+- Data in transit is secured with TLS across the listed services.
+- SOC 2 reports are available only to Business and Enterprise customers and require a signed MNDA through the Trust Center.
+
 ## How GitKraken Desktop services collect and store information
 Below is a chart outlining some basic security information regarding the type of data that we collect and how we store it.
 
