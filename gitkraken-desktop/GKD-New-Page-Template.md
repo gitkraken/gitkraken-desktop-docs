@@ -13,7 +13,7 @@ integrations: []
 hosted_variant: both
 status: GA
 last_verified: 2026-03
-llms_include: true
+llms_include: false
 tags: [keyword-one, keyword-two]
 taxonomy:
     category: gitkraken-desktop
