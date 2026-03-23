@@ -5,7 +5,7 @@ product: GitKraken Desktop
 feature: Conflict Prevention
 content_type: overview
 audience: developer
-plan_required: Advanced
+plan_required: Pro
 os_support: [Windows, macOS, Linux]
 git_hosts: [generic]
 integrations: []
@@ -22,7 +22,7 @@ taxonomy:
 Use this page to detect likely merge conflicts in GitKraken Desktop before they reach the merge step. Conflict Prevention alerts you when your work overlaps with Org Members or a target branch, shows what changed, and provides early actions such as pushing, rebasing, merging, or sharing a Cloud Patch.
 
 **Requirements and limits**
-- Plan: Advanced subscription tier or higher
+- Plan: Pro subscription tier or higher
 - Scope: Early conflict detection against Org Members and the configured target branch
 - Settings scope: Conflict Prevention preferences are saved per repository
 - Branch configuration: Base branches can be included with `**` wildcards or excluded with `!` patterns
@@ -48,7 +48,7 @@ Use Conflict Prevention in GitKraken Desktop to catch potential merge conflicts 
 
 To configure which branches GitKraken monitors for conflicts, go to <kbd>Preferences > Conflict Prevention</kbd>. Use `**` as a wildcard or prefix a branch pattern with `!` to exclude it. Settings are saved per repository.
 
-Conflict Prevention is available to users on the Advanced subscription tier or higher.
+Conflict Prevention is available to users on the Pro subscription tier or higher.
 
 ***
 

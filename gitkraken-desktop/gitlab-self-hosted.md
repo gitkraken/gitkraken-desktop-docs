@@ -5,7 +5,7 @@ product: GitKraken Desktop
 feature: GitLab Self-Managed Integration
 content_type: how-to
 audience: developer
-plan_required: Enterprise
+plan_required: Pro
 os_support: [Windows, macOS, Linux]
 git_hosts: [GitLab Self-Managed]
 integrations: [GitLab Self-Managed]
@@ -19,15 +19,15 @@ taxonomy:
 ---
 <kbd>Last updated: March 2026</kbd>
 
-Use this page to connect GitKraken Desktop to a GitLab Self-Managed server so you can authenticate with a personal access token, manage SSH keys, discover repositories, and work with pull requests in your self-hosted GitLab environment. This integration requires an Advanced subscription tier or higher.
+Use this page to connect GitKraken Desktop to a GitLab Self-Managed server so you can authenticate with a personal access token, manage SSH keys, discover repositories, and work with pull requests in your self-hosted GitLab environment. This integration requires a Pro subscription tier or higher.
 
 <div class='callout callout--warning'>
-  <p><strong>Note:</strong> All self-hosted server integrations, including GitLab Self-Managed, require an <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">Advanced subscription</a> tier or higher.</p>
+  <p><strong>Note:</strong> GitLab Self-Managed integration requires a <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">Pro subscription</a> tier or higher.</p>
 </div>
 
 **Requirements and limits**
 - Integration covered here: GitLab Self-Managed
-- Plan: Advanced subscription tier or higher
+- Plan: Pro subscription tier or higher
 - Supported server versions: GitLab Self-Managed releases from the past year
 - Authentication: Personal access token with `api` and `read_user` scopes
 - Token setup note: Leave token expiration blank when following this workflow
