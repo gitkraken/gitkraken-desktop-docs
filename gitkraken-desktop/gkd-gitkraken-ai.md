@@ -37,8 +37,6 @@ GitKraken AI in GitKraken Desktop helps developers generate commit messages, exp
 
 ## Quick Start
 
-Use GitKraken AI to generate commit messages, compose logical commit histories, and write pull request descriptions.
-
 **To generate a commit message:**
 1. Stage your changes in the Commit Panel.
 2. Click the AI icon (sparkle) next to the commit message field.

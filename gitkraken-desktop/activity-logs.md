@@ -33,7 +33,6 @@ Use this page to inspect Activity Logs in GitKraken Desktop when you need to see
 
 ## Quick Start
 
-Use Activity Logs in GitKraken Desktop to monitor Git operations, application events, and Git hook output in real time.
 
 1. Open GitKraken Desktop and open any repository.
 2. Click the <kbd>Activity Logs</kbd> icon in the footer toolbar at the bottom of the window.

@@ -37,7 +37,6 @@ Use this page to connect GitKraken Desktop to GitLab Issues so you can preview, 
 
 ## Quick Start
 
-Connect GitKraken Desktop to GitLab Issues to view, create, and manage issues alongside your repository workflow.
 
 1. Go to <kbd>Preferences > Integrations</kbd> and select **GitLab.com**, or click the ISSUES section in the Left Panel.
 2. Click **Connect to GitLab** and authorize the connection in the browser.

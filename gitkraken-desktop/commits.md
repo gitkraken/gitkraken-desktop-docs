@@ -36,7 +36,6 @@ Use this page to create commits, stage files, add co-authors, work with commit t
 
 ## Quick Start
 
-Create a commit in GitKraken Desktop by staging your changes and entering a commit message.
 
 1. Save changes to your files. The **WIP** (Work in Progress) node appears at the top of the Commit Graph.
 2. Click the WIP node to open the Commit Panel and view changed files.

@@ -37,7 +37,6 @@ This page explains how to connect GitKraken Desktop to GitHub Enterprise Server 
 
 ## Quick Start
 
-Connect GitKraken Desktop to a GitHub Enterprise Server instance to clone repositories, manage remotes, and create pull requests.
 
 1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
 2. Enter your GitHub Enterprise Server host domain and click the link to generate an access token.

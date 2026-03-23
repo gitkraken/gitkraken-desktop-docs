@@ -26,7 +26,6 @@ Use this page to cherry pick one or more commits onto your current branch in Git
 
 ## Quick Start
 
-Use GitKraken Desktop to cherry pick one or more commits from any branch onto your current branch.
 
 **To cherry pick a single commit:**
 1. Check out the branch where you want to apply the commit.

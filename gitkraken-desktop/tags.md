@@ -34,7 +34,6 @@ Use this page to create, annotate, push, move, delete, and filter Git tags in Gi
 
 ## Quick Start
 
-Create, annotate, push, and manage Git tags in GitKraken Desktop from the commit graph or Left Panel.
 
 **To create a tag:** Right-click a commit in the graph and select **Create tag here**. Enter the tag name and press Enter.
 

@@ -36,7 +36,6 @@ Use this page to create files, create folders, delete files, and filter reposito
 
 ## Quick Start
 
-Use GitKraken Desktop to create, delete, and filter files within your repository without leaving the application.
 
 **To create a file:**
 1. Press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>P</kbd> to open the Command Palette.

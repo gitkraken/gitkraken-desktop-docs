@@ -29,7 +29,6 @@ Use this page to upgrade GitKraken Self-Hosted Server, client installers, and li
 
 ## Quick Start
 
-Upgrade GitKraken Self-Hosted Server, client installers, and your license file using Docker Compose.
 
 **To upgrade the server:**
 1. Navigate to the folder containing `docker-compose.yml` and run `sudo docker-compose down`.

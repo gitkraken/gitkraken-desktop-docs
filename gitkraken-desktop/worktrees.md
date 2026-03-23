@@ -33,7 +33,6 @@ Use this page to create, switch, lock, and remove Git worktrees in GitKraken Des
 
 ## Quick Start
 
-Create and manage Git worktrees in GitKraken Desktop to work on multiple branches simultaneously, each in its own working directory.
 
 **To create a worktree:**
 1. Right-click a branch in the Repository View.

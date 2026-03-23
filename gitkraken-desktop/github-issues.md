@@ -37,7 +37,6 @@ Use this page to connect GitKraken Desktop to GitHub Issues so you can preview, 
 
 ## Quick Start
 
-Connect GitKraken Desktop to GitHub Issues to view, create, and manage issues alongside your repository workflow.
 
 1. Go to <kbd>Preferences > Integrations</kbd> and select **GitHub.com**, or click the ISSUES section in the Left Panel.
 2. Click **Connect to GitHub** and complete authorization in the browser window that opens.

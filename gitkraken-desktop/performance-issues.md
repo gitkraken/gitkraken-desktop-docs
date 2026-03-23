@@ -32,7 +32,6 @@ Use this page to diagnose slow or unresponsive behavior in GitKraken Desktop, es
 
 ## Quick Start
 
-Improve GitKraken Desktop performance by reducing repository complexity and adjusting interface settings.
 
 **Common fixes:**
 - Run **Perform Repo Maintenance** from the Command Palette. This executes `git maintenance run` to optimize the repository’s internal data structures.

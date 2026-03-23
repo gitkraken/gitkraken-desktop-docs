@@ -33,7 +33,6 @@ Use this page to understand the main areas of the GitKraken Desktop interface so
 
 ## Quick Start
 
-Navigate GitKraken Desktop using its three main areas: the Left Panel, the Commit Graph, and the Commit Panel.
 
 - **Left Panel**: Lists your local branches, remotes, tags, stashes, submodules, and integrations. Click any item to interact with it. Right-click for additional actions like checkout, merge, and delete.
 - **Commit Graph**: Displays the visual commit history of the current repository. Click any commit to view its details in the Commit Panel. Click the WIP node at the top to view and stage pending changes.

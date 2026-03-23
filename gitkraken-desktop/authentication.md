@@ -40,7 +40,6 @@ Use this page to authenticate GitKraken Desktop with Git hosts that do not have 
 
 ## Quick Start
 
-Authenticate GitKraken Desktop with a Git hosting service using either HTTPS or SSH.
 
 **To clone with HTTPS:**
 1. Copy the HTTPS URL from your hosting service (e.g., `https://example.com/username/repo.git`).

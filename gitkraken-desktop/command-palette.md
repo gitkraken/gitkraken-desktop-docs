@@ -39,7 +39,6 @@ Use this page to run GitKraken Desktop actions from the Command Palette when you
 
 ## Quick Start
 
-Use the Command Palette in GitKraken Desktop to run actions, navigate files, and switch repositories without using the mouse.
 
 - Open with <kbd>Cmd</kbd> + <kbd>P</kbd> (macOS) or <kbd>Ctrl</kbd> + <kbd>P</kbd> (Windows/Linux), or click the wand icon in the top-right toolbar.
 - Start typing to filter available commands. Results update as you type.

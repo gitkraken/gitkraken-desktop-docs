@@ -31,7 +31,6 @@ Use this getting started guide to learn a basic GitKraken Desktop workflow: clon
 
 ## Quick Start
 
-Follow this basic Git workflow in GitKraken Desktop to start contributing to a repository.
 
 1. **Clone a repository**: Go to <kbd>File > Clone Repo</kbd>, paste a repository URL or browse your connected Git hosting service, and click **Clone the repo**.
 2. **Create a branch**: Right-click any commit in the graph and select **Create branch here**. Name it and press <kbd>Enter</kbd>.

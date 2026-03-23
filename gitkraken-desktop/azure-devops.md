@@ -33,7 +33,6 @@ Use this page to connect GitKraken Desktop to Azure DevOps for repository access
 
 ## Quick Start
 
-Connect GitKraken Desktop to Azure DevOps to clone repositories, manage remotes, and create pull requests from your Azure DevOps account.
 
 1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
 2. Select **Azure DevOps** and click **Connect to Azure DevOps**.

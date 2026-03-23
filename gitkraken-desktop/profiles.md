@@ -39,7 +39,6 @@ Use profiles in GitKraken Desktop to keep separate Git identities, integrations,
 
 ## Quick Start
 
-Use profiles in GitKraken Desktop to keep separate Git identities, integrations, and tab sessions for different work contexts.
 
 **To create a profile:**
 1. Click the profile icon in the top-right corner.

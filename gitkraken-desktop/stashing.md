@@ -33,7 +33,6 @@ Use this page to stash, apply, pop, rename, and partially restore uncommitted ch
 
 ## Quick Start
 
-Stash and restore uncommitted changes in GitKraken Desktop using the toolbar or Commit Panel.
 
 **To stash all changes:** Click the **Stash** icon in the top toolbar. Your stash appears in the Commit Graph.
 

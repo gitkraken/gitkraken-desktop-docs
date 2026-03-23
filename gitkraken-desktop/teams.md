@@ -41,7 +41,6 @@ Teams can be used for:
 
 ## Quick Start
 
-Create and manage teams in GitKraken Desktop to organize users and enable team collaboration features.
 
 **To manage your organization:**
 1. Open <kbd>Preferences</kbd> and select your organization name in the sidebar.

@@ -34,7 +34,6 @@ To get started, open a repository and click the Terminal <i class="fa fa-termina
 
 ## Quick Start
 
-Use the GitKraken Desktop terminal to run Git commands alongside the visual commit graph.
 
 **To open the terminal:** Click the Terminal icon in the toolbar or search for "terminal" in the Command Palette.
 

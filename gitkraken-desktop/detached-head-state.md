@@ -34,7 +34,6 @@ Use this page to enter, work in, and recover from detached HEAD state in GitKrak
 
 ## Quick Start
 
-Use GitKraken Desktop to enter, work in, and safely exit detached HEAD state.
 
 **To enter detached HEAD state:**
 1. Right-click any commit in the Commit Graph.

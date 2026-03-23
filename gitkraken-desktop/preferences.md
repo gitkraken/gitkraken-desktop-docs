@@ -33,7 +33,6 @@ Use this page to understand what each major Preferences section controls in GitK
 
 ## Quick Start
 
-Configure GitKraken Desktop settings by clicking the gear icon in the top-right corner to open Preferences.
 
 - **General**: Set auto-fetch intervals, conflict detection behavior, commit graph limits, and tab retention.
 - **Profiles**: Create and switch between profiles to separate Git identities, integrations, and tab sets.

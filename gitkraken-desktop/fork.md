@@ -34,7 +34,6 @@ With the [GitHub integration](/gitkraken-desktop/github-gitkraken-desktop/) or [
 
 ## Quick Start
 
-Fork a GitHub repository from within GitKraken Desktop and add it as a remote in one step.
 
 **To fork a repository and add it as a remote:**
 1. Open the repository you want to fork in GitKraken Desktop.

@@ -38,7 +38,6 @@ Use this page to install GitKraken Self-Hosted Server on a Linux host with Docke
 
 ## Quick Start
 
-Install GitKraken Self-Hosted Server on a Linux machine using Docker and Docker Compose.
 
 1. Install Docker CE and Docker Compose on your Linux host (CentOS, Ubuntu, or RHEL7). Follow the platform-specific steps in the sections below, or refer to the official [Docker documentation](https://docs.docker.com/).
 2. Start Docker: `sudo systemctl start docker`.

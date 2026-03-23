@@ -37,7 +37,6 @@ Use this page to complete the first-time configuration of GitKraken Self-Hosted 
 
 ## Quick Start
 
-Configure GitKraken Self-Hosted Server after installation by completing the license, authentication, SMTP, and Super User setup steps.
 
 1. Navigate to your GitKraken Self-Hosted server in a browser.
 2. Click **Browse for license** and upload the license file included with your installation package.

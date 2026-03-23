@@ -34,7 +34,6 @@ Use this page to add, update, initialize, and manage Git submodules in GitKraken
 
 ## Quick Start
 
-Add, update, and manage Git submodules in GitKraken Desktop from the Left Panel.
 
 **To show the Submodules pane:** Right-click any Left Panel header and check **Submodules**.
 

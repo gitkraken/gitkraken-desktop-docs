@@ -35,7 +35,6 @@ Use this page to troubleshoot common GitKraken Desktop problems related to licen
 
 ## Quick Start
 
-Use this page to diagnose and resolve common problems in GitKraken Desktop. Find the section that matches your issue and follow the steps listed.
 
 - **Account or license not recognized**: Verify you are signed in with the email address linked to your subscription, and that the correct organization is selected in GitKraken Desktop and on gitkraken.dev.
 - **Integration errors (1002, 1003, 1005, 1007)**: Sign out of your browser, clear its cache, and reconnect your integration from <kbd>Preferences > Integrations</kbd>.

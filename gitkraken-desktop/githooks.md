@@ -42,7 +42,6 @@ Use this page to create, configure, and troubleshoot Git hooks in GitKraken Desk
 
 ## Quick Start
 
-Create and configure Git hooks in GitKraken Desktop to run scripts automatically on Git events like commits and pushes.
 
 1. Navigate to your repository's `.git/hooks` directory. GitKraken Desktop creates this folder automatically when a repository is initialized.
 2. Create a new file with the hook name (e.g., `pre-commit`). On macOS or Linux, make it executable by running `chmod +x pre-commit` in the terminal.

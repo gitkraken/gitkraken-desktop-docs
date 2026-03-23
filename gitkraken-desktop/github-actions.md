@@ -41,7 +41,6 @@ GitHub Actions workflows in GitKraken Desktop are managed by editing the YAML fi
 
 ## Quick Start
 
-Create and edit GitHub Actions workflow files directly in your repository from within GitKraken Desktop.
 
 **To create a workflow:**
 1. In your repository, create a `.github/workflows` directory if one does not already exist.

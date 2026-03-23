@@ -33,7 +33,6 @@ Use this page to install a self-signed SSL certificate so GitKraken Desktop can 
 
 ## Quick Start
 
-Install a self-signed SSL certificate so GitKraken Desktop can connect to your remote hosting service.
 
 **On Windows (Chrome):**
 1. Navigate to your remote hosting service in Chrome and open the certificate details.

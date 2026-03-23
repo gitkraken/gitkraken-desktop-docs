@@ -35,7 +35,6 @@ You can undo many common actions with a single click of the **Undo** button. If 
 
 ## Quick Start
 
-Undo or redo Git actions in GitKraken Desktop using the toolbar buttons or keyboard shortcuts.
 
 **To undo an action:** Click the **Undo** button in the toolbar, or press <kbd>Cmd + Z</kbd> (Mac) or <kbd>Ctrl + Z</kbd> (Windows/Linux).
 

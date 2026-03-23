@@ -37,7 +37,6 @@ Use this page to sign Git commits and tags in GitKraken Desktop with either GPG 
 
 ## Quick Start
 
-Sign Git commits in GitKraken Desktop using a GPG or SSH key to verify your identity when pushing to services like GitHub or GitLab.
 
 **To sign commits with GPG:**
 1. Install GPG for your operating system (Gpg4win on Windows, `brew install gpg` on macOS, or your Linux package manager).

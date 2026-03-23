@@ -37,7 +37,6 @@ Use this page to monitor what teammates are currently working on in GitKraken De
 
 ## Quick Start
 
-Use Team View in GitKraken Desktop to monitor teammate activity and detect potential merge conflicts before they occur.
 
 **To enable Team View:**
 1. Go to <kbd>Preferences > Team</kbd> and select a team from the dropdown.

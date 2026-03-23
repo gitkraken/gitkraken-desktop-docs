@@ -34,7 +34,6 @@ Use this page to enable and evaluate GitKraken Desktop experimental features suc
 
 ## Quick Start
 
-Enable and use experimental features in GitKraken Desktop, including the Git Executable and Cloud Patches.
 
 **To enable experimental features:**
 - Go to <kbd>Preferences > Experimental</kbd> and toggle the features you want to use.

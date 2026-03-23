@@ -41,7 +41,6 @@ Use this page to change the GitKraken Desktop theme, sync the app with your syst
 
 ## Quick Start
 
-Change the GitKraken Desktop theme or create a custom theme to match your preferred visual style.
 
 **To switch themes:** Go to <kbd>Preferences > UI Customization</kbd> and select a theme, or open the Command Palette and type `switch theme`.
 

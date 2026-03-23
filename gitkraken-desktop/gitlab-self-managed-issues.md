@@ -45,7 +45,6 @@ Use this page to connect GitKraken Desktop to GitLab Self-Managed Issues so you 
 
 ## Quick Start
 
-Connect GitKraken Desktop to GitLab Self-Managed Issues to preview and manage issues from the Left Panel.
 
 1. Connect your GitLab Self-Managed instance from <kbd>Preferences > Integrations</kbd> by following the GitLab Self-Managed authentication flow.
 2. Open the **ISSUES** section in the Left Panel to load issues from the connected instance.

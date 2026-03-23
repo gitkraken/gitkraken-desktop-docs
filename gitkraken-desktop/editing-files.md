@@ -35,7 +35,6 @@ Use this page to open, edit, save, discard, stage, and preview files in GitKrake
 
 ## Quick Start
 
-Edit files directly in GitKraken Desktop without switching to an external editor.
 
 **To open a file for editing:**
 - Right-click any file in the Commit Panel or via **View all files** and select **Edit file**.

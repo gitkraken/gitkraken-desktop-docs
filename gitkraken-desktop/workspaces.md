@@ -33,7 +33,6 @@ Use this page to create Local or Cloud Workspaces in GitKraken Desktop so you ca
 
 ## Quick Start
 
-Create and use Workspaces in GitKraken Desktop to organize repositories and take actions across multiple repos at once.
 
 **To open the Workspaces view:** Click the folder icon in the top-left or press <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
 

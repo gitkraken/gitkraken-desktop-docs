@@ -37,7 +37,6 @@ Use this page to install, initialize, and manage Git LFS in GitKraken Desktop wh
 
 ## Quick Start
 
-Set up Git LFS in GitKraken Desktop to track and manage large binary files in your repositories.
 
 **Prerequisites:** Install Git (version 2.39.3 or later) and Git LFS (version 3.0.0 or later), then verify with `git --version` and `git lfs version` in a terminal.
 

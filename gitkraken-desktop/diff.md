@@ -36,7 +36,6 @@ Use this page to compare uncommitted changes, inspect commit diffs, switch betwe
 
 ## Quick Start
 
-Use GitKraken Desktop to view file diffs, inspect commit history, and trace changes by author.
 
 **To view a diff:**
 - Click a file in the staging area (WIP node) to see your uncommitted changes.

@@ -34,7 +34,6 @@ Use this page to squash multiple commits into one in GitKraken Desktop when you 
 
 ## Quick Start
 
-Squash multiple commits into one in GitKraken Desktop to produce a cleaner commit history.
 
 1. In the Commit Graph, hold <kbd>Shift</kbd> or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> and click to select two or more commits. The selected commits must be consecutive, in a straight ancestor-descendant line, and the oldest must have a parent commit.
 2. Right-click the selection and choose **Squash [N] commits**.

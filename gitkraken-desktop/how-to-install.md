@@ -33,7 +33,6 @@ This installation guide explains how to install GitKraken Desktop on Windows, ma
 
 ## Quick Start
 
-Install GitKraken Desktop on your operating system in three steps.
 
 1. [Download GitKraken Desktop](https://gitkraken.com/download?product=gitkraken&source=help_center) for your platform.
 2. Run the installer:

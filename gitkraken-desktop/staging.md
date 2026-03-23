@@ -34,7 +34,6 @@ Use this page to stage, unstage, discard, and ignore files in GitKraken Desktop 
 
 ## Quick Start
 
-Stage, unstage, and discard file changes in GitKraken Desktop from the Commit Panel.
 
 **To stage files:**
 1. Select the **//WIP** node in the Commit Graph to open the Commit Panel.

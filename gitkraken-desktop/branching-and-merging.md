@@ -38,7 +38,6 @@ Looking for a quick summary? See [how GitKraken solves merge conflicts](https://
 
 ## Quick Start
 
-Use GitKraken Desktop to create branches, merge changes, and rebase commits without leaving the application.
 
 **To create and check out a branch:**
 1. Right-click any commit in the graph and select **Create branch here**.

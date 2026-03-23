@@ -39,7 +39,6 @@ Use this page to install and license GitKraken On-Premise Serverless, also calle
 
 ## Quick Start
 
-Install and activate GitKraken On-Premise Serverless for use in offline or secure environments.
 
 1. Download the GitKraken Serverless installer for your operating system from the [downloads page](https://www.gitkraken.com/download-on-premise-serverless).
 2. Install the application:

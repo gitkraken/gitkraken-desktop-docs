@@ -33,7 +33,6 @@ Use this page to connect GitKraken Desktop to Trello so you can preview, create,
 
 ## Quick Start
 
-Connect GitKraken Desktop to Trello to view, create, and manage cards alongside your Git workflow.
 
 1. Go to <kbd>Preferences > Integrations</kbd> or click the ISSUES section in the Left Panel.
 2. Select **Trello** and click to authorize. Complete the authorization on the Trello page that opens and click **Allow**.

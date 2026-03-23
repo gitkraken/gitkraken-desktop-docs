@@ -33,7 +33,6 @@ Use this page to push, pull, fetch, add remotes, and set upstream branches in Gi
 
 ## Quick Start
 
-Synchronize your work with remote repositories using push, pull, and fetch in GitKraken Desktop.
 
 **To push local commits:** Click **Push** in the toolbar, or right-click a branch and select **Push**. If the remote branch does not exist yet, GitKraken Desktop prompts you to create it. You can also drag a branch onto a remote branch to push.
 

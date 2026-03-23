@@ -33,7 +33,6 @@ Use deep links in GitKraken Desktop to share or open specific remote repositorie
 
 ## Quick Start
 
-Use deep links in GitKraken Desktop to share direct access to branches, commits, tags, or repositories with teammates.
 
 **To copy a deep link:**
 - Right-click a branch, commit, tag, or repository in the Commit Graph or Left Panel and select the copy link option.

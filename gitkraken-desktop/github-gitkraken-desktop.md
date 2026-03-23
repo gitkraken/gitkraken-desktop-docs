@@ -32,7 +32,6 @@ Use this page to connect GitKraken Desktop to GitHub for sign-in, repository acc
 
 ## Quick Start
 
-Connect GitKraken Desktop to GitHub to authenticate, clone repositories, and manage pull requests from your GitHub account.
 
 **To sign in with GitHub:**
 1. Open GitKraken Desktop and click **Sign in with GitHub**.

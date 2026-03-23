@@ -38,7 +38,6 @@ Use this page to configure and run Gitflow in GitKraken Desktop when your team o
 
 ## Quick Start
 
-Set up and use Gitflow in GitKraken Desktop to manage features, releases, and hotfixes with structured branches.
 
 1. Go to <kbd>Preferences > Gitflow</kbd> and initialize Gitflow for the repository. Optionally adjust default branch names.
 2. GitKraken Desktop creates `main` and `develop` branches if they do not exist.

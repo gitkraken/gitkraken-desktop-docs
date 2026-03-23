@@ -33,7 +33,6 @@ Use this page to create, review, filter, comment on, and merge pull requests in 
 
 ## Quick Start
 
-Create and manage pull requests in GitKraken Desktop directly from the commit graph or Left Panel.
 
 **To create a pull request:**
 - Drag one branch onto another in the commit graph and select **Start a pull request**.

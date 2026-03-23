@@ -32,7 +32,6 @@ Use this page to connect GitKraken Desktop to GitLab.com for repository access, 
 
 ## Quick Start
 
-Connect GitKraken Desktop to GitLab.com to clone repositories, manage remotes, and create pull requests from your GitLab account.
 
 1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
 2. Select **GitLab.com** and click **Connect to GitLab**.

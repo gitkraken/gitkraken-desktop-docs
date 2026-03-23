@@ -32,7 +32,6 @@ Use this page to connect GitKraken Desktop to Bitbucket.org for repository disco
 
 ## Quick Start
 
-Connect GitKraken Desktop to Bitbucket.org to clone repositories, manage remotes, and work with pull requests from your Bitbucket account.
 
 1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
 2. Select **Bitbucket.org** and click **Connect to Bitbucket**.

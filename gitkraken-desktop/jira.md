@@ -41,7 +41,6 @@ Use this page to connect GitKraken Desktop to Jira Cloud or Jira Data Center so 
 
 ## Quick Start
 
-Connect GitKraken Desktop to Jira to view, create, and manage Jira issues alongside your Git workflow.
 
 1. Go to <kbd>Preferences > Integrations</kbd> or click the ISSUES section in the Left Panel. If the ISSUES section is not visible, right-click any Left Panel header and enable it.
 2. Select **Jira Cloud** or **Jira Data Center** and click to authorize. Complete the authorization in the Atlassian browser page that opens.

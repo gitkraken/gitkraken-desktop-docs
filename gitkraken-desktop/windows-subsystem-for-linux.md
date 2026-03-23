@@ -33,7 +33,6 @@ Use this page to install and run GitKraken Desktop inside Windows Subsystem for 
 
 ## Quick Start
 
-Install and run GitKraken Desktop inside WSL 2 on Windows to work with Linux-hosted repositories.
 
 1. **Update WSL 2**: From PowerShell or Command Prompt (run as Administrator), run `wsl --update`. To install WSL with Ubuntu, run `wsl --install -d ubuntu` and reboot.
 2. **Download GitKraken Desktop for Linux**: For Ubuntu, run:

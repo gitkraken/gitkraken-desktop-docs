@@ -33,7 +33,6 @@ Use this page to run interactive rebase in GitKraken Desktop when you need to re
 
 ## Quick Start
 
-Use interactive rebase in GitKraken Desktop to reorder, combine, rename, or remove commits before merging.
 
 **To start interactive rebase:**
 - Drag and drop a branch onto a target branch and select **Interactive Rebase**.

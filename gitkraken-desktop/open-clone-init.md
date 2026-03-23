@@ -33,7 +33,6 @@ Use this page to open an existing local repository, clone a remote repository, o
 
 ## Quick Start
 
-Open, clone, or initialize repositories in GitKraken Desktop from the Repository Management tab.
 
 **To open an existing local repository:**
 1. Click the folder icon in the top-left corner or press <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).

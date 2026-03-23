@@ -42,7 +42,6 @@ Use this page to connect GitKraken Desktop to a GitLab Self-Managed server so yo
 
 ## Quick Start
 
-Connect GitKraken Desktop to a GitLab Self-Managed server to clone repositories, manage remotes, and create pull requests.
 
 1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
 2. Select **GitLab Self-Managed**, enter your host domain, and click **Generate a token on GitLab**.

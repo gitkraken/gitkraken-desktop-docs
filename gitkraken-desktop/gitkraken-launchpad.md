@@ -36,7 +36,6 @@ The Launchpad is also <a href="https://help.gitkraken.com/gitkraken-desktop/gitk
 
 ## Quick Start
 
-Use GitKraken Launchpad to monitor pull requests, issues, and uncommitted changes across your repositories in one place.
 
 1. Click the **Launchpad** tab in the top-left corner of GitKraken Desktop.
 2. Connect your integrations via <kbd>Preferences > Integrations</kbd>, or follow the in-app prompts.
