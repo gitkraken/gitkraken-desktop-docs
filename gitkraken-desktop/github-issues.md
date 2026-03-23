@@ -1,6 +1,19 @@
 ---
 title: GitKraken Desktop + GitHub Issues Integration
 description: Learn how to connect GitKraken Desktop with GitHub Issues to manage, filter, preview, and create issues directly from your Git workflow.
+product: GitKraken Desktop
+feature: GitHub Issues Integration
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub]
+integrations: [GitHub]
+hosted_variant: cloud
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [github, issues, filters, branching, integration]
 taxonomy:
     category: gitkraken-desktop
 ---

@@ -1,11 +1,22 @@
 ---
-
 title: GitKraken Desktop Release Notes
 description: View a history of the new features and fixes in GitKraken Desktop's Version 11.
+product: GitKraken Desktop
+feature: Release Notes
+content_type: release-notes
+audience: all
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: false
+tags: [release-notes, changelog, upgrades, version-history]
 og_image: /img/GitKrakenClient-Hero.png
 taxonomy:
     category: gitkraken-desktop
-
 ---
 
 This release notes page tracks what changed in GitKraken Desktop version 11, including new features, improvements, bug fixes, and deprecations. Use it when you need to confirm when a capability shipped, check whether a bug was fixed in a specific release, or review version-specific changes before upgrading.

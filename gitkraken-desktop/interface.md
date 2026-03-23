@@ -1,6 +1,19 @@
 ---
 title: GitKraken Desktop Interface Guide | Toolbar, Panels, and Graph
 description: Learn how to navigate the GitKraken Desktop interface. Explore the toolbar, Left Panel, Commit Panel, and Commit Graph with visual guides and tips.
+product: GitKraken Desktop
+feature: Interface
+content_type: overview
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [interface, toolbar, left-panel, commit-graph, commit-panel]
 taxonomy:
     category: gitkraken-desktop
 ---

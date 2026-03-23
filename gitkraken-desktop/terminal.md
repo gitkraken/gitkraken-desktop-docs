@@ -1,6 +1,19 @@
 ---
 title: GitKraken Terminal Guide
 description: Learn how to use GitKraken’s in-app terminal to run Git commands, use auto-complete, and customize shell preferences.
+product: GitKraken Desktop
+feature: Terminal
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [terminal, shell, git, commands, auto-complete]
 taxonomy:
     category: gitkraken-desktop
 ---

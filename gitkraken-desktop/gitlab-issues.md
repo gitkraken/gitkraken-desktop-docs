@@ -1,6 +1,19 @@
 ---
 title: GitKraken Desktop + GitLab Issues Integration
 description: Connect GitKraken with GitLab to view, filter, and manage issues directly from your local Git interface.
+product: GitKraken Desktop
+feature: GitLab Issues Integration
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitLab]
+integrations: [GitLab]
+hosted_variant: cloud
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [gitlab, issues, filters, branching, integration]
 taxonomy:
     category: gitkraken-desktop
 ---

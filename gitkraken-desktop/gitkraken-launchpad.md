@@ -1,6 +1,19 @@
 ---
 title: GitKraken Launchpad Overview
 description: Learn how to track pull requests, issues, and WIPs using GitKraken Launchpad, including Personal and Team Views, integrations, filters, and saved views.
+product: GitKraken Launchpad
+feature: Launchpad
+content_type: overview
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps, Jira Cloud, Jira Data Center]
+integrations: [GitHub, GitLab, Bitbucket, Azure DevOps, Jira Cloud, Jira Data Center]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [launchpad, pull-requests, issues, wip, filters]
 taxonomy:
     category: gitkraken-desktop
 ---

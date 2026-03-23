@@ -1,6 +1,19 @@
 ---
 title: Workspaces in GitKraken Desktop
 description: Learn how to create, manage, and share Cloud or Local Workspaces in GitKraken Desktop to organize and collaborate across repositories.
+product: GitKraken Desktop
+feature: Workspaces
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
+integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [workspaces, cloud-workspaces, local-workspaces, multi-repo, launchpad]
 taxonomy:
     category: gitkraken-desktop
 ---

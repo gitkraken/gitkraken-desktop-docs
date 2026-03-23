@@ -1,6 +1,19 @@
 ---
 title: Learn Git with GitKraken Desktop | Beginner Guide & Workflow
 description: New to Git? Get started with GitKraken Desktop using this beginner-friendly guide. Learn cloning, branching, staging, committing, and merging with tutorials and videos.
+product: GitKraken Desktop
+feature: Beginner Guide
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [git, beginner, guide, workflow]
 taxonomy:
     category: gitkraken-desktop
 ---

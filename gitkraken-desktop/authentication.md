@@ -1,6 +1,19 @@
 ---
 title: Authentication with Other Git Hosts in GitKraken Desktop
 description: Learn how to authenticate with TFS, AWS CodeCommit, Google Cloud Source Repositories, and custom Git hosts using HTTPS or SSH in GitKraken Desktop.
+product: GitKraken Desktop
+feature: Generic Git Host Authentication
+content_type: reference
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [authentication, https, ssh, codecommit, tfs]
 taxonomy:
   category: gitkraken-desktop
 ---

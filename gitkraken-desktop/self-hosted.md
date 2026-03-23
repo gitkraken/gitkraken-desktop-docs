@@ -1,6 +1,19 @@
 ---
 title: Set Up GitKraken Self-Hosted Server (On-Premise)
 description: Learn how to install and configure GitKraken On-Premise Self-Hosted Server, including system requirements, supported OS versions, and benefits for secure environments.
+product: GitKraken Self-Hosted
+feature: Self-Hosted Server Setup
+content_type: overview
+audience: enterprise-admin
+plan_required: Enterprise
+os_support: [server-linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: self-hosted
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [self-hosted, on-premise, setup, enterprise, server]
 taxonomy:
     category: gitkraken-desktop
 ---

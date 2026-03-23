@@ -1,6 +1,19 @@
 ---
 title: Interactive Rebase in GitKraken Desktop
 description: Step-by-step guide to using interactive rebase in GitKraken Desktop to clean up your Git commit history by picking, squashing, rewording, or dropping commits.
+product: GitKraken Desktop
+feature: Interactive Rebase
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [interactive-rebase, history, squash, reword, drop]
 taxonomy:
     category: gitkraken-desktop
 ---

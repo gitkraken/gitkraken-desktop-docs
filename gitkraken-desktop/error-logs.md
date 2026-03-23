@@ -1,6 +1,19 @@
 ---
 title: View and Submit Error Logs
 description: Learn how to access GitKraken Desktop error logs to troubleshoot issues and send diagnostics to support.
+product: GitKraken Desktop
+feature: Error Logs
+content_type: troubleshooting
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [error-logs, diagnostics, support, troubleshooting, errors]
 taxonomy:
     category: gitkraken-desktop
 ---

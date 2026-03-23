@@ -1,6 +1,19 @@
 ---
 title: GitKraken Desktop + Trello Integration
 description: Connect GitKraken to Trello to preview, manage, and link cards with your branches and repositories.
+product: GitKraken Desktop
+feature: Trello Integration
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [Trello]
+integrations: [Trello]
+hosted_variant: cloud
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [trello, cards, filters, branching, integration]
 taxonomy:
     category: gitkraken-desktop
 ---

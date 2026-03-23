@@ -1,6 +1,19 @@
 ---
 title: Edit and Save Files in GitKraken Desktop
 description: Learn how to open, edit, save, discard, and stage file changes using GitKraken Desktop’s built-in code editor. Includes shortcuts and encoding options.
+product: GitKraken Desktop
+feature: File Editing
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [editing, files, save, discard, encoding]
 taxonomy:
     category: gitkraken-desktop
 ---

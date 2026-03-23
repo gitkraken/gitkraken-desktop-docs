@@ -1,6 +1,19 @@
 ---
 title: Manage Favorite Repositories in GitKraken Desktop
 description: Learn how to favorite repositories in GitKraken Desktop for quick access via the Repo Management tab, dropdown menu, or shortcut keys.
+product: GitKraken Desktop
+feature: Favorites
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [favorites, repositories, repo-management, shortcuts, navigation]
 taxonomy:
     category: gitkraken-desktop
 ---

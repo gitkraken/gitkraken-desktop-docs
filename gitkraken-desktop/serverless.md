@@ -1,6 +1,19 @@
 ---
 title: GitKraken On-Premise Serverless (Stand-Alone) Setup
 description: Learn how to install, license, and run GitKraken On-Premise Serverless on Windows, macOS, and Linux in offline or secure environments.
+product: GitKraken Serverless
+feature: Serverless Setup
+content_type: overview
+audience: enterprise-admin
+plan_required: Enterprise
+os_support: [Windows, macOS, Linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: self-hosted
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [serverless, on-premise, offline, setup, enterprise]
 taxonomy:
     category: gitkraken-desktop
 ---

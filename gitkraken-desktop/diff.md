@@ -1,6 +1,19 @@
 ---
 title: View Diffs, File History, and Blame in GitKraken Desktop
 description: Learn how to use GitKraken Desktop to compare changes with diffs, view file history and blame, configure external diff tools, and manage Git patches.
+product: GitKraken Desktop
+feature: Diff Viewer
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [diff, blame, history, patches, external-tools]
 taxonomy:
     category: gitkraken-desktop
 ---

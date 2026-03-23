@@ -1,6 +1,19 @@
 ---
 title: Improve GitKraken Desktop Performance
 description: Troubleshoot and fix performance issues in GitKraken Desktop with maintenance tips and optimization settings.
+product: GitKraken Desktop
+feature: Performance Troubleshooting
+content_type: troubleshooting
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [performance, troubleshooting, optimization, maintenance, large-repos]
 taxonomy:
     category: gitkraken-desktop
 ---

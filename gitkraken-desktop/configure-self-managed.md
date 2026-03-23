@@ -1,6 +1,19 @@
 ---
 title: Configure GitKraken Self-Hosted Server (LDAP, SMTP, and Super User)
 description: Step-by-step instructions to configure GitKraken Self-Hosted Server. Set up licensing, LDAP authentication, SMTP server, and Super User access.
+product: GitKraken Self-Hosted
+feature: Self-Hosted Configuration
+content_type: how-to
+audience: enterprise-admin
+plan_required: Enterprise
+os_support: [server-linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: self-hosted
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [self-hosted, ldap, smtp, super-user, configuration]
 taxonomy:
     category: gitkraken-desktop
 ---

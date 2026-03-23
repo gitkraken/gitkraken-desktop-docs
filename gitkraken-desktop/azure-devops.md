@@ -1,6 +1,19 @@
 ---
 title: Azure DevOps Integration with GitKraken Desktop
 description: Connect GitKraken Desktop to Azure DevOps to manage repositories, SSH keys, and pull requests using OAuth or Personal Access Tokens.
+product: GitKraken Desktop
+feature: Azure DevOps Integration
+content_type: how-to
+audience: developer
+plan_required: Pro
+os_support: [Windows, macOS, Linux]
+git_hosts: [Azure DevOps]
+integrations: [Azure DevOps]
+hosted_variant: cloud
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [azure-devops, integration, oauth, pat, ssh]
 taxonomy:
     category: gitkraken-desktop
 ---

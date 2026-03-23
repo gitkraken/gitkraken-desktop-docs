@@ -1,10 +1,21 @@
 ---
-
 title: GitKraken Timelines
 description: Learn how to access Jira issues from GitKraken Git GUI
+product: GitKraken Desktop
+feature: GitKraken Timelines
+content_type: legacy
+audience: all
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [Jira Cloud]
+integrations: [Jira Cloud]
+hosted_variant: both
+status: sunset
+last_verified: 2026-03
+llms_include: false
+tags: [timelines, legacy, sunset, jira]
 taxonomy:
     category: gitkraken-desktop
-
 ---
 
 <kbd>Last updated: March 2026</kbd>

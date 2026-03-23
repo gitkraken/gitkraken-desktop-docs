@@ -1,6 +1,19 @@
 ---
 title: Sign Commits with GPG or SSH in GitKraken Desktop
 description: Learn how to verify your commits using GPG or SSH keys in GitKraken Desktop. Includes setup, configuration, and troubleshooting for Git commit signing.
+product: GitKraken Desktop
+feature: Commit Signing
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [commit-signing, gpg, ssh, verification, security]
 taxonomy:
     category: gitkraken-desktop
 ---

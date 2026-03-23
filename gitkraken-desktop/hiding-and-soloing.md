@@ -1,6 +1,19 @@
 ---
 title: Hide and Solo Branches in GitKraken Desktop
 description: Learn how to reduce visual clutter in GitKraken Desktop by hiding or soloing branches, tags, remotes, and stashes from the Left Panel.
+product: GitKraken Desktop
+feature: Hide and Solo
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [hide, solo, branches, commit-graph, left-panel]
 taxonomy:
     category: gitkraken-desktop
 ---

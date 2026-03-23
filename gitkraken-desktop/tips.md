@@ -1,6 +1,19 @@
 ---
 title: GitKraken Desktop Tips | Productivity Shortcuts & Power Features
 description: Discover top GitKraken Desktop tips to speed up your workflow—Profiles, Command Palette, integrations, cherry pick, and more advanced features.
+product: GitKraken Desktop
+feature: Tips and Power Features
+content_type: overview
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps, generic]
+integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [tips, productivity, shortcuts, integrations, advanced]
 taxonomy:
     category: gitkraken-desktop
 ---

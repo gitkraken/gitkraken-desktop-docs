@@ -1,6 +1,19 @@
 ---
 title: GitKraken Desktop Experimental Features | Cloud Patch & Git Executable
 description: Explore experimental GitKraken Desktop features like Git Executable integration and Cloud Patches. Learn how to enable, use, and self-host these in-development tools.
+product: GitKraken Desktop
+feature: Experimental Features
+content_type: overview
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: preview
+last_verified: 2026-03
+llms_include: true
+tags: [experimental, cloud-patch, git-executable, preview, features]
 taxonomy:
     category: gitkraken-desktop
 ---

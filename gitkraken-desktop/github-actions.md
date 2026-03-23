@@ -1,6 +1,19 @@
 ---
 title: Create and Manage GitHub Actions Workflows in GitKraken Desktop
 description: Learn how to automate tasks with GitHub Actions in GitKraken Desktop. Covers creating, editing, and deleting workflow files directly in your repository.
+product: GitKraken Desktop
+feature: GitHub Actions
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub]
+integrations: [GitHub]
+hosted_variant: cloud
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [github-actions, workflows, yaml, automation, github]
 taxonomy:
     category: gitkraken-desktop
 ---

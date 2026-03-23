@@ -1,6 +1,19 @@
 ---
 title: Open, Clone, or Initialize a Git Repository in GitKraken Desktop
 description: Learn how to open, clone, or initialize repositories in GitKraken Desktop. Get started with repository management and project setup.
+product: GitKraken Desktop
+feature: Repository Management
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps, generic]
+integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [open, clone, init, shallow-clone, sparse-checkout]
 taxonomy:
     category: gitkraken-desktop
 ---

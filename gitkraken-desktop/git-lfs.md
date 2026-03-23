@@ -1,6 +1,19 @@
 ---
 title: Using Git LFS in GitKraken Desktop
 description: Learn how to manage large files with Git LFS in GitKraken Desktop. Covers installation, initialization, configuration, and common troubleshooting.
+product: GitKraken Desktop
+feature: Git LFS
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [git-lfs, large-files, install, configure, troubleshooting]
 taxonomy:
     category: gitkraken-desktop
 ---

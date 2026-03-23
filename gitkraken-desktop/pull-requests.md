@@ -1,6 +1,19 @@
 ---
 title: Pull Requests in GitKraken Desktop
 description: Create, manage, and review pull requests in GitKraken Desktop. Supports GitHub, GitLab, Bitbucket, Azure DevOps, and includes templates, comments, and suggestions.
+product: GitKraken Desktop
+feature: Pull Requests
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
+integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [pull-requests, review, templates, suggestions, merge]
 taxonomy:
     category: gitkraken-desktop
 ---

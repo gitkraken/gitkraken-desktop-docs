@@ -1,6 +1,19 @@
 ---
 title: Cherry Pick Commits in GitKraken Desktop
 description: Learn how to cherry pick single or multiple commits across branches in GitKraken Desktop, including using the interactive cherry-pick tool.
+product: GitKraken Desktop
+feature: Cherry Pick
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [cherry-pick, commits, branches, interactive, history]
 taxonomy:
     category: gitkraken-desktop
 ---

@@ -1,6 +1,19 @@
 ---
 title: Upgrade GitKraken Self-Hosted Server (Docker & Client Instructions)
 description: Step-by-step guide to upgrading GitKraken Self-Hosted Server, Docker images, client installers, and license file—including how to reset the Super User password.
+product: GitKraken Self-Hosted
+feature: Self-Hosted Upgrade
+content_type: how-to
+audience: enterprise-admin
+plan_required: Enterprise
+os_support: [server-linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: self-hosted
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [self-hosted, upgrade, docker, license, super-user]
 taxonomy:
     category: gitkraken-desktop
 ---

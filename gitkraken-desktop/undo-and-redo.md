@@ -1,6 +1,19 @@
 ---
 title: How to Undo and Redo Git Actions in GitKraken Desktop
 description: Learn how to quickly undo or redo Git actions like commits, discards, and checkouts in GitKraken Desktop using buttons, shortcuts, or the Command Palette.
+product: GitKraken Desktop
+feature: Undo and Redo
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [undo, redo, history, shortcuts, command-palette]
 taxonomy:
     category: gitkraken-desktop
 ---

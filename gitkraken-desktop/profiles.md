@@ -1,6 +1,19 @@
 ---
 title: GitKraken Desktop Profiles | Manage Git Configs & Accounts
 description: Learn how to use GitKraken Desktop profiles to manage Git settings, integrations, avatars, and multiple accounts across different projects. Manage different gitconfig settings, repositories, and more!
+product: GitKraken Desktop
+feature: Profiles
+content_type: reference
+audience: developer
+plan_required: Pro
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, Bitbucket, Azure DevOps]
+integrations: [GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, Bitbucket, Azure DevOps]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [profiles, accounts, gitconfig, avatars, integrations]
 taxonomy:
     category: gitkraken-desktop
 ---

@@ -1,6 +1,19 @@
 ---
 title: GitLab Integration with GitKraken Desktop
 description: Connect GitKraken Desktop with GitLab to clone repositories, manage SSH keys, create pull requests, and streamline development with OAuth.
+product: GitKraken Desktop
+feature: GitLab Integration
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitLab]
+integrations: [GitLab]
+hosted_variant: cloud
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [gitlab, integration, oauth, ssh, pull-requests]
 taxonomy:
     category: gitkraken-desktop
 ---

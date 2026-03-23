@@ -1,10 +1,21 @@
 ---
-
 title: Gitkraken SOC 2 Request
 description: Request form for a copy of GK's SOC2 report
+product: GitKraken Desktop
+feature: SOC 2 Report Request
+content_type: form
+audience: buyer
+plan_required: [Business, Enterprise]
+os_support: [n/a]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: false
+tags: [security, compliance, soc2, trust-center]
 taxonomy:
     category: general
-
 ---
 <kbd>Last updated: March 2026</kbd>
 

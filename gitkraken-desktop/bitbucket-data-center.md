@@ -1,6 +1,19 @@
 ---
 title: Bitbucket Data Center Integration with GitKraken Desktop
 description: Connect GitKraken Desktop to your Bitbucket Data Center server for repository access, SSH authentication, cloning, and pull request workflows.
+product: GitKraken Desktop
+feature: Bitbucket Data Center Integration
+content_type: how-to
+audience: developer
+plan_required: Advanced
+os_support: [Windows, macOS, Linux]
+git_hosts: [Bitbucket Data Center]
+integrations: [Bitbucket Data Center]
+hosted_variant: self-hosted
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [bitbucket-data-center, self-hosted, pat, ssh, pull-requests]
 taxonomy:
     category: gitkraken-desktop
 ---

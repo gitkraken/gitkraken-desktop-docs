@@ -1,6 +1,19 @@
 ---
 title: System Requirements
 description: Minimum requirements for GitKraken Self-Hosted servers
+product: GitKraken Self-Hosted
+feature: System Requirements
+content_type: reference
+audience: enterprise-admin
+plan_required: Enterprise
+os_support: [server-linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: self-hosted
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [system-requirements, self-hosted, docker, ports, storage]
 taxonomy:
     category: gitkraken-desktop
 ---

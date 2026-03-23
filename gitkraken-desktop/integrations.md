@@ -1,6 +1,19 @@
 ---
 title: GitKraken Desktop Integrations | Connect Git & Issue Trackers
 description: Learn how to integrate GitKraken Desktop with GitHub, GitLab, Bitbucket, Jira, Trello, and other tools to streamline repo access and issue tracking.
+product: GitKraken Desktop
+feature: Integrations
+content_type: overview
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, Bitbucket, Bitbucket Data Center, Azure DevOps, Jira Cloud, Jira Data Center, Trello]
+integrations: [GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, Bitbucket, Bitbucket Data Center, Azure DevOps, Jira Cloud, Jira Data Center, Trello]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [integrations, git-hosting, issue-trackers, setup]
 taxonomy:
     category: gitkraken-desktop
 ---

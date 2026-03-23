@@ -1,6 +1,19 @@
 ---
 title: GitKraken Desktop & Jira Data Center Issues Integration
 description: Learn how to connect Jira Data Center with GitKraken Desktop. Use Personal Access Tokens to manage, preview, create, and sync Jira issues from within your Git workflow.
+product: GitKraken Desktop
+feature: Jira Data Center Integration
+content_type: how-to
+audience: developer
+plan_required: Advanced
+os_support: [Windows, macOS, Linux]
+git_hosts: [Jira Data Center]
+integrations: [Jira Data Center]
+hosted_variant: self-hosted
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [jira-data-center, issues, pat, self-hosted, jql]
 taxonomy:
     category: gitkraken-desktop
 ---

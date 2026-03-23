@@ -1,6 +1,19 @@
 ---
 title: GitKraken Desktop FAQ | Common Questions & Troubleshooting
 description: Get answers to frequently asked questions about GitKraken Desktop. Learn about features, integrations, installations, SSH issues, and troubleshooting steps.
+product: GitKraken Desktop
+feature: FAQ
+content_type: faq
+audience: all
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps, generic]
+integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [faq, troubleshooting, ssh, plans, os-support]
 
 taxonomy:
     category: gitkraken-desktop

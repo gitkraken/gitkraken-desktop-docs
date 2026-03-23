@@ -1,6 +1,19 @@
 ---
 title: GitKraken Desktop + Git Integration for Jira
 description: Connect GitKraken Desktop with Git Integration for Jira to navigate commits and diffs directly from Jira issues, and open GitKraken from Jira for deeper Git context.
+product: Git Integration for Jira
+feature: GitKraken Desktop Integration
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [Jira Cloud]
+integrations: [Jira Cloud, Git Integration for Jira]
+hosted_variant: cloud
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [jira, integration, commits, diffs, navigation]
 taxonomy:
     category: gitkraken-desktop
 ---

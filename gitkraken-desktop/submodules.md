@@ -1,6 +1,19 @@
 ---
 title: Manage Git Submodules in GitKraken Desktop
 description: Learn how to add, update, and manage Git submodules in GitKraken Desktop, including how to track commits and enable automatic updates.
+product: GitKraken Desktop
+feature: Submodules
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [submodules, git, update, nested-repos, repositories]
 taxonomy:
     category: gitkraken-desktop
 ---

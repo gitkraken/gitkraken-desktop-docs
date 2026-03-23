@@ -1,6 +1,19 @@
 ---
 title: GitKraken AI Features Overview
 description: Use GitKraken AI to generate commit messages, PR descriptions, and explanations of code changes. Customize your AI provider and prompts to fit your workflow.
+product: GitKraken AI
+feature: GitKraken AI
+content_type: overview
+audience: developer
+plan_required: Pro
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
+integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
+hosted_variant: both
+status: preview
+last_verified: 2026-03
+llms_include: true
+tags: [ai, commit-messages, explain, pull-requests, providers]
 taxonomy:
     category: gitkraken-desktop
 ---

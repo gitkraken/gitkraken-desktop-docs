@@ -1,10 +1,21 @@
 ---
-
 title: GitKraken Boards
 description: Integrate GitKraken Desktop with your GitKraken Boards for easy task tracking.
+product: GitKraken Desktop
+feature: GitKraken Boards
+content_type: legacy
+audience: all
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: both
+status: sunset
+last_verified: 2026-03
+llms_include: false
+tags: [boards, legacy, sunset, toolbar]
 taxonomy:
     category: gitkraken-desktop
-
 ---
 
 <kbd>Last updated: March 2026</kbd>

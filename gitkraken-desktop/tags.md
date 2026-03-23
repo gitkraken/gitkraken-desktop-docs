@@ -1,6 +1,19 @@
 ---
 title: Manage Git Tags in GitKraken Desktop
 description: Learn how to create, annotate, move, and share Git tags in GitKraken Desktop to mark releases and key commits.
+product: GitKraken Desktop
+feature: Tags
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [tags, releases, annotate, git, versions]
 taxonomy:
     category: gitkraken-desktop
 ---

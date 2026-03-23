@@ -1,6 +1,19 @@
 ---
 title: GitLab Self-Managed Integration with GitKraken Desktop
 description: Connect GitKraken Desktop with your GitLab Self-Managed server to manage repositories, SSH keys, and pull requests using personal access tokens.
+product: GitKraken Desktop
+feature: GitLab Self-Managed Integration
+content_type: how-to
+audience: developer
+plan_required: Enterprise
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitLab Self-Managed]
+integrations: [GitLab Self-Managed]
+hosted_variant: self-hosted
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [gitlab-self-managed, self-hosted, pat, ssh, pull-requests]
 taxonomy:
     category: gitkraken-desktop
 ---

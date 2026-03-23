@@ -1,6 +1,19 @@
 ---
 title: Team View in GitKraken Desktop
 description: Learn how to use Team View in GitKraken Desktop to see branch activity, detect conflicts, and manage team visibility settings.
+product: GitKraken Desktop
+feature: Team View
+content_type: how-to
+audience: team-lead
+plan_required: Advanced
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [team-view, collaboration, conflicts, activity, teams]
 taxonomy:
     category: gitkraken-desktop
 ---

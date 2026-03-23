@@ -1,6 +1,19 @@
 ---
 title: Fork GitHub Repositories from GitKraken Desktop
 description: Learn how to fork public or private GitHub repositories directly from GitKraken Desktop and manage them as remotes.
+product: GitKraken Desktop
+feature: Fork
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub]
+integrations: [GitHub]
+hosted_variant: cloud
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [fork, github, remotes, repositories, integration]
 taxonomy:
     category: gitkraken-desktop
 ---

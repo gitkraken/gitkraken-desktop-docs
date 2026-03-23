@@ -1,6 +1,19 @@
 ---
 title: GitKraken Desktop Documentation & Support | Master Git with GitKraken
 description: Learn Git with GitKraken Desktop. Explore tutorials, installation guides, Git basics, integrations, release notes, FAQs, and more from the GitKraken Help Center.
+product: GitKraken Desktop
+feature: Help Center Home
+content_type: home
+audience: all
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [home, docs, help-center, getting-started]
 taxonomy:
     category: gitkraken-desktop
 ---

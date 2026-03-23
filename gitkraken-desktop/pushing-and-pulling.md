@@ -1,6 +1,19 @@
 ---
 title: Push, Pull, and Fetch in GitKraken Desktop
 description: Learn how to push, pull, and fetch changes with GitKraken Desktop. Understand upstream branches, default pull behavior, and drag-and-drop actions.
+product: GitKraken Desktop
+feature: Push Pull Fetch
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [push, pull, fetch, upstream, remotes]
 taxonomy:
     category: gitkraken-desktop
 ---

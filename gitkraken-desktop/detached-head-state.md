@@ -1,6 +1,19 @@
 ---
 title: Detached HEAD in GitKraken Desktop
 description: Learn how to safely enter, work in, and exit detached HEAD state in GitKraken Desktop. Includes recovery tips and commit preservation.
+product: GitKraken Desktop
+feature: Detached HEAD
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [detached-head, recovery, commits, checkout, git]
 taxonomy:
     category: gitkraken-desktop
 ---

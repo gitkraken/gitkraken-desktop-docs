@@ -1,6 +1,19 @@
 ---
 title: GitKraken Desktop Teams | Manage Users, Roles & Collaboration
 description: Learn how to use GitKraken Desktop Teams to organize users, manage roles, and collaborate with features like Team View, shared Workspaces, and Cloud Patches.
+product: GitKraken Desktop
+feature: Teams
+content_type: how-to
+audience: team-lead
+plan_required: Pro
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [teams, collaboration, roles, workspaces, cloud-patches]
 taxonomy:
     category: gitkraken-desktop
 ---

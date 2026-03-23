@@ -1,6 +1,19 @@
 ---
 title: Add, Delete, and Filter Files in GitKraken Desktop
 description: Learn how to create, delete, and manage files and folders in GitKraken Desktop using the Command Palette, context menu, and file filter. This page covers file and folder operations only — for adding or removing remotes, see the Remotes documentation.
+product: GitKraken Desktop
+feature: File Management
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [files, folders, create, delete, filter]
 taxonomy:
     category: gitkraken-desktop
 ---

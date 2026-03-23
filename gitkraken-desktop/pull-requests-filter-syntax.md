@@ -1,6 +1,19 @@
 ---
 title: Pull Request Filter Syntax in GitKraken Desktop
 description: Use advanced filter syntax in GitKraken Desktop to find pull requests by title, author, label, branch, CI status, and more across supported integrations.
+product: GitKraken Desktop
+feature: Pull Request Filter Syntax
+content_type: reference
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
+integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [pull-requests, filters, syntax, search, ci]
 taxonomy:
     category: gitkraken-desktop
 ---

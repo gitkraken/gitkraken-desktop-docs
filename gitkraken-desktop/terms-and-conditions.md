@@ -1,10 +1,21 @@
 ---
-
 title: GitKraken Desktop Support Terms and Conditions
 description: Learn about GitKraken Desktop Support terms and conditions
+product: GitKraken Desktop
+feature: Support Terms and Conditions
+content_type: policy
+audience: buyer
+plan_required: all
+os_support: [n/a]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: false
+tags: [support, policy, sla, support-hours, end-of-life]
 taxonomy:
     category: gitkraken-desktop
-
 ---
 
 

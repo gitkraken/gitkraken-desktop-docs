@@ -1,6 +1,19 @@
 ---
 title: GitKraken Desktop + GitLab Self-Managed Issues Integration
 description: Connect GitKraken with GitLab Self-Managed to preview, manage, and filter issues directly from your Git workflow.
+product: GitKraken Desktop
+feature: GitLab Self-Managed Issues Integration
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [GitLab Self-Managed]
+integrations: [GitLab Self-Managed]
+hosted_variant: self-hosted
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [gitlab-self-managed, issues, self-hosted, filters, branching]
 taxonomy:
     category: gitkraken-desktop
 ---

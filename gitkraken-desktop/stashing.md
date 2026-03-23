@@ -1,6 +1,19 @@
 ---
 title: How to Stash Changes in GitKraken Desktop
 description: Save and manage your uncommitted changes with stashing in GitKraken Desktop. Learn to stash, pop, name, edit, and apply partial stashes using the GUI.
+product: GitKraken Desktop
+feature: Stashing
+content_type: how-to
+audience: developer
+plan_required: all
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-03
+llms_include: true
+tags: [stash, pop, apply, work-in-progress, partial-stash]
 taxonomy:
     category: gitkraken-desktop
 ---
