@@ -6,7 +6,7 @@ taxonomy:
 ---
 <kbd>Last updated: March 2026</kbd>
 
-GitKraken allows you to create an account and authenticate with GitHub, making it easier to find and manage GitHub repositories within the application.
+Use this page to connect GitKraken Desktop to GitHub for sign-in, repository access, SSH setup, pull request work, and account management. It covers GitHub.com workflows inside GitKraken Desktop, highlights plan-related limits such as multiple profiles and Community plan restrictions, and points to troubleshooting steps when authentication or repo discovery fails.
 
 ***
 
@@ -52,7 +52,7 @@ To use multiple GitHub accounts, create separate [profiles](/start-here/profiles
 
 ***
 
-## Sign in with GitHub
+## How to sign in with GitHub
 
 To sign in to GitKraken using your GitHub account:
 
@@ -69,7 +69,7 @@ This connects your GitHub account to GitKraken automatically.
 
 ***
 
-## GitHub Authentication
+## How to connect GitKraken Desktop to GitHub
 
 To connect your GitHub account manually:
 
@@ -102,7 +102,7 @@ Alternatively, you can connect by manually pasting an OAuth token:
     <figcaption style="text-align:center;color:#888">Manual OAuth token entry</figcaption>
 </figure>
 
-### Generating an SSH Key for GitHub
+### How to generate an SSH key for GitHub
 
 <div class='callout callout'>
     <p>Note 📝 GitKraken uses your SSH key defined in <kbd><i>Preferences <i class='fa fa-caret-right'></i> SSH</i></kbd> unless a GitHub-specific SSH key or your local SSH Agent is configured.</p>
@@ -125,7 +125,7 @@ You may also:
 
 
 ***
-## OAuth Integration with GitHub
+## What GitHub OAuth enables in GitKraken Desktop
 
 GitKraken's OAuth integration enhances how you interact with your repositories:
 
@@ -143,7 +143,7 @@ GitKraken's OAuth integration enhances how you interact with your repositories:
     <figcaption style="text-align:center;color:#888">Fork list when adding a GitHub remote</figcaption>
 </figure>
 
-### Pull Requests
+### How to create pull requests from GitKraken Desktop
 
 Create and manage [Pull Requests](/working-with-repositories/pull-requests/#assignee-labels-and-reviewers) directly in GitKraken. You can:
 
@@ -157,7 +157,7 @@ Create and manage [Pull Requests](/working-with-repositories/pull-requests/#assi
 </figure>
 
 
-### GitHub Pull Request View
+### How to use GitHub Pull Request View
 
 <figure>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/MZIPpyQDQ_U?rel=0&vq=hd1080' frameborder='0' allowfullscreen style="display: block; margin: 0 auto;"></iframe>
@@ -204,7 +204,7 @@ To review the files affected by a pull request, click the <kbd>Review Code and S
     <p>Note: While you can view and suggest changes, full code review and commenting features are not yet available within GitKraken Desktop.</p>
 </div>
 
-### Review Code and Suggest Changes
+### How to review code and suggest changes
 
 In GitKraken Desktop, the **Review Code and Suggest Changes** feature lets you propose modifications across the entire project—not just to lines that were changed. This is useful when reviewing a Pull Request:
 
@@ -217,7 +217,7 @@ In GitKraken Desktop, the **Review Code and Suggest Changes** feature lets you p
     <img src='/wp-content/uploads/gkc-pr-suggest-code-changes.gif' class="help-center-img img-bordered" style="max-width: 75%;"><figcaption style="text-align:center;color:#888">Suggesting code changes in a pull request</figcaption>
 </figure>
 
-### Accept or Reject Code Suggestions
+### How to accept or reject code suggestions
 
 In the Pull Request panel, suggestions from teammates are labeled with <em class='context-menu'>Code Suggestions</em>.
 
@@ -233,7 +233,7 @@ Clicking a suggestion opens the diff view, where you can choose to apply or reje
     <figcaption style="text-align:center;color:#888">Applying code suggestions</figcaption>
 </figure>
 
-### Branch Checkout, Build Status, and Adding Remotes
+### How to check out branches, review build status, and add remotes
 
 - **Double-click a branch name** in the PR view to check it out and view its graph.
 - **Click the build status** to open the related URL in your browser.
@@ -245,7 +245,7 @@ Clicking a suggestion opens the diff view, where you can choose to apply or reje
 
 If the remote is not already added, GitKraken prompts you to add it for local review.
 
-### Merging Pull Requests
+### How to merge pull requests
 
 To merge a pull request:
 
@@ -264,7 +264,7 @@ To merge a pull request:
   <p>Not seeing updates in the pull request view? Try refreshing GitKraken Desktop.</p>
 </div>
 
-### Troubleshooting: Missing Repos or Remotes
+### How to fix missing repositories or remotes
 
 If remotes or repositories are missing in the Add Remote or Clone menus:
 
@@ -274,9 +274,8 @@ If remotes or repositories are missing in the Add Remote or Clone menus:
 4. Learn more in [Third-party apps list](https://help.github.com/articles/about-third-party-application-restrictions/).
 
 
-## Connecting to Multiple GitHub Accounts
+## How to connect multiple GitHub accounts
 
 GitKraken connects to one GitHub account at a time. However, if you're using the Pro version of GitKraken, you can take advantage of <a href="/start-here/profiles">multiple profiles</a>.
 
 Each profile can be associated with a different GitHub account, allowing you to switch between accounts without needing to disconnect and reconnect each time.
-

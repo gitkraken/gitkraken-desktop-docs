@@ -7,7 +7,7 @@ taxonomy:
 ---
 <kbd>Last updated: March 2026</kbd>
 
-The answers to your most frequently asked questions.
+This FAQ answers common GitKraken Desktop questions about supported platforms, account and plan limits, authentication, remote access, and troubleshooting. Use it when you need a quick answer or constraint check before opening a longer feature guide, especially for Linux support, SSH behavior, proxy issues, or subscription-related questions.
 
 <div class='faq container'>
   <section class='pts pbm'>
@@ -23,7 +23,7 @@ The answers to your most frequently asked questions.
 
 ---
 
-## Features and Interface
+## Common feature and interface questions
 
 ### Does GitKraken support TFS, Visual Studio Team Services, or Azure DevOps?
 Yes. GitKraken integrates with [Azure DevOps](/integrations/azure-devops/). For TFS, clone the repository manually using <kbd>File > Clone Repo</kbd> and provide the HTTPS URL. On Mac or Linux, enable _Basic Authentication_ in IIS for TFS. Consider using a Personal Access Token (PAT) if password authentication fails.
@@ -64,7 +64,7 @@ While there’s no sign-out button, you can:
 
 ---
 
-## Technical Issues
+## Common technical troubleshooting questions
 
 ### Why am I getting a repo compatibility error? 
 Try closing other tools like IDEs, then relaunch GitKraken. Use `git status` to check for uncommitted changes. Try switching branches or cloning to a new directory.

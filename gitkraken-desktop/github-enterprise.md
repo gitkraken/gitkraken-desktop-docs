@@ -4,12 +4,12 @@ description: Connect GitKraken Desktop with your GitHub Enterprise Server to man
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken allows you to connect to GitHub Enterprise Server to streamline development workflows. Integration enables quick repository access, authentication, and pull request management.
+This page explains how to connect GitKraken Desktop to GitHub Enterprise Server so you can authenticate, browse repositories, manage remotes, upload SSH keys, and work with pull requests from one interface. Use it when setting up a self-hosted GitHub Enterprise Server connection or switching between enterprise accounts with profiles.
 
 <div class='callout callout--warning'>
-    <p><strong>Note:</strong> All self-hosted server integrations, including GitHub Enterprise, require an <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">Advanced subscription</a> tier or higher.</p>
+    <p><strong>Note:</strong> All self-hosted server integrations, including GitHub Enterprise Server, require a paid plan that supports self-hosted services.</p>
 </div>
 
 ***
@@ -29,7 +29,7 @@ To configure SSH access after connecting:
 
 Once connected, you can browse repositories when cloning, add remotes, and create and view pull requests from within GitKraken Desktop. GitKraken Desktop supports one GitHub Enterprise Server account per profile. Use multiple [profiles](/start-here/profiles) to work with more than one account.
 
-### Benefits
+### What you can do after connecting
 
 - Create new repositories on GitHub Enterprise Server with options to add a .gitignore and license file.
 - Automatically generate and upload an SSH key to GitHub Enterprise Server.
@@ -41,7 +41,7 @@ Once connected, you can browse repositories when cloning, add remotes, and creat
 
 ***
 
-## Connecting GitHub Enterprise Server
+## How to connect GitHub Enterprise Server
 
 <div class='callout callout'>
     <p><strong>Note:</strong> GitKraken supports any GitHub Enterprise Server version released within the past year.</p>
@@ -75,7 +75,7 @@ To authenticate with GitHub Enterprise Server:
   <figcaption style="color:#888; text-align:center">Paste token into GitKraken and connect</figcaption>
 </figure>
 
-## Generating an SSH Key for GitHub Enterprise Server
+## How to generate or upload an SSH key for GitHub Enterprise Server
 
 <div class='callout callout'>
     <p><strong>Note:</strong> GitKraken uses the SSH key set in <kbd>Preferences > SSH</kbd> unless you configure a GitHub-specific key or enable your system’s SSH Agent.</p>
@@ -96,6 +96,6 @@ You can:
 
 ***
 
-## Connecting to Multiple GitHub Enterprise Accounts
+## How to use multiple GitHub Enterprise Server accounts
 
 GitKraken supports one GitHub Enterprise Server account per profile. Use [multiple profiles](/start-here/profiles) to switch between accounts.

@@ -6,7 +6,7 @@ taxonomy:
 ---
 <kbd>Last updated: March 2026</kbd>
 
-Learn how to branch, merge, and rebase in GitKraken Desktop.
+Use this page to create, rename, delete, merge, and rebase branches in GitKraken Desktop. It also covers merge conflict resolution, external merge tools, and the difference between merge-based and rebase-based workflows so you can choose the right history strategy for your branch.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8-qRKyy-v7I?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
@@ -38,7 +38,7 @@ To delete a branch, first check out a different branch, then right-click the tar
 
 ***
 
-## Branches
+## How to create and manage branches
 
 Create a new branch when working on a feature or fix. Right-click any commit to open the context menu and create a branch.
 
@@ -49,7 +49,7 @@ Create a new branch when working on a feature or fix. Right-click any commit to 
 
 A branch is a pointer to a specific commit, allowing you to isolate changes from the main codebase. Consider adopting [GitFlow](/git-workflows-and-extensions/git-flow) for structured branching strategies.
 
-### Checkout a Branch
+### How to check out a branch
 
 Branch checkout updates files in the working directory to reflect the version defined by that branch.
 
@@ -66,7 +66,7 @@ If you’re on the wrong branch, [stash](/gitkraken-desktop/stashing) your chang
 
 If you only need a subset of files checked out, see [Sparse Checkout](/gitkraken-desktop/open-clone-init/#sparse-checkout).
 
-### Rename a Branch
+### How to rename a branch
 
 Right-click the branch label or use the Left Panel to rename the current branch.
 
@@ -82,7 +82,7 @@ You can also rename using the Command Palette (Cmd+P / Ctrl+P):
   <figcaption style="text-align:center; color:#888">Search for "Rename Branch" in Command Palette</figcaption>
 </figure>
 
-### Delete a Branch
+### How to delete a branch
 
 To delete a branch:
 1. Switch to another branch
@@ -101,7 +101,7 @@ Use multi-select in the Left Panel to delete several branches at once:
   <p><strong>Caution:</strong> Deleting a branch is permanent.</p>
 </div>
 
-### Pin branch to the left
+### How to pin a branch to the left
 
 Pinning a branch fixes it to the left side of the Commit Graph so that its direct commit history always appears on the left. This is particularly useful for long-lived branches like `main` or a production branch, where you want a stable reference point to see how other branches merge into it.
 
@@ -116,7 +116,7 @@ To pin a branch:
 
 To unpin a branch, right-click the branch label again and select **Unpin from left**.
 
-### Smart Branches
+### When to use Smart Branch Visibility
 
 Smart Branch Visibility reduces visual noise in the Commit Graph by displaying only the branches most relevant to your current work. When enabled, the graph shows only your checked-out branch, its target branch, and their respective upstream branches — hiding all others.
 
@@ -134,11 +134,15 @@ To enable Smart Branch Visibility:
 Smart Branch Visibility activates on your currently checked-out branch. To disable it, follow the same steps and deselect **Smart Branch Visibility**.
 ***
 
-## Merging
+## How to merge branches
 
 Merging combines changes from one branch into another. To merge:
 - Drag and drop one branch onto your target branch
 - Or right-click the source branch and choose **Merge**
+
+<div class='callout callout--basic'>
+  <p><strong>Use merge when:</strong> you want to preserve the full branch history. <strong>Use rebase when:</strong> you want to move commits onto a new base and keep the history more linear before sharing or merging.</p>
+</div>
 
 <figure>
   <img src="/wp-content/uploads/merge-right@2x.png" class="help-center-img img-bordered" alt="Context menu showing option to merge dev branch into production branch in GitKraken Desktop">
@@ -151,7 +155,7 @@ If no conflicts exist, changes will be merged automatically.
   <p>The in-app merge conflict output editor is available with a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center" target="_blank">Paid</a> license.</p>
 </div>
 
-### Squash merges
+### When to use squash merges
 
 When you enable the **Squash** setting, GitKraken Desktop stages all changes from the source branch locally without creating a merge commit automatically. You then commit the squashed result manually, which produces a single, clean commit on the target branch.
 
@@ -172,7 +176,7 @@ After merging with squash enabled, review the staged changes in the Commit Panel
   <p><strong>Note:</strong> With squash enabled, GitKraken Desktop stages all changes but does not create the merge commit for you. You must commit manually to complete the merge.</p>
 </div>
 
-### Merge Conflict Editor
+### How to resolve conflicts in the Merge Conflict Editor
 
 When conflicts occur, the Commit Panel shows the conflicted files. Click a file to open the Merge Tool.
 
@@ -209,7 +213,7 @@ After resolving, save and commit the output.
   <figcaption style="text-align:center; color:#888">Animated merge resolution process</figcaption>
 </figure>
 
-### Use an External Merge Tool
+### How to use an external merge tool
 
 Set your preferred merge tool under <em>Preferences > General</em>.
 
@@ -241,7 +245,7 @@ Unsupported tools include:
 
 For compatibility details, visit [Git Config merge tools](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_external_merge_tools).
 
-### Resolve with Take Current/Incoming
+### How to resolve conflicts with Take Current or Take Incoming
 
 Right-click a conflicted file and select:
 - `Take current (branch)` – Use your current branch’s changes
@@ -254,7 +258,7 @@ Right-click a conflicted file and select:
 
 ***
 
-## Conflict Prevention
+## How Conflict Prevention works
 
 GitKraken Desktop’s **Conflict Prevention** helps identify potential issues before a merge.
 
@@ -266,7 +270,7 @@ GitKraken Desktop’s **Conflict Prevention** helps identify potential issues be
 
 ***
 
-## Rebasing
+## How to rebase commits
 
 Rebasing moves commits from one branch onto another for a cleaner history.
 
@@ -290,7 +294,7 @@ To rebase:
 
 Rebasing rewrites history but results in a more linear and readable commit tree.
 
-### Rebase N commits onto another branch
+### How to rebase a range of commits onto another branch
 
 You can rebase a specific range of commits onto another branch without performing a full interactive rebase. This is useful when you want to move only a subset of commits from your current branch onto a target branch.
 

@@ -4,9 +4,9 @@ description: Learn how to push, pull, and fetch changes with GitKraken Desktop. 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Push, pull, and fetch operations are essential for synchronizing local work with remote repositories in GitKraken Desktop.
+Use this page to push, pull, fetch, add remotes, and set upstream branches in GitKraken Desktop when you need to synchronize local branches with a remote. It also explains the available pull behaviors, drag-and-drop shortcuts, and when GitKraken prompts you for remote creation or force-push decisions.
 
 ***
 
@@ -33,7 +33,7 @@ Synchronize your work with remote repositories using push, pull, and fetch in Gi
 
 ***
 
-## Add a Remote
+## How to add a remote
 
 To add a remote:
 1. Hover over <em class='context-menu'><img src='/wp-content/uploads/gk-remote-icon.svg' style='height:1em;'> Remote</em> in the Left Panel.
@@ -62,7 +62,7 @@ Remote icons in the Commit Graph:
 
 ***
 
-## Push Changes <img src='/wp-content/uploads/gk-push-icon.svg' style='height:1em;'>
+## How to push changes <img src='/wp-content/uploads/gk-push-icon.svg' style='height:1em;'>
 
 To push local commits to a remote branch:
 - Click <kbd>Push</kbd> in the main toolbar
@@ -81,7 +81,7 @@ If a remote branch doesn’t exist yet, GitKraken will prompt you to name and cr
   <p><strong>Caution:</strong> If fast-forwarding fails, GitKraken may offer a <kbd>Force Push</kbd> option. Use with care.</p>
 </div>
 
-### Drag and Drop Push
+### How drag-and-drop push works
 Drag a branch onto a remote branch (in the graph or Left Panel) to trigger a push.
 
 <figure>
@@ -93,7 +93,7 @@ Drag a branch onto a remote branch (in the graph or Left Panel) to trigger a pus
 
 ***
 
-## Fetch
+## How fetch works
 
 Fetching retrieves updates from remotes but doesn’t change your working directory.
 
@@ -104,7 +104,7 @@ Fetching retrieves updates from remotes but doesn’t change your working direct
   <figcaption style="text-align:center; color:#888">Fetch from the pull dropdown menu</figcaption>
 </figure>
 
-### Fetch All
+### What Fetch All does
 Shows how far ahead/behind your branches are compared to the remote.
 
 <figure>
@@ -118,11 +118,11 @@ Fetching runs automatically every minute. Adjust the interval in <kbd>Preference
 
 ***
 
-## Pull Options <img src='/wp-content/uploads/gk-pull-icon.svg' style='height:1em;'>
+## How pull options work <img src='/wp-content/uploads/gk-pull-icon.svg' style='height:1em;'>
 
 Pulling performs a fetch and then updates your local branch.
 
-### Pull (fast-forward if possible)
+### How pull with fast-forward if possible works
 Fast-forwards your branch if there are no conflicting commits; otherwise, merges.
 
 <figure>
@@ -132,10 +132,10 @@ Fast-forwards your branch if there are no conflicting commits; otherwise, merges
   <figcaption style="text-align:center; color:#888">Example: Merge fallback when fast-forward not possible</figcaption>
 </figure>
 
-### Pull (fast-forward only)
+### How pull with fast-forward only works
 Attempts to fast-forward. If not possible, no action is taken.
 
-### Pull (rebase)
+### How pull with rebase works
 Temporarily stashes your commits, pulls from remote, and replays your changes on top.
 
 <figure>
@@ -145,7 +145,7 @@ Temporarily stashes your commits, pulls from remote, and replays your changes on
   <figcaption style="text-align:center; color:#888">Rebase keeps commit history linear</figcaption>
 </figure>
 
-### Set Pull Behavior
+### How to set the default pull behavior
 Select a default pull method via the dropdown menu.
 
 <figure>
@@ -157,7 +157,7 @@ Select a default pull method via the dropdown menu.
 
 ***
 
-## Set Upstream Branch
+## How to set an upstream branch
 
 The upstream defines the remote branch a local branch tracks.
 

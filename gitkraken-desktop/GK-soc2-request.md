@@ -6,7 +6,9 @@ taxonomy:
     category: general
 
 ---
-Please fill out the following form to start the SOC2 request process. You will receive an email with a copy of our NDA that you can sign and return to us. Once we have received the signed NDA, we will provide you with a copy of our SOC2 report.
+<kbd>Last updated: March 2026</kbd>
+
+Use this form to request GitKraken’s SOC 2 report. After you submit the request, GitKraken will email you an NDA to sign and return before the report is shared. This request process is intended for eligible Business and Enterprise customers that need security documentation for vendor review or procurement.
 
 <div class="bbb-callout bbb--info">
     <div class="irow">

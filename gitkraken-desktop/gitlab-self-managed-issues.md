@@ -5,9 +5,9 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop supports integration with GitLab Self-Managed Issues, helping teams track work and manage issues alongside their repositories.
+Use this page to connect GitKraken Desktop to GitLab Self-Managed Issues so you can preview, manage, filter, and branch from issues alongside your repository work. This integration shares the GitLab Self-Managed connection, requires GitLab Self-Managed 13.1 or newer, and is view-only for Community users.
 
 <div class='callout callout--basic'>
     <p>The GitLab Self-Managed Issues integration is view-only for Community users. To unlock all features, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken license</a>.</p>
@@ -23,7 +23,19 @@ GitKraken Desktop supports integration with GitLab Self-Managed Issues, helping 
 
 ---
 
-## Connect GitLab Self-Managed Integration
+## Quick Start
+
+Connect GitKraken Desktop to GitLab Self-Managed Issues to preview and manage issues from the Left Panel.
+
+1. Connect your GitLab Self-Managed instance from <kbd>Preferences > Integrations</kbd> by following the GitLab Self-Managed authentication flow.
+2. Open the **ISSUES** section in the Left Panel to load issues from the connected instance.
+3. Preview, filter, and open issue details directly in GitKraken Desktop.
+
+To edit issues, create issue-based branches, or open issues in GitLab Self-Managed, use the same workflows documented for [GitLab Issues](/integrations/gitlab-issues/).
+
+---
+
+## How to connect the GitLab Self-Managed Issues integration
 
 The GitLab Self-Managed and GitLab Self-Managed Issues integrations share the same connection.
 
@@ -33,7 +45,7 @@ Follow these [GitLab Self-Managed authentication steps](/integrations/gitlab-sel
 
 ---
 
-## Features
+## What the GitLab Self-Managed Issues integration supports
 
 Once connected, the GitLab Self-Managed Issues integration provides the same functionality as the GitLab Issues integration:
 

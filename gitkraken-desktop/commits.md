@@ -6,7 +6,7 @@ taxonomy:
 ---
 <kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop simplifies the Git commit process by helping you stage, commit, and push your work from a visual interface.
+Use this page to create commits, stage files, add co-authors, work with commit templates, amend recent history, and undo or revert changes in GitKraken Desktop. Basic local commit workflows are available in the app, while actions that rewrite pushed history require extra care because they may require a force push.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8a6fYPkBDbY?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
@@ -34,7 +34,7 @@ To undo a commit, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Z</kbd> or click t
 
 <a id="making-a-commit"></a>
 
-## Making a commit
+## How to create a commit
 
 To create a commit, select your _Work in Progress_ (WIP) node to view file changes in the Commit Panel.
 
@@ -53,7 +53,7 @@ Type your commit message, then click **Commit**, or use the shortcut:
 
 <a id="commit-and-push"></a>
 
-### Commit and push
+### How to commit and push in one step
 
 To commit and immediately push changes, stage files and enter a message. Then select the **Commit and Push** option.
 
@@ -68,7 +68,7 @@ The graph updates with your commit. If needed, undo it with:
 
 <a id="committing-with-co-authors"></a>
 
-### Committing with Co-Authors
+### How to add co-authors to a commit
 
 To credit co-authors in a commit, add lines to the commit message using the following format:
 
@@ -89,7 +89,7 @@ Co-authors appear in the Commit Panel history:
     <figcaption style="text-align: center; color: #888;">Co-authors are listed with the primary author in the commit history.</figcaption>
 </figure>
 
-### Bypass Git hooks
+### How to bypass Git hooks for one commit
 
 To skip Git hooks for a specific commit, enable the **Skip Git hooks** checkbox in the Commit Panel.
 
@@ -106,11 +106,11 @@ To skip Git hooks for a specific commit, enable the **Skip Git hooks** checkbox 
 
 <a id="commit-templates"></a>
 
-## Commit Templates
+## How commit templates work
 
 <a id="reading-the-commit-template"></a>
 
-### Reading the Commit Template
+### How GitKraken Desktop chooses a commit template
 
 When you open a repository, GitKraken Desktop checks for a commit template in this order:
 
@@ -120,7 +120,7 @@ When you open a repository, GitKraken Desktop checks for a commit template in th
 
 <a id="creating-and-updating-the-commit-template"></a>
 
-### Creating and Updating the Commit Template
+### How to create or update a commit template
 
 To create or update a commit template, navigate to <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> Commit</em>.
 
@@ -138,7 +138,7 @@ This setup lets you maintain a local template without altering your global Git c
 - **Apply this template to commit messages**: Automatically inserts the template in the message editor.
 - **Remove comments from commit messages**: Omits lines starting with `#` when applying the template.
 
-### Configuring Commit Templates
+### How to configure commit templates
 
 There are three ways to configure commit templates:
 
@@ -160,9 +160,13 @@ There are three ways to configure commit templates:
 
 <a id="amending-commits"></a>
 
-## Amending Commits
+## How to amend the most recent commit
 
 GitKraken Desktop lets you modify the last commit by updating the message, adding new changes, or both.
+
+<div class='callout callout--warning'>
+    <p><strong>Warning:</strong> If you have already pushed the commit, amending it changes history and requires a force push to update the remote branch.</p>
+</div>
 
 To include new changes:
 1. Modify files in your working directory.
@@ -200,7 +204,7 @@ Use the **Update Message** button to save changes, or **Cancel Amend** to discar
 
 <a id="resetting-commits"></a>
 
-## Resetting Commits
+## How to reset commits
 
 Git uses a pointer called <code>HEAD</code> to track your current commit. Resetting updates <code>HEAD</code> to point to a specific commit in your history. GitKraken Desktop offers three reset types:
 
@@ -219,9 +223,13 @@ You can also drag and drop a branch onto another to initiate a reset, or use the
 
 <a id="reverting-changes"></a>
 
-## Reverting Changes
+## How to undo local changes before pushing
 
 GitKraken Desktop provides an **Undo** button to reverse recent actions that haven’t been pushed.
+
+<div class='callout callout--basic'>
+    <p><strong>Use Undo when:</strong> you want to reverse a recent local action that has not been pushed yet. <strong>Use Revert Commit when:</strong> the commit is already part of shared history and you need a new commit that reverses it safely.</p>
+</div>
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/undo-undo-2025.png' class="help-center-img img-bordered" alt="GitKraken interface showing Undo button highlighted with tooltip 'Undo Commit amend Updates the GitKraken commit documentation to reflect UI'." />
@@ -234,7 +242,7 @@ You can also use the Undo shortcut:
 
 <a id="reverting-commits"></a>
 
-### Reverting Commits
+### How to revert a commit that is already in history
 
 If Undo is not available, you can still reverse changes by creating a **revert commit**.
 
@@ -249,7 +257,7 @@ Right-click any commit node in the graph and choose **Revert Commit**. GitKraken
     <figcaption style="text-align: center; color: #888;">Use the revert option to create a new commit that undoes a previous one.</figcaption>
 </figure>
 
-## Restore files from a commit
+## How to restore files from a commit
 
 GitKraken Desktop lets you restore any file to its state at a specific commit and place it directly into your working directory (WIP). This is useful when you want to retrieve an older version of a file, resurrect a deleted file, or selectively reverse changes without affecting the rest of your working directory.
 

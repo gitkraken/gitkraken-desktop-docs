@@ -5,9 +5,9 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Learn how to edit, save, and manage files using GitKraken Desktop’s built-in editor.
+Use this page to open, edit, save, discard, stage, and preview files in GitKraken Desktop’s built-in editor. It covers the different ways to enter edit mode, what the editor indicators mean, how save-and-stage behaves, and how to review or override file encoding when UTF-8 is not enough.
 
 ***
 
@@ -33,15 +33,15 @@ For `.md` files, click **Preview** in the editor toolbar to toggle a rendered Ma
 
 ***
 
-## Enter Edit Mode Automatically
+## How edit mode starts automatically for new files
 
 If you [create a new file](/working-with-files/adding-and-removing#adding-a-file), GitKraken Desktop opens the file immediately in edit mode so you can begin editing right away.
 
 ***
 
-## Ways to Edit an Existing File
+## How to edit an existing file
 
-### 1. Use the Context Menu
+### How to edit a file from the context menu
 
 Right-click a file (from a previous commit or via **View all files**) and select <kbd>Edit file</kbd>.
 
@@ -50,7 +50,7 @@ Right-click a file (from a previous commit or via **View all files**) and select
     <figcaption style="text-align: center; color: #888;">Right-click any file and select Edit file.</figcaption>
 </figure>
 
-### 2. Use the Command Palette
+### How to edit a file from the Command Palette
 
 1. Press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>P</kbd>
 2. Type `Edit File` and press <kbd>Enter</kbd>
@@ -61,7 +61,7 @@ Right-click a file (from a previous commit or via **View all files**) and select
     <figcaption style="text-align: center; color: #888;">Find and open files using the Command Palette.</figcaption>
 </figure>
 
-### 3. Use the Diff or File View
+### How to edit a file from Diff or File View
 
 Click the <button class='button button--primary button--ui button--nolink'>Edit this file</button> button from a file diff.
 
@@ -76,7 +76,7 @@ Click the <button class='button button--primary button--ui button--nolink'>Edit 
 
 ***
 
-## File Edit Indicators
+## What the file edit indicators mean
 
 The upper-left corner of the file editor shows:
 
@@ -95,7 +95,7 @@ The upper-left corner of the file editor shows:
 
 ***
 
-## Save or Discard Changes
+## How to save or discard changes
 
 - Press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>S</kbd> to save
 - To discard unsaved changes:
@@ -110,7 +110,7 @@ The upper-left corner of the file editor shows:
 
 ***
 
-## Stage Your File Edits
+## How to stage file edits
 
 After editing, click <button class='button button--success button--ui button--nolink'>Stage File</button> to commit your changes. Options include:
 
@@ -124,7 +124,7 @@ After editing, click <button class='button button--success button--ui button--no
 
 ***
 
-## File Encoding
+## How file encoding works
 
 GitKraken Desktop expects most files to use `UTF-8` encoding. To review or adjust encoding:
 
@@ -146,7 +146,7 @@ GitKraken Desktop expects most files to use `UTF-8` encoding. To review or adjus
     <figcaption style="text-align: center; color: #888;">Choose your default encoding from preferences.</figcaption>
 </figure>
 
-## Markdown Preview
+## How Markdown preview works
 
 GitKraken Desktop includes a built-in markdown preview for `.md` files. To access the option, first click to edit a file in the upper left of the file diff.
 
@@ -163,4 +163,3 @@ From here, toggle the preview pane by clicking the <button class='button button-
 </figure>
 
 You can switch between editing and previewing the markdown content.
-

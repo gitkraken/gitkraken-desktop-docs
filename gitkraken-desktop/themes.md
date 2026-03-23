@@ -6,6 +6,8 @@ taxonomy:
 ---
 <kbd>Last updated: March 2026</kbd>
 
+Use this page to change the GitKraken Desktop theme, sync the app with your system theme, and understand the current status of custom theme support. It explains where theme controls live, how built-in themes work, and why custom themes are currently disabled as of version 11.8.0.
+
 <figure>
   <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/_TMprlLc740?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -39,7 +41,7 @@ Custom themes have been disabled as of version 11.8.0 while the UI is being mode
 </div>
 
 ***
-## Built-in Themes
+## How built-in themes work
 
 To change your GitKraken Desktop theme:
 - Go to <i class="fas fa-cog"></i> <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> UI Customization</em>
@@ -50,17 +52,17 @@ To change your GitKraken Desktop theme:
   <figcaption style="text-align:center; color:#888">Switch themes from the Command Palette.</figcaption>
 </figure>
 
-### Sync with System Theme
+### How sync with system theme works
 
 If your OS supports theme switching, GitKraken Desktop can follow your system’s light/dark setting. Enable this from <kbd>Preferences > UI Customization</kbd>.
 
 ***
 
-## Custom Themes
+## How custom themes work
 
 GitKraken Desktop supports user-defined themes. To create a custom theme:
 
-### Locate Theme Files
+### How to locate theme files
 
 Theme files live in:
 ```
@@ -68,7 +70,7 @@ Theme files live in:
 ```
 You can open this folder from <kbd>Preferences > UI Customization > Theme</kbd>. Each `.jsonc-default` file is a template.
 
-### Create Your Custom Theme
+### How to create a custom theme
 
 1. Copy a `.jsonc-default` file you want to base your theme on.
 2. Rename the file (e.g., `MyCustomTheme.jsonc`).
@@ -79,7 +81,7 @@ You can open this folder from <kbd>Preferences > UI Customization > Theme</kbd>.
 
 Your custom theme will appear under <kbd>Preferences > UI Customization > Theme</kbd>.
 
-### Live Theme Editing
+### How live theme editing works
 
 Changes to your theme file take effect immediately—no need to restart GitKraken. If the file contains invalid syntax, GitKraken will revert to the default dark theme.
 
@@ -89,9 +91,9 @@ Changes to your theme file take effect immediately—no need to restart GitKrake
 
 ***
 
-## Supported Functions
+## What functions are supported in theme files
 
-### CSS Functions
+### Supported CSS functions
 GitKraken supports these CSS functions:
 - `calc`
 - `hsl` / `hsla`
@@ -101,7 +103,7 @@ GitKraken supports these CSS functions:
 
 See [CSS functions](https://www.w3schools.com/cssref/css_functions.asp) for reference.
 
-### LESS Functions
+### Supported LESS functions
 Supported LESS functions include:
 - `darken`, `lighten`, `fade`
 - `saturate`, `desaturate`
@@ -111,7 +113,7 @@ See [LESS functions](https://lesscss.org/functions) for full documentation.
 
 ***
 
-## Community Themes 
+## Community themes
 
 Looking for inspiration? Some users share their custom themes online, such as the collection at [jonbunator.github.io/gitkraken-custom-themes](https://jonbunator.github.io/gitkraken-custom-themes). 
 

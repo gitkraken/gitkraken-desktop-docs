@@ -5,9 +5,9 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop makes it easy to integrate with GitLab Issues for seamless issue tracking and repository collaboration.
+Use this page to connect GitKraken Desktop to GitLab Issues so you can preview, create, edit, filter, and branch from issues without leaving your Git workflow. GitLab Issues uses the same GitLab integration connection, and Community users are limited to public repositories.
 
 <div class='callout callout--basic'>
     <p>The GitLab Issues integration is restricted to public repositories for Community users. To unlock all features, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken license</a>.</p>
@@ -35,7 +35,7 @@ To open an issue in GitLab or copy its link, use the ellipsis menu or the extern
 
 ---
 
-## Connect GitLab Integration
+## How to connect the GitLab Issues integration
 
 The GitLab and GitLab Issues integrations share the same connection. Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
@@ -57,7 +57,7 @@ Once authorized, GitKraken will display a success message.
 
 ---
 
-## Preview GitLab Issues
+## How to preview GitLab issues
 
 After connecting, your GitLab issues will appear in the Left Panel. Default filters include _My Issues_ and _All Issues_.
 
@@ -69,7 +69,7 @@ Hover over an issue to preview the title, description, labels, milestones, and a
 
 ---
 
-## View and Edit Issue Details
+## How to view and edit GitLab issue details
 
 Click an issue to view its details.
 
@@ -79,7 +79,7 @@ Edits made here will sync with your GitLab issue tracker.
 
 ---
 
-## Create a New GitLab Issue
+## How to create a new GitLab issue
 
 Click the <code>+</code> icon from the Left Panel to add a new issue.
 
@@ -89,7 +89,7 @@ Required fields are marked with <code>*</code>. The issue will sync automaticall
 
 ---
 
-## Create Filters
+## How to create GitLab issue filters
 
 Use GitLab’s issue syntax to create filters and narrow your view.
 
@@ -99,7 +99,7 @@ Refer to GitLab’s [issue filtering guide](https://docs.gitlab.com/ee/user/sear
 
 ---
 
-## Create Branches from Issues
+## How to create branches from GitLab issues
 
 From the issue detail view, click <strong>Create a branch for this issue</strong>. You can also right-click the issue or use the <kbd><i class="fa fa-ellipsis-v"></i></kbd> menu.
 
@@ -109,7 +109,7 @@ The branch name is auto-filled based on the issue title. These branches show the
 
 ---
 
-## Copy Issue Link or View in GitLab
+## How to copy an issue link or open it in GitLab
 
 Use the <kbd><i class="fa fa-ellipsis-v"></i></kbd> menu or <i class="fa fa-external-link" aria-hidden="true"></i> icon to open the issue in GitLab or copy the link.
 

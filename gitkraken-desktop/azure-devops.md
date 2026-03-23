@@ -4,9 +4,9 @@ description: Connect GitKraken Desktop to Azure DevOps to manage repositories, S
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken lets you connect to Azure DevOps (formerly VSTS), making it easier to find and manage repositories when cloning, working with remotes, or handling pull requests.
+Use this page to connect GitKraken Desktop to Azure DevOps for repository access, pull request work, and SSH setup by using OAuth or a personal access token. The integration requires a Pro subscription or higher, and PAT authentication is the fallback when an Azure DevOps organization blocks third-party OAuth access.
 
 ***
 
@@ -26,7 +26,7 @@ If OAuth is not available (e.g., your organization has disabled third-party acce
 
 After connecting, GitKraken Desktop can browse your Azure DevOps repositories when cloning, display fork options when adding remotes, and show pull request details. To use SSH, go to <kbd>Preferences > Integrations</kbd>, click **Generate SSH key and copy to clipboard**, and add it to your Azure DevOps SSH settings.
 
-### Benefits
+### What the Azure DevOps integration lets you do
 
 - Create new repositories on your Azure DevOps account with optional .gitignore and license files.
 - Automatically generate and copy an SSH key to Azure DevOps.
@@ -41,7 +41,7 @@ After connecting, GitKraken Desktop can browse your Azure DevOps repositories wh
 
 ***
 
-## Azure DevOps Authentication
+## How to authenticate with Azure DevOps
 
 To authenticate with Azure DevOps:
 
@@ -89,7 +89,7 @@ You can also connect using a Personal Access Token (PAT):
   <figcaption style="color:#888; text-align:center">PAT added and connected in GitKraken</figcaption>
 </figure>
 
-## Generating an SSH Key for Azure DevOps
+## How to generate an SSH key for Azure DevOps
 
 GitKraken uses your default SSH configuration from <kbd>Preferences > SSH</kbd> unless you configure a specific key for Azure DevOps or enable your system SSH agent.
 
@@ -105,7 +105,7 @@ Once connected, you can generate a new SSH key:
 
 ***
 
-## OAuth Integration with Azure DevOps
+## What Azure DevOps OAuth enables in GitKraken Desktop
 
 When authenticated, GitKraken enables:
 
@@ -127,13 +127,13 @@ Manual URL entry is still available.
 
 ***
 
-## Connecting to Multiple Azure DevOps Accounts
+## How to connect multiple Azure DevOps accounts
 
 GitKraken supports one Azure DevOps account per profile. With a paid Pro, Teams, or Enterprise plan, use multiple [profiles](/start-here/profiles) to switch between accounts.
 
 ***
 
-## Requirement for Connecting to Azure DevOps Using OAuth
+## How to enable Azure DevOps OAuth for GitKraken Desktop
 
 To connect via OAuth, Azure DevOps must allow third-party applications:
 
@@ -151,9 +151,9 @@ If this setting cannot be enabled, you can connect using a Personal Access Token
 
 ***
 
-## Troubleshooting
+## Azure DevOps troubleshooting
 
-### Azure DevOps Pull Request Form Not Showing in GitKraken
+### How to fix a missing Azure DevOps pull request form
 
 If your Azure DevOps pull request does not appear in GitKraken:
 

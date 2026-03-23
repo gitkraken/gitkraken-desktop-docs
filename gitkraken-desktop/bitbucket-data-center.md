@@ -4,9 +4,9 @@ description: Connect GitKraken Desktop to your Bitbucket Data Center server for 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop allows you to connect to Bitbucket Data Center, so you can find repositories, manage remotes, and create pull requests from a self-hosted environment.
+Use this page to connect GitKraken Desktop to Bitbucket Data Center in a self-hosted environment so you can authenticate with a personal access token, configure SSH, clone repositories, and work with pull requests. This integration requires an Advanced subscription tier or higher.
 
 ***
 
@@ -25,7 +25,7 @@ To configure SSH access after connecting:
 
 Once connected, you can clone repositories directly from your Bitbucket Data Center list, add remotes including forks, and create and view pull requests from within GitKraken Desktop. GitKraken Desktop supports one Bitbucket Data Center account per profile. Use multiple [profiles](/gitkraken-desktop/profiles/) to work with more than one account.
 
-### Benefits
+### What the Bitbucket Data Center integration lets you do
 
 - Create repositories on Bitbucket Data Center with optional .gitignore and license files.
 - Generate and copy an SSH key to use with Bitbucket Data Center.
@@ -40,7 +40,7 @@ Once connected, you can clone repositories directly from your Bitbucket Data Cen
 
 ***
 
-## Connecting to Bitbucket Data Center
+## How to connect Bitbucket Data Center
 
 <div class='callout callout'>
   <p><strong>Note:</strong> GitKraken Desktop supports Bitbucket Data Center versions released within the past year.</p>
@@ -73,7 +73,7 @@ To authenticate:
 
 ***
 
-## Generating SSH Keys for Bitbucket Data Center
+## How to generate SSH keys for Bitbucket Data Center
 
 <div class='callout callout'>
   <p><strong>Note:</strong> GitKraken uses the key in <kbd>Preferences > SSH</kbd> unless you configure a Bitbucket-specific SSH key or use your system SSH Agent.</p>
@@ -105,7 +105,7 @@ To authenticate:
 
 ***
 
-## OAuth Integration with Bitbucket Data Center
+## What Bitbucket Data Center authentication enables in GitKraken Desktop
 
 GitKraken allows you to:
 
@@ -127,10 +127,10 @@ Manual entry of repository URLs is also supported.
 
 ***
 
-## Connecting to Multiple Bitbucket Data Center Accounts
+## How to connect multiple Bitbucket Data Center accounts
 
 GitKraken supports one Bitbucket Data Center account per profile. Use multiple [profiles](/start-here/profiles) with GitKraken Pro to switch between accounts.
 
-## Bitbucket Data Center Pull Request Reviewers
+## How Bitbucket Data Center pull request reviewers work
 
 If your token includes Project Admin and Repository Admin scopes, and you have the correct permissions, GitKraken will display reviewer details for pull requests.

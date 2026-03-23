@@ -4,13 +4,13 @@ description: Minimum requirements for GitKraken Self-Hosted servers
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Self-Hosted is deployed via Docker containers on a small-spec Linux server or virtual machine. Below are the minimum system and software requirements.
+Use this page to confirm the minimum server resources and supported Linux distributions for GitKraken Self-Hosted before deployment. It summarizes the CPU, memory, storage, and Docker-host operating system requirements you need to validate before starting an installation or upgrade.
 
 ---
 
-## Minimum Server Requirements
+## Minimum server requirements
 
 | Resource | Minimum |
 |----------|---------|
@@ -23,7 +23,7 @@ GitKraken Self-Hosted is deployed via Docker containers on a small-spec Linux se
 
 ---
 
-## Supported Linux Distributions
+## Supported Linux distributions
 
 ### CentOS
 To install Docker CE on CentOS, you need:
@@ -44,7 +44,7 @@ To install Docker CE on Ubuntu, use a 64-bit version of one of the following:
 
 ---
 
-## Getting Started
+## How to get started
 
 Interested in deploying GitKraken Self-Hosted?
 

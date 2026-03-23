@@ -5,9 +5,9 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop makes it easy to integrate with Trello to help manage cards and tasks alongside your repository.
+Use this page to connect GitKraken Desktop to Trello so you can preview, create, edit, filter, and branch from cards without leaving your Git workflow. Trello is view-only for Community users, while paid GitKraken subscriptions unlock the full card management workflow.
 
 ***
 
@@ -37,7 +37,7 @@ Connect GitKraken Desktop to Trello to view, create, and manage cards alongside 
 
 ---
 
-## Connect Trello Integration
+## How to connect the Trello integration
 
 Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
@@ -51,7 +51,7 @@ Alternatively, copy the token from the _Success_ page and paste it into GitKrake
 
 ---
 
-## Preview Trello Cards
+## How to preview Trello cards
 
 Once connected, your Trello cards will appear in the Left Panel under a default _All Cards_ filter.
 
@@ -63,7 +63,7 @@ Hover over any card to preview its title, description, list, labels, and members
 
 ---
 
-## View and Edit Card Details
+## How to view and edit Trello card details
 
 Click a card to open its detail view.
 
@@ -80,7 +80,7 @@ Changes sync with your Trello board in real-time.
 
 ---
 
-## Create a New Trello Card
+## How to create a new Trello card
 
 Click the <code>+</code> icon in the Left Panel to add a new card.
 
@@ -90,7 +90,7 @@ Fields marked with <code>*</code> are required. Your card will sync automaticall
 
 ---
 
-## Create Filters
+## How to create Trello card filters
 
 You can use Trello’s filter syntax to create custom filters for your cards.
 
@@ -100,7 +100,7 @@ See Trello’s [filtering guide](https://help.trello.com/article/808-searching-f
 
 ---
 
-## Create Branches from Cards
+## How to create branches from Trello cards
 
 You can create branches tied to cards directly from the card detail view. Use the <strong>Create branch</strong> button or right-click a card.
 
@@ -110,7 +110,7 @@ Branch names are prefilled based on the card title. These branches display the T
 
 ---
 
-## Copy Card Link or View in Trello
+## How to copy a card link or open it in Trello
 
 Click the <kbd><i class="fa fa-ellipsis-v"></i></kbd> icon or the <i class="fa fa-external-link" aria-hidden="true"></i> icon to copy the link or open the card in Trello.
 

@@ -4,9 +4,9 @@ description: Learn how to use GitKraken’s in-app terminal to run Git commands,
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Open the Terminal to run Git CLI commands while viewing the Commit Graph.
+Use this page to run Git CLI commands from the GitKraken Desktop terminal while staying in the context of the open repository and commit graph. It covers how to open the terminal, how command and flag auto-complete works, and where to change shell and terminal appearance settings.
 
 To get started, open a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar, or search for "terminal" using the <a href="/working-with-repositories/command-palette">Command Palette</a>.
 
@@ -37,7 +37,7 @@ The terminal shares context with the open repository, so commands run against th
 
 ---
 
-## Git Commands and Auto-complete
+## How Git commands and auto-complete work
 
 The GitKraken Terminal supports most <a href="https://git-scm.com/" target="_blank">Git</a> commands. Start typing `git` to see command suggestions via auto-complete.
 
@@ -63,7 +63,7 @@ Flag suggestions are also supported:
 
 ---
 
-## Customize Terminal Preferences
+## How to customize terminal preferences
 
 Visit <kbd><strong>Preferences > In-app Terminal</strong></kbd> to modify your terminal settings.
 
@@ -74,13 +74,13 @@ Visit <kbd><strong>Preferences > In-app Terminal</strong></kbd> to modify your t
   <figcaption style="text-align:center; color:#888">Access terminal settings under Preferences</figcaption>
 </figure>
 
-### Default Terminal on macOS and Linux
+### How the default terminal works on macOS and Linux
 
 GitKraken supports ZSH and Bash. To switch shells:
 1. Set the preferred shell as default in your OS settings.
 2. Restart your machine to apply changes.
 
-### Default Terminal on Windows
+### How the default terminal works on Windows
 
 PowerShell and Bash are currently supported. To change the shell:
 1. Open <kbd>Preferences > Terminal</kbd>.
@@ -88,7 +88,7 @@ PowerShell and Bash are currently supported. To change the shell:
 
 ---
 
-## Tip: Try Common Git Commands
+## Common Git commands to try
 
 Use the terminal to quickly execute common Git operations:
 

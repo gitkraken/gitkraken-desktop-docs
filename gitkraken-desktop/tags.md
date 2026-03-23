@@ -4,9 +4,9 @@ description: Learn how to create, annotate, move, and share Git tags in GitKrake
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Tags <em class=’context-menu’><img style=’transform:rotate(180deg);height:1em;’ src=’/wp-content/uploads/gk-tag-icon.svg’></em> are labels that point to a specific commit in your Git history. They’re useful for marking version releases or significant project milestones.
+Use this page to create, annotate, push, move, delete, and filter Git tags in GitKraken Desktop. Tags are useful when you want to mark releases, deployment points, or other important commits and then share or inspect those references from the commit graph or Left Panel.
 
 ***
 
@@ -30,7 +30,7 @@ Create, annotate, push, and manage Git tags in GitKraken Desktop from the commit
 
 ***
 
-## Add a Tag
+## How to add a tag
 
 To create a new tag:
 1. Right-click a commit.
@@ -63,7 +63,7 @@ Double-click a tag in the Left Panel to jump to that commit in the graph. You ca
 
 ***
 
-## Create a Branch from a Tag
+## How to create a branch from a tag
 
 While you can't check out a tag directly, you can branch from it:
 1. Right-click the tag.
@@ -80,7 +80,7 @@ Alternatively, use the [detached HEAD state](/working-with-commits/detached-head
 
 ***
 
-## Move a Tag
+## How to move a tag
 
 To move a tag to a new commit:
 1. Check out the new branch.
@@ -91,7 +91,7 @@ If fast-forwarding is not possible, delete the tag locally and remotely, then re
 
 ***
 
-## Annotate a Tag
+## How to annotate a tag
 
 To add a message to a tag:
 - Right-click a commit and choose <kbd>Create annotated tag here</kbd>.
@@ -108,7 +108,7 @@ Annotated messages appear in the graph and Left Panel on hover.
 
 ***
 
-## Delete a Tag
+## How to delete a tag
 
 To delete a tag locally:
 
@@ -133,7 +133,7 @@ To delete a tag from the remote:
 
 ***
 
-## Rename a Tag
+## How to rename a tag
 
 GitKraken Desktop does not support renaming tags directly. To rename a tag, delete the existing one and create a new tag with the desired name.
 
@@ -147,7 +147,7 @@ GitKraken Desktop does not support renaming tags directly. To rename a tag, dele
 
 ***
 
-## Search or Filter Tags
+## How to search or filter tags
 
 Use the filter bar in the Left Panel to search for tags.
 
@@ -160,7 +160,7 @@ Use the filter bar in the Left Panel to search for tags.
 
 ***
 
-## Show or Hide Tags Panel
+## How to show or hide the Tags panel
 
 To toggle visibility of the Tags section:
 - Right-click any header in the Left Panel.

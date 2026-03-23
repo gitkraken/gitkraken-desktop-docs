@@ -4,9 +4,9 @@ description: Troubleshoot and fix performance issues in GitKraken Desktop with m
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-If GitKraken Desktop is running slowly, it’s often due to the size or complexity of the repository. Try the steps below to improve performance.
+Use this page to diagnose slow or unresponsive behavior in GitKraken Desktop, especially in large or complex repositories. It focuses on practical fixes such as repository maintenance, graph-size limits, auto-fetch changes, branch cleanup, LFS cleanup, and build verification for macOS systems.
 
 ***
 
@@ -28,23 +28,23 @@ If problems persist after these steps, contact GitKraken support.
 
 ***
 
-## Improving Performance
+## How to improve performance
 
 Performance issues are commonly linked to large repositories with many references. Try these steps to improve responsiveness:
 
-### Repository-Level Actions
+### Repository-level actions
 
 - Use the <kbd>Perform Repo Maintenance</kbd> command from the [Command Palette](/start-here/command-palette). This runs `git maintenance run`, which may take several minutes on large repos.
 - Run [`git gc`](https://git-scm.com/docs/git-gc) in your local repository.
 - Clone a fresh copy of the repository to a new directory.
 
-### Interface Optimization
+### Interface optimization
 
 - Disable auto-fetch by setting the [Auto-fetch interval](/gitkraken-desktop/preferences/#auto-fetch) to `0`.
 - Reduce the number of commits shown in the graph by setting a lower [Max Commits value](/gitkraken-desktop/preferences/#max-commits-in-graph).
 - [Solo or Hide](/gitkraken-desktop/hiding-and-soloing/) branches and tags to reduce visual complexity.
 
-### Cleanup and Maintenance
+### Cleanup and maintenance
 
 - [Delete unnecessary local branches](/gitkraken-desktop/branching-and-merging/#delete-a-branch).
 - If using Git LFS, perform an [LFS prune](/gitkraken-desktop/git-lfs/).
@@ -52,7 +52,7 @@ Performance issues are commonly linked to large repositories with many reference
 - Restart GitKraken Desktop daily to clear any accumulated memory or cache usage.
 
 
-### Verify your GitKraken Desktop build on macOS
+### How to verify your GitKraken Desktop build on macOS
 
 Some Mac users have noticed that GitKraken Desktop **11.5.1** may feel less responsive. In most cases, the Mac installed the wrong build for the machine’s chip (Intel vs. Apple Silicon).
 

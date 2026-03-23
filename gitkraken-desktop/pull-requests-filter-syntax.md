@@ -4,15 +4,15 @@ description: Use advanced filter syntax in GitKraken Desktop to find pull reques
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Use this syntax to filter pull requests in GitKraken Desktop and quickly find the items you need.
+This reference explains how to filter pull requests in GitKraken Desktop by title, author, assignee, branch, status, and other supported fields. Use it when you need to narrow large pull request lists quickly or want to know which filter operators work for GitHub and other hosted integrations.
 
 ***
 
-## GitHub
+## Pull request filters supported for GitHub
 
-### Search by Title or Description
+### How to search by title or description
 
 | Filter            | Example               | Description                                                        |
 |------------------|-----------------------|--------------------------------------------------------------------|
@@ -21,7 +21,7 @@ Use this syntax to filter pull requests in GitKraken Desktop and quickly find th
 | `in:` title only | `foo in:title`        | Matches PRs with `foo` in the title only                          |
 | `in:` body only  | `foo in:body`         | Matches PRs with `foo` in the body only                           |
 
-### People Filters
+### How to filter by people
 
 | Filter             | Example               | Description                                                      |
 |-------------------|-----------------------|------------------------------------------------------------------|
@@ -31,14 +31,14 @@ Use this syntax to filter pull requests in GitKraken Desktop and quickly find th
 | `reviewed-by:`     | `reviewed-by:keanu`   | PRs already reviewed by `keanu`                                 |
 | `involves:`        | `involves:jerry`      | PRs involving `jerry` via comment, review, or assignment        |
 
-### Branch Filters
+### How to filter by branch
 
 | Filter     | Example            | Description                        |
 |------------|--------------------|------------------------------------|
 | `base:`    | `base:main`        | PRs targeting the `main` branch    |
 | `head:`    | `head:development` | PRs from `development` branch      |
 
-### State and Metadata
+### How to filter by state and metadata
 
 | Filter        | Example                | Description                                     |
 |---------------|------------------------|-------------------------------------------------|
@@ -46,7 +46,7 @@ Use this syntax to filter pull requests in GitKraken Desktop and quickly find th
 | `label:`      | `label:"Release Critical"` | PRs with the specified label             |
 | `milestone:`  | `milestone:v1`         | PRs assigned to `v1` milestone                 |
 
-### Review Status
+### How to filter by review status
 
 | Filter  | Example                 | Description                                       |
 |---------|-------------------------|---------------------------------------------------|
@@ -54,7 +54,7 @@ Use this syntax to filter pull requests in GitKraken Desktop and quickly find th
 |         | `review:changes_requested`| PRs with change requests                        |
 |         | `review:none`           | PRs without any reviews                           |
 
-### CI Status
+### How to filter by CI status
 
 | Filter    | Example          | Description                        |
 |-----------|------------------|------------------------------------|
@@ -62,21 +62,21 @@ Use this syntax to filter pull requests in GitKraken Desktop and quickly find th
 |           | `status:pending` | PRs with pending CI                |
 |           | `status:failure` | PRs with failed CI                 |
 
-### Missing Values
+### How to filter for missing values
 
 | Filter | Example         | Description                      |
 |--------|-----------------|----------------------------------|
 | `no:`  | `no:assignee`   | PRs without an assignee          |
 |        | `no:status`     | PRs without a CI status          |
 
-### Date Queries
+### How to filter by date
 
 | Filter     | Example                  | Description                          |
 |------------|--------------------------|--------------------------------------|
 | `created:` | `created:2020-12-31`     | PRs created on or after this date    |
 | `updated:` | `updated:2020-12-31`     | PRs updated on or after this date    |
 
-### Multiple and Excluded Filters
+### How to combine or exclude filters
 
 You can combine filters using commas (OR logic) or use a dash (`-`) to exclude.
 
@@ -87,7 +87,7 @@ You can combine filters using commas (OR logic) or use a dash (`-`) to exclude.
 
 ***
 
-## Other Integrations
+## Pull request filters supported for other integrations
 
 GitKraken Desktop supports some—but not all—filter options across integrations:
 

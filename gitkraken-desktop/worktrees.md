@@ -4,9 +4,9 @@ description: Learn how to create, switch, and manage Git worktrees in GitKraken 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Learn how to manage Git worktrees using GitKraken Desktop. Worktrees let you work on multiple branches at the same time, with each in its own working directory.
+Use this page to create, switch, lock, and remove Git worktrees in GitKraken Desktop when you need multiple branches checked out at the same time. Worktrees keep separate working directories while sharing the same repository history, which makes them useful for parallel feature work, testing, and review workflows.
 
 ***
 
@@ -32,7 +32,7 @@ Worktrees share Git history with the main repository. Changes committed in one w
 
 ***
 
-## What Are Worktrees?
+## What Git worktrees are
 
 A Git worktree is a linked working copy of your repository. Each worktree:
 
@@ -51,7 +51,7 @@ Once committed, changes in one worktree become visible in others.
 
 ***
 
-## Using Worktrees in GitKraken Desktop
+## How to use worktrees in GitKraken Desktop
 
 GitKraken Desktop has supported worktrees since version **10.5.0**. From the Left Panel, you can:
 
@@ -59,7 +59,7 @@ GitKraken Desktop has supported worktrees since version **10.5.0**. From the Lef
 - Remove or lock/unlock worktrees
 - Hover over a worktree to see its full file path
 
-### Create a Worktree
+### How to create a worktree
 
 To create a worktree:
 1. Right-click a branch in the Repository View
@@ -74,7 +74,7 @@ To create a worktree:
   </figcaption>
 </figure>
 
-### Switch Worktrees
+### How to switch worktrees
 
 To switch to another worktree:
 - Right-click the desired worktree in the Left Panel and choose <kbd>Open this worktree</kbd>
@@ -89,13 +89,13 @@ To switch to another worktree:
   </figcaption>
 </figure>
 
-### Delete a Worktree
+### How to remove a worktree
 
 To remove a worktree:
 1. Right-click it in the Left Panel
 2. Select <kbd>Remove this worktree</kbd>
 
-### Lock or Unlock a Worktree
+### How to lock or unlock a worktree
 
 To change lock status:
 - Right-click the worktree and choose <kbd>Lock this worktree</kbd> or <kbd>Unlock this worktree</kbd>

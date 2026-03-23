@@ -5,13 +5,13 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop connects with the <a href="https://marketplace.atlassian.com/apps/4984/git-integration-for-jira?product=gitkraken&source=help_center" target="_blank">Git Integration for Jira</a> app. This integration enables seamless navigation between GitKraken Desktop and Jira, letting you open commit and file diffs directly from your Jira issues.
+This page explains how GitKraken Desktop works with the <a href="https://marketplace.atlassian.com/apps/4984/git-integration-for-jira?product=gitkraken&source=help_center" target="_blank">Git Integration for Jira</a> app so you can jump between Jira issues, commits, and file diffs. Use it when your team works in Jira Cloud and you want direct navigation between issue context and Git history.
 
 ---
 
-## Setup Requirements
+## What this integration requires
 
 Before using this integration, ensure the following:
 
@@ -22,7 +22,7 @@ Before using this integration, ensure the following:
 
 ---
 
-## Open File Diff in Jira
+## How to open a file diff in Jira
 
 Once connected, a <strong>Open in Jira</strong> button appears in the [file diff view](/gitkraken-desktop/diff/). Clicking this opens the specific file diff in your Jira instance.
 
@@ -30,7 +30,7 @@ Once connected, a <strong>Open in Jira</strong> button appears in the [file diff
 
 ---
 
-## Open Jira to a Commit
+## How to open Jira to a commit
 
 Right-click any commit in the graph and choose <strong>Open in Jira</strong>. This launches Jira focused on the selected commit.
 
@@ -38,7 +38,7 @@ Right-click any commit in the graph and choose <strong>Open in Jira</strong>. Th
 
 ---
 
-## Open GitKraken from Jira
+## How to open GitKraken Desktop from Jira
 
 Within Jira, Git Integration for Jira adds buttons to open commits and diffs in GitKraken. Look for the GitKraken logo to launch GitKraken Desktop for a deeper view.
 

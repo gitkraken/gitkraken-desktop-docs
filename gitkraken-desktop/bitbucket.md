@@ -4,9 +4,9 @@ description: Connect GitKraken Desktop with Bitbucket to clone repositories, man
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop allows you to authenticate with Bitbucket to help you locate repositories for cloning, add remotes, and manage pull requests more efficiently.
+Use this page to connect GitKraken Desktop to Bitbucket.org for repository discovery, SSH setup, clone and remote workflows, and pull request activity. It also covers multi-account usage through profiles and the reviewer visibility requirement for Bitbucket pull requests.
 
 ***
 
@@ -25,7 +25,7 @@ To configure SSH access after connecting:
 
 Once connected, GitKraken Desktop displays your Bitbucket repositories when cloning, lists forks when adding remotes, and supports creating and viewing pull requests within the application. If you need to manage more than one Bitbucket account, use multiple [profiles](/gitkraken-desktop/profiles/) with a GitKraken Pro plan.
 
-### Benefits
+### What the Bitbucket integration lets you do
 
 - Create new repositories on your Bitbucket account with .gitignore and license templates.
 - Easily generate and copy an SSH key pair for Bitbucket.
@@ -40,7 +40,7 @@ Once connected, GitKraken Desktop displays your Bitbucket repositories when clon
 
 ***
 
-## Connecting to Bitbucket
+## How to connect Bitbucket
 
 To authenticate with Bitbucket:
 
@@ -74,7 +74,7 @@ Alternatively, you may authenticate manually using an OAuth token:
 
 ***
 
-## Generating SSH Keys for Bitbucket
+## How to generate SSH keys for Bitbucket
 
 <div class='callout callout'>
   <p><strong>Note:</strong> GitKraken uses your SSH key from <kbd>Preferences > SSH</kbd> unless a Bitbucket-specific key is configured or your system SSH Agent is enabled.</p>
@@ -93,7 +93,7 @@ After connecting Bitbucket:
 
 ***
 
-## OAuth Integration with Bitbucket
+## What Bitbucket OAuth enables in GitKraken Desktop
 
 GitKraken enhances your workflow with:
 
@@ -115,10 +115,10 @@ Manual repo URLs are still supported.
 
 ***
 
-## Connecting to Multiple Bitbucket Accounts
+## How to connect multiple Bitbucket accounts
 
 GitKraken supports one Bitbucket account per profile. With GitKraken Pro, use multiple [profiles](/start-here/profiles) to manage several Bitbucket identities.
 
-## Bitbucket Pull Request Reviewers
+## How Bitbucket pull request reviewers work
 
 Bitbucket supports pull request reviewers. GitKraken will show reviewer details if you have Project Admin permissions on the repository.

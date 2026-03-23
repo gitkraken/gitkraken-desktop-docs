@@ -9,6 +9,10 @@ taxonomy:
 
 ***
 
+Use this page to install, initialize, and manage Git LFS in GitKraken Desktop when your repository includes large binary files. It explains the Git, Git LFS, and GitKraken version requirements, how tracking patterns work, where LFS actions live in the UI, and common troubleshooting steps when LFS is missing or misconfigured.
+
+***
+
 ## Quick Start
 
 Set up Git LFS in GitKraken Desktop to track and manage large binary files in your repositories.
@@ -29,7 +33,7 @@ Set up Git LFS in GitKraken Desktop to track and manage large binary files in yo
 
 After tracking is configured, commit and push files as usual. LFS-tracked files show an **LFS** tag in the Commit Panel. Use the LFS menu in the toolbar to run additional commands such as pull and prune.
 
-## What is Git LFS?
+## What Git LFS is
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/S03EEusFxoI?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -39,7 +43,7 @@ Git Large File Storage (Git LFS) is a Git extension that helps you manage large 
 
 > 💡 Fun fact: Git LFS jokingly stands for "Legendary Fabled Squid" in the GitKraken universe.
 
-### How it works
+### How Git LFS works
 
 - Git LFS tracks specific files or file types based on defined patterns.
 - When viewing diffs for LFS-tracked files, you’ll see metadata: a URL, a SHA hash, and file size.
@@ -52,7 +56,7 @@ To learn more, visit the [Git LFS documentation](https://github.com/git-lfs/git-
 
 ***
 
-## Git LFS Requirements
+## Git LFS requirements
 
 Make sure the following are installed:
 
@@ -64,7 +68,7 @@ Make sure the following are installed:
     <p><strong>Note:</strong> GitKraken Desktop usually does not require <a href="https://git-scm.com/">Git</a>. However, to use Git LFS, Git must be installed.</p>
 </div>
 
-### Verify Installation
+### How to verify the installation
 
 Run these commands in a terminal or CMD:
 
@@ -98,7 +102,7 @@ If versions are missing or outdated, visit:
 - [git-scm.com](https://git-scm.com/)
 - [git-lfs.github.com](https://git-lfs.github.com/)
 
-### Updating PATH on Windows
+### How to update PATH on Windows
 
 1. Search `Env` in the Start Menu.
 2. Open <kbd>Environmental Variables</kbd>.
@@ -115,9 +119,9 @@ If versions are missing or outdated, visit:
 
 ***
 
-## Initializing Git LFS
+## How to initialize Git LFS
 
-### On an Existing Repository
+### How to initialize Git LFS on an existing repository
 
 1. Open the repo in GitKraken Desktop.
 2. Go to <kbd>Preferences > LFS</kbd> and click **Initialize LFS**.
@@ -129,7 +133,7 @@ If versions are missing or outdated, visit:
 
 <img src='/wp-content/uploads/lfs-gitattributes-2025@2x.png' class="help-center-img img-bordered" alt="Modified .gitattributes file">  
 
-### On a New Repository
+### How to initialize Git LFS on a new repository
 
 You can initialize Git LFS during repository creation by selecting _Initialize with LFS_.
 
@@ -137,7 +141,7 @@ You can initialize Git LFS during repository creation by selecting _Initialize w
 
 ***
 
-## Configuring Git LFS
+## How to configure Git LFS
 
 Add file tracking patterns to the `.gitattributes` file. You can do this via:
 
@@ -174,7 +178,7 @@ Use the LFS menu in the toolbar to run commands:
 
 ***
 
-## FAQs and Troubleshooting
+## Git LFS FAQs and troubleshooting
 
 ### LFS not showing in Preferences?
 Check if your PATH includes Git and Git LFS. See [Verify Installation](#verify-installation).
@@ -200,7 +204,7 @@ More at [Homebrew FAQ](https://docs.brew.sh/FAQ#my-mac-apps-dont-find-usrlocalbi
 
 ---
 
-## Summary
+## Git LFS summary
 
 To use Git LFS in GitKraken Desktop:
 

@@ -4,9 +4,9 @@ description: Learn how to navigate the GitKraken Desktop interface. Explore the 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop's interface simplifies Git usage by providing a visual layout of core actions and repository elements.
+Use this page to understand the main areas of the GitKraken Desktop interface so you can navigate repository actions, history, staging, and collaboration features more efficiently. It covers the toolbar, Left Panel, Commit Panel, Commit Graph, and tabs, with links to deeper task-specific guides when you need more than a UI overview.
 
 ***
 
@@ -30,7 +30,7 @@ From left to right, GitKraken Desktop displays a Left Panel, Commit Graph, and t
     <figcaption style="text-align: center; color: #888;">GitKraken Desktop UI includes Left Panel, Commit Graph, and Commit Panel.</figcaption>
 </figure>
 
-## Toolbar
+## How the toolbar works
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Xv9EAJqucOI?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -128,7 +128,7 @@ The main toolbar provides quick access to common repository actions, including U
 
 ***
 
-## Left Panel
+## How the Left Panel works
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/4uSXlUUU0ds?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -239,7 +239,7 @@ The Left Panel provides access to repository references, such as local branches,
 
 <!-- CONTENT ABOVE THIS LINE OMITTED FOR REVIEW -->
 
-## Commit Panel
+## How the Commit Panel works
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ujgcCLBQvm0?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -269,7 +269,7 @@ To explore more about staging and committing, visit [committing work](/working-w
 
 ***
 
-## Commit Graph
+## How the Commit Graph works
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/YWGpKPMALOs?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -291,7 +291,7 @@ Each row is a commit, with the most recent at the top. Columns represent branche
 
 You can trace branch history from bottom to top and right to left.
 
-### Ghost branches
+### How ghost branches work
 
 Hover over or select a commit to see its nearest containing branch ("ghost" branch). Double-click to check out its head.
 
@@ -300,7 +300,7 @@ Hover over or select a commit to see its nearest containing branch ("ghost" bran
     <figcaption style="text-align: center; color: #888;">Ghost branches help locate a commit’s closest reference.</figcaption>
 </figure>
 
-### Commit highlighting
+### How commit highlighting works
 
 Hovering over a branch highlights all related commits.
 
@@ -313,7 +313,7 @@ Toggle this behavior from <kbd>Preferences > UI Customization</kbd>.
 
 ***
 
-## Tabs
+## How tabs work
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/QWmjobrj0Qw?ecver=1" frameborder="0" allowfullscreen></iframe>

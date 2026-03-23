@@ -4,7 +4,9 @@ description: Learn how to integrate GitKraken Desktop with GitHub, GitLab, Bitbu
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
+
+Integrations connect GitKraken Desktop to Git hosting services and issue trackers so you can clone repositories, manage remotes, review pull requests, and work with issues from one interface. Use this page to find the right integration for GitHub, GitLab, Bitbucket, Azure DevOps, Jira, Trello, and self-hosted services.
 
 <figure>
   <div class='embed-container embed-container--16-9'>
@@ -15,7 +17,7 @@ taxonomy:
 
 ***
 
-## Remote Repository Integrations
+## How to connect remote Git hosting integrations
 
 GitKraken Desktop supports easy connection to popular remote Git services:
 
@@ -28,12 +30,12 @@ GitKraken Desktop supports easy connection to popular remote Git services:
 - [Azure DevOps](/gitkraken-desktop/azure-devops/)
 
 <div class='callout callout--warning'>
-  <p><strong>Note:</strong> Self-Hosted server integrations require an <strong>Advanced</strong> subscription or higher.</p>
+  <p><strong>Note:</strong> Self-hosted server integrations require a paid plan that supports self-hosted services.</p>
 </div>
 
 ***
 
-## Issue Tracker Integrations
+## How to connect issue tracker integrations
 
 Track your development tasks by connecting GitKraken Desktop to your project management tools:
 
@@ -51,7 +53,7 @@ Track your development tasks by connecting GitKraken Desktop to your project man
 
 ***
 
-## Integration Benefits
+## What you can do with integrations
 
 By connecting integrations, you can:
 
@@ -62,7 +64,7 @@ By connecting integrations, you can:
 
 ***
 
-## Plan Requirements Summary
+## How plan requirements vary by integration
 
 | Feature Type | Integration | Minimum Plan |
 |--------------|-------------|----------------|

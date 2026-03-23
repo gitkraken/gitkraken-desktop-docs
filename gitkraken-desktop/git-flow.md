@@ -5,9 +5,9 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Gitflow helps organize your repository history, making it easier to manage releases, bug fixes, and features.
+Use this page to configure and run Gitflow in GitKraken Desktop when your team organizes work into feature, release, and hotfix branches. It covers the initial Gitflow setup, how the Gitflow panel works, and what happens when each Gitflow branch type is finished.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/eTOgjQ9o4vQ?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -31,7 +31,7 @@ Set up and use Gitflow in GitKraken Desktop to manage features, releases, and ho
 Right-click a Gitflow branch in the Left Panel and select **Finish** to complete it. To set a tag prefix (e.g., `v`), configure it under <kbd>Preferences > Gitflow</kbd>. Publishing a Gitflow branch to a remote works the same as pushing any other branch.
 
 ***
-## Configuration
+## How Gitflow configuration works
 
 To configure Gitflow in GitKraken Desktop:
 
@@ -48,7 +48,7 @@ Once initialized, two branches will always be present:
 If these branches don't exist locally, GitKraken Desktop will create them when Gitflow is initialized.
 
 ***
-## Usage
+## How to use Gitflow
 
 After initializing Gitflow, a Gitflow panel appears in the left sidebar. Use it to start or finish Gitflow branches.
 
@@ -69,7 +69,7 @@ Branches with a Gitflow prefix appear in the Gitflow panel. Others appear in the
 
 Publishing a Gitflow branch (i.e., pushing it to a remote) works the same as with regular Git branches.
 
-### Feature
+### How feature branches work
 
 Feature branches are for new features or bug fixes. They're typically local and not shared.
 
@@ -82,7 +82,7 @@ When you finish a feature branch:
 
 Optionally, rebase the feature branch onto <code>develop</code> before finishing.
 
-### Release
+### How release branches work
 
 Release branches represent versions shared with collaborators.
 
@@ -95,7 +95,7 @@ When you finish a release branch:
 
 <img src="/wp-content/uploads/finish-release-2025@2x.png" class="help-center-img img-bordered" alt="Finish release process">
 
-### Hotfix
+### How hotfix branches work
 
 Hotfix branches are similar to releases but created from <code>main</code>. Use them for urgent production fixes.
 
@@ -107,7 +107,7 @@ When you finish a hotfix:
 
 - It's merged into both <code>main</code> and <code>develop</code>.
 
-### Tag
+### How Gitflow tags work
 
 Tags mark specific points in your repository's history, such as releases.
 

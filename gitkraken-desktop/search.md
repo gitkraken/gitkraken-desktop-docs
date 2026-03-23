@@ -4,12 +4,12 @@ description: Discover how to find commits by message, SHA, or author in GitKrake
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Learn how to search for commits in GitKraken Desktop.
+Use this page to search commit history in GitKraken Desktop by message, SHA, or author and to control how much history is loaded into the Commit Graph. It is useful when search results seem incomplete because the graph depth is limited or when you want to jump into commit search from anywhere in the app.
 
 ***
-## Initial number of displayed commits 
+## How the initial number of displayed commits works
 
 By default, GitKraken Desktop displays up to 2000 commits on the Commit Graph. To view a deeper history of your repo, set the initial number of commits to display on the graph to your preference. 
 
@@ -24,7 +24,7 @@ Navigate to <kbd>Preferences</kbd> from the gear menu in the upper right corner,
 
 Above this setting, you'll also find an option to <kbd>Show All Commits in Graph</kbd> for large repositories. 
 
-## Search bar
+## How the search bar works
 
 The search bar in the upper right of the application defaults to commit search.
 

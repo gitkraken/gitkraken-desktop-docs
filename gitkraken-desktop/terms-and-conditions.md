@@ -8,13 +8,15 @@ taxonomy:
 ---
 
 
-Our goal is to ensure you can use GitKraken Desktop effortlessly and with minimal friction. In the unlikely event that you need to reach out to a human, refer to our current Terms and Conditions below.
+<kbd>Last updated: March 2026</kbd>
+
+This page explains GitKraken Desktop support terms and conditions, including eligible plans, support hours, response times, release support expectations, and end-of-life policy. Use it when you need to understand what support your plan includes, how quickly support responds, or how GitKraken handles support for older releases.
 
 You can always reach out to us by using the [Contact support](https://help.gitkraken.com/gitkraken-desktop/contact-support/).
 
 ---
 
-## GitKraken Desktop Support
+## What GitKraken Desktop support includes
 
 - Support requests for GitKraken Desktop are to be submitted at [Contact Support](https://help.gitkraken.com/gitkraken-desktop/contact-support/). Users submitting tickets interact primarily through emails, though other communication services, such as phone calls and screen share services, might be used to deliver Support Services.
 
@@ -30,20 +32,20 @@ You can always reach out to us by using the [Contact support](https://help.gitkr
 
 - GitKraken Desktop is available for Windows, Mac, and Linux systems. The current supported versions are on our [how-to-install](/gitkraken-desktop/how-to-install/) page.
 
-### Support Period
+### How long GitKraken supports generally available releases
  
 We will support Generally Available (GA) releases of products. Eligible code fixes and hot fixes are provided via a new release (Z) on top of the latest “Major release” and “minor release” branch. A major release is identified by a change in the first (X), minor release is identified by the second (Y) digit in the following versioning nomenclature: Version X.Y.Z.
 
 As a best practice, we expect customers to stay at the current release in order to receive optimal support. Release updates for customers are provided regularly on the GitKraken Help Center for each GitKraken product. While we will provide troubleshooting assistance to GA products, we might ask customers to upgrade to the current release during the troubleshooting process in order for them to receive functionality enhancements, security updates, and code fixes.
 
 
-### End-of-Life 
+### How GitKraken handles end-of-life
 
 GitKraken will support a Major release for a period of at least 12 (twelve) months from the major release, excluding minor and patch releases (eg version 9.Y.Z will be eligible for support for 12 month period from when the 9.0.x version was released). However, while troubleshooting customer issues, a customer may be asked to upgrade to the current release.
 
 GitKraken’s end-of-life policy provides that GitKraken will provide customers with at least sixty (60) days’ prior notice before discontinuing any product. After the End of Life Period expires, GitKraken will no longer be obligated to provide support services for the terminated software.
 
-#### End of Life (EoL) process
+#### How the end-of-life process works
 
 The decision to retire or deprecate features follows a rigorous process, including understanding the demand, use, impact of feature retirement, and, most importantly, customer feedback. Our goal is to invest resources in areas that will add the most value for the most customers. GitKraken is committed to being clear, transparent, and proactive when interacting with our customers, especially about changes to our products. 
 

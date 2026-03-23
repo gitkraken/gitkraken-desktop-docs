@@ -4,9 +4,9 @@ description: Explore experimental GitKraken Desktop features like Git Executable
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop includes experimental features, which are early previews of in-development functionality. These features may change or be removed in future releases.
+Use this page to enable and evaluate GitKraken Desktop experimental features such as Git Executable and Cloud Patches. Experimental features are optional previews, so this page focuses on where to enable them, what they currently do, and which workflows depend on them.
 
 ***
 
@@ -36,7 +36,7 @@ Cloud Patches are stored securely and can be shared with anyone who has the link
 
 ---
 
-## Access Experimental Features
+## How to access experimental features
 
 To access experimental settings:
 
@@ -46,7 +46,7 @@ Experimental features are optional and can be enabled or disabled at any time. I
 
 ---
 
-## Git Executable
+## How Git Executable works
 
 This setting allows GitKraken Desktop to use your system’s Git executable instead of NodeGit for core Git operations. It can enhance compatibility and performance.
 
@@ -54,7 +54,7 @@ This setting allows GitKraken Desktop to use your system’s Git executable inst
 
 GitKraken ships with Git built-in, or you can select a system Git path.
 
-### Features Using Git Executable
+### Which features use Git Executable
 
 Git actions that currently use the Git executable (by version):
 
@@ -74,7 +74,7 @@ See full details per release in the [GitKraken Desktop release notes](/gitkraken
 
 ---
 
-## Cloud Patches
+## How Cloud Patches work
 
 <figure>
   <div class='embed-container embed-container--16-9'>
@@ -83,17 +83,17 @@ See full details per release in the [GitKraken Desktop release notes](/gitkraken
   <figcaption style="text-align:center; color:#888">Watch how to create and apply Cloud Patches in GitKraken.</figcaption>
 </figure>
 
-### What Are Cloud Patches?
+### What Cloud Patches are
 
 A Cloud Patch is a Git patch that GitKraken securely stores so you can share it across GitKraken Desktop, GitLens, and CLI. Use them to:
 - Share work-in-progress with teammates before a pull request
 - Apply changes across machines or collaborators securely
 
-### How to Enable
+### How to enable Cloud Patches
 
 Cloud Patches require the **Git Executable** to be enabled (it is by default).
 
-### Create a Cloud Patch
+### How to create a Cloud Patch
 
 1. Stage files in the Commit Panel.
 2. Click the Cloud Patch icon.
@@ -105,7 +105,7 @@ Cloud Patches require the **Git Executable** to be enabled (it is by default).
 
 You can also right-click any commit in the graph and select <kbd>Share commit as Cloud Patch</kbd>.
 
-### Share and Apply Cloud Patches
+### How to share and apply Cloud Patches
 
 - Copy the link from the toast or Left Panel
 - Options:
@@ -120,7 +120,7 @@ Recipients can open the patch and apply it to a selected branch.
   <figcaption style="text-align: center; color: #888;">Apply Cloud Patch to a target branch in GitKraken Desktop.</figcaption>
 </figure>
 
-### Manage Cloud Patches
+### How to manage Cloud Patches
 
 To delete a patch, right-click it in the Left Panel and choose <kbd>Delete Cloud Patch</kbd>.
 
@@ -129,6 +129,6 @@ To delete a patch, right-click it in the Left Panel and choose <kbd>Delete Cloud
   <figcaption style="text-align: center; color: #888;">Manage Cloud Patches via context menu.</figcaption>
 </figure>
 
-### Self-Hosting Cloud Patches
+### How to self-host Cloud Patches
 
 You can self-host Cloud Patch data on an AWS S3 instance instead of GitKraken servers. See [Security Controls](/gk-dev/gk-dev-security-controls/#self-hosted) for setup instructions.

@@ -4,9 +4,9 @@ description: Learn how to use GitKraken Desktop Teams to organize users, manage 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop users with a <a href="https://www.gitkraken.com/git-client/pricing?source=help_center&product=gitkraken">Pro, Advanced, Business, or Enterprise Cloud</a> account can use the Teams feature to group users within an Organization.
+Use this page to manage organizations and teams in GitKraken Desktop so you can invite members, assign roles, organize users into teams, and enable collaboration features such as Team View, shared Workspaces, and Cloud Patches. Team availability depends on your GitKraken subscription tier.
 
 Teams can be used for:
 - The [Team View](/gitkraken-desktop/working-with-repositories/team-view/): View branches and files others are working on and detect potential conflicts. <em>Advanced plan and above</em>
@@ -40,7 +40,7 @@ Teams are accessible under <kbd>Preferences > Organization</kbd>. Pro accounts s
 
 ***
 
-## Manage Your Organization
+## How to manage your organization
 
 To manage team members in your Organization:
 1. Open <kbd><strong>Preferences</strong></kbd>
@@ -64,7 +64,7 @@ If no additional licenses are available, you’ll be prompted to purchase one wh
 
 ***
 
-## Manage Teams
+## How to manage teams
 
 Create a new Team by clicking the <i class="fas fa-plus-square" style="color:green"></i> icon.
 
@@ -87,7 +87,7 @@ You can:
   <figcaption style="text-align:center; color:#888">Double-click a team name to rename it.</figcaption>
 </figure>
 
-### Manage Team Members
+### How to manage team members
 
 To add users to a Team:
 1. Select the Team
@@ -97,7 +97,7 @@ Remove a user by selecting <i class="fas fa-ellipsis-h"></i> on their entry.
 
 ***
 
-## Suggested Members
+## How suggested members work
 
 GitKraken Desktop can suggest users who contribute to the current repository but aren’t in your Organization. Invite them to collaborate.
 

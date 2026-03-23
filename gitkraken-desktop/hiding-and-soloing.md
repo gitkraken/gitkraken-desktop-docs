@@ -4,9 +4,9 @@ description: Learn how to reduce visual clutter in GitKraken Desktop by hiding o
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-The Left Panel lets you control the Commit Graph view for better focus. Use _Hide_ to temporarily remove references, or _Solo_ to spotlight specific branches.
+Hide and Solo help you reduce Commit Graph clutter in GitKraken Desktop without changing your repository. Use Hide to temporarily remove branches, tags, remotes, or stashes from view, and use Solo to focus only on the references you want to inspect when reviewing history or navigating a busy graph.
 
 ***
 
@@ -14,6 +14,8 @@ The Left Panel lets you control the Commit Graph view for better focus. Use _Hid
   <img src="/wp-content/uploads/solo-hide.gif" class="help-center-img img-bordered" alt="Animated demonstration of soloing and hiding branches in GitKraken Desktop's Left Panel">
   <figcaption style="text-align: center; color: #888;">Animation demonstrating hiding and soloing branches from the Left Panel.</figcaption>
 </figure>
+
+## How to hide references in the Left Panel
 
 <div class="flex-wrap" style="align-items: flex-start">
   <div class="flex-item">
@@ -26,6 +28,8 @@ The Left Panel lets you control the Commit Graph view for better focus. Use _Hid
     <p>Hidden branches are marked with a gray <i class='fa fa-eye-slash'></i> icon. Click the icon to show the branch again.</p>
   </div>
 </div>
+
+## How to solo branches and remotes
 
 <div class="flex-wrap" style="align-items: flex-start">
   <div class="flex-item">
@@ -40,7 +44,7 @@ The Left Panel lets you control the Commit Graph view for better focus. Use _Hid
   </div>
 </div>
 
-### Hide or Show All References
+## How to hide or show all references
 
 You can hide or show all **Remotes**, **Tags**, **Branches**, or **Stashes** from the Left Panel. Right-click the corresponding header to access bulk options.
 

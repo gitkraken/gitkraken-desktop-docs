@@ -7,7 +7,11 @@ taxonomy:
 
 ---
 
-## Information Collection/Storage
+<kbd>Last updated: March 2026</kbd>
+
+This page explains GitKraken Desktop data security and storage practices, including what information GitKraken services collect, how that data is secured in transit and at rest, and how SOC 2 report access works. Use it when reviewing security posture, storage locations, or compliance-related documentation for GitKraken Desktop.
+
+## How GitKraken Desktop services collect and store information
 Below is a chart outlining some basic security information regarding the type of data that we collect and how we store it.
 
 <table>
@@ -66,7 +70,7 @@ Below is a chart outlining some basic security information regarding the type of
   </tbody>
 </table>
 
-## SOC2
+## How to request the SOC 2 report
 GitKraken and it’s tools are now SOC 2 Certified! If you would like to request a copy of our SOC2 report, please visit our [Trust Center](https://trust.gitkraken.com/) to get the request process started. Please note that in order to provide a copy of the report, we will need you to sign an MNDA.
 
 <div class="bbb-callout bbb--info">

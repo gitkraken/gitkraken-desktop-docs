@@ -5,9 +5,9 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-After installing GitKraken Self-Hosted Server (also known as Enterprise Self-Hosted), you're ready to configure your server.
+Use this page to complete the first-time configuration of GitKraken Self-Hosted Server after installation. It covers license upload, authentication mode selection, LDAP setup, SMTP settings, Super User creation, and initial user-management steps needed before the server is ready for administrators and users.
 
 <div class='callout callout--warning'>
   <p>GitKraken Desktop Self-Hosted and On-Premise Serverless products are sold separately from standard subscriptions. Visit our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?source=help_center&product=gitkraken'>On-Premise Pricing</a> page to learn more.</p>
@@ -33,7 +33,7 @@ To add users, click **Add user** and enter the user's email. To disable self-reg
 
 <a id="server-license"></a>
 
-## Server License
+## How to upload the server license
 
 Navigate to your GitKraken Self-Hosted server.
 
@@ -51,7 +51,7 @@ Click **Browse for license** and upload the license file provided with your inst
 
 <a id="authentication"></a>
 
-## Authentication
+## How authentication setup works
 
 Choose the authentication configuration for your server:
 
@@ -67,7 +67,7 @@ If using Built-in authentication, [skip to the SMTP Server section](#smtp-server
 
 <a id="ldap-configuration"></a>
 
-### LDAP Configuration
+### How to configure LDAP
 
 Enter your LDAP server hostname and port:
 
@@ -127,7 +127,7 @@ If Sync Server is disabled, you'll need to manage user accounts manually.
 
 <a id="smtp-server"></a>
 
-## SMTP Server
+## How to configure the SMTP server
 
 An SMTP server is required unless you're using LDAP authentication.
 
@@ -145,7 +145,7 @@ Enable secure protocols if necessary and provide authentication credentials. Use
 
 <a id="super-user"></a>
 
-## Super User
+## How to configure the Super User
 
 The Super User is the license owner of GitKraken Self-Hosted. This account:
 
@@ -171,7 +171,7 @@ Configuration is now complete! You should see the 'Manage Users' screen, where y
 
 <a id="adding-users"></a>
 
-## Adding Users
+## How to add users
 
 To add a user, click **Add user** and enter the user's email address:
 

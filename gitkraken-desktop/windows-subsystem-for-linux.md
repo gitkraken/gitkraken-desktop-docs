@@ -6,7 +6,7 @@ taxonomy:
 ---
 <kbd>Last updated: March 2026</kbd>
 
-Learn how to run GitKraken Desktop on Windows Subsystem for Linux (WSL 2), including GUI integration and installation requirements.
+Use this page to install and run GitKraken Desktop inside Windows Subsystem for Linux 2 (WSL 2) when your repositories live on the Linux file system. It covers WSLg requirements, Linux installation steps, cross-file-system limits, and troubleshooting for display, certificate, and environment issues.
 
 ***
 
@@ -26,7 +26,7 @@ Install and run GitKraken Desktop inside WSL 2 on Windows to work with Linux-hos
 
 Keep your repositories on the same file system as the GitKraken Desktop installation you use. Accessing repos across file systems (for example, opening a WSL repo from GitKraken installed on Windows) results in degraded performance or non-functional features. If this happens, GitKraken Desktop will prompt you to open the repo with the correct installation.
 
-## What is WSL/WSL 2?
+## What WSL and WSL 2 are
 
 <a href="https://learn.microsoft.com/en-us/windows/wsl/about" target="_blank">Windows Subsystem for Linux (WSL)</a> enables developers to run a Linux distribution and use Linux tools directly on Windows. <a href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions" target="_blank">WSL 2</a> runs an actual Linux kernel in a managed VM, offering better performance and full system call compatibility.
 
@@ -51,7 +51,7 @@ GitKraken Desktop works with repositories stored on your WSL 2 file system when 
 
 GitKraken will notify you when accessing repos across environments. For more, see [Working Across File Systems](#working-across-file-systems-in-wsl-2).
 
-### Setup Steps
+### How to set up GitKraken Desktop in WSL 2
 
 Follow these four steps to get started:
 
@@ -64,7 +64,7 @@ Follow these four steps to get started:
 
 ---
 
-## WSL 2/WSLg Requirements
+## WSL 2 and WSLg requirements
 
 - Windows 11 or Windows 10 build 19044+
 - WSL 2 distribution
@@ -72,7 +72,7 @@ Follow these four steps to get started:
 
 ---
 
-## Install or Update WSL 2 with WSLg Support
+## How to install or update WSL 2 with WSLg support
 
 GitKraken Desktop requires WSL 2 with WSLg support on Windows 11 or Windows 10 build 19044 or later.
 
@@ -94,7 +94,7 @@ WSLg is automatically included in this installation.
 
 ---
 
-## Download and Install GitKraken Desktop on WSL 2
+## How to download and install GitKraken Desktop on WSL 2
 
 To install GitKraken Desktop within WSL, follow the <a href="https://help.gitkraken.com/gitkraken-desktop/how-to-install/#linux-deb-rpm-and-tar-gz-files" target="_blank">Linux installation instructions</a>.
 
@@ -121,7 +121,7 @@ gitkraken
 
 ---
 
-## Preferences for GitKraken on WSL 2
+## How WSL-specific GitKraken preferences work
 
 GitKraken Desktop offers preferences to control how URLs and files are opened from the WSL environment. Navigate to `Preferences` > `General` to configure them.
 
@@ -136,7 +136,7 @@ By default:
 
 ---
 
-## Known Issues with WSL 2
+## Known issues with WSL 2
 
 Here are known limitations when using GitKraken Desktop with WSLg:
 
@@ -145,7 +145,7 @@ Here are known limitations when using GitKraken Desktop with WSLg:
 
 ---
 
-## Troubleshooting WSL 2
+## How to troubleshoot WSL 2 issues
 
 If GitKraken opens with a black screen or other display issues, try these fixes:
 
@@ -174,7 +174,7 @@ Then, reopen your Linux distribution or GitKraken Desktop.
 
 ---
 
-## Working Across File Systems in WSL 2
+## How cross-file-system access works in WSL 2
 
 GitKraken Desktop does not support opening repos stored on a different file system than where GitKraken is installed.
 

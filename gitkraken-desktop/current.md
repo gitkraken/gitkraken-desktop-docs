@@ -8,7 +8,9 @@ taxonomy:
 
 ---
 
-Behold the evolution of GitKraken Desktop! Find out what&rsquo;s new, what&rsquo;s fixed, or just take a trip down memory lane with a nostalgic swagger, remembering those bugs of yesterday.
+<kbd>Last updated: March 2026</kbd>
+
+This release notes page tracks what changed in GitKraken Desktop version 11, including new features, improvements, bug fixes, and deprecations. Use it when you need to confirm when a capability shipped, check whether a bug was fixed in a specific release, or review version-specific changes before upgrading.
 
 <a href="https://www.gitkraken.com/download?product=gitkraken&source=help_center" target="_blank" class="button button--basic ">Download Current Version Now</a>
 
@@ -452,5 +454,4 @@ _"Turn it up to 11! 🎸"_
 
 ### Bug Fixes 🐛
  - [Launchpad](/gitkraken-desktop/gitkraken-launchpad/) now works with GitHub users set as Enterprise Managed Users.
-
 

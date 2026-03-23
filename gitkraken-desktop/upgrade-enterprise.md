@@ -6,7 +6,7 @@ taxonomy:
 ---
 <kbd>Last updated: March 2026</kbd>
 
-The upgrade procedure is the same whether you're running GitKraken Self-Hosted on CentOS, Ubuntu, or RHEL7.
+Use this page to upgrade GitKraken Self-Hosted Server, client installers, and license files when your deployment runs on Docker. It also covers the Super User password reset flow, so administrators can handle both standard upgrades and recovery tasks from the same procedure.
 
 <div class='callout callout--warning'>
     <p><strong>Note:</strong> GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, see our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
@@ -34,7 +34,7 @@ Upgrade GitKraken Self-Hosted Server, client installers, and your license file u
 
 ***
 
-## Upgrade Self-Hosted Server
+## How to upgrade the self-hosted server
 
 1. Navigate to the folder where GitKraken Self-Hosted is installed (the folder with `docker-compose.yml`).
 
@@ -72,7 +72,7 @@ sudo /usr/local/bin/docker-compose up
 
 ***
 
-## Upgrade Self-Hosted Clients
+## How to upgrade self-hosted clients
 
 1. Open your `docker-compose.yml` file.
 
@@ -101,7 +101,7 @@ sudo /usr/local/bin/docker-compose up
 
 ***
 
-## Update License
+## How to update the license
 
 To update your GitKraken Self-Hosted license:
 
@@ -116,7 +116,7 @@ To update your GitKraken Self-Hosted license:
 
 ***
 
-## Reset the Super User Password
+## How to reset the Super User password
 
 1. Stop GitKraken Self-Hosted:
    ```bash

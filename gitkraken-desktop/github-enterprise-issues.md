@@ -5,9 +5,9 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop supports integration with GitHub Enterprise Server Issues, making it easier to manage issues alongside your codebase.
+This page explains how GitKraken Desktop connects to GitHub Enterprise Server Issues so you can preview, filter, and create issues alongside your repository work. Use it when you already work with GitHub Enterprise Server and want issue access inside GitKraken Desktop instead of switching to the web interface.
 
 <div class='callout callout--basic'>
     <p>The GitHub Enterprise Server Issues integration is view-only for Community users. To unlock full features, consider upgrading to a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center">paid GitKraken license</a>.</p>
@@ -15,7 +15,7 @@ GitKraken Desktop supports integration with GitHub Enterprise Server Issues, mak
 
 ---
 
-## Requirements
+## What this integration requires
 
 <div class='callout callout--warning'>
     <p>This integration requires GitHub Enterprise Server version 2.20.24 or newer.</p>
@@ -23,7 +23,7 @@ GitKraken Desktop supports integration with GitHub Enterprise Server Issues, mak
 
 ---
 
-## Connect GitHub Enterprise Server Integration
+## How to connect GitHub Enterprise Server Issues
 
 The GitHub Enterprise Server integration and GitHub Enterprise Server Issues integration share the same connection.
 
@@ -33,7 +33,7 @@ Follow these [GitHub Enterprise authentication steps](/integrations/github-enter
 
 ---
 
-## Features
+## What you can do with GitHub Enterprise Server Issues
 
 Once connected, this integration offers the same features as the GitHub Issues integration:
 

@@ -5,9 +5,9 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Use cherry pick to apply commits from one branch onto another in GitKraken Desktop. This is especially useful when you accidentally commit to the wrong branch or want to apply specific changes without merging.
+Use this page to cherry pick one or more commits onto your current branch in GitKraken Desktop when you need selected changes without merging an entire branch. It covers single-commit cherry picks, multi-commit interactive cherry pick, and the reorder, squash, reword, and drop actions available before applying changes.
 
 ***
 
@@ -29,7 +29,7 @@ The interactive cherry-pick tool opens, where you can reorder commits by draggin
 
 ***
 
-## Cherry Pick a Single Commit
+## How to cherry pick a single commit
 
 1. Check out the branch where you want to apply the commit.
 2. Right-click the commit in the graph.
@@ -49,7 +49,7 @@ You can also cherry pick the HEAD commit of a branch by right-clicking a branch 
 
 ***
 
-## Cherry Pick Multiple Commits
+## How to cherry pick multiple commits
 
 1. Hold <kbd>Cmd</kbd> (Mac) or <kbd>Ctrl</kbd> (Windows/Linux) or <kbd>Shift</kbd> and click multiple commits.
 2. Right-click one of the selected commits.
@@ -74,7 +74,7 @@ This opens the interactive cherry pick tool where you can:
 
 ***
 
-## Commit Actions
+## What the interactive cherry-pick actions do
 
 - **Pick**: Apply the commit as-is to the target branch.
 - **Reword**: Edit the commit summary and description.
@@ -89,7 +89,7 @@ To abandon the cherry-pick session, click: <button class='button button--primary
 
 ***
 
-## Learn More
+## Learn more about cherry pick
 
 <p class="small">
     <a href="https://gitkraken.com/learn/git/tutorials/cherry-pick?product=gitkraken&source=help_center" target="_blank">Cherry Pick Tutorial</a> | <a href="https://gitkraken.com/learn/git/cherry-pick?product=gitkraken&source=help_center" target="_blank">Learn Git: What is Cherry Pick?</a>

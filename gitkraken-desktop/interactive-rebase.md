@@ -4,9 +4,9 @@ description: Step-by-step guide to using interactive rebase in GitKraken Desktop
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Interactive rebase lets you rewrite commit history by editing, reordering, combining, or removing commits. Use it to clean up your commit history before merging a feature branch.
+Use this page to run interactive rebase in GitKraken Desktop when you need to reorder, combine, rename, or drop commits before sharing or merging a branch. It explains how to start the rebase, what the available actions do, and which branch and history conditions must be met before the workflow is available.
 
 ***
 
@@ -31,7 +31,7 @@ To undo all changes before confirming, click **Reset**. Interactive rebase requi
 
 ***
 
-## Start an Interactive Rebase
+## How to start an interactive rebase
 
 To begin:
 - Drag and drop one branch onto another
@@ -48,7 +48,7 @@ To begin:
 
 You can also right-click any parent commit to access the option. Note: Interactive rebase is not available for merge commits.
 
-### Requirements
+### Interactive rebase requirements
 Interactive rebase is available only if:
 - The branches share a common ancestor
 - No merge commits exist on the source branch
@@ -61,9 +61,9 @@ Interactive rebase is available only if:
 
 ***
 
-## Commit Actions
+## What the interactive rebase actions do
 
-### Pick
+### How Pick works
 Moves the commit onto the target branch as-is.
 
 <figure>
@@ -75,7 +75,7 @@ Moves the commit onto the target branch as-is.
   </figcaption>
 </figure>
 
-### Reword
+### How Reword works
 Opens a modal to edit the commit summary and description.
 
 <figure>
@@ -87,7 +87,7 @@ Opens a modal to edit the commit summary and description.
   </figcaption>
 </figure>
 
-### Squash
+### How Squash works
 Combines the selected commit into its parent.
 
 <figure>
@@ -99,7 +99,7 @@ Combines the selected commit into its parent.
   </figcaption>
 </figure>
 
-### Drop
+### How Drop works
 Removes the commit entirely and rewrites the graph.
 
 <figure>
@@ -113,7 +113,7 @@ Removes the commit entirely and rewrites the graph.
 
 ***
 
-## Shortcuts and Reset
+## How shortcuts and Reset work
 
 Use these keyboard shortcuts during rebase:
 - <kbd>P</kbd>: Pick

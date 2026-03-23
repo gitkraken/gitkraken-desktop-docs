@@ -4,9 +4,9 @@ description: Discover how to use the Command Palette in GitKraken Desktop to qui
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-The <strong>Command Palette</strong> provides quick access to GitKraken Desktop actions, files, repositories, and settings.
+Use this page to run GitKraken Desktop actions from the Command Palette when you want a keyboard-first workflow for commands, files, repositories, and settings. It explains how to open the palette, what command categories are available, and when it is faster than navigating the UI directly.
 
 <figure>
   <div class='embed-container embed-container--16-9'>
@@ -36,7 +36,7 @@ The Command Palette is available at any time regardless of which panel or view i
 
 ***
 
-## Open the Command Palette
+## How to open the Command Palette
 
 You can launch the Command Palette in three ways:
 
@@ -53,7 +53,7 @@ You can launch the Command Palette in three ways:
 
 ***
 
-## Available Command Categories
+## What command categories are available
 
 Below is a list of supported commands grouped by category.
 

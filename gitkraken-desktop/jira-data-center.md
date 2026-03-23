@@ -5,9 +5,9 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: January 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitKraken Desktop supports integration with both Jira Cloud and Jira Data Center to help you manage issues directly from your Git workflow.
+Use this page to connect GitKraken Desktop to Jira Data Center so you can preview, create, and manage Jira issues from the Left Panel. This integration requires an Advanced subscription tier or higher, supports Jira Data Center 8.4 or newer, and uses a Personal Access Token instead of the Jira Cloud authorization flow.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/On83cso-w3U" frameborder="0" allowfullscreen></iframe>
@@ -27,7 +27,17 @@ GitKraken Desktop supports integration with both Jira Cloud and Jira Data Center
 
 ---
 
-## Connect to Jira Data Center
+## Quick Start
+
+Connect GitKraken Desktop to Jira Data Center to view and manage issues from your Git workflow.
+
+1. Go to <kbd>Preferences > Integrations</kbd> or open the **ISSUES** section in the Left Panel.
+2. Enter your Jira Data Center host domain and a Personal Access Token from your Jira instance.
+3. Once connected, preview issues, open issue details, create issues, and create issue-based branches using the same workflows documented for Jira.
+
+---
+
+## How to connect Jira Data Center
 
 Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>. If you don't see the ISSUES section, right-click any header in the Left Panel and enable it from the context menu.
 
@@ -43,7 +53,7 @@ Once connected, GitKraken Desktop will confirm the integration.
 
 ---
 
-## Features
+## What the Jira Data Center integration supports
 
 The Jira Data Center integration includes the same functionality as the Jira Cloud integration:
 

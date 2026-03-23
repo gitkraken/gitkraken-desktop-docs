@@ -4,9 +4,9 @@ description: Explore GitKraken Desktop’s Preferences to control themes, integr
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: February 2026</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Navigate to <i class="fas fa-cog"></i> <kbd><strong>Preferences</strong></kbd> in GitKraken Desktop to tailor your environment. Here's what each major section controls.
+Use this page to understand what each major Preferences section controls in GitKraken Desktop, including profiles, integrations, AI settings, external tools, commit signing, terminal behavior, and repository-specific options. Start here when you need to know where a setting lives before changing your workflow or environment.
 
 ***
 
@@ -33,7 +33,7 @@ Preferences are stored per profile, so switching profiles resets integrations an
 
 ***
 
-## Organization
+## How organization settings work
 
 This section is labeled with your organization's name. It shows members and teams, and allows Owners and Admins to:
 - Manage member roles
@@ -46,7 +46,7 @@ This section is labeled with your organization's name. It shows members and team
 
 ***
 
-## General
+## How General preferences work
 
 Configure app-wide behavior like auto-fetch, conflict detection, and commit graph settings.
 
@@ -67,7 +67,7 @@ Configure app-wide behavior like auto-fetch, conflict detection, and commit grap
 
 ***
 
-## Profiles
+## How profile preferences work
 
 Store unique settings, tabs, and integrations per context. Useful for multi-account workflows.
 
@@ -75,7 +75,7 @@ Store unique settings, tabs, and integrations per context. Useful for multi-acco
 
 ***
 
-## SSH & Integrations
+## How SSH and integration preferences work
 
 Control access and connections to remote repositories:
 
@@ -85,7 +85,7 @@ Control access and connections to remote repositories:
 
 ***
 
-## GitKraken AI
+## How GitKraken AI preferences work
 
 <div class='callout callout--warning'>
   <p>This feature is available for <strong>Pro</strong> plans or higher.</p>
@@ -99,7 +99,7 @@ Let [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai) automate repetitive Git 
 
 ***
 
-## External Tools
+## How external tool preferences work
 
 Configure your preferred editors, terminals, and diff/merge tools.
 
@@ -115,7 +115,7 @@ Configure your preferred editors, terminals, and diff/merge tools.
 
 ***
 
-## Notifications
+## How notification preferences work
 
 Control product and marketing messages:
 - Enable Desktop Notifications
@@ -127,7 +127,7 @@ Control product and marketing messages:
 
 ***
 
-## UI Customization
+## How UI customization preferences work
 
 Visual preferences for theming and commit graph display:
 - [Themes](/start-here/themes)
@@ -139,13 +139,13 @@ Visual preferences for theming and commit graph display:
 
 ***
 
-## Commit Signing
+## How commit signing preferences work
 
 Enable and configure [GPG signing](/git-workflows-and-extensions/commit-signing-with-gpg/#configure-gpg-in-gitkraken) for commit verification.
 
 ***
 
-## Editor Preferences
+## How editor preferences work
 
 Customize code and diff viewer:
 - Font, size, tab spacing
@@ -155,7 +155,7 @@ Customize code and diff viewer:
 
 ***
 
-## In-App Terminal
+## How in-app terminal preferences work
 
 Adjust the appearance and behavior of GitKraken’s terminal:
 - Font, size, line height, cursor
@@ -164,7 +164,7 @@ Adjust the appearance and behavior of GitKraken’s terminal:
 
 ***
 
-## Experimental
+## How experimental preferences work
 
 Preview [Experimental Features](/gitkraken-desktop/experimental-features):
 - Switch from NodeGit to Git binary (limited support)
@@ -172,7 +172,7 @@ Preview [Experimental Features](/gitkraken-desktop/experimental-features):
 
 ***
 
-## Repo-Specific Preferences
+## How repo-specific preferences work
 
 These apply only to the open repository:
 
