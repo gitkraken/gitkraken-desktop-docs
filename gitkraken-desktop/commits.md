@@ -35,9 +35,20 @@ Use this page to create commits, stage files, add co-authors, work with commit t
 | Undo | You want to remove a local commit that has not been shared yet | Yes | No | Best for local history cleanup |
 | Revert | You need to preserve published history while reversing changes | No | Yes | Creates a new reversing commit |
 
-<div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/8a6fYPkBDbY?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
-</div>
+<figure>
+  <div class="embed-container embed-container--16-9">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/8a6fYPkBDbY?rel=0&vq=hd1080"
+      title="GitKraken Desktop commit walkthrough"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </div>
+</figure>
 
 ***
 

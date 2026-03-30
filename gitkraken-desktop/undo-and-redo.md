@@ -45,10 +45,10 @@ You can undo many common actions with a single click of the **Undo** button. If 
 Undo is available for the most recent supported action. Redo is available for any action that was just undone.
 
 <figure>
-    <img src=’/wp-content/uploads/undo-undo-2025.png’
-         class=”help-center-img img-bordered”
-         alt=”GitKraken Desktop showing the Undo button with tooltip: ‘Undo Commit amend “Updates the GitKraken commit documentation to reflect UI”’.”>
-    <figcaption style=”color: #888; text-align: center;”>Click the Undo button to revert supported Git actions.</figcaption>
+    <img src="/wp-content/uploads/undo-undo-2025.png"
+         class="help-center-img img-bordered"
+         alt="GitKraken Desktop showing the Undo button with tooltip: 'Undo Commit amend &quot;Updates the GitKraken commit documentation to reflect UI&quot;'." />
+    <figcaption style="color: #888; text-align: center;">Click the Undo button to revert supported Git actions.</figcaption>
 </figure>
 
 ## Supported undo actions
