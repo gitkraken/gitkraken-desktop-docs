@@ -70,20 +70,22 @@ This section is labeled with your organization's name. It shows members and team
 
 Configure app-wide behavior like auto-fetch, conflict detection, and commit graph settings.
 
-- **Auto-Fetch**: Set an interval (0–60 minutes); 0 disables auto-fetch.
-- **Auto-Prune**: Removes stale remote-tracking references.
-- **Automatic Conflict Detection**: GitKraken monitors for base branch conflicts.
-- **Keep Submodules Up to Date**: Auto-update submodules after Git actions.
-- **Default Branch Name**: Used when initializing new repos (default is `main`).
-- **Delete ".orig" Files**: Control cleanup of merge backup files.
-- **Show All Commits in Graph**: May affect performance on large repos.
-- **Initial Commits in Graph**: Define max visible commits (minimum: 500).
-- **Lazy Load Commits**: Loads more commits only as needed.
-- **Remember Tabs**: Saves open tabs and profile context between sessions.
-- **Longpaths / AutoCRLF**: Windows-only settings tied to global `.gitconfig`.
-- **Extended Logging**: Toggle detailed activity logs from <kbd>Help > Support Logs</kbd>.
-- **Forget All Credentials**: Clears stored usernames and passwords.
-- **Share Work-in-Progress**: Enables visibility for teammates via the [Team View](/gitkraken-desktop/team-view/).
+| Setting | What it controls |
+| --- | --- |
+| **Auto-Fetch** | Set an interval (0–60 minutes); 0 disables auto-fetch. |
+| **Auto-Prune** | Removes stale remote-tracking references. |
+| **Automatic Conflict Detection** | GitKraken monitors for base branch conflicts. |
+| **Keep Submodules Up to Date** | Auto-update submodules after Git actions. |
+| **Default Branch Name** | Used when initializing new repos (default is `main`). |
+| **Delete ".orig" Files** | Control cleanup of merge backup files. |
+| **Show All Commits in Graph** | May affect performance on large repos. |
+| **Initial Commits in Graph** | Define max visible commits (minimum: 500). |
+| **Lazy Load Commits** | Loads more commits only as needed. |
+| **Remember Tabs** | Saves open tabs and profile context between sessions. |
+| **Longpaths / AutoCRLF** | Windows-only settings tied to global `.gitconfig`. |
+| **Extended Logging** | Toggle detailed activity logs from <kbd>Help > Support Logs</kbd>. |
+| **Forget All Credentials** | Clears stored usernames and passwords. |
+| **Share Work-in-Progress** | Enables visibility for teammates via the [Team View](/gitkraken-desktop/team-view/). |
 
 ***
 
