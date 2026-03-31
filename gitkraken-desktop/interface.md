@@ -58,7 +58,9 @@ From left to right, GitKraken Desktop displays a Left Panel, Commit Graph, and t
 
 The main toolbar provides quick access to common repository actions, including Undo, Redo, Pull, Push, Branching, and more.
 
-### Undo
+### History actions
+
+#### Undo
 <div class="flex-wrap">
 	<div class="flex-item">
 		<img src='/wp-content/uploads/gk-new-undo-icon.svg' class='img-responsive'></div>
@@ -67,7 +69,7 @@ The main toolbar provides quick access to common repository actions, including U
 	</div>
 </div>
 
-### Redo
+#### Redo
 <div class="flex-wrap">
 	<div class="flex-item">
 		<img src='/wp-content/uploads/gk-new-redo-icon.svg' class='img-responsive'>
@@ -77,7 +79,9 @@ The main toolbar provides quick access to common repository actions, including U
 	</div>
 </div>
 
-### Pull
+### Sync actions
+
+#### Pull
 <div class="flex-wrap">
 	<div class="flex-item">
 		<img src='/wp-content/uploads/gk-new-pull-icon.svg' class='img-responsive'>
@@ -94,7 +98,7 @@ The main toolbar provides quick access to common repository actions, including U
 
 <div class='callout callout--basic'><p><strong>Tip:</strong> Click the <i class="fa fa-circle"></i> next to a pull type to make it the default. The selected default displays a <i class="fa fa-dot-circle"></i>.</p></div>
 
-### Push
+#### Push
 <div class="flex-wrap">
 	<div class="flex-item">
 		<img src='/wp-content/uploads/gk-new-push-icon.svg' class='img-responsive'>
@@ -104,7 +108,9 @@ The main toolbar provides quick access to common repository actions, including U
 	</div>
 </div>
 
-### Branch
+### Branch actions
+
+#### Branch
 <div class="flex-wrap">
 	<div class="flex-item">
 		<img src='/wp-content/uploads/gk-new-branch-icon.svg' class='img-responsive'>
@@ -114,7 +120,9 @@ The main toolbar provides quick access to common repository actions, including U
 	</div>
 </div>
 
-### Stash
+### Work-in-progress actions
+
+#### Stash
 <div class="flex-wrap">
 	<div class="flex-item">
 		<img src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive'>
@@ -124,7 +132,7 @@ The main toolbar provides quick access to common repository actions, including U
 	</div>
 </div>
 
-### Pop Stash
+#### Pop Stash
 <div class="flex-wrap">
 	<div class="flex-item">
 		<img src='/wp-content/uploads/gk-new-pop-icon.svg' class='img-responsive'>
@@ -134,7 +142,9 @@ The main toolbar provides quick access to common repository actions, including U
 	</div>
 </div>
 
-### LFS
+### Conditional actions
+
+#### LFS
 <div class="flex-wrap">
 	<div class="flex-item">
 		<img src='/wp-content/uploads/gk-lfs-icon.svg' class='img-responsive'>
