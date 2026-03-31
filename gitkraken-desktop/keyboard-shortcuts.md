@@ -34,6 +34,11 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
 ## How to open the keyboard shortcuts list
 
 <table class='table table--bordered table--shortcuts'>
+  <colgroup>
+    <col style="width: 44%;">
+    <col style="width: 28%;">
+    <col style="width: 28%;">
+  </colgroup>
   <thead>
     <tr>
       <th scope="col">Action</th>
@@ -52,6 +57,11 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
 
 ## Keyboard shortcuts for repo actions
 <table class='table table--bordered table--shortcuts'>
+    <colgroup>
+        <col style="width: 44%;">
+        <col style="width: 28%;">
+        <col style="width: 28%;">
+    </colgroup>
     <thead>
         <tr>
             <th></th>
@@ -110,6 +120,11 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
 
 ### Keyboard shortcuts for navigation
 <table class='table table--bordered table--shortcuts'>
+    <colgroup>
+        <col style="width: 44%;">
+        <col style="width: 28%;">
+        <col style="width: 28%;">
+    </colgroup>
     <thead>
         <tr>
             <th>&nbsp;</th>
@@ -179,6 +194,11 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
 
 ### Keyboard shortcuts for the Command Palette
 <table class='table table--bordered table--shortcuts'>
+    <colgroup>
+        <col style="width: 44%;">
+        <col style="width: 28%;">
+        <col style="width: 28%;">
+    </colgroup>
     <thead>
         <tr>
             <th>&nbsp;</th>
@@ -242,6 +262,11 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
 
 ### Keyboard shortcuts for the interface
 <table class='table table--bordered table--shortcuts'>
+    <colgroup>
+        <col style="width: 44%;">
+        <col style="width: 28%;">
+        <col style="width: 28%;">
+    </colgroup>
     <thead>
         <tr>
             <th>&nbsp;</th>
@@ -302,6 +327,11 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
 
 ### Keyboard shortcuts for tabs
 <table class='table table--bordered table--shortcuts'>
+    <colgroup>
+        <col style="width: 44%;">
+        <col style="width: 28%;">
+        <col style="width: 28%;">
+    </colgroup>
     <thead>
         <tr>
             <th>&nbsp;</th>
