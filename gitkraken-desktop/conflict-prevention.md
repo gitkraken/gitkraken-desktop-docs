@@ -37,6 +37,10 @@ Use this page to detect likely merge conflicts in GitKraken Desktop before they 
 
 ***
 
+<div class=’callout callout--warning’>
+  <p><strong>GitKraken On-Premise users:</strong> Target-branch conflict detection is available in Serverless and Self-Hosted Server deployments. The following features require cloud connectivity and are not available in those environments: Org Member conflict detection (requires a cloud GitKraken Org) and Cloud Patch sharing (requires gitkraken.dev).</p>
+</div>
+
 ## Quick Start
 
 - When GitKraken Desktop detects overlapping changes with an Org Member’s commits, a conflict alert icon appears in the interface. Click the icon to view conflict details and take action.
@@ -80,6 +84,10 @@ From the conflict detection menu, you can:
 - Share edits as a **Cloud Patch**
 - Push changes to make them visible to others
 - Copy summaries of overlapping edits for your team
+
+<div class='callout callout--basic'>
+  <p><strong>Note:</strong> Cloud Patch sharing is not available in GitKraken On-Premise deployments. In those environments, pushing changes and copying the conflict summary are the available options.</p>
+</div>
 
 ***
 
