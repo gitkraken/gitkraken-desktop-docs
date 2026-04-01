@@ -72,19 +72,15 @@ GitKraken On-Premise Serverless supports most GitKraken Desktop features, includ
 
 The following feature categories are fully supported in Serverless:
 
-**Core Git client**: All standard Git operations, including commits, branches, merges, rebases, diffs, stashing, tagging, interactive rebase, cherry pick (including multi-commit interactive cherry pick), worktrees, shallow clone, and undo or redo of rebase and cherry pick operations.
-
-**Launchpad**: Track pull requests and issues in a single view and filter by repository, branch, milestone, or sprint. Launchpad works with the following on-premises integrations: GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server and Data Center, Azure DevOps Server, and Jira Data Center. For a description of the differences between cloud and on-premises Launchpad, see [How On-Premise Launchpad differs from Cloud Launchpad](/gitkraken-desktop/gitkraken-launchpad/#how-on-premise-launchpad-differs-from-cloud-launchpad).
-
-**Local Workspaces**: Organize multiple local Git repositories in one view. You can see the branch status of each repository and run multi-repository actions, such as fetch and pull, from a single place. Cloud Workspaces are not available in Serverless.
-
-**Conflict detection**: GitKraken detects potential conflicts with your target branch before you reach the merge step and alerts you when your checked-out branch has diverged from its pull request target.
-
-**GitKraken AI (bring your own key)**: All GitKraken AI features are available when you configure a Custom URL that points to a private or internal AI endpoint. For setup instructions, see [GitKraken AI in Serverless](#gitkraken-ai-in-serverless).
-
-**ARM builds**: A native ARM installer is available for machines with ARM architecture.
-
-**On-premises integrations**: GitKraken Serverless supports integrations with self-hosted Git hosting services and issue trackers. For the full list, see [Supported on-premises integrations](#supported-on-premises-integrations).
+| Category | Included | Notes |
+| --- | --- | --- |
+| **Core Git client** | All standard Git operations, including commits, branches, merges, rebases, diffs, stashing, tagging, interactive rebase, cherry pick (including multi-commit interactive cherry pick), worktrees, shallow clone, and undo or redo of rebase and cherry pick operations. | |
+| **Launchpad** | Track pull requests and issues in a single view and filter by repository, branch, milestone, or sprint. Launchpad works with the following on-premises integrations: GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server and Data Center, Azure DevOps Server, and Jira Data Center. | For a description of the differences between cloud and on-premises Launchpad, see [How On-Premise Launchpad differs from Cloud Launchpad](/gitkraken-desktop/gitkraken-launchpad/#how-on-premise-launchpad-differs-from-cloud-launchpad). |
+| **Local Workspaces** | Organize multiple local Git repositories in one view. You can see the branch status of each repository and run multi-repository actions, such as fetch and pull, from a single place. | Cloud Workspaces are not available in Serverless. |
+| **Conflict detection** | GitKraken detects potential conflicts with your target branch before you reach the merge step and alerts you when your checked-out branch has diverged from its pull request target. | |
+| **GitKraken AI (bring your own key)** | All GitKraken AI features are available when you configure a Custom URL that points to a private or internal AI endpoint. | For setup instructions, see [GitKraken AI in Serverless](#gitkraken-ai-in-serverless). |
+| **ARM builds** | A native ARM installer is available for machines with ARM architecture. | |
+| **On-premises integrations** | GitKraken Serverless supports integrations with self-hosted Git hosting services and issue trackers. | For the full list, see [Supported on-premises integrations](#supported-on-premises-integrations). |
 
 ### What is not available
 
