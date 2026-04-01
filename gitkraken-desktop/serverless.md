@@ -50,7 +50,7 @@ Use this page to install and license GitKraken On-Premise Serverless, also calle
 If your license expires, replace the `.dat` file in one of the supported directories or click the license text in the bottom-left corner of the app and select **Update License**. GitKraken Serverless is sold separately from standard subscriptions.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/serverless-example-2025@2x.png" class="img-responsive img-bordered">
+  <img src="/wp-content/uploads/serverless-example-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Example view of GitKraken Serverless in use.</figcaption>
 </figure>
 
@@ -151,7 +151,6 @@ When you configure a Custom URL, the following AI features are available:
 - Auto-resolve merge conflicts (Preview)
 - Stash message generation
 
-To configure organization-wide AI controls, see [GitKraken Dev Security Controls](https://help.gitkraken.com/gk-dev/gk-dev-security-controls/).
 
 ### Supported on-premises integrations
 
@@ -162,6 +161,7 @@ GitKraken Serverless supports the following self-hosted integrations. These inte
 - Bitbucket Server and Data Center
 - Azure DevOps Server
 - Jira Data Center
+- or any custom remote hosting service available over HTTPS or SSH authentication
 
 The cloud-hosted counterparts of these services (GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, and Jira Cloud) are not supported in Serverless because they require outbound internet connectivity.
 
@@ -200,7 +200,7 @@ If the page is inaccessible, contact your GitKraken administrator for internal d
 - `%APPDATA%\.gitkraken` (for older versions)
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/license.png" class="img-responsive img-bordered">
+  <img src="/wp-content/uploads/license.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Prompt to load license file after install.</figcaption>
 </figure>
 
@@ -257,7 +257,7 @@ At first launch, you’ll be prompted to load the `.dat` license file.
 If you don’t have the file, contact your GitKraken admin. Admins can retrieve it from app.gitkraken.com. For older accounts or help locating the file, <a href="https://help.gitkraken.com/gitkraken-desktop/contact-support/">contact support</a>.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/serverless-2025@2x.png" class="img-responsive img-bordered">
+  <img src="/wp-content/uploads/serverless-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">GitKraken Serverless ready after license activation.</figcaption>
 </figure>
 
@@ -292,7 +292,7 @@ If your license expires, you can:
   - Select <kbd>Update License</kbd>
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/serverless-license-2025@2x.png" class="img-responsive img-bordered">
+  <img src="/wp-content/uploads/serverless-license-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Update your license manually from the client footer.</figcaption>
 </figure>
 

@@ -143,7 +143,6 @@ When you configure a Custom URL, the following AI features are available:
 - Auto-resolve merge conflicts (Preview)
 - Stash message generation
 
-To configure organization-wide AI controls, see [GitKraken Dev Security Controls](https://help.gitkraken.com/gk-dev/gk-dev-security-controls/).
 
 ### Supported on-premises integrations
 
@@ -154,6 +153,7 @@ GitKraken Self-Hosted supports the following self-hosted integrations. These int
 - Bitbucket Server and Data Center
 - Azure DevOps Server
 - Jira Data Center
+- or any custom remote hosting service available over HTTPS or SSH authentication
 
 The cloud-hosted counterparts of these services (GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, and Jira Cloud) are not supported because they require outbound internet connectivity.
 
