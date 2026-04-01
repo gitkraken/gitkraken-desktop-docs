@@ -43,6 +43,10 @@ GitKraken AI in GitKraken Desktop helps developers generate commit messages, exp
 
 ***
 
+<div class='callout callout--warning'>
+  <p><strong>GitKraken On-Premise users:</strong> The default GitKraken-hosted AI provider is not available in Serverless or Self-Hosted Server deployments. To use GitKraken AI in an on-premises environment, you must configure a Custom URL that points to a private or internal AI service. See <a href="#how-to-use-a-custom-api-endpoint">How to use a custom API endpoint</a> for setup steps.</p>
+</div>
+
 ## Quick Start
 
 **To generate a commit message:**
@@ -372,6 +376,10 @@ If you prefer using your own API key with **OpenAI**, **Azure**, **Anthropic**, 
 ### How to use a custom API endpoint
 
 For users with advanced security requirements, you may use a **Custom URL** to direct AI requests to a private or internal service.
+
+<div class='callout callout--basic'>
+  <p><strong>GitKraken On-Premise users:</strong> If you are running GitKraken On-Premise Serverless or Self-Hosted Server, the default hosted provider is not reachable from your network. Custom URL is the only supported AI configuration in those environments.</p>
+</div>
 
 This endpoint can handle:
 - Commit explanations
