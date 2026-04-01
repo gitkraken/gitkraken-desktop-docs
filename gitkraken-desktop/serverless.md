@@ -292,6 +292,8 @@ If your license expires, you can:
   <figcaption style="text-align: center; color: #888;">Update your license manually from the client footer.</figcaption>
 </figure>
 
+For licensing help, contact your GitKraken administrator or [contact support](https://help.gitkraken.com/gitkraken-desktop/contact-support/).
+
 <style>
 pre{position:relative;min-height:3em}
 .copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;height:28px;padding:0 8px;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s;font-size:11px;font-family:sans-serif}
