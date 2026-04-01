@@ -6968,7 +6968,7 @@ Plan required: Pro
 Status: preview
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 GitKraken AI in GitKraken Desktop helps developers generate commit messages, explain commits and branches, draft pull request text, resolve merge conflicts, and customize AI providers and prompts. Use this page to understand which AI workflows are available, when to use them, and which features require a paid GitKraken subscription.
 
@@ -6983,7 +6983,19 @@ GitKraken AI in GitKraken Desktop helps developers generate commit messages, exp
 - Preview feature on this page: AI Commit Composer
 - Feature availability varies by workflow; review each section for feature-specific status and behavior
 
+| Feature | What it generates or does | Status | Plan | Setup location |
+|---------|----------------------------|--------|------|----------------|
+| AI Commit Message | Commit message suggestions from staged changes | GA | Paid subscription | Commit Panel |
+| AI Commit Composer | Compose or recompose commits into a cleaner history | Preview | Paid subscription | Commit Details Panel |
+| AI Explain | Natural-language explanations of commits and branches | GA | Paid subscription | Commit Graph and context menus |
+| AI Pull Request Description | Draft pull request summaries and descriptions | GA | Paid subscription | Pull request description field |
+| AI provider and prompt settings | Model, provider, and prompt customization | GA | Paid subscription | <kbd>Preferences &gt; AI</kbd> |
+
 ***
+
+<div class='callout callout--warning'>
+  <p><strong>GitKraken On-Premise users:</strong> The default GitKraken-hosted AI provider is not available in Serverless or Self-Hosted Server deployments. To use GitKraken AI in an on-premises environment, you must configure a Custom URL that points to a private or internal AI service. See <a href="#how-to-use-a-custom-api-endpoint">How to use a custom API endpoint</a> for setup steps.</p>
+</div>
 
 ## Quick Start
 
@@ -7314,6 +7326,10 @@ If you prefer using your own API key with **OpenAI**, **Azure**, **Anthropic**, 
 ### How to use a custom API endpoint
 
 For users with advanced security requirements, you may use a **Custom URL** to direct AI requests to a private or internal service.
+
+<div class='callout callout--basic'>
+  <p><strong>GitKraken On-Premise users:</strong> If you are running GitKraken On-Premise Serverless or Self-Hosted Server, the default hosted provider is not reachable from your network. Custom URL is the only supported AI configuration in those environments.</p>
+</div>
 
 This endpoint can handle:
 - Commit explanations
@@ -8649,7 +8665,7 @@ Plan required: Pro
 Status: preview
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this page to detect likely merge conflicts in GitKraken Desktop before they reach the merge step. Conflict Prevention alerts you when your work overlaps with Org Members or a target branch, shows what changed, and provides early actions such as pushing, rebasing, merging, or sharing a Cloud Patch.
 
@@ -8668,6 +8684,10 @@ Use this page to detect likely merge conflicts in GitKraken Desktop before they 
 </figure>
 
 ***
+
+<div class=’callout callout--warning’>
+  <p><strong>GitKraken On-Premise users:</strong> Target-branch conflict detection is available in Serverless and Self-Hosted Server deployments. The following features require cloud connectivity and are not available in those environments: Org Member conflict detection (requires a cloud GitKraken Org) and Cloud Patch sharing (requires gitkraken.dev).</p>
+</div>
 
 ## Quick Start
 
@@ -8712,6 +8732,10 @@ From the conflict detection menu, you can:
 - Share edits as a **Cloud Patch**
 - Push changes to make them visible to others
 - Copy summaries of overlapping edits for your team
+
+<div class='callout callout--basic'>
+  <p><strong>Note:</strong> Cloud Patch sharing is not available in GitKraken On-Premise deployments. In those environments, pushing changes and copying the conflict summary are the available options.</p>
+</div>
 
 ***
 
@@ -8915,6 +8939,10 @@ Use GitKraken Launchpad to monitor pull requests, issues, and works in progress 
 The Launchpad is also <a href="https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/#elementor-toc__heading-anchor-13">available for GitKraken On-Premise</a> customers with some feature variations.
 
 ***
+
+<div class='callout callout--warning'>
+  <p><strong>GitKraken On-Premise users:</strong> Step 3 below requires a Cloud Workspace, which is not available in Serverless or Self-Hosted Server deployments. Skip step 3 and connect your on-premises integrations (GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server, Azure DevOps Server, or Jira Data Center) in <kbd>Preferences &gt; Integrations</kbd> instead. For a full description of Launchpad feature differences in on-premises environments, see <a href="#how-on-premise-launchpad-differs-from-cloud-launchpad">How On-Premise Launchpad differs from Cloud Launchpad</a>.</p>
+</div>
 
 ## Quick Start
 
@@ -9428,7 +9456,16 @@ Use this page to create Local or Cloud Workspaces in GitKraken Desktop so you ca
 - Multi-repository actions: Clone, Fetch, Pull, Open, Locate, and Remove are available from the Workspace toolbar
 - Conversion path: Local Workspaces can be converted to Cloud Workspaces after connecting a supported integration
 
+| Workspace type | Stored where | Shareable | Requires integration | Cross-device access |
+|----------------|-------------|-----------|----------------------|---------------------|
+| Local Workspace | On your machine | No | No | No |
+| Cloud Workspace | In your GitKraken account and connected service context | Yes | Yes | Yes |
+
 ***
+
+<div class='callout callout--warning'>
+  <p><strong>GitKraken On-Premise users:</strong> Cloud Workspaces are not available in Serverless or Self-Hosted Server deployments. Use <a href="#how-local-workspaces-work">Local Workspaces</a> to organize repositories in those environments. Features that depend on Cloud Workspaces, including Workspace Insights and Team Launchpad, are also not available.</p>
+</div>
 
 ## Quick Start
 
@@ -9482,6 +9519,10 @@ To access the Repo Management tab:
 ## How Cloud Workspaces work
 
 Cloud Workspaces are accessible from any machine and can be shared with selected [teams](/start-here/teams/) in your organization. They allow for [multi-repository actions](/gitkraken-desktop/workspaces/#cloud-multi-repository-actions) and centralized pull request management.
+
+<div class='callout callout--warning'>
+  <p><strong>Note:</strong> Cloud Workspaces are not available in GitKraken On-Premise Serverless or Self-Hosted Server deployments. See <a href="#how-local-workspaces-work">How Local Workspaces work</a> for the supported alternative in those environments.</p>
+</div>
 
 <div class='callout callout--basic'>
     <p><strong>Use a Cloud Workspace when:</strong> you need to share repository groups across machines or with teammates. <strong>Don't use a Cloud Workspace when:</strong> the repo list is only for your local machine and does not need shared or synced workspace context.</p>
@@ -9751,6 +9792,10 @@ Drag and drop Workspaces to arrange them in the desired order.
 ***
 
 ## How to use Insights to visualize pull request history
+
+<div class='callout callout--warning'>
+  <p><strong>Note:</strong> GitKraken Insights is not available in GitKraken On-Premise Serverless or Self-Hosted Server deployments. Insights requires a connection to <a href="https://gitkraken.dev">gitkraken.dev</a>.</p>
+</div>
 
 GitKraken Insights helps you understand how pull requests are merged into your repositories. It provides:
 
@@ -10093,7 +10138,7 @@ Plan required: Enterprise
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this page to install and license GitKraken On-Premise Serverless, also called GitKraken Stand-Alone, when your team works in offline or tightly controlled environments. It covers platform-specific installation steps, supported license file locations, and the manual license update flow required after expiration or renewal.
 
@@ -10137,6 +10182,109 @@ If your license expires, replace the `.dat` file in one of the supported directo
 <div class='callout callout--basic'>
     <p>To request a trial key, email <a href="mailto:sales@gitkraken.com">sales@gitkraken.com</a>.</p>
 </div>
+
+***
+
+## Feature support
+
+GitKraken On-Premise Serverless supports most GitKraken Desktop features, including the major upgrades introduced in versions 10 and 11. Features that require connectivity to GitKraken cloud services or to external cloud hosting providers are not available.
+
+### What is included
+
+The following feature categories are fully supported in Serverless:
+
+**Core Git client**: All standard Git operations, including commits, branches, merges, rebases, diffs, stashing, tagging, interactive rebase, cherry pick (including multi-commit interactive cherry pick), worktrees, shallow clone, and undo or redo of rebase and cherry pick operations.
+
+**Launchpad**: Track pull requests and issues in a single view and filter by repository, branch, milestone, or sprint. Launchpad works with the following on-premises integrations: GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server and Data Center, Azure DevOps Server, and Jira Data Center. For a description of the differences between cloud and on-premises Launchpad, see [How On-Premise Launchpad differs from Cloud Launchpad](/gitkraken-desktop/gitkraken-launchpad/#how-on-premise-launchpad-differs-from-cloud-launchpad).
+
+**Local Workspaces**: Organize multiple local Git repositories in one view. You can see the branch status of each repository and run multi-repository actions, such as fetch and pull, from a single place. Cloud Workspaces are not available in Serverless.
+
+**Conflict detection**: GitKraken detects potential conflicts with your target branch before you reach the merge step and alerts you when your checked-out branch has diverged from its pull request target.
+
+**GitKraken AI (bring your own key)**: All GitKraken AI features are available when you configure a Custom URL that points to a private or internal AI endpoint. For setup instructions, see [GitKraken AI in Serverless](#gitkraken-ai-in-serverless).
+
+**ARM builds**: A native ARM installer is available for machines with ARM architecture.
+
+**On-premises integrations**: GitKraken Serverless supports integrations with self-hosted Git hosting services and issue trackers. For the full list, see [Supported on-premises integrations](#supported-on-premises-integrations).
+
+### What is not available
+
+The following features require connectivity to GitKraken cloud services (`gitkraken.dev`) or to external cloud hosting providers and are not available in Serverless:
+
+- Cloud Workspaces and features that depend on them, including Team Launchpad, Launchpad Saved Views, and Launchpad snooze and pin
+- GitKraken Insights
+- GitKraken AI using the default GitKraken-hosted provider
+- Cloud Patch sharing
+- Org Member conflict detection
+- Integrations with cloud-hosted services: GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, Jira Cloud, and Trello
+
+### Feature support table
+
+| Feature | Supported | Notes |
+|---|---|---|
+| Core Git client (commits, branches, merges, rebase, diff, stash) | Yes | |
+| Interactive Rebase | Yes | |
+| Multi-commit Cherry Pick | Yes | |
+| Worktrees | Yes | Requires version 10.5.0 or later |
+| Shallow Clone | Yes | |
+| Undo rebases, cherry picks, and AI Commit Compose | Yes | |
+| Local Workspaces | Yes | Stored on-device only; not shareable across machines |
+| Cloud Workspaces | No | Requires gitkraken.dev |
+| Launchpad with on-premises integrations | Yes | See supported integrations list |
+| Launchpad Cloud Workspace filtering | No | |
+| Launchpad Team View | No | |
+| Launchpad Saved Views | No | |
+| Launchpad snooze and pin | No | |
+| Conflict detection (target branch) | Yes | |
+| Conflict detection (Org Member awareness) | No | Requires cloud GitKraken Org |
+| Cloud Patch sharing | No | |
+| GitKraken AI (default hosted provider, no key required) | No | Calls GitKraken cloud endpoint |
+| GitKraken AI (Custom URL or bring your own key) | Yes | Per-user opt-in; you provide the AI infrastructure |
+| ARM builds | Yes | Separate ARM installer available |
+| GitHub Enterprise Server integration | Yes | |
+| GitLab Self-Managed integration | Yes | |
+| Bitbucket Server and Data Center integration | Yes | |
+| Azure DevOps Server integration | Yes | |
+| Jira Data Center integration | Yes | |
+| GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, Jira Cloud | No | Require outbound internet access |
+| GitKraken Insights | No | Requires gitkraken.dev |
+
+### GitKraken AI in Serverless
+
+GitKraken AI is available in GitKraken Serverless when you configure a Custom URL that directs AI requests to a private or internal service. The default GitKraken-hosted AI provider is not accessible in offline or air-gapped environments.
+
+**To enable GitKraken AI in Serverless:**
+
+1. Go to <kbd>Preferences > GitKraken AI</kbd>.
+2. Select **Custom URL** as the provider.
+3. Enter the endpoint URL for your internal AI service.
+4. If your endpoint requires authentication, enter an API key.
+
+This is an opt-in, per-user setting. GitKraken does not validate or support the configuration of third-party or self-hosted AI endpoints.
+
+When you configure a Custom URL, the following AI features are available:
+
+- Commit message generation
+- Commit Composer (Preview)
+- Explain commits
+- Explain branch changes
+- Pull request title and description generation (requires a configured on-premises integration)
+- Auto-resolve merge conflicts (Preview)
+- Stash message generation
+
+To configure organization-wide AI controls, see [GitKraken Dev Security Controls](https://help.gitkraken.com/gk-dev/gk-dev-security-controls/).
+
+### Supported on-premises integrations
+
+GitKraken Serverless supports the following self-hosted integrations. These integrations communicate only within your network and do not require outbound internet access:
+
+- GitHub Enterprise Server
+- GitLab Self-Managed
+- Bitbucket Server and Data Center
+- Azure DevOps Server
+- Jira Data Center
+
+The cloud-hosted counterparts of these services (GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, and Jira Cloud) are not supported in Serverless because they require outbound internet connectivity.
 
 ***
 
@@ -10914,7 +11062,7 @@ Plan required: Enterprise
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this page to understand what GitKraken On-Premise Self-Hosted Server is, when to choose it, and what infrastructure it requires before installation. It summarizes the offline deployment model, supported operating systems, minimum server specs, and the distinction between Self-Hosted and Serverless on-premise offerings.
 
@@ -10944,6 +11092,117 @@ Use this page to understand what GitKraken On-Premise Self-Hosted Server is, whe
 <div class='callout callout--warning'>
   <p><strong>Note:</strong> GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, visit our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?_gl=1*vtr4xk*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmv98H0EKgytPnuCPuTqdL2vy4GQaCsizBMO9m8mz2n1hMMXO3AAw7YaAiyKEALw_wcB?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
 </div>
+
+## Feature support
+
+GitKraken On-Premise Self-Hosted Server uses the same Desktop client as GitKraken On-Premise Serverless. The Desktop client feature set is identical between the two variants. The difference between Self-Hosted and Serverless is the deployment and license model, not the feature set.
+
+In Self-Hosted, a central server inside your network handles authentication and license management. This gives your organization control over which client version is deployed to users and how users authenticate. Features that require connectivity to GitKraken cloud services are not available in either on-premises variant.
+
+### What is included
+
+The following feature categories are fully supported:
+
+**Core Git client**: All standard Git operations, including commits, branches, merges, rebases, diffs, stashing, tagging, interactive rebase, cherry pick (including multi-commit interactive cherry pick), worktrees, shallow clone, and undo or redo of rebase and cherry pick operations.
+
+**Launchpad**: Track pull requests and issues in a single view and filter by repository, branch, milestone, or sprint. Launchpad works with the following on-premises integrations: GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server and Data Center, Azure DevOps Server, and Jira Data Center. For a description of the differences between cloud and on-premises Launchpad, see [How On-Premise Launchpad differs from Cloud Launchpad](/gitkraken-desktop/gitkraken-launchpad/#how-on-premise-launchpad-differs-from-cloud-launchpad).
+
+**Local Workspaces**: Organize multiple local Git repositories in one view. You can see the branch status of each repository and run multi-repository actions, such as fetch and pull, from a single place. Cloud Workspaces are not available.
+
+**Conflict detection**: GitKraken detects potential conflicts with your target branch before you reach the merge step and alerts you when your checked-out branch has diverged from its pull request target.
+
+**GitKraken AI (bring your own key)**: All GitKraken AI features are available when you configure a Custom URL that points to a private or internal AI endpoint. For setup instructions, see [GitKraken AI in Self-Hosted Server](#gitkraken-ai-in-self-hosted-server).
+
+**ARM builds**: A native ARM installer is available for machines with ARM architecture.
+
+**Centralized version management**: Because the Desktop client connects to your internal server, your admin controls which client version is served to users. This lets you test and roll out updates on your own schedule.
+
+**Authentication**: Users authenticate through your Self-Hosted Server using email-based or LDAP authentication. No external GitKraken cloud account is required.
+
+**On-premises integrations**: GitKraken Self-Hosted supports integrations with self-hosted Git hosting services and issue trackers. For the full list, see [Supported on-premises integrations](#supported-on-premises-integrations).
+
+### What is not available
+
+The following features require connectivity to GitKraken cloud services (`gitkraken.dev`) or to external cloud hosting providers and are not available in Self-Hosted Server:
+
+- Cloud Workspaces and features that depend on them, including Team Launchpad, Launchpad Saved Views, and Launchpad snooze and pin
+- GitKraken Insights
+- GitKraken AI using the default GitKraken-hosted provider
+- Cloud Patch sharing
+- Org Member conflict detection
+- Integrations with cloud-hosted services: GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, Jira Cloud, and Trello
+
+### Feature support table
+
+| Feature | Supported | Notes |
+|---|---|---|
+| Core Git client (commits, branches, merges, rebase, diff, stash) | Yes | |
+| Interactive Rebase | Yes | |
+| Multi-commit Cherry Pick | Yes | |
+| Worktrees | Yes | Requires client version 10.5.0 or later |
+| Shallow Clone | Yes | |
+| Undo rebases, cherry picks, and AI Commit Compose | Yes | |
+| Local Workspaces | Yes | Stored on-device only; not shareable across machines |
+| Cloud Workspaces | No | Requires gitkraken.dev |
+| Launchpad with on-premises integrations | Yes | See supported integrations list |
+| Launchpad Cloud Workspace filtering | No | |
+| Launchpad Team View | No | |
+| Launchpad Saved Views | No | |
+| Launchpad snooze and pin | No | |
+| Conflict detection (target branch) | Yes | |
+| Conflict detection (Org Member awareness) | No | Requires cloud GitKraken Org |
+| Cloud Patch sharing | No | |
+| GitKraken AI (default hosted provider, no key required) | No | Calls GitKraken cloud endpoint |
+| GitKraken AI (Custom URL or bring your own key) | Yes | Per-user opt-in; you provide the AI infrastructure |
+| ARM builds | Yes | Separate ARM installer available |
+| Centralized version management | Yes | Admin controls client version rollout via the server |
+| LDAP authentication | Yes | Configured on the Self-Hosted Server |
+| GitHub Enterprise Server integration | Yes | |
+| GitLab Self-Managed integration | Yes | |
+| Bitbucket Server and Data Center integration | Yes | |
+| Azure DevOps Server integration | Yes | |
+| Jira Data Center integration | Yes | |
+| GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, Jira Cloud | No | Require outbound internet access |
+| GitKraken Insights | No | Requires gitkraken.dev |
+
+### GitKraken AI in Self-Hosted Server
+
+GitKraken AI is available in Self-Hosted Server when individual users configure a Custom URL that directs AI requests to a private or internal service. The default GitKraken-hosted AI provider is not accessible in network-isolated environments.
+
+**To enable GitKraken AI:**
+
+1. Go to <kbd>Preferences > GitKraken AI</kbd>.
+2. Select **Custom URL** as the provider.
+3. Enter the endpoint URL for your internal AI service.
+4. If your endpoint requires authentication, enter an API key.
+
+This is an opt-in, per-user setting. GitKraken does not validate or support the configuration of third-party or self-hosted AI endpoints.
+
+When you configure a Custom URL, the following AI features are available:
+
+- Commit message generation
+- Commit Composer (Preview)
+- Explain commits
+- Explain branch changes
+- Pull request title and description generation (requires a configured on-premises integration)
+- Auto-resolve merge conflicts (Preview)
+- Stash message generation
+
+To configure organization-wide AI controls, see [GitKraken Dev Security Controls](https://help.gitkraken.com/gk-dev/gk-dev-security-controls/).
+
+### Supported on-premises integrations
+
+GitKraken Self-Hosted supports the following self-hosted integrations. These integrations communicate only within your network and do not require outbound internet access:
+
+- GitHub Enterprise Server
+- GitLab Self-Managed
+- Bitbucket Server and Data Center
+- Azure DevOps Server
+- Jira Data Center
+
+The cloud-hosted counterparts of these services (GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, and Jira Cloud) are not supported because they require outbound internet connectivity.
+
+***
 
 ## System requirements
 
