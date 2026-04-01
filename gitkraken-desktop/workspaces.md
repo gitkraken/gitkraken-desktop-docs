@@ -36,6 +36,10 @@ Use this page to create Local or Cloud Workspaces in GitKraken Desktop so you ca
 
 ***
 
+<div class='callout callout--warning'>
+  <p><strong>GitKraken On-Premise users:</strong> Cloud Workspaces are not available in Serverless or Self-Hosted Server deployments. Use <a href="#how-local-workspaces-work">Local Workspaces</a> to organize repositories in those environments. Features that depend on Cloud Workspaces, including Workspace Insights and Team Launchpad, are also not available.</p>
+</div>
+
 ## Quick Start
 
 
@@ -88,6 +92,10 @@ To access the Repo Management tab:
 ## How Cloud Workspaces work
 
 Cloud Workspaces are accessible from any machine and can be shared with selected [teams](/start-here/teams/) in your organization. They allow for [multi-repository actions](/gitkraken-desktop/workspaces/#cloud-multi-repository-actions) and centralized pull request management.
+
+<div class='callout callout--warning'>
+  <p><strong>Note:</strong> Cloud Workspaces are not available in GitKraken On-Premise Serverless or Self-Hosted Server deployments. See <a href="#how-local-workspaces-work">How Local Workspaces work</a> for the supported alternative in those environments.</p>
+</div>
 
 <div class='callout callout--basic'>
     <p><strong>Use a Cloud Workspace when:</strong> you need to share repository groups across machines or with teammates. <strong>Don't use a Cloud Workspace when:</strong> the repo list is only for your local machine and does not need shared or synced workspace context.</p>
@@ -357,6 +365,10 @@ Drag and drop Workspaces to arrange them in the desired order.
 ***
 
 ## How to use Insights to visualize pull request history
+
+<div class='callout callout--warning'>
+  <p><strong>Note:</strong> GitKraken Insights is not available in GitKraken On-Premise Serverless or Self-Hosted Server deployments. Insights requires a connection to <a href="https://gitkraken.dev">gitkraken.dev</a>.</p>
+</div>
 
 GitKraken Insights helps you understand how pull requests are merged into your repositories. It provides:
 
