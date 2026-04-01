@@ -8940,6 +8940,10 @@ The Launchpad is also <a href="https://help.gitkraken.com/gitkraken-desktop/gitk
 
 ***
 
+<div class='callout callout--warning'>
+  <p><strong>GitKraken On-Premise users:</strong> Step 3 below requires a Cloud Workspace, which is not available in Serverless or Self-Hosted Server deployments. Skip step 3 and connect your on-premises integrations (GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server, Azure DevOps Server, or Jira Data Center) in <kbd>Preferences &gt; Integrations</kbd> instead. For a full description of Launchpad feature differences in on-premises environments, see <a href="#how-on-premise-launchpad-differs-from-cloud-launchpad">How On-Premise Launchpad differs from Cloud Launchpad</a>.</p>
+</div>
+
 ## Quick Start
 
 
