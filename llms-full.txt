@@ -6968,7 +6968,7 @@ Plan required: Pro
 Status: preview
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 GitKraken AI in GitKraken Desktop helps developers generate commit messages, explain commits and branches, draft pull request text, resolve merge conflicts, and customize AI providers and prompts. Use this page to understand which AI workflows are available, when to use them, and which features require a paid GitKraken subscription.
 
@@ -8649,7 +8649,7 @@ Plan required: Pro
 Status: preview
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this page to detect likely merge conflicts in GitKraken Desktop before they reach the merge step. Conflict Prevention alerts you when your work overlaps with Org Members or a target branch, shows what changed, and provides early actions such as pushing, rebasing, merging, or sharing a Cloud Patch.
 
@@ -10093,7 +10093,7 @@ Plan required: Enterprise
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this page to install and license GitKraken On-Premise Serverless, also called GitKraken Stand-Alone, when your team works in offline or tightly controlled environments. It covers platform-specific installation steps, supported license file locations, and the manual license update flow required after expiration or renewal.
 
@@ -10914,7 +10914,7 @@ Plan required: Enterprise
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this page to understand what GitKraken On-Premise Self-Hosted Server is, when to choose it, and what infrastructure it requires before installation. It summarizes the offline deployment model, supported operating systems, minimum server specs, and the distinction between Self-Hosted and Serverless on-premise offerings.
 

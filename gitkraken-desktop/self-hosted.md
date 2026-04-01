@@ -17,7 +17,7 @@ tags: [self-hosted, on-premise, setup, enterprise, server]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this page to understand what GitKraken On-Premise Self-Hosted Server is, when to choose it, and what infrastructure it requires before installation. It summarizes the offline deployment model, supported operating systems, minimum server specs, and the distinction between Self-Hosted and Serverless on-premise offerings.
 
