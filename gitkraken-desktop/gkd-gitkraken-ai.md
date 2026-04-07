@@ -11,7 +11,7 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: preview
-last_verified: 2026-03
+last_verified: 2026-04
 llms_include: true
 tags: [ai, commit-messages, explain, pull-requests, providers]
 taxonomy:
