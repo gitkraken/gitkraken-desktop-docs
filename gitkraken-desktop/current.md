@@ -248,7 +248,7 @@ In 11.5, GitKraken Desktop got faster across the board: large repo load times, s
  - **GitKraken AI:** 
    - Users can now choose their preferred model from any provided by GitKraken AI, including our newly-added OpenAI GPT-5 models.
    - GPT-5 is now available for those bringing their own OpenAI API key.
-   - Added a usage gauge in the profile menu for easy reference of your GitKraken AI token usage.
+   - Added a usage gauge in the profile menu for easy reference of your GitKraken AI credit usage.
  - Added organization suggestions in _Preferences > Members_ to help users discover and join relevant teams.
  
 ### Improvements 🙌
@@ -357,7 +357,7 @@ _"Because sometimes, even your conflicts need a mediator."_
  - The Commit Graph and Commit Details Panel now use provider avatars for GitLab, BitBucket, and Azure repos.
  - Conflict Prevention menus now show the provider avatar of the user you have a potential conflict with.
  - GitKraken AI:
-   - Added a cache of the last 5 AI explanations to prevent unnecessary token usage and give you quick access to explanations after navigating away from the Explain panel.
+   - Added a cache of the last 5 AI explanations to prevent unnecessary credit usage and give you quick access to explanations after navigating away from the Explain panel.
    - Buttons that activate GitKraken AI now have a unified look and feel.
    - GitKraken Desktop will now respect AI provider configurations and security controls enforced by your organization on [GitKraken.dev](https://gitkraken.dev)
  - Experimental Feature - Git Executable:
