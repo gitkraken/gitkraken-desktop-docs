@@ -1,7 +1,7 @@
 # GitKraken Desktop Help Center — Full Content
 
 > Current GitKraken Help Center corpus for AI systems, generated from validated front matter.
-> Generated on 2026-03-23. Includes only pages marked `llms_include: true`.
+> Generated on 2026-04-07. Includes only pages marked `llms_include: true`.
 > Document count: 78
 > Source root: https://help.gitkraken.com/gitkraken-desktop/
 
@@ -270,34 +270,19 @@ From left to right, GitKraken Desktop displays a Left Panel, Commit Graph, and t
 
 The main toolbar provides quick access to common repository actions, including Undo, Redo, Pull, Push, Branching, and more.
 
-### Undo
-<div class="flex-wrap">
-	<div class="flex-item">
-		<img src='/wp-content/uploads/gk-new-undo-icon.svg' class='img-responsive'></div>
-	<div class="flex-item">
-		<p>If an action can be undone, the <kbd>Undo</kbd> button is activated. Click to reverse the last undoable action.</p>
-	</div>
-</div>
+### History actions
 
-### Redo
-<div class="flex-wrap">
-	<div class="flex-item">
-		<img src='/wp-content/uploads/gk-new-redo-icon.svg' class='img-responsive'>
-	</div>
-	<div class="flex-item">
-		<p>Click <kbd>Redo</kbd> to reverse the last undo command.</p>
-	</div>
-</div>
+| Icon | Button | What it does |
+| --- | --- | --- |
+| <img src='/wp-content/uploads/gk-new-undo-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Undo** | If an action can be undone, the <kbd>Undo</kbd> button is activated. Click to reverse the last undoable action. |
+| <img src='/wp-content/uploads/gk-new-redo-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Redo** | Click <kbd>Redo</kbd> to reverse the last undo command. |
 
-### Pull
-<div class="flex-wrap">
-	<div class="flex-item">
-		<img src='/wp-content/uploads/gk-new-pull-icon.svg' class='img-responsive'>
-	</div>
-	<div class="flex-item">
-		<p>Click to pull changes from the remote repository. Use the adjacent dropdown to choose pull behavior:</p>
-	</div>
-</div>
+### Sync actions
+
+| Icon | Button | What it does |
+| --- | --- | --- |
+| <img src='/wp-content/uploads/gk-new-pull-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Pull** | Click to pull changes from the remote repository. Use the adjacent dropdown to choose pull behavior: |
+| <img src='/wp-content/uploads/gk-new-push-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Push** | Push changes to the upstream remote repository. |
 
 * Fetch All
 * Pull (fast-forward if possible)
@@ -306,55 +291,24 @@ The main toolbar provides quick access to common repository actions, including U
 
 <div class='callout callout--basic'><p><strong>Tip:</strong> Click the <i class="fa fa-circle"></i> next to a pull type to make it the default. The selected default displays a <i class="fa fa-dot-circle"></i>.</p></div>
 
-### Push
-<div class="flex-wrap">
-	<div class="flex-item">
-		<img src='/wp-content/uploads/gk-new-push-icon.svg' class='img-responsive'>
-	</div>
-	<div class="flex-item">
-		<p>Push changes to the upstream remote repository.</p>
-	</div>
-</div>
+### Branch actions
 
-### Branch
-<div class="flex-wrap">
-	<div class="flex-item">
-		<img src='/wp-content/uploads/gk-new-branch-icon.svg' class='img-responsive'>
-	</div>
-	<div class="flex-item">
-		<p>Create a new branch from your current HEAD.</p>
-	</div>
-</div>
+| Icon | Button | What it does |
+| --- | --- | --- |
+| <img src='/wp-content/uploads/gk-new-branch-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Branch** | Create a new branch from your current HEAD. |
 
-### Stash
-<div class="flex-wrap">
-	<div class="flex-item">
-		<img src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive'>
-	</div>
-	<div class="flex-item">
-		<p>Temporarily save your changes without committing using a stash.</p>
-	</div>
-</div>
+### Work-in-progress actions
 
-### Pop Stash
-<div class="flex-wrap">
-	<div class="flex-item">
-		<img src='/wp-content/uploads/gk-new-pop-icon.svg' class='img-responsive'>
-	</div>
-	<div class="flex-item">
-		<p>Restore changes from the most recent stash.</p>
-	</div>
-</div>
+| Icon | Button | What it does |
+| --- | --- | --- |
+| <img src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Stash** | Temporarily save your changes without committing using a stash. |
+| <img src='/wp-content/uploads/gk-new-pop-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Pop Stash** | Restore changes from the most recent stash. |
 
-### LFS
-<div class="flex-wrap">
-	<div class="flex-item">
-		<img src='/wp-content/uploads/gk-lfs-icon.svg' class='img-responsive'>
-	</div>
-	<div class="flex-item">
-		<p>This button appears if <a href="/gitkraken-desktop/git-lfs/">LFS</a> is enabled for your repository.</p>
-	</div>
-</div>
+### Conditional actions
+
+| Icon | Button | What it does |
+| --- | --- | --- |
+| <img src='/wp-content/uploads/gk-lfs-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **LFS** | This button appears if <a href="/gitkraken-desktop/git-lfs/">LFS</a> is enabled for your repository. |
 
 <div class='callout callout--basic'><p><strong>Note:</strong> To toggle toolbar labels, go to <kbd><strong>Preferences > UI Preferences</strong></kbd> and enable <code>Show toolbar icon labels</code>.</p></div>
 
@@ -378,93 +332,16 @@ The Left Panel provides access to repository references, such as local branches,
     <figcaption style="text-align: center; color: #888;">Resize, collapse, or expand any section of the Left Panel.</figcaption>
 </figure>
 
-<h3>Local</h3>
-<div class="flex-wrap">
-	<div class="flex-item">
-		<img src='/wp-content/uploads/gk-new-local-icon.svg' class='img-responsive'>
-	</div>
-	<div class="flex-item">
-		<p>References to local branches &mdash; pointers to specific commits allowing work to be separated.</p>
-		<p>If you need help with branches, visit our <a href="/working-with-repositories/branching-and-merging">Branching and Merging</a> page.</p>
-	</div>
-</div>
-
-
-<h3>Remote</h3>
-<div class="flex-wrap">
-	<div class="flex-item">
-		<img src='/wp-content/uploads/gk-new-remote-icon.svg' class='img-responsive'>
-	</div>
-	<div class="flex-item">
-		<p>References to remote branches.</p>
-		<p>Set sail into <a href="/working-with-repositories/pushing-and-pulling">pushing and pulling remotes</a> for more.</p>
-	</div>
-</div>
-
-<h3>Pull Requests</h3>
-<div class="flex-wrap">
-	<div class="flex-item">
-		<img src='/wp-content/uploads/gk-new-pull-requests-icon.svg' class='img-responsive'>
-	</div>
-	<div class="flex-item">
-		<p>This shows active requests for merging one branch into another. With the GitHub or Bitbucket integration, new PRs can be created directly from GitKraken Desktop.</p>
-		<p>Create your <a href="/working-with-repositories/pull-requests">Pull Request</a> to get your contribution merged.</p>
-	</div>
-</div>
-
-<h3>Issues</h3>
-<div class="flex-wrap">
-	<div class="flex-item">
-		<i class="fa fa-list-ul fa-3x" aria-hidden="true"></i>
-	</div>
-	<div class="flex-item">
-		<p>Lets you see and work with your issues in GitKraken Desktop</p>
-		<p>Hook up to your remote issue tracker of choice - such as <a href="/integrations/jira/">Jira</a>, <a href="/integrations/github-issues/">GitHub</a>, <a href="/integrations/gitlab-issues/">GitLab</a>, or <a href="/integrations/trello/">Trello</a>.</p>
-	</div>
-</div> 
-
-<h3>Teams</h3>
-<div class="flex-wrap">
-	<div class="flex-item">
-		<i class="fa fa-users fa-3x" aria-hidden="true"></i>
-	</div>
-	<div class="flex-item">
-		<p>Easily see what your <a href="/working-with-repositories/team-view/">Team</a> members are working on.</p>
-	</div>
-</div>
-
-<h3>Tags</h3>
-<div class="flex-wrap">
-	<div class="flex-item">
-		<img src='/wp-content/uploads/gk-new-tags-icon.svg' class='img-responsive'>
-	</div>
-	<div class="flex-item">
-		<p>These represent active pointers to commits but never move. <a href="/working-with-repositories/tags">Tag</a>, you're it!</p>
-	</div>
-</div>
-
-<h3>Stashes</h3>
-<div class="flex-wrap">
-	<div class="flex-item">
-		<img src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive'>
-	</div>
-	<div class="flex-item">
-		<p>Stored file changes in the working copy.</p>
-		<p>For saving your loot to play with later, here's more on <a href="/working-with-commits/stashing">stashes</a>.</p>
-	</div>
-</div>
-
-
-<h3>Submodules</h3>
-<div class="flex-wrap">
-	<div class="flex-item">
-		<img src='/wp-content/uploads//gk-new-submodules-icon.svg' class='img-responsive'>
-	</div>
-	<div class="flex-item">
-		<p>A Git repository in a subdirectory of the current repository.</p>
-		<p>Git-inception with <a href="/working-with-repositories/submodules">submodules</a> anyone?</p>
-	</div>
-</div>
+| Icon | Section | What it does |
+| --- | --- | --- |
+| <img src='/wp-content/uploads/gk-new-local-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Local** | <p>References to local branches &mdash; pointers to specific commits allowing work to be separated.</p><p>If you need help with branches, visit our <a href="/working-with-repositories/branching-and-merging">Branching and Merging</a> page.</p> |
+| <img src='/wp-content/uploads/gk-new-remote-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Remote** | <p>References to remote branches.</p><p>Set sail into <a href="/working-with-repositories/pushing-and-pulling">pushing and pulling remotes</a> for more.</p> |
+| <img src='/wp-content/uploads/gk-new-pull-requests-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Pull Requests** | <p>This shows active requests for merging one branch into another. With the GitHub or Bitbucket integration, new PRs can be created directly from GitKraken Desktop.</p><p>Create your <a href="/working-with-repositories/pull-requests">Pull Request</a> to get your contribution merged.</p> |
+| <i class="fa fa-list-ul" aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; font-size: 36px;"></i> | **Issues** | <p>Lets you see and work with your issues in GitKraken Desktop</p><p>Hook up to your remote issue tracker of choice - such as <a href="/integrations/jira/">Jira</a>, <a href="/integrations/github-issues/">GitHub</a>, <a href="/integrations/gitlab-issues/">GitLab</a>, or <a href="/integrations/trello/">Trello</a>.</p> |
+| <i class="fa fa-users" aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; font-size: 36px;"></i> | **Teams** | <p>Easily see what your <a href="/working-with-repositories/team-view/">Team</a> members are working on.</p> |
+| <img src='/wp-content/uploads/gk-new-tags-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Tags** | <p>These represent active pointers to commits but never move. <a href="/working-with-repositories/tags">Tag</a>, you're it!</p> |
+| <img src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Stashes** | <p>Stored file changes in the working copy.</p><p>For saving your loot to play with later, here's more on <a href="/working-with-commits/stashing">stashes</a>.</p> |
+| <img src='/wp-content/uploads//gk-new-submodules-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Submodules** | <p>A Git repository in a subdirectory of the current repository.</p><p>Git-inception with <a href="/working-with-repositories/submodules">submodules</a> anyone?</p> |
 
 
 ***
@@ -650,6 +527,11 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
 ## How to open the keyboard shortcuts list
 
 <table class='table table--bordered table--shortcuts'>
+  <colgroup>
+    <col style="width: 44%;">
+    <col style="width: 28%;">
+    <col style="width: 28%;">
+  </colgroup>
   <thead>
     <tr>
       <th scope="col">Action</th>
@@ -668,6 +550,11 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
 
 ## Keyboard shortcuts for repo actions
 <table class='table table--bordered table--shortcuts'>
+    <colgroup>
+        <col style="width: 44%;">
+        <col style="width: 28%;">
+        <col style="width: 28%;">
+    </colgroup>
     <thead>
         <tr>
             <th></th>
@@ -726,6 +613,11 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
 
 ### Keyboard shortcuts for navigation
 <table class='table table--bordered table--shortcuts'>
+    <colgroup>
+        <col style="width: 44%;">
+        <col style="width: 28%;">
+        <col style="width: 28%;">
+    </colgroup>
     <thead>
         <tr>
             <th>&nbsp;</th>
@@ -795,6 +687,11 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
 
 ### Keyboard shortcuts for the Command Palette
 <table class='table table--bordered table--shortcuts'>
+    <colgroup>
+        <col style="width: 44%;">
+        <col style="width: 28%;">
+        <col style="width: 28%;">
+    </colgroup>
     <thead>
         <tr>
             <th>&nbsp;</th>
@@ -858,6 +755,11 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
 
 ### Keyboard shortcuts for the interface
 <table class='table table--bordered table--shortcuts'>
+    <colgroup>
+        <col style="width: 44%;">
+        <col style="width: 28%;">
+        <col style="width: 28%;">
+    </colgroup>
     <thead>
         <tr>
             <th>&nbsp;</th>
@@ -918,6 +820,11 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
 
 ### Keyboard shortcuts for tabs
 <table class='table table--bordered table--shortcuts'>
+    <colgroup>
+        <col style="width: 44%;">
+        <col style="width: 28%;">
+        <col style="width: 28%;">
+    </colgroup>
     <thead>
         <tr>
             <th>&nbsp;</th>
@@ -1021,20 +928,22 @@ This section is labeled with your organization's name. It shows members and team
 
 Configure app-wide behavior like auto-fetch, conflict detection, and commit graph settings.
 
-- **Auto-Fetch**: Set an interval (0–60 minutes); 0 disables auto-fetch.
-- **Auto-Prune**: Removes stale remote-tracking references.
-- **Automatic Conflict Detection**: GitKraken monitors for base branch conflicts.
-- **Keep Submodules Up to Date**: Auto-update submodules after Git actions.
-- **Default Branch Name**: Used when initializing new repos (default is `main`).
-- **Delete ".orig" Files**: Control cleanup of merge backup files.
-- **Show All Commits in Graph**: May affect performance on large repos.
-- **Initial Commits in Graph**: Define max visible commits (minimum: 500).
-- **Lazy Load Commits**: Loads more commits only as needed.
-- **Remember Tabs**: Saves open tabs and profile context between sessions.
-- **Longpaths / AutoCRLF**: Windows-only settings tied to global `.gitconfig`.
-- **Extended Logging**: Toggle detailed activity logs from <kbd>Help > Support Logs</kbd>.
-- **Forget All Credentials**: Clears stored usernames and passwords.
-- **Share Work-in-Progress**: Enables visibility for teammates via the [Team View](/gitkraken-desktop/team-view/).
+| Setting | What it controls |
+| --- | --- |
+| **Auto-Fetch** | Set an interval (0–60 minutes); 0 disables auto-fetch. |
+| **Auto-Prune** | Removes stale remote-tracking references. |
+| **Automatic Conflict Detection** | GitKraken monitors for base branch conflicts. |
+| **Keep Submodules Up to Date** | Auto-update submodules after Git actions. |
+| **Default Branch Name** | Used when initializing new repos (default is `main`). |
+| **Delete ".orig" Files** | Control cleanup of merge backup files. |
+| **Show All Commits in Graph** | May affect performance on large repos. |
+| **Initial Commits in Graph** | Define max visible commits (minimum: 500). |
+| **Lazy Load Commits** | Loads more commits only as needed. |
+| **Remember Tabs** | Saves open tabs and profile context between sessions. |
+| **Longpaths / AutoCRLF** | Windows-only settings tied to global `.gitconfig`. |
+| **Extended Logging** | Toggle detailed activity logs from <kbd>Help > Support Logs</kbd>. |
+| **Forget All Credentials** | Clears stored usernames and passwords. |
+| **Share Work-in-Progress** | Enables visibility for teammates via the [Team View](/gitkraken-desktop/team-view/). |
 
 ***
 
@@ -2090,6 +1999,13 @@ Use this page to create, rename, delete, merge, and rebase branches in GitKraken
 - Branch deletion: Deleting a branch is permanent
 - External merge tools: Review the supported and unsupported tool lists before relying on a third-party merge tool
 
+| Action | Use when | Preserves branch history | Rewrites history | Notes |
+|--------|----------|--------------------------|------------------|-------|
+| Branch | You need isolated work for a feature, fix, or experiment | Yes | No | Can be renamed or deleted later |
+| Merge | You want to combine branches and keep the branch structure visible | Yes | No | May create a merge commit |
+| Rebase | You want a more linear history before sharing or merging | No | Yes | Replays commits onto a new base |
+| Squash merge | You want one final commit from a branch's combined changes | Partial | Yes | Stages the result but does not create the final commit automatically |
+
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/8-qRKyy-v7I?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
 </div>
@@ -2438,9 +2354,27 @@ Use this page to create commits, stage files, add co-authors, work with commit t
 - Commit templates: Repository-local commit templates take precedence over global templates
 - Undo vs. revert: Use Undo for local history changes you have not shared yet; use Revert when you need to preserve published history with a new reversing commit
 
-<div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/8a6fYPkBDbY?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
-</div>
+| Action | Use when | Rewrites history | Safe after push | Notes |
+|--------|----------|------------------|-----------------|-------|
+| Commit | You want to record staged changes as a new commit | No | Yes | Basic local commit workflow |
+| Amend | You need to change the most recent commit or its message | Yes | Not usually | Requires a force push if the commit was already pushed |
+| Undo | You want to remove a local commit that has not been shared yet | Yes | No | Best for local history cleanup |
+| Revert | You need to preserve published history while reversing changes | No | Yes | Creates a new reversing commit |
+
+<figure>
+  <div class="embed-container embed-container--16-9">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/8a6fYPkBDbY?rel=0&vq=hd1080"
+      title="GitKraken Desktop commit walkthrough"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </div>
+</figure>
 
 ***
 
@@ -3010,6 +2944,15 @@ Use this page to stash, apply, pop, rename, and partially restore uncommitted ch
 - GitKraken AI note: AI-generated stash messages require GitKraken AI to be enabled
 - Stash visibility: Stashes can be hidden from the graph without being deleted
 
+| Action | What it does | Keeps stash entry | Notes |
+|--------|--------------|-------------------|-------|
+| Stash | Saves current uncommitted changes | Yes | Creates a new stash entry |
+| Apply Stash | Restores stashed changes | Yes | Keeps the stash for reuse |
+| Pop Stash | Restores stashed changes | No | Applies and removes the stash |
+| Partial stash | Saves selected files only | Yes | Managed from staged files in the Commit Panel |
+| Apply partial stash file | Restores one file from a partial stash | Yes | Does not remove the stash |
+| Hide stash | Removes stash from graph view only | Yes | Does not delete the stash |
+
 ***
 
 ## Quick Start
@@ -3192,10 +3135,10 @@ You can undo many common actions with a single click of the **Undo** button. If 
 Undo is available for the most recent supported action. Redo is available for any action that was just undone.
 
 <figure>
-    <img src=’/wp-content/uploads/undo-undo-2025.png’
-         class=”help-center-img img-bordered”
-         alt=”GitKraken Desktop showing the Undo button with tooltip: ‘Undo Commit amend “Updates the GitKraken commit documentation to reflect UI”’.”>
-    <figcaption style=”color: #888; text-align: center;”>Click the Undo button to revert supported Git actions.</figcaption>
+    <img src="/wp-content/uploads/undo-undo-2025.png"
+         class="help-center-img img-bordered"
+         alt="GitKraken Desktop showing the Undo button with tooltip: 'Undo Commit amend &quot;Updates the GitKraken commit documentation to reflect UI&quot;'." />
+    <figcaption style="color: #888; text-align: center;">Click the Undo button to revert supported Git actions.</figcaption>
 </figure>
 
 ## Supported undo actions
@@ -3266,6 +3209,13 @@ Use this page to create, review, filter, comment on, and merge pull requests in 
 - Template support: Pull request templates are supported for GitHub, GitLab, and Azure DevOps
 - Azure DevOps note: If the PR form does not populate, verify the remote URL and integration domain on the Azure DevOps integration page
 - Feature scope varies by provider, so some actions described here are GitHub-only
+
+| Provider | Create PR or MR | View PR or MR | Merge in app | Notes |
+|----------|------------------|---------------|--------------|-------|
+| GitHub | Yes | Yes | Yes | Review and suggestion features are strongest here |
+| GitLab | Yes | Yes | Yes | Uses merge request terminology |
+| Bitbucket | Yes | Yes | Yes | Some reviewer workflows depend on permissions |
+| Azure DevOps | Yes | Yes | Yes | Verify remote URL and integration domain if the form does not populate |
 
 ***
 
@@ -3786,6 +3736,15 @@ Use this page to stage, unstage, discard, and ignore files in GitKraken Desktop 
 - Ignore behavior: GitKraken Desktop writes ignore rules to the root-level `.gitignore`
 - Ignore limitation: Nested `.gitignore` files are not parsed by GitKraken Desktop
 - Tracked-file behavior: **Ignore and Stop Tracking** removes the file from the Git index in addition to adding the ignore rule
+
+| Action | Scope | Where to do it | Notes |
+|--------|-------|----------------|-------|
+| Stage file | Whole file | Commit Panel | Moves the file into Staged Files |
+| Unstage file | Whole file | Commit Panel | Returns the file to the working directory |
+| Stage selected lines | Partial file | Diff view | Supports line or hunk-level staging |
+| Discard changes | Whole file or selected hunk | Commit Panel or diff view | Permanently removes uncommitted changes |
+| Ignore | File, extension, or directory | Context menu on unstaged files | Writes to the root-level `.gitignore` |
+| Ignore and Stop Tracking | Already tracked file | Context menu on tracked files | Adds ignore rule and removes the file from the Git index |
 
 ***
 
@@ -4728,6 +4687,15 @@ Use profiles in GitKraken Desktop to keep separate Git identities, integrations,
 - Git config option: You can sync profile name and email into the global `.gitconfig`
 - Avatar behavior: Connected integrations use provider avatars; otherwise GitKraken Desktop uses the Gravatar tied to the profile email
 
+| Profile data | Stored per profile? | Notes |
+|--------------|---------------------|-------|
+| General preferences | Yes | Saved separately for each profile |
+| Integrations | Yes | Keeps different service accounts isolated |
+| UI Preferences | Yes | Theme and other UI settings are profile-specific |
+| Open tabs | Yes | New profiles duplicate tabs from the active profile when created |
+| Global `.gitconfig` sync | Optional | Can keep profile name and email in sync with Git |
+| Avatar | Yes | Uses provider avatar when connected, otherwise Gravatar from the profile email |
+
 ***
 
 ## Quick Start
@@ -5162,6 +5130,15 @@ Use this page to add, update, initialize, and manage Git submodules in GitKraken
 - Auto-update settings: Configure globally in <kbd>Preferences &gt; General</kbd> or per repository in <kbd>Preferences &gt; Submodules</kbd>
 - Limitation: GitKraken Desktop does not support subtree workflows in-app
 
+| Workflow | Supported in app | Notes |
+|----------|------------------|-------|
+| Show Submodules pane | Yes | Enable it from the Left Panel header menu |
+| Add submodule | Yes | Requires repository URL and target path |
+| Initialize submodules after clone | Yes | GitKraken Desktop prompts you when needed |
+| Update submodule | Yes | Updates the tracked commit reference |
+| Configure auto-update | Yes | Available globally or per repository |
+| Git subtree workflow | No | Not supported in-app |
+
 ***
 
 ## Quick Start
@@ -5497,6 +5474,14 @@ Use this page to create, switch, lock, and remove Git worktrees in GitKraken Des
 - Removal behavior: Removing a worktree detaches that working directory from the repo via the Left Panel workflow
 - Best fit: Use worktrees when you need multiple branches checked out simultaneously instead of repeatedly switching one working directory
 
+| Action | What it does | Affects shared history | Notes |
+|--------|--------------|------------------------|-------|
+| Create worktree | Creates another working directory for a branch | No | Requires GitKraken Desktop 10.5.0 or later |
+| Open worktree | Switches you into that working directory | No | Available from the Left Panel |
+| Lock worktree | Prevents accidental changes to that worktree | No | Useful when working elsewhere temporarily |
+| Remove worktree | Detaches that working directory from the repository | No | Removes the worktree entry, not shared history |
+| Commit in a worktree | Records history from that worktree | Yes | Committed changes become visible across all worktrees |
+
 ***
 
 ## Quick Start
@@ -5715,6 +5700,15 @@ Use this page to install, initialize, and manage Git LFS in GitKraken Desktop wh
 - Tracking limitation: New tracking patterns apply only to new files unless existing files are removed and re-added
 - Auto behavior: GitKraken Desktop runs an LFS pull automatically after clone or submodule initialization
 - Destructive action warning: `git lfs prune` removes unreferenced LFS objects and should be used carefully
+
+| Requirement | Needed? | Notes |
+|-------------|---------|-------|
+| Git 2.39.3 or later | Yes | Required for Git LFS workflows |
+| Git LFS 3.0.0 or later | Yes | Required before tracking or pulling LFS-managed files |
+| GitKraken Desktop 7.0.0 or later | Yes | Minimum supported GitKraken Desktop version for this workflow |
+| LFS initialization in the repo | Yes | Initialize before tracking large files |
+| `.gitattributes` tracking rules | Yes | Defines which file patterns Git LFS manages |
+| Team members using Git LFS | Recommended | Prevents broken large-file workflows across contributors |
 
 ***
 
@@ -5956,6 +5950,12 @@ Use this page to connect GitKraken Desktop to Azure DevOps for repository access
 - OAuth constraint: If the Azure DevOps organization disables third-party OAuth access, use a PAT instead
 - Account limit: One Azure DevOps account per profile; multiple profiles require a paid Pro, Teams, or Enterprise plan
 - SSH behavior: GitKraken uses the key in <kbd>Preferences &gt; SSH</kbd> unless you configure a service-specific key or system SSH Agent
+
+| Method | When to use | Requires | Limitation |
+|--------|-------------|----------|------------|
+| OAuth | Standard Azure DevOps browser-based connection | Pro subscription and third-party OAuth access | Not available if the organization blocks third-party OAuth |
+| Personal Access Token | OAuth is blocked or policy requires token-based access | Pro subscription, host domain, PAT | Manual token generation and paste flow |
+| SSH key setup | You want SSH-based Git operations after connecting | Existing integration connection and SSH key upload | Uses GitKraken SSH settings unless overridden |
 
 ***
 
@@ -6313,6 +6313,15 @@ Use this page to connect GitKraken Desktop to Bitbucket.org for repository disco
 - SSH behavior: GitKraken uses the key in <kbd>Preferences &gt; SSH</kbd> unless you configure a Bitbucket-specific key or use your system SSH Agent
 - Pull request reviewer visibility depends on having Project Admin permissions on the repository
 
+| Workflow | Supported | Notes |
+|----------|-----------|-------|
+| Connect Bitbucket account | Yes | Browser-based connection or manual OAuth token entry |
+| Clone and browse repositories | Yes | Uses the integrated repository list |
+| SSH key generation and upload | Yes | Uses GitKraken SSH settings unless overridden |
+| Create and view pull requests | Yes | Supported directly in GitKraken Desktop |
+| Add reviewers to pull requests | Partial | Reviewer visibility depends on Project Admin permissions |
+| Multiple Bitbucket accounts | Yes | Requires separate profiles and a Pro subscription |
+
 ***
 
 ## Quick Start
@@ -6529,7 +6538,7 @@ Product: GitKraken Desktop
 Feature: GitHub Enterprise Server Integration
 Content type: how-to
 Audience: developer
-Plan required: ['Advanced', 'Business', 'Enterprise']
+Plan required: [Advanced, Business, Enterprise]
 Status: GA
 Last verified: 2026-03
 
@@ -6548,6 +6557,15 @@ This page explains how to connect GitKraken Desktop to GitHub Enterprise Server 
 - Authentication: Personal access token required to connect
 - Account limit: One GitHub Enterprise Server account per profile
 - SSH behavior: GitKraken uses the key set in <kbd>Preferences &gt; SSH</kbd> unless a GitHub-specific key or system SSH Agent is configured
+
+| Requirement | Value |
+|-------------|-------|
+| Plan | Advanced, Business, or Enterprise |
+| Supported server versions | GitHub Enterprise Server releases from the past year |
+| Authentication | Personal access token |
+| Account limit | One GitHub Enterprise Server account per profile |
+| SSH behavior | Uses <kbd>Preferences &gt; SSH</kbd> unless overridden by a GitHub-specific key or system SSH Agent |
+| Hosted variant | Self-hosted GitHub Enterprise Server only |
 
 ***
 
@@ -6667,6 +6685,15 @@ Use this page to connect GitKraken Desktop to GitHub for sign-in, repository acc
 - Multiple GitHub accounts: Use separate profiles in GitKraken Desktop; Pro plan required
 - SSH behavior: GitKraken uses the key set in <kbd>Preferences &gt; SSH</kbd> unless a GitHub-specific key or local SSH Agent is configured
 - Pull request review limit: GitKraken Desktop can view pull requests and suggest changes, but full in-app code review and commenting are not available
+
+| Workflow | GitHub.com support | Community limits | Notes |
+|----------|--------------------|------------------|-------|
+| Sign in and connect account | Yes | None | Browser-based GitHub connection |
+| Clone and browse repositories | Yes | Public repositories only | Private repo access requires a paid plan |
+| SSH key generation and upload | Yes | Public repositories only | Uses GitKraken SSH settings unless overridden |
+| Create and view pull requests | Yes | Public repositories only | Supported directly in GitKraken Desktop |
+| Review code and suggest changes | Partial | Public repositories only | Suggestions are supported, but full in-app review and commenting are not |
+| Multiple GitHub accounts | Yes | Not included | Requires separate profiles and a Pro plan |
 
 ***
 
@@ -6966,7 +6993,7 @@ Content type: overview
 Audience: developer
 Plan required: Pro
 Status: preview
-Last verified: 2026-03
+Last verified: 2026-04
 
 <kbd>Last updated: April 2026</kbd>
 
@@ -7308,10 +7335,10 @@ When connected to [GitHub, GitLab, Bitbucket, or Azure DevOps](/gitkraken-deskto
 
 ## How to use your own AI provider key
 
-By default, GitKraken AI uses **Google Gemini 2.5 Flash** to power commit explanations and message generation. No API key is needed and usage is included with your GitKraken subscription.
+By default, GitKraken AI uses **Google Gemini Models** to power commit explanations and message generation. No API key is needed and usage is included with your GitKraken subscription.
 
 <div class='callout callout--basic'>
-  <p><strong>What's new in 11.10:</strong> The default model has been updated to Gemini 2.5 Flash. Gemini 3 Flash is now also available. Gemini 1.5 and 2.0 models have been removed.</p>
+  <p><strong>What's new in 11.10:</strong> The default model lineup has been updated to Google Gemini Models. Deprecated Gemini 1.5 and 2.0 models have been removed.</p>
 </div>
 
 If you prefer using your own API key with **OpenAI**, **Azure**, **Anthropic**, **Google Gemini**, or a **Custom URL**, you can configure this in:
@@ -7339,7 +7366,7 @@ This endpoint can handle:
 - Commit Composer
 
 <figure>
-<img src="/wp-content/uploads/custom-url-11-1@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Custom AI provider settings in GitKraken showing provider, endpoint URL, token limit, and API key fields." />
+<img src="/wp-content/uploads/custom-url-11-1@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Custom AI provider settings in GitKraken showing provider, endpoint URL, credit limit, and API key fields." />
 <figcaption style="text-align: center; color: #888">Example of configuring a custom AI endpoint</figcaption>
 </figure>
 
@@ -7435,6 +7462,14 @@ Use this page to connect GitKraken Desktop to Jira Data Center so you can previe
 - SSO note: Some single sign-on configurations are not supported
 - Feature scope: Uses the same issue workflows documented for the Jira Cloud integration once connected
 
+| Requirement | Value |
+|-------------|-------|
+| Plan | Advanced subscription tier or higher |
+| Server version | Jira Data Center 8.4 or newer |
+| Authentication | Personal Access Token |
+| Single sign-on | Some SSO configurations are not supported |
+| Feature scope | Uses the same issue workflows documented for the Jira Cloud integration once connected |
+
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/On83cso-w3U" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -7522,6 +7557,11 @@ Use this page to connect GitKraken Desktop to Jira Cloud or Jira Data Center so 
 - Full issue workflows: Paid GitKraken subscription required for create, edit, and branch workflows
 - Filter syntax: Uses JQL for custom Jira issue filters
 - Data Center note: Jira Data Center uses a Personal Access Token flow instead of the Jira Cloud authorization flow
+
+| Variant | Auth flow | Community access | Full edit support | Filter syntax |
+|---------|-----------|------------------|-------------------|---------------|
+| Jira Cloud | Atlassian browser authorization flow | View-only | Paid GitKraken subscription required | JQL |
+| Jira Data Center | Personal Access Token | View-only | Paid GitKraken subscription required | JQL |
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/On83cso-w3U" frameborder="0" allowfullscreen></iframe>
@@ -7716,7 +7756,7 @@ Product: GitKraken Desktop
 Feature: GitHub Enterprise Server Issues Integration
 Content type: how-to
 Audience: developer
-Plan required: ['Advanced', 'Business', 'Enterprise']
+Plan required: [Advanced, Business, Enterprise]
 Status: GA
 Last verified: 2026-03
 
@@ -7802,6 +7842,14 @@ Use this page to connect GitKraken Desktop to GitHub Issues so you can preview, 
 - Community plan: Public repositories only
 - Issue workflows: Preview, create, edit, filter, and branch from issues after connecting GitHub
 - Filter syntax: Uses GitHub issue filtering syntax for custom filters
+
+| Capability | Community | Paid plans | Notes |
+|------------|-----------|------------|-------|
+| Preview issues | Yes | Yes | Uses the shared GitHub integration connection |
+| Create issues | Public repositories only | Yes | Requires the connected GitHub repository and account permissions |
+| Edit issue details | Public repositories only | Yes | Requires the connected GitHub repository and account permissions |
+| Create branches from issues | Public repositories only | Yes | Requires the connected GitHub repository and account permissions |
+| Filter issues | Yes | Yes | Uses GitHub issue filtering syntax |
 
 ***
 
@@ -7937,6 +7985,14 @@ Use this page to connect GitKraken Desktop to GitLab Issues so you can preview, 
 - Community plan limit: Public repositories only
 - Branch creation, editing, and issue management depend on the connected GitLab repository and account permissions
 - Custom filters use GitLab issue filter syntax
+
+| Capability | Community | Paid plans | Notes |
+|------------|-----------|------------|-------|
+| Preview issues | Yes | Yes | Uses the shared GitLab integration connection |
+| Create issues | Public repos only | Yes | Depends on repository and account permissions |
+| Edit issue details | Public repos only | Yes | Depends on repository and account permissions |
+| Create branches from issues | Public repos only | Yes | Depends on repository and account permissions |
+| Filter issues | Yes | Yes | Uses GitLab issue filter syntax |
 
 <div class='callout callout--basic'>
     <p>The GitLab Issues integration is restricted to public repositories for Community users. To unlock all features, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken license</a>.</p>
@@ -8082,6 +8138,14 @@ Use this page to connect GitKraken Desktop to GitLab Self-Managed Issues so you 
 - Connection model: Shares the same connection as the GitLab Self-Managed integration
 - Community plan: View-only access
 - Full issue workflows: Paid GitKraken license required for editing, branching, and full issue management
+
+| Capability | Community | Paid plans | Server/version note |
+|------------|-----------|------------|---------------------|
+| Preview issues | Yes | Yes | Requires GitLab Self-Managed 13.1 or newer |
+| Create issues | No | Yes | Requires GitLab Self-Managed 13.1 or newer |
+| Edit issue details | No | Yes | Requires GitLab Self-Managed 13.1 or newer |
+| Create branches from issues | No | Yes | Requires GitLab Self-Managed 13.1 or newer |
+| Filter issues | Yes | Yes | Uses the shared self-managed connection |
 
 ---
 
@@ -8390,6 +8454,14 @@ Use this page to connect GitKraken Desktop to GitLab.com for repository access, 
 - Account limit: One GitLab account per profile; multiple accounts require multiple profiles and a GitKraken Pro subscription
 - SSH behavior: GitKraken uses the key in <kbd>Preferences &gt; SSH</kbd> unless you configure a GitLab-specific key or enable your local SSH Agent
 
+| Workflow | Supported | Community limit | Notes |
+|----------|-----------|-----------------|-------|
+| Connect GitLab.com account | Yes | None | Browser-based connection or manual OAuth token entry |
+| Clone and browse repositories | Yes | Public repositories only | Private repository access requires a paid plan |
+| SSH key generation and upload | Yes | Public repositories only | Uses GitKraken SSH settings unless overridden |
+| Create and manage pull requests | Yes | Public repositories only | Supported directly in GitKraken Desktop |
+| Multiple GitLab accounts | Yes | Not included | Requires separate profiles and a Pro plan |
+
 ***
 
 ## Quick Start
@@ -8544,6 +8616,16 @@ Use this page to connect GitKraken Desktop to a GitLab Self-Managed server so yo
 - Token setup note: Leave token expiration blank when following this workflow
 - Account limit: One GitLab Self-Managed account per profile; use Profiles for multiple accounts
 - SSH behavior: GitKraken uses the key in <kbd>Preferences &gt; SSH</kbd> unless you configure a GitLab-specific key or system SSH Agent
+
+| Requirement | Value |
+|-------------|-------|
+| Plan | Pro subscription tier or higher |
+| Supported server versions | GitLab Self-Managed releases from the past year |
+| Authentication | Personal access token |
+| Required token scopes | `api`, `read_user` |
+| Token setup note | Leave expiration blank when following this workflow |
+| Account limit | One GitLab Self-Managed account per profile |
+| SSH behavior | Uses <kbd>Preferences &gt; SSH</kbd> unless overridden by a GitLab-specific key or system SSH Agent |
 
 <div class='embed-container embed-container--16-9'>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/BhIX7fGSM8k?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -10171,7 +10253,7 @@ Use this page to install and license GitKraken On-Premise Serverless, also calle
 If your license expires, replace the `.dat` file in one of the supported directories or click the license text in the bottom-left corner of the app and select **Update License**. GitKraken Serverless is sold separately from standard subscriptions.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/serverless-example-2025@2x.png" class="img-responsive img-bordered">
+  <img src="/wp-content/uploads/serverless-example-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Example view of GitKraken Serverless in use.</figcaption>
 </figure>
 
@@ -10193,19 +10275,15 @@ GitKraken On-Premise Serverless supports most GitKraken Desktop features, includ
 
 The following feature categories are fully supported in Serverless:
 
-**Core Git client**: All standard Git operations, including commits, branches, merges, rebases, diffs, stashing, tagging, interactive rebase, cherry pick (including multi-commit interactive cherry pick), worktrees, shallow clone, and undo or redo of rebase and cherry pick operations.
-
-**Launchpad**: Track pull requests and issues in a single view and filter by repository, branch, milestone, or sprint. Launchpad works with the following on-premises integrations: GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server and Data Center, Azure DevOps Server, and Jira Data Center. For a description of the differences between cloud and on-premises Launchpad, see [How On-Premise Launchpad differs from Cloud Launchpad](/gitkraken-desktop/gitkraken-launchpad/#how-on-premise-launchpad-differs-from-cloud-launchpad).
-
-**Local Workspaces**: Organize multiple local Git repositories in one view. You can see the branch status of each repository and run multi-repository actions, such as fetch and pull, from a single place. Cloud Workspaces are not available in Serverless.
-
-**Conflict detection**: GitKraken detects potential conflicts with your target branch before you reach the merge step and alerts you when your checked-out branch has diverged from its pull request target.
-
-**GitKraken AI (bring your own key)**: All GitKraken AI features are available when you configure a Custom URL that points to a private or internal AI endpoint. For setup instructions, see [GitKraken AI in Serverless](#gitkraken-ai-in-serverless).
-
-**ARM builds**: A native ARM installer is available for machines with ARM architecture.
-
-**On-premises integrations**: GitKraken Serverless supports integrations with self-hosted Git hosting services and issue trackers. For the full list, see [Supported on-premises integrations](#supported-on-premises-integrations).
+| Category | Included | Notes |
+| --- | --- | --- |
+| **Core Git client** | All standard Git operations, including commits, branches, merges, rebases, diffs, stashing, tagging, interactive rebase, cherry pick (including multi-commit interactive cherry pick), worktrees, shallow clone, and undo or redo of rebase and cherry pick operations. | |
+| **Launchpad** | Track pull requests and issues in a single view and filter by repository, branch, milestone, or sprint. Launchpad works with the following on-premises integrations: GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server and Data Center, Azure DevOps Server, and Jira Data Center. | For a description of the differences between cloud and on-premises Launchpad, see [How On-Premise Launchpad differs from Cloud Launchpad](/gitkraken-desktop/gitkraken-launchpad/#how-on-premise-launchpad-differs-from-cloud-launchpad). |
+| **Local Workspaces** | Organize multiple local Git repositories in one view. You can see the branch status of each repository and run multi-repository actions, such as fetch and pull, from a single place. | Cloud Workspaces are not available in Serverless. |
+| **Conflict detection** | GitKraken detects potential conflicts with your target branch before you reach the merge step and alerts you when your checked-out branch has diverged from its pull request target. | |
+| **GitKraken AI (bring your own key)** | All GitKraken AI features are available when you configure a Custom URL that points to a private or internal AI endpoint. | For setup instructions, see [GitKraken AI in Serverless](#gitkraken-ai-in-serverless). |
+| **ARM builds** | A native ARM installer is available for machines with ARM architecture. | |
+| **On-premises integrations** | GitKraken Serverless supports integrations with self-hosted Git hosting services and issue trackers. | For the full list, see [Supported on-premises integrations](#supported-on-premises-integrations). |
 
 ### What is not available
 
@@ -10272,7 +10350,6 @@ When you configure a Custom URL, the following AI features are available:
 - Auto-resolve merge conflicts (Preview)
 - Stash message generation
 
-To configure organization-wide AI controls, see [GitKraken Dev Security Controls](https://help.gitkraken.com/gk-dev/gk-dev-security-controls/).
 
 ### Supported on-premises integrations
 
@@ -10283,6 +10360,7 @@ GitKraken Serverless supports the following self-hosted integrations. These inte
 - Bitbucket Server and Data Center
 - Azure DevOps Server
 - Jira Data Center
+- or any custom remote hosting service available over HTTPS or SSH authentication
 
 The cloud-hosted counterparts of these services (GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, and Jira Cloud) are not supported in Serverless because they require outbound internet connectivity.
 
@@ -10321,7 +10399,7 @@ If the page is inaccessible, contact your GitKraken administrator for internal d
 - `%APPDATA%\.gitkraken` (for older versions)
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/license.png" class="img-responsive img-bordered">
+  <img src="/wp-content/uploads/license.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Prompt to load license file after install.</figcaption>
 </figure>
 
@@ -10378,7 +10456,7 @@ At first launch, you’ll be prompted to load the `.dat` license file.
 If you don’t have the file, contact your GitKraken admin. Admins can retrieve it from app.gitkraken.com. For older accounts or help locating the file, <a href="https://help.gitkraken.com/gitkraken-desktop/contact-support/">contact support</a>.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/serverless-2025@2x.png" class="img-responsive img-bordered">
+  <img src="/wp-content/uploads/serverless-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">GitKraken Serverless ready after license activation.</figcaption>
 </figure>
 
@@ -10413,18 +10491,9 @@ If your license expires, you can:
   - Select <kbd>Update License</kbd>
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/serverless-license-2025@2x.png" class="img-responsive img-bordered">
+  <img src="/wp-content/uploads/serverless-license-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Update your license manually from the client footer.</figcaption>
 </figure>
-
-<style>
-pre{position:relative;min-height:3em}
-.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;height:28px;padding:0 8px;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s;font-size:11px;font-family:sans-serif}
-pre:hover .copy-btn{opacity:1}
-.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
-.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
-</style>
-<script>(function(){var C='Copy',K='Copied!';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p,cl=el.cloneNode(true),bn=cl.querySelector('.copy-btn');if(bn)bn.remove();cp((cl.innerText||cl.textContent).trimEnd()).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>
 
 ---
 
@@ -10856,6 +10925,12 @@ Use this page to install a self-signed SSL certificate so GitKraken Desktop can 
 - Git Executable note: When enabled, GitKraken Desktop honors SSL settings in the global `.gitconfig`
 - Common failure mode: Missing or invalid SAN values can require the server certificate to be reissued
 
+| OS | Export step | Install location | Notes |
+|----|-------------|------------------|-------|
+| Windows | Export the certificate from Chrome | Windows Trusted Root Certificates store | Restart GitKraken Desktop after installing if needed |
+| macOS | Export the certificate from Safari | Keychain Access | Set trust to **Always Trust** if required |
+| Linux | Export the certificate from Chrome | System certificate trust store | Exact install path depends on the distribution |
+
 ***
 
 ## Quick Start
@@ -11103,23 +11178,17 @@ In Self-Hosted, a central server inside your network handles authentication and 
 
 The following feature categories are fully supported:
 
-**Core Git client**: All standard Git operations, including commits, branches, merges, rebases, diffs, stashing, tagging, interactive rebase, cherry pick (including multi-commit interactive cherry pick), worktrees, shallow clone, and undo or redo of rebase and cherry pick operations.
-
-**Launchpad**: Track pull requests and issues in a single view and filter by repository, branch, milestone, or sprint. Launchpad works with the following on-premises integrations: GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server and Data Center, Azure DevOps Server, and Jira Data Center. For a description of the differences between cloud and on-premises Launchpad, see [How On-Premise Launchpad differs from Cloud Launchpad](/gitkraken-desktop/gitkraken-launchpad/#how-on-premise-launchpad-differs-from-cloud-launchpad).
-
-**Local Workspaces**: Organize multiple local Git repositories in one view. You can see the branch status of each repository and run multi-repository actions, such as fetch and pull, from a single place. Cloud Workspaces are not available.
-
-**Conflict detection**: GitKraken detects potential conflicts with your target branch before you reach the merge step and alerts you when your checked-out branch has diverged from its pull request target.
-
-**GitKraken AI (bring your own key)**: All GitKraken AI features are available when you configure a Custom URL that points to a private or internal AI endpoint. For setup instructions, see [GitKraken AI in Self-Hosted Server](#gitkraken-ai-in-self-hosted-server).
-
-**ARM builds**: A native ARM installer is available for machines with ARM architecture.
-
-**Centralized version management**: Because the Desktop client connects to your internal server, your admin controls which client version is served to users. This lets you test and roll out updates on your own schedule.
-
-**Authentication**: Users authenticate through your Self-Hosted Server using email-based or LDAP authentication. No external GitKraken cloud account is required.
-
-**On-premises integrations**: GitKraken Self-Hosted supports integrations with self-hosted Git hosting services and issue trackers. For the full list, see [Supported on-premises integrations](#supported-on-premises-integrations).
+| Category | Included | Notes |
+| --- | --- | --- |
+| **Core Git client** | All standard Git operations, including commits, branches, merges, rebases, diffs, stashing, tagging, interactive rebase, cherry pick (including multi-commit interactive cherry pick), worktrees, shallow clone, and undo or redo of rebase and cherry pick operations. | |
+| **Launchpad** | Track pull requests and issues in a single view and filter by repository, branch, milestone, or sprint. Launchpad works with the following on-premises integrations: GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server and Data Center, Azure DevOps Server, and Jira Data Center. | For a description of the differences between cloud and on-premises Launchpad, see [How On-Premise Launchpad differs from Cloud Launchpad](/gitkraken-desktop/gitkraken-launchpad/#how-on-premise-launchpad-differs-from-cloud-launchpad). |
+| **Local Workspaces** | Organize multiple local Git repositories in one view. You can see the branch status of each repository and run multi-repository actions, such as fetch and pull, from a single place. | Cloud Workspaces are not available. |
+| **Conflict detection** | GitKraken detects potential conflicts with your target branch before you reach the merge step and alerts you when your checked-out branch has diverged from its pull request target. | |
+| **GitKraken AI (bring your own key)** | All GitKraken AI features are available when you configure a Custom URL that points to a private or internal AI endpoint. | For setup instructions, see [GitKraken AI in Self-Hosted Server](#gitkraken-ai-in-self-hosted-server). |
+| **ARM builds** | A native ARM installer is available for machines with ARM architecture. | |
+| **Centralized version management** | Because the Desktop client connects to your internal server, your admin controls which client version is served to users. This lets you test and roll out updates on your own schedule. | |
+| **Authentication** | Users authenticate through your Self-Hosted Server using email-based or LDAP authentication. No external GitKraken cloud account is required. | |
+| **On-premises integrations** | GitKraken Self-Hosted supports integrations with self-hosted Git hosting services and issue trackers. | For the full list, see [Supported on-premises integrations](#supported-on-premises-integrations). |
 
 ### What is not available
 
@@ -11188,7 +11257,6 @@ When you configure a Custom URL, the following AI features are available:
 - Auto-resolve merge conflicts (Preview)
 - Stash message generation
 
-To configure organization-wide AI controls, see [GitKraken Dev Security Controls](https://help.gitkraken.com/gk-dev/gk-dev-security-controls/).
 
 ### Supported on-premises integrations
 
@@ -11199,6 +11267,7 @@ GitKraken Self-Hosted supports the following self-hosted integrations. These int
 - Bitbucket Server and Data Center
 - Azure DevOps Server
 - Jira Data Center
+- or any custom remote hosting service available over HTTPS or SSH authentication
 
 The cloud-hosted counterparts of these services (GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, and Jira Cloud) are not supported because they require outbound internet connectivity.
 
@@ -11722,6 +11791,13 @@ Use this page to authenticate GitKraken Desktop with Git hosts that do not have 
 - Windows SSH note: Only Pageant is supported as the local SSH agent
 - SSH config limitation: GitKraken Desktop does not support `.ssh/config` aliases
 - Proxy behavior: Windows uses system proxy prompts; macOS and Linux prompt directly in GitKraken Desktop
+
+| Host type | HTTPS | SSH | Special requirement |
+|-----------|-------|-----|---------------------|
+| TFS | Yes | Possible | May require Basic Authentication on IIS |
+| AWS CodeCommit | Yes | Yes | Requires AWS-specific credentials or SSH setup |
+| Google Cloud Source Repositories | Yes | Yes | Requires the appropriate Google Cloud credentials |
+| Custom Git host | Yes | Yes | Depends on host-specific URL, SSH key, proxy, or certificate setup |
 
 <figure>
 <div class='embed-container embed-container--16-9'>
@@ -12285,17 +12361,19 @@ GitKraken ships with Git built-in, or you can select a system Git path.
 
 Git actions that currently use the Git executable (by version):
 
-**v9.4.0–11.6.0:**
+**v9.4.0–11.9.0:**
 - Commit, fetch, push, pull
 - Branch rename/delete, merge base
 - Tag creation/deletion, revert commits
 - Cherry-pick, rebase, checkout, clone
+- Shallow repositories and shallow clone settings
 - Staging, unstaging, stash support
 - SSH signing, Git Credential Manager
 - Discard changes, undo/redo, hooks output
 - Reset to commit (mixed, hard, soft)
 - Undo checkout
 - Submodules
+- Squash merge setting in Commit preferences
 
 See full details per release in the [GitKraken Desktop release notes](/gitkraken-desktop/current/).
 
@@ -12383,6 +12461,14 @@ This FAQ answers common GitKraken Desktop questions about supported platforms, a
 - SSH limitation: GitKraken does not use `~/.ssh/config`
 - Windows SSH note: Pageant is the supported SSH agent on Windows
 - Community status troubleshooting: Verify that you are signed in with the email associated with your subscription
+
+| Topic | Current answer |
+|-------|----------------|
+| Supported Linux distributions | Ubuntu 18.04 LTS+, RHEL 8+, Fedora 39+ |
+| Multiple accounts | Supported with a paid license by using Profiles |
+| `~/.ssh/config` support | GitKraken Desktop does not use `~/.ssh/config` |
+| Windows SSH agent | Pageant is the supported SSH agent on Windows |
+| Subscription shows Community | Verify that you are signed in with the email associated with your subscription |
 
 <div class='faq container'>
   <section class='pts pbm'>
@@ -12658,9 +12744,9 @@ Content type: troubleshooting
 Audience: developer
 Plan required: all
 Status: GA
-Last verified: 2026-03
+Last verified: 2026-04
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 ***
 
@@ -12700,11 +12786,11 @@ In GitKraken Desktop, verify you're logged in with the correct account:
   <figcaption style="text-align: center; color: #888;">Ensure you are signed in with the email address linked to your subscription. Avoid using GitHub or Google login options if your subscription is tied to an email address.</figcaption>
 </figure>
 
-### The account is correct but it says I don't have AI tokens
+### The account is correct but it says I don't have AI credits
 Make sure the correct organization is selected:
 <figure class='figure center'>
   <img src="/wp-content/uploads/GKD-Common-Issue-2.png" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">AI token access is determined by the selected organization.</figcaption>
+  <figcaption style="text-align: center; color: #888;">AI credit access is determined by the selected organization.</figcaption>
 </figure>
 
 ### GitKraken.dev shows my account as TRIAL / COMMUNITY
@@ -13841,3 +13927,5 @@ GitKraken Desktop supports some—but not all—filter options across integratio
 <div class='callout callout--basic'>
   <p><strong>Tip:</strong> Use filters in the pull request panel to narrow down by author, label, or merge target.</p>
 </div>
+
+---
