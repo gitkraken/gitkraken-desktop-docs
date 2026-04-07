@@ -53,11 +53,11 @@ _Snap snap snap that branch where you want it._
  - **Sparse Checkout Support:**
    - GitKraken Desktop can now work with sparse checkouts! You can also perform sparse checkouts when cloning a repo, and set sparse checkout rules for the open repo from the settings.
  - **GitKraken AI:**
-   - Added support for Google Gemini 3 Flash.
+   - Added support for Google Gemini Models.
 
 ### Improvements 🙌
  - **GitKraken AI:**
-   - Updated default AI model to Google Gemini 2.5 Flash and removed deprecated Gemini 1.5 and 2.0 models.
+   - Updated default AI model to Google Gemini Models and removed deprecated Gemini 1.5 and 2.0 models.
  - **Experimental Feature – Git Executable**:
    - Bumped Bundled Git to v2.53.0.
 

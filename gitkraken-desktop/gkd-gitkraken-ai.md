@@ -358,7 +358,7 @@ When connected to [GitHub, GitLab, Bitbucket, or Azure DevOps](/gitkraken-deskto
 
 ## How to use your own AI provider key
 
-By default, GitKraken AI uses **Google Gemini 2.5 Flash** to power commit explanations and message generation. No API key is needed and usage is included with your GitKraken subscription.
+By default, GitKraken AI uses **Google Gemini Models** to power commit explanations and message generation. No API key is needed and usage is included with your GitKraken subscription.
 
 <div class='callout callout--basic'>
   <p><strong>What's new in 11.10:</strong> The default model has been updated to Gemini 2.5 Flash. Gemini 3 Flash is now also available. Gemini 1.5 and 2.0 models have been removed.</p>
