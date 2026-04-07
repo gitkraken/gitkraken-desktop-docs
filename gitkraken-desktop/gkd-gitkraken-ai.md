@@ -389,7 +389,7 @@ This endpoint can handle:
 - Commit Composer
 
 <figure>
-<img src="/wp-content/uploads/custom-url-11-1@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Custom AI provider settings in GitKraken showing provider, endpoint URL, token limit, and API key fields." />
+<img src="/wp-content/uploads/custom-url-11-1@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Custom AI provider settings in GitKraken showing provider, endpoint URL, credit limit, and API key fields." />
 <figcaption style="text-align: center; color: #888">Example of configuring a custom AI endpoint</figcaption>
 </figure>
 
