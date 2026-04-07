@@ -17,7 +17,7 @@ tags: [troubleshooting, login, github, performance, issues]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 ***
 
