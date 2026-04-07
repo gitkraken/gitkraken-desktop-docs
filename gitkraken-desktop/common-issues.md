@@ -11,13 +11,13 @@ git_hosts: [GitHub, generic]
 integrations: [GitHub]
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-04
 llms_include: true
 tags: [troubleshooting, login, github, performance, issues]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 ***
 
@@ -57,11 +57,11 @@ In GitKraken Desktop, verify you're logged in with the correct account:
   <figcaption style="text-align: center; color: #888;">Ensure you are signed in with the email address linked to your subscription. Avoid using GitHub or Google login options if your subscription is tied to an email address.</figcaption>
 </figure>
 
-### The account is correct but it says I don't have AI tokens
+### The account is correct but it says I don't have AI credits
 Make sure the correct organization is selected:
 <figure class='figure center'>
   <img src="/wp-content/uploads/GKD-Common-Issue-2.png" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">AI token access is determined by the selected organization.</figcaption>
+  <figcaption style="text-align: center; color: #888;">AI credit access is determined by the selected organization.</figcaption>
 </figure>
 
 ### GitKraken.dev shows my account as TRIAL / COMMUNITY

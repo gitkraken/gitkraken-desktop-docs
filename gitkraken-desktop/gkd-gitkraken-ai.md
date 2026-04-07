@@ -11,7 +11,7 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: preview
-last_verified: 2026-03
+last_verified: 2026-04
 llms_include: true
 tags: [ai, commit-messages, explain, pull-requests, providers]
 taxonomy:
@@ -358,10 +358,10 @@ When connected to [GitHub, GitLab, Bitbucket, or Azure DevOps](/gitkraken-deskto
 
 ## How to use your own AI provider key
 
-By default, GitKraken AI uses **Google Gemini 2.5 Flash** to power commit explanations and message generation. No API key is needed and usage is included with your GitKraken subscription.
+By default, GitKraken AI uses **Google Gemini Models** to power commit explanations and message generation. No API key is needed and usage is included with your GitKraken subscription.
 
 <div class='callout callout--basic'>
-  <p><strong>What's new in 11.10:</strong> The default model has been updated to Gemini 2.5 Flash. Gemini 3 Flash is now also available. Gemini 1.5 and 2.0 models have been removed.</p>
+  <p><strong>What's new in 11.10:</strong> The default model lineup has been updated to Google Gemini Models. Deprecated Gemini 1.5 and 2.0 models have been removed.</p>
 </div>
 
 If you prefer using your own API key with **OpenAI**, **Azure**, **Anthropic**, **Google Gemini**, or a **Custom URL**, you can configure this in:
@@ -389,7 +389,7 @@ This endpoint can handle:
 - Commit Composer
 
 <figure>
-<img src="/wp-content/uploads/custom-url-11-1@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Custom AI provider settings in GitKraken showing provider, endpoint URL, token limit, and API key fields." />
+<img src="/wp-content/uploads/custom-url-11-1@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Custom AI provider settings in GitKraken showing provider, endpoint URL, credit limit, and API key fields." />
 <figcaption style="text-align: center; color: #888">Example of configuring a custom AI endpoint</figcaption>
 </figure>
 

@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-04
 llms_include: false
 tags: [release-notes, changelog, upgrades, version-history]
 og_image: /img/GitKrakenClient-Hero.png
@@ -53,11 +53,11 @@ _Snap snap snap that branch where you want it._
  - **Sparse Checkout Support:**
    - GitKraken Desktop can now work with sparse checkouts! You can also perform sparse checkouts when cloning a repo, and set sparse checkout rules for the open repo from the settings.
  - **GitKraken AI:**
-   - Added support for Google Gemini 3 Flash.
+   - Added support for Google Gemini Models.
 
 ### Improvements 🙌
  - **GitKraken AI:**
-   - Updated default AI model to Google Gemini 2.5 Flash and removed deprecated Gemini 1.5 and 2.0 models.
+   - Updated the default AI model lineup to Google Gemini Models and removed deprecated Gemini 1.5 and 2.0 models.
  - **Experimental Feature – Git Executable**:
    - Bumped Bundled Git to v2.53.0.
 
@@ -248,7 +248,7 @@ In 11.5, GitKraken Desktop got faster across the board: large repo load times, s
  - **GitKraken AI:** 
    - Users can now choose their preferred model from any provided by GitKraken AI, including our newly-added OpenAI GPT-5 models.
    - GPT-5 is now available for those bringing their own OpenAI API key.
-   - Added a usage gauge in the profile menu for easy reference of your GitKraken AI token usage.
+   - Added a usage gauge in the profile menu for easy reference of your GitKraken AI credit usage.
  - Added organization suggestions in _Preferences > Members_ to help users discover and join relevant teams.
  
 ### Improvements 🙌
@@ -357,7 +357,7 @@ _"Because sometimes, even your conflicts need a mediator."_
  - The Commit Graph and Commit Details Panel now use provider avatars for GitLab, BitBucket, and Azure repos.
  - Conflict Prevention menus now show the provider avatar of the user you have a potential conflict with.
  - GitKraken AI:
-   - Added a cache of the last 5 AI explanations to prevent unnecessary token usage and give you quick access to explanations after navigating away from the Explain panel.
+   - Added a cache of the last 5 AI explanations to prevent unnecessary credit usage and give you quick access to explanations after navigating away from the Explain panel.
    - Buttons that activate GitKraken AI now have a unified look and feel.
    - GitKraken Desktop will now respect AI provider configurations and security controls enforced by your organization on [GitKraken.dev](https://gitkraken.dev)
  - Experimental Feature - Git Executable:
