@@ -17,7 +17,7 @@
 - [GitKraken Desktop Preferences | Customize Settings & Workflow](https://help.gitkraken.com/gitkraken-desktop/preferences/): Explore GitKraken Desktop’s Preferences to control themes, integrations, profiles, commit signing, notifications, terminal settings, and more.
 - [GitKraken Desktop Tips | Productivity Shortcuts & Power Features](https://help.gitkraken.com/gitkraken-desktop/tips/): Discover top GitKraken Desktop tips to speed up your workflow—Profiles, Command Palette, integrations, cherry pick, and more advanced features.
 - [Install GitKraken Desktop on Windows, macOS & Linux | Setup Guide](https://help.gitkraken.com/gitkraken-desktop/how-to-install/): Step-by-step installation guide for GitKraken Desktop on Windows, macOS, and Linux. Includes system requirements, video tutorials, and tips for WSL users.
-- [Learn Git with GitKraken Desktop | Beginner Guide & Workflow](https://help.gitkraken.com/gitkraken-desktop/guide/): New to Git? Get started with GitKraken Desktop using this beginner-friendly guide. Learn cloning, branching, staging, committing, and merging with tutorials and videos.
+- [Learn Git with GitKraken Desktop | Beginner Guide & Workflow](https://help.gitkraken.com/gitkraken-desktop/guide/): New to Git? Get started with GitKraken Desktop using this beginner-friendly guide. Learn cloning, branching, staging, and merging, then continue with a free Git foundations course or a YouTube playlist for casual learning.
 - [Open, Clone, or Initialize a Git Repository in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/open-clone-init/): Learn how to open, clone, or initialize repositories in GitKraken Desktop. Get started with repository management and project setup.
 
 ## Core Git Workflows
