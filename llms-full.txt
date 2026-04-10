@@ -1500,7 +1500,26 @@ If merge conflicts occur, GitKraken Desktop opens the Merge Tool, where you can 
 
 ## How to learn Git with GitKraken
 
-In this series, you'll learn Git concepts and how to apply them using GitKraken Desktop.
+GitKraken offers two ways to learn Git: a free structured certification course for guided study and a YouTube playlist for casual learning and quick refreshers.
+
+### Foundations of Git course
+
+If you want a structured path for learning Git, take the free [Foundations of Git certification course](https://learn.gitkraken.com/courses/git-foundations). The course is self-paced and designed for people who want practical Git training without relying on dense reference material or scattered tutorials.
+
+<figure class='figure center'>
+  <img src='/wp-content/uploads/foundations-of-git-certification-course.png' class='help-center-img img-bordered' alt='Course card for the Foundations of Git certification course showing the Git logo, the course title, and a five-star rating.'>
+  <figcaption style="text-align:center; color:#888">Foundations of Git certification course.</figcaption>
+</figure>
+
+The course helps you:
+
+- Learn at your own pace with a curated curriculum that supports everyday version control work.
+- Understand Git concepts through motion graphics and visual examples.
+- Validate what you learned with the Foundations of Git Certification Exam at the end of the course.
+
+### Learn Git with GitKraken
+
+If you want a lighter way to build Git knowledge, watch the GitKraken YouTube playlist. Some topics overlap with the certification course, but the playlist is a good option for casual learning and quick refreshers on key Git concepts.
 
 <figure>
   <div class='embed-container embed-container--16-9'>
