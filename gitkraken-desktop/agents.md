@@ -31,9 +31,9 @@ Use this page to create and monitor coding agent sessions in GitKraken Desktop. 
 |----------|-----------|-------|
 | Open Agents panel | Yes | Toggle with `List \| Agents` at the top of the left panel |
 | Create a new agent session | Yes | Creates a worktree, runs setup commands, and launches the agent |
-| Choose base branch per session | Yes | Defaults to HEAD |
-| Choose coding agent per session | Yes | Falls back to the agent set in Preferences |
-| Monitor session status | Yes | Each card shows WIP changes, ahead/behind, and agent status |
+| Choose base branch per agent session | Yes | Defaults to HEAD |
+| Choose coding agent per agent session | Yes | Falls back to the agent set in Preferences |
+| Monitor agent status | Yes | Each card shows WIP changes, ahead/behind, and agent status |
 | Configure setup commands | Yes | Per repository in <kbd>Preferences > Agents</kbd> |
 
 ***
@@ -48,9 +48,9 @@ Use this page to create and monitor coding agent sessions in GitKraken Desktop. 
 3. Optionally set a base branch, choose a coding agent, or click **Configure setup commands**.
 4. Click **Start**.
 
-**To monitor sessions:** Each card shows the branch name, WIP change count, ahead/behind status, and agent status. The status bar at the bottom of each card reflects whether the agent is running, waiting for input, or done.
+**To monitor agents:** Each card shows the branch name, WIP change count, ahead/behind status, and agent status. The status bar at the bottom of each card reflects whether the agent is running, waiting for input, or done.
 
-**To act on a session:** Right-click any card to open, push, create a pull request, lock, or remove the worktree.
+**To act on an agent session:** Right-click any card to open, push, create a pull request, lock, or remove the worktree.
 
 **To configure the coding agent:** Go to <kbd>Preferences > External Tools > Coding Agent</kbd>.
 
@@ -90,7 +90,7 @@ GitKraken creates a new worktree from the selected base branch, runs any configu
 
 ***
 
-## How to monitor active sessions
+## How to monitor active agent sessions
 
 Each card in the Agents panel represents a worktree and shows:
 
@@ -107,7 +107,7 @@ You can continue working in any other worktree while monitoring agent cards. Whe
 
 ***
 
-## How to act on a session
+## How to act on an agent session
 
 Right-click any card in the Agents panel to access actions for that worktree:
 
