@@ -20,9 +20,9 @@ Content type: how-to
 Audience: developer
 Plan required: all
 Status: GA
-Last verified: 2026-03
+Last verified: 2026-04
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this page to run GitKraken Desktop actions from the Command Palette when you want a keyboard-first workflow for commands, files, repositories, and settings. It explains how to open the palette, what command categories are available, and when it is faster than navigating the UI directly.
 
@@ -172,9 +172,9 @@ Content type: home
 Audience: all
 Plan required: all
 Status: GA
-Last verified: 2026-03
+Last verified: 2026-04
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this page as the GitKraken Desktop Help Center entry point when you need to find installation guidance, interface walkthroughs, Git basics, integrations, release notes, or support resources. It is the best cold-start page for agents and users who need a routing layer into the rest of the documentation set.
 
@@ -1469,9 +1469,9 @@ Content type: how-to
 Audience: developer
 Plan required: all
 Status: GA
-Last verified: 2026-03
+Last verified: 2026-04
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this getting started guide to learn a basic GitKraken Desktop workflow: clone a repository, create a branch, make and stage changes, commit them, push the branch, and merge the work back. It is aimed at new Git users who need a practical first path through the product rather than a reference page.
 

@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-04
 llms_include: true
 tags: [git, beginner, guide, workflow]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this getting started guide to learn a basic GitKraken Desktop workflow: clone a repository, create a branch, make and stage changes, commit them, push the branch, and merge the work back. It is aimed at new Git users who need a practical first path through the product rather than a reference page.
 
