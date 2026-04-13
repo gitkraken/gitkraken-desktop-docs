@@ -24,7 +24,7 @@ Use this page to create and monitor coding agent sessions in GitKraken Desktop. 
 **Requirements and limits**
 - A coding agent CLI must be installed and configured in <kbd>Preferences > External Tools > Coding Agent</kbd>
 - Agent sessions each run in their own Git worktree and working directory
-- Setup commands (install scripts, build steps) are configured per repository in <kbd>Preferences > Agents</kbd>
+- Setup commands (install scripts, build steps) are configured per repository in <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>
 - Agent status indicators are available for Claude Code as of version 12.0.0
 
 | Workflow | Supported | Notes |
@@ -34,7 +34,7 @@ Use this page to create and monitor coding agent sessions in GitKraken Desktop. 
 | Choose base branch per agent session | Yes | Defaults to HEAD |
 | Choose coding agent per agent session | Yes | Falls back to the agent set in Preferences |
 | Monitor agent status | Yes | Each card shows WIP changes, ahead/behind, and agent status |
-| Configure setup commands | Yes | Per repository in <kbd>Preferences > Agents</kbd> |
+| Configure setup commands | Yes | Per repository in <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> |
 
 ***
 
@@ -43,7 +43,7 @@ Use this page to create and monitor coding agent sessions in GitKraken Desktop. 
 **To open the Agents panel:** Click **Agents** in the `List | Agents` segmented control at the top of the left panel.
 
 **To start a new agent session:**
-1. Click the dashed **New Agent Session** card at the top of the list.
+1. Click the **+ New Agent Session** button at the top of the Agents panel.
 2. Type a branch name.
 3. Optionally set a base branch, choose a coding agent, or click **Configure setup commands**.
 4. Click **Start**.
@@ -53,6 +53,8 @@ Use this page to create and monitor coding agent sessions in GitKraken Desktop. 
 **To act on an agent session:** Right-click any card to open, push, create a pull request, lock, or remove the worktree.
 
 **To configure the coding agent:** Go to <kbd>Preferences > External Tools > Coding Agent</kbd>.
+
+**To configure setup commands for the current repository:** Go to <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>.
 
 ***
 
@@ -69,9 +71,9 @@ The Agents panel is toggled by the `List | Agents` segmented control at the top 
 
 ## How to start a new agent session
 
-1. In the Agents panel, click the dashed **New Agent Session** card at the top of the list.
+1. In the Agents panel, click the **+ New Agent Session** button at the top of the panel.
 
-   The card expands into an inline creation form with the branch name input focused.
+   The button expands into an inline creation form with the branch name input focused.
 
 2. Type a branch name.
 
@@ -82,7 +84,7 @@ The Agents panel is toggled by the `List | Agents` segmented control at the top 
    | **Base branch** | Which branch to create the new worktree from | HEAD |
    | **Coding agent** | Which agent CLI to launch in the session | Set in Preferences |
 
-   To configure setup commands, click **Configure setup commands** to open <kbd>Preferences > Agents</kbd>.
+   To configure setup commands, click **Configure setup commands** to open <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>.
 
 4. Click **Start**.
 
