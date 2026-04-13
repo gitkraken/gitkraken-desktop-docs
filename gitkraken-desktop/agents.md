@@ -117,7 +117,7 @@ Right-click any card in the Agents panel to access actions for that worktree:
 |--------|-------------|
 | **Open this worktree** | Switches to the worktree |
 | **Open worktree in a new tab** | Opens the worktree in a new GitKraken tab |
-| **Lock this worktree** | Prevents the worktree from being pruned, moved, or deleted |
+| **Lock this worktree** / **Unlock this worktree** | Toggles the worktree's locked state. A locked worktree cannot be pruned, moved, or deleted. The menu shows **Unlock this worktree** when the worktree is already locked. |
 | **Remove this worktree** | Deletes the worktree and its working directory |
 
 ***
@@ -139,16 +139,16 @@ GitKraken auto-detects installed CLIs. You can also provide custom CLI arguments
 
 ## How to configure setup commands
 
-Setup commands run in the new worktree before the coding agent launches. Use them for steps like installing dependencies or running a build.
+Setup commands run in sequence in the new worktree before the coding agent launches. Use them to install dependencies and prepare your environment (for example, `npm install` or `pnpm build`). Put each command on a new line.
 
-Go to <kbd>Preferences > Agents</kbd> to define setup commands per repository.
+Go to <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> to define setup commands for the current repository. Because they live under Repo-Specific Preferences, setup commands are scoped to the repository you configure them in.
 
 ***
 
 ## Typical workflow
 
 1. You are working on a feature in your current worktree (highlighted card in the Agents panel).
-2. A bug report comes in. You click **New Agent Session**, type `fix/login-crash`, and press <kbd>Enter</kbd>.
+2. A bug report comes in. You click **+ New Agent Session**, type `fix/login-crash`, and press <kbd>Enter</kbd>.
 3. A new card appears. GitKraken sets up the worktree and the agent starts.
 4. You continue working on your feature. A few minutes later, you glance at the left panel and see the agent has finished its work.
 5. You switch to the `fix/login-crash` worktree, review the changes in the diff view, and open a pull request.
