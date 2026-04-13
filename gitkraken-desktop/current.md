@@ -35,43 +35,51 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 ## Version 12.0.0
 
 <kbd>Tuesday, April 14th, 2026</kbd>
+<div class="embed-container embed-container--16-9" style="position: relative; width: 560px; height: 310px; overflow: hidden;">
+    <a href="https://youtu.be/iwVvE0PICqY" target="_blank">
+      <img src="https://help.gitkraken.com/wp-content/uploads/GKD-12-Thumbnail.png" alt="YouTube video thumbnail"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;" />
+    </a>
+</div>
 
-_TODO: add tagline._
+_"A special agent with a license to commit."_
+
+_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-11-11-0) and see how it all works!_
 
 ### New ✨
- - **GitKraken AI:**
-   - Added Claude Sonnet 4.6 and Claude Opus 4.6 models to Anthropic BYOK.
-   - Added support for Google Gemini 3.1 Pro (Preview) when using your own API key.
- - **Repo Management:**
-   - Added resizable columns for repo name, remote, and branch in the Repo Management tab. Column widths persist across app restarts.
- - **Worktrees:**
-   - Added an Agent sessions view in the left panel for browsing worktrees with branch and status information.
-   - Added associated pull request chip to worktree cards, allowing quick access to PRs directly from the Agent sessions view.
-   - Added an option to open a worktree in a new tab from the worktree context menu.
-   - Added an "Agents" section in the Preferences to configure setup commands for agent worktrees.
-   - Added a "Coding Agent" setting in Preferences > External Tools, with support for Claude Code, Codex CLI, OpenCode, Copilot CLI, and Gemini CLI (auto-detected based on installation), and an option to pass custom CLI arguments when starting agent sessions.
-   - Added a "New Agent Session" action in the Agent sessions panel that creates a worktree, switches to it, and launches the configured coding agent in the terminal.
- - **Terminal:**
-   - Added multi-session support to the embedded terminal, allowing independent terminal sessions per worktree in a single tab.
+ - **Agent Sessions View - Manage, create, and monitor parallel AI agent sessions from a single panel:**
+   - The new Agent Sessions View in the Left Panel gives you a unified dashboard for your worktrees and active agent sessions. Each worktree is represented as a card showing its branch, uncommited changes, ahead/behind state, and associated PRs so you can monitor multiple agents at a glance.
+     - If using Claude Code, the associated agent's status will show in the card so you know when it's working, waiting for input, or errors.
+   - The "New Agent Session" action creates a worktree, runs your configured setup commands, and launches your coding agent in one step — making it easy to start a parallel task in a new, isolated environment.
+     - Add setup commands in *Preferences > Agents* to configure per-worktree setup commands (dependency installs, build steps, env file copies) so new agent environments are ready to go automatically.
+     - Configure your preferred coding agent in the inline options menu when creating a new agent session, or go to *Preferences > External Tools* to set your agent and pass custom CLI arguments when starting agent sessions. This setting currently supports Claude Code, Codex CLI, OpenCode, Copilot CLI, and Gemini CLI (auto-detected based on installation).
+   - Added a setting in *Preferences > UI Customization* to hide the Agent view toggle in the Left Panel.
+ - **Terminal - An upgraded terminal that keeps your entire workflow in one window:**
+   - Added multi-session support to the embedded terminal, allowing independent terminal sessions per worktree in a single tab. Switching worktrees will switch to the relevant terminal session automatically.
    - Added drag-and-drop support for files and text into the terminal.
- - **Command Palette:**
-   - Added all detected IDEs as "Open in…" options in the Command Palette (<kbd>Cmd/Ctrl + P</kbd>).
-
-### Improvements 🙌
- - **GitKraken AI:**
-   - Removed deprecated Claude 3.x models (Claude 3.7 Sonnet, Claude 3.5 Sonnet, Claude 3.5 Haiku, Claude 3 Haiku, Claude 3 Opus) from AI preferences. Users previously on these models will be automatically migrated to Claude 4.6 Sonnet.
- - **Left Panel:**
-   - Added a preference to hide the Agent sessions toggle in the left panel.
- - **Terminal:**
-   - Upgraded the terminal engine (xterm.js) from v4 to v6, bringing major improvements:
+   - Updated default terminal color theme for improved readability and contrast.
+   - Upgraded the terminal engine (xterm.js) from v4 to v6, bringing a handful of major improvements:
      - Significantly faster rendering with optimized WebGL and DOM renderers, reducing main-thread blocking during buffer resizing.
      - Improved glyph rendering with multi-page texture atlas support, removing the previous hard cap on glyph storage.
      - Better Unicode and emoji rendering, including fixes for clipped italic emoji and wide character handling.
      - Added support for ligatures, additional Powerline glyphs, and new underline styles (dashed, dotted, overline).
-     - Synchronized output mode (DEC 2026) to prevent flicker during rapid terminal updates.
-   - Updated default terminal color theme for improved readability and contrast.
+     - Synchronized output to prevent flicker during rapid terminal updates.
+
+
+### Improvements 🙌
+ - **GitKraken AI:**
+   - Added support for Claude Sonnet 4.6 and Claude Opus 4.6 when using your own API key.
+   - Added support for Google Gemini 3.1 Pro (Preview) when using your own API key.
+   - Removed deprecated Claude 3.x models (Claude 3.7 Sonnet, Claude 3.5 Sonnet, Claude 3.5 Haiku, Claude 3 Haiku, Claude 3 Opus) from AI preferences. Users previously on these models will be automatically migrated to Claude 4.6 Sonnet.
  - **Shallow Clone Settings:**
    - You can now set shallow clone options when adding a remote to a repository which is shallow-cloned.
+ - **Repository Management Tab:**
+   - Added resizable columns for repo name, remote, and branch in the Repo Management tab. Column widths persist across app restarts.
+ - **Command Palette:**
+   - Added all detected IDEs as "Open in…" options in the Command Palette (<kbd>Cmd/Ctrl + P</kbd>).
+ - **Worktrees:** 
+   - Added an option to open a worktree in a new tab from the worktree context menu and the post-creation prompt.
+
 
 ### Bug Fixes 🐛
  - Fixed visual issues with the terminal panel not properly resizing to fill the available space.
@@ -84,4 +92,11 @@ _TODO: add tagline._
  - Added visual feedback and prevented duplicate actions when deleting a worktree from the left panel.
  - Fixed an issue where columns in the 'All Repositories' group on Repo Management were horizontally misaligned with other groups.
  - Fixed visual issues with the terminal panel styling and padding.
- - Fixed an issue where committed file diffs showed all lines as additions when color.ui = always was set in the git config.
+ - Fixed an issue where committed file diffs showed all lines as additions when `color.ui = always` was set in the git config.
+
+
+### Known Issues
+ - Users running GitKraken Desktop in WSL may experience issues when starting agent sessions. Windows-installed coding agents can take precedence over WSL-installed ones, causing the agent to fail to run.
+ - When cloning Bitbucket repositories, the repository list may not appear in the Clone modal due to a Bitbucket API deprecation. As a workaround, you can clone the repository by pasting its URL directly, or browse and clone repositories from the Repository Management tab.
+
+***
