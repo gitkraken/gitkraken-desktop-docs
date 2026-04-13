@@ -22,10 +22,9 @@ taxonomy:
 Use this page to create and monitor coding agent sessions in GitKraken Desktop. The Agents panel lets you spin up a new agent session on any branch, track its progress while you keep working, and act on the results — all from the left panel without switching context.
 
 **Requirements and limits**
-- A coding agent CLI must be installed and configured in <kbd>Preferences > External Tools > Coding Agent</kbd>
+- A coding agent CLI must be installed and configured in <kbd>Preferences > External Tools > Coding Agent</kbd>. GitKraken auto-detects installed CLIs
 - Agent sessions each run in their own Git worktree and working directory
 - Setup commands (install scripts, build steps) are configured per repository in <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>
-- Agent status indicators are available for Claude Code as of version 12.0.0
 
 | Workflow | Supported | Notes |
 |----------|-----------|-------|
@@ -104,6 +103,8 @@ Each card in the Agents panel represents a worktree and shows:
 | **Agent status** | Running, waiting for input, or done |
 
 The status bar at the bottom of each card describes the agent's current status. Status indicators are available for Claude Code as of version 12.0.0.
+
+When an agent needs your attention — for example, when it is waiting for input — a bell icon appears on the card alongside a **Waiting for input** label, so you don't need to switch to the agent's terminal to notice.
 
 You can continue working in any other worktree while monitoring agent cards. When a card turns green, switch to it to review the agent's output.
 
