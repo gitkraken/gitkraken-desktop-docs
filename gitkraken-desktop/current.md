@@ -45,13 +45,12 @@ _TODO: add tagline._
  - **Repo Management:**
    - Added resizable columns for repo name, remote, and branch in the Repo Management tab. Column widths persist across app restarts.
  - **Worktrees:**
-   - Added a workflow view in the left panel for browsing worktrees with branch and status information.
-   - Added associated pull request chip to worktree cards, allowing quick access to PRs directly from the workflow view.
+   - Added an Agent sessions view in the left panel for browsing worktrees with branch and status information.
+   - Added associated pull request chip to worktree cards, allowing quick access to PRs directly from the Agent sessions view.
    - Added an option to open a worktree in a new tab from the worktree context menu.
-   - Added an "Open in New Tab" option to the post-creation worktree prompt.
    - Added an "Agents" section in the Preferences to configure setup commands for agent worktrees.
    - Added a "Coding Agent" setting in Preferences > External Tools, with support for Claude Code, Codex CLI, OpenCode, Copilot CLI, and Gemini CLI (auto-detected based on installation), and an option to pass custom CLI arguments when starting agent sessions.
-   - Added a "New Agent Session" action in the Workflow panel that creates a worktree, switches to it, and launches the configured coding agent in the terminal.
+   - Added a "New Agent Session" action in the Agent sessions panel that creates a worktree, switches to it, and launches the configured coding agent in the terminal.
  - **Terminal:**
    - Added multi-session support to the embedded terminal, allowing independent terminal sessions per worktree in a single tab.
    - Added drag-and-drop support for files and text into the terminal.
@@ -62,7 +61,7 @@ _TODO: add tagline._
  - **GitKraken AI:**
    - Removed deprecated Claude 3.x models (Claude 3.7 Sonnet, Claude 3.5 Sonnet, Claude 3.5 Haiku, Claude 3 Haiku, Claude 3 Opus) from AI preferences. Users previously on these models will be automatically migrated to Claude 4.6 Sonnet.
  - **Left Panel:**
-   - Added a preference to hide the Workflow view toggle in the left panel.
+   - Added a preference to hide the Agent sessions toggle in the left panel.
  - **Terminal:**
    - Upgraded the terminal engine (xterm.js) from v4 to v6, bringing major improvements:
      - Significantly faster rendering with optimized WebGL and DOM renderers, reducing main-thread blocking during buffer resizing.

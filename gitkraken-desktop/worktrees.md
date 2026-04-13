@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-04
 llms_include: true
 tags: [worktrees, branches, parallel-work, repositories, checkout]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this page to create, switch, lock, and remove Git worktrees in GitKraken Desktop when you need multiple branches checked out at the same time. Worktrees keep separate working directories while sharing the same repository history, which makes them useful for parallel feature work, testing, and review workflows.
 
@@ -46,7 +46,7 @@ Use this page to create, switch, lock, and remove Git worktrees in GitKraken Des
 1. Right-click a branch in the Repository View.
 2. Select **Create worktree**.
 
-**To switch between worktrees:** Right-click a worktree in the Left Panel and choose **Open this worktree**, or check out the corresponding branch from the Repository View.
+**To switch between worktrees:** Right-click a worktree in the Left Panel and choose **Open this worktree**, or check out the corresponding branch from the Repository View. To open the worktree in a separate GitKraken tab instead, choose **Open worktree in a new tab**.
 
 **To remove a worktree:** Right-click it in the Left Panel and select **Remove this worktree**.
 
@@ -87,6 +87,8 @@ GitKraken Desktop has supported worktrees since version **10.5.0**. From the Lef
 - Remove or lock/unlock worktrees
 - Hover over a worktree to see its full file path
 
+The Left Panel also offers a dedicated `List | Agents` segmented control for browsing worktrees. The **Agents** view organizes worktrees around coding agent activity — see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for how to monitor and act on agent sessions from that view.
+
 ### How to create a worktree
 
 To create a worktree:
@@ -106,6 +108,7 @@ To create a worktree:
 
 To switch to another worktree:
 - Right-click the desired worktree in the Left Panel and choose <kbd>Open this worktree</kbd>
+- Right-click the desired worktree in the Left Panel and choose <kbd>Open worktree in a new tab</kbd> to open it in a separate GitKraken tab instead of replacing the current one
 - Or check out the corresponding branch from the Repository View
 
 <figure>

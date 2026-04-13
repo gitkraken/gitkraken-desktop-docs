@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-04
 llms_include: true
 tags: [interface, toolbar, left-panel, commit-graph, commit-panel]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this page to understand the main areas of the GitKraken Desktop interface so you can navigate repository actions, history, staging, and collaboration features more efficiently. It covers the toolbar, Left Panel, Commit Panel, Commit Graph, and tabs, with links to deeper task-specific guides when you need more than a UI overview.
 
@@ -114,6 +114,7 @@ The Left Panel provides access to repository references, such as local branches,
 * Resize the panel and sections
 * Toggle visibility via the context menu
 * Maximize a section by double-clicking the header
+* Switch the Left Panel mode with the `List | Agents` segmented control at the top. **List** shows the traditional reference-based view described below. **Agents** organizes the panel around coding agent activity with worktree cards. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for the full guide. The segmented control can be hidden from <kbd>Preferences > UI Customization</kbd>.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/left-panel-resize-and-collapse.gif' class="help-center-img img-bordered" alt="GitKraken interface showing left panel with repository branches and pull requests, highlighting resizing and collapsing sections">
