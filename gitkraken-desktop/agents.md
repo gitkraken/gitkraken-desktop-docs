@@ -35,7 +35,7 @@ Use this page to create and monitor coding agent sessions in GitKraken Desktop. 
 | Monitor agent status | Yes | Each card shows WIP changes, ahead/behind, and agent status |
 | Configure setup commands | Yes | Per repository in <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> |
 
-<img src='/wp-content/uploads/gkd-agents-panel-overview-20260413.png' class="help-center-img img-bordered" alt="GitKraken Desktop with the Agents panel open in the left panel. The panel shows a + New Agent Session button and a list of worktree cards for the current repository alongside the commit graph.">
+<img src='/wp-content/uploads/gkd-agents-panel-overview-20260414.png' class="help-center-img img-bordered" alt="GitKraken Desktop with the Agents panel open in the left panel. The panel shows multiple agent session cards with status indicators alongside the commit graph and an active terminal session running a coding agent.">
 
 ***
 
@@ -74,7 +74,7 @@ The Agents panel is toggled by the `List | Agents` segmented control at the top 
 
 1. In the Agents panel, click the **+ New Agent Session** button at the top of the panel.
 
-   <img src='/wp-content/uploads/gkd-agents-new-session-button-20260413.png' class="help-center-img img-bordered" alt="The Agents panel in GitKraken Desktop with the + New Agent Session button highlighted at the top, above a list of worktree cards, one of which shows a Waiting for input status.">
+   <img src='/wp-content/uploads/gkd-agents-new-session-button-20260414.png' class="help-center-img img-bordered" alt="The Agents panel in GitKraken Desktop showing the New Agent Session form expanded at the top with a branch name input, Options section with Base branch and Coding agent dropdowns, and a Configure setup commands link.">
 
    The button expands into an inline creation form with the branch name input focused.
 
@@ -89,7 +89,7 @@ The Agents panel is toggled by the `List | Agents` segmented control at the top 
 
    To configure setup commands, click **Configure setup commands** to open <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>.
 
-   <img src='/wp-content/uploads/gkd-agents-new-session-form-20260413.png' class="help-center-img img-bordered" alt="The expanded New Agent Session form in the Agents panel, with a branch name input and Start button at the top, and an Options section below containing Base branch and Coding agent dropdowns plus a Configure setup commands link.">
+   <img src='/wp-content/uploads/gkd-agents-new-session-form-20260414.png' class="help-center-img img-bordered" alt="The expanded New Agent Session form showing the Coding agent dropdown open with available options including Claude Code, Codex CLI, Open Code, and Gemini CLI.">
 
 4. Click **Start**.
 
@@ -112,7 +112,7 @@ The status bar at the bottom of each card describes the agent's current status. 
 
 When an agent needs your attention — for example, when it is waiting for input — a bell icon appears on the card alongside a **Waiting for input** label, so you don't need to switch to the agent's terminal to notice.
 
-<img src='/wp-content/uploads/gkd-agents-waiting-for-input-20260413.png' class="help-center-img img-bordered" alt="Close-up of a worktree card in the Agents panel showing WIP change counts and a highlighted agent status bar at the bottom reading 'Waiting for input'.">
+<img src='/wp-content/uploads/gkd-agents-monitoring-status-20260414.png' class="help-center-img img-bordered" alt="The Agents panel showing multiple worktree cards with WIP change counts, ahead/behind indicators, and agent status bars displaying various states including Waiting for input.">
 
 You can continue working in any other worktree while monitoring agent cards. When a card turns green, switch to it to review the agent's output.
 

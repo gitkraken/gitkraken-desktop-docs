@@ -44,7 +44,7 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 
 _"A special agent with a license to commit."_
 
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-11-11-0) and see how it all works!_
+_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-12-0-0) and see how it all works!_
 
 ### New ✨
  - **Agent Sessions View - Manage, create, and monitor parallel AI agent sessions from a single panel:**
