@@ -35,16 +35,11 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 ## Version 12.0.0
 
 <kbd>Tuesday, April 14th, 2026</kbd>
-<div class="embed-container embed-container--16-9" style="position: relative; width: 560px; height: 310px; overflow: hidden;">
-    <a href="https://youtu.be/iwVvE0PICqY" target="_blank">
-      <img src="https://help.gitkraken.com/wp-content/uploads/GKD-12-Thumbnail.png" alt="YouTube video thumbnail"
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;" />
-    </a>
+<div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iwVvE0PICqY?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>
 </div>
 
 _"A special agent with a license to commit."_
-
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-12-0-0) and see how it all works!_
 
 ### New ✨
  - **Agent Sessions View - Manage, create, and monitor parallel AI agent sessions from a single panel:**
