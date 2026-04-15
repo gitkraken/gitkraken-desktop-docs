@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-04
 llms_include: true
 tags: [preferences, settings, ssh, integrations, profiles]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this page to understand what each major Preferences section controls in GitKraken Desktop, including profiles, integrations, AI settings, external tools, commit signing, terminal behavior, and repository-specific options. Start here when you need to know where a setting lives before changing your workflow or environment.
 
@@ -130,6 +130,7 @@ Configure your preferred editors, terminals, and diff/merge tools.
 - **External Editor**: Choose from VS Code, Atom, Sublime, IntelliJ, or custom path
 - **Default Terminal**: Launch from <kbd>File > Open Terminal</kbd> or <kbd>Alt</kbd>/<kbd>Option</kbd> + <kbd>T</kbd>
 - **Use Custom Terminal Command**: Example for PowerShell: `start "" "C:\Program Files\PowerShell\7\pwsh.exe" -noexit -command "cd %d"`
+- **Coding Agent**: Choose which agent CLI GitKraken Desktop launches when starting a new agent session. Supports Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode, auto-detected based on what's installed on your machine. You can also pass custom CLI arguments when the agent starts. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 <div class='callout callout--warning'>
   <p><strong>macOS Note:</strong> Use the executable file, not the .app, when selecting a custom editor.</p>
@@ -158,6 +159,7 @@ Visual preferences for theming and commit graph display:
 - Author initials vs. avatars
 - Graph metadata: branches, tags, author, commit message, SHA, etc.
 - Hide Launchpad from the status bar
+- Hide the Agent sessions toggle in the Left Panel. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 ***
 
@@ -206,5 +208,6 @@ These apply only to the open repository:
 - [Issues](/gitkraken-desktop/jira/)
 - [Team View](/gitkraken-desktop/team-view/)
 - [Submodules](/gitkraken-desktop/submodules/#keep-submodules-up-to-date)
+- [Agents](/gitkraken-desktop/agents/#how-to-configure-setup-commands) — setup commands (install scripts, build steps) that run when a new agent session starts in a worktree
 
 You can configure these uniquely per repository.

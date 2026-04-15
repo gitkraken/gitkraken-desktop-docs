@@ -1,6 +1,6 @@
 ---
 title: GitKraken Desktop Release Notes
-description: View a history of the new features and fixes in GitKraken Desktop's Version 11.
+description: View the latest features, improvements, and fixes shipping in the current version of GitKraken Desktop.
 product: GitKraken Desktop
 feature: Release Notes
 content_type: release-notes
@@ -12,19 +12,18 @@ integrations: []
 hosted_variant: both
 status: GA
 last_verified: 2026-04
-llms_include: false
+llms_include: true
 tags: [release-notes, changelog, upgrades, version-history]
 og_image: /img/GitKrakenClient-Hero.png
 taxonomy:
     category: gitkraken-desktop
 ---
 
-This release notes page tracks what changed in GitKraken Desktop version 11, including new features, improvements, bug fixes, and deprecations. Use it when you need to confirm when a capability shipped, check whether a bug was fixed in a specific release, or review version-specific changes before upgrading.
+This release notes page tracks what's new and changing in the current version of GitKraken Desktop, including new features, improvements, bug fixes, and deprecations. Use it to see what shipped in the most recent release, confirm when a capability became available, or review changes before upgrading.
 
 **Requirements and limits**
-- This page is a version 11 release history, not an evergreen feature reference.
-- Each entry applies only to the specific GitKraken Desktop release listed under that version heading.
-- Features, fixes, and deprecations described here may have changed again in later releases.
+- This page covers the current major version of GitKraken Desktop. For earlier releases, see the archived version pages ([Version 11](/gitkraken-desktop/11x/), [Version 10](/gitkraken-desktop/10x/), [Version 9](/gitkraken-desktop/9x/), and earlier).
+- Each entry applies only to the specific release listed under its version heading.
 - Use the current feature documentation for step-by-step guidance and the release notes to confirm version timing.
 
 <a href="https://www.gitkraken.com/download?product=gitkraken&source=help_center" target="_blank" class="button button--basic ">Download Current Version Now</a>
@@ -32,440 +31,72 @@ This release notes page tracks what changed in GitKraken Desktop version 11, inc
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 
 ***
-<a id="v11-10-0"></a>
-## Version 11.10.0
+<a id="v12-0-0"></a>
+## Version 12.0.0
 
-<kbd>Tuesday, March 3rd, 2026</kbd>
-
-<div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5ZSSZjtAG3E?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>
+<kbd>Tuesday, April 14th, 2026</kbd>
+<div class="embed-container embed-container--16-9" style="position: relative; width: 560px; height: 310px; overflow: hidden;">
+    <a href="https://youtu.be/iwVvE0PICqY" target="_blank">
+      <img src="https://help.gitkraken.com/wp-content/uploads/GKD-12-Thumbnail.png" alt="YouTube video thumbnail"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;" />
+    </a>
 </div>
 
-_Snap snap snap that branch where you want it._
+_"A special agent with a license to commit."_
+
+_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-12-0-0) and see how it all works!_
 
 ### New ✨
- - **Pin branch to left:**
-   - Added support for pinning a branch to the left side of the Commit Graph. Right-click a pinned branch to unpin. 
- - **Smart Branch Filtering:**
-   - Added smart branch filtering mode to focus the graph on the current branch and its related target/upstream refs.
- - **Restore files from any commit:**
-   - Right-click on files in a commit to restore them to your working directory. Works with single or multiple file selections.
- - **Sparse Checkout Support:**
-   - GitKraken Desktop can now work with sparse checkouts! You can also perform sparse checkouts when cloning a repo, and set sparse checkout rules for the open repo from the settings.
- - **GitKraken AI:**
-   - Added support for Google Gemini Models.
+ - **Agent Sessions View - Manage, create, and monitor parallel AI agent sessions from a single panel:**
+   - The new Agent Sessions View in the Left Panel gives you a unified dashboard for your worktrees and active agent sessions. Each worktree is represented as a card showing its branch, uncommited changes, ahead/behind state, and associated PRs so you can monitor multiple agents at a glance.
+     - If using Claude Code, the associated agent's status will show in the card so you know when it's working, waiting for input, or errors.
+   - The "New Agent Session" action creates a worktree, runs your configured setup commands, and launches your coding agent in one step — making it easy to start a parallel task in a new, isolated environment.
+     - Add setup commands in *Preferences > Agents* to configure per-worktree setup commands (dependency installs, build steps, env file copies) so new agent environments are ready to go automatically.
+     - Configure your preferred coding agent in the inline options menu when creating a new agent session, or go to *Preferences > External Tools* to set your agent and pass custom CLI arguments when starting agent sessions. This setting currently supports Claude Code, Codex CLI, OpenCode, Copilot CLI, and Gemini CLI (auto-detected based on installation).
+   - Added a setting in *Preferences > UI Customization* to hide the Agent view toggle in the Left Panel.
+ - **Terminal - An upgraded terminal that keeps your entire workflow in one window:**
+   - Added multi-session support to the embedded terminal, allowing independent terminal sessions per worktree in a single tab. Switching worktrees will switch to the relevant terminal session automatically.
+   - Added drag-and-drop support for files and text into the terminal.
+   - Updated default terminal color theme for improved readability and contrast.
+   - Upgraded the terminal engine (xterm.js) from v4 to v6, bringing a handful of major improvements:
+     - Significantly faster rendering with optimized WebGL and DOM renderers, reducing main-thread blocking during buffer resizing.
+     - Improved glyph rendering with multi-page texture atlas support, removing the previous hard cap on glyph storage.
+     - Better Unicode and emoji rendering, including fixes for clipped italic emoji and wide character handling.
+     - Added support for ligatures, additional Powerline glyphs, and new underline styles (dashed, dotted, overline).
+     - Synchronized output to prevent flicker during rapid terminal updates.
+
 
 ### Improvements 🙌
  - **GitKraken AI:**
-   - Updated the default AI model lineup to Google Gemini Models and removed deprecated Gemini 1.5 and 2.0 models.
- - **Experimental Feature – Git Executable**:
-   - Bumped Bundled Git to v2.53.0.
-
-### Bug Fixes 🐛
- - Fixed a bug that prevented multi-selection options from appearing in the stash context menu in the left panel.
- - Fixed an issue where the 'Copy file path' context menu option would not work for files in a worktree or a submodule.
- - Fixed an issue where external changes made in worktrees (such as commits from the terminal) were not being detected.
- - Fixed an issue where pulling with fast-forward failed with "Could not apply stash" when there were uncommitted changes.
-
- ### Deprecation Notice 🧟
- - GitHub Actions has been removed from the Left Panel to simplify navigation. Existing GitHub Actions workflows will continue to run normally. To update workflow files, edit and commit them directly within your repository.
-
-***
-<a id="v11-9-0"></a>
-## Version 11.9.0
-
-<kbd>Tuesday, February 3th, 2026</kbd>
-
-_"This update's easy to wrap your head around."_
-
-### New ✨
+   - Added support for Claude Sonnet 4.6 and Claude Opus 4.6 when using your own API key.
+   - Added support for Google Gemini 3.1 Pro (Preview) when using your own API key.
+   - Removed deprecated Claude 3.x models (Claude 3.7 Sonnet, Claude 3.5 Sonnet, Claude 3.5 Haiku, Claude 3 Haiku, Claude 3 Opus) from AI preferences. Users previously on these models will be automatically migrated to Claude 4.6 Sonnet.
  - **Shallow Clone Settings:**
-   - You can now set shallow clone options directly in the Clone Repository dialog from Repository Management or the Launchpad tab.
- - **Experimental Feature – Git Executable:**
-   - Added a new "Squash" setting under Commit preferences to squash commits when merging branches.
- - **Word Wrap Toggle**
-   - Added button to enable word wrapping in diff view, file view, file history, and merge conflict resolution panels.
+   - You can now set shallow clone options when adding a remote to a repository which is shallow-cloned.
+ - **Repository Management Tab:**
+   - Added resizable columns for repo name, remote, and branch in the Repo Management tab. Column widths persist across app restarts.
+ - **Command Palette:**
+   - Added all detected IDEs as "Open in…" options in the Command Palette (<kbd>Cmd/Ctrl + P</kbd>).
+ - **Worktrees:** 
+   - Added an option to open a worktree in a new tab from the worktree context menu and the post-creation prompt.
+
 
 ### Bug Fixes 🐛
- - Trello integrations will now work again.
- - Fixed internal file links in markdown preview showing an external link icon and not opening when clicked.
- - Fixed an issue where GitKraken Desktop would fail to start on x86_64 linux distributions older than GLIBC 2.33 (Ubuntu <= 20.04, Debian <= 11, etc.).
+ - Fixed visual issues with the terminal panel not properly resizing to fill the available space.
+ - Fixed an issue where the content of stashes created from the command line with unstaged changes were not displayed in the right panel.
+ - Fixed an issue where LFS file tags were not shown for files located in subdirectories.
+ - Bitbucket users can once again assign multiple reviewers when creating a pull request.
+ - Fixed an issue where commit diffs appeared empty when the commit contained only whitespace changes and "Ignore Leading/Trailing Whitespace" was enabled.
+ - Fixed an issue where typechanged files were missing their diff icon and not appearing in the staged/unstaged area.
+ - Fixed an issue where the terminal panel would jump to the top of the viewport when switching repositories or worktrees.
+ - Added visual feedback and prevented duplicate actions when deleting a worktree from the left panel.
+ - Fixed an issue where columns in the 'All Repositories' group on Repo Management were horizontally misaligned with other groups.
+ - Fixed visual issues with the terminal panel styling and padding.
+ - Fixed an issue where committed file diffs showed all lines as additions when `color.ui = always` was set in the git config.
 
+
+### Known Issues
+ - Users running GitKraken Desktop in WSL may experience issues when starting agent sessions. Windows-installed coding agents can take precedence over WSL-installed ones, causing the agent to fail to run.
+ - When cloning Bitbucket repositories, the repository list may not appear in the Clone modal due to a Bitbucket API deprecation. As a workaround, you can clone the repository by pasting its URL directly, or browse and clone repositories from the Repository Management tab.
 
 ***
-<a id="v11-8-0"></a>
-## Version 11.8.0
-
-<kbd>Wednesday, January 14th, 2026</kbd>
-
-<div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q9CpplgRhEE?si=B6SfWfzFOj4SLln5" frameborder="0" allowfullscreen></iframe>
-</div>
-
-
-_"GitKraken Desktop is ARM'd with new performance improvements!"_
-
-
-### New ✨
- - **ARM for Linux & Windows**
-  - Linux and Windows users on ARM should visit (https://gitkraken.com/download) to ensure the correct build for their chip architecture.
- - **Shallow Clones**
-  - Shallow Clones can now be created directly from GitKraken Desktop as part of the clone workflow instead of requiring manual creation outside the app.
-
-### Bug Fixes 🐛
- - Fixed inconsistent code block styling in issue and pull request views.
- - AI context menu items (such as "Explain working changes" and "Explain branch changes") will no longer appear when AI is disabled in settings or when the organization does not allow AI.
- - Users who provide their own OpenAI API key will no longer get an error when resolving conflicts with GPT-5 models.
- - Switching providers in the AI preferences will no longer confuse GitKraken Desktop about which provider's AI models to show in the dropdowns.
- - Fixed excessive whitespace in Jira automation comments and improved visual distinction of status badges.
-
-### Modernization Notice 🎨
- - **Custom Themes:** Custom themes have been disabled in 11.8.0 as we modernize the UI for better performance and maintainability. Our new architecture requires rebuilding theme support from the ground up. Light, dark, and high-contrast themes will remain available during the transition.
-   - _We plan to restore custom theme support once the modernization is complete._
-
-***
-<a id="v11-7-0"></a>
-## Version 11.7.0
-
-<kbd>Tuesday, December 9th, 2025</kbd>
-
-_"Re-rebase (verb): To undo a rebase, only to redo it again."_
-
-
-### New ✨
- - **Markdown File Preview:**
-   - You can now preview markdown files directly in the file viewer! Toggle between Code and Preview modes using the new buttons in the file header.
- - **Undo/Redo for Rebase Operations:**
-   - Added support for undoing and redoing rebase operations, including Interactive Rebase, Multi-Commit Cherry Pick, dropping and rewording commits, and AI Commit Composer (Recompose with AI).
- - **GitKraken AI:**
-   - **Explain Branch Changes:** Right-click any branch to get a clear summary of what changed and why.
-
-### Bug Fixes 🐛
- - Fixed AI Commit Composer failing when composing commits that include empty new files, binary files, deleted or renamed files, or files with identical hunk headers.
- - F11 now toggles fullscreen on Windows and Linux, matching platform conventions.
- - "Revert Hunk" will no longer appear on working directory changes ("WIP"). "Discard Hunks" is still available for WIP changes.
- - Fixed blank UI when selecting too many options in Launchpad filters for Jira issues.
- - Fixed an issue where commit hook changes did not appear in the unstaged area.
- - Fixed an issue where Git commit options ("skip hooks" and "push after commit") were not being honored when using the commit keyboard shortcut: <kbd>Shift/Cmd + Enter</kbd>.
-
-### Modernization Notice 🎨
- - **Custom Themes:** Custom themes will be sunset in 11.8.0 as we modernize the UI for better performance and maintainability. Our new architecture requires rebuilding theme support from the ground up. Light, dark, and high-contrast themes will remain available during the transition.
-   - _We plan to restore custom theme support once the modernization is complete._
-
-***
-<a id="v11-6-0"></a>
-## Version 11.6.0
-
-<kbd>Tuesday, November 11th, 2025</kbd>
-
-<div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ySD7E_S1qDA?si=87vB8ooSU5GAn5wk" frameborder="0" allowfullscreen></iframe>
-</div>
-
-_"Shallow repos. It's not that deep."_
-
-
-### New ✨
-  - **Experimental Feature - Git Executable:**
-    - Shallow repo support is now in preview! If you have a shallowly-cloned repository, you can now open it inside of GitKraken Desktop, and most features will work as normal. If you run into any problems, please let us know!
-  - **GitKraken AI:**
-    - Explain Working Changes: Select your unstaged edits and get a clear summary of what changed and why.
-
-### Improvements 🙌
- - **Merge Conflict Improvements**
-   - AI conflict resolution is now synced to the exact code line so you can review and apply changes faster.
- 
- - **GitKraken AI:**
-   - Added support for custom OpenAI, Anthropic & Gemini endpoint URLs. 
-   - Added the ability to cancel the Commit Composer while the AI is still composing.
-   - Added preset instruction choices to custom instructions in preferences.
- 
- - **Experimental Feature – Git Executable**:
-   - Bumped Bundled Git to v2.51.1.
- - Upgraded Electron to v38.
- - GitHub pull request templates now support organization-level templates.
- - Added a left-panel context menu option to checkout a tag’s commit directly.
- - Added HTML syntax highlighting for `.vue` files.
- - When the graph is focused, using the **Select First** keybind (`Ctrl+Home`/`⌘+↑`) will now select the WIP/conflict when present, instead of the most recent commit/stash.
-
-### Bug Fixes 🐛
- - Commit/Stash message generation no longer errors with `Cannot read properties of undefined (reading ‘requestIdleCallback')`.
- - `Skip Hooks` now appears when committing from Git worktrees.
- - GitHub issues using `<ul>` and `<li>` now format correctly.
- - GitHub issues with descriptions will once again display tooltips on hover.
-  - **Submodules**
-	  - Fixed failure when cloning unreachable submodules that could leave repos unstable.
-	  - Fixed warnings in the Diff View that misattributed changes to uninitialized submodules, when the changes actually belonged to the parent repo.
- - Git notes no longer appear as commits in the graph.
- - Ambiguous branches, tags, and remotes no longer block branch deletion or cause other issues in the graph.
- - Prefetch and other non-standard branches are no longer displayed in the graph.
- - With Git Executable enabled, submodules in the left panel are now alphabetized.
-
-### Modernization Notice 🎨
- - **Custom Themes**
-   - As part of our UI modernization efforts, we will be sunsetting custom themes supported starting in 11.7. Light, dark, and high-contrast themes will remain available.
-
-
-***
-<a id="v11-5-1"></a>
-## Version 11.5.1
-
-<kbd>Tuesday, October 14th, 2025</kbd>
-
-_"Hey I finished fixing those bugs... Wait, we released already?"_
- 
-### Improvements 🙌
- - Upgraded Electron to v36 to address performance issues on MacOS Tahoe.
-
-### Bug Fixes 🐛
- - Fixed an issue where submodules that contain dots in their path could not be loaded.
- - Fixed an issue where we could fail to write log entries or Git Hooks executions.
- - Fixed an issue where some repositories with unexpected branches or tags would fail to load.
-
-
-***
-<a id="v11-5-0"></a>
-## Version 11.5.0
-
-<kbd>Tuesday, October 7th, 2025</kbd>
-
-<div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/YorNwlXEFHc?si=87vB8ooSU5GAn5wk" frameborder="0" allowfullscreen></iframe>
-</div>
-
-_"It was bothering us too."_
-
-### Performance ⚡️
-In 11.5, GitKraken Desktop got faster across the board: large repo load times, stash refreshes, branch and tag updates, and even memory usage have all improved. More perf improvements to come in future releases!      
-
- - Faster commits and checkouts! We saw **>100%** speed-up on both in the VS Code repository!
-   - This is thanks to faster branch and tag refreshes (up to 98% faster!), massively speeding up graph updates on repos with thousands of branches/tags.
- - Up to **480%** faster opening of large repositories! We now perform git maintenance in the background on your open repository. After this completes, future opens will be dramatically faster.
- - Up to **100x** faster loading of stashes, further improving repo open speeds on repositories with many local stashes.
- - Up to 20% less RAM use
-
-### New ✨
- - **GitKraken AI:** 
-   - Users can now choose their preferred model from any provided by GitKraken AI, including our newly-added OpenAI GPT-5 models.
-   - GPT-5 is now available for those bringing their own OpenAI API key.
-   - Added a usage gauge in the profile menu for easy reference of your GitKraken AI credit usage.
- - Added organization suggestions in _Preferences > Members_ to help users discover and join relevant teams.
- 
-### Improvements 🙌
- - When creating a pull request, if only one PR template is available, it will be automatically selected.
- - Hovering an annotated tag in the left panel now shows its annotation.
- - Experimental Feature - Git Executable:
-   - Users who have opted out of the Git Executable (in the Experimental settings) should note that most of the performance gains in this release are only available with the Git Executable enabled. 
-   - Added support for `Reset branch (hard/mixed/soft) to commit`.
-   - Added support for `Undo checkout`.
-   - Added support for submodules.
-
-### Bug Fixes 🐛
- - Fixed an issue where the Commit Detail panel was not refreshing after discarding unstaged renamed files or added staged files.
- - Fixed issue where undoing a checkout to a branch with submodules did not update the submodules, even with `Keep submodules up to date` enabled.
- - Fixed a visual issue in dropdowns where the selected content was misaligned in the Create Jira Issue panel.
-
-***
-<a id="v11-4-0"></a>
-## Version 11.4.0
-
-<kbd>Wednesday, September 3rd, 2025</kbd>
-
-_"No prob-llama: Ollama setup just got easier."_
-
-### Improvements 🙌
- - Added a new Ollama option to the GitKraken AI preferences, which works the same as `<Custom URL>`. This provides a clearer path for users wanting to connect their local Ollama server, making the setup process more intuitive.
-
-### Bug Fixes 🐛
- - Fixed an issue where custom instructions were not enabled when `GitKraken AI` was set as the only configured provider on `gitkraken.dev`.
- - On Jira Cloud issue search, fixed "The requested API has been removed" errors.
- - Fixed an issue where some integrations could not connect when using certain proxy configurations (such as those requesting optional client certificates).
-
-
-***
-
-<a id="v11-3-0"></a>
-## Version 11.3.0
-
-<kbd>Tuesday, August 5th, 2025</kbd>
-
-<div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5_e_OBP20Do?si=87vB8ooSU5GAn5wk" frameborder="0" allowfullscreen></iframe>
-</div>
-
-
-_"Compose commits that hit the right note, every time."_
-
-### New ✨
-- **AI-powered Commit Composer (Preview):** Use AI to help organize your Git commits into clear, logical stories by breaking up uncommitted changes into meaningful commits or recomposing previous commits. _It's ideal for cleaning things up before a pull request or when you've just been… coding a little too fast._
-
-- **Launchpad:** Team mode is graduating from preview! Users will require an Advanced license (or higher) to continue using Team mode.
-
-### Improvements 🙌
- - ⚠️ **Important:** Ubuntu 18 support has been discontinued. Users running Ubuntu 18 should not update to this version of GitKraken as it will no longer function properly. Please upgrade your operating system to a supported version of Ubuntu to continue receiving GitKraken updates.
- - Experimental Feature - Git Executable:
-   - Bumped Bundled Git to v2.50.1
- - <kbd>Cmd/Ctrl+O</kbd> will now open a system dialog to browse for a repo.
- - <kbd>Cmd+Option+O / Ctrl+Alt+O</kbd> will now open the Repo Management Tabs
- - **GitKraken AI** now follows your custom instructions more accurately
-
-### Bug Fixes 🐛
- - Conflict detection button finally has a reserved parking spot on the toolbar, other buttons will not shift around. 
- - Fixed issue where feedback form causes commit options to move off screen
-
-***
-
-<a id="v11-2-1"></a>
-## Version 11.2.1
-
-<kbd>Monday, July 7th, 2025</kbd>
-
-_"Tabsolutely better: smarter start, sharper avatars, speedier search."_
-
-### Improvements 🙌
-- Revamped New Tab Experience:
-   - View more of your recent or favorite repositories and use search to quickly find and open any repo from the list.
-- Bitbucket Data Center avatars now show in the Commit Graph and Commit Details Panel.
-- Improved coverage for GitLab avatars in the Commit Graph.
-
-### Bug Fixes 🐛
- - Fixed an issue where AI-generated PR titles and descriptions were not working correctly with some GitLab repositories.
- - GitHub Student Pack users will no longer get "missing org header" errors when using GitKraken AI features.
- - Fixed an issue where auto-resolving a conflict with AI did not work with a conflict generated from a cherry-pick or a stash.
-
-***
-
-<a id="v11-2-0"></a>
-## Version 11.2.0
-
-<kbd>Tuesday, June 17th, 2025</kbd>
-
-<div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/fQ23CWMoNCk?si=87vB8ooSU5GAn5wk" frameborder="0" allowfullscreen></iframe>
-</div>
-
-_"Because sometimes, even your conflicts need a mediator."_
-
-### New ✨
-- **AI-powered Merge Conflict Resolution (Preview):** Quickly handle conflicts by having AI suggest a resolution.
-   - When viewing a conflicted file, click `Auto-resolve with AI` to generate a suggested resolution in the Output panel.
-   - An explanation is provided for each conflict in the file with a confidence level so you can review with ease.
-- **Revert Individual Hunks from the Diff View**
-   - You can now revert specific hunks while viewing a diff in Hunk View mode. Selecting `Revert Hunk` will apply the inverse of that hunk’s changes to your working directory as unstaged changes.
-
-### Improvements 🙌
- - The Commit Graph and Commit Details Panel now use provider avatars for GitLab, BitBucket, and Azure repos.
- - Conflict Prevention menus now show the provider avatar of the user you have a potential conflict with.
- - GitKraken AI:
-   - Added a cache of the last 5 AI explanations to prevent unnecessary credit usage and give you quick access to explanations after navigating away from the Explain panel.
-   - Buttons that activate GitKraken AI now have a unified look and feel.
-   - GitKraken Desktop will now respect AI provider configurations and security controls enforced by your organization on [GitKraken.dev](https://gitkraken.dev)
- - Experimental Feature - Git Executable:
-   - Fully support discard changes by also supporting cases for renamed file and multi-selection of added/renamed files.
-
-### Bug Fixes 🐛
- - Fixed an issue when finishing a release or hotfix with Git Flow where changes did not merge into master after a conflict on develop.
- - Fixed a crash when pressing the Generate button in SSH settings on Windows.
-
-<br>
-
-> **GitKraken also introduced Model Context Protocol (MCP) support via the GitKraken CLI!**<br>Spin up a local MCP server and connect AI tools like GitHub Copilot, Cursor, or Windsurf to surface real‑time code insights (e.g. list PRs, clean old branches, find your code expert) directly from your GitKraken Workspace. [Learn more.](https://www.gitkraken.com/blog/introducing-gitkraken-mcp)
-
-> **Heads up: Support for older Linux distros ending soon**<br>In an upcoming release, GitKraken Desktop will no longer support glibc versions older than 2.28. This affects users on older Linux distributions like Ubuntu 18, Debian 9, etc. If you're using one of these systems, please check these release notes before each update, and avoid updating GitKraken Desktop once support is dropped.
-
-***
-
-<a id="v11-1-1"></a>
-## Version 11.1.1
-<kbd>Tuesday, May 15th, 2025</kbd>
-
-_"We fixed launching VS Code from GitKraken Desktop! Sorry it took so long; we were trying to figure out how to launch VS Code without GitKraken Desktop."_
-
-### Bug Fixes 🐛
- - Fixed a regression in the last release where opening repositories/files in an external editor caused an "unknown error".
- - Experimental Feature - [Git Executable](/gitkraken-desktop/experimental-features/#git-executable):
-    - When discarding all changes fails, error details will be provided in the error message.
-
-***
-
-<a id="v11-1-0"></a>
-## Version 11.1.0
-<kbd>Tuesday, May 6th, 2025</kbd>
-
-<div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jg3n_dg4IjM?si=87vB8ooSU5GAn5wk" frameborder="0" allowfullscreen></iframe>
-</div>
- 
-_"More Jarvis. Less Skynet."_
-
-### New ✨
- - **[GitKraken AI:](/gitkraken-desktop/gkd-gitkraken-ai/)** New AI-powered capabilities to accelerate your development workflow, with expanded support for additional providers and environments.
-   - [Pull Request Title and Description Generation](/gitkraken-desktop/gkd-gitkraken-ai/#ai-generated-pull-request-title-and-description)
-     - Generate titles and descriptions for Pull Requests based on the commits of the PR in just a click.
-     - When creating a Pull Request, click `Generate title and description` to automatically populate the fields using GitKraken AI.
-     - If you have a Pull Request template selected, GitKraken AI will attempt to generate content that adheres to the selected template.
-   - [Stash Message Generation](/gitkraken-desktop/gkd-gitkraken-ai/#ai-generated-stash-messages)
-     - Generate stash messages based on your code changes in just a click.
-     - With a WIP selected, click on the sparkle icon in the stash message form to have GitKraken AI generate a stash message based on your staged changes.
-   - [Amend Commit Message](/gitkraken-desktop/gkd-gitkraken-ai/#amend-commit-messages)
-     - You can now also generate a new commit message when amending a previous commit message.
-   - [Expanded provider support when using your own API key](/gitkraken-desktop/gkd-gitkraken-ai/#bring-your-own-key)
-     - Added support for OpenAI GPT-4.1 models.
-     - Removed the deprecated OpenAI o1-mini model.
-     - Added Google Gemini as a provider.
-     - Added Azure as a provider (private AI model providers such as Azure require GitKraken Advanced).
-     - You can now configure a custom URL endpoint for an OpenAI compatible API to use with GitKraken AI, like a local or self-hosted AI server.
-
-
-### Improvements 🙌
- - You can now [Hide All / Show All](/gitkraken-desktop/hiding-and-soloing/#hide-or-show-all-refs) items in the Local and Remote sections of the Left Panel from each section header's context menu.
-    - The Hide All / Show All actions for Tags and Stashes have also been moved to their respective section headers.
- - GitHub user avatars will now display in the Commit Graph and Commit Details Panel for commits made on GitHub repositories.
- - Experimental Feature - [Git Executable](/gitkraken-desktop/experimental-features/#git-executable):
-   - Respects `core.commentString` and `core.commentChar` values from your Git config.
-   - Improved stability and performance for on-premise clients when authenticating with Git remotes.
- - [Conflict Prevention](/gitkraken-desktop/conflict-prevention/):
-   - Potential conflict alerts with your teammates will now work when the current branch has no upstream.
-   - You can now access the branches involved in a potential conflict directly from the menu, and each branch label matches the color of the branch in the Commit Graph.
- - Upgraded Electron to v34.
-
-### Bug Fixes 🐛
- - The [Repository Management tab](/gitkraken-desktop/open-clone-init/#repository-management) now displays GitLab workspaces with more than 25 repos.
- - Fixed an issue in the Commit Graph where branch labels wouldn't render properly.
- - Fixed several styling issues across the application.
- - Experimental Feature - Git Executable:
-   - Fixed an issue where Pull failed with files having the same name but different casing in a case-insensitive file system.
-
-
-***
-<a id="v11-0-0"></a>
-## Version 11.0.0
-<kbd>Monday, March 31st, 2025</kbd>
-
-<div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/sVLftA_jpak?si=87vB8ooSU5GAn5wk" frameborder="0" allowfullscreen></iframe>
-</div>
-
-_"Turn it up to 11! 🎸"_
-
-### New ✨
- - **GitKraken AI:** A seamless extension of your development workflow, [GitKraken AI](https://help.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai/) automates tedious tasks to improve your efficiency and focus.
-   - [Commit Message Generation](/gitkraken-desktop/gkd-gitkraken-ai/#ai-generated-commit-messages)
-     - You'll now be able to generate clear, meaningful commit messages based on your code changes in just a click.
-     - With a WIP selected, click on the sparkle icon in the commit message form to have GitKraken AI generate a commit message for you based on your staged changes.
-   - [Explain Commits](/gitkraken-desktop/gkd-gitkraken-ai/#ai-powered-commit-explain)
-     - You can now get detailed summaries of changes made in your repository without spending time diving through files and diffs.
-     - With one or multiple commits selected in the Commit Graph, click on the `Explain` button in the top right of the Commit Panel to generate an explanation of changes made in the selected commits.
-   - [Configure GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/#bring-your-own-key) from _Preferences > GitKraken AI_
-     - Use the `Custom Instructions` setting to provide additional details so GitKraken AI can better tailor commit messages and explanations for you.
-     - With GitKraken AI enabled, you can also select to use your own API key to make requests directly to OpenAI or Anthropic. When one of those providers is selected, you can choose what model you'd like to use for each AI feature.
-     - Note: The AI Commit Message Generation section has been removed from _Preferences > Experimental_.
-
-
-### Improvements 🙌
- - We updated our plans to better align with how developers and teams use GitKraken, and your new plan is now reflected in the status bar.
- - Upgraded React to v17.
- - Updated Git to 2.49.0.
-
-### Bug Fixes 🐛
- - [Launchpad](/gitkraken-desktop/gitkraken-launchpad/) now works with GitHub users set as Enterprise Managed Users.

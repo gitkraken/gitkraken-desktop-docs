@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-04
 llms_include: true
 tags: [terminal, shell, git, commands, auto-complete]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this page to run Git CLI commands from the GitKraken Desktop terminal while staying in the context of the open repository and commit graph. It covers how to open the terminal, how command and flag auto-complete works, and where to change shell and terminal appearance settings.
 
@@ -104,6 +104,18 @@ GitKraken supports ZSH and Bash. To switch shells:
 PowerShell and Bash are currently supported. To change the shell:
 1. Open <kbd>Preferences > Terminal</kbd>.
 2. Set the _Default Terminal_ to your desired shell.
+
+---
+
+## How multi-session support works
+
+The embedded terminal supports independent sessions per worktree in a single tab. When you switch to another worktree — for example, by clicking an agent card in the [Agents view](/gitkraken-desktop/agents/) — the terminal view refreshes to that worktree's session and opens in its working directory. Each session runs independently, so long-running commands in one worktree keep running when you switch away and come back.
+
+---
+
+## How to drag and drop files into the terminal
+
+You can drag a file from your OS file manager or from the Commit Panel into the terminal to insert the file's full path at the cursor. You can also drag text into the terminal to insert it at the cursor. This is useful when you want to paste a path or snippet into a command without retyping it.
 
 ---
 
