@@ -1,6 +1,6 @@
 ---
 title: Coding Agents in GitKraken Desktop
-description: Use the Agents panel in GitKraken Desktop to create, monitor, and manage parallel coding agent sessions across Git worktrees without leaving the app.
+description: Use Agent Sessions View in GitKraken Desktop to configure coding agent CLIs, create agent sessions, monitor progress, and manage parallel worktrees.
 product: GitKraken Desktop
 feature: Agents
 content_type: how-to
