@@ -224,6 +224,8 @@ From Launchpad, you can quickly take action on pull requests:
 - Close PR
 - Checkout in new worktree
 
+Use **Checkout in new worktree** when you want to review or continue pull request work in a separate working directory. For more information, see [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/). If you want to use coding agents in those worktrees, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
+
 <figure>
   <img src="/wp-content/uploads/pr-actions-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="GitKraken Desktop Launchpad showing a pull request with dropdown menu options including 'Open in GitHub', 'Review Pull Request', 'Checkout Branch', and more.">
   <figcaption style="color:#888; text-align:center">Quick actions available for pull requests in Launchpad</figcaption>

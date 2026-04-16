@@ -151,6 +151,13 @@ Learn more in [Branching and Merging](/working-with-repositories/branching-and-m
 
 This basic workflow sets the foundation for more advanced topics like [pushing and pulling](/working-with-repositories/pushing-and-pulling) and [GitFlow](/git-workflows-and-extensions/git-flow).
 
+When you are ready to go further, continue with:
+
+- [GitKraken Desktop Interface Guide](/gitkraken-desktop/interface/) to learn how the Left Panel, Commit Graph, and Commit Panel fit together
+- [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/) to work on multiple branches in parallel
+- [GitKraken Terminal Guide](/gitkraken-desktop/terminal/) to use the embedded terminal
+- [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) to use Agent Sessions View and coding agent workflows
+
 Watch how a commit is made using GitKraken Desktop:
 
 <figure>

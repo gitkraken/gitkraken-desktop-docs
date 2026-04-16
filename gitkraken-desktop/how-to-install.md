@@ -28,6 +28,7 @@ This installation guide explains how to install GitKraken Desktop on Windows, ma
 - Linux `.rpm`: RHEL 8+ or Fedora 39+
 - Linux support note: Other distributions may work but are not officially supported
 - Advanced features note: Git command-line tools are optional for basic use, but recommended for features such as the terminal, experimental tools, or Git LFS
+- Coding agent note: Coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode are installed separately from GitKraken Desktop
 
 ***
 
@@ -44,7 +45,7 @@ This installation guide explains how to install GitKraken Desktop on Windows, ma
    - **Windows/macOS**: Use the shortcut or Applications folder.
    - **Linux**: Run `gitkraken` in a terminal.
 
-No Git command-line tools are required for basic use. For advanced features like the terminal, Git LFS, or experimental tools, [install Git from git-scm.com](https://git-scm.com/).
+No Git command-line tools are required for basic use. For advanced features like the terminal, Git LFS, or experimental tools, [install Git from git-scm.com](https://git-scm.com/). If you want to use coding agents in GitKraken Desktop, install the coding agent CLI separately. For more information, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 ***
 
@@ -58,7 +59,7 @@ There are three simple steps to get started with GitKraken Desktop:
 
 No Git command-line tools are required. Once you run the installer, you can open the app and start working with your repositories.
 
-If you want to use advanced features such as the terminal, experimental tools, or Git LFS, we recommend you [download Git from git-scm.com](https://git-scm.com/).
+If you want to use advanced features such as the terminal, experimental tools, or Git LFS, we recommend you [download Git from git-scm.com](https://git-scm.com/). If you want to use coding agents, install the coding agent CLI separately from GitKraken Desktop.
 
 Below are platform-specific installation instructions and system requirements.
 
@@ -79,8 +80,6 @@ Below are platform-specific installation instructions and system requirements.
 </div>
 
 ### How to run the Windows installer
-
-In your terminal, run the following:
 
 Double-click the downloaded executable file. A splash screen will appear while GitKraken Desktop is installed. The application will automatically start when installation completes.
 
