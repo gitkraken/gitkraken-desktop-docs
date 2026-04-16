@@ -17,9 +17,9 @@ tags: [tips, productivity, shortcuts, integrations, advanced]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
-This page highlights GitKraken Desktop features that help developers move faster across everyday Git work. Use these tips to set up profiles, navigate with the Command Palette and shortcuts, connect integrations, manage complex history, and customize the Commit Graph when you want a more efficient workflow.
+This page highlights GitKraken Desktop features that help developers move faster across everyday Git work. Use these tips to set up profiles, navigate with the Command Palette and shortcuts, connect integrations, manage coding agent and worktree workflows, and customize the Commit Graph when you want a more efficient workflow.
 
 **Requirements and limits**
 - This page is a curated overview that links to feature-specific documentation; use the linked pages for full steps and edge cases.
@@ -86,6 +86,14 @@ Speed through tasks with [keyboard shortcuts](/start-here/keyboard-shortcuts).
     </tr>
   </tbody>
 </table>
+
+***
+
+## How to use Agent Sessions View for parallel work
+
+Use [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) when you want to start and monitor coding agent sessions in parallel. In the Left Panel, use the `List | Agents` toggle to switch between the traditional List view and Agent Sessions View.
+
+Agent Sessions View uses the same underlying worktrees as List view, but organizes them around coding agent sessions, status, and quick actions. For general worktree management, see [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/).
 
 ***
 
