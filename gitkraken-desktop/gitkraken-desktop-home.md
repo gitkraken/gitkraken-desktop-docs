@@ -18,14 +18,15 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
-Use this page as the GitKraken Desktop Help Center entry point when you need to find installation guidance, interface walkthroughs, Git basics, integrations, release notes, or support resources. It is the best cold-start page for agents and users who need a routing layer into the rest of the documentation set.
+Use this page as the GitKraken Desktop Help Center entry point when you need to find installation guidance, interface walkthroughs, coding agent workflows, worktrees, terminal usage, integrations, release notes, or support resources. It is the best cold-start page for agents and users who need a routing layer into the rest of the documentation set.
 
 **Requirements and limits**
 - This page is a routing guide to the GitKraken Desktop Help Center, not a single-feature reference page.
 - Use the linked docs for plan requirements, OS support, version constraints, and step-by-step workflows.
 - Installation, integrations, and release notes each maintain their own constraints and compatibility details.
+- Coding agent, worktree, terminal, and on-premises workflows each have dedicated pages with deeper setup and behavior details.
 - The overview video is optional; the navigation links are the primary path for finding current documentation.
 
 Watch the overview video or use the navigation menu to dive straight into what you need. 
@@ -40,22 +41,32 @@ Watch the overview video or use the navigation menu to dive straight into what y
 
 ## How to get started
 
-Let’s get you rolling. Whether you’re new to Git or just new to GitKraken, here’s where the journey begins:
+Use these pages to get started with the part of GitKraken Desktop you need:
 
-- [Interface Basics](/gitkraken-desktop/interface/) – A tour of your new Git command centre.
-- [How to Install](/gitkraken-desktop/how-to-install/) – Quick-start setup guides for Windows, Mac, and Linux.
-- [New to Git](/gitkraken-desktop/guide/) – A friendly intro to Git workflows.
-- [Cheat Sheet](https://www.gitkraken.com/pdfs/gitkraken-git-gui-cheat-sheet?product=gitkraken&source=help_center) – Key actions and shortcuts at your fingertips.
-- [Integrations](/gitkraken-desktop/integrations/) – Connect your repos, issue trackers, and cloud services.
-- [Release Notes](/gitkraken-desktop/current/) – What's new? What's fixed? What’s cooking?
-- [FAQ](/gitkraken-desktop/faq/) – Answers to your most burning questions.
+- [How to Install](/gitkraken-desktop/how-to-install/) - Install GitKraken Desktop on Windows, macOS, or Linux.
+- [Interface Basics](/gitkraken-desktop/interface/) - Learn how the toolbar, Left Panel, Commit Graph, and Commit Panel fit together.
+- [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) - Use Agent Sessions View to create, monitor, and manage coding agent sessions.
+- [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/) - Create, switch, lock, and remove worktrees.
+- [GitKraken Terminal Guide](/gitkraken-desktop/terminal/) - Use the embedded terminal for Git commands and manual coding agent workflows.
+- [Integrations](/gitkraken-desktop/integrations/) - Connect repositories, issue trackers, and related services.
+- [New to Git](/gitkraken-desktop/guide/) - Learn core Git concepts and common workflows.
+- [Release Notes](/gitkraken-desktop/current/) - Review the latest changes in GitKraken Desktop.
+- [FAQ](/gitkraken-desktop/faq/) - Find answers to common questions.
+- [Cheat Sheet](https://www.gitkraken.com/pdfs/gitkraken-git-gui-cheat-sheet?product=gitkraken&source=help_center) - Keep common actions and shortcuts nearby.
+
+## On-premises deployment
+
+Use these pages if your organization runs GitKraken Desktop in an on-premises environment:
+
+- [Set Up GitKraken Self-Hosted Server (On-Premise)](/gitkraken-desktop/self-hosted/) - Learn how Self-Hosted Server works and which Desktop features are supported.
+- [GitKraken On-Premise Serverless (Stand-Alone) Setup](/gitkraken-desktop/serverless/) - Install and license Serverless in offline or tightly controlled environments.
 
 ---
 
 ## Additional resources
 
-Want more than docs? Get involved, get support, or help shape where we go next:
+Use these resources if you want support or want to share product feedback:
 
-- [Make a Feature Request](https://feedback.gitkraken.com/?product=gitkraken&source=help_center) – Your ideas fuel our roadmap. 
-- [Join GitKraken Slack](https://www.gitkraken.com/join-slack-community?product=gitkraken&source=help_center) – Trade tips, tricks, or memes with fellow Krakeneers.
-- [Contact Support](https://help.gitkraken.com/gitkraken-desktop/contact-support?product=gitkraken&source=help_center) – Hit a snag? We’ve got your back.
+- [Make a Feature Request](https://feedback.gitkraken.com/?product=gitkraken&source=help_center) - Share product ideas and feedback.
+- [Join GitKraken Slack](https://www.gitkraken.com/join-slack-community?product=gitkraken&source=help_center) - Connect with other GitKraken users.
+- [Contact Support](https://help.gitkraken.com/gitkraken-desktop/contact-support?product=gitkraken&source=help_center) - Get help with GitKraken Desktop issues.
