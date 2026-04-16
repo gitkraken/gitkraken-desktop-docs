@@ -19,12 +19,13 @@ taxonomy:
 ---
 <kbd>Last updated: April 2026</kbd>
 
-Use this page to understand the main areas of the GitKraken Desktop interface so you can navigate repository actions, history, staging, and collaboration features more efficiently. It covers the toolbar, Left Panel, Commit Panel, Commit Graph, and tabs, with links to deeper task-specific guides when you need more than a UI overview.
+Use this page to understand the main areas of the GitKraken Desktop interface so you can navigate repository actions, history, staging, coding agent workflows, and collaboration features more efficiently. It covers the toolbar, Left Panel, Commit Panel, Commit Graph, and tabs, with links to deeper task-specific guides when you need more than a UI overview.
 
 **Requirements and limits**
 - Scope: Interface overview, not full task-specific workflows
 - Main areas covered: Toolbar, Left Panel, Commit Graph, Commit Panel, and tabs
 - Repository context: Most controls described here appear only when a repository is open
+- Left Panel modes: The Left Panel can show either List view or Agent Sessions View, depending on the selected mode
 - Left Panel behavior: Sections can be toggled, resized, collapsed, or expanded from the UI
 - Toolbar behavior: Some buttons appear only when the relevant feature or repo state is available, such as LFS
 - Deeper actions: Use linked feature pages for task-specific limits and workflows beyond this interface overview
@@ -34,7 +35,7 @@ Use this page to understand the main areas of the GitKraken Desktop interface so
 ## Quick Start
 
 
-- **Left Panel**: Lists your local branches, remotes, tags, stashes, submodules, and integrations. Click any item to interact with it. Right-click for additional actions like checkout, merge, and delete.
+- **Left Panel**: Shows repository references, worktrees, and integrations. In `List | Agents`, click **List** for the traditional reference-based view or **Agents** for Agent Sessions View, which organizes worktrees around coding agent sessions.
 - **Commit Graph**: Displays the visual commit history of the current repository. Click any commit to view its details in the Commit Panel. Click the WIP node at the top to view and stage pending changes.
 - **Commit Panel**: Shows file changes for the selected commit or WIP. Displays diffs, staged/unstaged files, and co-author information. Use it to stage files and write commit messages.
 - **Toolbar**: Located at the top of the window. Provides one-click access to Undo, Redo, Pull, Push, Branch, Stash, and Pop. Use the adjacent dropdowns to customize pull behavior or branch options.
@@ -43,7 +44,7 @@ To open the Command Palette at any time, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + 
 
 ***
 
-From left to right, GitKraken Desktop displays a Left Panel, Commit Graph, and the Commit Panel when working with a repository.
+From left to right, GitKraken Desktop displays the Left Panel, Commit Graph, and Commit Panel when working with a repository. The Left Panel can show either List view or Agent Sessions View.
 
 <figure class='figure center'>
     <img src="/wp-content/uploads/interface.png" class="help-center-img img-bordered">
@@ -114,7 +115,18 @@ The Left Panel provides access to repository references, such as local branches,
 * Resize the panel and sections
 * Toggle visibility via the context menu
 * Maximize a section by double-clicking the header
-* Switch the Left Panel mode with the `List | Agents` segmented control at the top. **List** shows the traditional reference-based view described below. **Agents** organizes the panel around coding agent activity with worktree cards. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for the full guide. The segmented control can be hidden from <kbd>Preferences > UI Customization</kbd>.
+* Switch the Left Panel mode with the `List | Agents` segmented control at the top
+* Use **List** for the traditional reference-based view described below
+* Use **Agents** to open **Agent Sessions View**, which organizes the same underlying worktrees around coding agent sessions, status, and quick actions
+* See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for agent session setup and workflows
+* See [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/) for general worktree management
+* The segmented control can be hidden from <kbd>Preferences > UI Customization</kbd>
+
+<div class='callout callout--basic'>
+    <p><strong>List view and Agent Sessions View use the same underlying worktrees.</strong> Use List view for general branch and worktree management. Use Agent Sessions View for coding agent sessions, agent status, and related quick actions.</p>
+</div>
+
+For in-app terminal behavior, worktree-specific terminal sessions, and manual coding agent workflows, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/left-panel-resize-and-collapse.gif' class="help-center-img img-bordered" alt="GitKraken interface showing left panel with repository branches and pull requests, highlighting resizing and collapsing sections">
@@ -123,20 +135,17 @@ The Left Panel provides access to repository references, such as local branches,
 
 | Icon | Section | What it does |
 | --- | --- | --- |
-| <img src='/wp-content/uploads/gk-new-local-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Local** | <p>References to local branches &mdash; pointers to specific commits allowing work to be separated.</p><p>If you need help with branches, visit our <a href="/working-with-repositories/branching-and-merging">Branching and Merging</a> page.</p> |
-| <img src='/wp-content/uploads/gk-new-remote-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Remote** | <p>References to remote branches.</p><p>Set sail into <a href="/working-with-repositories/pushing-and-pulling">pushing and pulling remotes</a> for more.</p> |
-| <img src='/wp-content/uploads/gk-new-pull-requests-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Pull Requests** | <p>This shows active requests for merging one branch into another. With the GitHub or Bitbucket integration, new PRs can be created directly from GitKraken Desktop.</p><p>Create your <a href="/working-with-repositories/pull-requests">Pull Request</a> to get your contribution merged.</p> |
-| <i class="fa fa-list-ul" aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; font-size: 36px;"></i> | **Issues** | <p>Lets you see and work with your issues in GitKraken Desktop</p><p>Hook up to your remote issue tracker of choice - such as <a href="/integrations/jira/">Jira</a>, <a href="/integrations/github-issues/">GitHub</a>, <a href="/integrations/gitlab-issues/">GitLab</a>, or <a href="/integrations/trello/">Trello</a>.</p> |
+| <img src='/wp-content/uploads/gk-new-local-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Local** | <p>References to local branches that point to specific commits.</p><p>If you need help with branches, visit our <a href="/working-with-repositories/branching-and-merging">Branching and Merging</a> page.</p> |
+| <img src='/wp-content/uploads/gk-new-remote-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Remote** | <p>References to remote branches.</p><p>For more information, see <a href="/working-with-repositories/pushing-and-pulling">Pushing and Pulling</a>.</p> |
+| <img src='/wp-content/uploads/gk-new-pull-requests-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Pull Requests** | <p>Shows active pull requests for merging one branch into another.</p><p>With a supported integration, you can create pull requests directly from GitKraken Desktop. For more information, see <a href="/working-with-repositories/pull-requests">Pull Requests</a>.</p> |
+| <i class="fa fa-list-ul" aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; font-size: 36px;"></i> | **Issues** | <p>Shows issues connected to your repository integrations.</p><p>For more information, see <a href="/integrations/jira/">Jira</a>, <a href="/integrations/github-issues/">GitHub Issues</a>, <a href="/integrations/gitlab-issues/">GitLab Issues</a>, or <a href="/integrations/trello/">Trello</a>.</p> |
 | <i class="fa fa-users" aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; font-size: 36px;"></i> | **Teams** | <p>Easily see what your <a href="/working-with-repositories/team-view/">Team</a> members are working on.</p> |
-| <img src='/wp-content/uploads/gk-new-tags-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Tags** | <p>These represent active pointers to commits but never move. <a href="/working-with-repositories/tags">Tag</a>, you're it!</p> |
-| <img src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Stashes** | <p>Stored file changes in the working copy.</p><p>For saving your loot to play with later, here's more on <a href="/working-with-commits/stashing">stashes</a>.</p> |
-| <img src='/wp-content/uploads//gk-new-submodules-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Submodules** | <p>A Git repository in a subdirectory of the current repository.</p><p>Git-inception with <a href="/working-with-repositories/submodules">submodules</a> anyone?</p> |
+| <img src='/wp-content/uploads/gk-new-tags-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Tags** | <p>References that point to specific commits and do not move.</p><p>For more information, see <a href="/working-with-repositories/tags">Tags</a>.</p> |
+| <img src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Stashes** | <p>Stored file changes from the working copy.</p><p>For more information, see <a href="/working-with-commits/stashing">Stashing</a>.</p> |
+| <img src='/wp-content/uploads//gk-new-submodules-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Submodules** | <p>A Git repository in a subdirectory of the current repository.</p><p>For more information, see <a href="/working-with-repositories/submodules">Submodules</a>.</p> |
 
 
 ***
-
-<!-- CONTENT ABOVE THIS LINE OMITTED FOR REVIEW -->
-
 ## How the Commit Panel works
 
 <div class='embed-container embed-container--16-9'>
@@ -152,9 +161,9 @@ The Commit Panel is where files and changes from your working directory are stag
 
 The three sections in order of operations are:
 
-1. _Unstaged Files_ — Modified files not yet added to the index.
-2. _Staged Files_ — Files staged for the next commit.
-3. _Commit Message_ — A two-part message interface:
+1. _Unstaged Files_ - Modified files not yet added to the index.
+2. _Staged Files_ - Files staged for the next commit.
+3. _Commit Message_ - A two-part message interface:
    * **Summary**: A brief, informative message shown in the graph.
    * **Description**: Additional details to support the summary.
 

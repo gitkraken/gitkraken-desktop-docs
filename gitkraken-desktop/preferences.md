@@ -19,7 +19,7 @@ taxonomy:
 ---
 <kbd>Last updated: April 2026</kbd>
 
-Use this page to understand what each major Preferences section controls in GitKraken Desktop, including profiles, integrations, AI settings, external tools, commit signing, terminal behavior, and repository-specific options. Start here when you need to know where a setting lives before changing your workflow or environment.
+Use this page to understand what each major Preferences section controls in GitKraken Desktop, including profiles, integrations, AI settings, external tools, commit signing, terminal behavior, Agent Sessions View settings, and repository-specific options. Start here when you need to know where a setting lives before changing your workflow or environment.
 
 **Requirements and limits**
 - Scope: Preferences overview for app-wide, profile-specific, and repository-specific settings
@@ -38,11 +38,11 @@ Use this page to understand what each major Preferences section controls in GitK
 - **Profiles**: Create and switch between profiles to separate Git identities, integrations, and tab sets.
 - **SSH and Integrations**: Connect to GitHub, GitLab, Bitbucket, Azure DevOps, Jira, Trello, and more.
 - **GitKraken AI**: Enable AI-assisted commit messages and PR descriptions (Pro plan and above).
-- **External Tools**: Set your preferred editor, diff tool, merge tool, and default terminal.
+- **External Tools**: Set your preferred editor, diff tool, merge tool, default terminal, and custom coding agent commands.
 - **UI Customization**: Change themes, date formats, avatar display, and commit graph metadata.
 - **Commit Signing**: Enable GPG signing for verified commits.
 - **Experimental**: Try preview features such as the Git binary executor.
-- **Repo-Specific Preferences**: Configure encoding, Gitflow, hooks, LFS, issues, and Team View per repository.
+- **Repo-Specific Preferences**: Configure encoding, Gitflow, hooks, LFS, issues, Team View, and agent setup commands per repository.
 
 Preferences are stored per profile, so switching profiles resets integrations and UI options to that profile's configuration.
 
@@ -123,14 +123,14 @@ Let [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai) automate repetitive Git 
 
 ## How external tool preferences work
 
-Configure your preferred editors, terminals, and diff/merge tools.
+Configure your preferred editors, terminals, coding agent commands, and diff/merge tools.
 
 - **External Merge Tool**: [View supported tools](/working-with-repositories/branching-and-merging/#external-merge-tools)
 - **External Diff Tool**: [View supported tools](/working-with-commits/diff/#external-diff-tools)
 - **External Editor**: Choose from VS Code, Atom, Sublime, IntelliJ, or custom path
 - **Default Terminal**: Launch from <kbd>File > Open Terminal</kbd> or <kbd>Alt</kbd>/<kbd>Option</kbd> + <kbd>T</kbd>
 - **Use Custom Terminal Command**: Example for PowerShell: `start "" "C:\Program Files\PowerShell\7\pwsh.exe" -noexit -command "cd %d"`
-- **Coding Agent**: Choose which agent CLI GitKraken Desktop launches when starting a new agent session. Supports Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode, auto-detected based on what's installed on your machine. You can also pass custom CLI arguments when the agent starts. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
+- **Coding Agent**: Configure custom commands or arguments used when GitKraken Desktop starts a coding agent session. Supported coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode can be auto-detected based on what is installed on your machine. You can choose the coding agent for a session in the New Agent Session form. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 <div class='callout callout--warning'>
   <p><strong>macOS Note:</strong> Use the executable file, not the .app, when selecting a custom editor.</p>
@@ -159,7 +159,7 @@ Visual preferences for theming and commit graph display:
 - Author initials vs. avatars
 - Graph metadata: branches, tags, author, commit message, SHA, etc.
 - Hide Launchpad from the status bar
-- Hide the Agent sessions toggle in the Left Panel. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
+- Hide the `List | Agents` toggle in the Left Panel. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 ***
 
