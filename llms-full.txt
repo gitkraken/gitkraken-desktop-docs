@@ -1,7 +1,7 @@
 # GitKraken Desktop Help Center — Full Content
 
 > Current GitKraken Help Center corpus for AI systems, generated from validated front matter.
-> Generated on 2026-04-14. Includes only pages marked `llms_include: true`.
+> Generated on 2026-04-16. Includes only pages marked `llms_include: true`.
 > Document count: 79
 > Source root: https://help.gitkraken.com/gitkraken-desktop/
 
@@ -22,13 +22,13 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
-Use this page to run GitKraken Desktop actions from the Command Palette when you want a keyboard-first workflow for commands, files, repositories, and settings. It explains how to open the palette, what command categories are available, and when it is faster than navigating the UI directly.
+Use this page to run GitKraken Desktop actions from the Command Palette when you want a keyboard-first workflow for commands, files, repositories, worktrees, and settings. It explains how to open the palette, what command categories are available, and when it is faster than navigating the UI directly.
 
 **Requirements and limits**
 - Access methods: <kbd>Cmd/Ctrl + P</kbd>, the wand icon, or the Help menu
-- Scope: Commands, files, repositories, branches, stashes, settings, logs, and patches
+- Scope: Commands, files, repositories, branches, stashes, worktree-related navigation, settings, logs, and patches
 - Search behavior: Results filter live as you type
 - Execution model: Press <kbd>Enter</kbd> to run the selected item
 - Command availability depends on the current repository state, open repo context, and configured integrations
@@ -55,6 +55,7 @@ Common actions available through the Command Palette:
 - **Repository**: Open Repo, Clone, Init, Perform Repo Maintenance
 - **Stash**: Create, Apply, Pop
 - **View and settings**: Toggle Theme, Toggle Left Panel, Keyboard Shortcuts, Switch to Profile
+- **Terminal and workflow**: Open in terminal for command-line tasks and manual coding agent workflows
 
 The Command Palette is available at any time regardless of which panel or view is currently active in GitKraken Desktop.
 
@@ -92,6 +93,8 @@ Below is a list of supported commands grouped by category.
 - `Repo Management: Init`
 - `Repo Management: Open`
 - `Perform Repo Maintenance`
+
+`Open in terminal` is especially useful when you want to start a command-line workflow in the current repository or worktree, including a manual coding agent workflow. For more information, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/) and [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 ### Settings
 - `Configure Git Flow`
@@ -174,47 +177,58 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
-Use this page as the GitKraken Desktop Help Center entry point when you need to find installation guidance, interface walkthroughs, Git basics, integrations, release notes, or support resources. It is the best cold-start page for agents and users who need a routing layer into the rest of the documentation set.
+Use this page as the GitKraken Desktop Help Center entry point when you need to find installation guidance, interface walkthroughs, coding agent workflows, worktrees, terminal usage, integrations, release notes, or support resources. It is the best cold-start page for agents and users who need a routing layer into the rest of the documentation set.
 
 **Requirements and limits**
 - This page is a routing guide to the GitKraken Desktop Help Center, not a single-feature reference page.
 - Use the linked docs for plan requirements, OS support, version constraints, and step-by-step workflows.
 - Installation, integrations, and release notes each maintain their own constraints and compatibility details.
+- Coding agent, worktree, terminal, and on-premises workflows each have dedicated pages with deeper setup and behavior details.
 - The overview video is optional; the navigation links are the primary path for finding current documentation.
 
-Watch the overview video or use the navigation menu to dive straight into what you need. 
+Watch the overview video or use the navigation menu to dive straight into what you need.
 
 ## GitKraken Desktop tutorial
 
-<div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/LBlijN29gb8?rel=0&vq=hd1080' frameborder='0' allowfullscreen title="GitKraken Desktop tutorial video"></iframe>
+<div class=’embed-container embed-container--16-9’>
+    <iframe width=’560’ height=’315’ src=’https://www.youtube.com/embed/LBlijN29gb8?rel=0&vq=hd1080’ frameborder=’0’ allowfullscreen title="GitKraken Desktop tutorial video"></iframe>
 </div>
 
 ---
 
 ## How to get started
 
-Let’s get you rolling. Whether you’re new to Git or just new to GitKraken, here’s where the journey begins:
+Use these pages to get started with the part of GitKraken Desktop you need:
 
-- [Interface Basics](/gitkraken-desktop/interface/) – A tour of your new Git command centre.
-- [How to Install](/gitkraken-desktop/how-to-install/) – Quick-start setup guides for Windows, Mac, and Linux.
-- [New to Git](/gitkraken-desktop/guide/) – A friendly intro to Git workflows.
-- [Cheat Sheet](https://www.gitkraken.com/pdfs/gitkraken-git-gui-cheat-sheet?product=gitkraken&source=help_center) – Key actions and shortcuts at your fingertips.
-- [Integrations](/gitkraken-desktop/integrations/) – Connect your repos, issue trackers, and cloud services.
-- [Release Notes](/gitkraken-desktop/current/) – What's new? What's fixed? What’s cooking?
-- [FAQ](/gitkraken-desktop/faq/) – Answers to your most burning questions.
+- [How to Install](/gitkraken-desktop/how-to-install/) - Install GitKraken Desktop on Windows, macOS, or Linux.
+- [Interface Basics](/gitkraken-desktop/interface/) - Learn how the toolbar, Left Panel, Commit Graph, and Commit Panel fit together.
+- [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) - Use Agent Sessions View to create, monitor, and manage coding agent sessions.
+- [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/) - Create, switch, lock, and remove worktrees.
+- [GitKraken Terminal Guide](/gitkraken-desktop/terminal/) - Use the embedded terminal for Git commands and manual coding agent workflows.
+- [Integrations](/gitkraken-desktop/integrations/) - Connect repositories, issue trackers, and related services.
+- [New to Git](/gitkraken-desktop/guide/) - Learn core Git concepts and common workflows.
+- [Release Notes](/gitkraken-desktop/current/) - Review the latest changes in GitKraken Desktop.
+- [FAQ](/gitkraken-desktop/faq/) - Find answers to common questions.
+- [Cheat Sheet](https://www.gitkraken.com/pdfs/gitkraken-git-gui-cheat-sheet?product=gitkraken&source=help_center) - Keep common actions and shortcuts nearby.
+
+## On-premises deployment
+
+Use these pages if your organization runs GitKraken Desktop in an on-premises environment:
+
+- [Set Up GitKraken Self-Hosted Server (On-Premise)](/gitkraken-desktop/self-hosted/) - Learn how Self-Hosted Server works and which Desktop features are supported.
+- [GitKraken On-Premise Serverless (Stand-Alone) Setup](/gitkraken-desktop/serverless/) - Install and license Serverless in offline or tightly controlled environments.
 
 ---
 
 ## Additional resources
 
-Want more than docs? Get involved, get support, or help shape where we go next:
+Use these resources if you want support or want to share product feedback:
 
-- [Make a Feature Request](https://feedback.gitkraken.com/?product=gitkraken&source=help_center) – Your ideas fuel our roadmap. 
-- [Join GitKraken Slack](https://www.gitkraken.com/join-slack-community?product=gitkraken&source=help_center) – Trade tips, tricks, or memes with fellow Krakeneers.
-- [Contact Support](https://help.gitkraken.com/gitkraken-desktop/contact-support?product=gitkraken&source=help_center) – Hit a snag? We’ve got your back.
+- [Make a Feature Request](https://feedback.gitkraken.com/?product=gitkraken&source=help_center) - Share product ideas and feedback.
+- [Join GitKraken Slack](https://www.gitkraken.com/join-slack-community?product=gitkraken&source=help_center) - Connect with other GitKraken users.
+- [Contact Support](https://help.gitkraken.com/gitkraken-desktop/contact-support?product=gitkraken&source=help_center) - Get help with GitKraken Desktop issues.
 
 ---
 
@@ -231,12 +245,13 @@ Last verified: 2026-04
 
 <kbd>Last updated: April 2026</kbd>
 
-Use this page to understand the main areas of the GitKraken Desktop interface so you can navigate repository actions, history, staging, and collaboration features more efficiently. It covers the toolbar, Left Panel, Commit Panel, Commit Graph, and tabs, with links to deeper task-specific guides when you need more than a UI overview.
+Use this page to understand the main areas of the GitKraken Desktop interface so you can navigate repository actions, history, staging, coding agent workflows, and collaboration features more efficiently. It covers the toolbar, Left Panel, Commit Panel, Commit Graph, and tabs, with links to deeper task-specific guides when you need more than a UI overview.
 
 **Requirements and limits**
 - Scope: Interface overview, not full task-specific workflows
 - Main areas covered: Toolbar, Left Panel, Commit Graph, Commit Panel, and tabs
 - Repository context: Most controls described here appear only when a repository is open
+- Left Panel modes: The Left Panel can show either List view or Agent Sessions View, depending on the selected mode
 - Left Panel behavior: Sections can be toggled, resized, collapsed, or expanded from the UI
 - Toolbar behavior: Some buttons appear only when the relevant feature or repo state is available, such as LFS
 - Deeper actions: Use linked feature pages for task-specific limits and workflows beyond this interface overview
@@ -246,7 +261,7 @@ Use this page to understand the main areas of the GitKraken Desktop interface so
 ## Quick Start
 
 
-- **Left Panel**: Lists your local branches, remotes, tags, stashes, submodules, and integrations. Click any item to interact with it. Right-click for additional actions like checkout, merge, and delete.
+- **Left Panel**: Shows repository references, worktrees, and integrations. In `List | Agents`, click **List** for the traditional reference-based view or **Agents** for Agent Sessions View, which organizes worktrees around coding agent sessions.
 - **Commit Graph**: Displays the visual commit history of the current repository. Click any commit to view its details in the Commit Panel. Click the WIP node at the top to view and stage pending changes.
 - **Commit Panel**: Shows file changes for the selected commit or WIP. Displays diffs, staged/unstaged files, and co-author information. Use it to stage files and write commit messages.
 - **Toolbar**: Located at the top of the window. Provides one-click access to Undo, Redo, Pull, Push, Branch, Stash, and Pop. Use the adjacent dropdowns to customize pull behavior or branch options.
@@ -255,7 +270,7 @@ To open the Command Palette at any time, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + 
 
 ***
 
-From left to right, GitKraken Desktop displays a Left Panel, Commit Graph, and the Commit Panel when working with a repository.
+From left to right, GitKraken Desktop displays the Left Panel, Commit Graph, and Commit Panel when working with a repository. The Left Panel can show either List view or Agent Sessions View.
 
 <figure class='figure center'>
     <img src="/wp-content/uploads/interface.png" class="help-center-img img-bordered">
@@ -326,7 +341,18 @@ The Left Panel provides access to repository references, such as local branches,
 * Resize the panel and sections
 * Toggle visibility via the context menu
 * Maximize a section by double-clicking the header
-* Switch the Left Panel mode with the `List | Agents` segmented control at the top. **List** shows the traditional reference-based view described below. **Agents** organizes the panel around coding agent activity with worktree cards. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for the full guide. The segmented control can be hidden from <kbd>Preferences > UI Customization</kbd>.
+* Switch the Left Panel mode with the `List | Agents` segmented control at the top
+* Use **List** for the traditional reference-based view described below
+* Use **Agents** to open **Agent Sessions View**, which organizes the same underlying worktrees around coding agent sessions, status, and quick actions
+* See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for agent session setup and workflows
+* See [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/) for general worktree management
+* The segmented control can be hidden from <kbd>Preferences > UI Customization</kbd>
+
+<div class='callout callout--basic'>
+    <p><strong>List view and Agent Sessions View use the same underlying worktrees.</strong> Use List view for general branch and worktree management. Use Agent Sessions View for coding agent sessions, agent status, and related quick actions.</p>
+</div>
+
+For in-app terminal behavior, worktree-specific terminal sessions, and manual coding agent workflows, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/left-panel-resize-and-collapse.gif' class="help-center-img img-bordered" alt="GitKraken interface showing left panel with repository branches and pull requests, highlighting resizing and collapsing sections">
@@ -335,20 +361,17 @@ The Left Panel provides access to repository references, such as local branches,
 
 | Icon | Section | What it does |
 | --- | --- | --- |
-| <img src='/wp-content/uploads/gk-new-local-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Local** | <p>References to local branches &mdash; pointers to specific commits allowing work to be separated.</p><p>If you need help with branches, visit our <a href="/working-with-repositories/branching-and-merging">Branching and Merging</a> page.</p> |
-| <img src='/wp-content/uploads/gk-new-remote-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Remote** | <p>References to remote branches.</p><p>Set sail into <a href="/working-with-repositories/pushing-and-pulling">pushing and pulling remotes</a> for more.</p> |
-| <img src='/wp-content/uploads/gk-new-pull-requests-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Pull Requests** | <p>This shows active requests for merging one branch into another. With the GitHub or Bitbucket integration, new PRs can be created directly from GitKraken Desktop.</p><p>Create your <a href="/working-with-repositories/pull-requests">Pull Request</a> to get your contribution merged.</p> |
-| <i class="fa fa-list-ul" aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; font-size: 36px;"></i> | **Issues** | <p>Lets you see and work with your issues in GitKraken Desktop</p><p>Hook up to your remote issue tracker of choice - such as <a href="/integrations/jira/">Jira</a>, <a href="/integrations/github-issues/">GitHub</a>, <a href="/integrations/gitlab-issues/">GitLab</a>, or <a href="/integrations/trello/">Trello</a>.</p> |
+| <img src='/wp-content/uploads/gk-new-local-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Local** | <p>References to local branches that point to specific commits.</p><p>If you need help with branches, visit our <a href="/working-with-repositories/branching-and-merging">Branching and Merging</a> page.</p> |
+| <img src='/wp-content/uploads/gk-new-remote-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Remote** | <p>References to remote branches.</p><p>For more information, see <a href="/working-with-repositories/pushing-and-pulling">Pushing and Pulling</a>.</p> |
+| <img src='/wp-content/uploads/gk-new-pull-requests-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Pull Requests** | <p>Shows active pull requests for merging one branch into another.</p><p>With a supported integration, you can create pull requests directly from GitKraken Desktop. For more information, see <a href="/working-with-repositories/pull-requests">Pull Requests</a>.</p> |
+| <i class="fa fa-list-ul" aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; font-size: 36px;"></i> | **Issues** | <p>Shows issues connected to your repository integrations.</p><p>For more information, see <a href="/integrations/jira/">Jira</a>, <a href="/integrations/github-issues/">GitHub Issues</a>, <a href="/integrations/gitlab-issues/">GitLab Issues</a>, or <a href="/integrations/trello/">Trello</a>.</p> |
 | <i class="fa fa-users" aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; font-size: 36px;"></i> | **Teams** | <p>Easily see what your <a href="/working-with-repositories/team-view/">Team</a> members are working on.</p> |
-| <img src='/wp-content/uploads/gk-new-tags-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Tags** | <p>These represent active pointers to commits but never move. <a href="/working-with-repositories/tags">Tag</a>, you're it!</p> |
-| <img src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Stashes** | <p>Stored file changes in the working copy.</p><p>For saving your loot to play with later, here's more on <a href="/working-with-commits/stashing">stashes</a>.</p> |
-| <img src='/wp-content/uploads//gk-new-submodules-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Submodules** | <p>A Git repository in a subdirectory of the current repository.</p><p>Git-inception with <a href="/working-with-repositories/submodules">submodules</a> anyone?</p> |
+| <img src='/wp-content/uploads/gk-new-tags-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Tags** | <p>References that point to specific commits and do not move.</p><p>For more information, see <a href="/working-with-repositories/tags">Tags</a>.</p> |
+| <img src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Stashes** | <p>Stored file changes from the working copy.</p><p>For more information, see <a href="/working-with-commits/stashing">Stashing</a>.</p> |
+| <img src='/wp-content/uploads//gk-new-submodules-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Submodules** | <p>A Git repository in a subdirectory of the current repository.</p><p>For more information, see <a href="/working-with-repositories/submodules">Submodules</a>.</p> |
 
 
 ***
-
-<!-- CONTENT ABOVE THIS LINE OMITTED FOR REVIEW -->
-
 ## How the Commit Panel works
 
 <div class='embed-container embed-container--16-9'>
@@ -364,9 +387,9 @@ The Commit Panel is where files and changes from your working directory are stag
 
 The three sections in order of operations are:
 
-1. _Unstaged Files_ — Modified files not yet added to the index.
-2. _Staged Files_ — Files staged for the next commit.
-3. _Commit Message_ — A two-part message interface:
+1. _Unstaged Files_ - Modified files not yet added to the index.
+2. _Staged Files_ - Files staged for the next commit.
+3. _Commit Message_ - A two-part message interface:
    * **Summary**: A brief, informative message shown in the graph.
    * **Description**: Additional details to support the summary.
 
@@ -511,9 +534,9 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
-This keyboard shortcut reference helps you work faster in GitKraken Desktop on macOS, Windows, and Linux. Use it to find shortcuts for staging, committing, navigating the Commit Graph, opening the Command Palette, managing tabs, and toggling interface panels without leaving the keyboard.
+This keyboard shortcut reference helps you work faster in GitKraken Desktop on macOS, Windows, and Linux. Use it to find shortcuts for staging, committing, navigating the Commit Graph, opening the Command Palette, managing tabs, toggling interface panels, and opening the terminal without leaving the keyboard.
 
 **Requirements and limits**
 - Shortcut values differ between macOS and Windows/Linux, so check the correct platform column before using a shortcut.
@@ -754,6 +777,8 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
     </tbody>
 </table>
 
+Use **Open current repo in terminal** when you want to jump into the embedded terminal for command-line tasks or manual coding agent workflows in the current repository or worktree. For more information, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
+
 ### Keyboard shortcuts for the interface
 <table class='table table--bordered table--shortcuts'>
     <colgroup>
@@ -878,7 +903,7 @@ Last verified: 2026-04
 
 <kbd>Last updated: April 2026</kbd>
 
-Use this page to understand what each major Preferences section controls in GitKraken Desktop, including profiles, integrations, AI settings, external tools, commit signing, terminal behavior, and repository-specific options. Start here when you need to know where a setting lives before changing your workflow or environment.
+Use this page to understand what each major Preferences section controls in GitKraken Desktop, including profiles, integrations, AI settings, external tools, commit signing, terminal behavior, Agent Sessions View settings, and repository-specific options. Start here when you need to know where a setting lives before changing your workflow or environment.
 
 **Requirements and limits**
 - Scope: Preferences overview for app-wide, profile-specific, and repository-specific settings
@@ -897,11 +922,11 @@ Use this page to understand what each major Preferences section controls in GitK
 - **Profiles**: Create and switch between profiles to separate Git identities, integrations, and tab sets.
 - **SSH and Integrations**: Connect to GitHub, GitLab, Bitbucket, Azure DevOps, Jira, Trello, and more.
 - **GitKraken AI**: Enable AI-assisted commit messages and PR descriptions (Pro plan and above).
-- **External Tools**: Set your preferred editor, diff tool, merge tool, and default terminal.
+- **External Tools**: Set your preferred editor, diff tool, merge tool, default terminal, and custom coding agent commands.
 - **UI Customization**: Change themes, date formats, avatar display, and commit graph metadata.
 - **Commit Signing**: Enable GPG signing for verified commits.
 - **Experimental**: Try preview features such as the Git binary executor.
-- **Repo-Specific Preferences**: Configure encoding, Gitflow, hooks, LFS, issues, and Team View per repository.
+- **Repo-Specific Preferences**: Configure encoding, Gitflow, hooks, LFS, issues, Team View, and agent setup commands per repository.
 
 Preferences are stored per profile, so switching profiles resets integrations and UI options to that profile's configuration.
 
@@ -982,14 +1007,14 @@ Let [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai) automate repetitive Git 
 
 ## How external tool preferences work
 
-Configure your preferred editors, terminals, and diff/merge tools.
+Configure your preferred editors, terminals, coding agent commands, and diff/merge tools.
 
 - **External Merge Tool**: [View supported tools](/working-with-repositories/branching-and-merging/#external-merge-tools)
 - **External Diff Tool**: [View supported tools](/working-with-commits/diff/#external-diff-tools)
 - **External Editor**: Choose from VS Code, Atom, Sublime, IntelliJ, or custom path
 - **Default Terminal**: Launch from <kbd>File > Open Terminal</kbd> or <kbd>Alt</kbd>/<kbd>Option</kbd> + <kbd>T</kbd>
 - **Use Custom Terminal Command**: Example for PowerShell: `start "" "C:\Program Files\PowerShell\7\pwsh.exe" -noexit -command "cd %d"`
-- **Coding Agent**: Choose which agent CLI GitKraken Desktop launches when starting a new agent session. Supports Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode, auto-detected based on what's installed on your machine. You can also pass custom CLI arguments when the agent starts. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
+- **Coding Agent**: Configure custom commands or arguments used when GitKraken Desktop starts a coding agent session. Supported coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode can be auto-detected based on what is installed on your machine. You can choose the coding agent for a session in the New Agent Session form. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 <div class='callout callout--warning'>
   <p><strong>macOS Note:</strong> Use the executable file, not the .app, when selecting a custom editor.</p>
@@ -1018,7 +1043,7 @@ Visual preferences for theming and commit graph display:
 - Author initials vs. avatars
 - Graph metadata: branches, tags, author, commit message, SHA, etc.
 - Hide Launchpad from the status bar
-- Hide the Agent sessions toggle in the Left Panel. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
+- Hide the `List | Agents` toggle in the Left Panel. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 ***
 
@@ -1045,6 +1070,8 @@ Adjust the appearance and behavior of GitKraken’s terminal:
 - Autocomplete behavior
 - Default terminal for Windows
 
+For worktree-specific terminal sessions and manual coding agent workflows, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
+
 ***
 
 ## How experimental preferences work
@@ -1067,7 +1094,7 @@ These apply only to the open repository:
 - [Issues](/gitkraken-desktop/jira/)
 - [Team View](/gitkraken-desktop/team-view/)
 - [Submodules](/gitkraken-desktop/submodules/#keep-submodules-up-to-date)
-- [Agents](/gitkraken-desktop/agents/#how-to-configure-setup-commands) — setup commands (install scripts, build steps) that run when a new agent session starts in a worktree
+- [Agents](/gitkraken-desktop/agents/#how-to-configure-setup-commands) - Setup commands such as install scripts or build steps that run when a new agent session starts in a worktree
 
 You can configure these uniquely per repository.
 
@@ -1084,9 +1111,9 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
-This page highlights GitKraken Desktop features that help developers move faster across everyday Git work. Use these tips to set up profiles, navigate with the Command Palette and shortcuts, connect integrations, manage complex history, and customize the Commit Graph when you want a more efficient workflow.
+This page highlights GitKraken Desktop features that help developers move faster across everyday Git work. Use these tips to set up profiles, navigate with the Command Palette and shortcuts, connect integrations, manage coding agent and worktree workflows, and customize the Commit Graph when you want a more efficient workflow.
 
 **Requirements and limits**
 - This page is a curated overview that links to feature-specific documentation; use the linked pages for full steps and edge cases.
@@ -1156,6 +1183,14 @@ Speed through tasks with [keyboard shortcuts](/start-here/keyboard-shortcuts).
 
 ***
 
+## How to use Agent Sessions View for parallel work
+
+Use [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) when you want to start and monitor coding agent sessions in parallel. In the Left Panel, use the `List | Agents` toggle to switch between the traditional List view and Agent Sessions View.
+
+Agent Sessions View uses the same underlying worktrees as List view, but organizes them around coding agent sessions, status, and quick actions. For general worktree management, see [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/).
+
+***
+
 ## How to cherry pick multiple commits
 
 Select multiple commits using <kbd>Cmd/Ctrl</kbd> or <kbd>Shift</kbd>, then right-click and select <kbd>Cherry pick X commits</kbd>.
@@ -1169,7 +1204,7 @@ You can reorder, squash, drop, or rename commits before completing. Learn more i
 
 ***
 
-### 5. Integrate with Git Services
+## How to integrate with Git services
 
 Connect GitKraken Desktop with [GitHub, GitLab, Bitbucket, and Azure DevOps](/gitkraken-desktop/integrations/) to streamline cloning, remotes, and PR workflows.
 
@@ -1236,7 +1271,9 @@ Control the Commit Graph display with [Hide and Solo](/gitkraken-desktop/hiding-
 
 Run Git commands with the [GitKraken Terminal](/gitkraken-desktop/terminal/). Click <i class="fa fa-terminal"></i> in the toolbar or use <kbd>Alt/Opt + T</kbd>.
 
-Set a default terminal from <kbd>Preferences > External Tools</kbd>.
+You can also use the embedded terminal for manual coding agent workflows in a repository or worktree, including agents that GitKraken Desktop does not explicitly integrate with.
+
+Set a default terminal from <kbd>Preferences > External Tools</kbd>. For terminal sessions that follow your active worktree, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
 
 ***
 
@@ -1262,7 +1299,7 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 This installation guide explains how to install GitKraken Desktop on Windows, macOS, and Linux, including platform-specific download methods, system requirements, and data locations. Use it when setting up GitKraken Desktop for the first time or when verifying the correct installer and OS support for your environment.
 
@@ -1273,6 +1310,7 @@ This installation guide explains how to install GitKraken Desktop on Windows, ma
 - Linux `.rpm`: RHEL 8+ or Fedora 39+
 - Linux support note: Other distributions may work but are not officially supported
 - Advanced features note: Git command-line tools are optional for basic use, but recommended for features such as the terminal, experimental tools, or Git LFS
+- Coding agent note: Coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode are installed separately from GitKraken Desktop
 
 ***
 
@@ -1289,7 +1327,7 @@ This installation guide explains how to install GitKraken Desktop on Windows, ma
    - **Windows/macOS**: Use the shortcut or Applications folder.
    - **Linux**: Run `gitkraken` in a terminal.
 
-No Git command-line tools are required for basic use. For advanced features like the terminal, Git LFS, or experimental tools, [install Git from git-scm.com](https://git-scm.com/).
+No Git command-line tools are required for basic use. For advanced features like the terminal, Git LFS, or experimental tools, [install Git from git-scm.com](https://git-scm.com/). If you want to use coding agents in GitKraken Desktop, install the coding agent CLI separately. For more information, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 ***
 
@@ -1303,7 +1341,7 @@ There are three simple steps to get started with GitKraken Desktop:
 
 No Git command-line tools are required. Once you run the installer, you can open the app and start working with your repositories.
 
-If you want to use advanced features such as the terminal, experimental tools, or Git LFS, we recommend you [download Git from git-scm.com](https://git-scm.com/).
+If you want to use advanced features such as the terminal, experimental tools, or Git LFS, we recommend you [download Git from git-scm.com](https://git-scm.com/). If you want to use coding agents, install the coding agent CLI separately from GitKraken Desktop.
 
 Below are platform-specific installation instructions and system requirements.
 
@@ -1324,8 +1362,6 @@ Below are platform-specific installation instructions and system requirements.
 </div>
 
 ### How to run the Windows installer
-
-In your terminal, run the following:
 
 Double-click the downloaded executable file. A splash screen will appear while GitKraken Desktop is installed. The application will automatically start when installation completes.
 
@@ -1475,7 +1511,7 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use this getting started guide to learn a basic GitKraken Desktop workflow: clone a repository, create a branch, make and stage changes, commit them, push the branch, and merge the work back. It is aimed at new Git users who need a practical first path through the product rather than a reference page.
 
@@ -1608,6 +1644,13 @@ Learn more in [Branching and Merging](/working-with-repositories/branching-and-m
 ## Getting started summary
 
 This basic workflow sets the foundation for more advanced topics like [pushing and pulling](/working-with-repositories/pushing-and-pulling) and [GitFlow](/git-workflows-and-extensions/git-flow).
+
+When you are ready to go further, continue with:
+
+- [GitKraken Desktop Interface Guide](/gitkraken-desktop/interface/) to learn how the Left Panel, Commit Graph, and Commit Panel fit together
+- [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/) to work on multiple branches in parallel
+- [GitKraken Terminal Guide](/gitkraken-desktop/terminal/) to use the embedded terminal
+- [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) to use Agent Sessions View and coding agent workflows
 
 Watch how a commit is made using GitKraken Desktop:
 
@@ -4344,7 +4387,7 @@ To abandon the cherry-pick session, click: <button class='button button--primary
 
 # Coding Agents in GitKraken Desktop
 URL: https://help.gitkraken.com/gitkraken-desktop/agents/
-Description: Use the Agents panel in GitKraken Desktop to create, monitor, and manage parallel coding agent sessions across Git worktrees without leaving the app.
+Description: Use Agent Sessions View in GitKraken Desktop to configure coding agent CLIs, create agent sessions, monitor progress, and manage parallel worktrees.
 Product: GitKraken Desktop
 Feature: Agents
 Content type: how-to
@@ -4355,133 +4398,262 @@ Last verified: 2026-04
 
 <kbd>Last updated: April 2026</kbd>
 
-Use this page to create and monitor coding agent sessions in GitKraken Desktop. The Agents panel lets you spin up a new agent session on any branch, track its progress while you keep working, and act on the results — all from the left panel without switching context.
+Use this page to learn how coding agents work in GitKraken Desktop and how to use **Agent Sessions View** to create, monitor, and manage coding agent sessions. Read this page if you want to use external coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, or OpenCode from inside GitKraken Desktop.
+
+<img src='/wp-content/uploads/gkd-agents-panel-overview-20260414.png' class="help-center-img img-bordered" alt="GitKraken Desktop with Agent Sessions View open in the Left Panel. The view shows multiple agent session cards with status indicators alongside the commit graph and an active terminal session running a coding agent.">
+
+A **coding agent** is an external CLI that can work on code in a terminal session. In GitKraken Desktop, each **agent session** runs that CLI in its own [**worktree**](/gitkraken-desktop/worktrees/). **Agent Sessions View** shows those worktrees as agent-focused cards so you can start parallel work, monitor progress, and switch back when an agent needs attention.
+
+GitKraken Desktop explicitly integrates with a set of supported coding agent CLIs. You can also run other coding agents manually in the embedded terminal, even if they do not appear in the coding agent configuration.
+
+This page also helps answer common questions such as:
+- How do I use Claude Code with GitKraken Desktop?
+- How do I run Copilot CLI as a coding agent in GitKraken?
+- How do I use Codex CLI, Gemini CLI, or OpenCode in GitKraken Desktop?
+- Can I run multiple coding agent sessions at the same time?
 
 **Requirements and limits**
-- A coding agent CLI must be installed and configured in <kbd>Preferences > External Tools > Coding Agent</kbd>. GitKraken auto-detects installed CLIs
-- Agent sessions each run in their own Git worktree and working directory
-- Setup commands (install scripts, build steps) are configured per repository in <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>
+- Product: GitKraken Desktop with Agent Sessions View enabled
+- Coding agent CLI: Install and configure a supported coding agent CLI in <kbd>Preferences > External Tools > Coding Agent</kbd>
+- Session model: Each agent session runs in its own Git worktree and working directory
+- Repository setup: Setup commands are configured per repository in <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>
+- Status support: Agent status indicators are available for Claude Code as of version 12.0.0
+- Other agents: You can still run other coding agents manually in the embedded terminal, even if GitKraken does not explicitly integrate with or detect them
 
-| Workflow | Supported | Notes |
-|----------|-----------|-------|
-| Open Agents panel | Yes | Toggle with `List \| Agents` at the top of the left panel |
-| Create a new agent session | Yes | Creates a worktree, runs setup commands, and launches the agent |
-| Choose base branch per agent session | Yes | Defaults to HEAD |
-| Choose coding agent per agent session | Yes | Falls back to the agent set in Preferences |
-| Monitor agent status | Yes | Each card shows WIP changes, ahead/behind, and agent status |
-| Configure setup commands | Yes | Per repository in <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> |
+| What you want to do | Supported | Where in GitKraken Desktop | Notes |
+|---------------------|-----------|-----------------------------|-------|
+| Start a coding agent session | Yes | Agent Sessions View | Creates a worktree, runs setup commands, and launches the coding agent CLI |
+| Start multiple coding agent sessions at the same time | Yes | Agent Sessions View | Each session runs in a separate worktree |
+| Choose a different base branch for a new session | Yes | New Agent Session form | Default base branch is `HEAD` |
+| Choose a coding agent CLI for a session | Yes | New Agent Session form | Falls back to the coding agent set in Preferences |
+| Monitor agent progress | Yes | Agent Sessions View card | Cards show WIP changes, ahead/behind, and agent status |
+| Respond when an agent is waiting for input | Yes | Agent Sessions View and embedded terminal | Claude Code can show a **Waiting for input** status in the card |
+| Configure coding agent CLIs | Yes | <kbd>Preferences > External Tools > Coding Agent</kbd> | GitKraken auto-detects installed CLIs |
+| Configure setup commands for a repository | Yes | <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> | Commands run before the agent launches |
 
 ***
 
-## Quick Start
+## Quick start for coding agents in GitKraken Desktop
 
-**To open the Agents panel:** Click **Agents** in the `List | Agents` segmented control at the top of the left panel.
+**To open Agent Sessions View:**
+Click **Agents** in the `List | Agents` segmented control at the top of the Left Panel.
 
-**To start a new agent session:**
-1. Click the **+ New Agent Session** button at the top of the Agents panel.
-2. Type a branch name.
-3. Optionally set a base branch, choose a coding agent, or click **Configure setup commands**.
+**To start a coding agent session:**
+1. Click **+ New Agent Session** at the top of Agent Sessions View.
+2. Enter a branch name.
+3. Optional: choose a base branch, choose a coding agent CLI, or click **Configure setup commands**.
 4. Click **Start**.
 
-**To monitor agents:** Each card shows the branch name, WIP change count, ahead/behind status, and agent status. The status bar at the bottom of each card reflects whether the agent is running, waiting for input, or done.
+**To monitor an agent session:**
+Review the card for branch name, WIP changes, ahead/behind counts, and agent status.
 
-**To act on an agent session:** Right-click any card to open, push, create a pull request, lock, or remove the worktree.
+**To respond when an agent is waiting for input:**
+Open that worktree or switch to its terminal session and respond there.
 
-**To configure the coding agent:** Go to <kbd>Preferences > External Tools > Coding Agent</kbd>.
+**To configure coding agent CLIs:**
+Go to <kbd>Preferences > External Tools > Coding Agent</kbd>.
 
-**To configure setup commands for the current repository:** Go to <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>.
-
-***
-
-## How the Agents panel works
-
-The Agents panel is toggled by the `List | Agents` segmented control at the top of the left panel. When active, it shows all agents and worktrees for the current repository as cards. The List view and Agents view share the same underlying worktrees — you can switch between them at any time.
-
-**Why Agents instead of worktrees?** The Agents panel surfaces the same underlying Git worktrees as the List view, but organizes them around agent activity — status, progress, and quick actions — rather than branch references. You can switch between views at any time without losing your work.
+**To configure setup commands for the current repository:**
+Go to <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>.
 
 ***
 
-## How to start a new agent session
+## What coding agents, agent sessions, and Agent Sessions View mean
 
-1. In the Agents panel, click the **+ New Agent Session** button at the top of the panel. The button expands into an inline creation form with the branch name input focused.
-2. Type a branch name.
-3. Optionally configure the inline settings:
+Use these terms consistently when working with Agent Sessions View:
 
-   | Setting | What it does | Default |
-   |---------|-------------|---------|
-   | **Base branch** | Which branch to create the new worktree from | HEAD |
-   | **Coding agent** | Which agent CLI to launch in the session | Set in Preferences |
+| Term | What it means |
+|------|---------------|
+| **Coding agent** | An external coding agent CLI such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, or OpenCode |
+| **Coding agent session** | A running session of a coding agent CLI started from GitKraken Desktop |
+| **Worktree** | A separate Git working directory used for that agent session |
+| **Agent Sessions View** | The Left Panel view that shows worktrees as agent session cards |
+| **List view** | The standard Left Panel view for worktrees and branches |
 
-   To configure setup commands, click **Configure setup commands** to open <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>.
-4. Click **Start**.
+Agent Sessions View and List view use the same underlying worktrees. The difference is how GitKraken Desktop presents them:
 
-GitKraken creates a new worktree from the selected base branch, runs any configured setup commands, and launches the selected coding agent in the embedded terminal.
+- Use **List view** when you want a branch-focused view.
+- Use **Agent Sessions View** when you want an agent-focused view with status and quick actions.
+
+<div class='callout callout--basic'>
+      <p><strong>Why use Agent Sessions View instead of only List view?</strong> Agent Sessions View shows the same worktrees you already use in GitKraken Desktop, but it organizes them around agent activity such as progress, status, and actions. You can switch between <strong>List</strong> and <strong>Agents</strong> at any time without losing work.</p>
+</div>
 
 ***
 
-## How to monitor active agent sessions
+## When to use coding agents in GitKraken Desktop
 
-Each card in the Agents panel represents a worktree and shows:
+Use coding agents when you want to:
+- Work on multiple tasks in parallel without leaving GitKraken Desktop
+- Start a task on a new branch and let a coding agent work in a separate worktree
+- Monitor agent progress while you continue working in another worktree
+- Review and act on agent-generated changes when the session finishes
+
+Coding agents are usually not the best choice when you:
+- Need to make a small manual change in your current worktree
+- Do not want to create another worktree
+- Need behavior that depends on a CLI that is not installed or configured
+
+***
+
+## How to configure coding agent CLIs (Claude Code, Copilot CLI, Codex CLI, Gemini CLI, OpenCode)
+
+Go to <kbd>Preferences > External Tools > Coding Agent</kbd> to choose which coding agent CLI GitKraken Desktop launches for new sessions.
+
+GitKraken Desktop explicitly integrates with these supported coding agent CLIs:
+- [Claude Code](https://code.claude.com/docs/en/quickstart)
+- [Codex CLI](https://developers.openai.com/codex/quickstart)
+- [Copilot CLI](https://github.com/features/copilot/cli)
+- [Gemini CLI](https://geminicli.com/docs/)
+- [OpenCode](https://opencode.ai/download)
+
+GitKraken auto-detects installed CLIs. You can also add custom CLI arguments that GitKraken passes when it starts a coding agent session.
+
+If you use a different coding agent, you can still open a session worktree and run that agent manually in the embedded terminal. The agent does not need to appear in the coding agent configuration for you to use that terminal workflow.
+
+If you are asking:
+- "How do I use Claude Code with GitKraken Desktop?"
+- "How do I run Copilot CLI as a coding agent in GitKraken?"
+- "How do I use Codex CLI, Gemini CLI, or OpenCode in GitKraken Desktop?"
+
+The setup path is the same: install the CLI on your system, then configure it in <kbd>Preferences > External Tools > Coding Agent</kbd>.
+
+***
+
+## How to configure setup commands for coding agent sessions
+
+Setup commands run in sequence in the new worktree before the coding agent launches. Use setup commands to prepare the repository for the session, for example:
+
+- `npm install`
+- `pnpm install`
+- `pnpm build`
+
+Put each command on its own line.
+
+Go to <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> to define setup commands for the current repository.
+
+Because these settings are under Repo-Specific Preferences, setup commands apply only to the repository you configure them in.
+
+<img src='/wp-content/uploads/gkd-agents-setup-commands-preferences-20260413.png' class="help-center-img img-bordered" alt="The Agents pane under Repo-Specific Preferences in GitKraken Desktop, showing a Setup commands text area with example commands, one per line, and helper text explaining that commands run in sequence when a new agent session starts.">
+
+***
+
+## How to create a new coding agent session
+
+1. Open **Agent Sessions View** by clicking **Agents** in the Left Panel.
+2. Click **+ New Agent Session**.
+
+   <img src='/wp-content/uploads/gkd-agents-new-session-button-20260414.png' class="help-center-img img-bordered" alt="Agent Sessions View in GitKraken Desktop showing the New Agent Session form expanded at the top with a branch name input, Options section with Base branch and Coding agent dropdowns, and a Configure setup commands link.">
+
+3. Enter a branch name.
+4. Optional: review the session options.
+
+   | Option | Use it to | Default |
+   |--------|-----------|---------|
+   | **Base branch** | Create the new worktree from a different branch | `HEAD` |
+   | **Coding agent** | Launch a specific coding agent CLI for this session | Coding agent set in Preferences |
+
+   To update repository setup, click **Configure setup commands** to open <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>.
+
+   <img src='/wp-content/uploads/gkd-agents-new-session-form-20260414.png' class="help-center-img img-bordered" alt="The expanded New Agent Session form showing the Coding agent dropdown open with available options including Claude Code, Codex CLI, Open Code, and Gemini CLI.">
+
+5. Click **Start**.
+
+GitKraken Desktop creates a new worktree from the selected base branch, runs any configured setup commands, and launches the selected coding agent in the embedded terminal.
+
+***
+
+## How to monitor coding agent progress and session status
+
+Each card in Agent Sessions View represents one worktree and one coding agent session.
 
 | Card element | What it shows |
-|--------------|--------------|
+|--------------|---------------|
 | **Branch name** | The branch checked out in that worktree |
-| **WIP change summary** | Count of uncommitted file changes |
-| **Ahead / behind** | Commits ahead of and behind the remote |
-| **Agent status** | Running, waiting for input, or done |
+| **WIP change summary** | The count of uncommitted file changes |
+| **Ahead / behind** | Commit counts relative to the remote |
+| **Agent status** | Whether the agent is running, waiting for input, or done |
 
-The status bar at the bottom of each card describes the agent's current status. Status indicators are available for Claude Code as of version 12.0.0.
+The status bar at the bottom of each card shows the current session state. Status indicators are available for Claude Code as of version 12.0.0.
 
-When an agent needs your attention — for example, when it is waiting for input — a bell icon appears on the card alongside a **Waiting for input** label, so you don't need to switch to the agent's terminal to notice.
+When an agent needs attention, the card can show a bell icon and a **Waiting for input** label. This lets you see that the session needs a response without switching to the terminal first.
 
-You can continue working in any other worktree while monitoring agent cards. When a card turns green, switch to it to review the agent's output.
+<img src='/wp-content/uploads/gkd-agents-monitoring-status-20260414.png' class="help-center-img img-bordered" alt="Agent Sessions View showing multiple worktree cards with WIP change counts, ahead-behind indicators, and agent status bars displaying various states including Waiting for input.">
 
-***
-
-## How to act on an agent session
-
-Right-click any card in the Agents panel to access actions for that worktree:
-
-| Action | What it does |
-|--------|-------------|
-| **Open this worktree** | Switches to the worktree |
-| **Open worktree in a new tab** | Opens the worktree in a new GitKraken tab |
-| **Lock this worktree** / **Unlock this worktree** | Toggles the worktree's locked state. A locked worktree cannot be pruned, moved, or deleted. The menu shows **Unlock this worktree** when the worktree is already locked. |
-| **Remove this worktree** | Deletes the worktree and its working directory |
+You can keep working in another worktree while monitoring these cards. When a session finishes, switch to that worktree to review the results.
 
 ***
 
-## How to configure the coding agent
+## How to monitor and respond to coding agent prompts
 
-Go to <kbd>Preferences > External Tools > Coding Agent</kbd> to choose which agent CLI GitKraken launches when starting a new session.
+Use this workflow when a coding agent pauses and waits for input.
 
-Supported coding agents:
-- Claude Code
-- Codex CLI
-- Copilot CLI
-- Gemini CLI
-- OpenCode
+1. Watch the card in **Agent Sessions View** for a bell icon or a **Waiting for input** status.
+2. Open that worktree from the card.
+3. Switch to the embedded terminal for that agent session.
+4. Review the prompt from the coding agent CLI.
+5. Respond in the terminal to continue the session.
 
-GitKraken auto-detects installed CLIs. You can also provide custom CLI arguments to pass when starting an agent session.
-
-***
-
-## How to configure setup commands
-
-Setup commands run in sequence in the new worktree before the coding agent launches. Use them to install dependencies and prepare your environment (for example, `npm install` or `pnpm build`). Put each command on a new line.
-
-Go to <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> to define setup commands for the current repository. Because they live under Repo-Specific Preferences, setup commands are scoped to the repository you configure them in.
+This workflow is especially useful when you run multiple coding agent sessions at the same time and need to see which session needs attention first.
 
 ***
 
-## Typical workflow
+## How to open, review, and manage a coding agent worktree
 
-1. You are working on a feature in your current worktree (highlighted card in the Agents panel).
-2. A bug report comes in. You click **+ New Agent Session**, type `fix/login-crash`, and press <kbd>Enter</kbd>.
-3. A new card appears. GitKraken sets up the worktree and the agent starts.
-4. You continue working on your feature. A few minutes later, you glance at the left panel and see the agent has finished its work.
-5. You switch to the `fix/login-crash` worktree, review the changes in the diff view, and open a pull request.
-6. After the pull request is merged, you right-click the card and remove the worktree.
+For general worktree tasks outside coding agents, see [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/).
+
+Right-click any card in Agent Sessions View to manage that worktree:
+
+| What you want to do | Action in the card menu | Result |
+|---------------------|-------------------------|--------|
+| Open the session worktree | **Open this worktree** | Switches to that worktree |
+| Open the session in another tab | **Open worktree in a new tab** | Opens the worktree in a new GitKraken tab |
+| Prevent the worktree from being pruned, moved, or deleted | **Lock this worktree** | Locks the worktree |
+| Re-enable normal worktree management | **Unlock this worktree** | Unlocks the worktree |
+| Remove the session worktree | **Remove this worktree** | Deletes the worktree and its working directory |
+
+Use these actions after the agent finishes so you can review changes, push the branch, create a pull request, or clean up the worktree.
+
+***
+
+## Typical workflow for coding agents and worktrees
+
+1. You are working on a feature in your current worktree.
+2. A second task comes in, such as a bug fix or a small refactor.
+3. You open **Agent Sessions View** and start a new coding agent session on a new branch such as `fix/login-crash`.
+4. GitKraken Desktop creates a worktree, runs setup commands, and launches the coding agent CLI.
+5. You continue working in your original worktree while monitoring the new agent session card.
+6. If the card shows **Waiting for input**, you switch to that session and respond in the terminal.
+7. When the agent finishes, you open the worktree, review the diff, and push or open a pull request.
+8. After the work is merged or no longer needed, you remove the worktree.
+
+***
+
+## Common questions about coding agents in GitKraken Desktop
+
+### Can I run multiple coding agent sessions at the same time?
+
+Yes. Each coding agent session runs in its own worktree and working directory, so you can run parallel sessions in the same repository.
+
+### What happens when I start a coding agent session?
+
+GitKraken Desktop creates a worktree, checks out the new branch, runs any configured setup commands, and then launches the selected coding agent CLI in the embedded terminal.
+
+### Do Agent Sessions View and List view show different worktrees?
+
+No. They show the same underlying worktrees. The difference is the presentation: List view is branch-focused, and Agent Sessions View is agent-focused.
+
+### Where do I choose Claude Code, Copilot CLI, Codex CLI, Gemini CLI, or OpenCode?
+
+Go to <kbd>Preferences > External Tools > Coding Agent</kbd>. You can also choose a different coding agent in the New Agent Session form for a single session.
+
+### Can I use a coding agent that GitKraken Desktop does not explicitly integrate with?
+
+Yes. GitKraken Desktop explicitly integrates with supported coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode, but you can still run other coding agents manually in the embedded terminal. The agent does not need to appear in the coding agent configuration for you to use that terminal workflow.
+
+### Where do I configure repository setup before the agent starts?
+
+Go to <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>. Setup commands run in sequence in the new worktree before the coding agent launches.
 
 ---
 
@@ -5611,7 +5783,9 @@ Last verified: 2026-04
 
 <kbd>Last updated: April 2026</kbd>
 
-Use this page to create, switch, lock, and remove Git worktrees in GitKraken Desktop when you need multiple branches checked out at the same time. Worktrees keep separate working directories while sharing the same repository history, which makes them useful for parallel feature work, testing, and review workflows.
+Use this page to create, switch, lock, and remove Git worktrees in GitKraken Desktop when you need multiple branches checked out at the same time. Worktrees keep separate working directories while sharing the same repository history, which makes them useful for parallel feature work, testing, review workflows, and coding agent sessions.
+
+If you use coding agents in GitKraken Desktop, Agent Sessions View builds on the same underlying worktree model. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for agent-specific setup, session management, and status details.
 
 **Requirements and limits**
 - GitKraken Desktop version: Worktrees are supported in version 10.5.0 and later
@@ -5627,6 +5801,7 @@ Use this page to create, switch, lock, and remove Git worktrees in GitKraken Des
 | Open worktree | Switches you into that working directory | No | Available from the Left Panel |
 | Lock worktree | Prevents accidental changes to that worktree | No | Useful when working elsewhere temporarily |
 | Remove worktree | Detaches that working directory from the repository | No | Removes the worktree entry, not shared history |
+| View worktrees through Agent Sessions View | Shows the same worktrees in an agent-focused interface | No | Adds coding agent session context and quick actions |
 | Commit in a worktree | Records history from that worktree | Yes | Committed changes become visible across all worktrees |
 
 ***
@@ -5669,17 +5844,36 @@ Worktrees are useful when you want to:
 
 Once committed, changes in one worktree become visible in others.
 
+<div class='callout callout--basic'>
+  <p><strong>Using coding agents?</strong> Agent Sessions View in GitKraken Desktop uses Git worktrees behind the scenes. If you want to run Claude Code, Codex CLI, Copilot CLI, Gemini CLI, or OpenCode in GitKraken Desktop, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.</p>
+</div>
+
 ***
 
 ## How to use worktrees in GitKraken Desktop
 
-GitKraken Desktop has supported worktrees since version **10.5.0**. From the Left Panel, you can:
+GitKraken Desktop has supported worktrees since version **10.5.0**. In the Left Panel, you can work with those worktrees in two ways:
+
+- **List view** for general branch and worktree management
+- **Agent Sessions View** for coding agent sessions that run in worktrees
+
+Both views use the same underlying worktrees. The difference is the presentation:
+
+- Use **List view** when you want to create, switch, lock, or remove worktrees directly
+- Use **Agent Sessions View** when you want to create, monitor, and manage coding agent sessions in worktrees
+
+From the Left Panel, you can:
 
 - Create and switch between worktrees
 - Remove or lock/unlock worktrees
 - Hover over a worktree to see its full file path
 
-The Left Panel also offers a dedicated `List | Agents` segmented control for browsing worktrees. The **Agents** view organizes worktrees around coding agent activity — see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for how to monitor and act on agent sessions from that view.
+See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) if you want to:
+
+- install and use a supported coding agent CLI
+- start a coding agent session in a new worktree
+- monitor agent status such as **Waiting for input**
+- manage agent sessions from Agent Sessions View
 
 ### How to create a worktree
 
@@ -8502,9 +8696,11 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Integrations connect GitKraken Desktop to Git hosting services and issue trackers so you can clone repositories, manage remotes, review pull requests, and work with issues from one interface. Use this page to find the right integration for GitHub, GitLab, Bitbucket, Azure DevOps, Jira, Trello, and self-hosted services.
+
+This page covers Git hosting and issue tracker integrations. External coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode are documented separately in [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 **Requirements and limits**
 - Git hosting integrations: GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, Bitbucket, Bitbucket Data Center, and Azure DevOps
@@ -8512,6 +8708,7 @@ Integrations connect GitKraken Desktop to Git hosting services and issue tracker
 - Community plan: Public GitHub and GitLab repositories only; some issue tracker integrations are view-only
 - Self-hosted integrations: Require a paid plan; GitLab Self-Managed is available on Pro and up, while some other self-hosted integrations require higher tiers
 - Multiple profiles with separate integrations: Pro plan or higher
+- Coding agent CLIs: Managed separately from Git hosting and issue tracker integrations
 
 <figure>
   <div class='embed-container embed-container--16-9'>
@@ -9155,7 +9352,7 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use GitKraken Launchpad to monitor pull requests, issues, and works in progress across a selected Workspace or team. This page explains how to open Launchpad, connect integrations, switch between Personal and Team Views, save filtered views, and understand feature differences between Cloud and On-Premise environments.
 
@@ -9361,6 +9558,8 @@ From Launchpad, you can quickly take action on pull requests:
 - Checkout PR branch
 - Close PR
 - Checkout in new worktree
+
+Use **Checkout in new worktree** when you want to review or continue pull request work in a separate working directory. For more information, see [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/). If you want to use coding agents in those worktrees, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 <figure>
   <img src="/wp-content/uploads/pr-actions-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="GitKraken Desktop Launchpad showing a pull request with dropdown menu options including 'Open in GitHub', 'Review Pull Request', 'Checkout Branch', and more.">
@@ -10419,7 +10618,8 @@ If your license expires, replace the `.dat` file in one of the supported directo
 
 ## Feature support
 
-GitKraken On-Premise Serverless supports most GitKraken Desktop features, including the major upgrades introduced in versions 10 and 11. Features that require connectivity to GitKraken cloud services or to external cloud hosting providers are not available.
+GitKraken On-Premise Serverless uses the same GitKraken Desktop client feature set as other supported on-premises deployments.
+Features that require connectivity to GitKraken cloud services or to external cloud hosting providers are not available.
 
 ### What is included
 
@@ -10428,6 +10628,8 @@ The following feature categories are fully supported in Serverless:
 | Category | Included | Notes |
 | --- | --- | --- |
 | **Core Git client** | All standard Git operations, including commits, branches, merges, rebases, diffs, stashing, tagging, interactive rebase, cherry pick (including multi-commit interactive cherry pick), worktrees, shallow clone, and undo or redo of rebase and cherry pick operations. | |
+| **Agent Sessions View and coding agent session workflows** | Agent Sessions View and worktree-based coding agent session workflows are available in the on-premises Desktop client. | Supported-agent integrations and status details depend on the client version and local environment. |
+| **Embedded terminal for manual coding agent workflows** | You can run coding agents manually in the embedded terminal, including agents that GitKraken Desktop does not explicitly integrate with. | See [GitKraken Terminal Guide](/gitkraken-desktop/terminal/). |
 | **Launchpad** | Track pull requests and issues in a single view and filter by repository, branch, milestone, or sprint. Launchpad works with the following on-premises integrations: GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server and Data Center, Azure DevOps Server, and Jira Data Center. | For a description of the differences between cloud and on-premises Launchpad, see [How On-Premise Launchpad differs from Cloud Launchpad](/gitkraken-desktop/gitkraken-launchpad/#how-on-premise-launchpad-differs-from-cloud-launchpad). |
 | **Local Workspaces** | Organize multiple local Git repositories in one view. You can see the branch status of each repository and run multi-repository actions, such as fetch and pull, from a single place. | Cloud Workspaces are not available in Serverless. |
 | **Conflict detection** | GitKraken detects potential conflicts with your target branch before you reach the merge step and alerts you when your checked-out branch has diverged from its pull request target. | |
@@ -10446,6 +10648,8 @@ The following features require connectivity to GitKraken cloud services (`gitkra
 - Org Member conflict detection
 - Integrations with cloud-hosted services: GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, Jira Cloud, and Trello
 
+Local Desktop workflows such as worktrees, Agent Sessions View, and terminal-based coding agent workflows remain available unless they depend on a cloud-only or otherwise unsupported external service.
+
 ### Feature support table
 
 | Feature | Supported | Notes |
@@ -10454,6 +10658,8 @@ The following features require connectivity to GitKraken cloud services (`gitkra
 | Interactive Rebase | Yes | |
 | Multi-commit Cherry Pick | Yes | |
 | Worktrees | Yes | Requires version 10.5.0 or later |
+| Agent Sessions View and coding agent session workflows | Yes | Available in the on-premises Desktop client; supported-agent integrations and status details depend on the client version and local environment |
+| Embedded terminal for manual coding agent workflows | Yes | You can run coding agents manually in the embedded terminal |
 | Shallow Clone | Yes | |
 | Undo rebases, cherry picks, and AI Commit Compose | Yes | |
 | Local Workspaces | Yes | Stored on-device only; not shareable across machines |
@@ -11331,6 +11537,8 @@ The following feature categories are fully supported:
 | Category | Included | Notes |
 | --- | --- | --- |
 | **Core Git client** | All standard Git operations, including commits, branches, merges, rebases, diffs, stashing, tagging, interactive rebase, cherry pick (including multi-commit interactive cherry pick), worktrees, shallow clone, and undo or redo of rebase and cherry pick operations. | |
+| **Agent Sessions View and coding agent session workflows** | Agent Sessions View and worktree-based coding agent session workflows are available in the on-premises Desktop client. | Supported-agent integrations and status details depend on the client version and local environment. |
+| **Embedded terminal for manual coding agent workflows** | You can run coding agents manually in the embedded terminal, including agents that GitKraken Desktop does not explicitly integrate with. | See [GitKraken Terminal Guide](/gitkraken-desktop/terminal/). |
 | **Launchpad** | Track pull requests and issues in a single view and filter by repository, branch, milestone, or sprint. Launchpad works with the following on-premises integrations: GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server and Data Center, Azure DevOps Server, and Jira Data Center. | For a description of the differences between cloud and on-premises Launchpad, see [How On-Premise Launchpad differs from Cloud Launchpad](/gitkraken-desktop/gitkraken-launchpad/#how-on-premise-launchpad-differs-from-cloud-launchpad). |
 | **Local Workspaces** | Organize multiple local Git repositories in one view. You can see the branch status of each repository and run multi-repository actions, such as fetch and pull, from a single place. | Cloud Workspaces are not available. |
 | **Conflict detection** | GitKraken detects potential conflicts with your target branch before you reach the merge step and alerts you when your checked-out branch has diverged from its pull request target. | |
@@ -11351,6 +11559,8 @@ The following features require connectivity to GitKraken cloud services (`gitkra
 - Org Member conflict detection
 - Integrations with cloud-hosted services: GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, Jira Cloud, and Trello
 
+Local Desktop workflows such as worktrees, Agent Sessions View, and terminal-based coding agent workflows remain available unless they depend on a cloud-only or otherwise unsupported external service.
+
 ### Feature support table
 
 | Feature | Supported | Notes |
@@ -11359,6 +11569,8 @@ The following features require connectivity to GitKraken cloud services (`gitkra
 | Interactive Rebase | Yes | |
 | Multi-commit Cherry Pick | Yes | |
 | Worktrees | Yes | Requires client version 10.5.0 or later |
+| Agent Sessions View and coding agent session workflows | Yes | Available in the on-premises Desktop client; supported-agent integrations and status details depend on the client version and local environment |
+| Embedded terminal for manual coding agent workflows | Yes | You can run coding agents manually in the embedded terminal |
 | Shallow Clone | Yes | |
 | Undo rebases, cherry picks, and AI Commit Compose | Yes | |
 | Local Workspaces | Yes | Stored on-device only; not shareable across machines |
@@ -11698,9 +11910,9 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
-Use this page to install and run GitKraken Desktop inside Windows Subsystem for Linux 2 (WSL 2) when your repositories live on the Linux file system. It covers WSLg requirements, Linux installation steps, cross-file-system limits, and troubleshooting for display, certificate, and environment issues.
+Use this page to install and run GitKraken Desktop inside Windows Subsystem for Linux 2 (WSL 2) when your repositories live on the Linux file system. It covers WSLg requirements, Linux installation steps, cross-file-system limits, coding agent considerations, and troubleshooting for display, certificate, and environment issues.
 
 **Requirements and limits**
 - Windows requirement: Windows 11 or Windows 10 build 19044+
@@ -11708,6 +11920,7 @@ Use this page to install and run GitKraken Desktop inside Windows Subsystem for 
 - GitKraken requirement: GitKraken Desktop 9.1.0+ for Linux
 - Repository location rule: Keep repositories on the same file system as the GitKraken Desktop installation you use
 - Cross-file-system warning: Opening WSL repositories from GitKraken on Windows, or Windows repositories from GitKraken in WSL, can cause degraded performance or broken features
+- Coding agent note: In WSL, Windows-installed coding agent CLIs can take precedence over WSL-installed CLIs and prevent agent sessions from starting correctly
 - Known issues: WSLg may have HiDPI scaling and window-snapping limitations
 
 ***
@@ -11748,6 +11961,10 @@ GitKraken Desktop works with repositories stored on your WSL 2 file system when 
 
 <div class='callout callout--warning'>
     <p><strong>Note:</strong> GitKraken Desktop does not support accessing repos across file systems. Install GitKraken on the OS where your repos are stored to avoid degraded performance or non-functional features.</p>
+</div>
+
+<div class='callout callout--warning'>
+    <p><strong>Coding agent note:</strong> If you use Agent Sessions View in WSL, make sure the coding agent CLI you want to run is the one available in your WSL environment. In some cases, a Windows-installed coding agent can take precedence over a WSL-installed one, which can prevent the agent session from starting correctly. For more information, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.</p>
 </div>
 
 GitKraken will notify you when accessing repos across environments. For more, see [Working Across File Systems](#working-across-file-systems-in-wsl-2).
@@ -11843,6 +12060,7 @@ Here are known limitations when using GitKraken Desktop with WSLg:
 
 - <a href="https://github.com/microsoft/wslg/issues/388" target="_blank">HiDPI displays</a> may cause WSLg to inconsistently scale the UI.
 - <a href="https://github.com/microsoft/wslg/issues/727" target="_blank">Window snapping</a> might not function properly within WSLg.
+- Windows-installed coding agent CLIs can take precedence over WSL-installed CLIs, which may cause coding agent sessions to fail to start as expected.
 
 ---
 
@@ -12601,7 +12819,7 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 This FAQ answers common GitKraken Desktop questions about supported platforms, account and plan limits, authentication, remote access, and troubleshooting. Use it when you need a quick answer or constraint check before opening a longer feature guide, especially for Linux support, SSH behavior, proxy issues, or subscription-related questions.
 
@@ -12631,6 +12849,30 @@ This FAQ answers common GitKraken Desktop questions about supported platforms, a
     </div>
   </section>
 </div>
+
+---
+
+## Common coding agent and worktree questions
+
+### What is Agent Sessions View?
+
+Agent Sessions View is a Left Panel mode in GitKraken Desktop that organizes worktrees around coding agent sessions, status, and quick actions. For more information, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
+
+### Can I run multiple coding agent sessions at the same time?
+
+Yes. Each coding agent session runs in its own worktree and working directory, so you can run parallel sessions in the same repository.
+
+### Can I use a coding agent that GitKraken Desktop does not explicitly integrate with?
+
+Yes. GitKraken Desktop explicitly integrates with supported coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode, but you can still run other coding agents manually in the embedded terminal. For more information, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) and [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
+
+### Do List view and Agent Sessions View show different worktrees?
+
+No. They show the same underlying worktrees. List view is reference-focused, while Agent Sessions View is agent-focused. For more information, see [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/).
+
+### Are Agent Sessions View and coding agent workflows available for on-prem customers?
+
+Yes. On-premises deployments use the same GitKraken Desktop client for local Desktop workflows such as worktrees, Agent Sessions View, and terminal-based coding agent workflows. Availability of cloud-dependent services still depends on the deployment and environment. For more information, see [Set Up GitKraken Self-Hosted Server (On-Premise)](/gitkraken-desktop/self-hosted/) and [GitKraken On-Premise Serverless (Stand-Alone) Setup](/gitkraken-desktop/serverless/).
 
 ---
 
@@ -12922,6 +13164,7 @@ Use this page to troubleshoot common GitKraken Desktop problems related to licen
 - **Performance problems**: See the [Performance Issues](/gitkraken-desktop/performance-issues/) guide, or try running <kbd>Perform Repo Maintenance</kbd> from the Command Palette.
 - **Push failed with `Cannot read property 'fullName' of undefined`**: Rename your local branch to match the remote branch name exactly.
 - **WSL issues**: Avoid running GitKraken Desktop as root; use native WSL2 GUI support instead of XServer.
+- **Coding agent sessions fail in WSL**: Make sure the coding agent CLI you want to use is installed and available in WSL, not only on Windows. See [Use GitKraken Desktop with Windows Subsystem for Linux (WSL 2)](/gitkraken-desktop/windows-subsystem-for-linux/) and [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 If the steps on this page do not resolve your issue, contact [GitKraken Support](https://help.gitkraken.com/gitkraken-desktop/contact-support/).
 
@@ -13016,6 +13259,13 @@ This is a known WSL issue triggered by network changes.
 
 ### GitKraken GUI does not launch or scales incorrectly under WSL2 with XServer
 - XServer is not required. Use native WSL2 GUI support instead.
+
+### Coding agent sessions fail to start in WSL
+Windows-installed coding agent CLIs can take precedence over WSL-installed CLIs.
+
+- Make sure the coding agent CLI you want to use is installed in your WSL environment.
+- Avoid relying on a Windows-installed coding agent when GitKraken Desktop is running inside WSL.
+- For more information, see [Use GitKraken Desktop with Windows Subsystem for Linux (WSL 2)](/gitkraken-desktop/windows-subsystem-for-linux/) and [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 ---
 
@@ -13139,7 +13389,7 @@ pre:hover .copy-btn{opacity:1}
 
 # GitKraken Terminal Guide
 URL: https://help.gitkraken.com/gitkraken-desktop/terminal/
-Description: Learn how to use GitKraken’s in-app terminal to run Git commands, use auto-complete, and customize shell preferences.
+Description: Learn how to use GitKraken’s in-app terminal to run Git commands, work in repository and worktree context, run coding agents manually, and customize shell preferences.
 Product: GitKraken Desktop
 Feature: Terminal
 Content type: how-to
@@ -13150,14 +13400,15 @@ Last verified: 2026-04
 
 <kbd>Last updated: April 2026</kbd>
 
-Use this page to run Git CLI commands from the GitKraken Desktop terminal while staying in the context of the open repository and commit graph. It covers how to open the terminal, how command and flag auto-complete works, and where to change shell and terminal appearance settings.
+Use this page to use the GitKraken Desktop terminal while staying in the context of the open repository, commit graph, and active worktree. It covers how to open the terminal, how command and flag auto-complete works, how terminal sessions behave across worktrees, how to run coding agents manually, and where to change shell and terminal appearance settings.
 
 **Requirements and limits**
 - Scope: In-app terminal for the currently open repository context
-- Repository context: Commands run in the active repository working directory automatically
+- Repository context: Commands run in the active repository or worktree working directory automatically
 - Supported shell note: macOS and Linux use the OS default shell; Windows supports PowerShell and Bash via Preferences
 - Auto-complete limitation: Conflicting third-party auto-complete tools can disable GitKraken suggestions
 - Settings location: <kbd>Preferences &gt; In-App Terminal</kbd> for appearance and autocomplete behavior
+- Coding agents: You can run supported or unsupported coding agent CLIs manually in the embedded terminal
 
 To get started, open a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar, or search for "terminal" using the <a href="/working-with-repositories/command-palette">Command Palette</a>.
 
@@ -13170,13 +13421,15 @@ To get started, open a repository and click the Terminal <i class="fa fa-termina
 
 **To run commands:** Type any Git command such as `git status`, `git commit -m "message"`, or `git log --oneline`. Auto-complete suggestions appear as you type, including flag suggestions for each command.
 
+**To run a coding agent manually:** Open the terminal in the worktree you want to use, then start your coding agent CLI there.
+
 **To customize terminal appearance:** Go to <kbd>Preferences > In-App Terminal</kbd> to change font, size, line height, cursor style, and autocomplete behavior.
 
 **To set your default shell:**
 - **macOS/Linux**: Set ZSH or Bash as the default shell in your OS settings and restart your machine.
 - **Windows**: Open <kbd>Preferences > Terminal</kbd> and select PowerShell or Bash.
 
-The terminal shares context with the open repository, so commands run against the correct working directory automatically.
+The terminal shares context with the open repository or worktree, so commands run against the correct working directory automatically.
 
 <figure>
   <img src="/wp-content/uploads/terminal-button-2025@2x.png"
@@ -13240,7 +13493,27 @@ PowerShell and Bash are currently supported. To change the shell:
 
 ## How multi-session support works
 
-The embedded terminal supports independent sessions per worktree in a single tab. When you switch to another worktree — for example, by clicking an agent card in the [Agents view](/gitkraken-desktop/agents/) — the terminal view refreshes to that worktree's session and opens in its working directory. Each session runs independently, so long-running commands in one worktree keep running when you switch away and come back.
+The embedded terminal supports independent sessions per worktree in a single tab. GitKraken Desktop uses the same underlying worktrees in both List view and [Agent Sessions View](/gitkraken-desktop/agents/).
+
+When you switch to another worktree, the terminal view refreshes to that worktree's session and opens in its working directory. For example, you might switch worktrees from List view or by clicking an agent session card in Agent Sessions View.
+
+Each session runs independently, so long-running commands in one worktree keep running when you switch away and come back.
+
+This is also how manual coding agent workflows work. If a coding agent is not explicitly integrated with GitKraken Desktop, you can still open the terminal for a worktree and run that agent there.
+
+---
+
+## How to run a coding agent manually in the terminal
+
+Use this workflow when you want to run a coding agent CLI that GitKraken Desktop does not explicitly integrate with, or when you prefer to start the agent yourself.
+
+1. Open the repository or worktree you want to use.
+2. Open the terminal from the toolbar or Command Palette.
+3. Confirm that the terminal is running in the correct working directory.
+4. Start your coding agent CLI in the terminal.
+5. Continue working in GitKraken Desktop while the terminal session stays attached to that worktree.
+
+If you want GitKraken Desktop to create and manage coding agent sessions for explicitly supported agents, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 ---
 
@@ -13254,9 +13527,9 @@ You can drag a file from your OS file manager or from the Commit Panel into the 
 
 Use the terminal to quickly execute common Git operations:
 
-- `git status` – View working directory and staging status
-- `git commit -m "message"` – Commit changes with a message
-- `git log --oneline` – View a condensed commit history
+- `git status` - View working directory and staging status
+- `git commit -m "message"` - Commit changes with a message
+- `git log --oneline` - View a condensed commit history
 
 These commands complement GitKraken’s visual graph for a comprehensive Git experience.
 

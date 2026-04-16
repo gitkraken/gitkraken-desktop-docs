@@ -17,13 +17,13 @@ tags: [command-palette, shortcuts, navigation, search, actions]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
-Use this page to run GitKraken Desktop actions from the Command Palette when you want a keyboard-first workflow for commands, files, repositories, and settings. It explains how to open the palette, what command categories are available, and when it is faster than navigating the UI directly.
+Use this page to run GitKraken Desktop actions from the Command Palette when you want a keyboard-first workflow for commands, files, repositories, worktrees, and settings. It explains how to open the palette, what command categories are available, and when it is faster than navigating the UI directly.
 
 **Requirements and limits**
 - Access methods: <kbd>Cmd/Ctrl + P</kbd>, the wand icon, or the Help menu
-- Scope: Commands, files, repositories, branches, stashes, settings, logs, and patches
+- Scope: Commands, files, repositories, branches, stashes, worktree-related navigation, settings, logs, and patches
 - Search behavior: Results filter live as you type
 - Execution model: Press <kbd>Enter</kbd> to run the selected item
 - Command availability depends on the current repository state, open repo context, and configured integrations
@@ -50,6 +50,7 @@ Common actions available through the Command Palette:
 - **Repository**: Open Repo, Clone, Init, Perform Repo Maintenance
 - **Stash**: Create, Apply, Pop
 - **View and settings**: Toggle Theme, Toggle Left Panel, Keyboard Shortcuts, Switch to Profile
+- **Terminal and workflow**: Open in terminal for command-line tasks and manual coding agent workflows
 
 The Command Palette is available at any time regardless of which panel or view is currently active in GitKraken Desktop.
 
@@ -87,6 +88,8 @@ Below is a list of supported commands grouped by category.
 - `Repo Management: Init`
 - `Repo Management: Open`
 - `Perform Repo Maintenance`
+
+`Open in terminal` is especially useful when you want to start a command-line workflow in the current repository or worktree, including a manual coding agent workflow. For more information, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/) and [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 ### Settings
 - `Configure Git Flow`

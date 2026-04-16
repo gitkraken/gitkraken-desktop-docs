@@ -21,7 +21,11 @@ taxonomy:
 
 Use this page to learn how coding agents work in GitKraken Desktop and how to use **Agent Sessions View** to create, monitor, and manage coding agent sessions. Read this page if you want to use external coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, or OpenCode from inside GitKraken Desktop.
 
+<img src='/wp-content/uploads/gkd-agents-panel-overview-20260414.png' class="help-center-img img-bordered" alt="GitKraken Desktop with Agent Sessions View open in the Left Panel. The view shows multiple agent session cards with status indicators alongside the commit graph and an active terminal session running a coding agent.">
+
 A **coding agent** is an external CLI that can work on code in a terminal session. In GitKraken Desktop, each **agent session** runs that CLI in its own [**worktree**](/gitkraken-desktop/worktrees/). **Agent Sessions View** shows those worktrees as agent-focused cards so you can start parallel work, monitor progress, and switch back when an agent needs attention.
+
+GitKraken Desktop explicitly integrates with a set of supported coding agent CLIs. You can also run other coding agents manually in the embedded terminal, even if they do not appear in the coding agent configuration.
 
 This page also helps answer common questions such as:
 - How do I use Claude Code with GitKraken Desktop?
@@ -35,6 +39,7 @@ This page also helps answer common questions such as:
 - Session model: Each agent session runs in its own Git worktree and working directory
 - Repository setup: Setup commands are configured per repository in <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>
 - Status support: Agent status indicators are available for Claude Code as of version 12.0.0
+- Other agents: You can still run other coding agents manually in the embedded terminal, even if GitKraken does not explicitly integrate with or detect them
 
 | What you want to do | Supported | Where in GitKraken Desktop | Notes |
 |---------------------|-----------|-----------------------------|-------|
@@ -46,8 +51,6 @@ This page also helps answer common questions such as:
 | Respond when an agent is waiting for input | Yes | Agent Sessions View and embedded terminal | Claude Code can show a **Waiting for input** status in the card |
 | Configure coding agent CLIs | Yes | <kbd>Preferences > External Tools > Coding Agent</kbd> | GitKraken auto-detects installed CLIs |
 | Configure setup commands for a repository | Yes | <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> | Commands run before the agent launches |
-
-<img src='/wp-content/uploads/gkd-agents-panel-overview-20260414.png' class="help-center-img img-bordered" alt="GitKraken Desktop with Agent Sessions View open in the Left Panel. The view shows multiple agent session cards with status indicators alongside the commit graph and an active terminal session running a coding agent.">
 
 ***
 
@@ -118,14 +121,16 @@ Coding agents are usually not the best choice when you:
 
 Go to <kbd>Preferences > External Tools > Coding Agent</kbd> to choose which coding agent CLI GitKraken Desktop launches for new sessions.
 
-Supported coding agents:
-- [Claude Code quickstart](https://code.claude.com/docs/en/quickstart)
-- [Codex CLI quickstart](https://developers.openai.com/codex/quickstart)
+GitKraken Desktop explicitly integrates with these supported coding agent CLIs:
+- [Claude Code](https://code.claude.com/docs/en/quickstart)
+- [Codex CLI](https://developers.openai.com/codex/quickstart)
 - [Copilot CLI](https://github.com/features/copilot/cli)
-- [Gemini CLI docs](https://geminicli.com/docs/)
-- [OpenCode download](https://opencode.ai/download)
+- [Gemini CLI](https://geminicli.com/docs/)
+- [OpenCode](https://opencode.ai/download)
 
 GitKraken auto-detects installed CLIs. You can also add custom CLI arguments that GitKraken passes when it starts a coding agent session.
+
+If you use a different coding agent, you can still open a session worktree and run that agent manually in the embedded terminal. The agent does not need to appear in the coding agent configuration for you to use that terminal workflow.
 
 If you are asking:
 - "How do I use Claude Code with GitKraken Desktop?"
@@ -176,20 +181,6 @@ Because these settings are under Repo-Specific Preferences, setup commands apply
 5. Click **Start**.
 
 GitKraken Desktop creates a new worktree from the selected base branch, runs any configured setup commands, and launches the selected coding agent in the embedded terminal.
-
-***
-
-## How to create a new coding agent session on a different base branch
-
-Use this workflow when you want the agent session to start from a branch other than `HEAD`.
-
-1. In **Agent Sessions View**, click **+ New Agent Session**.
-2. Enter the new branch name for the session.
-3. Open **Base branch** and choose the branch you want to use as the starting point.
-4. Optional: choose a different coding agent CLI for this session.
-5. Click **Start**.
-
-GitKraken Desktop creates the worktree from the base branch you selected instead of the current `HEAD`.
 
 ***
 
@@ -276,6 +267,10 @@ No. They show the same underlying worktrees. The difference is the presentation:
 ### Where do I choose Claude Code, Copilot CLI, Codex CLI, Gemini CLI, or OpenCode?
 
 Go to <kbd>Preferences > External Tools > Coding Agent</kbd>. You can also choose a different coding agent in the New Agent Session form for a single session.
+
+### Can I use a coding agent that GitKraken Desktop does not explicitly integrate with?
+
+Yes. GitKraken Desktop explicitly integrates with supported coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode, but you can still run other coding agents manually in the embedded terminal. The agent does not need to appear in the coding agent configuration for you to use that terminal workflow.
 
 ### Where do I configure repository setup before the agent starts?
 

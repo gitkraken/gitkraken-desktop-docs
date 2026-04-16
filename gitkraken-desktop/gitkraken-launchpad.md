@@ -17,7 +17,7 @@ tags: [launchpad, pull-requests, issues, wip, filters]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use GitKraken Launchpad to monitor pull requests, issues, and works in progress across a selected Workspace or team. This page explains how to open Launchpad, connect integrations, switch between Personal and Team Views, save filtered views, and understand feature differences between Cloud and On-Premise environments.
 
@@ -223,6 +223,8 @@ From Launchpad, you can quickly take action on pull requests:
 - Checkout PR branch
 - Close PR
 - Checkout in new worktree
+
+Use **Checkout in new worktree** when you want to review or continue pull request work in a separate working directory. For more information, see [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/). If you want to use coding agents in those worktrees, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 <figure>
   <img src="/wp-content/uploads/pr-actions-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="GitKraken Desktop Launchpad showing a pull request with dropdown menu options including 'Open in GitHub', 'Review Pull Request', 'Checkout Branch', and more.">

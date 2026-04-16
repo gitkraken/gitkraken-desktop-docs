@@ -1,7 +1,7 @@
 # GitKraken Desktop Help Center
 
 > Official documentation for GitKraken Desktop, GitKraken AI, Launchpad, integrations, self-hosted deployment, and troubleshooting.
-> Generated from validated front matter on 2026-04-14. Includes only pages marked `llms_include: true`.
+> Generated from validated front matter on 2026-04-16. Includes only pages marked `llms_include: true`.
 
 ## Scope
 
@@ -99,7 +99,7 @@
 - [GitKraken Desktop FAQ | Common Questions & Troubleshooting](https://help.gitkraken.com/gitkraken-desktop/faq/): Get answers to frequently asked questions about GitKraken Desktop. Learn about features, integrations, installations, SSH issues, and troubleshooting steps.
 - [GitKraken Desktop Themes | Customize Light, Dark & Custom UI](https://help.gitkraken.com/gitkraken-desktop/themes/): Learn how to switch between light and dark themes in GitKraken Desktop, sync with your system theme, and create custom themes using JSONC files.
 - [GitKraken Desktop – Common Issues and Fixes](https://help.gitkraken.com/gitkraken-desktop/common-issues/): Troubleshoot common GitKraken Desktop problems, including login errors, GitHub integrations, performance issues, and experimental Git behavior.
-- [GitKraken Terminal Guide](https://help.gitkraken.com/gitkraken-desktop/terminal/): Learn how to use GitKraken’s in-app terminal to run Git commands, use auto-complete, and customize shell preferences.
+- [GitKraken Terminal Guide](https://help.gitkraken.com/gitkraken-desktop/terminal/): Learn how to use GitKraken’s in-app terminal to run Git commands, work in repository and worktree context, run coding agents manually, and customize shell preferences.
 - [Improve GitKraken Desktop Performance](https://help.gitkraken.com/gitkraken-desktop/performance-issues/): Troubleshoot and fix performance issues in GitKraken Desktop with maintenance tips and optimization settings.
 - [Sign Commits with GPG or SSH in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/commit-signing-with-gpg/): Learn how to verify your commits using GPG or SSH keys in GitKraken Desktop. Includes setup, configuration, and troubleshooting for Git commit signing.
 - [View Activity Logs in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/activity-logs/): Learn how to view real-time Git actions, application events, and Git hook feedback using Activity Logs in GitKraken Desktop.

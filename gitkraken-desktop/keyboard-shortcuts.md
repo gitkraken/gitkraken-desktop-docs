@@ -17,9 +17,9 @@ tags: [keyboard-shortcuts, shortcuts, navigation, command-palette, tabs]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
-This keyboard shortcut reference helps you work faster in GitKraken Desktop on macOS, Windows, and Linux. Use it to find shortcuts for staging, committing, navigating the Commit Graph, opening the Command Palette, managing tabs, and toggling interface panels without leaving the keyboard.
+This keyboard shortcut reference helps you work faster in GitKraken Desktop on macOS, Windows, and Linux. Use it to find shortcuts for staging, committing, navigating the Commit Graph, opening the Command Palette, managing tabs, toggling interface panels, and opening the terminal without leaving the keyboard.
 
 **Requirements and limits**
 - Shortcut values differ between macOS and Windows/Linux, so check the correct platform column before using a shortcut.
@@ -259,6 +259,8 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
         </tr>
     </tbody>
 </table>
+
+Use **Open current repo in terminal** when you want to jump into the embedded terminal for command-line tasks or manual coding agent workflows in the current repository or worktree. For more information, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
 
 ### Keyboard shortcuts for the interface
 <table class='table table--bordered table--shortcuts'>

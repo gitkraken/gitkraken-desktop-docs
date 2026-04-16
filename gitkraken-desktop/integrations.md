@@ -17,9 +17,11 @@ tags: [integrations, git-hosting, issue-trackers, setup]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Integrations connect GitKraken Desktop to Git hosting services and issue trackers so you can clone repositories, manage remotes, review pull requests, and work with issues from one interface. Use this page to find the right integration for GitHub, GitLab, Bitbucket, Azure DevOps, Jira, Trello, and self-hosted services.
+
+This page covers Git hosting and issue tracker integrations. External coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode are documented separately in [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 **Requirements and limits**
 - Git hosting integrations: GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, Bitbucket, Bitbucket Data Center, and Azure DevOps
@@ -27,6 +29,7 @@ Integrations connect GitKraken Desktop to Git hosting services and issue tracker
 - Community plan: Public GitHub and GitLab repositories only; some issue tracker integrations are view-only
 - Self-hosted integrations: Require a paid plan; GitLab Self-Managed is available on Pro and up, while some other self-hosted integrations require higher tiers
 - Multiple profiles with separate integrations: Pro plan or higher
+- Coding agent CLIs: Managed separately from Git hosting and issue tracker integrations
 
 <figure>
   <div class='embed-container embed-container--16-9'>

@@ -19,7 +19,9 @@ taxonomy:
 ---
 <kbd>Last updated: April 2026</kbd>
 
-Use this page to create, switch, lock, and remove Git worktrees in GitKraken Desktop when you need multiple branches checked out at the same time. Worktrees keep separate working directories while sharing the same repository history, which makes them useful for parallel feature work, testing, and review workflows.
+Use this page to create, switch, lock, and remove Git worktrees in GitKraken Desktop when you need multiple branches checked out at the same time. Worktrees keep separate working directories while sharing the same repository history, which makes them useful for parallel feature work, testing, review workflows, and coding agent sessions.
+
+If you use coding agents in GitKraken Desktop, Agent Sessions View builds on the same underlying worktree model. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for agent-specific setup, session management, and status details.
 
 **Requirements and limits**
 - GitKraken Desktop version: Worktrees are supported in version 10.5.0 and later
@@ -35,6 +37,7 @@ Use this page to create, switch, lock, and remove Git worktrees in GitKraken Des
 | Open worktree | Switches you into that working directory | No | Available from the Left Panel |
 | Lock worktree | Prevents accidental changes to that worktree | No | Useful when working elsewhere temporarily |
 | Remove worktree | Detaches that working directory from the repository | No | Removes the worktree entry, not shared history |
+| View worktrees through Agent Sessions View | Shows the same worktrees in an agent-focused interface | No | Adds coding agent session context and quick actions |
 | Commit in a worktree | Records history from that worktree | Yes | Committed changes become visible across all worktrees |
 
 ***
@@ -77,17 +80,36 @@ Worktrees are useful when you want to:
 
 Once committed, changes in one worktree become visible in others.
 
+<div class='callout callout--basic'>
+  <p><strong>Using coding agents?</strong> Agent Sessions View in GitKraken Desktop uses Git worktrees behind the scenes. If you want to run Claude Code, Codex CLI, Copilot CLI, Gemini CLI, or OpenCode in GitKraken Desktop, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.</p>
+</div>
+
 ***
 
 ## How to use worktrees in GitKraken Desktop
 
-GitKraken Desktop has supported worktrees since version **10.5.0**. From the Left Panel, you can:
+GitKraken Desktop has supported worktrees since version **10.5.0**. In the Left Panel, you can work with those worktrees in two ways:
+
+- **List view** for general branch and worktree management
+- **Agent Sessions View** for coding agent sessions that run in worktrees
+
+Both views use the same underlying worktrees. The difference is the presentation:
+
+- Use **List view** when you want to create, switch, lock, or remove worktrees directly
+- Use **Agent Sessions View** when you want to create, monitor, and manage coding agent sessions in worktrees
+
+From the Left Panel, you can:
 
 - Create and switch between worktrees
 - Remove or lock/unlock worktrees
 - Hover over a worktree to see its full file path
 
-The Left Panel also offers a dedicated `List | Agents` segmented control for browsing worktrees. The **Agents** view organizes worktrees around coding agent activity — see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for how to monitor and act on agent sessions from that view.
+See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) if you want to:
+
+- install and use a supported coding agent CLI
+- start a coding agent session in a new worktree
+- monitor agent status such as **Waiting for input**
+- manage agent sessions from Agent Sessions View
 
 ### How to create a worktree
 
