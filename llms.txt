@@ -1,7 +1,7 @@
 # GitKraken Desktop Help Center
 
 > Official documentation for GitKraken Desktop, GitKraken AI, Launchpad, integrations, self-hosted deployment, and troubleshooting.
-> Generated from validated front matter on 2026-04-14. Includes only pages marked `llms_include: true`.
+> Generated from validated front matter on 2026-04-16. Includes only pages marked `llms_include: true`.
 
 ## Scope
 
