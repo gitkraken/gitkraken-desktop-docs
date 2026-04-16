@@ -169,7 +169,9 @@ Control the Commit Graph display with [Hide and Solo](/gitkraken-desktop/hiding-
 
 Run Git commands with the [GitKraken Terminal](/gitkraken-desktop/terminal/). Click <i class="fa fa-terminal"></i> in the toolbar or use <kbd>Alt/Opt + T</kbd>.
 
-Set a default terminal from <kbd>Preferences > External Tools</kbd>.
+You can also use the embedded terminal for manual coding agent workflows in a repository or worktree, including agents that GitKraken Desktop does not explicitly integrate with.
+
+Set a default terminal from <kbd>Preferences > External Tools</kbd>. For terminal sessions that follow your active worktree, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
 
 ***
 
