@@ -18,7 +18,7 @@ tags: [faq, troubleshooting, ssh, plans, os-support]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 This FAQ answers common GitKraken Desktop questions about supported platforms, account and plan limits, authentication, remote access, and troubleshooting. Use it when you need a quick answer or constraint check before opening a longer feature guide, especially for Linux support, SSH behavior, proxy issues, or subscription-related questions.
 
@@ -48,6 +48,30 @@ This FAQ answers common GitKraken Desktop questions about supported platforms, a
     </div>
   </section>
 </div>
+
+---
+
+## Common coding agent and worktree questions
+
+### What is Agent Sessions View?
+
+Agent Sessions View is a Left Panel mode in GitKraken Desktop that organizes worktrees around coding agent sessions, status, and quick actions. For more information, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
+
+### Can I run multiple coding agent sessions at the same time?
+
+Yes. Each coding agent session runs in its own worktree and working directory, so you can run parallel sessions in the same repository.
+
+### Can I use a coding agent that GitKraken Desktop does not explicitly integrate with?
+
+Yes. GitKraken Desktop explicitly integrates with supported coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode, but you can still run other coding agents manually in the embedded terminal. For more information, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) and [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
+
+### Do List view and Agent Sessions View show different worktrees?
+
+No. They show the same underlying worktrees. List view is reference-focused, while Agent Sessions View is agent-focused. For more information, see [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/).
+
+### Are Agent Sessions View and coding agent workflows available for on-prem customers?
+
+Yes. On-premises deployments use the same GitKraken Desktop client for local Desktop workflows such as worktrees, Agent Sessions View, and terminal-based coding agent workflows. Availability of cloud-dependent services still depends on the deployment and environment. For more information, see [Set Up GitKraken Self-Hosted Server (On-Premise)](/gitkraken-desktop/self-hosted/) and [GitKraken On-Premise Serverless (Stand-Alone) Setup](/gitkraken-desktop/serverless/).
 
 ---
 
