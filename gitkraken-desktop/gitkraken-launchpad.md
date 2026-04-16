@@ -17,7 +17,7 @@ tags: [launchpad, pull-requests, issues, wip, filters]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 Use GitKraken Launchpad to monitor pull requests, issues, and works in progress across a selected Workspace or team. This page explains how to open Launchpad, connect integrations, switch between Personal and Team Views, save filtered views, and understand feature differences between Cloud and On-Premise environments.
 

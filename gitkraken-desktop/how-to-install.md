@@ -17,7 +17,7 @@ tags: [install, setup, windows, macos, linux, wsl]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
 This installation guide explains how to install GitKraken Desktop on Windows, macOS, and Linux, including platform-specific download methods, system requirements, and data locations. Use it when setting up GitKraken Desktop for the first time or when verifying the correct installer and OS support for your environment.
 
