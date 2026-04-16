@@ -43,6 +43,7 @@ Use this page to troubleshoot common GitKraken Desktop problems related to licen
 - **Performance problems**: See the [Performance Issues](/gitkraken-desktop/performance-issues/) guide, or try running <kbd>Perform Repo Maintenance</kbd> from the Command Palette.
 - **Push failed with `Cannot read property 'fullName' of undefined`**: Rename your local branch to match the remote branch name exactly.
 - **WSL issues**: Avoid running GitKraken Desktop as root; use native WSL2 GUI support instead of XServer.
+- **Coding agent sessions fail in WSL**: Make sure the coding agent CLI you want to use is installed and available in WSL, not only on Windows. See [Use GitKraken Desktop with Windows Subsystem for Linux (WSL 2)](/gitkraken-desktop/windows-subsystem-for-linux/) and [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 If the steps on this page do not resolve your issue, contact [GitKraken Support](https://help.gitkraken.com/gitkraken-desktop/contact-support/).
 
@@ -137,6 +138,13 @@ This is a known WSL issue triggered by network changes.
 
 ### GitKraken GUI does not launch or scales incorrectly under WSL2 with XServer
 - XServer is not required. Use native WSL2 GUI support instead.
+
+### Coding agent sessions fail to start in WSL
+Windows-installed coding agent CLIs can take precedence over WSL-installed CLIs.
+
+- Make sure the coding agent CLI you want to use is installed in your WSL environment.
+- Avoid relying on a Windows-installed coding agent when GitKraken Desktop is running inside WSL.
+- For more information, see [Use GitKraken Desktop with Windows Subsystem for Linux (WSL 2)](/gitkraken-desktop/windows-subsystem-for-linux/) and [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 ---
 

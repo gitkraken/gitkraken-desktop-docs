@@ -17,9 +17,9 @@ tags: [wsl, wsl2, windows, linux, setup]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
-Use this page to install and run GitKraken Desktop inside Windows Subsystem for Linux 2 (WSL 2) when your repositories live on the Linux file system. It covers WSLg requirements, Linux installation steps, cross-file-system limits, and troubleshooting for display, certificate, and environment issues.
+Use this page to install and run GitKraken Desktop inside Windows Subsystem for Linux 2 (WSL 2) when your repositories live on the Linux file system. It covers WSLg requirements, Linux installation steps, cross-file-system limits, coding agent considerations, and troubleshooting for display, certificate, and environment issues.
 
 **Requirements and limits**
 - Windows requirement: Windows 11 or Windows 10 build 19044+
@@ -27,6 +27,7 @@ Use this page to install and run GitKraken Desktop inside Windows Subsystem for 
 - GitKraken requirement: GitKraken Desktop 9.1.0+ for Linux
 - Repository location rule: Keep repositories on the same file system as the GitKraken Desktop installation you use
 - Cross-file-system warning: Opening WSL repositories from GitKraken on Windows, or Windows repositories from GitKraken in WSL, can cause degraded performance or broken features
+- Coding agent note: In WSL, Windows-installed coding agent CLIs can take precedence over WSL-installed CLIs and prevent agent sessions from starting correctly
 - Known issues: WSLg may have HiDPI scaling and window-snapping limitations
 
 ***
@@ -67,6 +68,10 @@ GitKraken Desktop works with repositories stored on your WSL 2 file system when 
 
 <div class='callout callout--warning'>
     <p><strong>Note:</strong> GitKraken Desktop does not support accessing repos across file systems. Install GitKraken on the OS where your repos are stored to avoid degraded performance or non-functional features.</p>
+</div>
+
+<div class='callout callout--warning'>
+    <p><strong>Coding agent note:</strong> If you use Agent Sessions View in WSL, make sure the coding agent CLI you want to run is the one available in your WSL environment. In some cases, a Windows-installed coding agent can take precedence over a WSL-installed one, which can prevent the agent session from starting correctly. For more information, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.</p>
 </div>
 
 GitKraken will notify you when accessing repos across environments. For more, see [Working Across File Systems](#working-across-file-systems-in-wsl-2).
@@ -162,6 +167,7 @@ Here are known limitations when using GitKraken Desktop with WSLg:
 
 - <a href="https://github.com/microsoft/wslg/issues/388" target="_blank">HiDPI displays</a> may cause WSLg to inconsistently scale the UI.
 - <a href="https://github.com/microsoft/wslg/issues/727" target="_blank">Window snapping</a> might not function properly within WSLg.
+- Windows-installed coding agent CLIs can take precedence over WSL-installed CLIs, which may cause coding agent sessions to fail to start as expected.
 
 ---
 
