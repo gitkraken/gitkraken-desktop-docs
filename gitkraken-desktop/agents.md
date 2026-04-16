@@ -184,20 +184,6 @@ GitKraken Desktop creates a new worktree from the selected base branch, runs any
 
 ***
 
-## How to create a new coding agent session on a different base branch
-
-Use this workflow when you want the agent session to start from a branch other than `HEAD`.
-
-1. In **Agent Sessions View**, click **+ New Agent Session**.
-2. Enter the new branch name for the session.
-3. Open **Base branch** and choose the branch you want to use as the starting point.
-4. Optional: choose a different coding agent CLI for this session.
-5. Click **Start**.
-
-GitKraken Desktop creates the worktree from the base branch you selected instead of the current `HEAD`.
-
-***
-
 ## How to monitor coding agent progress and session status
 
 Each card in Agent Sessions View represents one worktree and one coding agent session.
