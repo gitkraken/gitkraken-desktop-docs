@@ -210,6 +210,6 @@ These apply only to the open repository:
 - [Issues](/gitkraken-desktop/jira/)
 - [Team View](/gitkraken-desktop/team-view/)
 - [Submodules](/gitkraken-desktop/submodules/#keep-submodules-up-to-date)
-- [Agents](/gitkraken-desktop/agents/#how-to-configure-setup-commands) — setup commands (install scripts, build steps) that run when a new agent session starts in a worktree
+- [Agents](/gitkraken-desktop/agents/#how-to-configure-setup-commands) - Setup commands such as install scripts or build steps that run when a new agent session starts in a worktree
 
 You can configure these uniquely per repository.

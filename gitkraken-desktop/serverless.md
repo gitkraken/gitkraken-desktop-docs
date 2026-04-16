@@ -66,7 +66,8 @@ If your license expires, replace the `.dat` file in one of the supported directo
 
 ## Feature support
 
-GitKraken On-Premise Serverless supports most GitKraken Desktop features, including the major upgrades introduced in versions 10 and 11. Features that require connectivity to GitKraken cloud services or to external cloud hosting providers are not available.
+GitKraken On-Premise Serverless uses the same GitKraken Desktop client feature set as other supported on-premises deployments.
+Features that require connectivity to GitKraken cloud services or to external cloud hosting providers are not available.
 
 ### What is included
 
@@ -75,6 +76,8 @@ The following feature categories are fully supported in Serverless:
 | Category | Included | Notes |
 | --- | --- | --- |
 | **Core Git client** | All standard Git operations, including commits, branches, merges, rebases, diffs, stashing, tagging, interactive rebase, cherry pick (including multi-commit interactive cherry pick), worktrees, shallow clone, and undo or redo of rebase and cherry pick operations. | |
+| **Agent Sessions View and coding agent session workflows** | Agent Sessions View and worktree-based coding agent session workflows are available in the on-premises Desktop client. | Supported-agent integrations and status details depend on the client version and local environment. |
+| **Embedded terminal for manual coding agent workflows** | You can run coding agents manually in the embedded terminal, including agents that GitKraken Desktop does not explicitly integrate with. | See [GitKraken Terminal Guide](/gitkraken-desktop/terminal/). |
 | **Launchpad** | Track pull requests and issues in a single view and filter by repository, branch, milestone, or sprint. Launchpad works with the following on-premises integrations: GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server and Data Center, Azure DevOps Server, and Jira Data Center. | For a description of the differences between cloud and on-premises Launchpad, see [How On-Premise Launchpad differs from Cloud Launchpad](/gitkraken-desktop/gitkraken-launchpad/#how-on-premise-launchpad-differs-from-cloud-launchpad). |
 | **Local Workspaces** | Organize multiple local Git repositories in one view. You can see the branch status of each repository and run multi-repository actions, such as fetch and pull, from a single place. | Cloud Workspaces are not available in Serverless. |
 | **Conflict detection** | GitKraken detects potential conflicts with your target branch before you reach the merge step and alerts you when your checked-out branch has diverged from its pull request target. | |
@@ -93,6 +96,8 @@ The following features require connectivity to GitKraken cloud services (`gitkra
 - Org Member conflict detection
 - Integrations with cloud-hosted services: GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, Jira Cloud, and Trello
 
+Local Desktop workflows such as worktrees, Agent Sessions View, and terminal-based coding agent workflows remain available unless they depend on a cloud-only or otherwise unsupported external service.
+
 ### Feature support table
 
 | Feature | Supported | Notes |
@@ -101,6 +106,8 @@ The following features require connectivity to GitKraken cloud services (`gitkra
 | Interactive Rebase | Yes | |
 | Multi-commit Cherry Pick | Yes | |
 | Worktrees | Yes | Requires version 10.5.0 or later |
+| Agent Sessions View and coding agent session workflows | Yes | Available in the on-premises Desktop client; supported-agent integrations and status details depend on the client version and local environment |
+| Embedded terminal for manual coding agent workflows | Yes | You can run coding agents manually in the embedded terminal |
 | Shallow Clone | Yes | |
 | Undo rebases, cherry picks, and AI Commit Compose | Yes | |
 | Local Workspaces | Yes | Stored on-device only; not shareable across machines |
