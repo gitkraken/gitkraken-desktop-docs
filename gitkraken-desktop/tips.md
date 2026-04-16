@@ -110,7 +110,7 @@ You can reorder, squash, drop, or rename commits before completing. Learn more i
 
 ***
 
-### 5. Integrate with Git Services
+## How to integrate with Git services
 
 Connect GitKraken Desktop with [GitHub, GitLab, Bitbucket, and Azure DevOps](/gitkraken-desktop/integrations/) to streamline cloning, remotes, and PR workflows.
 
