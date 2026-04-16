@@ -260,6 +260,8 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
     </tbody>
 </table>
 
+Use **Open current repo in terminal** when you want to jump into the embedded terminal for command-line tasks or manual coding agent workflows in the current repository or worktree. For more information, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
+
 ### Keyboard shortcuts for the interface
 <table class='table table--bordered table--shortcuts'>
     <colgroup>

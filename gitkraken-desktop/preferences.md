@@ -186,6 +186,8 @@ Adjust the appearance and behavior of GitKraken’s terminal:
 - Autocomplete behavior
 - Default terminal for Windows
 
+For worktree-specific terminal sessions and manual coding agent workflows, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
+
 ***
 
 ## How experimental preferences work
