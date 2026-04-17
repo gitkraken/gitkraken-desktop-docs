@@ -1043,7 +1043,14 @@ Visual preferences for theming and commit graph display:
 - Author initials vs. avatars
 - Graph metadata: branches, tags, author, commit message, SHA, etc.
 - Hide Launchpad from the status bar
-- Hide the `List | Agents` toggle in the Left Panel. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
+- Show Agents view in left panel. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
+
+If you want to switch between the standard Left Panel and Agent Sessions View, go to <kbd>Preferences > UI Customization</kbd> and enable **Show Agents view in left panel**.
+
+<figure>
+  <img src="/wp-content/uploads/toggle-agents-view-preferences.png" class="help-center-img img-bordered" alt="GitKraken Desktop Preferences highlighting the Show Agents view in left panel setting that controls whether the List and Agents toggle appears in the Left Panel.">
+  <figcaption style="text-align:center; color:#888">Enable <code>Show Agents view in left panel</code> to display the <code>List | Agents</code> toggle</figcaption>
+</figure>
 
 ***
 
@@ -4478,6 +4485,21 @@ Agent Sessions View and List view use the same underlying worktrees. The differe
 <div class='callout callout--basic'>
       <p><strong>Why use Agent Sessions View instead of only List view?</strong> Agent Sessions View shows the same worktrees you already use in GitKraken Desktop, but it organizes them around agent activity such as progress, status, and actions. You can switch between <strong>List</strong> and <strong>Agents</strong> at any time without losing work.</p>
 </div>
+
+<div class='callout callout--basic'>
+      <p><strong>Missing the toggle?</strong> If the <code>List | Agents</code> switch is not visible in the Left Panel, open <kbd>Preferences &gt; UI Customization</kbd> and enable <strong>Show Agents view in left panel</strong>.</p>
+</div>
+
+***
+
+## How to toggle agents view
+
+To show or hide the `List | Agents` toggle at the top of the Left Panel, go to <kbd>Preferences > UI Customization</kbd> and toggle **Show Agents view in left panel**.
+
+<figure>
+  <img src="/wp-content/uploads/toggle-agents-view-preferences.png" class="help-center-img img-bordered" alt="GitKraken Desktop Preferences showing the UI Customization section with the Show Agents view in left panel setting that controls whether the List and Agents toggle appears in the Left Panel.">
+  <figcaption style="text-align:center; color:#888">Enable <code>Show Agents view in left panel</code> to display the <code>List | Agents</code> toggle</figcaption>
+</figure>
 
 ***
 
