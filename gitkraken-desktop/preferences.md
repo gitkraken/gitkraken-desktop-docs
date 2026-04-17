@@ -159,7 +159,14 @@ Visual preferences for theming and commit graph display:
 - Author initials vs. avatars
 - Graph metadata: branches, tags, author, commit message, SHA, etc.
 - Hide Launchpad from the status bar
-- Hide the `List | Agents` toggle in the Left Panel. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
+- Show Agents view in left panel. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
+
+If you want to switch between the standard Left Panel and Agent Sessions View, go to <kbd>Preferences > UI Customization</kbd> and enable **Show Agents view in left panel**.
+
+<figure>
+  <img src="/wp-content/uploads/toggle-agents-view-preferences.png" class="help-center-img img-bordered" alt="GitKraken Desktop Preferences highlighting the Show Agents view in left panel setting that controls whether the List and Agents toggle appears in the Left Panel.">
+  <figcaption style="text-align:center; color:#888">Enable <code>Show Agents view in left panel</code> to display the <code>List | Agents</code> toggle</figcaption>
+</figure>
 
 ***
 
