@@ -253,6 +253,55 @@ git branch -m temp-branch test-branch
 
 On case-insensitive file systems like Windows, branches or files differing only by case may not appear correctly.
 
+---
+
+## How to delete the GitKraken CLI after uninstalling GitKraken
+
+**GitKraken CLI is a shared product, do not uninstall if you are still using GitLens or GitKraken MCP**
+
+If you have uninstalled GitKraken Desktop but still have the `gitkraken CLI` installed, you can remove it manually. 
+
+### Uninstall GitKraken CLI on MacOS(Homebrew)
+
+1. Run the uninstall command
+```bash
+gk uninstall
+```
+2. Remove the Homebrew cask
+```bash
+brew uninstall --cask gitkraken-cli
+```
+
+### Uninstall GitKraken CLI on Windows(winget)
+
+1. Run the uninstall command
+```bash
+gk uninstall
+```
+2. Remove the winget package
+```bash
+winget uninstall gitkraken.cli
+```
+
+### Uninstall the GitKraken CLI on Linux
+1. Run the uninstall command
+```bash
+gk uninstall
+```
+2. Remove the binary
+
+Snap:
+```bash
+sudo snap remove gitkraken-cli 
+```
+
+Manual Install:
+```bash
+sudo rm /usr/local/bin/gk
+```
+
+
+
 <small class='text-muted'>End of document.</small>
 
 <style>
