@@ -253,6 +253,28 @@ Use these actions after the agent finishes so you can review changes, push the b
 
 ***
 
+## How to uninstall or reinstall Agent Status hooks
+
+The GitKraken CLI registers hooks on Claude Code's lifecycle events (session start/end, tool use, prompt submission, permission requests, and similar) and forwards those events to the local gk process to display agent status in GitKraken. Only event metadata is sent, prompt content, agent output, and source code are not captured.
+
+### Uninstalling Agent Status Hooks
+
+1. Click the **Preferences** icon on the top right. 
+2. Navigate to the **External Tools** tab
+3. In the **Coding Agent** area, next to **Claude Code Hooks**, click **Uninstall Hooks**
+
+   <img src='/wp-content/uploads/gkd-agents-uninstall-hooks.png' class="help-center-img img-bordered" alt="How to uninstall Claude Code agent status hooks in the GitKraken UI.">
+
+### Reinstalling Agent Status Hooks
+
+1. Click the **Preferences** icon on the top right.
+2. Navigate to the **External Tools** tab.
+3. In the **Coding Agents** area, next to **Claude Code Hooks**, click **Reinstall Hooks**
+
+   <img src='/wp-content/uploads/gkd-agents-reinstall-hooks.png' class="help-center-img img-bordered" alt="How to reinstall Claude Code agent status hooks in the GitKraken UI.">
+
+***
+
 ## Typical workflow for coding agents and worktrees
 
 1. You are working on a feature in your current worktree.
@@ -291,3 +313,7 @@ Yes. GitKraken Desktop explicitly integrates with supported coding agent CLIs su
 ### Where do I configure repository setup before the agent starts?
 
 Go to <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>. Setup commands run in sequence in the new worktree before the coding agent launches.
+
+### Why does GitKraken install hooks to Claude Code?
+
+GitKraken registers hooks with Claude Code that reports agent status events — such as when an agent starts, finishes, or changes state —  to a local GitKraken process so that activity can be displayed in the Agent Sessions View. The hook sends status metadata only; it does not transmit prompt content, agent responses, or source code.
