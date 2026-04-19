@@ -31,6 +31,19 @@ This release notes page tracks what's new and changing in the current version of
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 
 ***
+<a id="v12-0-1"></a>
+## Version 12.0.1
+
+<kbd>Saturday, April 18th, 2026</kbd>
+
+### Improvements 🙌
+ - You can now uninstall and reinstall Claude Code hooks used to display live agent status in the Agents Session View from *Preferences > External Tools*.
+
+### Bug Fixes 🐛
+ - GitKraken will no longer attempt to automatically install Claude Code hooks after they are removed.
+ - Fixed an issue in 12.0.0 where GitKraken On-Premise and Standalone clients were attempting to send telemetry via the GitKraken CLI.
+
+***
 <a id="v12-0-0"></a>
 ## Version 12.0.0
 
