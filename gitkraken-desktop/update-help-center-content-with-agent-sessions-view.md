@@ -28,49 +28,58 @@ Agent Sessions View organizes worktrees around coding agent sessions. List view 
 
 1. Open the **Agents** left panel and switch to **Agent Sessions View**.
 2. Click **New agent session**.
-3. Name the branch something like `token-to-credit-renaming`.
+3. Name the branch something like `docs-refresh-review`.
 4. Choose **Codex** as the coding agent for this session.
 5. Click **Start** to create a new worktree and agent session.
-6. Confirm that:
-   - A new worktree appears in the left panel.
-   - The branch is checked out in the new worktree.
-   - The agent session is ready for instructions.
+6. Confirm that a new worktree appears in the left panel, the branch is checked out in that worktree, and the agent session is ready for instructions.
 
-## Ask the agent to update Gemini references
+## Ask the agent to review the repository
 
-You can describe the task to the agent in plain language. In this example, start with the Gemini naming update.
+Start by asking the agent to inspect the repository and explain which markdown files are most likely to need attention. This gives you a quick understanding of the repo before you make changes.
 
 ```text
-Search all .md files in this repo for mentions of
-"Google Gemini Flash" or "Google Gemini 2.x Flash"
-and rename them to "Google Gemini models".
+Scan this repository and summarize its structure, key directories,
+and the markdown files that look most relevant for setup,
+contributor guidance, or other documentation maintenance.
+Do not make changes yet.
 ```
 
-The agent scans markdown files in the repository and proposes or applies edits, depending on your configuration. Before you let the agent run, validate the target phrasing so you are sure that `Google Gemini Flash` should become `Google Gemini models`.
+The agent can scan the repository, identify important docs, and point out where documentation may no longer match the current codebase. This is a useful first step if you are new to the repository or if you want the agent to propose a focused documentation plan.
 
-## Ask the agent to update token references
+## Ask the agent to find outdated documentation
 
-Next, update billing and usage wording more carefully. In this case, you only want to rename `tokens` where the text clearly refers to GitKraken AI usage or billing.
+Once you know where the docs live, ask the agent to compare those markdown files with the current repository structure, scripts, commands, and conventions.
 
 ```text
-Search all .md files in this repo for mentions of "tokens"
-and change them to "credits" only in the context of
-GitKraken AI usage or billing. Do not change unrelated uses
-of the word "token".
+Compare the README and other markdown documentation to the current
+scripts, commands, and file structure in this repository.
+Identify anything that looks outdated, inconsistent, or unclear.
 ```
 
-The agent may touch multiple pages, including release notes and common issues pages. Review those edits closely because `token` can also appear in unrelated technical contexts.
+The agent may identify outdated setup steps, stale file paths, old script names, or contributor instructions that no longer reflect how the repository works today. Review the agent's findings before you ask it to edit files.
+
+## Ask the agent to update markdown files
+
+After you confirm the proposed changes, ask the agent to update the affected markdown files. Keep the scope focused on documentation so the review stays simple.
+
+```text
+Update the affected markdown files so the documentation matches the
+current repository structure, commands, and conventions.
+Keep edits focused and do not change source code.
+```
+
+The agent can update setup instructions, file references, command examples, or contributor guidance. If your team prefers, you can also ask the agent to show a proposed edit plan before it writes changes.
 
 ## Update date stamps for modified pages
 
-Some GitKraken Help Center pages include a `Last updated` date near the top of the page. You can use the agent to keep those dates consistent for any files it changed.
+Some repositories include a `Last updated` line near the top of a markdown file. If your documentation uses that pattern, you can ask the agent to update those dates consistently for any files it changed.
 
 ```text
-For any pages you modified that include a date stamp
-at the top, update the date to "April 2026".
+For any documentation files you modified that include a "Last updated"
+line near the top, update the date to "April 2026".
 ```
 
-The agent updates the date line for each affected file. You can verify those changes in the diff view before you commit anything.
+The agent updates the date line only where that pattern already exists. You can verify those changes in the diff view before you commit anything.
 
 ## Review agent changes in WIP
 
@@ -79,10 +88,9 @@ Agent Sessions View surfaces uncommitted edits for the current worktree in a **W
 1. In **Agent Sessions View**, select the current session.
 2. Click the **WIP** node at the top of the graph.
 3. Use the right-side file list to open each modified markdown file.
-4. Confirm that:
-   - `Google Gemini Flash` references are now `Google Gemini models`.
-   - `tokens` to `credits` changes only appear in GitKraken AI contexts.
-   - Date stamps at the top of modified pages are set to `April 2026`.
+4. Confirm that the documentation now matches the current repository structure, commands, or conventions.
+5. Confirm that the agent only changed markdown files you intended to update.
+6. Confirm that date stamps at the top of modified pages are set to `April 2026` if your repo uses that pattern.
 
 ## Stage changes and generate commits with GitKraken AI
 
@@ -93,7 +101,7 @@ Once the edits look correct, stage the documentation changes and use GitKraken A
 3. Click **Compose commits with AI** to have GitKraken AI group the changes into multiple topic-based commits.
 4. Review the suggested commits and optionally squash, drop, or reword them before confirming.
 
-Multiple topic-based commits can help reviewers. For example, you might keep Gemini wording updates separate from `tokens` to `credits` updates and separate both from date-only edits.
+Multiple topic-based commits can help reviewers. For example, you might separate README setup fixes from contributor guide updates and keep date-only edits in their own commit.
 
 ## Open a pull request from GitKraken Desktop
 
@@ -116,8 +124,8 @@ If you have permission, you can merge the pull request directly from GitKraken D
 
 1. Merge the pull request after review and approval.
 2. Pull the latest changes into your local `main`.
-3. Confirm that `Google Gemini models` and `AI credits` appear correctly in the updated documentation.
-4. If your Help Center publishing flow requires a CMS publish step, complete that process so the changes appear live.
+3. Confirm that the updated documentation now reflects the current repository structure and commands.
+4. If your documentation is published through a separate site or CMS, complete that publishing step so the changes appear live.
 
 ## Clean up the agent worktree
 
