@@ -1,8 +1,8 @@
 # Update Help Center content with Agent Sessions View
 
-<kbd>Last updated: May 2026</kbd>
+<kbd>Last updated: April 2026</kbd>
 
-Use this example to review and update repository documentation with a coding agent in GitKraken Desktop. Agent Sessions View is useful for documentation maintenance because it keeps the worktree, agent session, WIP changes, and pull request status together in one place.
+Use this example to learn how to use Agent Sessions View in GitKraken Desktop with a coding agent. In this workflow, you use a documentation update task to see how Agent Sessions View keeps the worktree, agent session, WIP changes, and pull request status together in one place.
 
 ## Before you start
 
@@ -70,17 +70,6 @@ Keep edits focused and do not change source code.
 
 The agent can update setup instructions, file references, command examples, or contributor guidance. If your team prefers, you can also ask the agent to show a proposed edit plan before it writes changes.
 
-## Update date stamps for modified pages
-
-Some repositories include a `Last updated` line near the top of a markdown file. If your documentation uses that pattern, you can ask the agent to update those dates consistently for any files it changed.
-
-```text
-For any documentation files you modified that include a "Last updated"
-line near the top, update the date to "April 2026".
-```
-
-The agent updates the date line only where that pattern already exists. You can verify those changes in the diff view before you commit anything.
-
 ## Review agent changes in WIP
 
 Agent Sessions View surfaces uncommitted edits for the current worktree in a **Work in progress (WIP)** node at the top of the graph. This makes it easy to review the full set of documentation changes produced by you or the agent.
@@ -90,7 +79,6 @@ Agent Sessions View surfaces uncommitted edits for the current worktree in a **W
 3. Use the right-side file list to open each modified markdown file.
 4. Confirm that the documentation now matches the current repository structure, commands, or conventions.
 5. Confirm that the agent only changed markdown files you intended to update.
-6. Confirm that date stamps at the top of modified pages are set to `April 2026` if your repo uses that pattern.
 
 ## Stage changes and generate commits with GitKraken AI
 
@@ -102,6 +90,7 @@ Once the edits look correct, stage the documentation changes and use GitKraken A
 4. Review the suggested commits and optionally squash, drop, or reword them before confirming.
 
 Multiple topic-based commits can help reviewers. For example, you might separate README setup fixes from contributor guide updates and keep date-only edits in their own commit.
+Multiple topic-based commits can help reviewers. For example, you might separate README setup fixes from contributor guide updates so each commit stays easy to review.
 
 ## Open a pull request from GitKraken Desktop
 
@@ -159,12 +148,6 @@ Identify anything that looks outdated or inconsistent.
 Update the affected markdown files so the documentation matches the
 current repository structure and commands. Keep edits focused and
 do not change source code.
-```
-
-```text
-For any documentation files you modified, check whether they include a
-"Last updated" line near the top. Update that date consistently and
-show me the affected files in the diff.
 ```
 
 ```text
