@@ -1,6 +1,6 @@
 # Update Help Center content with Agent Sessions View
 
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: May 2026</kbd>
 
 Use this example to review and update repository documentation with a coding agent in GitKraken Desktop. Agent Sessions View is useful for documentation maintenance because it keeps the worktree, agent session, WIP changes, and pull request status together in one place.
 
