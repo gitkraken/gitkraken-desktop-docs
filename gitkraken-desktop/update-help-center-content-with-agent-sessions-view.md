@@ -141,25 +141,24 @@ Agent Sessions View and List view both point to the same worktrees. When the wor
 
 ## Example prompts you can reuse
 
-Use prompts like these when you want to understand a repository before making changes, or when you want to apply the same workflow to a different set of documentation files.
+Use prompts like these when you want to understand a repository before making changes, or when you want to apply the same workflow to a different set of markdown documentation files.
 
 ```text
 Scan this repository and tell me which markdown files are most relevant
-to terminology updates or documentation maintenance. Summarize what you
-find before making any changes.
+to setup instructions, contributor guidance, or documentation
+maintenance. Summarize what you find before making any changes.
 ```
 
 ```text
-Search markdown files for references to "Google Gemini Flash" or
-"Google Gemini 2.x Flash". Show me which files would need to change
-to use "Google Gemini models", then make the edits after I confirm.
+Compare the README and other markdown documentation to the current
+scripts, commands, and file structure in this repository.
+Identify anything that looks outdated or inconsistent.
 ```
 
 ```text
-Search markdown files for references to "tokens" and identify which
-uses appear to describe product billing, usage, or entitlements.
-Change only those references to "credits" and leave unrelated uses
-of "token" unchanged.
+Update the affected markdown files so the documentation matches the
+current repository structure and commands. Keep edits focused and
+do not change source code.
 ```
 
 ```text
@@ -173,4 +172,4 @@ Summarize the changes you made, group them into logical commit topics,
 and suggest commit messages I can use for a pull request.
 ```
 
-Reuse this workflow whenever you need to safely review, refactor, or standardize wording across multiple documentation pages with coding agents in GitKraken Desktop. Agent Sessions View helps you keep the worktree, edits, review flow, and pull request connected so the process stays repeatable.
+Reuse this workflow whenever you need to safely review, update, or standardize documentation across a repository with coding agents in GitKraken Desktop. Agent Sessions View helps you keep the worktree, edits, review flow, and pull request connected so the process stays repeatable.
