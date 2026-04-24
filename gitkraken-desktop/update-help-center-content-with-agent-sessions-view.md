@@ -2,24 +2,24 @@
 
 <kbd>Last updated: April 2026</kbd>
 
-Use this example to update GitKraken Desktop Help Center markdown files with a coding agent in GitKraken Desktop. Agent Sessions View is useful for documentation maintenance because it keeps the worktree, agent session, WIP changes, and pull request status together in one place.
+Use this example to review and update repository documentation with a coding agent in GitKraken Desktop. Agent Sessions View is useful for documentation maintenance because it keeps the worktree, agent session, WIP changes, and pull request status together in one place.
 
 ## Before you start
 
 Make sure you have the following:
 
 - GitKraken Desktop installed and updated to a version that includes Agent Sessions View
-- Access to the Help Center docs repository on GitHub
+- Access to a Git repository on GitHub that includes markdown documentation
 - A coding agent configured in GitKraken Desktop, using Codex in this example
 - GitHub integration connected so you can create a pull request from GitKraken Desktop
 
 ## Open the Help Center repo in GitKraken Desktop
 
-Each Help Center product section is maintained in its own Git repository. Those repositories contain markdown files that are later rendered by a CMS.
+Many codebases include markdown files for setup instructions, contributor guidance, architecture notes, changelogs, or internal documentation. This example uses a repository that includes markdown docs you want to review and update so they match the current codebase.
 
 1. Open GitKraken Desktop.
 2. Click the plus icon in the top left and choose **Open**.
-3. Select the Help Center docs repository for GitKraken Desktop.
+3. Select the repository you want to review.
 4. Confirm that the default worktree opens and that you can see the commit graph.
 
 ## Create a new agent session worktree
