@@ -36,8 +36,6 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 
 <kbd>Tuesday, May 5th, 2026</kbd>
 
-_Read the [full release notes](https://help.gitkraken.com/gitkraken-desktop/current/#version-12-1-0) and see how it all works!_
-
 ### Improvements 🙌
  - **Worktrees:**
    - New worktrees and agent sessions now inherit view settings (hidden refs, hidden remotes, soloed refs/remotes, and collapsed folders/remotes) from the source repository, so you no longer need to re-hide branches and remotes after creating a worktree.
