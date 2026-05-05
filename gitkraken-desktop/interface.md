@@ -11,23 +11,24 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-04
+last_verified: 2026-05
 llms_include: true
-tags: [interface, toolbar, left-panel, commit-graph, commit-panel]
+tags: [interface, toolbar, left-panel, commit-graph, commit-panel, status-bar]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: May 2026</kbd>
 
 Use this page to understand the main areas of the GitKraken Desktop interface so you can navigate repository actions, history, staging, coding agent workflows, and collaboration features more efficiently. It covers the toolbar, Left Panel, Commit Panel, Commit Graph, and tabs, with links to deeper task-specific guides when you need more than a UI overview.
 
 **Requirements and limits**
 - Scope: Interface overview, not full task-specific workflows
-- Main areas covered: Toolbar, Left Panel, Commit Graph, Commit Panel, and tabs
+- Main areas covered: Toolbar, Left Panel, Commit Graph, Commit Panel, Status Bar, and tabs
 - Repository context: Most controls described here appear only when a repository is open
 - Left Panel modes: The Left Panel can show either List view or Agent Sessions View, depending on the selected mode
 - Left Panel behavior: Sections can be toggled, resized, collapsed, or expanded from the UI
 - Toolbar behavior: Some buttons appear only when the relevant feature or repo state is available, such as LFS
+- Status bar zoom: The status bar exposes preset zoom levels including 100%, 110%, 125%, 140%, 150%, 175%, and 200%
 - Deeper actions: Use linked feature pages for task-specific limits and workflows beyond this interface overview
 
 ***
@@ -39,6 +40,7 @@ Use this page to understand the main areas of the GitKraken Desktop interface so
 - **Commit Graph**: Displays the visual commit history of the current repository. Click any commit to view its details in the Commit Panel. Click the WIP node at the top to view and stage pending changes.
 - **Commit Panel**: Shows file changes for the selected commit or WIP. Displays diffs, staged/unstaged files, and co-author information. Use it to stage files and write commit messages.
 - **Toolbar**: Located at the top of the window. Provides one-click access to Undo, Redo, Pull, Push, Branch, Stash, and Pop. Use the adjacent dropdowns to customize pull behavior or branch options.
+- **Status Bar**: Located at the bottom of the window. Surfaces the [Launchpad](/gitkraken-desktop/gitkraken-launchpad/) summary, your current plan, and a zoom selector with standard levels including 100%, 110%, 125%, 140%, 150%, 175%, and 200%.
 
 To open the Command Palette at any time, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>P</kbd>. To toggle the Left Panel, use <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> or the toggle in the toolbar. Preferences and integrations are accessible from the gear icon in the upper-right corner.
 

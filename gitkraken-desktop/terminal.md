@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-04
+last_verified: 2026-05
 llms_include: true
 tags: [terminal, shell, git, commands, auto-complete]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: May 2026</kbd>
 
 Use this page to use the GitKraken Desktop terminal while staying in the context of the open repository, commit graph, and active worktree. It covers how to open the terminal, how command and flag auto-complete works, how terminal sessions behave across worktrees, how to run coding agents manually, and where to change shell and terminal appearance settings.
 
@@ -27,6 +27,7 @@ Use this page to use the GitKraken Desktop terminal while staying in the context
 - Supported shell note: macOS and Linux use the OS default shell; Windows supports PowerShell and Bash via Preferences
 - Auto-complete limitation: Conflicting third-party auto-complete tools can disable GitKraken suggestions
 - Settings location: <kbd>Preferences &gt; In-App Terminal</kbd> for appearance and autocomplete behavior
+- Panel behavior: The embedded terminal resizes smoothly when surrounding panels change, can be minimized to keep the terminal panel header visible, and exposes a trash icon in the panel header to kill terminal sessions
 - Coding agents: You can run supported or unsupported coding agent CLIs manually in the embedded terminal
 
 To get started, open a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar, or search for "terminal" using the <a href="/working-with-repositories/command-palette">Command Palette</a>.
@@ -43,6 +44,10 @@ To get started, open a repository and click the Terminal <i class="fa fa-termina
 **To run a coding agent manually:** Open the terminal in the worktree you want to use, then start your coding agent CLI there.
 
 **To customize terminal appearance:** Go to <kbd>Preferences > In-App Terminal</kbd> to change font, size, line height, cursor style, and autocomplete behavior.
+
+**To minimize the terminal panel:** Use the minimize control in the terminal panel header. The panel header stays visible so you can restore the terminal when you need it.
+
+**To kill a terminal session:** Click the trash icon in the terminal panel header. This ends the current terminal session for that worktree.
 
 **To set your default shell:**
 - **macOS/Linux**: Set ZSH or Bash as the default shell in your OS settings and restart your machine.
