@@ -11,23 +11,24 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps, generic]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-05
 llms_include: true
-tags: [open, clone, init, shallow-clone, sparse-checkout]
+tags: [open, clone, init, shallow-clone, sparse-checkout, command-line]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: May 2026</kbd>
 
 Use this page to open an existing local repository, clone a remote repository, or initialize a new repository in GitKraken Desktop. It also covers shallow clone, sparse checkout, and the Repository Management tab so you can choose the right setup path for a new or existing project.
 
 **Requirements and limits**
-- Entry points: Repository Management tab, New Tab, or <kbd>File &gt; Clone / Init / Open</kbd>
+- Entry points: Repository Management tab, New Tab, <kbd>File &gt; Clone / Init / Open</kbd>, or the `gitkraken` command line
 - Open workflow: Requires an existing local Git repository
 - Clone workflow: Requires a remote repository URL or a connected integration
 - Shallow clone: Supports branch, depth, since-date, and custom clone flags
 - Sparse checkout: Root-level files are always checked out even when path rules are applied
 - Initialize workflow: Creates a `.git` directory and can optionally add a `README.md`, `.gitignore`, and `LICENSE`
+- Command line: You can open a repository by passing its path as an argument (for example, `gitkraken .` or `gitkraken /path/to/repo`) without the `--path` flag
 
 ***
 
@@ -37,6 +38,9 @@ Use this page to open an existing local repository, clone a remote repository, o
 **To open an existing local repository:**
 1. Click the folder icon in the top-left corner or press <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
 2. Click **Browse** and select your repository folder.
+
+**To open a repository from the command line:**
+Pass the repository path directly as an argument, for example `gitkraken .` to open the current directory or `gitkraken /path/to/repo` to open a specific path. The `--path` flag is no longer required.
 
 **To clone a remote repository:**
 1. Open the Repository Management tab and click **Clone**.
@@ -98,6 +102,19 @@ To open an existing repo:
 
 You can also access this via the <strong>New Tab</strong> by clicking the + icon.
 
+#### How to open a repository from the command line
+
+You can open a repository in GitKraken Desktop by running the `gitkraken` command and passing the repository path directly as an argument:
+
+```bash
+# Open the current directory
+gitkraken .
+
+# Open a specific repository path
+gitkraken /path/to/repo
+```
+
+The `--path` flag is not required.
 
 #### How to open shallow-cloned repositories
 

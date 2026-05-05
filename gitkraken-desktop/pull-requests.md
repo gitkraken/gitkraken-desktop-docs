@@ -11,20 +11,20 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-05
 llms_include: true
 tags: [pull-requests, review, templates, suggestions, merge]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: May 2026</kbd>
 
 Use this page to create, review, filter, comment on, and merge pull requests in GitKraken Desktop across supported providers such as GitHub, GitLab, Bitbucket, and Azure DevOps. It also covers GitHub-specific review features such as code suggestions, pull request view, and merge options inside the app.
 
 **Requirements and limits**
 - Supported providers on this page: GitHub, GitLab, Bitbucket, and Azure DevOps
 - Precondition: Push your branch to the remote before creating a pull request
-- GitHub-specific features: Pull Request View, code suggestions, and in-app merge options
+- GitHub-specific features: Pull Request View, code suggestions, in-app merge options, and the **Review on GitKraken.dev** button
 - Template support: Pull request templates are supported for GitHub, GitLab, and Azure DevOps
 - Azure DevOps note: If the PR form does not populate, verify the remote URL and integration domain on the Azure DevOps integration page
 - Feature scope varies by provider, so some actions described here are GitHub-only
@@ -50,6 +50,8 @@ Use this page to create, review, filter, comment on, and merge pull requests in 
 1. Select a PR in the Left Panel or click the PR icon in the Launchpad.
 2. Click **Review Code and Suggest Changes** to open the diff view.
 3. Write suggestions directly in the editor. Suggestions are posted as comments on the GitHub PR.
+
+**To review a GitHub pull request on GitKraken.dev:** Click **Review on GitKraken.dev** in the GitHub Pull Request view to open the PR in [GitKraken Code Review](https://gitkraken.dev?source=help_center&product=gitkraken). You can review with cleaner diffs, AI-generated suggestions, and integrated chat, and approve or comment as you would on GitHub.
 
 **To merge a pull request:** Click **Merge pull request** in the GitHub PR view and select a merge strategy (merge commit, squash, or rebase).
 
@@ -193,6 +195,22 @@ From this view, GitHub users can edit:
 - Labels
 
 Click <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Review Code and Suggest Changes</span></button> to review changes.
+
+***
+
+## How to review GitHub pull requests on GitKraken.dev
+
+In the GitHub Pull Request view, click <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Review on GitKraken.dev</span></button> to open the pull request with [GitKraken Code Review](https://gitkraken.dev?source=help_center&product=gitkraken) in your browser.
+
+GitKraken Code Review gives you a faster review experience for GitHub PRs with:
+- Cleaner diffs that are easier to scan
+- AI-generated suggestions to speed up review
+- Integrated chat with the rest of your team
+- The ability to approve and comment just like on GitHub
+
+<div class='callout callout--basic'>
+  <p><strong>Use GitKraken.dev review when:</strong> you want a faster, more focused PR review experience or you want to use AI-assisted suggestions and integrated chat. <strong>Stay in the in-app review when:</strong> you want to suggest code edits directly from GitKraken Desktop and post them as comments on the GitHub PR.</p>
+</div>
 
 ***
 

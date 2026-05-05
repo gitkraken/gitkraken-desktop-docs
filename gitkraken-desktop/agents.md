@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-04
+last_verified: 2026-05
 llms_include: true
 tags: [agents, worktrees, coding-agents, parallel-work, ai, terminal]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: May 2026</kbd>
 
 Use this page to learn how coding agents work in GitKraken Desktop and how to use **Agent Sessions View** to create, monitor, and manage coding agent sessions. Read this page if you want to use external coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, or OpenCode from inside GitKraken Desktop.
 
@@ -39,16 +39,18 @@ This page also helps answer common questions such as:
 - Session model: Each agent session runs in its own Git worktree and working directory
 - Repository setup: Setup commands are configured per repository in <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>
 - Status support: Agent status indicators are available for Claude Code as of version 12.0.0
+- View settings: New agent session worktrees inherit hidden refs, hidden remotes, soloed refs and remotes, and collapsed folders and remotes from the source repository
 - Other agents: You can still run other coding agents manually in the embedded terminal, even if GitKraken does not explicitly integrate with or detect them
 
 | What you want to do | Supported | Where in GitKraken Desktop | Notes |
 |---------------------|-----------|-----------------------------|-------|
-| Start a coding agent session | Yes | Agent Sessions View | Creates a worktree, runs setup commands, and launches the coding agent CLI |
+| Start a coding agent session | Yes | Agent Sessions View, or worktree context menu in the Left Panel | Creates a worktree (when starting a new session), runs setup commands, and launches the coding agent CLI |
 | Start multiple coding agent sessions at the same time | Yes | Agent Sessions View | Each session runs in a separate worktree |
-| Choose a different base branch for a new session | Yes | New Agent Session form | Default base branch is `HEAD` |
+| Choose a different base branch for a new session | Yes | New Agent Session form | Default base branch is `HEAD`. The base branch selector is searchable |
 | Choose a coding agent CLI for a session | Yes | New Agent Session form | Falls back to the coding agent set in Preferences |
 | Monitor agent progress | Yes | Agent Sessions View card | Cards show WIP changes, ahead/behind, and agent status |
 | Respond when an agent is waiting for input | Yes | Agent Sessions View and embedded terminal | Claude Code can show a **Waiting for input** status in the card |
+| Manage a worktree from Agent Sessions View | Yes | Three-dot action menu on each worktree card | Open, lock/unlock, remove, or remove and delete the branch |
 | Configure coding agent CLIs | Yes | <kbd>Preferences > External Tools > Coding Agent</kbd> | GitKraken auto-detects installed CLIs |
 | Configure setup commands for a repository | Yes | <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> | Commands run before the agent launches |
 
@@ -62,8 +64,10 @@ Click **Agents** in the `List | Agents` segmented control at the top of the Left
 **To start a coding agent session:**
 1. Click **+ New Agent Session** at the top of Agent Sessions View.
 2. Enter a branch name.
-3. Optional: choose a base branch, choose a coding agent CLI, or click **Configure setup commands**.
-4. Click **Start**.
+3. Optional: choose a base branch (the selector is searchable), choose a coding agent CLI, or click **Configure setup commands**.
+4. Click **Start Session**.
+
+You can also start an agent session from an existing worktree. Right-click the worktree in the Left Panel and choose the option to start a coding agent session there.
 
 **To monitor an agent session:**
 Review the card for branch name, WIP changes, ahead/behind counts, and agent status.
@@ -183,20 +187,28 @@ Because these settings are under Repo-Specific Preferences, setup commands apply
    <img src='/wp-content/uploads/gkd-agents-new-session-button-20260414.png' class="help-center-img img-bordered" alt="Agent Sessions View in GitKraken Desktop showing the New Agent Session form expanded at the top with a branch name input, Options section with Base branch and Coding agent dropdowns, and a Configure setup commands link.">
 
 3. Enter a branch name.
-4. Optional: review the session options.
 
    | Option | Use it to | Default |
    |--------|-----------|---------|
-   | **Base branch** | Create the new worktree from a different branch | `HEAD` |
+   | **Base branch** | Create the new worktree from a different branch. The selector is searchable, so you can type to filter long branch lists | `HEAD` |
    | **Coding agent** | Launch a specific coding agent CLI for this session | Coding agent set in Preferences |
 
    To update repository setup, click **Configure setup commands** to open <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>.
 
    <img src='/wp-content/uploads/gkd-agents-new-session-form-20260414.png' class="help-center-img img-bordered" alt="The expanded New Agent Session form showing the Coding agent dropdown open with available options including Claude Code, Codex CLI, Open Code, and Gemini CLI.">
 
-5. Click **Start**.
+4. Click **Start Session**.
 
-GitKraken Desktop creates a new worktree from the selected base branch, runs any configured setup commands, and launches the selected coding agent in the embedded terminal.
+GitKraken Desktop creates a new worktree from the selected base branch, runs any configured setup commands, and launches the selected coding agent in the embedded terminal. The new worktree inherits hidden refs, hidden remotes, soloed refs and remotes, and collapsed folders and remotes from the source repository, so you do not need to re-hide branches or remotes after starting the session.
+
+### How to start an agent session from an existing worktree
+
+You can start a coding agent session in a worktree that already exists, without creating a new one:
+
+1. In the Left Panel, right-click the worktree you want to use.
+2. Select the option to start a coding agent session.
+
+GitKraken Desktop launches the configured coding agent CLI in that worktree's terminal session.
 
 ***
 
@@ -213,7 +225,11 @@ Each card in Agent Sessions View represents one worktree and one coding agent se
 
 The status bar at the bottom of each card shows the current session state. Status indicators are available for Claude Code as of version 12.0.0.
 
+When you start a session, the card shows a **Running** status. If you have Claude Code hooks enabled, the card may show a different status that reflects what the agent is doing.
+
 When an agent needs attention, the card can show a bell icon and a **Waiting for input** label. This lets you see that the session needs a response without switching to the terminal first.
+
+If you remove a worktree from the card menu, the card shows visual feedback while the deletion is in progress so you know the action is being processed.
 
 <img src='/wp-content/uploads/gkd-agents-monitoring-status-20260414.png' class="help-center-img img-bordered" alt="Agent Sessions View showing multiple worktree cards with WIP change counts, ahead-behind indicators, and agent status bars displaying various states including Waiting for input.">
 
@@ -239,7 +255,7 @@ This workflow is especially useful when you run multiple coding agent sessions a
 
 For general worktree tasks outside coding agents, see [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/).
 
-Right-click any card in Agent Sessions View to manage that worktree:
+Each worktree card in Agent Sessions View has a three-dot action menu so you can manage that worktree without leaving the Agents view. Right-click the card or open the three-dot menu to see the available actions:
 
 | What you want to do | Action in the card menu | Result |
 |---------------------|-------------------------|--------|
@@ -248,6 +264,7 @@ Right-click any card in Agent Sessions View to manage that worktree:
 | Prevent the worktree from being pruned, moved, or deleted | **Lock this worktree** | Locks the worktree |
 | Re-enable normal worktree management | **Unlock this worktree** | Unlocks the worktree |
 | Remove the session worktree | **Remove this worktree** | Deletes the worktree and its working directory |
+| Remove the worktree and delete its branch in one step | **Remove worktree and delete branch** | Deletes the worktree and its associated branch |
 
 Use these actions after the agent finishes so you can review changes, push the branch, create a pull request, or clean up the worktree.
 
