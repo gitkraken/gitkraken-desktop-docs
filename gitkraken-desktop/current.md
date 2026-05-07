@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-04
+last_verified: 2026-05
 llms_include: true
 tags: [release-notes, changelog, upgrades, version-history]
 og_image: /img/GitKrakenClient-Hero.png
@@ -29,6 +29,19 @@ This release notes page tracks what's new and changing in the current version of
 <a href="https://www.gitkraken.com/download?product=gitkraken&source=help_center" target="_blank" class="button button--basic ">Download Current Version Now</a>
 
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
+
+***
+<a id="v12-1-1"></a>
+## Version 12.1.1
+
+<kbd>Thursday, May 7th, 2026</kbd>
+
+### Improvements 🙌
+ - **Worktrees:**
+   - You can now remove the active worktree directly; GitKraken will switch back to the main worktree before removing it.
+
+### Bug Fixes 🐛
+ - Fixed an issue where GitKraken Desktop could get trapped on the splash screen and fail to start.
 
 ***
 <a id="v12-1-0"></a>
