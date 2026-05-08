@@ -11,7 +11,7 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps, generic]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-05
 llms_include: true
 tags: [tips, productivity, shortcuts, integrations, advanced]
 taxonomy:

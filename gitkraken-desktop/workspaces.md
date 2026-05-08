@@ -11,7 +11,7 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-05
 llms_include: true
 tags: [workspaces, cloud-workspaces, local-workspaces, multi-repo, launchpad]
 taxonomy:
@@ -93,18 +93,6 @@ To access the Repo Management tab:
 
 Cloud Workspaces are accessible from any machine and can be shared with selected [teams](/start-here/teams/) in your organization. They allow for [multi-repository actions](/gitkraken-desktop/workspaces/#cloud-multi-repository-actions) and centralized pull request management.
 
-<div class='callout callout--warning'>
-  <p><strong>Note:</strong> Cloud Workspaces are not available in GitKraken On-Premise Serverless or Self-Hosted Server deployments. See <a href="#how-local-workspaces-work">How Local Workspaces work</a> for the supported alternative in those environments.</p>
-</div>
-
-<div class='callout callout--basic'>
-    <p><strong>Use a Cloud Workspace when:</strong> you need to share repository groups across machines or with teammates. <strong>Don't use a Cloud Workspace when:</strong> the repo list is only for your local machine and does not need shared or synced workspace context.</p>
-</div>
-
-<p>Watch the overview:</p>
-<div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/OIQVsNRqg1M?ecver=1" frameborder="0" allowfullscreen></iframe>
-</div>
 
 ### How to create a Cloud Workspace
 
