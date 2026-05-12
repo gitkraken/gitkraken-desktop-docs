@@ -21,6 +21,10 @@ taxonomy:
 
 Use this page to learn how coding agents work in GitKraken Desktop and how to use **Agent Sessions View** to create, monitor, and manage coding agent sessions. Read this page if you want to use external coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, or OpenCode from inside GitKraken Desktop.
 
+<div class='callout callout--basic'>
+  <p><strong>On-premises note:</strong> GitKraken Desktop gives on-premises teams one place to run multiple coding agents. Agent availability depends on your security policy, network access, and which CLIs your organization allows. OpenCode and Gemini CLI can run in fully air-gapped environments when you point them to an internal model endpoint. Claude Code, Codex CLI, and Copilot CLI are also supported when your organization permits them and the required services are reachable from your environment.</p>
+</div>
+
 <img src='/wp-content/uploads/gkd-agents-panel-overview-20260414.png' class="help-center-img img-bordered" alt="GitKraken Desktop with Agent Sessions View open in the Left Panel. The view shows multiple agent session cards with status indicators alongside the commit graph and an active terminal session running a coding agent.">
 
 A **coding agent** is an external CLI that can work on code in a terminal session. In GitKraken Desktop, each **agent session** runs that CLI in its own [**worktree**](/gitkraken-desktop/worktrees/). **Agent Sessions View** shows those worktrees as agent-focused cards so you can start parallel work, monitor progress, and switch back when an agent needs attention.
@@ -149,6 +153,10 @@ GitKraken Desktop explicitly integrates with these supported coding agent CLIs:
 - [OpenCode](https://opencode.ai/download)
 
 GitKraken auto-detects installed CLIs. You can also add custom CLI arguments that GitKraken passes when it starts a coding agent session.
+
+In on-premises environments, do not assume every supported CLI will be available. The list in GitKraken Desktop depends on which CLIs are installed on the machine and which services your organization allows that machine to access.
+
+If you need fully air-gapped agent workflows, OpenCode and Gemini CLI can run against an internal model endpoint. Claude Code, Codex CLI, and Copilot CLI are supported when your organization permits them and the required services are available inside your environment.
 
 If you use a different coding agent, you can still open a session worktree and run that agent manually in the embedded terminal. The agent does not need to appear in the coding agent configuration for you to use that terminal workflow.
 
