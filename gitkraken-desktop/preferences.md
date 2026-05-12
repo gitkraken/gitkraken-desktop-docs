@@ -130,7 +130,7 @@ Configure your preferred editors, terminals, coding agent commands, and diff/mer
 - **External Editor**: Choose from VS Code, Atom, Sublime, IntelliJ, or custom path
 - **Default Terminal**: Launch from <kbd>File > Open Terminal</kbd> or <kbd>Alt</kbd>/<kbd>Option</kbd> + <kbd>T</kbd>
 - **Use Custom Terminal Command**: Example for PowerShell: `start "" "C:\Program Files\PowerShell\7\pwsh.exe" -noexit -command "cd %d"`
-- **Coding Agent**: Configure custom commands or arguments used when GitKraken Desktop starts a coding agent session. Supported coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode can be auto-detected based on what is installed on your machine. You can choose the coding agent for a session in the New Agent Session form. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
+- **Coding Agent**: Configure custom commands or arguments used when GitKraken Desktop starts a coding agent session. Supported coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode can be auto-detected based on what is installed on your machine. You can choose the coding agent for a session in the New Agent Session form. In on-premises environments, available options depend on what your organization allows and can reach. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 <div class='callout callout--warning'>
   <p><strong>macOS Note:</strong> Use the executable file, not the .app, when selecting a custom editor.</p>

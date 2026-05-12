@@ -28,7 +28,7 @@ This installation guide explains how to install GitKraken Desktop on Windows, ma
 - Linux `.rpm`: RHEL 8+ or Fedora 39+
 - Linux support note: Other distributions may work but are not officially supported
 - Advanced features note: Git command-line tools are optional for basic use, but recommended for features such as the terminal, experimental tools, or Git LFS
-- Coding agent note: Coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode are installed separately from GitKraken Desktop
+- Coding agent note: Coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode are installed separately from GitKraken Desktop. In on-premises environments, availability depends on what your organization allows and can reach
 
 ***
 

@@ -71,7 +71,9 @@ No. They show the same underlying worktrees. List view is reference-focused, whi
 
 ### Are Agent Sessions View and coding agent workflows available for on-prem customers?
 
-Yes. On-premises deployments use the same GitKraken Desktop client for local Desktop workflows such as worktrees, Agent Sessions View, and terminal-based coding agent workflows. Availability of cloud-dependent services still depends on the deployment and environment. For more information, see [Set Up GitKraken Self-Hosted Server (On-Premise)](/gitkraken-desktop/self-hosted/) and [GitKraken On-Premise Serverless (Stand-Alone) Setup](/gitkraken-desktop/serverless/).
+Yes. On-premises deployments use the same GitKraken Desktop client for local workflows such as worktrees, Agent Sessions View, and terminal-based coding agent workflows. However, do not assume every supported coding agent will be available in every on-premises environment.
+
+OpenCode and Gemini CLI can run in fully air-gapped environments when they are configured to use an internal model endpoint. Claude Code, Codex CLI, and Copilot CLI are also supported when your organization permits them and the required services are reachable from the environment. For more information, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/), [Set Up GitKraken Self-Hosted Server (On-Premise)](/gitkraken-desktop/self-hosted/), and [GitKraken On-Premise Serverless (Stand-Alone) Setup](/gitkraken-desktop/serverless/).
 
 ---
 
