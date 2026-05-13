@@ -27,7 +27,6 @@ Use this page to authenticate GitKraken Desktop with Git hosts that do not have 
 - Authentication methods: HTTPS or SSH
 - Supported SSH URL formats: `ssh://{user}@{host}/{repo}` and `{user}@{host}:{repo}`
 - Windows SSH note: Only Pageant is supported as the local SSH agent
-- SSH config limitation: GitKraken Desktop does not support `.ssh/config` aliases
 - Proxy behavior: Windows uses system proxy prompts; macOS and Linux prompt directly in GitKraken Desktop
 
 | Host type | HTTPS | SSH | Special requirement |
@@ -104,7 +103,7 @@ The remote tracking at `origin` is automatically set using this HTTPS format.
 Before cloning via SSH, you must first set up your SSH keys in GitKraken Desktop.
 
 <div class='callout callout--basic'>
-    <p><strong>Use SSH when:</strong> your host or team standard is key-based authentication and you want reusable key-based access across repositories. <strong>Don't use SSH when:</strong> your environment depends on unsupported `.ssh/config` aliases or SSH-agent behavior GitKraken Desktop cannot honor.</p>
+    <p><strong>Use SSH when:</strong> your host or team standard is key-based authentication and you want reusable key-based access across repositories.</p>
 </div>
 
 ### How to set up SSH keys
@@ -165,7 +164,6 @@ Using a local agent can simplify SSH management, especially across multiple prof
 
 - **Windows**: Only Pageant is supported. Download from [PuTTY's site](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 - **Misconfiguration**: Double-check your remote URL format and SSH settings.
-- **SSH config files**: GitKraken Desktop does **not** support `.ssh/config` aliases. Load your key directly or use your OS’s agent.
 
 ***
 

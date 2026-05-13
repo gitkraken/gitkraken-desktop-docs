@@ -25,7 +25,6 @@ This FAQ answers common GitKraken Desktop questions about supported platforms, a
 **Key facts**
 - Supported Linux distributions: Ubuntu 18.04 LTS+, RHEL 8+, and Fedora 39+
 - Multiple accounts: Supported with a paid license by using Profiles
-- SSH limitation: GitKraken does not use `~/.ssh/config`
 - Windows SSH note: Pageant is the supported SSH agent on Windows
 - Community status troubleshooting: Verify that you are signed in with the email associated with your subscription
 
@@ -33,7 +32,6 @@ This FAQ answers common GitKraken Desktop questions about supported platforms, a
 |-------|----------------|
 | Supported Linux distributions | Ubuntu 18.04 LTS+, RHEL 8+, Fedora 39+ |
 | Multiple accounts | Supported with a paid license by using Profiles |
-| `~/.ssh/config` support | GitKraken Desktop does not use `~/.ssh/config` |
 | Windows SSH agent | Pageant is the supported SSH agent on Windows |
 | Subscription shows Community | Verify that you are signed in with the email associated with your subscription |
 
@@ -134,7 +132,6 @@ Verify that you're logged into the email associated with your subscription. Chec
 
 ### Why isn’t GitKraken authenticating my SSH key?
 - Confirm remote URLs start with `ssh://` or `{user}@{host}:{repo}`.
-- GitKraken does not use `~/.ssh/config`. Load the key manually or use your OS agent.
 - On Windows, only Pageant is supported. [Download here](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
 ### Why can’t GitKraken access my GitHub remote?
