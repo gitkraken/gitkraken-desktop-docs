@@ -37,7 +37,7 @@ Use this page to detect likely merge conflicts in GitKraken Desktop before they 
 
 ***
 
-<div class=’callout callout--warning’>
+<div class='callout callout--warning'>
   <p><strong>GitKraken On-Premise users:</strong> Target-branch conflict detection is available in Serverless and Self-Hosted Server deployments. The following features require cloud connectivity and are not available in those environments: Org Member conflict detection (requires a cloud GitKraken Org) and Cloud Patch sharing (requires gitkraken.dev).</p>
 </div>
 
