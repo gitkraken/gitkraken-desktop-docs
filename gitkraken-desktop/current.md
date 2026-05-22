@@ -31,6 +31,23 @@ This release notes page tracks what's new and changing in the current version of
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 
 ***
+<a id="v12-1-2"></a>
+## Version 12.1.2
+
+<kbd>Tuesday, May 19th, 2026</kbd>
+
+### Improvements 🙌
+ - **Agent Sessions view:**
+   - Added sort and filter controls to the worktree list so you can quickly focus on the sessions that matter. Narrow down by status or branch to keep large groups of parallel agent sessions manageable at a glance.
+ - **GitHub Pull Requests:**
+   - Merged PRs now surface as a pill on the Toolbar, Commit Details panel, and worktree cards for their associated branches, giving you instant confirmation that a branch's work has shipped, so you know when it's safe to clean up local branches and worktrees.
+
+### Bug Fixes 🐛
+ - Fixed an issue where extensionless image files were not correctly identified in commit diffs, showing them as editable.
+ - Fixed repeated "Staging paths failed" errors when rebasing across a file/directory name collision.
+ - Fixed an issue where profile and repository management row menus could be visually cut off.
+
+***
 <a id="v12-1-1"></a>
 ## Version 12.1.1
 
