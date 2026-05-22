@@ -38,7 +38,7 @@ If you use coding agents in GitKraken Desktop, Agent Sessions View builds on the
 | Lock worktree | Prevents accidental changes to that worktree | No | Useful when working elsewhere temporarily |
 | Remove worktree | Detaches that working directory from the repository | No | Removes the worktree entry, not shared history |
 | Remove worktree and delete branch | Removes the worktree and deletes its associated branch in one step | No | Available from the worktree context menu in the Left Panel |
-| View worktrees through Agent Sessions View | Shows the same worktrees in an agent-focused interface | No | Adds coding agent session context and quick actions |
+| View worktrees through Agent Sessions View | Shows the same worktrees in an agent-focused interface | No | Adds coding agent session context, quick actions, and a merged PR pill when the branch has a merged GitHub pull request |
 | Commit in a worktree | Records history from that worktree | Yes | Committed changes become visible across all worktrees |
 
 ***
@@ -163,3 +163,7 @@ To change lock status:
 - Right-click the worktree and choose <kbd>Lock this worktree</kbd> or <kbd>Unlock this worktree</kbd>
 
 Locking a worktree prevents accidental changes while you work elsewhere.
+
+<div class='callout callout--basic'>
+  <p><strong>Tip:</strong> A merged PR pill on a worktree card in Agent Sessions View means the branch has a merged GitHub pull request. Use this as a signal that it is safe to remove the worktree and delete the branch.</p>
+</div>
