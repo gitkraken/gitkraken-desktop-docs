@@ -235,8 +235,9 @@ Each card in Agent Sessions View represents one worktree and one coding agent se
 | **WIP change summary** | The count of uncommitted file changes |
 | **Ahead / behind** | Commit counts relative to the remote |
 | **Agent status** | Whether the agent is running, waiting for input, or done |
+| **Merged PR pill** | Whether the branch has an associated merged GitHub pull request |
 
-The status bar at the bottom of each card shows the current session state. Status indicators are available for Claude Code as of version 12.0.0.
+The status bar at the bottom of each card shows the current session state. Status indicators are available for Claude Code as of version 12.0.0. If the branch has a merged GitHub pull request, a merged PR pill appears on the card.
 
 When you start a session, the card shows a **Running** status. If you have Claude Code hooks enabled, the card may show a different status that reflects what the agent is doing.
 

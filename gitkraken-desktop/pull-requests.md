@@ -352,3 +352,17 @@ Pull request icons:
 - <i class='fa fa-check' style="color:green"></i> = CI passed and approved
 - <i class='fa fa-circle' style="color:orange"></i> = CI passed/pending or reviews pending
 - <i class='fa fa-times' style="color:red"></i> = Failing CI or changes requested
+
+***
+
+## How merged pull request status appears in the interface
+
+When a GitHub pull request is merged, GitKraken Desktop surfaces a merged PR status pill in three locations associated with the branch:
+
+| Location | When it appears |
+|----------|-----------------|
+| **Toolbar** | When the branch with a merged PR is checked out |
+| **Commit Details panel** | When you select a commit on the branch with a merged PR |
+| **Worktree cards** (Agent Sessions View) | On the card for the branch with a merged PR |
+
+Use the merged PR pill to confirm that a branch's work has shipped before you delete the branch or remove its worktree.
