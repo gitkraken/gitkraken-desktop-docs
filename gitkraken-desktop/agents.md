@@ -58,6 +58,7 @@ This page also helps answer common questions such as:
 | Manage a worktree from Agent Sessions View | Yes | Three-dot action menu on each worktree card | Open, lock/unlock, remove, or remove and delete the branch |
 | Configure coding agent CLIs | Yes | <kbd>Preferences > External Tools > Coding Agent</kbd> | GitKraken auto-detects installed CLIs. In on-premises environments, the usable CLIs depend on what your organization allows and can reach |
 | Configure setup commands for a repository | Yes | <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> | Commands run before the agent launches |
+| Filter and sort the worktree list | Yes | Sort and filter controls in Agent Sessions View | Filter by status or branch to focus on the sessions that matter |
 
 ***
 
@@ -76,6 +77,9 @@ You can also start an agent session from an existing worktree. Right-click the w
 
 **To monitor an agent session:**
 Review the card for branch name, WIP changes, ahead/behind counts, and agent status.
+
+**To filter or sort agent sessions:**
+Use the sort and filter controls at the top of Agent Sessions View. Filter by status or branch to narrow the list when you are running many parallel sessions.
 
 **To respond when an agent is waiting for input:**
 Open that worktree or switch to its terminal session and respond there.
@@ -243,6 +247,16 @@ If you remove a worktree from the card menu, the card shows visual feedback whil
 <img src='/wp-content/uploads/gkd-agents-monitoring-status-20260414.png' class="help-center-img img-bordered" alt="Agent Sessions View showing multiple worktree cards with WIP change counts, ahead-behind indicators, and agent status bars displaying various states including Waiting for input.">
 
 You can keep working in another worktree while monitoring these cards. When a session finishes, switch to that worktree to review the results.
+
+### How to filter and sort agent sessions
+
+Use the sort and filter controls at the top of Agent Sessions View to manage large groups of parallel sessions:
+
+- **Filter by status** to focus on sessions that are waiting for input, running, or finished.
+- **Filter by branch** to find a specific session quickly.
+- **Sort** the list to bring the most relevant sessions to the top.
+
+These controls affect only how sessions appear in Agent Sessions View. They do not change the underlying worktrees or sessions.
 
 ***
 
