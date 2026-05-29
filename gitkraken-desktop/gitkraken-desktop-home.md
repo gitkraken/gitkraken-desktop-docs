@@ -18,7 +18,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page as the GitKraken Desktop Help Center entry point when you need to find installation guidance, interface walkthroughs, coding agent workflows, worktrees, terminal usage, integrations, release notes, or support resources. It is the best cold-start page for agents and users who need a routing layer into the rest of the documentation set.
 

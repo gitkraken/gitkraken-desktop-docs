@@ -18,7 +18,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to complete the first-time configuration of GitKraken Self-Hosted Server after installation. It covers license upload, authentication mode selection, LDAP setup, SMTP settings, Super User creation, and initial user-management steps needed before the server is ready for administrators and users.
 

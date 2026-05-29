@@ -17,7 +17,7 @@ tags: [terminal, shell, git, commands, auto-complete]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to use the GitKraken Desktop terminal while staying in the context of the open repository, commit graph, and active worktree. It covers how to open the terminal, how command and flag auto-complete works, how terminal sessions behave across worktrees, how to run coding agents manually, and where to change shell and terminal appearance settings.
 

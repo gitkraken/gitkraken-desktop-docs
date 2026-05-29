@@ -17,7 +17,7 @@ tags: [tips, productivity, shortcuts, integrations, advanced]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 This page highlights GitKraken Desktop features that help developers move faster across everyday Git work. Use these tips to set up profiles, navigate with the Command Palette and shortcuts, connect integrations, manage coding agent and worktree workflows, and customize the Commit Graph when you want a more efficient workflow.
 

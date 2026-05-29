@@ -17,7 +17,7 @@ tags: [fork, github, remotes, repositories, integration]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to fork GitHub or GitHub Enterprise Server repositories from GitKraken Desktop and add the fork as a remote without leaving the app. Forking is useful when you need your own copy of a repository to contribute changes, open pull requests, or maintain a separate version of a project.
 

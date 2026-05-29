@@ -17,7 +17,7 @@ tags: [pull-requests, filters, syntax, search, ci]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 This reference explains how to filter pull requests in GitKraken Desktop by title, author, assignee, branch, status, and other supported fields. Use it when you need to narrow large pull request lists quickly or want to know which filter operators work for GitHub and other hosted integrations.
 

@@ -17,7 +17,7 @@ tags: [integrations, git-hosting, issue-trackers, setup]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Integrations connect GitKraken Desktop to Git hosting services and issue trackers so you can clone repositories, manage remotes, review pull requests, and work with issues from one interface. Use this page to find the right integration for GitHub, GitLab, Bitbucket, Azure DevOps, Jira, Trello, and self-hosted services.
 

@@ -17,7 +17,7 @@ tags: [files, folders, create, delete, filter]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 <div class="callout callout--note">
 <p><strong>Note:</strong> This page covers creating, deleting, and filtering files inside a repository. To add or remove a remote repository, see <a href="/gitkraken-desktop/pushing-and-pulling/">Remote Repositories and Pushing/Pulling</a>.</p>

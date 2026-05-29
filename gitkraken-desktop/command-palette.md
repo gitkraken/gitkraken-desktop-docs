@@ -17,7 +17,7 @@ tags: [command-palette, shortcuts, navigation, search, actions]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to run GitKraken Desktop actions from the Command Palette when you want a keyboard-first workflow for commands, files, repositories, worktrees, and settings. It explains how to open the palette, what command categories are available, and when it is faster than navigating the UI directly.
 

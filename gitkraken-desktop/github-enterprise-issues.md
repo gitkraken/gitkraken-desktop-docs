@@ -18,7 +18,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 This page explains how GitKraken Desktop connects to GitHub Enterprise Server Issues so you can preview, filter, and create issues alongside your repository work. Use it when you already work with GitHub Enterprise Server and want issue access inside GitKraken Desktop instead of switching to the web interface.
 

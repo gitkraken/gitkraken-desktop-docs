@@ -17,7 +17,7 @@ tags: [security, compliance, soc2, trust-center]
 taxonomy:
     category: general
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this form to request GitKraken’s SOC 2 report. After you submit the request, GitKraken will email you an NDA to sign and return before the report is shared. This request process is intended for eligible Business and Enterprise customers that need security documentation for vendor review or procurement.
 

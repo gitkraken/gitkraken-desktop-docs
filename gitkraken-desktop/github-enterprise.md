@@ -17,7 +17,7 @@ tags: [github-enterprise-server, self-hosted, token, ssh, pull-requests]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 This page explains how to connect GitKraken Desktop to GitHub Enterprise Server so you can authenticate, browse repositories, manage remotes, upload SSH keys, and work with pull requests from one interface. Use it when setting up a self-hosted GitHub Enterprise Server connection or switching between enterprise accounts with profiles.
 

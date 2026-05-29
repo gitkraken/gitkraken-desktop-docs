@@ -17,7 +17,7 @@ tags: [system-requirements, self-hosted, docker, ports, storage]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to confirm the minimum server resources and supported Linux distributions for GitKraken Self-Hosted before deployment. It summarizes the CPU, memory, storage, and Docker-host operating system requirements you need to validate before starting an installation or upgrade.
 

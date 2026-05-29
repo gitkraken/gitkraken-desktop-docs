@@ -18,7 +18,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to create, configure, and troubleshoot Git hooks in GitKraken Desktop for commit, push, merge, and rebase workflows. It explains where hooks live, how custom hook paths work, which hook types GitKraken triggers, and how to bypass hooks intentionally when a commit should skip automation.
 

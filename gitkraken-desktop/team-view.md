@@ -17,7 +17,7 @@ tags: [team-view, collaboration, conflicts, activity, teams]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to monitor what teammates are currently working on in GitKraken Desktop so you can spot overlapping edits and potential conflicts earlier. Team View shows each teammate’s checked-out branch, local file changes, and activity status, and it is available on Advanced subscription tiers or higher.
 

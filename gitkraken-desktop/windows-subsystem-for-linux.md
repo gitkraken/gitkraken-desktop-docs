@@ -17,7 +17,7 @@ tags: [wsl, wsl2, windows, linux, setup]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to install and run GitKraken Desktop inside Windows Subsystem for Linux 2 (WSL 2) when your repositories live on the Linux file system. It covers WSLg requirements, Linux installation steps, cross-file-system limits, coding agent considerations, and troubleshooting for display, certificate, and environment issues.
 

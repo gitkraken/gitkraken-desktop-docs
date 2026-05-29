@@ -18,7 +18,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 GitHub Actions workflows in GitKraken Desktop are managed by editing the YAML files stored in your repository's `.github/workflows` directory. As of GitKraken Desktop 11.10, workflow management is no longer available from the Left Panel, so use this page when you need the current file-based workflow for creating, editing, or deleting Actions definitions.
 

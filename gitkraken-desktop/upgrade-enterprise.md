@@ -17,7 +17,7 @@ tags: [self-hosted, upgrade, docker, license, super-user]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to upgrade GitKraken Self-Hosted Server, client installers, and license files when your deployment runs on Docker. It also covers the Super User password reset flow, so administrators can handle both standard upgrades and recovery tasks from the same procedure.
 
