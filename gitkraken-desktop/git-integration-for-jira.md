@@ -18,7 +18,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 This page explains how GitKraken Desktop works with the <a href="https://marketplace.atlassian.com/apps/4984/git-integration-for-jira?product=gitkraken&source=help_center" target="_blank">Git Integration for Jira</a> app so you can jump between Jira issues, commits, and file diffs. Use it when your team works in Jira Cloud and you want direct navigation between issue context and Git history.
 

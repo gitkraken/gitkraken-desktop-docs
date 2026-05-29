@@ -18,7 +18,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to cherry pick one or more commits onto your current branch in GitKraken Desktop when you need selected changes without merging an entire branch. It covers single-commit cherry picks, multi-commit interactive cherry pick, and the reorder, squash, reword, and drop actions available before applying changes.
 

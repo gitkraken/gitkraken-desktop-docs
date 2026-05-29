@@ -17,7 +17,7 @@ tags: [submodules, git, update, nested-repos, repositories]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to add, update, initialize, and manage Git submodules in GitKraken Desktop when one repository needs to reference another repository at a fixed commit. It covers how the Submodules pane works, how pointer commits are updated, and where to configure automatic submodule updates.
 

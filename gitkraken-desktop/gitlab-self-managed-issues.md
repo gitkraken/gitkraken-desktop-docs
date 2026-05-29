@@ -18,7 +18,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to connect GitKraken Desktop to GitLab Self-Managed Issues so you can preview, manage, filter, and branch from issues alongside your repository work. This integration shares the GitLab Self-Managed connection, requires GitLab Self-Managed 13.1 or newer, and is view-only for Community users.
 

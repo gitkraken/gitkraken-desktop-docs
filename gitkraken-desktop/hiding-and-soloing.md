@@ -17,7 +17,7 @@ tags: [hide, solo, branches, commit-graph, left-panel]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Hide and Solo help you reduce Commit Graph clutter in GitKraken Desktop without changing your repository. Use Hide to temporarily remove branches, tags, remotes, or stashes from view, and use Solo to focus only on the references you want to inspect when reviewing history or navigating a busy graph.
 

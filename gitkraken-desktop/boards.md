@@ -18,7 +18,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 <div class='callout callout--danger'>
     <p> GitKraken Boards and GitKraken Timelines has sunset at the end of 2022. Please read our <a href="https://www.gitkraken.com/boards-and-timelines?product=gitkraken&source=help_center" target="_blank">full announcement and FAQ</a> to learn more. </p>

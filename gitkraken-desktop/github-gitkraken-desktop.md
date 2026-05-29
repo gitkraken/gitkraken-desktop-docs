@@ -17,7 +17,7 @@ tags: [github, integration, oauth, ssh, pull-requests]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to connect GitKraken Desktop to GitHub for sign-in, repository access, SSH setup, pull request work, and account management. It covers GitHub.com workflows inside GitKraken Desktop, highlights plan-related limits such as multiple profiles and Community plan restrictions, and points to troubleshooting steps when authentication or repo discovery fails.
 

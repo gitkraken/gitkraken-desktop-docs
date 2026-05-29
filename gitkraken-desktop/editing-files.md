@@ -18,7 +18,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to open, edit, save, discard, stage, and preview files in GitKraken Desktop’s built-in editor. It covers the different ways to enter edit mode, what the editor indicators mean, how save-and-stage behaves, and how to review or override file encoding when UTF-8 is not enough.
 

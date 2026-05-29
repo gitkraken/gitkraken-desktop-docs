@@ -17,7 +17,7 @@ tags: [push, pull, fetch, upstream, remotes]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to push, pull, fetch, add remotes, and set upstream branches in GitKraken Desktop when you need to synchronize local branches with a remote. It also explains the available pull behaviors, drag-and-drop shortcuts, and when GitKraken prompts you for remote creation or force-push decisions.
 

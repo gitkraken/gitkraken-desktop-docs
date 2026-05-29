@@ -17,7 +17,7 @@ tags: [interactive-rebase, history, squash, reword, drop]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to run interactive rebase in GitKraken Desktop when you need to reorder, combine, rename, or drop commits before sharing or merging a branch. It explains how to start the rebase, what the available actions do, and which branch and history conditions must be met before the workflow is available.
 

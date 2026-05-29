@@ -17,7 +17,7 @@ tags: [open, clone, init, shallow-clone, sparse-checkout, command-line]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to open an existing local repository, clone a remote repository, or initialize a new repository in GitKraken Desktop. It also covers shallow clone, sparse checkout, and the Repository Management tab so you can choose the right setup path for a new or existing project.
 

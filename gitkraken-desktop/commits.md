@@ -17,7 +17,7 @@ tags: [commits, amend, revert, reset, co-authors]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to create commits, stage files, add co-authors, work with commit templates, amend recent history, and undo or revert changes in GitKraken Desktop. Basic local commit workflows are available in the app, while actions that rewrite pushed history require extra care because they may require a force push.
 

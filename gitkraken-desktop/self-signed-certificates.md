@@ -17,7 +17,7 @@ tags: [certificates, ssl, self-signed, trust, troubleshooting]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to install a self-signed SSL certificate so GitKraken Desktop can trust a private or internally signed remote host. It covers browser-based certificate export on Windows and macOS, Linux certificate installation steps, common SSL error messages, and how Git Executable respects global Git SSL settings.
 
