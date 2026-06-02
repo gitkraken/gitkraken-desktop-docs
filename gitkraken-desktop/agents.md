@@ -68,10 +68,7 @@ This page also helps answer common questions such as:
 Click **Agents** in the `List | Agents` segmented control at the top of the Left Panel.
 
 **To start a coding agent session:**
-1. Click **+ New Agent Session** at the top of Agent Sessions View.
-2. Enter a branch name.
-3. Optional: choose a base branch (the selector is searchable), choose a coding agent CLI, or click **Configure setup commands**.
-4. Click **Start Session**.
+Click **+ New Agent Session** at the top of Agent Sessions View to start a session immediately with generated defaults. To customize the branch name, base branch, or coding agent before starting, click the split button arrow next to the button to open the customization options.
 
 You can also start an agent session from an existing worktree. Right-click the worktree in the Left Panel and choose the option to start a coding agent session there.
 
@@ -195,22 +192,21 @@ Because these settings are under Repo-Specific Preferences, setup commands apply
 ## How to create a new coding agent session
 
 1. Open **Agent Sessions View** by clicking **Agents** in the Left Panel.
-2. Click **+ New Agent Session**.
+2. Click **+ New Agent Session** to start a session immediately. GitKraken Desktop generates a branch name automatically and uses the coding agent configured in your Preferences.
 
-   <img src='/wp-content/uploads/gkd-agents-new-session-button-20260414.png' class="help-center-img img-bordered" alt="Agent Sessions View in GitKraken Desktop showing the New Agent Session form expanded at the top with a branch name input, Options section with Base branch and Coding agent dropdowns, and a Configure setup commands link.">
+   <img src='/wp-content/uploads/gkd-agents-new-session-button-20260414.png' class="help-center-img img-bordered" alt="Agent Sessions View in GitKraken Desktop showing the New Agent Session button at the top, with a split button arrow for accessing customization options.">
 
-3. Enter a branch name.
+   To customize before starting, click the **split button arrow** next to the button to open the options form:
 
    | Option | Use it to | Default |
    |--------|-----------|---------|
+   | **Branch name** | Set a specific branch name for the new worktree | Auto-generated |
    | **Base branch** | Create the new worktree from a different branch. The selector is searchable, so you can type to filter long branch lists | `HEAD` |
    | **Coding agent** | Launch a specific coding agent CLI for this session | Coding agent set in Preferences |
 
    To update repository setup, click **Configure setup commands** to open <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>.
 
-   <img src='/wp-content/uploads/gkd-agents-new-session-form-20260414.png' class="help-center-img img-bordered" alt="The expanded New Agent Session form showing the Coding agent dropdown open with available options including Claude Code, Codex CLI, Open Code, and Gemini CLI.">
-
-4. Click **Start Session**.
+   <img src='/wp-content/uploads/gkd-agents-new-session-form-20260414.png' class="help-center-img img-bordered" alt="The New Agent Session customization form showing branch name input, Base branch selector, Coding agent dropdown, and a Configure setup commands link.">
 
 GitKraken Desktop creates a new worktree from the selected base branch, runs any configured setup commands, and launches the selected coding agent in the embedded terminal. The new worktree inherits hidden refs, hidden remotes, soloed refs and remotes, and collapsed folders and remotes from the source repository, so you do not need to re-hide branches or remotes after starting the session.
 
