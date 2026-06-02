@@ -30,6 +30,22 @@ This release notes page tracks what's new and changing in the current version of
 
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 
+<a id="v12-2-0"></a>
+## Version 12.2.0
+
+<kbd>Tuesday, June 2nd, 2026</kbd>
+
+
+### Improvements 🙌
+ - **Agent Sessions view:**
+   - Added live status support for OpenCode agent sessions.
+      - Navigate to *Preferences > External Tools* to install or uninstall the OpenCode plugin for reporting live agent status.
+   - The New Agent Session button now starts a session immediately with generated defaults, while customization options remain available from the split button menu.
+ - Added a "Rebase onto this commit" option when right-clicking a commit that has no branches.
+
+### Bug Fixes 🐛
+ - Fixed an issue where switching between Inline, Split, and Hunk views in the File History panel had no effect when File History was opened from a file's context menu.
+
 ***
 <a id="v12-1-2"></a>
 ## Version 12.1.2
