@@ -30,6 +30,8 @@ This release notes page tracks what's new and changing in the current version of
 
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
 
+***
+
 <a id="v12-2-0"></a>
 ## Version 12.2.0
 
