@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-05
+last_verified: 2026-06
 llms_include: true
 tags: [agents, worktrees, coding-agents, parallel-work, ai, terminal]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to learn how coding agents work in GitKraken Desktop and how to use **Agent Sessions View** to create, monitor, and manage coding agent sessions. Read this page if you want to use external coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, or OpenCode from inside GitKraken Desktop.
 
@@ -42,7 +42,7 @@ This page also helps answer common questions such as:
 - Coding agent CLI: Install and configure a supported coding agent CLI in <kbd>Preferences > External Tools > Coding Agent</kbd>
 - Session model: Each agent session runs in its own Git worktree and working directory
 - Repository setup: Setup commands are configured per repository in <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>
-- Status support: Agent status indicators are available for Claude Code as of version 12.0.0
+- Status support: Agent status indicators are available for Claude Code (as of version 12.0.0) and OpenCode (as of version 12.2.0)
 - View settings: New agent session worktrees inherit hidden refs, hidden remotes, soloed refs and remotes, and collapsed folders and remotes from the source repository
 - Other agents: You can still run other coding agents manually in the embedded terminal, even if GitKraken does not explicitly integrate with or detect them
 - On-premises environments: Available coding agents may be limited by your organization's security restrictions, internal approvals, or air-gapped network design
@@ -68,10 +68,7 @@ This page also helps answer common questions such as:
 Click **Agents** in the `List | Agents` segmented control at the top of the Left Panel.
 
 **To start a coding agent session:**
-1. Click **+ New Agent Session** at the top of Agent Sessions View.
-2. Enter a branch name.
-3. Optional: choose a base branch (the selector is searchable), choose a coding agent CLI, or click **Configure setup commands**.
-4. Click **Start Session**.
+Click **+ New Agent Session** at the top of Agent Sessions View to start a session immediately with generated defaults. To customize the branch name, base branch, or coding agent before starting, click the split button arrow next to the button to open the customization options.
 
 You can also start an agent session from an existing worktree. Right-click the worktree in the Left Panel and choose the option to start a coding agent session there.
 
@@ -195,22 +192,21 @@ Because these settings are under Repo-Specific Preferences, setup commands apply
 ## How to create a new coding agent session
 
 1. Open **Agent Sessions View** by clicking **Agents** in the Left Panel.
-2. Click **+ New Agent Session**.
+2. Click **+ New Agent Session** to start a session immediately. GitKraken Desktop generates a branch name automatically and uses the coding agent configured in your Preferences.
 
-   <img src='/wp-content/uploads/gkd-agents-new-session-button-20260414.png' class="help-center-img img-bordered" alt="Agent Sessions View in GitKraken Desktop showing the New Agent Session form expanded at the top with a branch name input, Options section with Base branch and Coding agent dropdowns, and a Configure setup commands link.">
+   <img src='/wp-content/uploads/gkd-agents-new-session-button-20260414.png' class="help-center-img img-bordered" alt="Agent Sessions View in GitKraken Desktop showing the New Agent Session button at the top, with a split button arrow for accessing customization options.">
 
-3. Enter a branch name.
+   To customize before starting, click the **split button arrow** next to the button to open the options form:
 
    | Option | Use it to | Default |
    |--------|-----------|---------|
+   | **Branch name** | Set a specific branch name for the new worktree | Auto-generated |
    | **Base branch** | Create the new worktree from a different branch. The selector is searchable, so you can type to filter long branch lists | `HEAD` |
    | **Coding agent** | Launch a specific coding agent CLI for this session | Coding agent set in Preferences |
 
    To update repository setup, click **Configure setup commands** to open <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>.
 
-   <img src='/wp-content/uploads/gkd-agents-new-session-form-20260414.png' class="help-center-img img-bordered" alt="The expanded New Agent Session form showing the Coding agent dropdown open with available options including Claude Code, Codex CLI, Open Code, and Gemini CLI.">
-
-4. Click **Start Session**.
+   <img src='/wp-content/uploads/gkd-agents-new-session-form-20260414.png' class="help-center-img img-bordered" alt="The New Agent Session customization form showing branch name input, Base branch selector, Coding agent dropdown, and a Configure setup commands link.">
 
 GitKraken Desktop creates a new worktree from the selected base branch, runs any configured setup commands, and launches the selected coding agent in the embedded terminal. The new worktree inherits hidden refs, hidden remotes, soloed refs and remotes, and collapsed folders and remotes from the source repository, so you do not need to re-hide branches or remotes after starting the session.
 
@@ -237,7 +233,7 @@ Each card in Agent Sessions View represents one worktree and one coding agent se
 | **Agent status** | Whether the agent is running, waiting for input, or done |
 | **Merged PR pill** | Whether the branch has an associated merged GitHub pull request |
 
-The status bar at the bottom of each card shows the current session state. Status indicators are available for Claude Code as of version 12.0.0. If the branch has a merged GitHub pull request, a merged PR pill appears on the card.
+The status bar at the bottom of each card shows the current session state. Status indicators are available for Claude Code (as of version 12.0.0) and OpenCode (as of version 12.2.0). If the branch has a merged GitHub pull request, a merged PR pill appears on the card.
 
 When you start a session, the card shows a **Running** status. If you have Claude Code hooks enabled, the card may show a different status that reflects what the agent is doing.
 
@@ -294,25 +290,45 @@ Use these actions after the agent finishes so you can review changes, push the b
 
 ***
 
-## How to uninstall or reinstall Agent Status hooks
+## How to install, uninstall, or reinstall agent status plugins and hooks
 
-The GitKraken CLI registers hooks on Claude Code's lifecycle events (session start/end, tool use, prompt submission, permission requests, and similar) and forwards those events to the local gk process to display agent status in GitKraken. Only event metadata is sent, prompt content, agent output, and source code are not captured.
+GitKraken Desktop uses agent-specific integrations to report live status in Agent Sessions View. Only event metadata is sent. Prompt content, agent output, and source code are not captured.
 
-### Uninstalling Agent Status Hooks
+### Claude Code status hooks
+
+The GitKraken CLI registers hooks on Claude Code's lifecycle events (session start/end, tool use, prompt submission, permission requests, and similar) and forwards those events to the local gk process to display agent status. 
+
+#### Uninstalling Claude Code hooks
 
 1. Click the **Preferences** icon on the top right. 
-2. Navigate to the **External Tools** tab
-3. In the **Coding Agent** area, next to **Claude Code Hooks**, click **Uninstall Hooks**
+2. Navigate to the **External Tools** tab.
+3. In the **Coding Agent** area, next to **Claude Code Hooks**, click **Uninstall Hooks**.
 
    <img src='/wp-content/uploads/gkd-agents-uninstall-hooks.png' class="help-center-img img-bordered" alt="How to uninstall Claude Code agent status hooks in the GitKraken UI.">
 
-### Reinstalling Agent Status Hooks
+#### Reinstalling Claude Code hooks
 
 1. Click the **Preferences** icon on the top right.
 2. Navigate to the **External Tools** tab.
-3. In the **Coding Agents** area, next to **Claude Code Hooks**, click **Reinstall Hooks**
+3. In the **Coding Agents** area, next to **Claude Code Hooks**, click **Reinstall Hooks**.
 
    <img src='/wp-content/uploads/gkd-agents-reinstall-hooks.png' class="help-center-img img-bordered" alt="How to reinstall Claude Code agent status hooks in the GitKraken UI.">
+
+### OpenCode status plugin
+
+GitKraken Desktop uses an OpenCode plugin to report live agent status for OpenCode sessions.
+
+#### Installing the OpenCode plugin
+
+1. Click the **Preferences** icon on the top right.
+2. Navigate to the **External Tools** tab.
+3. In the **Coding Agent** area, next to **OpenCode Plugin**, click **Install Plugin**.
+
+#### Uninstalling the OpenCode plugin
+
+1. Click the **Preferences** icon on the top right.
+2. Navigate to the **External Tools** tab.
+3. In the **Coding Agent** area, next to **OpenCode Plugin**, click **Uninstall Plugin**.
 
 ***
 
@@ -361,6 +377,6 @@ Yes. GitKraken Desktop explicitly integrates with supported coding agent CLIs su
 
 Go to <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>. Setup commands run in sequence in the new worktree before the coding agent launches.
 
-### Why does GitKraken install hooks to Claude Code?
+### Why does GitKraken install hooks or plugins for agent status?
 
-GitKraken registers hooks with Claude Code that reports agent status events — such as when an agent starts, finishes, or changes state —  to a local GitKraken process so that activity can be displayed in the Agent Sessions View. The hook sends status metadata only; it does not transmit prompt content, agent responses, or source code.
+GitKraken registers hooks with Claude Code and installs a plugin for OpenCode. These integrations report agent status events (such as when an agent starts, finishes, or changes state) to a local GitKraken process, which displays them in Agent Sessions View. Only status metadata is sent. Prompt content, agent responses, and source code are not transmitted.

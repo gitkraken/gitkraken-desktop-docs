@@ -81,6 +81,7 @@ Below is a list of supported commands grouped by category.
 - `Close Tab`
 - `Open Repo`
 - `Open in file manager`
+- `Open in [IDE name]`
 - `Open in External Editor`
 - `Open in External Diff/Merge Tool`
 - `Open in terminal`
@@ -88,6 +89,8 @@ Below is a list of supported commands grouped by category.
 - `Repo Management: Init`
 - `Repo Management: Open`
 - `Perform Repo Maintenance`
+
+GitKraken Desktop detects installed IDEs and lists each one as a separate **Open in…** command (for example, `Open in VS Code` or `Open in WebStorm`). The available options depend on which editors are installed on your machine.
 
 `Open in terminal` is especially useful when you want to start a command-line workflow in the current repository or worktree, including a manual coding agent workflow. For more information, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/) and [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
