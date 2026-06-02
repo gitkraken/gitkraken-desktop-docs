@@ -358,3 +358,12 @@ GitKraken Desktop provides two ways to do this:
 3. Select **Rebase N commits onto [branch]**.
 
 GitKraken Desktop rebases the selected commit and all subsequent commits up to the branch head onto the target branch.
+
+### How to rebase onto a specific commit
+
+If a commit in the graph has no branches attached to it, you can rebase the current branch onto that exact commit:
+
+1. Right-click the commit in the Commit Graph.
+2. Select **Rebase onto this commit**.
+
+GitKraken Desktop replays the commits from the current branch's HEAD onto the selected commit. This lets you rebase onto a specific point in history without creating a temporary branch.
