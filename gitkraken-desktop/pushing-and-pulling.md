@@ -73,6 +73,8 @@ To add a remote:
   <p><strong>Note:</strong> Integration dropdowns show forks only. For non-fork remotes, use the URL option.</p>
 </div>
 
+If the current repository is a shallow clone, the **Add Remote** dialog includes shallow clone options (depth, since date, and custom flags) so the new remote is fetched with the same depth constraints as the original clone.
+
 Remote icons in the Commit Graph:
 - <i class="fab fa-github"></i> GitHub
 - <i class="fab fa-bitbucket"></i> Bitbucket
