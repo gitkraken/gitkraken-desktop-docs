@@ -42,7 +42,7 @@ This page also helps answer common questions such as:
 - Coding agent CLI: Install and configure a supported coding agent CLI in <kbd>Preferences > External Tools > Coding Agent</kbd>
 - Session model: Each agent session runs in its own Git worktree and working directory
 - Repository setup: Setup commands are configured per repository in <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>
-- Status support: Agent status indicators are available for Claude Code as of version 12.0.0
+- Status support: Agent status indicators are available for Claude Code (as of version 12.0.0) and OpenCode (as of version 12.2.0)
 - View settings: New agent session worktrees inherit hidden refs, hidden remotes, soloed refs and remotes, and collapsed folders and remotes from the source repository
 - Other agents: You can still run other coding agents manually in the embedded terminal, even if GitKraken does not explicitly integrate with or detect them
 - On-premises environments: Available coding agents may be limited by your organization's security restrictions, internal approvals, or air-gapped network design
@@ -233,7 +233,7 @@ Each card in Agent Sessions View represents one worktree and one coding agent se
 | **Agent status** | Whether the agent is running, waiting for input, or done |
 | **Merged PR pill** | Whether the branch has an associated merged GitHub pull request |
 
-The status bar at the bottom of each card shows the current session state. Status indicators are available for Claude Code as of version 12.0.0. If the branch has a merged GitHub pull request, a merged PR pill appears on the card.
+The status bar at the bottom of each card shows the current session state. Status indicators are available for Claude Code (as of version 12.0.0) and OpenCode (as of version 12.2.0). If the branch has a merged GitHub pull request, a merged PR pill appears on the card.
 
 When you start a session, the card shows a **Running** status. If you have Claude Code hooks enabled, the card may show a different status that reflects what the agent is doing.
 
@@ -290,25 +290,45 @@ Use these actions after the agent finishes so you can review changes, push the b
 
 ***
 
-## How to uninstall or reinstall Agent Status hooks
+## How to install, uninstall, or reinstall agent status plugins and hooks
 
-The GitKraken CLI registers hooks on Claude Code's lifecycle events (session start/end, tool use, prompt submission, permission requests, and similar) and forwards those events to the local gk process to display agent status in GitKraken. Only event metadata is sent, prompt content, agent output, and source code are not captured.
+GitKraken Desktop uses agent-specific integrations to report live status in Agent Sessions View. Only event metadata is sent. Prompt content, agent output, and source code are not captured.
 
-### Uninstalling Agent Status Hooks
+### Claude Code status hooks
+
+The GitKraken CLI registers hooks on Claude Code's lifecycle events (session start/end, tool use, prompt submission, permission requests, and similar) and forwards those events to the local gk process to display agent status. 
+
+#### Uninstalling Claude Code hooks
 
 1. Click the **Preferences** icon on the top right. 
-2. Navigate to the **External Tools** tab
-3. In the **Coding Agent** area, next to **Claude Code Hooks**, click **Uninstall Hooks**
+2. Navigate to the **External Tools** tab.
+3. In the **Coding Agent** area, next to **Claude Code Hooks**, click **Uninstall Hooks**.
 
    <img src='/wp-content/uploads/gkd-agents-uninstall-hooks.png' class="help-center-img img-bordered" alt="How to uninstall Claude Code agent status hooks in the GitKraken UI.">
 
-### Reinstalling Agent Status Hooks
+#### Reinstalling Claude Code hooks
 
 1. Click the **Preferences** icon on the top right.
 2. Navigate to the **External Tools** tab.
-3. In the **Coding Agents** area, next to **Claude Code Hooks**, click **Reinstall Hooks**
+3. In the **Coding Agents** area, next to **Claude Code Hooks**, click **Reinstall Hooks**.
 
    <img src='/wp-content/uploads/gkd-agents-reinstall-hooks.png' class="help-center-img img-bordered" alt="How to reinstall Claude Code agent status hooks in the GitKraken UI.">
+
+### OpenCode status plugin
+
+GitKraken Desktop uses an OpenCode plugin to report live agent status for OpenCode sessions.
+
+#### Installing the OpenCode plugin
+
+1. Click the **Preferences** icon on the top right.
+2. Navigate to the **External Tools** tab.
+3. In the **Coding Agent** area, next to **OpenCode Plugin**, click **Install Plugin**.
+
+#### Uninstalling the OpenCode plugin
+
+1. Click the **Preferences** icon on the top right.
+2. Navigate to the **External Tools** tab.
+3. In the **Coding Agent** area, next to **OpenCode Plugin**, click **Uninstall Plugin**.
 
 ***
 
@@ -357,6 +377,6 @@ Yes. GitKraken Desktop explicitly integrates with supported coding agent CLIs su
 
 Go to <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>. Setup commands run in sequence in the new worktree before the coding agent launches.
 
-### Why does GitKraken install hooks to Claude Code?
+### Why does GitKraken install hooks or plugins for agent status?
 
-GitKraken registers hooks with Claude Code that reports agent status events — such as when an agent starts, finishes, or changes state —  to a local GitKraken process so that activity can be displayed in the Agent Sessions View. The hook sends status metadata only; it does not transmit prompt content, agent responses, or source code.
+GitKraken registers hooks with Claude Code and installs a plugin for OpenCode. These integrations report agent status events (such as when an agent starts, finishes, or changes state) to a local GitKraken process, which displays them in Agent Sessions View. Only status metadata is sent. Prompt content, agent responses, and source code are not transmitted.
