@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-05
+last_verified: 2026-06
 llms_include: true
 tags: [agents, worktrees, coding-agents, parallel-work, ai, terminal]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2026</kbd>
+<kbd>Last updated: June 2026</kbd>
 
 Use this page to learn how coding agents work in GitKraken Desktop and how to use **Agent Sessions View** to create, monitor, and manage coding agent sessions. Read this page if you want to use external coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, or OpenCode from inside GitKraken Desktop.
 
