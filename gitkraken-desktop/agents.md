@@ -47,19 +47,6 @@ This page also helps answer common questions such as:
 - Other agents: You can still run other coding agents manually in the embedded terminal, even if GitKraken does not explicitly integrate with or detect them
 - On-premises environments: Available coding agents may be limited by your organization's security restrictions, internal approvals, or air-gapped network design
 
-| What you want to do | Supported | Where in GitKraken Desktop | Notes |
-|---------------------|-----------|-----------------------------|-------|
-| Start a coding agent session | Yes | Agent Sessions View, or worktree context menu in the Left Panel | Creates a worktree (when starting a new session), runs setup commands, and launches the coding agent CLI |
-| Start multiple coding agent sessions at the same time | Yes | Agent Sessions View | Each session runs in a separate worktree |
-| Choose a different base branch for a new session | Yes | New Agent Session form | Default base branch is `HEAD`. The base branch selector is searchable |
-| Choose a coding agent CLI for a session | Yes | New Agent Session form | Falls back to the coding agent set in Preferences. Available options depend on the CLIs installed and allowed in your environment |
-| Monitor agent progress | Yes | Agent Sessions View card | Cards show WIP changes, ahead/behind, and agent status |
-| Respond when an agent is waiting for input | Yes | Agent Sessions View and embedded terminal | Claude Code can show a **Waiting for input** status in the card |
-| Manage a worktree from Agent Sessions View | Yes | Three-dot action menu on each worktree card | Open, lock/unlock, remove, or remove and delete the branch |
-| Configure coding agent CLIs | Yes | <kbd>Preferences > External Tools > Coding Agent</kbd> | GitKraken auto-detects installed CLIs. In on-premises environments, the usable CLIs depend on what your organization allows and can reach |
-| Configure setup commands for a repository | Yes | <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> | Commands run before the agent launches |
-| Filter and sort the worktree list | Yes | Sort and filter controls in Agent Sessions View | Filter by status or branch to focus on the sessions that matter |
-
 ***
 
 ## Quick start for coding agents in GitKraken Desktop
