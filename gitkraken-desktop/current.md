@@ -32,6 +32,25 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 
 ***
 
+<a id="v12-2-1"></a>
+## Version 12.2.1
+
+<kbd>Tuesday, June 16th, 2026</kbd>
+
+### Improvements 🙌
+ - The embedded terminal now dims slightly when focus is elsewhere in the app, making it clearer where keystrokes will land.
+ - Merged PR pills now also appear for GitLab merge requests in the Toolbar, Commit Details panel, and worktree cards, so you know when a branch's work has shipped.
+
+### Bug Fixes 🐛
+ - Fixed an issue where multi-selecting the WIP and a commit in the graph showed the wrong diff for a specific modified file.
+ - Fixed an issue on Windows where comparing the WIP with a commit could show an entire file as changed because of line-ending differences.
+ - Fixed an issue where multi-selecting the WIP and a commit in the graph prevented the navigation of files with the keyboard from working correctly.
+ - Fixed an issue where GitKraken could spawn background processes uncontrollably while a terminal was open on macOS.
+ - Fixed an issue where committing inside a submodule outside of GitKraken Desktop did not refresh the parent repository's WIP view.
+ - Fixed an issue where the Diff View of a selected WIP file kept showing stale content after the file changed externally, showing outdated commit information for submodules.
+
+***
+
 <a id="v12-2-0"></a>
 ## Version 12.2.0
 
