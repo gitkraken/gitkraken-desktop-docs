@@ -314,7 +314,7 @@ Choose:
 
 ## How the active pull requests panel works
 
-Active PRs appear with this icon <em class='context-menu'><img style='height:1.5em;' src='/wp-content/uploads/gk-pull-request-icon.svg'></em> and are listed in the PULL REQUESTS section of the Left Panel.
+Active PRs appear with this icon <em class='context-menu'><img alt="" style='height:1.5em;' src='/wp-content/uploads/gk-pull-request-icon.svg'></em> and are listed in the PULL REQUESTS section of the Left Panel.
 
 <figure>
   <img src='/wp-content/uploads/pull-request-icon-and-panel-2025@2x.png' 

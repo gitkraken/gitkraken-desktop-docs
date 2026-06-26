@@ -29,16 +29,16 @@ This page explains GitKraken Desktop data security and storage practices, includ
 - SOC 2 reports are available only to Business and Enterprise customers and require a signed MNDA through the Trust Center.
 
 ## How GitKraken Desktop services collect and store information
-Below is a chart outlining some basic security information regarding the type of data that we collect and how we store it.
+The following table summarizes the data GitKraken Desktop services collect and how GitKraken stores that data.
 
 <table>
   <thead>
     <tr>
       <th><strong>Service</strong></th>
-      <th><strong>What info are we collecting</strong></th>
-      <th><strong>How is this info secured in transfer</strong></th>
-      <th><strong>Where is this info stored</strong></th>
-      <th><strong>How is this info secured in storage</strong></th>
+      <th><strong>Data collected</strong></th>
+      <th><strong>Transfer security</strong></th>
+      <th><strong>Storage location</strong></th>
+      <th><strong>Storage security</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -88,7 +88,7 @@ Below is a chart outlining some basic security information regarding the type of
 </table>
 
 ## How to request the SOC 2 report
-GitKraken and it’s tools are now SOC 2 Certified! If you would like to request a copy of our SOC2 report, please visit our [Trust Center](https://trust.gitkraken.com/) to get the request process started. Please note that in order to provide a copy of the report, we will need you to sign an MNDA.
+GitKraken and its tools are SOC 2 certified. To request a copy of the SOC 2 report, visit the [Trust Center](https://trust.gitkraken.com/) to start the request process. GitKraken requires a signed MNDA before providing a copy of the report.
 
 <div class="bbb-callout bbb--info">
     <div class="irow">

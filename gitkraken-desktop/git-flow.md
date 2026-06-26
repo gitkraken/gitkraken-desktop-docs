@@ -58,7 +58,10 @@ To configure Gitflow in GitKraken Desktop:
 1. Navigate to <code>Preferences > Gitflow</code>.
 2. Optionally, change the default branch names.
 
-<img src="/wp-content/uploads/gitflow-preferences-2025@2x.png" class="help-center-img img-bordered" alt="Gitflow Preferences menu with default branch names">
+<figure>
+  <img src="/wp-content/uploads/gitflow-preferences-2025@2x.png" class="help-center-img img-bordered" alt="Gitflow Preferences menu with default branch names">
+  <figcaption style="text-align: center; color: #888">Gitflow Preferences menu with default branch names.</figcaption>
+</figure>
 
 Once initialized, two branches will always be present:
 
@@ -72,7 +75,10 @@ If these branches don't exist locally, GitKraken Desktop will create them when G
 
 After initializing Gitflow, a Gitflow panel appears in the left sidebar. Use it to start or finish Gitflow branches.
 
-<img src="/wp-content/uploads/giflow-panel-2025@2x.png" class="help-center-img img-bordered" alt="Gitflow panel in left sidebar">
+<figure>
+  <img src="/wp-content/uploads/giflow-panel-2025@2x.png" class="help-center-img img-bordered" alt="Gitflow panel in left sidebar">
+  <figcaption style="text-align: center; color: #888">Gitflow panel in left sidebar.</figcaption>
+</figure>
 
 To create a Gitflow branch:
 
@@ -81,7 +87,10 @@ To create a Gitflow branch:
 
 Branches with a Gitflow prefix appear in the Gitflow panel. Others appear in the local repository section only.
 
-<img src="/wp-content/uploads/prefix-example-2025@2x.png" class="help-center-img img-bordered" alt="Branch name prefixes">
+<figure>
+  <img src="/wp-content/uploads/prefix-example-2025@2x.png" class="help-center-img img-bordered" alt="Branch name prefixes">
+  <figcaption style="text-align: center; color: #888">Branch name prefixes.</figcaption>
+</figure>
 
 <div class='callout callout--basic'>
     <p><strong>Note:</strong> Gitflow organizes features, hotfixes, and releases into separate folders.</p>
@@ -98,7 +107,10 @@ When you finish a feature branch:
 - It's merged into <code>develop</code>.
 - It's deleted from the local repository.
 
-<img src="/wp-content/uploads//finish-feature.gif" class="help-center-img img-bordered" alt="Finishing a feature branch">
+<figure>
+  <img src="/wp-content/uploads//finish-feature.gif" class="help-center-img img-bordered" alt="Finishing a feature branch">
+  <figcaption style="text-align: center; color: #888">Finishing a feature branch.</figcaption>
+</figure>
 
 Optionally, rebase the feature branch onto <code>develop</code> before finishing.
 
@@ -111,9 +123,15 @@ When you finish a release branch:
 - It's merged into both <code>main</code> and <code>develop</code>.
 - A tag is created with the release name.
 
-<img src="/wp-content/uploads/finish-release-context-menu-2025@2x.png" class="help-center-img img-bordered" alt="Context menu for finishing a release">
+<figure>
+  <img src="/wp-content/uploads/finish-release-context-menu-2025@2x.png" class="help-center-img img-bordered" alt="Context menu for finishing a release">
+  <figcaption style="text-align: center; color: #888">Context menu for finishing a release.</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/finish-release-2025@2x.png" class="help-center-img img-bordered" alt="Finish release process">
+<figure>
+  <img src="/wp-content/uploads/finish-release-2025@2x.png" class="help-center-img img-bordered" alt="Finish release process">
+  <figcaption style="text-align: center; color: #888">Finish release process.</figcaption>
+</figure>
 
 ### How hotfix branches work
 
@@ -121,7 +139,10 @@ Hotfix branches are similar to releases but created from <code>main</code>. Use 
 
 Examples include bug fixes or typos that must go live immediately.
 
-<img src="/wp-content/uploads/finish-hotfix-2025@2x.png" class="help-center-img img-bordered" alt="Finish hotfix process">
+<figure>
+  <img src="/wp-content/uploads/finish-hotfix-2025@2x.png" class="help-center-img img-bordered" alt="Finish hotfix process">
+  <figcaption style="text-align: center; color: #888">Finish hotfix process.</figcaption>
+</figure>
 
 When you finish a hotfix:
 
@@ -136,12 +157,21 @@ Create tags from the Gitflow panel or the command line. When tagging from the Gi
 - The tag name matches the branch name (e.g., <code>release/1.0.0</code> → <code>1.0.0</code>).
 - You can add a message to the tag.
 
-<img src="/wp-content/uploads//finish-release-tag.gif" class="help-center-img img-bordered" alt="Tagging during release">
+<figure>
+  <img src="/wp-content/uploads//finish-release-tag.gif" class="help-center-img img-bordered" alt="Tagging during release">
+  <figcaption style="text-align: center; color: #888">Tagging during release.</figcaption>
+</figure>
 
 <br>
 <br>
-<img src="/wp-content/uploads//tag-message.png" class="help-center-img img-bordered" alt="Tag message dialog">
+<figure>
+  <img src="/wp-content/uploads//tag-message.png" class="help-center-img img-bordered" alt="Tag message dialog">
+  <figcaption style="text-align: center; color: #888">Tag message dialog.</figcaption>
+</figure>
 
 In <code>Preferences > Gitflow</code>, set a tag prefix (e.g., <code>v</code>). This prefix is added to tags (e.g., <code>v1.0.0</code>).
 
-<img src="/wp-content/uploads/tag-prefix-2025@2x.png" class="help-center-img img-bordered" alt="Setting tag prefix">
+<figure>
+  <img src="/wp-content/uploads/tag-prefix-2025@2x.png" class="help-center-img img-bordered" alt="Setting tag prefix">
+  <figcaption style="text-align: center; color: #888">Setting tag prefix.</figcaption>
+</figure>

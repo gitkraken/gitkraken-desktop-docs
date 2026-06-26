@@ -25,7 +25,10 @@ Use this page to learn how coding agents work in GitKraken Desktop and how to us
   <p><strong>On-premises note:</strong> GitKraken Desktop gives on-premises teams one place to run multiple coding agents. Agent availability depends on your security policy, network access, and which CLIs your organization allows. OpenCode and Gemini CLI can run in fully air-gapped environments when you point them to an internal model endpoint. Claude Code, Codex CLI, and Copilot CLI are also supported when your organization permits them and the required services are reachable from your environment.</p>
 </div>
 
-<img src='/wp-content/uploads/gkd-agents-panel-overview-20260414.png' class="help-center-img img-bordered" alt="GitKraken Desktop with Agent Sessions View open in the Left Panel. The view shows multiple agent session cards with status indicators alongside the commit graph and an active terminal session running a coding agent.">
+<figure>
+  <img src='/wp-content/uploads/gkd-agents-panel-overview-20260414.png' class="help-center-img img-bordered" alt="GitKraken Desktop with Agent Sessions View open in the Left Panel. The view shows multiple agent session cards with status indicators alongside the commit graph and an active terminal session running a coding agent.">
+  <figcaption style="text-align: center; color: #888">GitKraken Desktop with Agent Sessions View open in the Left Panel. The view shows multiple agent session cards with status indicators alongside the commit graph and an active terminal session running a coding agent.</figcaption>
+</figure>
 
 A **coding agent** is an external CLI that can work on code in a terminal session. In GitKraken Desktop, each **agent session** runs that CLI in its own [**worktree**](/gitkraken-desktop/worktrees/). **Agent Sessions View** shows those worktrees as agent-focused cards so you can start parallel work, monitor progress, and switch back when an agent needs attention.
 
@@ -185,7 +188,10 @@ Go to <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> to define setu
 
 Because these settings are under Repo-Specific Preferences, setup commands apply only to the repository you configure them in.
 
-<img src='/wp-content/uploads/gkd-agents-setup-commands-preferences-20260413.png' class="help-center-img img-bordered" alt="The Agents pane under Repo-Specific Preferences in GitKraken Desktop, showing a Setup commands text area with example commands, one per line, and helper text explaining that commands run in sequence when a new agent session starts.">
+<figure>
+  <img src='/wp-content/uploads/gkd-agents-setup-commands-preferences-20260413.png' class="help-center-img img-bordered" alt="The Agents pane under Repo-Specific Preferences in GitKraken Desktop, showing a Setup commands text area with example commands, one per line, and helper text explaining that commands run in sequence when a new agent session starts.">
+  <figcaption style="text-align: center; color: #888">The Agents pane under Repo-Specific Preferences in GitKraken Desktop, showing a Setup commands text area with example commands, one per line, and helper text explaining that commands run in sequence when a new agent session starts.</figcaption>
+</figure>
 
 ***
 
@@ -194,7 +200,10 @@ Because these settings are under Repo-Specific Preferences, setup commands apply
 1. Open **Agent Sessions View** by clicking **Agents** in the Left Panel.
 2. Click **+ New Agent Session** to start a session immediately. GitKraken Desktop generates a branch name automatically and uses the coding agent configured in your Preferences.
 
-   <img src='/wp-content/uploads/gkd-agents-new-session-button-20260414.png' class="help-center-img img-bordered" alt="Agent Sessions View in GitKraken Desktop showing the New Agent Session button at the top, with a split button arrow for accessing customization options.">
+   <figure>
+     <img src='/wp-content/uploads/gkd-agents-new-session-button-20260414.png' class="help-center-img img-bordered" alt="Agent Sessions View in GitKraken Desktop showing the New Agent Session button at the top, with a split button arrow for accessing customization options.">
+     <figcaption style="text-align: center; color: #888">Agent Sessions View in GitKraken Desktop showing the New Agent Session button at the top, with a split button arrow for accessing customization options.</figcaption>
+   </figure>
 
    To customize before starting, click the **split button arrow** next to the button to open the options form:
 
@@ -206,7 +215,10 @@ Because these settings are under Repo-Specific Preferences, setup commands apply
 
    To update repository setup, click **Configure setup commands** to open <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>.
 
-   <img src='/wp-content/uploads/gkd-agents-new-session-form-20260414.png' class="help-center-img img-bordered" alt="The New Agent Session customization form showing branch name input, Base branch selector, Coding agent dropdown, and a Configure setup commands link.">
+   <figure>
+     <img src='/wp-content/uploads/gkd-agents-new-session-form-20260414.png' class="help-center-img img-bordered" alt="The New Agent Session customization form showing branch name input, Base branch selector, Coding agent dropdown, and a Configure setup commands link.">
+     <figcaption style="text-align: center; color: #888">The New Agent Session customization form showing branch name input, Base branch selector, Coding agent dropdown, and a Configure setup commands link.</figcaption>
+   </figure>
 
 GitKraken Desktop creates a new worktree from the selected base branch, runs any configured setup commands, and launches the selected coding agent in the embedded terminal. The new worktree inherits hidden refs, hidden remotes, soloed refs and remotes, and collapsed folders and remotes from the source repository, so you do not need to re-hide branches or remotes after starting the session.
 
@@ -241,7 +253,10 @@ When an agent needs attention, the card can show a bell icon and a **Waiting for
 
 If you remove a worktree from the card menu, the card shows visual feedback while the deletion is in progress so you know the action is being processed.
 
-<img src='/wp-content/uploads/gkd-agents-monitoring-status-20260414.png' class="help-center-img img-bordered" alt="Agent Sessions View showing multiple worktree cards with WIP change counts, ahead-behind indicators, and agent status bars displaying various states including Waiting for input.">
+<figure>
+  <img src='/wp-content/uploads/gkd-agents-monitoring-status-20260414.png' class="help-center-img img-bordered" alt="Agent Sessions View showing multiple worktree cards with WIP change counts, ahead-behind indicators, and agent status bars displaying various states including Waiting for input.">
+  <figcaption style="text-align: center; color: #888">Agent Sessions View showing multiple worktree cards with WIP change counts, ahead-behind indicators, and agent status bars displaying various states including Waiting for input.</figcaption>
+</figure>
 
 You can keep working in another worktree while monitoring these cards. When a session finishes, switch to that worktree to review the results.
 
@@ -304,7 +319,10 @@ The GitKraken CLI registers hooks on Claude Code's lifecycle events (session sta
 2. Navigate to the **External Tools** tab.
 3. In the **Coding Agent** area, next to **Claude Code Hooks**, click **Uninstall Hooks**.
 
-   <img src='/wp-content/uploads/gkd-agents-uninstall-hooks.png' class="help-center-img img-bordered" alt="How to uninstall Claude Code agent status hooks in the GitKraken UI.">
+   <figure>
+     <img src='/wp-content/uploads/gkd-agents-uninstall-hooks.png' class="help-center-img img-bordered" alt="How to uninstall Claude Code agent status hooks in the GitKraken UI.">
+     <figcaption style="text-align: center; color: #888">How to uninstall Claude Code agent status hooks in the GitKraken UI.</figcaption>
+   </figure>
 
 #### Reinstalling Claude Code hooks
 
@@ -312,7 +330,10 @@ The GitKraken CLI registers hooks on Claude Code's lifecycle events (session sta
 2. Navigate to the **External Tools** tab.
 3. In the **Coding Agents** area, next to **Claude Code Hooks**, click **Reinstall Hooks**.
 
-   <img src='/wp-content/uploads/gkd-agents-reinstall-hooks.png' class="help-center-img img-bordered" alt="How to reinstall Claude Code agent status hooks in the GitKraken UI.">
+   <figure>
+     <img src='/wp-content/uploads/gkd-agents-reinstall-hooks.png' class="help-center-img img-bordered" alt="How to reinstall Claude Code agent status hooks in the GitKraken UI.">
+     <figcaption style="text-align: center; color: #888">How to reinstall Claude Code agent status hooks in the GitKraken UI.</figcaption>
+   </figure>
 
 ### OpenCode status plugin
 

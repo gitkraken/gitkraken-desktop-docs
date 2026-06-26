@@ -80,7 +80,10 @@ Git Large File Storage (Git LFS) is a Git extension that helps you manage large 
 - The actual binary content is stored in `.git/lfs/objects` or hosted on GitHub, GitLab, Bitbucket, or a custom server.
 - Git LFS uses Git hooks and filters to manage file commits and retrieval.
 
-<img src='/wp-content/uploads/lfs-ref-2025@2x.png' class="help-center-img img-bordered" alt="LFS file metadata in GitKraken Desktop" />
+<figure>
+  <img src='/wp-content/uploads/lfs-ref-2025@2x.png' class="help-center-img img-bordered" alt="LFS file metadata in GitKraken Desktop" />
+  <figcaption style="text-align: center; color: #888">LFS file metadata in GitKraken Desktop.</figcaption>
+</figure>
 
 To learn more, visit the [Git LFS documentation](https://github.com/git-lfs/git-lfs).
 
@@ -139,13 +142,25 @@ If versions are missing or outdated, visit:
 3. Edit the **Path** variable.
 4. Click `New` to add paths to Git and Git LFS.
 
-<img src="/wp-content/uploads/lfs-AddPathVariable-0.png" class="help-center-img img-bordered" alt="Windows environment variable dialog">
+<figure>
+  <img src="/wp-content/uploads/lfs-AddPathVariable-0.png" class="help-center-img img-bordered" alt="Windows environment variable dialog">
+  <figcaption style="text-align: center; color: #888">Windows environment variable dialog.</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/lfs-add-env-variable-image1-2025@2x.png" class="help-center-img img-bordered" alt="Add Path Environment Variable Step 1">
+<figure>
+  <img src="/wp-content/uploads/lfs-add-env-variable-image1-2025@2x.png" class="help-center-img img-bordered" alt="Add Path Environment Variable Step 1">
+  <figcaption style="text-align: center; color: #888">Add Path Environment Variable Step 1.</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/lfs-add-env-variable-image2-2025@2x.png" class="help-center-img img-bordered" alt="Add Path Environment Variable Step 2">
+<figure>
+  <img src="/wp-content/uploads/lfs-add-env-variable-image2-2025@2x.png" class="help-center-img img-bordered" alt="Add Path Environment Variable Step 2">
+  <figcaption style="text-align: center; color: #888">Add Path Environment Variable Step 2.</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/lfs-add-env-variable-image3-2025@2x.png" class="help-center-img img-bordered" alt="Add Path Environment Variable Step 3">
+<figure>
+  <img src="/wp-content/uploads/lfs-add-env-variable-image3-2025@2x.png" class="help-center-img img-bordered" alt="Add Path Environment Variable Step 3">
+  <figcaption style="text-align: center; color: #888">Add Path Environment Variable Step 3.</figcaption>
+</figure>
 
 ***
 
@@ -156,18 +171,27 @@ If versions are missing or outdated, visit:
 1. Open the repo in GitKraken Desktop.
 2. Go to <kbd>Preferences > LFS</kbd> and click **Initialize LFS**.
 
-<img src='/wp-content/uploads/lfs-preferences-2025@2x.png' class="help-center-img img-bordered" alt="LFS tab in Preferences">  
+<figure>
+  <img src='/wp-content/uploads/lfs-preferences-2025@2x.png' class="help-center-img img-bordered" alt="LFS tab in Preferences">
+  <figcaption style="text-align: center; color: #888">LFS tab in Preferences.</figcaption>
+</figure>
 
 3. Commit the change to the `.gitattributes` file.
 4. Untrack and re-add existing files to apply the LFS tracking.
 
-<img src='/wp-content/uploads/lfs-gitattributes-2025@2x.png' class="help-center-img img-bordered" alt="Modified .gitattributes file">  
+<figure>
+  <img src='/wp-content/uploads/lfs-gitattributes-2025@2x.png' class="help-center-img img-bordered" alt="Modified .gitattributes file">
+  <figcaption style="text-align: center; color: #888">Modified .gitattributes file.</figcaption>
+</figure>
 
 ### How to initialize Git LFS on a new repository
 
 You can initialize Git LFS during repository creation by selecting _Initialize with LFS_.
 
-<img src='/wp-content/uploads/init-with-lfs-2025@2x.png' class="help-center-img img-bordered" alt="New repo dialog with LFS checkbox">  
+<figure>
+  <img src='/wp-content/uploads/init-with-lfs-2025@2x.png' class="help-center-img img-bordered" alt="New repo dialog with LFS checkbox">
+  <figcaption style="text-align: center; color: #888">New repo dialog with LFS checkbox.</figcaption>
+</figure>
 
 ***
 
@@ -179,14 +203,20 @@ Add file tracking patterns to the `.gitattributes` file. You can do this via:
 - Unstage pane in the Commit Panel
 - Directly editing `.gitattributes`
 
-<img src='/wp-content/uploads/lfs-tracking-patterns-2025@2x.png' class="help-center-img img-bordered" alt="Tracking pattern dialog">  
+<figure>
+  <img src='/wp-content/uploads/lfs-tracking-patterns-2025@2x.png' class="help-center-img img-bordered" alt="Tracking pattern dialog">
+  <figcaption style="text-align: center; color: #888">Tracking pattern dialog.</figcaption>
+</figure>
 
 To track a file:
 
 1. Right-click it under WIP.
 2. Select **LFS > Track file pattern**.
 
-<img src='/wp-content/uploads/add-tracked-file-lfs-2025@2x.png' class="help-center-img img-bordered" alt="LFS file tracking menu">  
+<figure>
+  <img src='/wp-content/uploads/add-tracked-file-lfs-2025@2x.png' class="help-center-img img-bordered" alt="LFS file tracking menu">
+  <figcaption style="text-align: center; color: #888">LFS file tracking menu.</figcaption>
+</figure>
 
 <div class='callout callout--success'>
     <p><strong>Note:</strong> GitKraken Desktop runs an LFS pull automatically after clone or submodule init.</p>
@@ -194,15 +224,24 @@ To track a file:
 
 Files tracked by LFS will show an LFS tag in the Commit Panel:
 
-<img src='/wp-content/uploads/lfs-tags-2025@2x.png' class="help-center-img img-bordered" alt="LFS tag in commit panel">
+<figure>
+  <img src='/wp-content/uploads/lfs-tags-2025@2x.png' class="help-center-img img-bordered" alt="LFS tag in commit panel">
+  <figcaption style="text-align: center; color: #888">LFS tag in commit panel.</figcaption>
+</figure>
 
 Clicking on the file shows the LFS reference information:
 
-<img src='/wp-content/uploads/lfs-ref-2025@2x.png' class="help-center-img img-bordered" alt="LFS reference information">
+<figure>
+  <img src='/wp-content/uploads/lfs-ref-2025@2x.png' class="help-center-img img-bordered" alt="LFS reference information">
+  <figcaption style="text-align: center; color: #888">LFS reference information.</figcaption>
+</figure>
 
 Use the LFS menu in the toolbar to run commands:
 
-<img src='/wp-content/uploads/lfs-actions-2025@2x.png' class="help-center-img img-bordered" alt="LFS toolbar menu">  
+<figure>
+  <img src='/wp-content/uploads/lfs-actions-2025@2x.png' class="help-center-img img-bordered" alt="LFS toolbar menu">
+  <figcaption style="text-align: center; color: #888">LFS toolbar menu.</figcaption>
+</figure>
 
 > ⚠️ Prune is destructive. Use with caution. See the [Git LFS prune docs](https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-prune.adoc).
 

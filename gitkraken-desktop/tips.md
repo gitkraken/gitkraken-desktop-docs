@@ -137,7 +137,10 @@ Control the Commit Graph display with [Hide and Solo](/gitkraken-desktop/hiding-
 
 <div class="flex-wrap" style="align-items: flex-start">
   <div class="flex-item">
-    <img src="/wp-content/uploads/gk-hide-icon-green.svg" class='img-responsive' style="width: 70px; height: 70px" alt="Hide branch icon">
+    <figure>
+      <img src="/wp-content/uploads/gk-hide-icon-green.svg" class='img-responsive' style="width: 70px; height: 70px" alt="Hide branch icon">
+      <figcaption style="text-align: center; color: #888">Hide branch icon.</figcaption>
+    </figure>
   </div>
   <div class="flex-item">
     <h3>Hide</h3>
@@ -147,7 +150,10 @@ Control the Commit Graph display with [Hide and Solo](/gitkraken-desktop/hiding-
 
 <div class="flex-wrap" style="align-items: flex-start">
   <div class="flex-item">
-    <img src="/wp-content/uploads/gk-solo-icon-orange.svg" class='img-responsive' style="width: 70px; height: 70px" alt="Solo branch icon">
+    <figure>
+      <img src="/wp-content/uploads/gk-solo-icon-orange.svg" class='img-responsive' style="width: 70px; height: 70px" alt="Solo branch icon">
+      <figcaption style="text-align: center; color: #888">Solo branch icon.</figcaption>
+    </figure>
   </div>
   <div class="flex-item">
     <h3>Solo</h3>

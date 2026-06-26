@@ -440,7 +440,7 @@ Only return the final commit message—no extra formatting.
 
 To disable GitKraken AI, restrict which AI models are available, or set up organization-wide API keys and custom URLs, see the [GitKraken Dev Security Controls](https://help.gitkraken.com/gk-dev/gk-dev-security-controls/).
 
-You can disable Gitkraken AI locally via <kbd>Preferences > GitKraken AI</kbd>. Keep in mind this setting is not enforced at the organization level and can be re-enabled by individual users.
+You can disable GitKraken AI locally via <kbd>Preferences > GitKraken AI</kbd>. Keep in mind this setting is not enforced at the organization level and can be re-enabled by individual users.
 ***
 
 ## What’s Next?
@@ -450,6 +450,5 @@ Additional AI-powered features are in development to further streamline your wor
 <div class='callout callout--basic'>
     <p>Have more questions about GitKraken AI? Visit our <a href="https://help.gitkraken.com/general/gitkraken-ai-faq">GitKraken AI FAQ page</a> for details.</p>
 </div>
-
 
 

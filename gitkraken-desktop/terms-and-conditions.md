@@ -36,19 +36,19 @@ You can always reach out to us by using the [Contact support](https://help.gitkr
 
 ## What GitKraken Desktop support includes
 
-- Support requests for GitKraken Desktop are to be submitted at [Contact Support](https://help.gitkraken.com/gitkraken-desktop/contact-support/). Users submitting tickets interact primarily through emails, though other communication services, such as phone calls and screen share services, might be used to deliver Support Services.
+- Submit GitKraken Desktop support requests through [Contact Support](https://help.gitkraken.com/gitkraken-desktop/contact-support/). Support communication usually happens by email, though GitKraken might use other communication methods, such as phone calls or screen shares, to deliver Support Services.
 
-- The following product plans are guaranteed support: Pro, Advanced, Business, and Enterprise. Enterprise encompasses Cloud, On-Premise Server, and On-Premise Serverless plans. 
+- The following product plans include guaranteed support: Pro, Advanced, Business, and Enterprise. Enterprise encompasses Cloud, On-Premise Server, and On-Premise Serverless plans.
 
-- Support Hours are 10:00 am to 10:00 pm, Monday to Friday, UTC. While users can submit support requests anytime, responses to requests and interactions with support are provided during Support Hours only. Below are the response times for each of our Plans during support hours.
+- Support hours are 10:00 am to 10:00 pm UTC, Monday through Friday. Users can submit support requests anytime, but GitKraken responds to requests during support hours only. The following table lists response times for each plan during support hours:
 
 |  | PRO | Advanced | Business | Enterprise |
 | :--- | :--- | :--- | :--- | :--- |
-| Response Time | 3 Business Days | 1 Business day | 12 Hours | 6 Hours |
+| Response Time | 3 business days | 1 business day | 12 hours | 6 hours |
 
-- While we try to get to everyone who reaches out, a response is not guaranteed to all users. This includes any users who are on Student and Community plans. We encourage all users to engage in our community and utilize our self service resources. Additional Resources
+- GitKraken tries to respond to everyone who reaches out, but responses are not guaranteed for all users. This includes users on Student and Community plans. GitKraken encourages all users to engage in the community and use self-service resources.
 
-- GitKraken Desktop is available for Windows, Mac, and Linux systems. The current supported versions are on our [how-to-install](/gitkraken-desktop/how-to-install/) page.
+- GitKraken Desktop is available for Windows, macOS, and Linux systems. Current supported versions are listed on the [Install GitKraken Desktop](/gitkraken-desktop/how-to-install/) page.
 
 ### How long GitKraken supports generally available releases
  

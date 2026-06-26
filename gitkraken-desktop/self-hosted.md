@@ -40,7 +40,7 @@ Use this page to understand what GitKraken On-Premise Self-Hosted Server is, whe
 - Full control over version management
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/manage-users@2x.png' class="help-center-img img-bordered">
+  <img alt="Manage users and settings within your private GitKraken instance" src='/wp-content/uploads/manage-users@2x.png' class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Manage users and settings within your private GitKraken instance.</figcaption>
 </figure>
 

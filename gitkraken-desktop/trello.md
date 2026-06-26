@@ -64,11 +64,17 @@ Set up the integration from the ISSUES section in the Left Panel or from <kbd>Pr
     <p><strong>Use the Trello integration when:</strong> your team tracks work in Trello and you want cards visible beside your repository workflow. <strong>Don't use it as a full replacement for Trello when:</strong> you need broader board management features outside the card workflows covered here.</p>
 </div>
 
-<img src="/wp-content/uploads/connect-trello-2025@2x.png" class="help-center-img img-bordered" alt="Connect Trello integration in Preferences">
+<figure>
+  <img src="/wp-content/uploads/connect-trello-2025@2x.png" class="help-center-img img-bordered" alt="Connect Trello integration in Preferences">
+  <figcaption style="text-align: center; color: #888">Connect Trello integration in Preferences.</figcaption>
+</figure>
 
 You’ll be redirected to a Trello page to authorize the connection. Scroll down and click <strong>Allow</strong>.
 
-<img src="/wp-content/uploads/trello-integration@2x.png" class="help-center-img img-bordered" alt="Trello authorization page">
+<figure>
+  <img src="/wp-content/uploads/trello-integration@2x.png" class="help-center-img img-bordered" alt="Trello authorization page">
+  <figcaption style="text-align: center; color: #888">Trello authorization page.</figcaption>
+</figure>
 
 Alternatively, copy the token from the _Success_ page and paste it into GitKraken Desktop.
 
@@ -78,11 +84,17 @@ Alternatively, copy the token from the _Success_ page and paste it into GitKrake
 
 Once connected, your Trello cards will appear in the Left Panel under a default _All Cards_ filter.
 
-<img src="/wp-content/uploads/trello-cards-2025@2x.png" class="help-center-img img-bordered" alt="Trello cards in Left Panel">
+<figure>
+  <img src="/wp-content/uploads/trello-cards-2025@2x.png" class="help-center-img img-bordered" alt="Trello cards in Left Panel">
+  <figcaption style="text-align: center; color: #888">Trello cards in Left Panel.</figcaption>
+</figure>
 
 Hover over any card to preview its title, description, list, labels, and members.
 
-<img src="/wp-content/uploads/trello-card-hover-2025@2x.png" class="help-center-img img-bordered" alt="Card preview tooltip">
+<figure>
+  <img src="/wp-content/uploads/trello-card-hover-2025@2x.png" class="help-center-img img-bordered" alt="Card preview tooltip">
+  <figcaption style="text-align: center; color: #888">Card preview tooltip.</figcaption>
+</figure>
 
 ---
 
@@ -90,7 +102,10 @@ Hover over any card to preview its title, description, list, labels, and members
 
 Click a card to open its detail view.
 
-<img src="/wp-content/uploads/trello-card-details-view-2025@2x.png" class="help-center-img img-bordered" alt="Trello card detail view">
+<figure>
+  <img src="/wp-content/uploads/trello-card-details-view-2025@2x.png" class="help-center-img img-bordered" alt="Trello card detail view">
+  <figcaption style="text-align: center; color: #888">Trello card detail view.</figcaption>
+</figure>
 
 You can view and edit:
 
@@ -107,7 +122,10 @@ Changes sync with your Trello board in real-time.
 
 Click the <code>+</code> icon in the Left Panel to add a new card.
 
-<img src="/wp-content/uploads/trello-create-card-2025@2x.png" class="help-center-img img-bordered" alt="Create new Trello card">
+<figure>
+  <img src="/wp-content/uploads/trello-create-card-2025@2x.png" class="help-center-img img-bordered" alt="Create new Trello card">
+  <figcaption style="text-align: center; color: #888">Create new Trello card.</figcaption>
+</figure>
 
 Fields marked with <code>*</code> are required. Your card will sync automatically with Trello.
 
@@ -121,7 +139,10 @@ You can use Trello’s filter syntax to create custom filters for your cards.
     <p><strong>Use custom card filters when:</strong> you need to focus on a board, list, label, or member-specific queue. <strong>Don't rely on the default All Cards view when:</strong> it mixes too much unrelated work together.</p>
 </div>
 
-<img src="/wp-content/uploads/trello-create-filter-2025@2x.png" class="help-center-img img-bordered" alt="Create Trello filter">
+<figure>
+  <img src="/wp-content/uploads/trello-create-filter-2025@2x.png" class="help-center-img img-bordered" alt="Create Trello filter">
+  <figcaption style="text-align: center; color: #888">Create Trello filter.</figcaption>
+</figure>
 
 See Trello’s [filtering guide](https://help.trello.com/article/808-searching-for-cards-all-boards) for syntax examples.
 
@@ -135,7 +156,10 @@ You can create branches tied to cards directly from the card detail view. Use th
     <p><strong>Use card-based branch creation when:</strong> the branch should map directly to one Trello card. <strong>Don't use it when:</strong> the branch covers several cards or needs a branch name that should not be derived from the card title.</p>
 </div>
 
-<img src="/wp-content/uploads/create-branch-jira-integration.gif" class="help-center-img img-bordered" alt="Create branch from Trello card">
+<figure>
+  <img src="/wp-content/uploads/create-branch-jira-integration.gif" class="help-center-img img-bordered" alt="Create branch from Trello card">
+  <figcaption style="text-align: center; color: #888">Create branch from Trello card.</figcaption>
+</figure>
 
 Branch names are prefilled based on the card title. These branches display the Trello icon to indicate the connection.
 
@@ -145,4 +169,7 @@ Branch names are prefilled based on the card title. These branches display the T
 
 Click the <kbd><i class="fa fa-ellipsis-v"></i></kbd> icon or the <i class="fa fa-external-link" aria-hidden="true"></i> icon to copy the link or open the card in Trello.
 
-<img src="/wp-content/uploads/trello-open-in-browser-2025@2x.png" class="help-center-img img-bordered" alt="Open Trello card in browser">
+<figure>
+  <img src="/wp-content/uploads/trello-open-in-browser-2025@2x.png" class="help-center-img img-bordered" alt="Open Trello card in browser">
+  <figcaption style="text-align: center; color: #888">Open Trello card in browser.</figcaption>
+</figure>

@@ -72,17 +72,26 @@ The GitHub and GitHub Issues integrations share the same connection.
 
 You can set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
-<img src="/wp-content/uploads/connect-github-issues-2025@2x.png" class="help-center-img img-bordered" alt="Connect GitHub Issues from Preferences">
+<figure>
+  <img src="/wp-content/uploads/connect-github-issues-2025@2x.png" class="help-center-img img-bordered" alt="Connect GitHub Issues from Preferences">
+  <figcaption style="text-align: center; color: #888">Connect GitHub Issues from Preferences.</figcaption>
+</figure>
 
 From the Integrations window, select <em>GitHub.com</em> and click <strong>Connect to GitHub</strong>.
 
-<img src="/wp-content/uploads/connect-github-2025@2x.png" class="help-center-img img-bordered" alt="Connect to GitHub prompt">
+<figure>
+  <img src="/wp-content/uploads/connect-github-2025@2x.png" class="help-center-img img-bordered" alt="Connect to GitHub prompt">
+  <figcaption style="text-align: center; color: #888">Connect to GitHub prompt.</figcaption>
+</figure>
 
 A browser window will open to complete authorization. Log in with your GitHub credentials and click <strong>Continue authorization</strong>.
 
 Once successful, GitKraken will show a confirmation message and enable the integration.
 
-<img src="/wp-content/uploads/github-success-1@2x.png" class="help-center-img img-bordered" alt="Successful GitHub integration">
+<figure>
+  <img src="/wp-content/uploads/github-success-1@2x.png" class="help-center-img img-bordered" alt="Successful GitHub integration">
+  <figcaption style="text-align: center; color: #888">Successful GitHub integration.</figcaption>
+</figure>
 
 ---
 
@@ -90,11 +99,17 @@ Once successful, GitKraken will show a confirmation message and enable the integ
 
 After connecting, your GitHub issues will appear in the Left Panel. Default filters include _My Open Issues_ and _All Open Issues_. You can customize or remove these as needed.
 
-<img src="/wp-content/uploads/github-issues-left-panel-2025@2x.png" class="help-center-img img-bordered" alt="GitHub Issues in Left Panel">
+<figure>
+  <img src="/wp-content/uploads/github-issues-left-panel-2025@2x.png" class="help-center-img img-bordered" alt="GitHub Issues in Left Panel">
+  <figcaption style="text-align: center; color: #888">GitHub Issues in Left Panel.</figcaption>
+</figure>
 
 Hover over an issue to preview the title, description, status, labels, assignees, and reporter.
 
-<img src="/wp-content/uploads/issues-preview-github-issues@2x.png" class="help-center-img img-bordered" alt="Issue preview tooltip">
+<figure>
+  <img src="/wp-content/uploads/issues-preview-github-issues@2x.png" class="help-center-img img-bordered" alt="Issue preview tooltip">
+  <figcaption style="text-align: center; color: #888">Issue preview tooltip.</figcaption>
+</figure>
 
 ---
 
@@ -102,7 +117,10 @@ Hover over an issue to preview the title, description, status, labels, assignees
 
 Click an issue to open the details view.
 
-<img src="/wp-content/uploads/view-github-issue-2025@2x.png" class="help-center-img img-bordered" alt="GitHub Issue Details View">
+<figure>
+  <img src="/wp-content/uploads/view-github-issue-2025@2x.png" class="help-center-img img-bordered" alt="GitHub Issue Details View">
+  <figcaption style="text-align: center; color: #888">GitHub Issue Details View.</figcaption>
+</figure>
 
 Any changes made here will be synced with GitHub.
 
@@ -112,7 +130,10 @@ Any changes made here will be synced with GitHub.
 
 To create a new issue, click the <code>+</code> icon from the Left Panel.
 
-<img src="/wp-content/uploads/create-github-issue-2025@2x.png" class="help-center-img img-bordered" alt="Create new GitHub issue">
+<figure>
+  <img src="/wp-content/uploads/create-github-issue-2025@2x.png" class="help-center-img img-bordered" alt="Create new GitHub issue">
+  <figcaption style="text-align: center; color: #888">Create new GitHub issue.</figcaption>
+</figure>
 
 Required fields are marked with <code>*</code>. Your issue will sync directly to your GitHub repository.
 
@@ -126,7 +147,10 @@ Create filters using GitHub's issue filter syntax. These help narrow your view t
     <p><strong>Use custom filters when:</strong> you need to focus on a subset of issues such as bugs, assigned work, or open review blockers. <strong>Don't rely only on default filters when:</strong> they leave you with too much issue noise.</p>
 </div>
 
-<img src="/wp-content/uploads/create-github-filter@2x.png" class="help-center-img img-bordered" alt="Create GitHub issue filter">
+<figure>
+  <img src="/wp-content/uploads/create-github-filter@2x.png" class="help-center-img img-bordered" alt="Create GitHub issue filter">
+  <figcaption style="text-align: center; color: #888">Create GitHub issue filter.</figcaption>
+</figure>
 
 Refer to GitHub’s [issue filtering guide](https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests) for syntax examples.
 
@@ -140,7 +164,10 @@ From the issue details view, click <strong>Create a branch for this issue</stron
     <p><strong>Use issue-based branch creation when:</strong> you want a clear branch-to-issue link and an auto-filled branch name. <strong>Don't use it when:</strong> the branch should represent a larger initiative or combine work from multiple issues.</p>
 </div>
 
-<img src="/wp-content/uploads/create-branch-github-issue@2x.png" class="help-center-img img-bordered" alt="Create branch from GitHub issue">
+<figure>
+  <img src="/wp-content/uploads/create-branch-github-issue@2x.png" class="help-center-img img-bordered" alt="Create branch from GitHub issue">
+  <figcaption style="text-align: center; color: #888">Create branch from GitHub issue.</figcaption>
+</figure>
 
 Branch names auto-fill based on the issue title. Created branches will display the GitHub icon to reflect their link.
 
@@ -150,4 +177,7 @@ Branch names auto-fill based on the issue title. Created branches will display t
 
 To open the issue in GitHub or copy its link, use the <kbd><i class="fa fa-ellipsis-v"></i></kbd> menu or click the <i class="fa fa-external-link" aria-hidden="true"></i> icon in the top right.
 
-<img src="/wp-content/uploads/view-github-issue-on-web-2025@2x.png" class="help-center-img img-bordered" alt="Open GitHub issue in browser">
+<figure>
+  <img src="/wp-content/uploads/view-github-issue-on-web-2025@2x.png" class="help-center-img img-bordered" alt="Open GitHub issue in browser">
+  <figcaption style="text-align: center; color: #888">Open GitHub issue in browser.</figcaption>
+</figure>

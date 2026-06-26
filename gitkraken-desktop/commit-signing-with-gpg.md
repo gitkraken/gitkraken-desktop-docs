@@ -90,7 +90,10 @@ To verify installation:
 gpg --version
 ```
 
-<img src="/wp-content/uploads/gpg-version-2025@2x.png" class="help-center-img img-bordered" alt="GPG version output">
+<figure>
+  <img src="/wp-content/uploads/gpg-version-2025@2x.png" class="help-center-img img-bordered" alt="GPG version output">
+  <figcaption style="text-align: center; color: #888">GPG version output.</figcaption>
+</figure>
 
 <div class='callout callout--success'>
     <p><strong>Note:</strong> Use <code>gpg2</code> if <code>gpg</code> isn’t aliased. Prefix commands accordingly.</p>
@@ -104,7 +107,10 @@ Once GPG is installed:
 2. Click **Generate new GPG Key**.
 3. (Optional) Enter a passphrase before generating.
 
-<img src="/wp-content/uploads/generate-new-gpg-key-2025@2x.png" class="help-center-img img-bordered" alt="Generate new GPG key in Preferences">
+<figure>
+  <img src="/wp-content/uploads/generate-new-gpg-key-2025@2x.png" class="help-center-img img-bordered" alt="Generate new GPG key in Preferences">
+  <figcaption style="text-align: center; color: #888">Generate new GPG key in Preferences.</figcaption>
+</figure>
 
 <div class='callout callout--success'>
     <p><strong>Note:</strong> Ensure GPG is configured in GitKraken. See <a href="#configure-gpg-in-gitkraken">Configure GPG in GitKraken</a>.</p>
@@ -121,18 +127,27 @@ Once GPG is installed:
    which gpg # macOS/Linux
    where gpg # Windows
    ```
-   <img src="/wp-content/uploads/gpg-browse-button.png" class="help-center-img img-bordered" alt="Browse to GPG executable">
+   <figure>
+     <img src="/wp-content/uploads/gpg-browse-button.png" class="help-center-img img-bordered" alt="Browse to GPG executable">
+     <figcaption style="text-align: center; color: #888">Browse to GPG executable.</figcaption>
+   </figure>
 4. Enable **Sign Commits by Default** and/or **Sign Tags by Default** as needed.
 
 ### How to verify signed commits
 
 Signed commits show an icon next to the SHA in the Commit Panel.
 
-<img src="/wp-content/uploads/gpg-icon-2025@2x.png" class="help-center-img img-bordered" alt="Signed commit badge">
+<figure>
+  <img src="/wp-content/uploads/gpg-icon-2025@2x.png" class="help-center-img img-bordered" alt="Signed commit badge">
+  <figcaption style="text-align: center; color: #888">Signed commit badge.</figcaption>
+</figure>
 
 Hover to view signature details:
 
-<img src="/wp-content/uploads/gpg-sig-details-2025@2x.png" class="help-center-img img-bordered" alt="GPG signature details tooltip">
+<figure>
+  <img src="/wp-content/uploads/gpg-sig-details-2025@2x.png" class="help-center-img img-bordered" alt="GPG signature details tooltip">
+  <figcaption style="text-align: center; color: #888">GPG signature details tooltip.</figcaption>
+</figure>
 
 **Common GPG signature codes:**
 
@@ -161,7 +176,10 @@ To add emails or renew a key:
    ```bash
    gpg --list-secret-keys --keyid-format LONG
    ```
-   <img src="/wp-content/uploads/list-secret-keys@2x.png" class="help-center-img img-bordered" alt="List GPG secret keys">
+   <figure>
+     <img src="/wp-content/uploads/list-secret-keys@2x.png" class="help-center-img img-bordered" alt="List GPG secret keys">
+     <figcaption style="text-align: center; color: #888">List GPG secret keys.</figcaption>
+   </figure>
 2. Edit:
    ```bash
    gpg --edit-key YOUR_KEY_ID
@@ -185,8 +203,14 @@ gpg --delete-secret-keys
 ```
 Append your key ID or name.
 
-<img src="/wp-content/uploads/delete-key.png" class="help-center-img img-bordered" alt="Delete GPG key confirmation">
-<img src="/wp-content/uploads/delete-key-for-sure.png" class="help-center-img img-bordered" alt="Final delete confirmation">
+<figure>
+  <img src="/wp-content/uploads/delete-key.png" class="help-center-img img-bordered" alt="Delete GPG key confirmation">
+  <figcaption style="text-align: center; color: #888">Delete GPG key confirmation.</figcaption>
+</figure>
+<figure>
+  <img src="/wp-content/uploads/delete-key-for-sure.png" class="help-center-img img-bordered" alt="Final delete confirmation">
+  <figcaption style="text-align: center; color: #888">Final delete confirmation.</figcaption>
+</figure>
 
 ---
 
@@ -209,11 +233,17 @@ SSH signing is available through Git Executable.
    ```bash
    ssh-keygen -t ed25519 -C "your_email@example.com"
    ```
-   <img src="/wp-content/uploads/gkc-ssh-keygen@2x.png" class="help-center-img img-bordered" alt="Generating SSH key">
+   <figure>
+     <img src="/wp-content/uploads/gkc-ssh-keygen@2x.png" class="help-center-img img-bordered" alt="Generating SSH key">
+     <figcaption style="text-align: center; color: #888">Generating SSH key.</figcaption>
+   </figure>
 
 2. **Enable Git Executable:**
    Go to <kbd>Preferences > Experimental > Git Executable</kbd>.
-   <img src="/wp-content/uploads/gkc-git-executable@2x.png" class="help-center-img img-bordered" alt="Enable Git Executable">
+   <figure>
+     <img src="/wp-content/uploads/gkc-git-executable@2x.png" class="help-center-img img-bordered" alt="Enable Git Executable">
+     <figcaption style="text-align: center; color: #888">Enable Git Executable.</figcaption>
+   </figure>
 
 3. **Set GPG Format to SSH:**
    <kbd>Preferences > Commit Signing > GPG Format</kbd> → select <kbd>SSH</kbd>.

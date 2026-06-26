@@ -70,21 +70,36 @@ The GitLab and GitLab Issues integrations share the same connection. Set up the 
     <p><strong>Use GitLab Issues in GitKraken Desktop when:</strong> you want issue context, issue editing, and branch creation close to your repository workflow. <strong>Don't use the in-app view alone when:</strong> you need broader GitLab project management outside the issue workflows covered here.</p>
 </div>
 
-<img src="/wp-content/uploads/connect-gitlab-issues-2025@2x.png" class="help-center-img img-bordered" alt="Connect GitLab Issues integration">
+<figure>
+  <img src="/wp-content/uploads/connect-gitlab-issues-2025@2x.png" class="help-center-img img-bordered" alt="Connect GitLab Issues integration">
+  <figcaption style="text-align: center; color: #888">Connect GitLab Issues integration.</figcaption>
+</figure>
 
 From the Integrations window, select <em>GitLab.com</em> and click <strong>Connect to GitLab</strong>.
 
-<img src="/wp-content/uploads/connect-gitlab-2025@2x.png" class="help-center-img img-bordered" alt="Connect to GitLab prompt">
+<figure>
+  <img src="/wp-content/uploads/connect-gitlab-2025@2x.png" class="help-center-img img-bordered" alt="Connect to GitLab prompt">
+  <figcaption style="text-align: center; color: #888">Connect to GitLab prompt.</figcaption>
+</figure>
 
 A browser window will open to authorize the connection. Log in with your GitLab credentials and click <strong>Continue authorization</strong>.
 
-<img src="/wp-content/uploads/authorize-gitlab@2x.png" class="help-center-img img-bordered" alt="GitLab authorization dialog">
+<figure>
+  <img src="/wp-content/uploads/authorize-gitlab@2x.png" class="help-center-img img-bordered" alt="GitLab authorization dialog">
+  <figcaption style="text-align: center; color: #888">GitLab authorization dialog.</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/gitlab-sign-in@2x.png" class="help-center-img img-bordered" alt="GitLab sign-in screen">
+<figure>
+  <img src="/wp-content/uploads/gitlab-sign-in@2x.png" class="help-center-img img-bordered" alt="GitLab sign-in screen">
+  <figcaption style="text-align: center; color: #888">GitLab sign-in screen.</figcaption>
+</figure>
 
 Once authorized, GitKraken will display a success message.
 
-<img src="/wp-content/uploads/auth-success-gitlab-1@2x.png" class="help-center-img img-bordered" alt="Successful GitLab integration">
+<figure>
+  <img src="/wp-content/uploads/auth-success-gitlab-1@2x.png" class="help-center-img img-bordered" alt="Successful GitLab integration">
+  <figcaption style="text-align: center; color: #888">Successful GitLab integration.</figcaption>
+</figure>
 
 ---
 
@@ -92,11 +107,17 @@ Once authorized, GitKraken will display a success message.
 
 After connecting, your GitLab issues will appear in the Left Panel. Default filters include _My Issues_ and _All Issues_.
 
-<img src="/wp-content/uploads/gitlab-issues-list-2025@2x.png" class="help-center-img img-bordered" alt="GitLab Issues in Left Panel">
+<figure>
+  <img src="/wp-content/uploads/gitlab-issues-list-2025@2x.png" class="help-center-img img-bordered" alt="GitLab Issues in Left Panel">
+  <figcaption style="text-align: center; color: #888">GitLab Issues in Left Panel.</figcaption>
+</figure>
 
 Hover over an issue to preview the title, description, labels, milestones, and assignee.
 
-<img src="/wp-content/uploads/gitlab-issue-hover-2025@2x.png" class="help-center-img img-bordered" alt="GitLab issue preview tooltip">
+<figure>
+  <img src="/wp-content/uploads/gitlab-issue-hover-2025@2x.png" class="help-center-img img-bordered" alt="GitLab issue preview tooltip">
+  <figcaption style="text-align: center; color: #888">GitLab issue preview tooltip.</figcaption>
+</figure>
 
 ---
 
@@ -104,7 +125,10 @@ Hover over an issue to preview the title, description, labels, milestones, and a
 
 Click an issue to view its details.
 
-<img src="/wp-content/uploads/github-issue-view-click-2025@2x.png" class="help-center-img img-bordered" alt="View GitLab issue details">
+<figure>
+  <img src="/wp-content/uploads/github-issue-view-click-2025@2x.png" class="help-center-img img-bordered" alt="View GitLab issue details">
+  <figcaption style="text-align: center; color: #888">View GitLab issue details.</figcaption>
+</figure>
 
 Edits made here will sync with your GitLab issue tracker.
 
@@ -114,7 +138,10 @@ Edits made here will sync with your GitLab issue tracker.
 
 Click the <code>+</code> icon from the Left Panel to add a new issue.
 
-<img src="/wp-content/uploads/gitlab-issue-create-2025@2x.png" class="help-center-img img-bordered" alt="Create new GitLab issue">
+<figure>
+  <img src="/wp-content/uploads/gitlab-issue-create-2025@2x.png" class="help-center-img img-bordered" alt="Create new GitLab issue">
+  <figcaption style="text-align: center; color: #888">Create new GitLab issue.</figcaption>
+</figure>
 
 Required fields are marked with <code>*</code>. The issue will sync automatically to your GitLab repository.
 
@@ -128,7 +155,10 @@ Use GitLab’s issue syntax to create filters and narrow your view.
     <p><strong>Use custom filters when:</strong> you need focused issue queues by label, assignee, milestone, or status. <strong>Don't rely on only the default filters when:</strong> your team needs a narrower view of active work.</p>
 </div>
 
-<img src="/wp-content/uploads/gitlab-filter-create-2025@2x.png" class="help-center-img img-bordered" alt="Create GitLab filter">
+<figure>
+  <img src="/wp-content/uploads/gitlab-filter-create-2025@2x.png" class="help-center-img img-bordered" alt="Create GitLab filter">
+  <figcaption style="text-align: center; color: #888">Create GitLab filter.</figcaption>
+</figure>
 
 Refer to GitLab’s [issue filtering guide](https://docs.gitlab.com/ee/user/search/index.html#filtering-issue-and-merge-request-lists) for examples.
 
@@ -142,7 +172,10 @@ From the issue detail view, click <strong>Create a branch for this issue</strong
     <p><strong>Use issue-based branch creation when:</strong> you want the branch tied clearly to a specific GitLab issue. <strong>Don't use it when:</strong> the work spans multiple issues or the branch name needs a different structure than the issue title provides.</p>
 </div>
 
-<img src="/wp-content/uploads/gitlab-issue-create-branch-2025@2x.png" class="help-center-img img-bordered" alt="Create branch from GitLab issue">
+<figure>
+  <img src="/wp-content/uploads/gitlab-issue-create-branch-2025@2x.png" class="help-center-img img-bordered" alt="Create branch from GitLab issue">
+  <figcaption style="text-align: center; color: #888">Create branch from GitLab issue.</figcaption>
+</figure>
 
 The branch name is auto-filled based on the issue title. These branches show the GitLab icon to indicate the connection.
 
@@ -152,4 +185,7 @@ The branch name is auto-filled based on the issue title. These branches show the
 
 Use the <kbd><i class="fa fa-ellipsis-v"></i></kbd> menu or <i class="fa fa-external-link" aria-hidden="true"></i> icon to open the issue in GitLab or copy the link.
 
-<img src="/wp-content/uploads/gitlab-issue-copy-link-2025@2x.png" class="help-center-img img-bordered" alt="View GitLab issue on web">
+<figure>
+  <img src="/wp-content/uploads/gitlab-issue-copy-link-2025@2x.png" class="help-center-img img-bordered" alt="View GitLab issue on web">
+  <figcaption style="text-align: center; color: #888">View GitLab issue on web.</figcaption>
+</figure>

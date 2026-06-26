@@ -1,6 +1,6 @@
 ---
-title: Gitkraken SOC 2 Request
-description: Request form for a copy of GK's SOC2 report
+title: GitKraken SOC 2 Request
+description: Request a copy of GitKraken's SOC 2 report.
 product: GitKraken Desktop
 feature: SOC 2 Report Request
 content_type: form
@@ -19,7 +19,7 @@ taxonomy:
 ---
 <kbd>Last updated: March 2026</kbd>
 
-Use this form to request GitKraken’s SOC 2 report. After you submit the request, GitKraken will email you an NDA to sign and return before the report is shared. This request process is intended for eligible Business and Enterprise customers that need security documentation for vendor review or procurement.
+Use this form to request GitKraken's SOC 2 report. After you submit the request, GitKraken will email you an NDA to sign and return before the report is shared. This request process is intended for eligible Business and Enterprise customers that need security documentation for vendor review or procurement.
 
 <div class="bbb-callout bbb--info">
     <div class="irow">
@@ -27,7 +27,7 @@ Use this form to request GitKraken’s SOC 2 report. After you submit the reques
         <span class="logoimg"></span>
     </div>
     <div class="imsgbox">
-        Please note that only Business and Enterprise clients are eligible for SOC2 report access.
+        Only Business and Enterprise clients are eligible for SOC 2 report access.
     </div>
     </div>
 </div>

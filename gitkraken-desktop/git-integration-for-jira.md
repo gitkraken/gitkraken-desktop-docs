@@ -47,7 +47,10 @@ Before using this integration, ensure the following:
 
 Once connected, a <strong>Open in Jira</strong> button appears in the [file diff view](/gitkraken-desktop/diff/). Clicking this opens the specific file diff in your Jira instance.
 
-<img src="/wp-content/uploads/open-in-jira-2025@2x.png" class="help-center-img img-bordered" alt="Open file diff in Jira from GitKraken">
+<figure>
+  <img src="/wp-content/uploads/open-in-jira-2025@2x.png" class="help-center-img img-bordered" alt="Open file diff in Jira from GitKraken">
+  <figcaption style="text-align: center; color: #888">Open file diff in Jira from GitKraken.</figcaption>
+</figure>
 
 ---
 
@@ -55,7 +58,10 @@ Once connected, a <strong>Open in Jira</strong> button appears in the [file diff
 
 Right-click any commit in the graph and choose <strong>Open in Jira</strong>. This launches Jira focused on the selected commit.
 
-<img src="/wp-content/uploads/open-jira-to-commit-2025@2x.png" class="help-center-img img-bordered" alt="Open Jira to a commit from GitKraken">
+<figure>
+  <img src="/wp-content/uploads/open-jira-to-commit-2025@2x.png" class="help-center-img img-bordered" alt="Open Jira to a commit from GitKraken">
+  <figcaption style="text-align: center; color: #888">Open Jira to a commit from GitKraken.</figcaption>
+</figure>
 
 ---
 
@@ -63,4 +69,7 @@ Right-click any commit in the graph and choose <strong>Open in Jira</strong>. Th
 
 Within Jira, Git Integration for Jira adds buttons to open commits and diffs in GitKraken. Look for the GitKraken logo to launch GitKraken Desktop for a deeper view.
 
-<img src="/wp-content/uploads/open-in-gitkraken-2025@2x.png" class="help-center-img img-bordered" alt="Open GitKraken from a Jira issue via Git Integration">
+<figure>
+  <img src="/wp-content/uploads/open-in-gitkraken-2025@2x.png" class="help-center-img img-bordered" alt="Open GitKraken from a Jira issue via Git Integration">
+  <figcaption style="text-align: center; color: #888">Open GitKraken from a Jira issue via Git Integration.</figcaption>
+</figure>

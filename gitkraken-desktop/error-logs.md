@@ -35,12 +35,12 @@ You can access error logs via:
 - The Command Palette
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/view-error-log@2x.png" class="help-center-img img-bordered">
+  <img alt="Access logs from Help > Support > View Error Logs" src="/wp-content/uploads/view-error-log@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Access logs from Help > Support > View Error Logs.</figcaption>
 </figure>
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/fuzzy-finder-error.gif" class="help-center-img img-bordered">
+  <img alt="You can also search for &quot;error log&quot; in the Command Palette" src="/wp-content/uploads/fuzzy-finder-error.gif" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">You can also search for "error log" in the Command Palette.</figcaption>
 </figure>
 

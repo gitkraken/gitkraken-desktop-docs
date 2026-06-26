@@ -56,7 +56,7 @@ Use this page to push, pull, fetch, add remotes, and set upstream branches in Gi
 ## How to add a remote
 
 To add a remote:
-1. Hover over <em class='context-menu'><img src='/wp-content/uploads/gk-remote-icon.svg' style='height:1em;'> Remote</em> in the Left Panel.
+1. Hover over <em class='context-menu'><img alt="" src='/wp-content/uploads/gk-remote-icon.svg' style='height:1em;'> Remote</em> in the Left Panel.
 2. Click the <button class='button button--success button--ui button--nolink'>+</button> icon.
 3. Enter the remote URL or choose from integration-based dropdowns (GitHub, GitLab, Bitbucket).
 
@@ -84,7 +84,7 @@ Remote icons in the Commit Graph:
 
 ***
 
-## How to push changes <img src='/wp-content/uploads/gk-push-icon.svg' style='height:1em;'>
+## How to push changes <img alt="" src='/wp-content/uploads/gk-push-icon.svg' style='height:1em;'>
 
 To push local commits to a remote branch:
 - Click <kbd>Push</kbd> in the main toolbar
@@ -140,7 +140,7 @@ Fetching runs automatically every minute. Adjust the interval in <kbd>Preference
 
 ***
 
-## How pull options work <img src='/wp-content/uploads/gk-pull-icon.svg' style='height:1em;'>
+## How pull options work <img alt="" src='/wp-content/uploads/gk-pull-icon.svg' style='height:1em;'>
 
 Pulling performs a fetch and then updates your local branch.
 

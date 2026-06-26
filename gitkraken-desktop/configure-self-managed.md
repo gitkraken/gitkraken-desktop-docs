@@ -57,14 +57,14 @@ To add users, click **Add user** and enter the user's email. To disable self-reg
 Navigate to your GitKraken Self-Hosted server.
 
 <figure>
-<img src='/wp-content/uploads/select-license@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img alt="Prompt to upload your GitKraken Self-Hosted license file" src='/wp-content/uploads/select-license@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Prompt to upload your GitKraken Self-Hosted license file</figcaption>
 </figure>
 
 Click **Browse for license** and upload the license file provided with your installation package. Once selected, license details will be displayed.
 
 <figure>
-<img src='/wp-content/uploads/license-details@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img alt="Details view of your Self-Hosted license" src='/wp-content/uploads/license-details@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Details view of your Self-Hosted license</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ Choose the authentication configuration for your server:
 - **LDAP**: Users authenticate using LDAP credentials.
 
 <figure>
-<img src='/wp-content/uploads/auth-config@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img alt="Select authentication mode: Built-in or LDAP" src='/wp-content/uploads/auth-config@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Select authentication mode: Built-in or LDAP</figcaption>
 </figure>
 
@@ -91,14 +91,14 @@ If using Built-in authentication, [skip to the SMTP Server section](#smtp-server
 Enter your LDAP server hostname and port:
 
 <figure>
-<img src='/wp-content/uploads/ldap-host-port@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img alt="Configure hostname and port for LDAP" src='/wp-content/uploads/ldap-host-port@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Configure hostname and port for LDAP</figcaption>
 </figure>
 
 Choose the corresponding encryption method:
 
 <figure>
-<img src='/wp-content/uploads/encryption-method@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img alt="Select the appropriate LDAP encryption method" src='/wp-content/uploads/encryption-method@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Select the appropriate LDAP encryption method</figcaption>
 </figure>
 
@@ -109,7 +109,7 @@ Specify the following LDAP configuration fields:
 - **Admin Group Common Names** – Groups granted administrative access. If omitted, no users receive admin rights.
 
 <figure>
-<img src='/wp-content/uploads/base-dn@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img alt="Assign base DNs and group CNs for LDAP integration" src='/wp-content/uploads/base-dn@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Assign base DNs and group CNs for LDAP integration</figcaption>
 </figure>
 
@@ -120,14 +120,14 @@ Set the required user attribute mappings:
 - **Name Attribute** – Maps to user display names (optional).
 
 <figure>
-<img src='/wp-content/uploads/user-attributes@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img alt="Assign LDAP attributes for username, email, and name" src='/wp-content/uploads/user-attributes@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Assign LDAP attributes for username, email, and name</figcaption>
 </figure>
 
 Provide the DN of a search user account with read access to users and groups:
 
 <figure>
-<img src='/wp-content/uploads/search-user@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img alt="Designate an LDAP search user account" src='/wp-content/uploads/search-user@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Designate an LDAP search user account</figcaption>
 </figure>
 
@@ -138,7 +138,7 @@ Provide the DN of a search user account with read access to users and groups:
 Enable the Sync Server if you want GitKraken to regularly sync with LDAP:
 
 <figure>
-<img src='/wp-content/uploads/sync-server@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img alt="Configure LDAP sync interval" src='/wp-content/uploads/sync-server@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Configure LDAP sync interval</figcaption>
 </figure>
 
@@ -158,7 +158,7 @@ Specify the server details:
 Enable secure protocols if necessary and provide authentication credentials. Use the test connection button to verify:
 
 <figure>
-<img src='/wp-content/uploads/smtp-setup@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img alt="Set up SMTP server settings and test connection" src='/wp-content/uploads/smtp-setup@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Set up SMTP server settings and test connection</figcaption>
 </figure>
 
@@ -173,7 +173,7 @@ The Super User is the license owner of GitKraken Self-Hosted. This account:
 - Cannot be viewed or modified via the account site user management page
 
 <figure>
-<img src='/wp-content/uploads/super-user@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img alt="Define the Super User account" src='/wp-content/uploads/super-user@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Define the Super User account</figcaption>
 </figure>
 
@@ -184,7 +184,7 @@ The Super User is the license owner of GitKraken Self-Hosted. This account:
 Configuration is now complete! You should see the 'Manage Users' screen, where you can begin adding users.
 
 <figure>
-<img src='/wp-content/uploads/manage-users@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img alt="Manage Users interface after setup" src='/wp-content/uploads/manage-users@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Manage Users interface after setup</figcaption>
 </figure>
 
@@ -195,13 +195,13 @@ Configuration is now complete! You should see the 'Manage Users' screen, where y
 To add a user, click **Add user** and enter the user's email address:
 
 <figure>
-<img src='/wp-content/uploads/user-email@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img alt="Enter email address to add a new user" src='/wp-content/uploads/user-email@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Enter email address to add a new user</figcaption>
 </figure>
 
 By default, users can self-register on the GitKraken Self-Hosted site. To disable self-registration, go to the **Registration** tab:
 
 <figure>
-<img src='/wp-content/uploads/registration-settings@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
+<img alt="Modify user registration settings" src='/wp-content/uploads/registration-settings@2x.png' style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" />
 <figcaption style="text-align: center; color: #888">Modify user registration settings</figcaption>
 </figure>
