@@ -54,21 +54,21 @@ If the steps on this page do not resolve your issue, contact [GitKraken Support]
 ### My account shows Trial/Free/Community despite being a paid customer
 In GitKraken Desktop, verify you're logged in with the correct account:
 <figure class='figure center'>
-  <img src="/wp-content/uploads/GKD-Common-Issue-1.png" class="help-center-img img-bordered">
+  <img alt="Ensure you are signed in with the email address linked to your subscription. Avoid using GitHub or Google login options if your subscription is tied to an email address" src="/wp-content/uploads/GKD-Common-Issue-1.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Ensure you are signed in with the email address linked to your subscription. Avoid using GitHub or Google login options if your subscription is tied to an email address.</figcaption>
 </figure>
 
 ### The account is correct but it says I don't have AI credits
 Make sure the correct organization is selected:
 <figure class='figure center'>
-  <img src="/wp-content/uploads/GKD-Common-Issue-2.png" class="help-center-img img-bordered">
+  <img alt="AI credit access is determined by the selected organization" src="/wp-content/uploads/GKD-Common-Issue-2.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">AI credit access is determined by the selected organization.</figcaption>
 </figure>
 
 ### GitKraken.dev shows my account as TRIAL / COMMUNITY
 Select the correct organization:
 <figure class='figure center'>
-  <img src="/wp-content/uploads/GKD-Common-Issue-3.png" class="help-center-img img-bordered">
+  <img alt="This issue can occur if you're viewing an organization that doesn't have a subscription" src="/wp-content/uploads/GKD-Common-Issue-3.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">This issue can occur if you're viewing an organization that doesn't have a subscription.</figcaption>
 </figure>
 
@@ -91,14 +91,14 @@ This happens if a disconnected issue tracker is set as default.
 ### Commit details panel is missing
 To re-enable it: <kbd>View > Show Commit Details panel</kbd>
 <figure class='figure center'>
-  <img src="/wp-content/uploads/GKD-Common-Issue-4.png" class="help-center-img img-bordered">
+  <img alt="The right-side commit panel can be toggled from the View menu" src="/wp-content/uploads/GKD-Common-Issue-4.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">The right-side commit panel can be toggled from the View menu.</figcaption>
 </figure>
 
 ### Can't minimize/maximize or exit full-screen mode
 Toggle full-screen mode with <kbd>F11 (for Windows/Linux) or Ctrl + Cmd + F (for macOS)</kbd>
 <figure class='figure center'>
-  <img src="/wp-content/uploads/GKD-Common-Issue-5.png" class="help-center-img img-bordered">
+  <img alt="Keyboard shortcut to toggle full screen in GitKraken Desktop" src="/wp-content/uploads/GKD-Common-Issue-5.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Keyboard shortcut to toggle full screen in GitKraken Desktop.</figcaption>
 </figure>
 
@@ -107,14 +107,14 @@ This can occur due to differences in line endings or encoding.
 - Enable "Ignore trailing whitespace"
 - If the message changes to "File contents are unchanged," the files are identical
 <figure class='figure center'>
-  <img src="/wp-content/uploads/GKD-Common-Issue-6.png" class="help-center-img img-bordered">
+  <img alt="Line ending or whitespace differences may cause misleading diffs" src="/wp-content/uploads/GKD-Common-Issue-6.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Line ending or whitespace differences may cause misleading diffs.</figcaption>
 </figure>
 
 ### Private organization repositories not visible (GitHub)
 Ensure GitKraken Desktop has organization access:
 <figure class='figure center'>
-  <img src="/wp-content/uploads/GKD-Common-Issue-7.png" class="help-center-img img-bordered">
+  <img alt="Check your GitHub application settings to confirm permissions" src="/wp-content/uploads/GKD-Common-Issue-7.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Check your GitHub application settings to confirm permissions.</figcaption>
 </figure>
 
@@ -194,13 +194,13 @@ Steps to modify:
 - [Download Git](https://git-scm.com/download) if needed
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/gkc-git-executable-version.png" class="help-center-img img-bordered">
+  <img alt="Switch Git Executable version under Preferences > Experimental" src="/wp-content/uploads/gkc-git-executable-version.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Switch Git Executable version under Preferences > Experimental.</figcaption>
 </figure>
 
 Disable the executable if problems continue:
 <figure class='figure center'>
-  <img src="/wp-content/uploads/gkc-use-git-executable.png" class="help-center-img img-bordered">
+  <img alt="Disable Git Executable if needed" src="/wp-content/uploads/gkc-use-git-executable.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Disable Git Executable if needed.</figcaption>
 </figure>
 
@@ -219,7 +219,7 @@ Error codes include:
 - 1007
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/error-1002@2x.png" class="help-center-img img-bordered">
+  <img alt="Example: Authentication error during integration" src="/wp-content/uploads/error-1002@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Example: Authentication error during integration.</figcaption>
 </figure>
 
@@ -236,7 +236,7 @@ Still stuck? [Contact Support](https://www.gitkraken.com/contact?product=gitkrak
 ## How to fix the `Cannot read property 'fullName' of undefined` push error
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/push-error.png" class="help-center-img img-bordered">
+  <img alt="Push error caused by case mismatch in branch name" src="/wp-content/uploads/push-error.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Push error caused by case mismatch in branch name.</figcaption>
 </figure>
 

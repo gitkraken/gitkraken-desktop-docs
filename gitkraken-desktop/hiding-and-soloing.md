@@ -38,7 +38,7 @@ Hide and Solo help you reduce Commit Graph clutter in GitKraken Desktop without 
 
 <div class="flex-wrap" style="align-items: flex-start">
   <div class="flex-item">
-    <img src="/wp-content/uploads/gk-hide-icon-green.svg" class='img-responsive' style="width: 70px; height: 70px">
+    <img alt="" src="/wp-content/uploads/gk-hide-icon-green.svg" class='img-responsive' style="width: 70px; height: 70px">
   </div>
   <div class="flex-item">
     <h3>Hide</h3>
@@ -52,7 +52,7 @@ Hide and Solo help you reduce Commit Graph clutter in GitKraken Desktop without 
 
 <div class="flex-wrap" style="align-items: flex-start">
   <div class="flex-item">
-    <img src="/wp-content/uploads/gk-solo-icon-orange.svg" class='img-responsive' style="width: 70px; height: 70px">
+    <img alt="" src="/wp-content/uploads/gk-solo-icon-orange.svg" class='img-responsive' style="width: 70px; height: 70px">
   </div>
   <div class="flex-item">
     <h3>Solo</h3>

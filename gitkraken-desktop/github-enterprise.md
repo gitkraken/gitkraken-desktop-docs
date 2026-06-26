@@ -85,26 +85,26 @@ To authenticate with GitHub Enterprise Server:
 1. Go to <kbd><i class="fas fa-cog"></i> Preferences > Integrations</kbd> in the upper-right corner.
 
 <figure>
-  <img src="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
+  <img alt="Accessing Preferences and Integrations" src="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Accessing Preferences and Integrations</figcaption>
 </figure>
 
 2. Enter your GitHub Enterprise Server host domain and follow the link to generate an access token.
 
 <figure>
-  <img src="/wp-content/uploads/gkc-github-enterprise-server-integration.png" class="help-center-img img-bordered">
+  <img alt="Enter host and generate access token" src="/wp-content/uploads/gkc-github-enterprise-server-integration.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Enter host and generate access token</figcaption>
 </figure>
 
 4. Log in using your GitHub Enterprise Server credentials and copy the token. Paste it into GitKraken and click <button class='button button--success button--ui button--nolink'>Connect</button>.
 
 <figure>
-  <img src='/wp-content/uploads/accesstoken-github-enterprise.png' class='center img-bordered'>
+  <img alt="Generate and copy your GitHub Enterprise access token" src='/wp-content/uploads/accesstoken-github-enterprise.png' class='center img-bordered'>
   <figcaption style="color:#888; text-align:center">Generate and copy your GitHub Enterprise access token</figcaption>
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/gkc-github-enterprise-server-integration-2.png" class="help-center-img img-bordered">
+  <img alt="Paste token into GitKraken and connect" src="/wp-content/uploads/gkc-github-enterprise-server-integration-2.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Paste token into GitKraken and connect</figcaption>
 </figure>
 
@@ -117,7 +117,7 @@ To authenticate with GitHub Enterprise Server:
 After connecting your GitHub Enterprise Server account, you can generate a new SSH key and upload it directly:
 
 <figure>
-  <img src='/wp-content/uploads/gkc-github-enterprise-server-add-key.png' class="help-center-img img-bordered">
+  <img alt="Generate SSH key and upload to GitHub Enterprise" src='/wp-content/uploads/gkc-github-enterprise-server-add-key.png' class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Generate SSH key and upload to GitHub Enterprise</figcaption>
 </figure>
 

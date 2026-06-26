@@ -317,8 +317,8 @@ To restore a file from a commit:
 
 The file is placed into your working directory as a staged change, ready to include in your next commit.
 
-<figure class=’figure center’>
-    <img src=’/wp-content/uploads/restore-files.png’ class="help-center-img img-bordered" alt="GitKraken Desktop Commit Panel showing multiple files selected from a commit’s file list, with a right-click context menu displaying the ‘Restore selected files from this commit’ option highlighted" />
+<figure class="figure center">
+    <img src="/wp-content/uploads/restore-files.png" class="help-center-img img-bordered" alt="GitKraken Desktop Commit Panel showing multiple files selected from a commit’s file list, with a right-click context menu displaying the ‘Restore selected files from this commit’ option highlighted" />
     <figcaption style="text-align: center; color: #888;">Right-click a file in the Commit Panel to restore it to your working directory.</figcaption>
 </figure>
 

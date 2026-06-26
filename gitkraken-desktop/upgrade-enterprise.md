@@ -122,7 +122,7 @@ To update your GitKraken Self-Hosted license:
 3. Browse to and select the new license file.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/license-settings@2x.png' class="help-center-img img-bordered">
+  <img alt="Use the License tab to upload a new license file" src='/wp-content/uploads/license-settings@2x.png' class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Use the License tab to upload a new license file.</figcaption>
 </figure>
 

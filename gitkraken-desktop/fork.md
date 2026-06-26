@@ -53,7 +53,7 @@ The fork appears in the Left Panel under **Remote** and is ready to use for push
 ## How to fork a repository
 
 1. [Open the repository](/working-with/open-clone-init/#opening-an-existing-project) you want to fork.
-2. In the Left Panel, hover over <em class='context-menu'><img src='/wp-content/uploads/gk-remote-icon.svg' style='height:1em;'> Remote</em> and click the <button class='button button--success button--ui button--nolink'>+</button> icon.
+2. In the Left Panel, hover over <em class='context-menu'><img alt="" src='/wp-content/uploads/gk-remote-icon.svg' style='height:1em;'> Remote</em> and click the <button class='button button--success button--ui button--nolink'>+</button> icon.
 3. Select the <kbd>GitHub.com</kbd> or <kbd>GitHub Enterprise Server</kbd> tab.
 
 <figure>
@@ -81,7 +81,7 @@ Click <button class='button button--success button--ui button--nolink'>Fork and 
 
 If you've already forked the repo on GitHub:
 
-1. Click the <button class='button button--success button--ui button--nolink'>+</button> icon next to <em class='context-menu'><img src='/wp-content/uploads/gk-remote-icon.svg' style='height:1em;'> Remote</em>
+1. Click the <button class='button button--success button--ui button--nolink'>+</button> icon next to <em class='context-menu'><img alt="" src='/wp-content/uploads/gk-remote-icon.svg' style='height:1em;'> Remote</em>
 2. Select the <kbd>GitHub.com</kbd> or <kbd>GitHub Enterprise Server</kbd> tab
 
 GitKraken Desktop will detect the existing fork and offer to add it.

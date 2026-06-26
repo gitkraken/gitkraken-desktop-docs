@@ -172,7 +172,7 @@ More options are available via the ellipsis menu.
   </thead>
   <tbody>
     <tr>
-      <td style="padding: 4px;"><strong>Clone</strong> <img src="/wp-content/uploads/gk-remote-icon.svg" style="height:1em;"></td>
+      <td style="padding: 4px;"><strong>Clone</strong> <img alt="" src="/wp-content/uploads/gk-remote-icon.svg" style="height:1em;"></td>
       <td style="padding: 4px;">Clone all selected repositories. HTTPS is used by default unless <a href="https://help.gitkraken.com/gitkraken-desktop/integrations/">SSH is configured in your settings</a>. Only available if repositories aren't already cloned.</td>
     </tr>
     <tr>
@@ -180,7 +180,7 @@ More options are available via the ellipsis menu.
       <td style="padding: 4px;">Fetch all selected repositories.</td>
     </tr>
     <tr>
-      <td style="padding: 4px;"><strong>Pull</strong> <img src="/wp-content/uploads/gk-pull-icon.svg" style="height:1em;"></td>
+      <td style="padding: 4px;"><strong>Pull</strong> <img alt="" src="/wp-content/uploads/gk-pull-icon.svg" style="height:1em;"></td>
       <td style="padding: 4px;">Pull all selected repositories. Customize pull behavior from the dropdown menu.</td>
     </tr>
     <tr>

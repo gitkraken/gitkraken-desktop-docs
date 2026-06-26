@@ -49,7 +49,7 @@ To open the Command Palette at any time, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + 
 From left to right, GitKraken Desktop displays the Left Panel, Commit Graph, and Commit Panel when working with a repository. The Left Panel can show either List view or Agent Sessions View.
 
 <figure class='figure center'>
-    <img src="/wp-content/uploads/interface.png" class="help-center-img img-bordered">
+    <img alt="GitKraken Desktop UI includes Left Panel, Commit Graph, and Commit Panel" src="/wp-content/uploads/interface.png" class="help-center-img img-bordered">
     <figcaption style="text-align: center; color: #888;">GitKraken Desktop UI includes Left Panel, Commit Graph, and Commit Panel.</figcaption>
 </figure>
 
@@ -65,15 +65,15 @@ The main toolbar provides quick access to common repository actions, including U
 
 | Icon | Button | What it does |
 | --- | --- | --- |
-| <img src='/wp-content/uploads/gk-new-undo-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Undo** | If an action can be undone, the <kbd>Undo</kbd> button is activated. Click to reverse the last undoable action. |
-| <img src='/wp-content/uploads/gk-new-redo-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Redo** | Click <kbd>Redo</kbd> to reverse the last undo command. |
+| <img alt="" src='/wp-content/uploads/gk-new-undo-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Undo** | If an action can be undone, the <kbd>Undo</kbd> button is activated. Click to reverse the last undoable action. |
+| <img alt="" src='/wp-content/uploads/gk-new-redo-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Redo** | Click <kbd>Redo</kbd> to reverse the last undo command. |
 
 ### Sync actions
 
 | Icon | Button | What it does |
 | --- | --- | --- |
-| <img src='/wp-content/uploads/gk-new-pull-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Pull** | Click to pull changes from the remote repository. Use the adjacent dropdown to choose pull behavior: |
-| <img src='/wp-content/uploads/gk-new-push-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Push** | Push changes to the upstream remote repository. |
+| <img alt="" src='/wp-content/uploads/gk-new-pull-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Pull** | Click to pull changes from the remote repository. Use the adjacent dropdown to choose pull behavior: |
+| <img alt="" src='/wp-content/uploads/gk-new-push-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Push** | Push changes to the upstream remote repository. |
 
 * Fetch All
 * Pull (fast-forward if possible)
@@ -86,20 +86,20 @@ The main toolbar provides quick access to common repository actions, including U
 
 | Icon | Button | What it does |
 | --- | --- | --- |
-| <img src='/wp-content/uploads/gk-new-branch-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Branch** | Create a new branch from your current HEAD. |
+| <img alt="" src='/wp-content/uploads/gk-new-branch-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Branch** | Create a new branch from your current HEAD. |
 
 ### Work-in-progress actions
 
 | Icon | Button | What it does |
 | --- | --- | --- |
-| <img src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Stash** | Temporarily save your changes without committing using a stash. |
-| <img src='/wp-content/uploads/gk-new-pop-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Pop Stash** | Restore changes from the most recent stash. |
+| <img alt="" src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Stash** | Temporarily save your changes without committing using a stash. |
+| <img alt="" src='/wp-content/uploads/gk-new-pop-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Pop Stash** | Restore changes from the most recent stash. |
 
 ### Conditional actions
 
 | Icon | Button | What it does |
 | --- | --- | --- |
-| <img src='/wp-content/uploads/gk-lfs-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **LFS** | This button appears if <a href="/gitkraken-desktop/git-lfs/">LFS</a> is enabled for your repository. |
+| <img alt="" src='/wp-content/uploads/gk-lfs-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **LFS** | This button appears if <a href="/gitkraken-desktop/git-lfs/">LFS</a> is enabled for your repository. |
 
 <div class='callout callout--basic'><p><strong>Note:</strong> To toggle toolbar labels, go to <kbd><strong>Preferences > UI Preferences</strong></kbd> and enable <code>Show toolbar icon labels</code>.</p></div>
 
@@ -137,14 +137,14 @@ For in-app terminal behavior, worktree-specific terminal sessions, and manual co
 
 | Icon | Section | What it does |
 | --- | --- | --- |
-| <img src='/wp-content/uploads/gk-new-local-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Local** | <p>References to local branches that point to specific commits.</p><p>If you need help with branches, visit our <a href="/working-with-repositories/branching-and-merging">Branching and Merging</a> page.</p> |
-| <img src='/wp-content/uploads/gk-new-remote-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Remote** | <p>References to remote branches.</p><p>For more information, see <a href="/working-with-repositories/pushing-and-pulling">Pushing and Pulling</a>.</p> |
-| <img src='/wp-content/uploads/gk-new-pull-requests-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Pull Requests** | <p>Shows active pull requests for merging one branch into another.</p><p>With a supported integration, you can create pull requests directly from GitKraken Desktop. For more information, see <a href="/working-with-repositories/pull-requests">Pull Requests</a>.</p> |
+| <img alt="" src='/wp-content/uploads/gk-new-local-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Local** | <p>References to local branches that point to specific commits.</p><p>If you need help with branches, visit our <a href="/working-with-repositories/branching-and-merging">Branching and Merging</a> page.</p> |
+| <img alt="" src='/wp-content/uploads/gk-new-remote-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Remote** | <p>References to remote branches.</p><p>For more information, see <a href="/working-with-repositories/pushing-and-pulling">Pushing and Pulling</a>.</p> |
+| <img alt="" src='/wp-content/uploads/gk-new-pull-requests-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Pull Requests** | <p>Shows active pull requests for merging one branch into another.</p><p>With a supported integration, you can create pull requests directly from GitKraken Desktop. For more information, see <a href="/working-with-repositories/pull-requests">Pull Requests</a>.</p> |
 | <i class="fa fa-list-ul" aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; font-size: 36px;"></i> | **Issues** | <p>Shows issues connected to your repository integrations.</p><p>For more information, see <a href="/integrations/jira/">Jira</a>, <a href="/integrations/github-issues/">GitHub Issues</a>, <a href="/integrations/gitlab-issues/">GitLab Issues</a>, or <a href="/integrations/trello/">Trello</a>.</p> |
 | <i class="fa fa-users" aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; font-size: 36px;"></i> | **Teams** | <p>Easily see what your <a href="/working-with-repositories/team-view/">Team</a> members are working on.</p> |
-| <img src='/wp-content/uploads/gk-new-tags-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Tags** | <p>References that point to specific commits and do not move.</p><p>For more information, see <a href="/working-with-repositories/tags">Tags</a>.</p> |
-| <img src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Stashes** | <p>Stored file changes from the working copy.</p><p>For more information, see <a href="/working-with-commits/stashing">Stashing</a>.</p> |
-| <img src='/wp-content/uploads//gk-new-submodules-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Submodules** | <p>A Git repository in a subdirectory of the current repository.</p><p>For more information, see <a href="/working-with-repositories/submodules">Submodules</a>.</p> |
+| <img alt="" src='/wp-content/uploads/gk-new-tags-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Tags** | <p>References that point to specific commits and do not move.</p><p>For more information, see <a href="/working-with-repositories/tags">Tags</a>.</p> |
+| <img alt="" src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Stashes** | <p>Stored file changes from the working copy.</p><p>For more information, see <a href="/working-with-commits/stashing">Stashing</a>.</p> |
+| <img alt="" src='/wp-content/uploads//gk-new-submodules-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Submodules** | <p>A Git repository in a subdirectory of the current repository.</p><p>For more information, see <a href="/working-with-repositories/submodules">Submodules</a>.</p> |
 
 
 ***
@@ -250,7 +250,7 @@ Tabs persist per [profile](/start-here/profiles/).
 </figure>
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/tab-hover-2025.png' class="help-center-img img-bordered">
+    <img alt="Hover to view file paths associated with open tabs" src='/wp-content/uploads/tab-hover-2025.png' class="help-center-img img-bordered">
     <figcaption style="text-align: center; color: #888;">Hover to view file paths associated with open tabs.</figcaption>
 </figure>
 

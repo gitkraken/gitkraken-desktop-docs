@@ -73,15 +73,24 @@ Set up the integration from the ISSUES section in the Left Panel or from <kbd>Pr
     <p><strong>Use Jira Data Center integration when:</strong> your organization runs self-hosted Jira Data Center and requires PAT-based setup. <strong>Don't use the Jira Cloud flow when:</strong> your environment depends on self-hosted server versions, PAT authentication, or Data Center-specific compatibility.</p>
 </div>
 
-<img src="/wp-content/uploads/connect-jira-dc-issues-2025@2x.png" class="help-center-img img-bordered" alt="Open Jira Data Center integration settings">
+<figure>
+  <img src="/wp-content/uploads/connect-jira-dc-issues-2025@2x.png" class="help-center-img img-bordered" alt="Open Jira Data Center integration settings">
+  <figcaption style="text-align: center; color: #888">Open Jira Data Center integration settings.</figcaption>
+</figure>
 
 Enter your Host Domain URL and a Personal Access Token generated in your Jira Data Center instance.
 
-<img src="/wp-content/uploads/connect-jira-dc-2025@2x.png" class="help-center-img img-bordered" alt="Enter domain and access token for Jira Data Center">
+<figure>
+  <img src="/wp-content/uploads/connect-jira-dc-2025@2x.png" class="help-center-img img-bordered" alt="Enter domain and access token for Jira Data Center">
+  <figcaption style="text-align: center; color: #888">Enter domain and access token for Jira Data Center.</figcaption>
+</figure>
 
 Once connected, GitKraken Desktop will confirm the integration.
 
-<img src="/wp-content/uploads/connected-jira-dc-2025@2x.png" class="help-center-img img-bordered" alt="Successful Jira Data Center connection">
+<figure>
+  <img src="/wp-content/uploads/connected-jira-dc-2025@2x.png" class="help-center-img img-bordered" alt="Successful Jira Data Center connection">
+  <figcaption style="text-align: center; color: #888">Successful Jira Data Center connection.</figcaption>
+</figure>
 
 ---
 

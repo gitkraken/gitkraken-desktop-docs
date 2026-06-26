@@ -95,7 +95,7 @@ To sign in to GitKraken using your GitHub account:
 This connects your GitHub account to GitKraken automatically.
 
 <figure>
-    <img src='/wp-content/uploads/sign-in-github-2025.png' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="GitKraken login interface with GitHub option" src='/wp-content/uploads/sign-in-github-2025.png' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">GitKraken login interface with GitHub option</figcaption>
 </figure>
 
@@ -112,29 +112,29 @@ To connect your GitHub account manually:
 1. Navigate to <kbd><i>Preferences</i> <i class='fa fa-caret-right'></i> <i>Integrations</i></kbd> in the upper right corner.
 
 <figure>
-    <img src="/wp-content/uploads/preferences-menu-gear-2025.png" class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="Preferences menu in GitKraken" src="/wp-content/uploads/preferences-menu-gear-2025.png" class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Preferences menu in GitKraken</figcaption>
 </figure>
 
 2. From the Integrations window, select **GitHub**.
-4. Click <kbd>Connect to GitHub</kbd>. This will open your browser to authenticate GitKraken with GitHub.
+3. Click <kbd>Connect to GitHub</kbd>. GitKraken opens your browser to authenticate with GitHub.
 
 <figure>
-    <img src="/wp-content/uploads/connect-github-2025@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="GitHub integration screen" src="/wp-content/uploads/connect-github-2025@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">GitHub integration screen</figcaption>
 </figure>
 
-5. Log in with your GitHub credentials. A confirmation message will appear. Select `Open GitKraken` to finish.
+4. Log in with your GitHub credentials. When the confirmation message appears, select `Open GitKraken` to finish.
 
 <figure>
-    <img src="/wp-content/uploads/github-success-1@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="Successful GitHub authentication confirmation" src="/wp-content/uploads/github-success-1@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Successful GitHub authentication confirmation</figcaption>
 </figure>
 
 Alternatively, you can connect by manually pasting an OAuth token:
 
 <figure>
-    <img src="/wp-content/uploads/github-oauth-token.png" class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="Manual OAuth token entry" src="/wp-content/uploads/github-oauth-token.png" class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Manual OAuth token entry</figcaption>
 </figure>
 
@@ -155,7 +155,7 @@ You may also:
 - Add an existing key via _Add existing SSH key_.
 
 <figure>
-    <img src="/wp-content/uploads/add-ssh-key-2025@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="Options for adding SSH key in GitKraken" src="/wp-content/uploads/add-ssh-key-2025@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Options for adding SSH key in GitKraken</figcaption>
 </figure>
 
@@ -172,14 +172,14 @@ GitKraken's OAuth integration enhances how you interact with your repositories:
 - View a list of your GitHub repositories to simplify cloning.
 
 <figure>
-    <img src="/wp-content/uploads/clone@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="GitHub repositories available for cloning" src="/wp-content/uploads/clone@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">GitHub repositories available for cloning</figcaption>
 </figure>
 
 - View a list of repository forks when adding remotes.
 
 <figure>
-    <img src="/wp-content/uploads/remote@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="Fork list when adding a GitHub remote" src="/wp-content/uploads/remote@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Fork list when adding a GitHub remote</figcaption>
 </figure>
 
@@ -192,7 +192,7 @@ Create and manage [Pull Requests](/working-with-repositories/pull-requests/#assi
 - Apply labels
 
 <figure>
-    <img src="/wp-content/uploads/pull-request-create@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="Creating a pull request in GitKraken" src="/wp-content/uploads/pull-request-create@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Creating a pull request in GitKraken</figcaption>
 </figure>
 
@@ -217,14 +217,14 @@ To access this view:
 3. Select a pull request from the Left Panel, or check out the source branch to reveal a PR icon with the pull request number.
 
 <figure>
-    <img src='/wp-content/uploads/github-pr-view-2025@2x.png' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="Accessing Pull Request View via the Left Panel" src='/wp-content/uploads/github-pr-view-2025@2x.png' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Accessing Pull Request View via the Left Panel</figcaption>
 </figure>
 
 Alternatively, launch the view from the **Launchpad** by clicking the pull request icon on the right.
 
 <figure>
-    <img src='/wp-content/uploads/github-pr-view-launchpad.png' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="Opening Pull Request View from the Launchpad" src='/wp-content/uploads/github-pr-view-launchpad.png' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Opening Pull Request View from the Launchpad</figcaption>
 </figure>
 
@@ -240,7 +240,7 @@ Within the Pull Request View, you can edit the following:
 To review the files affected by a pull request, click the <kbd>Review Code and Suggest Changes</kbd> button in the top-right corner.
 
 <figure>
-    <img src='/wp-content/uploads/github-pr-review-2025@2x.png' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="Reviewing files within a pull request" src='/wp-content/uploads/github-pr-review-2025@2x.png' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Reviewing files within a pull request</figcaption>
 </figure>
 
@@ -258,7 +258,7 @@ In GitKraken Desktop, the **Review Code and Suggest Changes** feature lets you p
 4. Click <kbd>Suggest X file change to PR #XX</kbd>.
 
 <figure>
-    <img src='/wp-content/uploads/gkc-pr-suggest-code-changes.gif' class="help-center-img img-bordered" style="max-width: 75%;"><figcaption style="text-align:center;color:#888">Suggesting code changes in a pull request</figcaption>
+    <img alt="Suggesting code changes in a pull request" src='/wp-content/uploads/gkc-pr-suggest-code-changes.gif' class="help-center-img img-bordered" style="max-width: 75%;"><figcaption style="text-align:center;color:#888">Suggesting code changes in a pull request</figcaption>
 </figure>
 
 ### How to accept or reject code suggestions
@@ -266,14 +266,14 @@ In GitKraken Desktop, the **Review Code and Suggest Changes** feature lets you p
 In the Pull Request panel, suggestions from teammates are labeled with <em class='context-menu'>Code Suggestions</em>.
 
 <figure>
-    <img src='/wp-content/uploads/code-suggestion-2025@2x.png' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="Label showing code suggestions" src='/wp-content/uploads/code-suggestion-2025@2x.png' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Label showing code suggestions</figcaption>
 </figure>
 
 Clicking a suggestion opens the diff view, where you can choose to apply or reject the change.
 
 <figure>
-    <img src='/wp-content/uploads/gkc-pr-code-suggestions-apply.gif' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="Applying code suggestions" src='/wp-content/uploads/gkc-pr-code-suggestions-apply.gif' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Applying code suggestions</figcaption>
 </figure>
 
@@ -283,7 +283,7 @@ Clicking a suggestion opens the diff view, where you can choose to apply or reje
 - **Click the build status** to open the related URL in your browser.
 
 <figure>
-    <img src='/wp-content/uploads/build-status@2x.png' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="Build status with link to CI/CD pipeline" src='/wp-content/uploads/build-status@2x.png' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Build status with link to CI/CD pipeline</figcaption>
 </figure>
 
@@ -300,7 +300,7 @@ To merge a pull request:
    - <kbd>Rebase and merge</kbd>
 
 <figure>
-    <img src='/wp-content/uploads/merge-options@2x.png' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="Merge options in GitKraken" src='/wp-content/uploads/merge-options@2x.png' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Merge options in GitKraken</figcaption>
 </figure>
 
