@@ -42,7 +42,7 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
    - Sign in and sign up now happen through your browser at gitkraken.dev, replacing the in-app email/password form.
    - New integration connections will now be connected through your GitKraken account and synced across all your devices. You can manage integrations for your GitKraken account at [gitkraken.dev](https://gitkraken.dev/integrations) as well as from *Preferences > Integrations*.
    - *Note: Integrations and login for On-premise clients (both Self-Hosted and Serverless) have not been modified and will continue to be managed locally.*
- - **Multiple WIP nodes in the Commit Graph:**
+- **Multiple WIP nodes in the Commit Graph:**
    - A WIP node now appears in the Commit Graph for every worktree with uncommitted changes or an active agent session. Each WIP row shows the summary of changes, and — for any worktree other than the one you're currently in — an agent's status when a session is active there. Toggle visibility in *Preferences > Agents*.
    - Selecting the WIP row for another worktree will expose an inline "Open Worktree" action so you can easily switch to that worktree.
 - **Review PRs with GitKraken Code Review:**
