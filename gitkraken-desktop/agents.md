@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-06
+last_verified: 2026-08
 llms_include: true
 tags: [agents, worktrees, coding-agents, parallel-work, ai, terminal]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2026</kbd>
+<kbd>Last updated: August 2026</kbd>
 
 Use this page to learn how coding agents work in GitKraken Desktop and how to use **Agent Sessions View** to create, monitor, and manage coding agent sessions. Read this page if you want to use external coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, or OpenCode from inside GitKraken Desktop.
 
@@ -128,6 +128,13 @@ To show or hide the `List | Agents` toggle at the top of the Left Panel, go to <
   <figcaption style="text-align:center; color:#888">Enable <code>Show Agents view in left panel</code> to display the <code>List | Agents</code> toggle</figcaption>
 </figure>
 
+### Focusing view on an agent
+
+To Focus your view on an agent, switch to Agents View in the left sidebar and click 'Focus Agent application'
+<figure>
+  <img src="/wp-content/uploads/focus-agent-icon.png" class="help-center-img img-bordered" alt="Focusing on an agent from the Left Panel.">
+  <figcaption style="text-align:center; color:#888">Focusing on an agent from the Left Panel</figcaption>
+</figure>
 
 ***
 
@@ -239,7 +246,7 @@ Review or set your Branch name, Base branch, and coding agent, then click 'Start
 #### Starting from Left Panel View
 From the left panel, go to your Issues view, click the ... icon next to the issue and click 'Start an Agent Session'
    <figure>
-     <img src='/wp-content/uploads/GKD-Launching-Agent-Sidebar-view1.png' class="help-center-img img-bordered" alt="Start an Agent Session">
+     <img src='/wp-content/uploads/start-agent-session-from-issue.png' class="help-center-img img-bordered" alt="Start an Agent Session">
      <figcaption style="text-align: center; color: #888">Starting an Agent Session from the Left Panel.</figcaption>
    </figure>
 Review or set your Branch name, Base branch, and coding agent, then click 'Start Agent Session'
@@ -276,7 +283,10 @@ The status bar at the bottom of each card shows the current session state. Statu
 When you start a session, the card shows a **Running** status. If you have Claude Code hooks enabled, the card may show a different status that reflects what the agent is doing.
 
 When an agent needs attention, the card can show a bell icon and a **Waiting for input** label. This lets you see that the session needs a response without switching to the terminal first.
-
+<figure>
+  <img src='/wp-content/uploads/agent-status.png' class="help-center-img img-bordered" alt="Agent Sessions View showing agent Waiting for input.">
+  <figcaption style="text-align: center; color: #888">Agent Sessions View highlighting a session that needs attention, including Waiting for input.</figcaption>
+</figure>
 If you remove a worktree from the card menu, the card shows visual feedback while the deletion is in progress so you know the action is being processed.
 
 <figure>
@@ -286,10 +296,12 @@ If you remove a worktree from the card menu, the card shows visual feedback whil
 
 You can keep working in another worktree while monitoring these cards. When a session finishes, switch to that worktree to review the results.
 
+
+
 ### Agent Permission requests
 When Agents are requesting approval for actions or permission, you can interact with the options directly from the Agents view without having to switch to the session
 <figure>
-  <img src='/wp-content/uploads/GKD-Agent-permission-requests.png' class="help-center-img img-bordered" alt="Agent Sessions View showing Agent permission request">
+  <img src='/wp-content/uploads/allow-deny.png' class="help-center-img img-bordered" alt="Agent Sessions View showing Agent permission request">
   <figcaption style="text-align: center; color: #888">Agent Sessions View allows your to approve agent permission requests directly from the view without having to switch to the session.</figcaption>
 </figure>
 
