@@ -222,6 +222,32 @@ Because these settings are under Repo-Specific Preferences, setup commands apply
 
 GitKraken Desktop creates a new worktree from the selected base branch, runs any configured setup commands, and launches the selected coding agent in the embedded terminal. The new worktree inherits hidden refs, hidden remotes, soloed refs and remotes, and collapsed folders and remotes from the source repository, so you do not need to re-hide branches or remotes after starting the session.
 
+### How to start an agent session from a work item
+Starting an Agent Session automatically from a work item primes your agent with all of of the work context up front, saving time and effort.
+#### Starting from Launchpad View
+From Launchpad, go to your Issues view, and click the 'Start an Agent Session' button
+   <figure>
+     <img src='/wp-content/uploads/GKD-Launching-Agent-Launchpad1.png' class="help-center-img img-bordered" alt="Start an Agent Session">
+     <figcaption style="text-align: center; color: #888">Starting an Agent Session from the Launchpad view.</figcaption>
+   </figure>
+Review or set your Branch name, Base branch, and coding agent, then click 'Start Agent Session'
+   <figure>
+     <img src='/wp-content/uploads/GKD-Launching-Agent-Launchpad2.png' class="help-center-img img-bordered" alt="Session Options">
+     <figcaption style="text-align: center; color: #888">Setting Session options.</figcaption>
+   </figure>
+
+#### Starting from Left Panel View
+From the left panel, go to your Issues view, click the ... icon next to the issue and click 'Start an Agent Session'
+   <figure>
+     <img src='/wp-content/uploads/GKD-Launching-Agent-Sidebar-view1.png' class="help-center-img img-bordered" alt="Start an Agent Session">
+     <figcaption style="text-align: center; color: #888">Starting an Agent Session from the Left Panel.</figcaption>
+   </figure>
+Review or set your Branch name, Base branch, and coding agent, then click 'Start Agent Session'
+   <figure>
+     <img src='/wp-content/uploads/GKD-Launching-Agent-Sidebar-view2.png' class="help-center-img img-bordered" alt="Session Options">
+     <figcaption style="text-align: center; color: #888">Setting Session options.</figcaption>
+   </figure>
+
 ### How to start an agent session from an existing worktree
 
 You can start a coding agent session in a worktree that already exists, without creating a new one:
@@ -259,6 +285,13 @@ If you remove a worktree from the card menu, the card shows visual feedback whil
 </figure>
 
 You can keep working in another worktree while monitoring these cards. When a session finishes, switch to that worktree to review the results.
+
+### Agent Permission requests
+When Agents are requesting approval for actions or permission, you can interact with the options directly from the Agents view without having to switch to the session
+<figure>
+  <img src='/wp-content/uploads/GKD-Agent-permission-requests.png' class="help-center-img img-bordered" alt="Agent Sessions View showing Agent permission request">
+  <figcaption style="text-align: center; color: #888">Agent Sessions View allows your to approve agent permission requests directly from the view without having to switch to the session.</figcaption>
+</figure>
 
 ### How to filter and sort agent sessions
 
