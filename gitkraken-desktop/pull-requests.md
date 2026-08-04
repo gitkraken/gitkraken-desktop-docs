@@ -201,33 +201,36 @@ Click <button class='button button--primary button--ui button--nolink'><span sty
 ## How to review GitHub pull requests on GitKraken.dev
 
 In the GitHub Pull Request view, click <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Review on GitKraken.dev</span></button> to open the pull request with [GitKraken Code Review](https://gitkraken.dev?source=help_center&product=gitkraken) in your browser.
+
 <div class='callout callout--basic'>
   <p><strong>Use GitKraken.dev review when:</strong> you want a faster, more focused PR review experience or you want to use AI-assisted suggestions and integrated chat. <strong>Stay in the in-app review when:</strong> you want to suggest code edits directly from GitKraken Desktop and post them as comments on the GitHub PR.</p>
 </div>
+
 GitKraken Code Review gives you a faster review experience for GitHub PRs with:
 - Cleaner diffs that are easier to scan
 - AI-generated suggestions to speed up review
 - Integrated chat with the rest of your team
 - The ability to approve and comment just like on GitHub
+
 <figure>
   <img src='/wp-content/uploads/code-review-actions.png' 
-       alt="List of Actions available through Gitkrakend.dev Code Review" 
+       alt="List of actions available through GitKraken.dev Code Review" 
        class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">List of Actions available through Gitkraken.dev Code Review</figcaption>
+  <figcaption style="text-align:center; color:#888">List of actions available through GitKraken.dev Code Review</figcaption>
 </figure>
 
 <figure>
   <img src='/wp-content/uploads/code-review-AI-panel.png' 
-       alt="AI Assisted Code Review" 
+       alt="AI-assisted code review summary in GitKraken.dev" 
        class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">View of AI Assisted Gitkraken.dev Code Review Summary</figcaption>
+  <figcaption style="text-align:center; color:#888">AI-assisted code review summary in GitKraken.dev</figcaption>
 </figure>
 
 <figure>
   <img src='/wp-content/uploads/code-review-comment.png' 
-       alt="Code Review Comment" 
+       alt="Commenting on a pull request in GitKraken.dev Code Review" 
        class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">View of Gitkraken.dev Code Review PR Comments</figcaption>
+  <figcaption style="text-align:center; color:#888">Commenting on a pull request in GitKraken.dev Code Review</figcaption>
 </figure>
 
 ***
