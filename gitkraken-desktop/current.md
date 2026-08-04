@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-07
+last_verified: 2026-08
 llms_include: true
 tags: [release-notes, changelog, upgrades, version-history]
 og_image: /img/GitKrakenClient-Hero.png
@@ -29,6 +29,47 @@ This release notes page tracks what's new and changing in the current version of
 <a href="https://www.gitkraken.com/download?product=gitkraken&source=help_center" target="_blank" class="button button--basic ">Download Current Version Now</a>
 
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
+
+***
+<a id="v12-4-0"></a>
+## Version 12.4.0
+
+<kbd>Wednesday, August 5th, 2026</kbd>
+
+<div class="embed-container embed-container--16-9" style="position: relative; width: 560px; height: 310px; overflow: hidden;">
+    <a href="https://youtu.be/ZahXvdGCPnw" target="_blank">
+      <img src="https://help.gitkraken.com/wp-content/uploads/GKD-12-4-Thumbnail.png" alt="YouTube video thumbnail"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;" />
+    </a>
+</div>
+
+_"Counterspell any agent action."_
+
+### New ✨
+ - **Start Agent Sessions from an Issue:**
+   - You can now start an agent session directly from an issue in Launchpad and from issues in the Left Panel. GitKraken will create a new branch for that issue, open it in a worktree, and launch your selected coding agent with the issue's context so it can start working right away.
+      - In Launchpad, select "Start an Agent Session" in the `ACTION` column on any issue without an associated branch yet to have an agent start working on it. You'll be prompted with a setup modal to confirm the branch name, coding agent, and other settings before launching the agent.
+      - In the Left Panel, right-click on any issue and select "Start an Agent Session", which opens the same setup modal. The option appears only for issues that don't already have an associated branch.
+ - **Address Claude permission requests without switching worktrees:**
+   - The Agent Sessions panel now shows pending permission requests from Claude Code with allow and deny actions so you can keep Claude working without switching into the worktree.
+   - If relevant, you can also preview the command Claude is asking permission to run by clicking the caret inline with the allow/deny actions to reveal the command.
+
+### Improvements 🙌
+ - When you sign in with a single profile, GitKraken now automatically connects all the Git providers linked to your gitkraken.dev account, so they're ready to use right away.
+ - Added a Ctrl+Alt+F (Cmd+Option+F on Mac) shortcut to focus the search input on the New Tab.
+ - When a branch is checked out in a worktree, right-clicking it in the commit graph now offers to remove the worktree — optionally deleting the local branch, or the local and remote branches together — instead of a "Delete branch" action that Git could never complete while the branch was checked out. The same worktree-removal options are also available from the worktree menu in the Agent Sessions panel.
+
+### Bug Fixes 🐛
+ - Fixed an issue where signed-out users saw an endless loading state on the Launchpad Pull Requests and Issues tabs; they now see a prompt to sign in.
+ - Fixed an issue where uncommitted files tracked by Git LFS through a subfolder's own `.gitattributes` were not recognized as LFS files in the WIP, so they showed no LFS tag and could be edited as plain text.
+ - Fixed an issue where re-entering the same expired GitKraken account sign-in code left the form stuck, with the Save button disabled and spinning; it now shows the expired-code message again so you can try a new code.
+ - Fixed an issue where the Azure DevOps organization picker did not appear when signing back in to your GitKraken account within the app; accounts with multiple organizations can now pick which one to use on re-login.
+ - The agent workflow panel now preserves its scroll position when you switch workspaces, instead of resetting to the top.
+ - Fixed an issue where selecting a commit together with the working directory showed an unstaged file rename as a separate delete and add instead of a single renamed entry.
+ - Fixed an issue where the "Hide all tags" and "Show all tags" options in the left panel Tags section menu were greyed out when a repository contained only annotated tags.
+ - Fixed an issue where opening a worktree in a new tab could block switching to another tab for a long time while the Jira issue tracker was still loading its issues; tab switches now happen right away.
+ - Fixed an issue where the currently active worktree's card in the left panel could show a stale ahead/behind count and uncommitted-changes dot that only refreshed after switching worktrees or restarting.
+ - Fixed an issue where GitKraken Desktop would spam GitLab API calls.
 
 ***
 <a id="v12-3-1"></a>
