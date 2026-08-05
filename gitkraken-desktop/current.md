@@ -37,7 +37,7 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 <kbd>Wednesday, August 5th, 2026</kbd>
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZahXvdGCPnw?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_Nj7FzczoJw?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>
 </div>
 
 _"Counterspell any agent action."_
