@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-06
+last_verified: 2026-08
 llms_include: true
 tags: [agents, worktrees, coding-agents, parallel-work, ai, terminal]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: June 2026</kbd>
+<kbd>Last updated: August 2026</kbd>
 
 Use this page to learn how coding agents work in GitKraken Desktop and how to use **Agent Sessions View** to create, monitor, and manage coding agent sessions. Read this page if you want to use external coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, or OpenCode from inside GitKraken Desktop.
 
@@ -128,6 +128,14 @@ To show or hide the `List | Agents` toggle at the top of the Left Panel, go to <
   <figcaption style="text-align:center; color:#888">Enable <code>Show Agents view in left panel</code> to display the <code>List | Agents</code> toggle</figcaption>
 </figure>
 
+### How to focus your view on an agent
+
+To focus your view on an agent, switch to **Agents** view in the Left Panel and click the eye icon labeled **Focus agent application**.
+
+<figure>
+  <img src="/wp-content/uploads/focus-agent-icon.png" class="help-center-img img-bordered" alt="Focusing on an agent from the Left Panel.">
+  <figcaption style="text-align:center; color:#888">Focusing on an agent from the Left Panel</figcaption>
+</figure>
 
 ***
 
@@ -222,6 +230,42 @@ Because these settings are under Repo-Specific Preferences, setup commands apply
 
 GitKraken Desktop creates a new worktree from the selected base branch, runs any configured setup commands, and launches the selected coding agent in the embedded terminal. The new worktree inherits hidden refs, hidden remotes, soloed refs and remotes, and collapsed folders and remotes from the source repository, so you do not need to re-hide branches or remotes after starting the session.
 
+### How to start an agent session from a work item
+
+Starting an agent session directly from a work item primes your agent with all of the work context up front, saving time and effort.
+
+#### Starting from Launchpad view
+
+From Launchpad, go to your Issues view and click **Start an Agent Session**.
+
+   <figure>
+     <img src='/wp-content/uploads/GKD-Launching-Agent-Launchpad1.png' class="help-center-img img-bordered" alt="Start an Agent Session">
+     <figcaption style="text-align: center; color: #888">Starting an Agent Session from the Launchpad view.</figcaption>
+   </figure>
+
+Review or set your **Branch name**, **Base branch**, and **Coding agent**, then click **Start Agent Session**.
+
+   <figure>
+     <img src='/wp-content/uploads/GKD-Launching-Agent-Launchpad2.png' class="help-center-img img-bordered" alt="Session Options">
+     <figcaption style="text-align: center; color: #888">Setting Session options.</figcaption>
+   </figure>
+
+#### Starting from the Left Panel
+
+From the Left Panel, go to your Issues view, click the three-dot menu next to the issue, and click **Start an Agent Session**.
+
+   <figure>
+     <img src='/wp-content/uploads/GKD-Launching-Agent-Sidebar-view1.png' class="help-center-img img-bordered" alt="Start an Agent Session">
+     <figcaption style="text-align: center; color: #888">Starting an Agent Session from the Left Panel.</figcaption>
+   </figure>
+
+Review or set your **Branch name**, **Base branch**, and **Coding agent**, then click **Start Agent Session**.
+
+   <figure>
+     <img src='/wp-content/uploads/GKD-Launching-Agent-Sidebar-view2.png' class="help-center-img img-bordered" alt="Session Options">
+     <figcaption style="text-align: center; color: #888">Setting Session options.</figcaption>
+   </figure>
+
 ### How to start an agent session from an existing worktree
 
 You can start a coding agent session in a worktree that already exists, without creating a new one:
@@ -250,8 +294,16 @@ The status bar at the bottom of each card shows the current session state. Statu
 When you start a session, the card shows a **Running** status. If you have Claude Code hooks enabled, the card may show a different status that reflects what the agent is doing.
 
 When an agent needs attention, the card can show a bell icon and a **Waiting for input** label. This lets you see that the session needs a response without switching to the terminal first.
-
+<figure>
+  <img src='/wp-content/uploads/agent-status.png' class="help-center-img img-bordered" alt="Agent Sessions View showing agent Waiting for input.">
+  <figcaption style="text-align: center; color: #888">Agent Sessions View highlighting a session that needs attention, including Waiting for input.</figcaption>
+</figure>
 If you remove a worktree from the card menu, the card shows visual feedback while the deletion is in progress so you know the action is being processed.
+
+<figure>
+  <img src='/wp-content/uploads/GKD-Remove-Session-and-Worktree.png' class="help-center-img img-bordered" alt="Card menu for a worktree in Agent Sessions View showing the Remove this worktree and Remove worktree and delete branch options.">
+  <figcaption style="text-align: center; color: #888">Removing a worktree from the card menu in Agent Sessions View.</figcaption>
+</figure>
 
 <figure>
   <img src='/wp-content/uploads/gkd-agents-monitoring-status-20260414.png' class="help-center-img img-bordered" alt="Agent Sessions View showing multiple worktree cards with WIP change counts, ahead-behind indicators, and agent status bars displaying various states including Waiting for input.">
@@ -259,6 +311,15 @@ If you remove a worktree from the card menu, the card shows visual feedback whil
 </figure>
 
 You can keep working in another worktree while monitoring these cards. When a session finishes, switch to that worktree to review the results.
+
+### How to respond to agent permission requests
+
+When an agent requests approval for an action, you can respond directly from Agent Sessions View without switching to the session.
+
+<figure>
+  <img src='/wp-content/uploads/allow-deny.png' class="help-center-img img-bordered" alt="Agent Sessions View showing Agent permission request">
+  <figcaption style="text-align: center; color: #888">Agent Sessions View allows you to approve agent permission requests directly from the view without switching to the session.</figcaption>
+</figure>
 
 ### How to filter and sort agent sessions
 

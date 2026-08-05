@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-05
+last_verified: 2026-08
 llms_include: true
 tags: [worktrees, branches, parallel-work, repositories, checkout]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2026</kbd>
+<kbd>Last updated: August 2026</kbd>
 
 Use this page to create, switch, lock, and remove Git worktrees in GitKraken Desktop when you need multiple branches checked out at the same time. Worktrees keep separate working directories while sharing the same repository history, which makes them useful for parallel feature work, testing, review workflows, and coding agent sessions.
 
@@ -133,6 +133,17 @@ New worktrees inherit view settings from the source repository, including hidden
 
 To switch to another worktree:
 - Right-click the desired worktree in the Left Panel and choose <kbd>Open this worktree</kbd>
+- If the worktree already has a WIP node in the Commit Graph, hover over that WIP node and choose <kbd>Open worktree</kbd>
+
+  <figure>
+    <img src="/wp-content/uploads/open-worktree-from-wip.png" 
+         class="help-center-img img-bordered" 
+         alt="Opening a worktree from its WIP node in the commit graph.">
+    <figcaption style="text-align:center; color:#888">
+      Opening a worktree from its WIP node in the commit graph
+    </figcaption>
+  </figure>
+
 - Right-click the desired worktree in the Left Panel and choose <kbd>Open worktree in a new tab</kbd> to open it in a separate GitKraken tab instead of replacing the current one
 - Or check out the corresponding branch from the Repository View
 
@@ -167,3 +178,16 @@ Locking a worktree prevents accidental changes while you work elsewhere.
 <div class='callout callout--basic'>
   <p><strong>Tip:</strong> A merged PR pill on a worktree card in Agent Sessions View means the branch has a merged GitHub pull request. Use this as a signal that it is safe to remove the worktree and delete the branch.</p>
 </div>
+
+## Multiple WIP nodes for multiple worktrees
+
+With the rise of parallel work across multiple agents, tracking pending changes across worktrees matters more than ever. GitKraken Desktop displays a separate WIP node in the commit graph for each worktree that has pending changes.
+
+<figure>
+  <img src="/wp-content/uploads/multiple-WIP-nodes.png" 
+       class="help-center-img img-bordered" 
+       alt="Commit graph showing a separate WIP node for each of several worktrees with pending changes.">
+  <figcaption style="text-align:center; color:#888">
+    Each worktree gets its own WIP node in the commit graph
+  </figcaption>
+</figure>
