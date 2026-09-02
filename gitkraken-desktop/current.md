@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-08
+last_verified: 2026-09
 llms_include: true
 tags: [release-notes, changelog, upgrades, version-history]
 og_image: /img/GitKrakenClient-Hero.png
@@ -29,6 +29,39 @@ This release notes page tracks what's new and changing in the current version of
 <a href="https://www.gitkraken.com/download?product=gitkraken&source=help_center" target="_blank" class="button button--basic ">Download Current Version Now</a>
 
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
+
+***
+<a id="v12-4-1"></a>
+## Version 12.4.1
+
+<kbd>Wednesday, September 2nd, 2026</kbd>
+
+### New ✨
+ - **Worktree tab groups:**
+   - Worktrees of the same repository are now automatically grouped together in the tab bar, making it easier to see which tabs belong to the same project. This can be disabled in *Preferences > UI Customization*.
+ - **Live agent status support for Codex:**
+   - GitKraken Desktop can now track Codex agent sessions and display their status across worktrees in the Agent Sessions panel, in addition to Claude Code and OpenCode sessions.
+   - GitKraken will also display pending permission requests from Codex in associated worktree cards, with allow and deny actions to directly respond without switching into the worktree.
+   - You can install or uninstall the Codex Plugin that enables live status reporting from *Preferences > External Tools*.
+
+### Improvements 🙌
+ - You can now view GitHub pull request diffs directly from the Left Panel and Commit Graph. Right-click a pull request in the Left Panel, or a branch with an associated pull request in the Commit Graph, and choose "View changes in PR" to automatically select the base and head commits and show the full diff. If either branch's remote is missing, GitKraken prompts you to add it first.
+ - Left Panel search now finds remote branches when you include the remote name, such as `origin/master` or `origin:master`. Every result the search returned before is still returned.
+
+### Bug Fixes 🐛
+ - Fixed an issue where GitKraken could hang on startup, never showing its window, when a profile on disk was missing its name; the app now falls back to a profile that loaded successfully.
+ - Fixed several issues where integrations with an expired or stale sign-in could fail to load, show authentication errors, or (for Azure DevOps) not display the organization picker; GitKraken now refreshes the token automatically and prompts you to reconnect only when it can't.
+ - Fixed an issue where Launchpad's My Pull Requests view showed no Bitbucket pull requests when the Bitbucket integration was selected without a workspace; these pull requests now load, and a failure to load them now shows an error instead of a silently empty list.
+ - Fixed an issue where fetching repositories for a connected integration with no repositories to fetch logged a provider error instead of returning no results.
+ - Fixed an issue in the New Agent Session form where clearing an invalid or duplicate branch name and quickly retyping the same value could briefly re-enable the Start button before validation reran.
+ - Fixed an issue in the Agent Sessions panel where the worktree sort and filter selection was cleared when opening a file diff; your selection is now preserved.
+ - Fixed an issue where the bottom status bar overlapped the "Commit Changes" button after generating a commit message with AI.
+ - Fixed an issue where opening History or Blame on a file renamed in the working directory showed an empty commit list and a spinner that never finished loading; GitKraken now shows the file's history under its previous path.
+ - Fixed an issue where a worktree card's agent "Running" indicator could stay visible after the agent exited if you quickly selected a different worktree card; it now clears on its own without needing to reselect the card.
+ - Fixed an issue where the unstaged diff of a modified file could show every line as changed when the file is stored with CRLF line endings in the repository; the diff now shows only the lines you actually changed, matching what Git reports.
+ - Fixed an issue where "Ignore and Stop Tracking" silently did nothing when the selection mixed tracked files with files that were never staged; the selection is now ignored and the tracked files stop being tracked. A failure while ignoring files now shows an error instead of nothing at all.
+ - Fixed an issue where pressing Enter while entering a GitKraken account sign-in code did nothing; it now submits the code just like clicking Save, both in the sign-in dialog and during onboarding.
+ - Fixed an issue where Ctrl+click inside the integrated terminal cleared a user's text selection on macOS.
 
 ***
 <a id="v12-4-0"></a>
