@@ -368,7 +368,7 @@ Use these actions after the agent finishes so you can review changes, push the b
 
 ## How to install, uninstall, or reinstall agent status plugins and hooks
 
-GitKraken Desktop uses agent-specific integrations to report live status in Agent Sessions View. Only event metadata is sent. Prompt content, agent output, and source code are not captured.
+GitKraken Desktop uses agent-specific integrations to report live status in Agent Sessions View. These integrations send only event metadata. Prompt content, agent output, and source code are never sent to GitKraken.
 
 ### Claude Code status hooks
 
