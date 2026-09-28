@@ -75,6 +75,8 @@ To use a custom AI provider or customize the prompts, go to <kbd>Preferences > A
 
 Use AI to help organize your Git commits into clear, logical stories.
 
+Version 12.5 improved the Commit Composer engine. It validates and retries generated commit groups, processes large diffs faster, and excludes generated files such as lockfiles from the token budget. Recomposition preserves original commit authors and adds co-authors when a commit combines work from multiple people. The progress notification shows the current stage and file and hunk counts.
+
 <div class='callout callout--basic'>
   <p><strong>Use AI Commit Composer when:</strong> your staged changes or recent commits need to be reorganized into a clearer narrative before you share them. <strong>Don't use it when:</strong> your commits are already atomic and you only need a quick manual message update.</p>
 </div>
@@ -450,5 +452,4 @@ Additional AI-powered features are in development to further streamline your wor
 <div class='callout callout--basic'>
     <p>Have more questions about GitKraken AI? Visit our <a href="https://help.gitkraken.com/general/gitkraken-ai-faq">GitKraken AI FAQ page</a> for details.</p>
 </div>
-
 
