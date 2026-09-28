@@ -56,7 +56,7 @@ If you use coding agents in GitKraken Desktop, Agent Sessions View builds on the
 
 **To lock or unlock a worktree:** Right-click the worktree and choose **Lock this worktree** or **Unlock this worktree**. Locking prevents accidental changes while you work in another worktree.
 
-Worktrees share Git history with the main repository. Changes committed in one worktree are visible in others. Hover over a worktree in the Left Panel to see its full file path. Worktrees are supported in GitKraken Desktop 10.5.0 and later.
+Worktrees share Git history with the main repository. Changes committed in one worktree are visible in others. When the worktree folder name differs from its checked-out branch, GitKraken shows the folder name below the branch in the Left Panel and Agent Sessions View. Search in either list matches both names. Hover over a worktree in the Left Panel to see its full file path. Worktrees are supported in GitKraken Desktop 10.5.0 and later.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/grAsFn5yvjA?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
@@ -103,6 +103,7 @@ From the Left Panel, you can:
 
 - Create and switch between worktrees
 - Remove or lock/unlock worktrees
+- See the folder name below the branch when the names differ, and search by either name
 - Hover over a worktree to see its full file path
 
 See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) if you want to:
