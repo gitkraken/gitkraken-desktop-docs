@@ -11,15 +11,15 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-05
+last_verified: 2026-09
 llms_include: true
 tags: [terminal, shell, git, commands, auto-complete]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
 
-Use this page to use the GitKraken Desktop terminal while staying in the context of the open repository, commit graph, and active worktree. It covers how to open the terminal, how command and flag auto-complete works, how terminal sessions behave across worktrees, how to run coding agents manually, and where to change shell and terminal appearance settings.
+Use this page to run commands in the context of the open repository and worktree. It covers how to open and manage terminal tabs, how command and flag auto-complete works, how terminal sessions behave across worktrees, how to run coding agents manually, and where to change shell and terminal appearance settings.
 
 **Requirements and limits**
 - Scope: In-app terminal for the currently open repository context
@@ -27,6 +27,7 @@ Use this page to use the GitKraken Desktop terminal while staying in the context
 - Supported shell note: macOS and Linux use the OS default shell; Windows supports PowerShell and Bash via Preferences
 - Auto-complete limitation: Conflicting third-party auto-complete tools can disable GitKraken suggestions
 - Settings location: <kbd>Preferences &gt; In-App Terminal</kbd> for appearance and autocomplete behavior
+- Terminal tabs: Each repository or worktree keeps its own terminal tabs. Starting an agent session in a worktree with an open terminal starts the agent in a separate tab
 - Panel behavior: The embedded terminal resizes smoothly when surrounding panels change, can be minimized to keep the terminal panel header visible, and exposes a trash icon in the panel header to kill terminal sessions
 - Coding agents: You can run supported or unsupported coding agent CLIs manually in the embedded terminal
 
@@ -40,6 +41,8 @@ To get started, open a repository and click the Terminal <i class="fa fa-termina
 **To open the terminal:** Click the Terminal icon in the toolbar or search for "terminal" in the Command Palette.
 
 **To run commands:** Type any Git command such as `git status`, `git commit -m "message"`, or `git log --oneline`. Auto-complete suggestions appear as you type, including flag suggestions for each command.
+
+**To open another terminal:** Click the **+** button in the terminal tab bar. Select a tab to switch terminals, or close a tab you no longer need.
 
 **To run a coding agent manually:** Open the terminal in the worktree you want to use, then start your coding agent CLI there.
 
@@ -115,15 +118,15 @@ PowerShell and Bash are currently supported. To change the shell:
 
 ---
 
-## How multi-session support works
+## How terminal tabs work
 
-The embedded terminal supports independent sessions per worktree in a single tab. GitKraken Desktop uses the same underlying worktrees in both List view and [Agent Sessions View](/gitkraken-desktop/agents/).
+The terminal panel supports multiple terminal tabs. Click **+** in the tab bar to open another terminal, then select a tab to switch to it. Each repository or worktree keeps its own set of terminals.
 
-When you switch to another worktree, the terminal view refreshes to that worktree's session and opens in its working directory. For example, you might switch worktrees from List view or by clicking an agent session card in Agent Sessions View.
+When you switch worktrees, GitKraken shows that worktree's terminal tabs. Each terminal runs in its worktree's working directory, and long-running commands continue while you switch to another worktree.
 
-Each session runs independently, so long-running commands in one worktree keep running when you switch away and come back.
+When you start a coding agent in a worktree that already has a terminal open, GitKraken starts the agent in a new tab instead of replacing the existing terminal.
 
-This is also how manual coding agent workflows work. If a coding agent is not explicitly integrated with GitKraken Desktop, you can still open the terminal for a worktree and run that agent there.
+GitKraken Desktop uses the same worktrees in both List view and [Agent Sessions View](/gitkraken-desktop/agents/). You can open a worktree from either view and use its terminal tabs.
 
 ---
 
