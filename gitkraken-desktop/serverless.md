@@ -11,13 +11,13 @@ git_hosts: [n/a]
 integrations: []
 hosted_variant: self-hosted
 status: GA
-last_verified: 2026-03
+last_verified: 2026-09
 llms_include: true
 tags: [serverless, on-premise, offline, setup, enterprise]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 Use this page to install and license GitKraken On-Premise Serverless, also called GitKraken Stand-Alone, when your team works in offline or tightly controlled environments. It covers platform-specific installation steps, supported license file locations, and the manual license update flow required after expiration or renewal.
 

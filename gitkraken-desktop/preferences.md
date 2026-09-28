@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-04
+last_verified: 2026-09
 llms_include: true
 tags: [preferences, settings, ssh, integrations, profiles]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 Use this page to understand what each major Preferences section controls in GitKraken Desktop, including profiles, integrations, AI settings, external tools, commit signing, terminal behavior, Agent Sessions View settings, and repository-specific options. Start here when you need to know where a setting lives before changing your workflow or environment.
 

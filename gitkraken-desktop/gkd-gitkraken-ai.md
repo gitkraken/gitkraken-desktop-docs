@@ -11,14 +11,14 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: preview
-last_verified: 2026-04
+last_verified: 2026-09
 llms_include: true
 tags: [ai, commit-messages, explain, pull-requests, providers]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 GitKraken AI in GitKraken Desktop helps developers generate commit messages, explain commits and branches, draft pull request text, resolve merge conflicts, and customize AI providers and prompts. Use this page to understand which AI workflows are available, when to use them, and which features require a paid GitKraken subscription.
 

@@ -11,14 +11,14 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps, generic]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-09
 llms_include: true
 tags: [faq, troubleshooting, ssh, plans, os-support]
 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 This FAQ answers common GitKraken Desktop questions about supported platforms, account and plan limits, authentication, remote access, and troubleshooting. Use it when you need a quick answer or constraint check before opening a longer feature guide, especially for Linux support, SSH behavior, proxy issues, or subscription-related questions.
 
