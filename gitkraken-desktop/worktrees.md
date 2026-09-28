@@ -82,7 +82,7 @@ Worktrees are useful when you want to:
 Once committed, changes in one worktree become visible in others.
 
 <div class='callout callout--basic'>
-  <p><strong>Using coding agents?</strong> Agent Sessions View in GitKraken Desktop uses Git worktrees behind the scenes. If you want to run Claude Code, Codex CLI, Copilot CLI, Gemini CLI, or OpenCode in GitKraken Desktop, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.</p>
+  <p><strong>Using coding agents?</strong> Agent Sessions View in GitKraken Desktop uses Git worktrees behind the scenes. If you want to run Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, or OpenCode in GitKraken Desktop, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.</p>
 </div>
 
 ***

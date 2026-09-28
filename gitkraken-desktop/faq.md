@@ -61,7 +61,7 @@ Yes. Each coding agent session runs in its own worktree and working directory, s
 
 ### Can I use a coding agent that GitKraken Desktop does not explicitly integrate with?
 
-Yes. GitKraken Desktop explicitly integrates with supported coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode, but you can still run other coding agents manually in the embedded terminal. For more information, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) and [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
+Yes. GitKraken Desktop explicitly integrates with supported coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, and OpenCode, but you can still run other coding agents manually in the embedded terminal. For more information, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) and [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
 
 ### Do List view and Agent Sessions View show different worktrees?
 
@@ -71,7 +71,7 @@ No. They show the same underlying worktrees. List view is reference-focused, whi
 
 Yes. On-premises deployments use the same GitKraken Desktop client for local workflows such as worktrees, Agent Sessions View, and terminal-based coding agent workflows. However, do not assume every supported coding agent will be available in every on-premises environment.
 
-OpenCode and Gemini CLI can run in fully air-gapped environments when they are configured to use an internal model endpoint. Claude Code, Codex CLI, and Copilot CLI are also supported when your organization permits them and the required services are reachable from the environment. For more information, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/), [Set Up GitKraken Self-Hosted Server (On-Premise)](/gitkraken-desktop/self-hosted/), and [GitKraken On-Premise Serverless (Stand-Alone) Setup](/gitkraken-desktop/serverless/).
+OpenCode and Gemini CLI can run in fully air-gapped environments when they are configured to use an internal model endpoint. Claude Code, Codex CLI, Copilot CLI, and Cursor CLI are also supported when your organization permits them and the required services are reachable from the environment. For more information, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/), [Set Up GitKraken Self-Hosted Server (On-Premise)](/gitkraken-desktop/self-hosted/), and [GitKraken On-Premise Serverless (Stand-Alone) Setup](/gitkraken-desktop/serverless/).
 
 ---
 
