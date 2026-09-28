@@ -57,7 +57,7 @@ This page also helps answer common questions such as:
 | Choose a different base branch for a new session | Yes | Start an Agent Session modal | Default base branch is `HEAD`. The base branch selector is searchable |
 | Choose a coding agent CLI for a session | Yes | Start an Agent Session modal | Falls back to the coding agent set in Preferences. Available options depend on the CLIs installed and allowed in your environment |
 | Monitor agent progress | Yes | Agent Sessions View card | Cards show WIP changes, ahead/behind, and agent status |
-| Respond when an agent is waiting for input | Yes | Agent Sessions View and embedded terminal | Claude Code can show a **Waiting for input** status in the card |
+| Respond when an agent is waiting for input | Yes | Agent Sessions View and embedded terminal | Claude Code, Codex CLI, and Copilot CLI can show permission requests with **Allow** and **Deny** actions on the card |
 | Manage a worktree from Agent Sessions View | Yes | Three-dot action menu on each worktree card | Open, lock/unlock, remove, or remove and delete the branch |
 | Configure coding agent CLIs | Yes | <kbd>Preferences > External Tools > Coding Agent</kbd> | GitKraken auto-detects installed CLIs. In on-premises environments, the usable CLIs depend on what your organization allows and can reach |
 | Configure setup commands for a repository | Yes | <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> | Commands run before the agent launches |
@@ -292,7 +292,7 @@ Each card in Agent Sessions View represents one worktree and one coding agent se
 
 The status bar at the bottom of each card shows the current session state. Claude Code, Codex CLI, Copilot CLI, and OpenCode can report live status when you install their status integrations. If the branch has a merged GitHub pull request, a merged PR pill appears on the card.
 
-When you start a session, the card shows a **Running** status. If you have Claude Code hooks enabled, the card may show a different status that reflects what the agent is doing.
+When you start a session, the card shows a **Running** status. If you install a status integration for a supported CLI, the card can show more specific status information.
 
 When an agent needs attention, the card can show a bell icon and a **Waiting for input** label. This lets you see that the session needs a response without switching to the terminal first.
 <figure>
@@ -315,7 +315,7 @@ You can keep working in another worktree while monitoring these cards. When a se
 
 ### How to respond to agent permission requests
 
-When an agent requests approval for an action, you can respond directly from Agent Sessions View without switching to the session.
+When Claude Code, Codex CLI, or Copilot CLI requests approval for an action, you can select **Allow** or **Deny** on its card in Agent Sessions View without switching to the session. For other prompts, open the worktree and respond in the agent's terminal.
 
 <figure>
   <img src='/wp-content/uploads/allow-deny.png' class="help-center-img img-bordered" alt="Agent Sessions View showing Agent permission request">
@@ -336,7 +336,7 @@ These controls affect only how sessions appear in Agent Sessions View. They do n
 
 ## How to monitor and respond to coding agent prompts
 
-Use this workflow when a coding agent pauses and waits for input.
+Use this workflow when a coding agent pauses for input that you cannot answer from its card.
 
 1. Watch the card in **Agent Sessions View** for a bell icon or a **Waiting for input** status.
 2. Open that worktree from the card.
@@ -378,6 +378,12 @@ To check which agents can report live status or install an integration:
 3. Select **Install** next to an agent, or open *Preferences > External Tools* to manage integrations there.
 
 GitKraken keeps installed plugins up to date when you update the app. You can uninstall them from *Preferences > External Tools*.
+
+### Copilot CLI status plugin and permission requests
+
+Install the **Copilot CLI Plugin** from *Preferences > External Tools* to show Copilot CLI session status and permission requests in Agent Sessions View. You can also install or uninstall the plugin from the agent status plugin menu.
+
+When Copilot CLI requests permission, select **Allow** or **Deny** on its worktree card. If you dismiss the request without choosing either action, GitKraken hands the decision back to Copilot CLI's own prompt.
 
 ### Claude Code status hooks
 
