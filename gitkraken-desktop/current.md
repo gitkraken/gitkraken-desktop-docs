@@ -18,6 +18,7 @@ og_image: /img/GitKrakenClient-Hero.png
 taxonomy:
     category: gitkraken-desktop
 ---
+<kbd>Last updated: September 2026</kbd>
 
 This release notes page tracks what's new and changing in the current version of GitKraken Desktop, including new features, improvements, bug fixes, and deprecations. Use it to see what shipped in the most recent release, confirm when a capability became available, or review changes before upgrading.
 
