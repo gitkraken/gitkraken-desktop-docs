@@ -35,8 +35,12 @@ Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?p
 <a id="v12-6-0"></a>
 ## Version 12.6.0
 
+<div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rXTnPufhdRM" frameborder="0" allowfullscreen></iframe>
+</div>
+
 ### New ✨
-- **Multiple terminal tabs:** Open, switch between, and close terminal tabs in the terminal panel. Each repository or worktree keeps its own terminals. Starting an agent session in a worktree with an open terminal starts the agent in a separate tab.
+- **Multiple terminal tabs:** Open, switch between, and close terminal tabs in the terminal panel. Each repository or worktree keeps its own terminals. 
 - **Agent status plugin controls:** The Agents panel shows a plug icon with the number of detected agents that can report live status. Open the menu to see each agent's status, install its plugin, or go to *Preferences > External Tools*. GitKraken no longer installs status plugins automatically at startup.
 - **Stacked pull requests on GitHub.com:** When the target branch already has an open pull request, GitKraken can start a pull request stack or add the new pull request to the existing stack. The Create Pull Request panel identifies the pull request that the new one will stack on.
 
