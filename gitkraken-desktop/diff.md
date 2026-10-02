@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-09
 llms_include: true
 tags: [diff, blame, history, patches, external-tools]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 Use this page to compare uncommitted changes, inspect commit diffs, switch between diff views, review file history or blame, and create or apply patches in GitKraken Desktop. It also covers external diff tools and key limits such as patch support being a preliminary feature that does not generate binary-file patches.
 
@@ -100,7 +100,7 @@ Selecting two commits shows the differences between them.
   <figcaption style="text-align: center; color: #888;">Diff view comparing two selected commits.</figcaption>
 </figure>
 
-You can also select multiple commit rows using <kbd>Shift</kbd> + <kbd>Click</kbd> to show a combined diff:
+Select consecutive commits in the graph using <kbd>Shift</kbd> or <kbd>Cmd/Ctrl</kbd> + click to show their combined changes in the right panel. You can include the WIP if your selection reaches the latest commit. If you select more than two nonconsecutive items, GitKraken explains why it cannot show a combined diff.
 
 <figure class='figure center'>
   <img src='/wp-content/uploads/combined-diff-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop showing a combined diff view summarizing file and line changes from multiple selected commits, with commit history and file modification list visible.">
@@ -297,7 +297,7 @@ You will be prompted to name the patch file.
   <figcaption style="text-align: center; color: #888;">Create a patch from file changes.</figcaption>
 </figure>
 
-You can also multi-select files or commits using <kbd>Shift</kbd> or <kbd>Cmd/Ctrl</kbd> + click, then right-click to create a patch.
+You can also multi-select files or commits using <kbd>Shift</kbd> or <kbd>Cmd/Ctrl</kbd> + click, then right-click to create a patch. For selected commits, the patch contains the same combined changes shown in the right panel. If GitKraken cannot show a combined diff for the selection, the patch action is unavailable.
 
 <figure class='figure center'>
   <img src='/wp-content/uploads/patch-from-many-files-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop context menu showing the option to create a patch from changes across multiple unstaged files." />

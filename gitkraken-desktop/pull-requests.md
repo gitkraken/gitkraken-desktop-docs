@@ -11,20 +11,20 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: GA
-last_verified: 2026-08
+last_verified: 2026-09
 llms_include: true
 tags: [pull-requests, review, templates, suggestions, merge]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: August 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 Use this page to create, review, filter, comment on, and merge pull requests in GitKraken Desktop across supported providers such as GitHub, GitLab, Bitbucket, and Azure DevOps. It also covers GitHub-specific review features such as code suggestions, pull request view, and merge options inside the app.
 
 **Requirements and limits**
 - Supported providers on this page: GitHub, GitLab, Bitbucket, and Azure DevOps
 - Precondition: Push your branch to the remote before creating a pull request
-- GitHub-specific features: Pull Request View, code suggestions, in-app merge options, and the **Review on GitKraken.dev** button
+- GitHub-specific features: Pull Request View, stacked pull requests on GitHub.com, code suggestions, in-app merge options, and the **Review on GitKraken.dev** button
 - Template support: Pull request templates are supported for GitHub, GitLab, and Azure DevOps
 - Azure DevOps note: If the PR form does not populate, verify the remote URL and integration domain on the Azure DevOps integration page
 - Feature scope varies by provider, so some actions described here are GitHub-only
@@ -54,6 +54,8 @@ Use this page to create, review, filter, comment on, and merge pull requests in 
 **To review a GitHub pull request on GitKraken.dev:** Click **Review on GitKraken.dev** in the GitHub Pull Request view to open the PR in [GitKraken Code Review](https://gitkraken.dev?source=help_center&product=gitkraken). You can review with cleaner diffs, AI-generated suggestions, and integrated chat, and approve or comment as you would on GitHub.
 
 **To merge a pull request:** Click **Merge pull request** in the GitHub PR view and select a merge strategy (merge commit, squash, or rebase).
+
+**To create a stacked pull request on GitHub.com:** Create a pull request from a branch whose target already has an open pull request. In the Create Pull Request panel, choose whether to start a stack or add the pull request to the existing stack. GitKraken shows which pull request the new one will stack on.
 
 **To filter pull requests:** Use predefined filters like "My pull requests" or create custom filters in the Left Panel. PR icons indicate CI status and review state.
 
@@ -91,6 +93,20 @@ To create a pull request:
 <div class='callout callout'>
   <p><strong>Note:</strong> If the Azure DevOps PR form isn’t populating, see <a href="https://help.gitkraken.com/gitkraken-desktop/azure-devops/#azure-devops-pull-requests-form-not-populating-in-gitkraken-desktop">Azure DevOps Integration</a>.</p>
 </div>
+
+***
+
+## How stacked pull requests work on GitHub.com
+
+A stacked pull request targets the branch of another open pull request. Use a stack to split related work into smaller pull requests while keeping the branch relationship visible.
+
+To create or extend a stack:
+
+1. Create a pull request from a branch whose target branch has an open pull request.
+2. In the Create Pull Request panel, choose **Start a pull request stack** or **Add this pull request to an existing stack**.
+3. Confirm the pull request shown as the base of the stack.
+
+GitKraken displays stack information in the pull request interface and other relevant parts of the app, so you can see a pull request's place in a stack and navigate to related pull requests. Stacked pull requests are supported for GitHub.com.
 
 ***
 

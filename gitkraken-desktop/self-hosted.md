@@ -11,13 +11,13 @@ git_hosts: [n/a]
 integrations: []
 hosted_variant: self-hosted
 status: GA
-last_verified: 2026-03
+last_verified: 2026-09
 llms_include: true
 tags: [self-hosted, on-premise, setup, enterprise, server]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 Use this page to understand what GitKraken On-Premise Self-Hosted Server is, when to choose it, and what infrastructure it requires before installation. It summarizes the offline deployment model, supported operating systems, minimum server specs, and the distinction between Self-Hosted and Serverless on-premise offerings.
 
@@ -61,7 +61,7 @@ The following feature categories are fully supported:
 | Category | Included | Notes |
 | --- | --- | --- |
 | **Core Git client** | All standard Git operations, including commits, branches, merges, rebases, diffs, stashing, tagging, interactive rebase, cherry pick (including multi-commit interactive cherry pick), worktrees, shallow clone, and undo or redo of rebase and cherry pick operations. | |
-| **Agent Sessions View and coding agent session workflows** | Agent Sessions View and worktree-based coding agent session workflows are available in the on-premises Desktop client. | Available coding agents depend on your security policy, internal approvals, client version, and local environment. OpenCode and Gemini CLI can run fully air-gapped against an internal model endpoint. Claude Code, Codex CLI, and Copilot CLI are supported when internally permitted and reachable. |
+| **Agent Sessions View and coding agent session workflows** | Agent Sessions View and worktree-based coding agent session workflows are available in the on-premises Desktop client. | Available coding agents depend on your security policy, internal approvals, client version, and local environment. OpenCode and Gemini CLI can run fully air-gapped against an internal model endpoint. Claude Code, Codex CLI, Copilot CLI, and Cursor CLI are supported when internally permitted and reachable. |
 | **Embedded terminal for manual coding agent workflows** | You can run coding agents manually in the embedded terminal, including agents that GitKraken Desktop does not explicitly integrate with. | See [GitKraken Terminal Guide](/gitkraken-desktop/terminal/). |
 | **Launchpad** | Track pull requests and issues in a single view and filter by repository, branch, milestone, or sprint. Launchpad works with the following on-premises integrations: GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server and Data Center, Azure DevOps Server, and Jira Data Center. | For a description of the differences between cloud and on-premises Launchpad, see [How On-Premise Launchpad differs from Cloud Launchpad](/gitkraken-desktop/gitkraken-launchpad/#how-on-premise-launchpad-differs-from-cloud-launchpad). |
 | **Local Workspaces** | Organize multiple local Git repositories in one view. You can see the branch status of each repository and run multi-repository actions, such as fetch and pull, from a single place. | Cloud Workspaces are not available. |

@@ -18,6 +18,7 @@ og_image: /img/GitKrakenClient-Hero.png
 taxonomy:
     category: gitkraken-desktop
 ---
+<kbd>Last updated: September 2026</kbd>
 
 This release notes page tracks what's new and changing in the current version of GitKraken Desktop, including new features, improvements, bug fixes, and deprecations. Use it to see what shipped in the most recent release, confirm when a capability became available, or review changes before upgrading.
 
@@ -29,6 +30,44 @@ This release notes page tracks what's new and changing in the current version of
 <a href="https://www.gitkraken.com/download?product=gitkraken&source=help_center" target="_blank" class="button button--basic ">Download Current Version Now</a>
 
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
+
+***
+<a id="v12-6-0"></a>
+## Version 12.6.0
+
+<div class='embed-container embed-container--16-9'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rXTnPufhdRM" frameborder="0" allowfullscreen></iframe>
+</div>
+
+### New ✨
+- **Multiple terminal tabs:** Open, switch between, and close terminal tabs in the terminal panel. Each repository or worktree keeps its own terminals. 
+- **Agent status plugin controls:** The Agents panel shows a plug icon with the number of detected agents that can report live status. Open the menu to see each agent's status, install its plugin, or go to *Preferences > External Tools*. GitKraken no longer installs status plugins automatically at startup.
+- **Stacked pull requests on GitHub.com:** When the target branch already has an open pull request, GitKraken can start a pull request stack or add the new pull request to the existing stack. The Create Pull Request panel identifies the pull request that the new one will stack on.
+
+### Improvements 🙌
+- Worktree lists show the folder name under the branch when the names differ. Search in the Left Panel and Agents panel matches both names.
+- Starting an agent session from the Agents panel opens the **Start an Agent Session** modal. Set the branch name, base branch, and coding agent before GitKraken creates the worktree. The branch name updates when you change the base branch and is checked against existing branches and worktrees. Use the lightning-bolt button to start a session with the generated defaults.
+- Selecting consecutive commits shows their combined changes in the right panel. You can include uncommitted changes if your selection reaches the latest commit. Selecting more than two nonconsecutive items displays an explanation instead of a combined diff.
+- Creating a patch from selected commits now includes the same changes shown in the right panel. GitKraken excludes files whose changes cancel out across the selected commits. The patch action is unavailable when the right panel cannot show a combined diff for the selection.
+- GitKraken AI model lists for your own OpenAI, Anthropic, and Google API keys now reflect models offered by those providers. New options include Claude Sonnet 5, Opus 5, and Fable 5.1; GPT-6 Astra and the GPT-5.6 family; and Gemini 3.x Flash models. Retired models no longer appear. If you have not selected a model, GitKraken updates the provider default to Claude Sonnet 5, GPT-5.6 Terra, or Gemini 3.8 Flash. Anthropic models also use their full supported context and output limits.
+- GitKraken detects renames more consistently in the commit panel, including when you stage a renamed file and when a change contains many files.
+- Compose commits with AI no longer displays Git hook output, hook failures, or warnings about non-executable hooks from background Git operations.
+- GitKraken installs or updates an agent status plugin only when you request it from the Agents panel or *Preferences > External Tools*. GitKraken keeps installed plugins up to date when you update the app.
+
+### Bug Fixes 🐛
+- Fixed an issue where GitKraken AI still offered Claude 4.1 Opus after Anthropic retired it.
+- Fixed AI conflict resolution with Claude 4.7 Opus and newer models.
+- Fixed an issue where Pull Request View loaded only the first page of GitHub users, labels, and milestones.
+- Fixed perpetual loading spinners in reviewer and assignee dropdowns when no options were available.
+- Fixed an issue where some terminal tabs could appear blank after hardware-accelerated rendering stopped. GitKraken now falls back to standard rendering.
+- Fixed an issue where Pull Request View reviewer and assignee dropdowns lost or hid options.
+- Fixed an issue where quickly adding or removing Git hooks could cause GitKraken to skip a hook during the next Git operation.
+- Fixed staging and unstaging when a deleted file and a new folder have the same name.
+- Fixed `.gitignore` entries for files with backslashes in their names on macOS and Linux.
+- Fixed fast-forward and merge actions that were incorrectly offered for remote branches behind the checked-out branch.
+- Fixed undoing the discard of selected staged files so it no longer stashes changes staged in other files.
+- Improved merge conflict resolution performance when a merge adds and deletes many files.
+- Fixed undo and redo behavior for reset and rebase operations when `HEAD` is detached.
 
 ***
 <a id="v12-5-0"></a>
