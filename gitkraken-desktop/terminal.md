@@ -122,6 +122,13 @@ PowerShell and Bash are currently supported. To change the shell:
 
 The terminal panel supports multiple terminal tabs. Click **+** in the tab bar to open another terminal, then select a tab to switch to it. Each repository or worktree keeps its own set of terminals.
 
+<figure>
+  <img src="/wp-content/uploads/gkd-12-6-terminal-tabs.png"
+       class="help-center-img img-bordered"
+       alt="GitKraken Desktop terminal panel with three terminal tabs named zsh, zsh, and node, the selected tab showing a close button, and a plus button for opening another terminal.">
+  <figcaption style="text-align:center; color:#888">Open, switch between, and close terminal tabs</figcaption>
+</figure>
+
 When you switch worktrees, GitKraken shows that worktree's terminal tabs. Each terminal runs in its worktree's working directory, and long-running commands continue while you switch to another worktree.
 
 When you start a coding agent in a worktree that already has a terminal open, GitKraken starts the agent in a new tab instead of replacing the existing terminal.
