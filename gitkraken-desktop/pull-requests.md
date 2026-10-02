@@ -55,7 +55,7 @@ Use this page to create, review, filter, comment on, and merge pull requests in 
 
 **To merge a pull request:** Click **Merge pull request** in the GitHub PR view and select a merge strategy (merge commit, squash, or rebase).
 
-**To create a stacked pull request on GitHub.com:** Create a pull request from a branch whose target already has an open pull request. In the Create Pull Request panel, choose whether to start a stack or add the pull request to the existing stack. GitKraken shows which pull request the new one will stack on.
+**To create a stacked pull request on GitHub.com:** Create a pull request from a branch whose target already has an open pull request. In the Create Pull Request panel, select **Add this pull request to an existing stack**. GitKraken shows which pull requests the new one will stack on.
 
 **To filter pull requests:** Use predefined filters like "My pull requests" or create custom filters in the Left Panel. PR icons indicate CI status and review state.
 
@@ -103,10 +103,35 @@ A stacked pull request targets the branch of another open pull request. Use a st
 To create or extend a stack:
 
 1. Create a pull request from a branch whose target branch has an open pull request.
-2. In the Create Pull Request panel, choose **Start a pull request stack** or **Add this pull request to an existing stack**.
-3. Confirm the pull request shown as the base of the stack.
+2. In the Create Pull Request panel, select **Add this pull request to an existing stack**.
+3. Confirm the pull requests shown below the option. The new pull request will be stacked on them.
+
+<figure>
+  <img src='/wp-content/uploads/gkd-12-6-stacked-pr-create.png' 
+       alt="Bottom of the Create Pull Request panel in GitKraken Desktop with the Add this pull request to an existing stack checkbox selected and the message This pull request will be stacked with #104 and #103, above the Cancel and Create Pull Request buttons." 
+       class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Add a new pull request to an existing stack</figcaption>
+</figure>
 
 GitKraken displays stack information in the pull request interface and other relevant parts of the app, so you can see a pull request's place in a stack and navigate to related pull requests. Stacked pull requests are supported for GitHub.com.
+
+In GitHub Pull Request View, the header shows the pull request's position in the stack, such as **2/2**. Use the arrows next to it to move between pull requests in the stack. Above **Merge Pull Request**, GitKraken lists each pull request in the stack down to the base branch.
+
+<figure>
+  <img src='/wp-content/uploads/gkd-12-6-stacked-pr-view.png' 
+       alt="GitHub Pull Request View in GitKraken Desktop for pull request #104, showing its stack position 2/2 with previous and next arrows in the header, and a list of the stacked pull requests #104 and #103 above the main base branch and the Merge Pull Request button." 
+       class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">View and navigate a pull request stack in GitHub Pull Request View</figcaption>
+</figure>
+
+In the graph, hover over a pull request icon on a branch to see the pull request's position in its stack.
+
+<figure>
+  <img src='/wp-content/uploads/gkd-12-6-stacked-pr-graph.png' 
+       alt="GitKraken Desktop graph showing the kepler/update-docs-12-6 branch with a tooltip reading #103 (1 of 2): Documents GitKraken Desktop v12.6.0 features." 
+       class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">See a pull request's stack position from the graph</figcaption>
+</figure>
 
 ***
 

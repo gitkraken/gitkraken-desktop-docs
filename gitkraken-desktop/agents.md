@@ -71,7 +71,7 @@ This page also helps answer common questions such as:
 Click **Agents** in the `List | Agents` segmented control at the top of the Left Panel.
 
 **To start a coding agent session:**
-Click **+ New Agent Session** at the top of Agent Sessions View to choose a branch name, base branch, and coding agent before GitKraken creates the worktree. To start a session immediately with generated defaults, click the lightning-bolt button next to **+ New Agent Session**.
+Click the **+ Start *[coding agent]* Session** button at the top of Agent Sessions View to choose a branch name, base branch, and coding agent before GitKraken creates the worktree. The button label shows your default coding agent, such as **Start Claude Code Session**. To start a session immediately with generated defaults, click the lightning-bolt button next to it.
 
 You can also start an agent session from an existing worktree. Right-click the worktree in the Left Panel and choose the option to start a coding agent session there.
 
@@ -207,15 +207,15 @@ Because these settings are under Repo-Specific Preferences, setup commands apply
 ## How to create a new coding agent session
 
 1. Open **Agent Sessions View** by clicking **Agents** in the Left Panel.
-2. Click **+ New Agent Session** to open the setup modal. GitKraken Desktop generates a branch name and selects the coding agent configured in your Preferences.
-3. Review or change the branch name, base branch, and coding agent, then click **Start Agent Session**. The branch name updates when you change the base branch, and GitKraken checks it against existing branches and worktrees.
+2. Click **+ Start *[coding agent]* Session** to open the setup modal. The button label shows the default coding agent set in your Preferences, such as **Start Claude Code Session**. GitKraken Desktop generates a branch name and selects that coding agent.
+3. Review or change the branch name, base branch, and coding agent, then click **Start an Agent Session**. The branch name updates when you change the base branch, and GitKraken checks it against existing branches and worktrees.
 
    <figure>
-     <img src='/wp-content/uploads/gkd-agents-new-session-button-20260414.png' class="help-center-img img-bordered" alt="Agent Sessions View in GitKraken Desktop showing the New Agent Session button and the adjacent lightning-bolt button for starting a session with generated defaults.">
+     <img src='/wp-content/uploads/gkd-12-6-agents-new-session-button.png' class="help-center-img img-bordered" alt="Agent Sessions View in GitKraken Desktop showing the Start Claude Code Session button with the adjacent lightning-bolt button, the plug icon in the Worktrees header, and two worktree cards, one waiting for input.">
      <figcaption style="text-align: center; color: #888">Open the setup modal or start with generated defaults.</figcaption>
    </figure>
 
-   To start a session without opening the modal, click the lightning-bolt button next to **+ New Agent Session**. GitKraken uses the generated branch name and the coding agent selected in Preferences.
+   To start a session without opening the modal, click the lightning-bolt button next to **+ Start *[coding agent]* Session**. GitKraken uses the generated branch name and the coding agent selected in Preferences.
 
    | Option | Use it to | Default |
    |--------|-----------|---------|
@@ -226,7 +226,7 @@ Because these settings are under Repo-Specific Preferences, setup commands apply
    To update repository setup, click **Configure setup commands** to open <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>.
 
    <figure>
-     <img src='/wp-content/uploads/gkd-agents-new-session-form-20260414.png' class="help-center-img img-bordered" alt="The Start an Agent Session modal showing branch name input, Base branch selector, Coding agent dropdown, and a Configure setup commands link.">
+     <img src='/wp-content/uploads/gkd-12-6-agents-start-session-modal.png' class="help-center-img img-bordered" alt="The Start an Agent Session modal in GitKraken Desktop showing a generated branch name, the Base branch selector set to main, and the Coding agent dropdown open with None, Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, and OpenCode.">
      <figcaption style="text-align: center; color: #888">Set session options before starting an agent.</figcaption>
    </figure>
 
@@ -245,7 +245,7 @@ From Launchpad, go to your Issues view and click **Start an Agent Session**.
      <figcaption style="text-align: center; color: #888">Starting an Agent Session from the Launchpad view.</figcaption>
    </figure>
 
-Review or set your **Branch name**, **Base branch**, and **Coding agent**, then click **Start Agent Session**.
+Review or set your **Branch name**, **Base branch**, and **Coding agent**, then click **Start an Agent Session**.
 
    <figure>
      <img src='/wp-content/uploads/GKD-Launching-Agent-Launchpad2.png' class="help-center-img img-bordered" alt="Session Options">
@@ -261,7 +261,7 @@ From the Left Panel, go to your Issues view, click the three-dot menu next to th
      <figcaption style="text-align: center; color: #888">Starting an Agent Session from the Left Panel.</figcaption>
    </figure>
 
-Review or set your **Branch name**, **Base branch**, and **Coding agent**, then click **Start Agent Session**.
+Review or set your **Branch name**, **Base branch**, and **Coding agent**, then click **Start an Agent Session**.
 
    <figure>
      <img src='/wp-content/uploads/GKD-Launching-Agent-Sidebar-view2.png' class="help-center-img img-bordered" alt="Session Options">
@@ -375,8 +375,21 @@ GitKraken Desktop uses agent-specific integrations to report live status in Agen
 To check which agents can report live status or install an integration:
 
 1. Open **Agent Sessions View** in the Left Panel.
-2. Click the plug icon in the panel header to see detected agents and their plugin status.
+2. Hover over the plug icon in the panel header to see how many detected agents have status available. Click the icon to see each detected agent and its plugin status.
+
+   <figure>
+     <img src='/wp-content/uploads/gkd-12-6-agents-status-plugin-tooltip.png' class="help-center-img img-bordered" alt="Agent Sessions View in GitKraken Desktop with the plug icon in the Worktrees header highlighted and its tooltip reading Agent plugins: 1 of 2 agents have status available.">
+     <figcaption style="text-align: center; color: #888">Hover over the plug icon to see how many agents can report live status.</figcaption>
+   </figure>
+
 3. Select **Install** next to an agent, or open *Preferences > External Tools* to manage integrations there.
+
+In *Preferences > External Tools*, the **Agent Status Integrations** section lists a plugin for each supported agent. Use **Reinstall Plugin** or **Uninstall Plugin** next to an agent to manage its integration.
+
+<figure>
+  <img src='/wp-content/uploads/gkd-12-6-preferences-agent-status-integrations.png' class="help-center-img img-bordered" alt="The External Tools tab in GitKraken Desktop Preferences showing the Coding Agent setting and the Agent Status Integrations section, with Reinstall Plugin and Uninstall Plugin buttons for the Claude Code, Codex, Copilot CLI, and OpenCode plugins.">
+  <figcaption style="text-align: center; color: #888">Manage agent status plugins in Preferences > External Tools.</figcaption>
+</figure>
 
 GitKraken keeps installed plugins up to date when you update the app. You can uninstall them from *Preferences > External Tools*.
 
@@ -390,27 +403,11 @@ When Copilot CLI requests permission, select **Allow** or **Deny** on its worktr
 
 The GitKraken CLI registers hooks on Claude Code's lifecycle events (such as session start and end, tool use, prompt submission, and permission requests) and forwards those events to the local `gk` process to display agent status.
 
-#### Uninstalling Claude Code hooks
-
-1. Click the **Preferences** icon on the top right. 
-2. Navigate to the **External Tools** tab.
-3. In the **Coding Agent** area, next to **Claude Code Hooks**, click **Uninstall Hooks**.
-
-   <figure>
-     <img src='/wp-content/uploads/gkd-agents-uninstall-hooks.png' class="help-center-img img-bordered" alt="How to uninstall Claude Code agent status hooks in the GitKraken UI.">
-     <figcaption style="text-align: center; color: #888">How to uninstall Claude Code agent status hooks in the GitKraken UI.</figcaption>
-   </figure>
-
-#### Reinstalling Claude Code hooks
+#### Reinstalling or uninstalling the Claude Code plugin
 
 1. Click the **Preferences** icon on the top right.
 2. Navigate to the **External Tools** tab.
-3. In the **Coding Agents** area, next to **Claude Code Hooks**, click **Reinstall Hooks**.
-
-   <figure>
-     <img src='/wp-content/uploads/gkd-agents-reinstall-hooks.png' class="help-center-img img-bordered" alt="How to reinstall Claude Code agent status hooks in the GitKraken UI.">
-     <figcaption style="text-align: center; color: #888">How to reinstall Claude Code agent status hooks in the GitKraken UI.</figcaption>
-   </figure>
+3. In the **Agent Status Integrations** area, next to **Claude Code Plugin**, click **Reinstall Plugin** or **Uninstall Plugin**.
 
 ### OpenCode status plugin
 
