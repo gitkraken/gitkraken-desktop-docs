@@ -11,14 +11,14 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-09
+last_verified: 2026-10
 llms_include: true
 tags: [release-notes, changelog, upgrades, version-history]
 og_image: /img/GitKrakenClient-Hero.png
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 This release notes page tracks what's new and changing in the current version of GitKraken Desktop, including new features, improvements, bug fixes, and deprecations. Use it to see what shipped in the most recent release, confirm when a capability became available, or review changes before upgrading.
 
@@ -30,6 +30,39 @@ This release notes page tracks what's new and changing in the current version of
 <a href="https://www.gitkraken.com/download?product=gitkraken&source=help_center" target="_blank" class="button button--basic ">Download Current Version Now</a>
 
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
+
+***
+<a id="v12-6-1"></a>
+## Version 12.6.1
+
+<kbd>Tuesday, October 20th, 2026</kbd>
+
+### Improvements 🙌
+ - **Terminal tab navigation:**
+   - You can now use the keyboard to switch, open, close, and jump between terminal tabs, even while you are typing in a terminal:
+      - On macOS, use <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>Left</kbd> / <kbd>Right</kbd> to move between tabs, <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>1</kbd>–<kbd>9</kbd> to jump to a specific tab, <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>N</kbd> to open a new tab, and <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>W</kbd> to close the current one.
+      - On Windows and Linux, use <kbd>Ctrl</kbd>+<kbd>PageUp</kbd> / <kbd>PageDown</kbd> to move between tabs, <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd>–<kbd>9</kbd> to jump to a specific tab, <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd> to open a new tab, and <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd> to close the current one. On keyboard layouts where <kbd>/</kbd> requires <kbd>Shift</kbd>, <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>7</kbd> jumps to tab 7 instead of opening the Keyboard Shortcuts dialog.
+      - These shortcuts are listed in the Keyboard Shortcuts dialog and in a new Terminal Tabs submenu.
+   - The tab bar now scrolls to keep the selected tab in view.
+   - You can now drag terminal tabs to reorder them. Each repository and worktree keeps its own tab order until you close GitKraken.
+ - **Worktrees:**
+   - When a worktree's folder name differs from its checked-out branch, the folder name now appears under the branch in the Left Panel worktree list and on the Agents panel worktree cards. Searching these lists matches either name.
+   - Worktree WIP rows in the Commit Graph now show which branch each worktree is on, such as *on feat/230-test-issue*, or the commit if the worktree is on a detached HEAD. When a row is selected, the Open Worktree button stays fully visible, and long branch names are shortened to fit, with the full name shown on hover.
+   - You can now start another coding agent in a worktree that already has one running. The new agent opens in its own terminal tab and leaves the running agent undisturbed.
+ - Renamed files are now handled more reliably in the commit panel. Staging a rename no longer splits it into a separate deletion and addition, and renames are now detected in large changes, where they were previously missed.
+ - Jira integrations now load up to 10,000 projects, up from 1,000.
+
+### Bug Fixes 🐛
+ - Fixed an issue where *Generate SSH key and add to GitHub* failed with a "Validation Failed" error, because GitHub no longer accepts the 2048-bit keys GitKraken generated. GitKraken now generates 4096-bit keys, and when GitHub rejects a key, the error message now says why.
+ - Fixed an issue where closing the active terminal tab moved the selection to the first tab. The neighboring tab is now selected instead: the next tab, or the previous one if you closed the last tab.
+ - Fixed an issue where clicking a terminal tab kept focus on the tab itself, so you had to click inside the terminal before typing. Selecting a tab now focuses its terminal right away.
+ - Fixed an issue on Windows where terminal tabs running Git Bash were always labeled `bash` instead of showing the running process, such as `node` or a coding agent.
+ - Fixed an issue on macOS where keyboard shortcuts in the file and diff views responded to <kbd>Ctrl</kbd> instead of <kbd>Cmd</kbd>, so shortcuts such as <kbd>Cmd</kbd>+<kbd>A</kbd> (select all) and <kbd>Cmd</kbd>+<kbd>F</kbd> (search) did nothing.
+ - Fixed an issue where the tree view in the right panel cut off long file paths in your uncommitted changes, with no way to scroll to see the rest.
+ - Fixed an issue where resolving a merge conflict could take much longer than usual when the merge also added and deleted many files.
+ - Fixed an issue where undoing a reset or rebase with a detached HEAD removed that action from the undo history, so Redo wasn't offered and Undo offered the same action again.
+ - Fixed an issue where an AI provider API key configured by your organization's admin could be revealed in *Preferences > GitKraken AI*. The key now stays hidden, and hovering the field explains that your admin configured it.
+ - Fixed an issue where *Compose commits with AI* failed with an "Unsupported parameter: 'max_tokens'" error when using your own OpenAI or Azure OpenAI key with newer models.
 
 ***
 <a id="v12-6-0"></a>
