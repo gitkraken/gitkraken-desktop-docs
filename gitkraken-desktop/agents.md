@@ -17,7 +17,7 @@ tags: [agents, worktrees, coding-agents, parallel-work, ai, terminal]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 Use this page to learn how coding agents work in GitKraken Desktop and how to use **Agent Sessions View** to create, monitor, and manage coding agent sessions. Read this page if you want to use external coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, or OpenCode from inside GitKraken Desktop.
 
@@ -364,7 +364,7 @@ Each worktree card in Agent Sessions View has a three-dot action menu so you can
 | Remove the session worktree | **Remove this worktree** | Deletes the worktree and its working directory |
 | Remove the worktree and delete its branch in one step | **Remove worktree and delete branch** | Deletes the worktree and its associated branch |
 
-Use these actions after the agent finishes so you can review changes, push the branch, create a pull request, or clean up the worktree.
+Use these actions after the agent finishes so you can review changes, push the branch, create a pull request, or clean up the worktree. To see exactly what the agent changed and undo any of it, see [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/).
 
 ***
 
