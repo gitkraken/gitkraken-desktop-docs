@@ -18,7 +18,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 GitKraken AI in GitKraken Desktop helps developers generate commit messages, explain commits and branches, draft pull request text, resolve merge conflicts, and customize AI providers and prompts. Use this page to understand which AI workflows are available, when to use them, and which features require a paid GitKraken subscription.
 
@@ -73,7 +73,7 @@ To use a custom AI provider or customize the prompts, go to <kbd>Preferences > A
 
 ## How to compose and recompose commits with AI (Preview)
 
-Use AI to help organize your Git commits into clear, logical stories.
+Use AI to help organize your Git commits into clear, logical stories. To clean up commits a coding agent made before you open a pull request, see [Clean Up AI Coding Agent Commits Before Review](/gitkraken-desktop/clean-up-agent-commits/).
 
 Version 12.5 improved the Commit Composer engine. It validates and retries generated commit groups, processes large diffs faster, and excludes generated files such as lockfiles from the token budget. Recomposition preserves original commit authors and adds co-authors when a commit combines work from multiple people. The progress notification shows the current stage and file and hunk counts.
 

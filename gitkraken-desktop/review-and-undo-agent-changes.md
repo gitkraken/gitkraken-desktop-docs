@@ -203,4 +203,5 @@ Yes. Revert individual hunks, restore individual files, or use a **Soft** reset 
 - [Manage Git Worktrees](/gitkraken-desktop/worktrees/)
 - [Diff View, Blame, and History](/gitkraken-desktop/diff/)
 - [Committing Changes](/gitkraken-desktop/commits/)
+- [Clean Up AI Coding Agent Commits Before Review](/gitkraken-desktop/clean-up-agent-commits/)
 - [Undo and Redo](/gitkraken-desktop/undo-and-redo/)

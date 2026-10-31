@@ -5,7 +5,7 @@
 
 ## Scope
 
-- Included pages: 80 current Help Center documents
+- Included pages: 81 current Help Center documents
 - Excluded from this index: release-note archives, sunset pages, request forms, and low-signal policy pages marked `llms_include: false`
 
 ## Getting Started
@@ -39,6 +39,7 @@
 - [Cherry Pick Commits in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/cherrypick/): Learn how to cherry pick single or multiple commits across branches in GitKraken Desktop, including using the interactive cherry-pick tool.
 - [Coding Agents in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/agents/): Use the Agents panel in GitKraken Desktop to create, monitor, and manage parallel coding agent sessions across Git worktrees without leaving the app.
 - [Review and Undo AI Coding Agent Changes in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/review-and-undo-agent-changes/): See exactly what an AI coding agent changed in your Git repository and safely undo it in GitKraken Desktop with discard, reset, or revert.
+- [Clean Up AI Coding Agent Commits Before Review in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/clean-up-agent-commits/): Turn an AI coding agent's one giant commit or pile of "fix stuff" commits into a clean history a reviewer can follow, using Commit Composer in GitKraken Desktop.
 - [Deep Linking in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/linking/): Learn how to share and open deep links to specific branches, commits, tags, and repositories in GitKraken Desktop for faster collaboration.
 - [Fork GitHub Repositories from GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/fork/): Learn how to fork public or private GitHub repositories directly from GitKraken Desktop and manage them as remotes.
 - [Gitflow in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/git-flow/): Learn how to use Gitflow in GitKraken Desktop to manage features, releases, and hotfixes with organized branching workflows.
