@@ -28,7 +28,7 @@ Use this page to see exactly what an AI coding agent changed in your repository 
 - Limits: AI summaries require a [paid GitKraken subscription](https://www.gitkraken.com/pricing?source=help_center&product=gitkraken). Reviewing diffs and undoing changes don't.
 
 <div class='callout callout--warning'>
-  <p>Discarding changes and hard resets remove work from the worktree you have open, including uncommitted changes that aren't the agent's. Review the diff first, and make sure you have the agent's worktree open.</p>
+  <p>Discarding changes and hard resets remove work from the worktree you have open, including uncommitted changes that aren't the agent's. Review the diff first.</p>
 </div>
 
 ***
@@ -42,9 +42,9 @@ Then find where the agent's changes are and use the matching row.
 | Where the changes are | How to see them | How to undo them | Safe after you push? | Notes |
 |---|---|---|---|---|
 | Uncommitted, in the agent's worktree | Click the agent's WIP node, then click a file | Discard all or selected files, or revert one hunk | Not applicable | Discarded changes leave the worktree |
-| Committed on the agent's branch, not pushed | Shift + click the agent's commits for a combined diff | Reset the branch to the last good commit | No | Reset rewrites the branch's history |
+| Committed on the agent's branch, not pushed | <kbd>Shift</kbd> + click the agent's first and last commits for a combined diff | Reset the branch to the last good commit | No | Reset rewrites the branch's history |
 | Committed and pushed | Select the agent's commits in the Commit Graph | **Revert Commit** on each one, then push | Yes | Revert adds new commits and keeps existing history |
-| In one or two files, committed or not | Open the file's **History** | **Restore file from this commit** | Yes | The restored file arrives as a staged change |
+| Only one or two files are damaged | Open the file's **History** | **Restore file from this commit** | Yes | The restored file arrives as a staged change |
 | Anywhere in a session you don't want | Check the session card in Agent Sessions View | **Remove worktree and delete branch** | No | Use only for a branch you never pushed |
 
 ***
@@ -75,7 +75,7 @@ GitKraken Desktop shows a separate WIP node in the Commit Graph for each worktre
 ### See commits the agent made
 
 1. Click a commit on the agent's branch, then click any file in the Commit Panel to see what that commit changed.
-2. To see everything the agent committed at once, hold <kbd>Shift</kbd> and click the first and last of its commits. The Commit Panel shows the combined changes.
+2. To see everything the agent committed at once, hold <kbd>Shift</kbd> and click the first and last of its commits. To pick specific commits instead of a range, hold <kbd>Cmd</kbd> (Mac) or <kbd>Ctrl</kbd> (Windows/Linux) and click each one. Either way, the Commit Panel shows the combined diff, the files changed across those commits, and the list of selected commits.
 
 <figure>
   <img src="/wp-content/uploads/combined-diff-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop showing a combined diff across several selected commits, with the changed files listed in the Commit Panel.">
@@ -100,8 +100,6 @@ A summary helps you decide where to look first, but it isn't a review. Read the 
 
 Pick the method based on where the changes are. The further the changes have traveled, from uncommitted to committed to pushed, the more careful the undo needs to be.
 
-Every method below acts on the worktree you have open. Start each one by opening the agent's worktree: in Agent Sessions View, right-click the session card and select **Open this worktree**.
-
 ### Undo uncommitted changes
 
 To throw away everything the agent changed but didn't commit:
@@ -117,7 +115,7 @@ To keep most of the agent's work and undo one block, open the file's diff in **H
   <figcaption style="text-align:center; color:#888">Revert a single hunk and keep the rest of the agent's changes.</figcaption>
 </figure>
 
-See [Stage, unstage, and discard changes](/gitkraken-desktop/staging/) for line-level options.
+See [Stage, Unstage, and Ignore Files](/gitkraken-desktop/staging/) for line-level options.
 
 ### Bring back an earlier version of a file
 
@@ -201,7 +199,8 @@ Yes. Revert individual hunks, restore individual files, or use a **Soft** reset 
 
 - [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/)
 - [Manage Git Worktrees](/gitkraken-desktop/worktrees/)
-- [Diff View, Blame, and History](/gitkraken-desktop/diff/)
+- [View Diffs, File History, and Blame](/gitkraken-desktop/diff/)
 - [Committing Changes](/gitkraken-desktop/commits/)
 - [Clean Up AI Coding Agent Commits Before Review](/gitkraken-desktop/clean-up-agent-commits/)
+- [Resolve Merge Conflicts Between AI Agent Branches](/gitkraken-desktop/agent-merge-conflicts/)
 - [Undo and Redo](/gitkraken-desktop/undo-and-redo/)

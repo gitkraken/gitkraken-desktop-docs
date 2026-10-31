@@ -1,6 +1,6 @@
 ---
 title: Coding Agents in GitKraken Desktop
-description: Use Agent Sessions View in GitKraken Desktop to run coding agents like Claude Code and Codex in parallel worktrees, monitor progress, and approve permission requests.
+description: Run Claude Code, Codex CLI, and other coding agents in parallel worktrees with GitKraken Desktop's Agent Sessions View, and approve their permission requests.
 product: GitKraken Desktop
 feature: Agents
 content_type: how-to
@@ -314,6 +314,8 @@ If you remove a worktree from the card menu, the card shows visual feedback whil
 
 You can keep working in another worktree while monitoring these cards. When a session finishes, switch to that worktree to review the results.
 
+<a id="how-to-respond-to-agent-permission-requests"></a>
+
 ### How to approve Claude Code, Codex CLI, and Copilot CLI permission requests
 
 When Claude Code, Codex CLI, or Copilot CLI requests approval for an action, you can select **Allow** or **Deny** on its card in Agent Sessions View without switching to the session. For other prompts, open the worktree and respond in the agent's terminal.
@@ -436,9 +438,13 @@ Use the plug icon in Agent Sessions View or open *Preferences > External Tools* 
 
 Yes. Each coding agent session runs in its own worktree and working directory, so you can run parallel sessions in the same repository.
 
-### Can I approve Claude Code permission prompts without switching windows?
+### Can I approve Claude Code permission prompts without leaving my Git history?
 
-Yes. When Claude Code, Codex CLI, or Copilot CLI asks for permission, select **Allow** or **Deny** on its card in Agent Sessions View, next to your Commit Graph. You don't need to switch to the agent's terminal. For other prompts, open the worktree and respond in the agent's terminal.
+Yes. Select **Allow** or **Deny** on the agent's card in Agent Sessions View, next to your Commit Graph, without switching to the agent's terminal. This also works for Codex CLI and Copilot CLI. See [How to approve permission requests](#how-to-respond-to-agent-permission-requests).
+
+### How do I review, clean up, and combine work from several agents?
+
+See [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/), [Clean Up AI Coding Agent Commits Before Review](/gitkraken-desktop/clean-up-agent-commits/), and [Resolve Merge Conflicts Between AI Agent Branches](/gitkraken-desktop/agent-merge-conflicts/).
 
 ### What happens when I start a coding agent session?
 

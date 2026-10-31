@@ -216,7 +216,7 @@ After merging with squash enabled, review the staged changes in the Commit Panel
 
 ### How to resolve conflicts in the Merge Conflict Editor
 
-When conflicts occur, the Commit Panel shows the conflicted files. Click a file to open the Merge Tool. If the conflicts are between branches from two coding agents, see [Resolve Merge Conflicts Between AI Coding Agent Branches](/gitkraken-desktop/agent-merge-conflicts/).
+When conflicts occur, the Commit Panel shows the conflicted files. Click a file to open the Merge Tool. If the conflicts are between branches from two coding agents, see [Resolve Merge Conflicts Between AI Agent Branches](/gitkraken-desktop/agent-merge-conflicts/).
 
 <figure>
   <img src="/wp-content/uploads/merge-conflict@2x.png" class="help-center-img img-bordered" alt="GitKraken merge conflict interface showing conflicting file test.txt when merging origin/test-merge-pr into multi-conflict-left">

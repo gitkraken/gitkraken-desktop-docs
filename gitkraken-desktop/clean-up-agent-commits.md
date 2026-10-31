@@ -34,11 +34,11 @@ Use this page when an AI coding agent leaves you with one giant commit, or with 
 
 Before you start, open the agent's worktree: in Agent Sessions View, right-click the session card and select **Open this worktree**. Then pick the row that matches what the agent left you.
 
-| What the agent left you | What to use | How |
-|---|---|---|
-| Changes it never committed | **Compose Commit with AI** | Stage the changes, then click **Compose Commit with AI** in the Commit Details Panel |
-| One giant commit, or many small ones | **Recompose Commits with AI** | Select the agent's commits in the Commit Graph, right-click, and select **Recompose Commits with AI** |
-| Commits you already pushed | **Recompose Commits with AI**, then force push | Only if nobody else has pulled or built on the branch |
+| Where the changes are | What to use | How | Notes |
+|---|---|---|---|
+| Uncommitted, in the agent's worktree | **Compose Commit with AI** | Stage the changes, then click **Compose Commit with AI** in the Commit Panel | |
+| Committed on the agent's branch, not pushed | **Recompose Commits with AI** | <kbd>Shift</kbd> + click the agent's first and last commits, right-click, and select **Recompose Commits with AI** | The commits must be next to each other, with no merge commits in between |
+| Committed and pushed | **Recompose Commits with AI**, then force push | Recompose as above, then force push the branch | Only if nobody else has pulled or built on the branch |
 
 In every case, GitKraken Desktop shows the proposed commits first. Your branch doesn't change until you click **Create commits**.
 
@@ -49,15 +49,15 @@ In every case, GitKraken Desktop shows the proposed commits first. Your branch d
 Use this when the agent changed files but didn't commit anything.
 
 1. Select the agent's WIP node and stage the changes you want to commit.
-2. In the Commit Details Panel, click **Compose Commit with AI**.
-
-<figure>
-  <img src="/wp-content/uploads/compose-WIP@2x.png" class="help-center-img img-bordered" alt="Selected WIP node in GitKraken Desktop with an arrow pointing to the Compose commits with AI button in the Commit Details Panel.">
-  <figcaption style="text-align:center; color:#888">Compose commits from the agent's uncommitted changes.</figcaption>
-</figure>
+2. In the Commit Panel, click **Compose Commit with AI**.
 
 3. Review the proposed commits. Reorder them, squash related ones together, or edit the messages.
 4. Click **Create commits** to apply them, **Reset** to undo your edits to the proposal, or **Cancel** to stop without changing anything.
+
+<figure>
+  <img src="/wp-content/uploads/compose-WIP@2x.png" class="help-center-img img-bordered" alt="Selected WIP node in GitKraken Desktop with an arrow pointing to the Compose Commit with AI button in the Commit Panel.">
+  <figcaption style="text-align:center; color:#888">Compose commits from the agent's uncommitted changes.</figcaption>
+</figure>
 
 ***
 
@@ -65,22 +65,22 @@ Use this when the agent changed files but didn't commit anything.
 
 Use this when the agent committed everything at once, or in many small steps that don't tell a clear story.
 
-1. In the Commit Graph, select the agent's commits. Hold <kbd>Shift</kbd> or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> to select a contiguous range.
-2. Right-click the selection and select **Recompose Commits with AI**, or click the button in the Commit Details Panel.
+1. In the Commit Graph, hold <kbd>Shift</kbd> and click the agent's first and last commits to select the range.
+2. Right-click the selection and select **Recompose Commits with AI**, or click the button in the Commit Panel.
+
+3. Review the proposed structure. Reorder, squash, or edit messages until each commit does one thing and its message says what and why.
+
+4. Click **Create commits**.
 
 <figure>
   <img src="/wp-content/uploads/compose-existing-commits@2x.png" class="help-center-img img-bordered" alt="Commit Graph context menu in GitKraken Desktop with the option to recompose a range of commits with AI.">
   <figcaption style="text-align:center; color:#888">Recompose a range of the agent's commits.</figcaption>
 </figure>
 
-3. Review the proposed structure. Reorder, squash, or edit messages until each commit does one thing and its message says what and why.
-
 <figure>
   <img src="/wp-content/uploads/commit-composer-UI@2x.png" class="help-center-img img-bordered" alt="Commit Composer window in GitKraken Desktop with options to pick, squash, or reword each proposed commit.">
   <figcaption style="text-align:center; color:#888">Adjust the proposed commits before you apply them.</figcaption>
 </figure>
-
-4. Click **Create commits**.
 
 Recomposing keeps the original commit authors and adds co-authors when a new commit combines work from several people.
 
@@ -91,7 +91,7 @@ Recomposing keeps the original commit authors and adds co-authors when a new com
 Commit Composer doesn't change any code, so the final state of your branch is the same before and after. What changes is how the work is split up and described. Check that part before you share it:
 
 1. **Read each new commit.** Click each commit and read its diff and message. A reviewer should be able to follow the change one commit at a time.
-2. **Run your tests if your team needs every commit to build.** Run them from the [embedded terminal](/gitkraken-desktop/terminal/) in the agent's worktree.
+2. **Test each commit if your team needs every commit to build.** The newest commit has the same code as before, so this check is about the commits in between. Right-click each new commit, select **Checkout this commit**, and run your tests from the [embedded terminal](/gitkraken-desktop/terminal/). Check out the agent's branch again when you're done. Your CI may also run this check for you.
 
 If you don't like the result, click **Undo** in the toolbar right away. Undo reverses a Compose or Recompose action as long as you haven't pushed the branch.
 
@@ -100,9 +100,9 @@ If you don't like the result, click **Undo** in the toolbar right away. Undo rev
 ## How to share the cleaned-up branch
 
 - **If you never pushed the branch,** push it as usual and [open a pull request](/gitkraken-desktop/pull-requests/).
-- **If you already pushed it,** recomposing rewrote commits that are on the remote, so a normal push fails. GitKraken Desktop may offer **Force Push**. Use it only if nobody else has pulled or built on the branch. See [Pushing and pulling](/gitkraken-desktop/pushing-and-pulling/).
+- **If you already pushed it,** recomposing rewrote commits that are on the remote, so a normal push is rejected. GitKraken Desktop may then offer **Force Push**. Use it only if nobody else has pulled or built on the branch. See [Push, Pull, and Fetch](/gitkraken-desktop/pushing-and-pulling/).
 
-To write the pull request description, you can generate a draft with GitKraken AI, or right-click the branch and select **Explain Branch Changes** for a summary to start from. Edit either one so it says what you checked and what you didn't.
+To write the pull request description, click the AI icon in the description field when you create the pull request to generate a draft, or right-click the branch and select **Explain Branch Changes** for a summary to start from. Edit either one so it says what you checked and what you didn't.
 
 ***
 
@@ -114,7 +114,7 @@ No. It only reorganizes the changes into new commits and rewrites their messages
 
 ### Can I recompose commits from more than one agent session?
 
-Only if they're contiguous commits on the branch you have checked out, with no merge commits in the range. To combine work from separate agent branches, merge them first. See [Resolve Merge Conflicts Between AI Coding Agent Branches](/gitkraken-desktop/agent-merge-conflicts/).
+Not across a merge. Recompose only works on commits that are next to each other on the branch you have checked out, with no merge commits in the range. Clean up each agent's branch on its own first, then combine them. See [Resolve Merge Conflicts Between AI Agent Branches](/gitkraken-desktop/agent-merge-conflicts/).
 
 ### Can I clean up commits without AI?
 
@@ -128,8 +128,9 @@ See [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo
 
 ## Related pages
 
-- [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/)
+- [GitKraken AI Features Overview](/gitkraken-desktop/gkd-gitkraken-ai/)
 - [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/)
 - [Interactive Rebase](/gitkraken-desktop/interactive-rebase/)
 - [Pull Requests](/gitkraken-desktop/pull-requests/)
+- [Resolve Merge Conflicts Between AI Agent Branches](/gitkraken-desktop/agent-merge-conflicts/)
 - [Undo and Redo](/gitkraken-desktop/undo-and-redo/)

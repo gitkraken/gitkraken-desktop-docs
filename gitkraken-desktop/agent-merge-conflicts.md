@@ -1,11 +1,11 @@
 ---
-title: Resolve Merge Conflicts Between AI Coding Agent Branches in GitKraken Desktop
+title: Resolve Merge Conflicts Between AI Agent Branches in GitKraken Desktop
 description: Merge two AI coding agents' branches in GitKraken Desktop, resolve conflicts with the Merge Tool or Auto-resolve with AI, and test the combined result.
 product: GitKraken Desktop
 feature: Agent Merge Conflicts
 content_type: how-to
 audience: developer
-plan_required: Pro
+plan_required: all
 os_support: [Windows, macOS, Linux]
 git_hosts: [generic]
 integrations: []
@@ -19,11 +19,11 @@ taxonomy:
 ---
 <kbd>Last updated: October 2026</kbd>
 
-Use this page when two AI coding agents worked in separate worktrees and their branches now conflict. You merge both branches into one integration branch, resolve each conflict in the Merge Tool, with or without Auto-resolve with AI, and then test the combined result before you open a pull request.
+Yes, GitKraken Desktop can help when two AI coding agents worked in separate worktrees and their branches now conflict. Its Merge Tool, with optional Auto-resolve with AI, resolves the conflicts one file at a time. You merge both branches into one integration branch, resolve each conflict in the Merge Tool, with or without Auto-resolve with AI, and then test the combined result before you open a pull request.
 
 **Requirements and limits**
 - Scope: Combining the work of two or more agent branches and resolving the conflicts between them
-- Prerequisite: The in-app merge conflict output editor requires a [paid GitKraken license](https://www.gitkraken.com/pricing?source=help_center&product=gitkraken). Auto-resolve with AI also requires GitKraken AI to be enabled.
+- Prerequisite: Merging and choosing lines from each side work on every plan. Editing the merged output in the Merge Tool requires a [paid GitKraken subscription](https://www.gitkraken.com/pricing?source=help_center&product=gitkraken). Auto-resolve with AI also requires GitKraken AI to be enabled.
 - Limits: Auto-resolve with AI is in Preview. It suggests a resolution for each conflicted hunk, and you decide whether to keep it.
 - Limits: A merge with no conflicts doesn't prove the two agents' changes work together. Test the combined result.
 
@@ -36,11 +36,11 @@ Use this page when two AI coding agents worked in separate worktrees and their b
 3. Merge the second agent's branch. GitKraken Desktop lists any conflicted files in the Commit Panel.
 4. Click each conflicted file to open the Merge Tool. Resolve it by hand, or click **Auto-resolve with AI** and review the suggestion for each hunk.
 5. Commit the merge, then run both agents' tests together.
-6. Push the integration branch and open a pull request.
+6. Push the integration branch and open one pull request from it.
 
 ***
 
-## Why merge in a separate integration branch
+## How to set up an integration branch
 
 Merging into a new branch keeps both agent branches exactly as the agents left them. If the combined result isn't right, you can throw away the integration branch and start again without losing either agent's work.
 
@@ -50,7 +50,7 @@ To set one up:
 2. In the Left Panel, right-click the new branch and select **Create worktree**.
 3. Open the new worktree.
 
-Your own worktree and the agents' worktrees stay untouched.
+Your own worktree and the agents' worktrees stay untouched. See [Manage Git Worktrees](/gitkraken-desktop/worktrees/) for more on creating, opening, and removing worktrees.
 
 ***
 
@@ -77,7 +77,7 @@ If both agents changed the same lines, GitKraken Desktop stops and lists the con
 
 ## How to resolve each conflict
 
-Click a conflicted file to open the Merge Tool. It shows the integration branch on the left, the incoming agent branch on the right, and the output at the bottom. You have four ways to resolve it.
+Click a conflicted file to open the Merge Tool. It shows the current branch on the left, which is your integration branch, and the incoming branch on the right, which is the agent branch you're merging. The output is at the bottom. You have four ways to resolve it.
 
 ### Use Auto-resolve with AI
 
@@ -90,7 +90,7 @@ Click a conflicted file to open the Merge Tool. It shows the integration branch 
   <figcaption style="text-align:center; color:#888">Auto-resolve with AI explains each suggestion and rates its confidence.</figcaption>
 </figure>
 
-Treat the suggestion as a starting point. The AI sees the conflicting code, not what each agent was asked to do. To give it that context, add instructions in <kbd>Preferences > GitKraken AI > Conflict Resolution</kbd>, for example a sentence about what each task was meant to change.
+Treat the suggestion as a starting point. The AI sees the conflicting code, not what each agent was asked to do. To give it that context, add instructions in <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> GitKraken AI <i class='fa fa-caret-right'></i> Conflict Resolution</em>, for example a sentence about what each task was meant to change.
 
 ### Choose lines by hand
 
@@ -98,11 +98,11 @@ Use the checkboxes or the **+** buttons to pick lines from each side, or type in
 
 ### Take one side for the whole file
 
-If one agent's version of a file should win completely, right-click the file in the Commit Panel and select **Take current** or **Take incoming**.
+If one agent's version of a file should win completely, right-click the file in the Commit Panel. Select **Take current** to keep the integration branch's version, or **Take incoming** to keep the version from the agent branch you're merging.
 
 ### Use an external merge tool
 
-If your team uses a supported external tool, set it under <kbd>Preferences > General</kbd>. See [Branching and merging](/gitkraken-desktop/branching-and-merging/) for the supported tools.
+If your team uses a supported external tool, set it under <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> General</em>. See [Branch, Merge, and Rebase](/gitkraken-desktop/branching-and-merging/) for the supported tools.
 
 When every file is resolved, save the output, stage the files, and commit the merge.
 
@@ -113,10 +113,10 @@ When every file is resolved, save the output, stage the files, and commit the me
 Resolving every conflict means Git can combine the files. It doesn't mean the two agents' changes work together.
 
 1. **Run the tests for both tasks** in the integration worktree, from the [embedded terminal](/gitkraken-desktop/terminal/). A change from one agent can break the other agent's feature without causing a conflict.
-2. **Review the combined diff.** Click the newest commit on your target branch, then hold <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> and click the merge commit to see everything the integration branch adds. See [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/) for more ways to inspect the work.
-3. **Push and open a pull request** from the integration branch. See [Pull Requests](/gitkraken-desktop/pull-requests/).
+2. **Review everything the integration branch adds.** With the integration worktree open and nothing left uncommitted, right-click your target branch, such as `main`, and select **Compare commit against working directory**. See [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/) for more ways to inspect the work.
+3. **Push and open one pull request** from the integration branch. See [Pull Requests](/gitkraken-desktop/pull-requests/). The agent branches don't need their own pull requests. Remove their worktrees and branches after the integration branch merges.
 
-If the result isn't right, remove the integration worktree and its branch and start again. Both agent branches are unchanged.
+If the result isn't right, remove the integration worktree and its branch and start again. Both agent branches are unchanged. See [Manage Git Worktrees](/gitkraken-desktop/worktrees/) for how to remove a worktree.
 
 ***
 
@@ -140,7 +140,7 @@ No. Git only checks whether lines overlap. Run both agents' tests on the combine
 
 ### Should I rebase one agent branch onto the other instead?
 
-You can. Rebase gives a straight-line history but rewrites the rebased branch's commits. See [Branching and merging](/gitkraken-desktop/branching-and-merging/) for when to use merge or rebase. If you rebase, you resolve the same conflicts one commit at a time.
+You can. Rebase gives a straight-line history but rewrites the rebased branch's commits. See [Branch, Merge, and Rebase](/gitkraken-desktop/branching-and-merging/) for when to use merge or rebase. If you rebase, you resolve the same conflicts one commit at a time.
 
 ### Does this work with any coding agent?
 
@@ -151,7 +151,8 @@ Yes. Merging works on Git branches, so it doesn't matter which agent made the ch
 ## Related pages
 
 - [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/)
-- [Branching and merging](/gitkraken-desktop/branching-and-merging/)
-- [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/)
+- [Branch, Merge, and Rebase](/gitkraken-desktop/branching-and-merging/)
+- [GitKraken AI Features Overview](/gitkraken-desktop/gkd-gitkraken-ai/)
 - [Manage Git Worktrees](/gitkraken-desktop/worktrees/)
 - [Clean Up AI Coding Agent Commits Before Review](/gitkraken-desktop/clean-up-agent-commits/)
+- [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/)

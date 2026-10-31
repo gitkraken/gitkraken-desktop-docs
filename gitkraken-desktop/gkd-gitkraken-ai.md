@@ -260,7 +260,7 @@ To customize how **Explain Branch Changes** works, go to **Preferences > GitKrak
 ***
 ## How to resolve merge conflicts with AI
 
-Resolve merge conflicts faster with GitKraken AI. To combine the branches of two coding agents that worked in parallel, see [Resolve Merge Conflicts Between AI Coding Agent Branches](/gitkraken-desktop/agent-merge-conflicts/).
+Resolve merge conflicts faster with GitKraken AI. To combine the branches of two coding agents that worked in parallel, see [Resolve Merge Conflicts Between AI Agent Branches](/gitkraken-desktop/agent-merge-conflicts/).
 
 <div class='callout callout--basic'>
   <p><strong>Use AI conflict resolution when:</strong> you want a suggested starting point for resolving a conflict and plan to review the result carefully. <strong>Don't use it when:</strong> the conflict involves sensitive logic or policy decisions that require a fully manual resolution.</p>
