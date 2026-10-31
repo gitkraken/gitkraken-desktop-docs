@@ -19,6 +19,8 @@ taxonomy:
 ---
 <kbd>Last updated: October 2026</kbd>
 
+In GitKraken Desktop, each coding agent session runs on its own branch in its own Git worktree. The agent's changes stay separate from yours and show up in the Commit Graph like any other branch, where you can review them and undo them.
+
 Use this page to learn how coding agents work in GitKraken Desktop and how to use **Agent Sessions View** to create, monitor, and manage coding agent sessions. Read this page if you want to use external coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, or OpenCode from inside GitKraken Desktop.
 
 <div class='callout callout--basic'>

@@ -1,6 +1,6 @@
 ---
 title: View Diffs, File History, and Blame in GitKraken Desktop
-description: Learn how to use GitKraken Desktop to compare changes with diffs, view file history and blame, configure external diff tools, and manage Git patches.
+description: View diffs, file history, and blame in GitKraken Desktop to see what changed, including changes from coding agents, and set up external diff tools and patches.
 product: GitKraken Desktop
 feature: Diff Viewer
 content_type: how-to
@@ -17,7 +17,7 @@ tags: [diff, blame, history, patches, external-tools]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 Use this page to compare uncommitted changes, inspect commit diffs, switch between diff views, review file history or blame, and create or apply patches in GitKraken Desktop. It also covers external diff tools and key limits such as patch support being a preliminary feature that does not generate binary-file patches.
 
@@ -53,6 +53,8 @@ Use this page to compare uncommitted changes, inspect commit diffs, switch betwe
 - To apply a patch, open the Command Palette (<kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>P</kbd>), type `Apply Patch`, and select your `.patch` file.
 
 To use an external diff tool, go to <kbd>Preferences > External Tools</kbd> and select your preferred application.
+
+To review what a coding agent changed across its commits and worktree, see [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/).
 
 ***
 

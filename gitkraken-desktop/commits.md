@@ -306,6 +306,8 @@ Right-click any commit node in the graph and choose **Revert Commit**. GitKraken
     <figcaption style="text-align: center; color: #888;">Use the revert option to create a new commit that undoes a previous one.</figcaption>
 </figure>
 
+To undo commits or uncommitted changes that a coding agent made, see [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/).
+
 ## How to restore files from a commit
 
 GitKraken Desktop lets you restore any file to its state at a specific commit and place it directly into your working directory (WIP). This is useful when you want to retrieve an older version of a file, resurrect a deleted file, or selectively reverse changes without affecting the rest of your working directory.

@@ -1,6 +1,6 @@
 ---
 title: GitKraken Desktop Documentation & Support | Master Git with GitKraken
-description: Learn Git with GitKraken Desktop. Explore tutorials, installation guides, Git basics, integrations, release notes, FAQs, and more from the GitKraken Help Center.
+description: Learn Git and run coding agents on their own branches with GitKraken Desktop. Find install guides, tutorials, integrations, release notes, and FAQs.
 product: GitKraken Desktop
 feature: Help Center Home
 content_type: home
@@ -18,7 +18,9 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
+
+GitKraken Desktop is a visual Git client for Windows, macOS, and Linux. You can use it for everyday Git work and to run coding agents on their own branches and worktrees, where their changes show up in the Commit Graph next to yours.
 
 Use this page as the GitKraken Desktop Help Center entry point when you need to find installation guidance, interface walkthroughs, coding agent workflows, worktrees, terminal usage, integrations, release notes, or support resources. It is the best cold-start page for agents and users who need a routing layer into the rest of the documentation set.
 

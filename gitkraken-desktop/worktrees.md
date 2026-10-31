@@ -1,6 +1,6 @@
 ---
 title: Manage Git Worktrees in GitKraken Desktop
-description: Learn how to create, switch, and manage Git worktrees in GitKraken Desktop to work on multiple branches in parallel.
+description: Create, switch, and manage Git worktrees in GitKraken Desktop to work on several branches in parallel, including branches where coding agents run.
 product: GitKraken Desktop
 feature: Worktrees
 content_type: how-to
@@ -17,7 +17,7 @@ tags: [worktrees, branches, parallel-work, repositories, checkout]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 Use this page to create, switch, lock, and remove Git worktrees in GitKraken Desktop when you need multiple branches checked out at the same time. Worktrees keep separate working directories while sharing the same repository history, which makes them useful for parallel feature work, testing, review workflows, and coding agent sessions.
 
@@ -192,3 +192,5 @@ With the rise of parallel work across multiple agents, tracking pending changes 
     Each worktree gets its own WIP node in the commit graph
   </figcaption>
 </figure>
+
+When you start a coding agent session from [Agent Sessions View](/gitkraken-desktop/agents/), GitKraken Desktop creates the branch and worktree for you, so each agent's pending changes appear as their own WIP node. To review or undo them, see [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/).
