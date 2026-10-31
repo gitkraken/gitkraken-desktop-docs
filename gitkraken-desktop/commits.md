@@ -17,7 +17,7 @@ tags: [commits, amend, revert, reset, co-authors]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 Use this page to create commits, stage files, add co-authors, work with commit templates, amend recent history, and undo or revert changes in GitKraken Desktop. Basic local commit workflows are available in the app, while actions that rewrite pushed history require extra care because they may require a force push.
 
@@ -228,7 +228,7 @@ To update only the message:
 2. Click into the message box and revise the text.
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/amend-message-2025.png' class="help-center-img img-bordered" alt="GitKraken commit details panel with the commit message shown and a tooltip indicating the option to amend the commit message." />
+    <img src='/wp-content/uploads/amend-message-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop Commit Panel with the commit message shown and a tooltip indicating the option to amend the commit message." />
     <figcaption style="text-align: center; color: #888;">Edit your previous commit message directly in the message field.</figcaption>
 </figure>
 
