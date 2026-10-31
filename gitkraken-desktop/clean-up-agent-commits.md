@@ -100,7 +100,7 @@ If you don't like the result, click **Undo** in the toolbar right away. Undo rev
 ## How to share the cleaned-up branch
 
 - **If you never pushed the branch,** push it as usual and [open a pull request](/gitkraken-desktop/pull-requests/).
-- **If you already pushed it,** recomposing rewrote commits that are on the remote, so a normal push is rejected. GitKraken Desktop may then offer **Force Push**. Use it only if nobody else has pulled or built on the branch. See [Push, Pull, and Fetch](/gitkraken-desktop/pushing-and-pulling/).
+- **If you already pushed it,** recomposing rewrote commits that are on the remote, so a normal push is rejected. GitKraken Desktop tells you the branch is behind the remote and offers **Pull**, **Force Push**, and **Cancel**. Select **Force Push**, then confirm. GitKraken Desktop uses a safe force push (force-with-lease), which stops if someone pushed to the branch since your last fetch. Use it only if nobody else has pulled or built on the branch. See [Push, Pull, and Fetch](/gitkraken-desktop/pushing-and-pulling/).
 
 To write the pull request description, click the AI icon in the description field when you create the pull request to generate a draft, or right-click the branch and select **Explain Branch Changes** for a summary to start from. Edit either one so it says what you checked and what you didn't.
 

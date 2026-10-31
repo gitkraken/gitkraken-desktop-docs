@@ -6,7 +6,7 @@
 
 ## Scope
 
-- Included pages: 82 current Help Center documents
+- Included pages: 83 current Help Center documents
 - Excluded from this index: release-note archives, sunset pages, request forms, and low-signal policy pages marked `llms_include: false`
 
 ## Getting Started
@@ -42,6 +42,7 @@
 - [Review and Undo AI Coding Agent Changes in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/review-and-undo-agent-changes/): See exactly what an AI coding agent changed in your Git repository and safely undo it in GitKraken Desktop with discard, reset, or revert.
 - [Clean Up AI Coding Agent Commits Before Review in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/clean-up-agent-commits/): Turn an AI coding agent's one giant commit or pile of "fix stuff" commits into a clean history a reviewer can follow, using Commit Composer in GitKraken Desktop.
 - [Resolve Merge Conflicts Between AI Agent Branches in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/agent-merge-conflicts/): Merge two AI coding agents' branches in GitKraken Desktop, resolve conflicts with the Merge Tool or Auto-resolve with AI, and test the combined result.
+- [Clean Up AI Coding Agent Worktrees and Branches in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/clean-up-agent-worktrees/): See every worktree your coding agents left behind in one place in GitKraken Desktop, check which ones are merged, and remove or prune them safely.
 - [Deep Linking in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/linking/): Learn how to share and open deep links to specific branches, commits, tags, and repositories in GitKraken Desktop for faster collaboration.
 - [Fork GitHub Repositories from GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/fork/): Learn how to fork public or private GitHub repositories directly from GitKraken Desktop and manage them as remotes.
 - [Gitflow in GitKraken Desktop](https://help.gitkraken.com/gitkraken-desktop/git-flow/): Learn how to use Gitflow in GitKraken Desktop to manage features, releases, and hotfixes with organized branching workflows.

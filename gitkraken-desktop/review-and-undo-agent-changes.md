@@ -45,7 +45,7 @@ Then find where the agent's changes are and use the matching row.
 | Committed on the agent's branch, not pushed | <kbd>Shift</kbd> + click the agent's first and last commits for a combined diff | Reset the branch to the last good commit | No | Reset rewrites the branch's history |
 | Committed and pushed | Select the agent's commits in the Commit Graph | **Revert Commit** on each one, then push | Yes | Revert adds new commits and keeps existing history |
 | Only one or two files are damaged | Open the file's **History** | **Restore file from this commit** | Yes | The restored file arrives as a staged change |
-| Anywhere in a session you don't want | Check the session card in Agent Sessions View | **Remove worktree and delete branch** | No | Use only for a branch you never pushed |
+| Anywhere in a session you don't want | Check the session card in Agent Sessions View | **Remove worktree and delete branch** | No | Deletes the branch even if its commits aren't merged |
 
 ***
 
@@ -126,7 +126,7 @@ If the agent damaged one or two files, restore them instead of undoing everythin
 3. Select that commit in the Commit Graph.
 4. In the Commit Panel, right-click the file and select **Restore file from this commit**.
 
-The file arrives in your working directory as a staged change, ready to commit.
+The file arrives in your working directory as a staged change, ready to commit. If you already have uncommitted changes to that file, GitKraken Desktop asks before it overwrites them.
 
 ### Undo commits that are only on your machine
 
@@ -161,15 +161,17 @@ Once the agent's commits are on a shared branch, don't reset. Reverse them with 
 
 ### Throw away a whole agent session
 
-If you don't want any of the session's work, right-click the session card in Agent Sessions View and select **Remove worktree and delete branch**. This deletes the worktree, its working directory, and the local branch.
+If you don't want any of the session's work, right-click the session card in Agent Sessions View and select **Remove worktree and delete branch**, then confirm. GitKraken Desktop stops the agent's terminal session and deletes the worktree, its working directory, and the local branch. It deletes the branch even if its commits aren't merged anywhere, and you can't undo this.
 
-Use this only for a branch you never pushed. If you pushed the branch, revert its commits instead.
+If the worktree still has uncommitted changes, GitKraken Desktop asks you to confirm again with **Force Remove Worktree**. The remote branch stays unless you choose **Remove worktree and delete branch (local & remote)** instead. If other people use the pushed branch, revert its commits instead of deleting it.
+
+See [Clean Up AI Coding Agent Worktrees and Branches](/gitkraken-desktop/clean-up-agent-worktrees/) for more on removing worktrees.
 
 ***
 
 ## How to recover from a cleanup mistake
 
-If you discard or reset the wrong thing while cleaning up after an agent, click **Undo** in the toolbar or press <kbd>Cmd</kbd> + <kbd>Z</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>Z</kbd> (Windows/Linux) right away. Undo reverses the most recent supported action, such as a commit, a discard, or a branch reset, as long as it happened on your machine and hasn't been pushed.
+If you discard or reset the wrong thing while cleaning up after an agent, click **Undo** in the toolbar or press <kbd>Cmd</kbd> + <kbd>Z</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>Z</kbd> (Windows/Linux) right away. Undo reverses the most recent supported action, such as a commit, a discard, or a branch reset, as long as it happened on your machine and hasn't been pushed. That includes commits and resets an agent made from its terminal, as long as you have the agent's worktree open. Undo isn't available while a merge or rebase is in progress.
 
 Undo reverses one action at a time, starting with the most recent. To reverse a series of agent commits, or commits you already pushed, use reset or revert as described above. See [Undo and Redo](/gitkraken-desktop/undo-and-redo/) for the full list of supported actions.
 
@@ -203,4 +205,5 @@ Yes. Revert individual hunks, restore individual files, or use a **Soft** reset 
 - [Committing Changes](/gitkraken-desktop/commits/)
 - [Clean Up AI Coding Agent Commits Before Review](/gitkraken-desktop/clean-up-agent-commits/)
 - [Resolve Merge Conflicts Between AI Agent Branches](/gitkraken-desktop/agent-merge-conflicts/)
+- [Clean Up AI Coding Agent Worktrees and Branches](/gitkraken-desktop/clean-up-agent-worktrees/)
 - [Undo and Redo](/gitkraken-desktop/undo-and-redo/)

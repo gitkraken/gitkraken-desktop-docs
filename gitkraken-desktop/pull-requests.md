@@ -419,7 +419,7 @@ Pull request icons:
 
 ## How merged pull request status appears in the interface
 
-When a GitHub pull request is merged, GitKraken Desktop surfaces a merged PR status pill in three locations associated with the branch:
+When a GitHub pull request or GitLab merge request is merged, GitKraken Desktop surfaces a merged PR status pill in three locations associated with the branch:
 
 | Location | When it appears |
 |----------|-----------------|

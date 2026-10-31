@@ -38,7 +38,7 @@ If you use coding agents in GitKraken Desktop, Agent Sessions View builds on the
 | Lock worktree | Prevents accidental changes to that worktree | No | Useful when working elsewhere temporarily |
 | Remove worktree | Detaches that working directory from the repository | No | Removes the worktree entry, not shared history |
 | Remove worktree and delete branch | Removes the worktree and deletes its associated branch in one step | No | Available from the worktree context menu in the Left Panel |
-| View worktrees through Agent Sessions View | Shows the same worktrees in an agent-focused interface | No | Adds coding agent session context, quick actions, and a merged PR pill when the branch has a merged GitHub pull request |
+| View worktrees through Agent Sessions View | Shows the same worktrees in an agent-focused interface | No | Adds coding agent session context, quick actions, and a merged PR pill when the branch has a merged GitHub pull request or GitLab merge request |
 | Commit in a worktree | Records history from that worktree | Yes | Committed changes become visible across all worktrees |
 
 ***
@@ -167,7 +167,7 @@ To remove a worktree and delete its associated branch in a single step:
 1. Right-click the worktree in the Left Panel
 2. Select <kbd>Remove worktree and delete branch</kbd>
 
-Use this option when you are done with the worktree and no longer need its branch, for example after merging a feature or finishing a coding agent session.
+Use this option when you are done with the worktree and no longer need its branch, for example after merging a feature or finishing a coding agent session. It deletes the local branch even if its commits aren't merged, and you can't undo it.
 
 ### How to lock or unlock a worktree
 
@@ -177,7 +177,7 @@ To change lock status:
 Locking a worktree prevents accidental changes while you work elsewhere.
 
 <div class='callout callout--basic'>
-  <p><strong>Tip:</strong> A merged PR pill on a worktree card in Agent Sessions View means the branch has a merged GitHub pull request. Use this as a signal that it is safe to remove the worktree and delete the branch.</p>
+  <p><strong>Tip:</strong> A merged PR pill on a worktree card in Agent Sessions View means the branch has a merged GitHub pull request or GitLab merge request. Use this as a signal that it is safe to remove the worktree and delete the branch. See <a href="/gitkraken-desktop/clean-up-agent-worktrees/">Clean Up AI Coding Agent Worktrees and Branches</a>.</p>
 </div>
 
 ## Multiple WIP nodes for multiple worktrees

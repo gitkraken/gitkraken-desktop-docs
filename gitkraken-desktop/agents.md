@@ -291,9 +291,9 @@ Each card in Agent Sessions View represents one worktree and one coding agent se
 | **WIP change summary** | The count of uncommitted file changes |
 | **Ahead / behind** | Commit counts relative to the remote |
 | **Agent status** | Whether the agent is running, waiting for input, or done |
-| **Merged PR pill** | Whether the branch has an associated merged GitHub pull request |
+| **Merged PR pill** | Whether the branch has an associated merged GitHub pull request or GitLab merge request |
 
-The status bar at the bottom of each card shows the current session state. Claude Code, Codex CLI, Copilot CLI, and OpenCode can report live status when you install their status integrations. If the branch has a merged GitHub pull request, a merged PR pill appears on the card.
+The status bar at the bottom of each card shows the current session state. Claude Code, Codex CLI, Copilot CLI, and OpenCode can report live status when you install their status integrations. If the branch has a merged GitHub pull request or GitLab merge request, a merged PR pill appears on the card.
 
 When you start a session, the card shows a **Running** status. If you install a status integration for a supported CLI, the card can show more specific status information.
 
@@ -320,7 +320,7 @@ You can keep working in another worktree while monitoring these cards. When a se
 
 ### How to approve Claude Code, Codex CLI, and Copilot CLI permission requests
 
-When Claude Code, Codex CLI, or Copilot CLI requests approval for an action, you can select **Allow** or **Deny** on its card in Agent Sessions View without switching to the session. For other prompts, open the worktree and respond in the agent's terminal.
+When Claude Code, Codex CLI, or Copilot CLI requests approval for an action, you can select **Allow** or **Deny** on its card in Agent Sessions View without switching to the session. To see the exact command the agent wants to run, click the caret next to **Allow** and **Deny**. For other prompts, open the worktree and respond in the agent's terminal.
 
 <figure>
   <img src='/wp-content/uploads/allow-deny.png' class="help-center-img img-bordered" alt="Agent Sessions View showing Agent permission request">
@@ -368,7 +368,7 @@ Each worktree card in Agent Sessions View has a three-dot action menu so you can
 | Remove the session worktree | **Remove this worktree** | Deletes the worktree and its working directory |
 | Remove the worktree and delete its branch in one step | **Remove worktree and delete branch** | Deletes the worktree and its associated branch |
 
-Use these actions after the agent finishes so you can review changes, push the branch, create a pull request, or clean up the worktree. To see exactly what the agent changed and undo any of it, see [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/).
+Use these actions after the agent finishes so you can review changes, push the branch, create a pull request, or clean up the worktree. For what each removal option deletes, see [Clean Up AI Coding Agent Worktrees and Branches](/gitkraken-desktop/clean-up-agent-worktrees/). To see exactly what the agent changed and undo any of it, see [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/).
 
 ***
 
@@ -446,7 +446,7 @@ Yes. Select **Allow** or **Deny** on the agent's card in Agent Sessions View, ne
 
 ### How do I review, clean up, and combine work from several agents?
 
-See [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/), [Clean Up AI Coding Agent Commits Before Review](/gitkraken-desktop/clean-up-agent-commits/), and [Resolve Merge Conflicts Between AI Agent Branches](/gitkraken-desktop/agent-merge-conflicts/).
+See [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/), [Clean Up AI Coding Agent Commits Before Review](/gitkraken-desktop/clean-up-agent-commits/), and [Resolve Merge Conflicts Between AI Agent Branches](/gitkraken-desktop/agent-merge-conflicts/). To remove the worktrees and branches afterward, see [Clean Up AI Coding Agent Worktrees and Branches](/gitkraken-desktop/clean-up-agent-worktrees/).
 
 ### What happens when I start a coding agent session?
 
