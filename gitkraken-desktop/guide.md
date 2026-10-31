@@ -17,9 +17,12 @@ tags: [git, beginner, guide, workflow]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
-Use this getting started guide to learn a basic GitKraken Desktop workflow: clone a repository, create a branch, make and stage changes, commit them, push the branch, and merge the work back. It is aimed at new Git users who need a practical first path through the product rather than a reference page.
+<div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 32px; margin-bottom:24px;">
+  <p style="flex:1 1 300px; margin:0;">Use this getting started guide to learn a basic GitKraken Desktop workflow: clone a repository, create a branch, make and stage changes, commit them, push the branch, and merge the work back. It is aimed at new Git users who need a practical first path through the product rather than a reference page.</p>
+  <img src="/wp-content/uploads/GitKraken_Keif_student.png" alt="" width="800" height="900" loading="lazy" style="flex:0 0 auto; max-height:200px; width:auto; height:auto; max-width:100%; margin:0 auto; transform:scaleX(-1);">
+</div>
 
 **Requirements and limits**
 - This page is a beginner workflow guide, not a full reference for every GitKraken Desktop option or edge case.
