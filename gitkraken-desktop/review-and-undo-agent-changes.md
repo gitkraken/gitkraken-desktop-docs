@@ -171,9 +171,9 @@ Use this only for a branch you never pushed. If you pushed the branch, revert it
 
 ## How to recover from a cleanup mistake
 
-If you discard or reset the wrong thing while cleaning up after an agent, click **Undo** in the toolbar or press <kbd>Cmd</kbd> + <kbd>Z</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>Z</kbd> (Windows/Linux) right away. Undo reverses the most recent supported action you took in GitKraken Desktop, including discarding changes and resetting a branch.
+If you discard or reset the wrong thing while cleaning up after an agent, click **Undo** in the toolbar or press <kbd>Cmd</kbd> + <kbd>Z</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>Z</kbd> (Windows/Linux) right away. Undo reverses the most recent supported action, such as a commit, a discard, or a branch reset, as long as it happened on your machine and hasn't been pushed.
 
-Undo reverses one action at a time, starting with the most recent. To reverse a series of agent commits, use reset or revert as described above. See [Undo and Redo](/gitkraken-desktop/undo-and-redo/) for the full list of supported actions.
+Undo reverses one action at a time, starting with the most recent. To reverse a series of agent commits, or commits you already pushed, use reset or revert as described above. See [Undo and Redo](/gitkraken-desktop/undo-and-redo/) for the full list of supported actions.
 
 ***
 

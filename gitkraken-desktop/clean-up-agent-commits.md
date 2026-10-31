@@ -19,7 +19,7 @@ taxonomy:
 ---
 <kbd>Last updated: October 2026</kbd>
 
-Use this page when an AI coding agent leaves you with one giant commit, or with a long run of small "fix stuff" commits, and you need a history a reviewer can follow. Commit Composer in GitKraken Desktop groups the agent's changes into logical commits with clear messages, and you review and adjust the result before anything on your branch changes.
+Use this page when an AI coding agent leaves you with one giant commit, or with a long run of small "fix stuff" commits, and you need a history a reviewer can follow. Commit Composer in GitKraken Desktop groups the agent's changes into logical commits with clear messages. It only reorganizes the changes and never changes the code itself. You review and adjust the result before anything on your branch changes.
 
 **Requirements and limits**
 - Scope: Regrouping an agent's uncommitted changes or existing commits into a reviewable history before you open a pull request
@@ -41,18 +41,6 @@ Before you start, open the agent's worktree: in Agent Sessions View, right-click
 | Commits you already pushed | **Recompose Commits with AI**, then force push | Only if nobody else has pulled or built on the branch |
 
 In every case, GitKraken Desktop shows the proposed commits first. Your branch doesn't change until you click **Create commits**.
-
-***
-
-## Before you start: save a copy of the branch
-
-Make a backup branch so you can compare the result and get back to where you started:
-
-1. Open the agent's worktree.
-2. Right-click the agent's newest commit in the Commit Graph and select **Create branch here**.
-3. Name it something like `agent-task-backup`.
-
-The backup branch keeps pointing at the original commits after you recompose.
 
 ***
 
@@ -98,15 +86,14 @@ Recomposing keeps the original commit authors and adds co-authors when a new com
 
 ***
 
-## How to check the result
+## How to check the new commits
 
-A cleaner history should hold the same code. Check that before you share it:
+Commit Composer doesn't change any code, so the final state of your branch is the same before and after. What changes is how the work is split up and described. Check that part before you share it:
 
-1. **Compare the final code.** Click the newest commit on the backup branch, then hold <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> and click the newest commit on the agent's branch. If the diff between them is empty, the final code didn't change.
-2. **Read each new commit.** Click each commit and read its diff and message. A reviewer should be able to follow the change one commit at a time.
-3. **Run your tests.** Run them in the agent's worktree from the [embedded terminal](/gitkraken-desktop/terminal/). If your team expects every commit to build on its own, check that too.
+1. **Read each new commit.** Click each commit and read its diff and message. A reviewer should be able to follow the change one commit at a time.
+2. **Run your tests if your team needs every commit to build.** Run them from the [embedded terminal](/gitkraken-desktop/terminal/) in the agent's worktree.
 
-If you don't like the result, click **Undo** in the toolbar right away. Undo reverses a Compose or Recompose action. You can also reset the agent's branch to the backup branch. When you're happy with the result, delete the backup branch.
+If you don't like the result, click **Undo** in the toolbar right away. Undo reverses a Compose or Recompose action as long as you haven't pushed the branch.
 
 ***
 
@@ -123,7 +110,7 @@ To write the pull request description, you can generate a draft with GitKraken A
 
 ### Does Commit Composer change my code?
 
-It regroups changes into new commits and rewrites their messages. Before you share the branch, confirm the final code matches by comparing the new head with your backup branch, as described in [How to check the result](#how-to-check-the-result).
+No. It only reorganizes the changes into new commits and rewrites their messages. The final code on your branch is the same before and after.
 
 ### Can I recompose commits from more than one agent session?
 
