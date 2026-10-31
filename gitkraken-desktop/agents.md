@@ -1,6 +1,6 @@
 ---
 title: Coding Agents in GitKraken Desktop
-description: Use Agent Sessions View in GitKraken Desktop to configure coding agent CLIs, create agent sessions, monitor progress, and manage parallel worktrees.
+description: Use Agent Sessions View in GitKraken Desktop to run coding agents like Claude Code and Codex in parallel worktrees, monitor progress, and approve permission requests.
 product: GitKraken Desktop
 feature: Agents
 content_type: how-to
@@ -314,7 +314,7 @@ If you remove a worktree from the card menu, the card shows visual feedback whil
 
 You can keep working in another worktree while monitoring these cards. When a session finishes, switch to that worktree to review the results.
 
-### How to respond to agent permission requests
+### How to approve Claude Code, Codex CLI, and Copilot CLI permission requests
 
 When Claude Code, Codex CLI, or Copilot CLI requests approval for an action, you can select **Allow** or **Deny** on its card in Agent Sessions View without switching to the session. For other prompts, open the worktree and respond in the agent's terminal.
 
@@ -435,6 +435,10 @@ Use the plug icon in Agent Sessions View or open *Preferences > External Tools* 
 ### Can I run multiple coding agent sessions at the same time?
 
 Yes. Each coding agent session runs in its own worktree and working directory, so you can run parallel sessions in the same repository.
+
+### Can I approve Claude Code permission prompts without switching windows?
+
+Yes. When Claude Code, Codex CLI, or Copilot CLI asks for permission, select **Allow** or **Deny** on its card in Agent Sessions View, next to your Commit Graph. You don't need to switch to the agent's terminal. For other prompts, open the worktree and respond in the agent's terminal.
 
 ### What happens when I start a coding agent session?
 
