@@ -250,7 +250,7 @@ Use checkboxes or click <button class='button button--success button--ui button-
 
 <figure>
   <img src="/wp-content/uploads/merge-tool-toggle.gif" class="help-center-img img-bordered" alt="GitKraken Desktop Merge Tool selecting specific changes from each side to resolve merge conflicts.">
-  <figcaption style="text-align:center; color:#888">Select specific lines or edit output directly</figcaption>
+  <figcaption style="text-align:center; color:#888">Select changes from either side to build the output.</figcaption>
 </figure>
 
 After resolving, save and commit the output.
@@ -260,7 +260,7 @@ After resolving, save and commit the output.
 </div>
 
 <figure>
-  <img src="/wp-content/uploads/merge-tool-gif.gif" class="help-center-img img-bordered" alt="Resolving a merge conflict in the GitKraken Desktop Merge Tool by selecting changes from both sides.">
+  <img src="/wp-content/uploads/merge-tool-gif.gif" class="help-center-img img-bordered" alt="Resolving a merge conflict in the GitKraken Desktop Merge Tool by selecting side B, saving, and clicking Commit and Merge.">
   <figcaption style="text-align:center; color:#888">Animated merge resolution process</figcaption>
 </figure>
 

@@ -54,7 +54,7 @@ Use this when the agent changed files but did not commit anything.
 4. Click **Create Commits** to apply them, **Reset** to undo your edits to the proposal, or **Cancel** to stop without changing anything.
 
 <figure>
-  <img src="/wp-content/uploads/compose-WIP@2x.png" class="help-center-img img-bordered" alt="Selected WIP node in GitKraken Desktop with an arrow pointing to the Compose Commit with AI button in the Commit Panel.">
+  <img src="/wp-content/uploads/compose-WIP@2x.png" class="help-center-img img-bordered" alt="Selected WIP node in GitKraken Desktop with an arrow pointing to the Compose commits with AI button in the Commit Panel.">
   <figcaption style="text-align:center; color:#888">Compose commits from the agent's uncommitted changes.</figcaption>
 </figure>
 

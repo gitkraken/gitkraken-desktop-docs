@@ -31,8 +31,8 @@ In GitKraken Desktop, each coding agent session runs on its own branch in its ow
 </div>
 
 <figure>
-  <img src='/wp-content/uploads/gkd-agents-panel-overview-20260414.png' class="help-center-img img-bordered" alt="GitKraken Desktop with the Agents view open in the Left Panel. The view shows multiple agent session cards with status indicators alongside the commit graph and an active terminal session running a coding agent.">
-  <figcaption style="text-align: center; color: #888">GitKraken Desktop with the Agents view open in the Left Panel. The view shows multiple agent session cards with status indicators alongside the commit graph and an active terminal session running a coding agent.</figcaption>
+  <img src='/wp-content/uploads/gkd-agents-panel-overview-20260414.png' class="help-center-img img-bordered" alt="GitKraken Desktop with the Agents view open in the Left Panel, showing six worktree cards, two with a Waiting for input status, next to the Commit Graph and a terminal panel running Claude Code.">
+  <figcaption style="text-align: center; color: #888">GitKraken Desktop with the Agents view open in the Left Panel, showing worktree cards next to the Commit Graph and a terminal running Claude Code.</figcaption>
 </figure>
 
 A **coding agent** is an external CLI that can work on code in a terminal session. In GitKraken Desktop, each **agent session** runs that CLI in its own [**worktree**](/gitkraken-desktop/worktrees/). The **Agents view** shows those worktrees as agent-focused cards so you can start parallel work, monitor progress, and switch back when an agent needs attention.
@@ -309,8 +309,8 @@ When you start a session, the card shows a **Running** status. If you install a 
 
 When an agent needs attention, the card can show a bell icon and a **Waiting for input** label, so you can see that the session needs a response without switching to the terminal first.
 <figure>
-  <img src='/wp-content/uploads/agent-status.png' class="help-center-img img-bordered" alt="Agents view showing agent Waiting for input.">
-  <figcaption style="text-align: center; color: #888">Agents view highlighting a session that needs attention, including Waiting for input.</figcaption>
+  <img src='/wp-content/uploads/agent-status.png' class="help-center-img img-bordered" alt="GitKraken Desktop Left Panel in List view, with the pointer over the Agents toggle and a tooltip reading 1 agent session waiting for input.">
+  <figcaption style="text-align: center; color: #888">Hover over the Agents toggle to see how many agent sessions are waiting for input.</figcaption>
 </figure>
 If you remove a worktree from the card menu, the card shows that the removal is in progress until it finishes.
 
@@ -320,8 +320,8 @@ If you remove a worktree from the card menu, the card shows that the removal is 
 </figure>
 
 <figure>
-  <img src='/wp-content/uploads/gkd-agents-monitoring-status-20260414.png' class="help-center-img img-bordered" alt="Agents view showing multiple worktree cards with WIP change counts, ahead-behind indicators, and agent status bars displaying various states including Waiting for input.">
-  <figcaption style="text-align: center; color: #888">Agents view showing multiple worktree cards with WIP change counts, ahead-behind indicators, and agent status bars displaying various states including Waiting for input.</figcaption>
+  <img src='/wp-content/uploads/gkd-agents-monitoring-status-20260414.png' class="help-center-img img-bordered" alt="Agents view showing worktree cards with highlighted change counts (+97, a pencil with 91, and -91) and a PR #65 pill, and two cards with a Waiting for input status.">
+  <figcaption style="text-align: center; color: #888">Worktree cards in the Agents view show change counts, pull request pills, and agent status.</figcaption>
 </figure>
 
 You can keep working in another worktree while monitoring these cards. When a session finishes, switch to that worktree to review the results.

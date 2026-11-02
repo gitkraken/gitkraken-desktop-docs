@@ -51,7 +51,7 @@ Each profile keeps its own Git config, preferences, and open tabs.
 Use the [Command Palette](/start-here/command-palette) to find and run GitKraken Desktop actions from the keyboard.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/command-palette-2025.gif" class="help-center-img img-bordered" alt="Using the GitKraken Desktop Command Palette to run actions such as opening a repository or launching an editor.">
+  <img src="/wp-content/uploads/command-palette-2025.gif" class="help-center-img img-bordered" alt="The GitKraken Desktop Command Palette filtering its commands as open and then create are typed, showing matches such as Open in VS Code, Open Repo, Create File, and Create Branch.">
   <figcaption style="text-align: center; color: #888;">Use the Command Palette to launch repositories, open editors, and more.</figcaption>
 </figure>
 

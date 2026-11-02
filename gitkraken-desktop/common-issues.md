@@ -81,7 +81,7 @@ If a request goes above the weekly usage included in your plan or trial, GitKrak
 ### GitKraken.dev shows my account as TRIAL / COMMUNITY
 Select the correct organization:
 <figure class='figure center'>
-  <img alt="This issue can occur if you're viewing an organization that doesn't have a subscription" src="/wp-content/uploads/GKD-Common-Issue-3.png" class="help-center-img img-bordered">
+  <img alt="GitKraken.dev with a red arrow pointing to the organization switcher, open to show the organizations you can switch between." src="/wp-content/uploads/GKD-Common-Issue-3.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">This issue can occur if you're viewing an organization that does not have a subscription.</figcaption>
 </figure>
 

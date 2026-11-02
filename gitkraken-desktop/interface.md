@@ -49,7 +49,7 @@ To open the Command Palette at any time, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + 
 From left to right, GitKraken Desktop displays the Left Panel, Commit Graph, and Commit Panel when working with a repository. The Left Panel can show either List view or the Agents view.
 
 <figure class='figure center'>
-    <img alt="GitKraken Desktop with a repository open, showing the Left Panel, the Commit Graph in the center, and the Commit Panel on the right." src="/wp-content/uploads/interface.png" class="help-center-img img-bordered">
+    <img alt="Simplified diagram of the GitKraken Desktop window, showing the Left Panel on the left, the Commit Graph in the center, and the Commit Panel on the right, with unlabeled callout lines." src="/wp-content/uploads/interface.png" class="help-center-img img-bordered">
     <figcaption style="text-align: center; color: #888;">GitKraken Desktop UI includes Left Panel, Commit Graph, and Commit Panel.</figcaption>
 </figure>
 

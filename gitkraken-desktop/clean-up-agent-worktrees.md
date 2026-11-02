@@ -56,7 +56,7 @@ Every worktree in the repository appears in three places:
 - **The Commit Graph** shows a separate WIP row for each other worktree that has uncommitted changes or an active agent session, with the agent's status. Select a row and click **Open Worktree**, or double-click it, to open that worktree. To hide these rows, clear **Show worktree WIP nodes in the graph** in the **Agents** section of Repo-Specific Preferences.
 
 <figure>
-  <img src="/wp-content/uploads/gkd-agents-panel-overview-20260414.png" class="help-center-img img-bordered" alt="GitKraken Desktop with the Agents view open in the Left Panel, showing a card for each agent worktree next to the Commit Graph.">
+  <img src="/wp-content/uploads/gkd-agents-panel-overview-20260414.png" class="help-center-img img-bordered" alt="GitKraken Desktop with the Agents view open in the Left Panel, showing a card for each of the repository's six worktrees next to the Commit Graph.">
   <figcaption style="text-align:center; color:#888">The Agents view shows a card for every worktree.</figcaption>
 </figure>
 

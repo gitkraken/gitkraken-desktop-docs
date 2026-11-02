@@ -125,7 +125,7 @@ Cloud Patches require the **Git Executable** to be enabled (it is by default).
 2. Click the Cloud Patch icon.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/create-cloud-patch-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop Cloud Patch creation panel for sharing staged changes as a patch without pushing to a remote.">
+  <img src='/wp-content/uploads/create-cloud-patch-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop Commit Panel on the Cloud Patch tab, creating a Cloud Patch from main with one staged file, the Anyone with the link sharing option, and title and description fields.">
   <figcaption style="text-align: center; color: #888;">Create a Cloud Patch from staged changes.</figcaption>
 </figure>
 
@@ -142,7 +142,7 @@ After you create a Cloud Patch, copy its link from the notification or the Left 
 Recipients can open the patch and apply it to a selected branch.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/gkc-apply-cloud-patch-example.gif' class="help-center-img img-bordered" alt="GitKraken Desktop opening a shared Cloud Patch and applying its changes without switching branches or pulling from a remote.">
+  <img src='/wp-content/uploads/gkc-apply-cloud-patch-example.gif' class="help-center-img img-bordered" alt="Opening a shared Cloud Patch link in a browser, choosing GitKraken Client, and clicking Apply patch to main in GitKraken Desktop, then committing the patch to main.">
   <figcaption style="text-align: center; color: #888;">Apply Cloud Patch to a target branch in GitKraken Desktop.</figcaption>
 </figure>
 

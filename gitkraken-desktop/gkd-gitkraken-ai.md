@@ -117,7 +117,7 @@ To generate commits with AI:
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/compose-WIP-UI@2x.png" class="help-center-img img-bordered" alt="Commit Composer interface showing a list of commits with dropdown options to pick, squash, or reword before composing." />
+  <img src="/wp-content/uploads/compose-WIP-UI@2x.png" class="help-center-img img-bordered" alt="Commit Composer composing 3 commits, each set to Pick in its dropdown." />
   <figcaption style="text-align: center; color: #888">Make adjustments, then confirm to create commits.</figcaption>
 </figure>
 
@@ -365,7 +365,7 @@ By default, GitKraken AI uses **[Google Gemini Models](https://deepmind.google/m
 You can pick the model for each AI feature in <kbd>Preferences > GitKraken AI</kbd>. With the GitKraken-hosted provider, each model in the dropdown shows its AI credit multiplier after its name, such as **4.5x**. Hover over the multiplier to see what it means, for example **Uses 4.5x the credits of a baseline model**. A model with a higher multiplier uses your weekly AI credits faster. Models you use with your own API key show no multiplier.
 
 <figure>
-<img src="/wp-content/uploads/gkd-ai-model-credit-multiplier-01-v2@2x.png" style="max-width: 50%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="The model dropdown for Commit Message Generation in Preferences > GitKraken AI, listing GitKraken-hosted models with their AI credit multiplier after each name, such as 0.8x for Gemini 2.5 Flash and 4.5x for Claude Sonnet 4.5." />
+<img src="/wp-content/uploads/gkd-ai-model-credit-multiplier-01-v2@2x.png" style="max-width: 50%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="An open AI model dropdown listing GitKraken-hosted models with their AI credit multiplier after each name, such as 0.8x for Gemini 2.5 Flash and 4.5x for Claude Sonnet 4.5." />
 <figcaption style="text-align: center; color: #888">Each GitKraken-hosted model shows its AI credit multiplier</figcaption>
 </figure>
 

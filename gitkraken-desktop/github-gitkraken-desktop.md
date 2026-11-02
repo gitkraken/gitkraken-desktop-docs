@@ -108,8 +108,8 @@ To connect your GitHub account manually, first sign in to your GitKraken account
 1. Navigate to <kbd><i>Preferences</i> <i class='fa fa-caret-right'></i> <i>Integrations</i></kbd> in the upper right corner.
 
 <figure>
-    <img alt="Preferences menu in GitKraken Desktop" src="/wp-content/uploads/preferences-menu-gear-2025.png" class="help-center-img img-bordered" style="max-width: 75%;">
-    <figcaption style="text-align:center;color:#888">Preferences menu in GitKraken Desktop</figcaption>
+    <img alt="The gear icon in the GitKraken Desktop toolbar highlighted, with its Preferences tooltip." src="/wp-content/uploads/preferences-menu-gear-2025.png" class="help-center-img img-bordered" style="max-width: 75%;">
+    <figcaption style="text-align:center;color:#888">Open Preferences from the gear icon.</figcaption>
 </figure>
 
 2. From the Integrations window, select **GitHub**.

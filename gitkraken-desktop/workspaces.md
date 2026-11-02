@@ -273,7 +273,7 @@ To share a Local Workspace or use it on other machines, convert it to a Cloud Wo
 <figure>
   <img src="/wp-content/uploads/local-to-cloud-ws-2025@2x.png" 
        class="help-center-img img-bordered"
-       alt="Context menu in GitKraken Desktop showing the option to convert a Local Workspace to a Cloud Workspace.">
+       alt="Workspace menu in GitKraken Desktop with the Create Cloud Workspace option highlighted.">
   <figcaption style="color:#888; text-align:center">
     Converting a Local Workspace to a Cloud Workspace
   </figcaption>
