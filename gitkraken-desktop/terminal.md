@@ -103,7 +103,7 @@ Open <kbd><strong>Preferences > In-App Terminal</strong></kbd> to change your te
 <figure>
   <img src="/wp-content/uploads/terminal-preferences-2025-v2@2x.png" 
        class="help-center-img img-bordered" 
-       alt="GitKraken Desktop Preferences with In-App Terminal selected, showing Font, Font Size, Line Height, Cursor Style, the Dim terminal when unfocused checkbox, and the Autocomplete options.">
+       alt="GitKraken Desktop Preferences with In-App Terminal selected, showing Font, Font Size, Line Height, Cursor Style, the Dim terminal when unfocused checkbox highlighted, and the Autocomplete options.">
   <figcaption style="text-align:center; color:#888">Access terminal settings under Preferences</figcaption>
 </figure>
 

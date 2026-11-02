@@ -54,7 +54,7 @@ If GitKraken Desktop shows the wrong plan or no AI credits, check which account 
 ### My account shows Trial/Free/Community despite being a paid customer
 In GitKraken Desktop, click your profile icon and check the name and email address under **Account**. If it is the wrong account, click **Sign Out**, then sign in again with the account linked to your subscription:
 <figure class='figure center'>
-  <img alt="The GitKraken Desktop profile and account menu, signed in: Current profile with the profile, AI usage, commit signature and Manage profiles, then Account with the account name and email, Manage account, and Sign Out." src="/wp-content/uploads/gkd-profile-menu-sign-out-01-v2@2x.png" class="help-center-img img-bordered">
+  <img alt="The GitKraken Desktop profile and account menu, signed in: Current profile with the profile, commit signature and Manage profiles, then Account with the account name and email, Manage account, and Sign Out highlighted." src="/wp-content/uploads/gkd-profile-menu-sign-out-01-v3@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Ensure you are signed in with the email address linked to your subscription. Avoid using GitHub or Google login options if your subscription is tied to an email address.</figcaption>
 </figure>
 
