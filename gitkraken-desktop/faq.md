@@ -18,7 +18,7 @@ tags: [faq, troubleshooting, ssh, plans, os-support]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 This FAQ answers common GitKraken Desktop questions about supported platforms, account and plan limits, authentication, remote access, and troubleshooting. Use it when you need a quick answer or constraint check before opening a longer feature guide, especially for Linux support, SSH behavior, proxy issues, or subscription-related questions.
 
@@ -48,6 +48,14 @@ This FAQ answers common GitKraken Desktop questions about supported platforms, a
 </div>
 
 ---
+
+## About GitKraken Desktop
+
+### What is GitKraken Desktop?
+
+GitKraken Desktop is a Git client for Windows, macOS, and Linux built around a visual Commit Graph. It works with your existing repositories and with hosts such as GitHub, GitLab, Bitbucket, and Azure DevOps.
+
+You can also run coding agents such as Claude Code, Codex CLI, and Copilot CLI from GitKraken Desktop. Each agent session gets its own branch and worktree. You see what the agent changed in the Commit Graph and diff, and you can undo or revert it with the same Git actions you use for your own work. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 ## Common coding agent and worktree questions
 

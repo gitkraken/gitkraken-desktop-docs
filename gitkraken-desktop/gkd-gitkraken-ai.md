@@ -18,7 +18,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 GitKraken AI in GitKraken Desktop helps developers generate commit messages, explain commits and branches, draft pull request text, resolve merge conflicts, and customize AI providers and prompts. Use this page to understand which AI workflows are available, when to use them, and which features require a paid GitKraken subscription.
 
@@ -36,7 +36,7 @@ GitKraken AI in GitKraken Desktop helps developers generate commit messages, exp
 | Feature | What it generates or does | Status | Plan | Setup location |
 |---------|----------------------------|--------|------|----------------|
 | AI Commit Message | Commit message suggestions from staged changes | GA | Paid subscription | Commit Panel |
-| AI Commit Composer | Compose or recompose commits into a cleaner history | Preview | Paid subscription | Commit Details Panel |
+| AI Commit Composer | Compose or recompose commits into a cleaner history | Preview | Paid subscription | Commit Panel |
 | AI Explain | Natural-language explanations of commits and branches | GA | Paid subscription | Commit Graph and context menus |
 | AI Pull Request Description | Draft pull request summaries and descriptions | GA | Paid subscription | Pull request description field |
 | AI provider and prompt settings | Model, provider, and prompt customization | GA | Paid subscription | <kbd>Preferences &gt; AI</kbd> |
@@ -55,13 +55,13 @@ GitKraken AI in GitKraken Desktop helps developers generate commit messages, exp
 3. Review the suggested message and adjust as needed before committing.
 
 **To compose commits with AI from staged changes:**
-1. Stage your changes, then click **Compose Commit with AI** in the Commit Details Panel.
+1. Stage your changes, then click **Compose Commit with AI** in the Commit Panel.
 2. GitKraken AI proposes a set of commits. Reorder, squash, or edit messages in the resulting window.
 3. Click **Create commits** to apply, or **Cancel** to discard.
 
 **To recompose existing commits:**
 1. Select a contiguous range of commits in the graph using <kbd>Shift</kbd> or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>.
-2. Right-click and choose **Recompose Commits with AI**, or click the button in the Commit Details Panel.
+2. Right-click and choose **Recompose Commits with AI**, or click the button in the Commit Panel.
 3. Adjust the proposed structure and click **Create commits**.
 
 **To generate a pull request description:**
@@ -73,7 +73,7 @@ To use a custom AI provider or customize the prompts, go to <kbd>Preferences > A
 
 ## How to compose and recompose commits with AI (Preview)
 
-Use AI to help organize your Git commits into clear, logical stories.
+Use AI to help organize your Git commits into clear, logical stories. To clean up commits a coding agent made before you open a pull request, see [Clean Up AI Coding Agent Commits Before Review](/gitkraken-desktop/clean-up-agent-commits/).
 
 Version 12.5 improved the Commit Composer engine. It validates and retries generated commit groups, processes large diffs faster, and excludes generated files such as lockfiles from the token budget. Recomposition preserves original commit authors and adds co-authors when a commit combines work from multiple people. The progress notification shows the current stage and file and hunk counts.
 
@@ -91,7 +91,7 @@ The AI-powered Commit Composer can:
 
 <figure>
   <img src="/wp-content/uploads/before-after-commit-compose@2x.png" class="help-center-img img-bordered" alt="GitKraken interface showing a selected range of commits before and after being composed into a cleaner history." />
-  <figcaption style="text-align: center; color: #888">AI Commit Composer button in the Commit Details Panel</figcaption>
+  <figcaption style="text-align: center; color: #888">AI Commit Composer button in the Commit Panel</figcaption>
 </figure>
 
 ### How to use AI Commit Composer
@@ -100,7 +100,7 @@ To generate commits with AI:
 
 - **For uncommitted changes**:
   1. Stage your changes.
-  2. In the Commit Details Panel, click **Compose Commit with AI**.
+  2. In the Commit Panel, click **Compose Commit with AI**.
   3. GitKraken AI will take a moment to compose the new commits. A new window will appear with the results of the composition.
      - You can reorder, squash, or edit the commit messages.
      - The branch will not be updated until you click **Create commits**.
@@ -121,7 +121,7 @@ To generate commits with AI:
   1. In the Commit Graph, select a contiguous range of commits using <kbd>Shift</kbd> or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>.
   2. Do one of the following:
      - Right-click the selection and choose **Recompose Commits with AI** from the context menu.
-     - Click **Recompose Commits with AI** in the Commit Details Panel.
+     - Click **Recompose Commits with AI** in the Commit Panel.
   3. GitKraken AI will take a moment to compose the new commits. A new window will appear with the results of the composition.
      - You can reorder, squash, or edit the commit messages.
      - The branch will not be updated until you click **Create commits**.
@@ -260,7 +260,7 @@ To customize how **Explain Branch Changes** works, go to **Preferences > GitKrak
 ***
 ## How to resolve merge conflicts with AI
 
-Resolve merge conflicts faster with GitKraken AI.
+Resolve merge conflicts faster with GitKraken AI. To combine the branches of two coding agents that worked in parallel, see [Resolve Merge Conflicts Between AI Agent Branches](/gitkraken-desktop/agent-merge-conflicts/).
 
 <div class='callout callout--basic'>
   <p><strong>Use AI conflict resolution when:</strong> you want a suggested starting point for resolving a conflict and plan to review the result carefully. <strong>Don't use it when:</strong> the conflict involves sensitive logic or policy decisions that require a fully manual resolution.</p>

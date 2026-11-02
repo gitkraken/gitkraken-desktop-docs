@@ -17,7 +17,7 @@ tags: [pull-requests, review, templates, suggestions, merge]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 Use this page to create, review, filter, comment on, and merge pull requests in GitKraken Desktop across supported providers such as GitHub, GitLab, Bitbucket, and Azure DevOps. It also covers GitHub-specific review features such as code suggestions, pull request view, and merge options inside the app.
 
@@ -419,12 +419,12 @@ Pull request icons:
 
 ## How merged pull request status appears in the interface
 
-When a GitHub pull request is merged, GitKraken Desktop surfaces a merged PR status pill in three locations associated with the branch:
+When a GitHub pull request or GitLab merge request is merged, GitKraken Desktop surfaces a merged PR status pill in three locations associated with the branch:
 
 | Location | When it appears |
 |----------|-----------------|
 | **Toolbar** | When the branch with a merged PR is checked out |
-| **Commit Details panel** | When you select a commit on the branch with a merged PR |
+| **Commit Panel** | When you select a commit on the branch with a merged PR |
 | **Worktree cards** (Agent Sessions View) | On the card for the branch with a merged PR |
 
 Use the merged PR pill to confirm that a branch's work has shipped before you delete the branch or remove its worktree.
