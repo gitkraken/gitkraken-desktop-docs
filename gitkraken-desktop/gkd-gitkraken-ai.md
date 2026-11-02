@@ -372,7 +372,7 @@ You can pick the model for each AI feature in <kbd>Preferences > GitKraken AI</k
 To use your own API key with **OpenAI**, **Azure**, **Anthropic**, **Google Gemini**, or a **Custom URL**, configure it in <kbd>Preferences > GitKraken AI</kbd>.
 
 <figure>
-<img src="/wp-content/uploads/gkd-11-preferences-gitkraken-ai-01-v2@2x.png" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="GitKraken Desktop Preferences with GitKraken AI selected. Enable GitKraken AI and Use your own API Key to make AI requests are checked. The highlighted own-key section sets Provider to OpenAI with optional Endpoint URL and Provider API Key fields and a Test Connection button. The Commit Message Generation model is Use Recommended (GPT-5.6 Terra)." />
+<img src="/wp-content/uploads/gkd-11-preferences-gitkraken-ai-01-v2@2x.png" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="GitKraken Desktop Preferences > GitKraken AI with Use your own API Key to make AI requests checked and its section highlighted: Provider set to OpenAI, optional Endpoint URL, Provider API Key and Test Connection." />
 <figcaption style="text-align: center; color: #888">Configure GitKraken AI providers in Preferences</figcaption>
 </figure>
 
