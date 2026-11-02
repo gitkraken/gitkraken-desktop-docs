@@ -36,11 +36,11 @@ Before you start, open the agent's worktree: in Agent Sessions View, right-click
 
 | Where the changes are | What to use | How | Notes |
 |---|---|---|---|
-| Uncommitted, in the agent's worktree | **Compose Commit with AI** | Stage the changes, then click **Compose Commit with AI** in the Commit Panel | |
-| Committed on the agent's branch, not pushed | **Recompose Commits with AI** | <kbd>Shift</kbd> + click the agent's first and last commits, right-click, and select **Recompose Commits with AI** | The commits must be next to each other, with no merge commits in between |
-| Committed and pushed | **Recompose Commits with AI**, then force push | Recompose as above, then force push the branch | Only if nobody else has pulled or built on the branch |
+| Uncommitted, in the agent's worktree | **Compose commits with AI** | Stage the changes, then click **Compose commits with AI** in the Commit Panel | |
+| Committed on the agent's branch, not pushed | **Recompose commits with AI** | <kbd>Shift</kbd> + click the agent's first and last commits, right-click, and select **Recompose *[number]* commits with AI (Preview)** | The commits must be next to each other, with no merge commits in between |
+| Committed and pushed | **Recompose commits with AI**, then force push | Recompose as above, then force push the branch | Only if nobody else has pulled or built on the branch |
 
-In every case, GitKraken Desktop shows the proposed commits first. Your branch does not change until you click **Create commits**.
+In every case, GitKraken Desktop shows the proposed commits first. Your branch does not change until you click **Create Commits**.
 
 ***
 
@@ -49,10 +49,9 @@ In every case, GitKraken Desktop shows the proposed commits first. Your branch d
 Use this when the agent changed files but did not commit anything.
 
 1. Open the agent's worktree, then select its WIP node and stage the changes you want to commit. Selecting the agent's WIP row from another worktree does not open its files in the Commit Panel. Click **Open Worktree** on that row first.
-2. In the Commit Panel, click **Compose Commit with AI**.
-
+2. In the Commit Panel, click **Compose commits with AI**.
 3. Review the proposed commits. Reorder them, squash related ones together, or edit the messages.
-4. Click **Create commits** to apply them, **Reset** to undo your edits to the proposal, or **Cancel** to stop without changing anything.
+4. Click **Create Commits** to apply them, **Reset** to undo your edits to the proposal, or **Cancel** to stop without changing anything.
 
 <figure>
   <img src="/wp-content/uploads/compose-WIP@2x.png" class="help-center-img img-bordered" alt="Selected WIP node in GitKraken Desktop with an arrow pointing to the Compose Commit with AI button in the Commit Panel.">
@@ -66,11 +65,9 @@ Use this when the agent changed files but did not commit anything.
 Use this when the agent committed everything at once, or in many small steps that do not tell a clear story.
 
 1. In the Commit Graph, hold <kbd>Shift</kbd> and click the agent's first and last commits to select the range.
-2. Right-click the selection and select **Recompose Commits with AI**, or click the button in the Commit Panel.
-
+2. Right-click the selection and select **Recompose *[number]* commits with AI (Preview)**, or click **Recompose commits with AI** in the Commit Panel.
 3. Review the proposed structure. Reorder, squash, or edit messages until each commit does one thing and its message says what and why.
-
-4. Click **Create commits**.
+4. Click **Create Commits**.
 
 <figure>
   <img src="/wp-content/uploads/compose-existing-commits@2x.png" class="help-center-img img-bordered" alt="Commit Graph context menu in GitKraken Desktop with the option to recompose a range of commits with AI.">

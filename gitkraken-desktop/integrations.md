@@ -27,7 +27,7 @@ To set up external coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI
 - Git hosting integrations: GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, Bitbucket, Bitbucket Data Center, and Azure DevOps
 - Issue tracker integrations: Jira Cloud, Jira Data Center, Trello, GitLab Issues, GitLab Self-Managed Issues, GitHub Issues, and GitHub Enterprise Server Issues
 - Community plan: Public GitHub and GitLab repositories only; some issue tracker integrations are view-only
-- Self-hosted integrations: Require a paid plan; GitLab Self-Managed is available on Pro and up, while some other self-hosted integrations require higher tiers
+- Self-hosted integrations: Require a paid plan; GitLab Self-Managed is available on Pro and up, while GitHub Enterprise and Bitbucket Data Center require Advanced
 - Multiple profiles with separate integrations: Pro plan or higher
 - Coding agent CLIs: Managed separately from Git hosting and issue tracker integrations
 
@@ -42,7 +42,7 @@ To set up external coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI
 
 ## How to connect remote Git hosting integrations
 
-GitKraken Desktop supports easy connection to popular remote Git services:
+GitKraken Desktop connects to these Git hosting services:
 
 - [GitHub](/gitkraken-desktop/github-gitkraken-desktop/)
 - [GitHub Enterprise Server](/gitkraken-desktop/github-enterprise/)
@@ -78,20 +78,20 @@ When you sign in to your GitKraken account, GitKraken Desktop connects the Git h
 - **With 1 profile:** GitKraken Desktop connects every integration linked to your account.
 - **With 2 or more profiles:** GitKraken Desktop connects only the provider you signed in with, so each profile keeps its own integrations.
 
-Integrations that are already connected are skipped. Integrations that need a paid plan, such as Azure DevOps, are not connected automatically on the Community plan. While the connection runs, the **Connect to** buttons in <kbd>Preferences > Integrations</kbd> show a loading indicator.
+GitKraken Desktop skips integrations that are already connected. On the Community plan, it does not automatically connect integrations that need a paid plan, such as Azure DevOps. While the connection runs, the **Connect to** buttons in <kbd>Preferences > Integrations</kbd> show a loading indicator.
 
 <div class='callout callout--warning'>
-  <p><strong>Note:</strong> Self-hosted server integrations require a paid plan. GitLab Self-Managed is available on Pro and up, while some other self-hosted integrations require higher tiers.</p>
+  <p><strong>Note:</strong> Self-hosted server integrations require a paid plan. GitLab Self-Managed is available on Pro and up, while GitHub Enterprise and Bitbucket Data Center require Advanced.</p>
 </div>
 
 ***
 
 ## How to connect issue tracker integrations
 
-Track your development tasks by connecting GitKraken Desktop to your project management tools:
+To track your development tasks, connect GitKraken Desktop to these issue trackers:
 
 - [Jira Cloud](/gitkraken-desktop/jira/)
-- [Jira Data Center](/gitkraken-desktop/jira-data-center/) <em>(Advanced users and above)</em>
+- [Jira Data Center](/gitkraken-desktop/jira-data-center/) <em>(Advanced plan and above)</em>
 - [Trello](/gitkraken-desktop/trello/)
 - [GitLab Issues](/gitkraken-desktop/gitlab-issues/)
 - [GitLab Self-Managed Issues](/gitkraken-desktop/gitlab-self-managed-issues/)
@@ -99,7 +99,7 @@ Track your development tasks by connecting GitKraken Desktop to your project man
 - [GitHub Enterprise Server Issues](/gitkraken-desktop/github-enterprise-issues/)
 
 <div class='callout callout--warning'>
-  <p><strong>Community Plan Limitations:</strong> Access is limited to Public Repositories for GitHub and GitLab. View-only access is provided for Jira Cloud, GitHub Enterprise, GitLab Self-Managed, and Trello.</p>
+  <p><strong>Community plan limits:</strong> You can access only public repositories on GitHub and GitLab. Jira Cloud, GitHub Enterprise, GitLab Self-Managed, and Trello are view-only.</p>
 </div>
 
 ***
@@ -108,9 +108,9 @@ Track your development tasks by connecting GitKraken Desktop to your project man
 
 By connecting integrations, you can:
 
-- Clone and open remote repositories easily
-- View and update issues directly from within GitKraken
-- Simplify access to remote branches and pull requests
+- Clone and open remote repositories
+- View and update issues in GitKraken Desktop
+- Access remote branches and pull requests
 - Sync commits and metadata with issue trackers
 
 ***
@@ -122,6 +122,6 @@ By connecting integrations, you can:
 | Self-Hosted Git Servers | GitLab Self-Managed | Pro |
 | Self-Hosted Git Servers | GitHub Enterprise, Bitbucket Data Center | Advanced |
 | Issue Trackers with Write Access | Jira Cloud, Trello, etc. | Pro or Advanced |
-| Multiple Profiles with Separate Integrations | All | Pro + |
+| Multiple Profiles with Separate Integrations | All | Pro or higher |
 
 For more details, see the [GitKraken pricing plans](https://www.gitkraken.com/pricing).

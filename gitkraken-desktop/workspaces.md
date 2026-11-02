@@ -37,13 +37,13 @@ Use this page to create Local or Cloud Workspaces in GitKraken Desktop so you ca
 ***
 
 <div class='callout callout--warning'>
-  <p><strong>GitKraken On-Premise users:</strong> Cloud Workspaces are not available in Serverless or Self-Hosted Server deployments. Use <a href="#how-local-workspaces-work">Local Workspaces</a> to organize repositories in those environments. Features that depend on Cloud Workspaces, including Workspace Insights and Team Launchpad, are also not available.</p>
+  <p><strong>GitKraken On-Premise users:</strong> Cloud Workspaces are not available in Serverless or Self-Hosted Server deployments. Use <a href="#how-local-workspaces-work">Local Workspaces</a> to organize repositories in those environments. Features that depend on Cloud Workspaces, including Workspace Insights and Launchpad Team View, are also not available.</p>
 </div>
 
 ## Quick Start
 
 
-**To open the Workspaces view:** Click the folder icon in the top-left or press <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
+**To open the Workspaces view:** Click the **Repo Management** folder icon in the tab bar, or press <kbd>Ctrl + Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + Option + O</kbd> (Mac).
 
 **To create a Cloud Workspace:**
 1. Click **+ New Workspace** and select **Cloud Workspace**.
@@ -56,9 +56,9 @@ Use this page to create Local or Cloud Workspaces in GitKraken Desktop so you ca
 
 **To view pull requests for all repos:** Open a Cloud Workspace and click the Launchpad icon to see PRs across the entire Workspace.
 
-**To convert a Local Workspace to Cloud:** Open the Workspace and click **Create cloud workspace**. Requires a connected integration under <kbd>Preferences > Integrations</kbd>.
+**To convert a Local Workspace to Cloud:** Open the Workspace and click **Create Cloud Workspace**. You need a connected integration in <kbd>Preferences > Integrations</kbd>.
 
-Workspaces are accessible from the Repository Management tab.
+Workspaces are in the Repo Management tab.
 
 <figure>
   <img src="/wp-content/uploads/workspaces-tab-2025@2x.png"
@@ -73,10 +73,10 @@ Workspaces are accessible from the Repository Management tab.
 
 ## How to access your Workspaces
 
-To access the Repo Management tab:
+To open the Repo Management tab, do one of the following:
 
-1. Click the **Repo Management** folder icon in the tab bar.
-2. Or use the keyboard shortcut <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
+- Click the **Repo Management** folder icon in the tab bar.
+- Press <kbd>Ctrl + Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + Option + O</kbd> (Mac).
 
 <figure>
   <img src="/wp-content/uploads/open-workspaces-2025@2x.png" 
@@ -91,7 +91,7 @@ To access the Repo Management tab:
 
 ## How Cloud Workspaces work
 
-Cloud Workspaces are accessible from any machine and can be shared with selected [teams](/start-here/teams/) in your organization. They allow for [multi-repository actions](/gitkraken-desktop/workspaces/#cloud-multi-repository-actions) and centralized pull request management.
+Cloud Workspaces are available from any machine, and you can share them with selected [teams](/start-here/teams/) in your organization. Use them to run [multi-repository actions](#how-to-run-multi-repository-actions-in-a-cloud-workspace) and manage pull requests for all their repositories in one place.
 
 <div class='callout callout--warning'>
   <p><strong>Note:</strong> Cloud Workspaces are not available in GitKraken On-Premise Serverless or Self-Hosted Server deployments. See <a href="#how-local-workspaces-work">How Local Workspaces work</a> for the supported alternative in those environments.</p>
@@ -109,10 +109,10 @@ Cloud Workspaces are accessible from any machine and can be shared with selected
 ### How to create a Cloud Workspace
 
 1. Click <button class="button button--success button--ui button--nolink">+ New Workspace</button>.
-2. Select "Cloud Workspace".
+2. Select **Cloud Workspace**.
 3. Name your Workspace and select the hosting service.
 4. Choose repositories to add.
-5. (Optional) Add an icon, description, and share with teams or users.
+5. (Optional) Add an icon and description, and share the Workspace with teams or users.
 
 <figure>
   <img src="/wp-content/uploads/add-new-workspace-2025@2x.png" 
@@ -135,7 +135,7 @@ Cloud Workspaces are accessible from any machine and can be shared with selected
 <div class='callout callout--warning'>
     <p>
         <strong>Note:</strong>
-        The integration for the desired service must be connected under <kbd>Preferences > Integrations</kbd>.
+        Connect the hosting service's integration in <kbd>Preferences > Integrations</kbd> first.
     </p>
 </div>
 
@@ -153,7 +153,7 @@ To take action across multiple repositories:
   <figcaption style="color:#888; text-align:center">Multi-repo fetch operation</figcaption>
 </figure>
 
-More options are available via the ellipsis menu.
+Find more actions in the ellipsis menu.
 
 <figure>
   <img src="/wp-content/uploads/more-multi-repo-actions-2025@2x.png" 
@@ -162,6 +162,7 @@ More options are available via the ellipsis menu.
   <figcaption style="color:#888; text-align:center">Accessing more multi-repo actions</figcaption>
 </figure>
 
+These multi-repository actions are available:
 
 <table style="font-size: 14px; border-collapse: collapse;">
   <thead>
@@ -173,7 +174,7 @@ More options are available via the ellipsis menu.
   <tbody>
     <tr>
       <td style="padding: 4px;"><strong>Clone</strong> <img alt="" src="/wp-content/uploads/gk-remote-icon.svg" style="height:1em;"></td>
-      <td style="padding: 4px;">Clone all selected repositories. HTTPS is used by default unless <a href="https://help.gitkraken.com/gitkraken-desktop/integrations/">SSH is configured in your settings</a>. Only available if repositories are not already cloned.</td>
+      <td style="padding: 4px;">Clone all selected repositories. GitKraken Desktop uses HTTPS unless <a href="https://help.gitkraken.com/gitkraken-desktop/integrations/">SSH is configured in your settings</a>. Only available if repositories are not already cloned.</td>
     </tr>
     <tr>
       <td style="padding: 4px;"><strong>Fetch</strong></td>
@@ -185,7 +186,7 @@ More options are available via the ellipsis menu.
     </tr>
     <tr>
       <td style="padding: 4px;"><strong>Open in GitKraken Desktop or an external editor</strong></td>
-      <td style="padding: 4px;">Open all selected repositories in GitKraken or your <a href="https://help.gitkraken.com/start-here/preferences/#external-editor">default editor</a>.</td>
+      <td style="padding: 4px;">Open all selected repositories in GitKraken Desktop or your <a href="https://help.gitkraken.com/start-here/preferences/#external-editor">default editor</a>.</td>
     </tr>
     <tr>
       <td style="padding: 4px;"><strong>Locate in filesystem</strong></td>
@@ -200,7 +201,7 @@ More options are available via the ellipsis menu.
 
 ### How to view Workspace pull requests in Launchpad
 
-Access open pull requests for all repositories in a Workspace directly from [Launchpad](https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/).
+See open pull requests for all repositories in a Workspace in [Launchpad](https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/).
 
 <figure>
   <img src="/wp-content/uploads/open-ws-in-lp-2025@2x.png" 
@@ -230,7 +231,7 @@ Access open pull requests for all repositories in a Workspace directly from [Lau
 To create a Local Workspace:
 
 1. Click <button class="button button--success button--ui button--nolink">New Workspace</button>.
-2. Select “Local Workspace.”
+2. Select **Local Workspace**.
 3. Name your Workspace.
 4. Browse to select one or more repositories. You can choose:
    - Individual repositories
@@ -257,22 +258,22 @@ You can take actions across multiple repositories within a Local Workspace:
 2. Use the action toolbar at the top to:
    - **Fetch**: Update all selected repositories.
    - **Pull**: Sync selected repositories with the latest changes. Use the dropdown to customize pull behavior.
-   - **Open**: Launch selected repositories in GitKraken or your [default external editor](/start-here/preferences/#external-editor).
-   - **Remove**: Delete selected repositories from the Workspace.
+   - **Open**: Open selected repositories in GitKraken Desktop or your [default external editor](/start-here/preferences/#external-editor).
+   - **Remove**: Remove selected repositories from the Workspace.
 
 ### How to convert a Local Workspace to a Cloud Workspace
 
-To enable sharing and enhanced visibility:
+To share a Local Workspace or use it on other machines, convert it to a Cloud Workspace:
 
 1. Open your Local Workspace.
-2. Click <strong>Create cloud workspace</strong>.
+2. Click <strong>Create Cloud Workspace</strong>.
 3. Choose a provider and select repositories to include.
-4. (Optional) Add additional repositories from the same provider.
+4. (Optional) Add more repositories from the same provider.
 
 <figure>
   <img src="/wp-content/uploads/local-to-cloud-ws-2025@2x.png" 
        class="help-center-img img-bordered"
-       alt="Context menu in GitKraken showing the option to convert a Local Workspace to a Cloud Workspace.">
+       alt="Context menu in GitKraken Desktop showing the option to convert a Local Workspace to a Cloud Workspace.">
   <figcaption style="color:#888; text-align:center">
     Converting a Local Workspace to a Cloud Workspace
   </figcaption>
@@ -281,7 +282,7 @@ To enable sharing and enhanced visibility:
 <div class='callout callout--warning'>
     <p>
         <strong>Note:</strong>
-        Ensure the provider integration is connected under <kbd>Preferences > Integrations</kbd> before creating a Cloud Workspace.
+        Connect the provider integration in <kbd>Preferences > Integrations</kbd> before you create a Cloud Workspace.
     </p>
 </div>
 
@@ -294,7 +295,7 @@ To edit a Workspace, click the ellipsis <i class="fas fa-ellipsis-v"></i> next t
 <figure>
   <img src="/wp-content/uploads/multi-actions-ws-2025@2x.png" 
        class="help-center-img img-bordered"
-       alt="Dropdown menu in GitKraken showing workspace-level actions such as open, clone, locate, edit, change color, delete, and leave workspace.">
+       alt="Dropdown menu in GitKraken Desktop showing workspace-level actions such as open, clone, locate, edit, change color, delete, and leave workspace.">
   <figcaption style="color:#888; text-align:center">
     Workspace actions menu
   </figcaption>
@@ -302,7 +303,7 @@ To edit a Workspace, click the ellipsis <i class="fas fa-ellipsis-v"></i> next t
 
 ### How to hide a Workspace
 
-Hide a Workspace to reduce clutter. Hidden groups (e.g., Recents, Favorites) can be shown again using the <i class="fa-solid fa-eye-slash"></i> icon.
+Hide a Workspace to reduce clutter. To show a hidden group again, such as Recents or Favorites, click the <i class="fa-solid fa-eye-slash"></i> icon.
 
 <figure>
   <img src="/wp-content/uploads/unhide-group-2025@2x.png" 
@@ -315,7 +316,7 @@ Hide a Workspace to reduce clutter. Hidden groups (e.g., Recents, Favorites) can
 
 ### How to select or unselect repositories
 
-Manually select repositories for targeted multi-repo actions like Fetch or Pull.
+Select repositories to run multi-repository actions, such as Fetch or Pull, on only those repositories.
 
 ### How to open, clone, or locate repositories
 
@@ -332,7 +333,7 @@ Open repositories in GitKraken Desktop or your preferred editor. You can also cl
 
 ### How to edit Workspace details
 
-Customize your Workspace’s name, color, description, and access permissions.
+Customize your Workspace's name, color, description, and access permissions.
 
 <figure>
   <img src="/wp-content/uploads/gkd-10-2-edit-workspace.png" 
@@ -345,13 +346,13 @@ Customize your Workspace’s name, color, description, and access permissions.
 
 ### How to change Workspace color
 
-Use color to visually organize and prioritize Workspaces. Select `Change color` from the three-dot menu.
+Use color to visually organize and prioritize Workspaces. Select **Change color** from the ellipsis menu.
 
 ***
 
 ## How to reorder Workspaces
 
-Drag and drop Workspaces to arrange them in the desired order.
+Drag Workspaces to put them in the order you want.
 
 <figure>
   <img src="/wp-content/uploads/reorder-workspaces-2025@2x.png" 
@@ -370,11 +371,10 @@ Drag and drop Workspaces to arrange them in the desired order.
   <p><strong>Note:</strong> GitKraken Insights is not available in GitKraken On-Premise Serverless or Self-Hosted Server deployments. Insights requires a connection to <a href="https://gitkraken.dev">gitkraken.dev</a>.</p>
 </div>
 
-GitKraken Insights helps you understand how pull requests are merged into your repositories. It provides:
+GitKraken Insights shows how pull requests are merged into your repositories. Insights supports GitHub.com, Bitbucket.org, GitLab.com, and Azure DevOps (Hosted), and gives you:
 
-- A visual history of your repository’s development
-- Insight into pull request trends and team workflows
-- Support for GitHub.com, Bitbucket.org, GitLab.com, and Azure DevOps (Hosted)
+- A visual history of your repository's development
+- Pull request trends and team workflows
 
 <figure>
   <img src="/wp-content/uploads/insights-gkdev-2026@2x.png" 
@@ -394,87 +394,9 @@ For more details, visit the [GitKraken.dev Insights documentation](/gk-dev/gk-de
 
 ## Azure DevOps requirements for Workspace Insights
 
-To use Workspaces and [Insights](/gk-dev/gk-dev-insights/) with Azure DevOps:
+To use Workspaces and [Insights](/gk-dev/gk-dev-insights/) with Azure DevOps, turn on third-party application access in Azure DevOps:
 
-- You must enable **Third-party application access via OAuth** in Azure.
-- Navigate to <kbd>Organization Settings > Policies</kbd> in your Azure DevOps dashboard.
+1. In your Azure DevOps dashboard, go to <kbd>Organization Settings > Policies</kbd>.
+2. Enable **Third-party application access via OAuth**.
 
-Learn more from Microsoft’s official guidance: [Change application connection & security policies for your organization](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops).
-
-
-***
-
-## Workspace changelog
-
-Take a trip down memory lane, and see how Workspaces have evolved over time.
-
-<table style="font-size: 14px; border-collapse: collapse;">
-  <thead>
-    <tr>
-      <th style="text-align: left; padding: 4px;">Version</th>
-      <th style="text-align: left; padding: 4px;">Highlight</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding: 4px;"><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-4-0">10.4</a></td>
-      <td style="padding: 4px;">Insights now on <a href="https://gitkraken.dev?source=help_center&product=gitkraken">gitkraken.dev</a></td>
-    </tr>
-    <tr>
-      <td style="padding: 4px;"><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-3-0">10.3</a></td>
-      <td style="padding: 4px;">New look for Repo Management tab</td>
-    </tr>
-    <tr>
-      <td style="padding: 4px;"><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-1-0">10.1</a></td>
-      <td style="padding: 4px;">Customize your Repository Management tab</td>
-    </tr>
-    <tr>
-      <td style="padding: 4px;"><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-0-2">10.0.2</a></td>
-      <td style="padding: 4px;">Workspaces merge with Repository Management</td>
-    </tr>
-    <tr>
-      <td style="padding: 4px;"><a href="https://help.gitkraken.com/gitkraken-desktop/10x/#version-10-0-0">10.0</a></td>
-      <td style="padding: 4px;">Focus View becomes Launchpad</td>
-    </tr>
-    <tr>
-      <td style="padding: 4px;"><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-5-0">9.5</a></td>
-      <td style="padding: 4px;">Multi-pull + Share Workspace</td>
-    </tr>
-    <tr>
-      <td style="padding: 4px;"><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-2-0">9.2</a></td>
-      <td style="padding: 4px;">Issue View added (now in Launchpad)</td>
-    </tr>
-    <tr>
-      <td style="padding: 4px;"><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-1-0">9.1</a></td>
-      <td style="padding: 4px;">Insights for Azure DevOps</td>
-    </tr>
-    <tr>
-      <td style="padding: 4px;"><a href="https://help.gitkraken.com/gitkraken-desktop/9x/#version-9-0-0">9.0</a></td>
-      <td style="padding: 4px;">Local & Cloud Workspaces + Insights</td>
-    </tr>
-    <tr>
-      <td style="padding: 4px;"><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#version-8-9-0">8.9</a></td>
-      <td style="padding: 4px;">Team Overview added</td>
-    </tr>
-    <tr>
-      <td style="padding: 4px;"><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#version-8-8-0">8.8</a></td>
-      <td style="padding: 4px;">Workspace Overview added</td>
-    </tr>
-    <tr>
-      <td style="padding: 4px;"><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#version-8-6-0">8.6</a></td>
-      <td style="padding: 4px;">Bitbucket support added</td>
-    </tr>
-    <tr>
-      <td style="padding: 4px;"><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#version-8-5-0">8.5</a></td>
-      <td style="padding: 4px;">Azure DevOps support added</td>
-    </tr>
-    <tr>
-      <td style="padding: 4px;"><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#version-8-4-0">8.4</a></td>
-      <td style="padding: 4px;">Workspace pull requests added</td>
-    </tr>
-    <tr>
-      <td style="padding: 4px;"><a href="https://help.gitkraken.com/gitkraken-desktop/8x/#version-8-2-0">8.2</a></td>
-      <td style="padding: 4px;">Workspaces introduced</td>
-    </tr>
-  </tbody>
-</table>
+For details, see Microsoft's guide: [Change application connection & security policies for your organization](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops).

@@ -20,20 +20,16 @@ taxonomy:
 ---
 <kbd>Last updated: November 2026</kbd>
 
-This FAQ answers common GitKraken Desktop questions about supported platforms, account and plan limits, authentication, remote access, and troubleshooting. Use it when you need a quick answer or constraint check before opening a longer feature guide, especially for Linux support, SSH behavior, proxy issues, or subscription-related questions.
+Find quick answers to common GitKraken Desktop questions about supported platforms, account and plan limits, authentication, remote access, and troubleshooting, including Linux support, SSH behavior, proxy issues, and subscriptions.
 
-**Key facts**
-- Supported Linux distributions: Ubuntu 18.04 LTS+, RHEL 8+, and Fedora 39+
-- Multiple accounts: Supported with a paid license by using Profiles
-- Windows SSH note: Pageant is the supported SSH agent on Windows
-- Community status troubleshooting: Verify that you are signed in with the email associated with your subscription
+**Key facts:**
 
 | Topic | Current answer |
 |-------|----------------|
 | Supported Linux distributions | Ubuntu 18.04 LTS+, RHEL 8+, Fedora 39+ |
 | Multiple accounts | Supported with a paid license by using Profiles |
 | Windows SSH agent | Pageant is the supported SSH agent on Windows |
-| Subscription shows Community | Verify that you are signed in with the email associated with your subscription |
+| Subscription shows Community | Make sure you are signed in with the email address associated with your subscription |
 
 <div class='faq container'>
   <section class='pts pbm'>
@@ -81,7 +77,7 @@ No. They show the same underlying worktrees. List view is reference-focused, whi
 
 ### Are Agent Sessions View and coding agent workflows available for on-prem customers?
 
-Yes. On-premises deployments use the same GitKraken Desktop client for local workflows such as worktrees, Agent Sessions View, and terminal-based coding agent workflows. However, do not assume every supported coding agent will be available in every on-premises environment.
+Yes. On-premises deployments use the same GitKraken Desktop client for local workflows such as worktrees, Agent Sessions View, and terminal-based coding agent workflows. However, which coding agents you can use depends on your on-premises environment.
 
 OpenCode and Gemini CLI can run in fully air-gapped environments when they are configured to use an internal model endpoint. Claude Code, Codex CLI, Copilot CLI, and Cursor CLI are also supported when your organization permits them and the required services are reachable from the environment. For more information, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/), [Set Up GitKraken Self-Hosted Server (On-Premise)](/gitkraken-desktop/self-hosted/), and [GitKraken On-Premise Serverless (Stand-Alone) Setup](/gitkraken-desktop/serverless/).
 
@@ -92,12 +88,12 @@ OpenCode and Gemini CLI can run in fully air-gapped environments when they are c
 Get answers about integrations, platforms, accounts, and everyday tasks.
 
 ### Does GitKraken support TFS, Visual Studio Team Services, or Azure DevOps?
-Yes. GitKraken integrates with [Azure DevOps](/integrations/azure-devops/). For TFS, clone the repository manually using <kbd>File > Clone Repo</kbd> and provide the HTTPS URL. On Mac or Linux, enable _Basic Authentication_ in IIS for TFS. Consider using a Personal Access Token (PAT) if password authentication fails.
+Yes. GitKraken Desktop integrates with [Azure DevOps](/integrations/azure-devops/). For TFS, clone the repository manually using <kbd>File > Clone Repo</kbd> and provide the HTTPS URL. On Mac or Linux, enable _Basic Authentication_ in IIS for TFS. If password authentication fails, use a personal access token (PAT).
 
-More info: [SSH and HTTPS authentication](/integrations/authentication)
+For more information, see [SSH and HTTPS authentication](/integrations/authentication).
 
 ### What Linux distributions are supported?
-GitKraken supports:
+GitKraken Desktop supports:
 - Ubuntu 18.04 LTS+
 - RHEL 8+
 - Fedora 39+
@@ -105,10 +101,10 @@ GitKraken supports:
 Other distributions may work but are not officially supported.
 
 ### Can I use multiple GitHub/GitLab/Bitbucket/Azure DevOps accounts?
-Yes—with a paid license. Use [Profiles](/start-here/profiles) to configure separate integrations for each account.
+Yes, with a paid license. Use [Profiles](/start-here/profiles) to configure separate integrations for each account.
 
 ### How do I change my commit avatar?
-Your avatar is linked to your `.gitconfig` email address via [Gravatar](https://gravatar.com/). Update your Gravatar to change your displayed avatar.
+GitKraken Desktop shows the [Gravatar](https://gravatar.com/) linked to the email address in your `.gitconfig`. To change your avatar, update your Gravatar.
 
 ### Can I use GitKraken on multiple computers?
 Yes. Subscriptions are linked to your email address, not a specific machine.
@@ -130,8 +126,8 @@ If your browser does not open, click **open it manually** or **copy the URL** in
 
 ### How do I sign out of GitKraken?
 Do one of the following:
-- Click your profile icon → <kbd>Sign Out</kbd>
-- Select <kbd>File > Sign Out</kbd>
+- Click your profile icon, then click <kbd>Sign Out</kbd>.
+- Select <kbd>File > Sign Out</kbd>.
 
 GitKraken Desktop shows **Successfully signed out**. Signing out also disconnects the integrations you connected through your GitKraken account. To learn what reconnects when you sign in again, see [Integrations](/gitkraken-desktop/integrations/).
 
@@ -146,13 +142,13 @@ To reset all GitKraken Desktop data, delete the `~/.gitkraken` folder.
 Fix common launch, authentication, connection, and display problems.
 
 ### Why am I getting a repo compatibility error? 
-Try closing other tools like IDEs, then relaunch GitKraken. Use `git status` to check for uncommitted changes. Try switching branches or cloning to a new directory.
+Close other tools, such as IDEs, then relaunch GitKraken Desktop. Run `git status` to check for uncommitted changes. You can also try switching branches or cloning the repository to a new directory.
 
 ### Why won’t GitKraken launch on Linux?
-Launch from terminal to check for missing dependencies. Refer to the [installation guide](/gitkraken-desktop/how-to-install/).
+Launch GitKraken Desktop from a terminal to check for missing dependencies. See the [installation guide](/gitkraken-desktop/how-to-install/).
 
 ### Why does my subscription show COMMUNITY?  
-Verify that you're logged into the email associated with your subscription. Click your profile icon and check the email address under **Account**. To use a different account, click **Sign Out**, then sign in with the right account.
+Make sure you are signed in with the email address associated with your subscription. Click your profile icon and check the email address under **Account**. To use a different account, click **Sign Out**, then sign in with the right account.
 
 <figure class='figure center'>
   <img src="/wp-content/uploads/GKD-Common-Issue-1.png" class="help-center-img img-bordered" alt="The GitKraken Desktop profile menu, signed in, with the account name and email address under Account, followed by Manage account and Sign Out.">
@@ -161,37 +157,37 @@ Verify that you're logged into the email associated with your subscription. Clic
 
 ### Why isn’t GitKraken authenticating my SSH key?
 - Confirm remote URLs start with `ssh://` or `{user}@{host}:{repo}`.
-- On Windows, only Pageant is supported. [Download here](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
+- On Windows, GitKraken Desktop supports only the Pageant SSH agent. [Download Pageant](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
 ### Why can’t GitKraken access my GitHub remote?
-- Confirm GitKraken is [authorized](https://github.com/settings/applications).
-- Org access may require approval from the owner. [Request access](https://github.com/settings/connections/applications/a7557949433b7d282a76).
+- Confirm that GitKraken Desktop is [authorized in your GitHub application settings](https://github.com/settings/applications).
+- Organization access may require approval from an organization owner. [Request organization access](https://github.com/settings/connections/applications/a7557949433b7d282a76).
 
 ### Why can’t GitKraken connect to the internet (firewall or proxy)?
-- GitKraken works with most firewalls but some PACs or proxy settings may need manual config.
+- GitKraken Desktop works with most firewalls, but some proxy auto-config (PAC) files or proxy settings need manual configuration.
 - Use `http.proxy` or `remote.<name>.proxy` in Git config. See [Authentication](/integrations/authentication).
 
 ### Why is the graph missing commits or showing errors?
-Run `git gc` in terminal or clone into a fresh directory.
+Run `git gc` in a terminal, or clone the repository into a new directory.
 
 ### Why is the window blank or UI not displaying properly?
-Launch GitKraken with:
+Launch GitKraken Desktop with:
 ```bash
 gitkraken --disable-gpu
 ```
 
 ### Why is my file encoding incorrect or unreadable?
-Set encoding to `UTF-8` or use `GUESS ENCODING` under repository preferences.
+In the repository's **Encoding** preference, set the encoding to `UTF-8` or choose `GUESS ENCODING`.
 
 ### How can I enable extended logging for troubleshooting?
-1. Close GitKraken  
-2. Rename or delete `~/.gitkraken/logs`  
-3. Start GitKraken using: `gitkraken -d SILLY`  
-4. Reproduce the issue  
-5. Logs will be saved in the new `logs` folder
+1. Close GitKraken Desktop.
+2. Rename or delete `~/.gitkraken/logs`.
+3. Start GitKraken Desktop with `gitkraken -d SILLY`.
+4. Reproduce the issue.
+5. Find the logs in the new `logs` folder.
 
 ### I can't select repo folders on Ubuntu 20.04 or prior versions. How do I fix this?
-This is due to a known Electron issue. Start GitKraken with:
+This is a known issue. To work around it, start GitKraken Desktop with:
 ```bash
 gitkraken --xdg-portal-required-version=3
 ```

@@ -21,14 +21,14 @@ taxonomy:
 
 Use this page to create, switch, lock, and remove Git worktrees in GitKraken Desktop when you need multiple branches checked out at the same time. Worktrees keep separate working directories while sharing the same repository history, which makes them useful for parallel feature work, testing, review workflows, and coding agent sessions.
 
-If you use coding agents in GitKraken Desktop, Agent Sessions View builds on the same underlying worktree model. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for agent-specific setup, session management, and status details.
+If you use coding agents in GitKraken Desktop, Agent Sessions View works with the same worktrees. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for agent-specific setup, session management, and status details.
 
 **Requirements and limits**
 - GitKraken Desktop version: Worktrees are supported in version 10.5.0 and later
 - Worktree model: Each worktree has its own working directory and index but shares repository history with the main repo
 - Change visibility: Once committed, changes made in one worktree become visible in other worktrees
 - Lock behavior: Locking a worktree prevents accidental changes while you work elsewhere
-- Removal behavior: Removing a worktree detaches that working directory from the repo via the Left Panel workflow
+- Removal behavior: Removing a worktree from the Left Panel detaches that working directory from the repository
 - Best fit: Use worktrees when you need multiple branches checked out simultaneously instead of repeatedly switching one working directory
 
 | Action | What it does | Affects shared history | Notes |
@@ -48,15 +48,15 @@ If you use coding agents in GitKraken Desktop, Agent Sessions View builds on the
 
 **To create a worktree:**
 1. Right-click a branch in the Repository View.
-2. Select **Create worktree**.
+2. Select **Create worktree from** followed by the branch name.
 
-**To switch between worktrees:** Right-click a worktree in the Left Panel and choose **Open this worktree**, or check out the corresponding branch from the Repository View. To open the worktree in a separate GitKraken tab instead, choose **Open worktree in a new tab**. Tabs for a repository and its worktrees are grouped together in the tab bar. See [Worktree tab groups](/gitkraken-desktop/interface/#worktree-tab-groups).
+**To switch between worktrees:** Right-click a worktree in the Left Panel and choose **Open this worktree**, or check out the corresponding branch from the Repository View. To open the worktree in a separate tab instead, choose **Open worktree in new tab**. Tabs for a repository and its worktrees are grouped together in the tab bar. See [Worktree tab groups](/gitkraken-desktop/interface/#worktree-tab-groups).
 
 **To remove a worktree:** Right-click it in the Left Panel and select **Remove this worktree**. To remove the worktree and delete its associated branch in one step, choose **Remove worktree and delete branch**.
 
 **To lock or unlock a worktree:** Right-click the worktree and choose **Lock this worktree** or **Unlock this worktree**. Locking prevents accidental changes while you work in another worktree.
 
-Worktrees share Git history with the main repository. Changes committed in one worktree are visible in others. When the worktree folder name differs from its checked-out branch, GitKraken shows the folder name below the branch in the Left Panel and Agent Sessions View. Search in either list matches both names. Hover over a worktree in the Left Panel to see its full file path. Worktrees are supported in GitKraken Desktop 10.5.0 and later.
+Worktrees share Git history with the main repository, so changes committed in one worktree are visible in the others. When the worktree folder name differs from its checked-out branch, GitKraken Desktop shows the folder name below the branch in the Left Panel and Agent Sessions View. Search in either list matches both names. To see the full file path of a worktree, hover over it in the Left Panel.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/grAsFn5yvjA?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
@@ -82,19 +82,19 @@ Worktrees are useful when you want to:
 Once committed, changes in one worktree become visible in others.
 
 <div class='callout callout--basic'>
-  <p><strong>Using coding agents?</strong> Agent Sessions View in GitKraken Desktop uses Git worktrees behind the scenes. If you want to run Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, or OpenCode in GitKraken Desktop, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.</p>
+  <p><strong>Using coding agents?</strong> Agent Sessions View in GitKraken Desktop runs each agent session in its own Git worktree. If you want to run Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, or OpenCode in GitKraken Desktop, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.</p>
 </div>
 
 ***
 
 ## How to use worktrees in GitKraken Desktop
 
-GitKraken Desktop has supported worktrees since version **10.5.0**. In the Left Panel, you can work with those worktrees in two ways:
+In the Left Panel, you can work with worktrees in 2 views:
 
 - **List view** for general branch and worktree management
 - **Agent Sessions View** for coding agent sessions that run in worktrees
 
-Both views use the same underlying worktrees. The difference is the presentation:
+Both views show the same worktrees:
 
 - Use **List view** when you want to create, switch, lock, or remove worktrees directly
 - Use **Agent Sessions View** when you want to create, monitor, and manage coding agent sessions in worktrees
@@ -108,18 +108,18 @@ From the Left Panel, you can:
 
 See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) if you want to:
 
-- install and use a supported coding agent CLI
-- start a coding agent session in a new worktree
-- monitor agent status such as **Waiting for input**
-- manage agent sessions from Agent Sessions View
+- Install and use a supported coding agent CLI
+- Start a coding agent session in a new worktree
+- Monitor agent status such as **Waiting for input**
+- Manage agent sessions from Agent Sessions View
 
 ### How to create a worktree
 
 To create a worktree:
-1. Right-click a branch in the Repository View
-2. Select <kbd>Create worktree</kbd>
+1. Right-click a branch in the Repository View.
+2. Select <kbd>Create worktree from</kbd> followed by the branch name.
 
-New worktrees inherit view settings from the source repository, including hidden refs, hidden remotes, soloed refs and remotes, and collapsed folders and remotes. You no longer need to re-hide branches or remotes after creating a worktree.
+New worktrees inherit view settings from the source repository, including hidden refs, hidden remotes, soloed refs and remotes, and collapsed folders and remotes, so you do not need to hide branches or remotes again.
 
 <figure>
   <img src="/wp-content/uploads/gkd-10-5-create-worktree.png" 
@@ -145,7 +145,7 @@ To switch to another worktree:
     </figcaption>
   </figure>
 
-- Right-click the desired worktree in the Left Panel and choose <kbd>Open worktree in a new tab</kbd> to open it in a separate GitKraken tab instead of replacing the current one
+- Right-click the desired worktree in the Left Panel and choose <kbd>Open worktree in new tab</kbd> to open it in a separate tab instead of replacing the current one
 - Or check out the corresponding branch from the Repository View
 
 <figure>
@@ -160,12 +160,12 @@ To switch to another worktree:
 ### How to remove a worktree
 
 To remove a worktree:
-1. Right-click it in the Left Panel
-2. Select <kbd>Remove this worktree</kbd>
+1. Right-click it in the Left Panel.
+2. Select <kbd>Remove this worktree</kbd>.
 
 To remove a worktree and delete its associated branch in a single step:
-1. Right-click the worktree in the Left Panel
-2. Select <kbd>Remove worktree and delete branch</kbd>
+1. Right-click the worktree in the Left Panel.
+2. Select <kbd>Remove worktree and delete branch</kbd>.
 
 Use this option when you are done with the worktree and no longer need its branch, for example after merging a feature or finishing a coding agent session. It deletes the local branch even if its commits are not merged, and you cannot undo it.
 
@@ -204,4 +204,4 @@ To hide these rows, open <kbd>Preferences</kbd>, select **Agents** under **Repo-
   </figcaption>
 </figure>
 
-When you start a coding agent session from [Agent Sessions View](/gitkraken-desktop/agents/), GitKraken Desktop creates the branch and worktree for you, so each agent's pending changes appear as their own WIP node. To review or undo them, see [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/).
+When you start a coding agent session from [Agent Sessions View](/gitkraken-desktop/agents/), GitKraken Desktop creates the branch and worktree for you, so each agent's pending changes appear in their own WIP row. To review or undo them, see [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/).

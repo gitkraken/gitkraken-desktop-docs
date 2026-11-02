@@ -1,6 +1,6 @@
 ---
 title: GitKraken Terminal Guide
-description: Learn how to use GitKraken’s in-app terminal to run Git commands, work in repository and worktree context, run coding agents manually, and customize shell preferences.
+description: Use the GitKraken Desktop in-app terminal to run Git commands in the open repository or worktree, manage terminal tabs, run coding agents manually, and customize shell preferences.
 product: GitKraken Desktop
 feature: Terminal
 content_type: how-to
@@ -19,16 +19,16 @@ taxonomy:
 ---
 <kbd>Last updated: November 2026</kbd>
 
-Use this page to run commands in the context of the open repository and worktree. It covers how to open and manage terminal tabs, how command and flag auto-complete works, how terminal sessions behave across worktrees, how to run coding agents manually, and where to change shell and terminal appearance settings.
+Use this page to run commands in the open repository or worktree from the GitKraken Desktop in-app terminal. You can open several terminal tabs, use command and flag autocomplete, keep separate terminals for each worktree, run coding agents manually, and change the shell and terminal appearance.
 
 **Requirements and limits**
-- Scope: In-app terminal for the currently open repository context
-- Repository context: Commands run in the active repository or worktree working directory automatically
-- Supported shell note: macOS and Linux use the OS default shell; Windows supports PowerShell and Bash via Preferences
-- Auto-complete limitation: Conflicting third-party auto-complete tools can disable GitKraken suggestions
+- Scope: In-app terminal for the currently open repository or worktree
+- Repository context: Commands run in the working directory of the active repository or worktree
+- Supported shell note: macOS and Linux use the OS default shell. On Windows, choose PowerShell or Bash in Preferences
+- Autocomplete limitation: Conflicting third-party autocomplete tools can disable GitKraken Desktop suggestions
 - Settings location: <kbd>Preferences &gt; In-App Terminal</kbd> for appearance and autocomplete behavior
 - Terminal tabs: Each repository or worktree keeps its own terminal tabs. Starting an agent session in a worktree with an open terminal starts the agent in a separate tab
-- Panel behavior: The embedded terminal resizes smoothly when surrounding panels change, can be minimized to keep the terminal panel header visible, and has a **Kill All Terminals** trash icon in the panel header that ends every terminal for the current repository or worktree
+- Panel behavior: The embedded terminal resizes when surrounding panels change. You can minimize it and keep the terminal panel header visible. The **Kill All Terminals** trash icon in the panel header ends every terminal for the current repository or worktree
 - Focus: The terminal output dims while you work elsewhere in the app. Turn this off with **Dim terminal when unfocused** in <kbd>Preferences &gt; In-App Terminal</kbd>
 - Coding agents: You can run supported or unsupported coding agent CLIs manually in the embedded terminal
 
@@ -41,7 +41,7 @@ To get started, open a repository and click the Terminal <i class="fa fa-termina
 
 **To open the terminal:** Click the Terminal icon in the toolbar or search for "terminal" in the Command Palette.
 
-**To run commands:** Type any Git command such as `git status`, `git commit -m "message"`, or `git log --oneline`. Auto-complete suggestions appear as you type, including flag suggestions for each command.
+**To run commands:** Type any Git command such as `git status`, `git commit -m "message"`, or `git log --oneline`. Autocomplete suggestions appear as you type, including flag suggestions for each command.
 
 **To open another terminal:** Click the **+** button in the terminal tab bar, or press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd> (<kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>N</kbd> on macOS). Select a tab to switch terminals, or close a tab you no longer need. See [How terminal tabs work](#how-terminal-tabs-work) for all terminal tab shortcuts.
 
@@ -49,13 +49,13 @@ To get started, open a repository and click the Terminal <i class="fa fa-termina
 
 **To customize terminal appearance:** Go to <kbd>Preferences > In-App Terminal</kbd> to change font, size, line height, cursor style, whether the terminal dims when unfocused, and autocomplete behavior.
 
-**To minimize the terminal panel:** Use the minimize control in the terminal panel header. The panel header stays visible so you can restore the terminal when you need it.
+**To minimize the terminal panel:** Click **Minimize Terminal** in the terminal panel header. The panel header stays visible so you can expand the terminal again when you need it.
 
-**To kill all terminals:** Click the **Kill All Terminals** trash icon in the terminal panel header. This ends every terminal tab for the current repository or worktree and closes the panel. If 2 or more terminals are open, GitKraken Desktop asks you to confirm first, because any running processes stop. To end a single terminal, close its tab instead.
+**To kill all terminals:** Click the **Kill All Terminals** trash icon in the terminal panel header. GitKraken Desktop ends every terminal tab for the current repository or worktree and closes the panel. If 2 or more terminals are open, GitKraken Desktop asks you to confirm first, because any running processes stop. To end a single terminal, close its tab instead.
 
 **To set your default shell:**
 - **macOS/Linux**: Set ZSH or Bash as the default shell in your OS settings and restart your machine.
-- **Windows**: Open <kbd>Preferences > Terminal</kbd> and select PowerShell or Bash.
+- **Windows**: Open <kbd>Preferences > In-App Terminal</kbd> and select PowerShell or Bash in **Default In-App Terminal**.
 
 The terminal shares context with the open repository or worktree, so commands run against the correct working directory automatically.
 
@@ -63,14 +63,14 @@ The terminal shares context with the open repository or worktree, so commands ru
   <img src="/wp-content/uploads/terminal-button-2025@2x.png"
        class="help-center-img img-bordered"
        alt="GitKraken Desktop interface showing the Terminal button in the top toolbar and an open terminal panel running the git status command.">
-  <figcaption style="text-align:center; color:#888">Launch the terminal from the GitKraken toolbar</figcaption>
+  <figcaption style="text-align:center; color:#888">Launch the terminal from the toolbar</figcaption>
 </figure>
 
 ---
 
 ## How Git commands and auto-complete work
 
-The GitKraken Terminal supports most <a href="https://git-scm.com/" target="_blank">Git</a> commands. Start typing `git` to see command suggestions via auto-complete.
+Run <a href="https://git-scm.com/" target="_blank">Git</a> commands in the terminal as you would in any shell. Start typing `git` to see autocomplete suggestions for commands.
 
 <figure>
   <img src="/wp-content/uploads/autocomplete-suggestions.png" 
@@ -85,18 +85,18 @@ Flag suggestions are also supported:
   <img src="/wp-content/uploads/autocomplete-suggestions-flags.png" 
        class="help-center-img img-bordered" 
        alt="Autocomplete dropdown in the GitKraken Desktop terminal showing flag suggestions for the 'git status' command. Flags include --verbose, --branch, --show-stash, and others.">
-  <figcaption style="text-align:center; color:#888">Flag suggestions enhance Git command efficiency</figcaption>
+  <figcaption style="text-align:center; color:#888">Flag suggestions for a Git command</figcaption>
 </figure>
 
 <div class='callout callout--warning'>
-    <p><strong>Note:</strong> Conflicting auto-complete programs may disable suggestions. You may need to uninstall or disable such programs for GitKraken's suggestions to work correctly.</p>
+    <p><strong>Note:</strong> Other autocomplete programs can conflict with the terminal and disable its suggestions. If suggestions do not appear, uninstall or disable those programs.</p>
 </div>
 
 ---
 
 ## How to customize terminal preferences
 
-Visit <kbd><strong>Preferences > In-app Terminal</strong></kbd> to modify your terminal settings.
+Open <kbd><strong>Preferences > In-App Terminal</strong></kbd> to change your terminal settings.
 
 **Dim terminal when unfocused** is on by default: the terminal output fades while you work elsewhere in GitKraken Desktop and returns to full brightness when you click back into the terminal. The panel header and tabs stay at full brightness. Clear the checkbox to keep the terminal output at full brightness at all times.
 
@@ -109,15 +109,15 @@ Visit <kbd><strong>Preferences > In-app Terminal</strong></kbd> to modify your t
 
 ### How the default terminal works on macOS and Linux
 
-GitKraken supports ZSH and Bash. To switch shells:
+GitKraken Desktop supports ZSH and Bash. To switch shells:
 1. Set the preferred shell as default in your OS settings.
 2. Restart your machine to apply changes.
 
 ### How the default terminal works on Windows
 
-PowerShell and Bash are currently supported. To change the shell:
-1. Open <kbd>Preferences > Terminal</kbd>.
-2. Set the _Default Terminal_ to your desired shell.
+GitKraken Desktop supports PowerShell and Bash. To change the shell:
+1. Open <kbd>Preferences > In-App Terminal</kbd>.
+2. Set **Default In-App Terminal** to your desired shell.
 
 ---
 
@@ -146,9 +146,9 @@ The next and previous tab shortcuts wrap around: from the last tab, the next tab
   <figcaption style="text-align:center; color:#888">Open, switch between, and close terminal tabs</figcaption>
 </figure>
 
-When you switch worktrees, GitKraken shows that worktree's terminal tabs. Each terminal runs in its worktree's working directory, and long-running commands continue while you switch to another worktree.
+When you switch worktrees, GitKraken Desktop shows that worktree's terminal tabs. Each terminal runs in its worktree's working directory, and long-running commands continue while you switch to another worktree.
 
-When you start a coding agent in a worktree that already has a terminal open, GitKraken starts the agent in a new tab instead of replacing the existing terminal.
+When you start a coding agent in a worktree that already has a terminal open, GitKraken Desktop starts the agent in a new tab instead of replacing the existing terminal.
 
 GitKraken Desktop uses the same worktrees in both List view and [Agent Sessions View](/gitkraken-desktop/agents/). You can open a worktree from either view and use its terminal tabs.
 
@@ -170,16 +170,14 @@ If you want GitKraken Desktop to create and manage coding agent sessions for exp
 
 ## How to drag and drop files into the terminal
 
-You can drag a file from your OS file manager or from the Commit Panel into the terminal to insert the file's full path at the cursor. You can also drag text into the terminal to insert it at the cursor. This is useful when you want to paste a path or snippet into a command without retyping it.
+Drag a file from your OS file manager or from the Commit Panel into the terminal to insert the file's full path at the cursor. You can also drag text into the terminal to insert it at the cursor. Use drag and drop to add a path or snippet to a command without retyping it.
 
 ---
 
 ## Common Git commands to try
 
-Use the terminal to quickly execute common Git operations:
+Use the terminal to run common Git operations:
 
 - `git status` - View working directory and staging status
 - `git commit -m "message"` - Commit changes with a message
 - `git log --oneline` - View a condensed commit history
-
-These commands complement GitKraken’s visual graph for a comprehensive Git experience.

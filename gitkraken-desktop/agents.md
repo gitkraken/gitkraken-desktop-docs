@@ -22,12 +22,12 @@ taxonomy:
 In GitKraken Desktop, each coding agent session runs on its own branch in its own Git worktree. The agent's changes stay separate from yours and show up in the Commit Graph like any other branch, where you can review them and undo them.
 
 <div style="display:flex; flex-direction:row-reverse; flex-wrap:wrap; align-items:center; gap:8px 32px; margin-bottom:24px;">
-  <p style="flex:1 1 300px; margin:0;">Use this page to learn how coding agents work in GitKraken Desktop and how to use <strong>Agent Sessions View</strong> to create, monitor, and manage coding agent sessions. Read this page if you want to use external coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, or OpenCode from inside GitKraken Desktop.</p>
+  <p style="flex:1 1 300px; margin:0;">Use this page to run external coding agent CLIs, such as Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, or OpenCode, from inside GitKraken Desktop, and to create, monitor, and manage their sessions in <strong>Agent Sessions View</strong>.</p>
   <img src="/wp-content/uploads/GitKraken_Keif_agents.png" alt="" width="794" height="803" loading="lazy" style="flex:0 0 auto; max-height:200px; width:auto; height:auto; max-width:100%; margin:0 auto;">
 </div>
 
 <div class='callout callout--basic'>
-  <p><strong>On-premises note:</strong> GitKraken Desktop gives on-premises teams one place to run multiple coding agents. Agent availability depends on your security policy, network access, and which CLIs your organization allows. OpenCode and Gemini CLI can run in fully air-gapped environments when you point them to an internal model endpoint. Claude Code, Codex CLI, Copilot CLI, and Cursor CLI are also supported when your organization permits them and the required services are reachable from your environment.</p>
+  <p><strong>On-premises note:</strong> Which coding agents you can run depends on your security policy, network access, and the CLIs your organization allows. OpenCode and Gemini CLI can run in fully air-gapped environments when you point them to an internal model endpoint. Claude Code, Codex CLI, Copilot CLI, and Cursor CLI are also supported when your organization permits them and the required services are reachable from your environment.</p>
 </div>
 
 <figure>
@@ -39,12 +39,6 @@ A **coding agent** is an external CLI that can work on code in a terminal sessio
 
 GitKraken Desktop explicitly integrates with a set of supported coding agent CLIs. You can also run other coding agents manually in the embedded terminal, even if they do not appear in the coding agent configuration.
 
-This page also helps answer common questions such as:
-- How do I use Claude Code with GitKraken Desktop?
-- How do I run Copilot CLI as a coding agent in GitKraken?
-- How do I use Cursor CLI, Codex CLI, Gemini CLI, or OpenCode in GitKraken Desktop?
-- Can I run multiple coding agent sessions at the same time?
-
 **Requirements and limits**
 - Product: GitKraken Desktop with Agent Sessions View enabled
 - Coding agent CLI: Install and configure a supported coding agent CLI in <kbd>Preferences > External Tools > Coding Agent</kbd>
@@ -52,7 +46,7 @@ This page also helps answer common questions such as:
 - Repository setup: Setup commands are configured per repository in <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>
 - Live status: Claude Code, Codex CLI, Copilot CLI, and OpenCode can report live session status when you install their status integrations. Cursor CLI can launch sessions but does not report live status in Agent Sessions View.
 - View settings: New agent session worktrees inherit hidden refs, hidden remotes, soloed refs and remotes, and collapsed folders and remotes from the source repository
-- Other agents: You can still run other coding agents manually in the embedded terminal, even if GitKraken does not explicitly integrate with or detect them
+- Other agents: You can still run other coding agents manually in the embedded terminal, even if GitKraken Desktop does not explicitly integrate with or detect them
 - On-premises environments: Available coding agents may be limited by your organization's security restrictions, internal approvals, or air-gapped network design
 
 | What you want to do | Supported | Where in GitKraken Desktop | Notes |
@@ -60,11 +54,11 @@ This page also helps answer common questions such as:
 | Start a coding agent session | Yes | Agent Sessions View, a worktree card's menu, or an issue in Launchpad or the Left Panel | Creates a worktree (when starting a new session), runs setup commands, and launches the coding agent CLI |
 | Start multiple coding agent sessions at the same time | Yes | Agent Sessions View | Each session runs in a separate worktree. You can also start another agent in a worktree where one is already running |
 | Choose a different base branch for a new session | Yes | Start an Agent Session modal | Defaults to the branch you have checked out. The base branch selector is searchable |
-| Choose a coding agent CLI for a session | Yes | Start an Agent Session modal | Falls back to the coding agent set in Preferences. Available options depend on the CLIs installed and allowed in your environment |
+| Choose a coding agent CLI for a session | Yes | Start an Agent Session modal | Defaults to the coding agent set in Preferences. Available options depend on the CLIs installed and allowed in your environment |
 | Monitor agent progress | Yes | Agent Sessions View card | Cards show WIP changes, ahead/behind, and agent status |
 | Respond when an agent is waiting for input | Yes | Agent Sessions View and embedded terminal | Claude Code, Codex CLI, and Copilot CLI can show permission requests with **Allow once** and **Deny** actions on the card |
 | Manage a worktree from Agent Sessions View | Yes | Three-dot action menu on each worktree card | Open, lock or unlock, remove, or remove and delete the local branch, or the local and remote branches |
-| Configure coding agent CLIs | Yes | <kbd>Preferences > External Tools > Coding Agent</kbd> | GitKraken auto-detects installed CLIs. In on-premises environments, the usable CLIs depend on what your organization allows and can reach |
+| Configure coding agent CLIs | Yes | <kbd>Preferences > External Tools > Coding Agent</kbd> | GitKraken Desktop detects installed CLIs automatically. In on-premises environments, the usable CLIs depend on what your organization allows and can reach |
 | Configure setup commands for a repository | Yes | <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> | Commands run before the agent launches |
 | Search, filter, and sort the worktree list | Yes | Search and **Sort & filter** buttons in Agent Sessions View | Search by branch or folder name, or filter to the worktrees that need attention, have agent sessions, have changes, or have a PR |
 
@@ -73,10 +67,10 @@ This page also helps answer common questions such as:
 ## Quick start for coding agents in GitKraken Desktop
 
 **To open Agent Sessions View:**
-Click **Agents** in the `List | Agents` segmented control at the top of the Left Panel.
+Click **Agents** in the `List | Agents` toggle at the top of the Left Panel.
 
 **To start a coding agent session:**
-In Agent Sessions View, click **+ Start *[coding agent]* Session** to choose a branch name, base branch, and coding agent before GitKraken creates the worktree. The button label shows your default coding agent, such as **Start Claude Code Session**. To start a session immediately with generated defaults, click the lightning-bolt button next to it, **Quick session**.
+In Agent Sessions View, click **+ Start *[coding agent]* Session** to choose a branch name, base branch, and coding agent before GitKraken Desktop creates the worktree. The button label shows your default coding agent, such as **Start Claude Code Session**. To start a session immediately with generated defaults, click the lightning-bolt button next to it, **Quick session**.
 
 You can also start an agent session in an existing worktree. In Agent Sessions View, right-click the worktree's card, select **Start Agent Session**, and choose a coding agent.
 
@@ -99,7 +93,7 @@ Go to <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>.
 
 ## What coding agents, agent sessions, and Agent Sessions View mean
 
-Use these terms consistently when working with Agent Sessions View:
+GitKraken Desktop uses these terms for coding agents:
 
 | Term | What it means |
 |------|---------------|
@@ -118,13 +112,9 @@ Agent Sessions View and List view use the same underlying worktrees. The differe
       <p><strong>Why use Agent Sessions View instead of only List view?</strong> Agent Sessions View shows the same worktrees you already use in GitKraken Desktop, but it organizes them around agent activity such as progress, status, and actions. You can switch between <strong>List</strong> and <strong>Agents</strong> at any time without losing work.</p>
 </div>
 
-<div class='callout callout--basic'>
-      <p><strong>Missing the toggle?</strong> If the <code>List | Agents</code> switch is not visible in the Left Panel, open <kbd>Preferences &gt; UI Customization</kbd> and enable <strong>Show Agents view in left panel</strong>.</p>
-</div>
-
 ***
 
-## How to toggle agents view
+## How to toggle Agents view
 
 To show or hide the `List | Agents` toggle at the top of the Left Panel, go to <kbd>Preferences > UI Customization</kbd> and toggle the **Show Agents view in left panel** setting.
 
@@ -133,7 +123,9 @@ To show or hide the `List | Agents` toggle at the top of the Left Panel, go to <
   <figcaption style="text-align:center; color:#888">Enable <code>Show Agents view in left panel</code> to display the <code>List | Agents</code> toggle</figcaption>
 </figure>
 
-### How to switch to an agent running outside GitKraken Desktop
+***
+
+## How to switch to an agent running outside GitKraken Desktop
 
 When you start an agent outside GitKraken Desktop, such as in your own terminal, its session appears as a row on the worktree's card in Agent Sessions View. To bring that agent's window to the front:
 
@@ -141,7 +133,7 @@ When you start an agent outside GitKraken Desktop, such as in your own terminal,
 2. Hover over the agent's session row.
 3. Click the eye icon, **Focus agent application**.
 
-If GitKraken Desktop cannot identify the agent's window, the icon is disabled and its tooltip reads **Cannot focus agent application**. If the window cannot be brought to the front, a **Couldn't focus the agent application** message appears. Click **Launch in terminal** in that message to start the same coding agent in the worktree's terminal in GitKraken Desktop instead.
+If GitKraken Desktop cannot identify the agent's window, the icon is disabled and its tooltip reads **Cannot focus agent application**. If GitKraken Desktop cannot bring the window to the front, a **Couldn't focus the agent application** message appears. Click **Launch in terminal** in that message to start the same coding agent in the worktree's terminal in GitKraken Desktop instead.
 
 On Linux, bringing a window to the front needs your desktop's window tool, such as `xdotool` on X11, `kdotool` on KDE Plasma (Wayland), or the built-in commands of Hyprland, Sway, or niri.
 
@@ -160,7 +152,7 @@ Use coding agents when you want to:
 - Monitor agent progress while you continue working in another worktree
 - Review and act on agent-generated changes when the session finishes
 
-Coding agents are usually not the best choice when you:
+A coding agent session is not the best choice when you:
 - Need to make a small manual change in your current worktree
 - Do not want to create another worktree
 - Need behavior that depends on a CLI that is not installed or configured
@@ -179,7 +171,7 @@ GitKraken Desktop explicitly integrates with these supported coding agent CLIs:
 - [Gemini CLI](https://geminicli.com/docs/)
 - [OpenCode](https://opencode.ai/download)
 
-GitKraken auto-detects installed CLIs. If you install `cursor-agent`, Cursor CLI appears in the Coding Agent settings and the agent picker when you start a session. You can also add custom CLI arguments that GitKraken passes when it starts a coding agent session.
+GitKraken Desktop detects installed CLIs automatically. If you install `cursor-agent`, Cursor CLI appears in the Coding Agent settings and the agent picker when you start a session. You can also add custom CLI arguments that GitKraken Desktop passes when it starts a coding agent session.
 
 In on-premises environments, do not assume every supported CLI will be available. The list in GitKraken Desktop depends on which CLIs are installed on the machine and which services your organization allows that machine to access.
 
@@ -187,28 +179,19 @@ If you need fully air-gapped agent workflows, OpenCode and Gemini CLI can run ag
 
 If you use a different coding agent, you can still open a session worktree and run that agent manually in the embedded terminal. The agent does not need to appear in the coding agent configuration for you to use that terminal workflow.
 
-If you are asking:
-- "How do I use Claude Code with GitKraken Desktop?"
-- "How do I run Copilot CLI as a coding agent in GitKraken?"
-- "How do I use Cursor CLI, Codex CLI, Gemini CLI, or OpenCode in GitKraken Desktop?"
-
-The setup path is the same: install the CLI on your system, then configure it in <kbd>Preferences > External Tools > Coding Agent</kbd>.
+Setup is the same for every supported CLI: install the CLI on your system, then configure it in <kbd>Preferences > External Tools > Coding Agent</kbd>.
 
 ***
 
 ## How to configure setup commands for coding agent sessions
 
-Setup commands run in sequence in the new worktree before the coding agent launches. Use setup commands to prepare the repository for the session, for example:
+Setup commands run in sequence in the new worktree before the coding agent launches. They apply only to the repository you configure them in.
+
+To define setup commands for the current repository, go to <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> and enter each command on its own line. Use setup commands to prepare the repository for the session, for example:
 
 - `npm install`
 - `pnpm install`
 - `pnpm build`
-
-Put each command on its own line.
-
-Go to <kbd>Preferences > Repo-Specific Preferences > Agents</kbd> to define setup commands for the current repository.
-
-Because these settings are under Repo-Specific Preferences, setup commands apply only to the repository you configure them in.
 
 The same **Agents** pane has the **Show worktree WIP nodes in the graph** checkbox, which is selected by default. While it is selected, the Commit Graph shows a WIP row for every other worktree that has uncommitted changes or an active agent session. Rows with an agent show the agent's logo and current status. Select a row and click **Open Worktree**, or double-click the row, to open that worktree. Unlike the setup commands, this checkbox applies to every repository you open with your current profile.
 
@@ -223,14 +206,14 @@ The same **Agents** pane has the **Show worktree WIP nodes in the graph** checkb
 
 1. Open **Agent Sessions View** by clicking **Agents** in the Left Panel.
 2. Click **+ Start *[coding agent]* Session** to open the setup modal. The button label shows the default coding agent set in your Preferences, such as **Start Claude Code Session**. GitKraken Desktop generates a branch name and selects that coding agent.
-3. Review or change the branch name, base branch, and coding agent, then click **Start an Agent Session**. The branch name updates when you change the base branch, and GitKraken checks it against existing branches and worktrees.
+3. Review or change the branch name, base branch, and coding agent, then click **Start an Agent Session**. The branch name updates when you change the base branch, and GitKraken Desktop checks it against existing branches and worktrees.
 
    <figure>
      <img src='/wp-content/uploads/gkd-12-6-agents-new-session-button.png' class="help-center-img img-bordered" alt="Agent Sessions View in GitKraken Desktop showing the Start Claude Code Session button with the adjacent lightning-bolt button, the plug icon in the Worktrees header, and two worktree cards, one waiting for input.">
      <figcaption style="text-align: center; color: #888">Open the setup modal or start with generated defaults.</figcaption>
    </figure>
 
-   To start a session without opening the modal, click the lightning-bolt button, **Quick session**, next to **+ Start *[coding agent]* Session**. GitKraken uses the generated branch name and the coding agent selected in Preferences.
+   To start a session without opening the modal, click the lightning-bolt button, **Quick session**, next to **+ Start *[coding agent]* Session**. GitKraken Desktop uses the generated branch name and the coding agent selected in Preferences.
 
    | Option | Use it to | Default |
    |--------|-----------|---------|
@@ -324,12 +307,12 @@ The status row on each card shows the current session state. Claude Code, Codex 
 
 When you start a session, the card shows a **Running** status. If you install a status integration for a supported CLI, the card can show more specific status information.
 
-When an agent needs attention, the card can show a bell icon and a **Waiting for input** label. This lets you see that the session needs a response without switching to the terminal first.
+When an agent needs attention, the card can show a bell icon and a **Waiting for input** label, so you can see that the session needs a response without switching to the terminal first.
 <figure>
   <img src='/wp-content/uploads/agent-status.png' class="help-center-img img-bordered" alt="Agent Sessions View showing agent Waiting for input.">
   <figcaption style="text-align: center; color: #888">Agent Sessions View highlighting a session that needs attention, including Waiting for input.</figcaption>
 </figure>
-If you remove a worktree from the card menu, the card shows visual feedback while the deletion is in progress so you know the action is being processed.
+If you remove a worktree from the card menu, the card shows that the removal is in progress until it finishes.
 
 <figure>
   <img src='/wp-content/uploads/GKD-Remove-Session-and-Worktree.png' class="help-center-img img-bordered" alt="Card menu for a worktree in Agent Sessions View showing the Remove this worktree and Remove worktree and delete branch options.">
@@ -402,8 +385,6 @@ Use this workflow when a coding agent pauses for input that you cannot answer fr
 4. Review the prompt from the coding agent CLI.
 5. Respond in the terminal to continue the session.
 
-This workflow is especially useful when you run multiple coding agent sessions at the same time and need to see which session needs attention first.
-
 ***
 
 ## How to open, review, and manage a coding agent worktree
@@ -416,7 +397,7 @@ Each worktree card in Agent Sessions View has a three-dot action menu so you can
 |---------------------|-------------------------|--------|
 | Start a coding agent in the worktree | **Start Agent Session**, then a coding agent | Launches that agent in the worktree, even if another agent is already running there |
 | Open the session worktree | **Open this worktree** | Switches to that worktree |
-| Open the session in another tab | **Open worktree in new tab** | Opens the worktree in a new GitKraken tab |
+| Open the session in another tab | **Open worktree in new tab** | Opens the worktree in a new tab |
 | Prevent the worktree from being pruned, moved, or deleted | **Lock this worktree** | Locks the worktree |
 | Re-enable normal worktree management | **Unlock this worktree** | Unlocks the worktree |
 | Remove the session worktree | **Remove this worktree** | Deletes the worktree and its working directory |
@@ -431,7 +412,7 @@ Use these actions after the agent finishes so you can review changes, push the b
 
 ## How to manage agent status plugins and hooks
 
-GitKraken Desktop uses agent-specific integrations to report live status in Agent Sessions View. Installing a plugin changes that agent's configuration, so GitKraken installs it only when you request it. These integrations send only event metadata. Prompt content, agent output, and source code are never sent to GitKraken.
+GitKraken Desktop uses a status plugin for each supported agent to report live status in Agent Sessions View. Installing a plugin changes that agent's configuration, so GitKraken Desktop installs it only when you request it. The plugins send only event metadata. Prompt content, agent output, and source code are never sent to GitKraken.
 
 To check which agents can report live status or install an integration:
 
@@ -443,9 +424,9 @@ To check which agents can report live status or install an integration:
      <figcaption style="text-align: center; color: #888">Hover over the plug icon to see how many agents can report live status.</figcaption>
    </figure>
 
-3. Select **Install** or **Reinstall** next to an agent, or click **Manage in Preferences** to open *Preferences > External Tools*. To uninstall a plugin, use *Preferences > External Tools*.
+3. Select **Install** or **Reinstall** next to an agent, or click **Manage in Preferences** to open <kbd>Preferences > External Tools</kbd>. To uninstall a plugin, use <kbd>Preferences > External Tools</kbd>.
 
-In *Preferences > External Tools*, the **Agent Status Integrations** section lists a plugin for each supported agent. The buttons next to each agent show whether its plugin is installed:
+In <kbd>Preferences > External Tools</kbd>, the **Agent Status Integrations** section lists a plugin for each supported agent. The buttons next to each agent show whether its plugin is installed:
 
 - **Install Plugin**: the plugin is not installed.
 - **Reinstall Plugin** and **Uninstall Plugin**: the plugin is installed.
@@ -456,17 +437,17 @@ In *Preferences > External Tools*, the **Agent Status Integrations** section lis
   <figcaption style="text-align: center; color: #888">Manage agent status plugins in Preferences > External Tools.</figcaption>
 </figure>
 
-GitKraken keeps installed plugins up to date when you update the app. You can uninstall them from *Preferences > External Tools*.
+GitKraken Desktop keeps installed plugins up to date when you update the app. You can uninstall them from <kbd>Preferences > External Tools</kbd>.
 
 ### Copilot CLI status plugin and permission requests
 
-Install the **Copilot CLI Plugin** from *Preferences > External Tools* to show Copilot CLI session status and permission requests in Agent Sessions View. You can also install or reinstall the plugin from the plug icon in Agent Sessions View. To uninstall it, use *Preferences > External Tools*.
+Install the **Copilot CLI Plugin** from <kbd>Preferences > External Tools</kbd> to show Copilot CLI session status and permission requests in Agent Sessions View. You can also install or reinstall the plugin from the plug icon in Agent Sessions View. To uninstall it, use <kbd>Preferences > External Tools</kbd>.
 
-When Copilot CLI requests permission, select **Allow** or **Deny** on its worktree card. If you dismiss the request without choosing either action, GitKraken hands the decision back to Copilot CLI's own prompt.
+When Copilot CLI requests permission, select **Allow once** or **Deny** on its worktree card. If you dismiss the request without choosing either action, Copilot CLI asks you in its own prompt instead.
 
 ### Claude Code status hooks
 
-The GitKraken CLI registers hooks on Claude Code's lifecycle events (such as session start and end, tool use, prompt submission, and permission requests) and forwards those events to the local `gk` process to display agent status.
+The Claude Code plugin adds hooks to Claude Code so that Agent Sessions View can show its status as the session starts and ends, uses tools, receives prompts, and requests permission.
 
 #### Reinstalling or uninstalling the Claude Code plugin
 
@@ -478,20 +459,19 @@ The GitKraken CLI registers hooks on Claude Code's lifecycle events (such as ses
 
 GitKraken Desktop uses an OpenCode plugin to report live agent status for OpenCode sessions.
 
-Use the plug icon in Agent Sessions View or open *Preferences > External Tools* to install or reinstall the OpenCode plugin. To uninstall it, use *Preferences > External Tools*.
+Use the plug icon in Agent Sessions View or open <kbd>Preferences > External Tools</kbd> to install or reinstall the OpenCode plugin. To uninstall it, use <kbd>Preferences > External Tools</kbd>.
 
 ***
 
 ## Typical workflow for coding agents and worktrees
 
-1. You are working on a feature in your current worktree.
-2. A second task comes in, such as a bug fix or a small refactor.
-3. You open **Agent Sessions View** and start a new coding agent session on a new branch such as `fix/login-crash`.
-4. GitKraken Desktop creates a worktree, runs setup commands, and launches the coding agent CLI.
-5. You continue working in your original worktree while monitoring the new agent session card.
-6. If the card shows **Waiting for input**, you switch to that session and respond in the terminal.
-7. When the agent finishes, you open the worktree, review the diff, and push or open a pull request.
-8. After the work is merged or no longer needed, you remove the worktree.
+Suppose you are working on a feature in your current worktree when a second task comes in, such as a bug fix or a small refactor:
+
+1. Open **Agent Sessions View** and start a new coding agent session on a new branch, such as `fix/login-crash`. GitKraken Desktop creates a worktree, runs setup commands, and launches the coding agent CLI.
+2. Keep working in your original worktree while you monitor the new agent session card.
+3. If the card shows **Waiting for input**, switch to that session and respond in the terminal.
+4. When the agent finishes, open the worktree, review the diff, and push or open a pull request.
+5. After the work is merged or no longer needed, remove the worktree.
 
 ***
 
@@ -531,7 +511,7 @@ OpenCode and Gemini CLI can run in fully air-gapped environments when they are c
 
 ### Can I use a coding agent that GitKraken Desktop does not explicitly integrate with?
 
-Yes. GitKraken Desktop explicitly integrates with supported coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, and OpenCode, but you can still run other coding agents manually in the embedded terminal. The agent does not need to appear in the coding agent configuration for you to use that terminal workflow. In on-premises environments, this manual path is often the best option for internally approved tools that are not part of the built-in list.
+Yes. GitKraken Desktop explicitly integrates with supported coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, and OpenCode, but you can still run other coding agents manually in the embedded terminal. The agent does not need to appear in the coding agent configuration for you to use that terminal workflow. In on-premises environments, use this manual path for internally approved tools that are not part of the built-in list.
 
 ### Where do I configure repository setup before the agent starts?
 
@@ -539,4 +519,4 @@ Go to <kbd>Preferences > Repo-Specific Preferences > Agents</kbd>. Setup command
 
 ### Why does GitKraken install hooks or plugins for agent status?
 
-GitKraken uses hooks or plugins to receive agent status events, such as when an agent starts, finishes, or changes state. The integrations report status to a local GitKraken process, which displays it in Agent Sessions View. GitKraken installs a plugin only when you request it and updates installed plugins when you update the app. Only status metadata is sent; prompt content, agent responses, and source code are not transmitted.
+GitKraken Desktop uses hooks or plugins to receive agent status events, such as when an agent starts, finishes, or changes state, and shows that status in Agent Sessions View. GitKraken Desktop installs a plugin only when you request it and updates installed plugins when you update the app. The plugins send only status metadata. They do not send prompt content, agent responses, or source code.

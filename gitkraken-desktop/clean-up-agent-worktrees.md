@@ -19,7 +19,7 @@ taxonomy:
 ---
 <kbd>Last updated: November 2026</kbd>
 
-Yes, GitKraken Desktop shows all of a repository's worktrees in one place, including the ones your coding agents created, and lets you remove them with or without their branches. Use this page to find stale agent worktrees and orphaned branches, check whether their work was merged, and clean them up without losing work you meant to keep.
+GitKraken Desktop shows all of a repository's worktrees in one place, including the ones your coding agents created, and lets you remove them with or without their branches. Use this page to find stale agent worktrees and orphaned branches, check whether their work was merged, and clean them up without losing work you meant to keep.
 
 **Requirements and limits**
 - Scope: Finding, checking, and removing worktrees and branches left behind by coding agent sessions
@@ -94,7 +94,7 @@ It deletes the branch even if its commits are not merged anywhere, and you canno
 
 ### Remove the worktree and the remote branch too
 
-If the branch has a remote branch, the menu also shows **Remove worktree and delete branch (local & remote)**. It removes the worktree first, then deletes the local and remote branches. If the worktree is not removed, for example because you cancel, neither branch is deleted.
+If the branch has a remote branch, the menu also shows **Remove worktree and delete branch (local & remote)**. It removes the worktree first, then deletes the local and remote branches. If the worktree is not removed, for example because you cancel, GitKraken Desktop deletes neither branch.
 
 Only use this when nobody else needs the remote branch.
 
@@ -112,7 +112,7 @@ Force removal cannot be undone. If you're not sure, cancel, open the worktree, a
 
 If a worktree's folder was deleted outside GitKraken Desktop, for example by an agent or from your file manager, Git still keeps a record of it. The worktree still appears in the Left Panel, but you cannot open it.
 
-To clean them up, right-click a prunable worktree in the Left Panel and select **Prune worktrees**. GitKraken Desktop runs `git worktree prune` for the repository, which clears every record whose folder no longer exists. Branches are not deleted.
+To clean them up, right-click a prunable worktree in the Left Panel and select **Prune worktrees**. GitKraken Desktop runs `git worktree prune` for the repository, which clears every record whose folder no longer exists. Pruning does not delete any branches.
 
 ***
 

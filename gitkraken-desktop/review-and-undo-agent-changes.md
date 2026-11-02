@@ -43,7 +43,7 @@ Then find where the agent's changes are and use the matching row.
 |---|---|---|---|---|
 | Uncommitted, in the agent's worktree | Open the agent's worktree, click its WIP node, then click a file | Discard all or selected files, or revert one hunk | Not applicable | Discarded changes leave the worktree |
 | Committed on the agent's branch, not pushed | <kbd>Shift</kbd> + click the agent's first and last commits for a combined diff of the range | Reset the branch to the last good commit | No | Reset rewrites the branch's history |
-| Committed and pushed | Select the agent's commits in the Commit Graph | **Revert Commit** on each one, then push | Yes | Revert adds new commits and keeps existing history |
+| Committed and pushed | Select the agent's commits in the Commit Graph | **Revert commit** on each one, then push | Yes | Revert adds new commits and keeps existing history |
 | Only one or two files are damaged | Open the file's **History** | **Restore file from this commit** | Yes | The restored file arrives as a staged change |
 | Anywhere in a session you do not want | Check the session card in Agent Sessions View | **Remove worktree and delete branch** | No | Deletes the branch even if its commits are not merged |
 
@@ -51,7 +51,7 @@ Then find where the agent's changes are and use the matching row.
 
 ## Before the agent starts: give it its own branch
 
-The easiest changes to review are changes that are isolated. When you start a session from [Agent Sessions View](/gitkraken-desktop/agents/), GitKraken Desktop creates a new branch in its own [worktree](/gitkraken-desktop/worktrees/), so the agent's work stays separate from yours.
+Isolated changes are the easiest to review. When you start a session from [Agent Sessions View](/gitkraken-desktop/agents/), GitKraken Desktop creates a new branch in its own [worktree](/gitkraken-desktop/worktrees/), so the agent's work stays separate from yours.
 
 If you run an agent outside Agent Sessions View, create a branch or worktree for it first. Then everything on that branch is the agent's work, and undoing it never touches your own changes.
 
@@ -93,11 +93,11 @@ To compare the agent's uncommitted work with another branch, open the agent's wo
 
 ### Trace a single line
 
-Open a file's diff and click **Blame** to see which commit last changed each line, or **History** to see every commit that touched the file. This helps when an agent changed a file several times during one session.
+Open a file's diff and click **Blame** to see which commit last changed each line, or **History** to see every commit that touched the file. Blame and History help when an agent changed a file several times during one session.
 
 ### Get a summary with GitKraken AI
 
-Right-click the agent's branch and select **Explain Branch Changes** to get a plain-language summary of everything on the branch. To explain specific commits, select 1 or 2 commits or a contiguous range, and click **Explain** in the top-right corner of the Commit Panel.
+Right-click the agent's branch and select **Explain Branch Changes** to get a plain-language summary of everything on the branch. To explain specific commits, select 1 or 2 commits or a contiguous range. In the top-right corner of the Commit Panel, click **Explain commit** or **Explain commits**. If the AI button shows a **Recompose** label instead, open its menu and select the **Explain** option.
 
 A summary helps you decide where to look first, but it is not a review. Read the diff before you keep or undo anything. See [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/) for details.
 
@@ -105,7 +105,7 @@ A summary helps you decide where to look first, but it is not a review. Read the
 
 ## How to undo an agent's changes
 
-Pick the method based on where the changes are. The further the changes have traveled, from uncommitted to committed to pushed, the more careful the undo needs to be.
+Pick the method based on where the changes are. Committed changes need more care to undo than uncommitted ones, and pushed changes need the most.
 
 ### Undo uncommitted changes
 
@@ -113,9 +113,9 @@ To throw away everything the agent changed but did not commit:
 
 1. Open the agent's worktree.
 2. Select the agent's WIP node.
-3. Click the trash icon to discard all changes, or select specific files, right-click, and select **Discard selected**.
+3. Click the trash icon to discard all changes, or select specific files, right-click, and select **Discard *[number]* files**.
 
-To keep most of the agent's work and undo one block, open the file's diff in **Hunk** view and click **Revert** next to that hunk. GitKraken Desktop applies the opposite change to your working directory. Reverting a hunk changes uncommitted files only. It's different from **Revert Commit**, which adds a new commit that reverses an earlier one.
+To keep most of the agent's work and undo one block, open the file's diff in **Hunk** view and click **Revert Hunk** next to that hunk. GitKraken Desktop applies the opposite change to your working directory. Reverting a hunk changes uncommitted files only. It's different from **Revert commit**, which adds a new commit that reverses an earlier one.
 
 <figure>
   <img src="/wp-content/uploads/revert-hunk-2025@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="GitKraken Desktop diff view in Hunk mode with the Revert button next to a changed block.">
@@ -157,7 +157,7 @@ See [How to reset commits](/gitkraken-desktop/commits/#resetting-commits) for mo
 Once the agent's commits are on a shared branch, do not reset. Reverse them with new commits instead, so nobody else's history changes:
 
 1. Open the agent's worktree.
-2. Right-click the agent's newest commit in the Commit Graph and select **Revert Commit**. GitKraken Desktop creates a new commit that undoes it.
+2. Right-click the agent's newest commit in the Commit Graph and select **Revert commit**. GitKraken Desktop creates a new commit that undoes it.
 3. Repeat for each commit you want to reverse, from newest to oldest.
 4. Push the branch to share the revert commits.
 
@@ -194,11 +194,11 @@ No. Git does not record whether a person or an agent wrote a change. GitKraken D
 
 ### Which agents does this work with?
 
-Any agent that edits files in a Git repository. Agent Sessions View integrates with Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, and OpenCode, and you can run other agents in the [embedded terminal](/gitkraken-desktop/terminal/). Reviewing and undoing work the same way for all of them.
+Any agent that edits files in a Git repository. Agent Sessions View integrates with Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, and OpenCode, and you can run other agents in the [embedded terminal](/gitkraken-desktop/terminal/). You review and undo changes from all of them the same way.
 
 ### Should I use a hard reset to undo an agent?
 
-Only for commits that exist on your machine alone, and only after you've reviewed the diff. A hard reset also deletes every uncommitted change in the worktree. For anything already pushed, use **Revert Commit**.
+Only for commits that exist on your machine alone, and only after you've reviewed the diff. A hard reset also deletes every uncommitted change in the worktree. For anything already pushed, use **Revert commit**.
 
 ### Can I keep some of the agent's work and undo the rest?
 

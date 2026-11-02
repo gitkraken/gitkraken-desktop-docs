@@ -20,9 +20,9 @@ taxonomy:
 
 <kbd>Last updated: November 2026</kbd>
 
-Have you ever made a Git change and immediately wished you could take it back? Whether it’s an accidental commit, a discarded change, or a deleted branch, GitKraken Desktop lets you undo many actions quickly and safely.
+Use this page to undo or redo Git actions in GitKraken Desktop, such as an accidental commit, a discarded change, or a deleted branch.
 
-You can undo many common actions with a single click of the **Undo** button. If you undo something by mistake, you can also **redo** it just as easily.
+To undo a supported action, click the **Undo** button. If you undo something by mistake, you can **redo** it.
 
 **Requirements and limits**
 - Undo scope: The most recent supported action only
@@ -61,15 +61,15 @@ You can undo the following actions in GitKraken Desktop:
 + Delete branch
 + Remove remote
 + Reset branch to a commit
-+ Rebase operations, including Interactive Rebase, Multi-Commit Cherry Pick, dropping and rewording commits, and AI Commit Compose (Recompose with AI).
++ Rebase operations, including Interactive Rebase, Multi-Commit Cherry Pick, dropping and rewording commits, and AI Commit Compose (Recompose with AI)
 
 If you have uncommitted changes when you undo or redo a reset (such as dropping the latest commit) or a rebase, GitKraken Desktop asks you to stash them first. Click **Yes, Stash Changes** to stash your changes and continue, or **Cancel** to leave everything as it is.
 
-These undo actions can help you recover from common missteps without going to the command line. To reverse changes a coding agent made, see [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/).
+Undo lets you recover from common mistakes without using the command line. To reverse changes a coding agent made, see [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/).
 
 ## How redo works
 
-If you undo something accidentally, use the **Redo** function to restore it. Redo is available for any action you've just undone.
+If you undo something accidentally, use **Redo** to restore it. Redo is available for any action you've just undone.
 
 ## Keyboard shortcuts
 
@@ -94,5 +94,3 @@ If you undo something accidentally, use the **Redo** function to restore it. Red
         </tr>
     </tbody>
 </table>
-
-Use these shortcuts to move faster and stay in your flow while working in GitKraken Desktop.
