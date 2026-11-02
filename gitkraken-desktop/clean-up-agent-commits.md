@@ -1,6 +1,6 @@
 ---
 title: Clean Up AI Coding Agent Commits Before Review in GitKraken Desktop
-description: Turn an AI coding agent's one giant commit or pile of "fix stuff" commits into a clean history a reviewer can follow, using Commit Composer in GitKraken Desktop.
+description: Turn an AI coding agent's one giant commit, or a run of commits made in the order it worked, into a clean history a reviewer can follow, using Commit Composer in GitKraken Desktop.
 product: GitKraken Desktop
 feature: Clean Up Agent Commits
 content_type: how-to
@@ -19,7 +19,7 @@ taxonomy:
 ---
 <kbd>Last updated: October 2026</kbd>
 
-Use this page when an AI coding agent leaves you with one giant commit, or with a long run of small "fix stuff" commits, and you need a history a reviewer can follow. Commit Composer in GitKraken Desktop groups the agent's changes into logical commits with clear messages. It only reorganizes the changes and never changes the code itself. You review and adjust the result before anything on your branch changes.
+Use this page when an AI coding agent leaves you with one giant commit, or with a run of small commits in the order it worked rather than grouped by change, and you need a history a reviewer can follow. Commit Composer in GitKraken Desktop groups the agent's changes into logical commits with clear messages. It only reorganizes the changes and never changes the code itself. You review and adjust the result before anything on your branch changes.
 
 **Requirements and limits**
 - Scope: Regrouping an agent's uncommitted changes or existing commits into a reviewable history before you open a pull request
