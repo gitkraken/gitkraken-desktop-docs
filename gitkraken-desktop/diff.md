@@ -107,7 +107,7 @@ Selecting 2 commits shows the differences between them.
 Select consecutive commits in the graph using <kbd>Shift</kbd> or <kbd>Cmd/Ctrl</kbd> + click to show their combined changes in the Commit Panel, titled **Viewing diff of N commits**. You can include the WIP if your selection reaches the latest commit. If you select more than 2 nonconsecutive items, GitKraken Desktop explains why it cannot show a combined diff, and the AI actions for the selection are hidden.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/combined-diff-2025.png' class="help-center-img img-bordered" alt="The Commit Panel titled Viewing diff of 3 commits, listing the 3 selected commits and the 5 files they changed: 2 modified and 3 added.">
+  <img src='/wp-content/uploads/combined-diff-2025-v2@2x.png' class="help-center-img img-bordered" alt="The Commit Panel titled &quot;Viewing diff of 3 commits&quot;, listing three commits by Alex Lee with their dates and short SHAs, then 2 modified and 3 added files: docs/CONTRIBUTING.md, three files under docs/onboarding/ and README.md.">
   <figcaption style="text-align: center; color: #888;">Combined diff across multiple selected commits.</figcaption>
 </figure>
 

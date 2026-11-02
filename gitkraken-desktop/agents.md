@@ -196,7 +196,7 @@ To define setup commands for the current repository, go to <kbd>Preferences > Re
 The same **Agents** pane has the **Show worktree WIP nodes in the graph** checkbox, which is selected by default. While it is selected, the Commit Graph shows a WIP row for every other worktree that has uncommitted changes or an active agent session. Rows with an agent show the agent's logo and current status. Select a row and click **Open Worktree**, or double-click the row, to open that worktree. Unlike the setup commands, this checkbox applies to every repository you open with your current profile.
 
 <figure>
-  <img src='/wp-content/uploads/gkd-agents-setup-commands-preferences-20260413.png' class="help-center-img img-bordered" alt="GitKraken Desktop repo-specific Preferences with Agents selected, showing the Show worktree WIP nodes in the graph checkbox and the Setup commands box containing npm install and pnpm build.">
+  <img src='/wp-content/uploads/gkd-agents-setup-commands-preferences-20260413-v2@2x.png' class="help-center-img img-bordered" alt="GitKraken Desktop repo-specific Preferences with Agents selected, showing the Show worktree WIP nodes in the graph checkbox and the Setup commands box containing npm install and pnpm build.">
   <figcaption style="text-align: center; color: #888">The Agents pane in Repo-Specific Preferences, with the worktree WIP nodes checkbox and setup commands.</figcaption>
 </figure>
 

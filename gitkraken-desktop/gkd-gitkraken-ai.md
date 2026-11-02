@@ -173,7 +173,7 @@ GitKraken AI explains in plain language what changed in the commits you select.
 2. Click **Explain commits** (or **Explain commit** for a single commit) in the top-right corner of the Commit Panel.
 
 <figure>
-<img src="/wp-content/uploads/gkd-11-AI-Explain.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="The Commit Panel with 3 consecutive commits selected, showing Viewing diff of 3 commits and the Explain commits button highlighted." />
+<img src="/wp-content/uploads/gkd-ai-explain-commits-01-v2@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="The Commit Panel in GitKraken Desktop with three consecutive commits selected: the header reads 3 commits selected with an Explain commits button, followed by Viewing diff of 3 commits and the three commits." />
 <figcaption style="text-align: center; color: #888">Use the Explain button to trigger AI-generated summaries</figcaption>
 </figure>
 
@@ -365,14 +365,14 @@ By default, GitKraken AI uses **[Google Gemini Models](https://deepmind.google/m
 You can pick the model for each AI feature in <kbd>Preferences > GitKraken AI</kbd>. With the GitKraken-hosted provider, each model in the dropdown shows its AI credit multiplier after its name, such as **4.5x**. Hover over the multiplier to see what it means, for example **Uses 4.5x the credits of a baseline model**. A model with a higher multiplier uses your weekly AI credits faster. Models you use with your own API key show no multiplier.
 
 <figure>
-<img src="/wp-content/uploads/gkd-ai-model-credit-multiplier.png" style="max-width: 50%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="The model dropdown for Commit Message Generation in Preferences > GitKraken AI, listing GitKraken-hosted models with their AI credit multiplier after each name, such as 0.8x for Gemini 2.5 Flash and 4.5x for Claude Sonnet 4.5." />
+<img src="/wp-content/uploads/gkd-ai-model-credit-multiplier-01-v2@2x.png" style="max-width: 50%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="The model dropdown for Commit Message Generation in Preferences > GitKraken AI, listing GitKraken-hosted models with their AI credit multiplier after each name, such as 0.8x for Gemini 2.5 Flash and 4.5x for Claude Sonnet 4.5." />
 <figcaption style="text-align: center; color: #888">Each GitKraken-hosted model shows its AI credit multiplier</figcaption>
 </figure>
 
 To use your own API key with **OpenAI**, **Azure**, **Anthropic**, **Google Gemini**, or a **Custom URL**, configure it in <kbd>Preferences > GitKraken AI</kbd>.
 
 <figure>
-<img src="/wp-content/uploads/gkd-11-Preferences-GitKraken-AI.png" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="GitKraken Desktop Preferences with GitKraken AI selected: Enable GitKraken AI and Use your own API Key to make AI requests are checked, Provider is OpenAI with Provider API Key and Test Connection, and the Commit Message Generation model is Use Recommended (GPT-5.6 Terra)." />
+<img src="/wp-content/uploads/gkd-11-preferences-gitkraken-ai-01-v2@2x.png" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="GitKraken Desktop Preferences with GitKraken AI selected. Enable GitKraken AI and Use your own API Key to make AI requests are checked, Provider is set to OpenAI with optional Endpoint URL and Provider API Key fields and a Test Connection button, and the Commit Message Generation model is Use Recommended (GPT-5.6 Terra)." />
 <figcaption style="text-align: center; color: #888">Configure GitKraken AI providers in Preferences</figcaption>
 </figure>
 
@@ -465,7 +465,7 @@ If you have a paid plan and have not used GitKraken AI for 14 days, GitKraken De
 To close the dialog without changing anything, click **Decide Later**. You can change this setting at any time in <kbd>Preferences > GitKraken AI</kbd>.
 
 <figure>
-<img src="/wp-content/uploads/gkd-ai-control-reminder.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="The You're in control of GitKraken AI dialog, noting that GitKraken AI has not been used in the last 14 days, with the options Keep GitKraken AI On (Current setting) and Turn GitKraken AI Off, and the Decide Later and Keep AI On buttons." />
+<img src="/wp-content/uploads/gkd-ai-control-reminder-01-v2@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="The You're in control of GitKraken AI dialog in GitKraken Desktop, noting that GitKraken AI features have not been used in the last 14 days, with two options: Keep GitKraken AI On (Current setting), listing its benefits, and Turn GitKraken AI Off, listing what turning it off does, plus Decide Later and Keep AI On buttons." />
 <figcaption style="text-align: center; color: #888">Keep GitKraken AI on or turn it off</figcaption>
 </figure>
 ***

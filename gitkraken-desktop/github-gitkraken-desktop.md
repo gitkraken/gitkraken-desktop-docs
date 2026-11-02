@@ -93,7 +93,7 @@ To sign in with your GitHub account:
 The sign-in completes automatically and connects your GitHub account to GitKraken Desktop.
 
 <figure>
-    <img alt="The Sign In to GitKraken dialog in GitKraken Desktop, reading Sign in from your browser to continue, with links to open it manually or copy the URL if the browser did not open, and a Manually enter authentication code link." src='/wp-content/uploads/sign-in-github-2025.png' class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="The Sign In to GitKraken dialog in GitKraken Desktop, reading Sign in from your browser to continue, with links to open it manually or copy the URL if the browser did not open, and a Manually enter authentication code link." src='/wp-content/uploads/sign-in-github-2025-v2@2x.png' class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">The Sign In to GitKraken dialog</figcaption>
 </figure>
 
@@ -116,7 +116,7 @@ To connect your GitHub account manually, first sign in to your GitKraken account
 3. Click <kbd>Connect to GitHub</kbd>. GitKraken Desktop opens your browser to authenticate with GitHub.
 
 <figure>
-    <img alt="Preferences > Integrations > GitHub in GitKraken Desktop: the GitHub card reads Not Connected with a Connect to GitHub button, and a Manage Integrations button sits at the top right of the pane." src="/wp-content/uploads/connect-github-2025@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="Preferences > Integrations > GitHub in GitKraken Desktop: the GitHub card reads Not Connected with a Connect to GitHub button, and a Manage Integrations button sits at the top right of the pane." src="/wp-content/uploads/connect-github-2025-v2@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">GitHub integration screen</figcaption>
 </figure>
 

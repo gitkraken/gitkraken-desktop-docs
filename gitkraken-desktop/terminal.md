@@ -101,7 +101,7 @@ Open <kbd><strong>Preferences > In-App Terminal</strong></kbd> to change your te
 **Dim terminal when unfocused** is on by default: the terminal output fades while you work elsewhere in GitKraken Desktop and returns to full brightness when you click back into the terminal. The panel header and tabs stay at full brightness. Clear the checkbox to keep the terminal output at full brightness at all times.
 
 <figure>
-  <img src="/wp-content/uploads/terminal-preferences-2025@2x.png" 
+  <img src="/wp-content/uploads/terminal-preferences-2025-v2@2x.png" 
        class="help-center-img img-bordered" 
        alt="GitKraken Desktop Preferences with In-App Terminal selected, showing Font, Font Size, Line Height, Cursor Style, the Dim terminal when unfocused checkbox, and the Autocomplete options.">
   <figcaption style="text-align:center; color:#888">Access terminal settings under Preferences</figcaption>

@@ -87,7 +87,7 @@ To authenticate with Azure DevOps:
 2. Choose **Azure DevOps** and click <button class='button button--success button--ui button--nolink'>Connect to Azure DevOps</button>.
 
 <figure>
-  <img alt="Preferences > Integrations > Azure DevOps: the Azure DevOps card reads Not Connected with a Connect to Azure DevOps button, Manage Integrations is at the top right, and below or are the Host Domain and Personal Access Token fields with a Connect button." src="/wp-content/uploads/connect-azure-devops-2025@2x.png" class="help-center-img img-bordered">
+  <img alt="Preferences > Integrations > Azure DevOps in GitKraken Desktop: the Azure DevOps card reads Not Connected with a Connect to Azure DevOps button, a Manage Integrations button sits at the top right, and below &quot;or&quot; are Host Domain and Personal Access Token fields with a Connect button." src="/wp-content/uploads/connect-azure-devops-2025-v2@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Connecting to Azure DevOps from GitKraken</figcaption>
 </figure>
 

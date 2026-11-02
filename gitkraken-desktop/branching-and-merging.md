@@ -152,7 +152,7 @@ To pin a branch:
 While a branch is pinned, a pin button appears in the **Graph** column header. Click it to jump to and select the pinned branch's latest commit. Hover over the button to see the **Jump to pinned branch** tooltip.
 
 <figure>
-  <img src="/wp-content/uploads/gkd-graph-jump-to-pinned-branch.png" class="help-center-img img-bordered" alt="Top of the GitKraken Desktop Commit Graph with feature/api pinned to the left and the pin button in the Graph column header showing the Jump to pinned branch tooltip.">
+  <img src="/wp-content/uploads/gkd-graph-jump-to-pinned-branch-01-v2@2x.png" class="help-center-img img-bordered" alt="The top of the Commit Graph with a branch pinned to the left: its label, feature/api…, carries a pin icon and its line is the leftmost in the graph. The highlighted thumbtack button in the GRAPH column header shows the tooltip &quot;Jump to pinned branch&quot;.">
   <figcaption style="text-align:center; color:#888">Jump to the pinned branch from the Graph column header</figcaption>
 </figure>
 

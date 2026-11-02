@@ -80,7 +80,7 @@ You can set up the integration from the ISSUES section in the Left Panel or from
 GitHub connects through your GitKraken account, so sign in to GitKraken Desktop first. In <kbd>Preferences > Integrations</kbd>, select <strong>GitHub</strong> and click <strong>Connect to GitHub</strong>.
 
 <figure>
-  <img src="/wp-content/uploads/connect-github-2025@2x.png" class="help-center-img img-bordered" alt="Preferences > Integrations > GitHub: the GitHub card reads Not Connected with a Connect to GitHub button, and Manage Integrations is at the top right of the pane.">
+  <img src="/wp-content/uploads/connect-github-2025-v2@2x.png" class="help-center-img img-bordered" alt="Preferences > Integrations > GitHub in GitKraken Desktop: the GitHub card reads Not Connected with a Connect to GitHub button, and a Manage Integrations button sits at the top right of the pane.">
   <figcaption style="text-align: center; color: #888">Connect to GitHub prompt.</figcaption>
 </figure>
 

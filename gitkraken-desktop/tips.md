@@ -112,7 +112,7 @@ Before GitKraken Desktop applies the commits, you can reorder, squash, reword, o
 Connect GitKraken Desktop to [GitHub, GitLab, Bitbucket, and Azure DevOps](/gitkraken-desktop/integrations/) to work with your hosted repositories and pull requests.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/connect-azure-devops-2025@2x.png" class="help-center-img img-bordered" alt="GitKraken Desktop integration settings for Azure DevOps.">
+  <img src="/wp-content/uploads/connect-azure-devops-2025-v2@2x.png" class="help-center-img img-bordered" alt="Preferences > Integrations > Azure DevOps in GitKraken Desktop: the Azure DevOps card reads Not Connected with a Connect to Azure DevOps button, a Manage Integrations button sits at the top right, and below &quot;or&quot; are Host Domain and Personal Access Token fields with a Connect button.">
   <figcaption style="text-align: center; color: #888;">Connect your Git provider to speed up repository access.</figcaption>
 </figure>
 

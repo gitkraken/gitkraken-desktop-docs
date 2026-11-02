@@ -151,7 +151,7 @@ Launch GitKraken Desktop from a terminal to check for missing dependencies. See 
 Make sure you are signed in with the email address associated with your subscription. Click your profile icon and check the email address under **Account**. To use a different account, click **Sign Out**, then sign in with the right account.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/GKD-Common-Issue-1.png" class="help-center-img img-bordered" alt="The GitKraken Desktop profile menu, signed in, with the account name and email address under Account, followed by Manage account and Sign Out.">
+  <img src="/wp-content/uploads/gkd-profile-menu-sign-out-01-v2@2x.png" class="help-center-img img-bordered" alt="The GitKraken Desktop profile and account menu, signed in: Current profile with the profile, AI usage, commit signature and Manage profiles, then Account with the account name and email, Manage account, and Sign Out.">
   <figcaption style="text-align: center; color: #888;">Check your account and sign out from the profile menu.</figcaption>
 </figure>
 

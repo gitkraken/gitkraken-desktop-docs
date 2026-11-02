@@ -78,7 +78,7 @@ The GitLab and GitLab Issues integrations share the same connection. Set up the 
 GitLab connects through your GitKraken account, so sign in to GitKraken Desktop first. In <kbd>Preferences > Integrations</kbd>, select <strong>GitLab</strong> and click <strong>Connect to GitLab</strong>.
 
 <figure>
-  <img src="/wp-content/uploads/connect-gitlab-2025@2x.png" class="help-center-img img-bordered" alt="Preferences > Integrations > GitLab: the GitLab card reads Not Connected with a Connect to GitLab button, and Manage Integrations is at the top right of the pane.">
+  <img src="/wp-content/uploads/connect-gitlab-2025-v2@2x.png" class="help-center-img img-bordered" alt="Preferences > Integrations > GitLab in GitKraken Desktop: the GitLab card reads Not Connected with a Connect to GitLab button, and a Manage Integrations button sits at the top right of the pane.">
   <figcaption style="text-align: center; color: #888">Connect to GitLab prompt.</figcaption>
 </figure>
 

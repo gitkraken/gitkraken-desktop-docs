@@ -85,7 +85,7 @@ Selecting another worktree's WIP row does not open its files in the Commit Panel
 To compare 2 specific commits, hold <kbd>Cmd</kbd> (Mac) or <kbd>Ctrl</kbd> (Windows/Linux) and click each one. A combined diff of 3 or more items needs a contiguous range. For any other selection, the Commit Panel explains that a combined diff is not shown.
 
 <figure>
-  <img src="/wp-content/uploads/combined-diff-2025.png" class="help-center-img img-bordered" alt="The Commit Panel titled Viewing diff of 3 commits, listing three selected commits and the five files they changed.">
+  <img src="/wp-content/uploads/combined-diff-2025-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Panel titled &quot;Viewing diff of 3 commits&quot;, listing three commits by Alex Lee with their dates and short SHAs, then 2 modified and 3 added files: docs/CONTRIBUTING.md, three files under docs/onboarding/ and README.md.">
   <figcaption style="text-align:center; color:#888">Select a range of commits to review an agent's work as one combined diff.</figcaption>
 </figure>
 

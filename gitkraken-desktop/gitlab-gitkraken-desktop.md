@@ -85,7 +85,7 @@ To authenticate with GitLab:
 2. Select **GitLab** and click <button class='button button--success button--ui button--nolink'>Connect to GitLab</button>.
 
 <figure>
-  <img alt="Preferences > Integrations > GitLab: the GitLab card reads Not Connected with a Connect to GitLab button, and Manage Integrations is at the top right of the pane." src="/wp-content/uploads/connect-gitlab-2025@2x.png" class="help-center-img img-bordered">
+  <img alt="Preferences > Integrations > GitLab in GitKraken Desktop: the GitLab card reads Not Connected with a Connect to GitLab button, and a Manage Integrations button sits at the top right of the pane." src="/wp-content/uploads/connect-gitlab-2025-v2@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Click to authenticate GitLab account</figcaption>
 </figure>
 
