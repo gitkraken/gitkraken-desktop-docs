@@ -22,7 +22,10 @@ taxonomy:
 
 GitKraken Desktop is a visual Git client for Windows, macOS, and Linux. You can use it for everyday Git work and to run coding agents on their own branches and worktrees, where their changes show up in the Commit Graph next to yours.
 
-Use this page as the GitKraken Desktop Help Center entry point when you need to find installation guidance, interface walkthroughs, coding agent workflows, worktrees, terminal usage, integrations, release notes, or support resources. It is the best cold-start page for agents and users who need a routing layer into the rest of the documentation set.
+<div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 32px; margin-bottom:24px;">
+  <p style="flex:1 1 300px; margin:0;">Use this page as the GitKraken Desktop Help Center entry point when you need to find installation guidance, interface walkthroughs, coding agent workflows, worktrees, terminal usage, integrations, release notes, or support resources. It is the best cold-start page for agents and users who need a routing layer into the rest of the documentation set.</p>
+  <img src="/wp-content/uploads/GitKraken_Keif_evergreen-feature.png" alt="" width="703" height="750" loading="lazy" style="flex:0 0 auto; max-height:200px; width:auto; height:auto; max-width:100%; margin:0 auto;">
+</div>
 
 **Requirements and limits**
 - This page is a routing guide to the GitKraken Desktop Help Center, not a single-feature reference page.
