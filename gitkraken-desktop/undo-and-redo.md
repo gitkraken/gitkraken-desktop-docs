@@ -1,6 +1,6 @@
 ---
 title: How to Undo and Redo Git Actions in GitKraken Desktop
-description: Learn how to quickly undo or redo Git actions like commits, discards, and checkouts in GitKraken Desktop using buttons, shortcuts, or the Command Palette.
+description: Undo or redo Git actions like commits, discards, and checkouts in GitKraken Desktop, including cleanup after a coding agent, with buttons or shortcuts.
 product: GitKraken Desktop
 feature: Undo and Redo
 content_type: how-to
@@ -18,7 +18,7 @@ taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 Have you ever made a Git change and immediately wished you could take it back? Whether it’s an accidental commit, a discarded change, or a deleted branch, GitKraken Desktop lets you undo many actions quickly and safely.
 
@@ -63,7 +63,7 @@ You can undo the following actions in GitKraken Desktop:
 + Reset branch to a commit
 + Rebase operations, including Interactive Rebase, Multi-Commit Cherry Pick, dropping and rewording commits, and AI Commit Compose (Recompose with AI).
 
-These undo actions can help you recover from common missteps without going to the command line.
+These undo actions can help you recover from common missteps without going to the command line. To reverse changes a coding agent made, see [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/).
 
 ## How redo works
 

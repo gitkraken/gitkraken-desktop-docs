@@ -17,7 +17,7 @@ tags: [branches, merge, rebase, conflicts, squash]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 Use this page to create, rename, delete, merge, and rebase branches in GitKraken Desktop. It also covers merge conflict resolution, external merge tools, and the difference between merge-based and rebase-based workflows so you can choose the right history strategy for your branch.
 
@@ -216,7 +216,7 @@ After merging with squash enabled, review the staged changes in the Commit Panel
 
 ### How to resolve conflicts in the Merge Conflict Editor
 
-When conflicts occur, the Commit Panel shows the conflicted files. Click a file to open the Merge Tool.
+When conflicts occur, the Commit Panel shows the conflicted files. Click a file to open the Merge Tool. If the conflicts are between branches from two coding agents, see [Resolve Merge Conflicts Between AI Agent Branches](/gitkraken-desktop/agent-merge-conflicts/).
 
 <figure>
   <img src="/wp-content/uploads/merge-conflict@2x.png" class="help-center-img img-bordered" alt="GitKraken merge conflict interface showing conflicting file test.txt when merging origin/test-merge-pr into multi-conflict-left">

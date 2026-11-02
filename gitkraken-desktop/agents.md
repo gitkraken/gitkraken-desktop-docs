@@ -1,6 +1,6 @@
 ---
 title: Coding Agents in GitKraken Desktop
-description: Use Agent Sessions View in GitKraken Desktop to configure coding agent CLIs, create agent sessions, monitor progress, and manage parallel worktrees.
+description: Run Claude Code, Codex CLI, and other coding agents in parallel worktrees with GitKraken Desktop's Agent Sessions View, and approve their permission requests.
 product: GitKraken Desktop
 feature: Agents
 content_type: how-to
@@ -18,6 +18,8 @@ taxonomy:
     category: gitkraken-desktop
 ---
 <kbd>Last updated: October 2026</kbd>
+
+In GitKraken Desktop, each coding agent session runs on its own branch in its own Git worktree. The agent's changes stay separate from yours and show up in the Commit Graph like any other branch, where you can review them and undo them.
 
 <div style="display:flex; flex-direction:row-reverse; flex-wrap:wrap; align-items:center; gap:8px 32px; margin-bottom:24px;">
   <p style="flex:1 1 300px; margin:0;">Use this page to learn how coding agents work in GitKraken Desktop and how to use <strong>Agent Sessions View</strong> to create, monitor, and manage coding agent sessions. Read this page if you want to use external coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, or OpenCode from inside GitKraken Desktop.</p>
@@ -292,9 +294,9 @@ Each card in Agent Sessions View represents one worktree and one coding agent se
 | **WIP change summary** | The count of uncommitted file changes |
 | **Ahead / behind** | Commit counts relative to the remote |
 | **Agent status** | Whether the agent is running, waiting for input, or done |
-| **Merged PR pill** | Whether the branch has an associated merged GitHub pull request |
+| **Merged PR pill** | Whether the branch has an associated merged GitHub pull request or GitLab merge request |
 
-The status bar at the bottom of each card shows the current session state. Claude Code, Codex CLI, Copilot CLI, and OpenCode can report live status when you install their status integrations. If the branch has a merged GitHub pull request, a merged PR pill appears on the card.
+The status bar at the bottom of each card shows the current session state. Claude Code, Codex CLI, Copilot CLI, and OpenCode can report live status when you install their status integrations. If the branch has a merged GitHub pull request or GitLab merge request, a merged PR pill appears on the card.
 
 When you start a session, the card shows a **Running** status. If you install a status integration for a supported CLI, the card can show more specific status information.
 
@@ -317,9 +319,11 @@ If you remove a worktree from the card menu, the card shows visual feedback whil
 
 You can keep working in another worktree while monitoring these cards. When a session finishes, switch to that worktree to review the results.
 
-### How to respond to agent permission requests
+<a id="how-to-respond-to-agent-permission-requests"></a>
 
-When Claude Code, Codex CLI, or Copilot CLI requests approval for an action, you can select **Allow** or **Deny** on its card in Agent Sessions View without switching to the session. For other prompts, open the worktree and respond in the agent's terminal.
+### How to approve Claude Code, Codex CLI, and Copilot CLI permission requests
+
+When Claude Code, Codex CLI, or Copilot CLI requests approval for an action, you can select **Allow** or **Deny** on its card in Agent Sessions View without switching to the session. To see the exact command the agent wants to run, click the caret next to **Allow** and **Deny**. For other prompts, open the worktree and respond in the agent's terminal.
 
 <figure>
   <img src='/wp-content/uploads/allow-deny.png' class="help-center-img img-bordered" alt="Agent Sessions View showing Agent permission request">
@@ -367,7 +371,7 @@ Each worktree card in Agent Sessions View has a three-dot action menu so you can
 | Remove the session worktree | **Remove this worktree** | Deletes the worktree and its working directory |
 | Remove the worktree and delete its branch in one step | **Remove worktree and delete branch** | Deletes the worktree and its associated branch |
 
-Use these actions after the agent finishes so you can review changes, push the branch, create a pull request, or clean up the worktree.
+Use these actions after the agent finishes so you can review changes, push the branch, create a pull request, or clean up the worktree. For what each removal option deletes, see [Clean Up AI Coding Agent Worktrees and Branches](/gitkraken-desktop/clean-up-agent-worktrees/). To see exactly what the agent changed and undo any of it, see [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/).
 
 ***
 
@@ -438,6 +442,14 @@ Use the plug icon in Agent Sessions View or open *Preferences > External Tools* 
 ### Can I run multiple coding agent sessions at the same time?
 
 Yes. Each coding agent session runs in its own worktree and working directory, so you can run parallel sessions in the same repository.
+
+### Can I approve Claude Code permission prompts without leaving my Git history?
+
+Yes. Select **Allow** or **Deny** on the agent's card in Agent Sessions View, next to your Commit Graph, without switching to the agent's terminal. This also works for Codex CLI and Copilot CLI. See [How to approve permission requests](#how-to-respond-to-agent-permission-requests).
+
+### How do I review, clean up, and combine work from several agents?
+
+See [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/), [Clean Up AI Coding Agent Commits Before Review](/gitkraken-desktop/clean-up-agent-commits/), and [Resolve Merge Conflicts Between AI Agent Branches](/gitkraken-desktop/agent-merge-conflicts/). To remove the worktrees and branches afterward, see [Clean Up AI Coding Agent Worktrees and Branches](/gitkraken-desktop/clean-up-agent-worktrees/).
 
 ### What happens when I start a coding agent session?
 

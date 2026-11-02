@@ -1,6 +1,6 @@
 ---
 title: GitKraken Desktop Interface Guide | Toolbar, Panels, and Graph
-description: Learn how to navigate the GitKraken Desktop interface. Explore the toolbar, Left Panel, Commit Panel, and Commit Graph with visual guides and tips.
+description: Learn the GitKraken Desktop interface: the toolbar, Left Panel, Commit Panel, and Commit Graph, where your work and coding agent work appear together.
 product: GitKraken Desktop
 feature: Interface
 content_type: overview
@@ -17,7 +17,7 @@ tags: [interface, toolbar, left-panel, commit-graph, commit-panel, status-bar]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: May 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 Use this page to understand the main areas of the GitKraken Desktop interface so you can navigate repository actions, history, staging, coding agent workflows, and collaboration features more efficiently. It covers the toolbar, Left Panel, Commit Panel, Commit Graph, and tabs, with links to deeper task-specific guides when you need more than a UI overview.
 
@@ -192,6 +192,8 @@ To explore more about staging and committing, visit [committing work](/working-w
 The Commit Graph is a visual representation of your repo’s Directed Acyclic Graph (DAG), showing each commit and its relationships.
 
 Each row is a commit, with the most recent at the top. Columns represent branches; lines indicate merges and relationships.
+
+Work from coding agents appears in the Commit Graph the same way. Each agent session runs on its own branch in its own worktree, with its own WIP node for pending changes. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/graph-elements.png' class="help-center-img img-bordered" alt="Legend showing GitKraken Desktop graph elements including Commit, Merge Commit, WIP, Branches, and Stash Node">
