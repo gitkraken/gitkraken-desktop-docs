@@ -1,6 +1,6 @@
 ---
 title: GitKraken Desktop Interface Guide | Toolbar, Panels, and Graph
-description: Learn the GitKraken Desktop interface: the toolbar, Left Panel, Commit Panel, and Commit Graph, where your work and coding agent work appear together.
+description: Learn the GitKraken Desktop interface, including the toolbar, Left Panel, Commit Panel, and Commit Graph, where your work and coding agent work appear together.
 product: GitKraken Desktop
 feature: Interface
 content_type: overview
