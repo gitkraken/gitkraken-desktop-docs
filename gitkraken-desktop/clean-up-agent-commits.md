@@ -1,6 +1,6 @@
 ---
 title: Clean Up AI Coding Agent Commits Before Review in GitKraken Desktop
-description: Turn an AI coding agent's one giant commit or pile of "fix stuff" commits into a clean history a reviewer can follow, using Commit Composer in GitKraken Desktop.
+description: Turn an AI coding agent's one giant commit, or a run of commits made in the order it worked, into a clean history a reviewer can follow, using Commit Composer in GitKraken Desktop.
 product: GitKraken Desktop
 feature: Clean Up Agent Commits
 content_type: how-to
@@ -19,11 +19,12 @@ taxonomy:
 ---
 <kbd>Last updated: November 2026</kbd>
 
-Use this page when an AI coding agent leaves you with one giant commit, or with a long run of small "fix stuff" commits, and you need a history a reviewer can follow. Commit Composer in GitKraken Desktop groups the agent's changes into logical commits with clear messages. It only reorganizes the changes and never changes the code itself. You review and adjust the result before anything on your branch changes.
+Use this page when an AI coding agent leaves you with one giant commit, or with a run of small commits in the order it worked rather than grouped by change, and you need a history a reviewer can follow. Commit Composer in GitKraken Desktop groups the agent's changes into logical commits with clear messages. It only reorganizes the changes and never changes the code itself. You review and adjust the result before anything on your branch changes.
 
 **Requirements and limits**
 - Scope: Regrouping an agent's uncommitted changes or existing commits into a reviewable history before you open a pull request
 - Prerequisite: A [paid GitKraken subscription](https://www.gitkraken.com/pricing?source=help_center&product=gitkraken) with GitKraken AI enabled. On-premises deployments need a custom AI endpoint (see [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/)).
+- AI usage: Commit Composer uses your GitKraken AI credits, or your own AI provider if you set one up.
 - Limits: Commit Composer is in Preview.
 - Limits: To recompose existing commits, they must be contiguous, on the current branch, and have no merge commits between the branch head and the oldest selected commit.
 - Limits: Recomposing commits you already pushed rewrites shared history.
@@ -44,6 +45,14 @@ In every case, GitKraken Desktop shows the proposed commits first. Your branch d
 
 ***
 
+## Which AI credits Commit Composer uses
+
+Commit Composer runs on GitKraken AI. By default, it uses your GitKraken AI credits. If you add your own provider and API key, such as OpenAI, Anthropic, Azure, Google Gemini, or a custom URL, Commit Composer uses that provider instead.
+
+You can choose which set of credits a cleanup spends. For example, if your agent work is already running through one provider, you can compose commits with the other. To set your provider, go to <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> GitKraken AI</em>. See [How to use your own AI provider key](/gitkraken-desktop/gkd-gitkraken-ai/) for setup.
+
+***
+
 ## How to split an agent's uncommitted changes into commits
 
 Use this when the agent changed files but did not commit anything.
@@ -51,7 +60,7 @@ Use this when the agent changed files but did not commit anything.
 1. Open the agent's worktree, then select its WIP node and stage the changes you want to commit. Selecting the agent's WIP row from another worktree does not open its files in the Commit Panel. Click **Open Worktree** on that row first.
 2. In the Commit Panel, click **Compose commits with AI**.
 3. Review the proposed commits. Reorder them, squash related ones together, or edit the messages.
-4. Click **Create Commits** to apply them, **Reset** to undo your edits to the proposal, or **Cancel** to stop without changing anything.
+4. Click **Create Commits** to apply them. If you want to start over, click **Reset** to go back to the proposal as it was before your edits. To leave without changing anything, click **Cancel**.
 
 <figure>
   <img src="/wp-content/uploads/compose-WIP@2x.png" class="help-center-img img-bordered" alt="Selected WIP node in GitKraken Desktop with an arrow pointing to the Compose commits with AI button in the Commit Panel.">
@@ -67,7 +76,7 @@ Use this when the agent committed everything at once, or in many small steps tha
 1. In the Commit Graph, hold <kbd>Shift</kbd> and click the agent's first and last commits to select the range.
 2. Right-click the selection and select **Recompose *[number]* commits with AI (Preview)**, or click **Recompose commits with AI** in the Commit Panel.
 3. Review the proposed structure. Reorder, squash, or edit messages until each commit does one thing and its message says what and why.
-4. Click **Create Commits**.
+4. Click **Create Commits**. You can also click **Reset** to start over from the original proposal, or **Cancel** to leave without changing anything.
 
 <figure>
   <img src="/wp-content/uploads/compose-existing-commits@2x.png" class="help-center-img img-bordered" alt="Commit Graph context menu in GitKraken Desktop with the option to recompose a range of commits with AI.">
@@ -90,7 +99,12 @@ Commit Composer does not change any code, so the final state of your branch is t
 1. **Read each new commit.** Click each commit and read its diff and message. A reviewer should be able to follow the change one commit at a time.
 2. **Test each commit if your team needs every commit to build.** The newest commit has the same code as before, so this check is about the commits in between. Right-click each new commit, select **Checkout this commit**, and run your tests from the [embedded terminal](/gitkraken-desktop/terminal/). Check out the agent's branch again when you're done. Your CI may also run this check for you.
 
-If you do not like the result, click **Undo** in the toolbar right away. Undo reverses a Compose or Recompose action as long as you have not pushed the branch.
+If you do not like the result, click **Undo** in the toolbar right away. Undo reverses a Compose or Recompose action as long as you have not pushed the branch. The Undo tooltip lists the action as a rebase, because that is how GitKraken Desktop applies the new commits.
+
+<figure>
+  <img src="/wp-content/uploads/gkd-commit-composer-undo.png" class="help-center-img img-bordered" alt="GitKraken Desktop toolbar with the Undo button hovered after composing commits with AI. The tooltip reads Undo Rebase followed by a commit SHA.">
+  <figcaption style="text-align:center; color:#888">Click Undo to reverse a commit composition. The tooltip lists it as a rebase.</figcaption>
+</figure>
 
 ***
 
