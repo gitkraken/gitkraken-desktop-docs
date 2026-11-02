@@ -11,14 +11,14 @@ git_hosts: [GitHub]
 integrations: [GitHub]
 hosted_variant: cloud
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [github, issues, filters, branching, integration]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to connect GitKraken Desktop to GitHub Issues so you can preview, create, edit, filter, and branch from issues alongside your repository work. GitHub Issues uses the same GitHub integration connection, and Community users are limited to public repositories.
 
@@ -67,7 +67,7 @@ To open an issue in GitHub or copy its link, use the ellipsis menu or the extern
 The GitHub and GitHub Issues integrations share the same connection.
 
 <div class='callout callout--basic'>
-    <p><strong>Use GitHub Issues in GitKraken Desktop when:</strong> you want issue triage and branch creation directly beside your Git workflow. <strong>Don't use the in-app view alone when:</strong> you need broader GitHub project or issue-management features outside the issue flows covered here.</p>
+    <p><strong>Use GitHub Issues in GitKraken Desktop when:</strong> you want issue triage and branch creation directly beside your Git workflow. <strong>Do not use the in-app view alone when:</strong> you need broader GitHub project or issue-management features outside the issue flows covered here.</p>
 </div>
 
 You can set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
@@ -77,16 +77,16 @@ You can set up the integration from the ISSUES section in the Left Panel or from
   <figcaption style="text-align: center; color: #888">Connect GitHub Issues from Preferences.</figcaption>
 </figure>
 
-From the Integrations window, select <em>GitHub.com</em> and click <strong>Connect to GitHub</strong>.
+GitHub connects through your GitKraken account, so sign in to GitKraken Desktop first. From the Integrations window, select <strong>GitHub</strong> and click <strong>Connect to GitHub</strong>.
 
 <figure>
-  <img src="/wp-content/uploads/connect-github-2025@2x.png" class="help-center-img img-bordered" alt="Connect to GitHub prompt">
+  <img src="/wp-content/uploads/connect-github-2025@2x.png" class="help-center-img img-bordered" alt="Preferences > Integrations > GitHub: the GitHub card reads Not Connected with a Connect to GitHub button, and Manage Integrations is at the top right of the pane.">
   <figcaption style="text-align: center; color: #888">Connect to GitHub prompt.</figcaption>
 </figure>
 
-A browser window will open to complete authorization. Log in with your GitHub credentials and click <strong>Continue authorization</strong>.
+Your browser opens gitkraken.dev to finish the connection. Log in with your GitHub credentials and authorize the connection if GitHub asks.
 
-Once successful, GitKraken will show a confirmation message and enable the integration.
+Once successful, the GitHub card in <kbd>Preferences > Integrations</kbd> reads <strong>Connected to your GitHub integration</strong>. You can also use the connection on your other computers and profiles. See [How integrations connect through your GitKraken account](/gitkraken-desktop/integrations/#how-integrations-connect-through-your-gitkraken-account).
 
 <figure>
   <img src="/wp-content/uploads/github-success-1@2x.png" class="help-center-img img-bordered" alt="Successful GitHub integration">
@@ -144,7 +144,7 @@ Required fields are marked with <code>*</code>. Your issue will sync directly to
 Create filters using GitHub's issue filter syntax. These help narrow your view to specific issue types, labels, or statuses.
 
 <div class='callout callout--basic'>
-    <p><strong>Use custom filters when:</strong> you need to focus on a subset of issues such as bugs, assigned work, or open review blockers. <strong>Don't rely only on default filters when:</strong> they leave you with too much issue noise.</p>
+    <p><strong>Use custom filters when:</strong> you need to focus on a subset of issues such as bugs, assigned work, or open review blockers. <strong>Do not rely only on default filters when:</strong> they leave you with too much issue noise.</p>
 </div>
 
 <figure>
@@ -161,7 +161,7 @@ Refer to GitHub’s [issue filtering guide](https://docs.github.com/en/github/se
 From the issue details view, click <strong>Create a branch for this issue</strong>. You can also right-click an issue or use the <kbd><i class="fa fa-ellipsis-v"></i></kbd> menu.
 
 <div class='callout callout--basic'>
-    <p><strong>Use issue-based branch creation when:</strong> you want a clear branch-to-issue link and an auto-filled branch name. <strong>Don't use it when:</strong> the branch should represent a larger initiative or combine work from multiple issues.</p>
+    <p><strong>Use issue-based branch creation when:</strong> you want a clear branch-to-issue link and an auto-filled branch name. <strong>Do not use it when:</strong> the branch should represent a larger initiative or combine work from multiple issues.</p>
 </div>
 
 <figure>

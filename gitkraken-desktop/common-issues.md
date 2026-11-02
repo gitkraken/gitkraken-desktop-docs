@@ -11,13 +11,13 @@ git_hosts: [GitHub, generic]
 integrations: [GitHub]
 hosted_variant: both
 status: GA
-last_verified: 2026-04
+last_verified: 2026-11
 llms_include: true
 tags: [troubleshooting, login, github, performance, issues]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 ***
 
@@ -39,7 +39,7 @@ Use this page to troubleshoot common GitKraken Desktop problems related to licen
 - **Account or license not recognized**: Verify you are signed in with the email address linked to your subscription, and that the correct organization is selected in GitKraken Desktop and on gitkraken.dev.
 - **Integration errors (1002, 1003, 1005, 1007)**: Sign out of your browser, clear its cache, and reconnect your integration from <kbd>Preferences > Integrations</kbd>.
 - **Clone always uses HTTPS instead of SSH**: Add or generate an SSH key under <kbd>Preferences > Integrations > [Integration]</kbd>, then restart GitKraken Desktop.
-- **Commit Details panel missing**: Go to <kbd>View > Show Commit Details panel</kbd> to restore it.
+- **Commit Details panel missing**: Go to <kbd>View > Show Commit Details Panel</kbd> to restore it.
 - **Performance problems**: See the [Performance Issues](/gitkraken-desktop/performance-issues/) guide, or try running <kbd>Perform Repo Maintenance</kbd> from the Command Palette.
 - **Push failed with `Cannot read property 'fullName' of undefined`**: Rename your local branch to match the remote branch name exactly.
 - **WSL issues**: Avoid running GitKraken Desktop as root; use native WSL2 GUI support instead of XServer.
@@ -51,10 +51,12 @@ If the steps on this page do not resolve your issue, contact [GitKraken Support]
 
 ## How to fix account, license, and entitlement issues
 
+If GitKraken Desktop shows the wrong plan or no AI credits, check which account and organization you are using.
+
 ### My account shows Trial/Free/Community despite being a paid customer
-In GitKraken Desktop, verify you're logged in with the correct account:
+In GitKraken Desktop, click your profile icon and check the name and email address under **Account**. If it is the wrong account, click **Sign Out**, then sign in again with the account linked to your subscription:
 <figure class='figure center'>
-  <img alt="Ensure you are signed in with the email address linked to your subscription. Avoid using GitHub or Google login options if your subscription is tied to an email address" src="/wp-content/uploads/GKD-Common-Issue-1.png" class="help-center-img img-bordered">
+  <img alt="The GitKraken Desktop profile menu, signed in, with the account name and email address under Account, followed by Manage account and Sign Out." src="/wp-content/uploads/GKD-Common-Issue-1.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Ensure you are signed in with the email address linked to your subscription. Avoid using GitHub or Google login options if your subscription is tied to an email address.</figcaption>
 </figure>
 
@@ -65,16 +67,31 @@ Make sure the correct organization is selected:
   <figcaption style="text-align: center; color: #888;">AI credit access is determined by the selected organization.</figcaption>
 </figure>
 
+If the organization is correct, you may have used this week's AI credits. To check, go to <kbd>Preferences > GitKraken AI</kbd> and look at the **Usage Details** card:
+
+- Your credits used this week, and the date they reset.
+- **Shared Organization Pool**: the organization's credits this week, split into **Your usage**, **Rest of organization** and **Remaining**.
+
+When you reach your own weekly limit, the card shows **You've reached your weekly credit limit**. GitKraken AI then uses your organization's shared credit pool, which resets weekly. On a paid plan, organization owners and admins can click **Get more AI credits**; trial users see **Upgrade to get more credits**.
+
+If a request goes above the weekly usage included in your plan or trial, GitKraken Desktop shows **GitKraken AI Weekly Limit Reached**:
+
+- **Trial or free users:** Click **Upgrade GitKraken** to purchase a GitKraken plan.
+- **Paid organization owners and admins:** Click **Purchase more AI credits**.
+- **Paid organization members:** Contact your organization admin or owner to request more AI credits.
+
 ### GitKraken.dev shows my account as TRIAL / COMMUNITY
 Select the correct organization:
 <figure class='figure center'>
   <img alt="This issue can occur if you're viewing an organization that doesn't have a subscription" src="/wp-content/uploads/GKD-Common-Issue-3.png" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">This issue can occur if you're viewing an organization that doesn't have a subscription.</figcaption>
+  <figcaption style="text-align: center; color: #888;">This issue can occur if you're viewing an organization that does not have a subscription.</figcaption>
 </figure>
 
 ---
 
 ## How to fix common GitKraken Desktop issues
+
+Find the symptom below and follow its fix.
 
 ### Clone repo always uses HTTPS instead of SSH
 GitKraken Desktop defaults to HTTPS. To use SSH:
@@ -89,11 +106,22 @@ This happens if a disconnected issue tracker is set as default.
 - Check <kbd>Use this as the default for all repositories</kbd>
 
 ### Commit details panel is missing
-To re-enable it: <kbd>View > Show Commit Details panel</kbd>
+To re-enable it: <kbd>View > Show Commit Details Panel</kbd>
 <figure class='figure center'>
   <img alt="The right-side commit panel can be toggled from the View menu" src="/wp-content/uploads/GKD-Common-Issue-4.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">The right-side commit panel can be toggled from the View menu.</figcaption>
 </figure>
+
+### Interface is too large or too small
+Use the zoom options in the **View** menu:
+- **Increase Zoom**: <kbd>Ctrl/Cmd</kbd> + <kbd>=</kbd>
+- **Decrease Zoom**: <kbd>Ctrl/Cmd</kbd> + <kbd>-</kbd>
+- **Reset Zoom**: <kbd>Ctrl/Cmd</kbd> + <kbd>0</kbd> returns to 100%
+
+You can also pick a zoom level from 80% to 300% in the zoom selector in the status bar.
+
+### File watching is not working
+If GitKraken Desktop shows **File watching is not working** after you open a repository, it is not receiving file change events from your operating system. Changes you make outside GitKraken Desktop are not detected automatically. Restart your computer to fix this.
 
 ### Can't minimize/maximize or exit full-screen mode
 Toggle full-screen mode with <kbd>F11 (for Windows/Linux) or Ctrl + Cmd + F (for macOS)</kbd>
@@ -124,6 +152,8 @@ Ensure GitKraken Desktop has organization access:
 
 ## How to fix WSL issues
 
+These fixes apply when you run GitKraken Desktop in Windows Subsystem for Linux (WSL).
+
 ### GitKraken window is too small
 GitKraken Desktop may not respect Windows DPI scaling when running in WSL.
 - Use this workaround: `gitkraken --force-device-scale-factor=1.5`
@@ -150,6 +180,8 @@ Windows-installed coding agent CLIs can take precedence over WSL-installed CLIs.
 
 ## How to fix Linux issues on Ubuntu
 
+These fixes apply to GitKraken Desktop on Ubuntu.
+
 ### File explorer does not open
 GitKraken’s Electron window may be hidden behind the app.
 - Minimize GitKraken or use <kbd>Alt + Tab</kbd>
@@ -168,6 +200,8 @@ fs.inotify.max_user_watches=524288
 
 ## How to fix Windows-specific issues
 
+These fixes apply to GitKraken Desktop on Windows.
+
 ### Use GitKraken Desktop with PuTTY/Plink
 - Set `GIT_SSH` or `GIT_SSH_COMMAND` to point to Plink
 - Or configure `core.sshCommand` in `.gitconfig`
@@ -176,6 +210,8 @@ fs.inotify.max_user_watches=524288
 ---
 
 ## How to fix macOS-specific issues
+
+These fixes apply to GitKraken Desktop on macOS.
 
 ### Git hooks fail with `command not found`
 GUI apps on macOS do not inherit shell environment variables.

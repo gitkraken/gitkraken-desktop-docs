@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-09
+last_verified: 2026-11
 llms_include: true
 tags: [terminal, shell, git, commands, auto-complete]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to run commands in the context of the open repository and worktree. It covers how to open and manage terminal tabs, how command and flag auto-complete works, how terminal sessions behave across worktrees, how to run coding agents manually, and where to change shell and terminal appearance settings.
 
@@ -28,7 +28,8 @@ Use this page to run commands in the context of the open repository and worktree
 - Auto-complete limitation: Conflicting third-party auto-complete tools can disable GitKraken suggestions
 - Settings location: <kbd>Preferences &gt; In-App Terminal</kbd> for appearance and autocomplete behavior
 - Terminal tabs: Each repository or worktree keeps its own terminal tabs. Starting an agent session in a worktree with an open terminal starts the agent in a separate tab
-- Panel behavior: The embedded terminal resizes smoothly when surrounding panels change, can be minimized to keep the terminal panel header visible, and exposes a trash icon in the panel header to kill terminal sessions
+- Panel behavior: The embedded terminal resizes smoothly when surrounding panels change, can be minimized to keep the terminal panel header visible, and has a **Kill All Terminals** trash icon in the panel header that ends every terminal for the current repository or worktree
+- Focus: The terminal output dims while you work elsewhere in the app. Turn this off with **Dim terminal when unfocused** in <kbd>Preferences &gt; In-App Terminal</kbd>
 - Coding agents: You can run supported or unsupported coding agent CLIs manually in the embedded terminal
 
 To get started, open a repository and click the Terminal <i class="fa fa-terminal" aria-hidden="true"></i> button in the toolbar, or search for "terminal" using the <a href="/working-with-repositories/command-palette">Command Palette</a>.
@@ -42,15 +43,15 @@ To get started, open a repository and click the Terminal <i class="fa fa-termina
 
 **To run commands:** Type any Git command such as `git status`, `git commit -m "message"`, or `git log --oneline`. Auto-complete suggestions appear as you type, including flag suggestions for each command.
 
-**To open another terminal:** Click the **+** button in the terminal tab bar. Select a tab to switch terminals, or close a tab you no longer need.
+**To open another terminal:** Click the **+** button in the terminal tab bar, or press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd> (<kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>N</kbd> on macOS). Select a tab to switch terminals, or close a tab you no longer need. See [How terminal tabs work](#how-terminal-tabs-work) for all terminal tab shortcuts.
 
 **To run a coding agent manually:** Open the terminal in the worktree you want to use, then start your coding agent CLI there.
 
-**To customize terminal appearance:** Go to <kbd>Preferences > In-App Terminal</kbd> to change font, size, line height, cursor style, and autocomplete behavior.
+**To customize terminal appearance:** Go to <kbd>Preferences > In-App Terminal</kbd> to change font, size, line height, cursor style, whether the terminal dims when unfocused, and autocomplete behavior.
 
 **To minimize the terminal panel:** Use the minimize control in the terminal panel header. The panel header stays visible so you can restore the terminal when you need it.
 
-**To kill a terminal session:** Click the trash icon in the terminal panel header. This ends the current terminal session for that worktree.
+**To kill all terminals:** Click the **Kill All Terminals** trash icon in the terminal panel header. This ends every terminal tab for the current repository or worktree and closes the panel. If 2 or more terminals are open, GitKraken Desktop asks you to confirm first, because any running processes stop. To end a single terminal, close its tab instead.
 
 **To set your default shell:**
 - **macOS/Linux**: Set ZSH or Bash as the default shell in your OS settings and restart your machine.
@@ -97,10 +98,12 @@ Flag suggestions are also supported:
 
 Visit <kbd><strong>Preferences > In-app Terminal</strong></kbd> to modify your terminal settings.
 
+**Dim terminal when unfocused** is on by default: the terminal output fades while you work elsewhere in GitKraken Desktop and returns to full brightness when you click back into the terminal. The panel header and tabs stay at full brightness. Clear the checkbox to keep the terminal output at full brightness at all times.
+
 <figure>
   <img src="/wp-content/uploads/terminal-preferences-2025@2x.png" 
        class="help-center-img img-bordered" 
-       alt="GitKraken Desktop Preferences window with In-App Terminal settings selected. Options visible include font selection, font size, line height, cursor style, and autocomplete behavior.">
+       alt="GitKraken Desktop Preferences with In-App Terminal selected, showing Font, Font Size, Line Height, Cursor Style, the Dim terminal when unfocused checkbox, and the Autocomplete options.">
   <figcaption style="text-align:center; color:#888">Access terminal settings under Preferences</figcaption>
 </figure>
 
@@ -121,6 +124,20 @@ PowerShell and Bash are currently supported. To change the shell:
 ## How terminal tabs work
 
 The terminal panel supports multiple terminal tabs. Click **+** in the tab bar to open another terminal, then select a tab to switch to it. Each repository or worktree keeps its own set of terminals.
+
+Each tab is named after the app running in it, such as `claude` or `node`, or after the shell when no app is running. Drag a tab to change the order of the tabs. GitKraken Desktop keeps that order for the repository or worktree until you close the app. When you close the last tab, the terminal panel closes.
+
+Use these shortcuts while the terminal panel is open. They are also in the <kbd>View > Terminal Tabs</kbd> menu (<kbd>Window > Terminal Tabs</kbd> on macOS).
+
+| Action | Windows and Linux | macOS |
+|---|---|---|
+| Open a new terminal tab | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd> | <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>N</kbd> |
+| Close the current terminal tab | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>W</kbd> | <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>W</kbd> |
+| Select the next terminal tab | <kbd>Ctrl</kbd> + <kbd>Page Down</kbd> | <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>Right Arrow</kbd> |
+| Select the previous terminal tab | <kbd>Ctrl</kbd> + <kbd>Page Up</kbd> | <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>Left Arrow</kbd> |
+| Select terminal tab 1 to 9 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>1</kbd> to <kbd>9</kbd> | <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>1</kbd> to <kbd>9</kbd> |
+
+The next and previous tab shortcuts wrap around: from the last tab, the next tab is the first one.
 
 <figure>
   <img src="/wp-content/uploads/gkd-12-6-terminal-tabs.png"

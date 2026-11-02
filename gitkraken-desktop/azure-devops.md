@@ -11,13 +11,13 @@ git_hosts: [Azure DevOps]
 integrations: [Azure DevOps]
 hosted_variant: cloud
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [azure-devops, integration, oauth, pat, ssh]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to connect GitKraken Desktop to Azure DevOps for repository access, pull request work, and SSH setup by using OAuth or a personal access token. The integration requires a Pro subscription or higher, and PAT authentication is the fallback when an Azure DevOps organization blocks third-party OAuth access.
 
@@ -42,8 +42,10 @@ Use this page to connect GitKraken Desktop to Azure DevOps for repository access
 
 1. Go to <kbd>Preferences > Integrations</kbd> in GitKraken Desktop.
 2. Select **Azure DevOps** and click **Connect to Azure DevOps**.
-3. Log in with your Azure DevOps credentials in the browser window that opens.
-4. Select **Open GitKraken** and choose your organization.
+3. Finish connecting in your browser at gitkraken.dev, logging in with your Azure DevOps credentials if asked.
+4. If your Azure DevOps account has more than 1 organization, choose one from the **Azure Organization** list on the Azure DevOps card.
+
+You must be signed in to your GitKraken account to connect with OAuth. The connection belongs to your GitKraken account, so you can also use it on your other computers and profiles. See [How integrations connect through your GitKraken account](/gitkraken-desktop/integrations/#how-integrations-connect-through-your-gitkraken-account).
 
 If OAuth is not available (e.g., your organization has disabled third-party access), use a Personal Access Token (PAT) instead:
 1. In <kbd>Preferences > Integrations</kbd>, enter your host domain.
@@ -85,16 +87,26 @@ To authenticate with Azure DevOps:
 2. Choose **Azure DevOps** and click <button class='button button--success button--ui button--nolink'>Connect to Azure DevOps</button>.
 
 <figure>
-  <img alt="Connecting to Azure DevOps from GitKraken" src="/wp-content/uploads/connect-azure-devops-2025@2x.png" class="help-center-img img-bordered">
+  <img alt="Preferences > Integrations > Azure DevOps: the Azure DevOps card reads Not Connected with a Connect to Azure DevOps button, Manage Integrations is at the top right, and below or are the Host Domain and Personal Access Token fields with a Connect button." src="/wp-content/uploads/connect-azure-devops-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Connecting to Azure DevOps from GitKraken</figcaption>
 </figure>
 
-4. In the browser window that opens, log in with your Azure DevOps credentials. Once successful, select <kbd>Open GitKraken</kbd> and choose your organization.
+3. Finish connecting in your browser at gitkraken.dev, logging in with your Azure DevOps credentials if asked.
+4. If your Azure DevOps account has more than 1 organization, the card reads **Select an organization to finish connecting Azure DevOps**. Choose your organization from the **Azure Organization** list.
 
 <figure>
   <img alt="Select your Azure DevOps organization" src="/wp-content/uploads/select-azure-organization-2025@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Select your Azure DevOps organization</figcaption>
 </figure>
+
+### How to choose an organization after you sign in
+
+If Azure DevOps is linked to your GitKraken account, GitKraken Desktop can connect it when you sign in. When your Azure DevOps account has more than 1 organization, GitKraken Desktop shows **Choose an Azure DevOps organization**, either as a step during setup or in a window after you sign in again. With 1 organization, GitKraken Desktop selects it for you.
+
+1. Select an organization from the list.
+2. Click **Continue**.
+
+To decide later, click **Skip this step**. Azure DevOps stays partly connected until you choose an organization in <kbd>Preferences > Integrations > Azure DevOps</kbd>. You can change the organization there at any time.
 
 You can also connect using a Personal Access Token (PAT):
 
@@ -140,7 +152,7 @@ Once connected, you can generate a new SSH key:
 When authenticated, GitKraken enables:
 
 <div class='callout callout--basic'>
-  <p><strong>Use the Azure DevOps integration when:</strong> you want repository discovery, remotes, and pull request workflows directly in GitKraken Desktop. <strong>Don't rely on it alone when:</strong> your Azure DevOps setup requires organization-specific workflows outside the features surfaced here.</p>
+  <p><strong>Use the Azure DevOps integration when:</strong> you want repository discovery, remotes, and pull request workflows directly in GitKraken Desktop. <strong>Do not rely on it alone when:</strong> your Azure DevOps setup requires organization-specific workflows outside the features surfaced here.</p>
 </div>
 
 - Browsing your Azure DevOps repositories while cloning:
@@ -166,7 +178,7 @@ Manual URL entry is still available.
 GitKraken supports one Azure DevOps account per profile. With a paid Pro, Teams, or Enterprise plan, use multiple [profiles](/start-here/profiles) to switch between accounts.
 
 <div class='callout callout--basic'>
-  <p><strong>Use multiple profiles when:</strong> you need to switch cleanly between separate Azure DevOps identities or organizations. <strong>Don't use multiple profiles when:</strong> one account already covers the repos you need and profile switching would only add overhead.</p>
+  <p><strong>Use multiple profiles when:</strong> you need to switch cleanly between separate Azure DevOps identities or organizations. <strong>Do not use multiple profiles when:</strong> one account already covers the repos you need and profile switching would only add overhead.</p>
 </div>
 
 ***
@@ -190,6 +202,8 @@ If this setting cannot be enabled, you can connect using a Personal Access Token
 ***
 
 ## Azure DevOps troubleshooting
+
+Use these fixes when an Azure DevOps feature does not appear as expected.
 
 ### How to fix a missing Azure DevOps pull request form
 

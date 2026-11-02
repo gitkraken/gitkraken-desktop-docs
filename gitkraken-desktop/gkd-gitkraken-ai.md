@@ -11,14 +11,14 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: preview
-last_verified: 2026-09
+last_verified: 2026-11
 llms_include: true
 tags: [ai, commit-messages, explain, pull-requests, providers]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: October 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 32px; margin-bottom:24px;">
   <p style="flex:1 1 300px; margin:0;">GitKraken AI in GitKraken Desktop helps developers generate commit messages, explain commits and branches, draft pull request text, resolve merge conflicts, and customize AI providers and prompts. Use this page to understand which AI workflows are available, when to use them, and which features require a paid GitKraken subscription.</p>
@@ -81,7 +81,7 @@ Use AI to help organize your Git commits into clear, logical stories. To clean u
 Version 12.5 improved the Commit Composer engine. It validates and retries generated commit groups, processes large diffs faster, and excludes generated files such as lockfiles from the token budget. Recomposition preserves original commit authors and adds co-authors when a commit combines work from multiple people. The progress notification shows the current stage and file and hunk counts.
 
 <div class='callout callout--basic'>
-  <p><strong>Use AI Commit Composer when:</strong> your staged changes or recent commits need to be reorganized into a clearer narrative before you share them. <strong>Don't use it when:</strong> your commits are already atomic and you only need a quick manual message update.</p>
+  <p><strong>Use AI Commit Composer when:</strong> your staged changes or recent commits need to be reorganized into a clearer narrative before you share them. <strong>Do not use it when:</strong> your commits are already atomic and you only need a quick manual message update.</p>
 </div>
 
 ### What AI Commit Composer does
@@ -157,22 +157,22 @@ To generate commits with AI:
 GitKraken can generate natural language explanations of your commits directly from the UI.
 
 <div class='callout callout--basic'>
-  <p><strong>Use AI Explain when:</strong> you need a fast summary of what changed in one or more commits. <strong>Don't use it when:</strong> you need authoritative implementation details that should come directly from reading the diff yourself.</p>
+  <p><strong>Use AI Explain when:</strong> you need a fast summary of what changed in one or more commits. <strong>Do not use it when:</strong> you need authoritative implementation details that should come directly from reading the diff yourself.</p>
 </div>
 
 ### How to use AI Commit Explain
 
-1. Open GitKraken Desktop and select one or more commits (Use <kbd>Shift</kbd> or <kbd>Ctrl/Cmd</kbd>).
+1. Open GitKraken Desktop and select one or more commits (Use <kbd>Shift</kbd> or <kbd>Ctrl/Cmd</kbd>). To explain 3 or more commits, select a contiguous range. For any other selection of 3 or more items, the Commit Panel shows **A combined diff is not shown for this selection** and does not offer the explain button.
 
 <figure>
 <img src="/wp-content/uploads/gkd-11-Select-Commits.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Highlighted selection of multiple commits in the GitKraken commit graph." />
 <figcaption style="text-align: center; color: #888">Select one or more commits from the commit graph</figcaption>
 </figure>
 
-2. Click the **Explain** button in the top-right corner of the Commit Panel.
+2. Click **Explain commits** (or **Explain commit** for a single commit) in the top-right corner of the Commit Panel.
 
 <figure>
-<img src="/wp-content/uploads/gkd-11-AI-Explain.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Merged diff view of selected commits in GitKraken, with the Explain button highlighted for AI assistance." />
+<img src="/wp-content/uploads/gkd-11-AI-Explain.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="The Commit Panel with 3 consecutive commits selected, showing Viewing diff of 3 commits and the Explain commits button highlighted." />
 <figcaption style="text-align: center; color: #888">Use the Explain button to trigger AI-generated summaries</figcaption>
 </figure>
 
@@ -190,7 +190,7 @@ GitKraken can generate natural language explanations of your commits directly fr
 Generate clear, consistent commit messages based on your staged changes.
 
 <div class='callout callout--basic'>
-  <p><strong>Use AI commit messages when:</strong> you want a strong starting point for summarizing staged changes. <strong>Don't use them when:</strong> the exact wording carries team-specific meaning and you already know the final message you need to write.</p>
+  <p><strong>Use AI commit messages when:</strong> you want a strong starting point for summarizing staged changes. <strong>Do not use them when:</strong> the exact wording carries team-specific meaning and you already know the final message you need to write.</p>
 </div>
 
 ### How to generate an AI commit message
@@ -243,7 +243,7 @@ You can then use the AI button again to generate a revised commit message.
 Right-click any branch or `HEAD` commit and select **Explain Branch Changes** to generate a summary of all changes introduced on that branch.
 
 <div class='callout callout--basic'>
-  <p><strong>Use Explain Branch Changes when:</strong> you want a high-level summary before review, handoff, or pull request writing. <strong>Don't use it when:</strong> you need to inspect exact file-level behavior instead of a summarized narrative.</p>
+  <p><strong>Use Explain Branch Changes when:</strong> you want a high-level summary before review, handoff, or pull request writing. <strong>Do not use it when:</strong> you need to inspect exact file-level behavior instead of a summarized narrative.</p>
 </div>
 
 <figure>
@@ -266,7 +266,7 @@ To customize how **Explain Branch Changes** works, go to **Preferences > GitKrak
 Resolve merge conflicts faster with GitKraken AI. To combine the branches of two coding agents that worked in parallel, see [Resolve Merge Conflicts Between AI Agent Branches](/gitkraken-desktop/agent-merge-conflicts/).
 
 <div class='callout callout--basic'>
-  <p><strong>Use AI conflict resolution when:</strong> you want a suggested starting point for resolving a conflict and plan to review the result carefully. <strong>Don't use it when:</strong> the conflict involves sensitive logic or policy decisions that require a fully manual resolution.</p>
+  <p><strong>Use AI conflict resolution when:</strong> you want a suggested starting point for resolving a conflict and plan to review the result carefully. <strong>Do not use it when:</strong> the conflict involves sensitive logic or policy decisions that require a fully manual resolution.</p>
 </div>
 
 When you encounter a merge conflict, click into the conflicted file as usual. You’ll now see a new **Auto-resolve with AI** button that offers a context-aware resolution.
@@ -365,6 +365,13 @@ When connected to [GitHub, GitLab, Bitbucket, or Azure DevOps](/gitkraken-deskto
 
 By default, GitKraken AI uses **[Google Gemini Models](https://deepmind.google/models/gemini/)** to power commit explanations and message generation. No API key is needed and usage is included with your GitKraken subscription.
 
+You can pick the model for each AI feature in <kbd>Preferences > GitKraken AI</kbd>. With the GitKraken-hosted provider, each model in the dropdown shows its AI credit multiplier after its name, such as **4.5x**. Hover over the multiplier to see what it means, for example **Uses 4.5x the credits of a baseline model**. A model with a higher multiplier uses your weekly AI credits faster. Models you use with your own API key show no multiplier.
+
+<figure>
+<img src="/wp-content/uploads/gkd-ai-model-credit-multiplier.png" style="max-width: 50%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="The model dropdown for Commit Message Generation in Preferences > GitKraken AI, listing GitKraken-hosted models with their AI credit multiplier after each name, such as 0.8x for Gemini 2.5 Flash and 4.5x for Claude Sonnet 4.5." />
+<figcaption style="text-align: center; color: #888">Each GitKraken-hosted model shows its AI credit multiplier</figcaption>
+</figure>
+
 <div class='callout callout--basic'>
   <p><strong>What's new in 11.10:</strong> The default model lineup has been updated to <a href="https://deepmind.google/models/gemini/">Google Gemini Models</a>. Deprecated Gemini 1.5 and 2.0 models have been removed.</p>
 </div>
@@ -374,7 +381,7 @@ If you prefer using your own API key with **OpenAI**, **Azure**, **Anthropic**, 
 <kbd>Preferences > GitKraken AI</kbd>
 
 <figure>
-<img src="/wp-content/uploads/gkd-11-Preferences-GitKraken-AI.png" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Preferences panel in GitKraken showing options to enable AI, select provider, and customize commit message instructions." />
+<img src="/wp-content/uploads/gkd-11-Preferences-GitKraken-AI.png" style="max-width: 75%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="GitKraken Desktop Preferences with GitKraken AI selected: Enable GitKraken AI and Use your own API Key to make AI requests are checked, Provider is OpenAI with Provider API Key and Test Connection, and the Commit Message Generation model is Use Recommended (GPT-5.6 Terra)." />
 <figcaption style="text-align: center; color: #888">Configure GitKraken AI providers in Preferences</figcaption>
 </figure>
 
@@ -400,7 +407,7 @@ This endpoint can handle:
 
 The Custom URL option is ideal for developers connecting to local AI models or private endpoints. For example, you might connect to models hosted with Ollama, Hugging Face, OpenRouter, or an OpenAI-compatible service like LM Studio. 
 
-However, GitKraken does not validate or debug third-party implementations. If the connection works, great, but if it doesn’t, we’re unable to troubleshoot issues with custom endpoints.
+However, GitKraken does not validate or debug third-party implementations. If the connection works, great, but if it does not, we’re unable to troubleshoot issues with custom endpoints.
 
 ### How to customize AI prompts
 
@@ -446,6 +453,30 @@ Only return the final commit message—no extra formatting.
 To disable GitKraken AI, restrict which AI models are available, or set up organization-wide API keys and custom URLs, see the [GitKraken Dev Security Controls](https://help.gitkraken.com/gk-dev/gk-dev-security-controls/).
 
 You can disable GitKraken AI locally via <kbd>Preferences > GitKraken AI</kbd>. Keep in mind this setting is not enforced at the organization level and can be re-enabled by individual users.
+
+If your organization's admin set an API key for your AI provider, the **Provider API Key** field in <kbd>Preferences > GitKraken AI</kbd> is disabled and the key stays hidden. Hover over the field to see **API key configured by your organization's admin**.
+
+### What happens when you reach the weekly AI limit
+
+When a request goes above the weekly AI usage included in your plan or trial, GitKraken Desktop shows **GitKraken AI Weekly Limit Reached**. What the message offers depends on your account:
+
+- **Trial or free users:** Click **Upgrade GitKraken** to purchase a GitKraken plan.
+- **Paid organization owners and admins:** Click **Purchase more AI credits** to add AI credits for your organization.
+- **Paid organization members:** Contact your organization admin or owner to request more AI credits.
+
+### How to keep or turn off GitKraken AI when you stop using it
+
+If you have a paid plan and have not used GitKraken AI for 14 days, GitKraken Desktop shows the **You're in control of GitKraken AI** dialog once. Choose one option:
+
+- **Keep GitKraken AI On:** AI features stay available. Click **Keep AI On**.
+- **Turn GitKraken AI Off:** GitKraken Desktop hides all AI buttons and menu options and sends no AI requests. Click **Turn AI Off**.
+
+To close the dialog without changing anything, click **Decide Later**. You can change this setting at any time in <kbd>Preferences > GitKraken AI</kbd>.
+
+<figure>
+<img src="/wp-content/uploads/gkd-ai-control-reminder.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="The You're in control of GitKraken AI dialog, noting that GitKraken AI has not been used in the last 14 days, with the options Keep GitKraken AI On (Current setting) and Turn GitKraken AI Off, and the Decide Later and Keep AI On buttons." />
+<figcaption style="text-align: center; color: #888">Keep GitKraken AI on or turn it off</figcaption>
+</figure>
 ***
 
 ## What’s Next?

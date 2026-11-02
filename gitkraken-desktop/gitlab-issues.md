@@ -11,14 +11,14 @@ git_hosts: [GitLab]
 integrations: [GitLab]
 hosted_variant: cloud
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [gitlab, issues, filters, branching, integration]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to connect GitKraken Desktop to GitLab Issues so you can preview, create, edit, filter, and branch from issues without leaving your Git workflow. GitLab Issues uses the same GitLab integration connection, and Community users are limited to public repositories.
 
@@ -67,7 +67,7 @@ To open an issue in GitLab or copy its link, use the ellipsis menu or the extern
 The GitLab and GitLab Issues integrations share the same connection. Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
 <div class='callout callout--basic'>
-    <p><strong>Use GitLab Issues in GitKraken Desktop when:</strong> you want issue context, issue editing, and branch creation close to your repository workflow. <strong>Don't use the in-app view alone when:</strong> you need broader GitLab project management outside the issue workflows covered here.</p>
+    <p><strong>Use GitLab Issues in GitKraken Desktop when:</strong> you want issue context, issue editing, and branch creation close to your repository workflow. <strong>Do not use the in-app view alone when:</strong> you need broader GitLab project management outside the issue workflows covered here.</p>
 </div>
 
 <figure>
@@ -75,14 +75,14 @@ The GitLab and GitLab Issues integrations share the same connection. Set up the 
   <figcaption style="text-align: center; color: #888">Connect GitLab Issues integration.</figcaption>
 </figure>
 
-From the Integrations window, select <em>GitLab.com</em> and click <strong>Connect to GitLab</strong>.
+GitLab connects through your GitKraken account, so sign in to GitKraken Desktop first. From the Integrations window, select <strong>GitLab</strong> and click <strong>Connect to GitLab</strong>.
 
 <figure>
-  <img src="/wp-content/uploads/connect-gitlab-2025@2x.png" class="help-center-img img-bordered" alt="Connect to GitLab prompt">
+  <img src="/wp-content/uploads/connect-gitlab-2025@2x.png" class="help-center-img img-bordered" alt="Preferences > Integrations > GitLab: the GitLab card reads Not Connected with a Connect to GitLab button, and Manage Integrations is at the top right of the pane.">
   <figcaption style="text-align: center; color: #888">Connect to GitLab prompt.</figcaption>
 </figure>
 
-A browser window will open to authorize the connection. Log in with your GitLab credentials and click <strong>Continue authorization</strong>.
+Your browser opens gitkraken.dev to finish the connection. Log in with your GitLab credentials and authorize the connection if GitLab asks. You can also use the connection on your other computers and profiles. See [How integrations connect through your GitKraken account](/gitkraken-desktop/integrations/#how-integrations-connect-through-your-gitkraken-account).
 
 <figure>
   <img src="/wp-content/uploads/authorize-gitlab@2x.png" class="help-center-img img-bordered" alt="GitLab authorization dialog">
@@ -152,7 +152,7 @@ Required fields are marked with <code>*</code>. The issue will sync automaticall
 Use GitLab’s issue syntax to create filters and narrow your view.
 
 <div class='callout callout--basic'>
-    <p><strong>Use custom filters when:</strong> you need focused issue queues by label, assignee, milestone, or status. <strong>Don't rely on only the default filters when:</strong> your team needs a narrower view of active work.</p>
+    <p><strong>Use custom filters when:</strong> you need focused issue queues by label, assignee, milestone, or status. <strong>Do not rely on only the default filters when:</strong> your team needs a narrower view of active work.</p>
 </div>
 
 <figure>
@@ -169,7 +169,7 @@ Refer to GitLab’s [issue filtering guide](https://docs.gitlab.com/ee/user/sear
 From the issue detail view, click <strong>Create a branch for this issue</strong>. You can also right-click the issue or use the <kbd><i class="fa fa-ellipsis-v"></i></kbd> menu.
 
 <div class='callout callout--basic'>
-    <p><strong>Use issue-based branch creation when:</strong> you want the branch tied clearly to a specific GitLab issue. <strong>Don't use it when:</strong> the work spans multiple issues or the branch name needs a different structure than the issue title provides.</p>
+    <p><strong>Use issue-based branch creation when:</strong> you want the branch tied clearly to a specific GitLab issue. <strong>Do not use it when:</strong> the work spans multiple issues or the branch name needs a different structure than the issue title provides.</p>
 </div>
 
 <figure>

@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [wsl, wsl2, windows, linux, setup]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to install and run GitKraken Desktop inside Windows Subsystem for Linux 2 (WSL 2) when your repositories live on the Linux file system. It covers WSLg requirements, Linux installation steps, cross-file-system limits, coding agent considerations, and troubleshooting for display, certificate, and environment issues.
 
@@ -197,6 +197,18 @@ wsl --shutdown
 ```
 
 Then, reopen your Linux distribution or GitKraken Desktop.
+
+### How to sign in and connect integrations from WSL 2
+
+When you sign in to your GitKraken account or connect an integration from GitKraken Desktop in WSL 2, the sign-in page opens in your Windows browser. After you finish in the browser, GitKraken Desktop installed on Windows receives the result and passes it to GitKraken Desktop in your WSL distribution. To complete sign-in this way, install GitKraken Desktop on Windows as well as in WSL.
+
+If the hand-off fails, GitKraken Desktop on Windows shows one of these messages:
+
+- **Could not complete sign-in: GitKraken Desktop is not installed in WSL distro {name}.** Install GitKraken Desktop in that distribution.
+- **Could not complete sign-in: failed to launch GitKraken Desktop in WSL distro {name}.** Start GitKraken Desktop in WSL, then try again.
+- **Could not complete sign-in: invalid WSL distro name.**
+
+Each message ends with **Sign in again from GitKraken Desktop in WSL.** Start the sign-in again from GitKraken Desktop in WSL. If GitKraken Desktop is not installed on Windows, sign in with **Manually enter authentication code** in the **Sign In to GitKraken** window instead: paste the code from your browser and click **Save**.
 
 ---
 

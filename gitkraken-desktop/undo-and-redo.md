@@ -11,14 +11,14 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [undo, redo, history, shortcuts, command-palette]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: October 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Have you ever made a Git change and immediately wished you could take it back? Whether it’s an accidental commit, a discarded change, or a deleted branch, GitKraken Desktop lets you undo many actions quickly and safely.
 
@@ -62,6 +62,8 @@ You can undo the following actions in GitKraken Desktop:
 + Remove remote
 + Reset branch to a commit
 + Rebase operations, including Interactive Rebase, Multi-Commit Cherry Pick, dropping and rewording commits, and AI Commit Compose (Recompose with AI).
+
+If you have uncommitted changes when you undo or redo a reset (such as dropping the latest commit) or a rebase, GitKraken Desktop asks you to stash them first. Click **Yes, Stash Changes** to stash your changes and continue, or **Cancel** to leave everything as it is.
 
 These undo actions can help you recover from common missteps without going to the command line. To reverse changes a coding agent made, see [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/).
 

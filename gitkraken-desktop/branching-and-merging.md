@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [branches, merge, rebase, conflicts, squash]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: October 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to create, rename, delete, merge, and rebase branches in GitKraken Desktop. It also covers merge conflict resolution, external merge tools, and the difference between merge-based and rebase-based workflows so you can choose the right history strategy for your branch.
 
@@ -69,7 +69,7 @@ To delete a branch, first check out a different branch, then right-click the tar
 Create a new branch when working on a feature or fix. Right-click any commit to open the context menu and create a branch.
 
 <div class='callout callout--basic'>
-  <p><strong>Use branches when:</strong> you want to isolate a feature, fix, or experiment from the main line of development. <strong>Don't keep branches around when:</strong> the work is complete and the branch can be merged or deleted to reduce graph clutter.</p>
+  <p><strong>Use branches when:</strong> you want to isolate a feature, fix, or experiment from the main line of development. <strong>Do not keep branches around when:</strong> the work is complete and the branch can be merged or deleted to reduce graph clutter.</p>
 </div>
 
 <figure>
@@ -86,6 +86,8 @@ Branch checkout updates files in the working directory to reflect the version de
 To update your working directory:
 - Double-click a branch label from the Commit Graph or the Left Panel
 - Right-click a branch from the Commit Graph or the Left Panel and select **Checkout**
+
+After the checkout, GitKraken Desktop selects the new HEAD commit. If you have uncommitted changes, it selects the WIP node instead, so the Commit Panel is ready for your next commit.
 
 <figure>
   <img src="/wp-content/uploads/add-branch-2025.gif" class="help-center-img img-bordered" alt="Animated view of creating and checking out a new branch in GitKraken Desktop from the right-click context menu on a commit">
@@ -118,6 +120,8 @@ To delete a branch:
 1. Switch to another branch
 2. Right-click the branch you wish to delete
 
+If the branch is checked out in a [worktree](/gitkraken-desktop/worktrees/), its context menu shows <kbd>Remove this worktree</kbd> and <kbd>Remove worktree and delete branch</kbd> instead of **Delete**. When you select a local branch and its remote branch together, the menu offers to remove the worktree and delete both branches. GitKraken Desktop asks you to confirm, removes the worktree first, and deletes no branch if the worktree cannot be removed.
+
 Use multi-select in the Left Panel to delete several branches at once:
 - <kbd>Shift</kbd> to select a range
 - <kbd>&#8984;</kbd> / <kbd>Ctrl</kbd> to select specific branches
@@ -142,6 +146,13 @@ To pin a branch:
 <figure>
   <img src="/wp-content/uploads/pin-to-left.png" class="help-center-img img-bordered" alt="Right-click context menu on a branch in the GitKraken Desktop Commit Graph with the 'Pin to Left' option visible at the bottom of the menu">
   <figcaption style="text-align:center; color:#888">Select "Pin to Left" from the branch context menu</figcaption>
+</figure>
+
+While a branch is pinned, a pin button appears in the **Graph** column header. Click it to jump to and select the pinned branch's latest commit. Hover over the button to see the **Jump to pinned branch** tooltip.
+
+<figure>
+  <img src="/wp-content/uploads/gkd-graph-jump-to-pinned-branch.png" class="help-center-img img-bordered" alt="Top of the GitKraken Desktop Commit Graph with feature/api pinned to the left and the pin button in the Graph column header showing the Jump to pinned branch tooltip.">
+  <figcaption style="text-align:center; color:#888">Jump to the pinned branch from the Graph column header</figcaption>
 </figure>
 
 To unpin a branch, right-click the branch label again and select **Unpin from left**.
@@ -175,7 +186,7 @@ Merging combines changes from one branch into another. To merge:
 </div>
 
 <div class='callout callout--basic'>
-  <p><strong>Don't use merge when:</strong> your team expects a rebased, linear branch before review or integration. <strong>Don't use rebase when:</strong> collaborators are already building on the commits you plan to rewrite.</p>
+  <p><strong>Do not use merge when:</strong> your team expects a rebased, linear branch before review or integration. <strong>Do not use rebase when:</strong> collaborators are already building on the commits you plan to rewrite.</p>
 </div>
 
 <figure>
@@ -194,7 +205,7 @@ If no conflicts exist, changes will be merged automatically.
 When you enable the **Squash** setting, GitKraken Desktop stages all changes from the source branch locally without creating a merge commit automatically. You then commit the squashed result manually, which produces a single, clean commit on the target branch.
 
 <div class='callout callout--basic'>
-  <p><strong>Use squash merges when:</strong> you want one clean commit on the target branch and do not need to preserve each feature-branch commit. <strong>Don't use squash when:</strong> the individual commits matter for auditing, review context, or future debugging.</p>
+  <p><strong>Use squash merges when:</strong> you want one clean commit on the target branch and do not need to preserve each feature-branch commit. <strong>Do not use squash when:</strong> the individual commits matter for auditing, review context, or future debugging.</p>
 </div>
 
 This is useful when you want to maintain a linear history on your main branch without preserving the individual commits from a feature branch.
@@ -229,7 +240,7 @@ The Merge Tool shows:
 - Output at the bottom
 
 <figure>
-  <img src="/wp-content/uploads/merge-tool2@2x.png" class="help-center-img img-bordered" alt="Screenshot of GitKraken's merge conflict tool showing side-by-side comparison of conflicting lines in glo/calendar.md">
+  <img src="/wp-content/uploads/merge-tool2@2x.png" class="help-center-img img-bordered" alt="GitKraken Desktop merge conflict tool showing side-by-side comparison of conflicting lines in glo/calendar.md">
   <figcaption style="text-align:center; color:#888">Review and resolve conflicts in the Merge Tool</figcaption>
 </figure>
 
@@ -290,8 +301,8 @@ For compatibility details, visit [Git Config merge tools](https://git-scm.com/bo
 ### How to resolve conflicts with Take Current or Take Incoming
 
 Right-click a conflicted file and select:
-- `Take current (branch)` – Use your current branch’s changes
-- `Take incoming (branch)` – Use changes from the incoming branch
+- `Take current (branch)`: Use your current branch’s changes
+- `Take incoming (branch)`: Use changes from the incoming branch
 
 <figure>
   <img src="/wp-content/uploads/current-incoming.png" class="help-center-img img-bordered" alt="Merge conflict resolution menu with options to take the current branch (branch-2) or the incoming branch (branch-1).">

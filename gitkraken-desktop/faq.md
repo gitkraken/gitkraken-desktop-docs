@@ -11,14 +11,14 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps, generic]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: GA
-last_verified: 2026-09
+last_verified: 2026-11
 llms_include: true
 tags: [faq, troubleshooting, ssh, plans, os-support]
 
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: October 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 This FAQ answers common GitKraken Desktop questions about supported platforms, account and plan limits, authentication, remote access, and troubleshooting. Use it when you need a quick answer or constraint check before opening a longer feature guide, especially for Linux support, SSH behavior, proxy issues, or subscription-related questions.
 
@@ -51,6 +51,8 @@ This FAQ answers common GitKraken Desktop questions about supported platforms, a
 
 ## About GitKraken Desktop
 
+Get a short overview of GitKraken Desktop and what you can do with it.
+
 ### What is GitKraken Desktop?
 
 GitKraken Desktop is a Git client for Windows, macOS, and Linux built around a visual Commit Graph. It works with your existing repositories and with hosts such as GitHub, GitLab, Bitbucket, and Azure DevOps.
@@ -58,6 +60,8 @@ GitKraken Desktop is a Git client for Windows, macOS, and Linux built around a v
 You can also run coding agents such as Claude Code, Codex CLI, and Copilot CLI from GitKraken Desktop. Each agent session gets its own branch and worktree. You see what the agent changed in the Commit Graph and diff, and you can undo or revert it with the same Git actions you use for your own work. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
 ## Common coding agent and worktree questions
+
+Get answers about running coding agents and worktrees in GitKraken Desktop.
 
 ### What is Agent Sessions View?
 
@@ -84,6 +88,8 @@ OpenCode and Gemini CLI can run in fully air-gapped environments when they are c
 ---
 
 ## Common feature and interface questions
+
+Get answers about integrations, platforms, accounts, and everyday tasks.
 
 ### Does GitKraken support TFS, Visual Studio Team Services, or Azure DevOps?
 Yes. GitKraken integrates with [Azure DevOps](/integrations/azure-devops/). For TFS, clone the repository manually using <kbd>File > Clone Repo</kbd> and provide the HTTPS URL. On Mac or Linux, enable _Basic Authentication_ in IIS for TFS. Consider using a Personal Access Token (PAT) if password authentication fails.
@@ -117,14 +123,27 @@ The drop-down only shows forks. Use the [URL option](/gitkraken-desktop/pushing-
 4. Set your branch's [upstream](/working-with-repositories/pushing-and-pulling/#setting-the-upstream-branch).
 5. Push and confirm the Force Push prompt.
 
+### How do I sign in to GitKraken?
+GitKraken Desktop signs you in through your browser at gitkraken.dev. When you click a sign-in or sign-up option, GitKraken Desktop shows the **Sign In to GitKraken** window and opens your browser. Finish signing in there, and GitKraken Desktop signs you in.
+
+If your browser does not open, click **open it manually** or **copy the URL** in the **Sign In to GitKraken** window. If GitKraken Desktop does not receive the sign-in from your browser, click **Manually enter authentication code**, paste the code from your browser, and click **Save**.
+
 ### How do I sign out of GitKraken?
-While there’s no sign-out button, you can:
-- Click your profile icon → <kbd>Sign into a different account</kbd>
-- Or delete the `~/.gitkraken` folder to reset data
+Do one of the following:
+- Click your profile icon → <kbd>Sign Out</kbd>
+- Select <kbd>File > Sign Out</kbd>
+
+GitKraken Desktop shows **Successfully signed out**. Signing out also disconnects the integrations you connected through your GitKraken account. To learn what reconnects when you sign in again, see [Integrations](/gitkraken-desktop/integrations/).
+
+On GitKraken On-Premise (Self-Hosted Server or Serverless), sign-in stays in GitKraken Desktop and these options read <kbd>Sign into a different account</kbd>.
+
+To reset all GitKraken Desktop data, delete the `~/.gitkraken` folder.
 
 ---
 
 ## Common technical troubleshooting questions
+
+Fix common launch, authentication, connection, and display problems.
 
 ### Why am I getting a repo compatibility error? 
 Try closing other tools like IDEs, then relaunch GitKraken. Use `git status` to check for uncommitted changes. Try switching branches or cloning to a new directory.
@@ -133,11 +152,11 @@ Try closing other tools like IDEs, then relaunch GitKraken. Use `git status` to 
 Launch from terminal to check for missing dependencies. Refer to the [installation guide](/gitkraken-desktop/how-to-install/).
 
 ### Why does my subscription show COMMUNITY?  
-Verify that you're logged into the email associated with your subscription. Check this via your profile icon.
+Verify that you're logged into the email associated with your subscription. Click your profile icon and check the email address under **Account**. To use a different account, click **Sign Out**, then sign in with the right account.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/sign-into-a-different-account.png" class="help-center-img img-bordered" alt="Sign into a different GitKraken account">
-  <figcaption style="text-align: center; color: #888;">Access alternate login via the profile menu.</figcaption>
+  <img src="/wp-content/uploads/GKD-Common-Issue-1.png" class="help-center-img img-bordered" alt="The GitKraken Desktop profile menu, signed in, with the account name and email address under Account, followed by Manage account and Sign Out.">
+  <figcaption style="text-align: center; color: #888;">Check your account and sign out from the profile menu.</figcaption>
 </figure>
 
 ### Why isn’t GitKraken authenticating my SSH key?

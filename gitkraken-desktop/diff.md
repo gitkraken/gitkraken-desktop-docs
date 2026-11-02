@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-09
+last_verified: 2026-11
 llms_include: true
 tags: [diff, blame, history, patches, external-tools]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: October 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to compare uncommitted changes, inspect commit diffs, switch between diff views, review file history or blame, and create or apply patches in GitKraken Desktop. It also covers external diff tools and key limits such as patch support being a preliminary feature that does not generate binary-file patches.
 
@@ -94,18 +94,21 @@ You can view diffs from:
 
 - **Staging area**: Click a file to open its diff
 - **Commit node**: Select a commit and click any file
+- **GitHub pull request**: Right-click a pull request in the Left Panel's **Pull Requests** section, or a branch that has a pull request, and select **View changes in #N**
 
 Selecting two commits shows the differences between them.
+
+**View changes in #N** is available for GitHub and GitHub Enterprise pull requests. It selects the pull request's base and head commits in the graph, and the right panel shows every change in the pull request. If the pull request comes from a remote you have not added, such as a fork, GitKraken Desktop asks to add that remote first. If the base or head commit is not loaded in the graph, scroll down or increase **Initial Commits in Graph** in <kbd>Preferences > General</kbd>, then try again.
 
 <figure class='figure center'>
   <img src='/wp-content/uploads/diff-2-commits-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop displaying a visual diff between two selected commits, with syntax-highlighted line changes and commit metadata shown in the right panel.">
   <figcaption style="text-align: center; color: #888;">Diff view comparing two selected commits.</figcaption>
 </figure>
 
-Select consecutive commits in the graph using <kbd>Shift</kbd> or <kbd>Cmd/Ctrl</kbd> + click to show their combined changes in the right panel. You can include the WIP if your selection reaches the latest commit. If you select more than two nonconsecutive items, GitKraken explains why it cannot show a combined diff.
+Select consecutive commits in the graph using <kbd>Shift</kbd> or <kbd>Cmd/Ctrl</kbd> + click to show their combined changes in the right panel, titled **Viewing diff of N commits**. You can include the WIP if your selection reaches the latest commit. If you select more than two nonconsecutive items, GitKraken explains why it cannot show a combined diff, and the AI actions for the selection are hidden.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/combined-diff-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop showing a combined diff view summarizing file and line changes from multiple selected commits, with commit history and file modification list visible.">
+  <img src='/wp-content/uploads/combined-diff-2025.png' class="help-center-img img-bordered" alt="The Commit Panel titled Viewing diff of 3 commits, listing the 3 selected commits and the 5 files they changed: 2 modified and 3 added.">
   <figcaption style="text-align: center; color: #888;">Combined diff across multiple selected commits.</figcaption>
 </figure>
 
@@ -114,7 +117,7 @@ Select consecutive commits in the graph using <kbd>Shift</kbd> or <kbd>Cmd/Ctrl<
 Displays only the changed blocks of a file.
 
 <div class='callout callout--basic'>
-  <p><strong>Use Hunk View when:</strong> you want to focus only on changed blocks or revert a specific hunk quickly. <strong>Don't use it when:</strong> you need full-file context around the changes.</p>
+  <p><strong>Use Hunk View when:</strong> you want to focus only on changed blocks or revert a specific hunk quickly. <strong>Do not use it when:</strong> you need full-file context around the changes.</p>
 </div>
 
 <figure class='figure center'>
@@ -140,7 +143,7 @@ This lets you revert only what you need—no reset or manual edits required.
 Displays changes within the full context of the file.
 
 <div class='callout callout--basic'>
-  <p><strong>Use Inline View when:</strong> you want to read edits in the flow of the full file. <strong>Don't use it when:</strong> side-by-side comparison is easier for the change you are reviewing.</p>
+  <p><strong>Use Inline View when:</strong> you want to read edits in the flow of the full file. <strong>Do not use it when:</strong> side-by-side comparison is easier for the change you are reviewing.</p>
 </div>
 
 <figure class='figure center'>
@@ -153,7 +156,7 @@ Displays changes within the full context of the file.
 Displays changes side-by-side, with the original file on the left and the updated version on the right.
 
 <div class='callout callout--basic'>
-  <p><strong>Use Split View when:</strong> you want to compare old and new content line-by-line. <strong>Don't use it when:</strong> you want a more compact, single-column review for small changes.</p>
+  <p><strong>Use Split View when:</strong> you want to compare old and new content line-by-line. <strong>Do not use it when:</strong> you want a more compact, single-column review for small changes.</p>
 </div>
 
 <figure class='figure center'>
@@ -179,7 +182,7 @@ To toggle word wrap, click the **Word Wrap** button in the toolbar of the diff v
 Configure an external diff tool in <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> External Tools</em>:
 
 <div class='callout callout--basic'>
-  <p><strong>Use an external diff tool when:</strong> you already rely on a supported third-party app or need its advanced comparison features. <strong>Don't use an external tool when:</strong> GitKraken Desktop's built-in diff already gives you the context and controls you need.</p>
+  <p><strong>Use an external diff tool when:</strong> you already rely on a supported third-party app or need its advanced comparison features. <strong>Do not use an external tool when:</strong> GitKraken Desktop's built-in diff already gives you the context and controls you need.</p>
 </div>
 
 <figure class='figure center'>
@@ -205,7 +208,7 @@ If a supported tool does not appear in the dropdown, verify that its command lin
 
 To use a different diff tool, go to <em class="context-menu">Preferences <i class="fa fa-caret-right"></i> General</em> and set the <kbd>Diff Tool</kbd> to _Git Config Default_. Then add the appropriate configuration in your global `.gitconfig`:
 
-#### macOS
+### macOS
 ```
 [diff]
     tool = meld
@@ -213,7 +216,7 @@ To use a different diff tool, go to <em class="context-menu">Preferences <i clas
     cmd = open -a Meld --args "$LOCAL" "$REMOTE"
 ```
 
-#### Linux
+### Linux
 ```
 [diff]
     tool = meld
@@ -221,7 +224,7 @@ To use a different diff tool, go to <em class="context-menu">Preferences <i clas
     cmd = meld "$LOCAL" "$REMOTE"
 ```
 
-#### Windows
+### Windows
 ```
 [diff]
     tool = meld

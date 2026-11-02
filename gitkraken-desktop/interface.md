@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-05
+last_verified: 2026-11
 llms_include: true
 tags: [interface, toolbar, left-panel, commit-graph, commit-panel, status-bar]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: October 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to understand the main areas of the GitKraken Desktop interface so you can navigate repository actions, history, staging, coding agent workflows, and collaboration features more efficiently. It covers the toolbar, Left Panel, Commit Panel, Commit Graph, and tabs, with links to deeper task-specific guides when you need more than a UI overview.
 
@@ -28,7 +28,7 @@ Use this page to understand the main areas of the GitKraken Desktop interface so
 - Left Panel modes: The Left Panel can show either List view or Agent Sessions View, depending on the selected mode
 - Left Panel behavior: Sections can be toggled, resized, collapsed, or expanded from the UI
 - Toolbar behavior: Some buttons appear only when the relevant feature or repo state is available, such as LFS
-- Status bar zoom: The status bar exposes preset zoom levels including 100%, 110%, 125%, 140%, 150%, 175%, and 200%
+- Zoom: The status bar zoom selector offers 80%, 90%, 100%, 110%, 120%, 130%, 140%, 150%, 175%, 200%, 250%, and 300%. The <kbd>View</kbd> menu has **Increase Zoom**, **Decrease Zoom**, and **Reset Zoom**
 - Deeper actions: Use linked feature pages for task-specific limits and workflows beyond this interface overview
 
 ***
@@ -40,7 +40,7 @@ Use this page to understand the main areas of the GitKraken Desktop interface so
 - **Commit Graph**: Displays the visual commit history of the current repository. Click any commit to view its details in the Commit Panel. Click the WIP node at the top to view and stage pending changes.
 - **Commit Panel**: Shows file changes for the selected commit or WIP. Displays diffs, staged/unstaged files, and co-author information. Use it to stage files and write commit messages.
 - **Toolbar**: Located at the top of the window. Provides one-click access to Undo, Redo, Pull, Push, Branch, Stash, and Pop. Use the adjacent dropdowns to customize pull behavior or branch options.
-- **Status Bar**: Located at the bottom of the window. Surfaces the [Launchpad](/gitkraken-desktop/gitkraken-launchpad/) summary, your current plan, and a zoom selector with standard levels including 100%, 110%, 125%, 140%, 150%, 175%, and 200%.
+- **Status Bar**: Located at the bottom of the window. Surfaces the [Launchpad](/gitkraken-desktop/gitkraken-launchpad/) summary, your current plan, and a zoom selector with levels from 80% to 300%. You can also zoom from <kbd>View > Increase Zoom</kbd>, <kbd>View > Decrease Zoom</kbd>, and <kbd>View > Reset Zoom</kbd>, or with <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>=</kbd>, <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>-</kbd>, and <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>0</kbd>.
 
 To open the Command Palette at any time, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>P</kbd>. To toggle the Left Panel, use <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> or the toggle in the toolbar. Preferences and integrations are accessible from the gear icon in the upper-right corner.
 
@@ -145,6 +145,12 @@ For in-app terminal behavior, worktree-specific terminal sessions, and manual co
 | <img alt="" src='/wp-content/uploads/gk-new-tags-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Tags** | <p>References that point to specific commits and do not move.</p><p>For more information, see <a href="/working-with-repositories/tags">Tags</a>.</p> |
 | <img alt="" src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Stashes** | <p>Stored file changes from the working copy.</p><p>For more information, see <a href="/working-with-commits/stashing">Stashing</a>.</p> |
 | <img alt="" src='/wp-content/uploads//gk-new-submodules-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Submodules** | <p>A Git repository in a subdirectory of the current repository.</p><p>For more information, see <a href="/working-with-repositories/submodules">Submodules</a>.</p> |
+
+### How to filter the Left Panel
+
+Type in the Left Panel **Filter** box, or press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Option</kbd>/<kbd>Alt</kbd> + <kbd>F</kbd> to focus it. The Left Panel shows only the items whose names match what you type. The match does not need to be exact, so you can type part of a name.
+
+To find a branch on a specific remote, start the filter with the remote name, followed by `/` or `:`, such as `origin/main` or `origin:main`. GitKraken Desktop adds that remote's matching branches to the results.
 
 
 ***
@@ -254,6 +260,22 @@ Tabs persist per [profile](/start-here/profiles/).
 <figure class='figure center'>
     <img alt="Hover to view file paths associated with open tabs" src='/wp-content/uploads/tab-hover-2025.png' class="help-center-img img-bordered">
     <figcaption style="text-align: center; color: #888;">Hover to view file paths associated with open tabs.</figcaption>
+</figure>
+
+### Worktree tab groups
+
+When you open 2 or more tabs from the same repository, such as the main repository and its [worktrees](/gitkraken-desktop/worktrees/), GitKraken Desktop groups them together in the tab bar. A group has a border around its tabs and a dotted handle on its left edge.
+
+- Drag the handle to move the whole group.
+- Right-click the handle and select **Close group** to close every tab in the group.
+- Right-click a tab in the group and select **Close group** or **Close others in group**.
+- In the tabs dropdown, grouped tabs appear indented under the repository name.
+
+A group ends when fewer than 2 of its tabs are open. To stop grouping worktree tabs, go to <kbd>Preferences > UI Customization</kbd> and clear **Automatically group worktree tabs together**.
+
+<figure class='figure center'>
+    <img alt="GitKraken Desktop tab bar with a tab group holding the Playground2026 repository tab and its login-form and readme-typo worktree tabs, with the dotted group handle highlighted." src="/wp-content/uploads/gkd-worktree-tab-groups.png" class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Tabs for a repository and its worktrees are grouped together.</figcaption>
 </figure>
 
 ### Tab alias and name

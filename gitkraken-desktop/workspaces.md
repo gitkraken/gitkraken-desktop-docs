@@ -11,13 +11,13 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [workspaces, cloud-workspaces, local-workspaces, multi-repo, launchpad]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to create Local or Cloud Workspaces in GitKraken Desktop so you can organize repositories, run multi-repository actions, review pull requests across a group of repos, and share workspace context with a team. Cloud Workspaces require connected integrations, while Local Workspaces stay on your machine until you convert them.
 
@@ -54,7 +54,7 @@ Use this page to create Local or Cloud Workspaces in GitKraken Desktop so you ca
 
 **To act across multiple repositories:** Select the checkboxes next to repositories, then use the toolbar to Fetch, Pull, Clone, Open, or Remove them in bulk.
 
-**To view pull requests for all repos:** Open a Cloud Workspace and click the Insights or Launchpad icon to see PRs across the entire Workspace.
+**To view pull requests for all repos:** Open a Cloud Workspace and click the Launchpad icon to see PRs across the entire Workspace.
 
 **To convert a Local Workspace to Cloud:** Open the Workspace and click **Create cloud workspace**. Requires a connected integration under <kbd>Preferences > Integrations</kbd>.
 
@@ -75,7 +75,7 @@ Workspaces are accessible from the Repository Management tab.
 
 To access the Repo Management tab:
 
-1. Click on the folder icon at the top left.
+1. Click the **Repo Management** folder icon in the tab bar.
 2. Or use the keyboard shortcut <kbd>Alt + O</kbd> (Windows/Linux) or <kbd>Cmd + O</kbd> (Mac).
 
 <figure>
@@ -98,7 +98,7 @@ Cloud Workspaces are accessible from any machine and can be shared with selected
 </div>
 
 <div class='callout callout--basic'>
-    <p><strong>Use a Cloud Workspace when:</strong> you need to share repository groups across machines or with teammates. <strong>Don't use a Cloud Workspace when:</strong> the repo list is only for your local machine and does not need shared or synced workspace context.</p>
+    <p><strong>Use a Cloud Workspace when:</strong> you need to share repository groups across machines or with teammates. <strong>Do not use a Cloud Workspace when:</strong> the repo list is only for your local machine and does not need shared or synced workspace context.</p>
 </div>
 
 <p>Watch the overview:</p>
@@ -173,7 +173,7 @@ More options are available via the ellipsis menu.
   <tbody>
     <tr>
       <td style="padding: 4px;"><strong>Clone</strong> <img alt="" src="/wp-content/uploads/gk-remote-icon.svg" style="height:1em;"></td>
-      <td style="padding: 4px;">Clone all selected repositories. HTTPS is used by default unless <a href="https://help.gitkraken.com/gitkraken-desktop/integrations/">SSH is configured in your settings</a>. Only available if repositories aren't already cloned.</td>
+      <td style="padding: 4px;">Clone all selected repositories. HTTPS is used by default unless <a href="https://help.gitkraken.com/gitkraken-desktop/integrations/">SSH is configured in your settings</a>. Only available if repositories are not already cloned.</td>
     </tr>
     <tr>
       <td style="padding: 4px;"><strong>Fetch</strong></td>
@@ -385,21 +385,7 @@ GitKraken Insights helps you understand how pull requests are merged into your r
   </figcaption>
 </figure>
 
-To launch GitKraken Insights:
-
-1. Open a Cloud Workspace.
-2. Click the <strong>Insights</strong> icon in the upper-right of the Workspace header.
-
-<figure>
-  <img src="/wp-content/uploads/insights-icon-ws-2025@2x.png" 
-       class="help-center-img img-bordered" 
-       alt="Insights icon highlighted in the Workspace header of GitKraken Desktop, showing how to open Insights for the selected Workspace.">
-  <figcaption style="color:#888; text-align:center">
-    Accessing GitKraken Insights from a Workspace
-  </figcaption>
-</figure>
-
-This will open a new browser tab showing insights for that Workspace on <a href="https://gitkraken.dev?source=help_center&product=gitkraken">GitKraken.dev</a>.
+Insights runs on GitKraken.dev. To view it, open <a href="https://gitkraken.dev?source=help_center&product=gitkraken">GitKraken.dev</a> in your browser.
 
 For more details, visit the [GitKraken.dev Insights documentation](/gk-dev/gk-dev-insights/).
 

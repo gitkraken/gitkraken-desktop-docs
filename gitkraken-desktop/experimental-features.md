@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: preview
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [experimental, cloud-patch, git-executable, preview, features]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to enable and evaluate GitKraken Desktop experimental features such as Git Executable and Cloud Patches. Experimental features are optional previews, so this page focuses on where to enable them, what they currently do, and which workflows depend on them.
 
@@ -79,7 +79,7 @@ GitKraken ships with Git built-in, or you can select a system Git path.
 
 Git actions that currently use the Git executable (by version):
 
-**v9.4.0–11.9.0:**
+**v9.4.0 to 11.9.0:**
 - Commit, fetch, push, pull
 - Branch rename/delete, merge base
 - Tag creation/deletion, revert commits
@@ -92,6 +92,12 @@ Git actions that currently use the Git executable (by version):
 - Undo checkout
 - Submodules
 - Squash merge setting in Commit preferences
+
+**v12.6.1:**
+- File history and blame
+- Adding, removing, renaming, and editing remotes
+- Creating and applying patches
+- Opening files in your external diff and merge tools
 
 See full details per release in the [GitKraken Desktop release notes](/gitkraken-desktop/current/).
 

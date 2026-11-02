@@ -11,14 +11,14 @@ git_hosts: [Trello]
 integrations: [Trello]
 hosted_variant: cloud
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [trello, cards, filters, branching, integration]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to connect GitKraken Desktop to Trello so you can preview, create, edit, filter, and branch from cards without leaving your Git workflow. Trello is view-only for Community users, while paid GitKraken subscriptions unlock the full card management workflow.
 
@@ -61,7 +61,7 @@ Use this page to connect GitKraken Desktop to Trello so you can preview, create,
 Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
 <div class='callout callout--basic'>
-    <p><strong>Use the Trello integration when:</strong> your team tracks work in Trello and you want cards visible beside your repository workflow. <strong>Don't use it as a full replacement for Trello when:</strong> you need broader board management features outside the card workflows covered here.</p>
+    <p><strong>Use the Trello integration when:</strong> your team tracks work in Trello and you want cards visible beside your repository workflow. <strong>Do not use it as a full replacement for Trello when:</strong> you need broader board management features outside the card workflows covered here.</p>
 </div>
 
 <figure>
@@ -69,14 +69,12 @@ Set up the integration from the ISSUES section in the Left Panel or from <kbd>Pr
   <figcaption style="text-align: center; color: #888">Connect Trello integration in Preferences.</figcaption>
 </figure>
 
-You’ll be redirected to a Trello page to authorize the connection. Scroll down and click <strong>Allow</strong>.
+Trello connects through your GitKraken account, so sign in to GitKraken Desktop first. In <kbd>Preferences > Integrations</kbd>, select **Trello** and click **Connect to Trello**. Your browser opens gitkraken.dev to finish the connection. If Trello asks you to authorize the connection, scroll down and click <strong>Allow</strong>. You can also use the connection on your other computers and profiles. See [How integrations connect through your GitKraken account](/gitkraken-desktop/integrations/#how-integrations-connect-through-your-gitkraken-account).
 
 <figure>
   <img src="/wp-content/uploads/trello-integration@2x.png" class="help-center-img img-bordered" alt="Trello authorization page">
   <figcaption style="text-align: center; color: #888">Trello authorization page.</figcaption>
 </figure>
-
-Alternatively, copy the token from the _Success_ page and paste it into GitKraken Desktop.
 
 ---
 
@@ -136,7 +134,7 @@ Fields marked with <code>*</code> are required. Your card will sync automaticall
 You can use Trello’s filter syntax to create custom filters for your cards.
 
 <div class='callout callout--basic'>
-    <p><strong>Use custom card filters when:</strong> you need to focus on a board, list, label, or member-specific queue. <strong>Don't rely on the default All Cards view when:</strong> it mixes too much unrelated work together.</p>
+    <p><strong>Use custom card filters when:</strong> you need to focus on a board, list, label, or member-specific queue. <strong>Do not rely on the default All Cards view when:</strong> it mixes too much unrelated work together.</p>
 </div>
 
 <figure>
@@ -153,7 +151,7 @@ See Trello’s [filtering guide](https://help.trello.com/article/808-searching-f
 You can create branches tied to cards directly from the card detail view. Use the <strong>Create branch</strong> button or right-click a card.
 
 <div class='callout callout--basic'>
-    <p><strong>Use card-based branch creation when:</strong> the branch should map directly to one Trello card. <strong>Don't use it when:</strong> the branch covers several cards or needs a branch name that should not be derived from the card title.</p>
+    <p><strong>Use card-based branch creation when:</strong> the branch should map directly to one Trello card. <strong>Do not use it when:</strong> the branch covers several cards or needs a branch name that should not be derived from the card title.</p>
 </div>
 
 <figure>

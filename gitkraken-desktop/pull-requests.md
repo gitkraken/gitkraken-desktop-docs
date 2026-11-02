@@ -11,27 +11,28 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: GA
-last_verified: 2026-09
+last_verified: 2026-11
 llms_include: true
 tags: [pull-requests, review, templates, suggestions, merge]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: October 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
-Use this page to create, review, filter, comment on, and merge pull requests in GitKraken Desktop across supported providers such as GitHub, GitLab, Bitbucket, and Azure DevOps. It also covers GitHub-specific review features such as code suggestions, pull request view, and merge options inside the app.
+Use this page to create, review, filter, comment on, and merge pull requests in GitKraken Desktop across supported providers such as GitHub, GitLab, Bitbucket, and Azure DevOps. It also covers GitHub-specific features such as Pull Request View, stacked pull requests, code suggestions, and merge options inside the app, and how to review pull requests with GitKraken Code Review on GitKraken.dev.
 
 **Requirements and limits**
 - Supported providers on this page: GitHub, GitLab, Bitbucket, and Azure DevOps
 - Precondition: Push your branch to the remote before creating a pull request
-- GitHub-specific features: Pull Request View, stacked pull requests on GitHub.com, code suggestions, in-app merge options, and the **Review on GitKraken.dev** button
+- GitHub-specific features: Pull Request View, stacked pull requests on GitHub.com, code suggestions, and in-app merge options
+- Pull request review: **Review on GitKraken.dev** opens GitHub, GitLab, and Azure DevOps pull requests in GitKraken Code Review in your browser; it is not available in GitKraken On-Premise (Self-Hosted Server and Serverless)
 - Template support: Pull request templates are supported for GitHub, GitLab, and Azure DevOps
 - Azure DevOps note: If the PR form does not populate, verify the remote URL and integration domain on the Azure DevOps integration page
 - Feature scope varies by provider, so some actions described here are GitHub-only
 
 | Provider | Create PR or MR | View PR or MR | Merge in app | Notes |
 |----------|------------------|---------------|--------------|-------|
-| GitHub | Yes | Yes | Yes | Review and suggestion features are strongest here |
+| GitHub | Yes | Yes | Yes | Pull Request View and stacked pull requests are GitHub-only |
 | GitLab | Yes | Yes | Yes | Uses merge request terminology |
 | Bitbucket | Yes | Yes | Yes | Some reviewer workflows depend on permissions |
 | Azure DevOps | Yes | Yes | Yes | Verify remote URL and integration domain if the form does not populate |
@@ -46,16 +47,13 @@ Use this page to create, review, filter, comment on, and merge pull requests in 
 - Or right-click the target branch and choose the same option.
 - Or click the **+** icon in the PULL REQUESTS section of the Left Panel.
 
-**To review a pull request (GitHub integration):**
-1. Select a PR in the Left Panel or click the PR icon in the Launchpad.
-2. Click **Review Code and Suggest Changes** to open the diff view.
-3. Write suggestions directly in the editor. Suggestions are posted as comments on the GitHub PR.
+**To review a pull request:** Right-click the pull request in the Left Panel and select **Review on GitKraken.dev**. The pull request opens in [GitKraken Code Review](https://gitkraken.dev?source=help_center&product=gitkraken) in your browser, where you can review the changes, use AI-generated suggestions, and approve or comment. This works for GitHub, GitLab, and Azure DevOps pull requests. For other places to start a review, see [How to review pull requests with GitKraken Code Review](#how-to-review-pull-requests-with-gitkraken-code-review).
 
-**To review a GitHub pull request on GitKraken.dev:** Click **Review on GitKraken.dev** in the GitHub Pull Request view to open the PR in [GitKraken Code Review](https://gitkraken.dev?source=help_center&product=gitkraken). You can review with cleaner diffs, AI-generated suggestions, and integrated chat, and approve or comment as you would on GitHub.
+**To view a GitHub pull request's changes in the graph:** Right-click the pull request in the Left Panel and select **View changes in #N**, where #N is the pull request number.
 
 **To merge a pull request:** Click **Merge pull request** in the GitHub PR view and select a merge strategy (merge commit, squash, or rebase).
 
-**To create a stacked pull request on GitHub.com:** Create a pull request from a branch whose target already has an open pull request. In the Create Pull Request panel, select **Add this pull request to an existing stack**. GitKraken shows which pull requests the new one will stack on.
+**To create a stacked pull request on GitHub.com:** Create a pull request from a branch whose target already has an open pull request. In the Create Pull Request panel, select **Start a pull request stack** or **Add this pull request to an existing stack**. GitKraken shows which pull requests the new one will stack on.
 
 **To filter pull requests:** Use predefined filters like "My pull requests" or create custom filters in the Left Panel. PR icons indicate CI status and review state.
 
@@ -75,7 +73,7 @@ To create a pull request:
 - Or click the <button class='button button--success button--ui button--nolink'>+</button> icon in the Left Panel PULL REQUESTS section
 
 <div class='callout callout--basic'>
-  <p><strong>Use GitKraken Desktop PR creation when:</strong> your branch is already pushed and you want to open or manage the PR without leaving the app. <strong>Don't start the PR yet when:</strong> the branch is not pushed, the target branch is still unclear, or you need provider-specific options not exposed in GitKraken Desktop.</p>
+  <p><strong>Use GitKraken Desktop PR creation when:</strong> your branch is already pushed and you want to open or manage the PR without leaving the app. <strong>Do not start the PR yet when:</strong> the branch is not pushed, the target branch is still unclear, or you need provider-specific options not exposed in GitKraken Desktop.</p>
 </div>
 
 <figure>
@@ -91,7 +89,7 @@ To create a pull request:
 </figure>
 
 <div class='callout callout'>
-  <p><strong>Note:</strong> If the Azure DevOps PR form isn’t populating, see <a href="https://help.gitkraken.com/gitkraken-desktop/azure-devops/#azure-devops-pull-requests-form-not-populating-in-gitkraken-desktop">Azure DevOps Integration</a>.</p>
+  <p><strong>Note:</strong> If the Azure DevOps PR form is not populating, see <a href="https://help.gitkraken.com/gitkraken-desktop/azure-devops/#azure-devops-pull-requests-form-not-populating-in-gitkraken-desktop">Azure DevOps Integration</a>.</p>
 </div>
 
 ***
@@ -102,9 +100,14 @@ A stacked pull request targets the branch of another open pull request. Use a st
 
 To create or extend a stack:
 
-1. Create a pull request from a branch whose target branch has an open pull request.
-2. In the Create Pull Request panel, select **Add this pull request to an existing stack**.
-3. Confirm the pull requests shown below the option. The new pull request will be stacked on them.
+1. Create a pull request from a branch whose target branch has an open pull request in the same repository. Pull requests from forks cannot be stacked.
+2. In the Create Pull Request panel, select the stacking option:
+   - **Start a pull request stack** appears when the target pull request is not in a stack yet.
+   - **Add this pull request to an existing stack** appears when the target pull request is already in a stack.
+3. Confirm the pull requests listed below the option, such as **This pull request will be stacked with #103**. Click a pull request number to open it in your browser.
+4. Click **Create Pull Request**.
+
+If you change the target branch, GitKraken Desktop clears the stacking option. If GitKraken Desktop creates the pull request but cannot add it to the stack, you see **Pull request created, but it could not be stacked**.
 
 <figure>
   <img src='/wp-content/uploads/gkd-12-6-stacked-pr-create.png' 
@@ -115,7 +118,7 @@ To create or extend a stack:
 
 GitKraken displays stack information in the pull request interface and other relevant parts of the app, so you can see a pull request's place in a stack and navigate to related pull requests. Stacked pull requests are supported for GitHub.com.
 
-In GitHub Pull Request View, the header shows the pull request's position in the stack, such as **2/2**. Use the arrows next to it to move between pull requests in the stack. Above **Merge Pull Request**, GitKraken lists each pull request in the stack down to the base branch.
+In GitHub Pull Request View, the header shows the pull request's position in the stack, such as **2/2**. Use the arrows next to it to move between the open pull requests in the stack. Above **Merge Pull Request**, GitKraken lists each pull request in the stack down to the base branch, with a status for each one: **Ready**, **Not ready**, **Draft**, **Merged**, **Closed**, or **Blocked downstack**.
 
 <figure>
   <img src='/wp-content/uploads/gkd-12-6-stacked-pr-view.png' 
@@ -124,7 +127,13 @@ In GitHub Pull Request View, the header shows the pull request's position in the
   <figcaption style="text-align:center; color:#888">View and navigate a pull request stack in GitHub Pull Request View</figcaption>
 </figure>
 
-In the graph, hover over a pull request icon on a branch to see the pull request's position in its stack.
+When you select a commit that has a stacked pull request, the Commit Panel shows the stack position, such as **1/2**, next to the pull request. Hover over the position to see every pull request in the stack, its status, and its branch, down to the base branch of the stack:
+
+- Click an open pull request to open it in GitHub Pull Request View.
+- Click a branch to select it in the graph.
+- Double-click a branch to check it out.
+
+In the graph, hover over a pull request icon on a branch to see the pull request's position in its stack. The pull request tooltip in the Left Panel also shows the position.
 
 <figure>
   <img src='/wp-content/uploads/gkd-12-6-stacked-pr-graph.png' 
@@ -191,7 +200,7 @@ Conflict warnings appear if your source and target branches differ:
 With the GitHub integration, select the draft checkbox to mark the pull request as a draft.
 
 <div class='callout callout--basic'>
-  <p><strong>Use a draft pull request when:</strong> you want early visibility or feedback before the branch is ready to merge. <strong>Don't mark it ready too early when:</strong> the implementation still needs major changes and you are not ready for formal review.</p>
+  <p><strong>Use a draft pull request when:</strong> you want early visibility or feedback before the branch is ready to merge. <strong>Do not mark it ready too early when:</strong> the implementation still needs major changes and you are not ready for formal review.</p>
 </div>
 
 <figure>
@@ -210,7 +219,7 @@ Enable the GitHub integration to access GitHub PR view:
 - Or click the PR icon in the Launchpad
 
 <div class='callout callout--basic'>
-  <p><strong>Use GitHub Pull Request View when:</strong> you want to update PR metadata, inspect changes, or suggest edits inside GitKraken Desktop. <strong>Don't rely on it for every review workflow when:</strong> your team depends on deeper provider-native review features outside the app.</p>
+  <p><strong>Use GitHub Pull Request View when:</strong> you want to update PR metadata, check build status, or merge inside GitKraken Desktop. <strong>Do not rely on it for every review workflow when:</strong> your team depends on deeper provider-native review features outside the app.</p>
 </div>
 
 <figure>
@@ -235,23 +244,30 @@ From this view, GitHub users can edit:
 - Milestones
 - Labels
 
-Click <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Review Code and Suggest Changes</span></button> to review changes.
+To review the changes, click <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Review on GitKraken.dev</span></button> below the number of changed files. See [How to review pull requests with GitKraken Code Review](#how-to-review-pull-requests-with-gitkraken-code-review).
 
 ***
 
-## How to review GitHub pull requests on GitKraken.dev
+## How to review pull requests with GitKraken Code Review
 
-In the GitHub Pull Request view, click <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Review on GitKraken.dev</span></button> to open the pull request with [GitKraken Code Review](https://gitkraken.dev?source=help_center&product=gitkraken) in your browser.
+Pull requests open for review in [GitKraken Code Review](https://gitkraken.dev?source=help_center&product=gitkraken) on GitKraken.dev, in your browser. Review works for GitHub, GitLab, and Azure DevOps pull requests.
 
-<div class='callout callout--basic'>
-  <p><strong>Use GitKraken.dev review when:</strong> you want a faster, more focused PR review experience or you want to use AI-assisted suggestions and integrated chat. <strong>Stay in the in-app review when:</strong> you want to suggest code edits directly from GitKraken Desktop and post them as comments on the GitHub PR.</p>
+To start a review, use any of these:
+
+- In the GitHub Pull Request view, click <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Review on GitKraken.dev</span></button>.
+- In the PULL REQUESTS section of the Left Panel, right-click a pull request and select **Review on GitKraken.dev**.
+- In the graph or the Left Panel, right-click a branch that has a pull request and select **Review on GitKraken.dev**.
+- In Launchpad, select **Review Pull Request** in the pull request's actions.
+
+<div class='callout callout--warning'>
+  <p><strong>GitKraken On-Premise users:</strong> <strong>Review on GitKraken.dev</strong> and <strong>Review Pull Request</strong> are not available in Self-Hosted Server or Serverless deployments.</p>
 </div>
 
-GitKraken Code Review gives you a faster review experience for GitHub PRs with:
+GitKraken Code Review offers:
 - Cleaner diffs that are easier to scan
 - AI-generated suggestions to speed up review
 - Integrated chat with the rest of your team
-- The ability to approve and comment just like on GitHub
+- The ability to approve and comment as you would on your hosting service
 
 <figure>
   <img src='/wp-content/uploads/code-review-actions.png' 
@@ -273,25 +289,6 @@ GitKraken Code Review gives you a faster review experience for GitHub PRs with:
        class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Commenting on a pull request in GitKraken.dev Code Review</figcaption>
 </figure>
-
-***
-
-## How to suggest changes
-
-When you click to <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>Review Code and Suggest Changes</span></button>, this will allow you to write the code suggestion directly in GitKraken Desktop's editor or [gitkraken.dev](https://gitkraken.dev?source=help_center&product=gitkraken).
-
-<div class='callout callout--basic'>
-  <p><strong>Use code suggestions when:</strong> you want to propose concrete edits for the PR author to review or apply. <strong>Don't use suggestions when:</strong> you only need a high-level comment or architectural discussion without an exact code change.</p>
-</div>
-
-<figure>
-  <img src='/wp-content/uploads/gkd-10-2-0-pr-suggest-code-changes.gif' 
-       alt="User suggesting code changes within a pull request using GitKraken Desktop's review interface" 
-       class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">Suggest code changes inside a pull request</figcaption>
-</figure>
-
-All code suggestions are posted a comments in the GitHub pull request conversation with a link to review the code suggestion inside of gitkraken.dev or GitKraken Desktop. 
 
 ***
 
@@ -348,7 +345,7 @@ Double-click a branch in the PR view to check it out. Click build status to open
   <figcaption style="text-align:center; color:#888">Check out branches and monitor CI</figcaption>
 </figure>
 
-If the remote isn’t added yet, GitKraken will prompt you to add it.
+If the remote is not added yet, GitKraken will prompt you to add it.
 
 ***
 
@@ -415,11 +412,23 @@ Pull request icons:
 - <i class='fa fa-circle' style="color:orange"></i> = CI passed/pending or reviews pending
 - <i class='fa fa-times' style="color:red"></i> = Failing CI or changes requested
 
+### How to view a pull request's changes in the graph
+
+For GitHub and GitHub Enterprise pull requests, you can see all of a pull request's changes in one diff:
+
+1. Right-click the pull request in the PULL REQUESTS section of the Left Panel, or right-click a branch that has a pull request in the graph.
+2. Select **View changes in #N**, where #N is the pull request number.
+
+GitKraken Desktop selects the pull request's base and head commits in the graph, and the Commit Panel shows the full diff of the pull request.
+
+- If the pull request's branch comes from a remote that is not in your repository, GitKraken Desktop asks whether to add it, for example **Do you want to add "fork-owner" as a remote to view "feature-branch"?** Accept to add the remote and continue.
+- If the base or head commit is not loaded in the graph, a message tells you how old the commit is. Scroll down the graph, or increase **Initial Commits in Graph** in <kbd>Preferences > General</kbd>, then try again.
+
 ***
 
 ## How merged pull request status appears in the interface
 
-When a GitHub pull request or GitLab merge request is merged, GitKraken Desktop surfaces a merged PR status pill in three locations associated with the branch:
+When a pull request on GitHub, GitLab, Bitbucket, or Azure DevOps is merged, GitKraken Desktop shows a merged PR status pill in three locations associated with the branch. This includes GitHub Enterprise, GitLab Self-Managed, and Bitbucket Data Center.
 
 | Location | When it appears |
 |----------|-----------------|

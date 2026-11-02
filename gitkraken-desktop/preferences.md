@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-09
+last_verified: 2026-11
 llms_include: true
 tags: [preferences, settings, ssh, integrations, profiles]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to understand what each major Preferences section controls in GitKraken Desktop, including profiles, integrations, AI settings, external tools, commit signing, terminal behavior, Agent Sessions View settings, and repository-specific options. Start here when you need to know where a setting lives before changing your workflow or environment.
 
@@ -72,7 +72,7 @@ Configure app-wide behavior like auto-fetch, conflict detection, and commit grap
 
 | Setting | What it controls |
 | --- | --- |
-| **Auto-Fetch** | Set an interval (0–60 minutes); 0 disables auto-fetch. |
+| **Auto-Fetch** | Set an interval (0 to 60 minutes); 0 disables auto-fetch. |
 | **Auto-Prune** | Removes stale remote-tracking references. |
 | **Automatic Conflict Detection** | GitKraken monitors for base branch conflicts. |
 | **Keep Submodules Up to Date** | Auto-update submodules after Git actions. |
@@ -114,6 +114,13 @@ Control access and connections to remote repositories:
 </div>
 
 Let [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai) automate repetitive Git tasks to improve your efficiency.
+
+The **Usage Details** card shows how many AI credits you have used this week and when your credits reset. Below it, the **Shared Organization Pool** meter shows your organization's credits this week, split into **Your usage**, **Rest of organization**, and **Remaining**.
+
+When you reach your weekly credit limit, the card shows **You've reached your weekly credit limit**. GitKraken AI then draws from your organization's shared credit pool, so you can keep working. Every member of the organization can use the shared pool, and it resets weekly along with your personal limit.
+
+- Organization Owners and Admins on a paid plan can click **Get more AI credits** to add credits.
+- Users on a trial can click **Upgrade to get more credits**.
 
 <div class='callout callout--basic'>
   <p>See the <a href="https://help.gitkraken.com/general/gitkraken-ai-faq/">GitKraken AI FAQ</a> for common questions.</p>
@@ -161,6 +168,7 @@ Visual preferences for theming and commit graph display:
 - Graph metadata: branches, tags, author, commit message, SHA, etc.
 - Hide Launchpad from the status bar
 - Show Agents view in left panel. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
+- **Automatically group worktree tabs together**: On by default. Groups the tabs of a repository and its worktrees in the tab bar. See [Worktree tab groups](/gitkraken-desktop/interface/#worktree-tab-groups).
 
 If you want to switch between the standard Left Panel and Agent Sessions View, go to <kbd>Preferences > UI Customization</kbd> and enable **Show Agents view in left panel**.
 
@@ -191,6 +199,7 @@ Customize code and diff viewer:
 
 Adjust the appearance and behavior of GitKraken’s terminal:
 - Font, size, line height, cursor
+- **Dim terminal when unfocused**: On by default. Fades the terminal output while you work elsewhere in the app
 - Autocomplete behavior
 - Default terminal for Windows
 
@@ -218,6 +227,6 @@ These apply only to the open repository:
 - [Issues](/gitkraken-desktop/jira/)
 - [Team View](/gitkraken-desktop/team-view/)
 - [Submodules](/gitkraken-desktop/submodules/#keep-submodules-up-to-date)
-- [Agents](/gitkraken-desktop/agents/#how-to-configure-setup-commands) - Setup commands such as install scripts or build steps that run when a new agent session starts in a worktree
+- [Agents](/gitkraken-desktop/agents/#how-to-configure-setup-commands) - **Show worktree WIP nodes in the graph** (on by default), which shows a WIP row in the Commit Graph for every other worktree with uncommitted changes or an active agent session, and setup commands such as install scripts or build steps that run when a new agent session starts in a worktree
 
 You can configure these uniquely per repository.

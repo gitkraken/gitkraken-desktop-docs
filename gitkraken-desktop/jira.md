@@ -11,14 +11,14 @@ git_hosts: [Jira Cloud, Jira Data Center]
 integrations: [Jira Cloud, Jira Data Center]
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [jira, issues, jql, branching, integration]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to connect GitKraken Desktop to Jira Cloud or Jira Data Center so you can preview, create, edit, filter, and branch from Jira issues alongside your repository work. Jira is view-only for Community users, while paid GitKraken subscriptions unlock the full issue management workflow.
 
@@ -74,14 +74,12 @@ Set up the integration from the ISSUES section in the Left Panel or from <kbd>Pr
   <figcaption style="text-align: center; color: #888">Connecting Jira integration in GitKraken.</figcaption>
 </figure>
 
-You will be redirected to an Atlassian page to authorize the connection. Click <em>Accept</em> to proceed.
+Jira Cloud connects through your GitKraken account, so sign in to GitKraken Desktop first. In <kbd>Preferences > Integrations</kbd>, select **Jira Cloud** and click **Connect to Jira**. Your browser opens gitkraken.dev to finish the connection. If Atlassian asks you to authorize the connection, click <em>Accept</em>. You can also use the connection on your other computers and profiles. See [How integrations connect through your GitKraken account](/gitkraken-desktop/integrations/#how-integrations-connect-through-your-gitkraken-account).
 
 <figure>
   <img src="/wp-content/uploads/connect-atlassian-2025@2x.png" class="help-center-img img-bordered" alt="Atlassian OAuth prompt for Jira integration">
   <figcaption style="text-align: center; color: #888">Atlassian OAuth prompt for Jira integration.</figcaption>
 </figure>
-
-Alternatively, you may copy the token from the _Success_ page and paste it into the Jira Cloud integration screen in GitKraken Desktop.
 
 ---
 
@@ -141,7 +139,7 @@ The issue will sync directly with your connected Jira project.
 You can create filters to show specific issues. The integration supports Atlassian’s JQL (Jira Query Language) and provides auto-complete for filter fields.
 
 <div class='callout callout--basic'>
-    <p><strong>Use JQL filters when:</strong> you need focused issue queues by project, sprint, assignee, or status. <strong>Don't rely only on the default My Issues view when:</strong> your workflow depends on a more specific slice of Jira work.</p>
+    <p><strong>Use JQL filters when:</strong> you need focused issue queues by project, sprint, assignee, or status. <strong>Do not rely only on the default My Issues view when:</strong> your workflow depends on a more specific slice of Jira work.</p>
 </div>
 
 <figure>
@@ -158,7 +156,7 @@ For advanced filtering tips, see Atlassian’s [JQL guide](https://www.atlassian
 You can create branches tied to Jira issues directly from the issue detail view.
 
 <div class='callout callout--basic'>
-    <p><strong>Use issue-based branch creation when:</strong> one branch should map directly to one Jira issue. <strong>Don't use it when:</strong> the branch spans several tickets or the auto-filled issue-based name is not the branch structure you need.</p>
+    <p><strong>Use issue-based branch creation when:</strong> one branch should map directly to one Jira issue. <strong>Do not use it when:</strong> the branch spans several tickets or the auto-filled issue-based name is not the branch structure you need.</p>
 </div>
 
 <figure>

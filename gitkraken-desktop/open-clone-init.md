@@ -11,13 +11,13 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps, generic]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: GA
-last_verified: 2026-05
+last_verified: 2026-11
 llms_include: true
 tags: [open, clone, init, shallow-clone, sparse-checkout, command-line]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: October 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 32px; margin-bottom:24px;">
   <p style="flex:1 1 300px; margin:0;">Use this page to open an existing local repository, clone a remote repository, or initialize a new repository in GitKraken Desktop. It also covers shallow clone, sparse checkout, and the Repository Management tab so you can choose the right setup path for a new or existing project.</p>
@@ -66,7 +66,7 @@ Shallow clone is supported when cloning. Enable the **Shallow Clone** option in 
 Complete these setup steps before managing repositories:
 
 1. [Install GitKraken Desktop](/gitkraken-desktop/how-to-install)
-2. Create an account and configure your [profile](/gitkraken-desktop/profiles)
+2. Create an account and configure your [profile](/gitkraken-desktop/profiles). GitKraken Desktop opens your browser to sign up or sign in at gitkraken.dev. If you choose a provider such as GitHub during setup, gitkraken.dev opens with that provider selected.
 
 ***
 ## How Repository Management works

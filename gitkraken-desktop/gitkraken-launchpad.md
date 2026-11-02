@@ -11,15 +11,15 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps, Jira Cloud, Jira Data Cente
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps, Jira Cloud, Jira Data Center]
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [launchpad, pull-requests, issues, wip, filters]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
-Use GitKraken Launchpad to monitor pull requests, issues, and works in progress across a selected Workspace or team. This page explains how to open Launchpad, connect integrations, switch between Personal and Team Views, save filtered views, and understand feature differences between Cloud and On-Premise environments.
+Use GitKraken Launchpad to monitor pull requests, issues, and works in progress across a selected Workspace or team. Open Launchpad, connect integrations, switch between Personal and Team Views, save filtered views, and check which features differ between Cloud and On-Premise environments.
 
 <figure>
   <img src="/wp-content/uploads/launchpad-highlight-2025@2x.png"
@@ -61,6 +61,8 @@ To open Launchpad:
 
 1. Click the <strong>Launchpad</strong> tab in the top-left corner of GitKraken Desktop.
 2. Connect your integrations via <kbd>Preferences > Integrations</kbd>, or follow the in-app prompts for specific providers.
+
+The **Pull Requests** and **Issues** tabs require you to sign in to your GitKraken account. If you are signed out, these tabs show **Sign In to Use Launchpad** with **Sign Up** and **Sign In** buttons. The **WIPs**, **All**, and **Snoozed** tabs work without signing in.
 
 <figure>
   <img src="/wp-content/uploads/open-launchpad-2025@2x.png" 
@@ -104,7 +106,7 @@ You can filter by:
 - **All**: Displays a unified view of all three above.
 
 <div class='callout callout--warning'>
-    <p><strong>Note:</strong> Cloud Workspaces are not available in GitKraken On-Premise. As a result, Launchpad will not show Cloud Workspace-related data in those environments. <a href="https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/#elementor-toc__heading-anchor-13">Learn more.</a></p>
+    <p><strong>Note:</strong> Cloud Workspaces are not available in GitKraken On-Premise. As a result, Launchpad will not show Cloud Workspace-related data in those environments. See <a href="#how-on-premise-launchpad-differs-from-cloud-launchpad">How On-Premise Launchpad differs from Cloud Launchpad</a>.</p>
 </div>
 
 Pinned and snoozed items help prioritize what you see first:
@@ -219,7 +221,7 @@ From Launchpad, you can quickly take action on pull requests:
 - Open PR in the browser
 - View the repository
 - Open Code Suggestions (if available)
-- Review pull request (GitHub only)
+- Review Pull Request, which opens the pull request in GitKraken Code Review on GitKraken.dev (GitHub, GitLab, and Azure DevOps pull requests; not available in GitKraken On-Premise)
 - Checkout PR branch
 - Close PR
 - Checkout in new worktree
@@ -284,6 +286,8 @@ If your Workspace uses GitHub.com, you can view PRs directly in Launchpad’s Gi
 ## How to work with issues in Launchpad
 
 Launchpad supports multiple issue trackers including Jira, GitHub Issues, Azure DevOps, and Trello.
+
+To start a coding agent on an issue, click **Start an Agent Session** in the issue's actions. This action appears for issues that have no linked branch. In the dialog, review the **Repository**, **Branch name**, **Base branch**, and **Coding agent**. **Send issue context to start immediately** is selected by default and gives the agent the issue's details so it can start working right away. For more information, see [How to start an agent session from a work item](/gitkraken-desktop/agents/#how-to-start-an-agent-session-from-a-work-item).
 
 <figure>
   <img src="/wp-content/uploads/issues-tab-launchpad-2025@2x.png" class="help-center-img img-bordered" alt="Launchpad Issues tab with filters for workspace, issue source, project, labels, and fix versions, displaying a list of issues and associated actions.">
