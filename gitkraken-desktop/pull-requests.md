@@ -427,6 +427,6 @@ When a pull request is merged, GitKraken Desktop shows a merged PR status pill i
 |----------|-----------------|
 | **Toolbar** | When the branch with a merged PR is checked out |
 | **Commit Panel** | When you select a commit on the branch with a merged PR |
-| **Worktree cards** (Agent Sessions View) | On the card for the branch with a merged PR |
+| **Worktree cards** (Agents view) | On the card for the branch with a merged PR |
 
 Use the merged PR pill to confirm that a branch's work has shipped before you delete the branch or remove its worktree.

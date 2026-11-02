@@ -150,7 +150,7 @@ When you switch worktrees, GitKraken Desktop shows that worktree's terminal tabs
 
 When you start a coding agent in a worktree that already has a terminal open, GitKraken Desktop starts the agent in a new tab instead of replacing the existing terminal.
 
-GitKraken Desktop uses the same worktrees in both List view and [Agent Sessions View](/gitkraken-desktop/agents/). You can open a worktree from either view and use its terminal tabs.
+GitKraken Desktop uses the same worktrees in both List view and the [Agents view](/gitkraken-desktop/agents/). You can open a worktree from either view and use its terminal tabs.
 
 ---
 

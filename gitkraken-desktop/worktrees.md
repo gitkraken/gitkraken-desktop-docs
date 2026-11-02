@@ -21,7 +21,7 @@ taxonomy:
 
 Use this page to create, switch, lock, and remove Git worktrees in GitKraken Desktop when you need multiple branches checked out at the same time. Worktrees keep separate working directories while sharing the same repository history, which makes them useful for parallel feature work, testing, review workflows, and coding agent sessions.
 
-If you use coding agents in GitKraken Desktop, Agent Sessions View works with the same worktrees. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for agent-specific setup, session management, and status details.
+If you use coding agents in GitKraken Desktop, the Agents view works with the same worktrees. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for agent-specific setup, session management, and status details.
 
 **Requirements and limits**
 - GitKraken Desktop version: Worktrees are supported in version 10.5.0 and later
@@ -38,7 +38,7 @@ If you use coding agents in GitKraken Desktop, Agent Sessions View works with th
 | Lock worktree | Prevents accidental changes to that worktree | No | Useful when working elsewhere temporarily |
 | Remove worktree | Detaches that working directory from the repository | No | Removes the worktree entry, not shared history |
 | Remove worktree and delete branch | Removes the worktree and deletes its associated branch in one step | No | Available from the worktree context menu in the Left Panel and from the branch's context menu. If the branch has an upstream, **Remove worktree and delete branch (local & remote)** also deletes the remote branch |
-| View worktrees through Agent Sessions View | Shows the same worktrees in an agent-focused interface | No | Adds coding agent session context, quick actions, and a merged PR pill when the branch has a merged pull request on GitHub, GitLab, Azure DevOps, Bitbucket, or Bitbucket Data Center |
+| View worktrees through the Agents view | Shows the same worktrees in an agent-focused interface | No | Adds coding agent session context, quick actions, and a merged PR pill when the branch has a merged pull request on GitHub, GitLab, Azure DevOps, Bitbucket, or Bitbucket Data Center |
 | Commit in a worktree | Records history from that worktree | Yes | Committed changes become visible across all worktrees |
 
 ***
@@ -56,7 +56,7 @@ If you use coding agents in GitKraken Desktop, Agent Sessions View works with th
 
 **To lock or unlock a worktree:** Right-click the worktree and choose **Lock this worktree** or **Unlock this worktree**. Locking prevents accidental changes while you work in another worktree.
 
-Worktrees share Git history with the main repository, so changes committed in one worktree are visible in the others. When the worktree folder name differs from its checked-out branch, GitKraken Desktop shows the folder name below the branch in the Left Panel and Agent Sessions View. Search in either list matches both names. To see the full file path of a worktree, hover over it in the Left Panel.
+Worktrees share Git history with the main repository, so changes committed in one worktree are visible in the others. When the worktree folder name differs from its checked-out branch, GitKraken Desktop shows the folder name below the branch in the Left Panel and the Agents view. Search in either list matches both names. To see the full file path of a worktree, hover over it in the Left Panel.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/grAsFn5yvjA?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
@@ -82,7 +82,7 @@ Worktrees are useful when you want to:
 Once committed, changes in one worktree become visible in others.
 
 <div class='callout callout--basic'>
-  <p><strong>Using coding agents?</strong> Agent Sessions View in GitKraken Desktop runs each agent session in its own Git worktree. If you want to run Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, or OpenCode in GitKraken Desktop, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.</p>
+  <p><strong>Using coding agents?</strong> The Agents view in GitKraken Desktop runs each agent session in its own Git worktree. If you want to run Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, or OpenCode in GitKraken Desktop, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.</p>
 </div>
 
 ***
@@ -92,12 +92,12 @@ Once committed, changes in one worktree become visible in others.
 In the Left Panel, you can work with worktrees in 2 views:
 
 - **List view** for general branch and worktree management
-- **Agent Sessions View** for coding agent sessions that run in worktrees
+- **Agents view** for coding agent sessions that run in worktrees
 
 Both views show the same worktrees:
 
 - Use **List view** when you want to create, switch, lock, or remove worktrees directly
-- Use **Agent Sessions View** when you want to create, monitor, and manage coding agent sessions in worktrees
+- Use the **Agents view** when you want to create, monitor, and manage coding agent sessions in worktrees
 
 From the Left Panel, you can:
 
@@ -111,7 +111,7 @@ See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) if you want
 - Install and use a supported coding agent CLI
 - Start a coding agent session in a new worktree
 - Monitor agent status such as **Waiting for input**
-- Manage agent sessions from Agent Sessions View
+- Manage agent sessions from the Agents view
 
 ### How to create a worktree
 
@@ -181,7 +181,7 @@ To change lock status:
 Locking a worktree prevents accidental changes while you work elsewhere.
 
 <div class='callout callout--basic'>
-  <p><strong>Tip:</strong> A merged PR pill on a worktree card in Agent Sessions View means the branch has a merged pull request on GitHub, GitLab, Azure DevOps, Bitbucket, or Bitbucket Data Center. Use this as a signal that it is safe to remove the worktree and delete the branch. See <a href="/gitkraken-desktop/clean-up-agent-worktrees/">Clean Up AI Coding Agent Worktrees and Branches</a>.</p>
+  <p><strong>Tip:</strong> A merged PR pill on a worktree card in the Agents view means the branch has a merged pull request on GitHub, GitLab, Azure DevOps, Bitbucket, or Bitbucket Data Center. Use this as a signal that it is safe to remove the worktree and delete the branch. See <a href="/gitkraken-desktop/clean-up-agent-worktrees/">Clean Up AI Coding Agent Worktrees and Branches</a>.</p>
 </div>
 
 ## Multiple WIP nodes for multiple worktrees
@@ -204,4 +204,4 @@ To hide these rows, open <kbd>Preferences</kbd>, select **Agents** under **Repo-
   </figcaption>
 </figure>
 
-When you start a coding agent session from [Agent Sessions View](/gitkraken-desktop/agents/), GitKraken Desktop creates the branch and worktree for you, so each agent's pending changes appear in their own WIP row. To review or undo them, see [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/).
+When you start a coding agent session from the [Agents view](/gitkraken-desktop/agents/), GitKraken Desktop creates the branch and worktree for you, so each agent's pending changes appear in their own WIP row. To review or undo them, see [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/).

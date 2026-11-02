@@ -25,7 +25,7 @@ Use this page to find your way around the main areas of the GitKraken Desktop in
 - Scope: Interface overview, not full task-specific workflows
 - Main areas: Toolbar, Left Panel, Commit Graph, Commit Panel, Status Bar, and tabs
 - Repository context: Most of these controls appear only when a repository is open
-- Left Panel modes: The Left Panel shows either List view or Agent Sessions View
+- Left Panel modes: The Left Panel shows either List view or the Agents view
 - Left Panel behavior: You can show, hide, resize, collapse, or expand its sections
 - Toolbar behavior: Some buttons, such as LFS, appear only when the relevant feature or repository state is available
 - Zoom: The status bar zoom selector offers 80%, 90%, 100%, 110%, 120%, 130%, 140%, 150%, 175%, 200%, 250%, and 300%. The <kbd>View</kbd> menu has **Increase Zoom**, **Decrease Zoom**, and **Reset Zoom**
@@ -36,7 +36,7 @@ Use this page to find your way around the main areas of the GitKraken Desktop in
 ## Quick Start
 
 
-- **Left Panel**: Shows repository references, worktrees, and integrations. In `List | Agents`, click **List** for the traditional reference-based view or **Agents** for Agent Sessions View, which organizes worktrees around coding agent sessions.
+- **Left Panel**: Shows repository references, worktrees, and integrations. In `List | Agents`, click **List** for the traditional reference-based view or **Agents** for the Agents view, which organizes worktrees around coding agent sessions.
 - **Commit Graph**: Displays the visual commit history of the current repository. Click any commit to view its details in the Commit Panel. Click the WIP node at the top to view and stage pending changes.
 - **Commit Panel**: Shows file changes for the selected commit or WIP. Displays diffs, staged/unstaged files, and co-author information. Use it to stage files and write commit messages.
 - **Toolbar**: At the top of the window. Has buttons for Undo, Redo, Pull, Push, Branch, Stash, and Pop. Use the adjacent dropdowns to customize pull behavior or branch options.
@@ -46,7 +46,7 @@ To open the Command Palette at any time, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + 
 
 ***
 
-From left to right, GitKraken Desktop displays the Left Panel, Commit Graph, and Commit Panel when working with a repository. The Left Panel can show either List view or Agent Sessions View.
+From left to right, GitKraken Desktop displays the Left Panel, Commit Graph, and Commit Panel when working with a repository. The Left Panel can show either List view or the Agents view.
 
 <figure class='figure center'>
     <img alt="GitKraken Desktop with a repository open, showing the Left Panel, the Commit Graph in the center, and the Commit Panel on the right." src="/wp-content/uploads/interface.png" class="help-center-img img-bordered">
@@ -121,12 +121,12 @@ The Left Panel shows repository references, such as local branches, remotes, and
 To switch the Left Panel mode, use the `List | Agents` segmented control at the top of the panel:
 
 * Click **List** for the traditional reference-based view described below.
-* Click **Agents** to open **Agent Sessions View**, which organizes the same worktrees around coding agent sessions, status, and quick actions. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for agent session setup and workflows.
+* Click **Agents** to open the **Agents view**, which organizes the same worktrees around coding agent sessions, status, and quick actions. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for agent session setup and workflows.
 
 To hide the segmented control, go to <kbd>Preferences > UI Customization</kbd>. For general worktree management, see [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/).
 
 <div class='callout callout--basic'>
-    <p><strong>List view and Agent Sessions View use the same underlying worktrees.</strong> Use List view for general branch and worktree management. Use Agent Sessions View for coding agent sessions, agent status, and related quick actions.</p>
+    <p><strong>List view and the Agents view use the same underlying worktrees.</strong> Use List view for general branch and worktree management. Use the Agents view for coding agent sessions, agent status, and related quick actions.</p>
 </div>
 
 For in-app terminal behavior, worktree-specific terminal sessions, and manual coding agent workflows, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).

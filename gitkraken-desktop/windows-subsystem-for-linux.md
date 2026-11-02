@@ -69,7 +69,7 @@ GitKraken Desktop works with repositories stored on your WSL 2 file system when 
 </div>
 
 <div class='callout callout--warning'>
-    <p><strong>Coding agent note:</strong> If you use Agent Sessions View in WSL, make sure the coding agent CLI you want to run is the one available in your WSL environment. In some cases, a Windows-installed coding agent can take precedence over a WSL-installed one, which can prevent the agent session from starting correctly. For more information, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.</p>
+    <p><strong>Coding agent note:</strong> If you use the Agents view in WSL, make sure the coding agent CLI you want to run is the one available in your WSL environment. In some cases, a Windows-installed coding agent can take precedence over a WSL-installed one, which can prevent the agent session from starting correctly. For more information, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.</p>
 </div>
 
 GitKraken Desktop notifies you when you open a repository from the other environment. For more information, see [How cross-file-system access works in WSL 2](#how-cross-file-system-access-works-in-wsl-2).

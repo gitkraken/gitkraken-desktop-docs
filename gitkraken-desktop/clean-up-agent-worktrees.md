@@ -35,7 +35,7 @@ GitKraken Desktop shows all of a repository's worktrees in one place, including 
 
 ## Quick Start
 
-Find the worktree in the Left Panel or in Agent Sessions View, right-click it, and use the row that matches what you want to keep.
+Find the worktree in the Left Panel or in the Agents view, right-click it, and use the row that matches what you want to keep.
 
 | What you want | Select | What it deletes |
 |---|---|---|
@@ -52,12 +52,12 @@ Find the worktree in the Left Panel or in Agent Sessions View, right-click it, a
 Every worktree in the repository appears in three places:
 
 - **List view in the Left Panel** lists each worktree with its branch. When the folder name differs from the branch, it appears under the branch name. Hover to see the full path.
-- **Agent Sessions View** shows a card for each worktree with its branch, uncommitted (WIP) changes, ahead and behind counts, and agent status.
+- **The Agents view** shows a card for each worktree with its branch, uncommitted (WIP) changes, ahead and behind counts, and agent status.
 - **The Commit Graph** shows a separate WIP row for each other worktree that has uncommitted changes or an active agent session, with the agent's status. Select a row and click **Open Worktree**, or double-click it, to open that worktree. To hide these rows, clear **Show worktree WIP nodes in the graph** in the **Agents** section of Repo-Specific Preferences.
 
 <figure>
-  <img src="/wp-content/uploads/gkd-agents-panel-overview-20260414.png" class="help-center-img img-bordered" alt="GitKraken Desktop with Agent Sessions View open in the Left Panel, showing a card for each agent worktree next to the Commit Graph.">
-  <figcaption style="text-align:center; color:#888">Agent Sessions View shows a card for every worktree.</figcaption>
+  <img src="/wp-content/uploads/gkd-agents-panel-overview-20260414.png" class="help-center-img img-bordered" alt="GitKraken Desktop with the Agents view open in the Left Panel, showing a card for each agent worktree next to the Commit Graph.">
+  <figcaption style="text-align:center; color:#888">The Agents view shows a card for every worktree.</figcaption>
 </figure>
 
 ***
@@ -75,11 +75,11 @@ A clean worktree does not tell you whether its work was merged. Check these firs
 
 ## How to remove agent worktrees
 
-Right-click the worktree in the Left Panel, or right-click its card in Agent Sessions View, and choose one of the options below. Removing a worktree also stops any agent terminal session running in it.
+Right-click the worktree in the Left Panel, or right-click its card in the Agents view, and choose one of the options below. Removing a worktree also stops any agent terminal session running in it.
 
 <figure>
-  <img src="/wp-content/uploads/GKD-Remove-Session-and-Worktree.png" class="help-center-img img-bordered" alt="Card menu for a worktree in Agent Sessions View showing the Remove this worktree and Remove worktree and delete branch options.">
-  <figcaption style="text-align:center; color:#888">Remove options on a worktree card in Agent Sessions View.</figcaption>
+  <img src="/wp-content/uploads/GKD-Remove-Session-and-Worktree.png" class="help-center-img img-bordered" alt="Card menu for a worktree in the Agents view showing the Remove this worktree and Remove worktree and delete branch options.">
+  <figcaption style="text-align:center; color:#888">Remove options on a worktree card in the Agents view.</figcaption>
 </figure>
 
 ### Remove the worktree and keep its branch
@@ -140,7 +140,7 @@ Yes, if you select **Remove worktree and delete branch** and confirm. It does no
 
 ### How do I know which worktrees an agent created?
 
-Worktrees from agent sessions appear as cards in Agent Sessions View, with the agent's status. Every worktree also appears in List view, whether an agent or a person created it.
+Worktrees from agent sessions appear as cards in the Agents view, with the agent's status. Every worktree also appears in List view, whether an agent or a person created it.
 
 ***
 

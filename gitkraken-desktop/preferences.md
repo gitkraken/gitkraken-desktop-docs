@@ -19,7 +19,7 @@ taxonomy:
 ---
 <kbd>Last updated: November 2026</kbd>
 
-Use this page to understand what each major Preferences section controls in GitKraken Desktop, including profiles, integrations, AI settings, external tools, commit signing, terminal behavior, Agent Sessions View settings, and repository-specific options. Start here when you need to know where a setting lives before changing your workflow or environment.
+Use this page to understand what each major Preferences section controls in GitKraken Desktop, including profiles, integrations, AI settings, external tools, commit signing, terminal behavior, Agents view settings, and repository-specific options. Start here when you need to know where a setting lives before changing your workflow or environment.
 
 **Requirements and limits**
 - Scope: Preferences overview for app-wide, profile-specific, and repository-specific settings
@@ -137,7 +137,7 @@ Configure your preferred editors, terminals, coding agent commands, and diff/mer
 - **External Editor**: Choose from VS Code, Atom, Sublime, IntelliJ, or custom path
 - **External Terminal**: The terminal that opens from <kbd>File > Open External Terminal</kbd> or <kbd>Alt</kbd>/<kbd>Option</kbd> + <kbd>T</kbd>. For a custom terminal, set **Terminal Executable** and **Terminal Arguments**
 - **Coding Agent**: Configure custom commands or arguments used when GitKraken Desktop starts a coding agent session. GitKraken Desktop detects the supported coding agent CLIs installed on your machine, such as Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, and OpenCode. You choose the coding agent for a session in the **Start an Agent Session** modal. In on-premises environments, available options depend on what your organization allows and can reach. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
-- **Agent Status Integrations**: Install, reinstall, or uninstall the plugins that let Claude Code, Codex CLI, Copilot CLI, and OpenCode report live session status in Agent Sessions View. See [How to manage agent status plugins and hooks](/gitkraken-desktop/agents/#how-to-manage-agent-status-plugins-and-hooks).
+- **Agent Status Integrations**: Install, reinstall, or uninstall the plugins that let Claude Code, Codex CLI, Copilot CLI, and OpenCode report live session status in the Agents view. See [How to manage agent status plugins and hooks](/gitkraken-desktop/agents/#how-to-manage-agent-status-plugins-and-hooks).
 
 <div class='callout callout--warning'>
   <p><strong>macOS Note:</strong> Use the executable file, not the .app, when selecting a custom editor.</p>
@@ -169,7 +169,7 @@ Change the theme and how the Commit Graph looks:
 - **Show Agents view in left panel**. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 - **Automatically group worktree tabs together**: On by default. Groups the tabs of a repository and its worktrees in the tab bar. See [Worktree tab groups](/gitkraken-desktop/interface/#worktree-tab-groups).
 
-If you want to switch between the standard Left Panel and Agent Sessions View, go to <kbd>Preferences > UI Customization</kbd> and enable **Show Agents view in left panel**.
+If you want to switch between the standard Left Panel and the Agents view, go to <kbd>Preferences > UI Customization</kbd> and enable **Show Agents view in left panel**.
 
 <figure>
   <img src="/wp-content/uploads/toggle-agents-view-preferences.png" class="help-center-img img-bordered" alt="GitKraken Desktop Preferences highlighting the Show Agents view in left panel setting that controls whether the List and Agents toggle appears in the Left Panel.">

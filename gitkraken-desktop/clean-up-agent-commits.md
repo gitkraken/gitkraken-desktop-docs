@@ -32,7 +32,7 @@ Use this page when an AI coding agent leaves you with one giant commit, or with 
 
 ## Quick Start
 
-Before you start, open the agent's worktree: in Agent Sessions View, right-click the session card and select **Open this worktree**. Then pick the row that matches what the agent left you.
+Before you start, open the agent's worktree: in the Agents view, right-click the session card and select **Open this worktree**. Then pick the row that matches what the agent left you.
 
 | Where the changes are | What to use | How | Notes |
 |---|---|---|---|

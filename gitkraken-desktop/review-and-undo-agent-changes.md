@@ -23,7 +23,7 @@ Use this page to see exactly what an AI coding agent changed in your repository 
 
 **Requirements and limits**
 - Scope: Reviewing and reversing an agent's changes, whether they are uncommitted, committed on your machine, or pushed
-- Prerequisite: The repository the agent worked in is open in GitKraken Desktop. The steps work for sessions started from Agent Sessions View and for agents you run yourself.
+- Prerequisite: The repository the agent worked in is open in GitKraken Desktop. The steps work for sessions started from the Agents view and for agents you run yourself.
 - Limits: Git does not record whether a person or an agent wrote a change, so give each agent its own session or branch.
 - Limits: AI summaries require a [paid GitKraken subscription](https://www.gitkraken.com/pricing?source=help_center&product=gitkraken). Reviewing diffs and undoing changes do not.
 
@@ -35,7 +35,7 @@ Use this page to see exactly what an AI coding agent changed in your repository 
 
 ## Quick Start
 
-Before you undo anything, open the agent's worktree: in Agent Sessions View, right-click the session card and select **Open this worktree**. Discard, restore, reset, and revert all act on the worktree you have open.
+Before you undo anything, open the agent's worktree: in the Agents view, right-click the session card and select **Open this worktree**. Discard, restore, reset, and revert all act on the worktree you have open.
 
 Then find where the agent's changes are and use the matching row.
 
@@ -45,15 +45,15 @@ Then find where the agent's changes are and use the matching row.
 | Committed on the agent's branch, not pushed | <kbd>Shift</kbd> + click the agent's first and last commits for a combined diff of the range | Reset the branch to the last good commit | No | Reset rewrites the branch's history |
 | Committed and pushed | Select the agent's commits in the Commit Graph | **Revert commit** on each one, then push | Yes | Revert adds new commits and keeps existing history |
 | Only one or two files are damaged | Open the file's **History** | **Restore file from this commit** | Yes | The restored file arrives as a staged change |
-| Anywhere in a session you do not want | Check the session card in Agent Sessions View | **Remove worktree and delete branch** | No | Deletes the branch even if its commits are not merged |
+| Anywhere in a session you do not want | Check the session card in the Agents view | **Remove worktree and delete branch** | No | Deletes the branch even if its commits are not merged |
 
 ***
 
 ## Before the agent starts: give it its own branch
 
-Isolated changes are the easiest to review. When you start a session from [Agent Sessions View](/gitkraken-desktop/agents/), GitKraken Desktop creates a new branch in its own [worktree](/gitkraken-desktop/worktrees/), so the agent's work stays separate from yours.
+Isolated changes are the easiest to review. When you start a session from the [Agents view](/gitkraken-desktop/agents/), GitKraken Desktop creates a new branch in its own [worktree](/gitkraken-desktop/worktrees/), so the agent's work stays separate from yours.
 
-If you run an agent outside Agent Sessions View, create a branch or worktree for it first. Then everything on that branch is the agent's work, and undoing it never touches your own changes.
+If you run an agent outside the Agents view, create a branch or worktree for it first. Then everything on that branch is the agent's work, and undoing it never touches your own changes.
 
 ***
 
@@ -72,7 +72,7 @@ GitKraken Desktop shows a separate WIP row in the Commit Graph for each other wo
 
 Selecting another worktree's WIP row does not open its files in the Commit Panel. Open the worktree first:
 
-1. In Agent Sessions View, check the session card for the branch, WIP changes, and ahead and behind counts.
+1. In the Agents view, check the session card for the branch, WIP changes, and ahead and behind counts.
 2. Open the agent's worktree. Select its WIP row in the Commit Graph and click **Open Worktree**, or double-click the row.
 3. Click the WIP node of the worktree you now have open. The Commit Panel lists every file the agent changed.
 4. Click a file to open its [diff](/gitkraken-desktop/diff/). Use **Hunk** view to step through each changed block, or **Split** view to see the old and new versions side by side.
@@ -168,7 +168,7 @@ Once the agent's commits are on a shared branch, do not reset. Reverse them with
 
 ### Throw away a whole agent session
 
-If you do not want any of the session's work, right-click the session card in Agent Sessions View and select **Remove worktree and delete branch**, then confirm. GitKraken Desktop stops the agent's terminal session and deletes the worktree, its working directory, and the local branch. It deletes the branch even if its commits are not merged anywhere, and you cannot undo this.
+If you do not want any of the session's work, right-click the session card in the Agents view and select **Remove worktree and delete branch**, then confirm. GitKraken Desktop stops the agent's terminal session and deletes the worktree, its working directory, and the local branch. It deletes the branch even if its commits are not merged anywhere, and you cannot undo this.
 
 If the worktree still has uncommitted changes, GitKraken Desktop asks you to confirm again with **Force Remove Worktree**. The remote branch stays unless you choose **Remove worktree and delete branch (local & remote)** instead. If other people use the pushed branch, revert its commits instead of deleting it.
 
@@ -194,7 +194,7 @@ No. Git does not record whether a person or an agent wrote a change. GitKraken D
 
 ### Which agents does this work with?
 
-Any agent that edits files in a Git repository. Agent Sessions View integrates with Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, and OpenCode, and you can run other agents in the [embedded terminal](/gitkraken-desktop/terminal/). You review and undo changes from all of them the same way.
+Any agent that edits files in a Git repository. The Agents view integrates with Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, and OpenCode, and you can run other agents in the [embedded terminal](/gitkraken-desktop/terminal/). You review and undo changes from all of them the same way.
 
 ### Should I use a hard reset to undo an agent?
 
