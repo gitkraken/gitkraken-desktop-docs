@@ -24,6 +24,7 @@ Use this page when an AI coding agent leaves you with one giant commit, or with 
 **Requirements and limits**
 - Scope: Regrouping an agent's uncommitted changes or existing commits into a reviewable history before you open a pull request
 - Prerequisite: A [paid GitKraken subscription](https://www.gitkraken.com/pricing?source=help_center&product=gitkraken) with GitKraken AI enabled. On-premises deployments need a custom AI endpoint (see [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/)).
+- AI usage: Commit Composer uses your GitKraken AI credits, or your own AI provider if you set one up.
 - Limits: Commit Composer is in Preview.
 - Limits: To recompose existing commits, they must be contiguous, on the current branch, and have no merge commits between the branch head and the oldest selected commit.
 - Limits: Recomposing commits you already pushed rewrites shared history.
@@ -36,11 +37,19 @@ Before you start, open the agent's worktree: in Agent Sessions View, right-click
 
 | Where the changes are | What to use | How | Notes |
 |---|---|---|---|
-| Uncommitted, in the agent's worktree | **Compose Commit with AI** | Stage the changes, then click **Compose Commit with AI** in the Commit Panel | |
-| Committed on the agent's branch, not pushed | **Recompose Commits with AI** | <kbd>Shift</kbd> + click the agent's first and last commits, right-click, and select **Recompose Commits with AI** | The commits must be next to each other, with no merge commits in between |
-| Committed and pushed | **Recompose Commits with AI**, then force push | Recompose as above, then force push the branch | Only if nobody else has pulled or built on the branch |
+| Uncommitted, in the agent's worktree | **Compose commits with AI** | Stage the changes, then click **Compose commits with AI** in the Commit Panel | |
+| Committed on the agent's branch, not pushed | **Recompose commits with AI** | <kbd>Shift</kbd> + click the agent's first and last commits, right-click, and select **Recompose commits with AI** | The commits must be next to each other, with no merge commits in between |
+| Committed and pushed | **Recompose commits with AI**, then force push | Recompose as above, then force push the branch | Only if nobody else has pulled or built on the branch |
 
 In every case, GitKraken Desktop shows the proposed commits first. Your branch doesn't change until you click **Create commits**.
+
+***
+
+## Which AI credits Commit Composer uses
+
+Commit Composer runs on GitKraken AI. By default, it uses your GitKraken AI credits. If you add your own provider and API key, such as OpenAI, Anthropic, Azure, Google Gemini, or a custom URL, Commit Composer uses that provider instead.
+
+This lets you choose which set of credits a cleanup spends. For example, if your agent work is already running through one provider, you can compose commits with the other. To set your provider, go to <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> GitKraken AI</em>. See [How to use your own AI provider key](/gitkraken-desktop/gkd-gitkraken-ai/) for setup.
 
 ***
 
@@ -49,13 +58,13 @@ In every case, GitKraken Desktop shows the proposed commits first. Your branch d
 Use this when the agent changed files but didn't commit anything.
 
 1. Select the agent's WIP node and stage the changes you want to commit.
-2. In the Commit Panel, click **Compose Commit with AI**.
+2. In the Commit Panel, click **Compose commits with AI**.
 
 3. Review the proposed commits. Reorder them, squash related ones together, or edit the messages.
 4. Click **Create commits** to apply them, **Reset** to undo your edits to the proposal, or **Cancel** to stop without changing anything.
 
 <figure>
-  <img src="/wp-content/uploads/compose-WIP@2x.png" class="help-center-img img-bordered" alt="Selected WIP node in GitKraken Desktop with an arrow pointing to the Compose Commit with AI button in the Commit Panel.">
+  <img src="/wp-content/uploads/compose-WIP@2x.png" class="help-center-img img-bordered" alt="Selected WIP node in GitKraken Desktop with an arrow pointing to the Compose commits with AI button in the Commit Panel.">
   <figcaption style="text-align:center; color:#888">Compose commits from the agent's uncommitted changes.</figcaption>
 </figure>
 
@@ -66,7 +75,7 @@ Use this when the agent changed files but didn't commit anything.
 Use this when the agent committed everything at once, or in many small steps that don't tell a clear story.
 
 1. In the Commit Graph, hold <kbd>Shift</kbd> and click the agent's first and last commits to select the range.
-2. Right-click the selection and select **Recompose Commits with AI**, or click the button in the Commit Panel.
+2. Right-click the selection and select **Recompose commits with AI**, or click the button in the Commit Panel.
 
 3. Review the proposed structure. Reorder, squash, or edit messages until each commit does one thing and its message says what and why.
 
