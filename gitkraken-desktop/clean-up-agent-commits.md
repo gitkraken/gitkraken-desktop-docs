@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: preview
-last_verified: 2026-10
+last_verified: 2026-11
 llms_include: true
 tags: [agents, coding-agents, ai, commit-composer, recompose, commits, history, pull-requests]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: October 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page when an AI coding agent leaves you with one giant commit, or with a run of small commits in the order it worked rather than grouped by change, and you need a history a reviewer can follow. Commit Composer in GitKraken Desktop groups the agent's changes into logical commits with clear messages. It only reorganizes the changes and never changes the code itself. You review and adjust the result before anything on your branch changes.
 
@@ -33,15 +33,15 @@ Use this page when an AI coding agent leaves you with one giant commit, or with 
 
 ## Quick Start
 
-Before you start, open the agent's worktree: in Agent Sessions View, right-click the session card and select **Open this worktree**. Then pick the row that matches what the agent left you.
+Before you start, open the agent's worktree: in the Agents view, right-click the session card and select **Open this worktree**. Then pick the row that matches what the agent left you.
 
 | Where the changes are | What to use | How | Notes |
 |---|---|---|---|
 | Uncommitted, in the agent's worktree | **Compose commits with AI** | Stage the changes, then click **Compose commits with AI** in the Commit Panel | |
-| Committed on the agent's branch, not pushed | **Recompose commits with AI** | <kbd>Shift</kbd> + click the agent's first and last commits, right-click, and select **Recompose commits with AI** | The commits must be next to each other, with no merge commits in between |
+| Committed on the agent's branch, not pushed | **Recompose commits with AI** | <kbd>Shift</kbd> + click the agent's first and last commits, right-click, and select **Recompose *[number]* commits with AI (Preview)** | The commits must be next to each other, with no merge commits in between |
 | Committed and pushed | **Recompose commits with AI**, then force push | Recompose as above, then force push the branch | Only if nobody else has pulled or built on the branch |
 
-In every case, GitKraken Desktop shows the proposed commits first. Your branch doesn't change until you click **Create Commits**.
+In every case, GitKraken Desktop shows the proposed commits first. Your branch does not change until you click **Create Commits**.
 
 ***
 
@@ -49,17 +49,16 @@ In every case, GitKraken Desktop shows the proposed commits first. Your branch d
 
 Commit Composer runs on GitKraken AI. By default, it uses your GitKraken AI credits. If you add your own provider and API key, such as OpenAI, Anthropic, Azure, Google Gemini, or a custom URL, Commit Composer uses that provider instead.
 
-This lets you choose which set of credits a cleanup spends. For example, if your agent work is already running through one provider, you can compose commits with the other. To set your provider, go to <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> GitKraken AI</em>. See [How to use your own AI provider key](/gitkraken-desktop/gkd-gitkraken-ai/) for setup.
+You can choose which set of credits a cleanup spends. For example, if your agent work is already running through one provider, you can compose commits with the other. To set your provider, go to <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> GitKraken AI</em>. See [How to use your own AI provider key](/gitkraken-desktop/gkd-gitkraken-ai/) for setup.
 
 ***
 
 ## How to split an agent's uncommitted changes into commits
 
-Use this when the agent changed files but didn't commit anything.
+Use this when the agent changed files but did not commit anything.
 
-1. Select the agent's WIP node and stage the changes you want to commit.
+1. Open the agent's worktree, then select its WIP node and stage the changes you want to commit. Selecting the agent's WIP row from another worktree does not open its files in the Commit Panel. Click **Open Worktree** on that row first.
 2. In the Commit Panel, click **Compose commits with AI**.
-
 3. Review the proposed commits. Reorder them, squash related ones together, or edit the messages.
 4. Click **Create Commits** to apply them. If you want to start over, click **Reset** to go back to the proposal as it was before your edits. To leave without changing anything, click **Cancel**.
 
@@ -72,13 +71,11 @@ Use this when the agent changed files but didn't commit anything.
 
 ## How to recompose commits the agent already made
 
-Use this when the agent committed everything at once, or in many small steps that don't tell a clear story.
+Use this when the agent committed everything at once, or in many small steps that do not tell a clear story.
 
 1. In the Commit Graph, hold <kbd>Shift</kbd> and click the agent's first and last commits to select the range.
-2. Right-click the selection and select **Recompose commits with AI**, or click the button in the Commit Panel.
-
+2. Right-click the selection and select **Recompose *[number]* commits with AI (Preview)**, or click **Recompose commits with AI** in the Commit Panel.
 3. Review the proposed structure. Reorder, squash, or edit messages until each commit does one thing and its message says what and why.
-
 4. Click **Create Commits**. You can also click **Reset** to start over from the original proposal, or **Cancel** to leave without changing anything.
 
 <figure>
@@ -97,12 +94,12 @@ Recomposing keeps the original commit authors and adds co-authors when a new com
 
 ## How to check the new commits
 
-Commit Composer doesn't change any code, so the final state of your branch is the same before and after. What changes is how the work is split up and described. Check that part before you share it:
+Commit Composer does not change any code, so the final state of your branch is the same before and after. What changes is how the work is split up and described. Check that part before you share it:
 
 1. **Read each new commit.** Click each commit and read its diff and message. A reviewer should be able to follow the change one commit at a time.
 2. **Test each commit if your team needs every commit to build.** The newest commit has the same code as before, so this check is about the commits in between. Right-click each new commit, select **Checkout this commit**, and run your tests from the [embedded terminal](/gitkraken-desktop/terminal/). Check out the agent's branch again when you're done. Your CI may also run this check for you.
 
-If you don't like the result, click **Undo** in the toolbar right away. Undo reverses a Compose or Recompose action as long as you haven't pushed the branch. The Undo tooltip lists the action as a rebase, because that's how GitKraken Desktop applies the new commits.
+If you do not like the result, click **Undo** in the toolbar right away. Undo reverses a Compose or Recompose action as long as you have not pushed the branch. The Undo tooltip lists the action as a rebase, because that is how GitKraken Desktop applies the new commits.
 
 <figure>
   <img src="/wp-content/uploads/gkd-commit-composer-undo.png" class="help-center-img img-bordered" alt="GitKraken Desktop toolbar with the Undo button hovered after composing commits with AI. The tooltip reads Undo Rebase followed by a commit SHA.">
@@ -116,11 +113,13 @@ If you don't like the result, click **Undo** in the toolbar right away. Undo rev
 - **If you never pushed the branch,** push it as usual and [open a pull request](/gitkraken-desktop/pull-requests/).
 - **If you already pushed it,** recomposing rewrote commits that are on the remote, so a normal push is rejected. GitKraken Desktop tells you the branch is behind the remote and offers **Pull**, **Force Push**, and **Cancel**. Select **Force Push**, then confirm. GitKraken Desktop uses a safe force push (force-with-lease), which stops if someone pushed to the branch since your last fetch. Use it only if nobody else has pulled or built on the branch. See [Push, Pull, and Fetch](/gitkraken-desktop/pushing-and-pulling/).
 
-To write the pull request description, click the AI icon in the description field when you create the pull request to generate a draft, or right-click the branch and select **Explain Branch Changes** for a summary to start from. Edit either one so it says what you checked and what you didn't.
+To write the pull request description, click the AI icon in the description field when you create the pull request to generate a draft, or right-click the branch and select **Explain Branch Changes** for a summary to start from. Edit either one so it says what you checked and what you did not.
 
 ***
 
 ## Common questions
+
+Answers to frequent questions about cleaning up agent commits.
 
 ### Does Commit Composer change my code?
 

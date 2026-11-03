@@ -11,45 +11,45 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-05
+last_verified: 2026-11
 llms_include: true
 tags: [interface, toolbar, left-panel, commit-graph, commit-panel, status-bar]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: October 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
-Use this page to understand the main areas of the GitKraken Desktop interface so you can navigate repository actions, history, staging, coding agent workflows, and collaboration features more efficiently. It covers the toolbar, Left Panel, Commit Panel, Commit Graph, and tabs, with links to deeper task-specific guides when you need more than a UI overview.
+Use this page to find your way around the main areas of the GitKraken Desktop interface: the toolbar, Left Panel, Commit Graph, Commit Panel, Status Bar, and tabs. Each area links to a task guide when you need the full steps.
 
 **Requirements and limits**
 - Scope: Interface overview, not full task-specific workflows
-- Main areas covered: Toolbar, Left Panel, Commit Graph, Commit Panel, Status Bar, and tabs
-- Repository context: Most controls described here appear only when a repository is open
-- Left Panel modes: The Left Panel can show either List view or Agent Sessions View, depending on the selected mode
-- Left Panel behavior: Sections can be toggled, resized, collapsed, or expanded from the UI
-- Toolbar behavior: Some buttons appear only when the relevant feature or repo state is available, such as LFS
-- Status bar zoom: The status bar exposes preset zoom levels including 100%, 110%, 125%, 140%, 150%, 175%, and 200%
-- Deeper actions: Use linked feature pages for task-specific limits and workflows beyond this interface overview
+- Main areas: Toolbar, Left Panel, Commit Graph, Commit Panel, Status Bar, and tabs
+- Repository context: Most of these controls appear only when a repository is open
+- Left Panel modes: The Left Panel shows either List view or the Agents view
+- Left Panel behavior: You can show, hide, resize, collapse, or expand its sections
+- Toolbar behavior: Some buttons, such as LFS, appear only when the relevant feature or repository state is available
+- Zoom: The status bar zoom selector offers 80%, 90%, 100%, 110%, 120%, 130%, 140%, 150%, 175%, 200%, 250%, and 300%. The <kbd>View</kbd> menu has **Increase Zoom**, **Decrease Zoom**, and **Reset Zoom**
+- Detailed workflows: Follow the linked feature pages for the steps and limits of each task
 
 ***
 
 ## Quick Start
 
 
-- **Left Panel**: Shows repository references, worktrees, and integrations. In `List | Agents`, click **List** for the traditional reference-based view or **Agents** for Agent Sessions View, which organizes worktrees around coding agent sessions.
+- **Left Panel**: Shows repository references, worktrees, and integrations. In `List | Agents`, click **List** for the traditional reference-based view or **Agents** for the Agents view, which organizes worktrees around coding agent sessions.
 - **Commit Graph**: Displays the visual commit history of the current repository. Click any commit to view its details in the Commit Panel. Click the WIP node at the top to view and stage pending changes.
 - **Commit Panel**: Shows file changes for the selected commit or WIP. Displays diffs, staged/unstaged files, and co-author information. Use it to stage files and write commit messages.
-- **Toolbar**: Located at the top of the window. Provides one-click access to Undo, Redo, Pull, Push, Branch, Stash, and Pop. Use the adjacent dropdowns to customize pull behavior or branch options.
-- **Status Bar**: Located at the bottom of the window. Surfaces the [Launchpad](/gitkraken-desktop/gitkraken-launchpad/) summary, your current plan, and a zoom selector with standard levels including 100%, 110%, 125%, 140%, 150%, 175%, and 200%.
+- **Toolbar**: At the top of the window. Has buttons for Undo, Redo, Pull, Push, Branch, Stash, and Pop. Use the adjacent dropdowns to customize pull behavior or branch options.
+- **Status Bar**: At the bottom of the window. Shows the [Launchpad](/gitkraken-desktop/gitkraken-launchpad/) summary, your current plan, and a zoom selector with levels from 80% to 300%. You can also zoom from <kbd>View > Increase Zoom</kbd>, <kbd>View > Decrease Zoom</kbd>, and <kbd>View > Reset Zoom</kbd>, or with <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>=</kbd>, <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>-</kbd>, and <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>0</kbd>.
 
-To open the Command Palette at any time, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>P</kbd>. To toggle the Left Panel, use <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> or the toggle in the toolbar. Preferences and integrations are accessible from the gear icon in the upper-right corner.
+To open the Command Palette at any time, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>P</kbd>. To toggle the Left Panel, use <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>J</kbd> or the toggle in the toolbar. To open Preferences and integrations, click the gear icon in the upper-right corner.
 
 ***
 
-From left to right, GitKraken Desktop displays the Left Panel, Commit Graph, and Commit Panel when working with a repository. The Left Panel can show either List view or Agent Sessions View.
+From left to right, GitKraken Desktop displays the Left Panel, Commit Graph, and Commit Panel when working with a repository. The Left Panel can show either List view or the Agents view.
 
 <figure class='figure center'>
-    <img alt="GitKraken Desktop UI includes Left Panel, Commit Graph, and Commit Panel" src="/wp-content/uploads/interface.png" class="help-center-img img-bordered">
+    <img alt="Simplified diagram of the GitKraken Desktop window, showing the Left Panel on the left, the Commit Graph in the center, and the Commit Panel on the right, with unlabeled callout lines." src="/wp-content/uploads/interface.png" class="help-center-img img-bordered">
     <figcaption style="text-align: center; color: #888;">GitKraken Desktop UI includes Left Panel, Commit Graph, and Commit Panel.</figcaption>
 </figure>
 
@@ -59,13 +59,13 @@ From left to right, GitKraken Desktop displays the Left Panel, Commit Graph, and
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Xv9EAJqucOI?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-The main toolbar provides quick access to common repository actions, including Undo, Redo, Pull, Push, Branching, and more.
+The main toolbar has buttons for common repository actions, including Undo, Redo, Pull, Push, and Branch.
 
 ### History actions
 
 | Icon | Button | What it does |
 | --- | --- | --- |
-| <img alt="" src='/wp-content/uploads/gk-new-undo-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Undo** | If an action can be undone, the <kbd>Undo</kbd> button is activated. Click to reverse the last undoable action. |
+| <img alt="" src='/wp-content/uploads/gk-new-undo-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Undo** | The <kbd>Undo</kbd> button is active when you can undo an action. Click it to reverse the last undoable action. |
 | <img alt="" src='/wp-content/uploads/gk-new-redo-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Redo** | Click <kbd>Redo</kbd> to reverse the last undo command. |
 
 ### Sync actions
@@ -92,7 +92,7 @@ The main toolbar provides quick access to common repository actions, including U
 
 | Icon | Button | What it does |
 | --- | --- | --- |
-| <img alt="" src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Stash** | Temporarily save your changes without committing using a stash. |
+| <img alt="" src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Stash** | Save your changes in a stash without committing them. |
 | <img alt="" src='/wp-content/uploads/gk-new-pop-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Pop Stash** | Restore changes from the most recent stash. |
 
 ### Conditional actions
@@ -101,7 +101,7 @@ The main toolbar provides quick access to common repository actions, including U
 | --- | --- | --- |
 | <img alt="" src='/wp-content/uploads/gk-lfs-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **LFS** | This button appears if <a href="/gitkraken-desktop/git-lfs/">LFS</a> is enabled for your repository. |
 
-<div class='callout callout--basic'><p><strong>Note:</strong> To toggle toolbar labels, go to <kbd><strong>Preferences > UI Preferences</strong></kbd> and enable <code>Show toolbar icon labels</code>.</p></div>
+<div class='callout callout--basic'><p><strong>Note:</strong> To show labels under the toolbar icons, go to <kbd><strong>Preferences > UI Customization</strong></kbd> and enable <code>Show toolbar icon labels</code>.</p></div>
 
 ***
 
@@ -111,40 +111,47 @@ The main toolbar provides quick access to common repository actions, including U
     <iframe width="560" height="315" src="https://www.youtube.com/embed/4uSXlUUU0ds?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-The Left Panel provides access to repository references, such as local branches, remotes, and tags. You can:
+The Left Panel shows repository references, such as local branches, remotes, and tags. You can:
 
 * Collapse or expand sections
 * Resize the panel and sections
-* Toggle visibility via the context menu
-* Maximize a section by double-clicking the header
-* Switch the Left Panel mode with the `List | Agents` segmented control at the top
-* Use **List** for the traditional reference-based view described below
-* Use **Agents** to open **Agent Sessions View**, which organizes the same underlying worktrees around coding agent sessions, status, and quick actions
-* See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for agent session setup and workflows
-* See [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/) for general worktree management
-* The segmented control can be hidden from <kbd>Preferences > UI Customization</kbd>
+* Show or hide sections from the context menu
+* Maximize a section by double-clicking its header
+
+To switch the Left Panel mode, use the `List | Agents` segmented control at the top of the panel:
+
+* Click **List** for the traditional reference-based view described below.
+* Click **Agents** to open the **Agents view**, which organizes the same worktrees around coding agent sessions, status, and quick actions. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for agent session setup and workflows.
+
+To hide the segmented control, go to <kbd>Preferences > UI Customization</kbd>. For general worktree management, see [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/).
 
 <div class='callout callout--basic'>
-    <p><strong>List view and Agent Sessions View use the same underlying worktrees.</strong> Use List view for general branch and worktree management. Use Agent Sessions View for coding agent sessions, agent status, and related quick actions.</p>
+    <p><strong>List view and the Agents view use the same underlying worktrees.</strong> Use List view for general branch and worktree management. Use the Agents view for coding agent sessions, agent status, and related quick actions.</p>
 </div>
 
 For in-app terminal behavior, worktree-specific terminal sessions, and manual coding agent workflows, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
 
 <figure class='figure center'>
-    <img src='/wp-content/uploads/left-panel-resize-and-collapse.gif' class="help-center-img img-bordered" alt="GitKraken interface showing left panel with repository branches and pull requests, highlighting resizing and collapsing sections">
+    <img src='/wp-content/uploads/left-panel-resize-and-collapse.gif' class="help-center-img img-bordered" alt="GitKraken Desktop Left Panel with repository branches and pull requests, with its sections being resized and collapsed.">
     <figcaption style="text-align: center; color: #888;">Resize, collapse, or expand any section of the Left Panel.</figcaption>
 </figure>
 
 | Icon | Section | What it does |
 | --- | --- | --- |
-| <img alt="" src='/wp-content/uploads/gk-new-local-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Local** | <p>References to local branches that point to specific commits.</p><p>If you need help with branches, visit our <a href="/working-with-repositories/branching-and-merging">Branching and Merging</a> page.</p> |
+| <img alt="" src='/wp-content/uploads/gk-new-local-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Local** | <p>References to local branches that point to specific commits.</p><p>For help with branches, see <a href="/working-with-repositories/branching-and-merging">Branching and Merging</a>.</p> |
 | <img alt="" src='/wp-content/uploads/gk-new-remote-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Remote** | <p>References to remote branches.</p><p>For more information, see <a href="/working-with-repositories/pushing-and-pulling">Pushing and Pulling</a>.</p> |
 | <img alt="" src='/wp-content/uploads/gk-new-pull-requests-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Pull Requests** | <p>Shows active pull requests for merging one branch into another.</p><p>With a supported integration, you can create pull requests directly from GitKraken Desktop. For more information, see <a href="/working-with-repositories/pull-requests">Pull Requests</a>.</p> |
 | <i class="fa fa-list-ul" aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; font-size: 36px;"></i> | **Issues** | <p>Shows issues connected to your repository integrations.</p><p>For more information, see <a href="/integrations/jira/">Jira</a>, <a href="/integrations/github-issues/">GitHub Issues</a>, <a href="/integrations/gitlab-issues/">GitLab Issues</a>, or <a href="/integrations/trello/">Trello</a>.</p> |
-| <i class="fa fa-users" aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; font-size: 36px;"></i> | **Teams** | <p>Easily see what your <a href="/working-with-repositories/team-view/">Team</a> members are working on.</p> |
+| <i class="fa fa-users" aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; font-size: 36px;"></i> | **Teams** | <p>See what your <a href="/working-with-repositories/team-view/">Team</a> members are working on.</p> |
 | <img alt="" src='/wp-content/uploads/gk-new-tags-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Tags** | <p>References that point to specific commits and do not move.</p><p>For more information, see <a href="/working-with-repositories/tags">Tags</a>.</p> |
 | <img alt="" src='/wp-content/uploads/gk-new-stash-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Stashes** | <p>Stored file changes from the working copy.</p><p>For more information, see <a href="/working-with-commits/stashing">Stashing</a>.</p> |
 | <img alt="" src='/wp-content/uploads//gk-new-submodules-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **Submodules** | <p>A Git repository in a subdirectory of the current repository.</p><p>For more information, see <a href="/working-with-repositories/submodules">Submodules</a>.</p> |
+
+### How to filter the Left Panel
+
+Type in the Left Panel **Filter** box, or press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Option</kbd>/<kbd>Alt</kbd> + <kbd>F</kbd> to focus it. The Left Panel shows only the items whose names match what you type. The match does not need to be exact, so you can type part of a name.
+
+To find a branch on a specific remote, start the filter with the remote name, followed by `/` or `:`, such as `origin/main` or `origin:main`. GitKraken Desktop adds that remote's matching branches to the results.
 
 
 ***
@@ -154,18 +161,18 @@ For in-app terminal behavior, worktree-specific terminal sessions, and manual co
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ujgcCLBQvm0?ecver=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-The Commit Panel is where files and changes from your working directory are staged and committed.
+Use the Commit Panel to stage and commit files and changes from your working directory.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/commit-graph-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop commit panel showing commit graph, file changes, and metadata for staging and committing">
     <figcaption style="text-align: center; color: #888;">The Commit Panel displays file changes and commit metadata.</figcaption>
 </figure>
 
-The three sections in order of operations are:
+The Commit Panel has 3 sections, in the order you use them:
 
 1. _Unstaged Files_ - Modified files not yet added to the index.
 2. _Staged Files_ - Files staged for the next commit.
-3. _Commit Message_ - A two-part message interface:
+3. _Commit Message_ - A message in 2 parts:
    * **Summary**: A brief, informative message shown in the graph.
    * **Description**: Additional details to support the summary.
 
@@ -174,7 +181,7 @@ The three sections in order of operations are:
     <figcaption style="text-align: center; color: #888;">Color indicators help distinguish file changes (e.g., renamed, deleted).</figcaption>
 </figure>
 
-To explore more about staging and committing, visit [committing work](/working-with-commits/commits).
+For more about staging and committing, see [committing work](/working-with-commits/commits).
 
 ***
 
@@ -189,9 +196,9 @@ To explore more about staging and committing, visit [committing work](/working-w
     <figcaption style="text-align: center; color: #888;">Resize the Commit Graph by dragging column dividers.</figcaption>
 </figure>
 
-The Commit Graph is a visual representation of your repo’s Directed Acyclic Graph (DAG), showing each commit and its relationships.
+The Commit Graph shows your repository's history as a graph of each commit and its relationships to other commits.
 
-Each row is a commit, with the most recent at the top. Columns represent branches; lines indicate merges and relationships.
+Each row is a commit, with the most recent at the top. Columns represent branches, and lines show merges and relationships.
 
 Work from coding agents appears in the Commit Graph the same way. Each agent session runs on its own branch in its own worktree, with its own WIP node for pending changes. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
@@ -220,7 +227,7 @@ Hovering over a branch highlights all related commits.
     <figcaption style="text-align: center; color: #888;">Unrelated commits fade when a branch is hovered.</figcaption>
 </figure>
 
-Toggle this behavior from <kbd>Preferences > UI Customization</kbd>.
+To turn this behavior on or off, go to <kbd>Preferences > UI Customization</kbd> and select or clear **Highlight associated rows when hovering over a branch**.
 
 ***
 
@@ -237,9 +244,9 @@ Switch between multiple repositories using tabs.
     <figcaption style="text-align: center; color: #888;">Rearrange tabs via drag-and-drop.</figcaption>
 </figure>
 
-Use shortcuts <kbd>cmd/ctrl</kbd>+<kbd>1-9</kbd> to switch tabs. Open new tabs with <kbd>+</kbd> or <kbd>cmd/ctrl</kbd>+<kbd>T</kbd>, and close tabs with middle-click or <kbd>cmd/ctrl</kbd>+<kbd>W</kbd>.
+To switch tabs, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>1</kbd> to <kbd>9</kbd>. To open a new tab, click <kbd>+</kbd> or press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>T</kbd>. To close a tab, middle-click it or press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>W</kbd>.
 
-Tabs persist per [profile](/start-here/profiles/).
+Each [profile](/start-here/profiles/) keeps its own set of tabs.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/profile-tabs-2025.gif' class="help-center-img img-bordered" alt="GitKraken Desktop interface showing repository tabs changing automatically when switching between user profiles">
@@ -256,6 +263,22 @@ Tabs persist per [profile](/start-here/profiles/).
     <figcaption style="text-align: center; color: #888;">Hover to view file paths associated with open tabs.</figcaption>
 </figure>
 
+### Worktree tab groups
+
+When you open 2 or more tabs from the same repository, such as the main repository and its [worktrees](/gitkraken-desktop/worktrees/), GitKraken Desktop groups them together in the tab bar. A group has a border around its tabs and a dotted handle on its left edge.
+
+- Drag the handle to move the whole group.
+- Right-click the handle and select **Close group** to close every tab in the group.
+- Right-click a tab in the group and select **Close group** or **Close others in group**.
+- In the tabs dropdown, grouped tabs appear indented under the repository name.
+
+A group ends when fewer than 2 of its tabs are open. To stop grouping worktree tabs, go to <kbd>Preferences > UI Customization</kbd> and clear **Automatically group worktree tabs together**.
+
+<figure class='figure center'>
+    <img alt="The GitKraken Desktop tab bar with a Launchpad tab and a tab group holding the Playground2026 repository tab and its login-form and readme-typo worktree tabs. The dotted group handle on the group's left edge is highlighted." src="/wp-content/uploads/gkd-worktree-tab-groups-01-v4@2x.png" class="help-center-img img-bordered">
+    <figcaption style="text-align: center; color: #888;">Tabs for a repository and its worktrees are grouped together.</figcaption>
+</figure>
+
 ### Tab alias and name
 
 Right-click a tab and select <kbd>Alias repository</kbd> to assign a custom name.
@@ -269,7 +292,7 @@ Right-click a tab and select <kbd>Alias repository</kbd> to assign a custom name
 
 ## Columns
 
-GitKraken Desktop displays these default columns: <kbd>Branch/Tag</kbd>, <kbd>Graph</kbd>, <kbd>Commit Message</kbd>. Columns are rearrangeable.
+GitKraken Desktop displays these default columns: <kbd>Branch/Tag</kbd>, <kbd>Graph</kbd>, and <kbd>Commit Message</kbd>. You can rearrange the columns.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/columns-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop interface showing branch, graph, and commit message columns with headers outlined for reordering.">
@@ -295,6 +318,6 @@ Filter commits by author via the <i class='fa fa-filter'></i> in the AUTHOR colu
     <figcaption style="text-align: center; color: #888;">Search and filter by commit author or team.</figcaption>
 </figure>
 
-GitKraken Desktop saves column selections, widths, and order per repo. Columns are also configurable from <kbd><strong>Preferences > UI Customization</strong></kbd>.
+GitKraken Desktop saves column selections, widths, and order for each repository. You can also configure columns from <kbd><strong>Preferences > UI Customization</strong></kbd>.
 
 For more advanced views, see [Hiding and Soloing](/working-with-repositories/hiding-and-soloing).

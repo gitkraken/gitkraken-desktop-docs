@@ -11,15 +11,15 @@ git_hosts: [n/a]
 integrations: []
 hosted_variant: self-hosted
 status: GA
-last_verified: 2026-09
+last_verified: 2026-11
 llms_include: true
 tags: [serverless, on-premise, offline, setup, enterprise]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
-Use this page to install and license GitKraken On-Premise Serverless, also called GitKraken Stand-Alone, when your team works in offline or tightly controlled environments. It covers platform-specific installation steps, supported license file locations, and the manual license update flow required after expiration or renewal.
+Use this page to install and license GitKraken On-Premise Serverless, also called GitKraken Stand-Alone, when your team works in offline or tightly controlled environments.
 
 **Requirements and limits**
 - Product scope: GitKraken On-Premise Serverless / Stand-Alone
@@ -29,7 +29,7 @@ Use this page to install and license GitKraken On-Premise Serverless, also calle
 - License maintenance: Expired or renewed licenses must be updated manually by replacing the `.dat` file or using **Update License**
 - Commercial note: Serverless is sold separately from standard subscriptions and separately from Self-Hosted on-premise offerings
 
-**GitKraken On-Premise Serverless** (also known as *GitKraken Stand-Alone*) is designed for teams operating in disconnected or secure environments. It includes most core <a href="https://www.gitkraken.com/git-client" target=_blank>GitKraken features</a>, with additional advantages:
+**GitKraken On-Premise Serverless** (also known as *GitKraken Stand-Alone*) is for teams that work in disconnected or secure environments. It includes most core <a href="https://www.gitkraken.com/git-client" target=_blank>GitKraken Desktop features</a>, and it:
 
 - Works without internet access
 - Requires no account creation
@@ -47,7 +47,7 @@ Use this page to install and license GitKraken On-Premise Serverless, also calle
    - **Linux (.deb)**: Run `wget https://release.gitkraken.com/linux-standalone/gitkraken-amd64.deb && dpkg -i gitkraken-amd64.deb`.
 3. At first launch, load your `.dat` license file when prompted. If you do not have the file, contact your GitKraken administrator.
 
-If your license expires, replace the `.dat` file in one of the supported directories or click the license text in the bottom-left corner of the app and select **Update License**. GitKraken Serverless is sold separately from standard subscriptions.
+If your license expires, replace the `.dat` file in one of the supported directories or click the license text in the bottom-left corner of the app and select **Update License**.
 
 <figure class='figure center'>
   <img alt="Example view of GitKraken Serverless in use" src="/wp-content/uploads/serverless-example-2025@2x.png" class="help-center-img img-bordered">
@@ -55,7 +55,7 @@ If your license expires, replace the `.dat` file in one of the supported directo
 </figure>
 
 <div class='callout callout--warning'>
-    <p><strong>Note:</strong> GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately. Visit our <a href='https://www.gitkraken.com/git-client/on-premise-pricing'>On-Premise Pricing</a> page to purchase.</p>
+    <p><strong>Note:</strong> GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, see the <a href='https://www.gitkraken.com/git-client/on-premise-pricing'>On-Premise Pricing</a> page.</p>
 </div>
 
 <div class='callout callout--basic'>
@@ -76,11 +76,11 @@ The following feature categories are fully supported in Serverless:
 | Category | Included | Notes |
 | --- | --- | --- |
 | **Core Git client** | All standard Git operations, including commits, branches, merges, rebases, diffs, stashing, tagging, interactive rebase, cherry pick (including multi-commit interactive cherry pick), worktrees, shallow clone, and undo or redo of rebase and cherry pick operations. | |
-| **Agent Sessions View and coding agent session workflows** | Agent Sessions View and worktree-based coding agent session workflows are available in the on-premises Desktop client. | Available coding agents depend on your security policy, internal approvals, client version, and local environment. OpenCode and Gemini CLI can run fully air-gapped against an internal model endpoint. Claude Code, Codex CLI, Copilot CLI, and Cursor CLI are supported when internally permitted and reachable. |
+| **Agents view and coding agent session workflows** | The Agents view and worktree-based coding agent session workflows are available in the on-premises GitKraken Desktop client. | Available coding agents depend on your security policy, internal approvals, client version, and local environment. OpenCode and Gemini CLI can run fully air-gapped against an internal model endpoint; Claude Code, Codex CLI, Copilot CLI, and Cursor CLI are supported when internally permitted and reachable. |
 | **Embedded terminal for manual coding agent workflows** | You can run coding agents manually in the embedded terminal, including agents that GitKraken Desktop does not explicitly integrate with. | See [GitKraken Terminal Guide](/gitkraken-desktop/terminal/). |
 | **Launchpad** | Track pull requests and issues in a single view and filter by repository, branch, milestone, or sprint. Launchpad works with the following on-premises integrations: GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server and Data Center, Azure DevOps Server, and Jira Data Center. | For a description of the differences between cloud and on-premises Launchpad, see [How On-Premise Launchpad differs from Cloud Launchpad](/gitkraken-desktop/gitkraken-launchpad/#how-on-premise-launchpad-differs-from-cloud-launchpad). |
 | **Local Workspaces** | Organize multiple local Git repositories in one view. You can see the branch status of each repository and run multi-repository actions, such as fetch and pull, from a single place. | Cloud Workspaces are not available in Serverless. |
-| **Conflict detection** | GitKraken detects potential conflicts with your target branch before you reach the merge step and alerts you when your checked-out branch has diverged from its pull request target. | |
+| **Conflict detection** | GitKraken Desktop detects potential conflicts with your target branch before you reach the merge step and alerts you when your checked-out branch has diverged from its pull request target. | |
 | **GitKraken AI (bring your own key)** | All GitKraken AI features are available when you configure a Custom URL that points to a private or internal AI endpoint. | For setup instructions, see [GitKraken AI in Serverless](#gitkraken-ai-in-serverless). |
 | **ARM builds** | A native ARM installer is available for machines with ARM architecture. | |
 | **On-premises integrations** | GitKraken Serverless supports integrations with self-hosted Git hosting services and issue trackers. | For the full list, see [Supported on-premises integrations](#supported-on-premises-integrations). |
@@ -89,14 +89,15 @@ The following feature categories are fully supported in Serverless:
 
 The following features require connectivity to GitKraken cloud services (`gitkraken.dev`) or to external cloud hosting providers and are not available in Serverless:
 
-- Cloud Workspaces and features that depend on them, including Team Launchpad, Launchpad Saved Views, and Launchpad snooze and pin
+- Cloud Workspaces and features that depend on them, including Launchpad Team View, Launchpad Saved Views, and Launchpad snooze and pin
 - GitKraken Insights
+- GitKraken Code Review, including the **Review on GitKraken.dev** and **Review Pull Request** actions for pull requests
 - GitKraken AI using the default GitKraken-hosted provider
 - Cloud Patch sharing
 - Org Member conflict detection
 - Integrations with cloud-hosted services: GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, Jira Cloud, and Trello
 
-Local Desktop workflows such as worktrees, Agent Sessions View, and terminal-based coding agent workflows remain available unless they depend on a cloud-only or otherwise unsupported external service. For coding agents, availability depends on what your organization approves and what services are reachable from the environment.
+Local GitKraken Desktop workflows such as worktrees, the Agents view, and terminal-based coding agent workflows remain available unless they depend on a cloud-only or otherwise unsupported external service. For coding agents, availability depends on what your organization approves and what services are reachable from the environment.
 
 ### Feature support table
 
@@ -106,7 +107,7 @@ Local Desktop workflows such as worktrees, Agent Sessions View, and terminal-bas
 | Interactive Rebase | Yes | |
 | Multi-commit Cherry Pick | Yes | |
 | Worktrees | Yes | Requires version 10.5.0 or later |
-| Agent Sessions View and coding agent session workflows | Yes | Available in the on-premises Desktop client; available coding agents depend on security policy, internal approvals, client version, and local environment |
+| Agents view and coding agent session workflows | Yes | Available in the on-premises GitKraken Desktop client; available coding agents depend on security policy, internal approvals, client version, and local environment |
 | Embedded terminal for manual coding agent workflows | Yes | You can run coding agents manually in the embedded terminal |
 | Shallow Clone | Yes | |
 | Undo rebases, cherry picks, and AI Commit Compose | Yes | |
@@ -120,7 +121,7 @@ Local Desktop workflows such as worktrees, Agent Sessions View, and terminal-bas
 | Conflict detection (target branch) | Yes | |
 | Conflict detection (Org Member awareness) | No | Requires cloud GitKraken Org |
 | Cloud Patch sharing | No | |
-| GitKraken AI (default hosted provider, no key required) | No | Calls GitKraken cloud endpoint |
+| GitKraken AI (default hosted provider, no key required) | No | Requires GitKraken cloud services |
 | GitKraken AI (Custom URL or bring your own key) | Yes | Per-user opt-in; you provide the AI infrastructure |
 | ARM builds | Yes | Separate ARM installer available |
 | GitHub Enterprise Server integration | Yes | |
@@ -130,6 +131,7 @@ Local Desktop workflows such as worktrees, Agent Sessions View, and terminal-bas
 | Jira Data Center integration | Yes | |
 | GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, Jira Cloud | No | Require outbound internet access |
 | GitKraken Insights | No | Requires gitkraken.dev |
+| GitKraken Code Review (**Review on GitKraken.dev**) | No | Requires gitkraken.dev |
 
 ### GitKraken AI in Serverless
 
@@ -142,7 +144,7 @@ GitKraken AI is available in GitKraken Serverless when you configure a Custom UR
 3. Enter the endpoint URL for your internal AI service.
 4. If your endpoint requires authentication, enter an API key.
 
-This is an opt-in, per-user setting. GitKraken does not validate or support the configuration of third-party or self-hosted AI endpoints.
+Custom URL is an opt-in, per-user setting. GitKraken does not validate or support the configuration of third-party or self-hosted AI endpoints.
 
 When you configure a Custom URL, the following AI features are available:
 
@@ -164,7 +166,7 @@ GitKraken Serverless supports the following self-hosted integrations. These inte
 - Bitbucket Server and Data Center
 - Azure DevOps Server
 - Jira Data Center
-- or any custom remote hosting service available over HTTPS or SSH authentication
+- Any custom remote hosting service available over HTTPS or SSH authentication
 
 The cloud-hosted counterparts of these services (GitHub.com, GitLab.com, Bitbucket.org, Azure DevOps cloud, and Jira Cloud) are not supported in Serverless because they require outbound internet connectivity.
 
@@ -172,7 +174,7 @@ The cloud-hosted counterparts of these services (GitHub.com, GitLab.com, Bitbuck
 
 ## How to install GitKraken Serverless
 
-Follow these steps to get started:
+To install GitKraken Serverless:
 
 <ol>
 <li><a href="https://www.gitkraken.com/download-on-premise-serverless" target=_blank>Download GitKraken Serverless</a></li>
@@ -184,7 +186,7 @@ Follow these steps to get started:
 
 ### How to download GitKraken Serverless
 
-Download the appropriate client for your operating system from our <a href="https://www.gitkraken.com/download-on-premise-serverless" target=_blank>downloads page</a>.
+Download the client for your operating system from the <a href="https://www.gitkraken.com/download-on-premise-serverless" target=_blank>downloads page</a>.
 
 If the page is inaccessible, contact your GitKraken administrator for internal distribution options.
 
@@ -255,9 +257,9 @@ sudo dnf install ./gitkraken-amd64.rpm
 
 ### How to load the license file
 
-At first launch, you’ll be prompted to load the `.dat` license file.
+At first launch, GitKraken Serverless prompts you to load the `.dat` license file.
 
-If you don’t have the file, contact your GitKraken admin. Admins can retrieve it from app.gitkraken.com. For older accounts or help locating the file, <a href="https://help.gitkraken.com/gitkraken-desktop/contact-support/">contact support</a>.
+If you do not have the file, contact your GitKraken admin. Admins can retrieve it from app.gitkraken.com. For older accounts or help locating the file, <a href="https://help.gitkraken.com/gitkraken-desktop/contact-support/">contact support</a>.
 
 <figure class='figure center'>
   <img alt="GitKraken Serverless ready after license activation" src="/wp-content/uploads/serverless-2025@2x.png" class="help-center-img img-bordered">
@@ -268,7 +270,7 @@ If you don’t have the file, contact your GitKraken admin. Admins can retrieve 
 
 ### Where GitKraken checks for license files
 
-GitKraken checks the following locations for license files:
+GitKraken Serverless checks these locations for license files:
 
 **Linux/macOS:**
 - `/usr/local/share/gitkraken`
@@ -287,12 +289,10 @@ GitKraken checks the following locations for license files:
 
 ### How to update the license file
 
-If your license expires, you can:
+If your license expires, do one of the following:
 
-- Replace the file in one of the directories listed above
-- Or, update manually:
-  - In GitKraken, click the license text in the bottom-left corner
-  - Select <kbd>Update License</kbd>
+- Replace the file in one of the license file locations.
+- In GitKraken Serverless, click the license text in the bottom-left corner and select <kbd>Update License</kbd>.
 
 <figure class='figure center'>
   <img alt="Update your license manually from the client footer" src="/wp-content/uploads/serverless-license-2025@2x.png" class="help-center-img img-bordered">

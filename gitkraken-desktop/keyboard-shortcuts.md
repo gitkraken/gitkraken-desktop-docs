@@ -1,6 +1,6 @@
 ---
 title: GitKraken Desktop Keyboard Shortcuts | Speed Up Your Git Workflow
-description: Master GitKraken Desktop with this complete list of keyboard shortcuts for staging, navigating, committing, and managing tabs.
+description: Keyboard shortcuts for GitKraken Desktop on macOS, Windows, and Linux, for staging, committing, navigating the Commit Graph, and managing tabs and terminal tabs.
 product: GitKraken Desktop
 feature: Keyboard Shortcuts
 content_type: reference
@@ -11,21 +11,19 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [keyboard-shortcuts, shortcuts, navigation, command-palette, tabs]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
-This keyboard shortcut reference helps you work faster in GitKraken Desktop on macOS, Windows, and Linux. Use it to find shortcuts for staging, committing, navigating the Commit Graph, opening the Command Palette, managing tabs, toggling interface panels, and opening the terminal without leaving the keyboard.
+Use these keyboard shortcuts to work in GitKraken Desktop on macOS, Windows, and Linux without leaving the keyboard. They cover staging, committing, navigating the Commit Graph, opening the Command Palette, managing tabs, toggling interface panels, and opening the terminal.
 
 **Requirements and limits**
-- Shortcut values differ between macOS and Windows/Linux, so check the correct platform column before using a shortcut.
-- The <kbd>&#8984;</kbd> symbol refers to the Command key on macOS.
-- This page is a reference for built-in GitKraken Desktop shortcuts; availability depends on the relevant view or repository context being open.
-- Shortcuts are grouped by task area, including repo actions, navigation, the Command Palette, interface controls, and tabs.
+- Shortcuts differ between macOS and Windows/Linux, so check the column for your platform before using a shortcut.
+- A shortcut works only when its view or repository is open.
 
 <blockquote><strong>Note:</strong> The <kbd>&#8984;</kbd> symbol refers to the <strong>Command</strong> key on macOS.</blockquote>
 
@@ -64,7 +62,7 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
     </colgroup>
     <thead>
         <tr>
-            <th></th>
+            <th>Action</th>
             <th>Mac</th>
             <th>Windows/Linux</th>
         </tr>
@@ -135,13 +133,13 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
     <tbody>
         <tr>
             <td>Select previous item</td>
-            <td><kbd>J</kbd> or <kbd>&darr;</kbd></td>
-            <td><kbd>J</kbd> or <kbd>&darr;</kbd></td>
+            <td><kbd>K</kbd> or <kbd>&uarr;</kbd></td>
+            <td><kbd>K</kbd> or <kbd>&uarr;</kbd></td>
         </tr>
         <tr>
             <td>Select next item</td>
-            <td><kbd>K</kbd> or <kbd>&uarr;</kbd></td>
-            <td><kbd>K</kbd> or <kbd>&uarr;</kbd></td>
+            <td><kbd>J</kbd> or <kbd>&darr;</kbd></td>
+            <td><kbd>J</kbd> or <kbd>&darr;</kbd></td>
         </tr>
         <tr>
             <td>Select the item to the right</td>
@@ -156,16 +154,16 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
         <tr>
             <td>Select next item in branch</td>
             <td><kbd>Shift</kbd><kbd>&darr;</kbd><br>
-            <kbd>Shift</kbd><kbd>J</td>
+            <kbd>Shift</kbd><kbd>J</kbd></td>
             <td><kbd>Shift</kbd><kbd>&darr;</kbd><br>
-            <kbd>Shift</kbd><kbd>J</td>
+            <kbd>Shift</kbd><kbd>J</kbd></td>
         </tr>
         <tr>
             <td>Select previous item in branch</td>
             <td><kbd>Shift</kbd><kbd>&uarr;</kbd><br>
-            <kbd>Shift</kbd><kbd>K</td>
+            <kbd>Shift</kbd><kbd>K</kbd></td>
             <td><kbd>Shift</kbd><kbd>&uarr;</kbd><br>
-            <kbd>Shift</kbd><kbd>K</td>
+            <kbd>Shift</kbd><kbd>K</kbd></td>
         </tr>
         <tr>
             <td>Select first commit in graph</td>
@@ -219,8 +217,8 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
         </tr>
         <tr>
             <td>Open repo via Command Palette</td>
-            <td><kbd>&#8984;</kbd><kbd>Shift</kbd><kbd>O</kbd>
-            <td><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>O</kbd>
+            <td><kbd>&#8984;</kbd><kbd>Shift</kbd><kbd>O</kbd></td>
+            <td><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>O</kbd></td>
         </tr>
         <tr>
             <td>Search file to view history and blame</td>
@@ -233,34 +231,34 @@ This keyboard shortcut reference helps you work faster in GitKraken Desktop on m
             <td><kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>F</kbd></td>
         </tr>
         <tr>
-            <td>Open current repo in terminal</td>
-            <td><kbd>Option</kbd><kbd>T</kbd>
-            <td><kbd>Alt</kbd><kbd>T</kbd>
+            <td>Open current repo in default terminal</td>
+            <td><kbd>Option</kbd><kbd>T</kbd></td>
+            <td><kbd>Alt</kbd><kbd>T</kbd></td>
         </tr>
         <tr>
             <td>Open current repo in File Manager</td>
-            <td><kbd>Alt</kbd><kbd>O</kbd>
-            <td><kbd>Alt</kbd><kbd>O</kbd>
+            <td><kbd>Option</kbd><kbd>O</kbd></td>
+            <td><kbd>Alt</kbd><kbd>O</kbd></td>
         </tr>
         <tr>
             <td>Open diff or merge tool</td>
-            <td><kbd>&#8984;</kbd><kbd>D</kbd>
-            <td><kbd>Ctrl</kbd><kbd>D</kbd>
+            <td><kbd>&#8984;</kbd><kbd>D</kbd></td>
+            <td><kbd>Ctrl</kbd><kbd>D</kbd></td>
         </tr>
         <tr>
             <td>Close current repo</td>
-            <td><kbd>&#8984;</kbd><kbd>W</kbd>
-            <td><kbd>Ctrl</kbd><kbd>W</kbd>
+            <td><kbd>&#8984;</kbd><kbd>W</kbd></td>
+            <td><kbd>Ctrl</kbd><kbd>W</kbd></td>
         </tr>
         <tr>
             <td>Search within file (if file content has focus)</td>
-            <td><kbd>&#8984;</kbd><kbd>F</kbd>
-            <td><kbd>Ctrl</kbd><kbd>F</kbd>
+            <td><kbd>&#8984;</kbd><kbd>F</kbd></td>
+            <td><kbd>Ctrl</kbd><kbd>F</kbd></td>
         </tr>
     </tbody>
 </table>
 
-Use **Open current repo in terminal** when you want to jump into the embedded terminal for command-line tasks or manual coding agent workflows in the current repository or worktree. For more information, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
+**Open current repo in default terminal** opens the current repository in your external terminal. To run commands or manual coding agent workflows in the in-app terminal for the current repository or worktree, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
 
 ### Keyboard shortcuts for the interface
 <table class='table table--bordered table--shortcuts'>
@@ -278,9 +276,9 @@ Use **Open current repo in terminal** when you want to jump into the embedded te
     </thead>
     <tbody>
         <tr>
-            <td>Toggle Fullscreen Mode</td>
-            <td><kbd>Control</kbd><kbd>&#8984;</kbd><kbd>F</kbd><br>
-            <td><kbd>F11</kbd><br>
+            <td>Toggle Full Screen</td>
+            <td><kbd>Control</kbd><kbd>&#8984;</kbd><kbd>F</kbd></td>
+            <td><kbd>F11</kbd></td>
         </tr>
         <tr>
             <td>Increase Zoom</td>
@@ -295,7 +293,7 @@ Use **Open current repo in terminal** when you want to jump into the embedded te
             <td><kbd>Ctrl</kbd><kbd>&minus;</kbd></td>
         </tr>
         <tr>
-            <td>Reset zoom</td>
+            <td>Reset Zoom</td>
             <td><kbd>&#8984;</kbd><kbd>0</kbd></td>
             <td><kbd>Ctrl</kbd><kbd>0</kbd></td>
         </tr>
@@ -344,29 +342,80 @@ Use **Open current repo in terminal** when you want to jump into the embedded te
     <tbody>
         <tr>
             <td>New Tab</td>
-            <td><kbd>Cmd</kbd><kbd>T</kbd><br>
-            <td><kbd>Ctrl</kbd><kbd>T</kbd><br>
+            <td><kbd>&#8984;</kbd><kbd>T</kbd></td>
+            <td><kbd>Ctrl</kbd><kbd>T</kbd></td>
         </tr>
         <tr>
             <td>Close Tab</td>
-            <td><kbd>Cmd</kbd><kbd>W</kbd><br>
-            <td><kbd>Ctrl</kbd><kbd>W</kbd><br>
-        </tr>
+            <td><kbd>&#8984;</kbd><kbd>W</kbd></td>
+            <td><kbd>Ctrl</kbd><kbd>W</kbd></td>
         </tr>
         <tr>
-            <td>Swap to Tab #1-9</td>
+            <td>Switch to tab 1-9</td>
             <td><kbd>&#8984;</kbd><kbd>#1-9</kbd></td>
             <td><kbd>Ctrl</kbd><kbd>#1-9</kbd></td>
         </tr>
         <tr>
             <td>Jump to next open tab</td>
-            <td><kbd>&#8984;</kbd><kbd>Tab</kbd></td>
+            <td><kbd>Control</kbd><kbd>Tab</kbd></td>
             <td><kbd>Ctrl</kbd><kbd>Tab</kbd></td>
         </tr>
         <tr>
             <td>Jump to previous open tab</td>
-            <td><kbd>&#8984;</kbd><kbd>Shift</kbd><kbd>Tab</kbd></td>
+            <td><kbd>Control</kbd><kbd>Shift</kbd><kbd>Tab</kbd></td>
             <td><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>Tab</kbd></td>
+        </tr>
+        <tr>
+            <td>Focus the repository search on a New Tab</td>
+            <td><kbd>&#8984;</kbd><kbd>Option</kbd><kbd>F</kbd></td>
+            <td><kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>F</kbd></td>
         </tr>
     </tbody>
 </table>
+
+On a New Tab, the repository search box shows this shortcut in its placeholder text.
+
+### Keyboard shortcuts for terminal tabs
+<table class='table table--bordered table--shortcuts'>
+    <colgroup>
+        <col style="width: 44%;">
+        <col style="width: 28%;">
+        <col style="width: 28%;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th>Mac</th>
+            <th>Windows/Linux</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>New terminal tab</td>
+            <td><kbd>&#8984;</kbd><kbd>Option</kbd><kbd>N</kbd></td>
+            <td><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>N</kbd></td>
+        </tr>
+        <tr>
+            <td>Close terminal tab</td>
+            <td><kbd>&#8984;</kbd><kbd>Option</kbd><kbd>W</kbd></td>
+            <td><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>W</kbd></td>
+        </tr>
+        <tr>
+            <td>Jump to the next terminal tab</td>
+            <td><kbd>&#8984;</kbd><kbd>Option</kbd><kbd>&rarr;</kbd></td>
+            <td><kbd>Ctrl</kbd><kbd>Page Down</kbd></td>
+        </tr>
+        <tr>
+            <td>Jump to the previous terminal tab</td>
+            <td><kbd>&#8984;</kbd><kbd>Option</kbd><kbd>&larr;</kbd></td>
+            <td><kbd>Ctrl</kbd><kbd>Page Up</kbd></td>
+        </tr>
+        <tr>
+            <td>Jump to terminal tab 1-9</td>
+            <td><kbd>&#8984;</kbd><kbd>Option</kbd><kbd>#1-9</kbd></td>
+            <td><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>#1-9</kbd></td>
+        </tr>
+    </tbody>
+</table>
+
+Terminal tab shortcuts work while the terminal panel is open. The same actions are in the <kbd>View > Terminal Tabs</kbd> menu on Windows and Linux, and in <kbd>Window > Terminal Tabs</kbd> on macOS. For more information, see [How terminal tabs work](/gitkraken-desktop/terminal/#how-terminal-tabs-work).

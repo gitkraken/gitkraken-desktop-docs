@@ -37,17 +37,17 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/agents/</loc>
-    <lastmod>2026-04-14</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/review-and-undo-agent-changes/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/clean-up-agent-commits/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -57,7 +57,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/clean-up-agent-worktrees/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -67,7 +67,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/azure-devops/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -77,12 +77,12 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/bitbucket/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/branching-and-merging/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -107,7 +107,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/common-issues/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -132,7 +132,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/diff/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -147,12 +147,12 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/experimental-features/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/faq/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -202,32 +202,32 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/github-gitkraken-desktop/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/github-issues/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/gitkraken-desktop-home/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/gitkraken-launchpad/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/gitlab-gitkraken-desktop/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/gitlab-issues/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -247,12 +247,12 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/guide/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -272,7 +272,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/integrations/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -282,7 +282,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/interface/</loc>
-    <lastmod>2026-04-14</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -292,12 +292,12 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/jira/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/keyboard-shortcuts/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -307,7 +307,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/open-clone-init/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -317,7 +317,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/preferences/</loc>
-    <lastmod>2026-04-14</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -332,7 +332,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/pull-requests/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -347,7 +347,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/self-hosted/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -357,7 +357,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/serverless/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -402,7 +402,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/terminal/</loc>
-    <lastmod>2026-04-14</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -412,17 +412,17 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/tips/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/trello/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/undo-and-redo/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -432,17 +432,17 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/windows-subsystem-for-linux/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/workspaces/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitkraken-desktop/worktrees/</loc>
-    <lastmod>2026-04-14</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>

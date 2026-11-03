@@ -1,6 +1,6 @@
 ---
 title: GitKraken Desktop Tips | Productivity Shortcuts & Power Features
-description: Discover top GitKraken Desktop tips to speed up your workflow—Profiles, Command Palette, integrations, cherry pick, and more advanced features.
+description: GitKraken Desktop tips for Profiles, the Command Palette, keyboard shortcuts, coding agents, cherry pick, integrations, and the Commit Graph.
 product: GitKraken Desktop
 feature: Tips and Power Features
 content_type: overview
@@ -11,34 +11,34 @@ git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps, generic]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [tips, productivity, shortcuts, integrations, advanced]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
-This page highlights GitKraken Desktop features that help developers move faster across everyday Git work. Use these tips to set up profiles, navigate with the Command Palette and shortcuts, connect integrations, manage coding agent and worktree workflows, and customize the Commit Graph when you want a more efficient workflow.
+Use these tips to speed up everyday Git work in GitKraken Desktop. You can set up Profiles, navigate with the Command Palette and keyboard shortcuts, run coding agents in parallel worktrees, connect integrations, and control what the Commit Graph shows.
 
 **Requirements and limits**
-- This page is a curated overview that links to feature-specific documentation; use the linked pages for full steps and edge cases.
-- Some tips reference paid features, including multiple Profiles and certain integrations.
+- Each tip is a summary. For full steps and edge cases, open the linked feature page.
+- Some tips use paid features, including multiple Profiles and some integrations.
 - Integration capabilities vary by Git provider and plan, especially for Azure DevOps and self-hosted services.
-- Shortcut, Command Palette, and UI behavior may differ by operating system or repository context.
+- Shortcuts, Command Palette actions, and other UI behavior can differ by operating system and by repository.
 
 ***
 
 ## How to set up profiles
 
-Separate work and personal repositories—or manage multiple accounts with [Profiles](/start-here/profiles).
+Use [Profiles](/start-here/profiles) to keep work and personal repositories separate, or to manage multiple accounts.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/profile-example-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop showing how each profile can be linked to a different GitHub account, enabling users to manage separate work and personal identities with distinct credentials.">
+  <img src="/wp-content/uploads/profile-example-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop showing a different GitHub account linked to each profile.">
   <figcaption style="text-align: center; color: #888;">Each profile can save a unique integration connection.</figcaption>
 </figure>
 
-Each profile retains its own Git config, preferences, and open tabs.
+Each profile keeps its own Git config, preferences, and open tabs.
 
 <div class='callout callout--success'>
   <p>Note: Access to multiple profiles requires a <a href="https://www.gitkraken.com/pricing" target="_blank">GitKraken subscription</a>.</p>
@@ -48,27 +48,24 @@ Each profile retains its own Git config, preferences, and open tabs.
 
 ## How to use the Command Palette
 
-The [Command Palette](/start-here/command-palette) helps you navigate GitKraken quickly with keyboard-driven actions.
+Use the [Command Palette](/start-here/command-palette) to find and run GitKraken Desktop actions from the keyboard.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/command-palette-2025.gif" class="help-center-img img-bordered" alt="Using the GitKraken Command Palette to execute actions like opening repositories or launching editors, demonstrating how it streamlines common Git tasks from a single keyboard-driven interface.">
+  <img src="/wp-content/uploads/command-palette-2025.gif" class="help-center-img img-bordered" alt="The GitKraken Desktop Command Palette filtering its commands as open and then create are typed, showing matches such as Open in VS Code, Open Repo, Create File, and Create Branch.">
   <figcaption style="text-align: center; color: #888;">Use the Command Palette to launch repositories, open editors, and more.</figcaption>
 </figure>
 
-Common actions:
+Common Command Palette actions include:
 
-**Core**
-- `Undo`, `Redo`
-
-**File**
-- `Create File`, `Delete File`, `Open File`, `Edit File`, `View File`
-- `Discard all changes`, `Stage all changes`, `Unstage all changes`
+- **Undo** and **Redo**
+- File actions: **Create File**, **Delete File**, **Open File**, **Edit File**, and **View File**
+- Change actions: **Discard all changes**, **Stage all changes**, and **Unstage all changes**
 
 ***
 
 ## How to use keyboard shortcuts
 
-Speed through tasks with [keyboard shortcuts](/start-here/keyboard-shortcuts).
+Use [keyboard shortcuts](/start-here/keyboard-shortcuts) to run common actions without the mouse. To see the full list in GitKraken Desktop, use this shortcut:
 
 <table class='table table--bordered table--shortcuts'>
   <thead>
@@ -89,11 +86,11 @@ Speed through tasks with [keyboard shortcuts](/start-here/keyboard-shortcuts).
 
 ***
 
-## How to use Agent Sessions View for parallel work
+## How to use the Agents view for parallel work
 
-Use [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) when you want to start and monitor coding agent sessions in parallel. In the Left Panel, use the `List | Agents` toggle to switch between the traditional List view and Agent Sessions View.
+Use the Agents view to start and monitor coding agent sessions in parallel. In the Left Panel, use the `List | Agents` toggle to switch between List view and the Agents view. For setup and session steps, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
-Agent Sessions View uses the same underlying worktrees as List view, but organizes them around coding agent sessions, status, and quick actions. For general worktree management, see [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/).
+The Agents view uses the same underlying worktrees as List view, but organizes them around coding agent sessions, status, and quick actions. For general worktree management, see [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/).
 
 ***
 
@@ -102,32 +99,32 @@ Agent Sessions View uses the same underlying worktrees as List view, but organiz
 Select multiple commits using <kbd>Cmd/Ctrl</kbd> or <kbd>Shift</kbd>, then right-click and select <kbd>Cherry pick X commits</kbd>.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/multi-cherry-pick-menu.png' class="help-center-img img-bordered" alt="GitKraken Desktop showing a context menu for cherry picking multiple selected commits, illustrating how users can apply specific changes across branches without merging full history.">
+  <img src='/wp-content/uploads/multi-cherry-pick-menu.png' class="help-center-img img-bordered" alt="GitKraken Desktop context menu showing 'Cherry pick 5 commits' after selecting multiple commits from the commit graph.">
   <figcaption style="text-align: center; color: #888;">Select multiple commits from the graph to cherry pick them together.</figcaption>
 </figure>
 
-You can reorder, squash, drop, or rename commits before completing. Learn more in [Interactive Cherry Pick](/gitkraken-desktop/cherrypick/).
+Before GitKraken Desktop applies the commits, you can reorder, squash, reword, or drop them. Learn more in [Interactive Cherry Pick](/gitkraken-desktop/cherrypick/).
 
 ***
 
 ## How to integrate with Git services
 
-Connect GitKraken Desktop with [GitHub, GitLab, Bitbucket, and Azure DevOps](/gitkraken-desktop/integrations/) to streamline cloning, remotes, and PR workflows.
+Connect GitKraken Desktop to [GitHub, GitLab, Bitbucket, and Azure DevOps](/gitkraken-desktop/integrations/) to work with your hosted repositories and pull requests.
 
 <figure class='figure center'>
-  <img src="/wp-content/uploads/connect-azure-devops-2025@2x.png" class="help-center-img img-bordered" alt="GitKraken Desktop integration settings for Azure DevOps, illustrating how connecting a Git provider enables faster repository access and enhanced workflow automation.">
+  <img src="/wp-content/uploads/connect-azure-devops-2025-v3@2x.png" class="help-center-img img-bordered" alt="Preferences > Integrations > Azure DevOps in GitKraken Desktop: the Azure DevOps card reads Not Connected with a Connect to Azure DevOps button, a Manage Integrations button sits at the top right, and below &quot;or&quot; are Host Domain and Personal Access Token fields with a Connect button.">
   <figcaption style="text-align: center; color: #888;">Connect your Git provider to speed up repository access.</figcaption>
 </figure>
 
-**Plan notes:**
-- Community users are limited to public repositories on GitHub/GitLab/Bitbucket.
-- Azure DevOps integration requires a GitKraken subscription.
-- Self-Hosted services require a paid plan that supports self-hosted integrations.
-
-**Benefits:**
-- Create repos and configure `.gitignore` or license files
-- Clone via remote repo list
+With an integration connected, you can:
+- Create repositories and add a `.gitignore` or license file
+- Clone from a list of your remote repositories
 - Manage remotes and pull requests
+
+Integration access depends on your plan:
+- Community users can use public repositories on GitHub, GitLab, and Bitbucket only.
+- Azure DevOps integration requires a GitKraken subscription.
+- Self-hosted services require a paid plan that supports self-hosted integrations.
 
 ***
 
@@ -144,7 +141,7 @@ Control the Commit Graph display with [Hide and Solo](/gitkraken-desktop/hiding-
   </div>
   <div class="flex-item">
     <h3>Hide</h3>
-    <p>Click the eye <i class='fa fa-eye icon-green'></i> next to a branch or right-click to hide it. Hidden branches show a gray <i class='fa fa-eye-slash'></i> icon.</p>
+    <p>To hide a branch, click the eye <i class='fa fa-eye icon-green'></i> icon next to it in the Left Panel, or right-click it and select <kbd>Hide</kbd>. Hidden branches show a gray <i class='fa fa-eye-slash'></i> icon.</p>
   </div>
 </div>
 
@@ -157,7 +154,7 @@ Control the Commit Graph display with [Hide and Solo](/gitkraken-desktop/hiding-
   </div>
   <div class="flex-item">
     <h3>Solo</h3>
-    <p>Right-click a branch and select `Solo` to show only that branch. Repeat to solo/unsolo other branches using the orange <i class='fa fa-dot-circle-o icon-orange'></i> icon.</p>
+    <p>Right-click a branch and select <kbd>Solo</kbd> to show only that branch. Soloed branches show an orange <i class='fa fa-dot-circle-o icon-orange'></i> icon. To solo or unsolo other branches, click the solo icon next to each branch name in the Left Panel.</p>
   </div>
 </div>
 
@@ -165,15 +162,15 @@ Control the Commit Graph display with [Hide and Solo](/gitkraken-desktop/hiding-
 
 ## How to view file history and blame
 
-[View file history and blame](/gitkraken-desktop/diff/#file-blame-and-history) by clicking a commit and right-clicking a file.
+To [view file history and blame](/gitkraken-desktop/diff/#how-to-view-file-blame-and-history), click a commit and right-click a file.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/file-history-content-menu-2025.png' class="help-center-img img-bordered" alt="Context menu in GitKraken Desktop showing options to view file history and blame, helping users trace changes and identify contributors to specific lines of code.">
+  <img src='/wp-content/uploads/file-history-content-menu-2025.png' class="help-center-img img-bordered" alt="Context menu in GitKraken Desktop showing the options to view file history and blame.">
   <figcaption style="text-align: center; color: #888;">Right-click a file to view its history or blame.</figcaption>
 </figure>
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/file-diff-2025.png' class="help-center-img img-bordered" alt="File history panel alongside line-by-line commit diff in GitKraken Desktop, explaining how each commit modified a specific file to clarify the evolution of content and aid troubleshooting.">
+  <img src='/wp-content/uploads/file-diff-2025.png' class="help-center-img img-bordered" alt="File history panel next to a line-by-line commit diff in GitKraken Desktop.">
   <figcaption style="text-align: center; color: #888;">Switch between commit diff and file view with blame.</figcaption>
 </figure>
 
@@ -181,19 +178,19 @@ Control the Commit Graph display with [Hide and Solo](/gitkraken-desktop/hiding-
 
 ## How to open the GitKraken Desktop terminal
 
-Run Git commands with the [GitKraken Terminal](/gitkraken-desktop/terminal/). Click <i class="fa fa-terminal"></i> in the toolbar or use <kbd>Alt/Opt + T</kbd>.
+Run Git commands in the [GitKraken Terminal](/gitkraken-desktop/terminal/). To open it, click the Terminal <i class="fa fa-terminal"></i> button in the toolbar.
 
-You can also use the embedded terminal for manual coding agent workflows in a repository or worktree, including agents that GitKraken Desktop does not explicitly integrate with.
+You can also use the embedded terminal to run coding agents by hand in a repository or worktree, including agents that GitKraken Desktop does not integrate with.
 
-Set a default terminal from <kbd>Preferences > External Tools</kbd>. For terminal sessions that follow your active worktree, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
+To choose the terminal that <kbd>Alt/Opt + T</kbd> opens, set a default terminal in <kbd>Preferences > External Tools</kbd>. For terminal sessions that follow your active worktree, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
 
 ***
 
 ## How to resize the Commit Graph
 
-Hover over the graph’s colored lines and drag to resize.
+To resize the Commit Graph, hover over the graph's colored lines and drag.
 
 <figure class='figure center'>
-  <img src='/wp-content/uploads/graph-drag-2025.gif' class='help-center-img img-bordered' alt='GitKraken commit graph being resized horizontally to help users focus on complex branching structures, improve readability, and navigate dense commit histories with greater precision.'>
+  <img src='/wp-content/uploads/graph-drag-2025.gif' class='help-center-img img-bordered' alt='The GitKraken Desktop Commit Graph being resized horizontally by dragging.'>
   <figcaption style="text-align: center; color: #888;">Adjust the graph view to focus on the information you need.</figcaption>
 </figure>

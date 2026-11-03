@@ -11,30 +11,28 @@ git_hosts: [n/a]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [home, docs, help-center, getting-started]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: October 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 GitKraken Desktop is a visual Git client for Windows, macOS, and Linux. You can use it for everyday Git work and to run coding agents on their own branches and worktrees, where their changes show up in the Commit Graph next to yours.
 
 <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 32px; margin-bottom:24px;">
-  <p style="flex:1 1 300px; margin:0;">Use this page as the GitKraken Desktop Help Center entry point when you need to find installation guidance, interface walkthroughs, coding agent workflows, worktrees, terminal usage, integrations, release notes, or support resources. It is the best cold-start page for agents and users who need a routing layer into the rest of the documentation set.</p>
+  <p style="flex:1 1 300px; margin:0;">Start here to find installation steps, interface walkthroughs, coding agent workflows, worktrees, terminal usage, integrations, release notes, and support resources for GitKraken Desktop.</p>
   <img src="/wp-content/uploads/GitKraken_Keif_evergreen-feature.png" alt="" width="703" height="750" loading="lazy" style="flex:0 0 auto; max-height:200px; width:auto; height:auto; max-width:100%; margin:0 auto;">
 </div>
 
 **Requirements and limits**
-- This page is a routing guide to the GitKraken Desktop Help Center, not a single-feature reference page.
-- Use the linked docs for plan requirements, OS support, version constraints, and step-by-step workflows.
-- Installation, integrations, and release notes each maintain their own constraints and compatibility details.
-- Coding agent, worktree, terminal, and on-premises workflows each have dedicated pages with deeper setup and behavior details.
-- The overview video is optional; the navigation links are the primary path for finding current documentation.
+- Plan requirements, OS support, version limits, and step-by-step workflows are on each linked page.
+- Installation, integrations, and release notes each list their own requirements and compatibility details.
+- Coding agents, worktrees, the terminal, and on-premises deployment each have their own setup page.
 
-Watch the overview video or use the navigation menu to dive straight into what you need. 
+Watch the overview video, or use the links below to go to the topic you need.
 
 ## GitKraken Desktop tutorial
 
@@ -50,7 +48,7 @@ Use these pages to get started with the part of GitKraken Desktop you need:
 
 - [How to Install](/gitkraken-desktop/how-to-install/) - Install GitKraken Desktop on Windows, macOS, or Linux.
 - [Interface Basics](/gitkraken-desktop/interface/) - Learn how the toolbar, Left Panel, Commit Graph, and Commit Panel fit together.
-- [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) - Use Agent Sessions View to create, monitor, and manage coding agent sessions.
+- [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) - Use the Agents view to create, monitor, and manage coding agent sessions.
 - [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/) - Create, switch, lock, and remove worktrees.
 - [GitKraken Terminal Guide](/gitkraken-desktop/terminal/) - Use the embedded terminal for Git commands and manual coding agent workflows.
 - [Integrations](/gitkraken-desktop/integrations/) - Connect repositories, issue trackers, and related services.
@@ -63,14 +61,14 @@ Use these pages to get started with the part of GitKraken Desktop you need:
 
 Use these pages if your organization runs GitKraken Desktop in an on-premises environment:
 
-- [Set Up GitKraken Self-Hosted Server (On-Premise)](/gitkraken-desktop/self-hosted/) - Learn how Self-Hosted Server works and which Desktop features are supported.
+- [Set Up GitKraken Self-Hosted Server (On-Premise)](/gitkraken-desktop/self-hosted/) - Learn how Self-Hosted Server works and which GitKraken Desktop features it supports.
 - [GitKraken On-Premise Serverless (Stand-Alone) Setup](/gitkraken-desktop/serverless/) - Install and license Serverless in offline or tightly controlled environments.
 
 ---
 
 ## Additional resources
 
-Use these resources if you want support or want to share product feedback:
+Use these resources to get support or share product feedback:
 
 - [Make a Feature Request](https://feedback.gitkraken.com/?product=gitkraken&source=help_center) - Share product ideas and feedback.
 - [Join GitKraken Slack](https://www.gitkraken.com/join-slack-community?product=gitkraken&source=help_center) - Connect with other GitKraken users.
