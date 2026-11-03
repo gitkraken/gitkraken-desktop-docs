@@ -173,7 +173,7 @@ GitKraken AI explains in plain language what changed in the commits you select.
 2. Click **Explain commits** (or **Explain commit** for a single commit) in the top-right corner of the Commit Panel.
 
 <figure>
-<img src="/wp-content/uploads/gkd-ai-explain-commits-01-v2@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="The Commit Panel in GitKraken Desktop with three consecutive commits selected: the header reads 3 commits selected with an Explain commits button, followed by Viewing diff of 3 commits and the three commits." />
+<img src="/wp-content/uploads/gkd-ai-explain-commits-01-v3@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="The Commit Panel in GitKraken Desktop with three consecutive commits selected: the header reads 3 commits selected with an Explain commits button, followed by Viewing diff of 3 commits and the three commits." />
 <figcaption style="text-align: center; color: #888">Use the Explain button to trigger AI-generated summaries</figcaption>
 </figure>
 

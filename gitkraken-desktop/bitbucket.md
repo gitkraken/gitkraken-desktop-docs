@@ -85,7 +85,7 @@ To authenticate with Bitbucket:
 2. Select <strong>Bitbucket</strong> and click <button class='button button--success button--ui button--nolink'>Connect to Bitbucket</button>.
 
 <figure>
-  <img alt="Preferences > Integrations > Bitbucket in GitKraken Desktop: the Bitbucket card reads Not Connected with a Connect to Bitbucket button, and a Manage Integrations button sits at the top right of the pane." src="/wp-content/uploads/connect-bitbucket-2025-v2@2x.png" class="help-center-img img-bordered">
+  <img alt="Preferences > Integrations > Bitbucket in GitKraken Desktop: the Bitbucket card reads Not Connected with a Connect to Bitbucket button, and a Manage Integrations button sits at the top right of the pane." src="/wp-content/uploads/connect-bitbucket-2025-v3@2x.png" class="help-center-img img-bordered">
   <figcaption style="color:#888; text-align:center">Click to authenticate via Bitbucket</figcaption>
 </figure>
 

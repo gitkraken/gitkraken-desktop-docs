@@ -137,7 +137,7 @@ To switch to another worktree:
 - If the worktree has a WIP row in the Commit Graph, select that row and click **Open Worktree**, or double-click the row. Each worktree WIP row shows the branch the worktree is on, such as *on feature/login-form*, or the commit SHA if the worktree is on a detached HEAD
 
   <figure>
-    <img src="/wp-content/uploads/gkd-open-worktree-from-wip-01-v2@2x.png" 
+    <img src="/wp-content/uploads/gkd-open-worktree-from-wip-01-v3@2x.png" 
          class="help-center-img img-bordered" 
          alt="Commit Graph rows with three worktree WIP rows, labeled &quot;on feature/login-form&quot;, &quot;on fix/readme-typo&quot; and &quot;on 4d9484&quot;, each showing its change counts. The selected feature/login-form row shows the Open Worktree button.">
     <figcaption style="text-align:center; color:#888">

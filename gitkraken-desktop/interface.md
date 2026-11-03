@@ -275,7 +275,7 @@ When you open 2 or more tabs from the same repository, such as the main reposito
 A group ends when fewer than 2 of its tabs are open. To stop grouping worktree tabs, go to <kbd>Preferences > UI Customization</kbd> and clear **Automatically group worktree tabs together**.
 
 <figure class='figure center'>
-    <img alt="The GitKraken Desktop tab bar with a Launchpad tab and a tab group holding the Playground2026 repository tab and its login-form and readme-typo worktree tabs. The dotted group handle on the group's left edge is highlighted." src="/wp-content/uploads/gkd-worktree-tab-groups-01-v2@2x.png" class="help-center-img img-bordered">
+    <img alt="The GitKraken Desktop tab bar with a Launchpad tab and a tab group holding the Playground2026 repository tab and its login-form and readme-typo worktree tabs. The dotted group handle on the group's left edge is highlighted." src="/wp-content/uploads/gkd-worktree-tab-groups-01-v3@2x.png" class="help-center-img img-bordered">
     <figcaption style="text-align: center; color: #888;">Tabs for a repository and its worktrees are grouped together.</figcaption>
 </figure>
 

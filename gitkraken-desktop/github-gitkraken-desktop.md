@@ -116,7 +116,7 @@ To connect your GitHub account manually, first sign in to your GitKraken account
 3. Click <kbd>Connect to GitHub</kbd>. GitKraken Desktop opens your browser to authenticate with GitHub.
 
 <figure>
-    <img alt="Preferences > Integrations > GitHub in GitKraken Desktop: the GitHub card reads Not Connected with a Connect to GitHub button, and a Manage Integrations button sits at the top right of the pane." src="/wp-content/uploads/connect-github-2025-v2@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
+    <img alt="Preferences > Integrations > GitHub in GitKraken Desktop: the GitHub card reads Not Connected with a Connect to GitHub button, and a Manage Integrations button sits at the top right of the pane." src="/wp-content/uploads/connect-github-2025-v3@2x.png" class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">GitHub integration screen</figcaption>
 </figure>
 
