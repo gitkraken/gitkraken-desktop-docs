@@ -245,6 +245,8 @@ Use this page to find your way around the main areas of the GitKraken Desktop in
 
 Use this page to find your way around the main areas of the GitKraken Desktop interface: the toolbar, Left Panel, Commit Graph, Commit Panel, Status Bar, and tabs. Each area links to a task guide when you need the full steps.
 
+Use this page to find your way around the main areas of the GitKraken Desktop interface: the toolbar, Left Panel, Commit Graph, Commit Panel, Status Bar, and tabs. Each area links to a task guide when you need the full steps.
+
 **Requirements and limits**
 - Scope: Interface overview, not full task-specific workflows
 - Main areas: Toolbar, Left Panel, Commit Graph, Commit Panel, Status Bar, and tabs
@@ -1144,6 +1146,8 @@ Audience: developer
 Plan required: all
 Status: GA
 Last verified: 2026-03
+
+Learn a basic GitKraken Desktop workflow: clone a repository, create a branch, make and stage changes, commit them, push the branch, and merge the work back. These steps are for new Git users who want a practical first path through GitKraken Desktop.
 
 Learn a basic GitKraken Desktop workflow: clone a repository, create a branch, make and stage changes, commit them, push the branch, and merge the work back. These steps are for new Git users who want a practical first path through GitKraken Desktop.
 
