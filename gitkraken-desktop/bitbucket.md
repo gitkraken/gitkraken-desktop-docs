@@ -125,7 +125,7 @@ From November 12, 2026, when a fetch, pull, or push fails on an SSH remote that 
 2. GitKraken Desktop changes the remote's SSH URLs to `ssh.bitbucket.org` and shows **Remote updated**.
 
 <figure>
-  <img src="/wp-content/uploads/gkd-bitbucket-ssh-host.png" style="max-width: 50%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="GitKraken Desktop notification titled &quot;Bitbucket SSH host has changed&quot;: &quot;Fetch failed for 'origin'. Bitbucket no longer accepts SSH connections to bitbucket.org, and SSH remotes now need to use ssh.bitbucket.org.&quot; with the Update remote button highlighted.">
+  <img src="/wp-content/uploads/gkd-bitbucket-ssh-host-01-v2@2x.png" style="max-width: 50%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="GitKraken Desktop notification titled &quot;Bitbucket SSH host has changed&quot;: &quot;Fetch failed for 'origin'. Bitbucket no longer accepts SSH connections to bitbucket.org, and SSH remotes now need to use ssh.bitbucket.org.&quot; with the Update remote button.">
   <figcaption style="color:#888; text-align:center">The notification for a remote that still uses bitbucket.org</figcaption>
 </figure>
 
