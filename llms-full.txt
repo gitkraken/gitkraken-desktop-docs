@@ -591,7 +591,7 @@ Plan required: all
 Status: GA
 Last verified: 2026-04
 
-Use this page to understand what each major Preferences section controls in GitKraken Desktop, including profiles, integrations, AI settings, external tools, commit signing, terminal behavior, Agents view settings, and repository-specific options. Start here when you need to know where a setting lives before changing your workflow or environment.
+Use this page to find where a setting lives in GitKraken Desktop Preferences and what each Preferences section controls, before you change your workflow or environment.
 
 **Requirements and limits**
 - Scope: Preferences overview for app-wide, profile-specific, and repository-specific settings
@@ -605,17 +605,17 @@ Use this page to understand what each major Preferences section controls in GitK
 
 ## Quick Start
 
-- **General**: Set auto-fetch intervals, conflict detection behavior, commit graph limits, and tab retention.
+- **General**: Set auto-fetch intervals, conflict detection behavior, Commit Graph limits, and tab retention.
 - **Profiles**: Create and switch between profiles to separate Git identities, integrations, and tab sets.
 - **SSH and Integrations**: Connect to GitHub, GitLab, Bitbucket, Azure DevOps, Jira, Trello, and more.
 - **GitKraken AI**: Enable AI-assisted commit messages and PR descriptions (Pro plan and above).
 - **External Tools**: Set your preferred editor, diff tool, merge tool, external terminal, and custom coding agent commands.
-- **UI Customization**: Change themes, date formats, avatar display, and commit graph metadata.
+- **UI Customization**: Change themes, date formats, avatar display, and Commit Graph metadata.
 - **Commit Signing**: Enable GPG signing for verified commits.
 - **Experimental**: Try preview features such as Git Executable and Cloud Patches.
 - **Repo-Specific Preferences**: Configure encoding, Gitflow, hooks, LFS, issues, Team View, and agent setup commands per repository.
 
-Preferences are stored per profile, so switching profiles resets integrations and UI options to that profile's configuration.
+Each profile has its own preferences, so switching profiles switches integrations and UI options to that profile's configuration.
 
 Access Preferences from the gear icon in the top right corner
 
@@ -623,7 +623,7 @@ Access Preferences from the gear icon in the top right corner
 
 ## How organization settings work
 
-This section is labeled with your organization's name. It shows members and teams, and allows Owners and Admins to:
+This section is labeled with your organization's name and shows its members and teams. Owners and Admins can:
 - Manage member roles
 - Invite users and assign licenses
 - Create and manage teams
@@ -634,17 +634,17 @@ Note: Organization settings are available on the Pro plan and above.
 
 ## How General preferences work
 
-Configure app-wide behavior like auto-fetch, conflict detection, and commit graph settings.
+Configure app-wide behavior such as auto-fetch, conflict detection, and Commit Graph settings.
 
 | Setting | What it controls |
 | --- | --- |
-| **Auto-Fetch Interval** | Sets the interval from 0 to 60 minutes. 0 disables auto-fetch. |
+| **Auto-Fetch Interval** | Sets how often GitKraken Desktop fetches, from 0 to 60 minutes. 0 turns off auto-fetch. |
 | **Auto-Prune** | Removes stale remote-tracking references. |
 | **Enable proactive conflict detection with target branch** | GitKraken Desktop checks for conflicts with the base branch. |
 | **Keep submodules up to date** | Updates submodules automatically after Git actions. |
 | **Default Branch Name** | Sets the branch name for new repositories (default is `main`). |
 | **Delete ".orig" files after merging** | Controls cleanup of merge backup files. |
-| **Show All Commits in Graph** | Can affect performance on large repositories. |
+| **Show All Commits in Graph** | Shows every commit in the graph. This can slow GitKraken Desktop down on large repositories. |
 | **Initial Commits in Graph** | Sets the number of commits the graph shows at first (minimum 500). |
 | **Lazy Load Commits in Graph** | Loads more commits only as needed. |
 | **Remember tabs** | Saves open tabs and profile context between sessions. |
@@ -652,6 +652,8 @@ Configure app-wide behavior like auto-fetch, conflict detection, and commit grap
 | **Use extended logging in activity log** | Records more detailed activity logs, which you can get from Help > Support Logs. |
 | **Forget all Usernames and Passwords** | Clears stored usernames and passwords. |
 | **Share my current branch status with my team** | Shares your work in progress with teammates in [Team View](/gitkraken-desktop/team-view/). |
+
+On Windows, if your global `.gitconfig` has no `core.autocrlf` value, GitKraken Desktop's bundled Git uses the line-ending setting of your installed Git for Windows. If Git for Windows is not installed, it uses `core.autocrlf=true`. The Activity Log shows which setting applies. To override it, change **AutoCRLF**: this sets the global value, which takes precedence.
 
 ***
 
@@ -727,7 +729,7 @@ Change the theme and how the Commit Graph looks:
 - **Show Agents view in left panel**. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 - **Automatically group worktree tabs together**: On by default. Groups the tabs of a repository and its worktrees in the tab bar. See [Worktree tab groups](/gitkraken-desktop/interface/#worktree-tab-groups).
 
-If you want to switch between the standard Left Panel and the Agents view, go to Preferences > UI Customization and enable **Show Agents view in left panel**.
+To switch between the standard Left Panel and the Agents view, go to Preferences > UI Customization and enable **Show Agents view in left panel**.
 
 Enable Show Agents view in left panel to display the List | Agents toggle
 
@@ -741,7 +743,7 @@ Enable and configure [GPG signing](/git-workflows-and-extensions/commit-signing-
 
 ## How editor preferences work
 
-Customize code and diff viewer:
+Customize the code editor and diff viewer:
 - Font, size, tab spacing
 - EOL characters
 - Syntax highlighting
@@ -3210,16 +3212,14 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
-
-Use this page to stage, unstage, discard, and ignore files in GitKraken Desktop from the Commit Panel and diff view. It covers full-file staging, line-level staging, discard actions, and the difference between ignoring a file and ignoring it while also removing it from Git tracking.
+Use this page to stage, unstage, discard, and ignore files in GitKraken Desktop from the Commit Panel and diff view.
 
 **Requirements and limits**
 - Workflow scope: Working directory and staged file management from the Commit Panel and diff view
 - Starting point: Select the `//WIP` node to work with current uncommitted changes
-- Line-level actions: Stage, unstage, and discard support is available from the diff view for selected lines or hunks
+- Line-level actions: Stage, unstage, and discard selected lines or hunks from the diff view
 - Ignore behavior: GitKraken Desktop writes ignore rules to the root-level `.gitignore`
-- Ignore limitation: Nested `.gitignore` files are not parsed by GitKraken Desktop
+- Ignore limitation: GitKraken Desktop does not read nested `.gitignore` files
 - Tracked-file behavior: **Ignore and Stop Tracking** removes the file from the Git index in addition to adding the ignore rule
 
 | Action | Scope | Where to do it | Notes |
@@ -3235,15 +3235,14 @@ Use this page to stage, unstage, discard, and ignore files in GitKraken Desktop 
 
 ## Quick Start
 
-
 **To stage files:**
 1. Select the **//WIP** node in the Commit Graph to open the Commit Panel.
-2. Hover over a file and click **Stage File**, or click **Stage all changes** to stage everything at once.
+2. Hover over a file and click **Stage File**, or click **Stage All Changes** to stage everything at once.
 3. To stage specific lines, click a file to open its diff, highlight the lines, right-click, and select **Stage selected lines**.
 
-**To unstage files:** Select a file under Staged Files and click **Unstage File**. Use **Unstage all changes** to move all staged files back to the working directory.
+**To unstage files:** Select a file under Staged Files and click **Unstage File**. Click **Unstage All Changes** to move all staged files back to the working directory.
 
-**To discard changes:** Select the **//WIP** node and click the trash icon to discard all changes or selected files. Right-click a file to discard individual hunks from the diff view.
+**To discard changes:** Select the **//WIP** node and click the trash icon to discard all changes or the selected files. To discard individual hunks, click a file to open its diff and click **Discard Hunk**.
 
 **To ignore a file:** Right-click any unstaged file and select **Ignore**. Choose to ignore by file name, extension, or directory. GitKraken Desktop adds the rule to the root-level `.gitignore`. For already-tracked files, select **Ignore and Stop Tracking** to also remove the file from the Git index.
 
@@ -3253,35 +3252,24 @@ Use this page to stage, unstage, discard, and ignore files in GitKraken Desktop 
 
 Staging prepares your file changes for commit. To begin:
 
-1. Select the <strong>//WIP</strong> node in the Commit Graph to open the Commit Panel.
+1. Select the //WIP node in the Commit Graph to open the Commit Panel.
 
-<figure class='figure center'>
-    <img src='/wp-content/uploads/select-WIP-2025.png' class="help-center-img img-bordered" alt="Working directory changes shown in GitKraken Desktop with the //WIP node selected in the commit graph">
-    <figcaption style="text-align: center; color: #888;">Select the //WIP node to view your working changes.</figcaption>
-</figure>
+Select the //WIP node to view your working changes.
 
 2. Hover over a file and click <button class='button button--success button--ui button--nolink'>Stage File</button> to stage it.
 
-<figure class='figure center'>
-    <img src='/wp-content/uploads/stage-file-2025@2x.png' class="help-center-img img-bordered" alt="GitKraken Desktop showing unstaged files with the 'Stage File' button visible next to markdown.md">
-    <figcaption style="text-align: center; color: #888;">Click Stage File on hover.</figcaption>
-</figure>
+Click Stage File on hover.
 
 You can also:
 
-- Click <button class='button button--success button--ui button--nolink'>Stage all changes</button> to stage all at once
+- Click <button class='button button--success button--ui button--nolink'>Stage All Changes</button> to stage all files at once
 - Click a file to view its diff and selectively stage lines:
   - Highlight lines
-  - Right-click and select <kbd>Stage selected lines</kbd>
+  - Right-click and select Stage selected lines
 
-<figure class='figure center'>
-    <img src='/wp-content/uploads/stage-selected-lines-2025.png' class="help-center-img img-bordered" alt="Context menu in GitKraken Desktop showing 'Stage selected lines' for staging specific changes from the diff view.">
-    <figcaption style="text-align: center; color: #888;">Right-click to stage specific lines or hunks.</figcaption>
-</figure>
+Right-click to stage specific lines or hunks.
 
-<div class='callout callout--success'>
-<p><strong>Tip:</strong> Use <a href="/gitkraken-desktop/keyboard-shortcuts/#repo-actions">keyboard shortcuts</a> to speed up staging actions.</p>
-</div>
+Tip: Use keyboard shortcuts to speed up staging actions.
 
 ***
 
@@ -3289,24 +3277,16 @@ You can also:
 
 To unstage a file:
 
-1. Select the file under the <strong>Staged Files</strong> section
+1. Select the file under the Staged Files section
 2. Click <button class='button button--danger button--ui button--nolink'>Unstage File</button>
 
-<figure class='figure center'>
-    <img src='/wp-content/uploads/unstage-file-2025@2x.png' class="help-center-img img-bordered" alt="The staged files list in GitKraken Desktop showing the Unstage File button for a selected file.">
-    <figcaption style="text-align: center; color: #888;">Click Unstage File to move it back to working changes.</figcaption>
-</figure>
+Click Unstage File to move it back to working changes.
 
-To unstage lines or hunks, click a file to view its diff and right-click the content to unstage.
+To unstage lines or hunks, click a staged file to view its diff, then right-click the lines or click **Unstage Hunk**.
 
-<figure class='figure center'>
-    <img src='/wp-content/uploads/unstage-hunk-2025.png' class="help-center-img img-bordered" alt="The file diff view in GitKraken Desktop showing the Unstage Hunk option with a pointer from the staged file list.">
-    <figcaption style="text-align: center; color: #888;">Unstage specific hunks directly from the diff view.</figcaption>
-</figure>
+Unstage specific hunks directly from the diff view.
 
-To unstage all:
-
-- Click <button class='button button--danger button--ui button--nolink'>Unstage all changes</button>
+To unstage all files, click <button class='button button--danger button--ui button--nolink'>Unstage All Changes</button>.
 
 ***
 
@@ -3314,24 +3294,17 @@ To unstage all:
 
 To discard changes across your working directory:
 
-1. Select the <strong>//WIP</strong> node
-2. Click the <i class="fa fa-trash-o" aria-hidden="true"></i> trash icon to discard all or selected files
+1. Select the //WIP node
+2. Click the  trash icon (**Discard all changes**). If you selected files first, it discards only those files.
 
-<figure class='figure center'>
-    <img src='/wp-content/uploads/discard-all-changes-2025@2x.png' class="help-center-img img-bordered" alt="Discard all changes button highlighted above a list of unstaged files.">
-    <figcaption style="text-align: center; color: #888;">Discard changes for all or multiple selected files.</figcaption>
-</figure>
+Discard changes for all or multiple selected files.
 
 You can also:
 
-- Multi-select files and right-click to <strong>Discard selected</strong>
-- Discard lines/hunks from the file diff
-- Right-click within the staging panel and choose <strong>Discard Changes</strong>
+- Select 1 or more files, right-click, and select Discard changes
+- Discard lines or hunks from the file diff, for example with Discard Hunk
 
-<figure class='figure center'>
-    <img src='/wp-content/uploads/discard-hunk-ex-2025.png' class="help-center-img img-bordered" alt="Discard hunk button highlighted above a section of modified code.">
-    <figcaption style="text-align: center; color: #888;">Discard selected hunks of code.</figcaption>
-</figure>
+Discard selected hunks of code.
 
 ***
 
@@ -3339,12 +3312,9 @@ You can also:
 
 To prevent Git from tracking certain files, add them to a `.gitignore` file.
 
-Right-click a file and select <strong>Ignore</strong>:
+Right-click a file and select Ignore:
 
-<figure class='figure center'>
-    <img src='/wp-content/uploads/ignore-file@2x.png' class="help-center-img img-bordered" alt="Context menu with Ignore options for a selected file in the Tree view">
-    <figcaption style="text-align: center; color: #888;">Choose ignore rules based on file, extension, or folder.</figcaption>
-</figure>
+Choose ignore rules based on file, extension, or folder.
 
 You can choose to:
 
@@ -3352,34 +3322,25 @@ You can choose to:
 - Ignore all files with that extension
 - Ignore all files in the directory
 
-GitKraken Desktop will add the rule to a `.gitignore` file at the root of your repo. Nested `.gitignore` files are not parsed.
+GitKraken Desktop adds the rule to the `.gitignore` file at the root of your repository.
 
-<div class='callout callout--note'>
-<p><strong>Note:</strong> GitKraken Desktop only uses the root-level <code>.gitignore</code> file.</p>
-</div>
+Note: GitKraken Desktop uses only the root-level .gitignore file. It does not read nested .gitignore files.
 
 ### How to ignore previously tracked files
 
-If a file is already tracked, you’ll see two options:
+If the file is already tracked, a prompt offers 2 ways to ignore it:
 
-<figure class='figure center'>
-    <img src='/wp-content/uploads/ignore-stop-tracking-2025.png' class="help-center-img img-bordered" alt="Dialog with options to ignore, ignore and stop tracking, or cancel for a selected tracked file">
-    <figcaption style="text-align: center; color: #888;">Prompt showing options to ignore a file already tracked by Git.</figcaption>
-</figure>
+Prompt showing options to ignore a file already tracked by Git.
 
-Selecting <strong>Ignore</strong> will add the corresponding entry to the `.gitignore` file, but Git will continue tracking the file.
+Ignore adds the entry to the `.gitignore` file, and Git continues to track the file.
 
-<figure class='figure center'>
-    <img src='/wp-content/uploads/ignore-only@2x.png' class="help-center-img img-bordered" alt="Untracked .gitignore and test.txt files displayed under the obj folder in the Unstaged Files section.">
-    <figcaption style="text-align: center; color: #888;">Ignore file but keep it tracked by Git.</figcaption>
-</figure>
+Ignore file but keep it tracked by Git.
 
-Selecting <strong>Ignore and Stop Tracking</strong> will add the entry and remove the file from the Git index, so Git stops tracking it.
+Ignore and Stop Tracking adds the entry and removes the file from the Git index, so Git stops tracking it.
 
-<figure class='figure center'>
-    <img src='/wp-content/uploads/ignore-untrack@2x.png' class="help-center-img img-bordered" alt=".gitignore file shown as unstaged; test.txt under obj folder shown as staged for removal">
-    <figcaption style="text-align: center; color: #888;">Ignore file and remove it from Git tracking.</figcaption>
-</figure>
+Ignore file and remove it from Git tracking.
+
+For a file with a merge conflict, the prompt offers only Ignore. The same applies when you ignore an extension or a folder that includes a conflicted file. To also stop tracking the file, resolve the conflict first.
 
 ---
 
@@ -4389,76 +4350,72 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
-
-Use this page to configure and run Gitflow in GitKraken Desktop when your team organizes work into feature, release, and hotfix branches. It covers the initial Gitflow setup, how the Gitflow panel works, and what happens when each Gitflow branch type is finished.
+Use this page to configure and run Gitflow in GitKraken Desktop when your team organizes work into feature, release, and hotfix branches.
 
 **Requirements and limits**
 - Workflow scope: Gitflow-style branching with feature, release, and hotfix branches
-- Setup location: <kbd>Preferences &gt; Gitflow</kbd>
-- Initialization behavior: GitKraken Desktop creates `main` and `develop` locally if they do not exist
-- Panel behavior: Only branches with Gitflow prefixes appear in the Gitflow panel
-- Finish behavior: Features merge into `develop`; releases merge into `main` and `develop` and create a tag; hotfixes merge into `main` and `develop`
+- Setup location: Preferences &gt; Gitflow
+- Initialization behavior: `main` must already exist locally; GitKraken Desktop creates `develop` if it does not exist
+- Panel behavior: Only branches with Gitflow prefixes appear in the **GITFLOW** section of the Left Panel
+- Finish behavior: Features merge into `develop`; releases and hotfixes merge into `main` and `develop` and create a tag
 - Publishing behavior: Publishing a Gitflow branch works the same as pushing any other Git branch
-
-<div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/eTOgjQ9o4vQ?ecver=1" frameborder="0" allowfullscreen></iframe>
-</div>
 
 ***
 
 ## Quick Start
 
-
-1. Go to <kbd>Preferences > Gitflow</kbd> and initialize Gitflow for the repository. Optionally adjust default branch names.
-2. GitKraken Desktop creates `main` and `develop` branches if they do not exist.
-3. A **Gitflow** panel appears in the Left Panel. Click the green button to start a branch, or create a branch manually using a Gitflow prefix (e.g., `feature/my-feature`, `release/1.0.0`).
+1. Go to Preferences > Gitflow, optionally adjust the default branch names, and click **Initialize Gitflow**.
+2. GitKraken Desktop creates `develop` if it does not exist. Your `main` branch must already exist locally.
+3. A **GITFLOW** section appears in the Left Panel. To start a branch, click **Open Gitflow** on the section header, then under **Start** click **Feature**, **Release**, or **Hotfix**. You can also create a branch manually with a Gitflow prefix (for example, `feature/my-feature` or `release/1.0.0`).
 
 **To finish a branch type:**
-- **Feature**: Merges into `develop` and deletes the branch locally.
+- **Feature**: Merges into `develop`.
 - **Release**: Merges into both `main` and `develop`, and creates a tag.
-- **Hotfix**: Merges into both `main` and `develop`.
+- **Hotfix**: Merges into both `main` and `develop`, and creates a tag.
 
-Right-click a Gitflow branch in the Left Panel and select **Finish** to complete it. To set a tag prefix (e.g., `v`), configure it under <kbd>Preferences > Gitflow</kbd>. Publishing a Gitflow branch to a remote works the same as pushing any other branch.
+To finish a branch, right-click it in the Left Panel and select **Finish** followed by the branch name.
+
+Each Finish form has a **Delete branch** checkbox, selected by default, that deletes the branch locally after it is merged. GitKraken Desktop remembers your choice separately for features, releases, and hotfixes.
+
+To set a tag prefix (for example, `v`), go to Preferences > Gitflow.
 
 ***
 ## How Gitflow configuration works
 
 To configure Gitflow in GitKraken Desktop:
 
-1. Navigate to <code>Preferences > Gitflow</code>.
+1. Go to Preferences > Gitflow.
 2. Optionally, change the default branch names.
+3. Click **Initialize Gitflow**.
 
-<img src="/wp-content/uploads/gitflow-preferences-2025@2x.png" class="help-center-img img-bordered" alt="Gitflow Preferences menu with default branch names">
+Gitflow Preferences menu with default branch names.
 
-Once initialized, two branches will always be present:
+After you initialize Gitflow, the repository always has these 2 branches:
 
 - <code>main</code>: the version in production.
 - <code>develop</code>: the current development version for the next release.
 
-If these branches don't exist locally, GitKraken Desktop will create them when Gitflow is initialized.
+The <code>main</code> branch must already exist locally, or initializing fails with **Failed initializing Gitflow**. If <code>develop</code> does not exist, GitKraken Desktop creates it when Gitflow is initialized: from the remote <code>develop</code> branch if there is one, otherwise from <code>main</code>.
 
 ***
 ## How to use Gitflow
 
-After initializing Gitflow, a Gitflow panel appears in the left sidebar. Use it to start or finish Gitflow branches.
+After you initialize Gitflow, a **GITFLOW** section appears in the Left Panel. Click **Open Gitflow** on its header to open the Gitflow panel, where you start and finish Gitflow branches.
 
-<img src="/wp-content/uploads/giflow-panel-2025@2x.png" class="help-center-img img-bordered" alt="Gitflow panel in left sidebar">
+Gitflow panel in left sidebar.
 
 To create a Gitflow branch:
 
-- Click the green button in the Gitflow panel.
-- Or name a branch with a Gitflow prefix (e.g., <code>release/branch-name</code>).
+- In the Gitflow panel, under **Start**, click **Feature**, **Release**, or **Hotfix**.
+- Or name a branch with a Gitflow prefix (for example, <code>release/branch-name</code>).
 
-Branches with a Gitflow prefix appear in the Gitflow panel. Others appear in the local repository section only.
+Branches with a Gitflow prefix appear in the **GITFLOW** section of the Left Panel. Other branches appear only in the **LOCAL** section.
 
-<img src="/wp-content/uploads/prefix-example-2025@2x.png" class="help-center-img img-bordered" alt="Branch name prefixes">
+Branch name prefixes.
 
-<div class='callout callout--basic'>
-    <p><strong>Note:</strong> Gitflow organizes features, hotfixes, and releases into separate folders.</p>
-</div>
+Note: The GITFLOW section groups feature, release, and hotfix branches into separate folders.
 
-Publishing a Gitflow branch (i.e., pushing it to a remote) works the same as with regular Git branches.
+To publish a Gitflow branch, push it to a remote the same way as any other branch.
 
 ### How feature branches work
 
@@ -4467,11 +4424,11 @@ Feature branches are for new features or bug fixes. They're typically local and 
 When you finish a feature branch:
 
 - It's merged into <code>develop</code>.
-- It's deleted from the local repository.
+- It's deleted from the local repository, unless you clear **Delete branch**.
 
-<img src="/wp-content/uploads//finish-feature.gif" class="help-center-img img-bordered" alt="Finishing a feature branch">
+Finishing a feature branch.
 
-Optionally, rebase the feature branch onto <code>develop</code> before finishing.
+To rebase the feature branch onto <code>develop</code> before it merges, select **Rebase on develop** in the Finish form.
 
 ### How release branches work
 
@@ -4481,41 +4438,44 @@ When you finish a release branch:
 
 - It's merged into both <code>main</code> and <code>develop</code>.
 - A tag is created with the release name.
+- It's deleted from the local repository, unless you clear **Delete branch**.
 
-<img src="/wp-content/uploads/finish-release-context-menu-2025@2x.png" class="help-center-img img-bordered" alt="Context menu for finishing a release">
+If the finish stops on a merge conflict, resolve the conflict and commit the merge. GitKraken Desktop then completes the rest of the finish, including the tag.
 
-<img src="/wp-content/uploads/finish-release-2025@2x.png" class="help-center-img img-bordered" alt="Finish release process">
+Context menu for finishing a release.
+
+Finish release process.
 
 ### How hotfix branches work
 
-Hotfix branches are similar to releases but created from <code>main</code>. Use them for urgent production fixes.
+Hotfix branches are similar to releases but created from <code>main</code>. Use them for urgent production fixes, such as bug fixes or typos that must go live immediately.
 
-Examples include bug fixes or typos that must go live immediately.
-
-<img src="/wp-content/uploads/finish-hotfix-2025@2x.png" class="help-center-img img-bordered" alt="Finish hotfix process">
+Finish hotfix process.
 
 When you finish a hotfix:
 
 - It's merged into both <code>main</code> and <code>develop</code>.
+- A tag is created with the hotfix name.
+- It's deleted from the local repository, unless you clear **Delete branch**.
+
+If the finish stops on a merge conflict, resolve the conflict and commit the merge. GitKraken Desktop then completes the rest of the finish, including the tag.
 
 ### How Gitflow tags work
 
 Tags mark specific points in your repository's history, such as releases.
 
-Create tags from the Gitflow panel or the command line. When tagging from the Gitflow panel:
+Create tags from the Gitflow panel or the command line. When you finish a release or hotfix from the Gitflow panel:
 
-- The tag name matches the branch name (e.g., <code>release/1.0.0</code> → <code>1.0.0</code>).
+- The tag name is the branch name without its prefix (for example, <code>release/1.0.0</code> → <code>1.0.0</code>, <code>hotfix/1.0.1</code> → <code>1.0.1</code>).
 - You can add a message to the tag.
 
-<img src="/wp-content/uploads//finish-release-tag.gif" class="help-center-img img-bordered" alt="Tagging during release">
+Tagging during release.
 
-<br>
-<br>
-<img src="/wp-content/uploads//tag-message.png" class="help-center-img img-bordered" alt="Tag message dialog">
+Tag message dialog.
 
-In <code>Preferences > Gitflow</code>, set a tag prefix (e.g., <code>v</code>). This prefix is added to tags (e.g., <code>v1.0.0</code>).
+To add a prefix to these tags, enter it in **Version Tag** under Preferences > Gitflow. For example, the prefix <code>v</code> produces the tag <code>v1.0.0</code>.
 
-<img src="/wp-content/uploads/tag-prefix-2025@2x.png" class="help-center-img img-bordered" alt="Setting tag prefix">
+Setting tag prefix.
 
 ---
 
@@ -6172,14 +6132,14 @@ Plan required: Pro
 Status: GA
 Last verified: 2026-03
 
-Use this page to connect GitKraken Desktop to Bitbucket.org for repository discovery, SSH setup, clone and remote workflows, and pull request activity. To use more than 1 Bitbucket account, you use profiles, and you see pull request reviewers only with the right repository permissions.
+Use this page to connect GitKraken Desktop to Bitbucket.org for repository discovery, SSH setup, clone and remote workflows, and pull request activity.
 
 **Requirements and limits**
 - Integration covered here: Bitbucket.org
 - Authentication: Browser-based Bitbucket connection through your GitKraken account (sign in to GitKraken Desktop first)
 - Account limit: 1 Bitbucket account per profile; multiple accounts require multiple profiles and a GitKraken Pro subscription
 - SSH behavior: GitKraken Desktop uses the key in Preferences &gt; SSH unless you configure a Bitbucket-specific key or use your system SSH Agent
-- Reviewers: Pull request reviewer visibility depends on having Project Admin permissions on the repository
+- Reviewers: You see pull request reviewers only if you have Project Admin permissions on the repository
 
 | Workflow | Supported | Notes |
 |----------|-----------|-------|
@@ -6247,11 +6207,25 @@ After you connect Bitbucket:
 
 Copy and add your new SSH key to Bitbucket
 
+### How to move SSH remotes to ssh.bitbucket.org
+
+On November 12, 2026, Bitbucket Cloud stops accepting SSH connections to `bitbucket.org`. SSH remotes must use `ssh.bitbucket.org` instead. GitKraken Desktop recognizes remotes on `ssh.bitbucket.org` as Bitbucket remotes, so they use your Bitbucket integration's SSH key.
+
+From November 12, 2026, when a fetch, pull, or push fails on an SSH remote that still uses `bitbucket.org`, GitKraken Desktop shows a **Bitbucket SSH host has changed** notification. To move the remote:
+
+1. Click **Update remote** in the notification. If remotes failed in more than 1 repository, the button reads **Update remotes**.
+2. GitKraken Desktop changes the remote's SSH URLs to `ssh.bitbucket.org` and shows **Remote updated**.
+
+The notification for a remote that still uses bitbucket.org
+
+- If a clone from `bitbucket.org` fails, the notification has no button. Clone again with the `ssh.bitbucket.org` URL.
+- If a `url.*.insteadOf` or `url.*.pushInsteadOf` rule in your Git config points to `bitbucket.org`, the notification asks you to change that rule to `ssh.bitbucket.org` instead.
+
 ***
 
 ## What Bitbucket OAuth enables in GitKraken Desktop
 
-Use the Bitbucket integration when: you want repo discovery, remotes, and pull request workflows tied to Bitbucket.org inside GitKraken Desktop. For self-hosted Bitbucket: see Bitbucket Data Center.
+Use the Bitbucket integration when: you want repository discovery, remotes, and pull request workflows tied to Bitbucket.org inside GitKraken Desktop. For self-hosted Bitbucket: see Bitbucket Data Center.
 
 With Bitbucket connected, GitKraken Desktop shows:
 
@@ -11563,7 +11537,7 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-Find quick answers to common GitKraken Desktop questions about supported platforms, account and plan limits, authentication, remote access, and troubleshooting, including Linux support, SSH behavior, proxy issues, and subscriptions.
+Find quick answers to common GitKraken Desktop questions about supported platforms, accounts and plans, authentication, remote access, and troubleshooting.
 
 **Key facts:**
 
@@ -11621,7 +11595,7 @@ OpenCode and Gemini CLI can run in fully air-gapped environments when they are c
 Get answers about integrations, platforms, accounts, and everyday tasks.
 
 ### Does GitKraken support TFS, Visual Studio Team Services, or Azure DevOps?
-Yes. GitKraken Desktop integrates with [Azure DevOps](/integrations/azure-devops/). For TFS, clone the repository manually using File > Clone Repo and provide the HTTPS URL. On Mac or Linux, enable _Basic Authentication_ in IIS for TFS. If password authentication fails, use a personal access token (PAT).
+Yes. GitKraken Desktop integrates with [Azure DevOps](/integrations/azure-devops/). For TFS, clone the repository manually using File > Clone Repo and provide the HTTPS URL. On macOS or Linux, enable _Basic Authentication_ in IIS for TFS. If password authentication fails, use a personal access token (PAT).
 
 For more information, see [SSH and HTTPS authentication](/integrations/authentication).
 
@@ -11643,7 +11617,7 @@ GitKraken Desktop shows the [Gravatar](https://gravatar.com/) linked to the emai
 Yes. Subscriptions are linked to your email address, not a specific machine.
 
 ### Why can’t I see remotes under the integration drop-down?
-The drop-down only shows forks. Use the [URL option](/gitkraken-desktop/pushing-and-pulling/#adding-remotes) to add other remotes.
+The drop-down shows only forks. Use the [URL option](/gitkraken-desktop/pushing-and-pulling/#adding-remotes) to add other remotes.
 
 ### How do I push a local project to GitHub or other remotes?
 1. [Initialize a new project](/working-with-repositories/open-clone-init/#initialize-a-new-project) remotely.
@@ -11688,6 +11662,7 @@ Check your account and sign out from the profile menu.
 ### Why isn’t GitKraken authenticating my SSH key?
 - Confirm remote URLs start with `ssh://` or `{user}@{host}:{repo}`.
 - On Windows, GitKraken Desktop supports only the Pageant SSH agent. [Download Pageant](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
+- For Bitbucket Cloud, confirm SSH remotes use `ssh.bitbucket.org`. Bitbucket stops accepting SSH connections to `bitbucket.org` on November 12, 2026. See [how to move SSH remotes to ssh.bitbucket.org](/gitkraken-desktop/bitbucket/).
 
 ### Why can’t GitKraken access my GitHub remote?
 - Confirm that GitKraken Desktop is [authorized in your GitHub application settings](https://github.com/settings/applications).
