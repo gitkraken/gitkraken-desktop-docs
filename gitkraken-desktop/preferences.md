@@ -19,7 +19,7 @@ taxonomy:
 ---
 <kbd>Last updated: November 2026</kbd>
 
-Use this page to understand what each major Preferences section controls in GitKraken Desktop, including profiles, integrations, AI settings, external tools, commit signing, terminal behavior, Agents view settings, and repository-specific options. Start here when you need to know where a setting lives before changing your workflow or environment.
+Use this page to find where a setting lives in GitKraken Desktop Preferences and what each Preferences section controls, before you change your workflow or environment.
 
 **Requirements and limits**
 - Scope: Preferences overview for app-wide, profile-specific, and repository-specific settings
@@ -34,17 +34,17 @@ Use this page to understand what each major Preferences section controls in GitK
 ## Quick Start
 
 
-- **General**: Set auto-fetch intervals, conflict detection behavior, commit graph limits, and tab retention.
+- **General**: Set auto-fetch intervals, conflict detection behavior, Commit Graph limits, and tab retention.
 - **Profiles**: Create and switch between profiles to separate Git identities, integrations, and tab sets.
 - **SSH and Integrations**: Connect to GitHub, GitLab, Bitbucket, Azure DevOps, Jira, Trello, and more.
 - **GitKraken AI**: Enable AI-assisted commit messages and PR descriptions (Pro plan and above).
 - **External Tools**: Set your preferred editor, diff tool, merge tool, external terminal, and custom coding agent commands.
-- **UI Customization**: Change themes, date formats, avatar display, and commit graph metadata.
+- **UI Customization**: Change themes, date formats, avatar display, and Commit Graph metadata.
 - **Commit Signing**: Enable GPG signing for verified commits.
 - **Experimental**: Try preview features such as Git Executable and Cloud Patches.
 - **Repo-Specific Preferences**: Configure encoding, Gitflow, hooks, LFS, issues, Team View, and agent setup commands per repository.
 
-Preferences are stored per profile, so switching profiles resets integrations and UI options to that profile's configuration.
+Each profile has its own preferences, so switching profiles switches integrations and UI options to that profile's configuration.
 
 <figure>
   <img src="/wp-content/uploads/preferences@2x.png" class="help-center-img img-bordered" alt="GitKraken Desktop window with the gear icon that opens Preferences highlighted.">
@@ -55,7 +55,7 @@ Preferences are stored per profile, so switching profiles resets integrations an
 
 ## How organization settings work
 
-This section is labeled with your organization's name. It shows members and teams, and allows Owners and Admins to:
+This section is labeled with your organization's name and shows its members and teams. Owners and Admins can:
 - Manage member roles
 - Invite users and assign licenses
 - Create and manage teams
@@ -68,17 +68,17 @@ This section is labeled with your organization's name. It shows members and team
 
 ## How General preferences work
 
-Configure app-wide behavior like auto-fetch, conflict detection, and commit graph settings.
+Configure app-wide behavior such as auto-fetch, conflict detection, and Commit Graph settings.
 
 | Setting | What it controls |
 | --- | --- |
-| **Auto-Fetch Interval** | Sets the interval from 0 to 60 minutes. 0 disables auto-fetch. |
+| **Auto-Fetch Interval** | Sets how often GitKraken Desktop fetches, from 0 to 60 minutes. 0 turns off auto-fetch. |
 | **Auto-Prune** | Removes stale remote-tracking references. |
 | **Enable proactive conflict detection with target branch** | GitKraken Desktop checks for conflicts with the base branch. |
 | **Keep submodules up to date** | Updates submodules automatically after Git actions. |
 | **Default Branch Name** | Sets the branch name for new repositories (default is `main`). |
 | **Delete ".orig" files after merging** | Controls cleanup of merge backup files. |
-| **Show All Commits in Graph** | Can affect performance on large repositories. |
+| **Show All Commits in Graph** | Shows every commit in the graph. This can slow GitKraken Desktop down on large repositories. |
 | **Initial Commits in Graph** | Sets the number of commits the graph shows at first (minimum 500). |
 | **Lazy Load Commits in Graph** | Loads more commits only as needed. |
 | **Remember tabs** | Saves open tabs and profile context between sessions. |
@@ -86,6 +86,8 @@ Configure app-wide behavior like auto-fetch, conflict detection, and commit grap
 | **Use extended logging in activity log** | Records more detailed activity logs, which you can get from <kbd>Help > Support Logs</kbd>. |
 | **Forget all Usernames and Passwords** | Clears stored usernames and passwords. |
 | **Share my current branch status with my team** | Shares your work in progress with teammates in [Team View](/gitkraken-desktop/team-view/). |
+
+On Windows, if your global `.gitconfig` has no `core.autocrlf` value, GitKraken Desktop's bundled Git uses the line-ending setting of your installed Git for Windows. If Git for Windows is not installed, it uses `core.autocrlf=true`. The Activity Log shows which setting applies. To override it, change **AutoCRLF**: this sets the global value, which takes precedence.
 
 ***
 
@@ -169,7 +171,7 @@ Change the theme and how the Commit Graph looks:
 - **Show Agents view in left panel**. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 - **Automatically group worktree tabs together**: On by default. Groups the tabs of a repository and its worktrees in the tab bar. See [Worktree tab groups](/gitkraken-desktop/interface/#worktree-tab-groups).
 
-If you want to switch between the standard Left Panel and the Agents view, go to <kbd>Preferences > UI Customization</kbd> and enable **Show Agents view in left panel**.
+To switch between the standard Left Panel and the Agents view, go to <kbd>Preferences > UI Customization</kbd> and enable **Show Agents view in left panel**.
 
 <figure>
   <img src="/wp-content/uploads/toggle-agents-view-preferences.png" class="help-center-img img-bordered" alt="GitKraken Desktop Preferences highlighting the Show Agents view in left panel setting that controls whether the List and Agents toggle appears in the Left Panel.">
@@ -186,7 +188,7 @@ Enable and configure [GPG signing](/git-workflows-and-extensions/commit-signing-
 
 ## How editor preferences work
 
-Customize code and diff viewer:
+Customize the code editor and diff viewer:
 - Font, size, tab spacing
 - EOL characters
 - Syntax highlighting

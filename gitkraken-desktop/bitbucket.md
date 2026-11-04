@@ -19,14 +19,14 @@ taxonomy:
 ---
 <kbd>Last updated: November 2026</kbd>
 
-Use this page to connect GitKraken Desktop to Bitbucket.org for repository discovery, SSH setup, clone and remote workflows, and pull request activity. To use more than 1 Bitbucket account, you use profiles, and you see pull request reviewers only with the right repository permissions.
+Use this page to connect GitKraken Desktop to Bitbucket.org for repository discovery, SSH setup, clone and remote workflows, and pull request activity.
 
 **Requirements and limits**
 - Integration covered here: Bitbucket.org
 - Authentication: Browser-based Bitbucket connection through your GitKraken account (sign in to GitKraken Desktop first)
 - Account limit: 1 Bitbucket account per profile; multiple accounts require multiple profiles and a GitKraken Pro subscription
 - SSH behavior: GitKraken Desktop uses the key in <kbd>Preferences &gt; SSH</kbd> unless you configure a Bitbucket-specific key or use your system SSH Agent
-- Reviewers: Pull request reviewer visibility depends on having Project Admin permissions on the repository
+- Reviewers: You see pull request reviewers only if you have Project Admin permissions on the repository
 
 | Workflow | Supported | Notes |
 |----------|-----------|-------|
@@ -115,12 +115,29 @@ After you connect Bitbucket:
   <figcaption style="color:#888; text-align:center">Copy and add your new SSH key to Bitbucket</figcaption>
 </figure>
 
+### How to move SSH remotes to ssh.bitbucket.org
+
+On November 12, 2026, Bitbucket Cloud stops accepting SSH connections to `bitbucket.org`. SSH remotes must use `ssh.bitbucket.org` instead. GitKraken Desktop recognizes remotes on `ssh.bitbucket.org` as Bitbucket remotes, so they use your Bitbucket integration's SSH key.
+
+From November 12, 2026, when a fetch, pull, or push fails on an SSH remote that still uses `bitbucket.org`, GitKraken Desktop shows a **Bitbucket SSH host has changed** notification. To move the remote:
+
+1. Click **Update remote** in the notification. If remotes failed in more than 1 repository, the button reads **Update remotes**.
+2. GitKraken Desktop changes the remote's SSH URLs to `ssh.bitbucket.org` and shows **Remote updated**.
+
+<figure>
+  <img src="/wp-content/uploads/gkd-bitbucket-ssh-host.png" style="max-width: 50%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="GitKraken Desktop notification titled &quot;Bitbucket SSH host has changed&quot;: &quot;Fetch failed for 'origin'. Bitbucket no longer accepts SSH connections to bitbucket.org, and SSH remotes now need to use ssh.bitbucket.org.&quot; with the Update remote button highlighted.">
+  <figcaption style="color:#888; text-align:center">The notification for a remote that still uses bitbucket.org</figcaption>
+</figure>
+
+- If a clone from `bitbucket.org` fails, the notification has no button. Clone again with the `ssh.bitbucket.org` URL.
+- If a `url.*.insteadOf` or `url.*.pushInsteadOf` rule in your Git config points to `bitbucket.org`, the notification asks you to change that rule to `ssh.bitbucket.org` instead.
+
 ***
 
 ## What Bitbucket OAuth enables in GitKraken Desktop
 
 <div class='callout callout--basic'>
-  <p><strong>Use the Bitbucket integration when:</strong> you want repo discovery, remotes, and pull request workflows tied to Bitbucket.org inside GitKraken Desktop. <strong>For self-hosted Bitbucket:</strong> see <a href="/gitkraken-desktop/bitbucket-data-center/">Bitbucket Data Center</a>.</p>
+  <p><strong>Use the Bitbucket integration when:</strong> you want repository discovery, remotes, and pull request workflows tied to Bitbucket.org inside GitKraken Desktop. <strong>For self-hosted Bitbucket:</strong> see <a href="/gitkraken-desktop/bitbucket-data-center/">Bitbucket Data Center</a>.</p>
 </div>
 
 With Bitbucket connected, GitKraken Desktop shows:

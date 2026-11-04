@@ -20,7 +20,7 @@ taxonomy:
 ---
 <kbd>Last updated: November 2026</kbd>
 
-Find quick answers to common GitKraken Desktop questions about supported platforms, account and plan limits, authentication, remote access, and troubleshooting, including Linux support, SSH behavior, proxy issues, and subscriptions.
+Find quick answers to common GitKraken Desktop questions about supported platforms, accounts and plans, authentication, remote access, and troubleshooting.
 
 **Key facts:**
 
@@ -88,7 +88,7 @@ OpenCode and Gemini CLI can run in fully air-gapped environments when they are c
 Get answers about integrations, platforms, accounts, and everyday tasks.
 
 ### Does GitKraken support TFS, Visual Studio Team Services, or Azure DevOps?
-Yes. GitKraken Desktop integrates with [Azure DevOps](/integrations/azure-devops/). For TFS, clone the repository manually using <kbd>File > Clone Repo</kbd> and provide the HTTPS URL. On Mac or Linux, enable _Basic Authentication_ in IIS for TFS. If password authentication fails, use a personal access token (PAT).
+Yes. GitKraken Desktop integrates with [Azure DevOps](/integrations/azure-devops/). For TFS, clone the repository manually using <kbd>File > Clone Repo</kbd> and provide the HTTPS URL. On macOS or Linux, enable _Basic Authentication_ in IIS for TFS. If password authentication fails, use a personal access token (PAT).
 
 For more information, see [SSH and HTTPS authentication](/integrations/authentication).
 
@@ -110,7 +110,7 @@ GitKraken Desktop shows the [Gravatar](https://gravatar.com/) linked to the emai
 Yes. Subscriptions are linked to your email address, not a specific machine.
 
 ### Why can’t I see remotes under the integration drop-down?
-The drop-down only shows forks. Use the [URL option](/gitkraken-desktop/pushing-and-pulling/#adding-remotes) to add other remotes.
+The drop-down shows only forks. Use the [URL option](/gitkraken-desktop/pushing-and-pulling/#adding-remotes) to add other remotes.
 
 ### How do I push a local project to GitHub or other remotes?
 1. [Initialize a new project](/working-with-repositories/open-clone-init/#initialize-a-new-project) remotely.
@@ -158,6 +158,7 @@ Make sure you are signed in with the email address associated with your subscrip
 ### Why isn’t GitKraken authenticating my SSH key?
 - Confirm remote URLs start with `ssh://` or `{user}@{host}:{repo}`.
 - On Windows, GitKraken Desktop supports only the Pageant SSH agent. [Download Pageant](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
+- For Bitbucket Cloud, confirm SSH remotes use `ssh.bitbucket.org`. Bitbucket stops accepting SSH connections to `bitbucket.org` on November 12, 2026. See [how to move SSH remotes to ssh.bitbucket.org](/gitkraken-desktop/bitbucket/).
 
 ### Why can’t GitKraken access my GitHub remote?
 - Confirm that GitKraken Desktop is [authorized in your GitHub application settings](https://github.com/settings/applications).
