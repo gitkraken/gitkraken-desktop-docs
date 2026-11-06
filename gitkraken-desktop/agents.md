@@ -16,6 +16,12 @@ llms_include: true
 tags: [agents, worktrees, coding-agents, parallel-work, ai, terminal]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "agent-workflows"
+    nav_label: "Coding Agents"
+    nav_order: 10
+    nav_parent: "agent-workflows"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

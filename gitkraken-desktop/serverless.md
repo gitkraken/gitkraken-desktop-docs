@@ -16,6 +16,12 @@ llms_include: true
 tags: [serverless, on-premise, offline, setup, enterprise]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "on-premise"
+    nav_label: "On-Premise Serverless"
+    nav_order: 50
+    nav_parent: "on-premise"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

@@ -16,6 +16,12 @@ llms_include: true
 tags: [workspaces, cloud-workspaces, local-workspaces, multi-repo, launchpad]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "workspaces"
+    nav_label: "Workspaces"
+    nav_order: 80
+    nav_parent: ""
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

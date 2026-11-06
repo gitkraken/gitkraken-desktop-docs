@@ -16,6 +16,12 @@ llms_include: true
 tags: [self-hosted, ldap, smtp, super-user, configuration]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "on-premise"
+    nav_label: "Configure Self-Hosted Server"
+    nav_order: 30
+    nav_parent: "on-premise"
+    page_type: "content"
 ---
 
 <kbd>Last updated: March 2026</kbd>

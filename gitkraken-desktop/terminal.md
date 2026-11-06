@@ -16,6 +16,12 @@ llms_include: true
 tags: [terminal, shell, git, commands, auto-complete]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "working-with-repositories"
+    nav_label: "Terminal"
+    nav_order: 170
+    nav_parent: "working-with-repositories"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

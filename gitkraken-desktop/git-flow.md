@@ -16,6 +16,12 @@ llms_include: true
 tags: [gitflow, branching, releases, hotfixes, workflow]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "git-workflows-and-extensions"
+    nav_label: "Gitflow"
+    nav_order: 10
+    nav_parent: "git-workflows-and-extensions"
+    page_type: "content"
 ---
 
 <kbd>Last updated: November 2026</kbd>

@@ -16,6 +16,12 @@ llms_include: true
 tags: [agents, coding-agents, ai, merge, merge-conflicts, auto-resolve, worktrees, parallel-agents]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "agent-workflows"
+    nav_label: "Resolve Agent Merge Conflicts"
+    nav_order: 40
+    nav_parent: "agent-workflows"
+    page_type: "content"
 ---
 <kbd>Last updated: October 2026</kbd>
 

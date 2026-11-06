@@ -17,6 +17,12 @@ tags: [release-notes, changelog, upgrades, version-history]
 og_image: /img/GitKrakenClient-Hero.png
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "release-notes"
+    nav_label: "GitKraken Desktop Release Notes"
+    nav_order: 10
+    nav_parent: "release-notes"
+    page_type: "content"
 ---
 <kbd>Last updated: October 2026</kbd>
 

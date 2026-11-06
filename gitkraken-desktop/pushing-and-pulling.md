@@ -16,6 +16,12 @@ llms_include: true
 tags: [push, pull, fetch, upstream, remotes]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "working-with-repositories"
+    nav_label: "Push, Pull, and Fetch"
+    nav_order: 110
+    nav_parent: "working-with-repositories"
+    page_type: "content"
 ---
 <kbd>Last updated: March 2026</kbd>
 

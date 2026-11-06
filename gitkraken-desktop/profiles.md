@@ -16,6 +16,12 @@ llms_include: true
 tags: [profiles, accounts, gitconfig, avatars, integrations]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "start-here"
+    nav_label: "Profiles"
+    nav_order: 20
+    nav_parent: "start-here"
+    page_type: "content"
 ---
 <kbd>Last updated: March 2026</kbd>
 

@@ -16,6 +16,12 @@ llms_include: true
 tags: [files, folders, create, delete, filter]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "working-with-files"
+    nav_label: "Add, Delete, and Filter Files"
+    nav_order: 10
+    nav_parent: "working-with-files"
+    page_type: "content"
 ---
 <kbd>Last updated: March 2026</kbd>
 

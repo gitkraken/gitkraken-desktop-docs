@@ -16,6 +16,12 @@ llms_include: true
 tags: [agents, coding-agents, worktrees, branches, cleanup, prune, merged-pr]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "agent-workflows"
+    nav_label: "Clean Up Agent Worktrees"
+    nav_order: 50
+    nav_parent: "agent-workflows"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

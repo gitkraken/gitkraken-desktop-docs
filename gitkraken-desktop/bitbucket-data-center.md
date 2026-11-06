@@ -16,6 +16,12 @@ llms_include: true
 tags: [bitbucket-data-center, self-hosted, pat, ssh, pull-requests]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "integrations-with-git-providers"
+    nav_label: "Bitbucket Data Center"
+    nav_order: 60
+    nav_parent: "integrations-with-git-providers"
+    page_type: "content"
 ---
 <kbd>Last updated: March 2026</kbd>
 

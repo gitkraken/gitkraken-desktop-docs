@@ -16,6 +16,12 @@ llms_include: true
 tags: [bitbucket, integration, oauth, ssh, pull-requests]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "integrations-with-git-providers"
+    nav_label: "Bitbucket"
+    nav_order: 50
+    nav_parent: "integrations-with-git-providers"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

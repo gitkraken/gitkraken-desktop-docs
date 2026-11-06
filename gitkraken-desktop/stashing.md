@@ -16,6 +16,12 @@ llms_include: true
 tags: [stash, pop, apply, work-in-progress, partial-stash]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "working-with-commits"
+    nav_label: "Stash Changes"
+    nav_order: 30
+    nav_parent: "working-with-commits"
+    page_type: "content"
 ---
 <kbd>Last updated: March 2026</kbd>
 

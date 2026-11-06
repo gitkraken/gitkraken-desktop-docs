@@ -16,6 +16,12 @@ llms_include: true
 tags: [undo, redo, history, shortcuts, command-palette]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "working-with-commits"
+    nav_label: "Undo and Redo Git Actions"
+    nav_order: 50
+    nav_parent: "working-with-commits"
+    page_type: "content"
 ---
 
 <kbd>Last updated: November 2026</kbd>

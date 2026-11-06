@@ -16,6 +16,12 @@ llms_include: true
 tags: [conflict-prevention, conflicts, branches, collaboration, warnings]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "working-with-repositories"
+    nav_label: "Conflict Prevention"
+    nav_order: 50
+    nav_parent: "working-with-repositories"
+    page_type: "content"
 ---
 <kbd>Last updated: April 2026</kbd>
 

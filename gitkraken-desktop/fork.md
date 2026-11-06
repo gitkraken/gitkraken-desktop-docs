@@ -16,6 +16,12 @@ llms_include: true
 tags: [fork, github, remotes, repositories, integration]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "working-with-repositories"
+    nav_label: "Fork GitHub Repos"
+    nav_order: 60
+    nav_parent: "working-with-repositories"
+    page_type: "content"
 ---
 <kbd>Last updated: March 2026</kbd>
 

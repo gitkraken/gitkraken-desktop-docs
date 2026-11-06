@@ -16,6 +16,12 @@ llms_include: true
 tags: [performance, troubleshooting, optimization, maintenance, large-repos]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "known-issues"
+    nav_label: "Improving Performance"
+    nav_order: 20
+    nav_parent: "known-issues"
+    page_type: "content"
 ---
 <kbd>Last updated: March 2026</kbd>
 

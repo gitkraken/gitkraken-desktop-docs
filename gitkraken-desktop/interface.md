@@ -16,6 +16,12 @@ llms_include: true
 tags: [interface, toolbar, left-panel, commit-graph, commit-panel, status-bar]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "start-here"
+    nav_label: "Interface Guide"
+    nav_order: 10
+    nav_parent: "start-here"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

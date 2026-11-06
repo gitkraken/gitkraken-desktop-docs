@@ -16,6 +16,12 @@ llms_include: true
 tags: [error-logs, diagnostics, support, troubleshooting, errors]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "known-issues"
+    nav_label: "Error Logs"
+    nav_order: 10
+    nav_parent: "known-issues"
+    page_type: "content"
 ---
 <kbd>Last updated: March 2026</kbd>
 

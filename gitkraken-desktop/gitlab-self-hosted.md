@@ -16,6 +16,12 @@ llms_include: true
 tags: [gitlab-self-managed, self-hosted, pat, ssh, pull-requests]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "integrations-with-git-providers"
+    nav_label: "GitLab Self-Managed"
+    nav_order: 40
+    nav_parent: "integrations-with-git-providers"
+    page_type: "content"
 ---
 <kbd>Last updated: March 2026</kbd>
 

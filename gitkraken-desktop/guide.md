@@ -16,6 +16,12 @@ llms_include: true
 tags: [git, beginner, guide, workflow]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "start-here"
+    nav_label: "Beginner Guide & Workflow"
+    nav_order: 70
+    nav_parent: "start-here"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

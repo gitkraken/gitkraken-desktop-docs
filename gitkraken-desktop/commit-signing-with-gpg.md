@@ -16,6 +16,12 @@ llms_include: true
 tags: [commit-signing, gpg, ssh, verification, security]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "git-workflows-and-extensions"
+    nav_label: "Commit Signing"
+    nav_order: 30
+    nav_parent: "git-workflows-and-extensions"
+    page_type: "content"
 ---
 
 <kbd>Last updated: March 2026</kbd>

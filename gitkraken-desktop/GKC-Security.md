@@ -16,6 +16,12 @@ llms_include: true
 tags: [security, compliance, storage, encryption, soc2]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "gkc-security"
+    nav_label: "Security"
+    nav_order: 170
+    nav_parent: ""
+    page_type: "content"
 ---
 
 <kbd>Last updated: October 2026</kbd>

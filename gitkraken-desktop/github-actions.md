@@ -16,6 +16,12 @@ llms_include: true
 tags: [github-actions, workflows, yaml, automation, github]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "git-workflows-and-extensions"
+    nav_label: "GitHub Actions"
+    nav_order: 40
+    nav_parent: "git-workflows-and-extensions"
+    page_type: "content"
 ---
 
 <kbd>Last updated: March 2026</kbd>
