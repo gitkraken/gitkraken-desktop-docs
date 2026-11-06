@@ -16,6 +16,12 @@ llms_include: true
 tags: [command-palette, shortcuts, navigation, search, actions]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "start-here"
+    nav_label: "Command Palette"
+    nav_order: 40
+    nav_parent: "start-here"
+    page_type: "content"
 ---
 <kbd>Last updated: April 2026</kbd>
 

@@ -16,6 +16,12 @@ llms_include: true
 tags: [ai, commit-messages, explain, pull-requests, providers]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "gkd-gitkraken-ai"
+    nav_label: "GitKraken AI"
+    nav_order: 100
+    nav_parent: ""
+    page_type: "content"
 ---
 
 <kbd>Last updated: November 2026</kbd>

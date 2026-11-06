@@ -16,6 +16,12 @@ llms_include: true
 tags: [commits, amend, revert, reset, co-authors]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "working-with-files"
+    nav_label: "Committing Changes"
+    nav_order: 30
+    nav_parent: "working-with-files"
+    page_type: "content"
 ---
 <kbd>Last updated: October 2026</kbd>
 

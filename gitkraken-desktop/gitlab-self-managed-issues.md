@@ -16,6 +16,12 @@ llms_include: true
 tags: [gitlab-self-managed, issues, self-hosted, filters, branching]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "integrations-with-issue-trackers"
+    nav_label: "GitLab Self-Managed Issues"
+    nav_order: 70
+    nav_parent: "integrations-with-issue-trackers"
+    page_type: "content"
 ---
 
 <kbd>Last updated: March 2026</kbd>

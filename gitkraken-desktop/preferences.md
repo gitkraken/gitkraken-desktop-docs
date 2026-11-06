@@ -16,6 +16,12 @@ llms_include: true
 tags: [preferences, settings, ssh, integrations, profiles]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "start-here"
+    nav_label: "Preferences"
+    nav_order: 60
+    nav_parent: "start-here"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

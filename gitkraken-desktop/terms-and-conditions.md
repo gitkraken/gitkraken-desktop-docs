@@ -16,6 +16,12 @@ llms_include: false
 tags: [support, policy, sla, support-hours, end-of-life]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "terms-and-conditions"
+    nav_label: "GitKraken Desktop Support Terms and Conditions"
+    nav_order: 190
+    nav_parent: ""
+    page_type: "content"
 ---
 
 

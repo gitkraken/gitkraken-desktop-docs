@@ -16,6 +16,12 @@ llms_include: true
 tags: [trello, cards, filters, branching, integration]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "integrations-with-issue-trackers"
+    nav_label: "Trello"
+    nav_order: 80
+    nav_parent: "integrations-with-issue-trackers"
+    page_type: "content"
 ---
 
 <kbd>Last updated: November 2026</kbd>

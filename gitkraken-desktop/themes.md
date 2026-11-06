@@ -16,6 +16,12 @@ llms_include: true
 tags: [themes, dark-mode, light-mode, customization, jsonc]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "start-here"
+    nav_label: "Themes"
+    nav_order: 90
+    nav_parent: "start-here"
+    page_type: "content"
 ---
 <kbd>Last updated: March 2026</kbd>
 

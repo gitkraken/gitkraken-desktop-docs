@@ -16,6 +16,12 @@ llms_include: true
 tags: [agents, coding-agents, ai, commit-composer, recompose, commits, history, pull-requests]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "agent-workflows"
+    nav_label: "Clean Up Agent Commits"
+    nav_order: 30
+    nav_parent: "agent-workflows"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

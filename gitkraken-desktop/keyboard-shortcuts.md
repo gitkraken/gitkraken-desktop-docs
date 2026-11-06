@@ -16,6 +16,12 @@ llms_include: true
 tags: [keyboard-shortcuts, shortcuts, navigation, command-palette, tabs]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "start-here"
+    nav_label: "Keyboard Shortcuts"
+    nav_order: 50
+    nav_parent: "start-here"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

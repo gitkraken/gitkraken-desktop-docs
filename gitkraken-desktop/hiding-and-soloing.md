@@ -16,6 +16,12 @@ llms_include: true
 tags: [hide, solo, branches, commit-graph, left-panel]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "working-with-repositories"
+    nav_label: "Hide and Solo"
+    nav_order: 80
+    nav_parent: "working-with-repositories"
+    page_type: "content"
 ---
 <kbd>Last updated: March 2026</kbd>
 

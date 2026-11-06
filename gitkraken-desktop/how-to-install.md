@@ -16,6 +16,12 @@ llms_include: true
 tags: [install, setup, windows, macos, linux, wsl]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "how-to-install"
+    nav_label: "How to Install GitKraken Desktop"
+    nav_order: 20
+    nav_parent: ""
+    page_type: "content"
 ---
 <kbd>Last updated: April 2026</kbd>
 

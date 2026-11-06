@@ -16,6 +16,12 @@ llms_include: true
 tags: [git-lfs, large-files, install, configure, troubleshooting]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "git-workflows-and-extensions"
+    nav_label: "Git LFS"
+    nav_order: 20
+    nav_parent: "git-workflows-and-extensions"
+    page_type: "content"
 ---
 
 <kbd>Last updated: March 2026</kbd>

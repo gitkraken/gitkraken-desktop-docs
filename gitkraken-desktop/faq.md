@@ -17,6 +17,12 @@ tags: [faq, troubleshooting, ssh, plans, os-support]
 
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "faq"
+    nav_label: "GitKraken Desktop FAQ"
+    nav_order: 30
+    nav_parent: ""
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

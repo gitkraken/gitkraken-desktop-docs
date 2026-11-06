@@ -16,6 +16,12 @@ llms_include: true
 tags: [cherry-pick, commits, branches, interactive, history]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "working-with-files"
+    nav_label: "Cherry Pick Commits"
+    nav_order: 20
+    nav_parent: "working-with-files"
+    page_type: "content"
 ---
 
 <kbd>Last updated: March 2026</kbd>

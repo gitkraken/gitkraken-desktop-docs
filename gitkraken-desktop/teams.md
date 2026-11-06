@@ -16,6 +16,12 @@ llms_include: true
 tags: [teams, collaboration, roles, workspaces, cloud-patches]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "start-here"
+    nav_label: "Teams"
+    nav_order: 80
+    nav_parent: "start-here"
+    page_type: "content"
 ---
 <kbd>Last updated: October 2026</kbd>
 

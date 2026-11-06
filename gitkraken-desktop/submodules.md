@@ -16,6 +16,12 @@ llms_include: true
 tags: [submodules, git, update, nested-repos, repositories]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "working-with-repositories"
+    nav_label: "Submodules"
+    nav_order: 140
+    nav_parent: "working-with-repositories"
+    page_type: "content"
 ---
 <kbd>Last updated: March 2026</kbd>
 

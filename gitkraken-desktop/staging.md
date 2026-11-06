@@ -16,6 +16,12 @@ llms_include: true
 tags: [staging, unstage, gitignore, wip, diff]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "working-with-commits"
+    nav_label: "Stage, Unstage, and Ignore Files"
+    nav_order: 10
+    nav_parent: "working-with-commits"
+    page_type: "content"
 ---
 
 <kbd>Last updated: November 2026</kbd>

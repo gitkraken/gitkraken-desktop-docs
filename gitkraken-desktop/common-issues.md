@@ -16,6 +16,12 @@ llms_include: true
 tags: [troubleshooting, login, github, performance, issues]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "known-issues"
+    nav_label: "Common Issues and Fixes"
+    nav_order: 30
+    nav_parent: "known-issues"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

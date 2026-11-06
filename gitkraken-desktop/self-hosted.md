@@ -16,6 +16,12 @@ llms_include: true
 tags: [self-hosted, on-premise, setup, enterprise, server]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "on-premise"
+    nav_label: "On-Premise Self-Hosted Server"
+    nav_order: 10
+    nav_parent: "on-premise"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

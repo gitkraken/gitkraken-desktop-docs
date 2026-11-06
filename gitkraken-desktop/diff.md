@@ -16,6 +16,12 @@ llms_include: true
 tags: [diff, blame, history, patches, external-tools]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "working-with-files"
+    nav_label: "View Diffs, File History, and Blame in GitKraken Desktop"
+    nav_order: 50
+    nav_parent: "working-with-files"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

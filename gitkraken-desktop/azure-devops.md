@@ -16,6 +16,12 @@ llms_include: true
 tags: [azure-devops, integration, oauth, pat, ssh]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "integrations-with-git-providers"
+    nav_label: "Azure DevOps"
+    nav_order: 70
+    nav_parent: "integrations-with-git-providers"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

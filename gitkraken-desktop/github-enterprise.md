@@ -16,6 +16,12 @@ llms_include: true
 tags: [github-enterprise-server, self-hosted, token, ssh, pull-requests]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "integrations-with-git-providers"
+    nav_label: "GitHub Enterprise Server"
+    nav_order: 20
+    nav_parent: "integrations-with-git-providers"
+    page_type: "content"
 ---
 <kbd>Last updated: March 2026</kbd>
 

@@ -16,6 +16,12 @@ llms_include: true
 tags: [squash, commits, history, force-push]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "working-with-commits"
+    nav_label: "Squash"
+    nav_order: 20
+    nav_parent: "working-with-commits"
+    page_type: "content"
 ---
 
 <kbd>Last updated: March 2026</kbd>

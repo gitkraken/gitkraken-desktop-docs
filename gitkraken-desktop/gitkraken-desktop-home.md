@@ -16,6 +16,12 @@ llms_include: true
 tags: [home, docs, help-center, getting-started]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "gitkraken-desktop-home"
+    nav_label: "GitKraken Desktop Documentation & Support"
+    nav_order: 10
+    nav_parent: ""
+    page_type: "main-index"
 ---
 
 <kbd>Last updated: November 2026</kbd>

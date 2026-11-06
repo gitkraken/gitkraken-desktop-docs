@@ -16,6 +16,12 @@ llms_include: true
 tags: [pull-requests, filters, syntax, search, ci]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "working-with-repositories"
+    nav_label: "Pull Request Filter Syntax"
+    nav_order: 130
+    nav_parent: "working-with-repositories"
+    page_type: "content"
 ---
 <kbd>Last updated: March 2026</kbd>
 

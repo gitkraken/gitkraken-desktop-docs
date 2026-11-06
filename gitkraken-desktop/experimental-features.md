@@ -16,6 +16,12 @@ llms_include: true
 tags: [experimental, cloud-patch, git-executable, preview, features]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "start-here"
+    nav_label: "Experimental Features"
+    nav_order: 110
+    nav_parent: "start-here"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 
