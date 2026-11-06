@@ -16,6 +16,12 @@ llms_include: true
 tags: [agents, coding-agents, ai, review, undo, revert, reset, discard, diff, worktrees]
 taxonomy:
     category: gitkraken-desktop
+custom_fields:
+    nav_category: "agent-workflows"
+    nav_label: "Review and Undo Agent Changes"
+    nav_order: 20
+    nav_parent: "agent-workflows"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 
