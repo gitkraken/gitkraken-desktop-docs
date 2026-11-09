@@ -10,7 +10,7 @@ os_support: [Windows, macOS, Linux]
 git_hosts: [GitHub, GitLab, Bitbucket, Azure DevOps]
 integrations: [GitHub, GitLab, Bitbucket, Azure DevOps]
 hosted_variant: both
-status: preview
+status: GA
 last_verified: 2026-11
 llms_include: true
 tags: [ai, commit-messages, explain, pull-requests, providers]

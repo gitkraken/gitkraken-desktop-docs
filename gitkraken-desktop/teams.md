@@ -6,6 +6,7 @@ feature: Teams
 content_type: how-to
 audience: team-lead
 plan_required: Pro
+role_required: [Owner, Admin]
 os_support: [Windows, macOS, Linux]
 git_hosts: [generic]
 integrations: []

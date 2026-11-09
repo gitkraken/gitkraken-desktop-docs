@@ -7,9 +7,9 @@ content_type: how-to
 audience: developer
 plan_required: all
 os_support: [Windows, macOS, Linux]
-git_hosts: [GitHub]
-integrations: [GitHub]
-hosted_variant: cloud
+git_hosts: [GitHub, GitHub Enterprise Server]
+integrations: [GitHub, GitHub Enterprise Server]
+hosted_variant: both
 status: GA
 last_verified: 2026-03
 llms_include: true
