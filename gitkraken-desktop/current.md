@@ -11,14 +11,14 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-10
+last_verified: 2026-11
 llms_include: true
 tags: [release-notes, changelog, upgrades, version-history]
 og_image: /img/GitKrakenClient-Hero.png
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: October 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 <div style="display:flex; flex-direction:row-reverse; flex-wrap:wrap; align-items:center; gap:8px 32px; margin-bottom:24px;">
   <p style="flex:1 1 300px; margin:0;">This release notes page tracks what's new and changing in the current version of GitKraken Desktop, including new features, improvements, bug fixes, and deprecations. Use it to see what shipped in the most recent release, confirm when a capability became available, or review changes before upgrading.</p>
@@ -33,6 +33,32 @@ taxonomy:
 <a href="https://www.gitkraken.com/download?product=gitkraken&source=help_center" target="_blank" class="button button--basic ">Download Current Version Now</a>
 
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
+
+***
+<a id="v12-6-2"></a>
+## Version 12.6.2
+
+<kbd>Wednesday, November 4th, 2026</kbd>
+
+### Improvements 🙌
+ - **GitFlow improvements:**
+   - Finishing a feature now signs its commits with an SSH key if that is how commit signing is set up in Preferences. Previously, only OpenPGP keys were used. This covers the merge commit, and the rebased commits when *Rebase on develop* is turned on.
+   - When you finish a feature without *Rebase on develop*:
+      - A file renamed on one branch and edited on the other now shows as a single conflict, which you can resolve in the 3-way merge editor.
+      - Merge drivers set up in your git config now run, just as they do with `git merge`.
+   - When you finish a feature with *Rebase on develop*:
+      - A feature commit with no changes no longer stops the finish.
+      - If the finish stops on a conflict and you then continue it, *Undo* now undoes the rebase.
+ - **Bitbucket's new SSH host:** Remotes that use Bitbucket Cloud's new SSH host, `ssh.bitbucket.org`, are now recognized as Bitbucket, so GitKraken uses your Bitbucket integration's SSH key for them. Bitbucket stops accepting SSH connections to `bitbucket.org` on November 12, 2026. After that date, if a remote action fails on a remote that still uses `bitbucket.org`, GitKraken shows a message with an *Update remote* button that switches the remote to `ssh.bitbucket.org`.
+ - Updated Monaco Editor to 0.57.0.
+
+### Bug Fixes 🐛
+ - Fixed an issue where starting or finishing a GitFlow feature, release, or hotfix left submodules at their old commits even with "Keep submodules up to date" turned on.
+ - Fixed an issue where discarding a line or selection in the diff of a Git LFS file could corrupt the file, and where discarding in a file that uses a custom git filter or a working tree encoding saved it in the wrong format. The file is now saved exactly as git would check it out.
+ - Fixed an issue where a system crash or power loss while GitKraken was saving settings could corrupt the settings file. This signed you out and reset your profile settings, integrations, and preferences to their defaults. Settings and sign-ins are now saved so that an interruption always leaves either the previous or the updated version intact.
+ - Fixed an issue on macOS where the *Open in Zed* action did nothing when Zed was already running.
+ - Fixed an issue on macOS where Visual Studio Code was missing from the list of external editors.
+ - Fixed an issue where GitKraken Desktop still trusted the eMudhra root certificates that Mozilla removed after some of eMudhra's certificate authorities were compromised. GitKraken Desktop no longer trusts emSign ECC Root CA - G3, emSign Root CA - C1 or emSign ECC Root CA - C3, so connections to sites using certificates from them are refused.
 
 ***
 <a id="v12-6-1"></a>
