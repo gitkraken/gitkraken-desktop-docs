@@ -6,6 +6,7 @@ feature: Self-Hosted Configuration
 content_type: how-to
 audience: enterprise-admin
 plan_required: Enterprise
+role_required: [Server Administrator]
 os_support: [server-linux]
 git_hosts: [n/a]
 integrations: []
