@@ -37,17 +37,10 @@ Find quick answers to common GitKraken Desktop questions about supported platfor
 | Windows SSH agent | Pageant is the supported SSH agent on Windows |
 | Subscription shows Community | Make sure you are signed in with the email address associated with your subscription |
 
-<div class='faq container'>
-  <section class='pts pbm'>
-    <div class='callout'>
-      <h4>Need a quick reference? These resources may help:</h4>
-      <ul class='dl-list plm prm'>
-        <li><a href='https://www.gitkraken.com/resources/gitkraken-cheat-sheet?product=gitkraken&source=help_center' target='_blank'><em>GitKraken Desktop Cheat Sheet</em></a></li>
-        <li><a href='https://www.gitkraken.com/resources/gitkraken-github-cheat-sheet?product=gitkraken&source=help_center' target='_blank'><em>GitKraken for GitHub Users Cheat Sheet</em></a></li>
-      </ul>
-    </div>
-  </section>
-</div>
+> **Note:** **Need a quick reference? These resources may help:**
+>
+> - <a href='https://www.gitkraken.com/resources/gitkraken-cheat-sheet?product=gitkraken&source=help_center' target='_blank'><em>GitKraken Desktop Cheat Sheet</em></a>
+> - <a href='https://www.gitkraken.com/resources/gitkraken-github-cheat-sheet?product=gitkraken&source=help_center' target='_blank'><em>GitKraken for GitHub Users Cheat Sheet</em></a>
 
 ---
 
@@ -198,12 +191,3 @@ This is a known issue. To work around it, start GitKraken Desktop with:
 ```bash
 gitkraken --xdg-portal-required-version=3
 ```
-
-<style>
-pre{position:relative;min-height:3em}
-.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;height:28px;padding:0 8px;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s;font-size:11px;font-family:sans-serif}
-pre:hover .copy-btn{opacity:1}
-.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
-.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
-</style>
-<script>(function(){var C='Copy',K='Copied!';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p,cl=el.cloneNode(true),bn=cl.querySelector('.copy-btn');if(bn)bn.remove();cp((cl.innerText||cl.textContent).trimEnd()).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>

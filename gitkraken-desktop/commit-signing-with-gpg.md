@@ -75,9 +75,7 @@ By signing a commit, others with your public key can verify that the commit was 
 
 Before signing commits, install and configure GPG.
 
-<div class='callout callout--warning'>
-    <p><strong>Note:</strong> Close GitKraken Desktop before installing GPG.</p>
-</div>
+> **Note:** Close GitKraken Desktop before installing GPG.
 
 - **Windows:** Use [Gpg4win](https://gpg4win.org/download.html) and follow the installer.
 - **Mac:** Use [Homebrew](https://brew.sh/):
@@ -101,9 +99,7 @@ gpg --version
   <figcaption style="text-align: center; color: #888">GPG version output.</figcaption>
 </figure>
 
-<div class='callout callout--success'>
-    <p><strong>Note:</strong> Use <code>gpg2</code> if <code>gpg</code> isn’t aliased. Prefix commands accordingly.</p>
-</div>
+> **Note:** Use <code>gpg2</code> if <code>gpg</code> isn’t aliased. Prefix commands accordingly.
 
 ### How to generate a GPG key in GitKraken Desktop
 
@@ -118,9 +114,7 @@ Once GPG is installed:
   <figcaption style="text-align: center; color: #888">Generate new GPG key in Preferences.</figcaption>
 </figure>
 
-<div class='callout callout--success'>
-    <p><strong>Note:</strong> Ensure GPG is configured in GitKraken. See <a href="#configure-gpg-in-gitkraken">Configure GPG in GitKraken</a>.</p>
-</div>
+> **Note:** Ensure GPG is configured in GitKraken. See <a href="#configure-gpg-in-gitkraken">Configure GPG in GitKraken</a>.
 
 ### How to configure GPG in GitKraken Desktop
 
@@ -271,12 +265,3 @@ SSH signing is available through Git Executable.
    - [GitHub SSH setup](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
    - [GitLab SSH setup](https://docs.gitlab.com/ee/user/project/repository/signed_commits/gpg.html#add-a-gpg-key-to-your-account)
    - ⚠️ Bitbucket does **not** support SSH-signed commit verification.
-
-<style>
-pre{position:relative;min-height:3em}
-.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;height:28px;padding:0 8px;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s;font-size:11px;font-family:sans-serif}
-pre:hover .copy-btn{opacity:1}
-.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
-.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
-</style>
-<script>(function(){var C='Copy',K='Copied!';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p,cl=el.cloneNode(true),bn=cl.querySelector('.copy-btn');if(bn)bn.remove();cp((cl.innerText||cl.textContent).trimEnd()).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>

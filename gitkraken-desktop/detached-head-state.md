@@ -111,9 +111,7 @@ This will remove the `HEAD` label and discard any unpreserved commits.
   <figcaption style="text-align: center; color: #888;">Unbranched commits are removed when you check out another branch.</figcaption>
 </figure>
 
-<div class='callout callout--danger'>
-  <p><strong>Important:</strong> Commits made in detached HEAD state will be lost unless you create a branch. You may be able to <a href='https://help.gitkraken.com/gitkraken-desktop/detached-head-state/#recovering-lost-commits'>recover them manually</a>.</p>
-</div>
+> **Important:** Commits made in detached HEAD state will be lost unless you create a branch. You may be able to <a href='https://help.gitkraken.com/gitkraken-desktop/detached-head-state/#recovering-lost-commits'>recover them manually</a>.
 
 ***
 

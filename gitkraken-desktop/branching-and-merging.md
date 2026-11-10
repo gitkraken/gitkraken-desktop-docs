@@ -74,9 +74,7 @@ To delete a branch, first check out a different branch, then right-click the tar
 
 Create a new branch when working on a feature or fix. Right-click any commit to open the context menu and create a branch.
 
-<div class='callout callout--basic'>
-  <p><strong>Use branches when:</strong> you want to isolate a feature, fix, or experiment from the main line of development. <strong>Do not keep branches around when:</strong> the work is complete and the branch can be merged or deleted to reduce graph clutter.</p>
-</div>
+> **Note:** **Use branches when:** you want to isolate a feature, fix, or experiment from the main line of development. <strong>Do not keep branches around when:</strong> the work is complete and the branch can be merged or deleted to reduce graph clutter.
 
 <figure>
   <img src="/wp-content/uploads/add-branch@2x.png" class="help-center-img img-bordered" alt="Right-click menu in GitKraken Desktop showing option to create a new branch from a selected commit">
@@ -138,9 +136,7 @@ Use multi-select in the Left Panel to delete several branches at once:
   <figcaption style="text-align:center; color:#888">Select and delete multiple branches</figcaption>
 </figure>
 
-<div class='callout callout--warning'>
-  <p><strong>Caution:</strong> Deleting a branch is permanent.</p>
-</div>
+> **Caution:** Deleting a branch is permanent.
 
 ### How to pin a branch to the left
 
@@ -189,13 +185,10 @@ Merging combines changes from one branch into another. To merge:
 - Drag and drop one branch onto your target branch
 - Right-click the source branch and choose **Merge**
 
-<div class='callout callout--basic'>
-  <p><strong>Use merge when:</strong> you want to preserve the full branch history. <strong>Use rebase when:</strong> you want to move commits onto a new base and keep the history more linear before sharing or merging.</p>
-</div>
+> **Note:** **Use merge when:** you want to preserve the full branch history. <strong>Use rebase when:</strong> you want to move commits onto a new base and keep the history more linear before sharing or merging.
 
-<div class='callout callout--basic'>
-  <p><strong>Do not use merge when:</strong> your team expects a rebased, linear branch before review or integration. <strong>Do not use rebase when:</strong> collaborators are already building on the commits you plan to rewrite.</p>
-</div>
+
+> **Note:** **Do not use merge when:** your team expects a rebased, linear branch before review or integration. <strong>Do not use rebase when:</strong> collaborators are already building on the commits you plan to rewrite.
 
 <figure>
   <img src="/wp-content/uploads/merge-right@2x.png" class="help-center-img img-bordered" alt="Context menu showing option to merge dev branch into production branch in GitKraken Desktop">
@@ -204,17 +197,13 @@ Merging combines changes from one branch into another. To merge:
 
 If the branches have no conflicts, GitKraken Desktop merges the changes automatically.
 
-<div class='callout callout--warning'>
-  <p>The in-app merge conflict output editor is available with a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center" target="_blank">Paid</a> license.</p>
-</div>
+> **Warning:** The in-app merge conflict output editor is available with a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center" target="_blank">Paid</a> license.
 
 ### When to use squash merges
 
 When you enable the **Squash** setting, GitKraken Desktop stages all changes from the source branch locally without creating a merge commit automatically. You then commit the squashed result manually, which produces a single, clean commit on the target branch.
 
-<div class='callout callout--basic'>
-  <p><strong>Use squash merges when:</strong> you want one clean commit on the target branch and do not need to preserve each feature-branch commit. <strong>Do not use squash when:</strong> the individual commits matter for auditing, review context, or future debugging.</p>
-</div>
+> **Note:** **Use squash merges when:** you want one clean commit on the target branch and do not need to preserve each feature-branch commit. <strong>Do not use squash when:</strong> the individual commits matter for auditing, review context, or future debugging.
 
 Squash merges keep a linear history on your main branch without the individual commits from a feature branch.
 
@@ -229,9 +218,7 @@ To enable squash merges:
 
 After merging with squash enabled, review the staged changes in the Commit Panel and commit them manually.
 
-<div class='callout callout--basic'>
-  <p><strong>Note:</strong> With squash enabled, GitKraken Desktop stages all changes but does not create the merge commit for you. You must commit manually to complete the merge.</p>
-</div>
+> **Note:** With squash enabled, GitKraken Desktop stages all changes but does not create the merge commit for you. You must commit manually to complete the merge.
 
 ### How to resolve conflicts in the Merge Conflict Editor
 
@@ -261,9 +248,7 @@ Use checkboxes or click <button class='button button--success button--ui button-
 
 After resolving, save and commit the output.
 
-<div class='callout callout--basic'>
-  <p><strong>Tip:</strong> Use <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>F</kbd> to search inside the Merge Tool.</p>
-</div>
+> **Tip:** Use <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>F</kbd> to search inside the Merge Tool.
 
 <figure>
   <img src="/wp-content/uploads/merge-tool-gif.gif" class="help-center-img img-bordered" alt="Resolving a merge conflict in the GitKraken Desktop Merge Tool by selecting side B, saving, and clicking Commit and Merge.">
@@ -274,9 +259,7 @@ After resolving, save and commit the output.
 
 Set your preferred merge tool under <em>Preferences > External Tools</em>.
 
-<div class='callout callout--basic'>
-  <p><strong>Use the built-in merge tool when:</strong> you want to stay inside GitKraken Desktop and the supported editor meets your needs. <strong>Use an external merge tool when:</strong> your team already relies on a supported third-party tool or you need a workflow GitKraken Desktop does not provide directly.</p>
-</div>
+> **Note:** **Use the built-in merge tool when:** you want to stay inside GitKraken Desktop and the supported editor meets your needs. <strong>Use an external merge tool when:</strong> your team already relies on a supported third-party tool or you need a workflow GitKraken Desktop does not provide directly.
 
 Supported tools:
 - Beyond Compare
@@ -323,9 +306,7 @@ Right-click a conflicted file and select:
 
 **Conflict Prevention** in GitKraken Desktop warns you about potential conflicts before a merge. See [Conflict Prevention](/gitkraken-desktop/conflict-prevention/).
 
-<div class='callout callout--warning'>
-  <p>Conflict Prevention is available on the Advanced plan or higher.</p>
-</div>
+> **Warning:** Conflict Prevention is available on the Advanced plan or higher.
 
 ***
 

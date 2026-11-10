@@ -97,9 +97,7 @@ Click the <button class='button button--primary button--ui button--nolink'>Edit 
     <figcaption style="text-align: center; color: #888;">Click Edit this file from the Diff/File view panel.</figcaption>
 </figure>
 
-<div class='callout callout--success'>
-<p><strong>Note:</strong> If viewing a file on a different branch, the button will read <kbd>Edit in working directory</kbd>. It opens the file version from your current branch.</p>
-</div>
+> **Note:** If viewing a file on a different branch, the button will read <kbd>Edit in working directory</kbd>. It opens the file version from your current branch.
 
 ***
 
@@ -164,9 +162,7 @@ GitKraken Desktop expects most files to use `UTF-8` encoding. To review or adjus
     <figcaption style="text-align: center; color: #888;">Encoding dropdown available from file editor.</figcaption>
 </figure>
 
-<div class='callout callout--warning'>
-<p><strong>Note:</strong> GitKraken Desktop does not change a file’s encoding upon save. Use an external editor like VS Code if you need to convert encodings.</p>
-</div>
+> **Note:** GitKraken Desktop does not change a file’s encoding upon save. Use an external editor like VS Code if you need to convert encodings.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/preferences-encoding-select-2025.png' class="help-center-img img-bordered" alt="Preferences panel in GitKraken Desktop showing a dropdown list of available default encodings including UTF-8 and ISO-8859 variants">

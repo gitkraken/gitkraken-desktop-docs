@@ -93,9 +93,7 @@ You can also:
     <figcaption style="text-align: center; color: #888;">Right-click to stage specific lines or hunks.</figcaption>
 </figure>
 
-<div class='callout callout--success'>
-<p><strong>Tip:</strong> Use <a href="/gitkraken-desktop/keyboard-shortcuts/#repo-actions">keyboard shortcuts</a> to speed up staging actions.</p>
-</div>
+> **Tip:** Use <a href="/gitkraken-desktop/keyboard-shortcuts/#repo-actions">keyboard shortcuts</a> to speed up staging actions.
 
 ***
 
@@ -165,9 +163,7 @@ You can choose to:
 
 GitKraken Desktop adds the rule to the `.gitignore` file at the root of your repository.
 
-<div class='callout callout--note'>
-<p><strong>Note:</strong> GitKraken Desktop uses only the root-level <code>.gitignore</code> file. It does not read nested <code>.gitignore</code> files.</p>
-</div>
+> **Note:** GitKraken Desktop uses only the root-level <code>.gitignore</code> file. It does not read nested <code>.gitignore</code> files.
 
 ### How to ignore previously tracked files
 

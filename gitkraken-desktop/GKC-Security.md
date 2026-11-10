@@ -99,13 +99,4 @@ The following table summarizes the data GitKraken Desktop services collect and h
 ## How to request the SOC 2 report
 GitKraken and its tools are SOC 2 certified. To request a copy of the SOC 2 report, visit the [Trust Center](https://trust.gitkraken.com/) to start the request process. GitKraken requires a signed MNDA before providing a copy of the report.
 
-<div class="bbb-callout bbb--info">
-    <div class="irow">
-    <div class="ilogobox">
-        <span class="logoimg"></span>
-    </div>
-    <div class="imsgbox">
-       SOC 2 reports are only available for Business and Enterprise customers.
-    </div>
-    </div>
-</div>
+> **Note:** SOC 2 reports are only available for Business and Enterprise customers.

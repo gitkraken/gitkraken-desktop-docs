@@ -42,9 +42,7 @@ Use this page to create Local or Cloud Workspaces in GitKraken Desktop so you ca
 
 ***
 
-<div class='callout callout--warning'>
-  <p><strong>GitKraken On-Premise users:</strong> Cloud Workspaces are not available in Serverless or Self-Hosted Server deployments. Use <a href="#how-local-workspaces-work">Local Workspaces</a> to organize repositories in those environments. Features that depend on Cloud Workspaces, including Workspace Insights and Launchpad Team View, are also not available.</p>
-</div>
+> **Warning:** **GitKraken On-Premise users:** Cloud Workspaces are not available in Serverless or Self-Hosted Server deployments. Use <a href="#how-local-workspaces-work">Local Workspaces</a> to organize repositories in those environments. Features that depend on Cloud Workspaces, including Workspace Insights and Launchpad Team View, are also not available.
 
 ## Quick Start
 
@@ -99,13 +97,10 @@ To open the Repo Management tab, do one of the following:
 
 Cloud Workspaces are available from any machine, and you can share them with selected [teams](/start-here/teams/) in your organization. Use them to run [multi-repository actions](#how-to-run-multi-repository-actions-in-a-cloud-workspace) and manage pull requests for all their repositories in one place.
 
-<div class='callout callout--warning'>
-  <p><strong>Note:</strong> Cloud Workspaces are not available in GitKraken On-Premise Serverless or Self-Hosted Server deployments. See <a href="#how-local-workspaces-work">How Local Workspaces work</a> for the supported alternative in those environments.</p>
-</div>
+> **Note:** Cloud Workspaces are not available in GitKraken On-Premise Serverless or Self-Hosted Server deployments. See <a href="#how-local-workspaces-work">How Local Workspaces work</a> for the supported alternative in those environments.
 
-<div class='callout callout--basic'>
-    <p><strong>Use a Cloud Workspace when:</strong> you need to share repository groups across machines or with teammates. <strong>Do not use a Cloud Workspace when:</strong> the repo list is only for your local machine and does not need shared or synced workspace context.</p>
-</div>
+
+> **Note:** **Use a Cloud Workspace when:** you need to share repository groups across machines or with teammates. <strong>Do not use a Cloud Workspace when:</strong> the repo list is only for your local machine and does not need shared or synced workspace context.
 
 <p>Watch the overview:</p>
 <div class='embed-container embed-container--16-9'>
@@ -138,12 +133,7 @@ Cloud Workspaces are available from any machine, and you can share them with sel
   </figcaption>
 </figure>
 
-<div class='callout callout--warning'>
-    <p>
-        <strong>Note:</strong>
-        Connect the hosting service's integration in <kbd>Preferences > Integrations</kbd> first.
-    </p>
-</div>
+> **Note:** Connect the hosting service's integration in <kbd>Preferences > Integrations</kbd> first.
 
 ### How to run multi-repository actions in a Cloud Workspace
 
@@ -228,9 +218,7 @@ See open pull requests for all repositories in a Workspace in [Launchpad](https:
 
 ## How Local Workspaces work
 
-<div class='callout callout--basic'>
-    <p><strong>Use a Local Workspace when:</strong> you want a private repository grouping stored only on your machine. <strong>Convert to a Cloud Workspace when:</strong> you need cross-device access, sharing, or integration-backed workspace features.</p>
-</div>
+> **Note:** **Use a Local Workspace when:** you want a private repository grouping stored only on your machine. <strong>Convert to a Cloud Workspace when:</strong> you need cross-device access, sharing, or integration-backed workspace features.
 
 ### How to create a Local Workspace
 
@@ -285,12 +273,7 @@ To share a Local Workspace or use it on other machines, convert it to a Cloud Wo
   </figcaption>
 </figure>
 
-<div class='callout callout--warning'>
-    <p>
-        <strong>Note:</strong>
-        Connect the provider integration in <kbd>Preferences > Integrations</kbd> before you create a Cloud Workspace.
-    </p>
-</div>
+> **Note:** Connect the provider integration in <kbd>Preferences > Integrations</kbd> before you create a Cloud Workspace.
 
 ***
 
@@ -373,9 +356,7 @@ Drag Workspaces to put them in the order you want.
 
 ## How to use Insights to visualize pull request history
 
-<div class='callout callout--warning'>
-  <p><strong>Note:</strong> GitKraken Insights is not available in GitKraken On-Premise Serverless or Self-Hosted Server deployments. Insights requires a connection to <a href="https://gitkraken.dev">gitkraken.dev</a>.</p>
-</div>
+> **Note:** GitKraken Insights is not available in GitKraken On-Premise Serverless or Self-Hosted Server deployments. Insights requires a connection to <a href="https://gitkraken.dev">gitkraken.dev</a>.
 
 GitKraken Insights shows how pull requests are merged into your repositories. Insights supports GitHub.com, Bitbucket.org, GitLab.com, and Azure DevOps (Hosted), and gives you:
 

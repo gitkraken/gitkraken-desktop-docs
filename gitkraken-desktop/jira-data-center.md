@@ -52,13 +52,10 @@ Use this page to connect GitKraken Desktop to Jira Data Center so you can previe
 
 ## Requirements
 
-<div class='callout callout--warning'>
-    <p>This integration is only available for <a href="https://www.gitkraken.com/pricing" target="_blank">Advanced subscription tiers</a> or higher.</p>
-</div>
+> **Warning:** This integration is only available for <a href="https://www.gitkraken.com/pricing" target="_blank">Advanced subscription tiers</a> or higher.
 
-<div class='callout callout--basic'>
-    <p>The Jira Data Center integration requires Jira version 8.4 or newer. Some SSO (single sign-on) configurations are not supported.</p>
-</div>
+
+> **Note:** The Jira Data Center integration requires Jira version 8.4 or newer. Some SSO (single sign-on) configurations are not supported.
 
 ---
 
@@ -75,9 +72,7 @@ Use this page to connect GitKraken Desktop to Jira Data Center so you can previe
 
 Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>. If you don't see the ISSUES section, right-click any header in the Left Panel and enable it from the context menu.
 
-<div class='callout callout--basic'>
-    <p><strong>Use Jira Data Center integration when:</strong> your organization runs self-hosted Jira Data Center and requires PAT-based setup. <strong>Don't use the Jira Cloud flow when:</strong> your environment depends on self-hosted server versions, PAT authentication, or Data Center-specific compatibility.</p>
-</div>
+> **Note:** **Use Jira Data Center integration when:** your organization runs self-hosted Jira Data Center and requires PAT-based setup. <strong>Don't use the Jira Cloud flow when:</strong> your environment depends on self-hosted server versions, PAT authentication, or Data Center-specific compatibility.
 
 <figure>
   <img src="/wp-content/uploads/connect-jira-dc-issues-2025@2x.png" class="help-center-img img-bordered" alt="Open Jira Data Center integration settings">
@@ -104,9 +99,7 @@ Once connected, GitKraken Desktop will confirm the integration.
 
 The Jira Data Center integration includes the same functionality as the Jira Cloud integration:
 
-<div class='callout callout--basic'>
-    <p><strong>Use the in-app Jira workflow when:</strong> you want issue preview, issue creation, and issue-based branching inside GitKraken Desktop. <strong>Don't rely on it alone when:</strong> you need Jira administration or broader project workflows outside the integration scope.</p>
-</div>
+> **Note:** **Use the in-app Jira workflow when:** you want issue preview, issue creation, and issue-based branching inside GitKraken Desktop. <strong>Don't rely on it alone when:</strong> you need Jira administration or broader project workflows outside the integration scope.
 
 - [Preview Jira Issues](/integrations/jira/#preview-jira-issues)
 - [View Jira Issue Details](/integrations/jira/#view-jira-issue-details)

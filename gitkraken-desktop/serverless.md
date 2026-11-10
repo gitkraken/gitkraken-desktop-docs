@@ -60,13 +60,10 @@ If your license expires, replace the `.dat` file in one of the supported directo
   <figcaption style="text-align: center; color: #888;">Example view of GitKraken Serverless in use.</figcaption>
 </figure>
 
-<div class='callout callout--warning'>
-    <p><strong>Note:</strong> GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, see the <a href='https://www.gitkraken.com/git-client/on-premise-pricing'>On-Premise Pricing</a> page.</p>
-</div>
+> **Note:** GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, see the <a href='https://www.gitkraken.com/git-client/on-premise-pricing'>On-Premise Pricing</a> page.
 
-<div class='callout callout--basic'>
-    <p>To request a trial key, email <a href="mailto:sales@gitkraken.com">sales@gitkraken.com</a>.</p>
-</div>
+
+> **Note:** To request a trial key, email <a href="mailto:sales@gitkraken.com">sales@gitkraken.com</a>.
 
 ***
 

@@ -43,9 +43,7 @@ Use this page to detect likely merge conflicts in GitKraken Desktop before they 
 
 ***
 
-<div class='callout callout--warning'>
-  <p><strong>GitKraken On-Premise users:</strong> Target-branch conflict detection is available in Serverless and Self-Hosted Server deployments. The following features require cloud connectivity and are not available in those environments: Org Member conflict detection (requires a cloud GitKraken Org) and Cloud Patch sharing (requires gitkraken.dev).</p>
-</div>
+> **Warning:** **GitKraken On-Premise users:** Target-branch conflict detection is available in Serverless and Self-Hosted Server deployments. The following features require cloud connectivity and are not available in those environments: Org Member conflict detection (requires a cloud GitKraken Org) and Cloud Patch sharing (requires gitkraken.dev).
 
 ## Quick Start
 
@@ -80,9 +78,7 @@ Clicking the icon opens a menu with options to investigate and address the confl
   <figcaption style="text-align:center; color:#888">Conflict details with management options</figcaption>
 </figure>
 
-<div class='callout callout--success'>
-  <p>Active conflicts with the target branch take priority over Org Member alerts.</p>
-</div>
+> **Tip:** Active conflicts with the target branch take priority over Org Member alerts.
 
 ### How to resolve conflicts early
 
@@ -91,9 +87,7 @@ From the conflict detection menu, you can:
 - Push changes to make them visible to others
 - Copy summaries of overlapping edits for your team
 
-<div class='callout callout--basic'>
-  <p><strong>Note:</strong> Cloud Patch sharing is not available in GitKraken On-Premise deployments. In those environments, pushing changes and copying the conflict summary are the available options.</p>
-</div>
+> **Note:** Cloud Patch sharing is not available in GitKraken On-Premise deployments. In those environments, pushing changes and copying the conflict summary are the available options.
 
 ***
 

@@ -31,9 +31,7 @@ custom_fields:
   <img src="/wp-content/uploads/GitKraken_Keif_ai-robot.png" alt="" width="748" height="750" loading="lazy" style="flex:0 0 auto; max-height:200px; width:auto; height:auto; max-width:100%; margin:0 auto;">
 </div>
 
-<div class='callout callout--warning'>
-    <p>GitKraken AI requires a <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">paid GitKraken subscription</a>.</p>
-</div>
+> **Warning:** GitKraken AI requires a <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">paid GitKraken subscription</a>.
 
 **Requirements and limits**
 - Product: GitKraken Desktop with GitKraken AI enabled
@@ -53,9 +51,7 @@ Status, plan, and setup location for each feature:
 
 ***
 
-<div class='callout callout--warning'>
-  <p><strong>GitKraken On-Premise users:</strong> The default GitKraken-hosted AI provider is not available in Serverless or Self-Hosted Server deployments. To use GitKraken AI in an on-premises environment, you must configure a Custom URL that points to a private or internal AI service. See <a href="#how-to-use-a-custom-api-endpoint">How to use a custom API endpoint</a> for setup steps.</p>
-</div>
+> **Warning:** **GitKraken On-Premise users:** The default GitKraken-hosted AI provider is not available in Serverless or Self-Hosted Server deployments. To use GitKraken AI in an on-premises environment, you must configure a Custom URL that points to a private or internal AI service. See <a href="#how-to-use-a-custom-api-endpoint">How to use a custom API endpoint</a> for setup steps.
 
 ## Quick Start
 
@@ -87,9 +83,7 @@ Use AI to help organize your Git commits into clear, logical stories. To clean u
 
 When you recompose commits, GitKraken AI keeps the original commit authors and adds co-authors when a new commit combines work from more than one person. While GitKraken AI composes, the progress notification shows the current stage and the number of files and hunks.
 
-<div class='callout callout--basic'>
-  <p><strong>Use AI Commit Composer when:</strong> your staged changes or recent commits need to be reorganized into a clearer narrative before you share them. <strong>Do not use it when:</strong> your commits are already atomic and you only need a quick manual message update.</p>
-</div>
+> **Note:** **Use AI Commit Composer when:** your staged changes or recent commits need to be reorganized into a clearer narrative before you share them. <strong>Do not use it when:</strong> your commits are already atomic and you only need a quick manual message update.
 
 ### What AI Commit Composer does
 
@@ -163,9 +157,7 @@ To generate commits with AI:
 
 GitKraken AI explains in plain language what changed in the commits you select.
 
-<div class='callout callout--basic'>
-  <p><strong>Use AI Explain when:</strong> you need a fast summary of what changed in one or more commits. <strong>Do not use it when:</strong> you need authoritative implementation details that should come directly from reading the diff yourself.</p>
-</div>
+> **Note:** **Use AI Explain when:** you need a fast summary of what changed in one or more commits. <strong>Do not use it when:</strong> you need authoritative implementation details that should come directly from reading the diff yourself.
 
 ### How to use AI Commit Explain
 
@@ -196,9 +188,7 @@ GitKraken AI explains in plain language what changed in the commits you select.
 
 Generate clear, consistent commit messages based on your staged changes.
 
-<div class='callout callout--basic'>
-  <p><strong>Use AI commit messages when:</strong> you want a strong starting point for summarizing staged changes. <strong>Do not use them when:</strong> the exact wording carries team-specific meaning and you already know the final message you need to write.</p>
-</div>
+> **Note:** **Use AI commit messages when:** you want a strong starting point for summarizing staged changes. <strong>Do not use them when:</strong> the exact wording carries team-specific meaning and you already know the final message you need to write.
 
 ### How to generate an AI commit message
 
@@ -249,9 +239,7 @@ Then click the **AI** button to generate a revised commit message.
 
 Right-click any branch or `HEAD` commit and select **Explain Branch Changes** to generate a summary of all changes introduced on that branch.
 
-<div class='callout callout--basic'>
-  <p><strong>Use Explain Branch Changes when:</strong> you want a high-level summary before review, handoff, or pull request writing. <strong>Do not use it when:</strong> you need to inspect exact file-level behavior instead of a summarized narrative.</p>
-</div>
+> **Note:** **Use Explain Branch Changes when:** you want a high-level summary before review, handoff, or pull request writing. <strong>Do not use it when:</strong> you need to inspect exact file-level behavior instead of a summarized narrative.
 
 <figure>
   <img src="/wp-content/uploads/explain-branch@2x.png" class="help-center-img img-bordered" alt="Context menu in GitKraken showing the Explain Branch Changes option for generating AI-based summaries of branch differences." />
@@ -272,9 +260,7 @@ To customize how **Explain Branch Changes** works, go to <kbd>Preferences > GitK
 
 GitKraken AI can suggest a resolution for a merge conflict. To combine the branches of two coding agents that worked in parallel, see [Resolve Merge Conflicts Between AI Agent Branches](/gitkraken-desktop/agent-merge-conflicts/).
 
-<div class='callout callout--basic'>
-  <p><strong>Use AI conflict resolution when:</strong> you want a suggested starting point for resolving a conflict and plan to review the result carefully. <strong>Do not use it when:</strong> the conflict involves sensitive logic or policy decisions that require a fully manual resolution.</p>
-</div>
+> **Note:** **Use AI conflict resolution when:** you want a suggested starting point for resolving a conflict and plan to review the result carefully. <strong>Do not use it when:</strong> the conflict involves sensitive logic or policy decisions that require a fully manual resolution.
 
 When you hit a merge conflict, open the conflicted file, then click **Auto-resolve with AI** to get a suggested resolution.
 
@@ -386,9 +372,7 @@ To use your own API key with **OpenAI**, **Azure**, **Anthropic**, **Google Gemi
 
 If you have advanced security requirements, use a **Custom URL** to send AI requests to a private or internal service.
 
-<div class='callout callout--basic'>
-  <p><strong>GitKraken On-Premise users:</strong> If you are running GitKraken On-Premise Serverless or Self-Hosted Server, the default hosted provider is not reachable from your network. Custom URL is the only supported AI configuration in those environments.</p>
-</div>
+> **Note:** **GitKraken On-Premise users:** If you are running GitKraken On-Premise Serverless or Self-Hosted Server, the default hosted provider is not reachable from your network. Custom URL is the only supported AI configuration in those environments.
 
 A Custom URL endpoint can handle:
 - Commit explanations
@@ -478,7 +462,5 @@ To close the dialog without changing anything, click **Decide Later**. You can c
 
 ## What’s Next?
 
-<div class='callout callout--basic'>
-    <p>Have more questions about GitKraken AI? See the <a href="https://help.gitkraken.com/general/gitkraken-ai-faq">GitKraken AI FAQ</a>.</p>
-</div>
+> **Note:** Have more questions about GitKraken AI? See the <a href="https://help.gitkraken.com/general/gitkraken-ai-faq">GitKraken AI FAQ</a>.
 

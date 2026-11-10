@@ -32,9 +32,7 @@ In GitKraken Desktop, each coding agent session runs on its own branch in its ow
   <img src="/wp-content/uploads/GitKraken_Keif_agents.png" alt="" width="794" height="803" loading="lazy" style="flex:0 0 auto; max-height:200px; width:auto; height:auto; max-width:100%; margin:0 auto;">
 </div>
 
-<div class='callout callout--basic'>
-  <p><strong>On-premises note:</strong> Which coding agents you can run depends on your security policy, network access, and the CLIs your organization allows. OpenCode and Gemini CLI can run in fully air-gapped environments when you point them to an internal model endpoint. Claude Code, Codex CLI, Copilot CLI, and Cursor CLI are also supported when your organization permits them and the required services are reachable from your environment.</p>
-</div>
+> **Note:** **On-premises note:** Which coding agents you can run depends on your security policy, network access, and the CLIs your organization allows. OpenCode and Gemini CLI can run in fully air-gapped environments when you point them to an internal model endpoint. Claude Code, Codex CLI, Copilot CLI, and Cursor CLI are also supported when your organization permits them and the required services are reachable from your environment.
 
 <figure>
   <img src='/wp-content/uploads/gkd-agents-panel-overview-20260414.png' class="help-center-img img-bordered" alt="GitKraken Desktop with the Agents view open in the Left Panel, showing six worktree cards, two with a Waiting for input status, next to the Commit Graph and a terminal panel running Claude Code.">
@@ -114,9 +112,7 @@ The Agents view and List view use the same underlying worktrees. The difference 
 - Use **List view** when you want a branch-focused view.
 - Use the **Agents view** when you want an agent-focused view with status and quick actions.
 
-<div class='callout callout--basic'>
-      <p><strong>Why use the Agents view instead of only List view?</strong> The Agents view shows the same worktrees you already use in GitKraken Desktop, but it organizes them around agent activity such as progress, status, and actions. You can switch between <strong>List</strong> and <strong>Agents</strong> at any time without losing work.</p>
-</div>
+> **Note:** **Why use the Agents view instead of only List view?** The Agents view shows the same worktrees you already use in GitKraken Desktop, but it organizes them around agent activity such as progress, status, and actions. You can switch between <strong>List</strong> and <strong>Agents</strong> at any time without losing work.
 
 ***
 

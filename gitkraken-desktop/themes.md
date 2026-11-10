@@ -61,11 +61,7 @@ Use this page to change the GitKraken Desktop theme, sync the app with your syst
 Custom themes have been disabled as of version 11.8.0 while the UI is being modernized. Built-in themes remain available.
 
 ***
-<div class='callout callout--warning'>
-<notice info>
-  <p><strong>Note:</strong>Custom themes have been disabled in 11.8.0 as we modernize the UI for better performance and maintainability.</p>
-</notice>
-</div>
+> **Note:** Custom themes have been disabled in 11.8.0 as we modernize the UI for better performance and maintainability.
 
 ***
 ## How built-in themes work
@@ -112,9 +108,7 @@ Your custom theme will appear under <kbd>Preferences > UI Customization > Theme<
 
 Changes to your theme file take effect immediately—no need to restart GitKraken. If the file contains invalid syntax, GitKraken will revert to the default dark theme.
 
-<div class='callout callout--basic'>
-  <p><strong>Note:</strong> Theme files must follow correct JSONC formatting. Invalid files will be skipped and replaced by the default theme until corrected.</p>
-</div>
+> **Note:** Theme files must follow correct JSONC formatting. Invalid files will be skipped and replaced by the default theme until corrected.
 
 ***
 
@@ -145,12 +139,3 @@ See [LESS functions](https://lesscss.org/functions) for full documentation.
 Looking for inspiration? Some users share their custom themes online, such as the collection at [jonbunator.github.io/gitkraken-custom-themes](https://jonbunator.github.io/gitkraken-custom-themes). 
 
 Please note that this site is not affiliated with GitKraken, and we do not provide support for external or user-generated themes.
-
-<style>
-pre{position:relative;min-height:3em}
-.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;height:28px;padding:0 8px;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s;font-size:11px;font-family:sans-serif}
-pre:hover .copy-btn{opacity:1}
-.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
-.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
-</style>
-<script>(function(){var C='Copy',K='Copied!';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p,cl=el.cloneNode(true),bn=cl.querySelector('.copy-btn');if(bn)bn.remove();cp((cl.innerText||cl.textContent).trimEnd()).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>

@@ -81,9 +81,7 @@ To undo a commit, press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Z</kbd> or click t
 
 To create a commit, select your _Work in Progress_ (WIP) node to view file changes in the Commit Panel.
 
-<div class='callout callout--basic'>
-    <p><strong>Use this workflow when:</strong> you are recording a logical set of local changes that belong together in one commit. <strong>Don't use it when:</strong> your changes should be split into multiple commits first, or when you need to preserve published history without rewriting it.</p>
-</div>
+> **Note:** **Use this workflow when:** you are recording a logical set of local changes that belong together in one commit. <strong>Don't use it when:</strong> your changes should be split into multiple commits first, or when you need to preserve published history without rewriting it.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/select-WIP-2025.png' class="help-center-img img-bordered" alt="WIP node displayed at the top of the GitKraken Commit Graph with a file listed as modified but unstaged." />
@@ -140,9 +138,7 @@ Co-authors appear in the Commit Panel history:
 
 To skip Git hooks for a specific commit, enable the **Skip Git hooks** checkbox in the Commit Panel.
 
-<div class='callout callout--warning'>
-    <p><strong>Warning:</strong> Skipping this will bypass all configured Git hooks for the commit action.</p>
-</div>
+> **Warning:** Skipping this will bypass all configured Git hooks for the commit action.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/skip-commits-2025.png' class="help-center-img img-bordered" alt="GitKraken commit panel with 'Skip Git hooks' option enabled, showing a commit message and the commit button labeled to reflect skipping hooks." />
@@ -199,9 +195,7 @@ There are three ways to configure commit templates:
   git config --global commit.template <path_to_template>
   ```
 
-<div class='callout callout--basic'>
-    <p><strong>Note:</strong> Editing a global template within GitKraken Desktop causes it to create `gkcommittemplate.txt` locally and point your repository’s config to that file.</p>
-</div>
+> **Note:** Editing a global template within GitKraken Desktop causes it to create `gkcommittemplate.txt` locally and point your repository’s config to that file.
 
 ***
 
@@ -211,13 +205,10 @@ There are three ways to configure commit templates:
 
 GitKraken Desktop lets you modify the last commit by updating the message, adding new changes, or both.
 
-<div class='callout callout--basic'>
-    <p><strong>Use amend when:</strong> you need to fix the most recent commit before others depend on it. <strong>Don't use amend when:</strong> the commit is already shared and you want to avoid rewriting remote history for collaborators.</p>
-</div>
+> **Note:** **Use amend when:** you need to fix the most recent commit before others depend on it. <strong>Don't use amend when:</strong> the commit is already shared and you want to avoid rewriting remote history for collaborators.
 
-<div class='callout callout--warning'>
-    <p><strong>Warning:</strong> If you have already pushed the commit, amending it changes history and requires a force push to update the remote branch.</p>
-</div>
+
+> **Warning:** If you have already pushed the commit, amending it changes history and requires a force push to update the remote branch.
 
 To include new changes:
 1. Modify files in your working directory.
@@ -247,9 +238,7 @@ To resize the commit message field, drag the bottom edge of the editor.
 
 Use the **Update Message** button to save changes, or **Cancel Amend** to discard them.
 
-<div class='callout callout--basic'>
-    <p><strong>Note:</strong> If you’ve already pushed a commit, amending it will require a force push to update the remote history.</p>
-</div>
+> **Note:** If you’ve already pushed a commit, amending it will require a force push to update the remote history.
 
 ***
 
@@ -259,9 +248,7 @@ Use the **Update Message** button to save changes, or **Cancel Amend** to discar
 
 Git uses a pointer called <code>HEAD</code> to track your current commit. Resetting updates <code>HEAD</code> to point to a specific commit in your history. GitKraken Desktop offers three reset types:
 
-<div class='callout callout--basic'>
-    <p><strong>Use reset when:</strong> you need to move local history to another commit and you understand whether you want to keep staged or working directory changes. <strong>Don't use reset when:</strong> you need a safe, shareable reversal of changes that are already published to a remote branch.</p>
-</div>
+> **Note:** **Use reset when:** you need to move local history to another commit and you understand whether you want to keep staged or working directory changes. <strong>Don't use reset when:</strong> you need a safe, shareable reversal of changes that are already published to a remote branch.
 
 - **Soft** — Moves <code>HEAD</code> to the selected commit and retains staged and working directory changes.
 - **Mixed** — Moves <code>HEAD</code>, unstages files, but retains working directory changes.
@@ -282,9 +269,7 @@ You can also drag and drop a branch onto another to initiate a reset, or use the
 
 GitKraken Desktop provides an **Undo** button to reverse recent actions that haven’t been pushed.
 
-<div class='callout callout--basic'>
-    <p><strong>Use Undo when:</strong> you want to reverse a recent local action that has not been pushed yet. <strong>Use Revert Commit when:</strong> the commit is already part of shared history and you need a new commit that reverses it safely.</p>
-</div>
+> **Note:** **Use Undo when:** you want to reverse a recent local action that has not been pushed yet. <strong>Use Revert Commit when:</strong> the commit is already part of shared history and you need a new commit that reverses it safely.
 
 <figure class='figure center'>
     <img src='/wp-content/uploads/undo-undo-2025.png' class="help-center-img img-bordered" alt="GitKraken interface showing Undo button highlighted with tooltip 'Undo Commit amend Updates the GitKraken commit documentation to reflect UI'." />
@@ -331,12 +316,3 @@ The file is placed into your working directory as a staged change, ready to incl
 </figure>
 
 To restore multiple files at once, hold <kbd>Shift</kbd> or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> to multi-select files in the Commit Panel, then right-click and select **Restore selected files from this commit**.
-
-<style>
-pre{position:relative;min-height:3em}
-.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;height:28px;padding:0 8px;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s;font-size:11px;font-family:sans-serif}
-pre:hover .copy-btn{opacity:1}
-.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
-.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
-</style>
-<script>(function(){var C='Copy',K='Copied!';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p,cl=el.cloneNode(true),bn=cl.querySelector('.copy-btn');if(bn)bn.remove();cp((cl.innerText||cl.textContent).trimEnd()).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>

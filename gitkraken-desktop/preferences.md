@@ -66,9 +66,7 @@ This section is labeled with your organization's name and shows its members and 
 - Invite users and assign licenses
 - Create and manage teams
 
-<div class='callout callout--warning'>
-  <p><strong>Note:</strong> Organization settings are available on the <strong>Pro</strong> plan and above.</p>
-</div>
+> **Note:** Organization settings are available on the <strong>Pro</strong> plan and above.
 
 ***
 
@@ -117,9 +115,7 @@ Control access and connections to remote repositories:
 
 ## How GitKraken AI preferences work
 
-<div class='callout callout--warning'>
-  <p>This feature is available for <strong>Pro</strong> plans or higher.</p>
-</div>
+> **Warning:** This feature is available for <strong>Pro</strong> plans or higher.
 
 Use [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai) to automate repetitive Git tasks.
 
@@ -130,9 +126,7 @@ When you reach your weekly credit limit, the card shows **You've reached your we
 - Organization Owners and Admins on a paid plan can click **Get more AI credits** to add credits.
 - Users on a trial can click **Upgrade to get more credits**.
 
-<div class='callout callout--basic'>
-  <p>See the <a href="https://help.gitkraken.com/general/gitkraken-ai-faq/">GitKraken AI FAQ</a> for common questions.</p>
-</div>
+> **Note:** See the <a href="https://help.gitkraken.com/general/gitkraken-ai-faq/">GitKraken AI FAQ</a> for common questions.
 
 ***
 
@@ -147,9 +141,7 @@ Configure your preferred editors, terminals, coding agent commands, and diff/mer
 - **Coding Agent**: Configure custom commands or arguments used when GitKraken Desktop starts a coding agent session. GitKraken Desktop detects the supported coding agent CLIs installed on your machine, such as Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, and OpenCode. You choose the coding agent for a session in the **Start an Agent Session** modal. In on-premises environments, available options depend on what your organization allows and can reach. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 - **Agent Status Integrations**: Install, reinstall, or uninstall the plugins that let Claude Code, Codex CLI, Copilot CLI, and OpenCode report live session status in the Agents view. See [How to manage agent status plugins and hooks](/gitkraken-desktop/agents/#how-to-manage-agent-status-plugins-and-hooks).
 
-<div class='callout callout--warning'>
-  <p><strong>macOS Note:</strong> Use the executable file, not the .app, when selecting a custom editor.</p>
-</div>
+> **Warning:** **macOS Note:** Use the executable file, not the .app, when selecting a custom editor.
 
 ***
 
@@ -159,9 +151,7 @@ Control product and marketing messages:
 - **Enable Desktop Notifications**
 - **Receive Marketing Notifications**
 
-<div class='callout callout--basic'>
-  <p><strong>Note:</strong> Only Pro, Advanced, Business, and Enterprise users can turn off marketing notifications.</p>
-</div>
+> **Note:** Only Pro, Advanced, Business, and Enterprise users can turn off marketing notifications.
 
 ***
 

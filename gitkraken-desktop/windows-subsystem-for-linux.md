@@ -70,13 +70,10 @@ To run Linux GUI apps, WSL 2 uses <a href="https://learn.microsoft.com/en-us/win
 
 GitKraken Desktop works with repositories stored on your WSL 2 file system when installed and launched inside the WSL environment. With <a href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps" target="_blank">WSLg</a>, GitKraken Desktop displays natively within Windows.
 
-<div class='callout callout--warning'>
-    <p><strong>Note:</strong> GitKraken Desktop does not support accessing repos across file systems. Install GitKraken Desktop on the OS where your repos are stored to avoid degraded performance or non-functional features.</p>
-</div>
+> **Note:** GitKraken Desktop does not support accessing repos across file systems. Install GitKraken Desktop on the OS where your repos are stored to avoid degraded performance or non-functional features.
 
-<div class='callout callout--warning'>
-    <p><strong>Coding agent note:</strong> If you use the Agents view in WSL, make sure the coding agent CLI you want to run is the one available in your WSL environment. In some cases, a Windows-installed coding agent can take precedence over a WSL-installed one, which can prevent the agent session from starting correctly. For more information, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.</p>
-</div>
+
+> **Warning:** **Coding agent note:** If you use the Agents view in WSL, make sure the coding agent CLI you want to run is the one available in your WSL environment. In some cases, a Windows-installed coding agent can take precedence over a WSL-installed one, which can prevent the agent session from starting correctly. For more information, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.
 
 GitKraken Desktop notifies you when you open a repository from the other environment. For more information, see [How cross-file-system access works in WSL 2](#how-cross-file-system-access-works-in-wsl-2).
 
@@ -239,17 +236,4 @@ You can choose:
 - **Open Repository Anyway**: Tries to open the repository, which may degrade performance or break features.
 - **Close**: Cancels the action.
 
-<div class='callout callout--warning'>
-    <p><strong>Note:</strong> GitKraken Desktop cannot detect cross-system access through mapped network drives, which can lead to unexpected behavior.</p>
-</div>
-
-
-
-<style>
-pre{position:relative;min-height:3em}
-.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;height:28px;padding:0 8px;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s;font-size:11px;font-family:sans-serif}
-pre:hover .copy-btn{opacity:1}
-.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
-.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
-</style>
-<script>(function(){var C='Copy',K='Copied!';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p,cl=el.cloneNode(true),bn=cl.querySelector('.copy-btn');if(bn)bn.remove();cp((cl.innerText||cl.textContent).trimEnd()).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>
+> **Note:** GitKraken Desktop cannot detect cross-system access through mapped network drives, which can lead to unexpected behavior.

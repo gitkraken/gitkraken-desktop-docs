@@ -50,9 +50,7 @@ Use this page to understand what GitKraken On-Premise Self-Hosted Server is, whe
   <figcaption style="text-align: center; color: #888;">Manage users and settings within your private GitKraken instance.</figcaption>
 </figure>
 
-<div class='callout callout--warning'>
-  <p><strong>Note:</strong> GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, see the <a href='https://www.gitkraken.com/git-client/on-premise-pricing?_gl=1*vtr4xk*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmv98H0EKgytPnuCPuTqdL2vy4GQaCsizBMO9m8mz2n1hMMXO3AAw7YaAiyKEALw_wcB?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
-</div>
+> **Note:** GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, see the <a href='https://www.gitkraken.com/git-client/on-premise-pricing?_gl=1*vtr4xk*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmv98H0EKgytPnuCPuTqdL2vy4GQaCsizBMO9m8mz2n1hMMXO3AAw7YaAiyKEALw_wcB?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.
 
 ## Feature support
 
@@ -192,6 +190,4 @@ To install Docker CE, the host system must meet Docker's requirements:
   - Xenial 16.04 (LTS)
   - Trusty 14.04 (LTS)
 
-<div class='callout callout--neutral'>
-  <p>To skip server installation and maintenance, see the <a href="/gitkraken-desktop/stand-alone/">Serverless option</a>.</p>
-</div>
+> **Note:** To skip server installation and maintenance, see the <a href="/gitkraken-desktop/stand-alone/">Serverless option</a>.

@@ -75,9 +75,7 @@ Push your branch to the remote first. Then use one of these:
 - Right-click the target branch and choose the same option
 - Click the <button class='button button--success button--ui button--nolink'>+</button> icon in the Left Panel PULL REQUESTS section
 
-<div class='callout callout--basic'>
-  <p><strong>Use GitKraken Desktop PR creation when:</strong> your branch is already pushed and you want to open or manage the PR without leaving the app. <strong>Do not start the PR yet when:</strong> the branch is not pushed, the target branch is still unclear, or you need provider-specific options not exposed in GitKraken Desktop.</p>
-</div>
+> **Note:** **Use GitKraken Desktop PR creation when:** your branch is already pushed and you want to open or manage the PR without leaving the app. <strong>Do not start the PR yet when:</strong> the branch is not pushed, the target branch is still unclear, or you need provider-specific options not exposed in GitKraken Desktop.
 
 <figure>
   <img src="/wp-content/uploads/create-pull-request-drag-and-drop-2025.gif" alt="User initiates a pull request in GitKraken Desktop by dragging a local branch (PM-34-docs-review-pr-page) onto the remote origin/main. The Create Pull Request dialog then appears, pre-filled with repository and branch information, ready for title, description, and assignee input." class="help-center-img img-bordered">
@@ -91,9 +89,7 @@ Push your branch to the remote first. Then use one of these:
   <figcaption style="text-align:center; color:#888">Create a pull request from the Left Panel</figcaption>
 </figure>
 
-<div class='callout callout'>
-  <p><strong>Note:</strong> If the Azure DevOps PR form is not populating, see <a href="https://help.gitkraken.com/gitkraken-desktop/azure-devops/#azure-devops-pull-requests-form-not-populating-in-gitkraken-desktop">Azure DevOps Integration</a>.</p>
-</div>
+> **Note:** If the Azure DevOps PR form is not populating, see <a href="https://help.gitkraken.com/gitkraken-desktop/azure-devops/#azure-devops-pull-requests-form-not-populating-in-gitkraken-desktop">Azure DevOps Integration</a>.
 
 ***
 
@@ -198,9 +194,7 @@ If the source and target branches have a merge conflict, the panel shows **Merge
 
 With the GitHub integration, select **Submit as draft** to create the pull request as a draft.
 
-<div class='callout callout--basic'>
-  <p><strong>Use a draft pull request when:</strong> you want early visibility or feedback before the branch is ready to merge. <strong>Do not mark it ready too early when:</strong> the implementation still needs major changes and you are not ready for formal review.</p>
-</div>
+> **Note:** **Use a draft pull request when:** you want early visibility or feedback before the branch is ready to merge. <strong>Do not mark it ready too early when:</strong> the implementation still needs major changes and you are not ready for formal review.
 
 <figure>
   <img src='/wp-content/uploads/create-draft-pr-2025@2x.png' 
@@ -217,9 +211,7 @@ With the GitHub integration connected, open GitHub Pull Request View in either o
 - Select a PR in the Left Panel
 - Click the PR icon in Launchpad
 
-<div class='callout callout--basic'>
-  <p><strong>Use GitHub Pull Request View when:</strong> you want to update PR metadata, check build status, or merge inside GitKraken Desktop. <strong>Do not rely on it for every review workflow when:</strong> your team depends on deeper provider-native review features outside the app.</p>
-</div>
+> **Note:** **Use GitHub Pull Request View when:** you want to update PR metadata, check build status, or merge inside GitKraken Desktop. <strong>Do not rely on it for every review workflow when:</strong> your team depends on deeper provider-native review features outside the app.
 
 <figure>
   <img src='/wp-content/uploads/github-pr-view-2025@2x.png' 
@@ -258,9 +250,7 @@ To start a review, use any of these:
 - In the graph or the Left Panel, right-click a branch that has a pull request and select **Review on GitKraken.dev**.
 - In Launchpad, select **Review Pull Request** in the pull request's actions.
 
-<div class='callout callout--warning'>
-  <p><strong>GitKraken On-Premise users:</strong> <strong>Review on GitKraken.dev</strong> and <strong>Review Pull Request</strong> are not available in Self-Hosted Server or Serverless deployments.</p>
-</div>
+> **Warning:** **GitKraken On-Premise users:** <strong>Review on GitKraken.dev</strong> and <strong>Review Pull Request</strong> are not available in Self-Hosted Server or Serverless deployments.
 
 In GitKraken Code Review, you can:
 - Read the pull request's diffs
@@ -364,9 +354,7 @@ Choose a merge strategy:
 - <kbd>Squash and merge</kbd>
 - <kbd>Rebase and merge</kbd>
 
-<div class='callout callout--basic'>
-  <p>If data appears out of sync, refresh GitKraken Desktop.</p>
-</div>
+> **Note:** If data appears out of sync, refresh GitKraken Desktop.
 
 ***
 

@@ -73,9 +73,7 @@ To use a local SSH agent instead of managing keys manually, enable **Use local S
 
 This is the default and most common method for interacting with remotes. It requires your Git username and password.
 
-<div class='callout callout--basic'>
-    <p><strong>Use HTTPS when:</strong> you want the simplest setup and your host supports standard username/password or token-based HTTPS access. <strong>Use SSH instead when:</strong> your environment already relies on SSH keys or you want to avoid repeated HTTPS credential prompts.</p>
-</div>
+> **Note:** **Use HTTPS when:** you want the simplest setup and your host supports standard username/password or token-based HTTPS access. <strong>Use SSH instead when:</strong> your environment already relies on SSH keys or you want to avoid repeated HTTPS credential prompts.
 
 ### How to clone with HTTPS
 
@@ -108,9 +106,7 @@ The remote tracking at `origin` is automatically set using this HTTPS format.
 
 Before cloning via SSH, you must first set up your SSH keys in GitKraken Desktop.
 
-<div class='callout callout--basic'>
-    <p><strong>Use SSH when:</strong> your host or team standard is key-based authentication and you want reusable key-based access across repositories.</p>
-</div>
+> **Note:** **Use SSH when:** your host or team standard is key-based authentication and you want reusable key-based access across repositories.
 
 ### How to set up SSH keys
 
@@ -160,9 +156,7 @@ Use this format:
 
 Using a local agent can simplify SSH management, especially across multiple profiles. From <kbd><strong>Preferences > SSH</strong></kbd>, check _Use local SSH agent_.
 
-<div class='callout callout--basic'>
-    <p><strong>Use a local SSH agent when:</strong> your keys are already loaded and you want GitKraken Desktop to reuse them. <strong>Don't use it when:</strong> your platform setup depends on agent behavior or alias configuration GitKraken Desktop does not support directly.</p>
-</div>
+> **Note:** **Use a local SSH agent when:** your keys are already loaded and you want GitKraken Desktop to reuse them. <strong>Don't use it when:</strong> your platform setup depends on agent behavior or alias configuration GitKraken Desktop does not support directly.
 
 > Tip: This allows automatic key usage if already loaded in your system's agent.
 

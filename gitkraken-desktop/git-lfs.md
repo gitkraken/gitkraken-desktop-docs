@@ -103,9 +103,7 @@ Make sure the following are installed:
 - Git LFS version `3.0.0+`
 - GitKraken Desktop version `7.0.0+`
 
-<div class='callout callout--success'>
-    <p><strong>Note:</strong> GitKraken Desktop usually does not require <a href="https://git-scm.com/">Git</a>. However, to use Git LFS, Git must be installed.</p>
-</div>
+> **Note:** GitKraken Desktop usually does not require <a href="https://git-scm.com/">Git</a>. However, to use Git LFS, Git must be installed.
 
 ### How to verify the installation
 
@@ -224,9 +222,7 @@ To track a file:
   <figcaption style="text-align: center; color: #888">LFS file tracking menu.</figcaption>
 </figure>
 
-<div class='callout callout--success'>
-    <p><strong>Note:</strong> GitKraken Desktop runs an LFS pull automatically after clone or submodule init.</p>
-</div>
+> **Note:** GitKraken Desktop runs an LFS pull automatically after clone or submodule init.
 
 Files tracked by LFS will show an LFS tag in the Commit Panel:
 
@@ -289,12 +285,3 @@ To use Git LFS in GitKraken Desktop:
 4. Commit and push as usual.
 
 Need more? Visit the [Git LFS GitHub](https://github.com/git-lfs/git-lfs).
-
-<style>
-pre{position:relative;min-height:3em}
-.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;height:28px;padding:0 8px;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s;font-size:11px;font-family:sans-serif}
-pre:hover .copy-btn{opacity:1}
-.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
-.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
-</style>
-<script>(function(){var C='Copy',K='Copied!';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p,cl=el.cloneNode(true),bn=cl.querySelector('.copy-btn');if(bn)bn.remove();cp((cl.innerText||cl.textContent).trimEnd()).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>

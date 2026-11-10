@@ -36,9 +36,7 @@ Use this page to complete the first-time configuration of GitKraken Self-Hosted 
 - The Super User account manages the server, does not consume a user license, and cannot sign in to GitKraken Desktop directly.
 - LDAP setup requires server connection details, group mappings, and user attribute mappings before users can authenticate successfully.
 
-<div class='callout callout--warning'>
-  <p>GitKraken Desktop Self-Hosted and On-Premise Serverless products are sold separately from standard subscriptions. Visit our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?source=help_center&product=gitkraken'>On-Premise Pricing</a> page to learn more.</p>
-</div>
+> **Warning:** GitKraken Desktop Self-Hosted and On-Premise Serverless products are sold separately from standard subscriptions. Visit our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?source=help_center&product=gitkraken'>On-Premise Pricing</a> page to learn more.
 
 ***
 
@@ -138,9 +136,7 @@ Provide the DN of a search user account with read access to users and groups:
 <figcaption style="text-align: center; color: #888">Designate an LDAP search user account</figcaption>
 </figure>
 
-<div class='callout callout--warning'>
-  <p>Note: The Domain Search Password field will always appear blank, even when a value is set.</p>
-</div>
+> **Note:** The Domain Search Password field will always appear blank, even when a value is set.
 
 Enable the Sync Server if you want GitKraken to regularly sync with LDAP:
 
@@ -184,9 +180,7 @@ The Super User is the license owner of GitKraken Self-Hosted. This account:
 <figcaption style="text-align: center; color: #888">Define the Super User account</figcaption>
 </figure>
 
-<div class='callout callout--neutral'>
-  <p>Note: To reset the Super User password, visit the <a href="/enterprise/upgrade-enterprise/#reset-the-super-user-password">upgrade guide</a>.</p>
-</div>
+> **Note:** To reset the Super User password, visit the <a href="/enterprise/upgrade-enterprise/#reset-the-super-user-password">upgrade guide</a>.
 
 Configuration is now complete! You should see the 'Manage Users' screen, where you can begin adding users.
 

@@ -75,9 +75,7 @@ To add a remote:
   </figcaption>
 </figure>
 
-<div class='callout callout--warning'>
-  <p><strong>Note:</strong> Integration dropdowns show forks only. For non-fork remotes, use the URL option.</p>
-</div>
+> **Note:** Integration dropdowns show forks only. For non-fork remotes, use the URL option.
 
 If the current repository is a shallow clone, the **Add Remote** dialog includes shallow clone options (depth, since date, and custom flags) so the new remote is fetched with the same depth constraints as the original clone.
 
@@ -105,9 +103,7 @@ To push local commits to a remote branch:
 
 If a remote branch doesn’t exist yet, GitKraken will prompt you to name and create it.
 
-<div class='callout callout--warning'>
-  <p><strong>Caution:</strong> If fast-forwarding fails, GitKraken may offer a <kbd>Force Push</kbd> option. Use with care.</p>
-</div>
+> **Caution:** If fast-forwarding fails, GitKraken may offer a <kbd>Force Push</kbd> option. Use with care.
 
 ### How drag-and-drop push works
 Drag a branch onto a remote branch (in the graph or Left Panel) to trigger a push.

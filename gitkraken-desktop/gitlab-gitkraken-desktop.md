@@ -67,17 +67,13 @@ After you connect, GitKraken Desktop shows your GitLab repositories when you clo
 - Create and manage pull requests in GitKraken Desktop.
 - Work with [GitLab Issues](/integrations/gitlab-issues/) alongside your code.
 
-<div class='callout callout--warning'>
-  <p><strong>Note:</strong> The <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">GitKraken Community plan</a> only supports public repositories.</p>
-</div>
+> **Note:** The <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">GitKraken Community plan</a> only supports public repositories.
 
 ***
 
 ## How to connect the GitLab integration
 
-<div class='callout callout--basic'>
-  <p><strong>Before you start:</strong> sign in to your GitKraken account. GitLab connects through your GitKraken account, so you can also use the connection on your other computers and profiles. See <a href="/gitkraken-desktop/integrations/#how-integrations-connect-through-your-gitkraken-account">How integrations connect through your GitKraken account</a>.</p>
-</div>
+> **Note:** **Before you start:** sign in to your GitKraken account. GitLab connects through your GitKraken account, so you can also use the connection on your other computers and profiles. See <a href="/gitkraken-desktop/integrations/#how-integrations-connect-through-your-gitkraken-account">How integrations connect through your GitKraken account</a>.
 
 To authenticate with GitLab:
 
@@ -109,9 +105,7 @@ To authenticate with GitLab:
 
 ## How to generate an SSH key for GitLab
 
-<div class='callout callout'>
-  <p><strong>Note:</strong> GitKraken Desktop uses the SSH key listed in <kbd>Preferences > SSH</kbd> unless you configure a GitLab-specific key or enable your local SSH Agent.</p>
-</div>
+> **Note:** GitKraken Desktop uses the SSH key listed in <kbd>Preferences > SSH</kbd> unless you configure a GitLab-specific key or enable your local SSH Agent.
 
 After you connect GitLab, generate a new SSH key or upload an existing one:
 
@@ -128,9 +122,7 @@ After you connect GitLab, generate a new SSH key or upload an existing one:
 
 ## What GitLab OAuth enables in GitKraken Desktop
 
-<div class='callout callout--basic'>
-  <p><strong>Use the GitLab integration when:</strong> you want cloning, remotes, pull requests, and issue workflows tied directly to GitLab.com inside GitKraken Desktop. <strong>For self-managed GitLab:</strong> see <a href="/gitkraken-desktop/gitlab-self-hosted/">GitLab Self-Managed</a>.</p>
-</div>
+> **Note:** **Use the GitLab integration when:** you want cloning, remotes, pull requests, and issue workflows tied directly to GitLab.com inside GitKraken Desktop. <strong>For self-managed GitLab:</strong> see <a href="/gitkraken-desktop/gitlab-self-hosted/">GitLab Self-Managed</a>.
 
 With GitLab connected, you can:
 
@@ -156,6 +148,4 @@ You can still enter repository URLs manually.
 
 GitKraken Desktop supports 1 GitLab account per profile. With [profiles](/start-here/profiles) in GitKraken Pro, you can switch between multiple GitLab accounts.
 
-<div class='callout callout--basic'>
-  <p><strong>Use multiple profiles when:</strong> you need to switch between separate GitLab identities or organizations cleanly. <strong>Do not use multiple profiles when:</strong> one GitLab account already covers the repositories you need and profile switching would add unnecessary overhead.</p>
-</div>
+> **Note:** **Use multiple profiles when:** you need to switch between separate GitLab identities or organizations cleanly. <strong>Do not use multiple profiles when:</strong> one GitLab account already covers the repositories you need and profile switching would add unnecessary overhead.

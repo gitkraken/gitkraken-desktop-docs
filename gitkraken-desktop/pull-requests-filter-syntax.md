@@ -117,6 +117,4 @@ GitKraken Desktop supports some—but not all—filter options across integratio
 | Bitbucket Data Center | ✔        | ✔                  |          | ✔                                  |                                                               |
 | Azure DevOps          |          |                    | ✔        | ✔                                  |                                                               |
 
-<div class='callout callout--basic'>
-  <p><strong>Tip:</strong> Use filters in the pull request panel to narrow down by author, label, or merge target.</p>
-</div>
+> **Tip:** Use filters in the pull request panel to narrow down by author, label, or merge target.

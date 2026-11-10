@@ -40,9 +40,7 @@ Launchpad is also available in GitKraken On-Premise, with some differences. See 
 
 ***
 
-<div class='callout callout--warning'>
-  <p><strong>GitKraken On-Premise users:</strong> Step 3 below requires a Cloud Workspace, which is not available in Serverless or Self-Hosted Server deployments. Skip step 3 and connect your on-premises integrations (GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server, Azure DevOps Server, or Jira Data Center) in <kbd>Preferences &gt; Integrations</kbd> instead. For a full description of Launchpad feature differences in on-premises environments, see <a href="#how-on-premise-launchpad-differs-from-cloud-launchpad">How On-Premise Launchpad differs from Cloud Launchpad</a>.</p>
-</div>
+> **Warning:** **GitKraken On-Premise users:** Step 3 below requires a Cloud Workspace, which is not available in Serverless or Self-Hosted Server deployments. Skip step 3 and connect your on-premises integrations (GitHub Enterprise Server, GitLab Self-Managed, Bitbucket Server, Azure DevOps Server, or Jira Data Center) in <kbd>Preferences &gt; Integrations</kbd> instead. For a full description of Launchpad feature differences in on-premises environments, see <a href="#how-on-premise-launchpad-differs-from-cloud-launchpad">How On-Premise Launchpad differs from Cloud Launchpad</a>.
 
 ## Quick Start
 
@@ -111,9 +109,7 @@ Use the Launchpad tabs to choose what you see:
 - **WIPs**: Repositories with uncommitted changes.
 - **All**: Pull requests, issues, and WIPs together.
 
-<div class='callout callout--warning'>
-    <p><strong>Note:</strong> Cloud Workspaces are not available in GitKraken On-Premise. As a result, Launchpad does not show Cloud Workspace data in those environments. See <a href="#how-on-premise-launchpad-differs-from-cloud-launchpad">How On-Premise Launchpad differs from Cloud Launchpad</a>.</p>
-</div>
+> **Note:** Cloud Workspaces are not available in GitKraken On-Premise. As a result, Launchpad does not show Cloud Workspace data in those environments. See <a href="#how-on-premise-launchpad-differs-from-cloud-launchpad">How On-Premise Launchpad differs from Cloud Launchpad</a>.
 
 Pin or snooze items to control what you see first:
 
@@ -163,9 +159,7 @@ If you select **None** in the Workspace dropdown, Personal View still shows your
 
 ## How Team View works
 
-<div class='callout callout--warning'>
-  <p><strong>Note:</strong> Team View requires an Advanced plan or higher. Team View depends on Cloud Workspaces, so it is not available in GitKraken On-Premise.</p>
-</div>
+> **Note:** Team View requires an Advanced plan or higher. Team View depends on Cloud Workspaces, so it is not available in GitKraken On-Premise.
 
 Switch to Team View with the toggle in the top-right corner of Launchpad. Team View shows pull requests and issues that involve other people:
 
@@ -213,9 +207,7 @@ To delete a saved view:
 
 A saved view appears only in the mode (Team or Personal) where you created it.
 
-<div class='callout callout--basic'>
-  <p><strong>Note:</strong> Saved Views are not available in GitKraken On-Premise clients.</p>
-</div>
+> **Note:** Saved Views are not available in GitKraken On-Premise clients.
 
 
 ***
@@ -331,9 +323,7 @@ The **All** tab combines pull requests, issues, and WIPs for all repositories in
 
 The **Snoozed** tab lists the pull requests and issues you have snoozed. To unsnooze an item, click the <i class="fa-solid fa-snooze"></i> icon again.
 
-<div class='callout callout--basic'>
-  <p><strong>Note:</strong> Snoozing is available only with a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank" rel="noopener noreferrer">paid GitKraken subscription</a>.</p>
-</div>
+> **Note:** Snoozing is available only with a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank" rel="noopener noreferrer">paid GitKraken subscription</a>.
 
 ## How to filter by milestones and sprints
 

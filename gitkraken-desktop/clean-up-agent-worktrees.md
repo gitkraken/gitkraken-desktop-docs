@@ -33,9 +33,7 @@ GitKraken Desktop shows all of a repository's worktrees in one place, including 
 - Limits: **Remove worktree and delete branch** deletes the local branch even if its commits are not merged, and you cannot undo it.
 - Limits: You cannot remove the main worktree.
 
-<div class='callout callout--warning'>
-  <p>Removing a worktree also deletes its folder, including uncommitted and untracked files, once you confirm. Check the worktree before you remove it.</p>
-</div>
+> **Warning:** Removing a worktree also deletes its folder, including uncommitted and untracked files, once you confirm. Check the worktree before you remove it.
 
 ***
 

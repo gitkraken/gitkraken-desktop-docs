@@ -46,9 +46,7 @@ Use [Profiles](/start-here/profiles) to keep work and personal repositories sepa
 
 Each profile keeps its own Git config, preferences, and open tabs.
 
-<div class='callout callout--success'>
-  <p>Note: Access to multiple profiles requires a <a href="https://www.gitkraken.com/pricing" target="_blank">GitKraken subscription</a>.</p>
-</div>
+> **Note:** Access to multiple profiles requires a <a href="https://www.gitkraken.com/pricing" target="_blank">GitKraken subscription</a>.
 
 ***
 
