@@ -27,9 +27,7 @@ custom_fields:
 
 Use this page to monitor what teammates are currently working on in GitKraken Desktop so you can spot overlapping edits and potential conflicts earlier. Team View shows each teammate’s checked-out branch, local file changes, and activity status, and it is available on Advanced subscription tiers or higher.
 
-<div class='callout callout--warning'>
-    <p><strong>Note:</strong> Team View is only available for Advanced subscription tiers or higher. See the <a href="/start-here/teams/">Teams</a> page for more information on managing teams.</p>
-</div>
+> **Note:** Team View is only available for Advanced subscription tiers or higher. See the <a href="/start-here/teams/">Teams</a> page for more information on managing teams.
 
 **Requirements and limits**
 - Plan: Advanced subscription tier or higher
@@ -66,9 +64,7 @@ Team View requires an Advanced plan or higher. Access it from the Team icon in t
 
 Select any team you're a member of from the Team dropdown. You can also choose a team for the repository in <kbd>Preferences > Team</kbd>, and optionally check <em>Use this as the default for all repositories</em>.
 
-<div class='callout callout--basic'>
-  <p><strong>Use Team View when:</strong> you want early visibility into teammate activity and overlapping local changes in the same repository. <strong>Don't use it as your only coordination mechanism when:</strong> the work requires broader planning or decisions that still need direct team communication.</p>
-</div>
+> **Note:** **Use Team View when:** you want early visibility into teammate activity and overlapping local changes in the same repository. <strong>Don't use it as your only coordination mechanism when:</strong> the work requires broader planning or decisions that still need direct team communication.
 
 For each team member, Team View displays their checked-out branch and any files with local, uncommitted changes.
 
@@ -92,9 +88,7 @@ Learn more about [how to create a team](/start-here/teams/).
 
 The <i class="fas fa-circle" style="color:green"></i> **status** icon appears on team member avatars to show who is currently active in GitKraken Desktop. This indicator is visible in both the Team View and the Organization section of Preferences.
 
-<div class='callout callout--basic'>
-  <p><strong>Use status indicators when:</strong> you want a lightweight signal of who is active or away in GitKraken Desktop. <strong>Don't treat them as a full availability guarantee when:</strong> you need confirmation that someone is ready to respond or review work.</p>
-</div>
+> **Note:** **Use status indicators when:** you want a lightweight signal of who is active or away in GitKraken Desktop. <strong>Don't treat them as a full availability guarantee when:</strong> you need confirmation that someone is ready to respond or review work.
 
 <figure>
   <img src="/wp-content/uploads/status-in-teams.png" class="help-center-img img-bordered" alt="Avatars with status circles in Team View">
@@ -114,9 +108,7 @@ Users can set their own status to “Active” or “Away” from the circle ico
 
 You can opt out of team sharing by disabling <em>Share work-in-progress status with my team</em> in <kbd>Preferences > General</kbd>.
 
-<div class='callout callout--basic'>
-  <p><strong>Opt out when:</strong> you do not want to share work-in-progress status with your team from this machine or repository context. <strong>Don't opt out when:</strong> your team relies on Team View to spot conflicts early and coordinate overlapping work.</p>
-</div>
+> **Note:** **Opt out when:** you do not want to share work-in-progress status with your team from this machine or repository context. <strong>Don't opt out when:</strong> your team relies on Team View to spot conflicts early and coordinate overlapping work.
 
 <figure>
   <img src="/wp-content/uploads/team-setting@2x.png" class="help-center-img img-bordered" alt="Setting to disable team sharing">

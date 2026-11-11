@@ -94,9 +94,7 @@ Flag suggestions are also supported:
   <figcaption style="text-align:center; color:#888">Flag suggestions for a Git command</figcaption>
 </figure>
 
-<div class='callout callout--warning'>
-    <p><strong>Note:</strong> Other autocomplete programs can conflict with the terminal and disable its suggestions. If suggestions do not appear, uninstall or disable those programs.</p>
-</div>
+> **Note:** Other autocomplete programs can conflict with the terminal and disable its suggestions. If suggestions do not appear, uninstall or disable those programs.
 
 ---
 

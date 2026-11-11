@@ -99,9 +99,7 @@ The **Repository** tab displays Git operations performed on the currently active
 
 Repository logs only reflect actions from the active repo.
 
-<div class='callout callout--warning'>
-    <p><strong>Note:</strong> For more detailed entries, go to <em>Preferences > General > Use extended logging in activity log</em>.</p>
-</div>
+> **Note:** For more detailed entries, go to <em>Preferences > General > Use extended logging in activity log</em>.
 
 Enabling extended logging adds more granularity, including details like Auto-fetch activity.
 

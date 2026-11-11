@@ -71,9 +71,7 @@ A diff displays lines added and removed from a file:
 - <span style='color: #d90171;'>Red</span> indicates removed lines.
 - <span style='color: #7bd938;'>Green</span> indicates added lines.
 
-<div class='callout callout--basic'>
-  <p><strong>Use the built-in diff when:</strong> you want to inspect changes, compare commits, or review file history directly in GitKraken Desktop. <strong>Use an external diff tool when:</strong> you need a specialized comparison workflow that is not covered well by the built-in viewer.</p>
-</div>
+> **Note:** **Use the built-in diff when:** you want to inspect changes, compare commits, or review file history directly in GitKraken Desktop. <strong>Use an external diff tool when:</strong> you need a specialized comparison workflow that is not covered well by the built-in viewer.
 
 <figure class='figure center'>
   <img src='/wp-content/uploads/diff-full-screen-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop showing a full-screen side-by-side diff of a markdown file, with syntax-highlighted line changes and a file activity panel listing added images.">
@@ -121,9 +119,7 @@ Select consecutive commits in the graph using <kbd>Shift</kbd> or <kbd>Cmd/Ctrl<
 
 Hunk View displays only the changed blocks of a file.
 
-<div class='callout callout--basic'>
-  <p><strong>Use Hunk View when:</strong> you want to focus only on changed blocks or revert a specific hunk quickly. <strong>Do not use it when:</strong> you need full-file context around the changes.</p>
-</div>
+> **Note:** **Use Hunk View when:** you want to focus only on changed blocks or revert a specific hunk quickly. <strong>Do not use it when:</strong> you need full-file context around the changes.
 
 <figure class='figure center'>
   <img src='/wp-content/uploads/hunk-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop displaying hunk view mode, focusing on a grouped block of code changes with syntax highlighting and minimal surrounding context.">
@@ -145,9 +141,7 @@ You revert only the hunk you choose, without a reset or manual edits.
 
 Inline View displays changes within the full context of the file.
 
-<div class='callout callout--basic'>
-  <p><strong>Use Inline View when:</strong> you want to read edits in the flow of the full file. <strong>Do not use it when:</strong> side-by-side comparison is easier for the change you are reviewing.</p>
-</div>
+> **Note:** **Use Inline View when:** you want to read edits in the flow of the full file. <strong>Do not use it when:</strong> side-by-side comparison is easier for the change you are reviewing.
 
 <figure class='figure center'>
   <img src='/wp-content/uploads/inline-annotated-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop displaying Inline View mode for file diffs, with added lines and a selected image insertion shown directly in context." />
@@ -158,9 +152,7 @@ Inline View displays changes within the full context of the file.
 
 Split View displays changes side-by-side, with the original file on the left and the updated version on the right.
 
-<div class='callout callout--basic'>
-  <p><strong>Use Split View when:</strong> you want to compare old and new content line-by-line. <strong>Do not use it when:</strong> you want a more compact, single-column review for small changes.</p>
-</div>
+> **Note:** **Use Split View when:** you want to compare old and new content line-by-line. <strong>Do not use it when:</strong> you want a more compact, single-column review for small changes.
 
 <figure class='figure center'>
   <img src='/wp-content/uploads/split-2025.png' class="help-center-img img-bordered" alt="Split View mode in GitKraken Desktop comparing changes between two versions of a file, highlighting additions, deletions, and updated image references side-by-side." />
@@ -184,9 +176,7 @@ To toggle word wrap, click the **Word Wrap** button in the toolbar of the diff v
 
 Configure an external diff tool in <em class='context-menu'>Preferences <i class='fa fa-caret-right'></i> External Tools</em>:
 
-<div class='callout callout--basic'>
-  <p><strong>Use an external diff tool when:</strong> you already rely on a supported third-party app or need its advanced comparison features. <strong>Do not use an external tool when:</strong> GitKraken Desktop's built-in diff already gives you the context and controls you need.</p>
-</div>
+> **Note:** **Use an external diff tool when:** you already rely on a supported third-party app or need its advanced comparison features. <strong>Do not use an external tool when:</strong> GitKraken Desktop's built-in diff already gives you the context and controls you need.
 
 <figure class='figure center'>
   <img src="/wp-content/uploads/external-diff-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop External Tools preferences showing dropdown to select an external diff tool, with options like FileMerge and Git Config Default." />
@@ -281,9 +271,7 @@ Use the toggle in the top-right to switch between <kbd>Diff View</kbd> (showing 
 
 ## How patch files work in GitKraken Desktop
 
-<div class='callout callout--basic'>
-    <p><strong>Use patches when:</strong> you need to share changes without pushing them to a remote. <strong>Do not rely on patches for binary files:</strong> GitKraken Desktop does not generate patches from binary files.</p>
-</div>
+> **Note:** **Use patches when:** you need to share changes without pushing them to a remote. <strong>Do not rely on patches for binary files:</strong> GitKraken Desktop does not generate patches from binary files.
 
 A patch (or patch file) records the differences between files. Use patches to share changes without pushing them to a remote repository.
 
@@ -333,15 +321,4 @@ To apply a patch:
   <figcaption style="text-align: center; color: #888;">Apply a patch from the file system.</figcaption>
 </figure>
 
-<div class='callout callout--basic'>
-    <p><strong>Note:</strong> GitKraken Desktop does not generate patches from binary files. Patch support is a preliminary feature. For feedback, contact the GitKraken <a href="https://www.gitkraken.com/git-client/contact-support?product=gitkraken&source=help_center">support team</a>.</p>
-</div>
-
-<style>
-pre{position:relative;min-height:3em}
-.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;height:28px;padding:0 8px;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s;font-size:11px;font-family:sans-serif}
-pre:hover .copy-btn{opacity:1}
-.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
-.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
-</style>
-<script>(function(){var C='Copy',K='Copied!';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p,cl=el.cloneNode(true),bn=cl.querySelector('.copy-btn');if(bn)bn.remove();cp((cl.innerText||cl.textContent).trimEnd()).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>
+> **Note:** GitKraken Desktop does not generate patches from binary files. Patch support is a preliminary feature. For feedback, contact the GitKraken <a href="https://www.gitkraken.com/git-client/contact-support?product=gitkraken&source=help_center">support team</a>.

@@ -86,9 +86,7 @@ When you sign in to your GitKraken account, GitKraken Desktop connects the Git h
 
 GitKraken Desktop skips integrations that are already connected. On the Community plan, it does not automatically connect integrations that need a paid plan, such as Azure DevOps. While the connection runs, the **Connect to** buttons in <kbd>Preferences > Integrations</kbd> show a loading indicator.
 
-<div class='callout callout--warning'>
-  <p><strong>Note:</strong> Self-hosted server integrations require a paid plan. GitLab Self-Managed is available on Pro and up, while GitHub Enterprise and Bitbucket Data Center require Advanced.</p>
-</div>
+> **Note:** Self-hosted server integrations require a paid plan. GitLab Self-Managed is available on Pro and up, while GitHub Enterprise and Bitbucket Data Center require Advanced.
 
 ***
 
@@ -104,9 +102,7 @@ To track your development tasks, connect GitKraken Desktop to these issue tracke
 - [GitHub Issues](/gitkraken-desktop/github-issues/)
 - [GitHub Enterprise Server Issues](/gitkraken-desktop/github-enterprise-issues/)
 
-<div class='callout callout--warning'>
-  <p><strong>Community plan limits:</strong> You can access only public repositories on GitHub and GitLab. Jira Cloud, GitHub Enterprise, GitLab Self-Managed, and Trello are view-only.</p>
-</div>
+> **Warning:** **Community plan limits:** You can access only public repositories on GitHub and GitLab. Jira Cloud, GitHub Enterprise, GitLab Self-Managed, and Trello are view-only.
 
 ***
 

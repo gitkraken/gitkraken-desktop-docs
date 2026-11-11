@@ -28,9 +28,7 @@ custom_fields:
 
 This page explains how GitKraken Desktop connects to GitHub Enterprise Server Issues so you can preview, filter, and create issues alongside your repository work. Use it when you already work with GitHub Enterprise Server and want issue access inside GitKraken Desktop instead of switching to the web interface.
 
-<div class='callout callout--basic'>
-    <p>The GitHub Enterprise Server Issues integration is view-only for Community users. To unlock full features, consider upgrading to a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center">paid GitKraken license</a>.</p>
-</div>
+> **Note:** The GitHub Enterprise Server Issues integration is view-only for Community users. To unlock full features, consider upgrading to a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center">paid GitKraken license</a>.
 
 **Requirements and limits**
 - Integration covered here: GitHub Enterprise Server Issues
@@ -44,9 +42,7 @@ This page explains how GitKraken Desktop connects to GitHub Enterprise Server Is
 
 ## What this integration requires
 
-<div class='callout callout--warning'>
-    <p>This integration requires GitHub Enterprise Server version 2.20.24 or newer.</p>
-</div>
+> **Warning:** This integration requires GitHub Enterprise Server version 2.20.24 or newer.
 
 ---
 
@@ -54,9 +50,7 @@ This page explains how GitKraken Desktop connects to GitHub Enterprise Server Is
 
 The GitHub Enterprise Server integration and GitHub Enterprise Server Issues integration share the same connection.
 
-<div class='callout callout--basic'>
-    <p><strong>Use GitHub Enterprise Server Issues in GitKraken Desktop when:</strong> you want enterprise issue context beside your repository workflow after connecting the base integration. <strong>Don't use this page when:</strong> you still need to set up the underlying GitHub Enterprise Server authentication first.</p>
-</div>
+> **Note:** **Use GitHub Enterprise Server Issues in GitKraken Desktop when:** you want enterprise issue context beside your repository workflow after connecting the base integration. <strong>Don't use this page when:</strong> you still need to set up the underlying GitHub Enterprise Server authentication first.
 
 You can set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
@@ -68,9 +62,7 @@ Follow these [GitHub Enterprise authentication steps](/integrations/github-enter
 
 Once connected, this integration offers the same features as the GitHub Issues integration:
 
-<div class='callout callout--basic'>
-    <p><strong>Use the in-app issue workflow when:</strong> you want preview, filtering, and issue-based actions inside GitKraken Desktop. <strong>Don't rely on it alone when:</strong> you need broader enterprise issue-management features outside the workflow covered here.</p>
-</div>
+> **Note:** **Use the in-app issue workflow when:** you want preview, filtering, and issue-based actions inside GitKraken Desktop. <strong>Don't rely on it alone when:</strong> you need broader enterprise issue-management features outside the workflow covered here.
 
 - [Preview GitHub Issues](/integrations/github-issues/#preview-github-issues)
 - [View and Edit GitHub Issue Details](/integrations/github-issues/#view-and-edit-github-issue-details)

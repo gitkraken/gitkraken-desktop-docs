@@ -69,9 +69,7 @@ If you want to use advanced features such as the terminal, experimental tools, o
 
 Below are platform-specific installation instructions and system requirements.
 
-<div class='callout callout--basic'>
-    <p>Looking for <em>GitKraken On-Premise Self-Hosted</em> installation instructions? Please begin with our <a href="/enterprise/system-requirements">On-Premise System Requirements</a> page.</p>
-</div>
+> **Note:** Looking for <em>GitKraken On-Premise Self-Hosted</em> installation instructions? Please begin with our <a href="/enterprise/system-requirements">On-Premise System Requirements</a> page.
 
 ---
 
@@ -142,9 +140,7 @@ or using the shorthand:
 - **.deb**: Ubuntu 18.04+ LTS or Debian 10+
 - **.rpm**: RHEL 8+ or Fedora 39+
 
-<div class='callout callout--warning'>
-    <p>Note 📝 - GitKraken Desktop officially supports Ubuntu 18.04+ LTS, RHEL 8+, and Fedora 39+. While it may run on other distributions, compatibility is not guaranteed.</p>
-</div>
+> **Warning:** Note 📝 - GitKraken Desktop officially supports Ubuntu 18.04+ LTS, RHEL 8+, and Fedora 39+. While it may run on other distributions, compatibility is not guaranteed.
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Cx4aQzlMSw4?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -211,13 +207,3 @@ gitkraken
 ```
 
 You’re now ready to start using GitKraken! For help getting started with repositories, branches, and remotes, check out the [Getting Started Guide](https://help.gitkraken.com/gitkraken-client/introduction-to-gitkraken-client/).
-
-
-<style>
-pre{position:relative;min-height:3em}
-.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;height:28px;padding:0 8px;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s;font-size:11px;font-family:sans-serif}
-pre:hover .copy-btn{opacity:1}
-.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
-.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
-</style>
-<script>(function(){var C='Copy',K='Copied!';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p,cl=el.cloneNode(true),bn=cl.querySelector('.copy-btn');if(bn)bn.remove();cp((cl.innerText||cl.textContent).trimEnd()).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>

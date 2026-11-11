@@ -103,9 +103,7 @@ Branches with a Gitflow prefix appear in the **GITFLOW** section of the Left Pan
   <figcaption style="text-align: center; color: #888">Branch name prefixes.</figcaption>
 </figure>
 
-<div class='callout callout--basic'>
-    <p><strong>Note:</strong> The <strong>GITFLOW</strong> section groups feature, release, and hotfix branches into separate folders.</p>
-</div>
+> **Note:** The <strong>GITFLOW</strong> section groups feature, release, and hotfix branches into separate folders.
 
 To publish a Gitflow branch, push it to a remote the same way as any other branch.
 

@@ -28,9 +28,7 @@ custom_fields:
 
 Use this page to upgrade GitKraken Self-Hosted Server, client installers, and license files when your deployment runs on Docker. It also covers the Super User password reset flow, so administrators can handle both standard upgrades and recovery tasks from the same procedure.
 
-<div class='callout callout--warning'>
-    <p><strong>Note:</strong> GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, see our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.</p>
-</div>
+> **Note:** GitKraken Desktop Self-Hosted and On-Premise Serverless versions are sold separately from standard subscriptions. To purchase, see our <a href='https://www.gitkraken.com/git-client/on-premise-pricing?source=help_center&product=gitkraken'>On-Premise Pricing</a> page.
 
 ***
 
@@ -166,12 +164,3 @@ To update your GitKraken Self-Hosted license:
    ```bash
    sudo docker-compose up
    ```
-
-<style>
-pre{position:relative;min-height:3em}
-.copy-btn{position:absolute;top:8px;right:8px;display:flex;align-items:center;justify-content:center;height:28px;padding:0 8px;background:rgba(128,128,128,.12);border:1px solid rgba(128,128,128,.2);border-radius:4px;cursor:pointer;color:#999;opacity:0;transition:opacity .15s,background .15s,color .15s;font-size:11px;font-family:sans-serif}
-pre:hover .copy-btn{opacity:1}
-.copy-btn:hover{background:rgba(128,128,128,.25);color:#555}
-.copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
-</style>
-<script>(function(){var C='Copy',K='Copied!';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p,cl=el.cloneNode(true),bn=cl.querySelector('.copy-btn');if(bn)bn.remove();cp((cl.innerText||cl.textContent).trimEnd()).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>

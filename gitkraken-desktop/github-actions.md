@@ -40,9 +40,7 @@ GitHub Actions workflows in GitKraken Desktop are managed by editing the YAML fi
 
 ***
 
-<div class='callout callout--warning'>
-  <p><strong>Deprecation notice 🧟 — GitKraken Desktop 11.10:</strong> GitHub Actions has been removed from the Left Panel to simplify navigation. Existing workflows will continue to run normally. To update workflow files, edit and commit them directly within your repository.</p>
-</div>
+> **Warning:** **Deprecation notice 🧟 — GitKraken Desktop 11.10:** GitHub Actions has been removed from the Left Panel to simplify navigation. Existing workflows will continue to run normally. To update workflow files, edit and commit them directly within your repository.
 
 
 ## Quick Start

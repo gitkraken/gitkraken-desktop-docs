@@ -86,7 +86,7 @@ The main toolbar has buttons for common repository actions, including Undo, Redo
 * Pull (fast-forward only): same as `git fetch && git merge --ff-only`
 * Pull (rebase): same as `git fetch && git rebase`
 
-<div class='callout callout--basic'><p><strong>Tip:</strong> Click the <i class="fa fa-circle"></i> next to a pull type to make it the default. The selected default displays a <i class="fa fa-dot-circle"></i>.</p></div>
+> **Tip:** Click the <i class="fa fa-circle"></i> next to a pull type to make it the default. The selected default displays a <i class="fa fa-dot-circle"></i>.
 
 ### Branch actions
 
@@ -107,7 +107,7 @@ The main toolbar has buttons for common repository actions, including Undo, Redo
 | --- | --- | --- |
 | <img alt="" src='/wp-content/uploads/gk-lfs-icon.svg' class='img-responsive' style='width: 36px; height: 36px; object-fit: contain;'> | **LFS** | This button appears if <a href="/gitkraken-desktop/git-lfs/">LFS</a> is enabled for your repository. |
 
-<div class='callout callout--basic'><p><strong>Note:</strong> To show labels under the toolbar icons, go to <kbd><strong>Preferences > UI Customization</strong></kbd> and enable <code>Show toolbar icon labels</code>.</p></div>
+> **Note:** To show labels under the toolbar icons, go to <kbd><strong>Preferences > UI Customization</strong></kbd> and enable <code>Show toolbar icon labels</code>.
 
 ***
 
@@ -131,9 +131,7 @@ To switch the Left Panel mode, use the `List | Agents` segmented control at the 
 
 To hide the segmented control, go to <kbd>Preferences > UI Customization</kbd>. For general worktree management, see [Manage Git Worktrees in GitKraken Desktop](/gitkraken-desktop/worktrees/).
 
-<div class='callout callout--basic'>
-    <p><strong>List view and the Agents view use the same underlying worktrees.</strong> Use List view for general branch and worktree management. Use the Agents view for coding agent sessions, agent status, and related quick actions.</p>
-</div>
+> **Note:** **List view and the Agents view use the same underlying worktrees.** Use List view for general branch and worktree management. Use the Agents view for coding agent sessions, agent status, and related quick actions.
 
 For in-app terminal behavior, worktree-specific terminal sessions, and manual coding agent workflows, see [GitKraken Terminal Guide](/gitkraken-desktop/terminal/).
 

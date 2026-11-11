@@ -77,9 +77,7 @@ With the GitHub integration, you can:
 * Add remotes for GitHub repositories
 * Create and work with [pull requests](/working-with-repositories/pull-requests/#how-assignees-labels-and-reviewers-work)
 
-<div class='callout callout--warning'>
-    <p>Note: The <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">GitKraken Community plan</a> only supports public repositories.</p>
-</div>
+> **Note:** The <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">GitKraken Community plan</a> only supports public repositories.
 
 ***
 
@@ -87,9 +85,7 @@ With the GitHub integration, you can:
 
 GitKraken Desktop signs you in through your browser on GitKraken.dev.
 
-<div class='callout callout--basic'>
-    <p><strong>Use GitHub sign-in when:</strong> you want GitHub to be your primary GitKraken Desktop identity and login path. <strong>Do not use sign-in as your only setup step when:</strong> you also need repository-level integration settings such as SSH key management or multiple profiles.</p>
-</div>
+> **Note:** **Use GitHub sign-in when:** you want GitHub to be your primary GitKraken Desktop identity and login path. <strong>Do not use sign-in as your only setup step when:</strong> you also need repository-level integration settings such as SSH key management or multiple profiles.
 
 To sign in with your GitHub account:
 
@@ -140,9 +136,7 @@ When the connection is complete, the GitHub card shows **Connected to your GitHu
 
 ### How to generate an SSH key for GitHub
 
-<div class='callout callout'>
-    <p>Note 📝 GitKraken Desktop uses your SSH key defined in <kbd><i>Preferences <i class='fa fa-caret-right'></i> SSH</i></kbd> unless a GitHub-specific SSH key or your local SSH Agent is configured.</p>
-</div>
+> **Note:** Note 📝 GitKraken Desktop uses your SSH key defined in <kbd><i>Preferences <i class='fa fa-caret-right'></i> SSH</i></kbd> unless a GitHub-specific SSH key or your local SSH Agent is configured.
 
 To generate and add an SSH key to your GitHub account:
 
@@ -163,9 +157,7 @@ You can also:
 ***
 ## What GitHub OAuth enables in GitKraken Desktop
 
-<div class='callout callout--basic'>
-    <p><strong>Use the GitHub integration when:</strong> you want repository discovery, PR creation, and GitHub-aware workflows directly inside GitKraken Desktop. <strong>Use GitKraken Code Review when:</strong> you need to review a pull request's code. Click <strong>Review on GitKraken.dev</strong> to open it in your browser.</p>
-</div>
+> **Note:** **Use the GitHub integration when:** you want repository discovery, PR creation, and GitHub-aware workflows directly inside GitKraken Desktop. <strong>Use GitKraken Code Review when:</strong> you need to review a pull request's code. Click <strong>Review on GitKraken.dev</strong> to open it in your browser.
 
 With GitHub connected, you can:
 
@@ -206,9 +198,7 @@ Create and manage [pull requests](/working-with-repositories/pull-requests/#how-
 
 On GitHub.com repositories, use **Pull Request View** in GitKraken Desktop to view and edit pull requests.
 
-<div class='callout callout--basic'>
-    <p><strong>Use Pull Request View when:</strong> you want to edit PR metadata, check build status, or merge without leaving GitKraken Desktop. <strong>Use GitKraken Code Review when:</strong> you want to review the code in the pull request.</p>
-</div>
+> **Note:** **Use Pull Request View when:** you want to edit PR metadata, check build status, or merge without leaving GitKraken Desktop. <strong>Use GitKraken Code Review when:</strong> you want to review the code in the pull request.
 
 To open Pull Request View:
 
@@ -284,9 +274,7 @@ To merge a pull request:
     <figcaption style="text-align:center;color:#888">Merge options in GitKraken Desktop</figcaption>
 </figure>
 
-<div class='callout callout--basic'>
-  <p>If Pull Request View does not show recent updates, refresh GitKraken Desktop.</p>
-</div>
+> **Note:** If Pull Request View does not show recent updates, refresh GitKraken Desktop.
 
 ### How to fix missing repositories or remotes
 

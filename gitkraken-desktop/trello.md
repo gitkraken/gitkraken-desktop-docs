@@ -56,9 +56,7 @@ Use this page to connect GitKraken Desktop to Trello so you can preview, create,
     <iframe width="560" height="315" src="https://www.youtube.com/embed/huH2nZaGG-s" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<div class='callout callout--basic'>
-    <p>The Trello integration is view-only for Community users. To use all features, upgrade to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken subscription</a>.</p>
-</div>
+> **Note:** The Trello integration is view-only for Community users. To use all features, upgrade to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken subscription</a>.
 
 ---
 
@@ -66,9 +64,7 @@ Use this page to connect GitKraken Desktop to Trello so you can preview, create,
 
 Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
-<div class='callout callout--basic'>
-    <p><strong>Use the Trello integration when:</strong> your team tracks work in Trello and you want cards visible beside your repository workflow. <strong>Do not use it as a full replacement for Trello when:</strong> you need broader board management features outside the card workflows covered here.</p>
-</div>
+> **Note:** **Use the Trello integration when:** your team tracks work in Trello and you want cards visible beside your repository workflow. <strong>Do not use it as a full replacement for Trello when:</strong> you need broader board management features outside the card workflows covered here.
 
 <figure>
   <img src="/wp-content/uploads/connect-trello-2025@2x.png" class="help-center-img img-bordered" alt="Connect Trello integration in Preferences">
@@ -139,9 +135,7 @@ Fields marked with <code>*</code> are required. GitKraken Desktop syncs the card
 
 You can use Trello’s filter syntax to create custom filters for your cards.
 
-<div class='callout callout--basic'>
-    <p><strong>Use custom card filters when:</strong> you need to focus on a board, list, label, or member-specific queue. <strong>Do not rely on the default All Cards view when:</strong> it mixes too much unrelated work together.</p>
-</div>
+> **Note:** **Use custom card filters when:** you need to focus on a board, list, label, or member-specific queue. <strong>Do not rely on the default All Cards view when:</strong> it mixes too much unrelated work together.
 
 <figure>
   <img src="/wp-content/uploads/trello-create-filter-2025@2x.png" class="help-center-img img-bordered" alt="Create Trello filter">
@@ -156,9 +150,7 @@ See Trello’s [filtering guide](https://help.trello.com/article/808-searching-f
 
 To create a branch tied to a card, click <strong>Create branch</strong> in the card detail view, or right-click the card.
 
-<div class='callout callout--basic'>
-    <p><strong>Use card-based branch creation when:</strong> the branch should map directly to one Trello card. <strong>Do not use it when:</strong> the branch covers several cards or needs a branch name that should not be derived from the card title.</p>
-</div>
+> **Note:** **Use card-based branch creation when:** the branch should map directly to one Trello card. <strong>Do not use it when:</strong> the branch covers several cards or needs a branch name that should not be derived from the card title.
 
 <figure>
   <img src="/wp-content/uploads/create-branch-jira-integration.gif" class="help-center-img img-bordered" alt="Create branch from Trello card">

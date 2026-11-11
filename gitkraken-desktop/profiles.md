@@ -77,17 +77,13 @@ Multiple profiles require a paid GitKraken subscription. Profiles are accessible
   <figcaption style="text-align:center; color:#888">Set your email address to view your Gravatar preview.</figcaption>
 </figure>
 
-<div class='callout callout--success'>
-    <p>Create and switch between multiple profiles with a <a href="https://www.gitkraken.com/pricing" target="_blank">GitKraken subscription</a>.</p>
-</div>
+> **Tip:** Create and switch between multiple profiles with a <a href="https://www.gitkraken.com/pricing" target="_blank">GitKraken subscription</a>.
 
 ***
 
 ## How to manage profiles
 
-<div class='callout callout--basic'>
-  <p><strong>Use profiles when:</strong> you need clean separation between work and personal Git identities, integrations, and tabs. <strong>Don't use multiple profiles when:</strong> one identity and one integration set already cover your workflow.</p>
-</div>
+> **Note:** **Use profiles when:** you need clean separation between work and personal Git identities, integrations, and tabs. <strong>Don't use multiple profiles when:</strong> one identity and one integration set already cover your workflow.
 
 <figure>
   <img src="/wp-content/uploads/profiles-preferences@2x.png" class="help-center-img img-bordered" alt="GitKraken Preferences showing Profiles tab with profile details including name, author info, and organization." />
@@ -112,9 +108,7 @@ Each profile retains settings under:
 
 Profiles support unique integration connections. For example, use separate profiles to connect different GitHub accounts.
 
-<div class='callout callout--basic'>
-  <p><strong>Use separate profiles when:</strong> you want integrations, UI settings, and open tabs isolated by context. <strong>Don't expect profiles to be lightweight if:</strong> constantly duplicating and switching tabs would slow down your workflow more than it helps.</p>
-</div>
+> **Note:** **Use separate profiles when:** you want integrations, UI settings, and open tabs isolated by context. <strong>Don't expect profiles to be lightweight if:</strong> constantly duplicating and switching tabs would slow down your workflow more than it helps.
 
 <figure>
   <img src="/wp-content/uploads/profile-example-2025.png" class="help-center-img img-bordered" alt="List of three GitKraken profiles showing author names and emails, with notes indicating connection to different GitHub accounts for work and personal use.">
@@ -125,9 +119,7 @@ Profiles support unique integration connections. For example, use separate profi
 
 If connected to [GitHub](/gitkraken-desktop/github-gitkraken-desktop/), [GitHub Enterprise Server](/gitkraken-desktop/github-enterprise/),[GitLab](/gitkraken-desktop/gitlab-gitkraken-desktop/), [GitLab Self-Managed](/gitkraken-desktop/gitlab-self-hosted/), [Azure DevOps](/gitkraken-desktop/azure-devops/), or [Bitbucket](/gitkraken-desktop/bitbucket/) your avatar will match your GitHub profile. Otherwise, GitKraken Desktop uses the [Gravatar](https://gravatar.com) linked to your profile’s email address.
 
-<div class='callout callout--basic'>
-  <p><strong>Use provider avatars when:</strong> the profile is connected to a supported integration and you want that service's identity reflected in GitKraken Desktop. <strong>Use separate Gravatar-backed emails when:</strong> you need profiles to display different non-provider avatars.</p>
-</div>
+> **Note:** **Use provider avatars when:** the profile is connected to a supported integration and you want that service's identity reflected in GitKraken Desktop. <strong>Use separate Gravatar-backed emails when:</strong> you need profiles to display different non-provider avatars.
 
 To change your profile avatar:
 1. Click the profile icon in the top-right corner.

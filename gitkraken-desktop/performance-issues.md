@@ -96,6 +96,4 @@ It’s an easy check:
 
 
 
-<div class='callout callout--basic'>
-    <p><strong>Note:</strong> Performance issues may also be impacted by file system speed, antivirus scanning, or external integrations. If the above steps don’t help, reach out to <a href="https://help.gitkraken.com/gitkraken-desktop/contact-support/">GitKraken support</a>.</p>
-</div>
+> **Note:** Performance issues may also be impacted by file system speed, antivirus scanning, or external integrations. If the above steps don’t help, reach out to <a href="https://help.gitkraken.com/gitkraken-desktop/contact-support/">GitKraken support</a>.

@@ -43,9 +43,7 @@ Teams can be used for:
 - [Sharing a Workspace](/gitkraken-desktop/workspaces/#create-a-cloud-workspace): Manage and collaborate on a group of repositories. <em>Pro plan and above</em>
 - [Sharing a Cloud Patch](/gitkraken-desktop/experimental-features): Securely send a patch file to other team members.
 
-<div class='callout callout--basic'>
-  <p><strong>Note:</strong> Pro accounts are limited to 1 Team. Upgrade to an <a href="https://gitkraken.dev/subscription?source=help_center&product=gitkraken">Advanced or Business plan</a> to manage multiple Teams.</p>
-</div>
+> **Note:** Pro accounts are limited to 1 Team. Upgrade to an <a href="https://gitkraken.dev/subscription?source=help_center&product=gitkraken">Advanced or Business plan</a> to manage multiple Teams.
 
 ***
 

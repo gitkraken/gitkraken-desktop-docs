@@ -33,9 +33,7 @@ Use this page to see exactly what an AI coding agent changed in your repository 
 - Limits: Git does not record whether a person or an agent wrote a change, so give each agent its own session or branch.
 - Limits: AI summaries require a [paid GitKraken subscription](https://www.gitkraken.com/pricing?source=help_center&product=gitkraken). Reviewing diffs and undoing changes do not.
 
-<div class='callout callout--warning'>
-  <p>Discarding changes and hard resets remove work from the worktree you have open, including uncommitted changes that are not the agent's. Review the diff first.</p>
-</div>
+> **Warning:** Discarding changes and hard resets remove work from the worktree you have open, including uncommitted changes that are not the agent's. Review the diff first.
 
 ***
 
@@ -152,9 +150,7 @@ If the agent committed work you have not pushed, reset its branch to the last go
    - **Mixed** keeps the changes in your working directory, unstaged.
    - **Hard** removes the agent's commits and every uncommitted change in the worktree.
 
-<div class='callout callout--warning'>
-  <p><strong>Hard</strong> also deletes uncommitted changes in that worktree that the agent did not make. If you might want to keep any part of the work, start with <strong>Soft</strong> or <strong>Mixed</strong>.</p>
-</div>
+> **Warning:** **Hard** also deletes uncommitted changes in that worktree that the agent did not make. If you might want to keep any part of the work, start with <strong>Soft</strong> or <strong>Mixed</strong>.
 
 See [How to reset commits](/gitkraken-desktop/commits/#resetting-commits) for more on reset types.
 

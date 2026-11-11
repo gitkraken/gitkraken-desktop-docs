@@ -81,9 +81,7 @@ Interactive rebase is available only if:
 - Neither branch includes the repo’s initial commit
 - You’re not trying to rebase a parent onto a child (e.g., `main` onto `feature`)
 
-<div class='callout callout--note'>
-  <p><strong>Note:</strong> If you start the rebase in GitKraken Desktop, you must complete it there.</p>
-</div>
+> **Note:** If you start the rebase in GitKraken Desktop, you must complete it there.
 
 ***
 

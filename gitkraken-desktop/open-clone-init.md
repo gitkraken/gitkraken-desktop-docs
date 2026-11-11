@@ -196,9 +196,7 @@ To perform a sparse checkout when cloning:
 
 5. Click <button class='button button--success button--ui button--nolink'>Clone the repo!</button> to complete the clone.
 
-<div class='callout callout--basic'>
-  <p><strong>Note:</strong> Files at the root of the repository are always checked out regardless of the paths you specify.</p>
-</div>
+> **Note:** Files at the root of the repository are always checked out regardless of the paths you specify.
 
 #### How to configure sparse checkout on an existing repository
 
@@ -248,9 +246,7 @@ After initialization:
 - The repository opens in GitKraken Desktop.
 - The repository includes `README.md`, and optionally `.gitignore` and `LICENSE`.
 
-<div class='callout callout--success'>
-    <p>You can also initialize a repository directly to GitHub, Bitbucket, or other remote providers.</p>
-</div>
+> **Tip:** You can also initialize a repository directly to GitHub, Bitbucket, or other remote providers.
 
 ***
 ### How to customize Repository Management

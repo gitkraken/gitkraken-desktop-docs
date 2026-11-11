@@ -105,6 +105,4 @@ To resolve this:
     <figcaption style="text-align: center; color: #888;">Use Force Push to push squashed commits and rewrite remote history.</figcaption>
 </figure>
 
-<div class='callout callout--warning'>
-    <p><strong>Warning:</strong> Force pushing is a destructive action. It replaces remote history and can disrupt teammates working on the same branch. Use with caution.</p>
-</div>
+> **Warning:** Force pushing is a destructive action. It replaces remote history and can disrupt teammates working on the same branch. Use with caution.

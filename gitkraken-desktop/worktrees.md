@@ -87,9 +87,7 @@ Worktrees are useful when you want to:
 
 Once committed, changes in one worktree become visible in others.
 
-<div class='callout callout--basic'>
-  <p><strong>Using coding agents?</strong> The Agents view in GitKraken Desktop runs each agent session in its own Git worktree. If you want to run Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, or OpenCode in GitKraken Desktop, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.</p>
-</div>
+> **Note:** **Using coding agents?** The Agents view in GitKraken Desktop runs each agent session in its own Git worktree. If you want to run Claude Code, Codex CLI, Copilot CLI, Cursor CLI, Gemini CLI, or OpenCode in GitKraken Desktop, see <a href="/gitkraken-desktop/agents/">Coding Agents in GitKraken Desktop</a>.
 
 ***
 
@@ -186,9 +184,7 @@ To change lock status:
 
 Locking a worktree prevents accidental changes while you work elsewhere.
 
-<div class='callout callout--basic'>
-  <p><strong>Tip:</strong> A merged PR pill on a worktree card in the Agents view means the branch has a merged pull request on GitHub, GitLab, Azure DevOps, Bitbucket, or Bitbucket Data Center. Use this as a signal that it is safe to remove the worktree and delete the branch. See <a href="/gitkraken-desktop/clean-up-agent-worktrees/">Clean Up AI Coding Agent Worktrees and Branches</a>.</p>
-</div>
+> **Tip:** A merged PR pill on a worktree card in the Agents view means the branch has a merged pull request on GitHub, GitLab, Azure DevOps, Bitbucket, or Bitbucket Data Center. Use this as a signal that it is safe to remove the worktree and delete the branch. See <a href="/gitkraken-desktop/clean-up-agent-worktrees/">Clean Up AI Coding Agent Worktrees and Branches</a>.
 
 ## Multiple WIP nodes for multiple worktrees
 

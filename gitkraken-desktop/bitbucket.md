@@ -75,9 +75,7 @@ After you connect, GitKraken Desktop shows your Bitbucket repositories when you 
 
 ## How to connect Bitbucket
 
-<div class='callout callout--basic'>
-  <p><strong>Before you start:</strong> sign in to your GitKraken account. Bitbucket connects through your GitKraken account, so you can also use the connection on your other computers and profiles. See <a href="/gitkraken-desktop/integrations/#how-integrations-connect-through-your-gitkraken-account">How integrations connect through your GitKraken account</a>.</p>
-</div>
+> **Note:** **Before you start:** sign in to your GitKraken account. Bitbucket connects through your GitKraken account, so you can also use the connection on your other computers and profiles. See <a href="/gitkraken-desktop/integrations/#how-integrations-connect-through-your-gitkraken-account">How integrations connect through your GitKraken account</a>.
 
 To authenticate with Bitbucket:
 
@@ -106,9 +104,7 @@ To authenticate with Bitbucket:
 
 ## How to generate SSH keys for Bitbucket
 
-<div class='callout callout'>
-  <p><strong>Note:</strong> GitKraken Desktop uses your SSH key from <kbd>Preferences > SSH</kbd> unless you configure a Bitbucket-specific key or enable your system SSH Agent.</p>
-</div>
+> **Note:** GitKraken Desktop uses your SSH key from <kbd>Preferences > SSH</kbd> unless you configure a Bitbucket-specific key or enable your system SSH Agent.
 
 After you connect Bitbucket:
 
@@ -142,9 +138,7 @@ From November 12, 2026, when a fetch, pull, or push fails on an SSH remote that 
 
 ## What Bitbucket OAuth enables in GitKraken Desktop
 
-<div class='callout callout--basic'>
-  <p><strong>Use the Bitbucket integration when:</strong> you want repository discovery, remotes, and pull request workflows tied to Bitbucket.org inside GitKraken Desktop. <strong>For self-hosted Bitbucket:</strong> see <a href="/gitkraken-desktop/bitbucket-data-center/">Bitbucket Data Center</a>.</p>
-</div>
+> **Note:** **Use the Bitbucket integration when:** you want repository discovery, remotes, and pull request workflows tied to Bitbucket.org inside GitKraken Desktop. <strong>For self-hosted Bitbucket:</strong> see <a href="/gitkraken-desktop/bitbucket-data-center/">Bitbucket Data Center</a>.
 
 With Bitbucket connected, GitKraken Desktop shows:
 
@@ -170,9 +164,7 @@ You can still enter repository URLs manually.
 
 GitKraken Desktop supports 1 Bitbucket account per profile. With GitKraken Pro, use multiple [profiles](/start-here/profiles) to manage several Bitbucket identities.
 
-<div class='callout callout--basic'>
-  <p><strong>Use multiple profiles when:</strong> you need separate Bitbucket identities or workspaces in the same GitKraken Desktop install. <strong>Do not use multiple profiles when:</strong> one Bitbucket account already covers the repositories you work with.</p>
-</div>
+> **Note:** **Use multiple profiles when:** you need separate Bitbucket identities or workspaces in the same GitKraken Desktop install. <strong>Do not use multiple profiles when:</strong> one Bitbucket account already covers the repositories you work with.
 
 ## How Bitbucket pull request reviewers work
 

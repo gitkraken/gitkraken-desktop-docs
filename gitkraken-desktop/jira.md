@@ -44,9 +44,7 @@ Use this page to connect GitKraken Desktop to Jira Cloud or Jira Data Center so 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/On83cso-w3U" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<div class='callout callout--basic'>
-    <p>The Jira integration is view-only for Community users. To use all features, upgrade to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken subscription</a>.</p>
-</div>
+> **Note:** The Jira integration is view-only for Community users. To use all features, upgrade to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken subscription</a>.
 
 ***
 
@@ -71,9 +69,7 @@ Use this page to connect GitKraken Desktop to Jira Cloud or Jira Data Center so 
 
 Set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>. If you do not see the ISSUES section, right-click any Left Panel header and enable it from the context menu.
 
-<div class='callout callout--basic'>
-    <p><strong>Use Jira Cloud on this page when:</strong> your organization uses Atlassian's hosted Jira authorization flow. <strong>Use Jira Data Center instead when:</strong> your team runs self-hosted Jira and needs PAT-based setup with Data Center-specific compatibility.</p>
-</div>
+> **Note:** **Use Jira Cloud on this page when:** your organization uses Atlassian's hosted Jira authorization flow. <strong>Use Jira Data Center instead when:</strong> your team runs self-hosted Jira and needs PAT-based setup with Data Center-specific compatibility.
 
 <figure>
   <img src="/wp-content/uploads/connect-jira-issues-2025@2x.png" class="help-center-img img-bordered" alt="Connecting Jira integration in GitKraken">
@@ -144,9 +140,7 @@ The issue syncs to your connected Jira project.
 
 You can create filters to show specific issues. Filters use Atlassian’s Jira Query Language (JQL), and GitKraken Desktop auto-completes filter fields.
 
-<div class='callout callout--basic'>
-    <p><strong>Use JQL filters when:</strong> you need focused issue queues by project, sprint, assignee, or status. <strong>Do not rely only on the default My Issues view when:</strong> your workflow depends on a more specific slice of Jira work.</p>
-</div>
+> **Note:** **Use JQL filters when:** you need focused issue queues by project, sprint, assignee, or status. <strong>Do not rely only on the default My Issues view when:</strong> your workflow depends on a more specific slice of Jira work.
 
 <figure>
   <img src="/wp-content/uploads/create-jira-filter-2025@2x.png" class="help-center-img img-bordered" alt="Creating a JQL filter in GitKraken">
@@ -161,9 +155,7 @@ For advanced filtering tips, see Atlassian’s [JQL guide](https://www.atlassian
 
 You can create branches tied to Jira issues directly from the issue detail view.
 
-<div class='callout callout--basic'>
-    <p><strong>Use issue-based branch creation when:</strong> one branch should map directly to one Jira issue. <strong>Do not use it when:</strong> the branch spans several tickets or the auto-filled issue-based name is not the branch structure you need.</p>
-</div>
+> **Note:** **Use issue-based branch creation when:** one branch should map directly to one Jira issue. <strong>Do not use it when:</strong> the branch spans several tickets or the auto-filled issue-based name is not the branch structure you need.
 
 <figure>
   <img src="/wp-content/uploads/create-branch-jira-integration.gif" class="help-center-img img-bordered" alt="Creating a branch from Jira issue view">

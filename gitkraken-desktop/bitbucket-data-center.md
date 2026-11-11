@@ -61,21 +61,16 @@ Once connected, you can clone repositories directly from your Bitbucket Data Cen
 - Add remotes for Bitbucket Data Center repositories.
 - Create and view pull requests.
 
-<div class='callout callout--warning'>
-  <p><strong>Note:</strong> All self-hosted server integrations, including Bitbucket Data Center, require an <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">Advanced subscription</a> tier or higher.</p>
-</div>
+> **Note:** All self-hosted server integrations, including Bitbucket Data Center, require an <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">Advanced subscription</a> tier or higher.
 
 ***
 
 ## How to connect Bitbucket Data Center
 
-<div class='callout callout'>
-  <p><strong>Note:</strong> GitKraken Desktop supports Bitbucket Data Center versions released within the past year.</p>
-</div>
+> **Note:** GitKraken Desktop supports Bitbucket Data Center versions released within the past year.
 
-<div class='callout callout--basic'>
-  <p><strong>Use Bitbucket Data Center integration when:</strong> your repositories live on a self-hosted Bitbucket Data Center server. <strong>Don't use the Bitbucket.org integration when:</strong> your environment requires self-hosted server access, PAT authentication, or Data Center-specific permissions.</p>
-</div>
+
+> **Note:** **Use Bitbucket Data Center integration when:** your repositories live on a self-hosted Bitbucket Data Center server. <strong>Don't use the Bitbucket.org integration when:</strong> your environment requires self-hosted server access, PAT authentication, or Data Center-specific permissions.
 
 To authenticate:
 
@@ -106,9 +101,7 @@ To authenticate:
 
 ## How to generate SSH keys for Bitbucket Data Center
 
-<div class='callout callout'>
-  <p><strong>Note:</strong> GitKraken uses the key in <kbd>Preferences > SSH</kbd> unless you configure a Bitbucket-specific SSH key or use your system SSH Agent.</p>
-</div>
+> **Note:** GitKraken uses the key in <kbd>Preferences > SSH</kbd> unless you configure a Bitbucket-specific SSH key or use your system SSH Agent.
 
 1. Open <kbd>Preferences > Integrations</kbd>.
 2. Click <button class='button button--success button--ui button--nolink'>Generate SSH key and copy to clipboard</button>.
@@ -140,9 +133,7 @@ To authenticate:
 
 GitKraken allows you to:
 
-<div class='callout callout--basic'>
-  <p><strong>Use this integration when:</strong> you want cloning, remotes, and pull request workflows against your self-hosted Bitbucket Data Center instance inside GitKraken Desktop. <strong>Don't use it when:</strong> your repositories are on Bitbucket.org rather than a self-hosted server.</p>
-</div>
+> **Note:** **Use this integration when:** you want cloning, remotes, and pull request workflows against your self-hosted Bitbucket Data Center instance inside GitKraken Desktop. <strong>Don't use it when:</strong> your repositories are on Bitbucket.org rather than a self-hosted server.
 
 - Search your repositories when cloning:
 
@@ -166,9 +157,7 @@ Manual entry of repository URLs is also supported.
 
 GitKraken supports one Bitbucket Data Center account per profile. Use multiple [profiles](/start-here/profiles) with GitKraken Pro to switch between accounts.
 
-<div class='callout callout--basic'>
-  <p><strong>Use multiple profiles when:</strong> you need to switch between separate Data Center accounts or host domains. <strong>Don't use multiple profiles when:</strong> one profile already covers the single self-hosted account you use.</p>
-</div>
+> **Note:** **Use multiple profiles when:** you need to switch between separate Data Center accounts or host domains. <strong>Don't use multiple profiles when:</strong> one profile already covers the single self-hosted account you use.
 
 ## How Bitbucket Data Center pull request reviewers work
 

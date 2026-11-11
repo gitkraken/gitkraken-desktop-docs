@@ -28,9 +28,7 @@ custom_fields:
 
 Use this page to connect GitKraken Desktop to GitHub Issues so you can preview, create, edit, filter, and branch from issues alongside your repository work. GitHub Issues uses the same GitHub integration connection, and Community users are limited to public repositories.
 
-<div class='callout callout--basic'>
-    <p>The GitHub Issues integration is limited to public repositories for Community users. To use all features, upgrade to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken license</a>.</p>
-</div>
+> **Note:** The GitHub Issues integration is limited to public repositories for Community users. To use all features, upgrade to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken license</a>.
 
 **Requirements and limits**
 - Integration covered here: GitHub Issues for GitHub.com
@@ -72,9 +70,7 @@ To open an issue in GitHub or copy its link, use the ellipsis menu or the extern
 
 The GitHub and GitHub Issues integrations share the same connection.
 
-<div class='callout callout--basic'>
-    <p><strong>Use GitHub Issues in GitKraken Desktop when:</strong> you want issue triage and branch creation directly beside your Git workflow. <strong>Do not use the in-app view alone when:</strong> you need broader GitHub project or issue-management features outside the issue flows covered here.</p>
-</div>
+> **Note:** **Use GitHub Issues in GitKraken Desktop when:** you want issue triage and branch creation directly beside your Git workflow. <strong>Do not use the in-app view alone when:</strong> you need broader GitHub project or issue-management features outside the issue flows covered here.
 
 You can set up the integration from the ISSUES section in the Left Panel or from <kbd>Preferences > Integrations</kbd>.
 
@@ -149,9 +145,7 @@ Required fields are marked with <code>*</code>. GitKraken Desktop syncs the issu
 
 Create filters with GitHub's issue filter syntax to narrow your view to specific issue types, labels, or statuses.
 
-<div class='callout callout--basic'>
-    <p><strong>Use custom filters when:</strong> you need to focus on a subset of issues such as bugs, assigned work, or open review blockers. <strong>Do not rely only on default filters when:</strong> they leave you with too much issue noise.</p>
-</div>
+> **Note:** **Use custom filters when:** you need to focus on a subset of issues such as bugs, assigned work, or open review blockers. <strong>Do not rely only on default filters when:</strong> they leave you with too much issue noise.
 
 <figure>
   <img src="/wp-content/uploads/create-github-filter@2x.png" class="help-center-img img-bordered" alt="Create GitHub issue filter">
@@ -166,9 +160,7 @@ For syntax examples, see GitHub’s [issue filtering guide](https://docs.github.
 
 From the issue details view, click <strong>Create a Branch for This Issue</strong>. You can also right-click an issue or use the <kbd><i class="fa fa-ellipsis-v"></i></kbd> menu.
 
-<div class='callout callout--basic'>
-    <p><strong>Use issue-based branch creation when:</strong> you want a clear branch-to-issue link and an auto-filled branch name. <strong>Do not use it when:</strong> the branch should represent a larger initiative or combine work from multiple issues.</p>
-</div>
+> **Note:** **Use issue-based branch creation when:** you want a clear branch-to-issue link and an auto-filled branch name. <strong>Do not use it when:</strong> the branch should represent a larger initiative or combine work from multiple issues.
 
 <figure>
   <img src="/wp-content/uploads/create-branch-github-issue@2x.png" class="help-center-img img-bordered" alt="Create branch from GitHub issue">
