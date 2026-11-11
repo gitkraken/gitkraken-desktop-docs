@@ -17,11 +17,14 @@ tags: [branches, merge, rebase, conflicts, squash]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-repositories"
+    nav_category: "desktop-working-with-repositories"
     nav_label: "Branch, Merge, and Rebase"
     nav_order: 40
-    nav_parent: "working-with-repositories"
+    nav_parent: "desktop-working-with-repositories"
     page_type: "content"
+    card_icon: "git-branch"
+    card_color: "amber"
+    card_description: "Create branches, merge, rebase and resolve conflicts"
 ---
 <kbd>Last updated: November 2026</kbd>
 

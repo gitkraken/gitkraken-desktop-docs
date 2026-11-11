@@ -17,11 +17,14 @@ tags: [error-logs, diagnostics, support, troubleshooting, errors]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "known-issues"
+    nav_category: "desktop-known-issues"
     nav_label: "Error Logs"
     nav_order: 10
-    nav_parent: "known-issues"
+    nav_parent: "desktop-known-issues"
     page_type: "content"
+    card_icon: "file-alert"
+    card_color: "red"
+    card_description: "Open error logs to send to support"
 ---
 <kbd>Last updated: March 2026</kbd>
 

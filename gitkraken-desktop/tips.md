@@ -17,11 +17,14 @@ tags: [tips, productivity, shortcuts, integrations, advanced]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "start-here"
+    nav_category: "desktop-start-here"
     nav_label: "Tips"
     nav_order: 100
-    nav_parent: "start-here"
+    nav_parent: "desktop-start-here"
     page_type: "content"
+    card_icon: "bulb"
+    card_color: "purple"
+    card_description: "Shortcuts and power features worth knowing"
 ---
 <kbd>Last updated: November 2026</kbd>
 

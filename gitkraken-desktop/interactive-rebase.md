@@ -17,11 +17,14 @@ tags: [interactive-rebase, history, squash, reword, drop]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-repositories"
+    nav_category: "desktop-working-with-repositories"
     nav_label: "Interactive Rebase"
     nav_order: 90
-    nav_parent: "working-with-repositories"
+    nav_parent: "desktop-working-with-repositories"
     page_type: "content"
+    card_icon: "git-compare"
+    card_color: "amber"
+    card_description: "Pick, squash, reword or drop commits"
 ---
 <kbd>Last updated: March 2026</kbd>
 

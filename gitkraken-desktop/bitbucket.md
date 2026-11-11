@@ -17,11 +17,14 @@ tags: [bitbucket, integration, oauth, ssh, pull-requests]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "integrations-with-git-providers"
+    nav_category: "desktop-integrations-with-git-providers"
     nav_label: "Bitbucket"
     nav_order: 50
-    nav_parent: "integrations-with-git-providers"
+    nav_parent: "desktop-integrations-with-git-providers"
     page_type: "content"
+    card_icon: "brand-bitbucket"
+    card_color: "blue"
+    card_description: "Clone repositories and manage pull requests on Bitbucket.org"
 ---
 <kbd>Last updated: November 2026</kbd>
 

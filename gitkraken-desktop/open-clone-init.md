@@ -17,11 +17,14 @@ tags: [open, clone, init, shallow-clone, sparse-checkout, command-line]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-repositories"
+    nav_category: "desktop-working-with-repositories"
     nav_label: "Open, Clone, or Initialize Repo"
     nav_order: 10
-    nav_parent: "working-with-repositories"
+    nav_parent: "desktop-working-with-repositories"
     page_type: "content"
+    card_icon: "folder-open"
+    card_color: "amber"
+    card_description: "Open, clone or create a repository"
 ---
 <kbd>Last updated: November 2026</kbd>
 

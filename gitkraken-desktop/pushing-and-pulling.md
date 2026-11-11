@@ -17,11 +17,14 @@ tags: [push, pull, fetch, upstream, remotes]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-repositories"
+    nav_category: "desktop-working-with-repositories"
     nav_label: "Push, Pull, and Fetch"
     nav_order: 110
-    nav_parent: "working-with-repositories"
+    nav_parent: "desktop-working-with-repositories"
     page_type: "content"
+    card_icon: "arrows-up-down"
+    card_color: "amber"
+    card_description: "Push, pull and fetch, with upstream branches"
 ---
 <kbd>Last updated: March 2026</kbd>
 

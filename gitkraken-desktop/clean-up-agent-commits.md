@@ -17,11 +17,14 @@ tags: [agents, coding-agents, ai, commit-composer, recompose, commits, history, 
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "agent-workflows"
+    nav_category: "desktop-agent-workflows"
     nav_label: "Clean Up Agent Commits"
     nav_order: 30
-    nav_parent: "agent-workflows"
+    nav_parent: "desktop-agent-workflows"
     page_type: "content"
+    card_icon: "git-commit"
+    card_color: "purple"
+    card_description: "Turn an agent's commits into a reviewable history"
 ---
 <kbd>Last updated: November 2026</kbd>
 

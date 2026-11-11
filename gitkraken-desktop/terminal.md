@@ -17,11 +17,14 @@ tags: [terminal, shell, git, commands, auto-complete]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-repositories"
+    nav_category: "desktop-working-with-repositories"
     nav_label: "Terminal"
     nav_order: 170
-    nav_parent: "working-with-repositories"
+    nav_parent: "desktop-working-with-repositories"
     page_type: "content"
+    card_icon: "terminal-2"
+    card_color: "amber"
+    card_description: "Run Git commands and coding agents in the in-app terminal"
 ---
 <kbd>Last updated: November 2026</kbd>
 

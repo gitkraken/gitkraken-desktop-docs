@@ -17,11 +17,14 @@ tags: [activity-logs, logs, troubleshooting, git-actions, hooks]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-repositories"
+    nav_category: "desktop-working-with-repositories"
     nav_label: "View Activity Logs"
     nav_order: 20
-    nav_parent: "working-with-repositories"
+    nav_parent: "desktop-working-with-repositories"
     page_type: "content"
+    card_icon: "list-details"
+    card_color: "amber"
+    card_description: "Real-time Git actions, app events and hook output"
 ---
 <kbd>Last updated: March 2026</kbd>
 

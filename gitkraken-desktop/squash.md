@@ -17,11 +17,14 @@ tags: [squash, commits, history, force-push]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-commits"
+    nav_category: "desktop-working-with-commits"
     nav_label: "Squash"
     nav_order: 20
-    nav_parent: "working-with-commits"
+    nav_parent: "desktop-working-with-commits"
     page_type: "content"
+    card_icon: "stack-2"
+    card_color: "green"
+    card_description: "Combine several commits into one"
 ---
 
 <kbd>Last updated: March 2026</kbd>

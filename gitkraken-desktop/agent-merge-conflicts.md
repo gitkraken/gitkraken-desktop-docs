@@ -17,11 +17,14 @@ tags: [agents, coding-agents, ai, merge, merge-conflicts, auto-resolve, worktree
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "agent-workflows"
+    nav_category: "desktop-agent-workflows"
     nav_label: "Resolve Agent Merge Conflicts"
     nav_order: 40
-    nav_parent: "agent-workflows"
+    nav_parent: "desktop-agent-workflows"
     page_type: "content"
+    card_icon: "git-merge"
+    card_color: "purple"
+    card_description: "Merge two agents' branches and resolve conflicts"
 ---
 <kbd>Last updated: October 2026</kbd>
 

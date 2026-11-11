@@ -17,11 +17,14 @@ tags: [commit-signing, gpg, ssh, verification, security]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "git-workflows-and-extensions"
+    nav_category: "desktop-git-workflows-and-extensions"
     nav_label: "Commit Signing"
     nav_order: 30
-    nav_parent: "git-workflows-and-extensions"
+    nav_parent: "desktop-git-workflows-and-extensions"
     page_type: "content"
+    card_icon: "certificate"
+    card_color: "amber"
+    card_description: "Sign commits and tags with GPG or SSH keys"
 ---
 
 <kbd>Last updated: March 2026</kbd>

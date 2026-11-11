@@ -17,11 +17,14 @@ tags: [fork, github, remotes, repositories, integration]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-repositories"
+    nav_category: "desktop-working-with-repositories"
     nav_label: "Fork GitHub Repos"
     nav_order: 60
-    nav_parent: "working-with-repositories"
+    nav_parent: "desktop-working-with-repositories"
     page_type: "content"
+    card_icon: "git-fork"
+    card_color: "amber"
+    card_description: "Fork GitHub repositories and add them as remotes"
 ---
 <kbd>Last updated: March 2026</kbd>
 

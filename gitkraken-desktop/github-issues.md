@@ -17,11 +17,14 @@ tags: [github, issues, filters, branching, integration]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "integrations-with-issue-trackers"
+    nav_category: "desktop-integrations-with-issue-trackers"
     nav_label: "GitHub Issues"
     nav_order: 40
-    nav_parent: "integrations-with-issue-trackers"
+    nav_parent: "desktop-integrations-with-issue-trackers"
     page_type: "content"
+    card_icon: "brand-github"
+    card_color: "green"
+    card_description: "Preview, filter and create GitHub issues"
 ---
 
 <kbd>Last updated: November 2026</kbd>

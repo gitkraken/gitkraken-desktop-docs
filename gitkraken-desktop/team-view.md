@@ -17,11 +17,14 @@ tags: [team-view, collaboration, conflicts, activity, teams]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-repositories"
+    nav_category: "desktop-working-with-repositories"
     nav_label: "Team View"
     nav_order: 160
-    nav_parent: "working-with-repositories"
+    nav_parent: "desktop-working-with-repositories"
     page_type: "content"
+    card_icon: "users-group"
+    card_color: "amber"
+    card_description: "See what teammates are working on and spot conflicts"
 ---
 <kbd>Last updated: March 2026</kbd>
 

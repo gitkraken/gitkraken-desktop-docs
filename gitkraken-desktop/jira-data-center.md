@@ -17,11 +17,14 @@ tags: [jira-data-center, issues, pat, self-hosted, jql]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "integrations-with-issue-trackers"
+    nav_category: "desktop-integrations-with-issue-trackers"
     nav_label: "Jira Data Center Issues"
     nav_order: 20
-    nav_parent: "integrations-with-issue-trackers"
+    nav_parent: "desktop-integrations-with-issue-trackers"
     page_type: "content"
+    card_icon: "ticket"
+    card_color: "green"
+    card_description: "Connect Jira Data Center with a personal access token"
 ---
 
 <kbd>Last updated: March 2026</kbd>

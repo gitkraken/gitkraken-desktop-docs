@@ -17,11 +17,14 @@ tags: [integrations, git-hosting, issue-trackers, setup]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "start-here"
+    nav_category: "desktop-start-here"
     nav_label: "Integrations"
     nav_order: 30
-    nav_parent: "start-here"
+    nav_parent: "desktop-start-here"
     page_type: "content"
+    card_icon: "plug"
+    card_color: "purple"
+    card_description: "Connect Git hosts and issue trackers"
 ---
 <kbd>Last updated: November 2026</kbd>
 

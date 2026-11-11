@@ -17,11 +17,14 @@ tags: [agents, coding-agents, worktrees, branches, cleanup, prune, merged-pr]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "agent-workflows"
+    nav_category: "desktop-agent-workflows"
     nav_label: "Clean Up Agent Worktrees"
     nav_order: 50
-    nav_parent: "agent-workflows"
+    nav_parent: "desktop-agent-workflows"
     page_type: "content"
+    card_icon: "trash"
+    card_color: "purple"
+    card_description: "Find, check and remove worktrees agents left behind"
 ---
 <kbd>Last updated: November 2026</kbd>
 

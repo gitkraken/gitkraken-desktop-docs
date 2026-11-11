@@ -17,11 +17,14 @@ tags: [agents, worktrees, coding-agents, parallel-work, ai, terminal]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "agent-workflows"
+    nav_category: "desktop-agent-workflows"
     nav_label: "Coding Agents"
     nav_order: 10
-    nav_parent: "agent-workflows"
+    nav_parent: "desktop-agent-workflows"
     page_type: "content"
+    card_icon: "robot"
+    card_color: "purple"
+    card_description: "Run Claude Code, Codex CLI and other agents in the Agents view"
 ---
 <kbd>Last updated: November 2026</kbd>
 

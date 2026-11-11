@@ -18,11 +18,15 @@ og_image: /img/GitKrakenClient-Hero.png
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "release-notes"
+    nav_category: "desktop-release-notes"
     nav_label: "GitKraken Desktop Release Notes"
     nav_order: 10
-    nav_parent: "release-notes"
+    nav_parent: "desktop-release-notes"
     page_type: "content"
+    layout: "release-notes"
+    card_icon: "tag"
+    card_color: "green"
+    card_description: "The latest release"
 ---
 <kbd>Last updated: November 2026</kbd>
 

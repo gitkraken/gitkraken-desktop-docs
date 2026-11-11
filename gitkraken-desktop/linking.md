@@ -17,11 +17,14 @@ tags: [deep-linking, links, branches, commits, repositories]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-repositories"
+    nav_category: "desktop-working-with-repositories"
     nav_label: "Deep Linking"
     nav_order: 100
-    nav_parent: "working-with-repositories"
+    nav_parent: "desktop-working-with-repositories"
     page_type: "content"
+    card_icon: "link"
+    card_color: "amber"
+    card_description: "Share links to repositories, branches, commits and tags"
 ---
 <kbd>Last updated: March 2026</kbd>
 

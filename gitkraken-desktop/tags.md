@@ -17,11 +17,14 @@ tags: [tags, releases, annotate, git, versions]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-repositories"
+    nav_category: "desktop-working-with-repositories"
     nav_label: "Tags"
     nav_order: 150
-    nav_parent: "working-with-repositories"
+    nav_parent: "desktop-working-with-repositories"
     page_type: "content"
+    card_icon: "tag"
+    card_color: "amber"
+    card_description: "Create, annotate, move and push tags"
 ---
 <kbd>Last updated: March 2026</kbd>
 

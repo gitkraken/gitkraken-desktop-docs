@@ -17,11 +17,14 @@ tags: [staging, unstage, gitignore, wip, diff]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-commits"
+    nav_category: "desktop-working-with-commits"
     nav_label: "Stage, Unstage, and Ignore Files"
     nav_order: 10
-    nav_parent: "working-with-commits"
+    nav_parent: "desktop-working-with-commits"
     page_type: "content"
+    card_icon: "list-check"
+    card_color: "green"
+    card_description: "Stage, unstage, discard and ignore changes"
 ---
 
 <kbd>Last updated: November 2026</kbd>

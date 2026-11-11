@@ -17,11 +17,14 @@ tags: [editing, files, save, discard, encoding]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-files"
+    nav_category: "desktop-working-with-files"
     nav_label: "Edit Files"
     nav_order: 60
-    nav_parent: "working-with-files"
+    nav_parent: "desktop-working-with-files"
     page_type: "content"
+    card_icon: "edit"
+    card_color: "blue"
+    card_description: "Edit, save and stage files in the built-in editor"
 ---
 
 <kbd>Last updated: March 2026</kbd>

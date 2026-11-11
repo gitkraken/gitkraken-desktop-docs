@@ -18,11 +18,14 @@ tags: [teams, collaboration, roles, workspaces, cloud-patches]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "start-here"
+    nav_category: "desktop-start-here"
     nav_label: "Teams"
     nav_order: 80
-    nav_parent: "start-here"
+    nav_parent: "desktop-start-here"
     page_type: "content"
+    card_icon: "users"
+    card_color: "purple"
+    card_description: "Invite members, assign roles and organize teams"
 ---
 <kbd>Last updated: October 2026</kbd>
 

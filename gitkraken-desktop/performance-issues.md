@@ -17,11 +17,14 @@ tags: [performance, troubleshooting, optimization, maintenance, large-repos]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "known-issues"
+    nav_category: "desktop-known-issues"
     nav_label: "Improving Performance"
     nav_order: 20
-    nav_parent: "known-issues"
+    nav_parent: "desktop-known-issues"
     page_type: "content"
+    card_icon: "gauge"
+    card_color: "red"
+    card_description: "Speed up large repositories and the Commit Graph"
 ---
 <kbd>Last updated: March 2026</kbd>
 

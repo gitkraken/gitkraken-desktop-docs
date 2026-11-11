@@ -17,11 +17,14 @@ tags: [github-enterprise-server, issues, self-hosted, filters, branching]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "integrations-with-issue-trackers"
+    nav_category: "desktop-integrations-with-issue-trackers"
     nav_label: "GitHub Enterprise Server Issues"
     nav_order: 50
-    nav_parent: "integrations-with-issue-trackers"
+    nav_parent: "desktop-integrations-with-issue-trackers"
     page_type: "content"
+    card_icon: "brand-github"
+    card_color: "green"
+    card_description: "Issues from GitHub Enterprise Server"
 ---
 
 <kbd>Last updated: March 2026</kbd>

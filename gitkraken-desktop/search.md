@@ -17,11 +17,14 @@ tags: [search, commits, graph, command-palette, history]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-commits"
+    nav_category: "desktop-working-with-commits"
     nav_label: "Search Git Commits"
     nav_order: 40
-    nav_parent: "working-with-commits"
+    nav_parent: "desktop-working-with-commits"
     page_type: "content"
+    card_icon: "search"
+    card_color: "green"
+    card_description: "Find commits by message, SHA or author"
 ---
 <kbd>Last updated: March 2026</kbd>
 

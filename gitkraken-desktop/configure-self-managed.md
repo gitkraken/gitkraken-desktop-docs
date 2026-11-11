@@ -18,11 +18,14 @@ tags: [self-hosted, ldap, smtp, super-user, configuration]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "on-premise"
+    nav_category: "desktop-on-premise"
     nav_label: "Configure Self-Hosted Server"
     nav_order: 30
-    nav_parent: "on-premise"
+    nav_parent: "desktop-on-premise"
     page_type: "content"
+    card_icon: "settings"
+    card_color: "purple"
+    card_description: "License, authentication, LDAP, SMTP and Super User setup"
 ---
 
 <kbd>Last updated: March 2026</kbd>

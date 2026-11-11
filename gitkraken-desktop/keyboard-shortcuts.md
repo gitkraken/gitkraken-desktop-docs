@@ -17,11 +17,14 @@ tags: [keyboard-shortcuts, shortcuts, navigation, command-palette, tabs]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "start-here"
+    nav_category: "desktop-start-here"
     nav_label: "Keyboard Shortcuts"
     nav_order: 50
-    nav_parent: "start-here"
+    nav_parent: "desktop-start-here"
     page_type: "content"
+    card_icon: "keyboard"
+    card_color: "purple"
+    card_description: "Shortcuts for macOS, Windows and Linux"
 ---
 <kbd>Last updated: November 2026</kbd>
 
