@@ -214,8 +214,8 @@ If the page is inaccessible, contact your GitKraken administrator for internal d
 #### macOS (.dmg)
 
 **System Requirements:**
-- Intel: macOS 10.15+
-- Apple Silicon: macOS 11+
+- Intel: macOS 13+
+- Apple Silicon: macOS 13+
 
 **Install:** Open the DMG file and drag the GitKraken icon into your Applications folder.
 
