@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 70
     nav_parent: "integrations-with-issue-trackers"
     page_type: "content"
+    card_icon: "brand-gitlab"
+    card_color: "green"
+    card_description: "Issues from GitLab Self-Managed"
 ---
 
 <kbd>Last updated: March 2026</kbd>

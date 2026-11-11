@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 40
     nav_parent: "agent-workflows"
     page_type: "content"
+    card_icon: "git-merge"
+    card_color: "purple"
+    card_description: "Merge two agents' branches and resolve conflicts"
 ---
 <kbd>Last updated: October 2026</kbd>
 

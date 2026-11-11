@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 30
     nav_parent: "git-workflows-and-extensions"
     page_type: "content"
+    card_icon: "certificate"
+    card_color: "amber"
+    card_description: "Sign commits and tags with GPG or SSH keys"
 ---
 
 <kbd>Last updated: March 2026</kbd>

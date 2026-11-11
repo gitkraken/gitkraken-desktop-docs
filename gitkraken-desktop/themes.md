@@ -17,11 +17,14 @@ tags: [themes, dark-mode, light-mode, customization, jsonc]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "start-here"
+    nav_category: "gitkraken-desktop-start-here"
     nav_label: "Themes"
     nav_order: 90
-    nav_parent: "start-here"
+    nav_parent: "gitkraken-desktop-start-here"
     page_type: "content"
+    card_icon: "palette"
+    card_color: "purple"
+    card_description: "Light and dark themes and system theme sync"
 ---
 <kbd>Last updated: March 2026</kbd>
 

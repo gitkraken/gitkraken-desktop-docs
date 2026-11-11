@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 10
     nav_parent: "working-with-files"
     page_type: "content"
+    card_icon: "file-plus"
+    card_color: "blue"
+    card_description: "Create, delete and filter files and folders"
 ---
 <kbd>Last updated: March 2026</kbd>
 

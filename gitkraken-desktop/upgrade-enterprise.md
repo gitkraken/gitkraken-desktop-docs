@@ -23,6 +23,9 @@ custom_fields:
     nav_order: 40
     nav_parent: "on-premise"
     page_type: "content"
+    card_icon: "refresh"
+    card_color: "purple"
+    card_description: "Upgrade the server, client installers and license"
 ---
 <kbd>Last updated: March 2026</kbd>
 

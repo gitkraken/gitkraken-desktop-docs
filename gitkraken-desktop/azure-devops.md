@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 70
     nav_parent: "integrations-with-git-providers"
     page_type: "content"
+    card_icon: "brand-azure"
+    card_color: "blue"
+    card_description: "Connect Azure DevOps with OAuth or a personal access token"
 ---
 <kbd>Last updated: November 2026</kbd>
 

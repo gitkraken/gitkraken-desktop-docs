@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 60
     nav_parent: "integrations-with-issue-trackers"
     page_type: "content"
+    card_icon: "brand-gitlab"
+    card_color: "green"
+    card_description: "View, filter and manage GitLab issues"
 ---
 
 <kbd>Last updated: November 2026</kbd>

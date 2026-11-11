@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 30
     nav_parent: "working-with-files"
     page_type: "content"
+    card_icon: "git-commit"
+    card_color: "blue"
+    card_description: "Commit, amend, co-author, reset and revert"
 ---
 <kbd>Last updated: October 2026</kbd>
 

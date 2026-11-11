@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 10
     nav_parent: "working-with-repositories"
     page_type: "content"
+    card_icon: "folder-open"
+    card_color: "amber"
+    card_description: "Open, clone or create a repository"
 ---
 <kbd>Last updated: November 2026</kbd>
 

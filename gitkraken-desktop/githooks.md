@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 70
     nav_parent: "working-with-repositories"
     page_type: "content"
+    card_icon: "code"
+    card_color: "amber"
+    card_description: "Run Git hooks from GitKraken Desktop actions"
 ---
 
 <kbd>Last updated: March 2026</kbd>

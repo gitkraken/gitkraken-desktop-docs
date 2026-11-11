@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 20
     nav_parent: "known-issues"
     page_type: "content"
+    card_icon: "gauge"
+    card_color: "red"
+    card_description: "Speed up large repositories and the Commit Graph"
 ---
 <kbd>Last updated: March 2026</kbd>
 

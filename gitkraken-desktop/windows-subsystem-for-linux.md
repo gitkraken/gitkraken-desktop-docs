@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 180
     nav_parent: "working-with-repositories"
     page_type: "content"
+    card_icon: "brand-windows"
+    card_color: "amber"
+    card_description: "Run GitKraken Desktop in WSL 2"
 ---
 <kbd>Last updated: November 2026</kbd>
 

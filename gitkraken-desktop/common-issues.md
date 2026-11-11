@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 30
     nav_parent: "known-issues"
     page_type: "content"
+    card_icon: "help-circle"
+    card_color: "red"
+    card_description: "Fixes for sign-in, integration and Git problems"
 ---
 <kbd>Last updated: November 2026</kbd>
 

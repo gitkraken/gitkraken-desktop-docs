@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 10
     nav_parent: "integrations-with-issue-trackers"
     page_type: "content"
+    card_icon: "ticket"
+    card_color: "green"
+    card_description: "Preview, create and filter Jira issues with JQL"
 ---
 
 <kbd>Last updated: November 2026</kbd>

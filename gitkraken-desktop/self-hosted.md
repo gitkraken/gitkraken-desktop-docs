@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 10
     nav_parent: "on-premise"
     page_type: "content"
+    card_icon: "server"
+    card_color: "purple"
+    card_description: "What Self-Hosted Server is and what it supports"
 ---
 <kbd>Last updated: November 2026</kbd>
 

@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 80
     nav_parent: "integrations-with-git-providers"
     page_type: "content"
+    card_icon: "certificate"
+    card_color: "blue"
+    card_description: "Trust a self-signed certificate on Windows, macOS and Linux"
 ---
 <kbd>Last updated: March 2026</kbd>
 

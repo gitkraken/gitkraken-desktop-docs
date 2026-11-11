@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 150
     nav_parent: "working-with-repositories"
     page_type: "content"
+    card_icon: "tag"
+    card_color: "amber"
+    card_description: "Create, annotate, move and push tags"
 ---
 <kbd>Last updated: March 2026</kbd>
 

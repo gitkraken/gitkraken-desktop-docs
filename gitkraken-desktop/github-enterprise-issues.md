@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 50
     nav_parent: "integrations-with-issue-trackers"
     page_type: "content"
+    card_icon: "brand-github"
+    card_color: "green"
+    card_description: "Issues from GitHub Enterprise Server"
 ---
 
 <kbd>Last updated: March 2026</kbd>

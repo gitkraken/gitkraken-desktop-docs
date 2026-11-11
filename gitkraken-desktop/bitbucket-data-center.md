@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 60
     nav_parent: "integrations-with-git-providers"
     page_type: "content"
+    card_icon: "brand-bitbucket"
+    card_color: "blue"
+    card_description: "Connect Bitbucket Data Center with a personal access token"
 ---
 <kbd>Last updated: March 2026</kbd>
 

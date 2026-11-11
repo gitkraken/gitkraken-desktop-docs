@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 10
     nav_parent: "known-issues"
     page_type: "content"
+    card_icon: "file-alert"
+    card_color: "red"
+    card_description: "Open error logs to send to support"
 ---
 <kbd>Last updated: March 2026</kbd>
 

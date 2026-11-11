@@ -23,6 +23,9 @@ custom_fields:
     nav_order: 30
     nav_parent: "on-premise"
     page_type: "content"
+    card_icon: "settings"
+    card_color: "purple"
+    card_description: "License, authentication, LDAP, SMTP and Super User setup"
 ---
 
 <kbd>Last updated: March 2026</kbd>

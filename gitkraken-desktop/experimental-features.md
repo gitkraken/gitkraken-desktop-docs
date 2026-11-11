@@ -17,11 +17,14 @@ tags: [experimental, cloud-patch, git-executable, preview, features]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "start-here"
+    nav_category: "gitkraken-desktop-start-here"
     nav_label: "Experimental Features"
     nav_order: 110
-    nav_parent: "start-here"
+    nav_parent: "gitkraken-desktop-start-here"
     page_type: "content"
+    card_icon: "flask"
+    card_color: "purple"
+    card_description: "Git Executable and Cloud Patches"
 ---
 <kbd>Last updated: November 2026</kbd>
 

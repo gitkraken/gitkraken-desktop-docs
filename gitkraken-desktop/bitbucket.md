@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 50
     nav_parent: "integrations-with-git-providers"
     page_type: "content"
+    card_icon: "brand-bitbucket"
+    card_color: "blue"
+    card_description: "Clone repositories and manage pull requests on Bitbucket.org"
 ---
 <kbd>Last updated: November 2026</kbd>
 

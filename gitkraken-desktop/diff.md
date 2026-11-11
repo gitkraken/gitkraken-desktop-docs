@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 50
     nav_parent: "working-with-files"
     page_type: "content"
+    card_icon: "file-diff"
+    card_color: "blue"
+    card_description: "Diffs, file history, blame and external diff tools"
 ---
 <kbd>Last updated: November 2026</kbd>
 

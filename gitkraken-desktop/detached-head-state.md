@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 40
     nav_parent: "working-with-files"
     page_type: "content"
+    card_icon: "git-commit"
+    card_color: "blue"
+    card_description: "Work in and leave detached HEAD safely"
 ---
 
 <kbd>Last updated: March 2026</kbd>

@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 50
     nav_parent: "on-premise"
     page_type: "content"
+    card_icon: "cloud-off"
+    card_color: "purple"
+    card_description: "Install and license the stand-alone edition"
 ---
 <kbd>Last updated: November 2026</kbd>
 

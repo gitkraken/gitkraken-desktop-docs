@@ -23,6 +23,9 @@ custom_fields:
     nav_order: 20
     nav_parent: "on-premise"
     page_type: "content"
+    card_icon: "download"
+    card_color: "purple"
+    card_description: "Install Self-Hosted Server with Docker"
 ---
 <kbd>Last updated: March 2026</kbd>
 

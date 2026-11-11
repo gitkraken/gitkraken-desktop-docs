@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 80
     nav_parent: "working-with-repositories"
     page_type: "content"
+    card_icon: "eye-off"
+    card_color: "amber"
+    card_description: "Hide or solo branches, tags, remotes and stashes"
 ---
 <kbd>Last updated: March 2026</kbd>
 

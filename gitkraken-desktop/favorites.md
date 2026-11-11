@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 30
     nav_parent: "working-with-repositories"
     page_type: "content"
+    card_icon: "star"
+    card_color: "amber"
+    card_description: "Quick access to the repositories you use most"
 ---
 <kbd>Last updated: March 2026</kbd>
 

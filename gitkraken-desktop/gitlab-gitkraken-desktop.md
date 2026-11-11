@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 30
     nav_parent: "integrations-with-git-providers"
     page_type: "content"
+    card_icon: "brand-gitlab"
+    card_color: "blue"
+    card_description: "Clone repositories, manage SSH keys and create pull requests with GitLab.com"
 ---
 <kbd>Last updated: November 2026</kbd>
 

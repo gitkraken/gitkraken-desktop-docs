@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 50
     nav_parent: "working-with-repositories"
     page_type: "content"
+    card_icon: "shield-check"
+    card_color: "amber"
+    card_description: "Spot overlapping changes before they conflict"
 ---
 <kbd>Last updated: April 2026</kbd>
 

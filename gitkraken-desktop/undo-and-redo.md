@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 50
     nav_parent: "working-with-commits"
     page_type: "content"
+    card_icon: "arrow-back-up"
+    card_color: "green"
+    card_description: "Undo or redo commits, discards and checkouts"
 ---
 
 <kbd>Last updated: November 2026</kbd>

@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 30
     nav_parent: "working-with-commits"
     page_type: "content"
+    card_icon: "archive"
+    card_color: "green"
+    card_description: "Stash, pop, name and apply changes"
 ---
 <kbd>Last updated: March 2026</kbd>
 

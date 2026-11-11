@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 170
     nav_parent: "working-with-repositories"
     page_type: "content"
+    card_icon: "terminal-2"
+    card_color: "amber"
+    card_description: "Run Git commands and coding agents in the in-app terminal"
 ---
 <kbd>Last updated: November 2026</kbd>
 

@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 20
     nav_parent: "agent-workflows"
     page_type: "content"
+    card_icon: "git-compare"
+    card_color: "purple"
+    card_description: "See what an agent changed and undo it"
 ---
 <kbd>Last updated: November 2026</kbd>
 

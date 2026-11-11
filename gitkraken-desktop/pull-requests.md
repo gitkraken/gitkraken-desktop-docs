@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 120
     nav_parent: "working-with-repositories"
     page_type: "content"
+    card_icon: "git-pull-request"
+    card_color: "amber"
+    card_description: "Create, review and merge pull requests"
 ---
 <kbd>Last updated: November 2026</kbd>
 

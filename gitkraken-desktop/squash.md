@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 20
     nav_parent: "working-with-commits"
     page_type: "content"
+    card_icon: "stack-2"
+    card_color: "green"
+    card_description: "Combine several commits into one"
 ---
 
 <kbd>Last updated: March 2026</kbd>

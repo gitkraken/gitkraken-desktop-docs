@@ -23,6 +23,10 @@ custom_fields:
     nav_order: 10
     nav_parent: "release-notes"
     page_type: "content"
+    layout: "release-notes"
+    card_icon: "tag"
+    card_color: "green"
+    card_description: "The latest release"
 ---
 <kbd>Last updated: November 2026</kbd>
 

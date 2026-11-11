@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 90
     nav_parent: "integrations-with-git-providers"
     page_type: "content"
+    card_icon: "key"
+    card_color: "blue"
+    card_description: "HTTPS or SSH for TFS, AWS CodeCommit and other hosts"
 ---
 
 <kbd>Last updated: March 2026</kbd>

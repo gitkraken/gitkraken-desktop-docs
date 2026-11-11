@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 100
     nav_parent: "working-with-repositories"
     page_type: "content"
+    card_icon: "link"
+    card_color: "amber"
+    card_description: "Share links to repositories, branches, commits and tags"
 ---
 <kbd>Last updated: March 2026</kbd>
 

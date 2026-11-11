@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 40
     nav_parent: "integrations-with-git-providers"
     page_type: "content"
+    card_icon: "brand-gitlab"
+    card_color: "blue"
+    card_description: "Connect GitLab Self-Managed with a personal access token"
 ---
 <kbd>Last updated: March 2026</kbd>
 

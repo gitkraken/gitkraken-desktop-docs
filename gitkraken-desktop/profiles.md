@@ -17,11 +17,14 @@ tags: [profiles, accounts, gitconfig, avatars, integrations]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "start-here"
+    nav_category: "gitkraken-desktop-start-here"
     nav_label: "Profiles"
     nav_order: 20
-    nav_parent: "start-here"
+    nav_parent: "gitkraken-desktop-start-here"
     page_type: "content"
+    card_icon: "user-circle"
+    card_color: "purple"
+    card_description: "Separate Git identities, integrations and settings per profile"
 ---
 <kbd>Last updated: March 2026</kbd>
 

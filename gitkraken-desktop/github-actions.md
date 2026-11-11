@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 40
     nav_parent: "git-workflows-and-extensions"
     page_type: "content"
+    card_icon: "brand-github"
+    card_color: "amber"
+    card_description: "Manage GitHub Actions workflow files"
 ---
 
 <kbd>Last updated: March 2026</kbd>

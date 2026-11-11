@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 80
     nav_parent: "integrations-with-issue-trackers"
     page_type: "content"
+    card_icon: "brand-trello"
+    card_color: "green"
+    card_description: "Preview Trello cards and branch from them"
 ---
 
 <kbd>Last updated: November 2026</kbd>

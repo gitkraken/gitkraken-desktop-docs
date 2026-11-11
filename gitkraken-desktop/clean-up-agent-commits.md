@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 30
     nav_parent: "agent-workflows"
     page_type: "content"
+    card_icon: "git-commit"
+    card_color: "purple"
+    card_description: "Turn an agent's commits into a reviewable history"
 ---
 <kbd>Last updated: November 2026</kbd>
 

@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 20
     nav_parent: "git-workflows-and-extensions"
     page_type: "content"
+    card_icon: "file-database"
+    card_color: "amber"
+    card_description: "Track and manage large files with Git LFS"
 ---
 
 <kbd>Last updated: March 2026</kbd>

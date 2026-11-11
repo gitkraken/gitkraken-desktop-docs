@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 10
     nav_parent: "integrations-with-git-providers"
     page_type: "content"
+    card_icon: "brand-github"
+    card_color: "blue"
+    card_description: "Sign in, clone and create pull requests with GitHub.com"
 ---
 <kbd>Last updated: November 2026</kbd>
 

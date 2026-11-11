@@ -22,6 +22,9 @@ custom_fields:
     nav_order: 140
     nav_parent: "working-with-repositories"
     page_type: "content"
+    card_icon: "folders"
+    card_color: "amber"
+    card_description: "Add, update and track Git submodules"
 ---
 <kbd>Last updated: March 2026</kbd>
 
