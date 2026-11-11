@@ -22,6 +22,10 @@ custom_fields:
     nav_order: 160
     nav_parent: ""
     page_type: "index"
+    entry_title: "Fix a problem"
+    entry_role: "Something broke"
+    entry_desc: "Common issues, error logs and performance fixes"
+    entry_order: 40
     card_icon: "alert-triangle"
     card_color: "red"
     card_description: "Error logs, performance fixes and common issues"

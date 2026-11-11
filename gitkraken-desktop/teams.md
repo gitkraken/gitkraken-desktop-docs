@@ -23,6 +23,10 @@ custom_fields:
     nav_order: 80
     nav_parent: "desktop-start-here"
     page_type: "content"
+    entry_title: "Set up your team"
+    entry_role: "Team lead"
+    entry_desc: "Workspaces, Teams and Team View for shared repositories"
+    entry_order: 20
     card_icon: "users"
     card_color: "purple"
     card_description: "Invite members, assign roles and organize teams"

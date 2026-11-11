@@ -28,6 +28,8 @@ custom_fields:
 
 GitKraken Desktop is a visual Git client for Windows, macOS, and Linux. You can use it for everyday Git work and to run coding agents on their own branches and worktrees, where their changes show up in the Commit Graph next to yours.
 
+---
+
 <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 32px; margin-bottom:24px;">
   <p style="flex:1 1 300px; margin:0;">Start here to find installation steps, interface walkthroughs, coding agent workflows, worktrees, terminal usage, integrations, release notes, and support resources for GitKraken Desktop.</p>
   <img src="/wp-content/uploads/GitKraken_Keif_evergreen-feature.png" alt="" width="703" height="750" loading="lazy" style="flex:0 0 auto; max-height:200px; width:auto; height:auto; max-width:100%; margin:0 auto;">
