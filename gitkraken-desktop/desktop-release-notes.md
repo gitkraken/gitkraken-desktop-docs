@@ -17,7 +17,7 @@ tags: [release-notes, changelog, versions]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "release-notes"
+    nav_category: "desktop-release-notes"
     nav_label: "Release Notes"
     nav_order: 180
     nav_parent: ""

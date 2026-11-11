@@ -17,10 +17,10 @@ tags: [github, integration, oauth, ssh, pull-requests]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "integrations-with-git-providers"
+    nav_category: "desktop-integrations-with-git-providers"
     nav_label: "GitHub"
     nav_order: 10
-    nav_parent: "integrations-with-git-providers"
+    nav_parent: "desktop-integrations-with-git-providers"
     page_type: "content"
     card_icon: "brand-github"
     card_color: "blue"

@@ -17,7 +17,7 @@ tags: [commits, staging, squash, stash, undo]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-commits"
+    nav_category: "desktop-working-with-commits"
     nav_label: "Working with Commits"
     nav_order: 60
     nav_parent: ""

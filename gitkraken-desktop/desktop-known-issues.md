@@ -17,7 +17,7 @@ tags: [troubleshooting, known-issues, error-logs, performance]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "known-issues"
+    nav_category: "desktop-known-issues"
     nav_label: "Known Issues"
     nav_order: 160
     nav_parent: ""

@@ -17,7 +17,7 @@ tags: [repositories, branches, merge, rebase, pull-requests, worktrees]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-repositories"
+    nav_category: "desktop-working-with-repositories"
     nav_label: "Working with Repositories"
     nav_order: 70
     nav_parent: ""

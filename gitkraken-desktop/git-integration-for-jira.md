@@ -17,10 +17,10 @@ tags: [jira, integration, commits, diffs, navigation]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "integrations-with-issue-trackers"
+    nav_category: "desktop-integrations-with-issue-trackers"
     nav_label: "Git Integration for Jira"
     nav_order: 30
-    nav_parent: "integrations-with-issue-trackers"
+    nav_parent: "desktop-integrations-with-issue-trackers"
     page_type: "content"
     card_icon: "link"
     card_color: "green"

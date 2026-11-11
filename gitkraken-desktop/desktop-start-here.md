@@ -17,7 +17,7 @@ tags: [getting-started, interface, profiles, preferences, beginner-guide]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "gitkraken-desktop-start-here"
+    nav_category: "desktop-start-here"
     nav_label: "Start Here"
     nav_order: 40
     nav_parent: ""

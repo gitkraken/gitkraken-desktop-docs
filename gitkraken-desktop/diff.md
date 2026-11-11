@@ -17,10 +17,10 @@ tags: [diff, blame, history, patches, external-tools]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-files"
+    nav_category: "desktop-working-with-files"
     nav_label: "View Diffs, File History, and Blame in GitKraken Desktop"
     nav_order: 50
-    nav_parent: "working-with-files"
+    nav_parent: "desktop-working-with-files"
     page_type: "content"
     card_icon: "file-diff"
     card_color: "blue"

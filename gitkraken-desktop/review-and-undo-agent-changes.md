@@ -17,10 +17,10 @@ tags: [agents, coding-agents, ai, review, undo, revert, reset, discard, diff, wo
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "agent-workflows"
+    nav_category: "desktop-agent-workflows"
     nav_label: "Review and Undo Agent Changes"
     nav_order: 20
-    nav_parent: "agent-workflows"
+    nav_parent: "desktop-agent-workflows"
     page_type: "content"
     card_icon: "git-compare"
     card_color: "purple"

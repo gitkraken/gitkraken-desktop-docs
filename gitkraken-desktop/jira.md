@@ -17,10 +17,10 @@ tags: [jira, issues, jql, branching, integration]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "integrations-with-issue-trackers"
+    nav_category: "desktop-integrations-with-issue-trackers"
     nav_label: "Jira Issues"
     nav_order: 10
-    nav_parent: "integrations-with-issue-trackers"
+    nav_parent: "desktop-integrations-with-issue-trackers"
     page_type: "content"
     card_icon: "ticket"
     card_color: "green"

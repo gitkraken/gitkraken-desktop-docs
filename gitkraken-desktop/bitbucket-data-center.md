@@ -17,10 +17,10 @@ tags: [bitbucket-data-center, self-hosted, pat, ssh, pull-requests]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "integrations-with-git-providers"
+    nav_category: "desktop-integrations-with-git-providers"
     nav_label: "Bitbucket Data Center"
     nav_order: 60
-    nav_parent: "integrations-with-git-providers"
+    nav_parent: "desktop-integrations-with-git-providers"
     page_type: "content"
     card_icon: "brand-bitbucket"
     card_color: "blue"

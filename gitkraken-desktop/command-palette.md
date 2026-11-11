@@ -17,10 +17,10 @@ tags: [command-palette, shortcuts, navigation, search, actions]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "gitkraken-desktop-start-here"
+    nav_category: "desktop-start-here"
     nav_label: "Command Palette"
     nav_order: 40
-    nav_parent: "gitkraken-desktop-start-here"
+    nav_parent: "desktop-start-here"
     page_type: "content"
     card_icon: "command"
     card_color: "purple"

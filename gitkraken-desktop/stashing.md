@@ -17,10 +17,10 @@ tags: [stash, pop, apply, work-in-progress, partial-stash]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-commits"
+    nav_category: "desktop-working-with-commits"
     nav_label: "Stash Changes"
     nav_order: 30
-    nav_parent: "working-with-commits"
+    nav_parent: "desktop-working-with-commits"
     page_type: "content"
     card_icon: "archive"
     card_color: "green"

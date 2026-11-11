@@ -17,7 +17,7 @@ tags: [integrations, github, gitlab, bitbucket, azure-devops, authentication]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "integrations-with-git-providers"
+    nav_category: "desktop-integrations-with-git-providers"
     nav_label: "Integrations with Git Providers"
     nav_order: 120
     nav_parent: ""

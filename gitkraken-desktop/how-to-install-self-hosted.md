@@ -18,10 +18,10 @@ tags: [self-hosted, docker, install, linux, on-premise]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "on-premise"
+    nav_category: "desktop-on-premise"
     nav_label: "Install Self-Hosted Server"
     nav_order: 20
-    nav_parent: "on-premise"
+    nav_parent: "desktop-on-premise"
     page_type: "content"
     card_icon: "download"
     card_color: "purple"

@@ -17,7 +17,7 @@ tags: [integrations, issues, jira, github-issues, gitlab-issues, trello]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "integrations-with-issue-trackers"
+    nav_category: "desktop-integrations-with-issue-trackers"
     nav_label: "Integrations with Issue Trackers"
     nav_order: 130
     nav_parent: ""

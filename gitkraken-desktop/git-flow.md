@@ -17,10 +17,10 @@ tags: [gitflow, branching, releases, hotfixes, workflow]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "git-workflows-and-extensions"
+    nav_category: "desktop-git-workflows-and-extensions"
     nav_label: "Gitflow"
     nav_order: 10
-    nav_parent: "git-workflows-and-extensions"
+    nav_parent: "desktop-git-workflows-and-extensions"
     page_type: "content"
     card_icon: "git-merge"
     card_color: "amber"

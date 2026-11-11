@@ -17,7 +17,7 @@ tags: [on-premise, self-hosted, serverless, enterprise]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "on-premise"
+    nav_category: "desktop-on-premise"
     nav_label: "On-Premise"
     nav_order: 150
     nav_parent: ""

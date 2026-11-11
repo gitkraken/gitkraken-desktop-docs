@@ -17,10 +17,10 @@ tags: [keyboard-shortcuts, shortcuts, navigation, command-palette, tabs]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "gitkraken-desktop-start-here"
+    nav_category: "desktop-start-here"
     nav_label: "Keyboard Shortcuts"
     nav_order: 50
-    nav_parent: "gitkraken-desktop-start-here"
+    nav_parent: "desktop-start-here"
     page_type: "content"
     card_icon: "keyboard"
     card_color: "purple"

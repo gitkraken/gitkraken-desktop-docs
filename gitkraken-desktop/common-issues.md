@@ -17,10 +17,10 @@ tags: [troubleshooting, login, github, performance, issues]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "known-issues"
+    nav_category: "desktop-known-issues"
     nav_label: "Common Issues and Fixes"
     nav_order: 30
-    nav_parent: "known-issues"
+    nav_parent: "desktop-known-issues"
     page_type: "content"
     card_icon: "help-circle"
     card_color: "red"

@@ -17,7 +17,7 @@ tags: [files, diff, commits, cherry-pick, editing]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "working-with-files"
+    nav_category: "desktop-working-with-files"
     nav_label: "Working With Files"
     nav_order: 50
     nav_parent: ""

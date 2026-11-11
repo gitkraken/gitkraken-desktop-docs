@@ -17,7 +17,7 @@ tags: [coding-agents, agents, worktrees, ai]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "agent-workflows"
+    nav_category: "desktop-agent-workflows"
     nav_label: "Agent Workflows"
     nav_order: 110
     nav_parent: ""

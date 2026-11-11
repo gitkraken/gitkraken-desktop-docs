@@ -17,10 +17,10 @@ tags: [interface, toolbar, left-panel, commit-graph, commit-panel, status-bar]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "gitkraken-desktop-start-here"
+    nav_category: "desktop-start-here"
     nav_label: "Interface Guide"
     nav_order: 10
-    nav_parent: "gitkraken-desktop-start-here"
+    nav_parent: "desktop-start-here"
     page_type: "content"
     card_icon: "layout-dashboard"
     card_color: "purple"

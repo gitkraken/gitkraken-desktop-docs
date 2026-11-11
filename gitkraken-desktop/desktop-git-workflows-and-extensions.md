@@ -17,7 +17,7 @@ tags: [gitflow, git-lfs, commit-signing, github-actions]
 taxonomy:
     category: gitkraken-desktop
 custom_fields:
-    nav_category: "git-workflows-and-extensions"
+    nav_category: "desktop-git-workflows-and-extensions"
     nav_label: "Git Workflows and Extensions"
     nav_order: 140
     nav_parent: ""
