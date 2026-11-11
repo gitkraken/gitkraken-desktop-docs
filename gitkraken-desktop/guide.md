@@ -22,6 +22,10 @@ custom_fields:
     nav_order: 70
     nav_parent: "desktop-start-here"
     page_type: "content"
+    entry_title: "Make your first commit"
+    entry_role: "Developer"
+    entry_desc: "Clone a repo, stage changes and push from the Commit Graph"
+    entry_order: 10
     card_icon: "school"
     card_color: "purple"
     card_description: "Clone, branch, stage, commit and merge, step by step"

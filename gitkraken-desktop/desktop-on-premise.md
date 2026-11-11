@@ -22,6 +22,10 @@ custom_fields:
     nav_order: 150
     nav_parent: ""
     page_type: "index"
+    entry_title: "Deploy self-hosted"
+    entry_role: "Enterprise admin"
+    entry_desc: "Self-Hosted Server, Serverless, LDAP and SMTP setup"
+    entry_order: 30
     card_icon: "server"
     card_color: "purple"
     card_description: "Self-Hosted Server and Serverless: install, configure and upgrade"
