@@ -1,0 +1,105 @@
+{
+  "_comment": "Product config of the gkhc-docs-authoring skill for this help center. Local to the docs repo (product/ is never overwritten by skillsync). Seeded by GK-WP-HC-Design skills/seed_products.py; check_pages.py and preview/ read it.",
+  "key": "desktop",
+  "name": "GitKraken Desktop",
+  "category": "gitkraken-desktop",
+  "content_dir": "gitkraken-desktop",
+  "images_dir": "_images",
+  "home_slug": "gitkraken-desktop-home",
+  "nav_file": "desktop",
+  "max_depth": 5,
+  "toc_levels": [
+    2,
+    3
+  ],
+  "code_default_label": "Code",
+  "nav": {
+    "sections": null,
+    "section_fallback": false,
+    "parent_must_be_index": false,
+    "every_page_in_nav": false,
+    "card_fields_required": false,
+    "slug_prefix": ""
+  },
+  "features": {
+    "metric_pipeline": false,
+    "playbooks": false,
+    "settings_specs": false
+  },
+  "checks": {
+    "missing_link_target": "warn",
+    "missing_image": "error",
+    "figures_only": false,
+    "ignore_link_targets": []
+  },
+  "metadata": {
+    "check": "error",
+    "conditional": [
+      "os_support",
+      "git_hosts",
+      "integrations",
+      "hosted_variant"
+    ],
+    "optional": [
+      "role_required",
+      "og_image"
+    ],
+    "constants": {
+      "product": "GitKraken Desktop"
+    },
+    "defaults": {},
+    "plan_required": [
+      "all",
+      "Community",
+      "Pro",
+      "Advanced",
+      "Business",
+      "Enterprise",
+      "insights-add-on"
+    ],
+    "plan_required_vocabulary": "error",
+    "aliases": {},
+    "extra_fields": []
+  },
+  "other_category_pages": {
+    "gk-soc2-request": "general"
+  },
+  "known_wp_images": {
+    "/wp-content/uploads//finish-feature.gif": [
+      "git-flow"
+    ],
+    "/wp-content/uploads//finish-release-tag.gif": [
+      "git-flow"
+    ],
+    "/wp-content/uploads//gk-new-submodules-icon.svg": [
+      "interface"
+    ],
+    "/wp-content/uploads//tag-message.png": [
+      "git-flow"
+    ],
+    "/wp-content/uploads/amend-commitmsg@2x.png": [
+      "squash"
+    ],
+    "/wp-content/uploads/authorize-gitlab@2x.png": [
+      "gitlab-issues"
+    ],
+    "/wp-content/uploads/gitlab-sign-in@2x.png": [
+      "gitlab-issues"
+    ],
+    "/wp-content/uploads/gkc-github-enterprise-server-add-key.png": [
+      "github-enterprise"
+    ],
+    "/wp-content/uploads/gkc-github-enterprise-server-integration-2.png": [
+      "github-enterprise"
+    ],
+    "/wp-content/uploads/gkc-github-enterprise-server-integration.png": [
+      "github-enterprise"
+    ],
+    "/wp-content/uploads/wsl-host-settings@2x.png": [
+      "windows-subsystem-for-linux"
+    ],
+    "/wp-content/uploads/wsl-toast@2x.png": [
+      "windows-subsystem-for-linux"
+    ]
+  }
+}
