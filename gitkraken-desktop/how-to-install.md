@@ -29,7 +29,7 @@ This installation guide explains how to install GitKraken Desktop on Windows, ma
 
 **Requirements and platform support**
 - Windows: Windows 10+
-- macOS: macOS 12+ on Intel and Apple Silicon
+- macOS: macOS 13+ on Intel and Apple Silicon
 - Linux `.deb`: Ubuntu 18.04+ LTS or Debian 10+
 - Linux `.rpm`: RHEL 8+ or Fedora 39+
 - Linux support note: Other distributions may work but are not officially supported
@@ -100,8 +100,8 @@ C:\\Users\\{user}\\AppData\\Roaming\\.gitkraken
 ## How to install GitKraken Desktop on macOS
 
 **System requirements:**
-- Intel: macOS 12+
-- Apple Silicon: macOS 12+
+- Intel: macOS 13+
+- Apple Silicon: macOS 13+
 
 - [Download GitKraken Desktop for macOS](https://gitkraken.com/download/mac?product=gitkraken&source=help_center)
 
