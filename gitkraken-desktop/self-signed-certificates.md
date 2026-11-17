@@ -11,22 +11,22 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [certificates, ssl, self-signed, trust, troubleshooting]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
-Use this page to install a self-signed SSL certificate so GitKraken Desktop can trust a private or internally signed remote host. It covers browser-based certificate export on Windows and macOS, Linux certificate installation steps, common SSL error messages, and how Git Executable respects global Git SSL settings.
+Use this page to install a self-signed SSL certificate so GitKraken Desktop can trust a private or internally signed remote host. You export the certificate with a browser, add it to your system's trusted certificates, and fix the most common SSL errors.
 
 **Requirements and limits**
 - Use case: Private or internally signed remote hosts that GitKraken Desktop does not trust by default
 - Windows workflow on this page: Chrome-based certificate export and trusted root installation
 - macOS workflow on this page: Safari export and Keychain Access trust configuration
 - Linux workflow on this page: Chrome export plus `openssl` and `certutil` installation steps
-- Git Executable note: When enabled, GitKraken Desktop honors SSL settings in the global `.gitconfig`
+- Git SSL settings: GitKraken Desktop honors SSL settings in the global `.gitconfig` for Git actions
 - Common failure mode: Missing or invalid SAN values can require the server certificate to be reissued
 
 | OS | Export step | Install location | Notes |
@@ -58,30 +58,30 @@ Use this page to install a self-signed SSL certificate so GitKraken Desktop can 
 2. Convert and install using `openssl` and `certutil` in the terminal.
 3. Reopen Chrome to confirm the warning no longer appears.
 
-If you have the Git Executable enabled, SSL settings in your global `.gitconfig` are also honored.
+GitKraken Desktop also honors SSL settings in your global `.gitconfig` for Git actions.
 
 ***
 
 ## How to add a self-signed certificate
 
-Self-signed certificates must be added to your trusted root directory before GitKraken will recognize the cert. This can be done through your operating system or in many browsers.
+GitKraken Desktop trusts a self-signed certificate only after you add it to your system's trusted root certificates. You can add it through your operating system or through a browser.
 
 <div class='callout callout--basic'>
-    <p><strong>Note:</strong> If you have the <a href="https://help.gitkraken.com/gitkraken-desktop/experimental-features/#git-executable">Git Executable</a> enabled, SSL settings in the global <code>.gitconfig</code> file are honored by GitKraken Desktop for actions performed by the Git executable.</p>
+    <p><strong>Note:</strong> GitKraken Desktop runs Git actions with the Git selected in <a href="https://help.gitkraken.com/gitkraken-desktop/preferences/#how-general-preferences-work">Git Executable</a>, so it honors SSL settings in the global <code>.gitconfig</code> file for those actions.</p>
 </div>
 
 ### How to use Google Chrome on Windows
 
-An easy way to install a certificate so that GitKraken can use it is via <a href='https://www.google.com/chrome/index.html' target='_blank'>Google Chrome</a>.
+On Windows, you can export and install the certificate with <a href='https://www.google.com/chrome/index.html' target='_blank'>Google Chrome</a>.
 
-To generate a self-signed certificate, navigate to your remote hosting service's website. You should see something like this:
+To export the certificate, go to your remote hosting service's website in Chrome and open the certificate details:
 
 <figure>
     <img alt="Certificate view in Chrome with export option" src="/wp-content/uploads/chrome-0a-export.png" class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Certificate view in Chrome with export option</figcaption>
 </figure>
 
-Click on the certificate, go to <kbd>Details</kbd>, click <kbd>Copy to File...</kbd>, and follow the Certificate Export Wizard.
+Click the certificate, go to <kbd>Details</kbd>, click <kbd>Copy to File...</kbd>, and follow the Certificate Export Wizard.
 
 <figure>
     <img alt="Certificate export wizard in Chrome" src="/wp-content/uploads/chrome-0b-export.png" class="help-center-img img-bordered" style="max-width: 75%;">
@@ -102,14 +102,14 @@ Navigate to <kbd>Privacy & Security <i class='fa fa-caret-right'></i> Security</
     <figcaption style="text-align:center;color:#888">Privacy & Security settings in Chrome</figcaption>
 </figure>
 
-Scroll down and click <em>Manage certificates</em>. Use the wizard to import the certificate.
+Scroll down and click **Manage certificates**. Use the wizard to import the certificate.
 
 <figure>
     <img alt="Certificate management dialog in Chrome" src="/wp-content/uploads/chrome-3-manage-certs.png" class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">Certificate management dialog in Chrome</figcaption>
 </figure>
 
-Ensure that the certificate is added to your trusted root certificates.
+Make sure the wizard adds the certificate to your trusted root certificates.
 
 <figure>
     <img alt="Wizard with trusted root option" src="/wp-content/uploads/chrome-4-wizard.png" class="help-center-img img-bordered" style="max-width: 75%;">
@@ -125,7 +125,7 @@ Open Safari and navigate to your remote hosting service.
     <figcaption style="text-align:center;color:#888">Remote host with invalid certificate in Safari</figcaption>
 </figure>
 
-Click to open the certificate window:
+Open the certificate details window:
 
 <figure>
     <img alt="Certificate details window in Safari" src="/wp-content/uploads/safari-1b.png" class="help-center-img img-bordered" style="max-width: 75%;">
@@ -139,14 +139,14 @@ Hold down the <kbd>Option</kbd> key and drag the certificate icon to the desktop
     <figcaption style="text-align:center;color:#888">Dragging certificate to save it as a .pem file</figcaption>
 </figure>
 
-Double-click the file to open your macOS Keychain.
+Double-click the file to open it in Keychain Access.
 
 <figure>
     <img alt="macOS Keychain interface" src="/wp-content/uploads/safari-4.png" class="help-center-img img-bordered" style="max-width: 75%;">
     <figcaption style="text-align:center;color:#888">macOS Keychain interface</figcaption>
 </figure>
 
-Locate the certificate in the **login** section and double-click to configure.
+Find the certificate in the **login** keychain and double-click it to open its settings.
 
 <figure>
     <img alt="Certificate settings in Keychain Access" src="/wp-content/uploads/safari-5-6.png" class="help-center-img img-bordered" style="max-width: 75%;">
@@ -157,28 +157,30 @@ Set the trust level to *Always Trust*. Restart your computer to apply the change
 
 ### How to use Chrome on Ubuntu Linux
 
-Follow the same certificate export steps described in the [Windows section](/integrations/self-signed-certificates/#using-google-chrome-on-windows). Then:
+Export the certificate with Chrome as in [How to use Google Chrome on Windows](#how-to-use-google-chrome-on-windows). Then install it from a terminal:
 
-1. Open a terminal and go to your <kbd>Downloads</kbd> folder.
-2. Run the following commands:
+1. Go to your <kbd>Downloads</kbd> folder.
+2. Convert the certificate and add it to the certificate database:
 
-```
-openssl x509 -outform der -in DOWNLOADED-CERT-NAME -out DOWNLOADED-CERT-NAME.crt
-```
+   ```
+   openssl x509 -outform der -in DOWNLOADED-CERT-NAME -out DOWNLOADED-CERT-NAME.crt
+   ```
 
-```
-certutil -d sql:$HOME/.pki/nssdb -A -t "CT,C,C" -n DOWNLOADED-CERT-NAME.crt -i DOWNLOADED-CERT-NAME.crt
-```
+   ```
+   certutil -d sql:$HOME/.pki/nssdb -A -t "CT,C,C" -n DOWNLOADED-CERT-NAME.crt -i DOWNLOADED-CERT-NAME.crt
+   ```
 
 3. Verify the certificate:
 
-```
-certutil -d sql:$HOME/.pki/nssdb -L
-```
+   ```
+   certutil -d sql:$HOME/.pki/nssdb -L
+   ```
 
 Close and reopen Chrome to confirm the certificate warning no longer appears.
 
 ### Common certificate errors
+
+If GitKraken Desktop shows one of these SSL certificate errors, fix it as follows.
 
 #### How to fix `Invalid SSL Certificate`
 
@@ -187,7 +189,7 @@ Close and reopen Chrome to confirm the certificate warning no longer appears.
     <figcaption style="text-align:center;color:#888">GitKraken invalid SSL certificate warning</figcaption>
 </figure>
 
-This usually indicates the certificate is invalid or missing. [Add a certificate](/integrations/self-signed-certificates/#adding-a-self-signed-certificate) to your local store.
+This error means the certificate is invalid or missing from your local store. [Add the certificate](#how-to-add-a-self-signed-certificate) to your local store.
 
 #### Additional details about SSL certificate errors
 
@@ -196,11 +198,11 @@ This usually indicates the certificate is invalid or missing. [Add a certificate
     <figcaption style="text-align:center;color:#888">Detailed certificate error from GitKraken</figcaption>
 </figure>
 
-These errors often point to issues like a missing *Server Alternate Name (SAN)*. Contact your server administrator to fix and reissue the certificate.
+A detailed error like this one can point to a problem in the server certificate itself, such as a missing **Subject Alternative Name** (**SAN**). Contact your server administrator to fix and reissue the certificate.
 
 ### Operating system guides
 
-Use the links below for more help installing certificates by OS:
+For more help installing certificates on your operating system, see:
 
 <table class='table table--bordered table--shortcuts'>
     <tbody>
@@ -209,7 +211,7 @@ Use the links below for more help installing certificates by OS:
             <td><a href='https://docs.microsoft.com/en-us/skype-sdk/sdn/articles/installing-the-trusted-root-certificate' target='_blank'>Microsoft Docs</a></td>
         </tr>
         <tr>
-            <td>OSX</td>
+            <td>macOS</td>
             <td><a href='https://support.apple.com/guide/keychain-access/add-certificates-to-a-keychain-kyca2431/mac' target='_blank'>Apple Docs</a></td>
         </tr>
         <tr>
