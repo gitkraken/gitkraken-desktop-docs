@@ -78,7 +78,7 @@ The Experimental section describes each experimental feature. If you have issues
 
 ### What Cloud Patches are
 
-A Cloud Patch is a Git patch that GitKraken securely stores so you can share it across GitKraken Desktop, GitLens, and the GitKraken CLI. Use Cloud Patches to:
+A Cloud Patch is a Git patch that GitKraken stores so you can share it across GitKraken Desktop, GitLens, and the GitKraken CLI. Use Cloud Patches to:
 - Share work-in-progress with teammates before a pull request
 - Apply changes across machines or collaborators securely
 
