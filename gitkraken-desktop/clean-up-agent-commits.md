@@ -141,7 +141,7 @@ Yes. [Interactive rebase](/gitkraken-desktop/interactive-rebase/) works on every
 3. In the list next to each commit, choose what to do with it:
    - **Pick**: keep the commit as it is.
    - **Reword**: write a new message. You can also double-click the commit.
-   - **Squash**: combine the commit into the commit before it.
+   - **Squash**: combine the commit into the older commit below it.
    - **Drop**: remove the commit and its changes.
 4. Drag commits up or down to reorder them, or right-click a commit and select **Move commit up** or **Move commit down**.
 5. Click **Start Rebase**. To go back to the original list, click **Reset**. To leave without changing anything, click **Cancel Rebase**.
