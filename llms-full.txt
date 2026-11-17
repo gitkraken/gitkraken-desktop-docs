@@ -605,14 +605,14 @@ Use this page to find where a setting lives in GitKraken Desktop Preferences and
 
 ## Quick Start
 
-- **General**: Set auto-fetch intervals, conflict detection behavior, Commit Graph limits, and tab retention.
+- **General**: Set auto-fetch intervals, conflict detection behavior, Commit Graph limits, tab retention, and the Git executable GitKraken Desktop uses.
 - **Profiles**: Create and switch between profiles to separate Git identities, integrations, and tab sets.
 - **SSH and Integrations**: Connect to GitHub, GitLab, Bitbucket, Azure DevOps, Jira, Trello, and more.
 - **GitKraken AI**: Enable AI-assisted commit messages and PR descriptions (Pro plan and above).
 - **External Tools**: Set your preferred editor, diff tool, merge tool, external terminal, and custom coding agent commands.
 - **UI Customization**: Change themes, date formats, avatar display, and Commit Graph metadata.
 - **Commit Signing**: Enable GPG signing for verified commits.
-- **Experimental**: Try preview features such as Git Executable and Cloud Patches.
+- **Experimental**: Read about preview features such as Cloud Patches.
 - **Repo-Specific Preferences**: Configure encoding, Gitflow, hooks, LFS, issues, Team View, and agent setup commands per repository.
 
 Each profile has its own preferences, so switching profiles switches integrations and UI options to that profile's configuration.
@@ -623,7 +623,7 @@ Access Preferences from the gear icon in the top right corner
 
 ## How organization settings work
 
-This section is labeled with your organization's name and shows its members and teams. Owners and Admins can:
+The organization section takes your organization's name and shows its members and teams. Owners and Admins can:
 - Manage member roles
 - Invite users and assign licenses
 - Create and manage teams
@@ -634,7 +634,7 @@ Note: Organization settings are available on the Pro plan and above.
 
 ## How General preferences work
 
-Configure app-wide behavior such as auto-fetch, conflict detection, and Commit Graph settings.
+Configure app-wide behavior such as auto-fetch, conflict detection, Commit Graph settings, and the Git executable GitKraken Desktop uses:
 
 | Setting | What it controls |
 | --- | --- |
@@ -648,6 +648,7 @@ Configure app-wide behavior such as auto-fetch, conflict detection, and Commit G
 | **Initial Commits in Graph** | Sets the number of commits the graph shows at first (minimum 500). |
 | **Lazy Load Commits in Graph** | Loads more commits only as needed. |
 | **Remember tabs** | Saves open tabs and profile context between sessions. |
+| **Git Executable** | Chooses the Git that GitKraken Desktop runs for every Git operation: the Git bundled with GitKraken Desktop (the default) or another Git installed on your computer. |
 | **Longpaths** and **AutoCRLF** | Windows-only settings tied to your global `.gitconfig`. |
 | **Use extended logging in activity log** | Records more detailed activity logs, which you can get from Help > Support Logs. |
 | **Forget all Usernames and Passwords** | Clears stored usernames and passwords. |
@@ -669,7 +670,7 @@ See [how to create and switch profiles](/start-here/profiles).
 
 Control access and connections to remote repositories:
 
-- [SSH settings](/gitkraken-desktop/authentication/#ssh)
+- [SSH settings](/gitkraken-desktop/authentication/#how-ssh-authentication-works)
 - Git hosting integrations such as GitHub, GitLab, Bitbucket, and Azure DevOps
 - Issue tracker integrations such as Jira and Trello
 
@@ -737,7 +738,7 @@ Enable Show Agents view in left panel to display the List | Agents toggle
 
 ## How commit signing preferences work
 
-Enable and configure [GPG signing](/git-workflows-and-extensions/commit-signing-with-gpg/#configure-gpg-in-gitkraken) for commit verification.
+Enable and configure [GPG signing](/gitkraken-desktop/commit-signing-with-gpg/#how-to-configure-gpg-in-gitkraken-desktop) for commit verification.
 
 ***
 
@@ -765,9 +766,9 @@ For worktree-specific terminal sessions and manual coding agent workflows, see [
 
 ## How experimental preferences work
 
-Preview [Experimental Features](/gitkraken-desktop/experimental-features):
-- **Use Git Executable**: Run Git operations with a Git executable instead of the NodeGit library
-- Cloud Patches
+The Experimental section describes preview [Experimental Features](/gitkraken-desktop/experimental-features), such as Cloud Patches.
+
+The self-hosted and standalone versions of GitKraken Desktop do not show the Experimental section. The Git executable setting is in [General preferences](#how-general-preferences-work).
 
 ***
 
@@ -775,7 +776,7 @@ Preview [Experimental Features](/gitkraken-desktop/experimental-features):
 
 These settings apply only to the open repository, so you can configure each repository differently:
 
-- [Encoding](/gitkraken-desktop/editing-files/#encoding)
+- [Encoding](/gitkraken-desktop/editing-files/#how-file-encoding-works)
 - [Gitflow](/gitkraken-desktop/git-flow/)
 - [Git Hooks](/gitkraken-desktop/githooks/)
 - [LFS](/gitkraken-desktop/git-lfs/)
@@ -1676,7 +1677,7 @@ Creating and checking out a new branch
 
 If you are on the wrong branch, [stash](/gitkraken-desktop/stashing) your changes, switch branches, and pop the stash.
 
-If you only need a subset of files checked out, see [Sparse Checkout](/gitkraken-desktop/open-clone-init/#sparse-checkout).
+If you only need a subset of files checked out, see [Sparse Checkout](/gitkraken-desktop/open-clone-init/#how-sparse-checkout-works).
 
 ### How to rename a branch
 
@@ -2485,15 +2486,14 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
-
-Use this page to stash, apply, pop, rename, and partially restore uncommitted changes in GitKraken Desktop when you need to switch context without creating a commit. It covers both full stashes and partial file-based stashes, along with the graph and Left Panel workflows for managing them.
+Use this page to stash, apply, pop, rename, and partially restore uncommitted changes in GitKraken Desktop when you need to switch context without creating a commit. You can stash all your changes or only selected files, and manage your stashes from the Commit Graph or the Left Panel.
 
 **Requirements and limits**
 - Workflow scope: Uncommitted local changes only
+- Submodule limitation: Changes inside a submodule, a submodule checked out at another commit, and folders that hold their own Git repository are not stashed. Commit or stash those changes from the submodule itself
 - Apply vs. pop: **Apply Stash** keeps the stash; **Pop Stash** applies it and removes it
 - Partial stash behavior: Applying a single file from a partial stash does not remove the stash
-- Naming option: Name the stash before creating it by editing the `// WIP` field or stash summary field
+- Naming option: Name the stash before creating it in the WIP node's `// WIP` field or the **Stash title** field in the Commit Panel
 - GitKraken AI note: AI-generated stash messages require GitKraken AI to be enabled
 - Stash visibility: Stashes can be hidden from the graph without being deleted
 
@@ -2502,7 +2502,7 @@ Use this page to stash, apply, pop, rename, and partially restore uncommitted ch
 | Stash | Saves current uncommitted changes | Yes | Creates a new stash entry |
 | Apply Stash | Restores stashed changes | Yes | Keeps the stash for reuse |
 | Pop Stash | Restores stashed changes | No | Applies and removes the stash |
-| Partial stash | Saves selected files only | Yes | Managed from staged files in the Commit Panel |
+| Partial stash | Saves selected files only | Yes | Created from staged or unstaged files in the Commit Panel |
 | Apply partial stash file | Restores one file from a partial stash | Yes | Does not remove the stash |
 | Hide stash | Removes stash from graph view only | Yes | Does not delete the stash |
 
@@ -2510,143 +2510,97 @@ Use this page to stash, apply, pop, rename, and partially restore uncommitted ch
 
 ## Quick Start
 
-
 **To stash all changes:** Click the **Stash** icon in the top toolbar. Your stash appears in the Commit Graph.
 
 **To manage a stash:** Right-click the stash node in the graph to apply, pop, delete, or hide it. Right-click a stash in the Left Panel for the same options.
 
 **To pop the latest stash:** Click the **Pop Stash** button in the toolbar to apply changes and delete the stash in one step.
 
-**To name a stash:** Type a name into the `// WIP` field at the top of the graph before clicking Stash.
+**To name a stash:** Type a name in the WIP node's `// WIP` field in the Commit Graph, then click **Stash**.
 
-**To stash specific files (partial stash):** Stage your files in the Commit Panel, then right-click a file in the Staged Files section and select **Stash file**.
+**To stash specific files (partial stash):** In the Commit Panel, right-click a staged or unstaged file and select **Stash file**.
 
-**To apply a partial stash file by file:** Select the stash in the graph, then right-click a file in the Commit Panel and choose to apply it. Applying a single file does not remove the stash.
+**To apply a partial stash file by file:** Select the stash in the graph, then right-click a file in the Commit Panel and select **Apply stashed file**. Applying a single file does not remove the stash.
 
 ***
-
-<a name="stashing-files"></a>
 
 ## How to stash changes from the top toolbar
 
 Click the **Stash** icon in the top toolbar to create a new stash.
 
-<figure>
-  <img src='/wp-content/uploads/stash@2x.png' class="help-center-img img-bordered" alt="GitKraken top toolbar with Stash button highlighted">
-  <figcaption style="text-align:center; color:#888">Create a stash from the top toolbar.</figcaption>
-</figure>
+If your only changes are inside submodules or in folders that hold their own Git repository, GitKraken Desktop shows **Nothing to stash** and does not create a stash. Open the submodule to commit or stash its changes there.
 
-Your stash will appear in the Commit Graph. Right-click on the stash node to see available options:
+Create a stash from the top toolbar.
+
+Your stash appears in the Commit Graph. Right-click the stash node to see these options:
 
 * **Apply Stash**: Apply changes to your working directory and keep the stash.
 * **Pop Stash**: Apply changes and remove the stash.
 * **Delete Stash**: Permanently remove the stash.
 * **Hide**: Hide the stash from the graph.
-* **Hide all stashes**: Hide all stashes from the graph.
-* **Show all stashes**: Display all hidden stashes.
 
-<figure>
-  <img src='/wp-content/uploads/stash-options@2x.png' class="help-center-img img-bordered" alt="Right-click stash options menu in GitKraken Desktop showing Apply, Pop, Delete, and visibility controls">
-  <figcaption style="text-align:center; color:#888">Right-click a stash to manage it.</figcaption>
-</figure>
+To hide or show every stash at once, right-click the **STASHES** header in the Left Panel and select **Hide all stashes** or **Show all stashes**.
+
+Right-click a stash to manage it.
 
 To quickly pop the latest stash, use the **Pop Stash** button:
 
-<figure>
-  <img src='/wp-content/uploads/pop-stash@2x.png' class="help-center-img img-bordered" alt="Top toolbar in GitKraken Desktop with Pop Stash button highlighted">
-  <figcaption style="text-align:center; color:#888">Use the Pop Stash button for one-click restore and delete.</figcaption>
-</figure>
-
-<a name="stashing-from-the-left-panel"></a>
+Use the Pop Stash button for one-click restore and delete.
 
 ## How to stash changes from the Commit Panel
 
-You can stash changes from the Commit Panel. Stage your files and click the Stash icon (instead of Commit).
+To stash from the Commit Panel:
 
-<figure>
-  <img src='/wp-content/uploads/stash-commit-panel-2025.png' class="help-center-img img-bordered" alt="Commit Panel's stash tab with input for name and description, and a Stash Changes button">
-  <figcaption style="text-align:center; color:#888">Stage files and click the Stash icon to save changes.</figcaption>
-</figure>
+1. Click the **Stash** tab icon in the Commit Panel.
+2. Stage the files you want to stash.
+3. Type a **Stash title**.
+4. Click **Stash Changes to *N* Files**.
 
-If you use [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/), click the sparkle icon to auto-generate a stash message based on your staged changes.
+Stage files and click the Stash icon to save changes.
 
-<figure>
-  <img src="/wp-content/uploads/stash-ai-message@2x.png" class="help-center-img img-bordered" alt="GitKraken Stash panel (inside Commit Panel) with tooltip pointing to the AI icon for generating a stash message">
-  <figcaption style="text-align:center; color:#888">Use GitKraken AI to generate a stash description.</figcaption>
-</figure>
+If you use [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/), click the sparkle icon, **Generate a stash message with AI**, to write a stash message from your staged changes.
+
+Use GitKraken AI to generate a stash description.
 
 ## How to view and manage stashes from the Left Panel
 
-All your stashes are listed in the Left Panel. Right-click to Apply, Pop, Delete, Hide, or Show them.
+The Left Panel lists all your stashes. Right-click a stash to apply, pop, delete, hide, or show it.
 
-<figure>
-  <img src='/wp-content/uploads/stash-left-2025.png' class="help-center-img img-bordered" alt="Stash management menu in GitKraken's Left Panel showing options like Apply, Pop, Delete, and Share stash">
-  <figcaption style="text-align:center; color:#888">Review and manage your stashes from the Left Panel.</figcaption>
-</figure>
-
-<a name="naming-a-stash"></a>
+Review and manage your stashes from the Left Panel.
 
 ## How to name a stash
 
-To give a stash a name, type into the `// WIP` field at the top of the graph before stashing.
+To name a stash, type the name in the WIP node's `// WIP` field in the Commit Graph before you stash.
 
-<figure>
-  <img src='/wp-content/uploads/custom-stash-wip@2x.png' class="help-center-img img-bordered" alt="User typing a custom stash name in the GitKraken commit graph WIP node">
-  <figcaption style="text-align:center; color:#888">Enter a custom stash name before saving.</figcaption>
-</figure>
+Enter a custom stash name before saving.
 
-Named stashes are easier to recognize in the Left Panel and commit graph.
+The name identifies the stash in the Left Panel and the Commit Graph.
 
-<figure>
-  <img src='/wp-content/uploads/custom-stash-panel@2x.png' 
-       class="help-center-img img-bordered" 
-       alt="Custom-named stash labeled 'my-custom-stash-name' displayed under STASHES in the GitKraken Left Panel on the master branch">
-  <figcaption style="text-align:center; color:#888">Named stash in the Left Panel.</figcaption>
-</figure>
+Named stash in the Left Panel.
 
-<figure>
-  <img src='/wp-content/uploads/custom-stash-graph@2x.png' 
-       class="help-center-img img-bordered" 
-       alt="Commit Graph showing a WIP stash labeled 'my-custom-stash-name' created on the master branch.">
-  <figcaption style="text-align:center; color:#888">Named stash in the graph view.</figcaption>
-</figure>
+Named stash in the graph view.
 
 ## How to edit a stash message
 
 To update a stash description, right-click the stash in the graph or the Left Panel, then select **Edit stash message**.
 
-<figure>
-  <img src="/wp-content/uploads/amend-stash-graph2.png" 
-       class="help-center-img img-bordered" 
-       alt="Commit Graph showing a stash selected on the feature branch with the context menu open and 'Edit stash message' highlighted.">
-  <figcaption style="text-align:center; color:#888">Edit a stash message from the context menu.</figcaption>
-</figure>
+Edit a stash message from the context menu.
 
 ## How to create and apply a partial stash
 
-Stash specific files by right-clicking them in the **Staged Files** panel and selecting **Stash file**. This clears their changes and saves them to a partial stash.
+To stash specific files, right-click them in the Commit Panel, staged or unstaged, and select **Stash file** (or **Stash *N* files** for a multiple selection). GitKraken Desktop removes their changes from your working directory and saves them in a partial stash.
 
-<figure>
-  <img src='/wp-content/uploads/partial-stash.png' 
-       class="help-center-img img-bordered" 
-       alt="Context menu showing the option to stash two selected unstaged files from the Commit Panel.">
-  <figcaption style="text-align:center; color:#888">Select individual files to stash partially.</figcaption>
-</figure>
+Select individual files to stash partially.
 
-You can also apply changes from a partial stash one file at a time. Right-click a file in the Commit Panel while a stash is selected.
+You can also apply changes from a stash one file at a time. Select the stash, right-click a file in the Commit Panel, and select **Apply stashed file** (or **Apply *N* files from stash**).
 
-<figure>
-  <img src='/wp-content/uploads/partial-stash-apply.png' 
-       class="help-center-img img-bordered" 
-       alt="Commit Panel showing context menu option to apply two selected files from stash.">
-  <figcaption style="text-align:center; color:#888">Apply part of a stash by selecting specific files.</figcaption>
-</figure>
+Apply part of a stash by selecting specific files.
 
 ### Tips for partial stashes
 
-* Name a partial stash via the `// WIP` node or summary field before stashing.
+* Name a partial stash in the WIP node's `// WIP` field before stashing.
 * Hold **Shift** or **Ctrl** to select multiple files.
-* Applying a file from a stash doesn’t remove it from the stash.
+* Applying a file from a stash does not remove the file from the stash.
 
 ---
 
@@ -3853,8 +3807,6 @@ GitKraken Desktop detects installed CLIs automatically. If you install `cursor-a
 
 In on-premises environments, do not assume every supported CLI will be available. The list in GitKraken Desktop depends on which CLIs are installed on the machine and which services your organization allows that machine to access.
 
-If you need fully air-gapped agent workflows, OpenCode and Gemini CLI can run against an internal model endpoint. Claude Code, Codex CLI, Copilot CLI, and Cursor CLI are supported when your organization permits them and the required services are available inside your environment.
-
 If you use a different coding agent, you can still open a session worktree and run that agent manually in the embedded terminal. The agent does not need to appear in the coding agent configuration for you to use that terminal workflow.
 
 Setup is the same for every supported CLI: install the CLI on your system, then configure it in Preferences > External Tools > Coding Agent.
@@ -3906,7 +3858,7 @@ Start an agent session from an issue to create a branch and worktree for that is
 The setup modal has these options:
 
 - **Branch name**: generated from the issue.
-- **Base branch**: the branch to create the worktree from.
+- **Base branch**: the branch or tag to create the worktree from. Tags appear in the list with a tag icon.
 - **Coding agent**: the CLI to launch.
 - **Send issue context to start immediately**: selected by default. The agent starts working right away with the issue's title, status, link, author, assignees, labels, and description. Clear it to start the agent without the issue details. It is unavailable when **Coding agent** is set to **None**.
 
@@ -3958,14 +3910,14 @@ Each card in the Agents view represents one worktree and lists each coding agent
 | **WIP change summary** | The count of uncommitted file changes |
 | **Ahead / behind** | Commit counts relative to the remote |
 | **Agent status** | One row per agent session, showing its state: **Running**, **Thinking**, **Using tool**, **Awaiting approval**, **Needs response**, **Error**, or **Waiting for input** |
-| **Merged PR pill** | Whether the branch has a merged pull request on GitHub, GitLab, Azure DevOps, Bitbucket, or Bitbucket Data Center |
+| **Merged PR pill** | Whether the branch has a merged pull request or merge request on GitHub, GitLab, Azure DevOps, Bitbucket, or Bitbucket Data Center |
 
-The status row on each card shows the current session state. Claude Code, Codex CLI, Copilot CLI, and OpenCode can report live status when you install their status integrations. If the branch has a merged pull request or merge request on GitHub, GitLab, Azure DevOps, Bitbucket, or Bitbucket Data Center, a merged PR pill appears on the card.
-
-When you start a session, the card shows a **Running** status. If you install a status integration for a supported CLI, the card can show more specific status information.
+When you start a session, its status row shows **Running**. Claude Code, Codex CLI, Copilot CLI, and OpenCode report more specific live status when you install their status integrations.
 
 When an agent needs attention, the card can show a bell icon and a **Waiting for input** label, so you can see that the session needs a response without switching to the terminal first.
+
 Hover over the Agents toggle to see how many agent sessions are waiting for input.
+
 If you remove a worktree from the card menu, the card shows that the removal is in progress until it finishes.
 
 Removing a worktree from the card menu in the Agents view.
@@ -4938,17 +4890,15 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
-
-Use this page to add, update, initialize, and manage Git submodules in GitKraken Desktop when one repository needs to reference another repository at a fixed commit. It covers how the Submodules pane works, how pointer commits are updated, and where to configure automatic submodule updates.
+Use this page to add, update, initialize, and manage Git submodules in GitKraken Desktop when one repository needs to reference another repository at a fixed commit. You can also change the commit the parent repository points to and turn on automatic submodule updates.
 
 **Requirements and limits**
 - Workflow scope: Git submodules, not Git subtree workflows
 - Pane access: Enable the Submodules pane from the Left Panel header menu
 - Add workflow: Requires an HTTPS or SSH repository URL and a target path
 - Clone behavior: GitKraken Desktop prompts you to initialize submodules when cloning a parent repository that includes them
-- Pointer behavior: Updating the tracked commit changes the parent repo’s submodule pointer and `.gitmodules` reference state
-- Auto-update settings: Configure globally in <kbd>Preferences &gt; General</kbd> or per repository in <kbd>Preferences &gt; Submodules</kbd>
+- Pointer behavior: Changing the tracked commit changes the parent repository's pointer to the submodule commit, which you then commit in the parent repository
+- Auto-update settings: Configure globally in Preferences &gt; General or per repository in Preferences &gt; Submodules
 - Limitation: GitKraken Desktop does not support subtree workflows in-app
 
 | Workflow | Supported in app | Notes |
@@ -4956,7 +4906,7 @@ Use this page to add, update, initialize, and manage Git submodules in GitKraken
 | Show Submodules pane | Yes | Enable it from the Left Panel header menu |
 | Add submodule | Yes | Requires repository URL and target path |
 | Initialize submodules after clone | Yes | GitKraken Desktop prompts you when needed |
-| Update submodule | Yes | Updates the tracked commit reference |
+| Update submodule | Yes | Checks out the commit the parent repository records |
 | Configure auto-update | Yes | Available globally or per repository |
 | Git subtree workflow | No | Not supported in-app |
 
@@ -4964,25 +4914,20 @@ Use this page to add, update, initialize, and manage Git submodules in GitKraken
 
 ## Quick Start
 
-
 **To show the Submodules pane:** Right-click any Left Panel header and check **Submodules**.
 
 **To add a submodule:**
 1. Hover over **Submodules** in the Left Panel and click the **+** icon.
-2. Paste the HTTPS or SSH repository URL and enter the desired path.
-3. GitKraken Desktop updates `.gitmodules` and references the submodule commit.
+2. Paste the HTTPS or SSH repository URL in **Remote URL** and enter the path in **Name/Path**.
+3. Click **Add Submodule**. GitKraken Desktop updates `.gitmodules` and references the submodule commit.
 
-**To update a submodule:** Open the Submodules pane, right-click the submodule, and select **Update** to fetch its latest commit.
+**To update a submodule:** Open the Submodules pane, right-click the submodule, and select **Update *[submodule]*** to fetch and check out the commit the parent repository records.
 
-**To change the tracked commit:** Open the submodule in GitKraken Desktop, check out a new commit or branch, then exit the submodule. GitKraken Desktop will prompt you to save the updated pointer.
+**To change the tracked commit:** Open the submodule in GitKraken Desktop, check out a new commit or branch, then close the submodule. In the parent repository, right-click the submodule and select **Commit Changes** to save the updated pointer.
 
-**To enable automatic updates:** Go to <kbd>Preferences > General</kbd> to update all repos globally, or <kbd>Preferences > Submodules</kbd> for per-repository settings.
+**To enable automatic updates:** Go to Preferences > General to update all repos globally, or Preferences > Submodules for per-repository settings.
 
-When cloning a parent repository that includes submodules, GitKraken Desktop will prompt you to initialize them.
-
-<div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/moC2KyxGb10?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
-</div>
+When you clone a parent repository that includes submodules, GitKraken Desktop asks whether to initialize them.
 
 ***
 
@@ -4990,35 +4935,26 @@ When cloning a parent repository that includes submodules, GitKraken Desktop wil
 
 To toggle the Submodules pane:
 1. Right-click any pane header in the Left Panel.
-2. Check or uncheck “Submodules” to show or hide the pane.
+2. Check or uncheck **Submodules** to show or hide the pane.
 
-<figure>
-  <img src="/wp-content/uploads/toggle-panes-2025@2x.png" 
-       alt="GitKraken Desktop Left Panel showing the toggle pane menu with options to show or hide sections like Remote, Pull Requests, Tags, and Submodules" 
-       class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">Toggle the Submodules pane from the Left Panel</figcaption>
-</figure>
+Toggle the Submodules pane from the Left Panel
 
 ***
 
 ## How to add a submodule
 
 To add a submodule:
-1. Hover over <em>Submodules</em> in the Left Panel.
+1. Hover over Submodules in the Left Panel.
 2. Click the <button class='button button--success button--ui button--nolink'>+</button> icon.
-3. Paste the HTTPS or SSH repository URL.
-4. Enter the desired path.
+3. Paste the HTTPS or SSH repository URL in **Remote URL**.
+4. Enter the path in **Name/Path**.
+5. Click **Add Submodule**.
 
-<figure>
-  <img src="/wp-content/uploads/add-submodule@2x.png" 
-       alt="GitKraken Desktop interface showing the Add Submodule modal with fields for Remote URL and Name/Path, and a green Add Submodule button" 
-       class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">Add a submodule using HTTPS or SSH URL</figcaption>
-</figure>
+Add a submodule using HTTPS or SSH URL
 
 Adding a submodule updates the `.gitmodules` file and references the submodule commit.
 
-When cloning the parent repository, you’ll be prompted to initialize the submodule to fetch and checkout its commit.
+When you clone the parent repository, GitKraken Desktop asks whether to initialize its submodules, which fetches and checks out each submodule's commit.
 
 ***
 
@@ -5027,16 +4963,9 @@ When cloning the parent repository, you’ll be prompted to initialize the submo
 To update a submodule:
 1. Open the Submodules pane.
 2. Right-click the submodule.
-3. Select <kbd>Update</kbd> to fetch the latest commit.
+3. Select Update *[submodule]*. GitKraken Desktop fetches the submodule if needed and checks out the commit the parent repository records.
 
-<figure>
-  <img src="/wp-content/uploads/update-submodule@2x.png" 
-       alt="Context menu in GitKraken Desktop showing options to update, edit, open, or delete the submodule vendor/libgit2" 
-       class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">Update a submodule from the Left Panel</figcaption>
-</figure>
-
-When cloning a repository that includes submodules, GitKraken prompts you to initialize them.
+Update a submodule from the Left Panel
 
 ***
 
@@ -5045,16 +4974,13 @@ When cloning a repository that includes submodules, GitKraken prompts you to ini
 To update the tracked commit:
 1. Open the submodule in GitKraken Desktop.
 2. Check out a new commit or branch.
-3. Exit the submodule to return to the parent repo.
+3. Click **Close Submodule** in the toolbar to return to the parent repository.
+4. In the Submodules pane, double-click the submodule to see its out-of-sync status.
+5. Click **Commit Changes** to save the updated pointer commit, or **Discard Submodule Changes** to go back to the recorded commit.
 
-GitKraken Desktop will prompt you to save the updated pointer commit.
+Both actions are also in the submodule's right-click menu.
 
-<figure>
-  <img src="/wp-content/uploads/submodule-commit@2x.png" 
-       alt="GitKraken Desktop interface showing submodule vendor/libgit2 out-of-sync, with options to commit or discard changes, and view or delete the submodule" 
-       class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">Update the pointer commit for a submodule</figcaption>
-</figure>
+Update the pointer commit for a submodule
 
 ***
 
@@ -5062,17 +4988,23 @@ GitKraken Desktop will prompt you to save the updated pointer commit.
 
 Possible submodule states and how to resolve them:
 
-- **Out of sync**: The pointer commit changed. Stash, commit, or discard changes.
-- **Added but not initialized**: Right-click and select <kbd>Initialize</kbd>.
+- **Out of sync**: The pointer commit changed. Commit or discard the change. A stash does not save a submodule's pointer or the changes inside it.
+- **Added but not initialized**: Right-click the submodule and select Initialize *[submodule]*.
 - **Added and initialized but not committed**: Commit the submodule folder and update `.gitmodules`.
+
+Before an action that can move or reset your submodules, such as a checkout, rebase, reset, or undo, GitKraken Desktop checks them and asks first:
+
+- **A submodule is checked out at a commit that is not staged**: The action can move the submodule back to the commit the repository records, which leaves a commit made only in the submodule on no branch. Click **Stage and Continue** to stage the submodule's commit first, **Continue** to go on without staging, or **Cancel**. If the action would move the submodule back even after staging, only **Continue** and **Cancel** appear.
+- **A submodule has changes that will be lost**: With **Keep submodules up to date** on, **Discard all changes**, a hard reset, and some undo and redo actions throw away edits inside a submodule. GitKraken Desktop names each affected submodule. Click **Continue** to go on or **Cancel** to keep the edits. Undo cannot bring them back.
+- **A submodule has a merge conflict**: GitKraken Desktop cannot stash your changes and stops the action with **Error Creating Stash**. Resolve the conflict, then try again.
 
 ***
 
 ## How to keep submodules up to date
 
-Enable automatic submodule updates:
-- Globally: <kbd>Preferences > General</kbd>
-- Per repository: <kbd>Preferences > Submodules</kbd>
+Turn on **Keep submodules up to date** to update all submodules automatically after each Git action. You can set it in 2 places:
+- Globally: Preferences > General
+- Per repository: Preferences > Submodules, where you can also choose **Use global setting**
 
 ***
 
@@ -5544,8 +5476,6 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
-
 ***
 
 Use this page to install, initialize, and manage Git LFS in GitKraken Desktop when your repository includes large binary files. It explains the Git, Git LFS, and GitKraken version requirements, how tracking patterns work, where LFS actions live in the UI, and common troubleshooting steps when LFS is missing or misconfigured.
@@ -5572,16 +5502,15 @@ Use this page to install, initialize, and manage Git LFS in GitKraken Desktop wh
 
 ## Quick Start
 
-
 **Prerequisites:** Install Git (version 2.39.3 or later) and Git LFS (version 3.0.0 or later), then verify with `git --version` and `git lfs version` in a terminal.
 
 **To initialize Git LFS on an existing repository:**
 1. Open the repository in GitKraken Desktop.
-2. Go to <kbd>Preferences > LFS</kbd> and click **Initialize LFS**.
+2. Go to Preferences > LFS and click **Initialize LFS**.
 3. Commit the change to the `.gitattributes` file that GitKraken Desktop creates.
 
 **To track a file or file type:**
-- Go to <kbd>Preferences > LFS</kbd> and add a tracking pattern (e.g., `*.psd`).
+- Go to Preferences > LFS and add a tracking pattern (e.g., `*.psd`).
 - Or right-click a file under WIP in the Commit Panel and select **LFS > Track file pattern**.
 
 **To initialize Git LFS on a new repository:**
@@ -5590,10 +5519,6 @@ Use this page to install, initialize, and manage Git LFS in GitKraken Desktop wh
 After tracking is configured, commit and push files as usual. LFS-tracked files show an **LFS** tag in the Commit Panel. Use the LFS menu in the toolbar to run additional commands such as pull and prune.
 
 ## What Git LFS is
-
-<div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/S03EEusFxoI?ecver=1" frameborder="0" allowfullscreen></iframe>
-</div>
 
 Git Large File Storage (Git LFS) is a Git extension that helps you manage large binary files. Git LFS stores the actual binary content separately, while Git tracks metadata about these files.
 
@@ -5606,7 +5531,7 @@ Git Large File Storage (Git LFS) is a Git extension that helps you manage large 
 - The actual binary content is stored in `.git/lfs/objects` or hosted on GitHub, GitLab, Bitbucket, or a custom server.
 - Git LFS uses Git hooks and filters to manage file commits and retrieval.
 
-<img src='/wp-content/uploads/lfs-ref-2025@2x.png' class="help-center-img img-bordered" alt="LFS file metadata in GitKraken Desktop" />
+LFS file metadata in GitKraken Desktop.
 
 To learn more, visit the [Git LFS documentation](https://github.com/git-lfs/git-lfs).
 
@@ -5620,9 +5545,7 @@ Make sure the following are installed:
 - Git LFS version `3.0.0+`
 - GitKraken Desktop version `7.0.0+`
 
-<div class='callout callout--success'>
-    <p><strong>Note:</strong> GitKraken Desktop usually does not require <a href="https://git-scm.com/">Git</a>. However, to use Git LFS, Git must be installed.</p>
-</div>
+Note: GitKraken Desktop usually does not require Git. However, to use Git LFS, Git must be installed.
 
 ### How to verify the installation
 
@@ -5661,17 +5584,17 @@ If versions are missing or outdated, visit:
 ### How to update PATH on Windows
 
 1. Search `Env` in the Start Menu.
-2. Open <kbd>Environmental Variables</kbd>.
+2. Open Environmental Variables.
 3. Edit the **Path** variable.
 4. Click `New` to add paths to Git and Git LFS.
 
-<img src="/wp-content/uploads/lfs-AddPathVariable-0.png" class="help-center-img img-bordered" alt="Windows environment variable dialog">
+Windows environment variable dialog.
 
-<img src="/wp-content/uploads/lfs-add-env-variable-image1-2025@2x.png" class="help-center-img img-bordered" alt="Add Path Environment Variable Step 1">
+Add Path Environment Variable Step 1.
 
-<img src="/wp-content/uploads/lfs-add-env-variable-image2-2025@2x.png" class="help-center-img img-bordered" alt="Add Path Environment Variable Step 2">
+Add Path Environment Variable Step 2.
 
-<img src="/wp-content/uploads/lfs-add-env-variable-image3-2025@2x.png" class="help-center-img img-bordered" alt="Add Path Environment Variable Step 3">
+Add Path Environment Variable Step 3.
 
 ***
 
@@ -5680,20 +5603,20 @@ If versions are missing or outdated, visit:
 ### How to initialize Git LFS on an existing repository
 
 1. Open the repo in GitKraken Desktop.
-2. Go to <kbd>Preferences > LFS</kbd> and click **Initialize LFS**.
+2. Go to Preferences > LFS and click **Initialize LFS**.
 
-<img src='/wp-content/uploads/lfs-preferences-2025@2x.png' class="help-center-img img-bordered" alt="LFS tab in Preferences">  
+LFS tab in Preferences.
 
 3. Commit the change to the `.gitattributes` file.
 4. Untrack and re-add existing files to apply the LFS tracking.
 
-<img src='/wp-content/uploads/lfs-gitattributes-2025@2x.png' class="help-center-img img-bordered" alt="Modified .gitattributes file">  
+Modified .gitattributes file.
 
 ### How to initialize Git LFS on a new repository
 
 You can initialize Git LFS during repository creation by selecting _Initialize with LFS_.
 
-<img src='/wp-content/uploads/init-with-lfs-2025@2x.png' class="help-center-img img-bordered" alt="New repo dialog with LFS checkbox">  
+New repo dialog with LFS checkbox.
 
 ***
 
@@ -5701,34 +5624,32 @@ You can initialize Git LFS during repository creation by selecting _Initialize w
 
 Add file tracking patterns to the `.gitattributes` file. You can do this via:
 
-- <kbd>Preferences > LFS</kbd>
+- Preferences > LFS
 - Unstage pane in the Commit Panel
 - Directly editing `.gitattributes`
 
-<img src='/wp-content/uploads/lfs-tracking-patterns-2025@2x.png' class="help-center-img img-bordered" alt="Tracking pattern dialog">  
+Tracking pattern dialog.
 
 To track a file:
 
 1. Right-click it under WIP.
 2. Select **LFS > Track file pattern**.
 
-<img src='/wp-content/uploads/add-tracked-file-lfs-2025@2x.png' class="help-center-img img-bordered" alt="LFS file tracking menu">  
+LFS file tracking menu.
 
-<div class='callout callout--success'>
-    <p><strong>Note:</strong> GitKraken Desktop runs an LFS pull automatically after clone or submodule init.</p>
-</div>
+Note: GitKraken Desktop runs an LFS pull automatically after clone or submodule init.
 
 Files tracked by LFS will show an LFS tag in the Commit Panel:
 
-<img src='/wp-content/uploads/lfs-tags-2025@2x.png' class="help-center-img img-bordered" alt="LFS tag in commit panel">
+LFS tag in commit panel.
 
 Clicking on the file shows the LFS reference information:
 
-<img src='/wp-content/uploads/lfs-ref-2025@2x.png' class="help-center-img img-bordered" alt="LFS reference information">
+LFS reference information.
 
 Use the LFS menu in the toolbar to run commands:
 
-<img src='/wp-content/uploads/lfs-actions-2025@2x.png' class="help-center-img img-bordered" alt="LFS toolbar menu">  
+LFS toolbar menu.
 
 > ⚠️ Prune is destructive. Use with caution. See the [Git LFS prune docs](https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-prune.adoc).
 
@@ -5737,10 +5658,10 @@ Use the LFS menu in the toolbar to run commands:
 ## Git LFS FAQs and troubleshooting
 
 ### LFS not showing in Preferences?
-Check if your PATH includes Git and Git LFS. See [Verify Installation](#verify-installation).
+Check if your PATH includes Git and Git LFS. See [Verify Installation](#how-to-verify-the-installation).
 
 ### LFS button disappeared?
-You may have switched to a repo without LFS. Use the menu: <kbd>Hamburger > LFS > Initialize</kbd>.
+You may have switched to a repo without LFS. Use the menu: Hamburger > LFS > Initialize.
 
 ### Tracking pattern not working?
 Only new files match new patterns. Remove and re-add existing files.
@@ -5779,10 +5700,6 @@ pre:hover .copy-btn{opacity:1}
 .copy-btn.copied{color:#22c55e;border-color:rgba(34,197,94,.3)}
 </style>
 <script>(function(){var C='Copy',K='Copied!';function cp(t){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(t);var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(x);return Promise.resolve()}function init(){document.querySelectorAll('pre').forEach(function(p){if(p.querySelector('.copy-btn'))return;var b=document.createElement('button');b.className='copy-btn';b.setAttribute('aria-label','Copy code');b.innerHTML=C;p.appendChild(b);b.addEventListener('click',function(){var el=p.querySelector('code')||p,cl=el.cloneNode(true),bn=cl.querySelector('.copy-btn');if(bn)bn.remove();cp((cl.innerText||cl.textContent).trimEnd()).then(function(){b.innerHTML=K;b.classList.add('copied');setTimeout(function(){b.innerHTML=C;b.classList.remove('copied')},2000)})})})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init()})()</script>
-
----
-
-## Integrations & AI
 
 ---
 
@@ -6953,7 +6870,7 @@ When GitKraken Desktop is connected to [GitHub, GitLab, Bitbucket, or Azure DevO
 
 Start creating a pull request from the Left Panel or graph
 
-2. Click **Generate title and description**. If you use a [pull request template](/gitkraken-desktop/pull-requests/#pull-request-templates), select the template first. GitKraken AI applies it.
+2. Click **Generate title and description**. If you use a [pull request template](/gitkraken-desktop/pull-requests/#how-pull-request-templates-work), select the template first. GitKraken AI applies it.
 
 Click the AI button to generate a pull request title and description
 
@@ -8432,8 +8349,6 @@ Plan required: Pro
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
-
 Use this page to manage organizations and teams in GitKraken Desktop so you can invite members, assign roles, organize users into teams, and enable collaboration features such as Team View, shared Workspaces, and Cloud Patches. Team availability depends on your GitKraken subscription tier.
 
 **Requirements and limits**
@@ -8444,21 +8359,18 @@ Use this page to manage organizations and teams in GitKraken Desktop so you can 
 - Inviting members requires available licenses, and administrators may be prompted to purchase more when seats are exhausted.
 
 Teams can be used for:
-- The [Team View](/gitkraken-desktop/working-with-repositories/team-view/): View branches and files others are working on and detect potential conflicts. <em>Advanced plan and above</em>
-- [Sharing a Workspace](/gitkraken-desktop/workspaces/#create-a-cloud-workspace): Manage and collaborate on a group of repositories. <em>Pro plan and above</em>
+- The [Team View](/gitkraken-desktop/working-with-repositories/team-view/): View branches and files others are working on and detect potential conflicts. Advanced plan and above
+- [Sharing a Workspace](/gitkraken-desktop/workspaces/#how-to-create-a-cloud-workspace): Manage and collaborate on a group of repositories. Pro plan and above
 - [Sharing a Cloud Patch](/gitkraken-desktop/experimental-features): Securely send a patch file to other team members.
 
-<div class='callout callout--basic'>
-  <p><strong>Note:</strong> Pro accounts are limited to 1 Team. Upgrade to an <a href="https://gitkraken.dev/subscription?source=help_center&product=gitkraken">Advanced or Business plan</a> to manage multiple Teams.</p>
-</div>
+Note: Pro accounts are limited to 1 Team. Upgrade to an Advanced or Business plan to manage multiple Teams.
 
 ***
 
 ## Quick Start
 
-
 **To manage your organization:**
-1. Open <kbd>Preferences</kbd> and select your organization name in the sidebar.
+1. Open Preferences and select your organization name in the sidebar.
 2. Click **Invite members** to add users by name, username, or email.
 3. Use the ellipsis menu on a member's entry to change their role or remove them.
 
@@ -8470,29 +8382,23 @@ Teams can be used for:
 
 **To remove a team member:** Select the team, then use the ellipsis menu on the member's entry.
 
-Teams are accessible under <kbd>Preferences > Organization</kbd>. Pro accounts support one team. Advanced and Business plans support multiple teams.
+Teams are accessible under Preferences > Organization. Pro accounts support one team. Advanced and Business plans support multiple teams.
 
 ***
 
 ## How to manage your organization
 
 To manage team members in your Organization:
-1. Open <kbd><strong>Preferences</strong></kbd>
+1. Open Preferences
 2. Select your Organization name from the sidebar
 
-<figure>
-  <img src="/wp-content/uploads/organization-2025-2.png" class="help-center-img img-bordered" alt="Navigating to the organization management panel in GitKraken Desktop via Preferences, allowing users to view members, assign roles, and manage teams.">
-  <figcaption style="text-align:center; color:#888">Access your organization from the Preferences sidebar.</figcaption>
-</figure>
+Access your organization from the Preferences sidebar.
 
 You can:
 - <button class="button button--success button--ui button--nolink">Invite members</button> by name, username, or email
-- Change roles or remove users via the <i class="fas fa-ellipsis-h"></i> menu
+- Change roles or remove users via the  menu
 
-<figure>
-  <img src="/wp-content/uploads/edit-users-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop organization settings showing how admins can manage user permissions, including promoting to admin, assigning billing contact, or removing members.">
-  <figcaption style="text-align:center; color:#888">Admins and Owners can edit roles or remove users.</figcaption>
-</figure>
+Admins and Owners can edit roles or remove users.
 
 If no additional licenses are available, you’ll be prompted to purchase one when inviting a new member.
 
@@ -8500,26 +8406,17 @@ If no additional licenses are available, you’ll be prompted to purchase one wh
 
 ## How to manage teams
 
-Create a new Team by clicking the <i class="fas fa-plus-square" style="color:green"></i> icon.
+Create a new Team by clicking the  icon.
 
-<figure>
-  <img src="/wp-content/uploads/add-team-2025-2.png" class="help-center-img img-bordered" alt="GitKraken Desktop organization view showing how to create a new team to group users by project or department.">
-  <figcaption style="text-align:center; color:#888">Click the + icon to group users into a team.</figcaption>
-</figure>
+Click the + icon to group users into a team.
 
 You can:
-- Delete a team via the <i class="fas fa-ellipsis-h"></i> menu
+- Delete a team via the  menu
 - Rename a team by double-clicking its name
 
-<figure>
-  <img src="/wp-content/uploads/delete-team-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop team settings menu showing how to delete a team, helping admins manage organization structure and remove outdated groups.">
-  <figcaption style="text-align:center; color:#888">Use the menu to delete a team.</figcaption>
-</figure>
+Use the menu to delete a team.
 
-<figure>
-  <img src="/wp-content/uploads/rename-team-2025.png" class="help-center-img img-bordered" alt="Renaming a team in GitKraken Desktop by editing the team name field, allowing users to keep team structures accurate and up to date.">
-  <figcaption style="text-align:center; color:#888">Double-click a team name to rename it.</figcaption>
-</figure>
+Double-click a team name to rename it.
 
 ### How to manage team members
 
@@ -8527,7 +8424,7 @@ To add users to a Team:
 1. Select the Team
 2. Click <button class="button button--success button--ui button--nolink">Add a member</button>
 
-Remove a user by selecting <i class="fas fa-ellipsis-h"></i> on their entry.
+Remove a user by selecting  on their entry.
 
 ***
 
@@ -8535,10 +8432,7 @@ Remove a user by selecting <i class="fas fa-ellipsis-h"></i> on their entry.
 
 GitKraken Desktop can suggest users who contribute to the current repository but aren’t in your Organization. Invite them to collaborate.
 
-<figure>
-  <img src="/wp-content/uploads/suggested-members-2025.png" class="help-center-img img-bordered" alt="GitKraken Desktop identifying contributors to suggest as members, helping admins quickly invite relevant collaborators based on repository activity.">
-  <figcaption style="text-align:center; color:#888">Suggested users based on repository activity.</figcaption>
-</figure>
+Suggested users based on repository activity.
 
 ---
 
@@ -9049,7 +8943,7 @@ You can take actions across multiple repositories within a Local Workspace:
 2. Use the action toolbar at the top to:
    - **Fetch**: Update all selected repositories.
    - **Pull**: Sync selected repositories with the latest changes. Use the dropdown to customize pull behavior.
-   - **Open**: Open selected repositories in GitKraken Desktop or your [default external editor](/start-here/preferences/#external-editor).
+   - **Open**: Open selected repositories in GitKraken Desktop or your [default external editor](/gitkraken-desktop/preferences/#how-external-tool-preferences-work).
    - **Remove**: Remove selected repositories from the Workspace.
 
 ### How to convert a Local Workspace to a Cloud Workspace
@@ -10029,16 +9923,14 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
-
-Use this page to install a self-signed SSL certificate so GitKraken Desktop can trust a private or internally signed remote host. It covers browser-based certificate export on Windows and macOS, Linux certificate installation steps, common SSL error messages, and how Git Executable respects global Git SSL settings.
+Use this page to install a self-signed SSL certificate so GitKraken Desktop can trust a private or internally signed remote host. You export the certificate with a browser, add it to your system's trusted certificates, and fix the most common SSL errors.
 
 **Requirements and limits**
 - Use case: Private or internally signed remote hosts that GitKraken Desktop does not trust by default
 - Windows workflow on this page: Chrome-based certificate export and trusted root installation
 - macOS workflow on this page: Safari export and Keychain Access trust configuration
 - Linux workflow on this page: Chrome export plus `openssl` and `certutil` installation steps
-- Git Executable note: When enabled, GitKraken Desktop honors SSL settings in the global `.gitconfig`
+- Git SSL settings: GitKraken Desktop honors SSL settings in the global `.gitconfig` for Git actions
 - Common failure mode: Missing or invalid SAN values can require the server certificate to be reissued
 
 | OS | Export step | Install location | Notes |
@@ -10050,7 +9942,6 @@ Use this page to install a self-signed SSL certificate so GitKraken Desktop can 
 ***
 
 ## Quick Start
-
 
 **On Windows (Chrome):**
 1. Navigate to your remote hosting service in Chrome and open the certificate details.
@@ -10070,166 +9961,115 @@ Use this page to install a self-signed SSL certificate so GitKraken Desktop can 
 2. Convert and install using `openssl` and `certutil` in the terminal.
 3. Reopen Chrome to confirm the warning no longer appears.
 
-If you have the Git Executable enabled, SSL settings in your global `.gitconfig` are also honored.
+GitKraken Desktop also honors SSL settings in your global `.gitconfig` for Git actions.
 
 ***
 
 ## How to add a self-signed certificate
 
-Self-signed certificates must be added to your trusted root directory before GitKraken will recognize the cert. This can be done through your operating system or in many browsers.
+GitKraken Desktop trusts a self-signed certificate only after you add it to your system's trusted root certificates. You can add it through your operating system or through a browser.
 
-<div class='callout callout--basic'>
-    <p><strong>Note:</strong> If you have the <a href="https://help.gitkraken.com/gitkraken-desktop/experimental-features/#git-executable">Git Executable</a> enabled, SSL settings in the global <code>.gitconfig</code> file are honored by GitKraken Desktop for actions performed by the Git executable.</p>
-</div>
+Note: GitKraken Desktop runs Git actions with the Git selected in Git Executable, so it honors SSL settings in the global .gitconfig file for those actions.
 
 ### How to use Google Chrome on Windows
 
-An easy way to install a certificate so that GitKraken can use it is via <a href='https://www.google.com/chrome/index.html' target='_blank'>Google Chrome</a>.
+On Windows, you can export and install the certificate with Google Chrome.
 
-To generate a self-signed certificate, navigate to your remote hosting service's website. You should see something like this:
+To export the certificate, go to your remote hosting service's website in Chrome and open the certificate details:
 
-<figure>
-    <img src="/wp-content/uploads/chrome-0a-export.png" class="help-center-img img-bordered" style="max-width: 75%;">
-    <figcaption style="text-align:center;color:#888">Certificate view in Chrome with export option</figcaption>
-</figure>
+Certificate view in Chrome with export option
 
-Click on the certificate, go to <kbd>Details</kbd>, click <kbd>Copy to File...</kbd>, and follow the Certificate Export Wizard.
+Click the certificate, go to Details, click Copy to File..., and follow the Certificate Export Wizard.
 
-<figure>
-    <img src="/wp-content/uploads/chrome-0b-export.png" class="help-center-img img-bordered" style="max-width: 75%;">
-    <figcaption style="text-align:center;color:#888">Certificate export wizard in Chrome</figcaption>
-</figure>
+Certificate export wizard in Chrome
 
-Open Chrome's <kbd>Settings</kbd> menu from the top-right <kbd><i class="fas fa-ellipsis-v"></i></kbd>.
+Open Chrome's Settings menu from the top-right .
 
-<figure>
-    <img src="/wp-content/uploads/chrome-1-settings.png" class="help-center-img img-bordered" style="max-width: 75%;">
-    <figcaption style="text-align:center;color:#888">Chrome settings menu</figcaption>
-</figure>
+Chrome settings menu
 
-Navigate to <kbd>Privacy & Security <i class='fa fa-caret-right'></i> Security</kbd>:
+Navigate to Privacy & Security  Security:
 
-<figure>
-    <img src="/wp-content/uploads/chrome-2-security.png" class="help-center-img img-bordered" style="max-width: 75%;">
-    <figcaption style="text-align:center;color:#888">Privacy & Security settings in Chrome</figcaption>
-</figure>
+Privacy & Security settings in Chrome
 
-Scroll down and click <em>Manage certificates</em>. Use the wizard to import the certificate.
+Scroll down and click **Manage certificates**. Use the wizard to import the certificate.
 
-<figure>
-    <img src="/wp-content/uploads/chrome-3-manage-certs.png" class="help-center-img img-bordered" style="max-width: 75%;">
-    <figcaption style="text-align:center;color:#888">Certificate management dialog in Chrome</figcaption>
-</figure>
+Certificate management dialog in Chrome
 
-Ensure that the certificate is added to your trusted root certificates.
+Make sure the wizard adds the certificate to your trusted root certificates.
 
-<figure>
-    <img src="/wp-content/uploads/chrome-4-wizard.png" class="help-center-img img-bordered" style="max-width: 75%;">
-    <figcaption style="text-align:center;color:#888">Wizard with trusted root option</figcaption>
-</figure>
+Wizard with trusted root option
 
 ### How to use Safari on macOS
 
 Open Safari and navigate to your remote hosting service.
 
-<figure>
-    <img src="/wp-content/uploads/safari-1a.png" class="help-center-img img-bordered" style="max-width: 75%;">
-    <figcaption style="text-align:center;color:#888">Remote host with invalid certificate in Safari</figcaption>
-</figure>
+Remote host with invalid certificate in Safari
 
-Click to open the certificate window:
+Open the certificate details window:
 
-<figure>
-    <img src="/wp-content/uploads/safari-1b.png" class="help-center-img img-bordered" style="max-width: 75%;">
-    <figcaption style="text-align:center;color:#888">Certificate details window in Safari</figcaption>
-</figure>
+Certificate details window in Safari
 
-Hold down the <kbd>Option</kbd> key and drag the certificate icon to the desktop. This saves it as a `.pem` file.
+Hold down the Option key and drag the certificate icon to the desktop. This saves it as a `.pem` file.
 
-<figure>
-    <img src="/wp-content/uploads/safari-2.png" class="help-center-img img-bordered" style="max-width: 75%;">
-    <figcaption style="text-align:center;color:#888">Dragging certificate to save it as a .pem file</figcaption>
-</figure>
+Dragging certificate to save it as a .pem file
 
-Double-click the file to open your macOS Keychain.
+Double-click the file to open it in Keychain Access.
 
-<figure>
-    <img src="/wp-content/uploads/safari-4.png" class="help-center-img img-bordered" style="max-width: 75%;">
-    <figcaption style="text-align:center;color:#888">macOS Keychain interface</figcaption>
-</figure>
+macOS Keychain interface
 
-Locate the certificate in the **login** section and double-click to configure.
+Find the certificate in the **login** keychain and double-click it to open its settings.
 
-<figure>
-    <img src="/wp-content/uploads/safari-5-6.png" class="help-center-img img-bordered" style="max-width: 75%;">
-    <figcaption style="text-align:center;color:#888">Certificate settings in Keychain Access</figcaption>
-</figure>
+Certificate settings in Keychain Access
 
 Set the trust level to *Always Trust*. Restart your computer to apply the changes.
 
 ### How to use Chrome on Ubuntu Linux
 
-Follow the same certificate export steps described in the [Windows section](/integrations/self-signed-certificates/#using-google-chrome-on-windows). Then:
+Export the certificate with Chrome as in [How to use Google Chrome on Windows](#how-to-use-google-chrome-on-windows). Then install it from a terminal:
 
-1. Open a terminal and go to your <kbd>Downloads</kbd> folder.
-2. Run the following commands:
+1. Go to your Downloads folder.
+2. Convert the certificate and add it to the certificate database:
 
-```
-openssl x509 -outform der -in DOWNLOADED-CERT-NAME -out DOWNLOADED-CERT-NAME.crt
-```
+   ```
+   openssl x509 -outform der -in DOWNLOADED-CERT-NAME -out DOWNLOADED-CERT-NAME.crt
+   ```
 
-```
-certutil -d sql:$HOME/.pki/nssdb -A -t "CT,C,C" -n DOWNLOADED-CERT-NAME.crt -i DOWNLOADED-CERT-NAME.crt
-```
+   ```
+   certutil -d sql:$HOME/.pki/nssdb -A -t "CT,C,C" -n DOWNLOADED-CERT-NAME.crt -i DOWNLOADED-CERT-NAME.crt
+   ```
 
 3. Verify the certificate:
 
-```
-certutil -d sql:$HOME/.pki/nssdb -L
-```
+   ```
+   certutil -d sql:$HOME/.pki/nssdb -L
+   ```
 
 Close and reopen Chrome to confirm the certificate warning no longer appears.
 
 ### Common certificate errors
 
+If GitKraken Desktop shows one of these SSL certificate errors, fix it as follows.
+
 #### How to fix `Invalid SSL Certificate`
 
-<figure>
-    <img src="/wp-content/uploads/invalid-error-2.png" class="help-center-img img-bordered" style="max-width: 75%;">
-    <figcaption style="text-align:center;color:#888">GitKraken invalid SSL certificate warning</figcaption>
-</figure>
+GitKraken invalid SSL certificate warning
 
-This usually indicates the certificate is invalid or missing. [Add a certificate](/integrations/self-signed-certificates/#adding-a-self-signed-certificate) to your local store.
+This error means the certificate is invalid or missing from your local store. [Add the certificate](#how-to-add-a-self-signed-certificate) to your local store.
 
 #### Additional details about SSL certificate errors
 
-<figure>
-    <img src="/wp-content/uploads/invalid-error-1.png" class="help-center-img img-bordered" style="max-width: 75%;">
-    <figcaption style="text-align:center;color:#888">Detailed certificate error from GitKraken</figcaption>
-</figure>
+Detailed certificate error from GitKraken
 
-These errors often point to issues like a missing *Server Alternate Name (SAN)*. Contact your server administrator to fix and reissue the certificate.
+A detailed error like this one can point to a problem in the server certificate itself, such as a missing **Subject Alternative Name** (**SAN**). Contact your server administrator to fix and reissue the certificate.
 
 ### Operating system guides
 
-Use the links below for more help installing certificates by OS:
+For more help installing certificates on your operating system, see:
 
-<table class='table table--bordered table--shortcuts'>
-    <tbody>
-        <tr>
-            <td>Windows</td>
-            <td><a href='https://docs.microsoft.com/en-us/skype-sdk/sdn/articles/installing-the-trusted-root-certificate' target='_blank'>Microsoft Docs</a></td>
-        </tr>
-        <tr>
-            <td>OSX</td>
-            <td><a href='https://support.apple.com/guide/keychain-access/add-certificates-to-a-keychain-kyca2431/mac' target='_blank'>Apple Docs</a></td>
-        </tr>
-        <tr>
-            <td>Linux</td>
-            <td><a href='https://ubuntu.com/server/docs/security-certificates' target='_blank'>Ubuntu Docs</a></td>
-        </tr>
-    </tbody>
-</table>
+| Windows | Microsoft Docs |
+| --- | --- |
+| macOS | Apple Docs |
+| Linux | Ubuntu Docs |
 
 <style>
 pre{position:relative;min-height:3em}
@@ -11388,9 +11228,9 @@ pre:hover .copy-btn{opacity:1}
 
 ---
 
-# GitKraken Desktop Experimental Features | Cloud Patch & Git Executable
+# GitKraken Desktop Experimental Features | Cloud Patches
 URL: https://help.gitkraken.com/gitkraken-desktop/experimental-features/
-Description: Enable and use the experimental GitKraken Desktop features Git Executable and Cloud Patches, including how to share, apply, and self-host Cloud Patches.
+Description: Find GitKraken Desktop's experimental features and use Cloud Patches, including how to create, share, apply, and self-host them.
 Product: GitKraken Desktop
 Feature: Experimental Features
 Content type: overview
@@ -11399,26 +11239,22 @@ Plan required: all
 Status: preview
 Last verified: 2026-03
 
-Use this page to enable and evaluate the GitKraken Desktop experimental features Git Executable and Cloud Patches. Experimental features are optional previews: you can turn each one on or off, see what it does, and find the workflows that depend on it.
+Use this page to find GitKraken Desktop's experimental features and to create, share, and apply Cloud Patches. Experimental features are previews whose behavior can change between releases.
 
 **Requirements and limits**
-- Scope: Optional preview features in GitKraken Desktop
-- Settings location: Preferences &gt; Experimental
-- Stability note: You can enable or disable experimental features at any time. Their behavior can change between releases
-- Git Executable scope: Uses a Git executable instead of NodeGit for supported operations
-- Cloud Patch dependency: Cloud Patches require Git Executable to be enabled
+- Scope: Preview features in GitKraken Desktop. Cloud Patches is the current experimental feature
+- Settings location: Preferences &gt; Experimental. The self-hosted and standalone versions of GitKraken Desktop do not show this section
+- Stability note: Experimental features can change between releases
+- Git Executable: GitKraken Desktop runs every Git operation with a Git executable. To choose which one, see [General preferences](/gitkraken-desktop/preferences/#how-general-preferences-work)
 - Cloud Patch sharing modes: **Anyone with the link**, **Members of my Org with the link**, or **Only collaborators**
-- Self-hosting note: Cloud Patch data can be self-hosted on AWS S3 instead of GitKraken servers
+- Self-hosting note: You can store Cloud Patch data on AWS S3 instead of GitKraken servers
 
 ***
 
 ## Quick Start
 
-**To enable experimental features:**
-- Go to Preferences > Experimental and toggle the features you want to use.
-
-**To use the Git Executable:**
-- Enable **Use Git Executable** under Preferences > Experimental. GitKraken Desktop then runs core operations with a Git executable instead of the built-in NodeGit library.
+**To see the experimental features:**
+- Go to Preferences > Experimental.
 
 **To create a Cloud Patch:**
 1. Stage files in the Commit Panel.
@@ -11430,7 +11266,7 @@ Use this page to enable and evaluate the GitKraken Desktop experimental features
 2. Select a target branch and apply the patch.
 
 **To share a commit as a Cloud Patch:**
-- Right-click any commit in the graph and select **Share commit as Cloud Patch**.
+- Right-click any commit in the Commit Graph and select **Share commit as Cloud Patch**.
 
 GitKraken stores Cloud Patches securely. You can share a patch with anyone who has the link, with members of your GitKraken organization, or with selected collaborators. To delete a patch, right-click it in the Left Panel and choose **Delete Cloud Patch**.
 
@@ -11438,44 +11274,13 @@ GitKraken stores Cloud Patches securely. You can share a patch with anyone who h
 
 ## How to access experimental features
 
-To access experimental settings:
+To open the Experimental section:
 
 - Go to  Preferences  Experimental
 
-Experimental features are optional, and you can enable or disable them at any time. If you experience issues or have feedback, [contact support](https://help.gitkraken.com/gitkraken-desktop/contact-support/?issue_category__customer_facing_field_=Experimental+feedback&subject=GitKraken+Client+Experimental+feedback).
+The Experimental section describes each experimental feature. If you have issues or feedback, click **Provide Feedback on Experimental Features** there, or [contact support](https://help.gitkraken.com/gitkraken-desktop/contact-support/?issue_category__customer_facing_field_=Experimental+feedback&subject=GitKraken+Client+Experimental+feedback).
 
----
-
-## How Git Executable works
-
-The **Use Git Executable** setting makes GitKraken Desktop run core Git operations with a Git executable instead of NodeGit. It can improve compatibility and performance with some projects and development environments.
-
-**Enable it from:** Preferences > Experimental > Use Git Executable
-
-GitKraken Desktop includes a bundled Git, or you can select a system Git path in **Git Executable**.
-
-### Which features use Git Executable
-
-These Git actions use the Git executable when **Use Git Executable** is enabled:
-
-- Commit, fetch, push, pull
-- Branch rename/delete, merge base
-- Tag creation/deletion, revert commits
-- Cherry-pick, rebase, checkout, clone
-- Shallow repositories and shallow clone settings
-- Staging, unstaging, stash support
-- SSH signing, Git Credential Manager
-- Discard changes, undo/redo, hooks output
-- Reset to commit (mixed, hard, soft)
-- Undo checkout
-- Submodules
-- Squash merge setting in Commit preferences
-- File history and blame
-- Adding, removing, renaming, and editing remotes
-- Creating and applying patches
-- Opening files in your external diff and merge tools
-
-See the changes in each release in the [GitKraken Desktop release notes](/gitkraken-desktop/current/).
+Note: GitKraken Desktop runs every Git operation with a Git executable. To choose which one, go to Preferences > General > Git Executable.
 
 ---
 
@@ -11485,13 +11290,9 @@ Watch how to create and apply Cloud Patches in GitKraken Desktop.
 
 ### What Cloud Patches are
 
-A Cloud Patch is a Git patch that GitKraken securely stores so you can share it across GitKraken Desktop, GitLens, and GitKraken CLI. Use Cloud Patches to:
+A Cloud Patch is a Git patch that GitKraken stores so you can share it across GitKraken Desktop, GitLens, and the GitKraken CLI. Use Cloud Patches to:
 - Share work-in-progress with teammates before a pull request
 - Apply changes across machines or collaborators securely
-
-### How to enable Cloud Patches
-
-Cloud Patches require the **Git Executable** to be enabled (it is by default).
 
 ### How to create a Cloud Patch
 
@@ -11500,7 +11301,7 @@ Cloud Patches require the **Git Executable** to be enabled (it is by default).
 
 Create a Cloud Patch from staged changes.
 
-You can also right-click any commit in the graph and select Share commit as Cloud Patch.
+You can also right-click any commit in the Commit Graph and select Share commit as Cloud Patch.
 
 ### How to share and apply Cloud Patches
 
@@ -11617,7 +11418,7 @@ GitKraken Desktop shows the [Gravatar](https://gravatar.com/) linked to the emai
 Yes. Subscriptions are linked to your email address, not a specific machine.
 
 ### Why can’t I see remotes under the integration drop-down?
-The drop-down shows only forks. Use the [URL option](/gitkraken-desktop/pushing-and-pulling/#adding-remotes) to add other remotes.
+The drop-down shows only forks. Use the [URL option](/gitkraken-desktop/pushing-and-pulling/#how-to-add-a-remote) to add other remotes.
 
 ### How do I push a local project to GitHub or other remotes?
 1. [Initialize a new project](/working-with-repositories/open-clone-init/#initialize-a-new-project) remotely.
@@ -11855,7 +11656,7 @@ pre:hover .copy-btn{opacity:1}
 
 # GitKraken Desktop – Common Issues and Fixes
 URL: https://help.gitkraken.com/gitkraken-desktop/common-issues/
-Description: Troubleshoot common GitKraken Desktop problems, including login errors, GitHub integrations, performance issues, and experimental Git behavior.
+Description: Troubleshoot common GitKraken Desktop problems, including login errors, GitHub integrations, performance issues, and the Git version GitKraken Desktop runs.
 Product: GitKraken Desktop
 Feature: Common Issues
 Content type: troubleshooting
@@ -11869,9 +11670,9 @@ Last verified: 2026-04
 Use this page to troubleshoot common GitKraken Desktop problems related to licensing, integrations, SSH, WSL, platform-specific behavior, and known error messages. For the most frequent fixes, start with the Quick Start checklist.
 
 **Requirements and limits**
-- Integration recovery: Signing out in your browser, clearing its cache, and reconnecting from Preferences &gt; Integrations resolves many 1000-series errors
+- Integration recovery: Signing out in your browser, clearing its cache, and reconnecting from Preferences &gt; Integrations can resolve 1000-series errors
 - WSL limitation: Do not run GitKraken Desktop as root, and prefer native WSL2 GUI support over XServer-based setups
-- Experimental Git note: Some issues may be tied to the Git Executable setting in Preferences &gt; Experimental
+- Git version note: Some issues depend on which Git GitKraken Desktop runs, set in Preferences &gt; General &gt; Git Executable
 - Escalation path: Contact GitKraken Support if the matching section does not resolve the problem
 
 ***
@@ -11897,7 +11698,7 @@ If GitKraken Desktop shows the wrong plan or no AI credits, check which account 
 
 ### My account shows Trial/Free/Community despite being a paid customer
 In GitKraken Desktop, click your profile icon and check the name and email address under **Account**. If it is the wrong account, click **Sign Out**, then sign in again with the account linked to your subscription:
-Ensure you are signed in with the email address linked to your subscription. Avoid using GitHub or Google login options if your subscription is tied to an email address.
+Make sure you are signed in with the email address linked to your subscription. Avoid using GitHub or Google login options if your subscription is tied to an email address.
 
 ### The account is correct but it says I don't have AI credits
 Make sure the correct organization is selected:
@@ -11958,16 +11759,14 @@ To toggle full-screen mode, press F11 on Windows and Linux, or Ctrl + Cmd + F on
 Keyboard shortcut to toggle full screen in GitKraken Desktop.
 
 ### Diff shows entire file instead of changes
-Differences in line endings or encoding can cause this. To check:
+Differences in line endings or encoding can cause a full-file diff. To check:
 - Enable **Ignore Leading/Trailing Whitespace**.
 - If the message changes to **File contents are unchanged.**, the files are identical.
 Line ending or whitespace differences may cause misleading diffs.
 
 ### Private organization repositories not visible (GitHub)
-Make sure GitKraken Desktop has access to the organization in your GitHub application settings:
+Make sure GitKraken Desktop has access to the organization in your [GitHub application access settings](https://github.com/settings/connections/applications/a7557949433b7d282a76):
 Check your GitHub application settings to confirm permissions.
-
-To check, open [GitHub Application Access Settings](https://github.com/settings/connections/applications/a7557949433b7d282a76).
 
 ---
 
@@ -12024,7 +11823,7 @@ These fixes apply to GitKraken Desktop on Windows.
 ### Use GitKraken Desktop with PuTTY/Plink
 To use Plink for SSH:
 - Set `GIT_SSH` or `GIT_SSH_COMMAND` to the path of Plink, or set `core.sshCommand` in `.gitconfig`.
-- Update the Git Executable setting in Preferences > Experimental > Git Executable.
+- Update the Git Executable setting in Preferences > General > Git Executable.
 
 ---
 
@@ -12041,15 +11840,12 @@ GUI apps on macOS do not inherit shell environment variables.
 
 ## How to troubleshoot GitKraken Desktop 9.4.0 and later
 
-The [Git Executable](/gitkraken-desktop/experimental-features/#git-executable) option may affect Git behavior. To change which Git version GitKraken Desktop uses:
+GitKraken Desktop runs every Git operation with the Git selected in [Git Executable](/gitkraken-desktop/preferences/#how-general-preferences-work). If a Git action behaves differently than it does in your terminal, switch to the Git you use there:
 1. If needed, [download Git](https://git-scm.com/download).
-2. Go to Preferences > Experimental.
+2. Go to Preferences > General.
 3. Under **Git Executable**, choose your system Git instead of the bundled one.
 
-Switch Git Executable version under Preferences > Experimental.
-
-If problems continue, clear **Use Git Executable**:
-Disable Git Executable if needed.
+Choose a Git version in Preferences > General > Git Executable.
 
 If the problem persists, report it to [GitKraken Support](https://help.gitkraken.com/gitkraken-desktop/contact-support/).
 
@@ -12299,8 +12095,6 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
-
 Use this page to diagnose slow or unresponsive behavior in GitKraken Desktop, especially in large or complex repositories. It focuses on practical fixes such as repository maintenance, graph-size limits, auto-fetch changes, branch cleanup, LFS cleanup, and build verification for macOS systems.
 
 **Requirements and limits**
@@ -12314,11 +12108,10 @@ Use this page to diagnose slow or unresponsive behavior in GitKraken Desktop, es
 
 ## Quick Start
 
-
 **Common fixes:**
 - Run **Perform Repo Maintenance** from the Command Palette. This executes `git maintenance run` to optimize the repository’s internal data structures.
-- Set the Auto-fetch interval to `0` in <kbd>Preferences > General</kbd> to disable automatic background fetches.
-- Lower the **Max Commits in Graph** value in <kbd>Preferences > General</kbd> to reduce the number of commits rendered.
+- Set the Auto-fetch interval to `0` in Preferences > General to disable automatic background fetches.
+- Lower the **Max Commits in Graph** value in Preferences > General to reduce the number of commits rendered.
 - Delete unnecessary local branches to reduce reference overhead.
 - If Git LFS is in use, run an LFS prune to clean up unreferenced objects.
 - Clone a fresh copy of the repository to a clean directory if the local copy has accumulated issues.
@@ -12335,23 +12128,22 @@ Performance issues are commonly linked to large repositories with many reference
 
 ### Repository-level actions
 
-- Use the <kbd>Perform Repo Maintenance</kbd> command from the [Command Palette](/start-here/command-palette). This runs `git maintenance run`, which may take several minutes on large repos.
+- Use the Perform Repo Maintenance command from the [Command Palette](/start-here/command-palette). This runs `git maintenance run`, which may take several minutes on large repos.
 - Run [`git gc`](https://git-scm.com/docs/git-gc) in your local repository.
 - Clone a fresh copy of the repository to a new directory.
 
 ### Interface optimization
 
-- Disable auto-fetch by setting the [Auto-fetch interval](/gitkraken-desktop/preferences/#auto-fetch) to `0`.
-- Reduce the number of commits shown in the graph by setting a lower [Max Commits value](/gitkraken-desktop/preferences/#max-commits-in-graph).
+- Disable auto-fetch by setting the [Auto-Fetch Interval](/gitkraken-desktop/preferences/#how-general-preferences-work) to `0`.
+- Reduce the number of commits shown in the graph by setting a lower [Initial Commits in Graph](/gitkraken-desktop/preferences/#how-general-preferences-work) value.
 - [Solo or Hide](/gitkraken-desktop/hiding-and-soloing/) branches and tags to reduce visual complexity.
 
 ### Cleanup and maintenance
 
-- [Delete unnecessary local branches](/gitkraken-desktop/branching-and-merging/#delete-a-branch).
+- [Delete unnecessary local branches](/gitkraken-desktop/branching-and-merging/#how-to-delete-a-branch).
 - If using Git LFS, perform an [LFS prune](/gitkraken-desktop/git-lfs/).
 - Run [`git status`](https://git-scm.com/docs/git-status) to check for unexpected working directory states.
 - Restart GitKraken Desktop daily to clear any accumulated memory or cache usage.
-
 
 ### How to verify your GitKraken Desktop build on macOS
 
@@ -12361,20 +12153,13 @@ It’s an easy check:
 
 1. **Open GitKraken.** Navigate to the **GitKraken** menu from the top left of your machine.
 
-   <figure>
-     <img src="/wp-content/uploads/arm2.png" class="help-center-img img-bordered" alt="Check your version number and build (arm64 64-bit)" />
-     <figcaption style="text-align: center; color: #888">Check your version from the GitKraken menu.</figcaption>
-   </figure>
+   Check your version from the GitKraken menu.
 
 2. **Confirm the build matches your Mac’s chip** (Apple Silicon/arm64 vs. Intel/x64).
 
 3. **If it doesn’t match,** [download the correct version](https://www.gitkraken.com/download) and reinstall.
 
-
-
-<div class='callout callout--basic'>
-    <p><strong>Note:</strong> Performance issues may also be impacted by file system speed, antivirus scanning, or external integrations. If the above steps don’t help, reach out to <a href="https://help.gitkraken.com/gitkraken-desktop/contact-support/">GitKraken support</a>.</p>
-</div>
+Note: Performance issues may also be impacted by file system speed, antivirus scanning, or external integrations. If the above steps don’t help, reach out to GitKraken support.
 
 ---
 
@@ -12389,18 +12174,15 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
-
 ***
 
-Use this page to sign Git commits and tags in GitKraken Desktop with either GPG or SSH keys so hosting providers can verify your identity. It covers setup requirements, key generation, GitKraken configuration, verification behavior, and the extra Git Executable requirement for SSH-based signing.
+Use this page to sign Git commits and tags in GitKraken Desktop with either GPG or SSH keys so hosting providers can verify your identity.
 
 **Requirements and limits**
 - Scope: Commit and tag signing with GPG or SSH keys
 - GPG requirement: Install GPG before configuring signing in GitKraken Desktop
 - Restart requirement: Close and reopen GitKraken Desktop after installing GPG
-- SSH signing requirement: Git Executable must be enabled
-- SSH signing setup: Requires a `.pub` signing key and an `allowed_signers` file
+- SSH signing setup: Requires a `.pub` signing key, and an `allowed_signers` file to verify SSH signatures
 - Host verification note: GitHub and GitLab support SSH-signed commit verification; Bitbucket does not
 - Verification behavior: Signed commits show a badge in the Commit Panel with signature details on hover
 
@@ -12408,41 +12190,40 @@ Use this page to sign Git commits and tags in GitKraken Desktop with either GPG 
 
 ## Quick Start
 
-
 **To sign commits with GPG:**
 1. Install GPG for your operating system (Gpg4win on Windows, `brew install gpg` on macOS, or your Linux package manager).
 2. Close and reopen GitKraken Desktop.
-3. Go to <kbd>Preferences > Commit Signing</kbd>.
+3. Go to Preferences > Commit Signing.
 4. Select a **Signing Key** from the dropdown, or click **Generate new GPG Key**.
 5. Set the **GPG Program** path if it is not auto-detected.
 6. Enable **Sign Commits by Default** and/or **Sign Tags by Default**.
-7. Copy your public key from <kbd>Preferences > GPG</kbd> and upload it to your hosting service (GitHub, GitLab, or Bitbucket).
+7. Click **Copy GPG Public Key** in Preferences > Commit Signing and upload the key to your hosting service (GitHub, GitLab, or Bitbucket).
 
 **To sign commits with SSH:**
-1. Generate an SSH key and enable the **Git Executable** under <kbd>Preferences > Experimental</kbd>.
-2. Go to <kbd>Preferences > Commit Signing</kbd>, set the **GPG Format** to **SSH**, and select your `.pub` key file.
-3. Create an `allowed_signers` file and select it in GitKraken Desktop.
+1. Generate an SSH key.
+2. Go to Preferences > Commit Signing, set the **GPG Format** to **SSH**, and select your `.pub` key file.
+3. Create an `allowed_signers` file and select it in **Allowed Signers File**.
 4. Enable **Sign Commits by Default**.
 
 Signed commits display a badge next to the SHA in the Commit Panel. Hover over it to view signature details.
 
 ## What commit signing is
 
-In Git, you may commit using any name and email address. However, Git supports signing commits and annotated tags using a GPG or SSH key pair.
+Git lets you commit with any name and email address. To prove that a commit is yours, you can sign commits and annotated tags with a GPG or SSH key pair.
 
-By signing a commit, others with your public key can verify that the commit was created by you. Public keys can also be uploaded to remote hosting services like GitHub so commits appear as verified.
+When you sign a commit, anyone with your public key can verify that you created it. If you upload your public key to a hosting service such as GitHub, the service shows your signed commits as verified.
 
 ---
 
 ## How to sign commits with GPG
 
+To sign with GPG, install GPG, set up a key in GitKraken Desktop, and upload the public key to your hosting service.
+
 ### GPG requirements
 
 Before signing commits, install and configure GPG.
 
-<div class='callout callout--warning'>
-    <p><strong>Note:</strong> Close GitKraken Desktop before installing GPG.</p>
-</div>
+Note: Close GitKraken Desktop before installing GPG.
 
 - **Windows:** Use [Gpg4win](https://gpg4win.org/download.html) and follow the installer.
 - **Mac:** Use [Homebrew](https://brew.sh/):
@@ -12454,56 +12235,52 @@ Before signing commits, install and configure GPG.
   - Fedora: `dnf install gnupg2`
   - CentOS/RHEL: `yum install gnupg2`
 
-More downloads at [gnupg.org](https://www.gnupg.org/download/index.html).
+Other downloads are at [gnupg.org](https://www.gnupg.org/download/index.html).
 
-To verify installation:
+To check that GPG is installed, run:
 ```bash
 gpg --version
 ```
 
-<img src="/wp-content/uploads/gpg-version-2025@2x.png" class="help-center-img img-bordered" alt="GPG version output">
+GPG version output.
 
-<div class='callout callout--success'>
-    <p><strong>Note:</strong> Use <code>gpg2</code> if <code>gpg</code> isn’t aliased. Prefix commands accordingly.</p>
-</div>
+Note: If gpg is not an alias for gpg2, run the commands with gpg2 instead.
 
 ### How to generate a GPG key in GitKraken Desktop
 
-Once GPG is installed:
+After you install GPG:
 
-1. Go to <kbd>Preferences > Commit Signing</kbd>.
+1. Go to Preferences > Commit Signing.
 2. Click **Generate new GPG Key**.
 3. (Optional) Enter a passphrase before generating.
 
-<img src="/wp-content/uploads/generate-new-gpg-key-2025@2x.png" class="help-center-img img-bordered" alt="Generate new GPG key in Preferences">
+Generate new GPG key in Preferences.
 
-<div class='callout callout--success'>
-    <p><strong>Note:</strong> Ensure GPG is configured in GitKraken. See <a href="#configure-gpg-in-gitkraken">Configure GPG in GitKraken</a>.</p>
-</div>
+Note: Make sure GPG is configured in GitKraken Desktop. See How to configure GPG in GitKraken Desktop.
 
 ### How to configure GPG in GitKraken Desktop
 
-1. Navigate to <kbd>Preferences > Commit Signing</kbd>.
-2. Set the **Signing Key** from the dropdown list. If it’s empty:
-   - Configure the GPG Program path.
-   - Restart GitKraken after installing GPG.
-3. Specify the **GPG Program** location or use the <kbd>Browse</kbd> button if not auto-detected.
+1. Go to Preferences > Commit Signing.
+2. Select a **Signing Key** from the dropdown list. If the list is empty:
+   - Set the **GPG Program** path.
+   - Restart GitKraken Desktop after installing GPG.
+3. If GitKraken Desktop does not detect the **GPG Program** location, enter it or click Browse. To find the path, run:
    ```bash
    which gpg # macOS/Linux
    where gpg # Windows
    ```
-   <img src="/wp-content/uploads/gpg-browse-button.png" class="help-center-img img-bordered" alt="Browse to GPG executable">
+   Browse to GPG executable.
 4. Enable **Sign Commits by Default** and/or **Sign Tags by Default** as needed.
 
 ### How to verify signed commits
 
-Signed commits show an icon next to the SHA in the Commit Panel.
+Signed commits show a badge next to the SHA in the Commit Panel.
 
-<img src="/wp-content/uploads/gpg-icon-2025@2x.png" class="help-center-img img-bordered" alt="Signed commit badge">
+Signed commit badge.
 
-Hover to view signature details:
+Hover over the badge to see the signature details:
 
-<img src="/wp-content/uploads/gpg-sig-details-2025@2x.png" class="help-center-img img-bordered" alt="GPG signature details tooltip">
+GPG signature details tooltip.
 
 **Common GPG signature codes:**
 
@@ -12516,54 +12293,53 @@ Hover to view signature details:
 
 ### How to upload a GPG key to your hosting service
 
-To display signed commits as verified:
+To have your hosting service show signed commits as verified:
 
-- [GitHub GPG setup](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account)
-- [GitLab GPG setup](https://docs.gitlab.com/ee/user/project/repository/signed_commits/gpg.html#add-a-gpg-key-to-your-account)
-- [Bitbucket GPG setup](https://support.atlassian.com/bitbucket-cloud/docs/use-gpg-keys-to-sign-commits/#Add-a-GPG-key)
-
-In GitKraken: <kbd>Preferences > GPG</kbd> → Copy GPG Public Key.
+1. In GitKraken Desktop, go to Preferences > Commit Signing and click **Copy GPG Public Key**.
+2. Add the key to your hosting service:
+   - [GitHub GPG setup](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account)
+   - [GitLab GPG setup](https://docs.gitlab.com/ee/user/project/repository/signed_commits/gpg.html#add-a-gpg-key-to-your-account)
+   - [Bitbucket GPG setup](https://support.atlassian.com/bitbucket-cloud/docs/use-gpg-keys-to-sign-commits/#Add-a-GPG-key)
 
 ### How to edit a GPG key
 
-To add emails or renew a key:
+To add an email address to a key or renew it, use the GPG command line:
 
-1. List keys:
+1. List your keys:
    ```bash
    gpg --list-secret-keys --keyid-format LONG
    ```
-   <img src="/wp-content/uploads/list-secret-keys@2x.png" class="help-center-img img-bordered" alt="List GPG secret keys">
-2. Edit:
+   List GPG secret keys.
+2. Open the key for editing:
    ```bash
    gpg --edit-key YOUR_KEY_ID
    ```
-3. Use commands:
-   - `adduid`: Add email
-   - `deluid`: Remove email
-   - `trust`: Update trust level
-   - `expire`: Change expiration
+3. Run the commands you need:
+   - `adduid`: Add an email address
+   - `deluid`: Remove an email address
+   - `trust`: Update the trust level
+   - `expire`: Change the expiration date
    - `save`: Save and exit
 
-[GNU’s full GPG key guide](https://www.gnupg.org/gph/en/manual/r899.html)
+For every option, see [GNU's full GPG key guide](https://www.gnupg.org/gph/en/manual/r899.html).
 
-After editing, re-upload the key to your host. See <a href="#uploading-gpg-key-to-hosting-service">Uploading Your GPG Key to a Remote Hosting Service</a>.
+After editing, upload the key to your hosting service again. See How to upload a GPG key to your hosting service.
 
 ### How to delete a GPG key
 
-To delete:
+To delete a key, run this command followed by your key ID or name:
 ```bash
 gpg --delete-secret-keys
 ```
-Append your key ID or name.
 
-<img src="/wp-content/uploads/delete-key.png" class="help-center-img img-bordered" alt="Delete GPG key confirmation">
-<img src="/wp-content/uploads/delete-key-for-sure.png" class="help-center-img img-bordered" alt="Final delete confirmation">
+Delete GPG key confirmation.
+Final delete confirmation.
 
 ---
 
 ## How to sign commits with SSH
 
-SSH signing is available through Git Executable.
+GitKraken Desktop signs with SSH through the Git selected in Preferences > General > Git Executable. If that Git's OpenSSH version is too old to sign commits, the **Git Executable** setting shows a warning with the detected version.
 
 ### SSH signing requirements
 
@@ -12580,29 +12356,25 @@ SSH signing is available through Git Executable.
    ```bash
    ssh-keygen -t ed25519 -C "your_email@example.com"
    ```
-   <img src="/wp-content/uploads/gkc-ssh-keygen@2x.png" class="help-center-img img-bordered" alt="Generating SSH key">
+   Generating SSH key.
 
-2. **Enable Git Executable:**
-   Go to <kbd>Preferences > Experimental > Git Executable</kbd>.
-   <img src="/wp-content/uploads/gkc-git-executable@2x.png" class="help-center-img img-bordered" alt="Enable Git Executable">
+2. **Set GPG Format to SSH:**
+   Preferences > Commit Signing > GPG Format → select SSH.
 
-3. **Set GPG Format to SSH:**
-   <kbd>Preferences > Commit Signing > GPG Format</kbd> → select <kbd>SSH</kbd>.
+3. **Select signing key:**
+   In Signing Key, browse to the `.pub` key.
 
-4. **Select signing key:**
-   On <kbd>Signing Key</kbd>, browse to the `.pub` key.
-
-5. **Create allowed_signers file:**
+4. **Create allowed_signers file:**
    ```bash
    touch ~/.ssh/allowed_signers
    echo "$(git config --get user.email) namespaces=\"git\" $(cat ~/.ssh/YOUR_KEY.pub)" >> ~/.ssh/allowed_signers
    ```
-   Select this file in GitKraken.
+   In Preferences > Commit Signing, select this file in **Allowed Signers File**.
 
-6. **Enable Signing by Default:**
-   <kbd>Preferences > Commit Signing</kbd> → enable **Sign Commits** and/or **Sign Tags**.
+5. **Enable signing by default:**
+   Preferences > Commit Signing → enable **Sign Commits by Default** and/or **Sign Tags by Default**.
 
-7. **Add SSH Key to Host:**
+6. **Add SSH Key to Host:**
    - [GitHub SSH setup](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
    - [GitLab SSH setup](https://docs.gitlab.com/ee/user/project/repository/signed_commits/gpg.html#add-a-gpg-key-to-your-account)
    - ⚠️ Bitbucket does **not** support SSH-signed commit verification.
@@ -12904,8 +12676,6 @@ Plan required: all
 Status: GA
 Last verified: 2026-03
 
-<kbd>Last updated: March 2026</kbd>
-
 Use this page to enter, work in, and recover from detached HEAD state in GitKraken Desktop when you need to inspect or test a specific commit without switching a branch pointer. It explains how to preserve commits created in detached HEAD state and how to recover lost work if you switch branches too early.
 
 **Requirements and limits**
@@ -12919,7 +12689,6 @@ Use this page to enter, work in, and recover from detached HEAD state in GitKrak
 ***
 
 ## Quick Start
-
 
 **To enter detached HEAD state:**
 1. Right-click any commit in the Commit Graph.
@@ -12939,19 +12708,13 @@ Any commits made in detached HEAD state that were not saved to a branch will be 
 ## How to enter detached HEAD state
 
 1. Right-click the commit you want to inspect.
-2. Select <kbd><strong>Checkout this commit</strong></kbd>.
+2. Select Checkout this commit.
 
-<figure class='figure center'>
-  <img src='/wp-content/uploads/checkout-commit-2025.png' class="help-center-img img-bordered" alt="Context menu showing 'Checkout this commit' option in GitKraken Desktop after right-clicking a specific commit in the graph view">
-  <figcaption style="text-align: center; color: #888;">Check out any past commit without creating a new branch.</figcaption>
-</figure>
+Check out any past commit without creating a new branch.
 
 The checked-out commit will display a `HEAD` label, indicating you’re in detached HEAD state.
 
-<figure class='figure center'>
-  <img src='/wp-content/uploads/HEAD-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop showing HEAD label attached to a specific commit in the graph, indicating the currently checked-out commit">
-  <figcaption style="text-align: center; color: #888;">GitKraken tags the commit with HEAD.</figcaption>
-</figure>
+GitKraken tags the commit with HEAD.
 
 You can now review the full history and diffs, or create a branch from this state.
 
@@ -12961,20 +12724,14 @@ You can now review the full history and diffs, or create a branch from this stat
 
 You can make changes and commit them while in this state. However, these commits won’t belong to any branch.
 
-<figure class='figure center'>
-  <img src='/wp-content/uploads/editing-detachedly-2025.png' class="help-center-img img-bordered" alt="GitKraken Desktop interface showing a warning banner that says 'You are in a detached HEAD state' above the commit panel with unstaged changes listed">
-  <figcaption style="text-align: center; color: #888;">GitKraken shows a warning when you commit in detached HEAD state.</figcaption>
-</figure>
+GitKraken shows a warning when you commit in detached HEAD state.
 
 To preserve your work, create a branch from the current commit:
 
 1. Right-click the commit tagged as HEAD.
-2. Select <kbd><strong>Create branch here</strong></kbd>.
+2. Select Create branch here.
 
-<figure class='figure center'>
-  <img src='/wp-content/uploads/create-branch-from-HEAD-2025.png' class="help-center-img img-bordered" alt="Context menu in GitKraken Desktop showing the option 'Create branch here' when right-clicking a commit labeled HEAD">
-  <figcaption style="text-align: center; color: #888;">Start a branch from your current detached commit to keep your changes.</figcaption>
-</figure>
+Start a branch from your current detached commit to keep your changes.
 
 ***
 
@@ -12986,14 +12743,9 @@ To exit detached HEAD state:
 
 This will remove the `HEAD` label and discard any unpreserved commits.
 
-<figure class='figure center'>
-  <img src='/wp-content/uploads/discard-commits.gif' class="help-center-img img-bordered" alt="Animation showing how unbranched commits in GitKraken Desktop are removed from view after switching branches from a detached HEAD state">
-  <figcaption style="text-align: center; color: #888;">Unbranched commits are removed when you check out another branch.</figcaption>
-</figure>
+Unbranched commits are removed when you check out another branch.
 
-<div class='callout callout--danger'>
-  <p><strong>Important:</strong> Commits made in detached HEAD state will be lost unless you create a branch. You may be able to <a href='https://help.gitkraken.com/gitkraken-desktop/detached-head-state/#recovering-lost-commits'>recover them manually</a>.</p>
-</div>
+Important: Commits made in detached HEAD state will be lost unless you create a branch. You may be able to recover them manually.
 
 ***
 
@@ -13001,7 +12753,7 @@ This will remove the `HEAD` label and discard any unpreserved commits.
 
 If you accidentally switch branches before saving your changes:
 
-- Click <a href="https://support.gitkraken.com/working-with-commits/undo-and-redo/">Undo</a> in GitKraken if available.
+- Click Undo in GitKraken if available.
 - Use the CLI and run [`git reflog`](https://git-scm.com/docs/git-reflog) to find the lost commit SHA.
 - Then use [`git checkout <SHA>`](https://git-scm.com/docs/git-checkout) to re-enter that state.
 

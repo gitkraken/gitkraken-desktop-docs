@@ -96,7 +96,7 @@ After the checkout, GitKraken Desktop selects the new HEAD commit. If you have u
 
 If you are on the wrong branch, [stash](/gitkraken-desktop/stashing) your changes, switch branches, and pop the stash.
 
-If you only need a subset of files checked out, see [Sparse Checkout](/gitkraken-desktop/open-clone-init/#sparse-checkout).
+If you only need a subset of files checked out, see [Sparse Checkout](/gitkraken-desktop/open-clone-init/#how-sparse-checkout-works).
 
 ### How to rename a branch
 
