@@ -59,13 +59,13 @@ Performance issues are commonly linked to large repositories with many reference
 
 ### Interface optimization
 
-- Disable auto-fetch by setting the [Auto-fetch interval](/gitkraken-desktop/preferences/#auto-fetch) to `0`.
-- Reduce the number of commits shown in the graph by setting a lower [Max Commits value](/gitkraken-desktop/preferences/#max-commits-in-graph).
+- Disable auto-fetch by setting the [Auto-Fetch Interval](/gitkraken-desktop/preferences/#how-general-preferences-work) to `0`.
+- Reduce the number of commits shown in the graph by setting a lower [Initial Commits in Graph](/gitkraken-desktop/preferences/#how-general-preferences-work) value.
 - [Solo or Hide](/gitkraken-desktop/hiding-and-soloing/) branches and tags to reduce visual complexity.
 
 ### Cleanup and maintenance
 
-- [Delete unnecessary local branches](/gitkraken-desktop/branching-and-merging/#delete-a-branch).
+- [Delete unnecessary local branches](/gitkraken-desktop/branching-and-merging/#how-to-delete-a-branch).
 - If using Git LFS, perform an [LFS prune](/gitkraken-desktop/git-lfs/).
 - Run [`git status`](https://git-scm.com/docs/git-status) to check for unexpected working directory states.
 - Restart GitKraken Desktop daily to clear any accumulated memory or cache usage.

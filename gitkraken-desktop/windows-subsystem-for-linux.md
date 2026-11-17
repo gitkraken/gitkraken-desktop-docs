@@ -119,7 +119,7 @@ This installation includes WSLg.
 
 ## How to download and install GitKraken Desktop on WSL 2
 
-To install GitKraken Desktop within WSL, follow the <a href="https://help.gitkraken.com/gitkraken-desktop/how-to-install/#linux-deb-rpm-and-tar-gz-files" target="_blank">Linux installation instructions</a>.
+To install GitKraken Desktop within WSL, follow the <a href="https://help.gitkraken.com/gitkraken-desktop/how-to-install/#how-to-install-gitkraken-desktop-on-linux" target="_blank">Linux installation instructions</a>.
 
 For Ubuntu users:
 

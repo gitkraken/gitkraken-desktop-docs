@@ -33,7 +33,7 @@ taxonomy:
 
 Teams can be used for:
 - The [Team View](/gitkraken-desktop/working-with-repositories/team-view/): View branches and files others are working on and detect potential conflicts. <em>Advanced plan and above</em>
-- [Sharing a Workspace](/gitkraken-desktop/workspaces/#create-a-cloud-workspace): Manage and collaborate on a group of repositories. <em>Pro plan and above</em>
+- [Sharing a Workspace](/gitkraken-desktop/workspaces/#how-to-create-a-cloud-workspace): Manage and collaborate on a group of repositories. <em>Pro plan and above</em>
 - [Sharing a Cloud Patch](/gitkraken-desktop/experimental-features): Securely send a patch file to other team members.
 
 <div class='callout callout--basic'>

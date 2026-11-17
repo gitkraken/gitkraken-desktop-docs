@@ -88,7 +88,7 @@ You can also:
 </figure>
 
 <div class='callout callout--success'>
-<p><strong>Tip:</strong> Use <a href="/gitkraken-desktop/keyboard-shortcuts/#repo-actions">keyboard shortcuts</a> to speed up staging actions.</p>
+<p><strong>Tip:</strong> Use <a href="/gitkraken-desktop/keyboard-shortcuts/#keyboard-shortcuts-for-repo-actions">keyboard shortcuts</a> to speed up staging actions.</p>
 </div>
 
 ***

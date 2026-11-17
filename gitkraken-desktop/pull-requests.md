@@ -86,7 +86,7 @@ Push your branch to the remote first. Then use one of these:
 </figure>
 
 <div class='callout callout'>
-  <p><strong>Note:</strong> If the Azure DevOps PR form is not populating, see <a href="https://help.gitkraken.com/gitkraken-desktop/azure-devops/#azure-devops-pull-requests-form-not-populating-in-gitkraken-desktop">Azure DevOps Integration</a>.</p>
+  <p><strong>Note:</strong> If the Azure DevOps PR form is not populating, see <a href="https://help.gitkraken.com/gitkraken-desktop/azure-devops/#how-to-fix-a-missing-azure-devops-pull-request-form">Azure DevOps Integration</a>.</p>
 </div>
 
 ***

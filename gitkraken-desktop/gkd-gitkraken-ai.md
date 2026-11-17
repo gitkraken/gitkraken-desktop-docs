@@ -341,7 +341,7 @@ When GitKraken Desktop is connected to [GitHub, GitLab, Bitbucket, or Azure DevO
 <figcaption style="text-align: center; color: #888">Start creating a pull request from the Left Panel or graph</figcaption>
 </figure>
 
-2. Click **Generate title and description**. If you use a [pull request template](/gitkraken-desktop/pull-requests/#pull-request-templates), select the template first. GitKraken AI applies it.
+2. Click **Generate title and description**. If you use a [pull request template](/gitkraken-desktop/pull-requests/#how-pull-request-templates-work), select the template first. GitKraken AI applies it.
 
 <figure>
 <img src="/wp-content/uploads/pr-ai-title-desc-11-1@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Pull request creation panel with an AI button to generate a title and description based on branch changes." />

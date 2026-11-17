@@ -104,7 +104,7 @@ See [how to create and switch profiles](/start-here/profiles).
 
 Control access and connections to remote repositories:
 
-- [SSH settings](/gitkraken-desktop/authentication/#ssh)
+- [SSH settings](/gitkraken-desktop/authentication/#how-ssh-authentication-works)
 - Git hosting integrations such as GitHub, GitLab, Bitbucket, and Azure DevOps
 - Issue tracker integrations such as Jira and Trello
 
@@ -221,7 +221,7 @@ The self-hosted and standalone versions of GitKraken Desktop do not show the Exp
 
 These settings apply only to the open repository, so you can configure each repository differently:
 
-- [Encoding](/gitkraken-desktop/editing-files/#encoding)
+- [Encoding](/gitkraken-desktop/editing-files/#how-file-encoding-works)
 - [Gitflow](/gitkraken-desktop/git-flow/)
 - [Git Hooks](/gitkraken-desktop/githooks/)
 - [LFS](/gitkraken-desktop/git-lfs/)

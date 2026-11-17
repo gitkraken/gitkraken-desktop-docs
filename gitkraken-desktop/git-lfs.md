@@ -250,7 +250,7 @@ Use the LFS menu in the toolbar to run commands:
 ## Git LFS FAQs and troubleshooting
 
 ### LFS not showing in Preferences?
-Check if your PATH includes Git and Git LFS. See [Verify Installation](#verify-installation).
+Check if your PATH includes Git and Git LFS. See [Verify Installation](#how-to-verify-the-installation).
 
 ### LFS button disappeared?
 You may have switched to a repo without LFS. Use the menu: <kbd>Hamburger > LFS > Initialize</kbd>.
