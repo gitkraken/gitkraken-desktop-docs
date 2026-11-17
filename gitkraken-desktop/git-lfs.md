@@ -11,14 +11,14 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [git-lfs, large-files, install, configure, troubleshooting]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 ***
 

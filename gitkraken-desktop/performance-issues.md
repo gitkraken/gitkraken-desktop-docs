@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [performance, troubleshooting, optimization, maintenance, large-repos]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to diagnose slow or unresponsive behavior in GitKraken Desktop, especially in large or complex repositories. It focuses on practical fixes such as repository maintenance, graph-size limits, auto-fetch changes, branch cleanup, LFS cleanup, and build verification for macOS systems.
 

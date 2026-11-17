@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [teams, collaboration, roles, workspaces, cloud-patches]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: October 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 <div style="display:flex; flex-direction:row-reverse; flex-wrap:wrap; align-items:center; gap:8px 32px; margin-bottom:24px;">
   <p style="flex:1 1 300px; margin:0;">Use this page to manage organizations and teams in GitKraken Desktop so you can invite members, assign roles, organize users into teams, and enable collaboration features such as Team View, shared Workspaces, and Cloud Patches. Team availability depends on your GitKraken subscription tier.</p>
