@@ -1,11 +1,11 @@
 ---
 title: Clean Up AI Coding Agent Commits Before Review in GitKraken Desktop
-description: Turn an AI coding agent's one giant commit, or a run of commits made in the order it worked, into a clean history a reviewer can follow, using Commit Composer in GitKraken Desktop.
+description: Turn a Claude Code or Codex agent's one giant commit, or a run of "fix stuff" commits, into a history a reviewer can follow in GitKraken Desktop. Use Commit Composer to regroup the changes with AI, or interactive rebase to squash, reorder and reword the commits by hand on every plan.
 product: GitKraken Desktop
 feature: Clean Up Agent Commits
 content_type: how-to
 audience: developer
-plan_required: Pro
+plan_required: all
 os_support: [Windows, macOS, Linux]
 git_hosts: [generic]
 integrations: []
@@ -13,21 +13,23 @@ hosted_variant: both
 status: preview
 last_verified: 2026-11
 llms_include: true
-tags: [agents, coding-agents, ai, commit-composer, recompose, commits, history, pull-requests]
+tags: [agents, coding-agents, ai, claude-code, codex, commit-composer, recompose, interactive-rebase, squash, commits, history, pull-requests]
 taxonomy:
     category: gitkraken-desktop
 ---
 <kbd>Last updated: November 2026</kbd>
 
-Use this page when an AI coding agent leaves you with one giant commit, or with a run of small commits in the order it worked rather than grouped by change, and you need a history a reviewer can follow. Commit Composer in GitKraken Desktop groups the agent's changes into logical commits with clear messages. It only reorganizes the changes and never changes the code itself. You review and adjust the result before anything on your branch changes.
+To clean up the commits that Claude Code, Codex or another AI coding agent left on a branch, open the branch in GitKraken Desktop and use Commit Composer or interactive rebase. Commit Composer uses AI to split 1 giant commit, or regroup 15 "fix stuff" commits, into logical commits with clear messages, and it never changes the code itself. Interactive rebase lets you squash, reorder and reword the agent's commits by hand, with no AI and on every plan. With either one, you review the new history before anything on your branch changes, so a reviewer can follow the work one commit at a time.
 
 **Requirements and limits**
 - Scope: Regrouping an agent's uncommitted changes or existing commits into a reviewable history before you open a pull request
-- Prerequisite: A [paid GitKraken subscription](https://www.gitkraken.com/pricing?source=help_center&product=gitkraken) with GitKraken AI enabled. On-premises deployments need a custom AI endpoint (see [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/)).
+- Prerequisite: Interactive rebase works on every plan and does not use AI.
+- Prerequisite: Commit Composer requires a [paid GitKraken subscription](https://www.gitkraken.com/pricing?source=help_center&product=gitkraken) with GitKraken AI enabled. On-premises deployments need a custom AI endpoint (see [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/)).
 - AI usage: Commit Composer uses your GitKraken AI credits, or your own AI provider if you set one up.
 - Limits: Commit Composer is in Preview.
 - Limits: To recompose existing commits, they must be contiguous, on the current branch, and have no merge commits between the branch head and the oldest selected commit.
-- Limits: Recomposing commits you already pushed rewrites shared history.
+- Limits: Interactive rebase has the same limits: the commits must be on the branch you have checked out, with no merge commits between the branch head and the agent's first commit.
+- Limits: Recomposing or rebasing commits you already pushed rewrites shared history.
 
 ***
 
@@ -40,8 +42,9 @@ Before you start, open the agent's worktree: in the Agents view, right-click the
 | Uncommitted, in the agent's worktree | **Compose commits with AI** | Stage the changes, then click **Compose commits with AI** in the Commit Panel | |
 | Committed on the agent's branch, not pushed | **Recompose commits with AI** | <kbd>Shift</kbd> + click the agent's first and last commits, right-click, and select **Recompose *[number]* commits with AI (Preview)** | The commits must be next to each other, with no merge commits in between |
 | Committed and pushed | **Recompose commits with AI**, then force push | Recompose as above, then force push the branch | Only if nobody else has pulled or built on the branch |
+| Committed, and you want to clean up by hand | **Interactive Rebase** | Right-click the commit just below the agent's first commit and select **Interactive Rebase *[number]* children of *[commit]***. Set each commit to **Pick**, **Reword**, **Squash**, or **Drop**, drag commits to reorder them, then click **Start Rebase** | No AI, works on every plan. If you already pushed the branch, force push it afterward |
 
-In every case, GitKraken Desktop shows the proposed commits first. Your branch does not change until you click **Create Commits**.
+With Commit Composer, GitKraken Desktop shows the proposed commits first, and your branch does not change until you click **Create Commits**. With interactive rebase, your branch does not change until you click **Start Rebase**.
 
 ***
 
@@ -111,7 +114,7 @@ If you do not like the result, click **Undo** in the toolbar right away. Undo re
 ## How to share the cleaned-up branch
 
 - **If you never pushed the branch,** push it as usual and [open a pull request](/gitkraken-desktop/pull-requests/).
-- **If you already pushed it,** recomposing rewrote commits that are on the remote, so a normal push is rejected. GitKraken Desktop tells you the branch is behind the remote and offers **Pull**, **Force Push**, and **Cancel**. Select **Force Push**, then confirm. GitKraken Desktop uses a safe force push (force-with-lease), which stops if someone pushed to the branch since your last fetch. Use it only if nobody else has pulled or built on the branch. See [Push, Pull, and Fetch](/gitkraken-desktop/pushing-and-pulling/).
+- **If you already pushed it,** recomposing or rebasing rewrote commits that are on the remote, so a normal push is rejected. GitKraken Desktop tells you the branch is behind the remote and offers **Pull**, **Force Push**, and **Cancel**. Select **Force Push**, then confirm. GitKraken Desktop uses a safe force push (force-with-lease), which stops if someone pushed to the branch since your last fetch. Use it only if nobody else has pulled or built on the branch. See [Push, Pull, and Fetch](/gitkraken-desktop/pushing-and-pulling/).
 
 To write the pull request description, click the AI icon in the description field when you create the pull request to generate a draft, or right-click the branch and select **Explain Branch Changes** for a summary to start from. Edit either one so it says what you checked and what you did not.
 
@@ -131,7 +134,24 @@ Not across a merge. Recompose only works on commits that are next to each other 
 
 ### Can I clean up commits without AI?
 
-Yes. Use [interactive rebase](/gitkraken-desktop/interactive-rebase/) to reorder, squash, and reword commits by hand.
+Yes. [Interactive rebase](/gitkraken-desktop/interactive-rebase/) works on every plan and does not use AI. Use it to squash an agent's "fix stuff" commits into the commits they fix, put the commits in a logical order, and rewrite their messages:
+
+1. Open the agent's worktree so its branch is checked out.
+2. In the Commit Graph, right-click the commit just below the agent's first commit and select **Interactive Rebase *[number]* children of *[commit]***.
+3. In the list next to each commit, choose what to do with it:
+   - **Pick**: keep the commit as it is.
+   - **Reword**: write a new message. You can also double-click the commit.
+   - **Squash**: combine the commit into the older commit below it.
+   - **Drop**: remove the commit and its changes.
+4. Drag commits up or down to reorder them, or right-click a commit and select **Move commit up** or **Move commit down**.
+5. Click **Start Rebase**. To go back to the original list, click **Reset**. To leave without changing anything, click **Cancel Rebase**.
+
+<figure>
+  <img src="/wp-content/uploads/squash.png" class="help-center-img img-bordered" alt="Interactive rebase in GitKraken Desktop showing Squash selected for two commits, which will combine into a single commit">
+  <figcaption style="text-align:center; color:#888">Squash small agent commits into the commit they belong to.</figcaption>
+</figure>
+
+If you already pushed the branch, force push it afterward, as described in [How to share the cleaned-up branch](#how-to-share-the-cleaned-up-branch).
 
 ### How do I see what the agent changed before I clean it up?
 
