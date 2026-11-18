@@ -11,13 +11,13 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [team-view, collaboration, conflicts, activity, teams]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to monitor what teammates are currently working on in GitKraken Desktop so you can spot overlapping edits and potential conflicts earlier. Team View shows each teammate’s checked-out branch, local file changes, and activity status, and it is available on Advanced subscription tiers or higher.
 
@@ -25,7 +25,8 @@ Use this page to monitor what teammates are currently working on in GitKraken De
     <p><strong>Note:</strong> Team View is only available for Advanced subscription tiers or higher. See the <a href="/start-here/teams/">Teams</a> page for more information on managing teams.</p>
 </div>
 
-**Requirements and limits**
+## Requirements and limits
+
 - Plan: Advanced subscription tier or higher
 - Team requirement: You must belong to a team and select it in <kbd>Preferences &gt; Team</kbd>
 - Shared data: Checked-out branch, local file changes, and activity status

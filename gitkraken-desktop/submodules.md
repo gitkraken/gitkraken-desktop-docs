@@ -21,7 +21,8 @@ taxonomy:
 
 Use this page to add, update, initialize, and manage Git submodules in GitKraken Desktop when one repository needs to reference another repository at a fixed commit. You can also change the commit the parent repository points to and turn on automatic submodule updates.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Git submodules, not Git subtree workflows
 - Pane access: Enable the Submodules pane from the Left Panel header menu
 - Add workflow: Requires an HTTPS or SSH repository URL and a target path

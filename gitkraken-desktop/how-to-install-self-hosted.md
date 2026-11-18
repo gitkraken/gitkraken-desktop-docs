@@ -11,17 +11,18 @@ git_hosts: [n/a]
 integrations: []
 hosted_variant: self-hosted
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [self-hosted, docker, install, linux, on-premise]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to install GitKraken Self-Hosted Server on a Linux host with Docker and Docker Compose. It covers the initial server setup flow, offline installation notes, and platform-specific Docker installation steps for CentOS, Ubuntu, and RHEL7 before you bring the GitKraken services online.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Product scope: GitKraken Self-Hosted Server installation on Linux
 - Host requirement: Linux machine with Docker CE and Docker Compose
 - Supported platforms on this page: CentOS, Ubuntu, and RHEL7

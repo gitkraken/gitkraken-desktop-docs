@@ -24,7 +24,8 @@ Last verified: 2026-03
 
 Use this page to run GitKraken Desktop actions from the Command Palette when you want a keyboard-first workflow for commands, files, repositories, worktrees, and settings. It explains how to open the palette, what command categories are available, and when it is faster than navigating the UI directly.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Access methods: Cmd/Ctrl + P, the wand icon, or the Help menu
 - Scope: Commands, files, repositories, branches, stashes, worktree-related navigation, settings, logs, and patches
 - Search behavior: Results filter live as you type
@@ -173,7 +174,8 @@ GitKraken Desktop is a visual Git client for Windows, macOS, and Linux. You can 
 
 Start here to find installation steps, interface walkthroughs, coding agent workflows, worktrees, terminal usage, integrations, release notes, and support resources for GitKraken Desktop.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Plan requirements, OS support, version limits, and step-by-step workflows are on each linked page.
 - Installation, integrations, and release notes each list their own requirements and compatibility details.
 - Coding agents, worktrees, the terminal, and on-premises deployment each have their own setup page.
@@ -241,7 +243,10 @@ Use this page to find your way around the main areas of the GitKraken Desktop in
 
 Use this page to find your way around the main areas of the GitKraken Desktop interface: the toolbar, Left Panel, Commit Graph, Commit Panel, Status Bar, and tabs. Each area links to a task guide when you need the full steps.
 
-**Requirements and limits**
+Use this page to find your way around the main areas of the GitKraken Desktop interface: the toolbar, Left Panel, Commit Graph, Commit Panel, Status Bar, and tabs. Each area links to a task guide when you need the full steps.
+
+## Requirements and limits
+
 - Scope: Interface overview, not full task-specific workflows
 - Main areas: Toolbar, Left Panel, Commit Graph, Commit Panel, Status Bar, and tabs
 - Repository context: Most of these controls appear only when a repository is open
@@ -479,7 +484,8 @@ Last verified: 2026-03
 
 Use these keyboard shortcuts to work in GitKraken Desktop on macOS, Windows, and Linux without leaving the keyboard. They cover staging, committing, navigating the Commit Graph, opening the Command Palette, managing tabs, toggling interface panels, and opening the terminal.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Shortcuts differ between macOS and Windows/Linux, so check the column for your platform before using a shortcut.
 - A shortcut works only when its view or repository is open.
 
@@ -587,7 +593,8 @@ Last verified: 2026-04
 
 Use this page to find where a setting lives in GitKraken Desktop Preferences and what each Preferences section controls, before you change your workflow or environment.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Preferences overview for app-wide, profile-specific, and repository-specific settings
 - Access point: Gear icon in the top-right corner of GitKraken Desktop
 - Profile behavior: Preferences are stored per profile, so switching profiles changes integrations and UI configuration
@@ -797,7 +804,8 @@ Last verified: 2026-03
 
 Use these tips to speed up everyday Git work in GitKraken Desktop. You can set up Profiles, navigate with the Command Palette and keyboard shortcuts, run coding agents in parallel worktrees, connect integrations, and control what the Commit Graph shows.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Each tip is a summary. For full steps and edge cases, open the linked feature page.
 - Some tips use paid features, including multiple Profiles and some integrations.
 - Integration capabilities vary by Git provider and plan, especially for Azure DevOps and self-hosted services.
@@ -1133,7 +1141,10 @@ Learn a basic GitKraken Desktop workflow: clone a repository, create a branch, m
 
 Learn a basic GitKraken Desktop workflow: clone a repository, create a branch, make and stage changes, commit them, push the branch, and merge the work back. These steps are for new Git users who want a practical first path through GitKraken Desktop.
 
-**Requirements and limits**
+Learn a basic GitKraken Desktop workflow: clone a repository, create a branch, make and stage changes, commit them, push the branch, and merge the work back. These steps are for new Git users who want a practical first path through GitKraken Desktop.
+
+## Requirements and limits
+
 - The steps cover a basic workflow, not every GitKraken Desktop option or edge case.
 - You need access to a Git repository you can clone, change, commit to, and push from GitKraken Desktop.
 - Whether you can push and merge depends on your remote permissions and repository policy.
@@ -1261,7 +1272,8 @@ Last verified: 2026-03
 
 Use this page to open an existing local repository, clone a remote repository, or initialize a new repository in GitKraken Desktop. You can also use shallow clone, sparse checkout, and the Repository Management tab to set up a new or existing project.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Entry points: Repository Management tab, New Tab, File &gt; Clone Repo / Init Repo / Open Repo, or the `gitkraken` command line
 - Open workflow: Requires an existing local Git repository
 - Clone workflow: Requires a remote repository URL or a connected integration
@@ -1467,9 +1479,12 @@ Last verified: 2026-03
 
 Note: This page covers creating, deleting, and filtering files inside a repository. To add or remove a remote repository, see Remote Repositories and Pushing/Pulling.
 
+Note: This page covers creating, deleting, and filtering files inside a repository. To add or remove a remote repository, see Remote Repositories and Pushing/Pulling.
+
 Use this page to create files, create folders, delete files, and filter repository contents from inside GitKraken Desktop. It covers both Command Palette and context-menu workflows, plus the `View all files` mode you need when you want to delete or locate files outside the current staged or changed set.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: File and folder creation, deletion, and filtering inside an existing repository
 - Create-file access: Command Palette or Commit Panel context menu
 - Folder creation behavior: Include `/` in the new filename to create a folder and file at the same time
@@ -2083,7 +2098,8 @@ Last verified: 2026-03
 
 Use this page to open, edit, save, discard, stage, and preview files in GitKraken Desktop’s built-in editor. It covers the different ways to enter edit mode, what the editor indicators mean, how save-and-stage behaves, and how to review or override file encoding when UTF-8 is not enough.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Built-in file editing inside GitKraken Desktop
 - Entry points: Context menu, Command Palette, or the file diff view
 - Unsaved-change indicator: A blue dot marks unsaved edits in the editor
@@ -2223,7 +2239,8 @@ Last verified: 2026-03
 
 Use this page to search commit history in GitKraken Desktop by message, SHA, or author and to control how much history is loaded into the Commit Graph. It is useful when search results seem incomplete because the graph depth is limited or when you want to jump into commit search from anywhere in the app.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Search scope: Commit message, SHA, and author
 - Default graph depth: GitKraken Desktop initially displays up to 2000 commits in the Commit Graph
 - Search limitation: If the graph is not loading enough history, search results can appear incomplete
@@ -2274,7 +2291,8 @@ Last verified: 2026-03
 
 Use this page to stash, apply, pop, rename, and partially restore uncommitted changes in GitKraken Desktop when you need to switch context without creating a commit. You can stash all your changes or only selected files, and manage your stashes from the Commit Graph or the Left Panel.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Uncommitted local changes only
 - Submodule limitation: Changes inside a submodule, a submodule checked out at another commit, and folders that hold their own Git repository are not stashed. Commit or stash those changes from the submodule itself
 - Apply vs. pop: **Apply Stash** keeps the stash; **Pop Stash** applies it and removes it
@@ -2405,7 +2423,8 @@ Use this page to undo or redo Git actions in GitKraken Desktop, such as an accid
 
 To undo a supported action, click the **Undo** button. If you undo something by mistake, you can **redo** it.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Undo scope: The most recent supported action only
 - Redo scope: Only actions that were just undone
 - Supported actions include checkout, commit, discard, delete branch, remove remote, reset branch, and several rebase-related operations
@@ -2468,7 +2487,8 @@ Last verified: 2026-03
 
 Use this page to create, review, filter, comment on, and merge pull requests (PRs) in GitKraken Desktop on GitHub, GitLab, Bitbucket, and Azure DevOps. On GitHub, you also get GitHub Pull Request View, stacked pull requests, code suggestions, and in-app merge options. To review a pull request, you open it in GitKraken Code Review on GitKraken.dev.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Supported providers on this page: GitHub, GitLab, Bitbucket, and Azure DevOps
 - Precondition: Push your branch to the remote before creating a pull request
 - GitHub-only features: GitHub Pull Request View, stacked pull requests on GitHub.com, code suggestions, and in-app merge options
@@ -2758,7 +2778,8 @@ Last verified: 2026-03
 
 Use this page to push, pull, fetch, add remotes, and set upstream branches in GitKraken Desktop when you need to synchronize local branches with a remote. It also explains the available pull behaviors, drag-and-drop shortcuts, and when GitKraken prompts you for remote creation or force-push decisions.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Remote synchronization for existing Git repositories in GitKraken Desktop
 - Add remote limitation: Integration dropdowns show forks only; use the URL option for non-fork remotes
 - Push behavior: GitKraken prompts to create a remote branch if one does not exist
@@ -2893,7 +2914,8 @@ Last verified: 2026-03
 
 Use this page to stage, unstage, discard, and ignore files in GitKraken Desktop from the Commit Panel and diff view.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Working directory and staged file management from the Commit Panel and diff view
 - Starting point: Select the `//WIP` node to work with current uncommitted changes
 - Line-level actions: Stage, unstage, and discard selected lines or hunks from the diff view
@@ -3387,7 +3409,8 @@ A **coding agent** is an external CLI that can work on code in a terminal sessio
 
 GitKraken Desktop explicitly integrates with a set of supported coding agent CLIs. You can also run other coding agents manually in the embedded terminal, even if they do not appear in the coding agent configuration.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Product: GitKraken Desktop with the Agents view enabled
 - Coding agent CLI: Install and configure a supported coding agent CLI in Preferences > External Tools > Coding Agent
 - Session model: Each agent session runs in its own Git worktree and working directory
@@ -3833,7 +3856,8 @@ Last verified: 2026-03
 
 Use deep links in GitKraken Desktop to share or open specific remote repositories, commits, branches, or tags. This allows your team to quickly access relevant project context with a single click.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Deep links to repositories, commits, branches, and tags
 - Integration requirement: The repository must be hosted through a supported GitKraken integration
 - Local access behavior: If the repository is already open, GitKraken navigates directly to the referenced item
@@ -3906,7 +3930,8 @@ Use this page to fork GitHub or GitHub Enterprise Server repositories from GitKr
 
 With the [GitHub integration](/gitkraken-desktop/github-gitkraken-desktop/) or [GitHub Enterprise Server integration](/integrations/github-enterprise/), you can fork repositories directly from GitKraken Desktop.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Supported hosts on this page: GitHub.com and GitHub Enterprise Server
 - Requirement: The repository must already be open in GitKraken Desktop
 - Integration requirement: Use the GitHub or GitHub Enterprise Server integration tab in the Add Remote flow
@@ -3980,7 +4005,8 @@ Last verified: 2026-03
 
 Use this page to configure and run Gitflow in GitKraken Desktop when your team organizes work into feature, release, and hotfix branches.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Gitflow-style branching with feature, release, and hotfix branches
 - Setup location: Preferences &gt; Gitflow
 - Initialization behavior: `main` must already exist locally; GitKraken Desktop creates `develop` if it does not exist
@@ -4122,7 +4148,8 @@ Last verified: 2026-03
 
 Use profiles in GitKraken Desktop to keep separate Git identities, integrations, app preferences, and tab sets for different projects or environments. This page explains how to create and switch profiles, what a profile stores, how avatar behavior works, and when a paid GitKraken subscription is required for multiple profiles.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Purpose: Separate Git identities, integrations, preferences, and tab sets by work context
 - Multiple profiles: Require a paid GitKraken subscription
 - Profile data: General, Integrations, and UI Preferences are stored per profile
@@ -4242,7 +4269,8 @@ Last verified: 2026-03
 
 Hide and Solo help you reduce Commit Graph clutter in GitKraken Desktop without changing your repository. Use Hide to temporarily remove branches, tags, remotes, or stashes from view, and use Solo to focus only on the references you want to inspect when reviewing history or navigating a busy graph.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Hide and Solo only change what is visible in the Commit Graph; they do not modify your repository data.
 - You can hide or solo branches, tags, remotes, and stashes from the Left Panel.
 - Solo mode keeps only the references you explicitly solo visible until you unsolo them.
@@ -4288,7 +4316,8 @@ Last verified: 2026-03
 
 Use this page to run interactive rebase in GitKraken Desktop when you need to reorder, combine, rename, or drop commits before sharing or merging a branch. It explains how to start the rebase, what the available actions do, and which branch and history conditions must be met before the workflow is available.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Rewrite local branch history before sharing or merging
 - Required branch condition: Branches must share a common ancestor
 - Rebase limitation: Interactive rebase is not available for merge commits
@@ -4389,7 +4418,8 @@ Last verified: 2026-03
 
 Favorites let you pin frequently used repositories in GitKraken Desktop so you can reopen them faster from Repo Management, dropdown menus, and keyboard shortcuts. Use favorites when you switch between a small set of active repos and want quick access without searching your full repository list each time.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Favorites are managed from the Repo Management tab in GitKraken Desktop.
 - Keyboard shortcuts are available for up to 9 favorite repositories.
 - Favorites change how quickly you reopen repositories; they do not change the repository itself.
@@ -4435,7 +4465,8 @@ Last verified: 2026-03
 
 Use this page to add, update, initialize, and manage Git submodules in GitKraken Desktop when one repository needs to reference another repository at a fixed commit. You can also change the commit the parent repository points to and turn on automatic submodule updates.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Git submodules, not Git subtree workflows
 - Pane access: Enable the Submodules pane from the Left Panel header menu
 - Add workflow: Requires an HTTPS or SSH repository URL and a target path
@@ -4570,7 +4601,8 @@ Last verified: 2026-03
 
 Use this page to create, annotate, push, move, delete, and filter Git tags in GitKraken Desktop. Tags are useful when you want to mark releases, deployment points, or other important commits and then share or inspect those references from the commit graph or Left Panel.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Local and remote Git tag management in GitKraken Desktop
 - Creation points: Commit Graph or Left Panel tag actions
 - Checkout limitation: Tags cannot be checked out directly as branches
@@ -4719,7 +4751,8 @@ Use this page to create, switch, lock, and remove Git worktrees in GitKraken Des
 
 If you use coding agents in GitKraken Desktop, the Agents view works with the same worktrees. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for agent-specific setup, session management, and status details.
 
-**Requirements and limits**
+## Requirements and limits
+
 - GitKraken Desktop version: Worktrees are supported in version 10.5.0 and later
 - Worktree model: Each worktree has its own working directory and index but shares repository history with the main repo
 - Change visibility: Once committed, changes made in one worktree become visible in other worktrees
@@ -4880,7 +4913,8 @@ Last verified: 2026-03
 
 Use this page to squash multiple commits into one in GitKraken Desktop when you want a cleaner branch history before sharing or merging work. It covers the selection requirements for squash, what happens to the resulting commit message, and why force push may be required if the original commits were already pushed.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Combine multiple local commits into one commit
 - Selection requirement: Select two or more commits in a consecutive straight ancestor-descendant line
 - Oldest-commit requirement: The oldest selected commit must have a parent
@@ -4956,7 +4990,8 @@ Last verified: 2026-03
 
 Use this page to install, initialize, and manage Git LFS in GitKraken Desktop when your repository includes large binary files. It explains the Git, Git LFS, and GitKraken version requirements, how tracking patterns work, where LFS actions live in the UI, and common troubleshooting steps when LFS is missing or misconfigured.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Git requirement: Git 2.39.3 or later
 - Git LFS requirement: Git LFS 3.0.0 or later
 - GitKraken Desktop requirement: Version 7.0.0 or later
@@ -5192,7 +5227,8 @@ Last verified: 2026-03
 
 Use this page to connect GitKraken Desktop to Azure DevOps for repository access, pull request work, and SSH setup by using OAuth or a personal access token. The integration requires a Pro subscription or higher, and PAT authentication is the fallback when an Azure DevOps organization blocks third-party OAuth access.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: Azure DevOps
 - Plan: Pro subscription tier or higher
 - Authentication options: OAuth or Personal Access Token (PAT)
@@ -5363,7 +5399,8 @@ Last verified: 2026-03
 
 Use this page to connect GitKraken Desktop to Bitbucket Data Center in a self-hosted environment so you can authenticate with a personal access token, configure SSH, clone repositories, and work with pull requests. This integration requires an Advanced subscription tier or higher.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: Bitbucket Data Center in a self-hosted environment
 - Plan: Advanced subscription tier or higher for self-hosted integrations
 - Authentication: Personal Access Token (PAT)
@@ -5488,7 +5525,8 @@ Last verified: 2026-03
 
 Use this page to connect GitKraken Desktop to Bitbucket.org for repository discovery, SSH setup, clone and remote workflows, and pull request activity.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: Bitbucket.org
 - Authentication: Browser-based Bitbucket connection through your GitKraken account (sign in to GitKraken Desktop first)
 - Account limit: 1 Bitbucket account per profile; multiple accounts require multiple profiles and a GitKraken Pro subscription
@@ -5620,7 +5658,8 @@ Last verified: 2026-03
 
 GitHub Actions workflows in GitKraken Desktop are managed by editing the YAML files stored in your repository's `.github/workflows` directory. As of GitKraken Desktop 11.10, workflow management is no longer available from the Left Panel, so use this page when you need the current file-based workflow for creating, editing, or deleting Actions definitions.
 
-**Requirements and limits**
+## Requirements and limits
+
 - GitKraken Desktop 11.10 and later manages workflows by editing files in your repository instead of using a Left Panel Actions view.
 - Store workflow definitions in the repository's `.github/workflows` directory.
 - Creating, editing, and deleting workflows requires staging and committing the YAML file changes.
@@ -5693,7 +5732,8 @@ This page explains how to connect GitKraken Desktop to GitHub Enterprise Server 
 
 Note: GitHub Enterprise Server integration is available on Advanced, Business, and Enterprise plans.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: GitHub Enterprise Server
 - Plan: Advanced, Business, or Enterprise
 - Supported server versions: GitHub Enterprise Server releases from the past year
@@ -5796,7 +5836,8 @@ Last verified: 2026-03
 
 Use this page to connect GitKraken Desktop to GitHub for sign-in, repository access, SSH setup, pull request work, and account management on GitHub.com. If repositories or remotes are missing after you connect, see [How to fix missing repositories or remotes](#how-to-fix-missing-repositories-or-remotes).
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: GitHub.com
 - Community plan: Public repositories only
 - Multiple GitHub accounts: Each profile uses one GitHub account at a time; you can switch a profile between connected accounts, and multiple profiles require a Pro plan
@@ -6033,7 +6074,8 @@ GitKraken AI in GitKraken Desktop helps developers generate commit messages, exp
 
 GitKraken AI requires a paid GitKraken subscription.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Product: GitKraken Desktop with GitKraken AI enabled
 - Plan: Paid GitKraken subscription required
 - Setup location: Preferences &gt; GitKraken AI for provider, model, and prompt settings
@@ -6327,12 +6369,12 @@ Add custom AI instructions for personalized responses
 
 Try these example instructions for commit messages:
 
-**Prompt for brevity**
+For a short summary, use:
 ```
 Keep the summary short, but informative
 ```
 
-**Prompt to add conventional commit prefix**
+To add a conventional commit prefix, use:
 ```
 Format the summary as:
 
@@ -6393,7 +6435,8 @@ Last verified: 2026-03
 
 Use this page to connect GitKraken Desktop to Jira Data Center so you can preview, create, and manage Jira issues from the Left Panel. This integration requires an Advanced subscription tier or higher, supports Jira Data Center 8.4 or newer, and uses a Personal Access Token instead of the Jira Cloud authorization flow.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: Jira Data Center
 - Plan: Advanced subscription tier or higher
 - Server version: Jira Data Center 8.4 or newer
@@ -6475,7 +6518,8 @@ Last verified: 2026-03
 
 Use this page to connect GitKraken Desktop to Jira Cloud or Jira Data Center so you can preview, create, edit, filter, and branch from Jira issues alongside your repository work. Jira is view-only for Community users, while paid GitKraken subscriptions unlock the full issue management workflow.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integrations covered here: Jira Cloud and Jira Data Center
 - Community plan: View-only access
 - Full issue workflows: Paid GitKraken subscription required for create, edit, and branch workflows
@@ -6611,7 +6655,8 @@ Last verified: 2026-03
 
 This page explains how GitKraken Desktop works with the Git Integration for Jira app so you can jump between Jira issues, commits, and file diffs. Use it when your team works in Jira Cloud and you want direct navigation between issue context and Git history.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Navigation between GitKraken Desktop and Jira via Git Integration for Jira
 - Jira requirement: Jira Cloud integration must already be connected in GitKraken Desktop
 - Repository requirement: Set Preferences &gt; Issue Tracker to Jira Cloud for the relevant repository
@@ -6671,7 +6716,8 @@ This page explains how GitKraken Desktop connects to GitHub Enterprise Server Is
 
 The GitHub Enterprise Server Issues integration is view-only for Community users. To unlock full features, consider upgrading to a paid GitKraken license.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: GitHub Enterprise Server Issues
 - Server version: GitHub Enterprise Server 2.20.24 or newer
 - Connection model: Shares the same connection as the GitHub Enterprise Server integration
@@ -6729,7 +6775,8 @@ Use this page to connect GitKraken Desktop to GitHub Issues so you can preview, 
 
 The GitHub Issues integration is limited to public repositories for Community users. To use all features, upgrade to a paid GitKraken license.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: GitHub Issues for GitHub.com
 - Connection model: Shares the same connection as the GitHub integration
 - Community plan: Public repositories only
@@ -6863,7 +6910,8 @@ Last verified: 2026-03
 
 Use this page to connect GitKraken Desktop to GitLab Issues so you can preview, create, edit, filter, and branch from issues without leaving your Git workflow. GitLab Issues uses the same GitLab integration connection, and Community users are limited to public repositories.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: GitLab Issues through the shared GitLab.com connection
 - Connection model: GitLab Issues uses the same authentication as the GitLab integration
 - Community plan limit: Public repositories only
@@ -7003,7 +7051,8 @@ Use this page to connect GitKraken Desktop to GitLab Self-Managed Issues so you 
 
 The GitLab Self-Managed Issues integration is view-only for Community users. To unlock all features, consider upgrading to a paid GitKraken license.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: GitLab Self-Managed Issues
 - Server version: GitLab Self-Managed 13.1 or newer
 - Connection model: Shares the same connection as the GitLab Self-Managed integration
@@ -7076,7 +7125,8 @@ Last verified: 2026-03
 
 Use this page to connect GitKraken Desktop to Trello so you can preview, create, edit, filter, and branch from cards without leaving your Git workflow. Trello is view-only for Community users, while paid GitKraken subscriptions unlock the full card management workflow.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: Trello
 - Community plan limit: View-only access
 - Paid subscription requirement: Creating, editing, and branching from cards requires a paid GitKraken subscription
@@ -7203,7 +7253,8 @@ Integrations connect GitKraken Desktop to Git hosting services and issue tracker
 
 To set up external coding agent CLIs such as Claude Code, Codex CLI, Copilot CLI, Gemini CLI, and OpenCode, see [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/).
 
-**Requirements and limits**
+## Requirements and limits
+
 - Git hosting integrations: GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, Bitbucket, Bitbucket Data Center, and Azure DevOps
 - Issue tracker integrations: Jira Cloud, Jira Data Center, Trello, GitLab Issues, GitLab Self-Managed Issues, GitHub Issues, and GitHub Enterprise Server Issues
 - Community plan: Public GitHub and GitLab repositories only; some issue tracker integrations are view-only
@@ -7312,7 +7363,8 @@ Last verified: 2026-03
 
 Use this page to connect GitKraken Desktop to GitLab.com for repository access, SSH setup, clone and remote workflows, and pull request activity. On the Community plan, GitLab access is limited to public repositories, and you use profiles to work with more than 1 GitLab account.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: GitLab.com
 - Community plan limit: Public repositories only
 - Authentication: Browser-based GitLab connection through your GitKraken account (sign in to GitKraken Desktop first)
@@ -7430,7 +7482,8 @@ Use this page to connect GitKraken Desktop to a GitLab Self-Managed server so yo
 
 Note: GitLab Self-Managed integration requires a Pro subscription tier or higher.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: GitLab Self-Managed
 - Plan: Pro subscription tier or higher
 - Supported server versions: GitLab Self-Managed releases from the past year
@@ -7539,7 +7592,8 @@ Last verified: 2026-03
 
 Use this page to detect likely merge conflicts in GitKraken Desktop before they reach the merge step. Conflict Prevention alerts you when your work overlaps with Org Members or a target branch, shows what changed, and provides early actions such as pushing, rebasing, merging, or sharing a Cloud Patch.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Plan: Pro subscription tier or higher
 - Scope: Early conflict detection against Org Members and the configured target branch
 - Settings scope: Conflict Prevention preferences are saved per repository
@@ -7647,7 +7701,8 @@ Last verified: 2026-03
 
 Use this page to manage organizations and teams in GitKraken Desktop so you can invite members, assign roles, organize users into teams, and enable collaboration features such as Team View, shared Workspaces, and Cloud Patches. Team availability depends on your GitKraken subscription tier.
 
-**Requirements and limits**
+## Requirements and limits
+
 - This page covers organization and team management in GitKraken Desktop.
 - Pro accounts are limited to 1 team.
 - Advanced and Business plans support multiple teams.
@@ -7982,7 +8037,8 @@ Use this page to monitor what teammates are currently working on in GitKraken De
 
 Note: Team View is only available for Advanced subscription tiers or higher. See the Teams page for more information on managing teams.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Plan: Advanced subscription tier or higher
 - Team requirement: You must belong to a team and select it in Preferences &gt; Team
 - Shared data: Checked-out branch, local file changes, and activity status
@@ -8077,7 +8133,8 @@ Last verified: 2026-03
 
 Use this page to create Local or Cloud Workspaces in GitKraken Desktop so you can organize repositories, run multi-repository actions, review pull requests across a group of repos, and share workspace context with a team. Cloud Workspaces require connected integrations, while Local Workspaces stay on your machine until you convert them.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workspace types: Local Workspace or Cloud Workspace
 - Cloud Workspace requirement: The relevant hosting service integration must be connected in Preferences &gt; Integrations
 - Local Workspace scope: Stored on your machine until you convert it
@@ -8314,7 +8371,8 @@ Last verified: 2026-03
 
 Use this page to complete the first-time configuration of GitKraken Self-Hosted Server after installation. It covers license upload, authentication mode selection, LDAP setup, SMTP settings, Super User creation, and initial user-management steps needed before the server is ready for administrators and users.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Use this page after the GitKraken Self-Hosted Server installation is already running and reachable in a browser.
 - A valid Self-Hosted license file is required before configuration can be completed.
 - Choose either Built-in authentication or LDAP; SMTP is required unless you use LDAP authentication.
@@ -8452,7 +8510,8 @@ Last verified: 2026-03
 
 Use this page to install and license GitKraken On-Premise Serverless, also called GitKraken Stand-Alone, when your team works in offline or tightly controlled environments.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Product scope: GitKraken On-Premise Serverless / Stand-Alone
 - Environment fit: Offline, disconnected, or tightly controlled environments
 - Account model: No internet account creation required
@@ -8727,7 +8786,8 @@ Last verified: 2026-03
 
 Use this page to install GitKraken Self-Hosted Server on a Linux host with Docker and Docker Compose. It covers the initial server setup flow, offline installation notes, and platform-specific Docker installation steps for CentOS, Ubuntu, and RHEL7 before you bring the GitKraken services online.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Product scope: GitKraken Self-Hosted Server installation on Linux
 - Host requirement: Linux machine with Docker CE and Docker Compose
 - Supported platforms on this page: CentOS, Ubuntu, and RHEL7
@@ -9119,7 +9179,8 @@ Last verified: 2026-03
 
 Use this page to install a self-signed SSL certificate so GitKraken Desktop can trust a private or internally signed remote host. You export the certificate with a browser, add it to your system's trusted certificates, and fix the most common SSL errors.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Use case: Private or internally signed remote hosts that GitKraken Desktop does not trust by default
 - Windows workflow on this page: Chrome-based certificate export and trusted root installation
 - macOS workflow on this page: Safari export and Keychain Access trust configuration
@@ -9289,7 +9350,8 @@ Last verified: 2026-03
 
 Use this page to understand what GitKraken On-Premise Self-Hosted Server is, when to choose it, and what infrastructure it requires before installation.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Product scope: GitKraken On-Premise Self-Hosted Server
 - Environment fit: Internal-network, offline, or air-gapped deployments
 - Infrastructure model: Lightweight Linux server or VM running Docker containers
@@ -9688,7 +9750,8 @@ Last verified: 2026-03
 
 Use this page to install and run GitKraken Desktop inside Windows Subsystem for Linux 2 (WSL 2) when your repositories live on the Linux file system.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Windows requirement: Windows 11 or Windows 10 build 19044+
 - Linux requirement: WSL 2 distribution with WSLg support
 - GitKraken Desktop requirement: GitKraken Desktop 9.1.0+ for Linux
@@ -9908,7 +9971,8 @@ Last verified: 2026-03
 
 Use this page to authenticate GitKraken Desktop with Git hosts that do not have a dedicated integration page, including TFS, AWS CodeCommit, Google Cloud Source Repositories, and custom services. It covers HTTPS cloning, SSH key setup, SSH agent usage, proxy handling, and credential reset behavior.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Host scope: Git hosts without a dedicated GitKraken integration page
 - Authentication methods: HTTPS or SSH
 - Supported SSH URL formats: `ssh://{user}@{host}/{repo}` and `{user}@{host}:{repo}`
@@ -10076,7 +10140,8 @@ Last verified: 2026-03
 
 Use this page to create, configure, and troubleshoot Git hooks in GitKraken Desktop for commit, push, merge, and rebase workflows. It explains where hooks live, how custom hook paths work, which hook types GitKraken triggers, and how to bypass hooks intentionally when a commit should skip automation.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Standard Git hook workflows triggered by GitKraken Desktop actions
 - Default hook location: `.git/hooks`
 - macOS/Linux requirement: Hook files must be executable or GitKraken Desktop will fail to run them
@@ -10263,7 +10328,8 @@ Last verified: 2026-03
 
 Use this page to find GitKraken Desktop's experimental features and to create, share, and apply Cloud Patches. Experimental features are previews whose behavior can change between releases.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Preview features in GitKraken Desktop. Cloud Patches is the current experimental feature
 - Settings location: Preferences &gt; Experimental. The self-hosted and standalone versions of GitKraken Desktop do not show this section
 - Stability note: Experimental features can change between releases
@@ -10544,7 +10610,8 @@ Last verified: 2026-03
 
 Use this page to change the GitKraken Desktop theme, sync the app with your system theme, and understand the current status of custom theme support. It explains where theme controls live, how built-in themes work, and why custom themes are currently disabled as of version 11.8.0.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Built-in themes, system theme sync, and legacy custom theme behavior
 - Theme settings location: Preferences &gt; UI Customization
 - Built-in theme support: Available and supported
@@ -10674,7 +10741,8 @@ Last verified: 2026-04
 
 Use this page to troubleshoot common GitKraken Desktop problems related to licensing, integrations, SSH, WSL, platform-specific behavior, and known error messages. For the most frequent fixes, start with the Quick Start checklist.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration recovery: Signing out in your browser, clearing its cache, and reconnecting from Preferences &gt; Integrations can resolve 1000-series errors
 - WSL limitation: Do not run GitKraken Desktop as root, and prefer native WSL2 GUI support over XServer-based setups
 - Git version note: Some issues depend on which Git GitKraken Desktop runs, set in Preferences &gt; General &gt; Git Executable
@@ -10954,7 +11022,8 @@ Last verified: 2026-04
 
 Use this page to run commands in the open repository or worktree from the GitKraken Desktop in-app terminal. You can open several terminal tabs, use command and flag autocomplete, keep separate terminals for each worktree, run coding agents manually, and change the shell and terminal appearance.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: In-app terminal for the currently open repository or worktree
 - Repository context: Commands run in the working directory of the active repository or worktree
 - Supported shell note: macOS and Linux use the OS default shell. On Windows, choose PowerShell or Bash in Preferences
@@ -11102,7 +11171,8 @@ Last verified: 2026-03
 
 Use this page to diagnose slow or unresponsive behavior in GitKraken Desktop, especially in large or complex repositories. It focuses on practical fixes such as repository maintenance, graph-size limits, auto-fetch changes, branch cleanup, LFS cleanup, and build verification for macOS systems.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Troubleshooting performance problems in GitKraken Desktop repositories and UI rendering
 - Common trigger: Large repositories with many references or heavy graph rendering
 - Primary fixes: Repo maintenance, graph-size reduction, auto-fetch changes, branch cleanup, and LFS cleanup
@@ -11183,7 +11253,8 @@ Last verified: 2026-03
 
 Use this page to sign Git commits and tags in GitKraken Desktop with either GPG or SSH keys so hosting providers can verify your identity.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Commit and tag signing with GPG or SSH keys
 - GPG requirement: Install GPG before configuring signing in GitKraken Desktop
 - Restart requirement: Close and reopen GitKraken Desktop after installing GPG
@@ -11408,7 +11479,8 @@ Last verified: 2026-03
 
 Use this page to inspect Activity Logs in GitKraken Desktop when you need to see recent Git operations, application events, performance timing, or Git hook output. It explains the difference between the Application and Repository tabs, how extended logging changes the output, and how hook failures surface in the log UI.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Real-time GitKraken Desktop application and repository event logs
 - Access point: Activity Logs icon in the footer toolbar
 - Application tab: Shows GitKraken Desktop instance events and is not tied to the active repository
@@ -11505,7 +11577,8 @@ Last verified: 2026-03
 
 This page explains how to view recent GitKraken Desktop error logs so you can troubleshoot problems and share diagnostics with support. Use it when you see red error toasts in the app, need the underlying log text for a ticket, or want to capture recent failure details before reproducing an issue again.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Error logs contain the most recent GitKraken Desktop error toasts, not a full application log history.
 - You can open error logs from the Help menu or the Command Palette.
 - Include the log contents when contacting support so the issue can be investigated faster.
@@ -11545,7 +11618,8 @@ Last verified: 2026-03
 
 This page explains GitKraken Desktop data security and storage practices, including what information GitKraken services collect, how that data is secured in transit and at rest, and how SOC 2 report access works. Use it when reviewing security posture, storage locations, or compliance-related documentation for GitKraken Desktop.
 
-**Requirements and limits**
+## Requirements and limits
+
 - This page summarizes GitKraken cloud-service data handling and storage practices; it is not a product configuration guide.
 - Security details vary by service, so use the table below for service-specific storage and encryption information.
 - Data in transit is secured with TLS across the listed services.
@@ -11583,7 +11657,8 @@ Last verified: 2026-03
 
 Use this page to enter, work in, and recover from detached HEAD state in GitKraken Desktop when you need to inspect or test a specific commit without switching a branch pointer. It explains how to preserve commits created in detached HEAD state and how to recover lost work if you switch branches too early.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Entry point: Check out a specific commit instead of a branch
 - HEAD behavior: The checked-out commit is labeled `HEAD`
 - Commit-preservation rule: Commits made in detached HEAD state are not attached to any branch until you create one
@@ -11784,7 +11859,8 @@ Last verified: 2026-03
 
 To clean up the commits that Claude Code, Codex or another AI coding agent left on a branch, open the branch in GitKraken Desktop and use Commit Composer or interactive rebase. Commit Composer uses AI to split 1 giant commit, or regroup 15 "fix stuff" commits, into logical commits with clear messages, and it never changes the code itself. Interactive rebase lets you squash, reorder and reword the agent's commits by hand, with no AI and on every plan. With either one, you review the new history before anything on your branch changes, so a reviewer can follow the work one commit at a time.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Regrouping an agent's uncommitted changes or existing commits into a reviewable history before you open a pull request
 - Prerequisite: Interactive rebase works on every plan and does not use AI.
 - Prerequisite: Commit Composer requires a [paid GitKraken subscription](https://www.gitkraken.com/pricing?source=help_center&product=gitkraken) with GitKraken AI enabled. On-premises deployments need a custom AI endpoint (see [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/)).
@@ -11931,7 +12007,8 @@ Last verified: 2026-03
 
 GitKraken Desktop shows all of a repository's worktrees in one place, including the ones your coding agents created, and lets you remove them with or without their branches. Use this page to find stale agent worktrees and orphaned branches, check whether their work was merged, and clean them up without losing work you meant to keep.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Finding, checking, and removing worktrees and branches left behind by coding agent sessions
 - Prerequisite: The merged PR pill needs the branch's remote on GitHub, GitLab, Azure DevOps, Bitbucket, or Bitbucket Data Center, with that integration connected.
 - Limits: **Remove worktree and delete branch** deletes the local branch even if its commits are not merged, and you cannot undo it.
@@ -12068,7 +12145,8 @@ Last verified: 2026-03
 
 Use this page to see exactly what an AI coding agent changed in your repository and to undo those changes safely if something went wrong. It works with any agent that edits files in a Git repository. GitKraken Desktop reads the changes from Git, so it does not matter which agent made them.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Reviewing and reversing an agent's changes, whether they are uncommitted, committed on your machine, or pushed
 - Prerequisite: The repository the agent worked in is open in GitKraken Desktop. The steps work for sessions started from the Agents view and for agents you run yourself.
 - Limits: Git does not record whether a person or an agent wrote a change, so give each agent its own session or branch.
@@ -12247,5 +12325,621 @@ Yes. Revert individual hunks, restore individual files, or use a **Soft** reset 
 - [Resolve Merge Conflicts Between AI Agent Branches](/gitkraken-desktop/agent-merge-conflicts/)
 - [Clean Up AI Coding Agent Worktrees and Branches](/gitkraken-desktop/clean-up-agent-worktrees/)
 - [Undo and Redo](/gitkraken-desktop/undo-and-redo/)
+
+---
+
+# Resolve Merge Conflicts Between AI Agent Branches in GitKraken Desktop
+URL: https://help.gitkraken.com/gitkraken-desktop/agent-merge-conflicts/
+Description: Merge two AI coding agents' branches in GitKraken Desktop, resolve conflicts with the Merge Tool or Auto-resolve with AI, and test the combined result.
+Product: GitKraken Desktop
+Feature: Pull Request Filter Syntax
+Content type: reference
+Audience: developer
+Plan required: all
+Status: GA
+Last verified: 2026-03
+
+Yes, GitKraken Desktop can help when two AI coding agents worked in separate worktrees and their branches now conflict. Its Merge Tool, with optional Auto-resolve with AI, resolves the conflicts one file at a time. You merge both branches into one integration branch, resolve each conflict in the Merge Tool, with or without Auto-resolve with AI, and then test the combined result before you open a pull request.
+
+## Requirements and limits
+
+- Scope: Combining the work of two or more agent branches and resolving the conflicts between them
+- Prerequisite: Merging and choosing lines from each side work on every plan. Editing the merged output in the Merge Tool requires a [paid GitKraken subscription](https://www.gitkraken.com/pricing?source=help_center&product=gitkraken). Auto-resolve with AI also requires GitKraken AI to be enabled.
+- Limits: Auto-resolve with AI is in Preview. It suggests a resolution for each conflicted hunk, and you decide whether to keep it.
+- Limits: A merge with no conflicts doesn't prove the two agents' changes work together. Test the combined result.
+
+***
+
+## Quick Start
+
+1. Create an integration branch from your target branch, such as `main`, and open it in its own worktree.
+2. Merge the first agent's branch into it.
+3. Merge the second agent's branch. GitKraken Desktop lists any conflicted files in the Commit Panel.
+4. Click each conflicted file to open the Merge Tool. Resolve it by hand, or click **Auto-resolve with AI** and review the suggestion for each hunk.
+5. Commit the merge, then run both agents' tests together.
+6. Push the integration branch and open one pull request from it.
+
+***
+
+## How to set up an integration branch
+
+Merging into a new branch keeps both agent branches exactly as the agents left them. If the combined result isn't right, you can throw away the integration branch and start again without losing either agent's work.
+
+To set one up:
+
+1. In the Commit Graph, right-click the newest commit on your target branch, such as `main`, and select **Create branch here**. Name it something like `integrate/login-and-search`.
+2. In the Left Panel, right-click the new branch and select **Create worktree**.
+3. Open the new worktree.
+
+Your own worktree and the agents' worktrees stay untouched. See [Manage Git Worktrees](/gitkraken-desktop/worktrees/) for more on creating, opening, and removing worktrees.
+
+***
+
+## How to merge the agent branches
+
+With the integration worktree open:
+
+1. Right-click the first agent's branch and select **Merge**, or drag it onto the integration branch. If the agents only changed different files, the merge completes on its own.
+2. Repeat for the second agent's branch.
+
+Merge each agent's branch with drag and drop or the right-click menu.
+
+If both agents changed the same lines, GitKraken Desktop stops and lists the conflicted files in the Commit Panel.
+
+Conflicted files appear in the Commit Panel.
+
+***
+
+## How to resolve each conflict
+
+Click a conflicted file to open the Merge Tool. It shows the current branch on the left, which is your integration branch, and the incoming branch on the right, which is the agent branch you're merging. The output is at the bottom. You have four ways to resolve it.
+
+### Use Auto-resolve with AI
+
+1. In the Merge Tool, click **Auto-resolve with AI**.
+2. Read the explanation and the confidence level for each conflicted hunk.
+3. Accept, edit, or discard the suggestion. Look hardest at the hunks with low confidence.
+
+Auto-resolve with AI explains each suggestion and rates its confidence.
+
+Treat the suggestion as a starting point. The AI sees the conflicting code, not what each agent was asked to do. To give it that context, add instructions in Preferences  GitKraken AI  Conflict Resolution, for example a sentence about what each task was meant to change.
+
+### Choose lines by hand
+
+Use the checkboxes or the **+** buttons to pick lines from each side, or type in the output directly. Use the arrow keys to move between conflicts.
+
+### Take one side for the whole file
+
+If one agent's version of a file should win completely, right-click the file in the Commit Panel. Select **Take current** to keep the integration branch's version, or **Take incoming** to keep the version from the agent branch you're merging.
+
+### Use an external merge tool
+
+If your team uses a supported external tool, set it under Preferences  General. See [Branch, Merge, and Rebase](/gitkraken-desktop/branching-and-merging/) for the supported tools.
+
+When every file is resolved, save the output, stage the files, and commit the merge.
+
+***
+
+## How to check the combined result
+
+Resolving every conflict means Git can combine the files. It doesn't mean the two agents' changes work together.
+
+1. **Run the tests for both tasks** in the integration worktree, from the [embedded terminal](/gitkraken-desktop/terminal/). A change from one agent can break the other agent's feature without causing a conflict.
+2. **Review everything the integration branch adds.** With the integration worktree open and nothing left uncommitted, right-click your target branch, such as `main`, and select **Compare commit against working directory**. See [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/) for more ways to inspect the work.
+3. **Push and open one pull request** from the integration branch. See [Pull Requests](/gitkraken-desktop/pull-requests/). The agent branches don't need their own pull requests. Remove their worktrees and branches after the integration branch merges.
+
+If the result isn't right, remove the integration worktree and its branch and start again. Both agent branches are unchanged. See [Manage Git Worktrees](/gitkraken-desktop/worktrees/) for how to remove a worktree.
+
+***
+
+## How to keep conflicts small next time
+
+- **Merge each agent's branch as soon as it finishes,** instead of waiting for every agent. Smaller merges produce smaller conflicts.
+- **Give agents tasks that touch different files** when you can. Parallel agents conflict most when they edit the same files.
+- **Check for overlap early.** [Conflict Prevention](/gitkraken-desktop/conflict-prevention/) warns when your work overlaps with your target branch or with Org Members' work.
+
+***
+
+## Common questions
+
+### Can GitKraken Desktop resolve the conflicts automatically?
+
+It can suggest a resolution. Auto-resolve with AI proposes a fix for each conflicted hunk, with an explanation and a confidence level, and you accept, edit, or discard each one. Nothing is committed until you commit the merge.
+
+### Does a merge with no conflicts mean the agents' work fits together?
+
+No. Git only checks whether lines overlap. Run both agents' tests on the combined branch before you open a pull request.
+
+### Should I rebase one agent branch onto the other instead?
+
+You can. Rebase gives a straight-line history but rewrites the rebased branch's commits. See [Branch, Merge, and Rebase](/gitkraken-desktop/branching-and-merging/) for when to use merge or rebase. If you rebase, you resolve the same conflicts one commit at a time.
+
+### Does this work with any coding agent?
+
+Yes. Merging works on Git branches, so it doesn't matter which agent made the changes. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for the agents GitKraken Desktop integrates with.
+
+***
+
+## Related pages
+
+- [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/)
+- [Branch, Merge, and Rebase](/gitkraken-desktop/branching-and-merging/)
+- [GitKraken AI Features Overview](/gitkraken-desktop/gkd-gitkraken-ai/)
+- [Manage Git Worktrees](/gitkraken-desktop/worktrees/)
+- [Clean Up AI Coding Agent Commits Before Review](/gitkraken-desktop/clean-up-agent-commits/)
+- [Review and Undo AI Coding Agent Changes](/gitkraken-desktop/review-and-undo-agent-changes/)
+
+---
+
+# GitKraken Desktop Release Notes
+URL: https://help.gitkraken.com/gitkraken-desktop/current/
+Description: View the latest features, improvements, and fixes shipping in the current version of GitKraken Desktop.
+Product: GitKraken Desktop
+Feature: Pull Request Filter Syntax
+Content type: reference
+Audience: developer
+Plan required: all
+Status: GA
+Last verified: 2026-03
+
+This release notes page tracks what's new and changing in the current version of GitKraken Desktop, including new features, improvements, bug fixes, and deprecations. Use it to see what shipped in the most recent release, confirm when a capability became available, or review changes before upgrading.
+
+## Requirements and limits
+
+- This page covers the current major version of GitKraken Desktop. For earlier releases, see the archived version pages ([Version 11](/gitkraken-desktop/11x/), [Version 10](/gitkraken-desktop/10x/), [Version 9](/gitkraken-desktop/9x/), and earlier).
+- Each entry applies only to the specific release listed under its version heading.
+- Use the current feature documentation for step-by-step guidance and the release notes to confirm version timing.
+
+Download Current Version Now
+
+Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
+
+***
+
+## Version 12.7.0
+
+Tuesday, November 17th, 2026
+
+### Improvements 🙌
+ - All Git operations now run through a Git executable instead of using a built-in library for some of them.
+   - The *Use Git Executable* setting has been removed from *Preferences > Experimental*. If you had that setting turned off, GitKraken switches to its included Git (with the Git Credential Manager off) and shows you a one-time notice.
+   - To use a different Git install, go to *Preferences > General > Git Executable*.
+ - Updated the bundled Git to 2.56.1
+   - *For macOS 12 users: The Git LFS bundled with GitKraken Desktop is no longer supported on macOS 12. To keep using Git LFS, upgrade to a newer version of macOS. GitKraken Desktop will soon drop support for macOS 12, and will stop receiving updates on that version.*
+
+### Bug Fixes 🐛
+ - Fixed an issue on macOS where GitKraken Desktop asked you to install the Xcode Command Line Tools on every start and every time Preferences opened, when they were not installed.
+ - Fixed an issue where finishing a GitFlow feature, release or hotfix while the target branch was checked out in another worktree changed your files before failing. The finish now stops with git's message and changes nothing. A folder already sitting where a submodule of the target branch goes, or a submodule with its own changes, no longer stops the finish.
+ - Fixed an issue where a worktree's setup commands did not run when starting an agent session with no coding agent selected while the terminal panel was closed.
+ - Fixed an issue where Discard all changes showed a Reset Failed error and did not reset submodules in a repository with reflogs turned off. On a detached HEAD, Discard all changes also no longer removes the history entry of a Reset you made just before it, so Undo can still undo that reset.
+ - Fixed an issue where tags were missing from the Base branch dropdown when creating a branch from an issue in Launchpad, or when starting an agent session from an issue in Launchpad or the left panel.
+ - Fixed an issue where opening repositories in an external terminal, diff tool, or merge tool would fail if the folder path contained special characters.
+
+***
+
+## Version 12.6.2
+
+Wednesday, November 4th, 2026
+
+### Improvements 🙌
+ - **GitFlow improvements:**
+   - Finishing a feature now signs its commits with an SSH key if that is how commit signing is set up in Preferences. Previously, only OpenPGP keys were used. This covers the merge commit, and the rebased commits when *Rebase on develop* is turned on.
+   - When you finish a feature without *Rebase on develop*:
+      - A file renamed on one branch and edited on the other now shows as a single conflict, which you can resolve in the 3-way merge editor.
+      - Merge drivers set up in your git config now run, just as they do with `git merge`.
+   - When you finish a feature with *Rebase on develop*:
+      - A feature commit with no changes no longer stops the finish.
+      - If the finish stops on a conflict and you then continue it, *Undo* now undoes the rebase.
+ - **Bitbucket's new SSH host:** Remotes that use Bitbucket Cloud's new SSH host, `ssh.bitbucket.org`, are now recognized as Bitbucket, so GitKraken uses your Bitbucket integration's SSH key for them. Bitbucket stops accepting SSH connections to `bitbucket.org` on November 12, 2026. After that date, if a remote action fails on a remote that still uses `bitbucket.org`, GitKraken shows a message with an *Update remote* button that switches the remote to `ssh.bitbucket.org`.
+ - Updated Monaco Editor to 0.57.0.
+
+### Bug Fixes 🐛
+ - Fixed an issue where starting or finishing a GitFlow feature, release, or hotfix left submodules at their old commits even with "Keep submodules up to date" turned on.
+ - Fixed an issue where discarding a line or selection in the diff of a Git LFS file could corrupt the file, and where discarding in a file that uses a custom git filter or a working tree encoding saved it in the wrong format. The file is now saved exactly as git would check it out.
+ - Fixed an issue where a system crash or power loss while GitKraken was saving settings could corrupt the settings file. This signed you out and reset your profile settings, integrations, and preferences to their defaults. Settings and sign-ins are now saved so that an interruption always leaves either the previous or the updated version intact.
+ - Fixed an issue on macOS where the *Open in Zed* action did nothing when Zed was already running.
+ - Fixed an issue on macOS where Visual Studio Code was missing from the list of external editors.
+ - Fixed an issue where GitKraken Desktop still trusted the eMudhra root certificates that Mozilla removed after some of eMudhra's certificate authorities were compromised. GitKraken Desktop no longer trusts emSign ECC Root CA - G3, emSign Root CA - C1 or emSign ECC Root CA - C3, so connections to sites using certificates from them are refused.
+
+***
+
+## Version 12.6.1
+
+Tuesday, October 20th, 2026
+
+### Improvements 🙌
+ - **Terminal tab navigation:**
+   - You can now use the keyboard to switch, open, close, and jump between terminal tabs, even while you are typing in a terminal:
+      - On macOS, use Cmd+Option+Left / Right to move between tabs, Cmd+Option+1–9 to jump to a specific tab, Cmd+Option+N to open a new tab, and Cmd+Option+W to close the current one.
+      - On Windows and Linux, use Ctrl+PageUp / PageDown to move between tabs, Ctrl+Shift+1–9 to jump to a specific tab, Ctrl+Shift+N to open a new tab, and Ctrl+Shift+W to close the current one. On keyboard layouts where / requires Shift, Ctrl+Shift+7 jumps to tab 7 instead of opening the Keyboard Shortcuts dialog.
+      - These shortcuts are listed in the Keyboard Shortcuts dialog and in a new Terminal Tabs submenu.
+   - The tab bar now scrolls to keep the selected tab in view.
+   - You can now drag terminal tabs to reorder them. Each repository and worktree keeps its own tab order until you close GitKraken.
+ - **Worktrees:**
+   - When a worktree's folder name differs from its checked-out branch, the folder name now appears under the branch in the Left Panel worktree list and on the Agents panel worktree cards. Searching these lists matches either name.
+   - Worktree WIP rows in the Commit Graph now show which branch each worktree is on, such as *on feat/230-test-issue*, or the commit if the worktree is on a detached HEAD. When a row is selected, the Open Worktree button stays fully visible, and long branch names are shortened to fit, with the full name shown on hover.
+   - You can now start another coding agent in a worktree that already has one running. The new agent opens in its own terminal tab and leaves the running agent undisturbed.
+ - Renamed files are now handled more reliably in the commit panel. Staging a rename no longer splits it into a separate deletion and addition, and renames are now detected in large changes, where they were previously missed.
+ - Jira integrations now load up to 10,000 projects, up from 1,000.
+
+### Bug Fixes 🐛
+ - Fixed an issue where *Generate SSH key and add to GitHub* failed with a "Validation Failed" error, because GitHub no longer accepts the 2048-bit keys GitKraken generated. GitKraken now generates 4096-bit keys, and when GitHub rejects a key, the error message now says why.
+ - Fixed an issue where closing the active terminal tab moved the selection to the first tab. The neighboring tab is now selected instead: the next tab, or the previous one if you closed the last tab.
+ - Fixed an issue where clicking a terminal tab kept focus on the tab itself, so you had to click inside the terminal before typing. Selecting a tab now focuses its terminal right away.
+ - Fixed an issue on Windows where terminal tabs running Git Bash were always labeled `bash` instead of showing the running process, such as `node` or a coding agent.
+ - Fixed an issue on macOS where keyboard shortcuts in the file and diff views responded to Ctrl instead of Cmd, so shortcuts such as Cmd+A (select all) and Cmd+F (search) did nothing.
+ - Fixed an issue where the tree view in the right panel cut off long file paths in your uncommitted changes, with no way to scroll to see the rest.
+ - Fixed an issue where resolving a merge conflict could take much longer than usual when the merge also added and deleted many files.
+ - Fixed an issue where undoing a reset or rebase with a detached HEAD removed that action from the undo history, so Redo wasn't offered and Undo offered the same action again.
+ - Fixed an issue where an AI provider API key configured by your organization's admin could be revealed in *Preferences > GitKraken AI*. The key now stays hidden, and hovering the field explains that your admin configured it.
+ - Fixed an issue where *Compose commits with AI* failed with an "Unsupported parameter: 'max_tokens'" error when using your own OpenAI or Azure OpenAI key with newer models.
+
+***
+
+## Version 12.6.0
+
+### New ✨
+- **Multiple terminal tabs:** Open, switch between, and close terminal tabs in the terminal panel. Each repository or worktree keeps its own terminals.
+- **Agent status plugin controls:** The Agents panel shows a plug icon. Hover over it to see how many detected agents can report live status, or open the menu to see each agent's status, install its plugin, or go to *Preferences > External Tools*. GitKraken no longer installs status plugins automatically at startup.
+- **Stacked pull requests on GitHub.com:** When the target branch already has an open pull request, GitKraken can add the new pull request to a stack. The Create Pull Request panel identifies the pull requests that the new one will stack on.
+
+### Improvements 🙌
+- Worktree lists show the folder name under the branch when the names differ. Search in the Left Panel and Agents panel matches both names.
+- Starting an agent session from the Agents panel opens the **Start an Agent Session** modal. Set the branch name, base branch, and coding agent before GitKraken creates the worktree. The branch name updates when you change the base branch and is checked against existing branches and worktrees. Use the lightning-bolt button to start a session with the generated defaults.
+- Selecting consecutive commits shows their combined changes in the right panel. You can include uncommitted changes if your selection reaches the latest commit. Selecting more than two nonconsecutive items displays an explanation instead of a combined diff.
+- Creating a patch from selected commits now includes the same changes shown in the right panel. GitKraken excludes files whose changes cancel out across the selected commits. The patch action is unavailable when the right panel cannot show a combined diff for the selection.
+- GitKraken AI model lists for your own OpenAI, Anthropic, and Google API keys now reflect models offered by those providers. New options include Claude Sonnet 5, Opus 5, and Fable 5.1; GPT-6 Astra and the GPT-5.6 family; and Gemini 3.x Flash models. Retired models no longer appear. If you have not selected a model, GitKraken updates the provider default to Claude Sonnet 5, GPT-5.6 Terra, or Gemini 3.8 Flash. Anthropic models also use their full supported context and output limits.
+- GitKraken detects renames more consistently in the commit panel, including when you stage a renamed file and when a change contains many files.
+- Compose commits with AI no longer displays Git hook output, hook failures, or warnings about non-executable hooks from background Git operations.
+- GitKraken installs or updates an agent status plugin only when you request it from the Agents panel or *Preferences > External Tools*. GitKraken keeps installed plugins up to date when you update the app.
+
+### Bug Fixes 🐛
+- Fixed an issue where GitKraken AI still offered Claude 4.1 Opus after Anthropic retired it.
+- Fixed AI conflict resolution with Claude 4.7 Opus and newer models.
+- Fixed an issue where Pull Request View loaded only the first page of GitHub users, labels, and milestones.
+- Fixed perpetual loading spinners in reviewer and assignee dropdowns when no options were available.
+- Fixed an issue where some terminal tabs could appear blank after hardware-accelerated rendering stopped. GitKraken now falls back to standard rendering.
+- Fixed an issue where Pull Request View reviewer and assignee dropdowns lost or hid options.
+- Fixed an issue where quickly adding or removing Git hooks could cause GitKraken to skip a hook during the next Git operation.
+- Fixed staging and unstaging when a deleted file and a new folder have the same name.
+- Fixed `.gitignore` entries for files with backslashes in their names on macOS and Linux.
+- Fixed fast-forward and merge actions that were incorrectly offered for remote branches behind the checked-out branch.
+- Fixed undoing the discard of selected staged files so it no longer stashes changes staged in other files.
+- Improved merge conflict resolution performance when a merge adds and deletes many files.
+- Fixed undo and redo behavior for reset and rebase operations when `HEAD` is detached.
+
+***
+
+## Version 12.5.0
+
+Tuesday, September 15th, 2026
+
+### New ✨
+ - **Live agent status support for GitHub Copilot CLI:**
+   - GitKraken Desktop can now track Copilot CLI agent sessions and display their status across worktrees in the Agent Sessions panel.
+   - GitKraken will also display pending permission requests from Copilot CLI in associated worktree cards, with allow and deny actions to directly respond without switching into the worktree. Dismissing a request hands the decision back to Copilot's own prompt.
+   - You can install or uninstall the Copilot CLI Plugin that enables live status reporting from *Preferences > External Tools*.
+ - **Support for Cursor CLI as your Coding Agent:**
+   - Cursor CLI can now be selected as your Coding Agent. If `cursor-agent` is installed on your machine it appears in *Preferences > External Tools > Coding Agent* and in the agent picker on the New Agent Session form, and starting a session launches it in the terminal ready for input.
+
+### Improvements 🙌
+ - **Improved Commit Composer:** "Compose commits with AI" and "Recompose commits with AI" actions now run on a faster, more reliable engine.
+   - More reliable grouping — AI output is validated and retried automatically instead of failing outright
+   - Faster on large diffs, and generated files like lockfiles no longer eat into your token budget
+   - Accurate authorship — recomposed commits keep their original authors, adding co-authors when a commit combines work from multiple people (previously all attributed to whoever ran compose)
+   - Real progress updates — the toast now shows the actual stage, plus file/hunk counts, instead of generic timed messages
+ - Branch dropdowns now show the full branch name in a hover tooltip, so you can tell apart similarly named branches that are cut off by the width of the panel. This covers the branch inputs in the Create Pull Request panel, the base branch inputs in the Start an Agent Session modal and the New Agent Session form, and the reference input in the Create Worktree panel.
+ - Cloud integrations will initialize slightly faster on launch.
+
+### Bug Fixes 🐛
+ - Fixed an issue where connecting a self-hosted integration (such as Jira Data Center or GitHub Enterprise) failed with "Could not reach the specified Host Domain" when the instance was configured to deny unauthenticated requests; GitKraken now attempts authentication with the provided token before reporting the host as unreachable.
+ - Fixed an issue where undoing or redoing the drop of the HEAD commit silently discarded your uncommitted changes; GitKraken now asks whether to stash them first.
+ - Fixed an issue where staging a file whose name contains a character such as `[` or `*` also staged other files whose names it happened to match.
+ - Fixed an issue where checking out a pull request whose branch lives on a hidden remote could fail with a "Cannot find the ref" error; the checkout now succeeds without having to unhide the remote first.
+ - Fixed an issue where Serverless and On-Premise clients were shown the option to review pull requests on gitkraken.dev.
+
+***
+
+## Version 12.4.1
+
+Wednesday, September 2nd, 2026
+
+### New ✨
+ - **Worktree tab groups:**
+   - Worktrees of the same repository are now automatically grouped together in the tab bar, making it easier to see which tabs belong to the same project. This can be disabled in *Preferences > UI Customization*.
+ - **Live agent status support for Codex:**
+   - GitKraken Desktop can now track Codex agent sessions and display their status across worktrees in the Agent Sessions panel, in addition to Claude Code and OpenCode sessions.
+   - GitKraken will also display pending permission requests from Codex in associated worktree cards, with allow and deny actions to directly respond without switching into the worktree.
+   - You can install or uninstall the Codex Plugin that enables live status reporting from *Preferences > External Tools*.
+
+### Improvements 🙌
+ - You can now view GitHub pull request diffs directly from the Left Panel and Commit Graph. Right-click a pull request in the Left Panel, or a branch with an associated pull request in the Commit Graph, and choose "View changes in PR" to automatically select the base and head commits and show the full diff. If either branch's remote is missing, GitKraken prompts you to add it first.
+ - Left Panel search now finds remote branches when you include the remote name, such as `origin/master` or `origin:master`. Every result the search returned before is still returned.
+
+### Bug Fixes 🐛
+ - Fixed an issue where GitKraken could hang on startup, never showing its window, when a profile on disk was missing its name; the app now falls back to a profile that loaded successfully.
+ - Fixed several issues where integrations with an expired or stale sign-in could fail to load, show authentication errors, or (for Azure DevOps) not display the organization picker; GitKraken now refreshes the token automatically and prompts you to reconnect only when it can't.
+ - Fixed an issue where Launchpad's My Pull Requests view showed no Bitbucket pull requests when the Bitbucket integration was selected without a workspace; these pull requests now load, and a failure to load them now shows an error instead of a silently empty list.
+ - Fixed an issue where fetching repositories for a connected integration with no repositories to fetch logged a provider error instead of returning no results.
+ - Fixed an issue in the New Agent Session form where clearing an invalid or duplicate branch name and quickly retyping the same value could briefly re-enable the Start button before validation reran.
+ - Fixed an issue in the Agent Sessions panel where the worktree sort and filter selection was cleared when opening a file diff; your selection is now preserved.
+ - Fixed an issue where the bottom status bar overlapped the "Commit Changes" button after generating a commit message with AI.
+ - Fixed an issue where opening History or Blame on a file renamed in the working directory showed an empty commit list and a spinner that never finished loading; GitKraken now shows the file's history under its previous path.
+ - Fixed an issue where a worktree card's agent "Running" indicator could stay visible after the agent exited if you quickly selected a different worktree card; it now clears on its own without needing to reselect the card.
+ - Fixed an issue where the unstaged diff of a modified file could show every line as changed when the file is stored with CRLF line endings in the repository; the diff now shows only the lines you actually changed, matching what Git reports.
+ - Fixed an issue where "Ignore and Stop Tracking" silently did nothing when the selection mixed tracked files with files that were never staged; the selection is now ignored and the tracked files stop being tracked. A failure while ignoring files now shows an error instead of nothing at all.
+ - Fixed an issue where pressing Enter while entering a GitKraken account sign-in code did nothing; it now submits the code just like clicking Save, both in the sign-in dialog and during onboarding.
+ - Fixed an issue where Ctrl+click inside the integrated terminal cleared a user's text selection on macOS.
+
+***
+
+## Version 12.4.0
+
+Wednesday, August 5th, 2026
+
+_"Counterspell any agent action."_
+
+### New ✨
+ - **Start Agent Sessions from an Issue:**
+   - You can now start an agent session directly from an issue in Launchpad and from issues in the Left Panel. GitKraken will create a new branch for that issue, open it in a worktree, and launch your selected coding agent with the issue's context so it can start working right away.
+      - In Launchpad, select "Start an Agent Session" in the `ACTION` column on any issue without an associated branch yet to have an agent start working on it. You'll be prompted with a setup modal to confirm the branch name, coding agent, and other settings before launching the agent.
+      - In the Left Panel, right-click on any issue and select "Start an Agent Session", which opens the same setup modal. The option appears only for issues that don't already have an associated branch.
+ - **Address Claude permission requests without switching worktrees:**
+   - The Agent Sessions panel now shows pending permission requests from Claude Code with allow and deny actions so you can keep Claude working without switching into the worktree.
+   - If relevant, you can also preview the command Claude is asking permission to run by clicking the caret inline with the allow/deny actions to reveal the command.
+
+### Improvements 🙌
+ - When you sign in with a single profile, GitKraken now automatically connects all the Git providers linked to your gitkraken.dev account, so they're ready to use right away.
+ - Added a Ctrl+Alt+F (Cmd+Option+F on Mac) shortcut to focus the search input on the New Tab.
+ - When a branch is checked out in a worktree, right-clicking it in the commit graph now offers to remove the worktree — optionally deleting the local branch, or the local and remote branches together — instead of a "Delete branch" action that Git could never complete while the branch was checked out. The same worktree-removal options are also available from the worktree menu in the Agent Sessions panel.
+
+### Bug Fixes 🐛
+ - Fixed an issue where signed-out users saw an endless loading state on the Launchpad Pull Requests and Issues tabs; they now see a prompt to sign in.
+ - Fixed an issue where uncommitted files tracked by Git LFS through a subfolder's own `.gitattributes` were not recognized as LFS files in the WIP, so they showed no LFS tag and could be edited as plain text.
+ - Fixed an issue where re-entering the same expired GitKraken account sign-in code left the form stuck, with the Save button disabled and spinning; it now shows the expired-code message again so you can try a new code.
+ - Fixed an issue where the Azure DevOps organization picker did not appear when signing back in to your GitKraken account within the app; accounts with multiple organizations can now pick which one to use on re-login.
+ - The agent workflow panel now preserves its scroll position when you switch workspaces, instead of resetting to the top.
+ - Fixed an issue where selecting a commit together with the working directory showed an unstaged file rename as a separate delete and add instead of a single renamed entry.
+ - Fixed an issue where the "Hide all tags" and "Show all tags" options in the left panel Tags section menu were greyed out when a repository contained only annotated tags.
+ - Fixed an issue where opening a worktree in a new tab could block switching to another tab for a long time while the Jira issue tracker was still loading its issues; tab switches now happen right away.
+ - Fixed an issue where the currently active worktree's card in the left panel could show a stale ahead/behind count and uncommitted-changes dot that only refreshed after switching worktrees or restarting.
+ - Fixed an issue where GitKraken Desktop would spam GitLab API calls.
+
+***
+
+## Version 12.3.1
+
+Tuesday, July 21st, 2026
+
+_"Now keeping an eye on all your agents."_
+
+### New ✨
+ - Added a pin icon to the Graph column header when a branch is pinned to the left. Clicking the pin icon jumps to and selects the pinned branch row.
+ - The Agent Sessions view in the Left Panel can now bring an external agent session's window to the foreground. Hover over an agent's status and click on the eye icon to focus the external agent session. When focusing an external application isn't possible, a toast offers to relaunch the session in the GitKraken Desktop terminal.
+
+### Improvements 🙌
+ - Updated the bundled Git to 2.54.0.
+ - The Agents toggle in the left panel now shows the highest-priority status across the open repository's related agent sessions, with a tooltip showing how many sessions are in that state, so you can spot activity that needs attention without leaving the List view.
+
+### Bug Fixes 🐛
+ - Fixed an issue where "Create branch here" and "Create tag here" did nothing when the target commit was not shown in the graph (the Branch/Tag column was hidden, or the ref itself was hidden); they now open a prompt to name the new branch or tag.
+ - Fixed an issue where the branch or tag name input disappeared when its target commit scrolled out of view in the graph; it now stays usable, floating at the top or bottom edge of the graph.
+ - Fixed an issue on Windows where removing a worktree could leave its folder behind (for example, when it contained symlinks to node_modules, or an agent session's files were still in use) while showing a misleading error, even though the worktree had been removed. GitKraken now cleans up the leftover folder and, if it still can't be removed, reports that the worktree was removed but its folder must be deleted manually.
+ - Fixed an issue where typing in the Jira project filter dropdown did not match projects by name.
+ - Fixed a sign-in error "code is invalid or expired" that could appear when a GitKraken account sign-in code was processed more than once.
+ - The GitKraken account sign-in now shows a clear message when the sign-in code has expired, prompting you to sign in again for a new code.
+
+***
+
+## Version 12.3.0
+
+Tuesday, July 7th, 2026
+
+### New ✨
+- **Unified GitKraken login and integration management:**
+   - Sign in and sign up now happen through your browser at gitkraken.dev, replacing the in-app email/password form.
+   - New integration connections will now be connected through your GitKraken account and synced across all your devices. You can manage integrations for your GitKraken account at [gitkraken.dev](https://gitkraken.dev/integrations) as well as from *Preferences > Integrations*.
+   - *Note: Integrations and login for On-premise clients (both Self-Hosted and Serverless) have not been modified and will continue to be managed locally.*
+- **Multiple WIP nodes in the Commit Graph:**
+   - A WIP node now appears in the Commit Graph for every worktree with uncommitted changes or an active agent session. Each WIP row shows the summary of changes, and — for any worktree other than the one you're currently in — an agent's status when a session is active there. Toggle visibility in *Preferences > Agents*.
+   - Selecting the WIP row for another worktree will expose an inline "Open Worktree" action so you can easily switch to that worktree.
+- **Review PRs with GitKraken Code Review:**
+   - The in-app pull request review mode has been replaced with links to a more full-featured review experience on [gitkraken.dev](https://gitkraken.dev/review). GitKraken Code Review hosts a powerful diff viewer that visualizes moved code, AI-powered overviews and suggestions, and a chat interface to ask questions. Access it from the Launchpad, Pull Requests in the Left Panel, or the Graph.
+
+### Improvements 🙌
+- When checking out a branch or commit, any WIP (if present) will be automatically selected, so you can prepare your first commit immediately.
+- Added text search to filter the worktree list in the Agent Sessions view by branch or directory name.
+- Hardened HTML sanitization in the markdown file preview so embedded scripts and iframes in repository content are no longer rendered.
+- GitKraken Desktop now shows an error when the file watcher stops receiving file change events from the operating system, instead of silently missing external changes until the app regains focus.
+- Added zoom controls (Increase Zoom, Decrease Zoom, Reset Zoom) to the View menu, with the zoom range extended to include 250% and 300%.
+- Cloud-connected clients can now sign out of their GitKraken account from the profile menu or the OS menu bar.
+- **GitKraken AI:**
+   - The usage details now shows your organization's shared credit pool, with a breakdown of your usage, the rest of the org's usage, and remaining credits — plus a notice when you've hit your personal weekly limit.
+   - Removed retired Claude 4 models (Claude 4 Sonnet, Claude 4 Opus) as options in *Preferences > GitKraken AI*. Users previously using these models will be automatically migrated to Claude 4.6 Sonnet.
+   - Added new Claude model options in *Preferences > GitKraken AI* when using your own API key: Claude 4.5 Sonnet, Claude 4.5 Haiku, and Claude 4.8, 4.7, 4.5, and 4.1 Opus.
+
+### Bug Fixes 🐛
+ - Fixed an issue where the Sign In link in the top-right corner of the onboarding flow did not work on macOS.
+ - Fixed an issue where a "create another profile" message appeared inside the SSH settings during onboarding after connecting an integration.
+ - Fixed an issue where the diff view's navigation and display controls (Inline/Split/Hunk, ignore whitespace, and word wrap) were disabled for UTF-16 encoded files.
+ - Fixed an issue where the file tree collapsed when comparing the WIP commit with another commit and the app refreshed.
+ - Fixed an issue where the Agents view worktree list briefly flickered (emptied and then repopulated) when switching to another worktree.
+ - Fixed an issue where the "Open this worktree" and "Open worktree in new tab" context menu options were missing for locked worktrees in the Worktrees section of the left panel.
+ - Fixed an issue where adding a pre-existing SSH key to an integration could display the wrong key name, which risked removing the wrong key from the provider.
+ - Fixed an issue where a valid SSH key could be shown as invalid when a GitHub integration account has more than 100 SSH keys.
+ - Fixed an issue where wide markdown content (long lines, large images, or code blocks) in the file preview was centered and could not be scrolled horizontally to view the full content.
+ - Fixed an issue where starting an agent session from the Agents view worktree menu left the terminal unfocused, so typing did not reach the agent until you clicked into the terminal.
+
+***
+
+## Version 12.2.1
+
+Tuesday, June 16th, 2026
+
+### Improvements 🙌
+ - The embedded terminal now dims slightly when focus is elsewhere in the app, making it clearer where keystrokes will land.
+ - Merged PR pills now also appear for GitLab merge requests in the Toolbar, Commit Details panel, and worktree cards, so you know when a branch's work has shipped.
+
+### Bug Fixes 🐛
+ - Fixed an issue where multi-selecting the WIP and a commit in the graph showed the wrong diff for a specific modified file.
+ - Fixed an issue on Windows where comparing the WIP with a commit could show an entire file as changed because of line-ending differences.
+ - Fixed an issue where multi-selecting the WIP and a commit in the graph prevented the navigation of files with the keyboard from working correctly.
+ - Fixed an issue where GitKraken could spawn background processes uncontrollably while a terminal was open on macOS.
+ - Fixed an issue where committing inside a submodule outside of GitKraken Desktop did not refresh the parent repository's WIP view.
+ - Fixed an issue where the Diff View of a selected WIP file kept showing stale content after the file changed externally, showing outdated commit information for submodules.
+
+***
+
+## Version 12.2.0
+
+Tuesday, June 2nd, 2026
+
+### Improvements 🙌
+ - **Agent Sessions view:**
+   - Added live status support for OpenCode agent sessions.
+      - Navigate to *Preferences > External Tools* to install or uninstall the OpenCode plugin for reporting live agent status.
+   - The New Agent Session button now starts a session immediately with generated defaults, while customization options remain available from the split button menu.
+ - Added a "Rebase onto this commit" option when right-clicking a commit that has no branches.
+
+### Bug Fixes 🐛
+ - Fixed an issue where switching between Inline, Split, and Hunk views in the File History panel had no effect when File History was opened from a file's context menu.
+
+***
+
+## Version 12.1.2
+
+Tuesday, May 19th, 2026
+
+### Improvements 🙌
+ - **Agent Sessions view:**
+   - Added sort and filter controls to the worktree list so you can quickly focus on the sessions that matter. Narrow down by status or branch to keep large groups of parallel agent sessions manageable at a glance.
+ - **GitHub Pull Requests:**
+   - Merged PRs now surface as a pill on the Toolbar, Commit Details panel, and worktree cards for their associated branches, giving you instant confirmation that a branch's work has shipped, so you know when it's safe to clean up local branches and worktrees.
+
+### Bug Fixes 🐛
+ - Fixed an issue where extensionless image files were not correctly identified in commit diffs, showing them as editable.
+ - Fixed repeated "Staging paths failed" errors when rebasing across a file/directory name collision.
+ - Fixed an issue where profile and repository management row menus could be visually cut off.
+
+***
+
+## Version 12.1.1
+
+Thursday, May 7th, 2026
+
+### Improvements 🙌
+ - **Worktrees:**
+   - You can now remove the active worktree directly; GitKraken will switch back to the main worktree before removing it.
+
+### Bug Fixes 🐛
+ - Fixed an issue where GitKraken Desktop could get trapped on the splash screen and fail to start.
+
+***
+
+## Version 12.1.0
+
+Tuesday, May 5th, 2026
+
+### Improvements 🙌
+ - **Worktrees:**
+   - New worktrees and agent sessions now inherit view settings (hidden refs, hidden remotes, soloed refs/remotes, and collapsed folders/remotes) from the source repository, so you no longer need to re-hide branches and remotes after creating a worktree.
+   - Added a "Remove worktree and delete branch" action to the worktree context menu for one-step cleanup of worktrees and their associated branches.
+ - **Agent Sessions view:**
+   - Added a three-dot action menu to worktree cards in the Agents Left Panel view.
+   - You can now start an agent session directly from an existing worktree's context menu.
+   - Refined the New Agent Session form so options are always visible and the branch, coding agent, and Start Session controls are easier to use.
+   - The base branch selector in the New Agent Session form is now searchable.
+   - A new "Running" status appears when an agent session starts (Claude Code may show a different status if hooks are enabled).
+   - Added visual feedback on worktrees in the Agents view to show a worktree deletion is in progress.
+ - **Command Line:**
+   - You can now open a repository by passing its path directly as an argument (e.g. `gitkraken .` or `gitkraken /path/to/repo`) without needing the `--path` flag.
+ - **Review GitHub Pull Requests on GitKraken.dev:**
+   - Added a "Review on GitKraken.dev" button in the GitHub Pull Request view to open a PR with GitKraken Code Review. Review PRs faster with cleaner diffs, AI-generated suggestions, and integrated chat — approve and comment just like on GitHub.
+ - **Terminal:**
+   - The embedded terminal now resizes smoothly when adjusting surrounding panels.
+   - You can now minimize the integrated terminal, keeping the terminal panel header visible.
+   - You can now kill terminal sessions directly from the trash icon in the terminal panel header.
+ - Added zoom levels 140%, 150%, 175%, and 200% to the standard zoom options in the status bar.
+ - Upgraded Electron to v41.
+
+### Bug Fixes 🐛
+ - Fixed an issue where Bitbucket Cloud repositories were not listed in the clone dialog due to a deprecated API endpoint removal.
+ - Fixed an issue where active agent sessions could stop showing the "Needs response" status while waiting for user input.
+ - Fixed an issue when selecting an old commit in the file history view that made the application crash.
+ - Fixed an issue where the interactive rebase editor did not show a scrollbar when needed.
+ - Fixed an issue where diffs were rendered with all lines shown as additions when `diff.noprefix = true` was set in the git config.
+
+***
+
+## Version 12.0.1
+
+Saturday, April 18th, 2026
+
+### Improvements 🙌
+ - You can now uninstall and reinstall Claude Code hooks used to display live agent status in the Agents Session View from *Preferences > External Tools*.
+
+### Bug Fixes 🐛
+ - GitKraken will no longer attempt to automatically install Claude Code hooks after they are removed.
+ - Fixed an issue in 12.0.0 where GitKraken On-Premise and Standalone clients were attempting to send telemetry via the GitKraken CLI.
+
+***
+
+## Version 12.0.0
+
+Tuesday, April 14th, 2026
+
+_"A special agent with a license to commit."_
+
+### New ✨
+ - **Agent Sessions View - Manage, create, and monitor parallel AI agent sessions from a single panel:**
+   - The new Agent Sessions View in the Left Panel gives you a unified dashboard for your worktrees and active agent sessions. Each worktree is represented as a card showing its branch, uncommited changes, ahead/behind state, and associated PRs so you can monitor multiple agents at a glance.
+     - If using Claude Code, the associated agent's status will show in the card so you know when it's working, waiting for input, or errors.
+   - The "New Agent Session" action creates a worktree, runs your configured setup commands, and launches your coding agent in one step — making it easy to start a parallel task in a new, isolated environment.
+     - Add setup commands in *Preferences > Agents* to configure per-worktree setup commands (dependency installs, build steps, env file copies) so new agent environments are ready to go automatically.
+     - Configure your preferred coding agent in the inline options menu when creating a new agent session, or go to *Preferences > External Tools* to set your agent and pass custom CLI arguments when starting agent sessions. This setting currently supports Claude Code, Codex CLI, OpenCode, Copilot CLI, and Gemini CLI (auto-detected based on installation).
+   - Added a setting in *Preferences > UI Customization* to hide the Agent view toggle in the Left Panel.
+ - **Terminal - An upgraded terminal that keeps your entire workflow in one window:**
+   - Added multi-session support to the embedded terminal, allowing independent terminal sessions per worktree in a single tab. Switching worktrees will switch to the relevant terminal session automatically.
+   - Added drag-and-drop support for files and text into the terminal.
+   - Updated default terminal color theme for improved readability and contrast.
+   - Upgraded the terminal engine (xterm.js) from v4 to v6, bringing a handful of major improvements:
+     - Significantly faster rendering with optimized WebGL and DOM renderers, reducing main-thread blocking during buffer resizing.
+     - Improved glyph rendering with multi-page texture atlas support, removing the previous hard cap on glyph storage.
+     - Better Unicode and emoji rendering, including fixes for clipped italic emoji and wide character handling.
+     - Added support for ligatures, additional Powerline glyphs, and new underline styles (dashed, dotted, overline).
+     - Synchronized output to prevent flicker during rapid terminal updates.
+
+### Improvements 🙌
+ - **GitKraken AI:**
+   - Added support for Claude Sonnet 4.6 and Claude Opus 4.6 when using your own API key.
+   - Added support for Google Gemini 3.1 Pro (Preview) when using your own API key.
+   - Removed deprecated Claude 3.x models (Claude 3.7 Sonnet, Claude 3.5 Sonnet, Claude 3.5 Haiku, Claude 3 Haiku, Claude 3 Opus) from AI preferences. Users previously on these models will be automatically migrated to Claude 4.6 Sonnet.
+ - **Shallow Clone Settings:**
+   - You can now set shallow clone options when adding a remote to a repository which is shallow-cloned.
+ - **Repository Management Tab:**
+   - Added resizable columns for repo name, remote, and branch in the Repo Management tab. Column widths persist across app restarts.
+ - **Command Palette:**
+   - Added all detected IDEs as "Open in…" options in the Command Palette (Cmd/Ctrl + P).
+ - **Worktrees:**
+   - Added an option to open a worktree in a new tab from the worktree context menu and the post-creation prompt.
+
+### Bug Fixes 🐛
+ - Fixed visual issues with the terminal panel not properly resizing to fill the available space.
+ - Fixed an issue where the content of stashes created from the command line with unstaged changes were not displayed in the right panel.
+ - Fixed an issue where LFS file tags were not shown for files located in subdirectories.
+ - Bitbucket users can once again assign multiple reviewers when creating a pull request.
+ - Fixed an issue where commit diffs appeared empty when the commit contained only whitespace changes and "Ignore Leading/Trailing Whitespace" was enabled.
+ - Fixed an issue where typechanged files were missing their diff icon and not appearing in the staged/unstaged area.
+ - Fixed an issue where the terminal panel would jump to the top of the viewport when switching repositories or worktrees.
+ - Added visual feedback and prevented duplicate actions when deleting a worktree from the left panel.
+ - Fixed an issue where columns in the 'All Repositories' group on Repo Management were horizontally misaligned with other groups.
+ - Fixed visual issues with the terminal panel styling and padding.
+ - Fixed an issue where committed file diffs showed all lines as additions when `color.ui = always` was set in the git config.
+
+### Known Issues
+ - Users running GitKraken Desktop in WSL may experience issues when starting agent sessions. Windows-installed coding agents can take precedence over WSL-installed ones, causing the agent to fail to run.
+ - When cloning Bitbucket repositories, the repository list may not appear in the Clone modal due to a Bitbucket API deprecation. As a workaround, you can clone the repository by pasting its URL directly, or browse and clone repositories from the Repository Management tab.
+
+***
 
 ---

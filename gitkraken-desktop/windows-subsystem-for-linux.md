@@ -21,7 +21,8 @@ taxonomy:
 
 Use this page to install and run GitKraken Desktop inside Windows Subsystem for Linux 2 (WSL 2) when your repositories live on the Linux file system.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Windows requirement: Windows 11 or Windows 10 build 19044+
 - Linux requirement: WSL 2 distribution with WSLg support
 - GitKraken Desktop requirement: GitKraken Desktop 9.1.0+ for Linux

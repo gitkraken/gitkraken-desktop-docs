@@ -21,7 +21,8 @@ taxonomy:
 
 Use these tips to speed up everyday Git work in GitKraken Desktop. You can set up Profiles, navigate with the Command Palette and keyboard shortcuts, run coding agents in parallel worktrees, connect integrations, and control what the Commit Graph shows.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Each tip is a summary. For full steps and edge cases, open the linked feature page.
 - Some tips use paid features, including multiple Profiles and some integrations.
 - Integration capabilities vary by Git provider and plan, especially for Azure DevOps and self-hosted services.

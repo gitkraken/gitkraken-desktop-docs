@@ -21,7 +21,8 @@ taxonomy:
 
 Use this page to connect GitKraken Desktop to GitHub for sign-in, repository access, SSH setup, pull request work, and account management on GitHub.com. If repositories or remotes are missing after you connect, see [How to fix missing repositories or remotes](#how-to-fix-missing-repositories-or-remotes).
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: GitHub.com
 - Community plan: Public repositories only
 - Multiple GitHub accounts: Each profile uses one GitHub account at a time; you can switch a profile between connected accounts, and multiple profiles require a Pro plan

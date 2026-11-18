@@ -22,7 +22,8 @@ taxonomy:
 
 Use this page to connect GitKraken Desktop to Jira Cloud or Jira Data Center so you can preview, create, edit, filter, and branch from Jira issues alongside your repository work. Jira is view-only for Community users, while paid GitKraken subscriptions unlock the full issue management workflow.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integrations covered here: Jira Cloud and Jira Data Center
 - Community plan: View-only access
 - Full issue workflows: Paid GitKraken subscription required for create, edit, and branch workflows

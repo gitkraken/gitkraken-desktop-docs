@@ -21,7 +21,8 @@ taxonomy:
 
 Use this page to find where a setting lives in GitKraken Desktop Preferences and what each Preferences section controls, before you change your workflow or environment.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Preferences overview for app-wide, profile-specific, and repository-specific settings
 - Access point: Gear icon in the top-right corner of GitKraken Desktop
 - Profile behavior: Preferences are stored per profile, so switching profiles changes integrations and UI configuration

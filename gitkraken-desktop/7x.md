@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: legacy
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: false
 tags: [release-notes, changelog, upgrades, version-history]
 og_image: /img/GitKrakenClient-Hero.png
@@ -21,7 +21,8 @@ taxonomy:
 
 This release notes page tracks what changed in GitKraken Desktop version 7, including new features, improvements, and bug fixes from each release. Use it when you need historical version details, want to confirm when an older capability was introduced, or need context before upgrading long-lived installations.
 
-**Requirements and limits**
+## Requirements and limits
+
 - This page is a historical version 7 release archive, not a guide to current GitKraken Desktop behavior.
 - Each release entry applies only to the version listed in that section.
 - Older plan names, integrations, and UI references may not match current product terminology.

@@ -21,7 +21,8 @@ taxonomy:
 
 To clean up the commits that Claude Code, Codex or another AI coding agent left on a branch, open the branch in GitKraken Desktop and use Commit Composer or interactive rebase. Commit Composer uses AI to split 1 giant commit, or regroup 15 "fix stuff" commits, into logical commits with clear messages, and it never changes the code itself. Interactive rebase lets you squash, reorder and reword the agent's commits by hand, with no AI and on every plan. With either one, you review the new history before anything on your branch changes, so a reviewer can follow the work one commit at a time.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Regrouping an agent's uncommitted changes or existing commits into a reviewable history before you open a pull request
 - Prerequisite: Interactive rebase works on every plan and does not use AI.
 - Prerequisite: Commit Composer requires a [paid GitKraken subscription](https://www.gitkraken.com/pricing?source=help_center&product=gitkraken) with GitKraken AI enabled. On-premises deployments need a custom AI endpoint (see [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/)).

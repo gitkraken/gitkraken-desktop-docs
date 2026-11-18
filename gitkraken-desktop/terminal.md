@@ -21,7 +21,8 @@ taxonomy:
 
 Use this page to run commands in the open repository or worktree from the GitKraken Desktop in-app terminal. You can open several terminal tabs, use command and flag autocomplete, keep separate terminals for each worktree, run coding agents manually, and change the shell and terminal appearance.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: In-app terminal for the currently open repository or worktree
 - Repository context: Commands run in the working directory of the active repository or worktree
 - Supported shell note: macOS and Linux use the OS default shell. On Windows, choose PowerShell or Bash in Preferences

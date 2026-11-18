@@ -24,7 +24,8 @@ taxonomy:
   <img src="/wp-content/uploads/GitKraken_Keif_clone.png" alt="" width="788" height="786" loading="lazy" style="flex:0 0 auto; max-height:200px; width:auto; height:auto; max-width:100%; margin:0 auto; transform:scaleX(-1);">
 </div>
 
-**Requirements and limits**
+## Requirements and limits
+
 - Entry points: Repository Management tab, New Tab, <kbd>File &gt; Clone Repo / Init Repo / Open Repo</kbd>, or the `gitkraken` command line
 - Open workflow: Requires an existing local Git repository
 - Clone workflow: Requires a remote repository URL or a connected integration

@@ -24,7 +24,8 @@ taxonomy:
 
 Use this page to sign Git commits and tags in GitKraken Desktop with either GPG or SSH keys so hosting providers can verify your identity.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Commit and tag signing with GPG or SSH keys
 - GPG requirement: Install GPG before configuring signing in GitKraken Desktop
 - Restart requirement: Close and reopen GitKraken Desktop after installing GPG

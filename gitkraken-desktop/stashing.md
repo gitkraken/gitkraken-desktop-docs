@@ -21,7 +21,8 @@ taxonomy:
 
 Use this page to stash, apply, pop, rename, and partially restore uncommitted changes in GitKraken Desktop when you need to switch context without creating a commit. You can stash all your changes or only selected files, and manage your stashes from the Commit Graph or the Left Panel.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Uncommitted local changes only
 - Submodule limitation: Changes inside a submodule, a submodule checked out at another commit, and folders that hold their own Git repository are not stashed. Commit or stash those changes from the submodule itself
 - Apply vs. pop: **Apply Stash** keeps the stash; **Pop Stash** applies it and removes it

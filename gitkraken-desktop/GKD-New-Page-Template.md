@@ -12,18 +12,19 @@ git_hosts: [n/a]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: false
 tags: [keyword-one, keyword-two]
 taxonomy:
     category: gitkraken-desktop
 
 ---
-<kbd>Last updated: Month YYYY</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to [describe the task, decision, or reference topic in one sentence]. Keep the opening focused on what the reader can do after reading the page.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: [What this page covers]
 - Prerequisite: [Required setup, plan, integration, or repository state]
 - Limits: [Known exclusions, unsupported workflows, or version constraints]

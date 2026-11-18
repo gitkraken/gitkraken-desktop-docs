@@ -24,7 +24,8 @@ taxonomy:
   <img src="/wp-content/uploads/GitKraken_Keif_referral.png" alt="" width="1154" height="931" loading="lazy" style="flex:0 0 auto; max-height:200px; width:auto; height:auto; max-width:100%; margin:0 auto;">
 </div>
 
-**Requirements and limits**
+## Requirements and limits
+
 - This page covers organization and team management in GitKraken Desktop.
 - Pro accounts are limited to 1 team.
 - Advanced and Business plans support multiple teams.

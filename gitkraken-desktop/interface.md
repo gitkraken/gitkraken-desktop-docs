@@ -21,7 +21,8 @@ taxonomy:
 
 Use this page to find your way around the main areas of the GitKraken Desktop interface: the toolbar, Left Panel, Commit Graph, Commit Panel, Status Bar, and tabs. Each area links to a task guide when you need the full steps.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Interface overview, not full task-specific workflows
 - Main areas: Toolbar, Left Panel, Commit Graph, Commit Panel, Status Bar, and tabs
 - Repository context: Most of these controls appear only when a repository is open

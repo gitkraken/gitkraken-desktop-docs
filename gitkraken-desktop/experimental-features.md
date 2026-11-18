@@ -21,7 +21,8 @@ taxonomy:
 
 Use this page to find GitKraken Desktop's experimental features and to create, share, and apply Cloud Patches. Experimental features are previews whose behavior can change between releases.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Preview features in GitKraken Desktop. Cloud Patches is the current experimental feature
 - Settings location: <kbd>Preferences &gt; Experimental</kbd>. The self-hosted and standalone versions of GitKraken Desktop do not show this section
 - Stability note: Experimental features can change between releases

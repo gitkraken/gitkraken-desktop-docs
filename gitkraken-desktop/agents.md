@@ -39,7 +39,8 @@ A **coding agent** is an external CLI that can work on code in a terminal sessio
 
 GitKraken Desktop explicitly integrates with a set of supported coding agent CLIs. You can also run other coding agents manually in the embedded terminal, even if they do not appear in the coding agent configuration.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Product: GitKraken Desktop with the Agents view enabled
 - Coding agent CLI: Install and configure a supported coding agent CLI in <kbd>Preferences > External Tools > Coding Agent</kbd>
 - Session model: Each agent session runs in its own Git worktree and working directory
