@@ -11,18 +11,19 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [editing, files, save, discard, encoding]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to open, edit, save, discard, stage, and preview files in GitKraken Desktop’s built-in editor. It covers the different ways to enter edit mode, what the editor indicators mean, how save-and-stage behaves, and how to review or override file encoding when UTF-8 is not enough.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Built-in file editing inside GitKraken Desktop
 - Entry points: Context menu, Command Palette, or the file diff view
 - Unsaved-change indicator: A blue dot marks unsaved edits in the editor

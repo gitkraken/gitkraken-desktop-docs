@@ -24,7 +24,8 @@ taxonomy:
 
 Use this page to install, initialize, and manage Git LFS in GitKraken Desktop when your repository includes large binary files. It explains the Git, Git LFS, and GitKraken version requirements, how tracking patterns work, where LFS actions live in the UI, and common troubleshooting steps when LFS is missing or misconfigured.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Git requirement: Git 2.39.3 or later
 - Git LFS requirement: Git LFS 3.0.0 or later
 - GitKraken Desktop requirement: Version 7.0.0 or later

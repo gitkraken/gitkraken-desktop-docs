@@ -22,7 +22,8 @@ taxonomy:
 
 Use this page to stage, unstage, discard, and ignore files in GitKraken Desktop from the Commit Panel and diff view.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Working directory and staged file management from the Commit Panel and diff view
 - Starting point: Select the `//WIP` node to work with current uncommitted changes
 - Line-level actions: Stage, unstage, and discard selected lines or hunks from the diff view

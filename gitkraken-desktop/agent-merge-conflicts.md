@@ -11,17 +11,18 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-10
+last_verified: 2026-11
 llms_include: true
 tags: [agents, coding-agents, ai, merge, merge-conflicts, auto-resolve, worktrees, parallel-agents]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: October 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Yes, GitKraken Desktop can help when two AI coding agents worked in separate worktrees and their branches now conflict. Its Merge Tool, with optional Auto-resolve with AI, resolves the conflicts one file at a time. You merge both branches into one integration branch, resolve each conflict in the Merge Tool, with or without Auto-resolve with AI, and then test the combined result before you open a pull request.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Combining the work of two or more agent branches and resolving the conflicts between them
 - Prerequisite: Merging and choosing lines from each side work on every plan. Editing the merged output in the Merge Tool requires a [paid GitKraken subscription](https://www.gitkraken.com/pricing?source=help_center&product=gitkraken). Auto-resolve with AI also requires GitKraken AI to be enabled.
 - Limits: Auto-resolve with AI is in Preview. It suggests a resolution for each conflicted hunk, and you decide whether to keep it.

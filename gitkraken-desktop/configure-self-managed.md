@@ -11,18 +11,19 @@ git_hosts: [n/a]
 integrations: []
 hosted_variant: self-hosted
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [self-hosted, ldap, smtp, super-user, configuration]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to complete the first-time configuration of GitKraken Self-Hosted Server after installation. It covers license upload, authentication mode selection, LDAP setup, SMTP settings, Super User creation, and initial user-management steps needed before the server is ready for administrators and users.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Use this page after the GitKraken Self-Hosted Server installation is already running and reachable in a browser.
 - A valid Self-Hosted license file is required before configuration can be completed.
 - Choose either Built-in authentication or LDAP; SMTP is required unless you use LDAP authentication.

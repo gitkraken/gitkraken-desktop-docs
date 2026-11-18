@@ -21,7 +21,8 @@ taxonomy:
 
 Use this page to diagnose slow or unresponsive behavior in GitKraken Desktop, especially in large or complex repositories. It focuses on practical fixes such as repository maintenance, graph-size limits, auto-fetch changes, branch cleanup, LFS cleanup, and build verification for macOS systems.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Troubleshooting performance problems in GitKraken Desktop repositories and UI rendering
 - Common trigger: Large repositories with many references or heavy graph rendering
 - Primary fixes: Repo maintenance, graph-size reduction, auto-fetch changes, branch cleanup, and LFS cleanup

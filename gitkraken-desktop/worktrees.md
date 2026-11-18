@@ -23,7 +23,8 @@ Use this page to create, switch, lock, and remove Git worktrees in GitKraken Des
 
 If you use coding agents in GitKraken Desktop, the Agents view works with the same worktrees. See [Coding Agents in GitKraken Desktop](/gitkraken-desktop/agents/) for agent-specific setup, session management, and status details.
 
-**Requirements and limits**
+## Requirements and limits
+
 - GitKraken Desktop version: Worktrees are supported in version 10.5.0 and later
 - Worktree model: Each worktree has its own working directory and index but shares repository history with the main repo
 - Change visibility: Once committed, changes made in one worktree become visible in other worktrees

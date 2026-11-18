@@ -22,7 +22,8 @@ taxonomy:
 
 Use this page to configure and run Gitflow in GitKraken Desktop when your team organizes work into feature, release, and hotfix branches.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Gitflow-style branching with feature, release, and hotfix branches
 - Setup location: <kbd>Preferences &gt; Gitflow</kbd>
 - Initialization behavior: `main` must already exist locally; GitKraken Desktop creates `develop` if it does not exist

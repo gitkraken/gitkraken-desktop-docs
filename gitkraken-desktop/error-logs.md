@@ -11,17 +11,18 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [error-logs, diagnostics, support, troubleshooting, errors]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 This page explains how to view recent GitKraken Desktop error logs so you can troubleshoot problems and share diagnostics with support. Use it when you see red error toasts in the app, need the underlying log text for a ticket, or want to capture recent failure details before reproducing an issue again.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Error logs contain the most recent GitKraken Desktop error toasts, not a full application log history.
 - You can open error logs from the Help menu or the Command Palette.
 - Include the log contents when contacting support so the issue can be investigated faster.

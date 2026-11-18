@@ -11,17 +11,18 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [deep-linking, links, branches, commits, repositories]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use deep links in GitKraken Desktop to share or open specific remote repositories, commits, branches, or tags. This allows your team to quickly access relevant project context with a single click.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Deep links to repositories, commits, branches, and tags
 - Integration requirement: The repository must be hosted through a supported GitKraken integration
 - Local access behavior: If the repository is already open, GitKraken navigates directly to the referenced item

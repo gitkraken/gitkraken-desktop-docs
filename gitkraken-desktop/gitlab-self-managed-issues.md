@@ -11,14 +11,14 @@ git_hosts: [GitLab Self-Managed]
 integrations: [GitLab Self-Managed]
 hosted_variant: self-hosted
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [gitlab-self-managed, issues, self-hosted, filters, branching]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to connect GitKraken Desktop to GitLab Self-Managed Issues so you can preview, manage, filter, and branch from issues alongside your repository work. This integration shares the GitLab Self-Managed connection, requires GitLab Self-Managed 13.1 or newer, and is view-only for Community users.
 
@@ -26,7 +26,8 @@ Use this page to connect GitKraken Desktop to GitLab Self-Managed Issues so you 
     <p>The GitLab Self-Managed Issues integration is view-only for Community users. To unlock all features, consider upgrading to a <a href="https://gitkraken.com/pricing?source=help_center&product=gitkraken">paid GitKraken license</a>.</p>
 </div>
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: GitLab Self-Managed Issues
 - Server version: GitLab Self-Managed 13.1 or newer
 - Connection model: Shares the same connection as the GitLab Self-Managed integration

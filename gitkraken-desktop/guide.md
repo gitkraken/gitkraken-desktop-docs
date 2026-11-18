@@ -24,7 +24,8 @@ taxonomy:
   <img src="/wp-content/uploads/GitKraken_Keif_student.png" alt="" width="800" height="900" loading="lazy" style="flex:0 0 auto; max-height:200px; width:auto; height:auto; max-width:100%; margin:0 auto; transform:scaleX(-1);">
 </div>
 
-**Requirements and limits**
+## Requirements and limits
+
 - The steps cover a basic workflow, not every GitKraken Desktop option or edge case.
 - You need access to a Git repository you can clone, change, commit to, and push from GitKraken Desktop.
 - Whether you can push and merge depends on your remote permissions and repository policy.

@@ -11,17 +11,18 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [push, pull, fetch, upstream, remotes]
 taxonomy:
     category: gitkraken-desktop
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to push, pull, fetch, add remotes, and set upstream branches in GitKraken Desktop when you need to synchronize local branches with a remote. It also explains the available pull behaviors, drag-and-drop shortcuts, and when GitKraken prompts you for remote creation or force-push decisions.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Remote synchronization for existing Git repositories in GitKraken Desktop
 - Add remote limitation: Integration dropdowns show forks only; use the URL option for non-fork remotes
 - Push behavior: GitKraken prompts to create a remote branch if one does not exist

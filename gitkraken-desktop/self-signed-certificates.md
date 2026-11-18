@@ -21,7 +21,8 @@ taxonomy:
 
 Use this page to install a self-signed SSL certificate so GitKraken Desktop can trust a private or internally signed remote host. You export the certificate with a browser, add it to your system's trusted certificates, and fix the most common SSL errors.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Use case: Private or internally signed remote hosts that GitKraken Desktop does not trust by default
 - Windows workflow on this page: Chrome-based certificate export and trusted root installation
 - macOS workflow on this page: Safari export and Keychain Access trust configuration

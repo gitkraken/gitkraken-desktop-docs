@@ -25,7 +25,8 @@ taxonomy:
   <img src="/wp-content/uploads/GitKraken_Keif_behold.png" alt="" width="832" height="900" loading="lazy" style="flex:0 0 auto; max-height:200px; width:auto; height:auto; max-width:100%; margin:0 auto;">
 </div>
 
-**Requirements and limits**
+## Requirements and limits
+
 - This page covers the current major version of GitKraken Desktop. For earlier releases, see the archived version pages ([Version 11](/gitkraken-desktop/11x/), [Version 10](/gitkraken-desktop/10x/), [Version 9](/gitkraken-desktop/9x/), and earlier).
 - Each entry applies only to the specific release listed under its version heading.
 - Use the current feature documentation for step-by-step guidance and the release notes to confirm version timing.
