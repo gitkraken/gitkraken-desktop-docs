@@ -33,7 +33,8 @@ Use this page to undo or redo Git actions in GitKraken Desktop, such as an accid
 
 To undo a supported action, click the **Undo** button. If you undo something by mistake, you can **redo** it.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Undo scope: The most recent supported action only
 - Redo scope: Only actions that were just undone
 - Supported actions include checkout, commit, discard, delete branch, remove remote, reset branch, and several rebase-related operations

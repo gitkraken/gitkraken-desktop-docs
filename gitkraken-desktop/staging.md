@@ -31,7 +31,8 @@ custom_fields:
 
 Use this page to stage, unstage, discard, and ignore files in GitKraken Desktop from the Commit Panel and diff view.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Working directory and staged file management from the Commit Panel and diff view
 - Starting point: Select the `//WIP` node to work with current uncommitted changes
 - Line-level actions: Stage, unstage, and discard selected lines or hunks from the diff view
@@ -96,7 +97,7 @@ You can also:
     <figcaption style="text-align: center; color: #888;">Right-click to stage specific lines or hunks.</figcaption>
 </figure>
 
-> **Tip:** Use <a href="/gitkraken-desktop/keyboard-shortcuts/#repo-actions">keyboard shortcuts</a> to speed up staging actions.
+> **Tip:** Use <a href="/gitkraken-desktop/keyboard-shortcuts/#keyboard-shortcuts-for-repo-actions">keyboard shortcuts</a> to speed up staging actions.
 
 ***
 

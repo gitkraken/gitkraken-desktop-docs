@@ -11,7 +11,7 @@ git_hosts: [GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, Bitbu
 integrations: [GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, Bitbucket, Azure DevOps]
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [profiles, accounts, gitconfig, avatars, integrations]
 taxonomy:
@@ -26,7 +26,7 @@ custom_fields:
     card_color: "purple"
     card_description: "Separate Git identities, integrations and settings per profile"
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 <div class='embed-container embed-container--16-9'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZgYjeaJDbX8?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>
@@ -36,7 +36,8 @@ custom_fields:
 
 Use profiles in GitKraken Desktop to keep separate Git identities, integrations, app preferences, and tab sets for different projects or environments. This page explains how to create and switch profiles, what a profile stores, how avatar behavior works, and when a paid GitKraken subscription is required for multiple profiles.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Purpose: Separate Git identities, integrations, preferences, and tab sets by work context
 - Multiple profiles: Require a paid GitKraken subscription
 - Profile data: General, Integrations, and UI Preferences are stored per profile

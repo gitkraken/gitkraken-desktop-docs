@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [interactive-rebase, history, squash, reword, drop]
 taxonomy:
@@ -26,11 +26,12 @@ custom_fields:
     card_color: "amber"
     card_description: "Pick, squash, reword or drop commits"
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to run interactive rebase in GitKraken Desktop when you need to reorder, combine, rename, or drop commits before sharing or merging a branch. It explains how to start the rebase, what the available actions do, and which branch and history conditions must be met before the workflow is available.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Rewrite local branch history before sharing or merging
 - Required branch condition: Branches must share a common ancestor
 - Rebase limitation: Interactive rebase is not available for merge commits

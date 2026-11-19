@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [authentication, https, ssh, codecommit, tfs]
 taxonomy:
@@ -27,11 +27,12 @@ custom_fields:
     card_description: "HTTPS or SSH for TFS, AWS CodeCommit and other hosts"
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to authenticate GitKraken Desktop with Git hosts that do not have a dedicated integration page, including TFS, AWS CodeCommit, Google Cloud Source Repositories, and custom services. It covers HTTPS cloning, SSH key setup, SSH agent usage, proxy handling, and credential reset behavior.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Host scope: Git hosts without a dedicated GitKraken integration page
 - Authentication methods: HTTPS or SSH
 - Supported SSH URL formats: `ssh://{user}@{host}/{repo}` and `{user}@{host}:{repo}`

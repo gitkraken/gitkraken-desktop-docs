@@ -30,7 +30,8 @@ custom_fields:
 
 Use these keyboard shortcuts to work in GitKraken Desktop on macOS, Windows, and Linux without leaving the keyboard. They cover staging, committing, navigating the Commit Graph, opening the Command Palette, managing tabs, toggling interface panels, and opening the terminal.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Shortcuts differ between macOS and Windows/Linux, so check the column for your platform before using a shortcut.
 - A shortcut works only when its view or repository is open.
 

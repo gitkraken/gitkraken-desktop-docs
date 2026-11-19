@@ -11,7 +11,7 @@ git_hosts: [n/a]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [security, compliance, storage, encryption, soc2]
 taxonomy:
@@ -24,14 +24,15 @@ custom_fields:
     page_type: "content"
 ---
 
-<kbd>Last updated: October 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 32px; margin-bottom:24px;">
   <p style="flex:1 1 300px; margin:0;">This page explains GitKraken Desktop data security and storage practices, including what information GitKraken services collect, how that data is secured in transit and at rest, and how SOC 2 report access works. Use it when reviewing security posture, storage locations, or compliance-related documentation for GitKraken Desktop.</p>
   <img src="/wp-content/uploads/GitKraken_Keif_security.png" alt="" width="587" height="850" loading="lazy" style="flex:0 0 auto; max-height:200px; width:auto; height:auto; max-width:100%; margin:0 auto;">
 </div>
 
-**Requirements and limits**
+## Requirements and limits
+
 - This page summarizes GitKraken cloud-service data handling and storage practices; it is not a product configuration guide.
 - Security details vary by service, so use the table below for service-specific storage and encryption information.
 - Data in transit is secured with TLS across the listed services.

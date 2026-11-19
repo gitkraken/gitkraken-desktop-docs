@@ -31,7 +31,8 @@ custom_fields:
 
 Use this page to connect GitKraken Desktop to GitLab Issues so you can preview, create, edit, filter, and branch from issues without leaving your Git workflow. GitLab Issues uses the same GitLab integration connection, and Community users are limited to public repositories.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: GitLab Issues through the shared GitLab.com connection
 - Connection model: GitLab Issues uses the same authentication as the GitLab integration
 - Community plan limit: Public repositories only

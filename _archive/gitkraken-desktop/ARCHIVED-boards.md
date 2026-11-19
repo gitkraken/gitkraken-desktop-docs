@@ -11,14 +11,14 @@ git_hosts: [n/a]
 integrations: []
 hosted_variant: both
 status: sunset
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: false
 tags: [boards, legacy, sunset, toolbar]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 <div class='callout callout--danger'>
     <p>GitKraken Boards and GitKraken Timelines sunset at the end of 2022. Read our <a href="https://www.gitkraken.com/boards-and-timelines?product=gitkraken&source=help_center" target="_blank">full announcement and FAQ</a> to learn more.</p>
@@ -26,7 +26,8 @@ taxonomy:
 
 This page documents the legacy GitKraken Boards integration in GitKraken Desktop after the product sunset. Use it if you need the current Boards announcement, want to find the archived Boards documentation, or need to remove the Boards button from the GitKraken Desktop toolbar.
 
-**Requirements and limits**
+## Requirements and limits
+
 - GitKraken Boards sunset at the end of 2022, so this page documents a legacy integration rather than an active product workflow.
 - Use this page for historical reference or UI cleanup only, such as removing the Boards button from the toolbar.
 - Current Boards usage and archived feature details live in the separate Boards documentation linked below.

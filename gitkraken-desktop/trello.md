@@ -31,7 +31,8 @@ custom_fields:
 
 Use this page to connect GitKraken Desktop to Trello so you can preview, create, edit, filter, and branch from cards without leaving your Git workflow. Trello is view-only for Community users, while paid GitKraken subscriptions unlock the full card management workflow.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: Trello
 - Community plan limit: View-only access
 - Paid subscription requirement: Creating, editing, and branching from cards requires a paid GitKraken subscription

@@ -11,7 +11,7 @@ git_hosts: [n/a]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [themes, dark-mode, light-mode, customization, jsonc]
 taxonomy:
@@ -26,11 +26,12 @@ custom_fields:
     card_color: "purple"
     card_description: "Light and dark themes and system theme sync"
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to change the GitKraken Desktop theme, sync the app with your system theme, and understand the current status of custom theme support. It explains where theme controls live, how built-in themes work, and why custom themes are currently disabled as of version 11.8.0.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Built-in themes, system theme sync, and legacy custom theme behavior
 - Theme settings location: <kbd>Preferences &gt; UI Customization</kbd>
 - Built-in theme support: Available and supported

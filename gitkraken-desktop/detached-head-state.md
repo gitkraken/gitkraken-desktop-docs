@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [detached-head, recovery, commits, checkout, git]
 taxonomy:
@@ -27,11 +27,12 @@ custom_fields:
     card_description: "Work in and leave detached HEAD safely"
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to enter, work in, and recover from detached HEAD state in GitKraken Desktop when you need to inspect or test a specific commit without switching a branch pointer. It explains how to preserve commits created in detached HEAD state and how to recover lost work if you switch branches too early.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Entry point: Check out a specific commit instead of a branch
 - HEAD behavior: The checked-out commit is labeled `HEAD`
 - Commit-preservation rule: Commits made in detached HEAD state are not attached to any branch until you create one
@@ -114,7 +115,7 @@ This will remove the `HEAD` label and discard any unpreserved commits.
   <figcaption style="text-align: center; color: #888;">Unbranched commits are removed when you check out another branch.</figcaption>
 </figure>
 
-> **Important:** Commits made in detached HEAD state will be lost unless you create a branch. You may be able to <a href='https://help.gitkraken.com/gitkraken-desktop/detached-head-state/#recovering-lost-commits'>recover them manually</a>.
+> **Important:** Commits made in detached HEAD state will be lost unless you create a branch. You may be able to <a href='https://help.gitkraken.com/gitkraken-desktop/detached-head-state/#how-to-recover-lost-commits'>recover them manually</a>.
 
 ***
 

@@ -30,7 +30,8 @@ custom_fields:
 
 Use this page to understand what GitKraken On-Premise Self-Hosted Server is, when to choose it, and what infrastructure it requires before installation.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Product scope: GitKraken On-Premise Self-Hosted Server
 - Environment fit: Internal-network, offline, or air-gapped deployments
 - Infrastructure model: Lightweight Linux server or VM running Docker containers
@@ -178,9 +179,9 @@ GitKraken Self-Hosted Server runs on a lightweight Linux server or virtual machi
 - Red Hat Enterprise Linux 7 (RHEL7)
 
 ### Minimum specifications
-- 2 CPU cores
-- 4 GB RAM
-- 5 GB disk space
+- CPU: 2 cores
+- RAM: 4 GB
+- Disk space: 5 GB
 
 To install Docker CE, the host system must meet Docker's requirements:
 

@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [files, folders, create, delete, filter]
 taxonomy:
@@ -26,13 +26,14 @@ custom_fields:
     card_color: "blue"
     card_description: "Create, delete and filter files and folders"
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 > **Note:** This page covers creating, deleting, and filtering files inside a repository. To add or remove a remote repository, see <a href="/gitkraken-desktop/pushing-and-pulling/">Remote Repositories and Pushing/Pulling</a>.
 
 Use this page to create files, create folders, delete files, and filter repository contents from inside GitKraken Desktop. It covers both Command Palette and context-menu workflows, plus the `View all files` mode you need when you want to delete or locate files outside the current staged or changed set.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: File and folder creation, deletion, and filtering inside an existing repository
 - Create-file access: Command Palette or Commit Panel context menu
 - Folder creation behavior: Include `/` in the new filename to create a folder and file at the same time

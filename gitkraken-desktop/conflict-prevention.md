@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: preview
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [conflict-prevention, conflicts, branches, collaboration, warnings]
 taxonomy:
@@ -26,11 +26,12 @@ custom_fields:
     card_color: "amber"
     card_description: "Spot overlapping changes before they conflict"
 ---
-<kbd>Last updated: April 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to detect likely merge conflicts in GitKraken Desktop before they reach the merge step. Conflict Prevention alerts you when your work overlaps with Org Members or a target branch, shows what changed, and provides early actions such as pushing, rebasing, merging, or sharing a Cloud Patch.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Plan: Pro subscription tier or higher
 - Scope: Early conflict detection against Org Members and the configured target branch
 - Settings scope: Conflict Prevention preferences are saved per repository

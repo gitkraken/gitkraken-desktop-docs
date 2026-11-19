@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [tags, releases, annotate, git, versions]
 taxonomy:
@@ -26,11 +26,12 @@ custom_fields:
     card_color: "amber"
     card_description: "Create, annotate, move and push tags"
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to create, annotate, push, move, delete, and filter Git tags in GitKraken Desktop. Tags are useful when you want to mark releases, deployment points, or other important commits and then share or inspect those references from the commit graph or Left Panel.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Local and remote Git tag management in GitKraken Desktop
 - Creation points: Commit Graph or Left Panel tag actions
 - Checkout limitation: Tags cannot be checked out directly as branches

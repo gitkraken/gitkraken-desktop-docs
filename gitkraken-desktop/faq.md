@@ -109,7 +109,7 @@ GitKraken Desktop shows the [Gravatar](https://gravatar.com/) linked to the emai
 Yes. Subscriptions are linked to your email address, not a specific machine.
 
 ### Why can’t I see remotes under the integration drop-down?
-The drop-down shows only forks. Use the [URL option](/gitkraken-desktop/pushing-and-pulling/#adding-remotes) to add other remotes.
+The drop-down shows only forks. Use the [URL option](/gitkraken-desktop/pushing-and-pulling/#how-to-add-a-remote) to add other remotes.
 
 ### How do I push a local project to GitHub or other remotes?
 1. [Initialize a new project](/working-with-repositories/open-clone-init/#initialize-a-new-project) remotely.

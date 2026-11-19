@@ -30,7 +30,8 @@ custom_fields:
 
 GitKraken Desktop shows all of a repository's worktrees in one place, including the ones your coding agents created, and lets you remove them with or without their branches. Use this page to find stale agent worktrees and orphaned branches, check whether their work was merged, and clean them up without losing work you meant to keep.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Finding, checking, and removing worktrees and branches left behind by coding agent sessions
 - Prerequisite: The merged PR pill needs the branch's remote on GitHub, GitLab, Azure DevOps, Bitbucket, or Bitbucket Data Center, with that integration connected.
 - Limits: **Remove worktree and delete branch** deletes the local branch even if its commits are not merged, and you cannot undo it.

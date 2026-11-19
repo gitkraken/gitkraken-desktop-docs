@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [stash, pop, apply, work-in-progress, partial-stash]
 taxonomy:
@@ -26,15 +26,17 @@ custom_fields:
     card_color: "green"
     card_description: "Stash, pop, name and apply changes"
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
-Use this page to stash, apply, pop, rename, and partially restore uncommitted changes in GitKraken Desktop when you need to switch context without creating a commit. It covers both full stashes and partial file-based stashes, along with the graph and Left Panel workflows for managing them.
+Use this page to stash, apply, pop, rename, and partially restore uncommitted changes in GitKraken Desktop when you need to switch context without creating a commit. You can stash all your changes or only selected files, and manage your stashes from the Commit Graph or the Left Panel.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workflow scope: Uncommitted local changes only
+- Submodule limitation: Changes inside a submodule, a submodule checked out at another commit, and folders that hold their own Git repository are not stashed. Commit or stash those changes from the submodule itself
 - Apply vs. pop: **Apply Stash** keeps the stash; **Pop Stash** applies it and removes it
 - Partial stash behavior: Applying a single file from a partial stash does not remove the stash
-- Naming option: Name the stash before creating it by editing the `// WIP` field or stash summary field
+- Naming option: Name the stash before creating it in the WIP node's `// WIP` field or the **Stash title** field in the Commit Panel
 - GitKraken AI note: AI-generated stash messages require GitKraken AI to be enabled
 - Stash visibility: Stashes can be hidden from the graph without being deleted
 
@@ -43,7 +45,7 @@ Use this page to stash, apply, pop, rename, and partially restore uncommitted ch
 | Stash | Saves current uncommitted changes | Yes | Creates a new stash entry |
 | Apply Stash | Restores stashed changes | Yes | Keeps the stash for reuse |
 | Pop Stash | Restores stashed changes | No | Applies and removes the stash |
-| Partial stash | Saves selected files only | Yes | Managed from staged files in the Commit Panel |
+| Partial stash | Saves selected files only | Yes | Created from staged or unstaged files in the Commit Panel |
 | Apply partial stash file | Restores one file from a partial stash | Yes | Does not remove the stash |
 | Hide stash | Removes stash from graph view only | Yes | Does not delete the stash |
 
@@ -58,11 +60,11 @@ Use this page to stash, apply, pop, rename, and partially restore uncommitted ch
 
 **To pop the latest stash:** Click the **Pop Stash** button in the toolbar to apply changes and delete the stash in one step.
 
-**To name a stash:** Type a name into the `// WIP` field at the top of the graph before clicking Stash.
+**To name a stash:** Type a name in the WIP node's `// WIP` field in the Commit Graph, then click **Stash**.
 
-**To stash specific files (partial stash):** Stage your files in the Commit Panel, then right-click a file in the Staged Files section and select **Stash file**.
+**To stash specific files (partial stash):** In the Commit Panel, right-click a staged or unstaged file and select **Stash file**.
 
-**To apply a partial stash file by file:** Select the stash in the graph, then right-click a file in the Commit Panel and choose to apply it. Applying a single file does not remove the stash.
+**To apply a partial stash file by file:** Select the stash in the graph, then right-click a file in the Commit Panel and select **Apply stashed file**. Applying a single file does not remove the stash.
 
 ***
 
@@ -72,19 +74,21 @@ Use this page to stash, apply, pop, rename, and partially restore uncommitted ch
 
 Click the **Stash** icon in the top toolbar to create a new stash.
 
+If your only changes are inside submodules or in folders that hold their own Git repository, GitKraken Desktop shows **Nothing to stash** and does not create a stash. Open the submodule to commit or stash its changes there.
+
 <figure>
   <img src='/wp-content/uploads/stash@2x.png' class="help-center-img img-bordered" alt="GitKraken top toolbar with Stash button highlighted">
   <figcaption style="text-align:center; color:#888">Create a stash from the top toolbar.</figcaption>
 </figure>
 
-Your stash will appear in the Commit Graph. Right-click on the stash node to see available options:
+Your stash appears in the Commit Graph. Right-click the stash node to see these options:
 
 * **Apply Stash**: Apply changes to your working directory and keep the stash.
 * **Pop Stash**: Apply changes and remove the stash.
 * **Delete Stash**: Permanently remove the stash.
 * **Hide**: Hide the stash from the graph.
-* **Hide all stashes**: Hide all stashes from the graph.
-* **Show all stashes**: Display all hidden stashes.
+
+To hide or show every stash at once, right-click the **STASHES** header in the Left Panel and select **Hide all stashes** or **Show all stashes**.
 
 <figure>
   <img src='/wp-content/uploads/stash-options@2x.png' class="help-center-img img-bordered" alt="Right-click stash options menu in GitKraken Desktop showing Apply, Pop, Delete, and visibility controls">
@@ -102,14 +106,19 @@ To quickly pop the latest stash, use the **Pop Stash** button:
 
 ## How to stash changes from the Commit Panel
 
-You can stash changes from the Commit Panel. Stage your files and click the Stash icon (instead of Commit).
+To stash from the Commit Panel:
+
+1. Click the **Stash** tab icon in the Commit Panel.
+2. Stage the files you want to stash.
+3. Type a **Stash title**.
+4. Click **Stash Changes to *N* Files**.
 
 <figure>
   <img src='/wp-content/uploads/stash-commit-panel-2025.png' class="help-center-img img-bordered" alt="Commit Panel's stash tab with input for name and description, and a Stash Changes button">
   <figcaption style="text-align:center; color:#888">Stage files and click the Stash icon to save changes.</figcaption>
 </figure>
 
-If you use [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/), click the sparkle icon to auto-generate a stash message based on your staged changes.
+If you use [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/), click the sparkle icon, **Generate a stash message with AI**, to write a stash message from your staged changes.
 
 <figure>
   <img src="/wp-content/uploads/stash-ai-message@2x.png" class="help-center-img img-bordered" alt="GitKraken Stash panel (inside Commit Panel) with tooltip pointing to the AI icon for generating a stash message">
@@ -118,7 +127,7 @@ If you use [GitKraken AI](/gitkraken-desktop/gkd-gitkraken-ai/), click the spark
 
 ## How to view and manage stashes from the Left Panel
 
-All your stashes are listed in the Left Panel. Right-click to Apply, Pop, Delete, Hide, or Show them.
+The Left Panel lists all your stashes. Right-click a stash to apply, pop, delete, hide, or show it.
 
 <figure>
   <img src='/wp-content/uploads/stash-left-2025.png' class="help-center-img img-bordered" alt="Stash management menu in GitKraken's Left Panel showing options like Apply, Pop, Delete, and Share stash">
@@ -129,14 +138,14 @@ All your stashes are listed in the Left Panel. Right-click to Apply, Pop, Delete
 
 ## How to name a stash
 
-To give a stash a name, type into the `// WIP` field at the top of the graph before stashing.
+To name a stash, type the name in the WIP node's `// WIP` field in the Commit Graph before you stash.
 
 <figure>
   <img src='/wp-content/uploads/custom-stash-wip@2x.png' class="help-center-img img-bordered" alt="User typing a custom stash name in the GitKraken commit graph WIP node">
   <figcaption style="text-align:center; color:#888">Enter a custom stash name before saving.</figcaption>
 </figure>
 
-Named stashes are easier to recognize in the Left Panel and commit graph.
+The name identifies the stash in the Left Panel and the Commit Graph.
 
 <figure>
   <img src='/wp-content/uploads/custom-stash-panel@2x.png' 
@@ -165,7 +174,7 @@ To update a stash description, right-click the stash in the graph or the Left Pa
 
 ## How to create and apply a partial stash
 
-Stash specific files by right-clicking them in the **Staged Files** panel and selecting **Stash file**. This clears their changes and saves them to a partial stash.
+To stash specific files, right-click them in the Commit Panel, staged or unstaged, and select **Stash file** (or **Stash *N* files** for a multiple selection). GitKraken Desktop removes their changes from your working directory and saves them in a partial stash.
 
 <figure>
   <img src='/wp-content/uploads/partial-stash.png' 
@@ -174,7 +183,7 @@ Stash specific files by right-clicking them in the **Staged Files** panel and se
   <figcaption style="text-align:center; color:#888">Select individual files to stash partially.</figcaption>
 </figure>
 
-You can also apply changes from a partial stash one file at a time. Right-click a file in the Commit Panel while a stash is selected.
+You can also apply changes from a stash one file at a time. Select the stash, right-click a file in the Commit Panel, and select **Apply stashed file** (or **Apply *N* files from stash**).
 
 <figure>
   <img src='/wp-content/uploads/partial-stash-apply.png' 
@@ -185,6 +194,6 @@ You can also apply changes from a partial stash one file at a time. Right-click 
 
 ### Tips for partial stashes
 
-* Name a partial stash via the `// WIP` node or summary field before stashing.
+* Name a partial stash in the WIP node's `// WIP` field before stashing.
 * Hold **Shift** or **Ctrl** to select multiple files.
-* Applying a file from a stash doesn’t remove it from the stash.
+* Applying a file from a stash does not remove the file from the stash.

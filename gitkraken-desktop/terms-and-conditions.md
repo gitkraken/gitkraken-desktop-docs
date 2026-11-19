@@ -11,7 +11,7 @@ git_hosts: [n/a]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: false
 tags: [support, policy, sla, support-hours, end-of-life]
 taxonomy:
@@ -25,11 +25,12 @@ custom_fields:
 ---
 
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 This page explains GitKraken Desktop support terms and conditions, including eligible plans, support hours, response times, release support expectations, and end-of-life policy. Use it when you need to understand what support your plan includes, how quickly support responds, or how GitKraken handles support for older releases.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Guaranteed support applies to Pro, Advanced, Business, and Enterprise plans.
 - Community and Student users can contact support, but responses are not guaranteed.
 - Support hours are 10:00 am to 10:00 pm UTC, Monday through Friday.

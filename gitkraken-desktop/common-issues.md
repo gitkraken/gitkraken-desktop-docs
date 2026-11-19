@@ -1,6 +1,6 @@
 ---
 title: GitKraken Desktop – Common Issues and Fixes
-description: Troubleshoot common GitKraken Desktop problems, including login errors, GitHub integrations, performance issues, and experimental Git behavior.
+description: Troubleshoot common GitKraken Desktop problems, including login errors, GitHub integrations, performance issues, and the Git version GitKraken Desktop runs.
 product: GitKraken Desktop
 feature: Common Issues
 content_type: troubleshooting
@@ -32,10 +32,11 @@ custom_fields:
 
 Use this page to troubleshoot common GitKraken Desktop problems related to licensing, integrations, SSH, WSL, platform-specific behavior, and known error messages. For the most frequent fixes, start with the Quick Start checklist.
 
-**Requirements and limits**
-- Integration recovery: Signing out in your browser, clearing its cache, and reconnecting from <kbd>Preferences &gt; Integrations</kbd> resolves many 1000-series errors
+## Requirements and limits
+
+- Integration recovery: Signing out in your browser, clearing its cache, and reconnecting from <kbd>Preferences &gt; Integrations</kbd> can resolve 1000-series errors
 - WSL limitation: Do not run GitKraken Desktop as root, and prefer native WSL2 GUI support over XServer-based setups
-- Experimental Git note: Some issues may be tied to the Git Executable setting in <kbd>Preferences &gt; Experimental</kbd>
+- Git version note: Some issues depend on which Git GitKraken Desktop runs, set in <kbd>Preferences &gt; General &gt; Git Executable</kbd>
 - Escalation path: Contact GitKraken Support if the matching section does not resolve the problem
 
 ***
@@ -64,7 +65,7 @@ If GitKraken Desktop shows the wrong plan or no AI credits, check which account 
 In GitKraken Desktop, click your profile icon and check the name and email address under **Account**. If it is the wrong account, click **Sign Out**, then sign in again with the account linked to your subscription:
 <figure class='figure center'>
   <img alt="The GitKraken Desktop profile and account menu, signed in: Current profile with the profile, commit signature and Manage profiles, then Account with the account name and email, Manage account, and Sign Out highlighted." src="/wp-content/uploads/gkd-profile-menu-sign-out-01-v4@2x.png" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">Ensure you are signed in with the email address linked to your subscription. Avoid using GitHub or Google login options if your subscription is tied to an email address.</figcaption>
+  <figcaption style="text-align: center; color: #888;">Make sure you are signed in with the email address linked to your subscription. Avoid using GitHub or Google login options if your subscription is tied to an email address.</figcaption>
 </figure>
 
 ### The account is correct but it says I don't have AI credits
@@ -138,7 +139,7 @@ To toggle full-screen mode, press <kbd>F11</kbd> on Windows and Linux, or <kbd>C
 </figure>
 
 ### Diff shows entire file instead of changes
-Differences in line endings or encoding can cause this. To check:
+Differences in line endings or encoding can cause a full-file diff. To check:
 - Enable **Ignore Leading/Trailing Whitespace**.
 - If the message changes to **File contents are unchanged.**, the files are identical.
 <figure class='figure center'>
@@ -147,13 +148,11 @@ Differences in line endings or encoding can cause this. To check:
 </figure>
 
 ### Private organization repositories not visible (GitHub)
-Make sure GitKraken Desktop has access to the organization in your GitHub application settings:
+Make sure GitKraken Desktop has access to the organization in your [GitHub application access settings](https://github.com/settings/connections/applications/a7557949433b7d282a76):
 <figure class='figure center'>
   <img alt="Check your GitHub application settings to confirm permissions" src="/wp-content/uploads/GKD-Common-Issue-7.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Check your GitHub application settings to confirm permissions.</figcaption>
 </figure>
-
-To check, open [GitHub Application Access Settings](https://github.com/settings/connections/applications/a7557949433b7d282a76).
 
 ---
 
@@ -210,7 +209,7 @@ These fixes apply to GitKraken Desktop on Windows.
 ### Use GitKraken Desktop with PuTTY/Plink
 To use Plink for SSH:
 - Set `GIT_SSH` or `GIT_SSH_COMMAND` to the path of Plink, or set `core.sshCommand` in `.gitconfig`.
-- Update the Git Executable setting in <kbd>Preferences > Experimental > Git Executable</kbd>.
+- Update the Git Executable setting in <kbd>Preferences > General > Git Executable</kbd>.
 
 ---
 
@@ -227,20 +226,14 @@ GUI apps on macOS do not inherit shell environment variables.
 
 ## How to troubleshoot GitKraken Desktop 9.4.0 and later
 
-The [Git Executable](/gitkraken-desktop/experimental-features/#git-executable) option may affect Git behavior. To change which Git version GitKraken Desktop uses:
+GitKraken Desktop runs every Git operation with the Git selected in [Git Executable](/gitkraken-desktop/preferences/#how-general-preferences-work). If a Git action behaves differently than it does in your terminal, switch to the Git you use there:
 1. If needed, [download Git](https://git-scm.com/download).
-2. Go to <kbd>Preferences > Experimental</kbd>.
+2. Go to <kbd>Preferences > General</kbd>.
 3. Under **Git Executable**, choose your system Git instead of the bundled one.
 
 <figure class='figure center'>
-  <img alt="Switch Git Executable version under Preferences > Experimental" src="/wp-content/uploads/gkc-git-executable-version.png" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">Switch Git Executable version under Preferences > Experimental.</figcaption>
-</figure>
-
-If problems continue, clear **Use Git Executable**:
-<figure class='figure center'>
-  <img alt="Disable Git Executable if needed" src="/wp-content/uploads/gkc-use-git-executable.png" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">Disable Git Executable if needed.</figcaption>
+  <img alt="The Git Executable dropdown open, listing the Git bundled with GitKraken and two Git installs found on the computer, each with its version and path." src="/wp-content/uploads/gkc-git-executable-version.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Choose a Git version in Preferences > General > Git Executable.</figcaption>
 </figure>
 
 If the problem persists, report it to [GitKraken Support](https://help.gitkraken.com/gitkraken-desktop/contact-support/).

@@ -11,14 +11,14 @@ git_hosts: [Jira Cloud]
 integrations: [Jira Cloud]
 hosted_variant: both
 status: sunset
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: false
 tags: [timelines, legacy, sunset, jira]
 taxonomy:
     category: gitkraken-desktop
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 <div class='callout callout--danger'>
     <p>GitKraken Boards and GitKraken Timelines sunset at the end of 2022. Read our <a href="https://www.gitkraken.com/boards-and-timelines" target="_blank">full announcement and FAQ</a> to learn more.</p>
@@ -26,7 +26,8 @@ taxonomy:
 
 This page describes the legacy GitKraken Timelines integration in GitKraken Desktop and the remaining toolbar controls that were available before the product sunset. Use it only if you need to understand older workspace behavior or remove the Timelines button from the GitKraken Desktop toolbar in an environment that still shows it.
 
-**Requirements and limits**
+## Requirements and limits
+
 - GitKraken Timelines sunset at the end of 2022, so this page covers legacy behavior only.
 - Use this page for historical reference or to remove the Timelines button from the toolbar in older environments.
 - Timelines access depended on the toolbar button and a GitKraken account connection.

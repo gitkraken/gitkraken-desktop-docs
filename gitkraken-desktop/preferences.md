@@ -30,7 +30,8 @@ custom_fields:
 
 Use this page to find where a setting lives in GitKraken Desktop Preferences and what each Preferences section controls, before you change your workflow or environment.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Preferences overview for app-wide, profile-specific, and repository-specific settings
 - Access point: Gear icon in the top-right corner of GitKraken Desktop
 - Profile behavior: Preferences are stored per profile, so switching profiles changes integrations and UI configuration
@@ -43,14 +44,14 @@ Use this page to find where a setting lives in GitKraken Desktop Preferences and
 ## Quick Start
 
 
-- **General**: Set auto-fetch intervals, conflict detection behavior, Commit Graph limits, and tab retention.
+- **General**: Set auto-fetch intervals, conflict detection behavior, Commit Graph limits, tab retention, and the Git executable GitKraken Desktop uses.
 - **Profiles**: Create and switch between profiles to separate Git identities, integrations, and tab sets.
 - **SSH and Integrations**: Connect to GitHub, GitLab, Bitbucket, Azure DevOps, Jira, Trello, and more.
 - **GitKraken AI**: Enable AI-assisted commit messages and PR descriptions (Pro plan and above).
 - **External Tools**: Set your preferred editor, diff tool, merge tool, external terminal, and custom coding agent commands.
 - **UI Customization**: Change themes, date formats, avatar display, and Commit Graph metadata.
 - **Commit Signing**: Enable GPG signing for verified commits.
-- **Experimental**: Try preview features such as Git Executable and Cloud Patches.
+- **Experimental**: Read about preview features such as Cloud Patches.
 - **Repo-Specific Preferences**: Configure encoding, Gitflow, hooks, LFS, issues, Team View, and agent setup commands per repository.
 
 Each profile has its own preferences, so switching profiles switches integrations and UI options to that profile's configuration.
@@ -64,7 +65,7 @@ Each profile has its own preferences, so switching profiles switches integration
 
 ## How organization settings work
 
-This section is labeled with your organization's name and shows its members and teams. Owners and Admins can:
+The organization section takes your organization's name and shows its members and teams. Owners and Admins can:
 - Manage member roles
 - Invite users and assign licenses
 - Create and manage teams
@@ -75,7 +76,7 @@ This section is labeled with your organization's name and shows its members and 
 
 ## How General preferences work
 
-Configure app-wide behavior such as auto-fetch, conflict detection, and Commit Graph settings.
+Configure app-wide behavior such as auto-fetch, conflict detection, Commit Graph settings, and the Git executable GitKraken Desktop uses:
 
 | Setting | What it controls |
 | --- | --- |
@@ -89,6 +90,7 @@ Configure app-wide behavior such as auto-fetch, conflict detection, and Commit G
 | **Initial Commits in Graph** | Sets the number of commits the graph shows at first (minimum 500). |
 | **Lazy Load Commits in Graph** | Loads more commits only as needed. |
 | **Remember tabs** | Saves open tabs and profile context between sessions. |
+| **Git Executable** | Chooses the Git that GitKraken Desktop runs for every Git operation: the Git bundled with GitKraken Desktop (the default) or another Git installed on your computer. |
 | **Longpaths** and **AutoCRLF** | Windows-only settings tied to your global `.gitconfig`. |
 | **Use extended logging in activity log** | Records more detailed activity logs, which you can get from <kbd>Help > Support Logs</kbd>. |
 | **Forget all Usernames and Passwords** | Clears stored usernames and passwords. |
@@ -110,7 +112,7 @@ See [how to create and switch profiles](/start-here/profiles).
 
 Control access and connections to remote repositories:
 
-- [SSH settings](/gitkraken-desktop/authentication/#ssh)
+- [SSH settings](/gitkraken-desktop/authentication/#how-ssh-authentication-works)
 - Git hosting integrations such as GitHub, GitLab, Bitbucket, and Azure DevOps
 - Issue tracker integrations such as Jira and Trello
 
@@ -181,7 +183,7 @@ To switch between the standard Left Panel and the Agents view, go to <kbd>Prefer
 
 ## How commit signing preferences work
 
-Enable and configure [GPG signing](/git-workflows-and-extensions/commit-signing-with-gpg/#configure-gpg-in-gitkraken) for commit verification.
+Enable and configure [GPG signing](/gitkraken-desktop/commit-signing-with-gpg/#how-to-configure-gpg-in-gitkraken-desktop) for commit verification.
 
 ***
 
@@ -209,9 +211,9 @@ For worktree-specific terminal sessions and manual coding agent workflows, see [
 
 ## How experimental preferences work
 
-Preview [Experimental Features](/gitkraken-desktop/experimental-features):
-- **Use Git Executable**: Run Git operations with a Git executable instead of the NodeGit library
-- Cloud Patches
+The Experimental section describes preview [Experimental Features](/gitkraken-desktop/experimental-features), such as Cloud Patches.
+
+The self-hosted and standalone versions of GitKraken Desktop do not show the Experimental section. The Git executable setting is in [General preferences](#how-general-preferences-work).
 
 ***
 
@@ -219,7 +221,7 @@ Preview [Experimental Features](/gitkraken-desktop/experimental-features):
 
 These settings apply only to the open repository, so you can configure each repository differently:
 
-- [Encoding](/gitkraken-desktop/editing-files/#encoding)
+- [Encoding](/gitkraken-desktop/editing-files/#how-file-encoding-works)
 - [Gitflow](/gitkraken-desktop/git-flow/)
 - [Git Hooks](/gitkraken-desktop/githooks/)
 - [LFS](/gitkraken-desktop/git-lfs/)

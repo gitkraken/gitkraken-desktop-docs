@@ -30,7 +30,8 @@ custom_fields:
 
 Use this page to create, rename, delete, merge, and rebase branches in GitKraken Desktop, resolve merge conflicts, and set up an external merge tool. Compare merge-based and rebase-based workflows to choose the right history strategy for your branch.
 
-**Key constraints**
+## Key constraints
+
 - Merge strategy: Use merge to preserve branch history; use rebase to move commits onto a new base and keep history more linear
 - Merge conflict editor: The in-app merge conflict output editor requires a paid GitKraken license
 - Squash merge behavior: With **Squash** enabled, GitKraken Desktop stages the merge result but does not create the final commit automatically
@@ -103,7 +104,7 @@ After the checkout, GitKraken Desktop selects the new HEAD commit. If you have u
 
 If you are on the wrong branch, [stash](/gitkraken-desktop/stashing) your changes, switch branches, and pop the stash.
 
-If you only need a subset of files checked out, see [Sparse Checkout](/gitkraken-desktop/open-clone-init/#sparse-checkout).
+If you only need a subset of files checked out, see [Sparse Checkout](/gitkraken-desktop/open-clone-init/#how-sparse-checkout-works).
 
 ### How to rename a branch
 
@@ -343,7 +344,8 @@ You can rebase a specific range of commits onto another branch without performin
 
 GitKraken Desktop provides 2 ways to do this:
 
-**Option 1: Multi-select a range of commits**
+#### Option 1: Multi-select a range of commits
+
 1. Check out the target branch.
 2. In the Commit Graph, hold <kbd>Shift</kbd> and click to select a range of commits on the source branch.
 3. Right-click the base branch and select **Rebase N commits onto [branch]**.
@@ -353,7 +355,8 @@ GitKraken Desktop provides 2 ways to do this:
   <figcaption style="text-align:center; color:#888">Right-click the target branch after selecting a commit range to rebase</figcaption>
 </figure>
 
-**Option 2: Select a single pivot commit**
+#### Option 2: Select a single pivot commit
+
 1. Select one commit in the middle of your current branch. The commits between the selected commit and the head of the branch must not include a merge commit.
 2. Right-click the target branch.
 3. Select **Rebase N commits onto [branch]**.

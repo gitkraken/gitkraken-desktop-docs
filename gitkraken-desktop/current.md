@@ -35,7 +35,8 @@ custom_fields:
   <img src="/wp-content/uploads/GitKraken_Keif_behold.png" alt="" width="832" height="900" loading="lazy" style="flex:0 0 auto; max-height:200px; width:auto; height:auto; max-width:100%; margin:0 auto;">
 </div>
 
-**Requirements and limits**
+## Requirements and limits
+
 - This page covers the current major version of GitKraken Desktop. For earlier releases, see the archived version pages ([Version 11](/gitkraken-desktop/11x/), [Version 10](/gitkraken-desktop/10x/), [Version 9](/gitkraken-desktop/9x/), and earlier).
 - Each entry applies only to the specific release listed under its version heading.
 - Use the current feature documentation for step-by-step guidance and the release notes to confirm version timing.
@@ -43,6 +44,27 @@ custom_fields:
 <a href="https://www.gitkraken.com/download?product=gitkraken&source=help_center" target="_blank" class="button button--basic ">Download Current Version Now</a>
 
 Check out our [GitKraken Roadmap](https://www.gitkraken.com/git-client/roadmap?product=gitkraken&source=help_center) to see what we’re working on.
+
+***
+<a id="v12-7-0"></a>
+## Version 12.7.0
+
+<kbd>Tuesday, November 17th, 2026</kbd>
+
+### Improvements 🙌
+ - All Git operations now run through a Git executable instead of using a built-in library for some of them.
+   - The *Use Git Executable* setting has been removed from *Preferences > Experimental*. If you had that setting turned off, GitKraken switches to its included Git (with the Git Credential Manager off) and shows you a one-time notice.
+   - To use a different Git install, go to *Preferences > General > Git Executable*.
+ - Updated the bundled Git to 2.56.1
+   - *For macOS 12 users: The Git LFS bundled with GitKraken Desktop is no longer supported on macOS 12. To keep using Git LFS, upgrade to a newer version of macOS. GitKraken Desktop will soon drop support for macOS 12, and will stop receiving updates on that version.*
+
+### Bug Fixes 🐛
+ - Fixed an issue on macOS where GitKraken Desktop asked you to install the Xcode Command Line Tools on every start and every time Preferences opened, when they were not installed.
+ - Fixed an issue where finishing a GitFlow feature, release or hotfix while the target branch was checked out in another worktree changed your files before failing. The finish now stops with git's message and changes nothing. A folder already sitting where a submodule of the target branch goes, or a submodule with its own changes, no longer stops the finish.
+ - Fixed an issue where a worktree's setup commands did not run when starting an agent session with no coding agent selected while the terminal panel was closed.
+ - Fixed an issue where Discard all changes showed a Reset Failed error and did not reset submodules in a repository with reflogs turned off. On a detached HEAD, Discard all changes also no longer removes the history entry of a Reset you made just before it, so Undo can still undo that reset.
+ - Fixed an issue where tags were missing from the Base branch dropdown when creating a branch from an issue in Launchpad, or when starting an agent session from an issue in Launchpad or the left panel.
+ - Fixed an issue where opening repositories in an external terminal, diff tool, or merge tool would fail if the folder path contained special characters.
 
 ***
 <a id="v12-6-2"></a>

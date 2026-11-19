@@ -11,7 +11,7 @@ git_hosts: [GitLab Self-Managed]
 integrations: [GitLab Self-Managed]
 hosted_variant: self-hosted
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [gitlab-self-managed, self-hosted, pat, ssh, pull-requests]
 taxonomy:
@@ -26,13 +26,14 @@ custom_fields:
     card_color: "blue"
     card_description: "Connect GitLab Self-Managed with a personal access token"
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to connect GitKraken Desktop to a GitLab Self-Managed server so you can authenticate with a personal access token, manage SSH keys, discover repositories, and work with pull requests in your self-hosted GitLab environment. This integration requires a Pro subscription tier or higher.
 
 > **Note:** GitLab Self-Managed integration requires a <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">Pro subscription</a> tier or higher.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: GitLab Self-Managed
 - Plan: Pro subscription tier or higher
 - Supported server versions: GitLab Self-Managed releases from the past year

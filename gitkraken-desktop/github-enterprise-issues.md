@@ -11,7 +11,7 @@ git_hosts: [GitHub Enterprise Server]
 integrations: [GitHub Enterprise Server]
 hosted_variant: self-hosted
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [github-enterprise-server, issues, self-hosted, filters, branching]
 taxonomy:
@@ -27,13 +27,14 @@ custom_fields:
     card_description: "Issues from GitHub Enterprise Server"
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 This page explains how GitKraken Desktop connects to GitHub Enterprise Server Issues so you can preview, filter, and create issues alongside your repository work. Use it when you already work with GitHub Enterprise Server and want issue access inside GitKraken Desktop instead of switching to the web interface.
 
 > **Note:** The GitHub Enterprise Server Issues integration is view-only for Community users. To unlock full features, consider upgrading to a <a href="https://gitkraken.com/pricing?product=gitkraken&source=help_center">paid GitKraken license</a>.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: GitHub Enterprise Server Issues
 - Server version: GitHub Enterprise Server 2.20.24 or newer
 - Connection model: Shares the same connection as the GitHub Enterprise Server integration
