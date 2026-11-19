@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [activity-logs, logs, troubleshooting, git-actions, hooks]
 taxonomy:
@@ -26,11 +26,12 @@ custom_fields:
     card_color: "amber"
     card_description: "Real-time Git actions, app events and hook output"
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to inspect Activity Logs in GitKraken Desktop when you need to see recent Git operations, application events, performance timing, or Git hook output. It explains the difference between the Application and Repository tabs, how extended logging changes the output, and how hook failures surface in the log UI.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Real-time GitKraken Desktop application and repository event logs
 - Access point: <kbd>Activity Logs</kbd> icon in the footer toolbar
 - Application tab: Shows GitKraken Desktop instance events and is not tied to the active repository

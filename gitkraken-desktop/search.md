@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [search, commits, graph, command-palette, history]
 taxonomy:
@@ -26,11 +26,12 @@ custom_fields:
     card_color: "green"
     card_description: "Find commits by message, SHA or author"
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to search commit history in GitKraken Desktop by message, SHA, or author and to control how much history is loaded into the Commit Graph. It is useful when search results seem incomplete because the graph depth is limited or when you want to jump into commit search from anywhere in the app.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Search scope: Commit message, SHA, and author
 - Default graph depth: GitKraken Desktop initially displays up to 2000 commits in the Commit Graph
 - Search limitation: If the graph is not loading enough history, search results can appear incomplete

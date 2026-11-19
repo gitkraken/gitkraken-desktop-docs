@@ -30,7 +30,8 @@ custom_fields:
 
 Use this page to install and license GitKraken On-Premise Serverless, also called GitKraken Stand-Alone, when your team works in offline or tightly controlled environments.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Product scope: GitKraken On-Premise Serverless / Stand-Alone
 - Environment fit: Offline, disconnected, or tightly controlled environments
 - Account model: No internet account creation required

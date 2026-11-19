@@ -30,7 +30,8 @@ custom_fields:
 
 Use this page to create, review, filter, comment on, and merge pull requests (PRs) in GitKraken Desktop on GitHub, GitLab, Bitbucket, and Azure DevOps. On GitHub, you also get GitHub Pull Request View, stacked pull requests, code suggestions, and in-app merge options. To review a pull request, you open it in GitKraken Code Review on GitKraken.dev.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Supported providers on this page: GitHub, GitLab, Bitbucket, and Azure DevOps
 - Precondition: Push your branch to the remote before creating a pull request
 - GitHub-only features: GitHub Pull Request View, stacked pull requests on GitHub.com, code suggestions, and in-app merge options
@@ -92,7 +93,7 @@ Push your branch to the remote first. Then use one of these:
   <figcaption style="text-align:center; color:#888">Create a pull request from the Left Panel</figcaption>
 </figure>
 
-> **Note:** If the Azure DevOps PR form is not populating, see <a href="https://help.gitkraken.com/gitkraken-desktop/azure-devops/#azure-devops-pull-requests-form-not-populating-in-gitkraken-desktop">Azure DevOps Integration</a>.
+> **Note:** If the Azure DevOps PR form is not populating, see <a href="https://help.gitkraken.com/gitkraken-desktop/azure-devops/#how-to-fix-a-missing-azure-devops-pull-request-form">Azure DevOps Integration</a>.
 
 ***
 

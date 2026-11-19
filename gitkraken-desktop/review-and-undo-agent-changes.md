@@ -30,7 +30,8 @@ custom_fields:
 
 Use this page to see exactly what an AI coding agent changed in your repository and to undo those changes safely if something went wrong. It works with any agent that edits files in a Git repository. GitKraken Desktop reads the changes from Git, so it does not matter which agent made them.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Reviewing and reversing an agent's changes, whether they are uncommitted, committed on your machine, or pushed
 - Prerequisite: The repository the agent worked in is open in GitKraken Desktop. The steps work for sessions started from the Agents view and for agents you run yourself.
 - Limits: Git does not record whether a person or an agent wrote a change, so give each agent its own session or branch.

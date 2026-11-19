@@ -33,7 +33,8 @@ custom_fields:
 
 > **Warning:** GitKraken AI requires a <a href="https://www.gitkraken.com/pricing?source=help_center&product=gitkraken" target="_blank">paid GitKraken subscription</a>.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Product: GitKraken Desktop with GitKraken AI enabled
 - Plan: Paid GitKraken subscription required
 - Setup location: <kbd>Preferences &gt; GitKraken AI</kbd> for provider, model, and prompt settings
@@ -333,7 +334,7 @@ When GitKraken Desktop is connected to [GitHub, GitLab, Bitbucket, or Azure DevO
 <figcaption style="text-align: center; color: #888">Start creating a pull request from the Left Panel or graph</figcaption>
 </figure>
 
-2. Click **Generate title and description**. If you use a [pull request template](/gitkraken-desktop/pull-requests/#pull-request-templates), select the template first. GitKraken AI applies it.
+2. Click **Generate title and description**. If you use a [pull request template](/gitkraken-desktop/pull-requests/#how-pull-request-templates-work), select the template first. GitKraken AI applies it.
 
 <figure>
 <img src="/wp-content/uploads/pr-ai-title-desc-11-1@2x.png" style="max-width: 66%; height: auto; margin: 0 auto;" class="help-center-img img-bordered" alt="Pull request creation panel with an AI button to generate a title and description based on branch changes." />
@@ -410,12 +411,12 @@ Add custom instructions in <kbd>Preferences > GitKraken AI</kbd> to guide how Gi
 
 Try these example instructions for commit messages:
 
-**Prompt for brevity**
+For a short summary, use:
 ```
 Keep the summary short, but informative
 ```
 
-**Prompt to add conventional commit prefix**
+To add a conventional commit prefix, use:
 ```
 Format the summary as:
 

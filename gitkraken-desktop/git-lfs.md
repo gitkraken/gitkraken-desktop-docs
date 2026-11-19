@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [git-lfs, large-files, install, configure, troubleshooting]
 taxonomy:
@@ -27,13 +27,14 @@ custom_fields:
     card_description: "Track and manage large files with Git LFS"
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 ***
 
 Use this page to install, initialize, and manage Git LFS in GitKraken Desktop when your repository includes large binary files. It explains the Git, Git LFS, and GitKraken version requirements, how tracking patterns work, where LFS actions live in the UI, and common troubleshooting steps when LFS is missing or misconfigured.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Git requirement: Git 2.39.3 or later
 - Git LFS requirement: Git LFS 3.0.0 or later
 - GitKraken Desktop requirement: Version 7.0.0 or later
@@ -255,7 +256,7 @@ Use the LFS menu in the toolbar to run commands:
 ## Git LFS FAQs and troubleshooting
 
 ### LFS not showing in Preferences?
-Check if your PATH includes Git and Git LFS. See [Verify Installation](#verify-installation).
+Check if your PATH includes Git and Git LFS. See [Verify Installation](#how-to-verify-the-installation).
 
 ### LFS button disappeared?
 You may have switched to a repo without LFS. Use the menu: <kbd>Hamburger > LFS > Initialize</kbd>.

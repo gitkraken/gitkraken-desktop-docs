@@ -35,7 +35,8 @@ GitKraken Desktop is a visual Git client for Windows, macOS, and Linux. You can 
   <img src="/wp-content/uploads/GitKraken_Keif_evergreen-feature.png" alt="" width="703" height="750" loading="lazy" style="flex:0 0 auto; max-height:200px; width:auto; height:auto; max-width:100%; margin:0 auto;">
 </div>
 
-**Requirements and limits**
+## Requirements and limits
+
 - Plan requirements, OS support, version limits, and step-by-step workflows are on each linked page.
 - Installation, integrations, and release notes each list their own requirements and compatibility details.
 - Coding agents, worktrees, the terminal, and on-premises deployment each have their own setup page.

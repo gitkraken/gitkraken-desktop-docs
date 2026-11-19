@@ -11,7 +11,7 @@ git_hosts: [Jira Data Center]
 integrations: [Jira Data Center]
 hosted_variant: self-hosted
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [jira-data-center, issues, pat, self-hosted, jql]
 taxonomy:
@@ -27,11 +27,12 @@ custom_fields:
     card_description: "Connect Jira Data Center with a personal access token"
 ---
 
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to connect GitKraken Desktop to Jira Data Center so you can preview, create, and manage Jira issues from the Left Panel. This integration requires an Advanced subscription tier or higher, supports Jira Data Center 8.4 or newer, and uses a Personal Access Token instead of the Jira Cloud authorization flow.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Integration covered here: Jira Data Center
 - Plan: Advanced subscription tier or higher
 - Server version: Jira Data Center 8.4 or newer

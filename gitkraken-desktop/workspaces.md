@@ -27,7 +27,8 @@ custom_fields:
 
 Use this page to create Local or Cloud Workspaces in GitKraken Desktop so you can organize repositories, run multi-repository actions, review pull requests across a group of repos, and share workspace context with a team. Cloud Workspaces require connected integrations, while Local Workspaces stay on your machine until you convert them.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Workspace types: Local Workspace or Cloud Workspace
 - Cloud Workspace requirement: The relevant hosting service integration must be connected in <kbd>Preferences &gt; Integrations</kbd>
 - Local Workspace scope: Stored on your machine until you convert it
@@ -182,7 +183,7 @@ These multi-repository actions are available:
     </tr>
     <tr>
       <td style="padding: 4px;"><strong>Open in GitKraken Desktop or an external editor</strong></td>
-      <td style="padding: 4px;">Open all selected repositories in GitKraken Desktop or your <a href="https://help.gitkraken.com/start-here/preferences/#external-editor">default editor</a>.</td>
+      <td style="padding: 4px;">Open all selected repositories in GitKraken Desktop or your <a href="https://help.gitkraken.com/gitkraken-desktop/preferences/#how-external-tool-preferences-work">default editor</a>.</td>
     </tr>
     <tr>
       <td style="padding: 4px;"><strong>Locate in filesystem</strong></td>
@@ -252,7 +253,7 @@ You can take actions across multiple repositories within a Local Workspace:
 2. Use the action toolbar at the top to:
    - **Fetch**: Update all selected repositories.
    - **Pull**: Sync selected repositories with the latest changes. Use the dropdown to customize pull behavior.
-   - **Open**: Open selected repositories in GitKraken Desktop or your [default external editor](/start-here/preferences/#external-editor).
+   - **Open**: Open selected repositories in GitKraken Desktop or your [default external editor](/gitkraken-desktop/preferences/#how-external-tool-preferences-work).
    - **Remove**: Remove selected repositories from the Workspace.
 
 ### How to convert a Local Workspace to a Cloud Workspace

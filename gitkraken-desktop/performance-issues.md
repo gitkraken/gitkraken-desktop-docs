@@ -11,7 +11,7 @@ git_hosts: [generic]
 integrations: []
 hosted_variant: both
 status: GA
-last_verified: 2026-03
+last_verified: 2026-11
 llms_include: true
 tags: [performance, troubleshooting, optimization, maintenance, large-repos]
 taxonomy:
@@ -26,11 +26,12 @@ custom_fields:
     card_color: "red"
     card_description: "Speed up large repositories and the Commit Graph"
 ---
-<kbd>Last updated: March 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Use this page to diagnose slow or unresponsive behavior in GitKraken Desktop, especially in large or complex repositories. It focuses on practical fixes such as repository maintenance, graph-size limits, auto-fetch changes, branch cleanup, LFS cleanup, and build verification for macOS systems.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Scope: Troubleshooting performance problems in GitKraken Desktop repositories and UI rendering
 - Common trigger: Large repositories with many references or heavy graph rendering
 - Primary fixes: Repo maintenance, graph-size reduction, auto-fetch changes, branch cleanup, and LFS cleanup
@@ -68,13 +69,13 @@ Performance issues are commonly linked to large repositories with many reference
 
 ### Interface optimization
 
-- Disable auto-fetch by setting the [Auto-fetch interval](/gitkraken-desktop/preferences/#auto-fetch) to `0`.
-- Reduce the number of commits shown in the graph by setting a lower [Max Commits value](/gitkraken-desktop/preferences/#max-commits-in-graph).
+- Disable auto-fetch by setting the [Auto-Fetch Interval](/gitkraken-desktop/preferences/#how-general-preferences-work) to `0`.
+- Reduce the number of commits shown in the graph by setting a lower [Initial Commits in Graph](/gitkraken-desktop/preferences/#how-general-preferences-work) value.
 - [Solo or Hide](/gitkraken-desktop/hiding-and-soloing/) branches and tags to reduce visual complexity.
 
 ### Cleanup and maintenance
 
-- [Delete unnecessary local branches](/gitkraken-desktop/branching-and-merging/#delete-a-branch).
+- [Delete unnecessary local branches](/gitkraken-desktop/branching-and-merging/#how-to-delete-a-branch).
 - If using Git LFS, perform an [LFS prune](/gitkraken-desktop/git-lfs/).
 - Run [`git status`](https://git-scm.com/docs/git-status) to check for unexpected working directory states.
 - Restart GitKraken Desktop daily to clear any accumulated memory or cache usage.

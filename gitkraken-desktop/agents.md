@@ -46,7 +46,8 @@ A **coding agent** is an external CLI that can work on code in a terminal sessio
 
 GitKraken Desktop explicitly integrates with a set of supported coding agent CLIs. You can also run other coding agents manually in the embedded terminal, even if they do not appear in the coding agent configuration.
 
-**Requirements and limits**
+## Requirements and limits
+
 - Product: GitKraken Desktop with the Agents view enabled
 - Coding agent CLI: Install and configure a supported coding agent CLI in <kbd>Preferences > External Tools > Coding Agent</kbd>
 - Session model: Each agent session runs in its own Git worktree and working directory
@@ -143,7 +144,7 @@ If GitKraken Desktop cannot identify the agent's window, the icon is disabled an
 On Linux, bringing a window to the front needs your desktop's window tool, such as `xdotool` on X11, `kdotool` on KDE Plasma (Wayland), or the built-in commands of Hyprland, Sway, or niri.
 
 <figure>
-  <img src="/wp-content/uploads/focus-agent-icon.png" class="help-center-img img-bordered" alt="Focusing on an agent from the Left Panel.">
+  <img src="/wp-content/uploads/focus-agent-icon.png" class="help-center-img img-bordered" alt="Worktree card in the Agents view with a Waiting for input status and the eye icon showing the Focus agent application tooltip.">
   <figcaption style="text-align:center; color:#888">Focusing on an agent from the Left Panel</figcaption>
 </figure>
 
@@ -180,13 +181,13 @@ GitKraken Desktop detects installed CLIs automatically. If you install `cursor-a
 
 In on-premises environments, do not assume every supported CLI will be available. The list in GitKraken Desktop depends on which CLIs are installed on the machine and which services your organization allows that machine to access.
 
-If you need fully air-gapped agent workflows, OpenCode and Gemini CLI can run against an internal model endpoint. Claude Code, Codex CLI, Copilot CLI, and Cursor CLI are supported when your organization permits them and the required services are available inside your environment.
-
 If you use a different coding agent, you can still open a session worktree and run that agent manually in the embedded terminal. The agent does not need to appear in the coding agent configuration for you to use that terminal workflow.
 
 Setup is the same for every supported CLI: install the CLI on your system, then configure it in <kbd>Preferences > External Tools > Coding Agent</kbd>.
 
 ***
+
+<a id="how-to-configure-setup-commands"></a>
 
 ## How to configure setup commands for coding agent sessions
 
@@ -242,7 +243,7 @@ Start an agent session from an issue to create a branch and worktree for that is
 The setup modal has these options:
 
 - **Branch name**: generated from the issue.
-- **Base branch**: the branch to create the worktree from.
+- **Base branch**: the branch or tag to create the worktree from. Tags appear in the list with a tag icon.
 - **Coding agent**: the CLI to launch.
 - **Send issue context to start immediately**: selected by default. The agent starts working right away with the issue's title, status, link, author, assignees, labels, and description. Clear it to start the agent without the issue details. It is unavailable when **Coding agent** is set to **None**.
 
@@ -255,14 +256,14 @@ From Launchpad, go to your Issues view and click **Start an Agent Session**. For
 The modal shows the issue's **Repository** when Launchpad knows where you cloned it. Otherwise, choose one in **Select repository**. The **Configure setup commands** link does not appear when you start from Launchpad.
 
    <figure>
-     <img src='/wp-content/uploads/GKD-Launching-Agent-Launchpad1.png' class="help-center-img img-bordered" alt="Start an Agent Session">
+     <img src='/wp-content/uploads/GKD-Launching-Agent-Launchpad1.png' class="help-center-img img-bordered" alt="Launchpad My Issues tab in GitKraken Desktop with a Start an Agent Session button in the Action column for each issue.">
      <figcaption style="text-align: center; color: #888">Starting an Agent Session from the Launchpad view.</figcaption>
    </figure>
 
 Review or set your **Branch name**, **Base branch**, and **Coding agent**, then click **Start an Agent Session**.
 
    <figure>
-     <img src='/wp-content/uploads/GKD-Launching-Agent-Launchpad2.png' class="help-center-img img-bordered" alt="Session Options">
+     <img src='/wp-content/uploads/GKD-Launching-Agent-Launchpad2.png' class="help-center-img img-bordered" alt="Start an Agent Session modal opened from Launchpad, showing the issue's repository, a branch name generated from the issue, and Send issue context to start immediately selected.">
      <figcaption style="text-align: center; color: #888">Setting Session options.</figcaption>
    </figure>
 
@@ -271,14 +272,14 @@ Review or set your **Branch name**, **Base branch**, and **Coding agent**, then 
 From the Left Panel, go to your Issues view, right-click the issue or click the three-dot menu next to it, and click **Start an Agent Session**. The repository you have open is selected by default. If it stays selected, the modal also shows the **Configure setup commands** link.
 
    <figure>
-     <img src='/wp-content/uploads/GKD-Launching-Agent-Sidebar-view1.png' class="help-center-img img-bordered" alt="Start an Agent Session">
+     <img src='/wp-content/uploads/GKD-Launching-Agent-Sidebar-view1.png' class="help-center-img img-bordered" alt="GitHub Issues section of the Left Panel with an issue's menu open on Start an Agent Session.">
      <figcaption style="text-align: center; color: #888">Starting an Agent Session from the Left Panel.</figcaption>
    </figure>
 
 Review or set your **Branch name**, **Base branch**, and **Coding agent**, then click **Start an Agent Session**.
 
    <figure>
-     <img src='/wp-content/uploads/GKD-Launching-Agent-Sidebar-view2.png' class="help-center-img img-bordered" alt="Session Options">
+     <img src='/wp-content/uploads/GKD-Launching-Agent-Sidebar-view2.png' class="help-center-img img-bordered" alt="Start an Agent Session modal opened from the Left Panel, with the open repository selected in Select repository and a branch name generated from the issue.">
      <figcaption style="text-align: center; color: #888">Setting Session options.</figcaption>
    </figure>
 
@@ -306,17 +307,17 @@ Each card in the Agents view represents one worktree and lists each coding agent
 | **WIP change summary** | The count of uncommitted file changes |
 | **Ahead / behind** | Commit counts relative to the remote |
 | **Agent status** | One row per agent session, showing its state: **Running**, **Thinking**, **Using tool**, **Awaiting approval**, **Needs response**, **Error**, or **Waiting for input** |
-| **Merged PR pill** | Whether the branch has a merged pull request on GitHub, GitLab, Azure DevOps, Bitbucket, or Bitbucket Data Center |
+| **Merged PR pill** | Whether the branch has a merged pull request or merge request on GitHub, GitLab, Azure DevOps, Bitbucket, or Bitbucket Data Center |
 
-The status row on each card shows the current session state. Claude Code, Codex CLI, Copilot CLI, and OpenCode can report live status when you install their status integrations. If the branch has a merged pull request or merge request on GitHub, GitLab, Azure DevOps, Bitbucket, or Bitbucket Data Center, a merged PR pill appears on the card.
-
-When you start a session, the card shows a **Running** status. If you install a status integration for a supported CLI, the card can show more specific status information.
+When you start a session, its status row shows **Running**. Claude Code, Codex CLI, Copilot CLI, and OpenCode report more specific live status when you install their status integrations.
 
 When an agent needs attention, the card can show a bell icon and a **Waiting for input** label, so you can see that the session needs a response without switching to the terminal first.
+
 <figure>
   <img src='/wp-content/uploads/agent-status.png' class="help-center-img img-bordered" alt="GitKraken Desktop Left Panel in List view, with the pointer over the Agents toggle and a tooltip reading 1 agent session waiting for input.">
   <figcaption style="text-align: center; color: #888">Hover over the Agents toggle to see how many agent sessions are waiting for input.</figcaption>
 </figure>
+
 If you remove a worktree from the card menu, the card shows that the removal is in progress until it finishes.
 
 <figure>
@@ -352,7 +353,7 @@ Claude Code can also offer to always allow similar requests. When it offers one 
 For other prompts, open the worktree and respond in the agent's terminal.
 
 <figure>
-  <img src='/wp-content/uploads/allow-deny.png' class="help-center-img img-bordered" alt="Agents view showing Agent permission request">
+  <img src='/wp-content/uploads/allow-deny.png' class="help-center-img img-bordered" alt="Worktree card in the Agents view with a Bash permission request awaiting approval and the Always allow tooltip over the double check mark.">
   <figcaption style="text-align: center; color: #888">The Agents view allows you to approve agent permission requests directly from the view without switching to the session.</figcaption>
 </figure>
 
